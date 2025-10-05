@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Raskite pigiausias degalų kainas Lietuvoje. Viada, Circle K, Neste, Emsi, Baltic Petroleum, Orlen.">
+    <meta name="keywords" content="degalai, kainos, Lietuva, benzinas, dyzelinas, dujos, LPG, Viada, Circle K, Neste">
+    <meta name="author" content="Kuro Kainos">
+    <title>⛽ Kuro Kainos Lietuvoje - Raskite Pigiausias Degalų Kainas</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛽</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .app-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007AFF 0%, #0056b3 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .city-selector {
+            background: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .city-label {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .city-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 8px;
+        }
+
+        .city-btn {
+            padding: 10px;
+            border: 2px solid #007AFF;
+            background: white;
+            color: #007AFF;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .city-btn.active {
+            background: #007AFF;
+            color: white;
+        }
+
+        .gps-btn {
+            grid-column: 1 / -1;
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .gps-btn.active {
+            background: #218838;
+        }
+
+        .controls {
+            padding: 15px;
+            background: white;
+        }
+
+        .fuel-type-selector {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .fuel-btn {
+            padding: 12px 10px;
+            border: 2px solid #007AFF;
+            background: white;
+            color: #007AFF;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .fuel-btn.active {
+            background: #007AFF;
+            color: white;
+        }
+
+        .sort-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sort-label {
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .sort-btn {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: #f8f9fa;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .sort-btn.active {
+            background: #007AFF;
+            color: white;
+            border-color: #007AFF;
+        }
+
+        .stations-container {
+            padding: 15px;
+            max-height: 65vh;
+            overflow-y: auto;
+        }
+
+        .price-comparison {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .price-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .price-stat-label {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .price-stat-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .price-stat-value.lowest {
+            color: #4CAF50;
+        }
+
+        .price-stat-value.highest {
+            color: #dc3545;
+        }
+
+        .station-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+
+        .best-price-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .station-brand {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-left: 8px;
+        }
+
+        .brand-viada { background: #FF6B35; color: white; }
+        .brand-circlek { background: #E31E24; color: white; }
+        .brand-neste { background: #0066CC; color: white; }
+        .brand-emsi { background: #00A651; color: white; }
+        .brand-baltic { background: #003D7A; color: white; }
+        .brand-orlen { background: #E30613; color: white; }
+
+        .station-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .station-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            flex: 1;
+        }
+
+        .station-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007AFF;
+        }
+
+        .price-unit {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .station-address {
+            color: #666;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .station-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .station-distance {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .station-updated {
+            color: #888;
+            font-size: 12px;
+        }
+
+        .station-directions {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .info-message {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 15px;
+            font-size: 13px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>⛽ Kuro Kainos Lietuvoje</h1>
+            <p>Raskite pigiausias degalų kainas</p>
+        </div>
+
+        <div class="city-selector">
+            <div class="city-label">📍 Pasirinkite miestą:</div>
+            <div class="city-buttons">
+                <button class="city-btn gps-btn" onclick="tryGPS()" id="gps-btn">📡 Naudoti GPS</button>
+                <button class="city-btn active" onclick="selectCity('Vilnius')" id="city-Vilnius">Vilnius</button>
+                <button class="city-btn" onclick="selectCity('Kaunas')" id="city-Kaunas">Kaunas</button>
+                <button class="city-btn" onclick="selectCity('Klaipėda')" id="city-Klaipėda">Klaipėda</button>
+                <button class="city-btn" onclick="selectCity('Šiauliai')" id="city-Šiauliai">Šiauliai</button>
+                <button class="city-btn" onclick="selectCity('Panevėžys')" id="city-Panevėžys">Panevėžys</button>
+                <button class="city-btn" onclick="selectCity('Ukmergė')" id="city-Ukmergė">Ukmergė</button>
+                <button class="city-btn" onclick="selectCity('Alytus')" id="city-Alytus">Alytus</button>
+                <button class="city-btn" onclick="selectCity('Marijampolė')" id="city-Marijampolė">Marijampolė</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="fuel-type-selector">
+                <button class="fuel-btn active" onclick="selectFuel('petrol95')" id="btn-petrol95">⛽ 95</button>
+                <button class="fuel-btn" onclick="selectFuel('diesel')" id="btn-diesel">🚛 Dyzelinas</button>
+                <button class="fuel-btn" onclick="selectFuel('lpg')" id="btn-lpg">🔥 Dujos</button>
+            </div>
+
+            <div class="sort-controls">
+                <span class="sort-label">Rūšiuoti:</span>
+                <button class="sort-btn active" onclick="sortStations('price')" id="sort-price">💰 Kaina</button>
+                <button class="sort-btn" onclick="sortStations('distance')" id="sort-distance">📍 Atstumas</button>
+            </div>
+        </div>
+
+        <div id="info-container"></div>
+        <div id="stations-list" class="stations-container">
+            <div class="loading">Kraunama...</div>
+        </div>
+
+        <div class="footer">
+            <p>💡 Patarimas: Pridėkite šią programą į telefono ekraną - veiks kaip mobili programėlė!</p>
+            <p>📊 Duomenys atnaujinami reguliariai | <a href="https://github.com/YOUR-USERNAME/kuro-kainos-Lietuvoje" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
