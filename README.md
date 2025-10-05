@@ -2,7 +2,7 @@
 
 **Lietuviška internetinė programa, skirta pigiausioms degalų kainoms rasti šalia jūsų.**
 
-🔗 **Live Demo:** [View App](https://yourusername.github.io/fuel-price-lithuania/)
+🔗 **Live Demo:** [View App](https://linciuz.github.io/fuel-price-lithuania/)
 
 ![Fuel Price Finder Screenshot](https://img.shields.io/badge/Made%20in-Lithuania-yellow?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==)
 
@@ -32,7 +32,7 @@
 ### 1. **Paprasčiausias būdas (tiesiog atidarykite):**
 ```bash
 # Atsisiųskite projektą
-git clone https://github.com/yourusername/fuel-price-lithuania.git
+git clone https://github.com/linciuz/fuel-price-lithuania.git
 
 # Atidarykite failą naršyklėje
 open index.html
