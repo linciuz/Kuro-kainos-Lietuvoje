@@ -107,6 +107,8 @@ def fetch_ocpi():
             "lat": round(lat, 6), "lon": round(lon, 6),
             "name": (loc.get("name") or (loc.get("operator") or {}).get("name") or "").strip(),
             "operator": ((loc.get("operator") or {}).get("name") or "").strip(),
+            "address": (loc.get("address") or "").strip(),
+            "city": (loc.get("city") or "").strip(),
             "power_kw": round(max(powers), 1) if powers else None,
             "price": price,
             "sockets": len(loc.get("evses", [])) or None,
@@ -157,10 +159,13 @@ def fetch_osm():
         sockets = sum(int(re.search(r"\d+", str(v)).group()) for k, v in t.items()
                       if k.startswith("socket:") and not k.endswith(("output", "voltage", "current"))
                       and re.search(r"\d", str(v))) or None
+        street = " ".join(p for p in (t.get("addr:street", ""), t.get("addr:housenumber", "")) if p).strip()
+        city = (t.get("addr:city") or "").strip()
         out.append({
             "lat": round(el["lat"], 6), "lon": round(el["lon"], 6),
             "name": (t.get("name") or operator or "Įkrovimo stotelė").strip(),
             "operator": operator.strip(),
+            "address": street, "city": city,
             "power_kw": osm_power_kw(t),
             "price": None, "sockets": sockets, "ocpi_id": None, "source": "osm",
         })

@@ -8,6 +8,14 @@
       "lat": 55.753237,
       "lon": 24.312254,
       "label": "Viada, Pušaloto g. 191A, Panevėžys (patikrinta)"
+    },
+    {
+      "network_contains": "naftrus",
+      "address_contains": "Pievų g. 19",
+      "municipality_contains": "Raseinių",
+      "lat": 55.386231,
+      "lon": 23.042885,
+      "label": "Naftrus, Slabados k., Pievų g. 19, Raseinių r. (patikrinta)"
     }
   ]
 }

@@ -188,13 +188,15 @@ function renderListEv() {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
             const badge = evStatusBadge(c);
+            const addr = c.address ? `${c.address}${c.city ? ", " + c.city : ""}` : "";
             return `<div class="station-card">
                 ${dist}${badge}
                 <div class="station-header">
                     <div class="station-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
                     ${c.price != null ? `<div><span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span></div>` : ""}
                 </div>
-                ${info ? `<div class="station-address">${info}</div>` : ""}
+                ${addr ? `<div class="station-address">${addr}</div>` : ""}
+                ${info ? `<div class="station-muni">${info}</div>` : ""}
                 <div class="nav-row">${evNav(c)}</div>
             </div>`;
         }).join("");
@@ -213,7 +215,9 @@ function renderMapEv() {
         const icon = L.divIcon({ className: "", html: `<div class="${pinCls}">⚡</div>`, iconSize: null, iconAnchor: [11, 11] });
         const info = evInfo(c);
         const badge = evStatusBadge(c);
+        const addr = c.address ? `${c.address}${c.city ? ", " + c.city : ""}` : "";
         const popup = `<div class="popup-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
+            ${addr ? `<div class="popup-addr">${addr}</div>` : ""}
             ${badge ? `<div>${badge}</div>` : ""}
             ${c.price != null ? `<div class="popup-price">€${c.price.toFixed(2)}/kWh</div>` : ""}
             ${info ? `<div>${info}</div>` : ""}

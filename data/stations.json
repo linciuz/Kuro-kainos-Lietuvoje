@@ -5651,9 +5651,10 @@
       "petrol95": 1.67,
       "diesel": 1.62,
       "lpg": 0.69,
-      "lat": 55.386363,
-      "lon": 23.09675,
-      "approx": true
+      "lat": 55.386231,
+      "lon": 23.042885,
+      "approx": false,
+      "coord_source": "verified"
     },
     {
       "network": "UAB Naftrus",
