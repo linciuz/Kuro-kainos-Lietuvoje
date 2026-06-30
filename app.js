@@ -15,12 +15,11 @@ let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
 let EV = { chargers: [] };                     // OSM EV charging stations
-let showEv = false;
-let fuelType = "petrol95";
+let fuelType = "petrol95";    // 'petrol95' | 'diesel' | 'lpg' | 'ev'
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
 let userPos = null;           // {lat, lon} once geolocation granted
-let map = null, markersLayer = null, userMarker = null, evLayer = null;
+let map = null, markersLayer = null, userMarker = null;
 
 async function load() {
     try {
@@ -86,38 +85,78 @@ async function loadEv() {
         const res = await fetch("data/sources/ev_chargers.json", { cache: "no-store" });
         EV = res.ok ? await res.json() : { chargers: [] };
     } catch (e) { EV = { chargers: [] }; }
-    const btn = document.getElementById("ev-toggle");
-    if (btn && EV.chargers && EV.chargers.length) btn.textContent = `⚡ Įkrovimo stotelės (${EV.chargers.length})`;
 }
 
-function toggleEv() {
-    showEv = !showEv;
-    const btn = document.getElementById("ev-toggle");
-    if (btn) btn.classList.toggle("on", showEv);
-    renderEv();
+// --- EV charging mode (fuelType === "ev") -----------------------------------
+
+function getChargers() {
+    const q = (document.getElementById("search").value || "").toLowerCase().trim();
+    let rows = (EV.chargers || []).filter(c => c.lat != null && c.lon != null);
+    if (q) rows = rows.filter(c => ((c.operator || "") + " " + (c.name || "")).toLowerCase().includes(q));
+    if (userPos) rows.forEach(c => c._dist = haversine(userPos.lat, userPos.lon, c.lat, c.lon));
+    if (userPos) rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
+    else rows.sort((a, b) => (b.power_kw || 0) - (a.power_kw || 0));
+    return rows;
 }
 
-function renderEv() {
+function evInfo(c) {
+    return [c.power_kw ? `${c.power_kw} kW` : null,
+            c.price != null ? `€${c.price.toFixed(2)}/kWh` : null,
+            c.sockets ? `${c.sockets} jungtys` : null].filter(Boolean).join(" · ");
+}
+
+function evNav(c) {
+    const q = `${c.lat},${c.lon}`;
+    return `<a class="nav-btn nav-gmaps" href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">🗺️ Google Maps</a>
+            <a class="nav-btn nav-waze" href="https://waze.com/ul?ll=${q}&navigate=yes" target="_blank" rel="noopener">🚗 Waze</a>`;
+}
+
+function renderSummaryEv() {
+    const box = document.getElementById("summary");
+    box.style.display = "block";
+    const priced = (EV.chargers || []).filter(c => c.price != null).length;
+    box.innerHTML = `<div class="summary-title">⚡ Elektromobilių įkrovimo stotelės (${(EV.chargers || []).length})</div>
+        <div class="wholesale-ref">Šaltinis: OpenStreetMap · operatorius/galingumas – kur nurodyta;
+        kaina (€/kWh) prieinama tik ${priced} stotelėms (LT tinklai jos beveik neskelbia).</div>`;
+}
+
+function renderListEv() {
+    const list = document.getElementById("stations-list");
+    const rows = getChargers();
+    if (!rows.length) { list.innerHTML = `<div class="msg">Nieko nerasta.</div>`; return; }
+    list.innerHTML = `<div class="count-line">Rodoma stotelių: ${rows.length}${userPos ? " · arčiausios pirmos" : ""}</div>` +
+        rows.map(c => {
+            const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
+            const info = evInfo(c);
+            return `<div class="station-card">
+                ${dist}
+                <div class="station-header">
+                    <div class="station-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
+                    ${c.price != null ? `<div><span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span></div>` : ""}
+                </div>
+                ${info ? `<div class="station-address">${info}</div>` : ""}
+                <div class="nav-row">${evNav(c)}</div>
+            </div>`;
+        }).join("");
+}
+
+function renderMapEv() {
     ensureMap();
     if (!map) return;
-    if (!evLayer) evLayer = L.layerGroup().addTo(map);
-    evLayer.clearLayers();
-    if (!showEv) return;
-    (EV.chargers || []).forEach(c => {
-        if (c.lat == null || c.lon == null) return;
+    setTimeout(() => map.invalidateSize(), 0);
+    markersLayer.clearLayers();
+    const rows = getChargers();
+    const bounds = [];
+    rows.forEach(c => {
         const icon = L.divIcon({ className: "", html: `<div class="ev-pin">⚡</div>`, iconSize: null, iconAnchor: [11, 11] });
-        const info = [c.power_kw ? `${c.power_kw} kW` : null,
-                      c.price != null ? `€${c.price.toFixed(2)}/kWh` : null,
-                      c.sockets ? `${c.sockets} jungtys` : null].filter(Boolean).join(" · ");
-        const q = `${c.lat},${c.lon}`;
+        const info = evInfo(c);
         const popup = `<div class="popup-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
             ${info ? `<div>${info}</div>` : ""}
-            <div class="popup-nav">
-                <a class="nav-btn nav-gmaps" href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">🗺️ Maps</a>
-                <a class="nav-btn nav-waze" href="https://waze.com/ul?ll=${q}&navigate=yes" target="_blank" rel="noopener">🚗 Waze</a>
-            </div>`;
-        L.marker([c.lat, c.lon], { icon }).bindPopup(popup, { minWidth: 200 }).addTo(evLayer);
+            <div class="popup-nav">${evNav(c)}</div>`;
+        L.marker([c.lat, c.lon], { icon }).bindPopup(popup, { minWidth: 200 }).addTo(markersLayer);
+        bounds.push([c.lat, c.lon]);
     });
+    if (!userPos && bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
 }
 
 // An active report = reported AFTER the latest official LEA snapshot.
@@ -206,7 +245,7 @@ function setView(v) {
     document.getElementById("view-map").classList.toggle("active", v === "map");
     document.getElementById("list-view").style.display = v === "list" ? "block" : "none";
     document.getElementById("map-view").style.display = v === "map" ? "block" : "none";
-    if (v === "map") { ensureMap(); renderEv(); }
+    if (v === "map") ensureMap();
     render();
 }
 
@@ -282,6 +321,14 @@ function getRows() {
 // --- rendering -------------------------------------------------------------
 
 function render() {
+    if (fuelType === "ev") {
+        // EV mode: no fuel-price banner; chargers in list/map.
+        document.getElementById("change-banner").style.display = "none";
+        renderSummaryEv();
+        if (view === "map") renderMapEv();
+        else renderListEv();
+        return;
+    }
     renderBanner();
     renderSummary();
     if (view === "map") renderMap();

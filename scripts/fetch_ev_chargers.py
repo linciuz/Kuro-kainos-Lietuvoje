@@ -47,13 +47,17 @@ def overpass():
 
 
 def power_kw(tags):
-    """Best guess at max charging power (kW)."""
+    """Best guess at max charging power (kW). Some tags are in watts."""
     best = 0.0
     for k, v in tags.items():
         if "output" in k or k in ("maxpower", "charging_station:output"):
             m = re.search(r"(\d+(?:\.\d+)?)", str(v))
             if m:
-                best = max(best, float(m.group(1)))
+                val = float(m.group(1))
+                if val >= 1000:        # value given in watts -> kW
+                    val /= 1000.0
+                if 1 <= val <= 400:    # ignore implausible values
+                    best = max(best, val)
     return round(best, 1) if best else None
 
 

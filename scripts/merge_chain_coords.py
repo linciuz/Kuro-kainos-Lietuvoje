@@ -3,16 +3,21 @@
 Snap LEA stations onto the EXACT coordinates published by the chains themselves
 (data/sources/chain_stations.json from fetch_chain_stations.py).
 
-For every LEA station whose network matches a chain we have a directory for, we
-find the directory entry with the best address match (street + house number +
-town) and, if good enough, replace the geocoded lat/lon with the chain's exact
-coordinate (and mark approx=False, coord_source="chain"). This fixes the
-approximate town-centroid points for those chains.
+Two matching modes, chosen automatically per chain:
+  * ADDRESS match — when the chain directory carries street addresses
+    (Baltic Petroleum, Emsi, Neste): best street + house-number + town overlap.
+  * PROXIMITY match — when the directory has coordinates only (Circle K, Viada):
+    one-to-one greedy nearest-neighbour between the LEA geocoded point and the
+    chain's exact points, within a distance cap. Closest pairs are assigned
+    first, so dense city clusters resolve sensibly.
+
+Matched LEA stations get the exact lat/lon, approx=False, coord_source="chain".
 
 Run after geocode.py:  python scripts/merge_chain_coords.py
 """
 
 import json
+import math
 import os
 import re
 import sys
@@ -25,13 +30,16 @@ for _s in (sys.stdout, sys.stderr):
 
 STATIONS = os.path.join("data", "stations.json")
 CHAINS = os.path.join("data", "sources", "chain_stations.json")
-THRESHOLD = 0.45
+ADDR_THRESHOLD = 0.45
+PROX_KM = 1.5          # max LEA-geocode-to-exact distance for proximity matching
 
 # LEA network substring -> chain-directory network name.
 NET_MAP = {
     "baltic petroleum": "Baltic Petroleum",
     "emsi": "Emsi",
     "neste": "Neste",
+    "circle k": "Circle K",
+    "viada": "Viada",
 }
 
 
@@ -45,9 +53,8 @@ def deaccent(s):
 
 
 def norm(a):
-    a = deaccent(a)
-    a = a.replace("lietuva", " ")
-    a = re.sub(r"\b\d{5}\b", " ", a)          # postcodes
+    a = deaccent(a).replace("lietuva", " ")
+    a = re.sub(r"\b\d{5}\b", " ", a)
     a = re.sub(r"[^a-z0-9]+", " ", a)
     return re.sub(r"\s+", " ", a).strip()
 
@@ -60,18 +67,30 @@ def numbers(a):
     return set(re.findall(r"\b\d+\b", norm(a)))
 
 
-def score(lea_addr, dir_addr):
-    ta, tb = tokens(lea_addr), tokens(dir_addr)
+def addr_score(a, b):
+    ta, tb = tokens(a), tokens(b)
     if not ta or not tb:
         return 0.0
     jac = len(ta & tb) / len(ta | tb)
-    na, nb = numbers(lea_addr), numbers(dir_addr)
+    na, nb = numbers(a), numbers(b)
     if na and nb:
-        if na & nb:
-            jac += 0.15                       # same house number -> strong signal
-        else:
-            jac -= 0.30                       # different number -> likely different station
+        jac += 0.15 if (na & nb) else -0.30
     return jac
+
+
+def haversine(a_lat, a_lon, b_lat, b_lon):
+    R = 6371.0
+    dlat = math.radians(b_lat - a_lat)
+    dlon = math.radians(b_lon - a_lon)
+    h = (math.sin(dlat / 2) ** 2 +
+         math.cos(math.radians(a_lat)) * math.cos(math.radians(b_lat)) * math.sin(dlon / 2) ** 2)
+    return 2 * R * math.asin(math.sqrt(h))
+
+
+def snap(s, e):
+    s["lat"], s["lon"] = e["lat"], e["lon"]
+    s["approx"] = False
+    s["coord_source"] = "chain"
 
 
 def main():
@@ -86,28 +105,51 @@ def main():
     for c in directory:
         by_net.setdefault(c["network"], []).append(c)
 
-    overridden = 0
-    for s in lea["stations"]:
-        net = (s.get("network") or "").lower()
-        dirnet = next((dn for pat, dn in NET_MAP.items() if pat in net), None)
-        if not dirnet or dirnet not in by_net:
+    stations = lea["stations"]
+    for dirnet, entries in by_net.items():
+        lea_for = [s for s in stations
+                   if next((dn for pat, dn in NET_MAP.items()
+                            if pat in (s.get("network") or "").lower()), None) == dirnet]
+        if not lea_for:
             continue
-        la = s.get("address") or ""
-        best, best_sc = None, 0.0
-        for c in by_net[dirnet]:
-            sc = score(la, c["address"])
-            if sc > best_sc:
-                best_sc, best = sc, c
-        if best and best_sc >= THRESHOLD:
-            if s.get("lat") != best["lat"] or s.get("lon") != best["lon"]:
-                overridden += 1
-            s["lat"], s["lon"] = best["lat"], best["lon"]
-            s["approx"] = False
-            s["coord_source"] = "chain"
+        has_addr = any(e.get("address") for e in entries)
+
+        if has_addr:
+            n = 0
+            for s in lea_for:
+                best, best_sc = None, 0.0
+                for e in entries:
+                    sc = addr_score(s.get("address") or "", e.get("address") or "")
+                    if sc > best_sc:
+                        best_sc, best = sc, e
+                if best and best_sc >= ADDR_THRESHOLD:
+                    snap(s, best)
+                    n += 1
+            print(f"[cmp] {dirnet:18s} address-matched {n}/{len(lea_for)}")
+        else:
+            # one-to-one greedy nearest within PROX_KM
+            pairs = []
+            for si, s in enumerate(lea_for):
+                if s.get("lat") is None:
+                    continue
+                for ei, e in enumerate(entries):
+                    d = haversine(s["lat"], s["lon"], e["lat"], e["lon"])
+                    if d <= PROX_KM:
+                        pairs.append((d, si, ei))
+            pairs.sort()
+            used_s, used_e, n = set(), set(), 0
+            for d, si, ei in pairs:
+                if si in used_s or ei in used_e:
+                    continue
+                snap(lea_for[si], entries[ei])
+                used_s.add(si)
+                used_e.add(ei)
+                n += 1
+            print(f"[cmp] {dirnet:18s} proximity-matched {n}/{len(lea_for)}")
 
     json.dump(lea, open(STATIONS, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    snapped = sum(1 for s in lea["stations"] if s.get("coord_source") == "chain")
-    print(f"[ok] snapped {snapped} stations to exact chain coords ({overridden} changed)")
+    snapped = sum(1 for s in stations if s.get("coord_source") == "chain")
+    print(f"[ok] {snapped} LEA stations now on exact chain coords")
 
 
 if __name__ == "__main__":

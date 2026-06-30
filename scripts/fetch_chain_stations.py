@@ -118,10 +118,47 @@ def fetch_neste():
     return out
 
 
+def _coord_only(network, urls, source, pattern):
+    """Collect lat/lon pairs from a chain map page (no usable address — these
+    are proximity-matched to LEA stations later)."""
+    html = ""
+    for u in urls:
+        try:
+            html = http_text(u, UA_WEB)
+            if html:
+                break
+        except Exception:
+            continue
+    out, seen = [], set()
+    for la, lo in re.findall(pattern, html):
+        lat, lon = float(la), float(lo)
+        if not in_lt(lat, lon):
+            continue
+        key = (round(lat, 5), round(lon, 5))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({"network": network, "address": "", "city": "",
+                    "lat": round(lat, 6), "lon": round(lon, 6), "source": source})
+    return out
+
+
+def fetch_circle_k():
+    return _coord_only("Circle K", ["https://www.circlek.lt/degaliniu-sarasas"],
+                       "circlek-web", r'"lat":"(5[3-6]\.\d{3,})","lng":"(2[0-7]\.\d{3,})"')
+
+
+def fetch_viada():
+    return _coord_only("Viada", ["https://www.viada.lt/degalines/degaliniu-zemelapis/"],
+                       "viada-web", r'(5[3-6]\.\d{4,})["\s,:]{1,6}(2[0-7]\.\d{4,})')
+
+
 CHAINS = [
     ("Baltic Petroleum", fetch_baltic_petroleum),
     ("Emsi", fetch_emsi),
     ("Neste", fetch_neste),
+    ("Circle K", fetch_circle_k),
+    ("Viada", fetch_viada),
 ]
 
 

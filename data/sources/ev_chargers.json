@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T14:21:22Z",
+  "generated": "2026-06-30T15:05:37Z",
   "source": "OpenStreetMap (Overpass)",
   "count": 405,
   "with_price": 14,
@@ -351,7 +351,7 @@
       "lon": 21.382736,
       "name": "Kilena Fast Charger",
       "operator": "LAKD",
-      "power_kw": 50000.0,
+      "power_kw": 50.0,
       "price": null,
       "sockets": 3
     },
