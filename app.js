@@ -252,13 +252,19 @@ function flagFor(s) {
     return (m && m[fuelType]) || null;
 }
 
+const BIG_CITIES = ["Vilniaus m. sav.", "Kauno m. sav.", "Klaipėdos m. sav.",
+                    "Šiaulių m. sav.", "Panevėžio m. sav."];
+
 function initMunicipalities() {
     const sel = document.getElementById("muni-select");
-    const munis = [...new Set((DATA.stations || [])
-        .map(s => (s.municipality || "").trim()).filter(Boolean))]
-        .sort((a, b) => a.localeCompare(b, "lt"));
+    const all = [...new Set((DATA.stations || [])
+        .map(s => (s.municipality || "").trim()).filter(Boolean))];
+    const big = BIG_CITIES.filter(m => all.includes(m));
+    const rest = all.filter(m => !BIG_CITIES.includes(m)).sort((a, b) => a.localeCompare(b, "lt"));
+    const opt = m => `<option value="${m}">${m}</option>`;
     sel.innerHTML = '<option value="">Visos savivaldybės</option>' +
-        munis.map(m => `<option value="${m}">${m}</option>`).join("");
+        (big.length ? `<optgroup label="Didmiesčiai">${big.map(opt).join("")}</optgroup>` : "") +
+        `<optgroup label="Kitos savivaldybės">${rest.map(opt).join("")}</optgroup>`;
 }
 
 function updateChrome() {
@@ -327,6 +333,17 @@ function setView(v) {
 
 // --- geolocation -----------------------------------------------------------
 
+// Municipality of the station nearest the user — used to auto-scope the list.
+function nearestStationMuni(pos) {
+    let best = null, bestD = Infinity;
+    for (const s of (DATA.stations || [])) {
+        if (s.lat == null || s.lon == null || !s.municipality) continue;
+        const d = haversine(pos.lat, pos.lon, s.lat, s.lon);
+        if (d < bestD) { bestD = d; best = s.municipality; }
+    }
+    return best;
+}
+
 function locate() {
     const btn = document.getElementById("locate-btn");
     if (!navigator.geolocation) { btn.textContent = "📍 Vietos nustatymas nepalaikomas"; return; }
@@ -337,8 +354,14 @@ function locate() {
             userPos = { lat: pos.coords.latitude, lon: pos.coords.longitude };
             btn.disabled = false;
             btn.classList.add("on");
-            btn.textContent = "📍 Vieta nustatyta · artimiausios pirmos";
             document.getElementById("sort-dist").disabled = false;
+            // Auto-scope to the user's area so cheapest/priciest are LOCAL, not national.
+            const muni = nearestStationMuni(userPos);
+            const sel = document.getElementById("muni-select");
+            if (muni && [...sel.options].some(o => o.value === muni)) sel.value = muni;
+            btn.textContent = muni
+                ? `📍 ${muni} · artimiausios pirmos`
+                : "📍 Vieta nustatyta · artimiausios pirmos";
             setSort("dist");
             if (map) {
                 if (userMarker) userMarker.remove();
