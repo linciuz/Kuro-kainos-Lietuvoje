@@ -2,8 +2,8 @@
 __pycache__/
 *.pyc
 
-# LEA fetcher temp file
-_lea_tmp.xlsx
+# LEA fetcher / investigation temp files
+_*.xlsx
 
 # OS
 .DS_Store

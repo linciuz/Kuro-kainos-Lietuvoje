@@ -4,10 +4,15 @@
 //   locality,petrol95,diesel,lpg, lat, lon, approx}] }
 
 const FUEL_LABELS = { petrol95: "95 benzinas", diesel: "Dyzelinas", lpg: "Dujos (SND)" };
+
+// Set to your deployed Cloudflare Worker URL to enable "report a price".
+// Empty = feature hidden, app works as before. See worker/README.md.
+const REPORT_API = "";
 const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
+let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let fuelType = "petrol95";
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
@@ -33,9 +38,61 @@ async function load() {
         };
     }
     await loadDiscrepancies();
+    await loadReports();
     initMunicipalities();
     updateChrome();
     render();
+    // Delegate report-button clicks (station keys can contain quotes/pipes).
+    const list = document.getElementById("stations-list");
+    if (list && !list._reportBound) {
+        list._reportBound = true;
+        list.addEventListener("click", (e) => {
+            const b = e.target.closest(".report-btn");
+            if (b) reportPrice(b.dataset.key, fuelType);
+        });
+    }
+}
+
+function stationKey(s) {
+    return `${s.network || ""}|${s.address || ""}|${s.municipality || ""}`;
+}
+
+function escAttr(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+async function loadReports() {
+    if (!REPORT_API) return;
+    try {
+        const res = await fetch(REPORT_API + "/reports", { cache: "no-store" });
+        REPORTS = res.ok ? await res.json() : {};
+    } catch (e) { REPORTS = {}; }
+}
+
+// An active report = reported AFTER the latest official LEA snapshot.
+function reportFor(s) {
+    const r = REPORTS[stationKey(s)];
+    const rep = r && r[fuelType];
+    if (!rep) return null;
+    const officialTs = DATA.updated ? Date.parse(DATA.updated) : 0;
+    return rep.ts > officialTs ? rep : null;
+}
+
+async function reportPrice(key, fuel) {
+    if (!REPORT_API) return;
+    const input = prompt(`Įveskite ${FUEL_LABELS[fuel]} kainą (€/L), pvz. 1.699:`);
+    if (input == null) return;
+    const price = parseFloat(input.replace(",", "."));
+    if (!(price >= 0.3 && price <= 3.5)) { alert("Neteisinga kaina."); return; }
+    try {
+        const res = await fetch(REPORT_API + "/report", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ station: key, fuel, price }),
+        });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        (REPORTS[key] = REPORTS[key] || {})[fuel] = { price: Math.round(price * 1000) / 1000, ts: Date.now() };
+        render();
+    } catch (e) { alert("Nepavyko išsiųsti. Bandykite vėliau."); }
 }
 
 async function loadDiscrepancies() {
@@ -238,6 +295,10 @@ function renderList() {
             const fl = flagFor(s);
             const flagLine = fl ? `<div class="change-flag">⚠️ Kaina galėjo pasikeisti nuo 10:00 —
                 ${fl.source} tinkle ${fl.direction === "down" ? "pigiau" : "brangiau"}: €${fl.live.toFixed(3)}/L</div>` : "";
+            const rep = reportFor(s);
+            const repLine = rep ? `<div class="report-line">🗣️ Pranešta kaina: €${rep.price.toFixed(3)}/L —
+                gali skirtis nuo oficialios, kol bus atnaujinta</div>` : "";
+            const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">🗣️ Pranešti kainą</button>` : "";
             return `
             <div class="station-card">
                 ${isBest ? '<div class="best-price-badge">⭐ PIGIAUSIA</div>' : ''}${dist}
@@ -247,8 +308,9 @@ function renderList() {
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
                 <div class="station-muni">📍 ${s.municipality || ""}${approxTag}</div>
-                ${flagLine}
+                ${flagLine}${repLine}
                 <div class="nav-row">${navButtons(s)}</div>
+                ${repBtn ? `<div class="report-row">${repBtn}</div>` : ""}
             </div>`;
         }).join("");
 }
