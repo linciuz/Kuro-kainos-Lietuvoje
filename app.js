@@ -14,11 +14,13 @@ let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
+let EV = { chargers: [] };                     // OSM EV charging stations
+let showEv = false;
 let fuelType = "petrol95";
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
 let userPos = null;           // {lat, lon} once geolocation granted
-let map = null, markersLayer = null, userMarker = null;
+let map = null, markersLayer = null, userMarker = null, evLayer = null;
 
 async function load() {
     try {
@@ -41,6 +43,7 @@ async function load() {
     await loadDiscrepancies();
     await loadReports();
     await loadOrlenWholesale();
+    await loadEv();
     initMunicipalities();
     updateChrome();
     render();
@@ -76,6 +79,45 @@ async function loadOrlenWholesale() {
         const res = await fetch("data/sources/orlen_wholesale.json", { cache: "no-store" });
         ORLEN_WS = res.ok ? await res.json() : null;
     } catch (e) { ORLEN_WS = null; }
+}
+
+async function loadEv() {
+    try {
+        const res = await fetch("data/sources/ev_chargers.json", { cache: "no-store" });
+        EV = res.ok ? await res.json() : { chargers: [] };
+    } catch (e) { EV = { chargers: [] }; }
+    const btn = document.getElementById("ev-toggle");
+    if (btn && EV.chargers && EV.chargers.length) btn.textContent = `⚡ Įkrovimo stotelės (${EV.chargers.length})`;
+}
+
+function toggleEv() {
+    showEv = !showEv;
+    const btn = document.getElementById("ev-toggle");
+    if (btn) btn.classList.toggle("on", showEv);
+    renderEv();
+}
+
+function renderEv() {
+    ensureMap();
+    if (!map) return;
+    if (!evLayer) evLayer = L.layerGroup().addTo(map);
+    evLayer.clearLayers();
+    if (!showEv) return;
+    (EV.chargers || []).forEach(c => {
+        if (c.lat == null || c.lon == null) return;
+        const icon = L.divIcon({ className: "", html: `<div class="ev-pin">⚡</div>`, iconSize: null, iconAnchor: [11, 11] });
+        const info = [c.power_kw ? `${c.power_kw} kW` : null,
+                      c.price != null ? `€${c.price.toFixed(2)}/kWh` : null,
+                      c.sockets ? `${c.sockets} jungtys` : null].filter(Boolean).join(" · ");
+        const q = `${c.lat},${c.lon}`;
+        const popup = `<div class="popup-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
+            ${info ? `<div>${info}</div>` : ""}
+            <div class="popup-nav">
+                <a class="nav-btn nav-gmaps" href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">🗺️ Maps</a>
+                <a class="nav-btn nav-waze" href="https://waze.com/ul?ll=${q}&navigate=yes" target="_blank" rel="noopener">🚗 Waze</a>
+            </div>`;
+        L.marker([c.lat, c.lon], { icon }).bindPopup(popup, { minWidth: 200 }).addTo(evLayer);
+    });
 }
 
 // An active report = reported AFTER the latest official LEA snapshot.
@@ -164,7 +206,7 @@ function setView(v) {
     document.getElementById("view-map").classList.toggle("active", v === "map");
     document.getElementById("list-view").style.display = v === "list" ? "block" : "none";
     document.getElementById("map-view").style.display = v === "map" ? "block" : "none";
-    if (v === "map") ensureMap();
+    if (v === "map") { ensureMap(); renderEv(); }
     render();
 }
 
@@ -262,9 +304,15 @@ function renderSummary() {
     const box = document.getElementById("summary");
     if (!s) { box.style.display = "none"; return; }
     box.style.display = "block";
-    const ws = ORLEN_WS && ORLEN_WS.prices && ORLEN_WS.prices[fuelType];
-    const wsLine = ws ? `<div class="wholesale-ref">🏭 Orlen didmeninė (${ORLEN_WS.stated_date || ""}):
-        <b>€${ws.toFixed(3)}/L</b> — be antkainio, <i>ne degalinės kaina</i></div>` : "";
+    const WS_LABELS = { petrol95: "95", diesel: "Dyzelinas", diesel_agri: "Agro", lpg: "Dujos" };
+    let wsLine = "";
+    if (ORLEN_WS && ORLEN_WS.prices) {
+        const parts = ["petrol95", "diesel", "diesel_agri", "lpg"]
+            .filter(k => ORLEN_WS.prices[k] != null)
+            .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
+        if (parts.length) wsLine = `<div class="wholesale-ref">🏭 Orlen didmeninė kaina
+            (${ORLEN_WS.stated_date || ""}): ${parts.join(" · ")} <br><i>be antkainio — ne degalinės kaina</i></div>`;
+    }
     box.innerHTML = `
         <div class="summary-title">${FUEL_LABELS[fuelType]} — šalies kainos (oficialios)</div>
         <div class="summary-stats">

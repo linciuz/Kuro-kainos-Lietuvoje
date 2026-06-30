@@ -1,0 +1,3653 @@
+{
+  "generated": "2026-06-30T14:21:22Z",
+  "source": "OpenStreetMap (Overpass)",
+  "count": 405,
+  "with_price": 14,
+  "chargers": [
+    {
+      "lat": 54.668651,
+      "lon": 25.234558,
+      "name": "Fakto auto",
+      "operator": "Fakto auto",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.78371,
+      "lon": 25.275962,
+      "name": "UAB \"Arginta\"",
+      "operator": "UAB \"Arginta\"",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.688509,
+      "lon": 25.278184,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.71518,
+      "lon": 25.276245,
+      "name": "PPC „Ozas“",
+      "operator": "PPC „Ozas“",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.654691,
+      "lon": 25.266587,
+      "name": "UAB „Transmitto“",
+      "operator": "UAB „Transmitto“",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.941791,
+      "lon": 24.006696,
+      "name": "UAB „Elinta“ Homebox",
+      "operator": "UAB „Elinta“",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.941904,
+      "lon": 24.006951,
+      "name": "UAB „Elinta“ įkrovimo stotelė",
+      "operator": "UAB „Elinta“",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.898654,
+      "lon": 23.907119,
+      "name": "Kauno m. sav. įkrovimo stotelė",
+      "operator": "Kauno m. savivaldybė",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.762707,
+      "lon": 25.198508,
+      "name": "Krovimo stotelė",
+      "operator": "ABB",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.787844,
+      "lon": 24.703451,
+      "name": "Abromiškės",
+      "operator": "",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.741904,
+      "lon": 25.223347,
+      "name": "KIA",
+      "operator": "KIA",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.940481,
+      "lon": 23.890657,
+      "name": "PLC „Mega“",
+      "operator": "PLC „Mega“",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.116087,
+      "lon": 24.107606,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.468964,
+      "lon": 22.690162,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.687612,
+      "lon": 21.156793,
+      "name": "Arenos įkrovimo aikštelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.729185,
+      "lon": 21.124549,
+      "name": "Studlendo įkrovimo aikštelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.681008,
+      "lon": 25.283537,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.68219,
+      "lon": 25.250413,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.919824,
+      "lon": 23.94931,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.737303,
+      "lon": 25.231304,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.77288,
+      "lon": 24.817539,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.74444,
+      "lon": 24.334848,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.72983,
+      "lon": 24.311686,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.302709,
+      "lon": 21.008758,
+      "name": "Inbalance Grid",
+      "operator": "Inbalance Grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.273166,
+      "lon": 24.016569,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.939757,
+      "lon": 23.325603,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.928168,
+      "lon": 23.30715,
+      "name": "Saulės miestas",
+      "operator": "Inbalance",
+      "power_kw": null,
+      "price": 0.39,
+      "sockets": null
+    },
+    {
+      "lat": 54.691821,
+      "lon": 25.287826,
+      "name": "Unipark",
+      "operator": "Unipark",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.676208,
+      "lon": 25.257682,
+      "name": "SPARK",
+      "operator": "SPARK",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.669769,
+      "lon": 25.259833,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.71528,
+      "lon": 25.245936,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.712872,
+      "lon": 25.303891,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.705232,
+      "lon": 21.132312,
+      "name": "Klaipėdos Savivaldybė",
+      "operator": "Klaipėdos Savivaldybė",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.227483,
+      "lon": 23.546559,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.929644,
+      "lon": 24.02118,
+      "name": "LAKD",
+      "operator": "LAKD",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.411966,
+      "lon": 22.829643,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.740672,
+      "lon": 25.275909,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.912984,
+      "lon": 23.940009,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 24.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.733454,
+      "lon": 21.382736,
+      "name": "Kilena Fast Charger",
+      "operator": "LAKD",
+      "power_kw": 50000.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 55.692986,
+      "lon": 21.153595,
+      "name": "Imbalance Grid",
+      "operator": "Imbalance Grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 56.157694,
+      "lon": 25.519487,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.314563,
+      "lon": 24.779809,
+      "name": "Elektromobilių įkrovimo aikštelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.37787,
+      "lon": 22.930752,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 1
+    },
+    {
+      "lat": 55.568714,
+      "lon": 22.177832,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.684352,
+      "lon": 21.144786,
+      "name": "Fast charger Renerga",
+      "operator": "Renerga",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.580473,
+      "lon": 24.549045,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.939748,
+      "lon": 23.32565,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.084276,
+      "lon": 25.35223,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.632765,
+      "lon": 24.935409,
+      "name": "Ignitis ON Trakai - Turgus",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.784611,
+      "lon": 24.659466,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.671124,
+      "lon": 25.259218,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.900049,
+      "lon": 23.887379,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 55.838336,
+      "lon": 24.9743,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.907804,
+      "lon": 23.264822,
+      "name": "autoPildyk",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.07318,
+      "lon": 24.281675,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.077391,
+      "lon": 24.274058,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.301047,
+      "lon": 20.986502,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.542194,
+      "lon": 21.122092,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.703267,
+      "lon": 25.22299,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.70223,
+      "lon": 25.213918,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.708606,
+      "lon": 25.314545,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.690037,
+      "lon": 25.2638,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.673992,
+      "lon": 25.285551,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.716984,
+      "lon": 25.223082,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.678519,
+      "lon": 25.293156,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.698134,
+      "lon": 25.265643,
+      "name": "Forum Palace",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.946215,
+      "lon": 24.051814,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.395974,
+      "lon": 24.044116,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.685024,
+      "lon": 25.293313,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.642976,
+      "lon": 25.274748,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.920233,
+      "lon": 23.955153,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.671238,
+      "lon": 25.237684,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.67614,
+      "lon": 25.266644,
+      "name": "Phoenix Contact",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.942637,
+      "lon": 24.005897,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 54.942543,
+      "lon": 24.005332,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.90396,
+      "lon": 23.949645,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.672863,
+      "lon": 25.274012,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.606998,
+      "lon": 24.027096,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.603505,
+      "lon": 24.022365,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.669503,
+      "lon": 25.095953,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.396453,
+      "lon": 24.050499,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.934227,
+      "lon": 23.965675,
+      "name": "Inbalance Grid „Šalia kelio A1, 96,62km“",
+      "operator": "Inbalance",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.903162,
+      "lon": 23.957617,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.570062,
+      "lon": 22.176127,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.938793,
+      "lon": 23.90048,
+      "name": "ENSTO",
+      "operator": "ENSTO",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.67984,
+      "lon": 25.258399,
+      "name": "Helios City",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 54.692091,
+      "lon": 25.245929,
+      "name": "Ignitis",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 54.955882,
+      "lon": 23.042514,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.223039,
+      "lon": 23.557497,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.754357,
+      "lon": 25.280965,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.751525,
+      "lon": 25.280279,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.752926,
+      "lon": 25.281174,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.75084,
+      "lon": 25.280418,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.622807,
+      "lon": 25.111415,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.669246,
+      "lon": 25.210177,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.674236,
+      "lon": 25.20144,
+      "name": "Ignitis Charging station",
+      "operator": "Ignitis ON",
+      "power_kw": 45.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 55.127074,
+      "lon": 24.403565,
+      "name": "A6 įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.073354,
+      "lon": 24.255824,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.677413,
+      "lon": 25.208198,
+      "name": "autoPilDYK",
+      "operator": "autoPilDYK",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.674149,
+      "lon": 25.223574,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.724757,
+      "lon": 25.341916,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.677876,
+      "lon": 25.225573,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.902643,
+      "lon": 23.928822,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.889401,
+      "lon": 23.919527,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.899858,
+      "lon": 23.922441,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.925841,
+      "lon": 23.95024,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.689591,
+      "lon": 25.275745,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.789374,
+      "lon": 24.67512,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.94216,
+      "lon": 24.006459,
+      "name": "Kaunas Supercharger",
+      "operator": "Tesla",
+      "power_kw": 250.0,
+      "price": null,
+      "sockets": 16
+    },
+    {
+      "lat": 54.9158,
+      "lon": 23.986324,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.672535,
+      "lon": 25.2212,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.949384,
+      "lon": 25.590124,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.668079,
+      "lon": 25.175094,
+      "name": "McDonalds",
+      "operator": "McDonalds",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.318591,
+      "lon": 23.136478,
+      "name": "EV Kalvarija, A5 95 km: A5 (Kaunas–Marijampolė–Suvalkai*) - 95 km.",
+      "operator": "LAKD",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.597327,
+      "lon": 26.422152,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.695617,
+      "lon": 25.259453,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.695679,
+      "lon": 25.257763,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 55.675092,
+      "lon": 22.937313,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.719993,
+      "lon": 25.285168,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.906253,
+      "lon": 23.955324,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.721003,
+      "lon": 25.282508,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.896255,
+      "lon": 23.907143,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.890218,
+      "lon": 23.929396,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 11.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.894009,
+      "lon": 23.916213,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": 0.3,
+      "sockets": 2
+    },
+    {
+      "lat": 54.894009,
+      "lon": 23.916156,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": 0.3,
+      "sockets": 2
+    },
+    {
+      "lat": 54.89401,
+      "lon": 23.916104,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": 0.3,
+      "sockets": 2
+    },
+    {
+      "lat": 54.894011,
+      "lon": 23.916041,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": 0.3,
+      "sockets": 2
+    },
+    {
+      "lat": 54.8938,
+      "lon": 23.915606,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": 0.3,
+      "sockets": 2
+    },
+    {
+      "lat": 54.891449,
+      "lon": 23.914946,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.891407,
+      "lon": 23.914971,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 11.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.889418,
+      "lon": 23.919601,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 11.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.736109,
+      "lon": 25.223526,
+      "name": "Spark",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.874299,
+      "lon": 23.913122,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.678333,
+      "lon": 25.277105,
+      "name": "Spark",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.919032,
+      "lon": 21.078589,
+      "name": "Lidl",
+      "operator": "Elektrum",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.716827,
+      "lon": 25.276633,
+      "name": "UniPark",
+      "operator": "Unipark",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.645586,
+      "lon": 24.934244,
+      "name": "Ignitis ON - Menų mokykla",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.716986,
+      "lon": 25.277907,
+      "name": "eParking.fi",
+      "operator": "",
+      "power_kw": 14.1,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.69903,
+      "lon": 25.259432,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.698073,
+      "lon": 25.265301,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.698074,
+      "lon": 25.269642,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.693798,
+      "lon": 25.275099,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.678504,
+      "lon": 25.285697,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 320.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.681055,
+      "lon": 25.298629,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.686256,
+      "lon": 25.259285,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.682287,
+      "lon": 25.268939,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.676275,
+      "lon": 25.284096,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.67073,
+      "lon": 25.259723,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.673299,
+      "lon": 25.248064,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.698466,
+      "lon": 25.247022,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.693539,
+      "lon": 25.289086,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 8
+    },
+    {
+      "lat": 54.699188,
+      "lon": 25.286532,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.697691,
+      "lon": 25.299954,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.69907,
+      "lon": 25.308541,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.67258,
+      "lon": 25.222015,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 7
+    },
+    {
+      "lat": 54.692091,
+      "lon": 25.215671,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.685341,
+      "lon": 25.205641,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.661717,
+      "lon": 25.272908,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.651878,
+      "lon": 25.282018,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.643896,
+      "lon": 25.20017,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.662336,
+      "lon": 25.342797,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.692641,
+      "lon": 25.409646,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.649267,
+      "lon": 24.930287,
+      "name": "Ignitis ON Trakai - Pilis",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.643452,
+      "lon": 24.935379,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.234961,
+      "lon": 23.516836,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.707303,
+      "lon": 25.175199,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.711443,
+      "lon": 25.304257,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.704047,
+      "lon": 25.276436,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.717008,
+      "lon": 25.282205,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.719052,
+      "lon": 25.299035,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.71679,
+      "lon": 25.245092,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.729505,
+      "lon": 25.270719,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.730837,
+      "lon": 25.247003,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.727296,
+      "lon": 25.233539,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.73482,
+      "lon": 25.221149,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.734471,
+      "lon": 25.338179,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.740275,
+      "lon": 25.275585,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.753024,
+      "lon": 25.284256,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.773609,
+      "lon": 25.272413,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.776797,
+      "lon": 25.336471,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 55.252508,
+      "lon": 25.984492,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.197537,
+      "lon": 23.625755,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.707548,
+      "lon": 25.22482,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.870138,
+      "lon": 23.949528,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.870075,
+      "lon": 23.949084,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.939124,
+      "lon": 23.892602,
+      "name": "PLC „Mega“ įkrovimo stotelės",
+      "operator": "AutoPildyk",
+      "power_kw": null,
+      "price": null,
+      "sockets": 8
+    },
+    {
+      "lat": 54.7037,
+      "lon": 25.278711,
+      "name": "Spark",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.919756,
+      "lon": 23.950465,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.695575,
+      "lon": 25.259082,
+      "name": "Spark",
+      "operator": "Spark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.7151,
+      "lon": 25.278287,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.719276,
+      "lon": 25.299753,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.903738,
+      "lon": 23.957125,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.90317,
+      "lon": 23.984273,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.731525,
+      "lon": 25.246922,
+      "name": "Spark",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.91883,
+      "lon": 23.952143,
+      "name": "uniPark",
+      "operator": "uniPark",
+      "power_kw": null,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 56.004547,
+      "lon": 22.933411,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.933278,
+      "lon": 23.817404,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.723962,
+      "lon": 25.319644,
+      "name": "Inbalance grid",
+      "operator": "Inbalance grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.819116,
+      "lon": 23.857523,
+      "name": "Ionity Garliava",
+      "operator": "Ionity",
+      "power_kw": 350.0,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 55.10602,
+      "lon": 23.780123,
+      "name": "UniPark",
+      "operator": "UniPark",
+      "power_kw": 100.0,
+      "price": 0.89,
+      "sockets": 3
+    },
+    {
+      "lat": 55.249319,
+      "lon": 24.764748,
+      "name": "Ukmergės rajono savivaldybės administracija",
+      "operator": "Ukmergės rajono savivaldybės administracija",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.686016,
+      "lon": 25.259426,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.924066,
+      "lon": 23.940067,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.930918,
+      "lon": 23.933049,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 120.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.938277,
+      "lon": 23.902485,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.938279,
+      "lon": 23.902393,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": 1
+    },
+    {
+      "lat": 54.91692,
+      "lon": 23.951997,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.928532,
+      "lon": 23.907736,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.672587,
+      "lon": 24.336012,
+      "name": "Ionity Aplinkkelis",
+      "operator": "Ionity",
+      "power_kw": 350.0,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 54.255347,
+      "lon": 24.543526,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 55.685465,
+      "lon": 21.128955,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.907658,
+      "lon": 23.904924,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.735999,
+      "lon": 25.221166,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.928803,
+      "lon": 23.971864,
+      "name": "Ignitis ON Hesburger Murava",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.710209,
+      "lon": 25.264702,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.709982,
+      "lon": 25.213699,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.909005,
+      "lon": 21.069149,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.959553,
+      "lon": 21.145188,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.646506,
+      "lon": 25.265256,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.722941,
+      "lon": 25.336348,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.484255,
+      "lon": 22.587155,
+      "name": "Ionity Kryžkalnis",
+      "operator": "Ionity",
+      "power_kw": 350.0,
+      "price": null,
+      "sockets": 6
+    },
+    {
+      "lat": 55.895629,
+      "lon": 21.237208,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 1
+    },
+    {
+      "lat": 54.709507,
+      "lon": 25.1894,
+      "name": "Vilniaus apšvietimas",
+      "operator": "Vilniaus apšvietimas",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.754348,
+      "lon": 25.261863,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.752273,
+      "lon": 25.264761,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.647369,
+      "lon": 25.276488,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.658222,
+      "lon": 26.052469,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.702797,
+      "lon": 25.231599,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.48473,
+      "lon": 25.058484,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.624165,
+      "lon": 25.110874,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 5
+    },
+    {
+      "lat": 54.705126,
+      "lon": 25.272551,
+      "name": "Spark",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.730595,
+      "lon": 25.332283,
+      "name": "Lidl",
+      "operator": "Lidl",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.713758,
+      "lon": 25.302641,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.737617,
+      "lon": 25.267713,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.933586,
+      "lon": 23.943352,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.404775,
+      "lon": 24.02191,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.8494,
+      "lon": 24.976389,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.559025,
+      "lon": 23.34911,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.553517,
+      "lon": 23.346396,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.701311,
+      "lon": 25.29202,
+      "name": "Transporto Kompetencijų agentūra",
+      "operator": "Transporto Kompetencijų agentūra",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.525687,
+      "lon": 25.118001,
+      "name": "Ignitis ON Maxima Anykščiai",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": 22
+    },
+    {
+      "lat": 54.36445,
+      "lon": 24.836574,
+      "name": "Eleport Valkininkai",
+      "operator": "Eleport",
+      "power_kw": 300.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.914177,
+      "lon": 23.98649,
+      "name": "Eleport Burger King",
+      "operator": "Eleport",
+      "power_kw": 11.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.728848,
+      "lon": 25.270339,
+      "name": "Spark",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.658794,
+      "lon": 25.157453,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.64398,
+      "lon": 25.047044,
+      "name": "IKI",
+      "operator": "IKI",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.645664,
+      "lon": 25.048613,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.686068,
+      "lon": 25.05374,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.895091,
+      "lon": 21.234342,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 56.122819,
+      "lon": 24.471148,
+      "name": "Inbalance",
+      "operator": "Inbalance",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.73886,
+      "lon": 24.341201,
+      "name": "Dentavita",
+      "operator": "Dentavita",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.727354,
+      "lon": 24.379954,
+      "name": "IKI Dembava",
+      "operator": "IKI Dembava",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.726946,
+      "lon": 24.363022,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.287638,
+      "lon": 23.974162,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.709584,
+      "lon": 25.187913,
+      "name": "Eldrive",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.649847,
+      "lon": 25.279858,
+      "name": "Decathlon",
+      "operator": "Decathlon",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.673248,
+      "lon": 25.27504,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.675403,
+      "lon": 25.279224,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.652675,
+      "lon": 25.303908,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.674334,
+      "lon": 21.174666,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.723712,
+      "lon": 23.600321,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.927617,
+      "lon": 23.317483,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.33661,
+      "lon": 26.131923,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.525086,
+      "lon": 25.125628,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.725783,
+      "lon": 25.328002,
+      "name": "Vilniaus apšvietimas",
+      "operator": "Vilniaus apšvietimas",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.846535,
+      "lon": 23.879983,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.846545,
+      "lon": 23.879893,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 56.025946,
+      "lon": 21.07611,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.658509,
+      "lon": 25.156131,
+      "name": "Vilniaus apšvietimas",
+      "operator": "Vilniaus apšvietimas",
+      "power_kw": 100.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.93473,
+      "lon": 23.862622,
+      "name": "Lidl Vijūkai",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.916981,
+      "lon": 24.038278,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.967056,
+      "lon": 24.071036,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.934878,
+      "lon": 23.988164,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.932769,
+      "lon": 23.98943,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.932893,
+      "lon": 23.989567,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.932925,
+      "lon": 23.989293,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.933572,
+      "lon": 23.988299,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.933898,
+      "lon": 23.988006,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.93324,
+      "lon": 23.817169,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.930549,
+      "lon": 23.884816,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.915133,
+      "lon": 23.860862,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.563636,
+      "lon": 23.358206,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 11.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.568144,
+      "lon": 23.361554,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.566653,
+      "lon": 23.363577,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 180.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.558162,
+      "lon": 23.34832,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 60.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.557237,
+      "lon": 23.35206,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.556474,
+      "lon": 23.363478,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 60.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.553669,
+      "lon": 23.373041,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.551952,
+      "lon": 23.386461,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 60.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.5639,
+      "lon": 23.33354,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 60.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.569605,
+      "lon": 23.338833,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.550651,
+      "lon": 23.347732,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.546348,
+      "lon": 23.346898,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.548028,
+      "lon": 23.345341,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 60.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.26007,
+      "lon": 22.299663,
+      "name": "Krovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.266875,
+      "lon": 22.310098,
+      "name": "Krovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.25585,
+      "lon": 22.293619,
+      "name": "Krovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.498464,
+      "lon": 25.601041,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.702413,
+      "lon": 21.136311,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.958602,
+      "lon": 23.862462,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.699356,
+      "lon": 21.137487,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.647033,
+      "lon": 25.101494,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.830455,
+      "lon": 24.987273,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.925111,
+      "lon": 23.929247,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.674705,
+      "lon": 25.252933,
+      "name": "Inbalance Grid",
+      "operator": "Inbalance Grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.740047,
+      "lon": 25.225893,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.649604,
+      "lon": 24.928813,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.702976,
+      "lon": 25.218609,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.726424,
+      "lon": 25.298918,
+      "name": "Inbalance grid",
+      "operator": "Inbalance grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.926279,
+      "lon": 23.949078,
+      "name": "Inbalance grid",
+      "operator": "Inbalance grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 55.836083,
+      "lon": 24.977096,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.836146,
+      "lon": 24.977079,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.83642,
+      "lon": 24.993239,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.836401,
+      "lon": 24.993253,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.279832,
+      "lon": 23.340903,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 200.0,
+      "price": null,
+      "sockets": 20
+    },
+    {
+      "lat": 54.604898,
+      "lon": 25.260613,
+      "name": "Lidl Charging Station",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.909158,
+      "lon": 23.92843,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.646129,
+      "lon": 25.051872,
+      "name": "Enefit",
+      "operator": "Enefit",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.646163,
+      "lon": 25.051836,
+      "name": "Enefit",
+      "operator": "Enefit",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.348517,
+      "lon": 21.471238,
+      "name": "Elinta",
+      "operator": "Elinta",
+      "power_kw": null,
+      "price": 0.25,
+      "sockets": 2
+    },
+    {
+      "lat": 54.52119,
+      "lon": 24.834761,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 45.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.678583,
+      "lon": 25.255498,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.658597,
+      "lon": 25.153979,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.748413,
+      "lon": 24.932731,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.778811,
+      "lon": 25.274918,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.82518,
+      "lon": 25.353173,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.915509,
+      "lon": 23.987436,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.915111,
+      "lon": 23.986431,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.915491,
+      "lon": 23.986442,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.89359,
+      "lon": 23.814352,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.931258,
+      "lon": 23.722351,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.925142,
+      "lon": 23.962914,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.925047,
+      "lon": 23.963043,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.935095,
+      "lon": 23.988635,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.340993,
+      "lon": 21.4518,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.768106,
+      "lon": 24.296917,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": 200.0,
+      "price": null,
+      "sockets": 20
+    },
+    {
+      "lat": 54.954179,
+      "lon": 23.026556,
+      "name": "Aibė Kudirkos g. 13",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.753114,
+      "lon": 25.28213,
+      "name": "Ignitis",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.715331,
+      "lon": 25.229054,
+      "name": "Neste",
+      "operator": "Neste",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.561408,
+      "lon": 23.35419,
+      "name": "Enefit",
+      "operator": "Enefit",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.400143,
+      "lon": 21.286653,
+      "name": "Latvenergo AS",
+      "operator": "Latvenergo AS",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.464382,
+      "lon": 22.685214,
+      "name": "Inbalance grid",
+      "operator": "Inbalance grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.715204,
+      "lon": 25.246596,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.07909,
+      "lon": 23.275389,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.70658,
+      "lon": 21.138272,
+      "name": "Ignitis",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.723769,
+      "lon": 25.296479,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.72377,
+      "lon": 25.296391,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.711352,
+      "lon": 25.168833,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.252853,
+      "lon": 22.303905,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.252093,
+      "lon": 22.289877,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.517181,
+      "lon": 21.237142,
+      "name": "Ignitis on",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.623164,
+      "lon": 25.110927,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.37843,
+      "lon": 25.028113,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.461541,
+      "lon": 22.696248,
+      "name": "Inbalancegrid",
+      "operator": "Inbalancegrid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.724215,
+      "lon": 25.254718,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.724189,
+      "lon": 25.254717,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.724167,
+      "lon": 25.254717,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.252983,
+      "lon": 22.298668,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.923662,
+      "lon": 23.962465,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.923648,
+      "lon": 23.962418,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.677499,
+      "lon": 25.211033,
+      "name": "UAB Vilniaus apšvietimas",
+      "operator": "UAB Vilniaus apšvietimas",
+      "power_kw": 7.0,
+      "price": 0.29,
+      "sockets": 1
+    },
+    {
+      "lat": 54.677608,
+      "lon": 25.211508,
+      "name": "UAB Vilniaus apšvietimas",
+      "operator": "UAB Vilniaus apšvietimas",
+      "power_kw": 7.0,
+      "price": 0.29,
+      "sockets": 1
+    },
+    {
+      "lat": 54.67694,
+      "lon": 25.208876,
+      "name": "UAB Vilniaus apšvietimas",
+      "operator": "UAB Vilniaus apšvietimas",
+      "power_kw": 7.0,
+      "price": 0.29,
+      "sockets": 1
+    },
+    {
+      "lat": 54.677017,
+      "lon": 25.209171,
+      "name": "UAB Vilniaus apšvietimas",
+      "operator": "UAB Vilniaus apšvietimas",
+      "power_kw": 7.0,
+      "price": 0.29,
+      "sockets": 1
+    },
+    {
+      "lat": 54.734312,
+      "lon": 25.246366,
+      "name": "Inbalance grid",
+      "operator": "Inbalance grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.73193,
+      "lon": 25.247001,
+      "name": "Eldrive",
+      "operator": "Eldrive",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.728034,
+      "lon": 25.240671,
+      "name": "Eleport",
+      "operator": "Eleport",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.717229,
+      "lon": 25.237985,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.718289,
+      "lon": 25.237277,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.733801,
+      "lon": 25.247302,
+      "name": "Inbalance grid",
+      "operator": "Inbalance grid",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.729826,
+      "lon": 25.245899,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.653286,
+      "lon": 25.278887,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.342539,
+      "lon": 21.457724,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.81278,
+      "lon": 25.272886,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 56.24112,
+      "lon": 24.413262,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "power_kw": 180.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 55.039261,
+      "lon": 24.959278,
+      "name": "Elinta",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.046055,
+      "lon": 24.942719,
+      "name": "Enefit",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.046088,
+      "lon": 24.942643,
+      "name": "Enefit",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.038373,
+      "lon": 24.956936,
+      "name": "Ignitis",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.038338,
+      "lon": 24.957044,
+      "name": "Ignitis",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.03707,
+      "lon": 24.961629,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 55.670707,
+      "lon": 24.348604,
+      "name": "Ignitis ON Hesburger Panevėžio apl.",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 5
+    },
+    {
+      "lat": 54.925677,
+      "lon": 23.967025,
+      "name": "Ignitis ON Parduotuvė „Dubingiai“",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.755891,
+      "lon": 25.286267,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.668514,
+      "lon": 25.104775,
+      "name": "NorfaXL",
+      "operator": "Enefit",
+      "power_kw": 320.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.66818,
+      "lon": 25.103722,
+      "name": "Norfa XL",
+      "operator": "Enefit",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.669727,
+      "lon": 25.263392,
+      "name": "LTLab Charging Hub",
+      "operator": "Stuart Energy",
+      "power_kw": 300.0,
+      "price": null,
+      "sockets": 5
+    },
+    {
+      "lat": 54.727602,
+      "lon": 25.267314,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.728825,
+      "lon": 25.236531,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.731332,
+      "lon": 25.246531,
+      "name": "eleport",
+      "operator": "eleport",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.929586,
+      "lon": 23.978834,
+      "name": "Inbalance Grid „Porsche Kaunas“",
+      "operator": "Inbalance",
+      "power_kw": 300.0,
+      "price": null,
+      "sockets": 3
+    },
+    {
+      "lat": 54.716385,
+      "lon": 25.277264,
+      "name": "UniPark",
+      "operator": "Unipark",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.627848,
+      "lon": 24.945946,
+      "name": "Enefit Volt",
+      "operator": "Enefit",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.627866,
+      "lon": 24.945874,
+      "name": "Enefit Volt",
+      "operator": "Enefit",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    },
+    {
+      "lat": 54.934965,
+      "lon": 23.967133,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": null,
+      "price": 0.44,
+      "sockets": null
+    },
+    {
+      "lat": 54.934929,
+      "lon": 23.967125,
+      "name": "Elektrum",
+      "operator": "Elektrum",
+      "power_kw": null,
+      "price": 0.44,
+      "sockets": null
+    },
+    {
+      "lat": 55.386001,
+      "lon": 22.90333,
+      "name": "Ignitis ON Vėjukai HUB",
+      "operator": "Ignitis ON",
+      "power_kw": 400.0,
+      "price": null,
+      "sockets": 12
+    },
+    {
+      "lat": 54.909511,
+      "lon": 23.973395,
+      "name": "Ignitis ON Kovo 11-osios g. 31A",
+      "operator": "Ignitis ON",
+      "power_kw": 200.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.900778,
+      "lon": 23.96756,
+      "name": "Ignitis ON Hesburger Baršausko",
+      "operator": "Ignitis ON",
+      "power_kw": 149.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.912521,
+      "lon": 23.961536,
+      "name": "Ignitis ON Hesburger Taikos pr.",
+      "operator": "Ignitis ON",
+      "power_kw": 200.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.915423,
+      "lon": 23.962586,
+      "name": "Ignitis ON Maxima V. Krėvės pr.",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.256943,
+      "lon": 24.547837,
+      "name": "Ignitis ON Vilniaus g. 6",
+      "operator": "Ignitis ON",
+      "power_kw": 40.0,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.21123,
+      "lon": 24.568943,
+      "name": "Ignitis ON Iki Varėna",
+      "operator": "Ignitis ON",
+      "power_kw": 150.0,
+      "price": null,
+      "sockets": 4
+    },
+    {
+      "lat": 54.201734,
+      "lon": 24.347031,
+      "name": "Vila Ula",
+      "operator": "Vila Ula",
+      "power_kw": null,
+      "price": null,
+      "sockets": 2
+    },
+    {
+      "lat": 54.692954,
+      "lon": 25.399084,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null
+    }
+  ]
+}

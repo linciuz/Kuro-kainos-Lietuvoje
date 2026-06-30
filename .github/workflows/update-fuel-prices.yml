@@ -34,6 +34,9 @@ jobs:
       - name: Collect chain station directories (exact coords)
         run: python scripts/fetch_chain_stations.py || echo "chain directory fetch failed (non-fatal)"
 
+      - name: Collect EV charging stations (OpenStreetMap)
+        run: python scripts/fetch_ev_chargers.py || echo "EV charger fetch failed (non-fatal)"
+
       - name: Snap LEA stations onto exact chain coordinates
         run: python scripts/merge_chain_coords.py || echo "merge failed (non-fatal)"
 
@@ -50,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/discrepancies.json || true
+          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/discrepancies.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else

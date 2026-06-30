@@ -138,6 +138,17 @@
 
         #map-view { padding: 0 15px 15px; }
         #map { width: 100%; height: 62vh; border-radius: 12px; border: 1px solid #e0e0e0; }
+        .ev-toggle {
+            width: 100%; margin-bottom: 8px; padding: 9px; border: 1px solid #1faa4b;
+            background: #fff; color: #1faa4b; border-radius: 10px; cursor: pointer;
+            font-size: 13px; font-weight: 700;
+        }
+        .ev-toggle.on { background: #1faa4b; color: #fff; }
+        .ev-pin {
+            background: #1faa4b; color: #fff; font-size: 13px; line-height: 1;
+            padding: 3px 4px; border-radius: 50%; border: 2px solid #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,.4);
+        }
         .price-pin {
             background: #007AFF; color: #fff; font-weight: 700; font-size: 12px;
             padding: 3px 6px; border-radius: 8px; white-space: nowrap;
@@ -203,6 +214,7 @@
         </div>
 
         <div id="map-view" style="display:none">
+            <button class="ev-toggle" id="ev-toggle" onclick="toggleEv()">⚡ Įkrovimo stotelės</button>
             <div id="map"></div>
         </div>
 
