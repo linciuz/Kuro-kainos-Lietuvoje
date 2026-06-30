@@ -142,9 +142,10 @@
       "petrol95": 1.759,
       "diesel": 1.849,
       "lpg": 0.789,
-      "lat": 54.405824,
-      "lon": 24.01952,
-      "approx": false
+      "lat": 54.42474,
+      "lon": 24.003441,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -339,9 +340,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.859,
-      "lat": 54.37981,
-      "lon": 24.366426,
-      "approx": true
+      "lat": 54.366827,
+      "lon": 24.337458,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Alauša",
@@ -677,8 +679,8 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.771212,
-      "lon": 24.820776,
+      "lat": 54.775194,
+      "lon": 24.810293,
       "approx": false,
       "coord_source": "chain"
     },
@@ -892,9 +894,10 @@
       "petrol95": 1.789,
       "diesel": 1.859,
       "lpg": 0.759,
-      "lat": 56.194262,
-      "lon": 23.569477,
-      "approx": true
+      "lat": 56.258582,
+      "lon": 23.621817,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -1150,9 +1153,10 @@
       "petrol95": 1.749,
       "diesel": 1.859,
       "lpg": null,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.368225,
+      "lon": 23.183729,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -1162,9 +1166,10 @@
       "petrol95": 1.749,
       "diesel": 1.859,
       "lpg": null,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.322289,
+      "lon": 23.141419,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1248,9 +1253,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": null,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.3392,
+      "lon": 23.163159,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -1604,9 +1610,10 @@
       "petrol95": 1.779,
       "diesel": 1.864,
       "lpg": 0.809,
-      "lat": 54.886228,
-      "lon": 23.931743,
-      "approx": true
+      "lat": 54.93565,
+      "lon": 23.870417,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -2122,9 +2129,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.866449,
-      "lon": 23.889465,
-      "approx": false
+      "lat": 54.884491,
+      "lon": 23.89482,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -2404,9 +2412,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.898214,
-      "lon": 23.904482,
-      "approx": true
+      "lat": 54.818556,
+      "lon": 23.858111,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -2576,9 +2585,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.956147,
-      "lon": 23.953474,
-      "approx": false
+      "lat": 54.958815,
+      "lon": 24.039164,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -2601,9 +2611,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 55.203525,
-      "lon": 23.539009,
-      "approx": true
+      "lat": 54.842387,
+      "lon": 23.849624,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -2613,9 +2624,10 @@
       "petrol95": 1.759,
       "diesel": 1.859,
       "lpg": 0.799,
-      "lat": 54.903788,
-      "lon": 24.537266,
-      "approx": true
+      "lat": 54.774119,
+      "lon": 23.889722,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -2625,9 +2637,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.946857,
-      "lon": 23.853632,
-      "approx": true
+      "lat": 54.959162,
+      "lon": 23.864342,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Regusa",
@@ -3113,9 +3126,10 @@
       "petrol95": 1.769,
       "diesel": 1.869,
       "lpg": 0.779,
-      "lat": 55.662325,
-      "lon": 21.176305,
-      "approx": false
+      "lat": 55.68327,
+      "lon": 21.160516,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -3227,9 +3241,10 @@
       "petrol95": 1.779,
       "diesel": 1.879,
       "lpg": 0.78,
-      "lat": 55.700769,
-      "lon": 21.207012,
-      "approx": true
+      "lat": 55.7114,
+      "lon": 21.26305,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -3437,9 +3452,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 55.968609,
-      "lon": 21.360406,
-      "approx": true
+      "lat": 55.896081,
+      "lon": 21.220954,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -3548,9 +3564,10 @@
       "petrol95": 1.739,
       "diesel": 1.839,
       "lpg": 0.799,
-      "lat": 54.903607,
-      "lon": 23.905062,
-      "approx": true
+      "lat": 55.856593,
+      "lon": 25.173694,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "IĮ M.Augustinaičio",
@@ -3743,9 +3760,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 55.339637,
-      "lon": 24.011838,
-      "approx": true
+      "lat": 55.518623,
+      "lon": 23.773686,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -3781,9 +3799,10 @@
       "petrol95": 1.709,
       "diesel": 1.799,
       "lpg": 0.789,
-      "lat": 54.588062,
-      "lon": 25.172137,
-      "approx": true
+      "lat": 54.226753,
+      "lon": 23.524997,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -4379,9 +4398,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.859,
-      "lat": 55.344417,
-      "lon": 25.316943,
-      "approx": true
+      "lat": 55.214689,
+      "lon": 25.437878,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -4797,9 +4817,10 @@
       "petrol95": 1.769,
       "diesel": 1.849,
       "lpg": 0.759,
-      "lat": 55.745499,
-      "lon": 24.354685,
-      "approx": true
+      "lat": 55.753237,
+      "lon": 24.312254,
+      "approx": false,
+      "coord_source": "verified"
     },
     {
       "network": "UAB Viada LT",
@@ -4847,9 +4868,10 @@
       "petrol95": 1.739,
       "diesel": 1.839,
       "lpg": 0.779,
-      "lat": 55.690015,
-      "lon": 24.379081,
-      "approx": true
+      "lat": 55.67337,
+      "lon": 24.33583,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -4859,9 +4881,10 @@
       "petrol95": 1.739,
       "diesel": 1.839,
       "lpg": 0.779,
-      "lat": 55.795186,
-      "lon": 24.35109,
-      "approx": true
+      "lat": 55.810469,
+      "lon": 24.368724,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -4947,9 +4970,10 @@
       "petrol95": 1.739,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 55.690015,
-      "lon": 24.379081,
-      "approx": true
+      "lat": 55.944519,
+      "lon": 25.585662,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -5083,9 +5107,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.859,
-      "lat": 56.070691,
-      "lon": 24.384284,
-      "approx": true
+      "lat": 56.042226,
+      "lon": 24.378448,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -5327,9 +5352,10 @@
       "petrol95": 1.759,
       "diesel": 1.859,
       "lpg": 0.799,
-      "lat": 54.64029,
-      "lon": 23.939218,
-      "approx": true
+      "lat": 54.659001,
+      "lon": 23.947111,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -5339,9 +5365,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 55.151831,
-      "lon": 26.131006,
-      "approx": false
+      "lat": 54.713978,
+      "lon": 23.64982,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Apsaga",
@@ -5539,9 +5566,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.819,
-      "lat": 55.376456,
-      "lon": 23.1989,
-      "approx": true
+      "lat": 55.4615,
+      "lon": 22.693284,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -6206,9 +6234,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.564228,
-      "lon": 24.728227,
-      "approx": true
+      "lat": 54.686221,
+      "lon": 25.053965,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -6243,9 +6272,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.711934,
-      "lon": 24.989427,
-      "approx": true
+      "lat": 54.7018,
+      "lon": 25.00856,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Alauša",
@@ -6292,9 +6322,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.782767,
-      "lon": 25.181001,
-      "approx": true
+      "lat": 55.312144,
+      "lon": 24.786476,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -6353,9 +6384,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.782767,
-      "lon": 25.181001,
-      "approx": true
+      "lat": 55.314052,
+      "lon": 24.86977,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -6365,9 +6397,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 54.782767,
-      "lon": 25.181001,
-      "approx": true
+      "lat": 55.269227,
+      "lon": 24.810176,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -8149,9 +8182,10 @@
       "petrol95": 1.744,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.780709,
+      "lon": 25.273898,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -8161,9 +8195,10 @@
       "petrol95": 1.739,
       "diesel": 1.839,
       "lpg": 0.789,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.760518,
+      "lon": 25.201747,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Emsi",
@@ -9026,9 +9061,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.899,
-      "lat": 55.973183,
-      "lon": 23.069785,
-      "approx": true
+      "lat": 55.881956,
+      "lon": 23.205613,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "Agroserviso kooperatyvas Pynauja",
@@ -9075,9 +9111,10 @@
       "petrol95": 1.799,
       "diesel": 1.899,
       "lpg": 0.819,
-      "lat": 55.483075,
-      "lon": 22.201554,
-      "approx": true
+      "lat": 55.48419,
+      "lon": 22.587226,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Eniris",

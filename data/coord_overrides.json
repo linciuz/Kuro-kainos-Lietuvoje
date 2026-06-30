@@ -1,0 +1,13 @@
+{
+  "note": "Manually verified coordinate corrections. Applied LAST by merge_chain_coords.py, overriding geocoded and chain-matched coords. Match is case/accent-insensitive substring on network + address.",
+  "overrides": [
+    {
+      "network_contains": "viada",
+      "address_contains": "Pušaloto",
+      "municipality_contains": "Panevėžio",
+      "lat": 55.753237,
+      "lon": 24.312254,
+      "label": "Viada, Pušaloto g. 191A, Panevėžys (patikrinta)"
+    }
+  ]
+}

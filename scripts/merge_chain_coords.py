@@ -147,9 +147,35 @@ def main():
                 n += 1
             print(f"[cmp] {dirnet:18s} proximity-matched {n}/{len(lea_for)}")
 
+    ov = apply_overrides(stations)
+
     json.dump(lea, open(STATIONS, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     snapped = sum(1 for s in stations if s.get("coord_source") == "chain")
-    print(f"[ok] {snapped} LEA stations now on exact chain coords")
+    verified = sum(1 for s in stations if s.get("coord_source") == "verified")
+    print(f"[ok] {snapped} LEA stations on chain coords; {verified} manually-verified overrides ({ov} applied)")
+
+
+def apply_overrides(stations):
+    """Apply manually-verified coordinate corrections last (highest priority).
+    Lets a reported wrong location be fixed and survive the daily refresh."""
+    path = os.path.join("data", "coord_overrides.json")
+    try:
+        overrides = json.load(open(path, encoding="utf-8")).get("overrides", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        return 0
+    applied = 0
+    for o in overrides:
+        nc = deaccent(o.get("network_contains", ""))
+        ac = deaccent(o.get("address_contains", ""))
+        mc = deaccent(o.get("municipality_contains", ""))
+        for s in stations:
+            if (nc in deaccent(s.get("network", "")) and ac in deaccent(s.get("address", ""))
+                    and mc in deaccent(s.get("municipality", ""))):
+                s["lat"], s["lon"] = o["lat"], o["lon"]
+                s["approx"] = False
+                s["coord_source"] = "verified"
+                applied += 1
+    return applied
 
 
 if __name__ == "__main__":

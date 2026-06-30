@@ -119,39 +119,57 @@ def fetch_neste():
     return out
 
 
-def _coord_only(network, urls, source, pattern):
-    """Collect lat/lon pairs from a chain map page (no usable address — these
-    are proximity-matched to LEA stations later)."""
-    html = ""
-    for u in urls:
-        try:
-            html = http_text(u, UA_WEB)
-            if html:
-                break
-        except Exception:
-            continue
+_VIADA_RE = re.compile(
+    r"position'\s*:\s*new google\.maps\.LatLng\(\s*([0-9.]+)\s*,\s*([0-9.]+)\s*\).*?"
+    r"infoWindowHtml\s*=\s*'<table[^>]*>.*?</div></td></tr><tr><td>(.*?)</td></tr>",
+    re.DOTALL)
+
+
+def fetch_viada():
+    # Viada inlines each marker as `position: new LatLng(lat,lng)` followed by an
+    # infoWindow whose address sits in the <td> after the logo cell.
+    html = http_text("https://www.viada.lt/degalines/degaliniu-zemelapis/", UA_WEB)
     out, seen = [], set()
-    for la, lo in re.findall(pattern, html):
-        lat, lon = float(la), float(lo)
+    for m in _VIADA_RE.finditer(html):
+        lat, lon = float(m.group(1)), float(m.group(2))
         if not in_lt(lat, lon):
             continue
+        addr = re.sub(r"<[^>]+>", " ", m.group(3))
+        addr = re.sub(r"\s+", " ", addr).strip()
         key = (round(lat, 5), round(lon, 5))
-        if key in seen:
+        if not addr or key in seen:
             continue
         seen.add(key)
-        out.append({"network": network, "address": "", "city": "",
-                    "lat": round(lat, 6), "lon": round(lon, 6), "source": source})
+        out.append({"network": "Viada", "address": addr, "city": "",
+                    "lat": round(lat, 6), "lon": round(lon, 6), "source": "viada-web"})
     return out
 
 
 def fetch_circle_k():
-    return _coord_only("Circle K", ["https://www.circlek.lt/degaliniu-sarasas"],
-                       "circlek-web", r'"lat":"(5[3-6]\.\d{3,})","lng":"(2[0-7]\.\d{3,})"')
-
-
-def fetch_viada():
-    return _coord_only("Viada", ["https://www.viada.lt/degalines/degaliniu-zemelapis/"],
-                       "viada-web", r'(5[3-6]\.\d{4,})["\s,:]{1,6}(2[0-7]\.\d{4,})')
+    # Circle K is a Drupal site; all 99 stations (name + PHYSICAL address + coords)
+    # are in the drupal-settings-json blob under ck_sim_search.station_results.
+    html = http_text("https://www.circlek.lt/degaliniu-sarasas", UA_WEB)
+    m = re.search(r'<script type="application/json" data-drupal-selector="drupal-settings-json">(.*?)</script>',
+                  html, re.S)
+    if not m:
+        return []
+    results = (json.loads(m.group(1)).get("ck_sim_search") or {}).get("station_results") or {}
+    out = []
+    # The per-station keys are LITERAL template strings, not f-string-substituted.
+    for st in results.values():
+        loc = st.get("/sites/{siteId}/location") or {}
+        try:
+            lat, lon = float(loc["lat"]), float(loc["lng"])
+        except (KeyError, ValueError, TypeError):
+            continue
+        if not in_lt(lat, lon):
+            continue
+        phys = (st.get("/sites/{siteId}/addresses") or {}).get("PHYSICAL") or {}
+        street, city = (phys.get("street") or "").strip(), (phys.get("city") or "").strip()
+        addr = ", ".join(p for p in (street, city) if p)
+        out.append({"network": "Circle K", "address": addr, "city": city,
+                    "lat": round(lat, 6), "lon": round(lon, 6), "source": "circlek-web"})
+    return out
 
 
 CHAINS = [

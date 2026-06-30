@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-30T17:07:38Z",
-  "count": 509,
+  "generated": "2026-06-30T20:24:47Z",
+  "count": 506,
   "networks": [
     "Baltic Petroleum",
     "Circle K",
@@ -2155,823 +2155,799 @@
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Geležinio Vilko g. 2A, Vilnius",
+      "city": "Vilnius",
       "lat": 54.670918,
       "lon": 25.236569,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Baltupio g. 10, Vilnius",
+      "city": "Vilnius",
       "lat": 54.73594,
       "lon": 25.265611,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "A. P. Kavoliuko g. 32A, Vilnius",
+      "city": "Vilnius",
       "lat": 54.695298,
       "lon": 25.218638,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Sporto g. 16A, Vilnius",
+      "city": "Vilnius",
       "lat": 54.695012,
       "lon": 25.298001,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Ukmergės g. 231, Vilnius",
+      "city": "Vilnius",
       "lat": 54.72019,
       "lon": 25.246241,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kareivių g. 13, Vilnius",
+      "city": "Vilnius",
       "lat": 54.718708,
       "lon": 25.300565,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "A. Goštauto g. 13, Vilnius",
+      "city": "Vilnius",
       "lat": 54.694412,
       "lon": 25.263362,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Laisvės pr. 43C, Vilnius",
+      "city": "Vilnius",
       "lat": 54.709145,
       "lon": 25.228123,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "J. Tiškevičiaus g. 24, Vilnius",
+      "city": "Vilnius",
       "lat": 54.623158,
       "lon": 25.11018,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Eišiškių pl. 11, Vilnius",
+      "city": "Vilnius",
       "lat": 54.651554,
       "lon": 25.269413,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Pramonės pr. 18, Kaunas",
+      "city": "Kaunas",
       "lat": 54.916233,
       "lon": 23.986631,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Baltijos g. 1, Mastaičių k., Kauno r.",
+      "city": "Kauno r.",
       "lat": 54.818556,
       "lon": 23.858111,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Raudondvario pl. 107A, Kaunas",
+      "city": "Kaunas",
       "lat": 54.908277,
       "lon": 23.864957,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Sudervės g. 2G, Avižienių k., Vilniaus r.",
+      "city": "Vilniaus r.",
       "lat": 54.760518,
       "lon": 25.201747,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "R. Kalantos g. 159, Kaunas",
+      "city": "Kaunas",
       "lat": 54.894038,
       "lon": 24.006868,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Naujoji g. 120, Alytus",
+      "city": "Alytus",
       "lat": 54.42474,
       "lon": 24.003441,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Savanorių pr. 321, Kaunas",
+      "city": "Kaunas",
       "lat": 54.920105,
       "lon": 23.952899,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Veiverių g. 49A, Kaunas",
+      "city": "Kaunas",
       "lat": 54.880829,
       "lon": 23.89393,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Dubijos g. 20A, Šiauliai",
+      "city": "Šiauliai",
       "lat": 55.9289,
       "lon": 23.297667,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Talino g. 2B, Vilnius",
+      "city": "Vilnius",
       "lat": 54.713292,
       "lon": 25.209223,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Pramonės g. 17a, Šiauliai",
+      "city": "Šiauliai",
       "lat": 55.909327,
       "lon": 23.319346,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Sabališkių g. 1F, Elektrėnai",
+      "city": "Elektrėnai",
       "lat": 54.78921,
       "lon": 24.676086,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "J. Basanavičiaus g. 108a, Utena",
+      "city": "Utena",
       "lat": 55.50521,
       "lon": 25.62127,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Baltijos Kelio g. 33, Ūtos k., Panevėžio r.",
+      "city": "Panevėžio r.",
       "lat": 55.810469,
       "lon": 24.368724,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kretingos g. 56, Palanga",
+      "city": "Palanga",
       "lat": 55.914821,
       "lon": 21.077936,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Plento g. 1, Kuršėnai, Šiaulių r.",
+      "city": "Šiaulių r.",
       "lat": 55.999324,
       "lon": 22.989745,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Minijos g. 90, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.687653,
       "lon": 21.145064,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Taikos pr. 61B, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.69244,
       "lon": 21.153767,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "H. Manto g. 96, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.730408,
       "lon": 21.124619,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kauno g. 130, Marijampolė",
+      "city": "Marijampolė",
       "lat": 54.576249,
       "lon": 23.371213,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Rūtų g. 2B, Alytus",
+      "city": "Alytus",
       "lat": 54.395068,
       "lon": 24.037857,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "M. K. Čiurlionio g. 113, Druskininkai",
+      "city": "Druskininkai",
       "lat": 54.010273,
       "lon": 23.993451,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "J. Basanavičiaus g. 63, Panevėžys",
+      "city": "Panevėžys",
       "lat": 55.71768,
       "lon": 24.371095,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Parko g. 7A, Panevėžys",
+      "city": "Panevėžys",
       "lat": 55.731853,
       "lon": 24.342399,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Jono Dailidės g. 10, Marijampolė",
+      "city": "Marijampolė",
       "lat": 54.557125,
       "lon": 23.354007,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "J. Basanavičiaus g. 40a, Kėdainiai",
+      "city": "Kėdainiai",
       "lat": 55.286587,
       "lon": 23.972302,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Ežero g. 7, Kurėnų k., Ukmergės r.",
+      "city": "Ukmergės r.",
       "lat": 55.312144,
       "lon": 24.786476,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Luokės g. 70, Telšiai",
+      "city": "Telšiai",
       "lat": 55.977144,
       "lon": 22.265375,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Cintjoniškių g. 15, Šilutė",
+      "city": "Šilutė",
       "lat": 55.350235,
       "lon": 21.47432,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Savanorių g. 5, Varėna",
+      "city": "Varėna",
       "lat": 54.210789,
       "lon": 24.577762,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Žemaitijos g. 57, Mažeikiai",
+      "city": "Mažeikiai",
       "lat": 56.302373,
       "lon": 22.345047,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Sidabros g. 2A, Satkūnų k., Joniškio r.",
+      "city": "Joniškio r.",
       "lat": 56.258582,
       "lon": 23.621817,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Respublikos g. 111A, Rokiškis",
+      "city": "Rokiškis",
       "lat": 55.95232,
       "lon": 25.589617,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Vasario 16-osios g. 33, Jonava",
+      "city": "Jonava",
       "lat": 55.07057,
       "lon": 24.263506,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Geležinio Vilko g. 39, Vilnius",
+      "city": "Vilnius",
       "lat": 54.702357,
       "lon": 25.264761,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Klaipėdos g. 155, Kretinga",
+      "city": "Kretinga",
       "lat": 55.863594,
       "lon": 21.217201,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Prūsų g. 26 A, Vilnius",
+      "city": "Vilnius",
       "lat": 54.658659,
       "lon": 25.266347,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Gedimino g. 42B, Radviliškis",
+      "city": "Radviliškis",
       "lat": 55.811565,
       "lon": 23.550058,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Gedimino g. 47, Tauragė",
+      "city": "Tauragė",
       "lat": 55.24827,
       "lon": 22.302877,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Panevėžio aplinkl. 20, Šilagalio k., Panevėžio r.",
+      "city": "Panevėžio r.",
       "lat": 55.67337,
       "lon": 24.33583,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Vakarinis aplinkkelis 10, Kaunas",
+      "city": "Kaunas",
       "lat": 54.93565,
       "lon": 23.870417,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Žemaičių pl. 19, Kaunas",
+      "city": "Kaunas",
       "lat": 54.92526,
       "lon": 23.890491,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Dvaro g. 3, Košių II k., Šilalės r.",
+      "city": "Šilalės r.",
       "lat": 55.48419,
       "lon": 22.587226,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Vilniaus pl. 21, Jakų k., Sendvario sen., Klaipėdos r.",
+      "city": "Klaipėdos r.",
       "lat": 55.7114,
       "lon": 21.26305,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Geležinio Vilko g. 24, Vilnius",
+      "city": "Vilnius",
       "lat": 54.75156,
       "lon": 25.26653,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Taikos pr. 52A, Kaunas",
+      "city": "Kaunas",
       "lat": 54.912106,
       "lon": 23.956737,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kilučių g. 93, Biržai",
+      "city": "Biržai",
       "lat": 56.194803,
       "lon": 24.771856,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Briedžių takas 6B, Kaunas",
+      "city": "Kaunas",
       "lat": 54.93601,
       "lon": 23.96597,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Islandijos pl. 61C, Kaunas",
+      "city": "Kaunas",
       "lat": 54.93307,
       "lon": 23.96542,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Karaliaus Mindaugo pr. 34A, Kaunas",
+      "city": "Kaunas",
       "lat": 54.894043,
       "lon": 23.914109,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Didžiulio g. 5, Dėdeliškių k., Trakų r.",
+      "city": "Trakų r.",
       "lat": 54.686221,
       "lon": 25.053965,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "J. Basanavičiaus g. 3, Utena",
+      "city": "Utena",
       "lat": 55.495936,
       "lon": 25.582789,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Nekrūnų k. 1, Lazdijų r.",
+      "city": "Lazdijų r.",
       "lat": 54.226753,
       "lon": 23.524997,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Vilkaviškio g. 10, Serdokų k., Vilkaviškio r.",
+      "city": "Vilkaviškio r.",
       "lat": 54.636443,
       "lon": 23.074778,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Taikos pr. 112A, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.666609,
       "lon": 21.172719,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Vilniaus pl. 1A, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.692944,
       "lon": 21.179734,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Pikelių k. 1, Raseinių r.",
+      "city": "Raseinių r.",
       "lat": 55.4615,
       "lon": 22.693284,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Europos g. 13a, Salaperaugio k",
+      "city": "Salaperaugio k",
       "lat": 54.322289,
       "lon": 23.141419,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Muitinės g. 5B, Brazavo k.",
+      "city": "Brazavo k.",
       "lat": 54.368225,
       "lon": 23.183729,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Vilniaus g. 62, Šiauliai",
+      "city": "Šiauliai",
       "lat": 55.924786,
       "lon": 23.334113,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "R. Kalantos g. 68, Kaunas",
+      "city": "Kaunas",
       "lat": 54.893093,
       "lon": 23.995791,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Varnių g. 46, Kaunas",
+      "city": "Kaunas",
       "lat": 54.91451,
       "lon": 23.900006,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Oslo g. 12, Vilnius",
+      "city": "Vilnius",
       "lat": 54.670986,
       "lon": 25.192105,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Dariaus ir Girėno g. 83A, Tauragė",
+      "city": "Tauragė",
       "lat": 55.26716,
       "lon": 22.310066,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Islandijos pl. 32, Kaunas",
+      "city": "Kaunas",
       "lat": 54.938358,
       "lon": 23.898278,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Savanorių pr. 118, Vilnius",
+      "city": "Vilnius",
       "lat": 54.661742,
       "lon": 25.235338,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "P. Žadeikos g. 1a, Vilnius",
+      "city": "Vilnius",
       "lat": 54.73049,
       "lon": 25.239025,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Savanorių pr. 119A, Vilnius",
+      "city": "Vilnius",
       "lat": 54.662854,
       "lon": 25.234954,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kareivių g. 3, Vilnius",
+      "city": "Vilnius",
       "lat": 54.71551,
       "lon": 25.290766,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Geležinio Vilko g. 4, Vilnius",
+      "city": "Vilnius",
       "lat": 54.702899,
       "lon": 25.263932,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Gariūnų g. 45, Vilnius",
+      "city": "Vilnius",
       "lat": 54.658767,
       "lon": 25.16093,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Savanorių pr. 404B, Kaunas",
+      "city": "Kaunas",
       "lat": 54.92831,
       "lon": 23.973625,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Tvirtovės alėja 33a, Kaunas",
+      "city": "Kaunas",
       "lat": 54.91317,
       "lon": 23.926177,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Sukilėlių pr. 120, Kaunas",
+      "city": "Kaunas",
       "lat": 54.928513,
       "lon": 23.928984,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "K. Baršausko g. 57, Kaunas",
+      "city": "Kaunas",
       "lat": 54.899055,
       "lon": 23.959933,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Jonavos g. 38, Kaunas",
+      "city": "Kaunas",
       "lat": 54.901627,
       "lon": 23.894905,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Tilžės g. 25, Šiauliai",
+      "city": "Šiauliai",
       "lat": 55.91276,
       "lon": 23.273898,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Tilžės g. 56A, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.704329,
       "lon": 21.160808,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Jūrininkų pr. 31, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.656796,
       "lon": 21.182391,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Sausio 15-osios g. 2, Klaipėda",
+      "city": "Klaipėda",
       "lat": 55.702286,
       "lon": 21.138001,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Klaipėdos g. 92A, Panevėžys",
+      "city": "Panevėžys",
       "lat": 55.728796,
       "lon": 24.339034,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Pramogų g. 4, Truikių k., Plungės r.",
+      "city": "Plungės r.",
       "lat": 55.938799,
       "lon": 21.879922,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kauno g. 68, Girėnų k., Šakių r.",
+      "city": "Šakių r.",
       "lat": 54.953047,
       "lon": 23.083773,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Kikonių g. 10, Aleksandrijos k., Kupiškio r.",
+      "city": "Kupiškio r.",
       "lat": 55.824587,
       "lon": 25.001069,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "J. Basanavičiaus g. 103, Kėdainiai",
+      "city": "Kėdainiai",
       "lat": 55.274248,
       "lon": 23.944962,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Plungės g. 32, Rietavas",
+      "city": "Rietavas",
       "lat": 55.734882,
       "lon": 21.923654,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Pumpučių g. 25, Kavarskas",
+      "city": "Kavarskas",
       "lat": 55.424342,
       "lon": 24.920568,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Muitinės g. 34A, Jurbarkas",
+      "city": "Jurbarkas",
       "lat": 55.0768,
       "lon": 22.75204,
       "source": "circlek-web"
     },
     {
       "network": "Circle K",
-      "address": "",
-      "city": "",
+      "address": "Molėtų g. 15, Didžiosios Riešės k., Vilniaus r.",
+      "city": "Vilniaus r.",
       "lat": 54.780709,
       "lon": 25.273898,
       "source": "circlek-web"
     },
     {
       "network": "Viada",
-      "address": "",
-      "city": "",
-      "lat": 56.353078,
-      "lon": 20.993042,
-      "source": "viada-web"
-    },
-    {
-      "network": "Viada",
-      "address": "",
-      "city": "",
-      "lat": 54.091617,
-      "lon": 26.255493,
-      "source": "viada-web"
-    },
-    {
-      "network": "Viada",
-      "address": "",
-      "city": "",
-      "lat": 55.291439,
-      "lon": 23.802543,
-      "source": "viada-web"
-    },
-    {
-      "network": "Viada",
-      "address": "",
+      "address": "Lazdijai, Turistų g. 32",
       "city": "",
       "lat": 54.228639,
       "lon": 23.528411,
@@ -2979,7 +2955,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Rokiškis, Panevėžio g. 5",
       "city": "",
       "lat": 55.944519,
       "lon": 25.585662,
@@ -2987,7 +2963,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Vilkpėdės g. 2",
       "city": "",
       "lat": 54.665036,
       "lon": 25.246407,
@@ -2995,7 +2971,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kelmės r., Kuršukų k., Plento g. 1",
       "city": "",
       "lat": 55.618239,
       "lon": 22.901322,
@@ -3003,7 +2979,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Ateities g. 17B",
       "city": "",
       "lat": 54.735655,
       "lon": 25.258598,
@@ -3011,7 +2987,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Dariaus ir Girėno g. 30A",
       "city": "",
       "lat": 54.652826,
       "lon": 25.272062,
@@ -3019,7 +2995,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kėdainių r., Dotnuva, Tilto g. 2a",
       "city": "",
       "lat": 55.374389,
       "lon": 23.879683,
@@ -3027,7 +3003,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Kirtimų g. 29",
       "city": "",
       "lat": 54.633263,
       "lon": 25.150814,
@@ -3035,7 +3011,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Laisvės pr. 8",
       "city": "",
       "lat": 54.674293,
       "lon": 25.222756,
@@ -3043,7 +3019,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Naugarduko g. 74",
       "city": "",
       "lat": 54.671095,
       "lon": 25.262262,
@@ -3051,7 +3027,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Nemenčinės pl. 5",
       "city": "",
       "lat": 54.726381,
       "lon": 25.326531,
@@ -3059,7 +3035,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Olandų g. 57",
       "city": "",
       "lat": 54.681942,
       "lon": 25.314018,
@@ -3067,7 +3043,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Ozo g. 12",
       "city": "",
       "lat": 54.713628,
       "lon": 25.277135,
@@ -3075,7 +3051,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Pilaitės pr. 28",
       "city": "",
       "lat": 54.701431,
       "lon": 25.203618,
@@ -3083,7 +3059,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Trakų r., Aukštųjų Semeniukų k., Logistikos g. 9",
       "city": "",
       "lat": 54.7018,
       "lon": 25.00856,
@@ -3091,7 +3067,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Pilaitės pr. 13",
       "city": "",
       "lat": 54.702992,
       "lon": 25.204186,
@@ -3099,7 +3075,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Ukmergės r., Šventupė, Beržų g. 13",
       "city": "",
       "lat": 55.314052,
       "lon": 24.86977,
@@ -3107,7 +3083,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Saltoniškių g. 12",
       "city": "",
       "lat": 54.699175,
       "lon": 25.26008,
@@ -3115,7 +3091,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Sodų g. 22",
       "city": "",
       "lat": 54.669526,
       "lon": 25.27915,
@@ -3123,7 +3099,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Ateities pl. 37A",
       "city": "",
       "lat": 54.918202,
       "lon": 24.039726,
@@ -3131,7 +3107,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kauno r., Giraitės k., Automagistralės g. 4",
       "city": "",
       "lat": 54.959162,
       "lon": 23.864342,
@@ -3139,7 +3115,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Islandijos pl. 61A",
       "city": "",
       "lat": 54.933537,
       "lon": 23.968512,
@@ -3147,7 +3123,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, K. Baršausko g. 64",
       "city": "",
       "lat": 54.897772,
       "lon": 23.958195,
@@ -3155,7 +3131,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Karaliaus Mindaugo pr. 54",
       "city": "",
       "lat": 54.88737,
       "lon": 23.921353,
@@ -3163,7 +3139,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kauno r., Margavos k.",
       "city": "",
       "lat": 54.958815,
       "lon": 24.039164,
@@ -3171,7 +3147,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Mažeikiai, Žemaitijos g. 75",
       "city": "",
       "lat": 56.300252,
       "lon": 22.360673,
@@ -3179,7 +3155,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, P. Lukšio g. 66A",
       "city": "",
       "lat": 54.9249,
       "lon": 23.942603,
@@ -3187,7 +3163,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Raudondvario pl. 288",
       "city": "",
       "lat": 54.921398,
       "lon": 23.810331,
@@ -3195,7 +3171,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Statybininkų g. 3A",
       "city": "",
       "lat": 54.919993,
       "lon": 23.948992,
@@ -3203,7 +3179,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Elektrėnai, Dubijos g. 36",
       "city": "",
       "lat": 54.786851,
       "lon": 24.713782,
@@ -3211,7 +3187,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, T. Masiulio g. 22B",
       "city": "",
       "lat": 54.880985,
       "lon": 24.009786,
@@ -3219,7 +3195,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Veiverių g. 124B",
       "city": "",
       "lat": 54.883351,
       "lon": 23.89362,
@@ -3227,7 +3203,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kauno raj., Kampiškių k., Baltijos g. 41",
       "city": "",
       "lat": 54.842387,
       "lon": 23.849624,
@@ -3235,7 +3211,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kauno r., Kumpių k., Verslo g. 13A",
       "city": "",
       "lat": 54.95897,
       "lon": 23.866724,
@@ -3243,7 +3219,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Klaipėda, Liepojos g. 242",
       "city": "",
       "lat": 55.753699,
       "lon": 21.131399,
@@ -3251,7 +3227,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Klaipėda, Priestočio g. 28",
       "city": "",
       "lat": 55.719252,
       "lon": 21.141439,
@@ -3259,7 +3235,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Klaipėdos r., Sudmantų k., Vilniaus pl. 6",
       "city": "",
       "lat": 55.704435,
       "lon": 21.221757,
@@ -3267,7 +3243,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Klaipėda, Taikos pr. 70A",
       "city": "",
       "lat": 55.68327,
       "lon": 21.160516,
@@ -3275,7 +3251,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Klaipėda, Šilutės pl. 52",
       "city": "",
       "lat": 55.681852,
       "lon": 21.185393,
@@ -3283,7 +3259,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, J. Janonio g. 28A",
       "city": "",
       "lat": 55.738781,
       "lon": 24.310191,
@@ -3291,7 +3267,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, Navadolio g. 31",
       "city": "",
       "lat": 55.71465,
       "lon": 24.335082,
@@ -3299,7 +3275,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, Ramygalos g. 186G",
       "city": "",
       "lat": 55.709283,
       "lon": 24.373641,
@@ -3307,7 +3283,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, Venslaviškio g. 16",
       "city": "",
       "lat": 55.736987,
       "lon": 24.387165,
@@ -3315,7 +3291,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiauliai, J. Basanavičiaus g. 122A",
       "city": "",
       "lat": 55.95475,
       "lon": 23.315799,
@@ -3323,7 +3299,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiauliai, Dubijos g. 1C",
       "city": "",
       "lat": 55.926413,
       "lon": 23.307517,
@@ -3331,7 +3307,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiauliai, Gegužių g. 26",
       "city": "",
       "lat": 55.905387,
       "lon": 23.260267,
@@ -3339,7 +3315,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiauliai, Tilžės g. 274",
       "city": "",
       "lat": 55.944117,
       "lon": 23.33112,
@@ -3347,7 +3323,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kupiškio r., Kerelių k. 1A",
       "city": "",
       "lat": 55.856593,
       "lon": 25.173694,
@@ -3355,7 +3331,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiauliai, Užmiesčio g. 2",
       "city": "",
       "lat": 55.922716,
       "lon": 23.357888,
@@ -3363,7 +3339,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Marijampolė, Geležinkelio g. 5",
       "city": "",
       "lat": 54.554417,
       "lon": 23.362278,
@@ -3371,7 +3347,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Varėnos r., Valkininkai, Vilniaus g. 6",
       "city": "",
       "lat": 54.364881,
       "lon": 24.837355,
@@ -3379,7 +3355,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Marijampolė, J. Ambrazevičiaus g. 2",
       "city": "",
       "lat": 54.567798,
       "lon": 23.33954,
@@ -3387,7 +3363,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžio r., Ramygala, Vienkiemio g. 1B",
       "city": "",
       "lat": 55.52123,
       "lon": 24.312942,
@@ -3395,7 +3371,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kazlų Rūdos r., Ąžuolų Būdos k., Marijampolės g. 53",
       "city": "",
       "lat": 54.698178,
       "lon": 23.517555,
@@ -3403,7 +3379,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Alytus, Naujoji g. 27",
       "city": "",
       "lat": 54.413986,
       "lon": 24.010062,
@@ -3411,7 +3387,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Alytus, Ulonų g. 33B",
       "city": "",
       "lat": 54.385069,
       "lon": 24.050295,
@@ -3419,7 +3395,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Biržai, Parodos g. 2",
       "city": "",
       "lat": 56.201428,
       "lon": 24.748893,
@@ -3427,7 +3403,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Marvelės g. 132",
       "city": "",
       "lat": 54.903891,
       "lon": 23.835379,
@@ -3435,7 +3411,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Elektrėnai, Elektrinės g. 6",
       "city": "",
       "lat": 54.784677,
       "lon": 24.654136,
@@ -3443,7 +3419,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Gargždai, Vilniaus pl. 65",
       "city": "",
       "lat": 55.732312,
       "lon": 21.376033,
@@ -3451,7 +3427,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilniaus m. sav., Grigiškės, Kovo 11-osios g. 75",
       "city": "",
       "lat": 54.669271,
       "lon": 25.104758,
@@ -3459,7 +3435,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Ignalina, Turistų g. 28A",
       "city": "",
       "lat": 55.338921,
       "lon": 26.145658,
@@ -3467,7 +3443,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Jonava, Darbininkų g. 4D",
       "city": "",
       "lat": 55.092675,
       "lon": 24.281952,
@@ -3475,7 +3451,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Joniškis, Vilniaus g. 51",
       "city": "",
       "lat": 56.224483,
       "lon": 23.600756,
@@ -3483,7 +3459,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaišiadorys, Gedimino g. 135",
       "city": "",
       "lat": 54.855237,
       "lon": 24.441801,
@@ -3491,7 +3467,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kėdainių r., Gudžiūnų mst., Baisogalos g. 5",
       "city": "",
       "lat": 55.518623,
       "lon": 23.773686,
@@ -3499,7 +3475,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kalvarija, Dariaus ir Girėno g. 81",
       "city": "",
       "lat": 54.424482,
       "lon": 23.232087,
@@ -3507,7 +3483,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Tauragė, Dariaus ir Girėno g. 138A",
       "city": "",
       "lat": 55.266503,
       "lon": 22.311473,
@@ -3515,7 +3491,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kupiškis, Pergalės g. 15",
       "city": "",
       "lat": 55.844616,
       "lon": 24.979101,
@@ -3523,7 +3499,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžio r., Tičkūnų k., Tičkūnų g. 31",
       "city": "",
       "lat": 55.778825,
       "lon": 24.364255,
@@ -3531,7 +3507,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, Senamiesčio g. 116A",
       "city": "",
       "lat": 55.748535,
       "lon": 24.393312,
@@ -3539,7 +3515,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, Pušaloto g. 193A",
       "city": "",
       "lat": 55.75316,
       "lon": 24.312296,
@@ -3547,7 +3523,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kalvarija, Pelucmurgių k., Muitinės g. 35",
       "city": "",
       "lat": 54.3392,
       "lon": 23.163159,
@@ -3555,7 +3531,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šalčininkų r., Jašiūnai, Lydos g. 13",
       "city": "",
       "lat": 54.439646,
       "lon": 25.327296,
@@ -3563,7 +3539,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Zarasų r., Juodalaukių k.",
       "city": "",
       "lat": 55.717891,
       "lon": 26.21375,
@@ -3571,7 +3547,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Anykščiai, A. Vienuolio g. 34",
       "city": "",
       "lat": 55.521814,
       "lon": 25.086034,
@@ -3579,7 +3555,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kretinga, Kretingsodžio k.",
       "city": "",
       "lat": 55.896081,
       "lon": 21.220954,
@@ -3587,7 +3563,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Rokiškis, Žemaitės g. 2C",
       "city": "",
       "lat": 55.934343,
       "lon": 25.585701,
@@ -3595,7 +3571,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kretingalė, Klaipėdos g. 1A",
       "city": "",
       "lat": 55.827582,
       "lon": 21.185074,
@@ -3603,7 +3579,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kuršėnai, Vilniaus g. 38A",
       "city": "",
       "lat": 56.000001,
       "lon": 22.947693,
@@ -3611,7 +3587,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Mažeikiai, Montuotojų g. 2A",
       "city": "",
       "lat": 56.315942,
       "lon": 22.302418,
@@ -3619,7 +3595,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Molėtų r., Gojaus k., Utenos g. 16",
       "city": "",
       "lat": 55.214689,
       "lon": 25.437878,
@@ -3627,7 +3603,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Pabradė, Vilniaus g. 116B",
       "city": "",
       "lat": 54.975126,
       "lon": 25.745001,
@@ -3635,7 +3611,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Pakruojis, Vytauto Didžiojo g. 98",
       "city": "",
       "lat": 55.98042,
       "lon": 23.857616,
@@ -3643,7 +3619,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Pasvalio r., Brazdigalos k. 1",
       "city": "",
       "lat": 56.042226,
       "lon": 24.378448,
@@ -3651,7 +3627,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Pasvalys, Vilniaus g. 50",
       "city": "",
       "lat": 56.055978,
       "lon": 24.407271,
@@ -3659,7 +3635,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Plungė, J. Tumo-Vaižganto g. 102",
       "city": "",
       "lat": 55.902952,
       "lon": 21.830134,
@@ -3667,7 +3643,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Prienai, Mačiūnų k., Kauno pl. 40",
       "city": "",
       "lat": 54.659001,
       "lon": 23.947111,
@@ -3675,7 +3651,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Raseinių r., Viduklės sen., Vejukų k. 5",
       "city": "",
       "lat": 55.385937,
       "lon": 22.901688,
@@ -3683,7 +3659,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiaulių r., Draugystės 2 , Kužiai",
       "city": "",
       "lat": 55.979081,
       "lon": 23.136134,
@@ -3691,7 +3667,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šilutė, Tilžės g. 59",
       "city": "",
       "lat": 55.34274,
       "lon": 21.496553,
@@ -3699,7 +3675,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vievis, Kauno g. 55A",
       "city": "",
       "lat": 54.775194,
       "lon": 24.810293,
@@ -3707,7 +3683,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Skuodas, Vilniaus g. 50",
       "city": "",
       "lat": 56.270144,
       "lon": 21.547151,
@@ -3715,7 +3691,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Tauragė, Pramonės g. 1",
       "city": "",
       "lat": 55.240879,
       "lon": 22.305234,
@@ -3723,7 +3699,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Telšiai, Pramonės g. 2",
       "city": "",
       "lat": 55.993413,
       "lon": 22.240148,
@@ -3731,7 +3707,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Ukmergės r., Dukstynos k., Vytauto g. 131",
       "city": "",
       "lat": 55.269227,
       "lon": 24.810176,
@@ -3739,7 +3715,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Alytaus r., Daugų k., Neveiglo g. 25",
       "city": "",
       "lat": 54.366827,
       "lon": 24.337458,
@@ -3747,7 +3723,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Ukmergė, Žiedo g. 15",
       "city": "",
       "lat": 55.245907,
       "lon": 24.743056,
@@ -3755,7 +3731,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Utena, Gedimino k., Vyturio g. 2",
       "city": "",
       "lat": 55.477844,
       "lon": 25.581493,
@@ -3763,7 +3739,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilkaviškis, Vytauto g. 105",
       "city": "",
       "lat": 54.647593,
       "lon": 23.029146,
@@ -3771,7 +3747,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Visaginas, Statybininkų g. 1",
       "city": "",
       "lat": 55.594607,
       "lon": 26.438792,
@@ -3779,7 +3755,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Molėtai, Vilniaus g. 101",
       "city": "",
       "lat": 55.223871,
       "lon": 25.405884,
@@ -3787,7 +3763,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Liepkalnio g. 128A",
       "city": "",
       "lat": 54.647457,
       "lon": 25.304067,
@@ -3795,7 +3771,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilniaus r., Avižieniai, Ožiarūčių g. 1A",
       "city": "",
       "lat": 54.76388,
       "lon": 25.19763,
@@ -3803,7 +3779,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Verkių g. 52",
       "city": "",
       "lat": 54.721488,
       "lon": 25.295135,
@@ -3811,7 +3787,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Gariūnų g. 16A",
       "city": "",
       "lat": 54.667155,
       "lon": 25.17435,
@@ -3819,7 +3795,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vilnius, Justiniškių g. 12",
       "city": "",
       "lat": 54.702535,
       "lon": 25.218837,
@@ -3827,7 +3803,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Vievis, Kauno g. 26",
       "city": "",
       "lat": 54.771212,
       "lon": 24.820776,
@@ -3835,7 +3811,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šilalės r. sav., Traksėdžio sen., Kuodaičių k.",
       "city": "",
       "lat": 55.568675,
       "lon": 22.1775,
@@ -3843,7 +3819,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Baltijos g. 90B",
       "city": "",
       "lat": 54.917943,
       "lon": 23.873742,
@@ -3851,7 +3827,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Biruliškių pl. 18A",
       "city": "",
       "lat": 54.911393,
       "lon": 24.021123,
@@ -3859,7 +3835,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Didžioji g. 84",
       "city": "",
       "lat": 54.855157,
       "lon": 24.013174,
@@ -3867,7 +3843,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, A. Juozapavičiaus pr. 90",
       "city": "",
       "lat": 54.879029,
       "lon": 23.933678,
@@ -3875,7 +3851,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Utena, Pramonės g. 23",
       "city": "",
       "lat": 55.490155,
       "lon": 25.650845,
@@ -3883,7 +3859,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Marijampolės pl. 29",
       "city": "",
       "lat": 54.849536,
       "lon": 23.966766,
@@ -3891,7 +3867,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Miežėnų g. 18",
       "city": "",
       "lat": 54.917558,
       "lon": 23.863454,
@@ -3899,7 +3875,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Švenčionių r., Kaltanėnai, Utenos g. 1",
       "city": "",
       "lat": 55.255178,
       "lon": 25.990643,
@@ -3907,7 +3883,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Ateities pl. 105",
       "city": "",
       "lat": 54.927483,
       "lon": 24.043117,
@@ -3915,7 +3891,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Pramonės pr. 44",
       "city": "",
       "lat": 54.927182,
       "lon": 23.974693,
@@ -3923,7 +3899,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kaunas, Veiverių g. 117",
       "city": "",
       "lat": 54.884491,
       "lon": 23.89482,
@@ -3931,7 +3907,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kauno r., Zapyškis, Vytauto g. 20A",
       "city": "",
       "lat": 54.927013,
       "lon": 23.662037,
@@ -3939,7 +3915,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Klaipėda, Nemuno g. 139",
       "city": "",
       "lat": 55.675209,
       "lon": 21.153005,
@@ -3947,7 +3923,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kretinga, Vytauto g. 163",
       "city": "",
       "lat": 55.890543,
       "lon": 21.278423,
@@ -3955,7 +3931,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiaulių r., Aukštelkės k. Ilgoji g. 1",
       "city": "",
       "lat": 55.881956,
       "lon": 23.205613,
@@ -3963,7 +3939,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Utena, Metalo g. 8",
       "city": "",
       "lat": 55.497257,
       "lon": 25.630563,
@@ -3971,7 +3947,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Švenčionys, Vilniaus g. 50A",
       "city": "",
       "lat": 55.125425,
       "lon": 26.145594,
@@ -3979,7 +3955,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Švenčionių r., Švenčionėliai, Žemutinė g. 51A",
       "city": "",
       "lat": 55.16851,
       "lon": 26.015011,
@@ -3987,7 +3963,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Širvintos, Plento g. 4",
       "city": "",
       "lat": 55.045727,
       "lon": 24.942613,
@@ -3995,7 +3971,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Anykščiai, Piliakalnio g. 9",
       "city": "",
       "lat": 55.541219,
       "lon": 25.134763,
@@ -4003,7 +3979,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Visaginas, Taikos pr. 23B",
       "city": "",
       "lat": 55.594795,
       "lon": 26.456705,
@@ -4011,7 +3987,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Prienų r., Grigaliūnų k. 11",
       "city": "",
       "lat": 54.713978,
       "lon": 23.64982,
@@ -4019,7 +3995,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Šiaulių r., Ginkūnų k., Aušros g. 26",
       "city": "",
       "lat": 55.956317,
       "lon": 23.342812,
@@ -4027,7 +4003,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžio r., Krekenava, Tilto g. 35",
       "city": "",
       "lat": 55.541632,
       "lon": 24.107633,
@@ -4035,7 +4011,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kauno r., Ilgakiemio k., Prienų g. 22",
       "city": "",
       "lat": 54.774119,
       "lon": 23.889722,
@@ -4043,7 +4019,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžys, Ramygalos g. 155",
       "city": "",
       "lat": 55.703742,
       "lon": 24.38079,
@@ -4051,7 +4027,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Biržai, Pasvalio g. 1B",
       "city": "",
       "lat": 56.202143,
       "lon": 24.737832,
@@ -4059,7 +4035,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Plungė, Žaltakalnio g. 10",
       "city": "",
       "lat": 55.898651,
       "lon": 21.840158,
@@ -4067,7 +4043,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Panevėžio r., Šilagalis, Aplinkkelio g. 5",
       "city": "",
       "lat": 55.670113,
       "lon": 24.349612,
@@ -4075,7 +4051,7 @@
     },
     {
       "network": "Viada",
-      "address": "",
+      "address": "Kelmė, Kęstučio g. 1B",
       "city": "",
       "lat": 55.633679,
       "lon": 22.942879,

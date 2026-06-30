@@ -470,13 +470,17 @@ function renderSummary() {
 }
 
 function navButtons(s) {
-    const hasGeo = s.lat != null && s.lon != null;
-    const gmaps = hasGeo
+    // Use precise coordinates ONLY when they're verified-exact. For approximate
+    // (town-centroid) coords, navigate by ADDRESS instead so Google/Waze find the
+    // real station rather than driving to our rough point.
+    const exact = s.lat != null && s.lon != null && !s.approx;
+    const q = encodeURIComponent(`${s.network || ""} ${s.address || ""} ${s.municipality || ""}`.trim());
+    const gmaps = exact
         ? `https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lon}`
-        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((s.network||"") + " " + (s.address||""))}`;
-    const waze = hasGeo
+        : `https://www.google.com/maps/search/?api=1&query=${q}`;
+    const waze = exact
         ? `https://waze.com/ul?ll=${s.lat},${s.lon}&navigate=yes`
-        : `https://waze.com/ul?q=${encodeURIComponent((s.address||"") + " " + (s.municipality||""))}&navigate=yes`;
+        : `https://waze.com/ul?q=${q}&navigate=yes`;
     return `<a class="nav-btn nav-gmaps" href="${gmaps}" target="_blank" rel="noopener">🗺️ Google Maps</a>
             <a class="nav-btn nav-waze" href="${waze}" target="_blank" rel="noopener">🚗 Waze</a>`;
 }
@@ -498,7 +502,7 @@ function renderList() {
             const isBest = s[fuelType] === best;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
-            const approxTag = s.approx ? ' <span class="approx-tag">apytikslė vieta</span>' : "";
+            const approxTag = s.approx ? ' <span class="approx-tag">vieta apytikslė · gali būti kitur</span>' : "";
             const fl = flagFor(s);
             const flagLine = fl ? `<div class="change-flag">⚠️ Kaina galėjo pasikeisti nuo 10:00 —
                 ${fl.source} tinkle ${fl.direction === "down" ? "pigiau" : "brangiau"}: €${fl.live.toFixed(3)}/L</div>` : "";
@@ -566,7 +570,7 @@ function renderMap() {
             iconSize: null, iconAnchor: [22, 12]
         });
         const dist = (userPos && s._dist != null) ? `<br>📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}` : "";
-        const approxNote = s.approx ? `<br><span style="color:#999">apytikslė vieta (savivaldybės centras)</span>` : "";
+        const approxNote = s.approx ? `<br><span style="color:#b3792f">⚠️ vieta apytikslė — tikroji gali būti kitur (navigacija veda pagal adresą)</span>` : "";
         const popup = `<div class="popup-name">${s.network || "Degalinė"}</div>
             <div>${s.address || ""}</div>
             <div class="popup-price">${FUEL_LABELS[fuelType]}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
