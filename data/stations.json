@@ -1,0 +1,12 @@
+{
+  "updated": "2026-06-16",
+  "source": "Lietuvos energetikos agentūra (ena.lt)",
+  "source_url": "https://www.ena.lt/degalu-kainos-degalinese/",
+  "note": "Pradiniai duomenys - oficialūs šalies vidurkiai. Visų degalinių sąrašas atsiras po pirmo automatinio atnaujinimo.",
+  "summary": {
+    "petrol95": { "min": 1.629, "avg": 1.832, "max": 1.94 },
+    "diesel": { "min": 1.699, "avg": 1.89, "max": 1.999 },
+    "lpg": { "min": 0.7, "avg": 0.831, "max": 0.969 }
+  },
+  "stations": []
+}

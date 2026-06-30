@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Oficialios degalų kainos Lietuvos degalinėse. Duomenys iš Lietuvos energetikos agentūros (LEA).">
+    <title>⛽ Kuro Kainos Lietuvoje</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛽</text></svg>">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#007AFF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Kuro Kainos">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh; padding: 10px;
+        }
+        .app-container {
+            max-width: 1200px; margin: 0 auto; background: white;
+            border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #007AFF 0%, #0056b3 100%);
+            color: white; padding: 20px; text-align: center;
+        }
+        .header h1 { font-size: 22px; margin-bottom: 4px; }
+        .header p { opacity: 0.9; font-size: 13px; }
+        .source-line {
+            background: #eef4ff; color: #0056b3; font-size: 12px;
+            padding: 8px 15px; text-align: center; border-bottom: 1px solid #dce6f5;
+        }
+        .source-line a { color: #0056b3; }
+        .controls { padding: 15px; background: white; }
+        .fuel-type-selector { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
+        .fuel-btn {
+            padding: 12px 8px; border: 2px solid #007AFF; background: white; color: #007AFF;
+            border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 600;
+        }
+        .fuel-btn.active { background: #007AFF; color: white; }
+        .filter-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+        select, .search-input {
+            flex: 1; min-width: 140px; padding: 10px; border: 1px solid #ccc;
+            border-radius: 8px; font-size: 14px; background: white;
+        }
+        .sort-row { display: flex; gap: 10px; align-items: center; }
+        .sort-label { font-size: 14px; font-weight: 600; color: #333; }
+        .sort-btn {
+            flex: 1; padding: 8px; border: 1px solid #ddd; background: #f8f9fa;
+            border-radius: 8px; cursor: pointer; font-size: 13px;
+        }
+        .sort-btn.active { background: #007AFF; color: white; border-color: #007AFF; }
+        .summary {
+            background: #f8f9fa; margin: 0 15px 10px; padding: 12px; border-radius: 8px;
+        }
+        .summary-title { font-size: 12px; color: #666; margin-bottom: 8px; text-align: center; }
+        .summary-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; }
+        .stat-label { font-size: 11px; color: #666; }
+        .stat-value { font-size: 18px; font-weight: bold; }
+        .stat-value.lowest { color: #4CAF50; }
+        .stat-value.highest { color: #dc3545; }
+        .stations-container { padding: 0 15px 15px; max-height: 60vh; overflow-y: auto; }
+        .count-line { font-size: 12px; color: #888; margin: 6px 2px 10px; }
+        .station-card {
+            background: white; border: 1px solid #e0e0e0; border-radius: 12px;
+            padding: 14px; margin-bottom: 10px;
+        }
+        .best-price-badge {
+            background: #4CAF50; color: white; padding: 3px 9px; border-radius: 6px;
+            font-size: 11px; font-weight: bold; display: inline-block; margin-bottom: 6px;
+        }
+        .station-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+        .station-name { font-size: 17px; font-weight: bold; color: #333; }
+        .station-price { font-size: 22px; font-weight: bold; color: #007AFF; white-space: nowrap; }
+        .price-unit { font-size: 13px; color: #666; }
+        .station-address { color: #666; font-size: 13px; margin: 6px 0 10px; }
+        .station-footer { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+        .station-muni { font-size: 12px; color: #888; }
+        .station-directions {
+            background: #28a745; color: white; border: none; padding: 6px 12px;
+            border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600;
+        }
+        .msg { text-align: center; padding: 30px 15px; color: #666; font-size: 14px; }
+        .footer {
+            background: #f8f9fa; padding: 14px; text-align: center;
+            border-top: 1px solid #e0e0e0; font-size: 12px; color: #666;
+        }
+        @media (max-width: 600px) { .header h1 { font-size: 19px; } }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>⛽ Kuro Kainos Lietuvoje</h1>
+            <p>Oficialios degalų kainos visose degalinėse</p>
+        </div>
+
+        <div class="source-line" id="source-line">Kraunama oficialūs duomenys…</div>
+
+        <div class="controls">
+            <div class="fuel-type-selector">
+                <button class="fuel-btn active" id="btn-petrol95" onclick="selectFuel('petrol95')">⛽ 95</button>
+                <button class="fuel-btn" id="btn-diesel" onclick="selectFuel('diesel')">🚛 Dyzelinas</button>
+                <button class="fuel-btn" id="btn-lpg" onclick="selectFuel('lpg')">🔥 Dujos</button>
+            </div>
+            <div class="filter-row">
+                <select id="muni-select" onchange="render()"><option value="">Visos savivaldybės</option></select>
+                <input class="search-input" id="search" type="text" placeholder="Ieškoti (tinklas, adresas)…" oninput="render()">
+            </div>
+            <div class="sort-row">
+                <span class="sort-label">Rūšiuoti:</span>
+                <button class="sort-btn active" id="sort-asc" onclick="setSort('asc')">💰 Pigiausios</button>
+                <button class="sort-btn" id="sort-desc" onclick="setSort('desc')">Brangiausios</button>
+            </div>
+        </div>
+
+        <div class="summary" id="summary"></div>
+        <div class="stations-container" id="stations-list">
+            <div class="msg">Kraunama…</div>
+        </div>
+
+        <div class="footer">
+            <p>💡 Pridėkite į telefono ekraną – veiks kaip programėlė.</p>
+            <p id="updated-line"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () =>
+          navigator.serviceWorker.register("service-worker.js").catch(() => {}));
+      }
+    </script>
+
+</body>
+</html>
