@@ -1,0 +1,17 @@
+{
+  "source": "Circle K",
+  "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
+  "scope": "network_lowest",
+  "fetched": "2026-06-30",
+  "stated_date": "Birželio 30",
+  "prices": {
+    "petrol95": 1.689,
+    "petrol95_plus": 1.778,
+    "petrol98": 1.788,
+    "lpg": 0.73,
+    "diesel": 1.739,
+    "diesel_plus": 1.828,
+    "xtl": 2.138,
+    "adblue": 0.964
+  }
+}

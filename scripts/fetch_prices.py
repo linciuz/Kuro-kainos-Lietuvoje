@@ -56,8 +56,9 @@ KEYWORDS = {
     "address":      ["gatve", "gyvenviet", "adres", "degalines pavadinim"],
     "municipality": ["savivaldyb"],
     "locality":     ["miest", "kaim"],
-    "fuel":         ["degalu rus", "kuro rus", "produkt", "rusis"],   # long-format fuel column
+    "fuel":         ["degalu tipas", "tipas", "degalu rus", "kuro rus", "produkt", "rusis"],  # long-format fuel column
     "price":        ["kaina"],                                        # long-format single price column
+    "date":         ["pateikimo data", "data"],                       # date the price was reported
 }
 
 # Wide-format: a separate price column per fuel. Header keyword -> our fuel key.
@@ -85,16 +86,36 @@ def deaccent(s):
 
 
 def find_latest_excel_link(html):
-    """Return the first SharePoint link in the 'Naujausios degalų kainos' area."""
+    """Return the SharePoint link for the CURRENT daily file.
+
+    The page lists several files: the live one is the anchor labelled
+    'Naujausios degalų kainos (YYYY-MM-DD)', plus older historical snapshots.
+    The first SharePoint link on the page is a HISTORICAL file, so we must
+    match by the anchor text, not by position. We pick the 'Naujausios'
+    anchor (or, failing that, the anchor whose label has the latest date).
+    """
+    anchors = re.findall(
+        r'<a[^>]+href="(https://[^"]*sharepoint\.com/[^"]+)"[^>]*>(.*?)</a>',
+        html, re.I | re.S)
+
+    # 1) Explicit "Naujausios ... kain..." label.
+    for href, text in anchors:
+        td = deaccent(re.sub(r"<[^>]+>", "", text))
+        if "naujausios" in td and "kain" in td:
+            return href
+
+    # 2) Otherwise the anchor whose label contains the latest YYYY-MM-DD date.
+    dated = []
+    for href, text in anchors:
+        m = re.search(r"(20\d\d-\d\d-\d\d)", text)
+        if m:
+            dated.append((m.group(1), href))
+    if dated:
+        return max(dated)[1]
+
+    # 3) Fallback: first SharePoint link on the page.
     links = re.findall(r'href="(https://[^"]*sharepoint\.com/[^"]+)"', html, re.I)
-    if not links:
-        return None
-    # Prefer a link whose surrounding text mentions "kainos" (the data file),
-    # otherwise just take the first SharePoint link.
-    for lk in links:
-        if "doc" in lk.lower() or ":x:" in lk.lower():
-            return lk
-    return links[0]
+    return links[0] if links else None
 
 
 def _looks_like_xlsx(content):
@@ -287,7 +308,19 @@ def parse_workbook(xbytes):
                 "locality": loc, "petrol95": None, "diesel": None, "lpg": None})
             st[fuel] = price
 
-    return list(stations.values())
+    # Detect the date the prices were actually reported, so we never again
+    # label a stale file with today's date.
+    file_date = None
+    if "date" in mapping:
+        ds = set()
+        for r in data_rows:
+            m = re.search(r"20\d\d-\d\d-\d\d", cell(r, "date"))
+            if m:
+                ds.add(m.group(0))
+        if ds:
+            file_date = max(ds)
+
+    return list(stations.values()), file_date
 
 
 def summarize(stations):
@@ -314,7 +347,7 @@ def main():
     xbytes = download_shared_xlsx(link)
     print(f"[info] downloaded {len(xbytes)} bytes")
 
-    stations = parse_workbook(xbytes)
+    stations, file_date = parse_workbook(xbytes)
     print(f"[info] parsed {len(stations)} stations")
     for s in stations[:5]:
         print("   sample:", s)
@@ -323,11 +356,27 @@ def main():
         print("[error] 0 stations parsed - aborting so we don't overwrite good data.")
         sys.exit(3)
 
+    # Use the file's own date; warn loudly if it is stale (LEA sometimes leaves
+    # old daily snapshots linked) or if averages look implausible.
+    updated = file_date or dt.date.today().isoformat()
+    if file_date:
+        age = (dt.date.today() - dt.date.fromisoformat(file_date)).days
+        print(f"[info] data date (from file): {file_date} ({age} day(s) old)")
+        if age > 3:
+            print(f"[warn] LEA file looks STALE ({age} days old) - check the source link!")
+    else:
+        print("[warn] no date column detected; falling back to today()")
+
+    summary = summarize(stations)
+    p95 = summary.get("petrol95", {}).get("avg")
+    if p95 and not (1.0 <= p95 <= 2.5):
+        print(f"[warn] 95 average €{p95} is outside the plausible band - parser may be off.")
+
     payload = {
-        "updated": dt.date.today().isoformat(),
+        "updated": updated,
         "source": "Lietuvos energetikos agentūra (ena.lt)",
         "source_url": PAGE_URL,
-        "summary": summarize(stations),
+        "summary": summary,
         "stations": sorted(stations, key=lambda s: (s.get("municipality") or "", s.get("network") or "")),
     }
     os.makedirs("data", exist_ok=True)

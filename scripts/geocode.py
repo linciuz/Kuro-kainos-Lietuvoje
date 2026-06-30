@@ -32,7 +32,7 @@ STATIONS = os.path.join("data", "stations.json")
 CACHE = os.path.join("data", "geocode_cache.json")
 UA = "KuroKainosLietuvoje/1.0 (+https://github.com/linciuz/Kuro-kainos-Lietuvoje)"
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
-SLEEP = 1.1  # seconds between live requests (Nominatim policy: <= 1 req/s)
+SLEEP = 1.0  # seconds between live requests (Nominatim policy: <= 1 req/s)
 
 
 def load_json(path, default):
@@ -73,32 +73,46 @@ def town_segment(addr):
     return towns[0] if towns else ""
 
 
+def _variants_for(base):
+    """Street-first / letter-stripped variants for one address string.
+    LEA addresses are town-first ('Kaunas, Jonavos g. 60'), and Nominatim
+    resolves street-first far better, so the reversal is tried BEFORE the raw."""
+    segs = [norm(s) for s in base.split(",") if norm(s)]
+    out = []
+    if len(segs) >= 2:
+        out.append(", ".join(reversed(segs)))                # "Town, Street" -> "Street, Town" (best first)
+    out.append(base)
+    if len(segs) == 1 and STREET_RE.search(base):
+        # No comma, likely "Town Street g. N" -> move leading town word(s) to end.
+        w = base.split()
+        if len(w) >= 3:
+            out.append(f"{' '.join(w[1:])}, {w[0]}")            # 1-word town
+            out.append(f"{' '.join(w[2:])}, {' '.join(w[:2])}")  # 2-word town
+    a2 = re.sub(r"(\d+)[A-Za-z](?=\b)", r"\1", base)          # "33B" -> "33"
+    if a2 != base:
+        out.append(a2)
+    return out
+
+
 def street_first_queries(addr):
     """Build street-first query variants for an address that may be town-first,
-    use non-breaking spaces, or have a letter-suffixed house number."""
+    use non-breaking spaces, carry a trailing 5-digit postcode, or have a
+    letter-suffixed house number."""
     a = norm(addr)
     if not a:
         return []
-    variants = [a]
-    segs = [norm(s) for s in a.split(",") if norm(s)]
-    if len(segs) >= 2:
-        variants.append(", ".join(reversed(segs)))           # "Town, Street" -> "Street, Town"
-    elif len(segs) == 1 and STREET_RE.search(a):
-        # No comma, likely "Town Street g. N" -> move leading town word(s) to end.
-        w = a.split()
-        if len(w) >= 3:
-            variants.append(f"{' '.join(w[1:])}, {w[0]}")        # 1-word town
-            variants.append(f"{' '.join(w[2:])}, {' '.join(w[:2])}")  # 2-word town
-    a2 = re.sub(r"(\d+)[A-Za-z](?=\b)", r"\1", a)             # "33B" -> "33"
-    if a2 != a:
-        variants.append(a2)
-        s2 = [norm(s) for s in a2.split(",") if norm(s)]
-        if len(s2) >= 2:
-            variants.append(", ".join(reversed(s2)))
+    a_nopc = norm(re.sub(r",?\s*\b\d{5}\b\s*$", "", a))       # drop trailing postcode
+    # Try the postcode-free form first (postcodes hurt Nominatim free-text),
+    # then the raw form; each contributes a street-first reversal.
+    bases = [a_nopc, a] if (a_nopc and a_nopc != a) else [a]
+
+    variants = []
+    for base in bases:
+        variants.extend(_variants_for(base))
     # de-dup, keep order
     seen, out = set(), []
     for v in variants:
-        if v not in seen:
+        if v and v not in seen:
             seen.add(v)
             out.append(v)
     return out
@@ -117,17 +131,29 @@ def nominatim(q):
 
 
 def geocode_station(addr, muni):
-    """Street-level first (several query shapes), then town locality, then
-    municipality centroid. The last two are flagged approx=True."""
+    """Street-level first (a few query shapes), then town locality, then
+    municipality centroid. The last two are flagged approx=True.
+
+    Kept deliberately lean on request count (each call sleeps ~1s for the
+    Nominatim policy): most addresses resolve in the first 1-2 queries; only
+    failures fall through to the muni-pinned and centroid fallbacks.
+    """
     cm = clean_muni(muni)
 
-    # 1) Exact: street-first variants, optionally pinned to the municipality.
-    for v in street_first_queries(addr):
-        for q in ([f"{v}, Lietuva"] + ([f"{v}, {cm}, Lietuva"] if cm else [])):
-            res = nominatim(q)
-            time.sleep(SLEEP)
-            if res:
-                return {"lat": res[0], "lon": res[1], "approx": False}
+    # 1) Exact: a few best street-first variants, no municipality pin.
+    variants = street_first_queries(addr)[:4]
+    for v in variants:
+        res = nominatim(f"{v}, Lietuva")
+        time.sleep(SLEEP)
+        if res:
+            return {"lat": res[0], "lon": res[1], "approx": False}
+
+    # 1b) One municipality-pinned retry of the best variant (ambiguous streets).
+    if variants and cm:
+        res = nominatim(f"{variants[0]}, {cm}, Lietuva")
+        time.sleep(SLEEP)
+        if res:
+            return {"lat": res[0], "lon": res[1], "approx": False}
 
     # 2) Approx: the town/village embedded in the address, PINNED to the
     # municipality so an ambiguous name can't match the wrong city.

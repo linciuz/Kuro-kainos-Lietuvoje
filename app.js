@@ -7,6 +7,7 @@ const FUEL_LABELS = { petrol95: "95 benzinas", diesel: "Dyzelinas", lpg: "Dujos 
 const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
+let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let fuelType = "petrol95";
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
@@ -20,20 +21,44 @@ async function load() {
         DATA = await res.json();
     } catch (e) {
         DATA = {
-            updated: "2026-06-16",
+            updated: "2026-06-30",
             source: "Lietuvos energetikos agentūra (ena.lt)",
             source_url: "https://www.ena.lt/degalu-kainos-degalinese/",
             summary: {
-                petrol95: { min: 1.629, avg: 1.832, max: 1.94 },
-                diesel:   { min: 1.699, avg: 1.890, max: 1.999 },
-                lpg:      { min: 0.70,  avg: 0.831, max: 0.969 }
+                petrol95: { min: 1.54,  avg: 1.713, max: 1.849 },
+                diesel:   { min: 1.62,  avg: 1.796, max: 1.909 },
+                lpg:      { min: 0.639, avg: 0.782, max: 0.959 }
             },
             stations: []
         };
     }
+    await loadDiscrepancies();
     initMunicipalities();
     updateChrome();
     render();
+}
+
+async function loadDiscrepancies() {
+    try {
+        const res = await fetch("data/discrepancies.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const d = await res.json();
+        const byNetwork = {};
+        for (const it of (d.items || [])) {
+            for (const net of (it.networks || [])) {
+                (byNetwork[net] = byNetwork[net] || {})[it.fuel] = it;
+            }
+        }
+        DISCREP = { items: d.items || [], byNetwork };
+    } catch (e) {
+        DISCREP = { items: [], byNetwork: {} };
+    }
+}
+
+// Discrepancy flag for a station at the current fuel, or null.
+function flagFor(s) {
+    const m = DISCREP.byNetwork[s.network];
+    return (m && m[fuelType]) || null;
 }
 
 function initMunicipalities() {
@@ -149,9 +174,21 @@ function getRows() {
 // --- rendering -------------------------------------------------------------
 
 function render() {
+    renderBanner();
     renderSummary();
     if (view === "map") renderMap();
     else renderList();
+}
+
+function renderBanner() {
+    const el = document.getElementById("change-banner");
+    if (!el) return;
+    const flagged = (DISCREP.items || []).filter(it => it.fuel === fuelType);
+    if (!flagged.length) { el.style.display = "none"; return; }
+    const chains = [...new Set(flagged.map(it => it.source))].join(", ");
+    el.style.display = "block";
+    el.innerHTML = `⚠️ ${FUEL_LABELS[fuelType]}: kai kurių tinklų (${chains}) kainos galėjo
+        pasikeisti nuo 10:00 oficialaus pranešimo.`;
 }
 
 function renderSummary() {
@@ -198,6 +235,9 @@ function renderList() {
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
             const approxTag = s.approx ? ' <span class="approx-tag">apytikslė vieta</span>' : "";
+            const fl = flagFor(s);
+            const flagLine = fl ? `<div class="change-flag">⚠️ Kaina galėjo pasikeisti nuo 10:00 —
+                ${fl.source} tinkle ${fl.direction === "down" ? "pigiau" : "brangiau"}: €${fl.live.toFixed(3)}/L</div>` : "";
             return `
             <div class="station-card">
                 ${isBest ? '<div class="best-price-badge">⭐ PIGIAUSIA</div>' : ''}${dist}
@@ -207,6 +247,7 @@ function renderList() {
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
                 <div class="station-muni">📍 ${s.municipality || ""}${approxTag}</div>
+                ${flagLine}
                 <div class="nav-row">${navButtons(s)}</div>
             </div>`;
         }).join("");

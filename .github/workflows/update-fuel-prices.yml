@@ -31,11 +31,17 @@ jobs:
       - name: Geocode stations (cached; only new addresses hit Nominatim)
         run: python scripts/geocode.py
 
+      - name: Fetch independent sources (Circle K)
+        run: python scripts/fetch_circlek.py || echo "Circle K fetch failed (non-fatal)"
+
+      - name: Compare sources vs LEA -> discrepancies.json
+        run: python scripts/compare.py
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json data/geocode_cache.json || true
+          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/discrepancies.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else
