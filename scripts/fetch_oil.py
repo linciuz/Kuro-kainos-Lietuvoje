@@ -57,6 +57,14 @@ def main():
     week_chg = round(100 * (latest - week_ref) / week_ref, 1)
     month_chg = round(100 * (latest - month_ref) / month_ref, 1)
 
+    # Weekly average (last 5 trading days) + previous week, for a smoothed
+    # week-over-week signal shown at the bottom of the app.
+    last5 = [c for _, c in series[-5:]]
+    prev5 = [c for _, c in series[-10:-5]] or last5
+    week_avg = round(sum(last5) / len(last5), 2)
+    prev_week_avg = round(sum(prev5) / len(prev5), 2)
+    avg_chg = round(100 * (week_avg - prev_week_avg) / prev_week_avg, 1)
+
     # Crude->pump pass-through is partial/lagged, so use a meaningful band.
     if week_chg >= 8:
         level = "strong"      # likely rise, strongly
@@ -75,6 +83,9 @@ def main():
         "symbol": "Brent",
         "currency": currency,
         "price": round(latest, 2),
+        "week_avg": week_avg,
+        "prev_week_avg": prev_week_avg,
+        "avg_change_pct": avg_chg,
         "week_change_pct": week_chg,
         "month_change_pct": month_chg,
         "level": level,

@@ -125,6 +125,16 @@
         .oil-banner.oil-fall { background: #e9f7ee; color: #1f7a3d; border-bottom-color: #bfe6cd; }
         .oil-banner.oil-stable { background: #f5f6f7; color: #666; }
         #updated-line.stale { color: #b3261e; font-weight: 700; }
+        .oil-footer {
+            border-top: 1px solid #e0e0e0; font-size: 12px; color: #555;
+            padding: 10px 15px; text-align: center; background: #fafbfc;
+            display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap;
+        }
+        .oil-footer b { color: #333; }
+        .oil-ind { font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+        .oil-footer.oil-ind-up .oil-ind { color: #b3261e; background: #fdecee; }
+        .oil-footer.oil-ind-down .oil-ind { color: #1f7a3d; background: #e9f7ee; }
+        .oil-footer.oil-ind-flat .oil-ind { color: #666; background: #eef0f2; }
         .report-line {
             font-size: 12px; color: #4a2f7a; background: #f0ebfb; border: 1px solid #d6c6f0;
             border-radius: 8px; padding: 6px 9px; margin-bottom: 10px;
@@ -231,6 +241,8 @@
         <div id="map-view" style="display:none">
             <div id="map"></div>
         </div>
+
+        <div class="oil-footer" id="oil-footer" style="display:none"></div>
 
         <div class="footer">
             <p>💡 Pridėkite į telefono ekraną – veiks kaip programėlė.</p>

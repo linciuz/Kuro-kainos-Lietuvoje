@@ -277,20 +277,43 @@ function updateChrome() {
     }
 }
 
+// Top banner: only the DRASTIC "prices may rise" alert (the persistent weekly
+// average + direction lives in the bottom footer widget below).
 function renderOilBanner() {
     const el = document.getElementById("oil-banner");
     if (!el) return;
-    if (!OIL || fuelType === "ev" || OIL.level === "stable") { el.style.display = "none"; return; }
+    if (!OIL || fuelType === "ev" || !(OIL.level === "rise" || OIL.level === "strong")) {
+        el.style.display = "none";
+        return;
+    }
     const wk = OIL.week_change_pct, sign = wk > 0 ? "+" : "";
-    const txt = {
-        strong: `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos netrukus greičiausiai <b>kils</b>.`,
-        rise:   `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos artimiausiu metu gali <b>kilti</b>.`,
-        watch:  `🛢️ Brent nafta per savaitę +${wk}% → galimas degalų kainų kilimas (verta stebėti).`,
-        fall:   `🛢️ Brent nafta per savaitę ${wk}% → degalų kainos gali <b>mažėti</b>.`,
-    }[OIL.level] || "";
     el.className = "oil-banner oil-" + OIL.level;
     el.style.display = "block";
-    el.innerHTML = txt;
+    el.innerHTML = OIL.level === "strong"
+        ? `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos netrukus greičiausiai <b>kils</b>.`
+        : `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos artimiausiu metu gali <b>kilti</b>.`;
+}
+
+// Bottom footer: always-visible weekly-average Brent price + a direction
+// indicator (fuel prices may go up/down on drastic crude moves).
+function renderOilFooter() {
+    const el = document.getElementById("oil-footer");
+    if (!el) return;
+    if (!OIL) { el.style.display = "none"; return; }
+    const avg = (OIL.week_avg != null ? OIL.week_avg : OIL.price);
+    const chg = (OIL.avg_change_pct != null ? OIL.avg_change_pct : OIL.week_change_pct);
+    const sign = chg > 0 ? "+" : "";
+    const ind = {
+        strong: ["↑", "degalų kainos gali kilti", "up"],
+        rise:   ["↑", "degalų kainos gali kilti", "up"],
+        watch:  ["↗", "galimas kainų kilimas", "up"],
+        fall:   ["↓", "kainos gali mažėti", "down"],
+        stable: ["→", "rinka stabili", "flat"],
+    }[OIL.level] || ["→", "rinka stabili", "flat"];
+    el.className = "oil-footer oil-ind-" + ind[2];
+    el.style.display = "flex";
+    el.innerHTML = `🛢️ Brent nafta · savaitės vid. <b>$${avg.toFixed(2)}</b> ·
+        per savaitę ${sign}${chg}% <span class="oil-ind">${ind[0]} ${ind[1]}</span>`;
 }
 
 function selectFuel(f) {
@@ -392,6 +415,7 @@ function getRows() {
 
 function render() {
     renderOilBanner();
+    renderOilFooter();
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
         document.getElementById("change-banner").style.display = "none";
