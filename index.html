@@ -25,17 +25,6 @@
             max-width: 1200px; margin: 0 auto; background: white;
             border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden;
         }
-        .header {
-            background: linear-gradient(135deg, #007AFF 0%, #0056b3 100%);
-            color: white; padding: 18px; text-align: center;
-        }
-        .header h1 { font-size: 22px; margin-bottom: 4px; }
-        .header p { opacity: 0.9; font-size: 13px; }
-        .source-line {
-            background: #eef4ff; color: #0056b3; font-size: 12px;
-            padding: 8px 15px; text-align: center; border-bottom: 1px solid #dce6f5;
-        }
-        .source-line a { color: #0056b3; }
         .controls { padding: 15px; background: white; }
         .fuel-type-selector { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
         .fuel-btn {
@@ -119,11 +108,6 @@
             background: #fff4e0; color: #8a5a00; border-bottom: 1px solid #ffd591;
             font-size: 12px; padding: 9px 15px; text-align: center;
         }
-        .oil-banner { font-size: 12px; padding: 9px 15px; text-align: center; border-bottom: 1px solid #eee; }
-        .oil-banner.oil-rise, .oil-banner.oil-strong { background: #fdecee; color: #b3261e; border-bottom-color: #f5c2c0; }
-        .oil-banner.oil-watch { background: #fff4e0; color: #8a5a00; border-bottom-color: #ffd591; }
-        .oil-banner.oil-fall { background: #e9f7ee; color: #1f7a3d; border-bottom-color: #bfe6cd; }
-        .oil-banner.oil-stable { background: #f5f6f7; color: #666; }
         #updated-line.stale { color: #b3261e; font-weight: 700; }
         .oil-footer {
             border-top: 1px solid #e0e0e0; font-size: 12px; color: #555;
@@ -185,22 +169,16 @@
         .popup-price { color: #007AFF; font-weight: bold; }
         .popup-nav { display: flex; gap: 6px; margin-top: 8px; }
 
+        .footer a { color: #0056b3; }
+        .footer p { margin: 2px 0; }
         .footer {
             background: #f8f9fa; padding: 14px; text-align: center;
             border-top: 1px solid #e0e0e0; font-size: 12px; color: #666;
         }
-        @media (max-width: 600px) { .header h1 { font-size: 19px; } }
     </style>
 </head>
 <body>
     <div class="app-container">
-        <div class="header">
-            <h1>⛽ Kuro Kainos Lietuvoje</h1>
-            <p>Oficialios kainos · artimiausios degalinės · žemėlapis</p>
-        </div>
-
-        <div class="source-line" id="source-line">Kraunama oficialūs duomenys…</div>
-        <div class="oil-banner" id="oil-banner" style="display:none"></div>
         <div class="change-banner" id="change-banner" style="display:none"></div>
 
         <div class="controls">
@@ -245,7 +223,7 @@
         <div class="oil-footer" id="oil-footer" style="display:none"></div>
 
         <div class="footer">
-            <p>💡 Pridėkite į telefono ekraną – veiks kaip programėlė.</p>
+            <p id="source-line">Kraunama oficialūs duomenys…</p>
             <p id="updated-line"></p>
         </div>
     </div>

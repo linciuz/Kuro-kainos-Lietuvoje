@@ -277,27 +277,6 @@ function updateChrome() {
     }
 }
 
-// Top banner: the prominent alert for a DRASTIC weekly move — red when prices
-// are likely to rise, green when likely to drop. Hidden when stable (that's the
-// calm "→ rinka stabili" state shown only in the bottom strip).
-function renderOilBanner() {
-    const el = document.getElementById("oil-banner");
-    if (!el) return;
-    const L = OIL && OIL.level;
-    if (!OIL || fuelType === "ev" || L === "stable") { el.style.display = "none"; return; }
-    const chg = OIL.avg_change_pct, sign = chg > 0 ? "+" : "";
-    const up = (L === "rise" || L === "strong_up");
-    const msg = {
-        strong_up:   "degalų kainos netrukus greičiausiai <b>kils</b>",
-        rise:        "degalų kainos artimiausiu metu gali <b>kilti</b>",
-        fall:        "degalų kainos artimiausiu metu gali <b>mažėti</b>",
-        strong_down: "degalų kainos netrukus greičiausiai <b>mažės</b>",
-    }[L] || "";
-    el.className = "oil-banner " + (up ? "oil-rise" : "oil-fall");
-    el.style.display = "block";
-    el.innerHTML = `🛢️ Brent nafta per savaitę <b>${sign}${chg}%</b> → ${msg}.`;
-}
-
 // Bottom footer: always-visible weekly-average Brent price + a direction
 // indicator (fuel prices may go up/down on drastic crude moves).
 function renderOilFooter() {
@@ -418,7 +397,6 @@ function getRows() {
 // --- rendering -------------------------------------------------------------
 
 function render() {
-    renderOilBanner();
     renderOilFooter();
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
