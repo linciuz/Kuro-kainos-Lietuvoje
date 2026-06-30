@@ -1,0 +1,1106 @@
+{
+  "generated": "2026-06-30T13:27:32Z",
+  "count": 137,
+  "networks": [
+    "Baltic Petroleum",
+    "Emsi"
+  ],
+  "stations": [
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolė, P.Armino g. 69",
+      "city": "Marijampolė",
+      "lat": 54.533904,
+      "lon": 23.353163,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Respublikos g. 113 B, Rokiškis,  Lietuva",
+      "city": "Rokiškis",
+      "lat": 55.946755,
+      "lon": 25.590818,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkai, Leipalingio g. 26",
+      "city": "Druskininkai",
+      "lat": 54.030364,
+      "lon": 23.983674,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Metalo g. 4B",
+      "city": "Vilnius",
+      "lat": 54.640438,
+      "lon": 25.267512,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kauno r. Vilkijos sen., Jaučiakių k.",
+      "city": "Jaučiakių k.",
+      "lat": 55.038374,
+      "lon": 23.607911,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Nida, Nidos - Smiltynės pl. 6",
+      "city": "Nida",
+      "lat": 55.300905,
+      "lon": 20.979956,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Jonavos g. 60A",
+      "city": "Kaunas",
+      "lat": 54.905045,
+      "lon": 23.89955,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkai, Gardino g. 79",
+      "city": "Druskininkai",
+      "lat": 53.99993,
+      "lon": 23.988055,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Prienų r. sav., Veiverių k.",
+      "city": "Veiverių k.",
+      "lat": 54.760985,
+      "lon": 23.713228,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonava, Žemaitės g. 1",
+      "city": "Jonava",
+      "lat": 55.082541,
+      "lon": 24.270744,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėdos r., Sav., Gargždai, Dariaus ir Girėno g.",
+      "city": "Gargždai",
+      "lat": 55.7076,
+      "lon": 21.38056,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Skuodas, Vytauto g. 22",
+      "city": "Skuodas",
+      "lat": 56.259168,
+      "lon": 21.530562,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, H. ir O. Minkovskiu g. 132",
+      "city": "Kaunas",
+      "lat": 54.885791,
+      "lon": 23.912009,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kelmė, V. Putvinskio g. 29",
+      "city": "Kelmė",
+      "lat": 55.641154,
+      "lon": 22.92719,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Alytaus r., Likiškėlių k., Senojo Plento g. 1G",
+      "city": "Likiškėlių k.",
+      "lat": 54.387895,
+      "lon": 23.996028,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Telšių r. sav., Varnių sen., Ožtakių k., Dariaus ir Girėno g. 77",
+      "city": "Ožtakių k.",
+      "lat": 55.730402,
+      "lon": 22.376796,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Tauragės r. sav., Tauragės sen., Taurų k., Tilžės pl. 36",
+      "city": "Taurų k.",
+      "lat": 55.243335,
+      "lon": 22.252982,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+      "city": "Aukštikalnių k.",
+      "lat": 56.070646,
+      "lon": 24.41062,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškis, Šiauliu g. 1A",
+      "city": "Radviliškis",
+      "lat": 55.825541,
+      "lon": 23.523356,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonavos r., Spanėnų k., Plento g. 46",
+      "city": "Spanėnų k.",
+      "lat": 55.058167,
+      "lon": 24.263538,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėnos r. sav., Senoji Varėna, Vilniaus g. 6A",
+      "city": "Senoji Varėna",
+      "lat": 54.25656,
+      "lon": 24.547038,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipeda, Šilutes pl. 1",
+      "city": "Klaipeda",
+      "lat": 55.704933,
+      "lon": 21.163291,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Joniškis, Vilniaus g. 72",
+      "city": "Joniškis",
+      "lat": 56.223278,
+      "lon": 23.597525,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kalvarijos sav., Pasiekų k., Europos g. 12",
+      "city": "Pasiekų k.",
+      "lat": 54.322374,
+      "lon": 23.145167,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolė, Vasaros g. 15",
+      "city": "Marijampolė",
+      "lat": 54.555636,
+      "lon": 23.375454,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Visalaukio g. 2",
+      "city": "Vilnius",
+      "lat": 54.779287,
+      "lon": 25.341874,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Kalvarijų g. 161A",
+      "city": "Vilnius",
+      "lat": 54.723999,
+      "lon": 25.282324,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilalė, Rytinio kelio g. 2",
+      "city": "Šilalė",
+      "lat": 55.490035,
+      "lon": 22.199784,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Savanorių pr. 121",
+      "city": "Vilnius",
+      "lat": 54.660926,
+      "lon": 25.233389,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Rokiškio r. sav., Pandėlio k., Elektrinės g. 1",
+      "city": "Pandėlio k.",
+      "lat": 56.0192,
+      "lon": 25.222228,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėdos r. sav., Priekulė, Klaipėdos g. 61",
+      "city": "Priekulė",
+      "lat": 55.562062,
+      "lon": 21.308618,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėnos r. sav., Merkinė, Vilniaus g. 87",
+      "city": "Merkinė",
+      "lat": 54.169021,
+      "lon": 24.207974,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Ukmergė, Kauno g. 49",
+      "city": "Ukmergė",
+      "lat": 55.240854,
+      "lon": 24.73959,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kauno r. Garliavos sen., Pagirių k., Marijampolės g. 1",
+      "city": "Pagirių k.",
+      "lat": 54.814628,
+      "lon": 23.87254,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Plungės r. sav., Plateliai, Žemaičių Kalvarijos g. 1A",
+      "city": "Plateliai",
+      "lat": 56.043869,
+      "lon": 21.815653,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškis, Miško g. 64",
+      "city": "Radviliškis",
+      "lat": 55.800801,
+      "lon": 23.565702,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vienuolio g. 34A, Anykšciai,  Lietuva",
+      "city": "Anykščiai",
+      "lat": 55.522582,
+      "lon": 25.08799,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Palanga, Ganyklų g. 28C",
+      "city": "Palanga",
+      "lat": 55.923324,
+      "lon": 21.075206,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Trakai, Vilniaus g. 33",
+      "city": "Trakai",
+      "lat": 54.62727,
+      "lon": 24.948711,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Zarasų r. sav., Sarakiškių k., Vytauto g. 61",
+      "city": "Sarakiškių k.",
+      "lat": 55.737287,
+      "lon": 26.272834,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Rinktinės g. 59",
+      "city": "Vilnius",
+      "lat": 54.702833,
+      "lon": 25.288126,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Raudondvario pl. 82",
+      "city": "Kaunas",
+      "lat": 54.907738,
+      "lon": 23.874252,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseinių r., Sav., Girkalnio sen., Girkalnio k., Žemaičių g. 39",
+      "city": "Girkalnio k.",
+      "lat": 55.318307,
+      "lon": 23.210769,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šalčininkai, Vilniaus g. 5A",
+      "city": "Šalčininkai",
+      "lat": 54.317842,
+      "lon": 25.381712,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Rietavas, Dariaus ir Girėno g. 19",
+      "city": "Rietavas",
+      "lat": 55.719508,
+      "lon": 21.928083,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šakių r. sav., Griškabūdis, A. Skelčio g. 4",
+      "city": "Griškabūdis",
+      "lat": 54.852382,
+      "lon": 23.176758,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Gerosios Vilties g. 33",
+      "city": "Vilnius",
+      "lat": 54.666834,
+      "lon": 25.251065,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šiauliai, Kupiškio g. 4",
+      "city": "Šiauliai",
+      "lat": 55.957544,
+      "lon": 23.316059,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jurbarko r. sav., Klišių k., Pievų g. 2",
+      "city": "Klišių k.",
+      "lat": 55.098482,
+      "lon": 22.772921,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Molėtai, Vilniaus g. 104",
+      "city": "Molėtai",
+      "lat": 55.217337,
+      "lon": 25.403375,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Emsi",
+      "address": "Klevų g. 15, Plungė, Lietuva",
+      "city": "",
+      "lat": 55.904329,
+      "lon": 21.862935,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Antakalnio gatvė 63, Vilnius, Lietuva",
+      "city": "",
+      "lat": 54.712396,
+      "lon": 25.316465,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Žirmūnų gatvė 117, Vilnius, Lietuva",
+      "city": "",
+      "lat": 54.724361,
+      "lon": 25.3044,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Kaunas, Kauno apskritis, Lietuva",
+      "city": "",
+      "lat": 54.898521,
+      "lon": 23.903596,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Utena, Utenos apskritis, Lietuva",
+      "city": "",
+      "lat": 55.50004,
+      "lon": 25.609385,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Lukiškių gatvė 5, Vilnius, Lietuva",
+      "city": "",
+      "lat": 54.693055,
+      "lon": 25.268165,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Gluosnių g. 4a, Šilutė, Klaipėdos apskritis, Lietuva",
+      "city": "",
+      "lat": 55.349229,
+      "lon": 21.468518,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Ūdrijos g. 2, Alytus, Lietuva",
+      "city": "",
+      "lat": 54.408331,
+      "lon": 24.01636,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Žemaičių g. 34, Ariogala, Raseinių sen.",
+      "city": "",
+      "lat": 55.265001,
+      "lon": 23.467125,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Jaunimo g. 2A, Biržai, Biržų rajono savivaldybė, Lietuva",
+      "city": "",
+      "lat": 56.207704,
+      "lon": 24.77073,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Paukštininkų g. 4, Kaišiadorys, Kaišiadorių rajono savivaldybė, Lietuva",
+      "city": "",
+      "lat": 54.863556,
+      "lon": 24.438794,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Emsi, Dirbtuvių gatvė, Gudiena, Kaišiadorių rajono savivaldybė, Lietuva",
+      "city": "",
+      "lat": 54.865313,
+      "lon": 24.588554,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "130 17, Ilgakiemis 53288, Lietuva",
+      "city": "",
+      "lat": 54.780134,
+      "lon": 23.877131,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "55.711836, 21.265073",
+      "city": "",
+      "lat": 55.711836,
+      "lon": 21.265073,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "55.790381, 21.141689",
+      "city": "",
+      "lat": 55.790381,
+      "lon": 21.141689,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Minijos g. 154a, Klaipėda, Klaipėdos apskritis, Lietuva",
+      "city": "",
+      "lat": 55.668911,
+      "lon": 21.158973,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "EMSI, Lazdijų rajono savivaldybė, Lietuva",
+      "city": "",
+      "lat": 54.175561,
+      "lon": 23.481046,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Sodų g. 3A, Lentvaris, Lietuva",
+      "city": "",
+      "lat": 54.643334,
+      "lon": 25.05355,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Stoties g. 6b, Marijampolė, Marijampolės apskritis, Lietuva",
+      "city": "",
+      "lat": 54.565209,
+      "lon": 23.368721,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Pasieniečių g. 3, Medininkai",
+      "city": "",
+      "lat": 54.549881,
+      "lon": 25.678005,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Ramygalos g. 186a, Panevėžys, Panevėžio apskritis, Lietuva",
+      "city": "",
+      "lat": 55.709913,
+      "lon": 24.372552,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Nemuno g. 79a, Panevėžys, Panevėžio apskritis, Lietuva",
+      "city": "",
+      "lat": 55.731076,
+      "lon": 24.341052,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "55.906239, 24.338865",
+      "city": "",
+      "lat": 55.906239,
+      "lon": 24.338865,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "S. Nėries g. 38, Pilviškiai, Vilkaviškis, Lietuva",
+      "city": "",
+      "lat": 54.663808,
+      "lon": 23.029367,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Ukmergės g. 437, Vilnius, Vilniaus apskritis 14183, Lietuva",
+      "city": "",
+      "lat": 54.753512,
+      "lon": 25.211742,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Neravai 02300, Lietuva",
+      "city": "",
+      "lat": 54.671066,
+      "lon": 25.117689,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Jeruzalės g. 2, Vilnius, Vilniaus apskritis, Lietuva",
+      "city": "",
+      "lat": 54.739851,
+      "lon": 25.276131,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Kareivių g. 4, Vilnius, Lietuva",
+      "city": "",
+      "lat": 54.717885,
+      "lon": 25.295762,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Laisvės pr. 80b, Vilnius, Vilniaus apskritis, Lietuva",
+      "city": "",
+      "lat": 54.723392,
+      "lon": 25.232888,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Liepkalnio g. 112a, Vilnius, Vilniaus apskritis, Lietuva",
+      "city": "",
+      "lat": 54.654868,
+      "lon": 25.302985,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Pajautos g. 31, Vilnius, Vilniaus apskritis, Lietuva",
+      "city": "",
+      "lat": 54.710396,
+      "lon": 25.166804,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Savanorių pr. 225, Vilnius, Lietuva",
+      "city": "",
+      "lat": 54.64091,
+      "lon": 25.184263,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Trakų vokė, Vilnius",
+      "city": "",
+      "lat": 54.62384,
+      "lon": 25.111265,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Aukštieji Semeniukai, 21401 Trakų r. sav., Lietuva",
+      "city": "",
+      "lat": 54.709552,
+      "lon": 24.999824,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.83562479598047, 25.460384977050126",
+      "city": "",
+      "lat": 54.835625,
+      "lon": 25.460385,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.622787, 25.105291",
+      "city": "",
+      "lat": 54.622787,
+      "lon": 25.105291,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Ateities pl. 40B, Kaunas, Lithuania",
+      "city": "",
+      "lat": 54.921892,
+      "lon": 24.047439,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Liuksemburgo akl. 27, Kaunas",
+      "city": "",
+      "lat": 54.859352,
+      "lon": 23.83696,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Žemaičių g. 30c, Ariogala, Kauno apskritis, Lithuania",
+      "city": "",
+      "lat": 55.260783,
+      "lon": 23.489305,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Palemono g. 3A, Kaunas, Lithuania",
+      "city": "",
+      "lat": 54.901009,
+      "lon": 24.031254,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Taikos prospektas 124, Klaipėda, Lithuania",
+      "city": "",
+      "lat": 55.661398,
+      "lon": 21.176028,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Kauno g. 165, Marijampolė, Lithuania",
+      "city": "",
+      "lat": 54.592791,
+      "lon": 23.389471,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Europos g. 11, Lithuania",
+      "city": "",
+      "lat": 54.558184,
+      "lon": 23.275133,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Sodų g. 3, Lentvaris, Lietuva",
+      "city": "",
+      "lat": 54.643382,
+      "lon": 25.053213,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "56.063674, 24.426118",
+      "city": "",
+      "lat": 56.063674,
+      "lon": 24.426118,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Dirbtuvių g. 2, Gudiena, Kauno apskritis",
+      "city": "",
+      "lat": 54.868863,
+      "lon": 24.476608,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.7077495909732, 24.996165800839663",
+      "city": "",
+      "lat": 54.70775,
+      "lon": 24.996166,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Kėdainių r. sav. 58212, Lietuva",
+      "city": "",
+      "lat": 55.202482,
+      "lon": 23.626582,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Savanorių g. 5, Varėna, Lietuva",
+      "city": "",
+      "lat": 54.210237,
+      "lon": 24.576496,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "140, Aržuolupiai, Marijampolės apskritis 71107, Lietuva",
+      "city": "",
+      "lat": 54.953272,
+      "lon": 23.083431,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "28 Muitinės gatvė, Jurbarkas 74111, Lietuva",
+      "city": "",
+      "lat": 55.077558,
+      "lon": 22.74898,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "S. Daukanto g. 66, Jurbarkas, Tauragės apskritis, Lietuva",
+      "city": "",
+      "lat": 55.082776,
+      "lon": 22.776673,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Knygnešių g. 9, Jurbarkas, Tauragės apskritis, Lietuva",
+      "city": "",
+      "lat": 55.087389,
+      "lon": 22.747097,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "14 137, Gelgaudiškio seniūnija, Marijampolės apskritis 71435, Lietuva",
+      "city": "",
+      "lat": 55.017681,
+      "lon": 22.986397,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "E67, 58111, Lietuva",
+      "city": "",
+      "lat": 55.304501,
+      "lon": 24.091973,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Nemuno g. 63a, Kiduliai",
+      "city": "",
+      "lat": 55.06373,
+      "lon": 22.78052,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Giedručiai 71124, Lithuania",
+      "city": "",
+      "lat": 54.954054,
+      "lon": 23.024608,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Rūdos k., LT-70313",
+      "city": "",
+      "lat": 54.601951,
+      "lon": 23.195148,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "S. Šimkaus g. 69, Seredžius, Seredžiaus sen.",
+      "city": "",
+      "lat": 55.078918,
+      "lon": 23.39694,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Sembos g. 5, Šiauliai, Lithuania",
+      "city": "",
+      "lat": 55.895367,
+      "lon": 23.276915,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Miško g. 62, Radviliškis, Lithuania",
+      "city": "",
+      "lat": 55.802003,
+      "lon": 23.563835,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Vasario 16-osios gatvė 70, Jonava, Lithuania",
+      "city": "",
+      "lat": 55.071207,
+      "lon": 24.257898,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "55.670168, 24.346048",
+      "city": "",
+      "lat": 55.670168,
+      "lon": 24.346048,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.809484, 23.853669",
+      "city": "",
+      "lat": 54.809484,
+      "lon": 23.853669,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.92783689898629, 23.97206399635007",
+      "city": "",
+      "lat": 54.927837,
+      "lon": 23.972064,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.932030649920115, 23.917912497803048",
+      "city": "",
+      "lat": 54.932031,
+      "lon": 23.917912,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.90833119993016, 23.993012561827246",
+      "city": "",
+      "lat": 54.908331,
+      "lon": 23.993013,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Savanorių pr. 402, Kaunas, Kauno m. sav., Lietuva",
+      "city": "",
+      "lat": 54.927194,
+      "lon": 23.970498,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Jonavos g. 292b, Kaunas, Kauno m. sav., Lietuva",
+      "city": "",
+      "lat": 54.931664,
+      "lon": 23.918043,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Draugystės g. 8B, Kaunas, Kauno m. sav., Lietuva",
+      "city": "",
+      "lat": 54.908019,
+      "lon": 23.992065,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Palemono gatvė 3A, Kaunas, Kauno m. sav., Lietuva",
+      "city": "",
+      "lat": 54.900985,
+      "lon": 24.031209,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Liuksemburgo aklg. 27, Kaunas, Kauno m. sav., Lietuva",
+      "city": "",
+      "lat": 54.859234,
+      "lon": 23.837084,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Marijampolės g. 58, Kaunas, Kauno r. sav., Lietuva",
+      "city": "",
+      "lat": 54.809532,
+      "lon": 23.859559,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Taikos prospektas 124, Klaipėda, Klaipėdos m. sav., Lietuva",
+      "city": "",
+      "lat": 55.661169,
+      "lon": 21.176253,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "38242 Panevėžio r. sav., Lietuva",
+      "city": "",
+      "lat": 55.649218,
+      "lon": 24.355982,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "69338 Marijampolės sav., Lietuva",
+      "city": "",
+      "lat": 54.562177,
+      "lon": 23.274006,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "68100 Marijampolės sav., Lietuva",
+      "city": "",
+      "lat": 54.584706,
+      "lon": 23.376985,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "56.06385477273184, 24.426394032812485",
+      "city": "",
+      "lat": 56.063855,
+      "lon": 24.426394,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Sembos g. 5, Šiauliai, Šiaulių m. sav., Lietuva",
+      "city": "",
+      "lat": 55.896673,
+      "lon": 23.274129,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Nemuno g. 63a, Kiduliai",
+      "city": "",
+      "lat": 55.064429,
+      "lon": 22.780661,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "EMSI, Sereikoniai, Pasvalio rajono savivaldybė, Lietuva",
+      "city": "",
+      "lat": 55.908581,
+      "lon": 24.354983,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.87314621866112, 25.073408319604475",
+      "city": "",
+      "lat": 54.873146,
+      "lon": 25.073408,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.95173426912465, 23.893606107795726",
+      "city": "",
+      "lat": 54.951734,
+      "lon": 23.893606,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "T. Masiulio g. 16A, Kaunas, 52375 Kauno m. sav.",
+      "city": "",
+      "lat": 54.884588,
+      "lon": 24.006121,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Kirtimų g. 33, Vilnius, 02300 Vilniaus m. sav.",
+      "city": "",
+      "lat": 54.627394,
+      "lon": 25.149295,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "55.277921205084525, 23.341360153279588",
+      "city": "",
+      "lat": 55.277921,
+      "lon": 23.34136,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "54.97189745233967, 23.858992989585428",
+      "city": "",
+      "lat": 54.971897,
+      "lon": 23.858993,
+      "source": "wpgmza"
+    }
+  ]
+}

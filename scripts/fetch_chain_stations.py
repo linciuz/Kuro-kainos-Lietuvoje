@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""
+Chain station-directory collector.
+
+The fuel chains publish their own stations with EXACT coordinates (far more
+precise than geocoding LEA's address strings). We pull those directories and
+write data/sources/chain_stations.json:
+
+  {"generated": "...", "count": N,
+   "stations": [{"network","address","city","lat","lon","source"}, ...]}
+
+merge_chain_coords.py then snaps LEA stations onto these exact coordinates.
+
+Sources confirmed open (no auth):
+  Baltic Petroleum  FSCC API     mobileapi.fscc.lt/bp/api/stations  (location.lat/lng)
+  Emsi              WP GMaps     emsi.lt/wp-json/wpgmza/v1/markers  (lat/lng)
+Add more chains as fetch_* functions; each is independent (failures are skipped).
+"""
+
+import datetime as dt
+import json
+import os
+import sys
+import urllib.request
+
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+OUT = os.path.join("data", "sources", "chain_stations.json")
+UA_API = "okhttp/4.9.2"
+UA_WEB = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+LT_BBOX = (53.7, 56.6, 20.8, 27.0)   # lat_min, lat_max, lon_min, lon_max
+
+
+def http_json(url, ua):
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        return json.load(r)
+
+
+def in_lt(lat, lon):
+    return LT_BBOX[0] <= lat <= LT_BBOX[1] and LT_BBOX[2] <= lon <= LT_BBOX[3]
+
+
+def fetch_baltic_petroleum():
+    data = http_json("https://mobileapi.fscc.lt/bp/api/stations", UA_API)["data"]
+    out = []
+    for s in data:
+        loc = s.get("location") or {}
+        try:
+            lat, lon = float(loc["latitude"]), float(loc["longitude"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if in_lt(lat, lon):
+            out.append({"network": "Baltic Petroleum", "address": (s.get("address") or "").strip(),
+                        "city": (s.get("city") or "").strip(),
+                        "lat": round(lat, 6), "lon": round(lon, 6), "source": "fscc-api"})
+    return out
+
+
+def fetch_emsi():
+    data = http_json("https://emsi.lt/wp-json/wpgmza/v1/markers", UA_WEB)
+    out, seen = [], set()
+    for m in data:
+        try:
+            lat, lon = float(m.get("lat")), float(m.get("lng"))
+        except (TypeError, ValueError):
+            continue
+        if not in_lt(lat, lon):
+            continue
+        key = (round(lat, 5), round(lon, 5))     # the feed has duplicate markers
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({"network": "Emsi", "address": (m.get("address") or "").strip(), "city": "",
+                    "lat": round(lat, 6), "lon": round(lon, 6), "source": "wpgmza"})
+    return out
+
+
+CHAINS = [
+    ("Baltic Petroleum", fetch_baltic_petroleum),
+    ("Emsi", fetch_emsi),
+]
+
+
+def main():
+    stations = []
+    for name, fn in CHAINS:
+        try:
+            got = fn()
+            print(f"[ok] {name}: {len(got)} stations")
+            stations += got
+        except Exception as e:
+            print(f"[warn] {name} failed: {e}")
+
+    payload = {
+        "generated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
+        "count": len(stations),
+        "networks": sorted({s["network"] for s in stations}),
+        "stations": stations,
+    }
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    json.dump(payload, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"[ok] wrote {OUT}: {len(stations)} stations from {len(payload['networks'])} networks")
+
+
+if __name__ == "__main__":
+    main()
