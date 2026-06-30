@@ -1,0 +1,13 @@
+{
+  "source": "ORLEN Lietuva (didmeninė)",
+  "source_url": "https://www.orlenlietuva.lt/LT/Wholesale/Puslapiai/Produktu-kainos.aspx",
+  "scope": "wholesale",
+  "unit": "EUR/l @15°C",
+  "fetched": "2026-06-30",
+  "stated_date": "29.06",
+  "prices": {
+    "diesel_agri": 1.024,
+    "petrol95": 1.507,
+    "diesel": 1.591
+  }
+}

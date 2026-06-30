@@ -13,6 +13,7 @@ const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map vie
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
+let ORLEN_WS = null;                           // Orlen refinery wholesale reference
 let fuelType = "petrol95";
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
@@ -39,6 +40,7 @@ async function load() {
     }
     await loadDiscrepancies();
     await loadReports();
+    await loadOrlenWholesale();
     initMunicipalities();
     updateChrome();
     render();
@@ -67,6 +69,13 @@ async function loadReports() {
         const res = await fetch(REPORT_API + "/reports", { cache: "no-store" });
         REPORTS = res.ok ? await res.json() : {};
     } catch (e) { REPORTS = {}; }
+}
+
+async function loadOrlenWholesale() {
+    try {
+        const res = await fetch("data/sources/orlen_wholesale.json", { cache: "no-store" });
+        ORLEN_WS = res.ok ? await res.json() : null;
+    } catch (e) { ORLEN_WS = null; }
 }
 
 // An active report = reported AFTER the latest official LEA snapshot.
@@ -253,13 +262,16 @@ function renderSummary() {
     const box = document.getElementById("summary");
     if (!s) { box.style.display = "none"; return; }
     box.style.display = "block";
+    const ws = ORLEN_WS && ORLEN_WS.prices && ORLEN_WS.prices[fuelType];
+    const wsLine = ws ? `<div class="wholesale-ref">🏭 Orlen didmeninė (${ORLEN_WS.stated_date || ""}):
+        <b>€${ws.toFixed(3)}/L</b> — be antkainio, <i>ne degalinės kaina</i></div>` : "";
     box.innerHTML = `
         <div class="summary-title">${FUEL_LABELS[fuelType]} — šalies kainos (oficialios)</div>
         <div class="summary-stats">
             <div><div class="stat-label">Pigiausia</div><div class="stat-value lowest">€${s.min.toFixed(3)}</div></div>
             <div><div class="stat-label">Vidutinė</div><div class="stat-value">€${s.avg.toFixed(3)}</div></div>
             <div><div class="stat-label">Brangiausia</div><div class="stat-value highest">€${s.max.toFixed(3)}</div></div>
-        </div>`;
+        </div>${wsLine}`;
 }
 
 function navButtons(s) {

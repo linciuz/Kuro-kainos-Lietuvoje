@@ -1,9 +1,10 @@
 {
-  "generated": "2026-06-30T13:27:32Z",
-  "count": 137,
+  "generated": "2026-06-30T13:42:15Z",
+  "count": 223,
   "networks": [
     "Baltic Petroleum",
-    "Emsi"
+    "Emsi",
+    "Neste"
   ],
   "stations": [
     {
@@ -1101,6 +1102,694 @@
       "lat": 54.971897,
       "lon": 23.858993,
       "source": "wpgmza"
+    },
+    {
+      "network": "Neste",
+      "address": "Talino g. 2C",
+      "city": "Vilnius",
+      "lat": 54.7139,
+      "lon": 25.20905,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Erfurto g. 41",
+      "city": "Vilnius",
+      "lat": 54.67261,
+      "lon": 25.19828,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Plieno g. 1",
+      "city": "Klaipėda",
+      "lat": 55.67298,
+      "lon": 21.201,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Žirmūnų g. 68B",
+      "city": "Vilnius",
+      "lat": 54.71753,
+      "lon": 25.30448,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Šilutės pl. 30",
+      "city": "Klaipėda",
+      "lat": 55.69314,
+      "lon": 21.17496,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Rygos g. 2",
+      "city": "Vilnius",
+      "lat": 54.71557,
+      "lon": 25.22888,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Pramonės pr. 6A",
+      "city": "Kaunas",
+      "lat": 54.90991,
+      "lon": 23.98374,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Klaipėdos g. 81",
+      "city": "Panevėžys",
+      "lat": 55.72831,
+      "lon": 24.33242,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Jonavos g. 110",
+      "city": "Kaunas",
+      "lat": 54.91333,
+      "lon": 23.91162,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Savanorių pr. 220A",
+      "city": "Vilnius",
+      "lat": 54.64421,
+      "lon": 25.20697,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Parodų g. 1A",
+      "city": "Vilnius",
+      "lat": 54.67344,
+      "lon": 25.22406,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Gegužių g. 28",
+      "city": "Šiauliai",
+      "lat": 55.90607,
+      "lon": 23.25953,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Veiverių g. 132D",
+      "city": "Kaunas",
+      "lat": 54.87575,
+      "lon": 23.89093,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Klaipėdos g. 66",
+      "city": "Panevėžys",
+      "lat": 55.72768,
+      "lon": 24.34879,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Tilžės g. 72",
+      "city": "Šiauliai",
+      "lat": 55.92028,
+      "lon": 23.29298,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Žemaičių pl. 26",
+      "city": "Kaunas",
+      "lat": 54.92557,
+      "lon": 23.89179,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Kauno g. 26",
+      "city": "Vilnius",
+      "lat": 54.67164,
+      "lon": 25.27008,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Artojo g. 2",
+      "city": "Klaipėda",
+      "lat": 55.71766,
+      "lon": 21.15177,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "M. Daukšos g. 29",
+      "city": "Mažeikiai",
+      "lat": 56.3012,
+      "lon": 22.34985,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Geležinio Vilko g. 63",
+      "city": "Vilnius",
+      "lat": 54.71195,
+      "lon": 25.27067,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "R. Kalantos g. 27",
+      "city": "Kaunas",
+      "lat": 54.89506,
+      "lon": 23.98586,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "J. Basanavičiaus g. 91E",
+      "city": "Kedainiai",
+      "lat": 55.27815,
+      "lon": 23.95989,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "S. Stanevičiaus g. 3",
+      "city": "Vilnius",
+      "lat": 54.72145,
+      "lon": 25.25608,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Santaikos g. 34A",
+      "city": "Alytus",
+      "lat": 54.38706,
+      "lon": 24.02632,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Kedrų g. 2",
+      "city": "Vilnius",
+      "lat": 54.67723,
+      "lon": 25.25566,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Molėtų pl. 8",
+      "city": "Vilnius",
+      "lat": 54.75489,
+      "lon": 25.27126,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Ateities pl. 50B",
+      "city": "Kaunas",
+      "lat": 54.92626,
+      "lon": 24.06031,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "P. Lukšio g. 22",
+      "city": "Vilnius",
+      "lat": 54.71196,
+      "lon": 25.29313,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "J. Basanavičiaus g. 129",
+      "city": "Utena",
+      "lat": 55.50511,
+      "lon": 25.62464,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Europos g. 1, Salaperaugio k., Liubavo sen., Kalvarijos sav.",
+      "city": "Kalvarijos sav.",
+      "lat": 54.32984,
+      "lon": 23.15031,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Ažuolpamušio g. 1A, Raubonių k., Pasvalio r.",
+      "city": "Raubonys",
+      "lat": 56.1152,
+      "lon": 24.47067,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Katyčių k.",
+      "city": "Šilalės r. sav.",
+      "lat": 55.5212,
+      "lon": 22.36586,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Geležinio Vilko g. 37A",
+      "city": "Vilnius",
+      "lat": 54.70161,
+      "lon": 25.26372,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Architektų g. 130",
+      "city": "Vilnius",
+      "lat": 54.68087,
+      "lon": 25.20763,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Taikos pr. 80A",
+      "city": "Kaunas",
+      "lat": 54.91209,
+      "lon": 23.97267,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Islandijos pl. 191E",
+      "city": "Kaunas",
+      "lat": 54.93142,
+      "lon": 23.95076,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Klaipėdos g. 144B",
+      "city": "Panevėžys",
+      "lat": 55.73065,
+      "lon": 24.31611,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Smiltelės g. 17",
+      "city": "Klaipėda",
+      "lat": 55.67012,
+      "lon": 21.19296,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Margirio g. 1B",
+      "city": "Panevėžys",
+      "lat": 55.71938,
+      "lon": 24.34887,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Raudondvario pl. 103",
+      "city": "Kaunas",
+      "lat": 54.90683,
+      "lon": 23.87285,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Justiniškių g. 14B",
+      "city": "Vilnius",
+      "lat": 54.70508,
+      "lon": 25.21497,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Subačiaus g. 64",
+      "city": "Vilnius",
+      "lat": 54.67687,
+      "lon": 25.30948,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Žirmūnų g. 54C",
+      "city": "Vilnius",
+      "lat": 54.70675,
+      "lon": 25.30412,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Birželio 23-osios g. 23A",
+      "city": "Kaunas",
+      "lat": 54.91626,
+      "lon": 23.95401,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Dubijos g. 18A",
+      "city": "Šiauliai",
+      "lat": 55.92926,
+      "lon": 23.29436,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Europos g. 6, Naujosios Valios k., Sangrūdos sen., Kalvarijos sav.",
+      "city": "Kalvarijos sav.",
+      "lat": 54.32832,
+      "lon": 23.15056,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Dariaus ir Girėno g. 17",
+      "city": "Vilnius",
+      "lat": 54.65507,
+      "lon": 25.27073,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Šilutės pl. 5C",
+      "city": "Klaipėda",
+      "lat": 55.70311,
+      "lon": 21.16478,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Vilniaus pl. 9, Jakų k., Klaipėdos r. sav.",
+      "city": "Klaipėda",
+      "lat": 55.70659,
+      "lon": 21.23853,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Panevėžio aplinkl. 7, Šilagalio k., Panevėžio r. sav.",
+      "city": "Panevėžys",
+      "lat": 55.67037,
+      "lon": 24.34845,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Vijoklių g. 1C, Ramučių k., Kauno r. sav.",
+      "city": "Kaunas",
+      "lat": 54.94831,
+      "lon": 24.0178,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Pilaitės pr. 27",
+      "city": "Vilnius",
+      "lat": 54.70877,
+      "lon": 25.18972,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Sendvario g. 2, Sudmantų k., Sendvario sen.",
+      "city": "Klaipėda",
+      "lat": 55.70602,
+      "lon": 21.20259,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Vakarų g. 14, Kumpių k., Kauno r. sav.",
+      "city": "Kumpiu k., Kauno r.",
+      "lat": 54.94984,
+      "lon": 23.87374,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Minijos g. 180",
+      "city": "Klaipėda",
+      "lat": 55.65052,
+      "lon": 21.16461,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Aplinkkelio g. 165, Kanapelkos k.",
+      "city": "Kanapelka",
+      "lat": 55.22168,
+      "lon": 25.43672,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Savanorių pr. 441C",
+      "city": "Kaunas",
+      "lat": 54.92934,
+      "lon": 23.97347,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Vakarinis aplinkkelis 18",
+      "city": "Kaunas",
+      "lat": 54.9338,
+      "lon": 23.86774,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Eišiškių pl. 82",
+      "city": "Vilnius",
+      "lat": 54.62137,
+      "lon": 25.24287,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Ukmergės g. 296",
+      "city": "Vilnius",
+      "lat": 54.73613,
+      "lon": 25.23115,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Pušyno g. 11, Ylių k.",
+      "city": "Yliai",
+      "lat": 55.41173,
+      "lon": 22.83072,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Vilniaus g. 94",
+      "city": "Pabradė",
+      "lat": 54.97889,
+      "lon": 25.75661,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Panerių g. 42",
+      "city": "Vilnius",
+      "lat": 54.66822,
+      "lon": 25.26512,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Europos pr. 43",
+      "city": "Kaunas",
+      "lat": 54.87534,
+      "lon": 23.91146,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Plento g. 7, Gudžionių k., Šilų sen., Jonavos r. sav.",
+      "city": "Jonavos",
+      "lat": 55.09568,
+      "lon": 24.31259,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Versmės g. 2",
+      "city": "Radviliškis",
+      "lat": 55.81384,
+      "lon": 23.54581,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Dariaus ir Girėno g. 130A",
+      "city": "Tauragė",
+      "lat": 55.2653,
+      "lon": 22.30891,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Sabališkių 1U",
+      "city": "Elektrėnai",
+      "lat": 54.78952,
+      "lon": 24.67274,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Geležinio Vilko g. 41",
+      "city": "Vilnius",
+      "lat": 54.70413,
+      "lon": 25.2669,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Vilkaviškio g. 61D",
+      "city": "Marijampolė",
+      "lat": 54.56239,
+      "lon": 23.33233,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Kupiškio g. 12",
+      "city": "Atkociškės",
+      "lat": 55.48189,
+      "lon": 25.57905,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Ramygalos g. 145B",
+      "city": "Panevėžys",
+      "lat": 55.70945,
+      "lon": 24.37481,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Taikos pr. 60",
+      "city": "Klaipėda",
+      "lat": 55.68886,
+      "lon": 21.1552,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Minijos g. 119",
+      "city": "Klaipėda",
+      "lat": 55.68441,
+      "lon": 21.14966,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Savanorių pr. 187",
+      "city": "Vilnius",
+      "lat": 54.64811,
+      "lon": 25.21247,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Stoties g. 4C",
+      "city": "Marijampolė",
+      "lat": 54.56039,
+      "lon": 23.36587,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Kuršių g. 1",
+      "city": "Kaunas",
+      "lat": 54.93617,
+      "lon": 23.88529,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Tunelio g. 26",
+      "city": "Kaunas",
+      "lat": 54.89484,
+      "lon": 23.94421,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "J. Tiškevičiaus g. 19",
+      "city": "Vilnius",
+      "lat": 54.62428,
+      "lon": 25.11174,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Žirnių g. 17",
+      "city": "Vilnius",
+      "lat": 54.65665,
+      "lon": 25.29206,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Ūdrijos g. 31",
+      "city": "Alytus",
+      "lat": 54.40893,
+      "lon": 24.0052,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Gariūnų g. 55",
+      "city": "Vilnius",
+      "lat": 54.65823,
+      "lon": 25.15884,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Šiaulių pl. 1A, Gaudikaičių k.",
+      "city": "Telšiai",
+      "lat": 56.00488,
+      "lon": 22.24028,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Servečės g. 2",
+      "city": "Vilnius",
+      "lat": 54.63387,
+      "lon": 25.3045,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Panevėžio aplinkel. 22, Šilagalio km., Panevėžio raj. sav.,",
+      "city": "Panevėžys",
+      "lat": 55.67314,
+      "lon": 24.33452,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Neste",
+      "address": "Kauno g. 45B",
+      "city": "Ukmergė",
+      "lat": 55.24206,
+      "lon": 24.74291,
+      "source": "neste-locator"
     }
   ]
 }

@@ -18,8 +18,11 @@ Add more chains as fetch_* functions; each is independent (failures are skipped)
 """
 
 import datetime as dt
+import gzip
 import json
 import os
+import re
+import ssl
 import sys
 import urllib.request
 
@@ -39,6 +42,18 @@ def http_json(url, ua):
     req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=40) as r:
         return json.load(r)
+
+
+def http_text(url, ua):
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE   # some chain sites present a self-signed chain
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept-Language": "lt"})
+    resp = urllib.request.urlopen(req, timeout=40, context=ctx)
+    raw = resp.read()
+    if resp.headers.get("Content-Encoding") == "gzip":
+        raw = gzip.decompress(raw)
+    return raw.decode("utf-8", "replace")
 
 
 def in_lt(lat, lon):
@@ -80,9 +95,33 @@ def fetch_emsi():
     return out
 
 
+def fetch_neste():
+    # degalines.neste.lt is a Next.js app; station markers are embedded in the
+    # flight payload as {"position":{lat,lng},"data":{name,address,hasFuels,...}}.
+    html = http_text("https://degalines.neste.lt/", UA_WEB).replace(chr(92), "")
+    out = []
+    for m in re.finditer(r'"position":\{"lat":(5[3-6]\.\d+),"lng":(2[0-7]\.\d+)\}', html):
+        lat, lon = float(m.group(1)), float(m.group(2))
+        if not in_lt(lat, lon):
+            continue
+        win = html[m.end():m.end() + 700]          # the marker's data object
+        if '"hasFuels":false' in win:              # skip EV-charging-only points
+            continue
+        name = re.search(r'"name":"([^"]{2,90})"', win)
+        if name and "Elektromobil" in name.group(1):
+            continue
+        addr = re.search(r'"address":"([^"]{3,160})"', win)
+        muni = re.search(r'"municipality":"([^"]{2,60})"', win)
+        out.append({"network": "Neste", "address": (addr.group(1).strip() if addr else ""),
+                    "city": (muni.group(1).strip() if muni else ""),
+                    "lat": round(lat, 6), "lon": round(lon, 6), "source": "neste-locator"})
+    return out
+
+
 CHAINS = [
     ("Baltic Petroleum", fetch_baltic_petroleum),
     ("Emsi", fetch_emsi),
+    ("Neste", fetch_neste),
 ]
 
 

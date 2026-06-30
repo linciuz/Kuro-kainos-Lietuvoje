@@ -31,6 +31,7 @@ THRESHOLD = 0.45
 NET_MAP = {
     "baltic petroleum": "Baltic Petroleum",
     "emsi": "Emsi",
+    "neste": "Neste",
 }
 
 

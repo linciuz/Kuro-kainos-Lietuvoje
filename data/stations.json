@@ -164,9 +164,10 @@
       "petrol95": 1.719,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.408962,
-      "lon": 24.005187,
-      "approx": false
+      "lat": 54.40893,
+      "lon": 24.0052,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -176,9 +177,10 @@
       "petrol95": 1.719,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.387084,
-      "lon": 24.026295,
-      "approx": false
+      "lat": 54.38706,
+      "lon": 24.02632,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -647,9 +649,10 @@
       "petrol95": 1.744,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.789073,
-      "lon": 24.672442,
-      "approx": false
+      "lat": 54.78952,
+      "lon": 24.67274,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -782,9 +785,10 @@
       "petrol95": 1.739,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.094223,
-      "lon": 24.294353,
-      "approx": true
+      "lat": 55.09568,
+      "lon": 24.31259,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -1145,9 +1149,10 @@
       "petrol95": null,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.32832,
+      "lon": 23.15056,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1157,9 +1162,10 @@
       "petrol95": 1.759,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.32984,
+      "lon": 23.15031,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Nostrada",
@@ -1813,9 +1819,10 @@
       "petrol95": 1.729,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.875801,
-      "lon": 23.912098,
-      "approx": false
+      "lat": 54.87534,
+      "lon": 23.91146,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1825,9 +1832,10 @@
       "petrol95": 1.739,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 54.886228,
-      "lon": 23.931743,
-      "approx": true
+      "lat": 54.9338,
+      "lon": 23.86774,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1837,9 +1845,10 @@
       "petrol95": 1.709,
       "diesel": 1.779,
       "lpg": null,
-      "lat": 54.929352,
-      "lon": 23.973469,
-      "approx": false
+      "lat": 54.92934,
+      "lon": 23.97347,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1849,9 +1858,10 @@
       "petrol95": 1.729,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.894655,
-      "lon": 23.944278,
-      "approx": false
+      "lat": 54.89484,
+      "lon": 23.94421,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1861,9 +1871,10 @@
       "petrol95": 1.699,
       "diesel": 1.779,
       "lpg": null,
-      "lat": 54.936485,
-      "lon": 23.886343,
-      "approx": false
+      "lat": 54.93617,
+      "lon": 23.88529,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1873,9 +1884,10 @@
       "petrol95": 1.709,
       "diesel": 1.789,
       "lpg": null,
-      "lat": 54.906862,
-      "lon": 23.872822,
-      "approx": false
+      "lat": 54.90683,
+      "lon": 23.87285,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1885,9 +1897,10 @@
       "petrol95": 1.709,
       "diesel": 1.769,
       "lpg": null,
-      "lat": 54.931419,
-      "lon": 23.950806,
-      "approx": false
+      "lat": 54.93142,
+      "lon": 23.95076,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1897,9 +1910,10 @@
       "petrol95": 1.729,
       "diesel": 1.809,
       "lpg": null,
-      "lat": 54.915978,
-      "lon": 23.953599,
-      "approx": false
+      "lat": 54.91626,
+      "lon": 23.95401,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1909,9 +1923,10 @@
       "petrol95": 1.729,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 54.912349,
-      "lon": 23.973098,
-      "approx": false
+      "lat": 54.91209,
+      "lon": 23.97267,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1921,9 +1936,10 @@
       "petrol95": 1.694,
       "diesel": 1.774,
       "lpg": null,
-      "lat": 54.926029,
-      "lon": 24.060562,
-      "approx": false
+      "lat": 54.92626,
+      "lon": 24.06031,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1933,9 +1949,10 @@
       "petrol95": 1.704,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.89507,
-      "lon": 23.985918,
-      "approx": false
+      "lat": 54.89506,
+      "lon": 23.98586,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1945,9 +1962,10 @@
       "petrol95": 1.714,
       "diesel": 1.794,
       "lpg": null,
-      "lat": 54.925531,
-      "lon": 23.891793,
-      "approx": false
+      "lat": 54.92557,
+      "lon": 23.89179,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1957,9 +1975,10 @@
       "petrol95": 1.744,
       "diesel": 1.844,
       "lpg": null,
-      "lat": 54.875505,
-      "lon": 23.89097,
-      "approx": false
+      "lat": 54.87575,
+      "lon": 23.89093,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1969,9 +1988,10 @@
       "petrol95": 1.699,
       "diesel": 1.779,
       "lpg": null,
-      "lat": 54.913328,
-      "lon": 23.911651,
-      "approx": false
+      "lat": 54.91333,
+      "lon": 23.91162,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -1981,9 +2001,10 @@
       "petrol95": 1.694,
       "diesel": 1.774,
       "lpg": null,
-      "lat": 54.909942,
-      "lon": 23.983767,
-      "approx": false
+      "lat": 54.90991,
+      "lon": 23.98374,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Regusa",
@@ -2403,9 +2424,10 @@
       "petrol95": 1.714,
       "diesel": 1.789,
       "lpg": null,
-      "lat": 54.954696,
-      "lon": 23.882,
-      "approx": true
+      "lat": 54.94984,
+      "lon": 23.87374,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2415,9 +2437,10 @@
       "petrol95": 1.714,
       "diesel": 1.789,
       "lpg": null,
-      "lat": 54.926581,
-      "lon": 24.100415,
-      "approx": true
+      "lat": 54.94831,
+      "lon": 24.0178,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -2910,9 +2933,10 @@
       "petrol95": 1.739,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.703183,
-      "lon": 21.164792,
-      "approx": false
+      "lat": 55.70311,
+      "lon": 21.16478,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2922,9 +2946,10 @@
       "petrol95": 1.699,
       "diesel": 1.789,
       "lpg": null,
-      "lat": 55.669848,
-      "lon": 21.192951,
-      "approx": false
+      "lat": 55.67012,
+      "lon": 21.19296,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2934,9 +2959,10 @@
       "petrol95": 1.729,
       "diesel": 1.779,
       "lpg": null,
-      "lat": 55.716811,
-      "lon": 21.150527,
-      "approx": false
+      "lat": 55.71766,
+      "lon": 21.15177,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2946,9 +2972,10 @@
       "petrol95": 1.699,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.684714,
-      "lon": 21.150523,
-      "approx": false
+      "lat": 55.68441,
+      "lon": 21.14966,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2958,9 +2985,10 @@
       "petrol95": 1.699,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.688911,
-      "lon": 21.155177,
-      "approx": false
+      "lat": 55.68886,
+      "lon": 21.1552,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2970,9 +2998,10 @@
       "petrol95": 1.699,
       "diesel": 1.784,
       "lpg": null,
-      "lat": 55.693089,
-      "lon": 21.17477,
-      "approx": false
+      "lat": 55.69314,
+      "lon": 21.17496,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -2982,9 +3011,10 @@
       "petrol95": 1.699,
       "diesel": 1.789,
       "lpg": null,
-      "lat": 55.672821,
-      "lon": 21.201735,
-      "approx": false
+      "lat": 55.67298,
+      "lon": 21.201,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Stateta",
@@ -3188,9 +3218,10 @@
       "petrol95": 1.719,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.704005,
-      "lon": 21.209424,
-      "approx": true
+      "lat": 55.70602,
+      "lon": 21.20259,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -3200,9 +3231,10 @@
       "petrol95": 1.719,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.700769,
-      "lon": 21.207012,
-      "approx": true
+      "lat": 55.70659,
+      "lon": 21.23853,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -3608,9 +3640,10 @@
       "petrol95": 1.719,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.278109,
-      "lon": 23.959972,
-      "approx": false
+      "lat": 55.27815,
+      "lon": 23.95989,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -3889,9 +3922,10 @@
       "petrol95": 1.724,
       "diesel": 1.794,
       "lpg": null,
-      "lat": 54.56261,
-      "lon": 23.332366,
-      "approx": false
+      "lat": 54.56239,
+      "lon": 23.33233,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -3901,9 +3935,10 @@
       "petrol95": 1.729,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.560364,
-      "lon": 23.365926,
-      "approx": false
+      "lat": 54.56039,
+      "lon": 23.36587,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Osijos dujos",
@@ -4129,9 +4164,10 @@
       "petrol95": 1.729,
       "diesel": 1.814,
       "lpg": null,
-      "lat": 56.301233,
-      "lon": 22.349841,
-      "approx": false
+      "lat": 56.3012,
+      "lon": 22.34985,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Tripletas",
@@ -4226,9 +4262,10 @@
       "petrol95": 1.709,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.231927,
-      "lon": 25.419316,
-      "approx": true
+      "lat": 55.22168,
+      "lon": 25.43672,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -4529,9 +4566,10 @@
       "petrol95": 1.699,
       "diesel": 1.804,
       "lpg": null,
-      "lat": 55.73063,
-      "lon": 24.316109,
-      "approx": false
+      "lat": 55.73065,
+      "lon": 24.31611,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4541,9 +4579,10 @@
       "petrol95": 1.689,
       "diesel": 1.794,
       "lpg": null,
-      "lat": 55.719396,
-      "lon": 24.348867,
-      "approx": false
+      "lat": 55.71938,
+      "lon": 24.34887,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4553,9 +4592,10 @@
       "petrol95": 1.714,
       "diesel": 1.814,
       "lpg": null,
-      "lat": 55.727745,
-      "lon": 24.348805,
-      "approx": false
+      "lat": 55.72768,
+      "lon": 24.34879,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4565,9 +4605,10 @@
       "petrol95": 1.699,
       "diesel": 1.794,
       "lpg": null,
-      "lat": 55.709517,
-      "lon": 24.374754,
-      "approx": false
+      "lat": 55.70945,
+      "lon": 24.37481,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4577,9 +4618,10 @@
       "petrol95": 1.709,
       "diesel": 1.814,
       "lpg": null,
-      "lat": 55.728377,
-      "lon": 24.332338,
-      "approx": false
+      "lat": 55.72831,
+      "lon": 24.33242,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -4734,9 +4776,10 @@
       "petrol95": 1.699,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.690015,
-      "lon": 24.379081,
-      "approx": true
+      "lat": 55.67314,
+      "lon": 24.33452,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4746,9 +4789,10 @@
       "petrol95": 1.709,
       "diesel": 1.809,
       "lpg": null,
-      "lat": 55.690015,
-      "lon": 24.379081,
-      "approx": true
+      "lat": 55.67037,
+      "lon": 24.34845,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Stateta",
@@ -4854,9 +4898,10 @@
       "petrol95": 1.699,
       "diesel": 1.779,
       "lpg": null,
-      "lat": 56.070691,
-      "lon": 24.384284,
-      "approx": true
+      "lat": 56.1152,
+      "lon": 24.47067,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Pakelės namai",
@@ -5266,9 +5311,10 @@
       "petrol95": 1.739,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.814272,
-      "lon": 23.546038,
-      "approx": false
+      "lat": 55.81384,
+      "lon": 23.54581,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -5471,9 +5517,10 @@
       "petrol95": 1.709,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.376456,
-      "lon": 23.1989,
-      "approx": true
+      "lat": 55.41173,
+      "lon": 22.83072,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -5810,9 +5857,10 @@
       "petrol95": 1.729,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.265316,
-      "lon": 22.308834,
-      "approx": false
+      "lat": 55.2653,
+      "lon": 22.30891,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Viada LT",
@@ -5954,9 +6002,10 @@
       "petrol95": 1.729,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.983638,
-      "lon": 22.250663,
-      "approx": true
+      "lat": 56.00488,
+      "lon": 22.24028,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Prie Luksto",
@@ -6113,9 +6162,10 @@
       "petrol95": 1.749,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.242038,
-      "lon": 24.742922,
-      "approx": false
+      "lat": 55.24206,
+      "lon": 24.74291,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -6281,9 +6331,10 @@
       "petrol95": 1.739,
       "diesel": 1.824,
       "lpg": null,
-      "lat": 55.481163,
-      "lon": 25.579652,
-      "approx": false
+      "lat": 55.48189,
+      "lon": 25.57905,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -6293,9 +6344,10 @@
       "petrol95": 1.744,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 55.505179,
-      "lon": 25.624883,
-      "approx": false
+      "lat": 55.50511,
+      "lon": 25.62464,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Stateta",
@@ -7222,9 +7274,10 @@
       "petrol95": 1.759,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.704173,
-      "lon": 25.267084,
-      "approx": false
+      "lat": 54.70413,
+      "lon": 25.2669,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7234,9 +7287,10 @@
       "petrol95": 1.739,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.668184,
-      "lon": 25.265134,
-      "approx": false
+      "lat": 54.66822,
+      "lon": 25.26512,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7246,9 +7300,10 @@
       "petrol95": 1.749,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.658327,
-      "lon": 25.159295,
-      "approx": false
+      "lat": 54.65823,
+      "lon": 25.15884,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7258,9 +7313,10 @@
       "petrol95": 1.759,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.621285,
-      "lon": 25.24294,
-      "approx": false
+      "lat": 54.62137,
+      "lon": 25.24287,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7270,9 +7326,10 @@
       "petrol95": 1.749,
       "diesel": 1.849,
       "lpg": null,
-      "lat": 54.624407,
-      "lon": 25.111981,
-      "approx": false
+      "lat": 54.62428,
+      "lon": 25.11174,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7282,9 +7339,10 @@
       "petrol95": 1.749,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.656653,
-      "lon": 25.292038,
-      "approx": false
+      "lat": 54.65665,
+      "lon": 25.29206,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7294,9 +7352,10 @@
       "petrol95": 1.709,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.709474,
-      "lon": 25.189884,
-      "approx": false
+      "lat": 54.70877,
+      "lon": 25.18972,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7306,9 +7365,10 @@
       "petrol95": 1.759,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.701324,
-      "lon": 25.263805,
-      "approx": false
+      "lat": 54.70161,
+      "lon": 25.26372,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7318,9 +7378,10 @@
       "petrol95": 1.749,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.704909,
-      "lon": 25.214701,
-      "approx": false
+      "lat": 54.70508,
+      "lon": 25.21497,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7330,9 +7391,10 @@
       "petrol95": 1.759,
       "diesel": 1.844,
       "lpg": null,
-      "lat": 54.68084,
-      "lon": 25.207628,
-      "approx": false
+      "lat": 54.68087,
+      "lon": 25.20763,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7342,9 +7404,10 @@
       "petrol95": 1.769,
       "diesel": 1.849,
       "lpg": null,
-      "lat": 54.655262,
-      "lon": 25.27027,
-      "approx": false
+      "lat": 54.65507,
+      "lon": 25.27073,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7354,9 +7417,10 @@
       "petrol95": 1.754,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.676735,
-      "lon": 25.309299,
-      "approx": false
+      "lat": 54.67687,
+      "lon": 25.30948,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7366,9 +7430,10 @@
       "petrol95": 1.729,
       "diesel": 1.814,
       "lpg": null,
-      "lat": 54.706745,
-      "lon": 25.304138,
-      "approx": false
+      "lat": 54.70675,
+      "lon": 25.30412,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7378,9 +7443,10 @@
       "petrol95": 1.719,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.711904,
-      "lon": 25.293073,
-      "approx": false
+      "lat": 54.71196,
+      "lon": 25.29313,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7390,9 +7456,10 @@
       "petrol95": 1.699,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 54.75485,
-      "lon": 25.271346,
-      "approx": false
+      "lat": 54.75489,
+      "lon": 25.27126,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7402,9 +7469,10 @@
       "petrol95": 1.759,
       "diesel": 1.859,
       "lpg": null,
-      "lat": 54.677209,
-      "lon": 25.255644,
-      "approx": false
+      "lat": 54.67723,
+      "lon": 25.25566,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7414,9 +7482,10 @@
       "petrol95": 1.759,
       "diesel": 1.834,
       "lpg": null,
-      "lat": 54.646852,
-      "lon": 25.210308,
-      "approx": false
+      "lat": 54.64811,
+      "lon": 25.21247,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7426,9 +7495,10 @@
       "petrol95": 1.749,
       "diesel": 1.849,
       "lpg": null,
-      "lat": 54.671612,
-      "lon": 25.270971,
-      "approx": false
+      "lat": 54.67164,
+      "lon": 25.27008,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7438,9 +7508,10 @@
       "petrol95": 1.769,
       "diesel": 1.849,
       "lpg": null,
-      "lat": 54.673423,
-      "lon": 25.224068,
-      "approx": false
+      "lat": 54.67344,
+      "lon": 25.22406,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7450,9 +7521,10 @@
       "petrol95": 1.759,
       "diesel": 1.834,
       "lpg": null,
-      "lat": 54.644034,
-      "lon": 25.207458,
-      "approx": false
+      "lat": 54.64421,
+      "lon": 25.20697,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7462,9 +7534,10 @@
       "petrol95": 1.749,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.71563,
-      "lon": 25.228706,
-      "approx": false
+      "lat": 54.71557,
+      "lon": 25.22888,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7474,9 +7547,10 @@
       "petrol95": 1.729,
       "diesel": 1.804,
       "lpg": null,
-      "lat": 54.717444,
-      "lon": 25.304441,
-      "approx": false
+      "lat": 54.71753,
+      "lon": 25.30448,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7486,9 +7560,10 @@
       "petrol95": 1.729,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 54.72149,
-      "lon": 25.256115,
-      "approx": false
+      "lat": 54.72145,
+      "lon": 25.25608,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7498,9 +7573,10 @@
       "petrol95": 1.709,
       "diesel": 1.814,
       "lpg": null,
-      "lat": 54.712103,
-      "lon": 25.270731,
-      "approx": false
+      "lat": 54.71195,
+      "lon": 25.27067,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7510,9 +7586,10 @@
       "petrol95": 1.759,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.67281,
-      "lon": 25.197948,
-      "approx": false
+      "lat": 54.67261,
+      "lon": 25.19828,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7522,9 +7599,10 @@
       "petrol95": 1.729,
       "diesel": 1.839,
       "lpg": null,
-      "lat": 54.713897,
-      "lon": 25.209684,
-      "approx": false
+      "lat": 54.7139,
+      "lon": 25.20905,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7534,9 +7612,10 @@
       "petrol95": 1.739,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.736144,
-      "lon": 25.231119,
-      "approx": false
+      "lat": 54.73613,
+      "lon": 25.23115,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -7546,9 +7625,10 @@
       "petrol95": 1.729,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 54.634174,
-      "lon": 25.304536,
-      "approx": false
+      "lat": 54.63387,
+      "lon": 25.3045,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -8499,9 +8579,10 @@
       "petrol95": 1.739,
       "diesel": 1.819,
       "lpg": null,
-      "lat": 55.929367,
-      "lon": 23.294134,
-      "approx": false
+      "lat": 55.92926,
+      "lon": 23.29436,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -8511,9 +8592,10 @@
       "petrol95": 1.724,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.920084,
-      "lon": 23.293285,
-      "approx": false
+      "lat": 55.92028,
+      "lon": 23.29298,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -8523,9 +8605,10 @@
       "petrol95": 1.719,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.905911,
-      "lon": 23.25872,
-      "approx": false
+      "lat": 55.90607,
+      "lon": 23.25953,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Plovimo sistemos",
@@ -8836,9 +8919,10 @@
       "petrol95": 1.689,
       "diesel": 1.799,
       "lpg": null,
-      "lat": 55.483075,
-      "lon": 22.201554,
-      "approx": true
+      "lat": 55.5212,
+      "lon": 22.36586,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Saurida",
@@ -9029,9 +9113,10 @@
       "petrol95": 1.749,
       "diesel": 1.829,
       "lpg": null,
-      "lat": 54.978537,
-      "lon": 25.756623,
-      "approx": false
+      "lat": 54.97889,
+      "lon": 25.75661,
+      "approx": false,
+      "coord_source": "chain"
     },
     {
       "network": "UAB Propano ir butano dujų centras",
