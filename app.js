@@ -151,8 +151,18 @@ function getChargers() {
     if (muni) rows = rows.filter(c => c._muni === muni);
     if (q) rows = rows.filter(c => ((c.operator || "") + " " + (c.name || "")).toLowerCase().includes(q));
     if (userPos) rows.forEach(c => c._dist = haversine(userPos.lat, userPos.lon, c.lat, c.lon));
-    if (userPos) rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
-    else rows.sort((a, b) => (b.power_kw || 0) - (a.power_kw || 0));
+    // Honour the cheapest/expensive/nearest buttons. Chargers without a €/kWh
+    // price always sort to the bottom (ranked by power) so priced ones lead.
+    const byPower = (a, b) => (b.power_kw || 0) - (a.power_kw || 0);
+    const byPrice = dir => (a, b) => {
+        if (a.price == null && b.price == null) return byPower(a, b);
+        if (a.price == null) return 1;
+        if (b.price == null) return -1;
+        return dir === "desc" ? b.price - a.price : a.price - b.price;
+    };
+    if (sortDir === "dist" && userPos) rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
+    else if (sortDir === "asc" || sortDir === "desc") rows.sort(byPrice(sortDir));
+    else rows.sort(byPower);
     return rows;
 }
 
@@ -162,9 +172,14 @@ function evInfo(c) {
 }
 
 function evNav(c) {
-    const q = `${c.lat},${c.lon}`;
-    return `<a class="nav-btn nav-gmaps" href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">🗺️ Google Maps</a>
-            <a class="nav-btn nav-waze" href="https://waze.com/ul?ll=${q}&navigate=yes" target="_blank" rel="noopener">🚗 Waze</a>`;
+    const ll = `${c.lat},${c.lon}`;
+    // Navigate by address when we have one; otherwise fall back to the exact
+    // coordinates so chargers with no street address still get directions.
+    const addr = c.address ? encodeURIComponent(`${c.address}${c.city ? ", " + c.city : ""}`) : "";
+    const gmaps = `https://www.google.com/maps/dir/?api=1&destination=${addr || ll}`;
+    const waze = addr ? `https://waze.com/ul?q=${addr}&navigate=yes` : `https://waze.com/ul?ll=${ll}&navigate=yes`;
+    return `<a class="nav-btn nav-gmaps" href="${gmaps}" target="_blank" rel="noopener">🗺️ Google Maps</a>
+            <a class="nav-btn nav-waze" href="${waze}" target="_blank" rel="noopener">🚗 Waze</a>`;
 }
 
 function renderSummaryEv() {
@@ -183,7 +198,10 @@ function renderListEv() {
     const list = document.getElementById("stations-list");
     const rows = getChargers();
     if (!rows.length) { list.innerHTML = `<div class="msg">Nieko nerasta.</div>`; return; }
-    list.innerHTML = `<div class="count-line">Rodoma stotelių: ${rows.length}${userPos ? " · arčiausios pirmos" : ""}</div>` +
+    const order = (sortDir === "dist" && userPos) ? " · arčiausios pirmos"
+        : sortDir === "asc" ? " · pigiausios pirmos"
+        : sortDir === "desc" ? " · brangiausios pirmos" : "";
+    list.innerHTML = `<div class="count-line">Rodoma stotelių: ${rows.length}${order}</div>` +
         rows.map(c => {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
