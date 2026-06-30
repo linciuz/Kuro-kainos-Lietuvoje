@@ -1,7 +1,7 @@
 // Kuro Kainos Lietuvoje - service worker
 // Network-first for code + data so updates always reach users (with offline
 // cache fallback); cache-first only for images. Bump CACHE on shell changes.
-const CACHE = "kk-v3";
+const CACHE = "kk-v4";
 const SHELL = [
   "./", "./index.html", "./app.js", "./manifest.webmanifest",
   "./icon-192.png", "./icon-512.png"
@@ -37,9 +37,13 @@ self.addEventListener("fetch", (e) => {
 
   // Network-first for app code (app.js/index.html) and data (stations.json,
   // sources, discrepancies): always fetch fresh, fall back to cache offline.
+  // Only cache OK (200) responses so a 404/error can't poison the offline copy.
   e.respondWith(
     fetch(e.request)
-      .then((r) => { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, cp)); return r; })
+      .then((r) => {
+        if (r && r.ok) { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, cp)); }
+        return r;
+      })
       .catch(() => caches.match(e.request))
   );
 });

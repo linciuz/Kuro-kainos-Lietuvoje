@@ -189,6 +189,12 @@ def main():
         if not any(haversine(o["lat"], o["lon"], c["lat"], c["lon"]) < 0.15 for c in ocpi):
             chargers.append(o)
 
+    # Don't clobber the committed file with an empty result if both sources fail.
+    if len(chargers) < 30:
+        print(f"[error] only {len(chargers)} chargers collected — aborting WITHOUT "
+              f"writing so the last good file survives.")
+        sys.exit(2)
+
     payload = {
         "generated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
         "source": "Via Lietuva (OCPI/AFIR) + OpenStreetMap",

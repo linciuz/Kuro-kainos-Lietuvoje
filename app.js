@@ -14,6 +14,7 @@ let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
+let OIL = null;                                // Brent crude weekly trend
 let EV = { chargers: [] };                     // EV charging stations (OCPI + OSM)
 let EV_STATUS = {};                            // live occupancy {ocpi_id: {a,t,s}} via Worker proxy
 let fuelType = "petrol95";    // 'petrol95' | 'diesel' | 'lpg' | 'ev'
@@ -43,6 +44,7 @@ async function load() {
     await loadDiscrepancies();
     await loadReports();
     await loadOrlenWholesale();
+    await loadOil();
     await loadEv();
     await loadEvStatus();
     initMunicipalities();
@@ -80,6 +82,13 @@ async function loadOrlenWholesale() {
         const res = await fetch("data/sources/orlen_wholesale.json", { cache: "no-store" });
         ORLEN_WS = res.ok ? await res.json() : null;
     } catch (e) { ORLEN_WS = null; }
+}
+
+async function loadOil() {
+    try {
+        const res = await fetch("data/oil.json", { cache: "no-store" });
+        OIL = res.ok ? await res.json() : null;
+    } catch (e) { OIL = null; }
 }
 
 async function loadEv() {
@@ -255,8 +264,33 @@ function initMunicipalities() {
 function updateChrome() {
     document.getElementById("source-line").innerHTML =
         `Šaltinis: <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
-    document.getElementById("updated-line").textContent =
-        DATA.updated ? `Duomenys atnaujinti: ${DATA.updated}` : "";
+    const upd = document.getElementById("updated-line");
+    if (!DATA.updated) { upd.textContent = ""; upd.className = ""; return; }
+    // LEA publishes Mon–Fri; >4 days old means a missed/failed update — warn.
+    const days = Math.floor((Date.now() - Date.parse(DATA.updated)) / 86400000);
+    if (days > 4) {
+        upd.className = "stale";
+        upd.textContent = `⚠️ Duomenys gali būti pasenę — paskutinis atnaujinimas ${DATA.updated} (prieš ${days} d.)`;
+    } else {
+        upd.className = "";
+        upd.textContent = `Duomenys atnaujinti: ${DATA.updated}`;
+    }
+}
+
+function renderOilBanner() {
+    const el = document.getElementById("oil-banner");
+    if (!el) return;
+    if (!OIL || fuelType === "ev" || OIL.level === "stable") { el.style.display = "none"; return; }
+    const wk = OIL.week_change_pct, sign = wk > 0 ? "+" : "";
+    const txt = {
+        strong: `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos netrukus greičiausiai <b>kils</b>.`,
+        rise:   `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos artimiausiu metu gali <b>kilti</b>.`,
+        watch:  `🛢️ Brent nafta per savaitę +${wk}% → galimas degalų kainų kilimas (verta stebėti).`,
+        fall:   `🛢️ Brent nafta per savaitę ${wk}% → degalų kainos gali <b>mažėti</b>.`,
+    }[OIL.level] || "";
+    el.className = "oil-banner oil-" + OIL.level;
+    el.style.display = "block";
+    el.innerHTML = txt;
 }
 
 function selectFuel(f) {
@@ -357,6 +391,7 @@ function getRows() {
 // --- rendering -------------------------------------------------------------
 
 function render() {
+    renderOilBanner();
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
         document.getElementById("change-banner").style.display = "none";
@@ -516,3 +551,13 @@ function renderMap() {
 }
 
 window.addEventListener("load", load);
+
+// Re-fetch data when a long-open / backgrounded PWA is brought back to the
+// foreground (throttled to once per 10 min) so prices don't go silently stale.
+let _lastLoad = Date.now();
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && Date.now() - _lastLoad > 10 * 60 * 1000) {
+        _lastLoad = Date.now();
+        load();
+    }
+});

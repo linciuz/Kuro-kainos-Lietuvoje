@@ -60,6 +60,11 @@ def main():
 
     for path in sorted(glob.glob(SOURCES_GLOB)):
         src = json.load(open(path, encoding="utf-8"))
+        # Only compare RETAIL price sources. Skip wholesale (Orlen refinery),
+        # station directories, EV chargers, etc. — they have other scopes or no
+        # per-fuel "prices" object and must never feed the discrepancy engine.
+        if src.get("scope") not in ("network_lowest", "per_station") or "prices" not in src:
+            continue
         chain = src.get("source", "?")
         sources_seen.append(chain)
         pattern = CHAIN_PATTERNS.get(chain, chain.lower())

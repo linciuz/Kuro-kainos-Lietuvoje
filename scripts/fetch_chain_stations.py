@@ -173,6 +173,14 @@ def main():
         except Exception as e:
             print(f"[warn] {name} failed: {e}")
 
+    # Never overwrite the committed directory with an empty/collapsed result
+    # (e.g. a transient outage taking out every chain at once) — abort and keep
+    # the last good file instead.
+    if len(stations) < 50:
+        print(f"[error] only {len(stations)} chain stations collected — too few; "
+              f"aborting WITHOUT writing so the last good file survives.")
+        sys.exit(2)
+
     payload = {
         "generated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
         "count": len(stations),
