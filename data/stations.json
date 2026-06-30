@@ -30,7 +30,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.959,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.304061,
+      "lon": 22.838615,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -39,7 +42,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.919,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 56.304061,
+      "lon": 22.838615,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -48,7 +54,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.919,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.304061,
+      "lon": 22.838615,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -57,7 +66,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.304061,
+      "lon": 22.838615,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -66,7 +78,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.304061,
+      "lon": 22.838615,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -75,7 +90,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.304061,
+      "lon": 22.838615,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -84,7 +102,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -93,7 +114,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.99,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.424648,
+      "lon": 24.003501,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -102,7 +126,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.059,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.395061,
+      "lon": 24.037905,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -111,7 +138,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.93,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.408141,
+      "lon": 24.016647,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -120,7 +150,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.387084,
+      "lon": 24.026295,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -129,7 +162,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.408962,
+      "lon": 24.005187,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -138,7 +174,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.979,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.403324,
+      "lon": 24.037088,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -147,7 +186,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -156,7 +198,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -165,7 +210,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.059,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -174,7 +222,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.059,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -183,7 +234,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.969,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -192,7 +246,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.959,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.394362,
+      "lon": 24.017868,
+      "approx": false
     },
     {
       "network": "Skulas",
@@ -201,7 +258,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.97,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Skulas",
@@ -210,7 +270,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.96,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -219,7 +282,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": false
     },
     {
       "network": "Stateta",
@@ -228,7 +294,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.428042,
+      "lon": 24.001399,
+      "approx": false
     },
     {
       "network": "Stateta",
@@ -237,7 +306,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.919206,
+      "lon": 23.812588,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -246,7 +318,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.731939,
+      "lon": 21.14232,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -255,7 +330,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.949,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.123238,
+      "lon": 24.662357,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -264,7 +342,10 @@
       "locality": "",
       "petrol95": 1.754,
       "diesel": 1.954,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 55.522439,
+      "lon": 25.089963,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -273,7 +354,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.959,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 55.523087,
+      "lon": 25.108556,
+      "approx": true
     },
     {
       "network": "Degta",
@@ -282,7 +366,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.999,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.523087,
+      "lon": 25.108556,
+      "approx": true
     },
     {
       "network": "Narjanta",
@@ -291,7 +378,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 2.019,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.424311,
+      "lon": 24.920495,
+      "approx": false
     },
     {
       "network": "Narjanta",
@@ -300,7 +390,10 @@
       "locality": "",
       "petrol95": 1.819,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.523087,
+      "lon": 25.108556,
+      "approx": true
     },
     {
       "network": "Narjanta",
@@ -309,7 +402,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.584853,
+      "lon": 24.87846,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -318,7 +414,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.059,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.523087,
+      "lon": 25.108556,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -327,7 +426,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.059,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.523087,
+      "lon": 25.108556,
+      "approx": true
     },
     {
       "network": "Borusta",
@@ -336,7 +438,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 54.595386,
+      "lon": 24.026691,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -345,7 +450,10 @@
       "locality": "",
       "petrol95": 1.809,
       "diesel": 1.999,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.731436,
+      "lon": 21.146773,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -354,7 +462,10 @@
       "locality": "",
       "petrol95": 1.814,
       "diesel": 1.994,
-      "lpg": 0.96
+      "lpg": 0.96,
+      "lat": 56.19484,
+      "lon": 24.772139,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -363,7 +474,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.969,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 56.207671,
+      "lon": 24.770803,
+      "approx": false
     },
     {
       "network": "Narjanta",
@@ -372,7 +486,10 @@
       "locality": "",
       "petrol95": 1.809,
       "diesel": 1.999,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.974978,
+      "lon": 24.740122,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -381,7 +498,10 @@
       "locality": "",
       "petrol95": 1.819,
       "diesel": 2.009,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.731436,
+      "lon": 21.146773,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -390,7 +510,10 @@
       "locality": "",
       "petrol95": 1.819,
       "diesel": 2.009,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.731436,
+      "lon": 21.146773,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -399,7 +522,10 @@
       "locality": "",
       "petrol95": 1.909,
       "diesel": 2.039,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.052435,
+      "lon": 24.022255,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -408,7 +534,10 @@
       "locality": "",
       "petrol95": 1.909,
       "diesel": 2.039,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.052435,
+      "lon": 24.022255,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -417,7 +546,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.049,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.052435,
+      "lon": 24.022255,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -426,7 +558,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.010182,
+      "lon": 23.993238,
+      "approx": false
     },
     {
       "network": "Tomega",
@@ -435,7 +570,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.96,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 53.990179,
+      "lon": 24.005703,
+      "approx": false
     },
     {
       "network": "Boost Petrol",
@@ -444,7 +582,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.91019,
+      "lon": 23.352812,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -453,7 +594,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.089,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 54.789169,
+      "lon": 24.676056,
+      "approx": false
     },
     {
       "network": "Degta",
@@ -462,7 +606,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.763291,
+      "lon": 24.769554,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -471,7 +618,10 @@
       "locality": "",
       "petrol95": 1.934,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.789073,
+      "lon": 24.672442,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -480,7 +630,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.763291,
+      "lon": 24.769554,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -489,7 +642,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.763291,
+      "lon": 24.769554,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -498,7 +654,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.763291,
+      "lon": 24.769554,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -507,7 +666,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 2.029,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 55.332048,
+      "lon": 26.167128,
+      "approx": false
     },
     {
       "network": "Propano ir butano dujų centras",
@@ -516,7 +678,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 2.059,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 55.327181,
+      "lon": 26.17448,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -525,7 +690,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.920029,
+      "lon": 23.942661,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -534,7 +702,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -543,7 +714,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.049,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -552,7 +726,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.049,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -561,7 +738,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.089,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.07056,
+      "lon": 24.263211,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -570,7 +750,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.07086,
+      "lon": 24.258854,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -579,7 +762,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -588,7 +774,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Vimijula",
@@ -597,7 +786,10 @@
       "locality": "",
       "petrol95": 1.82,
       "diesel": 2.04,
-      "lpg": 0.97
+      "lpg": 0.97,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Žibalas",
@@ -606,7 +798,10 @@
       "locality": "",
       "petrol95": 1.98,
       "diesel": 2.09,
-      "lpg": 0.96
+      "lpg": 0.96,
+      "lat": 55.116838,
+      "lon": 24.281573,
+      "approx": true
     },
     {
       "network": "Apsaga",
@@ -615,7 +810,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 2.029,
-      "lpg": 0.925
+      "lpg": 0.925,
+      "lat": 54.96501,
+      "lon": 23.924092,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -624,7 +822,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.979,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 56.194262,
+      "lon": 23.569477,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -633,7 +834,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.069,
-      "lpg": 0.925
+      "lpg": 0.925,
+      "lat": 56.194262,
+      "lon": 23.569477,
+      "approx": true
     },
     {
       "network": "S.Rimkevičiaus komercinė įmonė",
@@ -642,7 +846,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.228934,
+      "lon": 23.610088,
+      "approx": false
     },
     {
       "network": "S.Rimkevičiaus komercinė įmonė",
@@ -651,7 +858,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.969,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.252507,
+      "lon": 23.96797,
+      "approx": false
     },
     {
       "network": "Skaistčio ŽŪB",
@@ -660,7 +870,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.99,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.194262,
+      "lon": 23.569477,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -669,7 +882,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.069,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 56.194262,
+      "lon": 23.569477,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -678,7 +894,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.95,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.217627,
+      "lon": 22.965234,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -687,7 +906,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.95,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.217627,
+      "lon": 22.965234,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -696,7 +918,10 @@
       "locality": "",
       "petrol95": 1.91,
       "diesel": 2.04,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.217627,
+      "lon": 22.965234,
+      "approx": true
     },
     {
       "network": "GM Circle K",
@@ -705,7 +930,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.076805,
+      "lon": 22.751839,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -714,7 +942,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.91,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.077197,
+      "lon": 22.751,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -723,7 +954,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.91,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.085493,
+      "lon": 22.745538,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -732,7 +966,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.91,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.078909,
+      "lon": 23.396923,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -741,7 +978,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.91,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.082536,
+      "lon": 22.788996,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -750,7 +990,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.89,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.083916,
+      "lon": 22.606942,
+      "approx": false
     },
     {
       "network": "A. Praškevičiaus IĮ",
@@ -759,7 +1002,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.89,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.863927,
+      "lon": 24.405998,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -768,7 +1014,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.863927,
+      "lon": 24.405998,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -777,7 +1026,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 54.864351,
+      "lon": 24.436539,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -786,7 +1038,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.969,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.863927,
+      "lon": 24.405998,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -795,7 +1050,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.81459,
+      "lon": 24.461824,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -804,7 +1062,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.863927,
+      "lon": 24.405998,
+      "approx": true
     },
     {
       "network": "Topgas",
@@ -813,7 +1074,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 54.865105,
+      "lon": 24.434153,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -822,7 +1086,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.863211,
+      "lon": 24.460719,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -831,7 +1098,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.039,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -840,7 +1110,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -849,7 +1122,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -858,7 +1134,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -867,7 +1146,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Nostrada (RV Transport)",
@@ -876,7 +1158,10 @@
       "locality": "",
       "petrol95": 1.92,
       "diesel": 2.03,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -885,7 +1170,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -894,7 +1182,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -903,7 +1194,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.41083,
+      "lon": 23.206915,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -912,7 +1206,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -921,7 +1218,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.739711,
+      "lon": 25.280496,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -930,7 +1230,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.923697,
+      "lon": 24.069047,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -939,7 +1242,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.969,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.916022,
+      "lon": 23.833635,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -948,7 +1254,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.949,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -957,7 +1266,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.989,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -966,7 +1278,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -975,7 +1290,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.069,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -984,7 +1302,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.939,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.921134,
+      "lon": 24.00626,
+      "approx": false
     },
     {
       "network": "Boost Petrol",
@@ -993,7 +1314,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 54.903837,
+      "lon": 23.835313,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1002,7 +1326,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.024,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.916218,
+      "lon": 23.986677,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1011,7 +1338,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.029,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.908159,
+      "lon": 23.865265,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1020,7 +1350,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.014,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 54.894011,
+      "lon": 24.006623,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1029,7 +1362,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.919324,
+      "lon": 23.950726,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1038,7 +1374,10 @@
       "locality": "",
       "petrol95": 1.964,
       "diesel": 2.084,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.880898,
+      "lon": 23.894225,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1047,7 +1386,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.023,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -1056,7 +1398,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.014,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.925297,
+      "lon": 23.890464,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1065,7 +1410,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.049,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.91195,
+      "lon": 23.956741,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1074,7 +1422,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.935652,
+      "lon": 23.96568,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1083,7 +1434,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.933611,
+      "lon": 23.965773,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1092,7 +1446,10 @@
       "locality": "",
       "petrol95": 1.984,
       "diesel": 2.084,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.894163,
+      "lon": 23.914201,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1101,7 +1458,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 1.984,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.893051,
+      "lon": 23.995804,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1110,7 +1470,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.914457,
+      "lon": 23.900227,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1119,7 +1482,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.024,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.939309,
+      "lon": 23.896548,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1128,7 +1494,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.928351,
+      "lon": 23.973919,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1137,7 +1506,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -1146,7 +1518,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 2.019,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.928393,
+      "lon": 23.92897,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1155,7 +1530,10 @@
       "locality": "",
       "petrol95": 1.944,
       "diesel": 2.044,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.899039,
+      "lon": 23.959929,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -1164,7 +1542,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 2.029,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.9016,
+      "lon": 23.895029,
+      "approx": false
     },
     {
       "network": "Deguva",
@@ -1173,7 +1554,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 54.920991,
+      "lon": 23.824686,
+      "approx": false
     },
     {
       "network": "Dujovita",
@@ -1182,7 +1566,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.931596,
+      "lon": 23.951399,
+      "approx": false
     },
     {
       "network": "Dujovita",
@@ -1191,7 +1578,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.913328,
+      "lon": 23.911651,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1200,7 +1590,10 @@
       "locality": "",
       "petrol95": 1.719,
       "diesel": 1.919,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.921846,
+      "lon": 24.047722,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1209,7 +1602,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.999,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.908054,
+      "lon": 23.992072,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1218,7 +1614,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.929,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 54.932427,
+      "lon": 23.918039,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1227,7 +1626,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.949,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 54.859225,
+      "lon": 23.837119,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1236,7 +1638,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.969,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.881533,
+      "lon": 24.009424,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1245,7 +1650,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.927502,
+      "lon": 23.972213,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1254,7 +1662,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.91,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.901021,
+      "lon": 24.031175,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -1263,7 +1674,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -1272,7 +1686,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -1281,7 +1698,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -1290,7 +1710,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -1299,7 +1722,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -1308,7 +1734,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.909942,
+      "lon": 23.983767,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1317,7 +1746,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.913328,
+      "lon": 23.911651,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1326,7 +1758,10 @@
       "locality": "",
       "petrol95": 1.924,
       "diesel": 2.044,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.875505,
+      "lon": 23.89097,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1335,7 +1770,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 1.974,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.925531,
+      "lon": 23.891793,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1344,7 +1782,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.984,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.89507,
+      "lon": 23.985918,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1353,7 +1794,10 @@
       "locality": "",
       "petrol95": 1.824,
       "diesel": 1.984,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.926029,
+      "lon": 24.060562,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1362,7 +1806,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 2.014,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.912349,
+      "lon": 23.973098,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1371,7 +1818,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.915978,
+      "lon": 23.953599,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1380,7 +1830,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.931419,
+      "lon": 23.950806,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1389,7 +1842,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.906862,
+      "lon": 23.872822,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1398,7 +1854,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.936485,
+      "lon": 23.886343,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1407,7 +1866,10 @@
       "locality": "",
       "petrol95": 1.914,
       "diesel": 2.014,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.894655,
+      "lon": 23.944278,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1416,7 +1878,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.929352,
+      "lon": 23.973469,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -1425,7 +1890,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -1434,7 +1902,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.875801,
+      "lon": 23.912098,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -1443,7 +1914,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 54.865462,
+      "lon": 23.873011,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -1452,7 +1926,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.989,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 54.915802,
+      "lon": 23.984205,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -1461,7 +1938,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.969,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.913801,
+      "lon": 23.90685,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -1470,7 +1950,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 54.867321,
+      "lon": 23.887277,
+      "approx": false
     },
     {
       "network": "Regusa",
@@ -1479,7 +1962,10 @@
       "locality": "",
       "petrol95": 1.73,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.850204,
+      "lon": 23.965742,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -1488,7 +1974,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.9,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Skulas",
@@ -1497,7 +1986,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.929,
-      "lpg": 0.829
+      "lpg": 0.829,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Skulas",
@@ -1506,7 +1998,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.929,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Tormenta",
@@ -1515,7 +2010,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.94,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.9143,
+      "lon": 23.887705,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1524,7 +2022,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1533,7 +2034,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1542,7 +2046,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1551,7 +2058,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1560,7 +2070,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1569,7 +2082,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1578,7 +2094,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1587,7 +2106,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1596,7 +2118,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.895185,
+      "lon": 23.888636,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1605,7 +2130,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.318591,
+      "lon": 23.136478,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1614,7 +2142,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1623,7 +2154,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1632,7 +2166,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.927019,
+      "lon": 23.973039,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1641,7 +2178,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.916022,
+      "lon": 23.833635,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1650,7 +2190,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1659,7 +2202,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1668,7 +2214,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1677,7 +2226,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.894804,
+      "lon": 23.88921,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -1686,7 +2238,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.049,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -1695,7 +2250,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.969,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -1704,7 +2262,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.979,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -1713,7 +2274,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": 0.999
+      "lpg": 0.999,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -1722,7 +2286,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -1731,7 +2298,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -1740,7 +2310,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.97,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 54.951532,
+      "lon": 23.893635,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -1749,7 +2322,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -1758,7 +2334,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -1767,7 +2346,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -1776,7 +2358,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -1785,7 +2370,10 @@
       "locality": "",
       "petrol95": 1.844,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -1794,7 +2382,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 54.924319,
+      "lon": 24.011308,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -1803,7 +2394,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.888885,
+      "lon": 23.817821,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -1812,7 +2406,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -1821,7 +2418,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.91,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Skulas",
@@ -1830,7 +2430,10 @@
       "locality": "",
       "petrol95": 1.8,
       "diesel": 1.93,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -1839,7 +2442,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1848,7 +2454,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1857,7 +2466,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1866,7 +2478,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1875,7 +2490,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -1884,7 +2502,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.956147,
+      "lon": 23.953474,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1893,7 +2514,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.898214,
+      "lon": 23.904482,
+      "approx": true
     },
     {
       "network": "Regusa",
@@ -1902,7 +2526,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.97,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.79014,
+      "lon": 23.448325,
+      "approx": true
     },
     {
       "network": "Regusa",
@@ -1911,7 +2538,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.97,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.739294,
+      "lon": 23.496223,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -1920,7 +2550,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.79014,
+      "lon": 23.448325,
+      "approx": true
     },
     {
       "network": "Antivis",
@@ -1929,7 +2562,10 @@
       "locality": "",
       "petrol95": 1.84,
       "diesel": 1.99,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.638208,
+      "lon": 22.938369,
+      "approx": true
     },
     {
       "network": "Boost Petrol",
@@ -1938,7 +2574,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.634793,
+      "lon": 22.945432,
+      "approx": false
     },
     {
       "network": "Boost Petrol",
@@ -1947,7 +2586,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.638208,
+      "lon": 22.938369,
+      "approx": true
     },
     {
       "network": "Boost Petrol",
@@ -1956,7 +2598,10 @@
       "locality": "",
       "petrol95": 1.8,
       "diesel": 1.95,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.638208,
+      "lon": 22.938369,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -1965,7 +2610,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.899,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 55.638208,
+      "lon": 22.938369,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -1974,7 +2622,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.93,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 55.786103,
+      "lon": 22.670903,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -1983,7 +2634,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.638208,
+      "lon": 22.938369,
+      "approx": true
     },
     {
       "network": "Raimondo Balsio IĮ",
@@ -1992,7 +2646,10 @@
       "locality": "",
       "petrol95": 1.8,
       "diesel": 1.99,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.638208,
+      "lon": 22.938369,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2001,7 +2658,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.989,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2010,7 +2670,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.989,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2019,7 +2682,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.989,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -2028,7 +2694,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.069,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.686493,
+      "lon": 21.145677,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2037,7 +2706,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.069,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.692392,
+      "lon": 21.153788,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2046,7 +2718,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.089,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.730322,
+      "lon": 21.12469,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2055,7 +2730,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.039,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.666468,
+      "lon": 21.172623,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2064,7 +2742,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.064,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.692786,
+      "lon": 21.179775,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2073,7 +2754,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.049,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.704149,
+      "lon": 21.160898,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2082,7 +2766,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.049,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.656641,
+      "lon": 21.182395,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2091,7 +2778,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.069,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.702069,
+      "lon": 21.138034,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -2100,7 +2790,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.668494,
+      "lon": 21.159076,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -2109,7 +2802,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.661071,
+      "lon": 21.176244,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -2118,7 +2814,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.695369,
+      "lon": 21.148173,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -2127,7 +2826,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -2136,7 +2838,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.672821,
+      "lon": 21.201735,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2145,7 +2850,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.693089,
+      "lon": 21.17477,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2154,7 +2862,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.688911,
+      "lon": 21.155177,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2163,7 +2874,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.684714,
+      "lon": 21.150523,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2172,7 +2886,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.716811,
+      "lon": 21.150527,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2181,7 +2898,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.669848,
+      "lon": 21.192951,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2190,7 +2910,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.703183,
+      "lon": 21.164792,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -2199,7 +2922,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.989,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.693868,
+      "lon": 21.14027,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -2208,7 +2934,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 55.698573,
+      "lon": 21.167328,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -2217,7 +2946,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.668161,
+      "lon": 21.208649,
+      "approx": false
     },
     {
       "network": "Stateta",
@@ -2226,7 +2958,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.686493,
+      "lon": 21.145677,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -2235,7 +2970,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.728398,
+      "lon": 21.132584,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -2244,7 +2982,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.669656,
+      "lon": 21.158613,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2253,7 +2994,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2262,7 +3006,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.695115,
+      "lon": 21.133576,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2271,7 +3018,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2280,7 +3030,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.524056,
+      "lon": 21.388023,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2289,7 +3042,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.707353,
+      "lon": 21.133866,
+      "approx": true
     },
     {
       "network": "Adukesta",
@@ -2298,7 +3054,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.98,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2307,7 +3066,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.99,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2316,7 +3078,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.939,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -2325,7 +3090,10 @@
       "locality": "",
       "petrol95": 1.969,
       "diesel": 2.079,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -2334,7 +3102,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.989,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -2343,7 +3114,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.95,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -2352,7 +3126,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -2361,7 +3138,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -2370,7 +3150,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -2379,7 +3162,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -2388,7 +3174,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -2397,7 +3186,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 2.029,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -2406,7 +3198,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.95,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Trevena",
@@ -2415,7 +3210,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.721342,
+      "lon": 21.385487,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -2424,7 +3222,10 @@
       "locality": "",
       "petrol95": 1.74,
       "diesel": 1.93,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.712282,
+      "lon": 21.381627,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -2433,7 +3234,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Trevena",
@@ -2442,7 +3246,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.98,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2451,7 +3258,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732667,
+      "lon": 21.378708,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2460,7 +3270,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2469,7 +3282,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Vlantana",
@@ -2478,7 +3294,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.73292,
+      "lon": 24.293659,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -2487,7 +3306,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.86352,
+      "lon": 21.217735,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -2496,7 +3318,10 @@
       "locality": "",
       "petrol95": 1.86,
       "diesel": 2.04,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.884461,
+      "lon": 21.221533,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -2505,7 +3330,10 @@
       "locality": "",
       "petrol95": 1.87,
       "diesel": 2.05,
-      "lpg": 0.96
+      "lpg": 0.96,
+      "lat": 55.968609,
+      "lon": 21.360406,
+      "approx": true
     },
     {
       "network": "I.Stonkuvienės prekybos įmonė",
@@ -2514,7 +3342,10 @@
       "locality": "",
       "petrol95": 1.86,
       "diesel": 2.12,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.916984,
+      "lon": 21.467518,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -2523,7 +3354,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.899931,
+      "lon": 21.084209,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -2532,7 +3366,10 @@
       "locality": "",
       "petrol95": 1.88,
       "diesel": 2.05,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 56.026775,
+      "lon": 21.262624,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -2541,7 +3378,10 @@
       "locality": "",
       "petrol95": 1.88,
       "diesel": 2.05,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.896943,
+      "lon": 21.244326,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2550,7 +3390,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.968609,
+      "lon": 21.360406,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2559,7 +3402,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.968609,
+      "lon": 21.360406,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2568,7 +3414,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.909,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 54.903607,
+      "lon": 23.905062,
+      "approx": true
     },
     {
       "network": "Narjanta",
@@ -2577,7 +3426,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 2.019,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 54.903607,
+      "lon": 23.905062,
+      "approx": true
     },
     {
       "network": "Narjanta",
@@ -2586,7 +3438,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.792483,
+      "lon": 25.287089,
+      "approx": false
     },
     {
       "network": "Stateta",
@@ -2595,7 +3450,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.826051,
+      "lon": 24.979937,
+      "approx": false
     },
     {
       "network": "Topgas",
@@ -2604,7 +3462,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.832431,
+      "lon": 25.020078,
+      "approx": false
     },
     {
       "network": "Velseka",
@@ -2613,7 +3474,10 @@
       "locality": "",
       "petrol95": 1.739,
       "diesel": 1.889,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 55.827171,
+      "lon": 24.985997,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2622,7 +3486,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.903607,
+      "lon": 23.905062,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2631,7 +3498,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.903607,
+      "lon": 23.905062,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2640,7 +3510,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.339637,
+      "lon": 24.011838,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -2649,7 +3522,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.28658,
+      "lon": 23.972188,
+      "approx": false
     },
     {
       "network": "Dujovita",
@@ -2658,7 +3534,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 55.278109,
+      "lon": 23.959972,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -2667,7 +3546,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.496461,
+      "lon": 22.604119,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -2676,7 +3558,10 @@
       "locality": "",
       "petrol95": 1.723,
       "diesel": 1.899,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.339637,
+      "lon": 24.011838,
+      "approx": true
     },
     {
       "network": "Gelvybė",
@@ -2685,7 +3570,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.91,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 55.297137,
+      "lon": 24.07692,
+      "approx": false
     },
     {
       "network": "M.Augustinaičio IĮ",
@@ -2694,7 +3582,10 @@
       "locality": "",
       "petrol95": 1.9,
       "diesel": 1.99,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.339637,
+      "lon": 24.011838,
+      "approx": true
     },
     {
       "network": "Mindega",
@@ -2703,7 +3594,10 @@
       "locality": "",
       "petrol95": 1.84,
       "diesel": 1.95,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.290358,
+      "lon": 24.252998,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2712,7 +3606,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.278109,
+      "lon": 23.959972,
+      "approx": false
     },
     {
       "network": "S.Savicko įmonė",
@@ -2721,7 +3618,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.2973,
+      "lon": 24.001282,
+      "approx": false
     },
     {
       "network": "S.Savicko įmonė",
@@ -2730,7 +3630,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.039,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 55.312708,
+      "lon": 23.978113,
+      "approx": false
     },
     {
       "network": "S.Savicko įmonė",
@@ -2739,7 +3642,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.039,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 55.291481,
+      "lon": 23.96054,
+      "approx": false
     },
     {
       "network": "S.Savicko įmonė",
@@ -2748,7 +3654,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.039,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 55.339637,
+      "lon": 24.011838,
+      "approx": true
     },
     {
       "network": "S.Savicko įmonė (Circle K)",
@@ -2757,7 +3666,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.274233,
+      "lon": 23.944967,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2766,7 +3678,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.339637,
+      "lon": 24.011838,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -2775,7 +3690,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.339637,
+      "lon": 24.011838,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2784,7 +3702,10 @@
       "locality": "",
       "petrol95": 1.709,
       "diesel": 1.909,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -2793,7 +3714,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.999,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -2802,7 +3726,10 @@
       "locality": "",
       "petrol95": 1.709,
       "diesel": 1.909,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -2811,7 +3738,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.959,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Melkasta",
@@ -2820,7 +3750,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.95,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Melkasta",
@@ -2829,7 +3762,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.95,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -2838,7 +3774,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.250702,
+      "lon": 23.546831,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -2847,7 +3786,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 2.059,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.588062,
+      "lon": 25.172137,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -2856,7 +3798,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.969,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -2865,7 +3810,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 54.562859,
+      "lon": 23.366533,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -2874,7 +3822,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.567982,
+      "lon": 23.361132,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -2883,7 +3834,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.999,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2892,7 +3846,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.969,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2901,7 +3858,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.969,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -2910,7 +3870,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.969,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -2919,7 +3882,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.049,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 54.576225,
+      "lon": 23.371505,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -2928,7 +3894,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.557091,
+      "lon": 23.354074,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -2937,7 +3906,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.565142,
+      "lon": 23.368552,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -2946,7 +3918,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -2955,7 +3930,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -2964,7 +3942,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.560364,
+      "lon": 23.365926,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -2973,7 +3954,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.56261,
+      "lon": 23.332366,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -2982,7 +3966,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 54.497918,
+      "lon": 24.077555,
+      "approx": false
     },
     {
       "network": "Regusa",
@@ -2991,7 +3978,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.97,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -3000,7 +3990,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.97,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -3009,7 +4002,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.888137,
+      "lon": 23.786984,
+      "approx": false
     },
     {
       "network": "Topgas",
@@ -3018,7 +4014,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.581795,
+      "lon": 23.367262,
+      "approx": false
     },
     {
       "network": "Valdegra",
@@ -3027,7 +4026,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3036,7 +4038,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.059,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3045,7 +4050,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.059,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Virši",
@@ -3054,7 +4062,10 @@
       "locality": "",
       "petrol95": 1.964,
       "diesel": 2.054,
-      "lpg": 0.915
+      "lpg": 0.915,
+      "lat": 54.67923,
+      "lon": 23.200441,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3063,7 +4074,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.969,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3072,7 +4086,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.969,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3081,7 +4098,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.969,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -3090,7 +4110,10 @@
       "locality": "",
       "petrol95": 1.909,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.302454,
+      "lon": 22.345424,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -3099,7 +4122,10 @@
       "locality": "",
       "petrol95": 1.739,
       "diesel": 1.859,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.313743,
+      "lon": 22.368203,
+      "approx": false
     },
     {
       "network": "Eu Verslas",
@@ -3108,7 +4134,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.959,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 56.304209,
+      "lon": 22.360258,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -3117,7 +4146,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.301233,
+      "lon": 22.349841,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -3126,7 +4158,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.314455,
+      "lon": 22.310973,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -3135,7 +4170,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.969,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 56.302043,
+      "lon": 22.342474,
+      "approx": false
     },
     {
       "network": "RV",
@@ -3144,7 +4182,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 56.315943,
+      "lon": 22.314284,
+      "approx": false
     },
     {
       "network": "RV",
@@ -3153,7 +4194,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Tripletas",
@@ -3162,7 +4206,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.96,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 56.305283,
+      "lon": 22.342488,
+      "approx": false
     },
     {
       "network": "Tumasa",
@@ -3171,7 +4218,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 2.02,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3180,7 +4230,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3189,7 +4242,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Visvilas",
@@ -3198,7 +4254,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.96,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 56.314942,
+      "lon": 22.340387,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3207,7 +4266,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.22533,
+      "lon": 25.398677,
+      "approx": true
     },
     {
       "network": "Boost Petrol",
@@ -3216,7 +4278,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.99,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.215644,
+      "lon": 25.267733,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -3225,7 +4290,10 @@
       "locality": "",
       "petrol95": 1.884,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.22533,
+      "lon": 25.398677,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3234,7 +4302,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.212725,
+      "lon": 25.398114,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -3243,7 +4314,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.22533,
+      "lon": 25.398677,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3252,7 +4326,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.099,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.475683,
+      "lon": 21.092587,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -3261,7 +4338,10 @@
       "locality": "",
       "petrol95": 1.88,
       "diesel": 1.99,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.140417,
+      "lon": 21.903415,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -3270,7 +4350,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.949,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.073104,
+      "lon": 23.831915,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -3279,7 +4362,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 56.073104,
+      "lon": 23.831915,
+      "approx": true
     },
     {
       "network": "Naftrus",
@@ -3288,7 +4374,10 @@
       "locality": "",
       "petrol95": 1.69,
       "diesel": 1.9,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.073104,
+      "lon": 23.831915,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3297,7 +4386,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.049,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.073104,
+      "lon": 23.831915,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3306,7 +4398,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.969,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.922982,
+      "lon": 21.068266,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -3315,7 +4410,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.949,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.914025,
+      "lon": 21.064563,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -3324,7 +4422,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.039,
-      "lpg": 0.979
+      "lpg": 0.979,
+      "lat": 55.914667,
+      "lon": 21.077903,
+      "approx": false
     },
     {
       "network": "Šventosios investicijos",
@@ -3333,7 +4434,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.059,
-      "lpg": 0.999
+      "lpg": 0.999,
+      "lat": 56.012842,
+      "lon": 21.103592,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -3342,7 +4446,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.969,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3351,7 +4458,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.969,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -3360,7 +4470,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.717505,
+      "lon": 24.371238,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -3369,7 +4482,10 @@
       "locality": "",
       "petrol95": 1.934,
       "diesel": 2.029,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.731737,
+      "lon": 24.342429,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -3378,7 +4494,10 @@
       "locality": "",
       "petrol95": 1.914,
       "diesel": 2.009,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.728715,
+      "lon": 24.338949,
+      "approx": false
     },
     {
       "network": "Deliuvis",
@@ -3387,7 +4506,10 @@
       "locality": "",
       "petrol95": 1.729,
       "diesel": 1.919,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.746586,
+      "lon": 24.329157,
+      "approx": false
     },
     {
       "network": "Deliuvis",
@@ -3396,7 +4518,10 @@
       "locality": "",
       "petrol95": 1.729,
       "diesel": 1.919,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Deliuvis",
@@ -3405,7 +4530,10 @@
       "locality": "",
       "petrol95": 1.729,
       "diesel": 1.919,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.743174,
+      "lon": 24.342494,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -3414,7 +4542,10 @@
       "locality": "",
       "petrol95": 1.739,
       "diesel": 1.939,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.731743,
+      "lon": 24.340694,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -3423,7 +4554,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -3432,7 +4566,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.728377,
+      "lon": 24.332338,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -3441,7 +4578,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.709517,
+      "lon": 24.374754,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -3450,7 +4590,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.727745,
+      "lon": 24.348805,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -3459,7 +4602,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.719396,
+      "lon": 24.348867,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -3468,7 +4614,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.73063,
+      "lon": 24.316109,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -3477,7 +4626,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.999,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.73174,
+      "lon": 24.303173,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -3486,7 +4638,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.959,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 55.748199,
+      "lon": 24.390815,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -3495,7 +4650,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3504,7 +4662,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3513,7 +4674,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3522,7 +4686,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3531,7 +4698,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3540,7 +4710,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3549,7 +4722,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -3558,7 +4734,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.029,
-      "lpg": 0.979
+      "lpg": 0.979,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -3567,7 +4746,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.029,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -3576,7 +4758,10 @@
       "locality": "",
       "petrol95": 1.739,
       "diesel": 1.939,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 55.71009,
+      "lon": 24.372309,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -3585,7 +4770,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.949,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -3594,7 +4782,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -3603,7 +4794,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.984,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -3612,7 +4806,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 2.029,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -3621,7 +4818,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3630,7 +4830,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3639,7 +4842,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3648,7 +4854,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.049,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3657,7 +4866,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.732683,
+      "lon": 24.366952,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3666,7 +4878,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.93,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -3675,7 +4890,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.939,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -3684,7 +4902,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.939,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -3693,7 +4914,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Pakelės namai",
@@ -3702,7 +4926,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 2.09,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Pakelės namai",
@@ -3711,7 +4938,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 2.09,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Skulas",
@@ -3720,7 +4950,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.9,
-      "lpg": 0.82
+      "lpg": 0.82,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Topgas",
@@ -3729,7 +4962,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 56.067305,
+      "lon": 24.385909,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -3738,7 +4974,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3747,7 +4986,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.070691,
+      "lon": 24.384284,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3756,7 +4998,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 2.039,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -3765,7 +5010,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.99,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.919887,
+      "lon": 21.857067,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -3774,7 +5022,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.99,
-      "lpg": 0.96
+      "lpg": 0.96,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Eu Verslas",
@@ -3783,7 +5034,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Eu Verslas",
@@ -3792,7 +5046,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.920377,
+      "lon": 21.832127,
+      "approx": false
     },
     {
       "network": "Eu Verslas",
@@ -3801,7 +5058,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.869,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -3810,7 +5070,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Madalva",
@@ -3819,7 +5082,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "VVARFF (Circle K)",
@@ -3828,7 +5094,10 @@
       "locality": "",
       "petrol95": 1.788,
       "diesel": 1.955,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3837,7 +5106,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -3846,7 +5118,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.953916,
+      "lon": 21.833541,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3855,7 +5130,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.969,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 54.64029,
+      "lon": 23.939218,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3864,7 +5142,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.059,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 54.878814,
+      "lon": 23.893695,
+      "approx": false
     },
     {
       "network": "Borusta",
@@ -3873,7 +5154,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.909,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.582227,
+      "lon": 24.31778,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -3882,7 +5166,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.97
+      "lpg": 0.97,
+      "lat": 54.64029,
+      "lon": 23.939218,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -3891,7 +5178,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.999,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.64029,
+      "lon": 23.939218,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -3900,7 +5190,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.64029,
+      "lon": 23.939218,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -3909,7 +5202,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.88,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.64029,
+      "lon": 23.939218,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -3918,7 +5214,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.503038,
+      "lon": 23.375134,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -3927,7 +5226,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 55.151831,
+      "lon": 26.131006,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -3936,7 +5238,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.64029,
+      "lon": 23.939218,
+      "approx": true
     },
     {
       "network": "Apsaga",
@@ -3945,7 +5250,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.81545,
+      "lon": 23.543683,
+      "approx": false
     },
     {
       "network": "Apsaga",
@@ -3954,7 +5262,10 @@
       "locality": "",
       "petrol95": 1.865,
       "diesel": 2.015,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.693417,
+      "lon": 23.650122,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3963,7 +5274,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.969,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.693417,
+      "lon": 23.650122,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -3972,7 +5286,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.949,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 54.809765,
+      "lon": 25.291711,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -3981,7 +5298,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.949,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.693417,
+      "lon": 23.650122,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -3990,7 +5310,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.811687,
+      "lon": 23.550071,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -3999,7 +5322,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.969,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.801811,
+      "lon": 23.563775,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -4008,7 +5334,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.814272,
+      "lon": 23.546038,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -4017,7 +5346,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.9,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.693417,
+      "lon": 23.650122,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -4026,7 +5358,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.693417,
+      "lon": 23.650122,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4035,7 +5370,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.969,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4044,7 +5382,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.989,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 55.373591,
+      "lon": 23.121137,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4053,7 +5394,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.969,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -4062,7 +5406,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -4071,7 +5418,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.26768,
+      "lon": 23.4707,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -4080,7 +5430,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -4089,7 +5442,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.95,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.370657,
+      "lon": 23.119297,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -4098,7 +5454,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -4107,7 +5466,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Naftrus",
@@ -4116,7 +5478,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.95,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Naftrus",
@@ -4125,7 +5490,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.97,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Naftrus",
@@ -4134,7 +5502,10 @@
       "locality": "",
       "petrol95": 1.719,
       "diesel": 1.949,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.370315,
+      "lon": 23.13212,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -4143,7 +5514,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -4152,7 +5526,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.079,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -4161,7 +5538,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.079,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 55.376456,
+      "lon": 23.1989,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4170,7 +5550,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.394234,
+      "lon": 22.907164,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4179,7 +5562,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.959,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 55.724078,
+      "lon": 22.002477,
+      "approx": true
     },
     {
       "network": "Gazimpeksas",
@@ -4188,7 +5574,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.99,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.724078,
+      "lon": 22.002477,
+      "approx": true
     },
     {
       "network": "Plungės lagūna (Circle K)",
@@ -4197,7 +5586,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.999,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 55.735072,
+      "lon": 21.924055,
+      "approx": false
     },
     {
       "network": "Trevena",
@@ -4206,7 +5598,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.98,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.724078,
+      "lon": 22.002477,
+      "approx": true
     },
     {
       "network": "Trevena",
@@ -4215,7 +5610,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.724078,
+      "lon": 22.002477,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -4224,7 +5622,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.94855,
+      "lon": 25.814319,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4233,7 +5634,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.039,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 55.729972,
+      "lon": 21.147044,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -4242,7 +5646,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.952226,
+      "lon": 25.589774,
+      "approx": false
     },
     {
       "network": "DVS Topolis",
@@ -4251,7 +5658,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.94306,
+      "lon": 25.585657,
+      "approx": false
     },
     {
       "network": "Degta",
@@ -4260,7 +5670,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.013,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.729972,
+      "lon": 21.147044,
+      "approx": true
     },
     {
       "network": "Lašų ŽŪB",
@@ -4269,7 +5682,10 @@
       "locality": "",
       "petrol95": 1.87,
       "diesel": 2.06,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.729972,
+      "lon": 21.147044,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4278,7 +5694,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.965382,
+      "lon": 25.600896,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -4287,7 +5706,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.729972,
+      "lon": 21.147044,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4296,7 +5718,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.939,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 56.227404,
+      "lon": 21.689932,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -4305,7 +5730,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.919,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.227404,
+      "lon": 21.689932,
+      "approx": true
     },
     {
       "network": "Gazimpeksas",
@@ -4314,7 +5742,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 56.227404,
+      "lon": 21.689932,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -4323,7 +5754,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.9,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.227404,
+      "lon": 21.689932,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4332,7 +5766,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.227404,
+      "lon": 21.689932,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4341,7 +5778,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.929,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 55.25215,
+      "lon": 22.284136,
+      "approx": true
     },
     {
       "network": "Bonsa",
@@ -4350,7 +5790,10 @@
       "locality": "",
       "petrol95": 1.699,
       "diesel": 1.839,
-      "lpg": 0.8
+      "lpg": 0.8,
+      "lat": 55.242392,
+      "lon": 22.249694,
+      "approx": false
     },
     {
       "network": "Bonsa",
@@ -4359,7 +5802,10 @@
       "locality": "",
       "petrol95": 1.7,
       "diesel": 1.85,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 55.481284,
+      "lon": 22.657973,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -4368,7 +5814,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.099,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.248294,
+      "lon": 22.303029,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -4377,7 +5826,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.266997,
+      "lon": 22.309806,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -4386,7 +5838,10 @@
       "locality": "",
       "petrol95": 1.91,
       "diesel": 2.04,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.401573,
+      "lon": 22.597744,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -4395,7 +5850,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.25215,
+      "lon": 22.284136,
+      "approx": true
     },
     {
       "network": "Littaura",
@@ -4404,7 +5862,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.97,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.238271,
+      "lon": 22.297675,
+      "approx": false
     },
     {
       "network": "Madalva",
@@ -4413,7 +5874,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.91,
-      "lpg": 0.79
+      "lpg": 0.79,
+      "lat": 55.25215,
+      "lon": 22.284136,
+      "approx": true
     },
     {
       "network": "Madalva",
@@ -4422,7 +5886,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.25215,
+      "lon": 22.284136,
+      "approx": true
     },
     {
       "network": "Madalva",
@@ -4431,7 +5898,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.25215,
+      "lon": 22.284136,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -4440,7 +5910,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.265316,
+      "lon": 22.308834,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -4449,7 +5922,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.24427,
+      "lon": 22.30384,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -4458,7 +5934,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.25215,
+      "lon": 22.284136,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4467,7 +5946,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.240827,
+      "lon": 22.305454,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4476,7 +5958,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.019,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.983474,
+      "lon": 23.332731,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4485,7 +5970,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.019,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.983638,
+      "lon": 22.250663,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -4494,7 +5982,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.069,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.977122,
+      "lon": 22.265112,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -4503,7 +5994,10 @@
       "locality": "",
       "petrol95": 1.91,
       "diesel": 2.01,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.983638,
+      "lon": 22.250663,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -4512,7 +6006,10 @@
       "locality": "",
       "petrol95": 1.91,
       "diesel": 2.01,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.999795,
+      "lon": 22.24161,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -4521,7 +6018,10 @@
       "locality": "",
       "petrol95": 1.89,
       "diesel": 1.99,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.983638,
+      "lon": 22.250663,
+      "approx": true
     },
     {
       "network": "Gazimpeksas",
@@ -4530,7 +6030,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 56.395056,
+      "lon": 22.1779,
+      "approx": false
     },
     {
       "network": "Leosta",
@@ -4539,7 +6042,10 @@
       "locality": "",
       "petrol95": 1.87,
       "diesel": 2.08,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.901344,
+      "lon": 22.506292,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -4548,7 +6054,10 @@
       "locality": "",
       "petrol95": 1.914,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.983638,
+      "lon": 22.250663,
+      "approx": true
     },
     {
       "network": "Orlen",
@@ -4557,7 +6066,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.979219,
+      "lon": 22.226678,
+      "approx": false
     },
     {
       "network": "Prie Luksto",
@@ -4566,7 +6078,10 @@
       "locality": "",
       "petrol95": 1.975,
       "diesel": 2.065,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.983638,
+      "lon": 22.250663,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4575,7 +6090,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.069,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 55.983638,
+      "lon": 22.250663,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4584,7 +6102,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.049,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.651034,
+      "lon": 24.933348,
+      "approx": false
     },
     {
       "network": "Borusta",
@@ -4593,7 +6114,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.93,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.578086,
+      "lon": 24.52152,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -4602,7 +6126,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": 0.999
+      "lpg": 0.999,
+      "lat": 54.564228,
+      "lon": 24.728227,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -4611,7 +6138,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.97,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.643403,
+      "lon": 25.053458,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -4620,7 +6150,10 @@
       "locality": "",
       "petrol95": 1.82,
       "diesel": 1.94,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 54.564228,
+      "lon": 24.728227,
+      "approx": true
     },
     {
       "network": "Kriketas",
@@ -4629,7 +6162,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.630862,
+      "lon": 24.922588,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -4638,7 +6174,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.564228,
+      "lon": 24.728227,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -4647,7 +6186,10 @@
       "locality": "",
       "petrol95": 1.884,
       "diesel": 1.984,
-      "lpg": 0.864
+      "lpg": 0.864,
+      "lat": 55.244496,
+      "lon": 24.75002,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4656,7 +6198,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 1.989,
-      "lpg": 0.869
+      "lpg": 0.869,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Bemija",
@@ -4665,7 +6210,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.95,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -4674,7 +6222,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": 0.999
+      "lpg": 0.999,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -4683,7 +6234,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.242038,
+      "lon": 24.742922,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -4692,7 +6246,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -4701,7 +6258,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.211548,
+      "lon": 24.795213,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -4710,7 +6270,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.88,
-      "lpg": 0.82
+      "lpg": 0.82,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4719,7 +6282,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4728,7 +6294,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4737,7 +6306,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.702217,
+      "lon": 25.261913,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -4746,7 +6318,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.511847,
+      "lon": 25.600004,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -4755,7 +6330,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.593992,
+      "lon": 25.833404,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -4764,7 +6342,10 @@
       "locality": "",
       "petrol95": 1.794,
       "diesel": 1.954,
-      "lpg": 0.894
+      "lpg": 0.894,
+      "lat": 55.495669,
+      "lon": 25.581784,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -4773,7 +6354,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.496102,
+      "lon": 25.601691,
+      "approx": true
     },
     {
       "network": "Boost Petrol",
@@ -4782,7 +6366,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 1.979,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.512301,
+      "lon": 25.643978,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -4791,7 +6378,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.019,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.505005,
+      "lon": 25.620914,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -4800,7 +6390,10 @@
       "locality": "",
       "petrol95": 1.909,
       "diesel": 2.009,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 55.495733,
+      "lon": 25.583915,
+      "approx": false
     },
     {
       "network": "Dujotena",
@@ -4809,7 +6402,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.482959,
+      "lon": 25.571026,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -4818,7 +6414,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.505179,
+      "lon": 25.624883,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -4827,7 +6426,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.974,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.481163,
+      "lon": 25.579652,
+      "approx": false
     },
     {
       "network": "Stateta",
@@ -4836,7 +6438,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.498548,
+      "lon": 25.58397,
+      "approx": false
     },
     {
       "network": "Utentra",
@@ -4845,7 +6450,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": 1.919,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.496102,
+      "lon": 25.601691,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4854,7 +6462,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.496102,
+      "lon": 25.601691,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4863,7 +6474,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.496102,
+      "lon": 25.601691,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -4872,7 +6486,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.496102,
+      "lon": 25.601691,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4881,7 +6498,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.219354,
+      "lon": 24.563475,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4890,7 +6510,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.049,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 54.219354,
+      "lon": 24.563475,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -4899,7 +6522,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.069,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.219354,
+      "lon": 24.563475,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -4908,7 +6534,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.079,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 54.210246,
+      "lon": 24.576812,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -4917,7 +6546,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.219354,
+      "lon": 24.563475,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -4926,7 +6558,10 @@
       "locality": "",
       "petrol95": 1.819,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.764541,
+      "lon": 22.868069,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -4935,7 +6570,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.979,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.658115,
+      "lon": 23.033243,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -4944,7 +6582,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.91,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 54.764541,
+      "lon": 22.868069,
+      "approx": true
     },
     {
       "network": "Melkasta",
@@ -4953,7 +6594,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.95,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 55.025517,
+      "lon": 24.245274,
+      "approx": false
     },
     {
       "network": "Osijos dujos",
@@ -4962,7 +6606,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.96
+      "lpg": 0.96,
+      "lat": 54.764541,
+      "lon": 22.868069,
+      "approx": true
     },
     {
       "network": "Regusa",
@@ -4971,7 +6618,10 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 1.99,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.638735,
+      "lon": 22.76328,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -4980,7 +6630,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.637983,
+      "lon": 23.008446,
+      "approx": false
     },
     {
       "network": "Vildega",
@@ -4989,7 +6642,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.979,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.64334,
+      "lon": 23.053086,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -4998,7 +6654,10 @@
       "locality": "",
       "petrol95": 1.774,
       "diesel": 1.964,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 54.720866,
+      "lon": 25.284772,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5007,7 +6666,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.651137,
+      "lon": 25.150232,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5016,7 +6678,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.039,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.666066,
+      "lon": 25.273894,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5025,7 +6690,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 54.677445,
+      "lon": 25.07905,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5034,7 +6702,10 @@
       "locality": "",
       "petrol95": 1.774,
       "diesel": 1.974,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.703388,
+      "lon": 25.415941,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5043,7 +6714,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.669143,
+      "lon": 25.278796,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5052,7 +6726,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.71083,
+      "lon": 25.24041,
+      "approx": false
     },
     {
       "network": "Alauša",
@@ -5061,7 +6738,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.959,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.727634,
+      "lon": 25.236304,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -5070,7 +6750,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 54.721912,
+      "lon": 25.336616,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -5079,7 +6762,10 @@
       "locality": "",
       "petrol95": 1.909,
       "diesel": 2.029,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5088,7 +6774,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.959,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 54.662195,
+      "lon": 25.234341,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -5097,7 +6786,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.969,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5106,7 +6798,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.989,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5115,7 +6810,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.949,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5124,7 +6822,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.959,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5133,7 +6834,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.969,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5142,7 +6846,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.959,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5151,7 +6858,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.979,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.779293,
+      "lon": 25.342091,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -5160,7 +6870,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -5169,7 +6882,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.671003,
+      "lon": 25.236635,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5178,7 +6894,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 2.019,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 54.735933,
+      "lon": 25.265449,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5187,7 +6906,10 @@
       "locality": "",
       "petrol95": 1.969,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.69533,
+      "lon": 25.218279,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5196,7 +6918,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.079,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.695081,
+      "lon": 25.298119,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5205,7 +6930,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.059,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.720204,
+      "lon": 25.24633,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5214,7 +6942,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.034,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 54.718581,
+      "lon": 25.300621,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5223,7 +6954,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.694222,
+      "lon": 25.263426,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5232,7 +6966,10 @@
       "locality": "",
       "petrol95": 1.819,
       "diesel": 1.979,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.709175,
+      "lon": 25.228041,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5241,7 +6978,10 @@
       "locality": "",
       "petrol95": 1.944,
       "diesel": 2.064,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.622943,
+      "lon": 25.110314,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5250,7 +6990,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.651529,
+      "lon": 25.269447,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5259,7 +7002,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.999
+      "lpg": 0.999,
+      "lat": 54.713344,
+      "lon": 25.209436,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5268,7 +7014,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.702354,
+      "lon": 25.264959,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5277,7 +7026,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.999
+      "lpg": 0.999,
+      "lat": 54.658656,
+      "lon": 25.266633,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5286,7 +7038,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.751409,
+      "lon": 25.266398,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5295,7 +7050,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.671031,
+      "lon": 25.192116,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5304,7 +7062,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.054,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.661844,
+      "lon": 25.235444,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5313,7 +7074,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.024,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 54.730564,
+      "lon": 25.239019,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5322,7 +7086,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.054,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.66267,
+      "lon": 25.234738,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5331,7 +7098,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.969,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 54.715548,
+      "lon": 25.29102,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5340,7 +7110,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.702836,
+      "lon": 25.263915,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -5349,7 +7122,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.658921,
+      "lon": 25.161126,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5358,7 +7134,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -5367,7 +7146,10 @@
       "locality": "",
       "petrol95": 1.739,
       "diesel": 1.919,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 54.739861,
+      "lon": 25.276174,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5376,7 +7158,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.959,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 54.717912,
+      "lon": 25.295697,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5385,7 +7170,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.949,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 54.627921,
+      "lon": 25.149657,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5394,7 +7182,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.979,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.723455,
+      "lon": 25.232948,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5403,7 +7194,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.959,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.652658,
+      "lon": 25.305717,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5412,7 +7206,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.959,
-      "lpg": 0.91
+      "lpg": 0.91,
+      "lat": 54.710143,
+      "lon": 25.162054,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5421,7 +7218,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.959,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 54.641028,
+      "lon": 25.184135,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -5430,7 +7230,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.62275,
+      "lon": 25.105019,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -5439,7 +7242,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.75397,
+      "lon": 25.209748,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -5448,7 +7254,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -5457,7 +7266,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -5466,7 +7278,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -5475,7 +7290,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.634174,
+      "lon": 25.304536,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5484,7 +7302,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.736144,
+      "lon": 25.231119,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5493,7 +7314,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.713897,
+      "lon": 25.209684,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5502,7 +7326,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.67281,
+      "lon": 25.197948,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5511,7 +7338,10 @@
       "locality": "",
       "petrol95": 1.884,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.712103,
+      "lon": 25.270731,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5520,7 +7350,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.72149,
+      "lon": 25.256115,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5529,7 +7362,10 @@
       "locality": "",
       "petrol95": 1.904,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.717444,
+      "lon": 25.304441,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5538,7 +7374,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.71563,
+      "lon": 25.228706,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5547,7 +7386,10 @@
       "locality": "",
       "petrol95": 1.874,
       "diesel": 2.014,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.644034,
+      "lon": 25.207458,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5556,7 +7398,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.673423,
+      "lon": 25.224068,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5565,7 +7410,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.671612,
+      "lon": 25.270971,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5574,7 +7422,10 @@
       "locality": "",
       "petrol95": 1.874,
       "diesel": 2.014,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.646852,
+      "lon": 25.210308,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5583,7 +7434,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.677209,
+      "lon": 25.255644,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5592,7 +7446,10 @@
       "locality": "",
       "petrol95": 1.874,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.75485,
+      "lon": 25.271346,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5601,7 +7458,10 @@
       "locality": "",
       "petrol95": 1.894,
       "diesel": 1.984,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.711904,
+      "lon": 25.293073,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5610,7 +7470,10 @@
       "locality": "",
       "petrol95": 1.904,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.706745,
+      "lon": 25.304138,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5619,7 +7482,10 @@
       "locality": "",
       "petrol95": 1.914,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.676735,
+      "lon": 25.309299,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5628,7 +7494,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.655262,
+      "lon": 25.27027,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5637,7 +7506,10 @@
       "locality": "",
       "petrol95": 1.914,
       "diesel": 2.014,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.68084,
+      "lon": 25.207628,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5646,7 +7518,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.704909,
+      "lon": 25.214701,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5655,7 +7530,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.701324,
+      "lon": 25.263805,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5664,7 +7542,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.709474,
+      "lon": 25.189884,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5673,7 +7554,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.656653,
+      "lon": 25.292038,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5682,7 +7566,10 @@
       "locality": "",
       "petrol95": 1.889,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.624407,
+      "lon": 25.111981,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5691,7 +7578,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.029,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.621285,
+      "lon": 25.24294,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5700,7 +7590,10 @@
       "locality": "",
       "petrol95": 1.914,
       "diesel": 1.994,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.658327,
+      "lon": 25.159295,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5709,7 +7602,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.668184,
+      "lon": 25.265134,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -5718,7 +7614,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.704173,
+      "lon": 25.267084,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -5727,7 +7626,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.672438,
+      "lon": 25.299001,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -5736,7 +7638,10 @@
       "locality": "",
       "petrol95": 1.869,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.728049,
+      "lon": 25.327011,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -5745,7 +7650,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.979,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.736926,
+      "lon": 25.232113,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -5754,7 +7662,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.979,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 54.696007,
+      "lon": 25.3001,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -5763,7 +7674,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -5772,7 +7686,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -5781,7 +7698,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.84
+      "lpg": 0.84,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Skulas",
@@ -5790,7 +7710,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.959,
-      "lpg": 0.849
+      "lpg": 0.849,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Stateta",
@@ -5799,7 +7722,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.929,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.723146,
+      "lon": 25.241059,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -5808,7 +7734,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.049,
-      "lpg": 0.929
+      "lpg": 0.929,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5817,7 +7746,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5826,7 +7758,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5835,7 +7770,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5844,7 +7782,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5853,7 +7794,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5862,7 +7806,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5871,7 +7818,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5880,7 +7830,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5889,7 +7842,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5898,7 +7854,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5907,7 +7866,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5916,7 +7878,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.703524,
+      "lon": 25.206471,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -5925,7 +7890,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.703524,
+      "lon": 25.206471,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -5934,7 +7902,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5943,7 +7914,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.059,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.670706,
+      "lon": 25.281846,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -5952,7 +7926,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.049,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -5961,7 +7938,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.059,
-      "lpg": null
+      "lpg": null,
+      "lat": 56.226253,
+      "lon": 23.602436,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5970,7 +7950,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 1.96,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5979,7 +7962,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.969,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -5988,7 +7974,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.979,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -5997,7 +7986,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 2.024,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -6006,7 +7998,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.989,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -6015,7 +8010,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -6024,7 +8022,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -6033,7 +8034,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Emsi",
@@ -6042,7 +8046,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.91,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -6051,7 +8058,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.959,
-      "lpg": 0.919
+      "lpg": 0.919,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -6060,7 +8070,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Kenaoil",
@@ -6069,7 +8082,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.646057,
+      "lon": 25.625138,
+      "approx": false
     },
     {
       "network": "Medelsta",
@@ -6078,7 +8094,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.99,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -6087,7 +8106,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.710674,
+      "lon": 25.156488,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -6096,7 +8118,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.92,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6105,7 +8130,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.049,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.68285,
+      "lon": 25.285623,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -6114,7 +8142,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.979,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 55.599169,
+      "lon": 26.419864,
+      "approx": false
     },
     {
       "network": "Autograndas",
@@ -6123,7 +8154,10 @@
       "locality": "",
       "petrol95": 1.854,
       "diesel": 1.976,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.912705,
+      "lon": 23.959919,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -6132,7 +8166,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.585363,
+      "lon": 26.48237,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6141,7 +8178,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.594621,
+      "lon": 26.438832,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -6150,7 +8190,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.585363,
+      "lon": 26.48237,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6159,7 +8202,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": 0.839
+      "lpg": 0.839,
+      "lat": 54.681735,
+      "lon": 25.312442,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6168,7 +8214,10 @@
       "locality": "",
       "petrol95": 1.839,
       "diesel": 1.979,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.681735,
+      "lon": 25.312442,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6177,7 +8226,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.681735,
+      "lon": 25.312442,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -6186,7 +8238,10 @@
       "locality": "",
       "petrol95": 1.789,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 54.784131,
+      "lon": 22.873383,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -6195,7 +8250,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.91,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.798723,
+      "lon": 22.894201,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6204,7 +8262,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.93,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.851088,
+      "lon": 23.170468,
+      "approx": false
     },
     {
       "network": "GM Circle K",
@@ -6213,7 +8274,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.798723,
+      "lon": 22.894201,
+      "approx": true
     },
     {
       "network": "Gelvybė",
@@ -6222,7 +8286,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.91,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.954139,
+      "lon": 23.024637,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -6231,7 +8298,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.91,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.798723,
+      "lon": 22.894201,
+      "approx": true
     },
     {
       "network": "Gelvybė",
@@ -6240,7 +8310,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.91,
-      "lpg": 0.87
+      "lpg": 0.87,
+      "lat": 55.063839,
+      "lon": 22.780717,
+      "approx": false
     },
     {
       "network": "Gelvybė",
@@ -6249,7 +8322,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.91,
-      "lpg": 0.9
+      "lpg": 0.9,
+      "lat": 54.952753,
+      "lon": 23.080294,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -6258,7 +8334,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.9,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 54.798723,
+      "lon": 22.894201,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -6267,7 +8346,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.039,
-      "lpg": 0.904
+      "lpg": 0.904,
+      "lat": 54.317372,
+      "lon": 25.238036,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6276,7 +8358,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 54.317372,
+      "lon": 25.238036,
+      "approx": true
     },
     {
       "network": "Tomega",
@@ -6285,7 +8370,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.069,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.456879,
+      "lon": 25.279466,
+      "approx": false
     },
     {
       "network": "Tomega",
@@ -6294,7 +8382,10 @@
       "locality": "",
       "petrol95": 1.949,
       "diesel": 2.079,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.976995,
+      "lon": 25.822892,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -6303,7 +8394,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 54.317372,
+      "lon": 25.238036,
+      "approx": true
     },
     {
       "network": "Apsaga",
@@ -6312,7 +8406,10 @@
       "locality": "",
       "petrol95": 1.829,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.923548,
+      "lon": 23.350099,
+      "approx": false
     },
     {
       "network": "Apsaga",
@@ -6321,7 +8418,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.995,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.917865,
+      "lon": 23.297526,
+      "approx": false
     },
     {
       "network": "Apsaga",
@@ -6330,7 +8430,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.904952,
+      "lon": 23.328068,
+      "approx": false
     },
     {
       "network": "Apsaga",
@@ -6339,7 +8442,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.999,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.91673,
+      "lon": 23.246901,
+      "approx": false
     },
     {
       "network": "Apsaga",
@@ -6348,7 +8454,10 @@
       "locality": "",
       "petrol95": 1.849,
       "diesel": 1.995,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.941271,
+      "lon": 23.326273,
+      "approx": false
     },
     {
       "network": "Apsaga",
@@ -6357,7 +8466,10 @@
       "locality": "",
       "petrol95": 1.84,
       "diesel": 1.98,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.956347,
+      "lon": 23.30845,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -6366,7 +8478,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.969,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -6375,7 +8490,10 @@
       "locality": "",
       "petrol95": 1.969,
       "diesel": 2.069,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 55.928755,
+      "lon": 23.297596,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -6384,7 +8502,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": 0.949
+      "lpg": 0.949,
+      "lat": 55.909354,
+      "lon": 23.319467,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -6393,7 +8514,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.039,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.924804,
+      "lon": 23.334034,
+      "approx": false
     },
     {
       "network": "Circle K",
@@ -6402,7 +8526,10 @@
       "locality": "",
       "petrol95": 1.929,
       "diesel": 2.049,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 55.912683,
+      "lon": 23.273998,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -6411,7 +8538,10 @@
       "locality": "",
       "petrol95": 1.779,
       "diesel": 1.919,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.898858,
+      "lon": 23.271864,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -6420,7 +8550,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -6429,7 +8562,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Junasa",
@@ -6438,7 +8574,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.899,
-      "lpg": 0.84
+      "lpg": 0.84,
+      "lat": 55.948105,
+      "lon": 23.320427,
+      "approx": false
     },
     {
       "network": "Junasa",
@@ -6447,7 +8586,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.899,
-      "lpg": 0.84
+      "lpg": 0.84,
+      "lat": 55.89793,
+      "lon": 23.35172,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -6456,7 +8598,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.905911,
+      "lon": 23.25872,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -6465,7 +8610,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.920084,
+      "lon": 23.293285,
+      "approx": false
     },
     {
       "network": "Neste Lietuva",
@@ -6474,7 +8622,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.929367,
+      "lon": 23.294134,
+      "approx": false
     },
     {
       "network": "Orlen",
@@ -6483,7 +8634,10 @@
       "locality": "",
       "petrol95": 1.859,
       "diesel": 1.999,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.913609,
+      "lon": 23.336876,
+      "approx": false
     },
     {
       "network": "Plovimo sistemos",
@@ -6492,7 +8646,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.909
+      "lpg": 0.909,
+      "lat": 55.905911,
+      "lon": 23.25872,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -6501,7 +8658,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.943011,
+      "lon": 23.281386,
+      "approx": false
     },
     {
       "network": "Saurida",
@@ -6510,7 +8670,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.94,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6519,7 +8682,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6528,7 +8694,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6537,7 +8706,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6546,7 +8718,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.964335,
+      "lon": 23.349271,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -6555,7 +8730,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.931395,
+      "lon": 23.315138,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -6564,7 +8742,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.989,
-      "lpg": 0.899
+      "lpg": 0.899,
+      "lat": 55.920168,
+      "lon": 23.425998,
+      "approx": false
     },
     {
       "network": "Atsiauta",
@@ -6573,7 +8754,10 @@
       "locality": "",
       "petrol95": 1.85,
       "diesel": 2.05,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 56.014796,
+      "lon": 22.95141,
+      "approx": false
     },
     {
       "network": "Boost Petrol",
@@ -6582,7 +8766,10 @@
       "locality": "",
       "petrol95": 1.939,
       "diesel": 2.059,
-      "lpg": 0.939
+      "lpg": 0.939,
+      "lat": 55.973183,
+      "lon": 23.069785,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -6591,7 +8778,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.999255,
+      "lon": 22.989657,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -6600,7 +8790,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.973183,
+      "lon": 23.069785,
+      "approx": true
     },
     {
       "network": "Junasa",
@@ -6609,7 +8802,10 @@
       "locality": "",
       "petrol95": 1.749,
       "diesel": 1.899,
-      "lpg": 0.84
+      "lpg": 0.84,
+      "lat": 56.099227,
+      "lon": 23.265819,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -6618,7 +8814,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.973183,
+      "lon": 23.069785,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6627,7 +8826,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.973183,
+      "lon": 23.069785,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6636,7 +8838,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.973183,
+      "lon": 23.069785,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6645,7 +8850,10 @@
       "locality": "",
       "petrol95": 1.769,
       "diesel": 1.939,
-      "lpg": 0.859
+      "lpg": 0.859,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6654,7 +8862,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.97,
-      "lpg": 0.86
+      "lpg": 0.86,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -6663,7 +8874,10 @@
       "locality": "",
       "petrol95": 1.979,
       "diesel": 2.099,
-      "lpg": 0.969
+      "lpg": 0.969,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -6672,7 +8886,10 @@
       "locality": "",
       "petrol95": 1.76,
       "diesel": 1.99,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Eniris",
@@ -6681,7 +8898,10 @@
       "locality": "",
       "petrol95": 1.74,
       "diesel": 1.95,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.485903,
+      "lon": 22.199627,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -6690,7 +8910,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Madalva",
@@ -6699,7 +8922,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.84
+      "lpg": 0.84,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -6708,7 +8934,10 @@
       "locality": "",
       "petrol95": 1.879,
       "diesel": 1.999,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Pynauja",
@@ -6717,7 +8946,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.94
+      "lpg": 0.94,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Saurida",
@@ -6726,7 +8958,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.9,
-      "lpg": 0.85
+      "lpg": 0.85,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6735,7 +8970,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.483075,
+      "lon": 22.201554,
+      "approx": true
     },
     {
       "network": "Andopas",
@@ -6744,7 +8982,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.92,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 55.358829,
+      "lon": 21.5034,
+      "approx": false
     },
     {
       "network": "Baltic Petroleum",
@@ -6753,7 +8994,10 @@
       "locality": "",
       "petrol95": 1.759,
       "diesel": 1.959,
-      "lpg": 0.889
+      "lpg": 0.889,
+      "lat": 55.3576,
+      "lon": 21.503308,
+      "approx": true
     },
     {
       "network": "Circle K",
@@ -6762,7 +9006,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.035,
-      "lpg": 0.95
+      "lpg": 0.95,
+      "lat": 55.350364,
+      "lon": 21.474432,
+      "approx": false
     },
     {
       "network": "Emsi",
@@ -6771,7 +9018,10 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 1.96,
-      "lpg": 0.88
+      "lpg": 0.88,
+      "lat": 55.348915,
+      "lon": 21.468953,
+      "approx": false
     },
     {
       "network": "Eniris",
@@ -6780,7 +9030,10 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 1.99,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.355282,
+      "lon": 21.680059,
+      "approx": false
     },
     {
       "network": "Jozita",
@@ -6789,7 +9042,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.3576,
+      "lon": 21.503308,
+      "approx": true
     },
     {
       "network": "Jozita",
@@ -6798,7 +9054,10 @@
       "locality": "",
       "petrol95": 1.79,
       "diesel": 1.92,
-      "lpg": 0.83
+      "lpg": 0.83,
+      "lat": 55.3576,
+      "lon": 21.503308,
+      "approx": true
     },
     {
       "network": "Trevena",
@@ -6807,7 +9066,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.3576,
+      "lon": 21.503308,
+      "approx": true
     },
     {
       "network": "Trevena",
@@ -6816,7 +9078,10 @@
       "locality": "",
       "petrol95": 1.77,
       "diesel": 1.95,
-      "lpg": 0.89
+      "lpg": 0.89,
+      "lat": 55.3576,
+      "lon": 21.503308,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6825,7 +9090,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.039,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.3576,
+      "lon": 21.503308,
+      "approx": true
     },
     {
       "network": "V.Marcinkevičiaus IĮ",
@@ -6834,7 +9102,10 @@
       "locality": "",
       "petrol95": 1.78,
       "diesel": 1.94,
-      "lpg": 0.92
+      "lpg": 0.92,
+      "lat": 55.375011,
+      "lon": 21.540398,
+      "approx": true
     },
     {
       "network": "Alauša",
@@ -6843,7 +9114,10 @@
       "locality": "",
       "petrol95": 1.794,
       "diesel": 1.974,
-      "lpg": 0.874
+      "lpg": 0.874,
+      "lat": 55.009602,
+      "lon": 24.888349,
+      "approx": true
     },
     {
       "network": "Baltic Petroleum",
@@ -6852,7 +9126,10 @@
       "locality": "",
       "petrol95": 1.799,
       "diesel": 1.979,
-      "lpg": 0.879
+      "lpg": 0.879,
+      "lat": 55.009602,
+      "lon": 24.888349,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6861,7 +9138,10 @@
       "locality": "",
       "petrol95": 1.899,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.009602,
+      "lon": 24.888349,
+      "approx": true
     },
     {
       "network": "Neste Lietuva",
@@ -6870,7 +9150,10 @@
       "locality": "",
       "petrol95": 1.919,
       "diesel": 2.019,
-      "lpg": null
+      "lpg": null,
+      "lat": 54.978537,
+      "lon": 25.756623,
+      "approx": false
     },
     {
       "network": "Propano ir butano dujų centras",
@@ -6879,7 +9162,10 @@
       "locality": "",
       "petrol95": 1.92,
       "diesel": 2.06,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.069736,
+      "lon": 25.998318,
+      "approx": true
     },
     {
       "network": "RV",
@@ -6888,7 +9174,10 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": 0.93
+      "lpg": 0.93,
+      "lat": 55.137806,
+      "lon": 26.155728,
+      "approx": false
     },
     {
       "network": "Viada",
@@ -6897,7 +9186,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.069736,
+      "lon": 25.998318,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6906,7 +9198,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": null
+      "lpg": null,
+      "lat": 55.069736,
+      "lon": 25.998318,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6915,7 +9210,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.079,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.069736,
+      "lon": 25.998318,
+      "approx": true
     },
     {
       "network": "Viada",
@@ -6924,7 +9222,10 @@
       "locality": "",
       "petrol95": 1.959,
       "diesel": 2.099,
-      "lpg": 0.959
+      "lpg": 0.959,
+      "lat": 55.069736,
+      "lon": 25.998318,
+      "approx": true
     }
   ]
 }

@@ -1,12 +1,17 @@
-// Kuro Kainos Lietuvoje - reads official LEA data from data/stations.json
-// Data shape (produced by scripts/fetch_prices.py):
-// { updated, source, source_url, summary:{petrol95:{min,avg,max},...}, stations:[{network,address,municipality,locality,petrol95,diesel,lpg}] }
+// Kuro Kainos Lietuvoje - official LEA prices + nearest-to-me + map with price POIs.
+// Data shape (scripts/fetch_prices.py + scripts/geocode.py):
+// { updated, source, source_url, summary:{...}, stations:[{network,address,municipality,
+//   locality,petrol95,diesel,lpg, lat, lon, approx}] }
 
 const FUEL_LABELS = { petrol95: "95 benzinas", diesel: "Dyzelinas", lpg: "Dujos (SND)" };
+const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
 let fuelType = "petrol95";
-let sortDir = "asc";
+let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
+let view = "list";            // 'list' | 'map'
+let userPos = null;           // {lat, lon} once geolocation granted
+let map = null, markersLayer = null, userMarker = null;
 
 async function load() {
     try {
@@ -14,7 +19,6 @@ async function load() {
         if (!res.ok) throw new Error("HTTP " + res.status);
         DATA = await res.json();
     } catch (e) {
-        // Fallback: official national figures (2026-06-16) so the app still shows real data.
         DATA = {
             updated: "2026-06-16",
             source: "Lietuvos energetikos agentūra (ena.lt)",
@@ -42,10 +46,10 @@ function initMunicipalities() {
 }
 
 function updateChrome() {
-    const src = document.getElementById("source-line");
-    src.innerHTML = `Šaltinis: <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
-    const upd = document.getElementById("updated-line");
-    upd.textContent = DATA.updated ? `Duomenys atnaujinti: ${DATA.updated}` : "";
+    document.getElementById("source-line").innerHTML =
+        `Šaltinis: <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
+    document.getElementById("updated-line").textContent =
+        DATA.updated ? `Duomenys atnaujinti: ${DATA.updated}` : "";
 }
 
 function selectFuel(f) {
@@ -56,10 +60,98 @@ function selectFuel(f) {
 }
 
 function setSort(dir) {
+    if (dir === "dist" && !userPos) return;
     sortDir = dir;
-    document.getElementById("sort-asc").classList.toggle("active", dir === "asc");
-    document.getElementById("sort-desc").classList.toggle("active", dir === "desc");
+    ["asc", "desc", "dist"].forEach(d =>
+        document.getElementById("sort-" + d).classList.toggle("active", d === dir));
     render();
+}
+
+function setView(v) {
+    view = v;
+    document.getElementById("view-list").classList.toggle("active", v === "list");
+    document.getElementById("view-map").classList.toggle("active", v === "map");
+    document.getElementById("list-view").style.display = v === "list" ? "block" : "none";
+    document.getElementById("map-view").style.display = v === "map" ? "block" : "none";
+    if (v === "map") ensureMap();
+    render();
+}
+
+// --- geolocation -----------------------------------------------------------
+
+function locate() {
+    const btn = document.getElementById("locate-btn");
+    if (!navigator.geolocation) { btn.textContent = "📍 Vietos nustatymas nepalaikomas"; return; }
+    btn.disabled = true;
+    btn.textContent = "📍 Nustatoma vieta…";
+    navigator.geolocation.getCurrentPosition(
+        (pos) => {
+            userPos = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+            btn.disabled = false;
+            btn.classList.add("on");
+            btn.textContent = "📍 Vieta nustatyta · artimiausios pirmos";
+            document.getElementById("sort-dist").disabled = false;
+            setSort("dist");
+            if (map) {
+                if (userMarker) userMarker.remove();
+                userMarker = L.circleMarker([userPos.lat, userPos.lon], {
+                    radius: 8, color: "#fff", weight: 2, fillColor: "#1a73e8", fillOpacity: 1
+                }).addTo(map).bindPopup("Jūs esate čia");
+                map.setView([userPos.lat, userPos.lon], 12);
+            }
+        },
+        (err) => {
+            btn.disabled = false;
+            btn.textContent = err.code === 1
+                ? "📍 Vietos prieiga atmesta – įjunkite leidimą"
+                : "📍 Nepavyko nustatyti vietos";
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+    );
+}
+
+function haversine(aLat, aLon, bLat, bLon) {
+    const R = 6371, toRad = d => d * Math.PI / 180;
+    const dLat = toRad(bLat - aLat), dLon = toRad(bLon - aLon);
+    const h = Math.sin(dLat / 2) ** 2 +
+        Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));   // km
+}
+
+function fmtDist(km) {
+    return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(km < 10 ? 1 : 0)} km`;
+}
+
+// --- shared row selection --------------------------------------------------
+
+function getRows() {
+    const muni = document.getElementById("muni-select").value;
+    const q = (document.getElementById("search").value || "").toLowerCase().trim();
+
+    let rows = (DATA.stations || []).filter(s => s[fuelType] != null);
+    if (muni) rows = rows.filter(s => (s.municipality || "") === muni);
+    if (q) rows = rows.filter(s =>
+        ((s.network || "") + " " + (s.address || "") + " " + (s.locality || "")).toLowerCase().includes(q));
+
+    if (userPos) rows.forEach(s => {
+        s._dist = (s.lat != null && s.lon != null)
+            ? haversine(userPos.lat, userPos.lon, s.lat, s.lon) : null;
+    });
+
+    if (sortDir === "dist" && userPos) {
+        rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
+    } else {
+        rows.sort((a, b) => sortDir === "asc" ? a[fuelType] - b[fuelType] : b[fuelType] - a[fuelType]);
+    }
+    return rows;
+}
+
+// --- rendering -------------------------------------------------------------
+
+function render() {
+    renderSummary();
+    if (view === "map") renderMap();
+    else renderList();
 }
 
 function renderSummary() {
@@ -76,50 +168,101 @@ function renderSummary() {
         </div>`;
 }
 
-function render() {
-    renderSummary();
+function navButtons(s) {
+    const hasGeo = s.lat != null && s.lon != null;
+    const gmaps = hasGeo
+        ? `https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lon}`
+        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((s.network||"") + " " + (s.address||""))}`;
+    const waze = hasGeo
+        ? `https://waze.com/ul?ll=${s.lat},${s.lon}&navigate=yes`
+        : `https://waze.com/ul?q=${encodeURIComponent((s.address||"") + " " + (s.municipality||""))}&navigate=yes`;
+    return `<a class="nav-btn nav-gmaps" href="${gmaps}" target="_blank" rel="noopener">🗺️ Google Maps</a>
+            <a class="nav-btn nav-waze" href="${waze}" target="_blank" rel="noopener">🚗 Waze</a>`;
+}
+
+function renderList() {
     const list = document.getElementById("stations-list");
-    const muni = document.getElementById("muni-select").value;
-    const q = (document.getElementById("search").value || "").toLowerCase().trim();
-
-    let rows = (DATA.stations || []).filter(s => s[fuelType] != null);
-    if (muni) rows = rows.filter(s => (s.municipality || "") === muni);
-    if (q) rows = rows.filter(s =>
-        ((s.network || "") + " " + (s.address || "") + " " + (s.locality || "")).toLowerCase().includes(q));
-
-    rows.sort((a, b) => sortDir === "asc" ? a[fuelType] - b[fuelType] : b[fuelType] - a[fuelType]);
-
     if (!DATA.stations || DATA.stations.length === 0) {
         list.innerHTML = `<div class="msg">Šalies vidurkiai rodomi viršuje.<br>
-            Visų degalinių sąrašas atsiras, kai suveiks automatinis duomenų atnaujinimas
-            (GitHub Action „Update fuel prices“).</div>`;
+            Visų degalinių sąrašas atsiras po automatinio duomenų atnaujinimo.</div>`;
         return;
     }
-    if (rows.length === 0) {
-        list.innerHTML = `<div class="msg">Nieko nerasta pagal pasirinktus filtrus.</div>`;
-        return;
-    }
+    const rows = getRows();
+    if (rows.length === 0) { list.innerHTML = `<div class="msg">Nieko nerasta pagal pasirinktus filtrus.</div>`; return; }
 
-    const best = sortDir === "asc" ? rows[0][fuelType] : Math.min(...rows.map(r => r[fuelType]));
+    const best = Math.min(...rows.map(r => r[fuelType]));
     list.innerHTML =
-        `<div class="count-line">Rodoma degalinių: ${rows.length}</div>` +
+        `<div class="count-line">Rodoma degalinių: ${rows.length}${userPos ? " · rūšiuojama pagal atstumą" : ""}</div>` +
         rows.map(s => {
             const isBest = s[fuelType] === best;
-            const q = encodeURIComponent(`${s.network} ${s.address} ${s.municipality}`);
+            const dist = (userPos && s._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(s._dist)}</span>` : "";
             return `
             <div class="station-card">
-                ${isBest ? '<div class="best-price-badge">⭐ PIGIAUSIA</div>' : ''}
+                ${isBest ? '<div class="best-price-badge">⭐ PIGIAUSIA</div>' : ''}${dist}
                 <div class="station-header">
                     <div class="station-name">${s.network || "Degalinė"}</div>
                     <div><span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span></div>
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
-                <div class="station-footer">
-                    <span class="station-muni">📍 ${s.municipality || ""}</span>
-                    <button class="station-directions" onclick="window.open('https://www.google.com/maps/search/?api=1&query=${q}','_blank')">🗺️ Žemėlapyje</button>
-                </div>
+                <div class="station-muni">📍 ${s.municipality || ""}</div>
+                <div class="nav-row">${navButtons(s)}</div>
             </div>`;
         }).join("");
+}
+
+// --- map -------------------------------------------------------------------
+
+function ensureMap() {
+    if (map || typeof L === "undefined") return;
+    map = L.map("map", { zoomControl: true }).setView(LT_CENTER, 7);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19, attribution: "© OpenStreetMap"
+    }).addTo(map);
+    markersLayer = L.layerGroup().addTo(map);
+    if (userPos) {
+        userMarker = L.circleMarker([userPos.lat, userPos.lon], {
+            radius: 8, color: "#fff", weight: 2, fillColor: "#1a73e8", fillOpacity: 1
+        }).addTo(map).bindPopup("Jūs esate čia");
+        map.setView([userPos.lat, userPos.lon], 12);
+    }
+}
+
+function renderMap() {
+    ensureMap();
+    if (!map) return;
+    setTimeout(() => map.invalidateSize(), 0);
+    markersLayer.clearLayers();
+
+    let rows = getRows().filter(s => s.lat != null && s.lon != null);
+    const MAX = 300;                       // keep the map snappy on phones
+    const capped = rows.length > MAX;
+    rows = rows.slice(0, MAX);
+    if (rows.length === 0) return;
+
+    const prices = rows.map(r => r[fuelType]);
+    const lo = Math.min(...prices), hi = Math.max(...prices);
+    const bounds = [];
+
+    rows.forEach(s => {
+        const p = s[fuelType];
+        let cls = "price-pin";
+        if (p <= lo + (hi - lo) * 0.25) cls += " cheap";
+        else if (p >= lo + (hi - lo) * 0.75) cls += " dear";
+        const icon = L.divIcon({
+            className: "", html: `<div class="${cls}">€${p.toFixed(2)}</div>`,
+            iconSize: null, iconAnchor: [22, 12]
+        });
+        const dist = (userPos && s._dist != null) ? `<br>📍 ${fmtDist(s._dist)}` : "";
+        const popup = `<div class="popup-name">${s.network || "Degalinė"}</div>
+            <div>${s.address || ""}</div>
+            <div class="popup-price">${FUEL_LABELS[fuelType]}: €${p.toFixed(3)}/L</div>${dist}
+            <div class="popup-nav">${navButtons(s)}</div>`;
+        L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { minWidth: 220 }).addTo(markersLayer);
+        bounds.push([s.lat, s.lon]);
+    });
+
+    if (!userPos && bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
+    if (capped) console.log(`Map capped at ${MAX} nearest/cheapest stations.`);
 }
 
 window.addEventListener("load", load);

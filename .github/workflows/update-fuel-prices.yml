@@ -28,11 +28,14 @@ jobs:
       - name: Fetch latest prices
         run: python scripts/fetch_prices.py
 
+      - name: Geocode stations (cached; only new addresses hit Nominatim)
+        run: python scripts/geocode.py
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json || true
+          git add data/stations.json data/_debug_headers.json data/geocode_cache.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else

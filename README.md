@@ -11,10 +11,12 @@ Duomenys imami iš **Lietuvos energetikos agentūros (LEA)** ir atnaujinami kasd
 
 - 🏛️ **Oficialūs duomenys** — visų ~760 degalinių kainos iš [ena.lt](https://www.ena.lt/degalu-kainos-degalinese/) (nuo 2026 m. degalinės privalo kasdien deklaruoti 10:00 kainas)
 - ⛽ **Trys kuro tipai** — 95 benzinas, dyzelinas, dujos (SND)
+- 📍 **Artimiausios prie jūsų** — pagal GPS vietą surūšiuoja degalines pagal atstumą
+- 🗺️ **Žemėlapis su kainomis** — kiekviena degalinė pažymėta kainos ženkleliu (pigiausios žalios, brangiausios raudonos)
+- 🚗 **Navigacija** — vienu paspaudimu atidaro **Google Maps** arba **Waze** maršrutą iki degalinės
 - 🏙️ **Filtras pagal savivaldybę** ir paieška pagal tinklą / adresą
-- 💰 **Rūšiavimas pagal kainą** — pigiausios arba brangiausios pirmos
+- 💰 **Rūšiavimas** pagal kainą arba atstumą
 - 📊 **Šalies statistika** — pigiausia / vidutinė / brangiausia kiekvienam kurui
-- 🗺️ **Google Maps nuoroda** vienu paspaudimu
 - 📱 **PWA** — įsidiekite į telefono ekraną, veikia kaip programėlė ir be interneto (rodo paskutinius duomenis)
 - 🔄 **Automatinis atnaujinimas** kasdien per GitHub Actions
 
@@ -25,10 +27,12 @@ Duomenys imami iš **Lietuvos energetikos agentūros (LEA)** ir atnaujinami kasd
 Grynas HTML / CSS / vanilla JS — be karkasų, be kompiliavimo. Talpinama nemokamai GitHub Pages.
 
 ```
-index.html / app.js          → vartotojo sąsaja, skaito data/stations.json
-data/stations.json           → visų degalinių kainos + šalies vidurkiai
+index.html / app.js          → sąsaja (Leaflet žemėlapis), skaito data/stations.json
+data/stations.json           → degalinių kainos + koordinatės + šalies vidurkiai
+data/geocode_cache.json      → adresų → lat/lon talpykla (kad geokodavimas nesikartotų)
 scripts/fetch_prices.py      → parsisiunčia LEA dienos Excel → stations.json
-.github/workflows/           → kasdien (I–V) paleidžia fetch_prices.py ir įkelia naujus duomenis
+scripts/geocode.py           → geokoduoja adresus (OSM Nominatim) → įrašo lat/lon
+.github/workflows/           → kasdien (I–V) paleidžia abu skriptus ir įkelia naujus duomenis
 tools/gen_icons.py           → sugeneruoja PWA ikonas
 ```
 
@@ -39,8 +43,9 @@ LEA dar neturi viešo API, todėl `fetch_prices.py`:
 3. Adaptyviai išparsina (atpažįsta lietuviškas stulpelių antraštes);
 4. Įrašo `data/stations.json` su kiekvienos degalinės kaina ir šalies vidurkiais.
 
-> LEA duomenyse **nėra GPS koordinačių**, todėl programa filtruoja pagal savivaldybę ir
-> nukreipia į Google Maps pagal adresą (atstumo skaičiavimo nėra).
+LEA duomenyse **nėra GPS koordinačių**, todėl `geocode.py` geokoduoja kiekvieną adresą per
+nemokamą OpenStreetMap Nominatim ir įrašo `lat`/`lon`. Rezultatai kešuojami
+`data/geocode_cache.json`, todėl kasdienis atnaujinimas geokoduoja tik naujas degalines.
 
 ---
 
@@ -59,6 +64,7 @@ python -m http.server 8000
 ```bash
 pip install -r scripts/requirements.txt
 python scripts/fetch_prices.py        # perrašo data/stations.json
+python scripts/geocode.py             # įrašo lat/lon (kešuojama geocode_cache.json)
 ```
 
 Arba paleiskite GitHub Action „Update fuel prices“ rankiniu būdu (Actions skiltyje → Run workflow).

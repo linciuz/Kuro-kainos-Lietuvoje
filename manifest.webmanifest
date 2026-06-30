@@ -1,7 +1,7 @@
 {
   "name": "Kuro Kainos Lietuvoje",
   "short_name": "Kuro Kainos",
-  "description": "Oficialios degalų kainos Lietuvos degalinėse (LEA duomenys)",
+  "description": "Oficialios degalų kainos Lietuvos degalinėse: artimiausios prie jūsų, žemėlapis ir navigacija (LEA duomenys)",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

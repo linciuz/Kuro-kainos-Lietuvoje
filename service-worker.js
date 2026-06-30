@@ -1,5 +1,5 @@
 // Kuro Kainos Lietuvoje - service worker
-const CACHE = "kk-v1";
+const CACHE = "kk-v2";
 const SHELL = [
   "./", "./index.html", "./app.js", "./manifest.webmanifest",
   "./icon-192.png", "./icon-512.png"
