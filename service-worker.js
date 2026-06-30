@@ -1,5 +1,7 @@
 // Kuro Kainos Lietuvoje - service worker
-const CACHE = "kk-v2";
+// Network-first for code + data so updates always reach users (with offline
+// cache fallback); cache-first only for images. Bump CACHE on shell changes.
+const CACHE = "kk-v3";
 const SHELL = [
   "./", "./index.html", "./app.js", "./manifest.webmanifest",
   "./icon-192.png", "./icon-512.png"
@@ -21,16 +23,23 @@ self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
   const url = new URL(e.request.url);
 
-  // Always try the network first for prices so data stays current.
-  if (url.pathname.endsWith("stations.json")) {
+  // Cache-first for images (they rarely change).
+  if (/\.(png|jpe?g|svg|webp|ico|gif)$/i.test(url.pathname)) {
     e.respondWith(
-      fetch(e.request)
-        .then((r) => { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, cp)); return r; })
-        .catch(() => caches.match(e.request))
+      caches.match(e.request).then((r) => r || fetch(e.request).then((resp) => {
+        const cp = resp.clone();
+        caches.open(CACHE).then((c) => c.put(e.request, cp));
+        return resp;
+      }))
     );
     return;
   }
 
-  // Cache-first for the app shell (works offline).
-  e.respondWith(caches.match(e.request).then((r) => r || fetch(e.request)));
+  // Network-first for app code (app.js/index.html) and data (stations.json,
+  // sources, discrepancies): always fetch fresh, fall back to cache offline.
+  e.respondWith(
+    fetch(e.request)
+      .then((r) => { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, cp)); return r; })
+      .catch(() => caches.match(e.request))
+  );
 });
