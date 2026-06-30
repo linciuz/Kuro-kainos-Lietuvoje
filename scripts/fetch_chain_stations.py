@@ -61,7 +61,8 @@ def in_lt(lat, lon):
 
 
 def fetch_baltic_petroleum():
-    data = http_json("https://mobileapi.fscc.lt/bp/api/stations", UA_API)["data"]
+    # pageSize=500 returns all ~95 stations (default page is only 50).
+    data = http_json("https://mobileapi.fscc.lt/bp/api/stations?pageSize=500", UA_API)["data"]
     out = []
     for s in data:
         loc = s.get("location") or {}

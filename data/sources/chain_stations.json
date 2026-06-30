@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-30T14:50:33Z",
-  "count": 464,
+  "generated": "2026-06-30T15:09:10Z",
+  "count": 509,
   "networks": [
     "Baltic Petroleum",
     "Circle K",
@@ -407,6 +407,366 @@
       "city": "Molėtai",
       "lat": 55.217337,
       "lon": 25.403375,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilniaus r. sav., Šatrininkų sen., Grigaičiai, Pavilnės g. 1",
+      "city": "Grigaičiai",
+      "lat": 54.681567,
+      "lon": 25.412533,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškio r. sav., Užuovėjos k.",
+      "city": "Užuovėjos k.",
+      "lat": 55.763309,
+      "lon": 23.74254,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Širvintos, Musninkų g. 21",
+      "city": "Širvintos",
+      "lat": 55.032222,
+      "lon": 24.967251,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilutė, Klaipėdos g. 4A",
+      "city": "Šilutė",
+      "lat": 55.352837,
+      "lon": 21.462853,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilniaus r. sav., Avižienių sen., Užubalių k., Senasis Ukmergės kelias 4",
+      "city": "Užubalių k.",
+      "lat": 54.768547,
+      "lon": 25.195795,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jurbarkas, Muitinės g. 22A",
+      "city": "Jurbarkas",
+      "lat": 55.078109,
+      "lon": 22.744778,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Bernardo Brazdžionio g. 2",
+      "city": "Vilnius",
+      "lat": 54.6133,
+      "lon": 25.308675,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikių r., Užežerės k., Gardenio g. 39",
+      "city": "Užežerės k.",
+      "lat": 56.163959,
+      "lon": 22.101525,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pakruojis, Statybininkų g. 28",
+      "city": "Pakruojis",
+      "lat": 55.974508,
+      "lon": 23.86893,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, S. Batoro g. 15",
+      "city": "Vilnius",
+      "lat": 54.692192,
+      "lon": 25.346693,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Zarasų r. sav., Padustėlio k., Vytauto Striogos g. 4A",
+      "city": "Padustėlio k.",
+      "lat": 55.740159,
+      "lon": 25.852449,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kėdainiai, J. Basanavičiaus 95B",
+      "city": "Kėdainiai",
+      "lat": 55.276904,
+      "lon": 23.955788,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Tilžės g. 90",
+      "city": "Klaipėda",
+      "lat": 55.700992,
+      "lon": 21.200408,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Zujūnų g. 2A",
+      "city": "Vilnius",
+      "lat": 54.710932,
+      "lon": 25.161516,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kauno r. sav., Ringaudų sen., Ringaudų k., Gėlių g. 1A",
+      "city": "Ringaudų k.",
+      "lat": 54.890013,
+      "lon": 23.806236,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Utena, J. Basanavičiaus 1B",
+      "city": "Utena",
+      "lat": 55.49533,
+      "lon": 25.575028,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Chemijos g. 6",
+      "city": "Kaunas",
+      "lat": 54.9032,
+      "lon": 23.982769,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilniaus r. sav., Nemenčinės sen., Vilkaraisčio k.",
+      "city": "Vilkaraisčio k.",
+      "lat": 54.863291,
+      "lon": 25.490933,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonavos r., Gudžioniu k., Plento g. 24",
+      "city": "Gudžioniu k.",
+      "lat": 55.099135,
+      "lon": 24.31627,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaišiadorių r., Triliškiu k., Kauno pl. 5",
+      "city": "Triliškiu k.",
+      "lat": 54.816962,
+      "lon": 24.436618,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šakiai, Sodų g. 1",
+      "city": "Šakiai",
+      "lat": 54.945754,
+      "lon": 23.04613,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Molėtų pl. 27A",
+      "city": "Vilnius",
+      "lat": 54.767745,
+      "lon": 25.272406,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "N. Akmenė, V. Kudirkos g. 21A",
+      "city": "N. Akmenė",
+      "lat": 56.318461,
+      "lon": 22.885615,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėna, Čiurlionio g. 63",
+      "city": "Varėna",
+      "lat": 54.218274,
+      "lon": 24.566177,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Lazdijai, Turistu g. 88",
+      "city": "Lazdijai",
+      "lat": 54.220722,
+      "lon": 23.508868,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Vaidoto g. 153",
+      "city": "Kaunas",
+      "lat": 54.861298,
+      "lon": 23.958563,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikių r., Sav., Tirkšliai, Laukų g. 10",
+      "city": "Tirkšliai",
+      "lat": 56.262555,
+      "lon": 22.310453,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilalės raj., Laukuvos sen., Bučių k.",
+      "city": "Šilalės raj., Laukuvos sen.",
+      "lat": 55.57018,
+      "lon": 22.17651,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Biržų r., Valantiškio k.",
+      "city": "Valantiškio k.",
+      "lat": 56.197343,
+      "lon": 24.709643,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Telšiai, Šiauliu pl. 12",
+      "city": "Telšiai",
+      "lat": 56.004156,
+      "lon": 22.24464,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Alytus, Santaikos g. 33",
+      "city": "Alytus",
+      "lat": 54.38677,
+      "lon": 24.033208,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseinių r. sav., Kalnujų sen., Kalnujų k. 1",
+      "city": "Kalnujų k. 1",
+      "lat": 55.335647,
+      "lon": 23.102326,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kupiškio r., Noriūnų k., Parko g. 3A",
+      "city": "Noriūnų k.",
+      "lat": 55.796541,
+      "lon": 24.888993,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikiai, M. Daukšos g. 17",
+      "city": "Mažeikiai",
+      "lat": 56.3051,
+      "lon": 22.350699,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevėžys, Smėlynės g. 169",
+      "city": "Panevėžys",
+      "lat": 55.757611,
+      "lon": 24.367739,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolės r., Pietarių k., Kauno g. 164",
+      "city": "Pietarių k.",
+      "lat": 54.586919,
+      "lon": 23.384638,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Palanga, Klaipėdos pl. 44",
+      "city": "Palanga",
+      "lat": 55.915491,
+      "lon": 21.078212,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Liepu g. 79A",
+      "city": "Klaipėda",
+      "lat": 55.720835,
+      "lon": 21.152538,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkų r., Leipalingis, Merkinės g. 37",
+      "city": "Leipalingis",
+      "lat": 54.094631,
+      "lon": 23.871494,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseiniai, Vilniaus g. 30",
+      "city": "Raseiniai",
+      "lat": 55.370856,
+      "lon": 23.133187,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Prienai, Vilniaus g. 3A",
+      "city": "Prienai",
+      "lat": 54.628393,
+      "lon": 23.958325,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Anykščiai, Mindaugo g. 23",
+      "city": "Anykščiai",
+      "lat": 55.508475,
+      "lon": 25.09633,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Taikos pr. 120",
+      "city": "Kaunas",
+      "lat": 54.917432,
+      "lon": 24.034789,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Antakalnio g. 128",
+      "city": "Vilnius",
+      "lat": 54.722219,
+      "lon": 25.317234,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevežys, Velžio kelias 74",
+      "city": "Panevežys",
+      "lat": 55.721941,
+      "lon": 24.391535,
       "source": "fscc-api"
     },
     {
