@@ -1,25 +1,21 @@
 {
   "sheet": "Degalų kainos",
   "headers": [
-    "Data",
-    "Įmonė (Degalinių tinklas)",
-    "Degalinės vieta (Savivaldybė)",
-    "Degalinės vieta (Gyvenvietė, gatvė)",
-    "95 benzinas",
-    "Dyzelinas",
-    "SND",
-    "",
-    "",
+    "Įmonė",
+    "Savivaldybė",
+    "Adresas",
+    "Degalų tipas",
+    "Kaina (EUR/l)",
+    "Pateikimo data",
     ""
   ],
   "mapping": {
-    "network": 1,
-    "municipality": 2,
-    "address": 3
+    "network": 0,
+    "municipality": 1,
+    "address": 2,
+    "fuel": 3,
+    "price": 4,
+    "date": 5
   },
-  "fuel_cols": {
-    "petrol95": 4,
-    "diesel": 5,
-    "lpg": 6
-  }
+  "fuel_cols": {}
 }
