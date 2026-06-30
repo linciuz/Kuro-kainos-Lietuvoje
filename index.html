@@ -26,6 +26,25 @@
             border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden;
         }
         .controls { padding: 15px; background: white; }
+        .topbar { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+        .lang-switcher { position: relative; }
+        .lang-current {
+            display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px;
+            border: 1px solid #d0d0d0; border-radius: 8px; background: #fff; color: #333;
+            font-size: 13px; font-weight: 600; cursor: pointer;
+        }
+        .lang-menu {
+            position: absolute; right: 0; top: 110%; z-index: 1200; background: #fff;
+            border: 1px solid #d0d0d0; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.18);
+            padding: 4px; min-width: 96px;
+        }
+        .lang-menu[hidden] { display: none; }
+        .lang-menu button {
+            display: flex; align-items: center; gap: 7px; width: 100%; padding: 7px 10px;
+            border: none; background: none; border-radius: 7px; cursor: pointer;
+            font-size: 13px; color: #333; text-align: left; font-weight: 600;
+        }
+        .lang-menu button:hover, .lang-menu button.active { background: #eef4ff; }
         .fuel-type-selector { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
         .fuel-btn {
             padding: 12px 6px; border: 2px solid #007AFF; background: white; color: #007AFF;
@@ -183,29 +202,31 @@
         <div class="change-banner" id="change-banner" style="display:none"></div>
 
         <div class="controls">
+            <div class="topbar"><div class="lang-switcher" id="lang-switcher"></div></div>
+
             <div class="fuel-type-selector">
                 <button class="fuel-btn active" id="btn-petrol95" onclick="selectFuel('petrol95')">⛽ 95</button>
-                <button class="fuel-btn" id="btn-diesel" onclick="selectFuel('diesel')">🚛 Dyzelinas</button>
-                <button class="fuel-btn" id="btn-lpg" onclick="selectFuel('lpg')">🔥 Dujos</button>
+                <button class="fuel-btn" id="btn-diesel" onclick="selectFuel('diesel')" data-i18n="btn_diesel">🚛 Dyzelinas</button>
+                <button class="fuel-btn" id="btn-lpg" onclick="selectFuel('lpg')" data-i18n="btn_lpg">🔥 Dujos</button>
                 <button class="fuel-btn ev" id="btn-ev" onclick="selectFuel('ev')">⚡ EV</button>
             </div>
 
             <div class="view-toggle">
-                <button class="view-btn active" id="view-list" onclick="setView('list')">📋 Sąrašas</button>
-                <button class="view-btn" id="view-map" onclick="setView('map')">🗺️ Žemėlapis</button>
+                <button class="view-btn active" id="view-list" onclick="setView('list')" data-i18n="view_list">📋 Sąrašas</button>
+                <button class="view-btn" id="view-map" onclick="setView('map')" data-i18n="view_map">🗺️ Žemėlapis</button>
             </div>
 
             <button class="locate-btn" id="locate-btn" onclick="locate()">📍 Rasti artimiausias prie manęs</button>
 
             <div class="filter-row">
                 <select id="muni-select" onchange="render()"><option value="">Visos savivaldybės</option></select>
-                <input class="search-input" id="search" type="text" placeholder="Ieškoti (tinklas, adresas)…" oninput="render()">
+                <input class="search-input" id="search" type="text" placeholder="Ieškoti (tinklas, adresas)…" data-i18n-ph="search_ph" oninput="render()">
             </div>
             <div class="sort-row">
-                <span class="sort-label">Rūšiuoti:</span>
-                <button class="sort-btn active" id="sort-asc" onclick="setSort('asc')">💰 Pigiausios</button>
-                <button class="sort-btn" id="sort-desc" onclick="setSort('desc')">Brangiausios</button>
-                <button class="sort-btn" id="sort-dist" onclick="setSort('dist')" disabled>📍 Arčiausios</button>
+                <span class="sort-label" data-i18n="sort_label">Rūšiuoti:</span>
+                <button class="sort-btn active" id="sort-asc" onclick="setSort('asc')" data-i18n="sort_cheap">💰 Pigiausios</button>
+                <button class="sort-btn" id="sort-desc" onclick="setSort('desc')" data-i18n="sort_dear">Brangiausios</button>
+                <button class="sort-btn" id="sort-dist" onclick="setSort('dist')" data-i18n="sort_near" disabled>📍 Arčiausios</button>
             </div>
         </div>
 
@@ -231,6 +252,7 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="i18n.js"></script>
     <script src="app.js"></script>
     <script>
       if ("serviceWorker" in navigator) {

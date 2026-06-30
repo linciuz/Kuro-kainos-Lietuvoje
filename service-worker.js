@@ -1,9 +1,9 @@
 // Kuro Kainos Lietuvoje - service worker
 // Network-first for code + data so updates always reach users (with offline
 // cache fallback); cache-first only for images. Bump CACHE on shell changes.
-const CACHE = "kk-v4";
+const CACHE = "kk-v5";
 const SHELL = [
-  "./", "./index.html", "./app.js", "./manifest.webmanifest",
+  "./", "./index.html", "./app.js", "./i18n.js", "./manifest.webmanifest",
   "./icon-192.png", "./icon-512.png"
 ];
 

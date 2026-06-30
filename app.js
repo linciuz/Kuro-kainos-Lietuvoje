@@ -3,7 +3,7 @@
 // { updated, source, source_url, summary:{...}, stations:[{network,address,municipality,
 //   locality,petrol95,diesel,lpg, lat, lon, approx}] }
 
-const FUEL_LABELS = { petrol95: "95 benzinas", diesel: "Dyzelinas", lpg: "Dujos (SND)" };
+// Fuel labels are localized via i18n: t("fuel_" + key). See i18n.js.
 
 // Set to your deployed Cloudflare Worker URL to enable "report a price".
 // Empty = feature hidden, app works as before. See worker/README.md.
@@ -22,6 +22,58 @@ let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
 let userPos = null;           // {lat, lon} once geolocation granted
 let map = null, markersLayer = null, userMarker = null;
+
+// --- i18n / language switcher ----------------------------------------------
+let locateState = { key: "locate" };   // current locate-button label, kept re-translatable
+
+function applyStaticI18n() {
+    document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+    document.documentElement.lang = lang;
+    renderLocateBtn();
+}
+
+function renderLocateBtn() {
+    const btn = document.getElementById("locate-btn");
+    if (btn) btn.textContent = t(locateState.key, locateState.vars);
+}
+
+function buildLangSwitcher() {
+    const box = document.getElementById("lang-switcher");
+    if (!box) return;
+    const cur = LANGS.find(l => l.code === lang) || LANGS[0];
+    box.innerHTML =
+        `<button type="button" class="lang-current" onclick="toggleLangMenu(event)">${cur.flag} ${cur.abbr} ▾</button>
+         <div class="lang-menu" id="lang-menu" hidden>` +
+        LANGS.map(l => `<button type="button" class="${l.code === lang ? "active" : ""}" onclick="setLang('${l.code}')">${l.flag} ${l.abbr}</button>`).join("") +
+        `</div>`;
+}
+
+function toggleLangMenu(e) {
+    if (e) e.stopPropagation();
+    const m = document.getElementById("lang-menu");
+    if (m) m.hidden = !m.hidden;
+}
+
+function setLang(code) {
+    if (!LANGS.some(l => l.code === code)) return;
+    lang = code;
+    try { localStorage.setItem("kk_lang", code); } catch (e) {}
+    const sel = document.getElementById("muni-select");
+    const keep = sel ? sel.value : "";
+    buildLangSwitcher();
+    applyStaticI18n();
+    initMunicipalities();
+    if (sel && keep && [...sel.options].some(o => o.value === keep)) sel.value = keep;
+    updateChrome();
+    render();
+}
+
+// Close the language menu on an outside click.
+document.addEventListener("click", (e) => {
+    const m = document.getElementById("lang-menu");
+    if (m && !m.hidden && !e.target.closest("#lang-switcher")) m.hidden = true;
+});
 
 async function load() {
     try {
@@ -48,6 +100,8 @@ async function load() {
     await loadEv();
     await loadEvStatus();
     initMunicipalities();
+    buildLangSwitcher();
+    applyStaticI18n();
     updateChrome();
     render();
     // Delegate report-button clicks (station keys can contain quotes/pipes).
@@ -136,10 +190,10 @@ function evStatusBadge(c) {
     const st = evStatus(c);
     if (!st) return "";
     const m = {
-        available: ["🟢", `Laisva ${st.a}/${st.t}`],
-        busy:      ["🔴", `Užimta (0/${st.t})`],
-        down:      ["⚫", "Neveikia"],
-        unknown:   ["⚪", "Būsena nežinoma"],
+        available: ["🟢", t("ev_status_free", { a: st.a, t: st.t })],
+        busy:      ["🔴", t("ev_status_busy", { t: st.t })],
+        down:      ["⚫", t("ev_status_down")],
+        unknown:   ["⚪", t("ev_status_unknown")],
     }[st.s] || ["⚪", ""];
     return `<span class="ev-status ev-${st.s}">${m[0]} ${m[1]}</span>`;
 }
@@ -168,7 +222,7 @@ function getChargers() {
 
 function evInfo(c) {
     return [c.power_kw ? `${c.power_kw} kW` : null,
-            c.sockets ? `${c.sockets} jungtys` : null].filter(Boolean).join(" · ");
+            c.sockets ? t("ev_sockets", { n: c.sockets }) : null].filter(Boolean).join(" · ");
 }
 
 function evNav(c) {
@@ -188,20 +242,20 @@ function renderSummaryEv() {
     const total = (EV.chargers || []).length;
     const priced = (EV.chargers || []).filter(c => c.price != null).length;
     const live = Object.keys(EV_STATUS).length;
-    box.innerHTML = `<div class="summary-title">⚡ Elektromobilių įkrovimo stotelės (${total})</div>
-        <div class="wholesale-ref">Šaltiniai: <b>Via Lietuva</b> (oficiali AFIR) + OpenStreetMap ·
-        kaina (€/kWh): ${priced} stotelės ·
-        ${live ? `užimtumas realiu laiku 🟢🔴: ${live} stotelės` : "realaus laiko užimtumas – kai įjungtas Worker"}</div>`;
+    box.innerHTML = `<div class="summary-title">${t("ev_title", { n: total })}</div>
+        <div class="wholesale-ref">${t("ev_sources")} ·
+        ${t("ev_price_count", { n: priced })} ·
+        ${live ? t("ev_live_count", { n: live }) : t("ev_live_off")}</div>`;
 }
 
 function renderListEv() {
     const list = document.getElementById("stations-list");
     const rows = getChargers();
-    if (!rows.length) { list.innerHTML = `<div class="msg">Nieko nerasta.</div>`; return; }
-    const order = (sortDir === "dist" && userPos) ? " · arčiausios pirmos"
-        : sortDir === "asc" ? " · pigiausios pirmos"
-        : sortDir === "desc" ? " · brangiausios pirmos" : "";
-    list.innerHTML = `<div class="count-line">Rodoma stotelių: ${rows.length}${order}</div>` +
+    if (!rows.length) { list.innerHTML = `<div class="msg">${t("nothing_found")}</div>`; return; }
+    const order = (sortDir === "dist" && userPos) ? " · " + t("order_near")
+        : sortDir === "asc" ? " · " + t("order_cheap")
+        : sortDir === "desc" ? " · " + t("order_dear") : "";
+    list.innerHTML = `<div class="count-line">${t("showing_chargers", { n: rows.length })}${order}</div>` +
         rows.map(c => {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
@@ -210,7 +264,7 @@ function renderListEv() {
             return `<div class="station-card">
                 ${dist}${badge}
                 <div class="station-header">
-                    <div class="station-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
+                    <div class="station-name">⚡ ${c.operator || c.name || t("ev_charger")}</div>
                     ${c.price != null ? `<div><span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span></div>` : ""}
                 </div>
                 ${addr ? `<div class="station-address">${addr}</div>` : ""}
@@ -234,7 +288,7 @@ function renderMapEv() {
         const info = evInfo(c);
         const badge = evStatusBadge(c);
         const addr = c.address ? `${c.address}${c.city ? ", " + c.city : ""}` : "";
-        const popup = `<div class="popup-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
+        const popup = `<div class="popup-name">⚡ ${c.operator || c.name || t("ev_charger")}</div>
             ${addr ? `<div class="popup-addr">${addr}</div>` : ""}
             ${badge ? `<div>${badge}</div>` : ""}
             ${c.price != null ? `<div class="popup-price">€${c.price.toFixed(2)}/kWh</div>` : ""}
@@ -257,10 +311,10 @@ function reportFor(s) {
 
 async function reportPrice(key, fuel) {
     if (!REPORT_API) return;
-    const input = prompt(`Įveskite ${FUEL_LABELS[fuel]} kainą (€/L), pvz. 1.699:`);
+    const input = prompt(t("report_prompt", { fuel: t("fuel_" + fuel) }));
     if (input == null) return;
     const price = parseFloat(input.replace(",", "."));
-    if (!(price >= 0.3 && price <= 3.5)) { alert("Neteisinga kaina."); return; }
+    if (!(price >= 0.3 && price <= 3.5)) { alert(t("report_invalid")); return; }
     try {
         const res = await fetch(REPORT_API + "/report", {
             method: "POST", headers: { "Content-Type": "application/json" },
@@ -269,7 +323,7 @@ async function reportPrice(key, fuel) {
         if (!res.ok) throw new Error("HTTP " + res.status);
         (REPORTS[key] = REPORTS[key] || {})[fuel] = { price: Math.round(price * 1000) / 1000, ts: Date.now() };
         render();
-    } catch (e) { alert("Nepavyko išsiųsti. Bandykite vėliau."); }
+    } catch (e) { alert(t("report_failed")); }
 }
 
 async function loadDiscrepancies() {
@@ -305,24 +359,24 @@ function initMunicipalities() {
     const big = BIG_CITIES.filter(m => all.includes(m));
     const rest = all.filter(m => !BIG_CITIES.includes(m)).sort((a, b) => a.localeCompare(b, "lt"));
     const opt = m => `<option value="${m}">${m}</option>`;
-    sel.innerHTML = '<option value="">Visos savivaldybės</option>' +
-        (big.length ? `<optgroup label="Didmiesčiai">${big.map(opt).join("")}</optgroup>` : "") +
-        `<optgroup label="Kitos savivaldybės">${rest.map(opt).join("")}</optgroup>`;
+    sel.innerHTML = `<option value="">${t("all_munis")}</option>` +
+        (big.length ? `<optgroup label="${t("big_cities")}">${big.map(opt).join("")}</optgroup>` : "") +
+        `<optgroup label="${t("other_munis")}">${rest.map(opt).join("")}</optgroup>`;
 }
 
 function updateChrome() {
     document.getElementById("source-line").innerHTML =
-        `Šaltinis: <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
+        `${t("source")} <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
     const upd = document.getElementById("updated-line");
     if (!DATA.updated) { upd.textContent = ""; upd.className = ""; return; }
     // LEA publishes Mon–Fri; >4 days old means a missed/failed update — warn.
     const days = Math.floor((Date.now() - Date.parse(DATA.updated)) / 86400000);
     if (days > 4) {
         upd.className = "stale";
-        upd.textContent = `⚠️ Duomenys gali būti pasenę — paskutinis atnaujinimas ${DATA.updated} (prieš ${days} d.)`;
+        upd.textContent = t("data_stale", { date: DATA.updated, days });
     } else {
         upd.className = "";
-        upd.textContent = `Duomenys atnaujinti: ${DATA.updated}`;
+        upd.textContent = t("data_updated", { date: DATA.updated });
     }
 }
 
@@ -336,16 +390,16 @@ function renderOilFooter() {
     const chg = (OIL.avg_change_pct != null ? OIL.avg_change_pct : OIL.week_change_pct);
     const sign = chg > 0 ? "+" : "";
     const ind = {
-        strong_up:   ["↑", "degalų kainos gali kilti", "up"],
-        rise:        ["↑", "degalų kainos gali kilti", "up"],
-        stable:      ["→", "rinka stabili", "flat"],
-        fall:        ["↓", "degalų kainos gali mažėti", "down"],
-        strong_down: ["↓", "degalų kainos gali mažėti", "down"],
-    }[OIL.level] || ["→", "rinka stabili", "flat"];
+        strong_up:   ["↑", "oil_up", "up"],
+        rise:        ["↑", "oil_up", "up"],
+        stable:      ["→", "oil_flat", "flat"],
+        fall:        ["↓", "oil_down", "down"],
+        strong_down: ["↓", "oil_down", "down"],
+    }[OIL.level] || ["→", "oil_flat", "flat"];
     el.className = "oil-footer oil-ind-" + ind[2];
     el.style.display = "flex";
-    el.innerHTML = `🛢️ Brent nafta · savaitės vid. <b>$${avg.toFixed(2)}</b> ·
-        per savaitę ${sign}${chg}% <span class="oil-ind">${ind[0]} ${ind[1]}</span>`;
+    el.innerHTML = `🛢️ ${t("oil_brent")} · ${t("oil_weekavg")} <b>$${avg.toFixed(2)}</b> ·
+        ${t("oil_perweek")} ${sign}${chg}% <span class="oil-ind">${ind[0]} ${t(ind[1])}</span>`;
 }
 
 function selectFuel(f) {
@@ -389,9 +443,9 @@ function nearestStationMuni(pos) {
 
 function locate() {
     const btn = document.getElementById("locate-btn");
-    if (!navigator.geolocation) { btn.textContent = "📍 Vietos nustatymas nepalaikomas"; return; }
+    if (!navigator.geolocation) { locateState = { key: "loc_unsupported" }; renderLocateBtn(); return; }
     btn.disabled = true;
-    btn.textContent = "📍 Nustatoma vieta…";
+    locateState = { key: "loc_detecting" }; renderLocateBtn();
     navigator.geolocation.getCurrentPosition(
         (pos) => {
             userPos = { lat: pos.coords.latitude, lon: pos.coords.longitude };
@@ -402,23 +456,21 @@ function locate() {
             const muni = nearestStationMuni(userPos);
             const sel = document.getElementById("muni-select");
             if (muni && [...sel.options].some(o => o.value === muni)) sel.value = muni;
-            btn.textContent = muni
-                ? `📍 ${muni} · artimiausios pirmos`
-                : "📍 Vieta nustatyta · artimiausios pirmos";
+            locateState = muni ? { key: "loc_set_muni", vars: { muni } } : { key: "loc_set" };
+            renderLocateBtn();
             setSort("dist");
             if (map) {
                 if (userMarker) userMarker.remove();
                 userMarker = L.circleMarker([userPos.lat, userPos.lon], {
                     radius: 8, color: "#fff", weight: 2, fillColor: "#1a73e8", fillOpacity: 1
-                }).addTo(map).bindPopup("Jūs esate čia");
+                }).addTo(map).bindPopup(t("you_are_here"));
                 map.setView([userPos.lat, userPos.lon], 12);
             }
         },
         (err) => {
             btn.disabled = false;
-            btn.textContent = err.code === 1
-                ? "📍 Vietos prieiga atmesta – įjunkite leidimą"
-                : "📍 Nepavyko nustatyti vietos";
+            locateState = err.code === 1 ? { key: "loc_denied" } : { key: "loc_failed" };
+            renderLocateBtn();
         },
         { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
     );
@@ -485,8 +537,7 @@ function renderBanner() {
     if (!flagged.length) { el.style.display = "none"; return; }
     const chains = [...new Set(flagged.map(it => it.source))].join(", ");
     el.style.display = "block";
-    el.innerHTML = `⚠️ ${FUEL_LABELS[fuelType]}: kai kurių tinklų (${chains}) kainos galėjo
-        pasikeisti nuo 10:00 oficialaus pranešimo.`;
+    el.innerHTML = t("banner_change", { fuel: t("fuel_" + fuelType), chains });
 }
 
 function renderSummary() {
@@ -494,21 +545,21 @@ function renderSummary() {
     const box = document.getElementById("summary");
     if (!s) { box.style.display = "none"; return; }
     box.style.display = "block";
-    const WS_LABELS = { petrol95: "95", diesel: "Dyzelinas", diesel_agri: "Agro", lpg: "Dujos" };
+    const WS_LABELS = { petrol95: "95", diesel: t("fuel_diesel"), diesel_agri: t("ws_agri"), lpg: t("ws_lpg") };
     let wsLine = "";
     if (ORLEN_WS && ORLEN_WS.prices) {
         const parts = ["petrol95", "diesel", "diesel_agri", "lpg"]
             .filter(k => ORLEN_WS.prices[k] != null)
             .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
-        if (parts.length) wsLine = `<div class="wholesale-ref">🏭 Orlen didmeninė kaina
-            (${ORLEN_WS.stated_date || ""}): ${parts.join(" · ")} <br><i>be antkainio — ne degalinės kaina</i></div>`;
+        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: ORLEN_WS.stated_date || "" })}
+            ${parts.join(" · ")} <br><i>${t("ws_nomarkup")}</i></div>`;
     }
     box.innerHTML = `
-        <div class="summary-title">${FUEL_LABELS[fuelType]} — šalies kainos (oficialios)</div>
+        <div class="summary-title">${t("summary_national", { fuel: t("fuel_" + fuelType) })}</div>
         <div class="summary-stats">
-            <div><div class="stat-label">Pigiausia</div><div class="stat-value lowest">€${s.min.toFixed(3)}</div></div>
-            <div><div class="stat-label">Vidutinė</div><div class="stat-value">€${s.avg.toFixed(3)}</div></div>
-            <div><div class="stat-label">Brangiausia</div><div class="stat-value highest">€${s.max.toFixed(3)}</div></div>
+            <div><div class="stat-label">${t("stat_cheapest")}</div><div class="stat-value lowest">€${s.min.toFixed(3)}</div></div>
+            <div><div class="stat-label">${t("stat_avg")}</div><div class="stat-value">€${s.avg.toFixed(3)}</div></div>
+            <div><div class="stat-label">${t("stat_dearest")}</div><div class="stat-value highest">€${s.max.toFixed(3)}</div></div>
         </div>${wsLine}`;
 }
 
@@ -531,33 +582,31 @@ function navButtons(s) {
 function renderList() {
     const list = document.getElementById("stations-list");
     if (!DATA.stations || DATA.stations.length === 0) {
-        list.innerHTML = `<div class="msg">Šalies vidurkiai rodomi viršuje.<br>
-            Visų degalinių sąrašas atsiras po automatinio duomenų atnaujinimo.</div>`;
+        list.innerHTML = `<div class="msg">${t("empty_list")}</div>`;
         return;
     }
     const rows = getRows();
-    if (rows.length === 0) { list.innerHTML = `<div class="msg">Nieko nerasta pagal pasirinktus filtrus.</div>`; return; }
+    if (rows.length === 0) { list.innerHTML = `<div class="msg">${t("no_filter")}</div>`; return; }
 
     const best = Math.min(...rows.map(r => r[fuelType]));
     list.innerHTML =
-        `<div class="count-line">Rodoma degalinių: ${rows.length}${userPos ? " · rūšiuojama pagal atstumą" : ""}</div>` +
+        `<div class="count-line">${t("showing_stations", { n: rows.length })}${userPos ? " · " + t("sorted_dist") : ""}</div>` +
         rows.map(s => {
             const isBest = s[fuelType] === best;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
-            const approxTag = s.approx ? ' <span class="approx-tag">lokacija gali būti netiksli - prieš vykstant pasitikslinti!</span>' : "";
+            const approxTag = s.approx ? ` <span class="approx-tag">${t("approx_warn")}</span>` : "";
             const fl = flagFor(s);
-            const flagLine = fl ? `<div class="change-flag">⚠️ Kaina galėjo pasikeisti nuo 10:00 —
-                ${fl.source} tinkle ${fl.direction === "down" ? "pigiau" : "brangiau"}: €${fl.live.toFixed(3)}/L</div>` : "";
+            const flagLine = fl ? `<div class="change-flag">${t("flag_change", {
+                src: fl.source, dir: fl.direction === "down" ? t("cheaper") : t("dearer"), price: fl.live.toFixed(3) })}</div>` : "";
             const rep = reportFor(s);
-            const repLine = rep ? `<div class="report-line">🗣️ Pranešta kaina: €${rep.price.toFixed(3)}/L —
-                gali skirtis nuo oficialios, kol bus atnaujinta</div>` : "";
-            const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">🗣️ Pranešti kainą</button>` : "";
+            const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3) })}</div>` : "";
+            const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
             return `
             <div class="station-card">
-                ${isBest ? '<div class="best-price-badge">⭐ PIGIAUSIA</div>' : ''}${dist}
+                ${isBest ? `<div class="best-price-badge">${t("badge_cheapest")}</div>` : ''}${dist}
                 <div class="station-header">
-                    <div class="station-name">${s.network || "Degalinė"}</div>
+                    <div class="station-name">${s.network || t("station_default")}</div>
                     <div><span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span></div>
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
@@ -581,7 +630,7 @@ function ensureMap() {
     if (userPos) {
         userMarker = L.circleMarker([userPos.lat, userPos.lon], {
             radius: 8, color: "#fff", weight: 2, fillColor: "#1a73e8", fillOpacity: 1
-        }).addTo(map).bindPopup("Jūs esate čia");
+        }).addTo(map).bindPopup(t("you_are_here"));
         map.setView([userPos.lat, userPos.lon], 12);
     }
 }
@@ -613,10 +662,10 @@ function renderMap() {
             iconSize: null, iconAnchor: [22, 12]
         });
         const dist = (userPos && s._dist != null) ? `<br>📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}` : "";
-        const approxNote = s.approx ? `<br><span style="color:#b3792f">⚠️ lokacija gali būti netiksli - prieš vykstant pasitikslinti!</span>` : "";
-        const popup = `<div class="popup-name">${s.network || "Degalinė"}</div>
+        const approxNote = s.approx ? `<br><span style="color:#b3792f">⚠️ ${t("approx_warn")}</span>` : "";
+        const popup = `<div class="popup-name">${s.network || t("station_default")}</div>
             <div>${s.address || ""}</div>
-            <div class="popup-price">${FUEL_LABELS[fuelType]}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
+            <div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
             <div class="popup-nav">${navButtons(s)}</div>`;
         L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { minWidth: 220 }).addTo(markersLayer);
         bounds.push([s.lat, s.lon]);
