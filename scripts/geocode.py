@@ -48,7 +48,8 @@ def save_json(path, obj, indent=2):
         json.dump(obj, f, ensure_ascii=False, indent=indent)
 
 
-STREET_RE = re.compile(r"\b(g\.|gatvė|gatve|pl\.|al\.|pr\.|kel\.)", re.I)
+STREET_RE = re.compile(
+    r"\b(g\.|gatvė|gatve|pl\.|plentas|al\.|alėja|aleja|pr\.|prospekt|kel\.|aplinkkel|skg\.)", re.I)
 
 
 def norm(s):
@@ -128,10 +129,11 @@ def geocode_station(addr, muni):
             if res:
                 return {"lat": res[0], "lon": res[1], "approx": False}
 
-    # 2) Approx: the town/village embedded in the address (more precise than muni).
+    # 2) Approx: the town/village embedded in the address, PINNED to the
+    # municipality so an ambiguous name can't match the wrong city.
     town = town_segment(addr)
-    if town and town.lower() != cm.lower():
-        res = nominatim(f"{town}, Lietuva")
+    if town and cm and town.lower() != cm.lower():
+        res = nominatim(f"{town}, {cm}, Lietuva")
         time.sleep(SLEEP)
         if res:
             return {"lat": res[0], "lon": res[1], "approx": True}

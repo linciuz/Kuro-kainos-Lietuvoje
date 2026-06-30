@@ -195,7 +195,9 @@ function renderList() {
         `<div class="count-line">Rodoma degalinių: ${rows.length}${userPos ? " · rūšiuojama pagal atstumą" : ""}</div>` +
         rows.map(s => {
             const isBest = s[fuelType] === best;
-            const dist = (userPos && s._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(s._dist)}</span>` : "";
+            const dist = (userPos && s._dist != null)
+                ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
+            const approxTag = s.approx ? ' <span class="approx-tag">apytikslė vieta</span>' : "";
             return `
             <div class="station-card">
                 ${isBest ? '<div class="best-price-badge">⭐ PIGIAUSIA</div>' : ''}${dist}
@@ -204,7 +206,7 @@ function renderList() {
                     <div><span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span></div>
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
-                <div class="station-muni">📍 ${s.municipality || ""}</div>
+                <div class="station-muni">📍 ${s.municipality || ""}${approxTag}</div>
                 <div class="nav-row">${navButtons(s)}</div>
             </div>`;
         }).join("");
@@ -248,14 +250,16 @@ function renderMap() {
         let cls = "price-pin";
         if (p <= lo + (hi - lo) * 0.25) cls += " cheap";
         else if (p >= lo + (hi - lo) * 0.75) cls += " dear";
+        if (s.approx) cls += " approx";
         const icon = L.divIcon({
             className: "", html: `<div class="${cls}">€${p.toFixed(2)}</div>`,
             iconSize: null, iconAnchor: [22, 12]
         });
-        const dist = (userPos && s._dist != null) ? `<br>📍 ${fmtDist(s._dist)}` : "";
+        const dist = (userPos && s._dist != null) ? `<br>📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}` : "";
+        const approxNote = s.approx ? `<br><span style="color:#999">apytikslė vieta (savivaldybės centras)</span>` : "";
         const popup = `<div class="popup-name">${s.network || "Degalinė"}</div>
             <div>${s.address || ""}</div>
-            <div class="popup-price">${FUEL_LABELS[fuelType]}: €${p.toFixed(3)}/L</div>${dist}
+            <div class="popup-price">${FUEL_LABELS[fuelType]}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
             <div class="popup-nav">${navButtons(s)}</div>`;
         L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { minWidth: 220 }).addTo(markersLayer);
         bounds.push([s.lat, s.lon]);
