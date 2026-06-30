@@ -8,3 +8,6 @@ _lea_tmp.xlsx
 # OS
 .DS_Store
 Thumbs.db
+
+# Local dev tooling (preview server config)
+.claude/
