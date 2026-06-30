@@ -25,10 +25,47 @@ function json(obj, status = 200) {
   });
 }
 
+// Live EV occupancy proxy: the Lithuania NAP OCPI endpoint is open but blocks
+// browser CORS, so we fetch it here and return a compact {ocpi_id: {a,t,s}} map
+// (a=available, t=total connectors, s=overall status). Edge-cached ~45s.
+const OCPI_LOCATIONS = "https://ev.vialietuva.lt/ocpi/2.3.0/locations";
+
+async function evStatus() {
+  const r = await fetch(OCPI_LOCATIONS, { headers: { "Accept": "application/json" } });
+  if (!r.ok) return {};
+  const body = await r.json();
+  const out = {};
+  for (const loc of (body.data || [])) {
+    const evses = loc.evses || [];
+    let avail = 0;
+    for (const e of evses) if (e.status === "AVAILABLE") avail++;
+    const total = evses.length;
+    let s = "unknown";
+    if (avail > 0) s = "available";
+    else if (evses.some(e => e.status === "CHARGING" || e.status === "BLOCKED")) s = "busy";
+    else if (evses.some(e => e.status === "OUTOFORDER" || e.status === "INOPERATIVE")) s = "down";
+    out[String(loc.id)] = { a: avail, t: total, s };
+  }
+  return out;
+}
+
 export default {
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
+
+    if (url.pathname === "/ev-status" && req.method === "GET") {
+      const cache = caches.default;
+      const cacheKey = new Request(url.toString(), req);
+      let hit = await cache.match(cacheKey);
+      if (hit) return hit;
+      const data = await evStatus();
+      const resp = new Response(JSON.stringify(data), {
+        headers: { ...CORS, "Content-Type": "application/json", "Cache-Control": "public, max-age=45" },
+      });
+      ctx.waitUntil(cache.put(cacheKey, resp.clone()));
+      return resp;
+    }
 
     if (url.pathname === "/reports" && req.method === "GET") {
       const raw = await env.REPORTS.get(KEY);

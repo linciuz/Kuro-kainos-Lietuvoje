@@ -1,9 +1,1044 @@
 {
-  "generated": "2026-06-30T15:05:37Z",
-  "source": "OpenStreetMap (Overpass)",
-  "count": 405,
-  "with_price": 14,
+  "generated": "2026-06-30T16:34:27Z",
+  "source": "Via Lietuva (OCPI/AFIR) + OpenStreetMap",
+  "count": 411,
+  "ocpi_count": 94,
+  "with_price": 91,
   "chargers": [
+    {
+      "lat": 54.704954,
+      "lon": 25.272475,
+      "name": "Ž135 | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.33,
+      "sockets": 2,
+      "ocpi_id": "257",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.674557,
+      "lon": 25.224355,
+      "name": "L3 | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "258",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.647383,
+      "lon": 25.276497,
+      "name": "ParkInn 2 | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "259",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.647383,
+      "lon": 25.276497,
+      "name": "ParkInn 1 | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "260",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 56.0,
+      "lon": 22.94924,
+      "name": "IKI, Kuršėnai - Vilniaus | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "261",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.708034,
+      "lon": 25.173332,
+      "name": "IKI, Karaliaučius | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "263",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.928224,
+      "lon": 23.30767,
+      "name": "Saulės miestas | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.32,
+      "sockets": 8,
+      "ocpi_id": "264",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.688587,
+      "lon": 25.26777,
+      "name": "Live Square | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 8,
+      "ocpi_id": "265",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.739521,
+      "lon": 25.225258,
+      "name": "Domus Pro | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 8,
+      "ocpi_id": "267",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.925045,
+      "lon": 21.07178,
+      "name": "IKI, Palanga - Žvejų | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "268",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.650601,
+      "lon": 25.323812,
+      "name": "Maxima, Moravai | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "270",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.689301,
+      "lon": 25.209903,
+      "name": "Impuls Asanavičiūtė | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "271",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.728167,
+      "lon": 24.315097,
+      "name": "RYO Panevėžys 1 | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "272",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.734447,
+      "lon": 24.356161,
+      "name": "Intero GYM | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "275",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.919757,
+      "lon": 23.879346,
+      "name": "IKI, Baltija | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "276",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.745173,
+      "lon": 24.371571,
+      "name": "Pervaža Hotel | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "277",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.703967,
+      "lon": 25.316411,
+      "name": "Maxima, V. Grybo g. | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "278",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.712411,
+      "lon": 25.215461,
+      "name": "Maxima, Taikos g. | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 6,
+      "ocpi_id": "279",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.933029,
+      "lon": 23.817051,
+      "name": "IKI, Romainiai 2 | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "280",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.708529,
+      "lon": 25.29028,
+      "name": "North Star | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "281",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.280213,
+      "lon": 23.95494,
+      "name": "IKI, Kėdainiai | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "285",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.695675,
+      "lon": 25.257707,
+      "name": "Green hall",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "321",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.685762,
+      "lon": 21.154105,
+      "name": "Decathlon Klaipėda",
+      "operator": "Ignitis, UAB",
+      "power_kw": 150.0,
+      "price": 0.32,
+      "sockets": 2,
+      "ocpi_id": "322",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.789133,
+      "lon": 24.676967,
+      "name": "Hesburger Elektrėnai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 150.0,
+      "price": 0.24,
+      "sockets": 5,
+      "ocpi_id": "323",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.94807,
+      "lon": 24.017943,
+      "name": "Hesburger Ramučiai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 165.0,
+      "price": 0.31,
+      "sockets": 4,
+      "ocpi_id": "324",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.871432,
+      "lon": 23.888986,
+      "name": "Hesburger Veiveriai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 150.0,
+      "price": 0.21,
+      "sockets": 4,
+      "ocpi_id": "325",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.68852,
+      "lon": 25.278455,
+      "name": "Opera",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "375",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.717045,
+      "lon": 25.282209,
+      "name": "Ozo parkas",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "376",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.773609,
+      "lon": 25.272413,
+      "name": "Rimi Molėtų pl. (out of order)",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "377",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.729457,
+      "lon": 25.270717,
+      "name": "Baltupių turgus",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "378",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.740739,
+      "lon": 25.275899,
+      "name": "Rimi Jeruzalė",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "379",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.724843,
+      "lon": 25.342029,
+      "name": "IKI Saulėtekis",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "380",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.662336,
+      "lon": 25.342797,
+      "name": "IKI Pavilnys",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "381",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.669595,
+      "lon": 25.095702,
+      "name": "IKI Grigiškės",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "382",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.677911,
+      "lon": 25.225464,
+      "name": "Litexpo",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.25,
+      "sockets": 3,
+      "ocpi_id": "383",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.707169,
+      "lon": 25.175433,
+      "name": "Maxima Vydūno g.",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.25,
+      "sockets": 3,
+      "ocpi_id": "384",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.685284,
+      "lon": 25.205705,
+      "name": "Rimi Karoliniškės",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "385",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.71679,
+      "lon": 25.245092,
+      "name": "Šeškinės g. 59",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "386",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.679763,
+      "lon": 25.258412,
+      "name": "Helios City",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "387",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.708627,
+      "lon": 25.314418,
+      "name": "Antakalnio klinikos",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "388",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.684983,
+      "lon": 25.293418,
+      "name": "Bernardinų sodas (out of order)",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.29,
+      "sockets": 3,
+      "ocpi_id": "389",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.673985,
+      "lon": 25.285425,
+      "name": "Halės turgus",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "390",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.734441,
+      "lon": 25.338063,
+      "name": "Maxima Nemenčinės pl. (coming soon)",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "396",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.643,
+      "lon": 25.27473,
+      "name": "Vilniaus oro uostas",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "397",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.711443,
+      "lon": 25.304257,
+      "name": "Rimi Žirmūnai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "398",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.673299,
+      "lon": 25.248064,
+      "name": "Maxima Savanorių pr.",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "401",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.692091,
+      "lon": 25.215671,
+      "name": "Karoliniškių poliklinika",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "402",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.730837,
+      "lon": 25.247003,
+      "name": "Norfa Fabijoniškės",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "403",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.73482,
+      "lon": 25.221149,
+      "name": "Maxima Gabijos g.",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "404",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.717007,
+      "lon": 25.223126,
+      "name": "Norfa Justiniškės",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "406",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.727296,
+      "lon": 25.233539,
+      "name": "KUBAS",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "408",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.753079,
+      "lon": 25.283143,
+      "name": "Santaros klinikos",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.29,
+      "sockets": 5,
+      "ocpi_id": "409",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.697691,
+      "lon": 25.299954,
+      "name": "IKI Vilnius",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "410",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.67073,
+      "lon": 25.259723,
+      "name": "Skraja",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "412",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.686201,
+      "lon": 25.259266,
+      "name": "Verslo trikampis",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.25,
+      "sockets": 3,
+      "ocpi_id": "413",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.704065,
+      "lon": 25.276658,
+      "name": "Verslo centras BH-92",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "414",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.669338,
+      "lon": 25.210091,
+      "name": "Lazdynų ligoninė",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "416",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.676315,
+      "lon": 25.284128,
+      "name": "Rūdininkų skveras",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "417",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.698074,
+      "lon": 25.269643,
+      "name": "Verslo centras Quadrum",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "418",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.682287,
+      "lon": 25.268939,
+      "name": "Santuokų rūmai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 100.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "419",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.671264,
+      "lon": 25.237688,
+      "name": "ERGO",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "420",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.678535,
+      "lon": 25.293155,
+      "name": "Tymo turgus",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "421",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.681055,
+      "lon": 25.298629,
+      "name": "Užupio skveras",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "422",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.776811,
+      "lon": 25.336447,
+      "name": "Vynoteka Balsiai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "423",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.643896,
+      "lon": 25.20017,
+      "name": "Autocentras \"Žibintas\"",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "424",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.692641,
+      "lon": 25.409646,
+      "name": "Maxima Naujoji Vilnia",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "425",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.703397,
+      "lon": 25.222999,
+      "name": "Spaudos rūmai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "428",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.698989,
+      "lon": 25.259298,
+      "name": "Panorama",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "429",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.698125,
+      "lon": 25.265701,
+      "name": "Forum Palace",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.27,
+      "sockets": 3,
+      "ocpi_id": "430",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.693937,
+      "lon": 25.274845,
+      "name": "CUP",
+      "operator": "Ignitis, UAB",
+      "power_kw": 60.0,
+      "price": 0.27,
+      "sockets": 2,
+      "ocpi_id": "431",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.709983,
+      "lon": 25.263963,
+      "name": "Akropolis",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": 0.24,
+      "sockets": 4,
+      "ocpi_id": "432",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.69348,
+      "lon": 25.28931,
+      "name": "Business stadium",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": 0.21,
+      "sockets": 8,
+      "ocpi_id": "433",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.67268,
+      "lon": 25.221588,
+      "name": "Business Garden",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 15,
+      "ocpi_id": "434",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.626448,
+      "lon": 25.148601,
+      "name": "Kirtimų logistikos centras | Partneris",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": 0.21,
+      "sockets": 4,
+      "ocpi_id": "435",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.648798,
+      "lon": 25.216219,
+      "name": "Savanorių pr. 180B | Partneris",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": 0.25,
+      "sockets": 2,
+      "ocpi_id": "436",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.251926,
+      "lon": 24.741014,
+      "name": "Narbutas | Partneris",
+      "operator": "Ignitis, UAB",
+      "power_kw": 45.0,
+      "price": 0.29,
+      "sockets": 27,
+      "ocpi_id": "439",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 56.056279,
+      "lon": 24.408532,
+      "name": "Kevigus | Partneris",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 1,
+      "ocpi_id": "440",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.252508,
+      "lon": 25.984492,
+      "name": "Kaltanėnų dvaras | Partneris",
+      "operator": "Ignitis, UAB",
+      "power_kw": 11.0,
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": "441",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.234961,
+      "lon": 23.516836,
+      "name": "Lazdijų raj. savivaldybė",
+      "operator": "Ignitis, UAB",
+      "power_kw": 22.0,
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": "442",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.634313,
+      "lon": 23.435676,
+      "name": "Hesburger Kantališkiai",
+      "operator": "Ignitis, UAB",
+      "power_kw": 150.0,
+      "price": 0.31,
+      "sockets": 5,
+      "ocpi_id": "443",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.933476,
+      "lon": 23.964654,
+      "name": "Hesburger Islandijos pl.",
+      "operator": "Ignitis, UAB",
+      "power_kw": 150.0,
+      "price": 0.24,
+      "sockets": 5,
+      "ocpi_id": "451",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.653257,
+      "lon": 25.278897,
+      "name": "Nordika",
+      "operator": "Ignitis, UAB",
+      "power_kw": 150.0,
+      "price": 0.32,
+      "sockets": 6,
+      "ocpi_id": "455",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.819096,
+      "lon": 23.857515,
+      "name": "IONITY GmbH IONITY Garliava",
+      "operator": "IONITY GmbH",
+      "power_kw": 350.0,
+      "price": 0.43,
+      "sockets": 4,
+      "ocpi_id": "498",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.48423,
+      "lon": 22.58733,
+      "name": "IONITY GmbH IONITY Kryzkalnis",
+      "operator": "IONITY GmbH",
+      "power_kw": 350.0,
+      "price": 0.43,
+      "sockets": 6,
+      "ocpi_id": "499",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.67309,
+      "lon": 24.33591,
+      "name": "IONITY GmbH IONITY Aplinkkelis",
+      "operator": "IONITY GmbH",
+      "power_kw": 350.0,
+      "price": 0.43,
+      "sockets": 4,
+      "ocpi_id": "500",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.959649,
+      "lon": 21.145219,
+      "name": "HBH Palanga",
+      "operator": "Įkrautas, UAB",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "501",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.021702,
+      "lon": 23.976271,
+      "name": "Europa Royale Druskininkai",
+      "operator": "Įkrautas, UAB",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 1,
+      "ocpi_id": "504",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.020457,
+      "lon": 24.011829,
+      "name": "Medical SPA \"Eglės sanatorjia\" Druskininkai",
+      "operator": "Įkrautas, UAB",
+      "power_kw": 22.0,
+      "price": 0.08,
+      "sockets": 4,
+      "ocpi_id": "505",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.862625,
+      "lon": 23.886146,
+      "name": "IKI, Aleksotas | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "507",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.724469,
+      "lon": 25.319892,
+      "name": "IKI, Antakalnis | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 6,
+      "ocpi_id": "508",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.724124,
+      "lon": 25.254698,
+      "name": "IKI, Jovaras | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 6,
+      "ocpi_id": "509",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.895632,
+      "lon": 21.237244,
+      "name": "IKI, Kretinga - Akmenos | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 2,
+      "ocpi_id": "510",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.673479,
+      "lon": 25.274997,
+      "name": "IKI Mindaugo | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 8,
+      "ocpi_id": "511",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.919826,
+      "lon": 21.080537,
+      "name": "IKI, Palanga | Inbalance grid",
+      "operator": "In Balance grid, UAB",
+      "power_kw": 22.0,
+      "price": 0.23,
+      "sockets": 4,
+      "ocpi_id": "512",
+      "source": "vialietuva-ocpi"
+    },
     {
       "lat": 54.668651,
       "lon": 25.234558,
@@ -11,7 +1046,9 @@
       "operator": "Fakto auto",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.78371,
@@ -20,16 +1057,9 @@
       "operator": "UAB \"Arginta\"",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.688509,
-      "lon": 25.278184,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.71518,
@@ -38,7 +1068,9 @@
       "operator": "PPC „Ozas“",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.654691,
@@ -47,7 +1079,9 @@
       "operator": "UAB „Transmitto“",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.941791,
@@ -56,7 +1090,9 @@
       "operator": "UAB „Elinta“",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.941904,
@@ -65,7 +1101,9 @@
       "operator": "UAB „Elinta“",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.898654,
@@ -74,7 +1112,9 @@
       "operator": "Kauno m. savivaldybė",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.762707,
@@ -83,7 +1123,9 @@
       "operator": "ABB",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.787844,
@@ -92,7 +1134,9 @@
       "operator": "",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.741904,
@@ -101,7 +1145,9 @@
       "operator": "KIA",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.940481,
@@ -110,7 +1156,9 @@
       "operator": "PLC „Mega“",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.116087,
@@ -119,7 +1167,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.468964,
@@ -128,7 +1178,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.687612,
@@ -137,7 +1189,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.729185,
@@ -146,7 +1200,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.681008,
@@ -155,7 +1211,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.68219,
@@ -164,7 +1222,9 @@
       "operator": "Spark",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.919824,
@@ -173,7 +1233,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.737303,
@@ -182,7 +1244,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.77288,
@@ -191,7 +1255,9 @@
       "operator": "",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.74444,
@@ -200,7 +1266,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.72983,
@@ -209,7 +1277,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.302709,
@@ -218,7 +1288,9 @@
       "operator": "Inbalance Grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.273166,
@@ -227,7 +1299,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.939757,
@@ -236,16 +1310,9 @@
       "operator": "",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 55.928168,
-      "lon": 23.30715,
-      "name": "Saulės miestas",
-      "operator": "Inbalance",
-      "power_kw": null,
-      "price": 0.39,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.691821,
@@ -254,7 +1321,9 @@
       "operator": "Unipark",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.676208,
@@ -263,16 +1332,9 @@
       "operator": "SPARK",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.669769,
-      "lon": 25.259833,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.71528,
@@ -281,7 +1343,9 @@
       "operator": "Spark",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.712872,
@@ -290,7 +1354,9 @@
       "operator": "Spark",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.705232,
@@ -299,7 +1365,9 @@
       "operator": "Klaipėdos Savivaldybė",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.227483,
@@ -308,7 +1376,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.929644,
@@ -317,7 +1387,9 @@
       "operator": "LAKD",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.411966,
@@ -326,16 +1398,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.740672,
-      "lon": 25.275909,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.912984,
@@ -344,7 +1409,9 @@
       "operator": "Eldrive",
       "power_kw": 24.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.733454,
@@ -353,7 +1420,9 @@
       "operator": "LAKD",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.692986,
@@ -362,7 +1431,9 @@
       "operator": "Imbalance Grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 56.157694,
@@ -371,7 +1442,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.314563,
@@ -380,7 +1453,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.37787,
@@ -389,7 +1464,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 1
+      "sockets": 1,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.568714,
@@ -398,7 +1475,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.684352,
@@ -407,7 +1486,9 @@
       "operator": "Renerga",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.580473,
@@ -416,7 +1497,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.939748,
@@ -425,7 +1508,9 @@
       "operator": "",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.084276,
@@ -434,7 +1519,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.632765,
@@ -443,7 +1530,9 @@
       "operator": "Ignitis ON",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.784611,
@@ -452,16 +1541,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.671124,
-      "lon": 25.259218,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.900049,
@@ -470,7 +1552,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 6
+      "sockets": 6,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.838336,
@@ -479,7 +1563,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.907804,
@@ -488,7 +1574,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.07318,
@@ -497,7 +1585,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.077391,
@@ -506,7 +1596,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.301047,
@@ -515,7 +1607,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.542194,
@@ -524,16 +1618,9 @@
       "operator": "Elinta",
       "power_kw": null,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.703267,
-      "lon": 25.22299,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.70223,
@@ -542,16 +1629,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.708606,
-      "lon": 25.314545,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.690037,
@@ -560,43 +1640,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.673992,
-      "lon": 25.285551,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.716984,
-      "lon": 25.223082,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.678519,
-      "lon": 25.293156,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 4
-    },
-    {
-      "lat": 54.698134,
-      "lon": 25.265643,
-      "name": "Forum Palace",
-      "operator": "Ignitis ON",
-      "power_kw": null,
-      "price": null,
-      "sockets": 2
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.946215,
@@ -605,7 +1651,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.395974,
@@ -614,25 +1662,9 @@
       "operator": "Elinta",
       "power_kw": null,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.685024,
-      "lon": 25.293313,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.642976,
-      "lon": 25.274748,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.920233,
@@ -641,16 +1673,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.671238,
-      "lon": 25.237684,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.67614,
@@ -659,7 +1684,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.942637,
@@ -668,7 +1695,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": 6
+      "sockets": 6,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.942543,
@@ -677,7 +1706,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.90396,
@@ -686,16 +1717,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.672863,
-      "lon": 25.274012,
-      "name": "Spark",
-      "operator": "Spark",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.606998,
@@ -704,7 +1728,9 @@
       "operator": "Elinta Charge",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.603505,
@@ -713,16 +1739,9 @@
       "operator": "Elinta Charge",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.669503,
-      "lon": 25.095953,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.396453,
@@ -731,16 +1750,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.934227,
-      "lon": 23.965675,
-      "name": "Inbalance Grid „Šalia kelio A1, 96,62km“",
-      "operator": "Inbalance",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.903162,
@@ -749,7 +1761,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.570062,
@@ -758,7 +1772,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.938793,
@@ -767,16 +1783,9 @@
       "operator": "ENSTO",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.67984,
-      "lon": 25.258399,
-      "name": "Helios City",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 6
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.692091,
@@ -785,7 +1794,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 6
+      "sockets": 6,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.955882,
@@ -794,7 +1805,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.223039,
@@ -803,7 +1816,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.754357,
@@ -812,7 +1827,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.751525,
@@ -821,16 +1838,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.752926,
-      "lon": 25.281174,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.75084,
@@ -839,7 +1849,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.622807,
@@ -848,16 +1860,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.669246,
-      "lon": 25.210177,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.674236,
@@ -866,7 +1871,9 @@
       "operator": "Ignitis ON",
       "power_kw": 45.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.127074,
@@ -875,7 +1882,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.073354,
@@ -884,7 +1893,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.677413,
@@ -893,34 +1904,9 @@
       "operator": "autoPilDYK",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.674149,
-      "lon": 25.223574,
-      "name": "Spark",
-      "operator": "Spark",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.724757,
-      "lon": 25.341916,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.677876,
-      "lon": 25.225573,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.902643,
@@ -929,7 +1915,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.889401,
@@ -938,7 +1926,9 @@
       "operator": "Elinta",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.899858,
@@ -947,7 +1937,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.925841,
@@ -956,7 +1948,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.689591,
@@ -965,16 +1959,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.789374,
-      "lon": 24.67512,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.94216,
@@ -983,7 +1970,9 @@
       "operator": "Tesla",
       "power_kw": 250.0,
       "price": null,
-      "sockets": 16
+      "sockets": 16,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.9158,
@@ -992,16 +1981,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.672535,
-      "lon": 25.2212,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.949384,
@@ -1010,7 +1992,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.668079,
@@ -1019,7 +2003,9 @@
       "operator": "McDonalds",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.318591,
@@ -1028,7 +2014,9 @@
       "operator": "LAKD",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.597327,
@@ -1037,25 +2025,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.695617,
-      "lon": 25.259453,
-      "name": "Spark",
-      "operator": "Spark",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.695679,
-      "lon": 25.257763,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.675092,
@@ -1064,7 +2036,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.719993,
@@ -1073,7 +2047,9 @@
       "operator": "Spark",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.906253,
@@ -1082,7 +2058,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.721003,
@@ -1091,7 +2069,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.896255,
@@ -1100,7 +2080,9 @@
       "operator": "Elinta",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.890218,
@@ -1109,7 +2091,9 @@
       "operator": "Elinta",
       "power_kw": 11.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.894009,
@@ -1117,8 +2101,10 @@
       "name": "Elinta",
       "operator": "Elinta",
       "power_kw": 22.0,
-      "price": 0.3,
-      "sockets": 2
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.894009,
@@ -1126,8 +2112,10 @@
       "name": "Elinta",
       "operator": "Elinta",
       "power_kw": 22.0,
-      "price": 0.3,
-      "sockets": 2
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.89401,
@@ -1135,8 +2123,10 @@
       "name": "Elinta",
       "operator": "Elinta",
       "power_kw": 22.0,
-      "price": 0.3,
-      "sockets": 2
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.894011,
@@ -1144,8 +2134,10 @@
       "name": "Elinta",
       "operator": "Elinta",
       "power_kw": 22.0,
-      "price": 0.3,
-      "sockets": 2
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.8938,
@@ -1153,8 +2145,10 @@
       "name": "Elinta",
       "operator": "Elinta",
       "power_kw": 22.0,
-      "price": 0.3,
-      "sockets": 2
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.891449,
@@ -1163,7 +2157,9 @@
       "operator": "Elinta",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.891407,
@@ -1172,7 +2168,9 @@
       "operator": "Elinta",
       "power_kw": 11.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.889418,
@@ -1181,7 +2179,9 @@
       "operator": "Elinta",
       "power_kw": 11.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.736109,
@@ -1190,7 +2190,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.874299,
@@ -1199,7 +2201,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.678333,
@@ -1208,7 +2212,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.919032,
@@ -1217,7 +2223,9 @@
       "operator": "Elektrum",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.716827,
@@ -1226,7 +2234,9 @@
       "operator": "Unipark",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.645586,
@@ -1235,7 +2245,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.716986,
@@ -1244,43 +2256,9 @@
       "operator": "",
       "power_kw": 14.1,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.69903,
-      "lon": 25.259432,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.698073,
-      "lon": 25.265301,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.698074,
-      "lon": 25.269642,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.693798,
-      "lon": 25.275099,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.678504,
@@ -1289,61 +2267,9 @@
       "operator": "Ignitis ON",
       "power_kw": 320.0,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.681055,
-      "lon": 25.298629,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.686256,
-      "lon": 25.259285,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.682287,
-      "lon": 25.268939,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.676275,
-      "lon": 25.284096,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.67073,
-      "lon": 25.259723,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.673299,
-      "lon": 25.248064,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.698466,
@@ -1352,16 +2278,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.693539,
-      "lon": 25.289086,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 22.0,
-      "price": null,
-      "sockets": 8
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.699188,
@@ -1370,16 +2289,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.697691,
-      "lon": 25.299954,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.69907,
@@ -1388,34 +2300,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.67258,
-      "lon": 25.222015,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 22.0,
-      "price": null,
-      "sockets": 7
-    },
-    {
-      "lat": 54.692091,
-      "lon": 25.215671,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.685341,
-      "lon": 25.205641,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.661717,
@@ -1424,7 +2311,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.651878,
@@ -1433,34 +2322,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.643896,
-      "lon": 25.20017,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.662336,
-      "lon": 25.342797,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.692641,
-      "lon": 25.409646,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.649267,
@@ -1469,7 +2333,9 @@
       "operator": "Ignitis ON",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.643452,
@@ -1478,52 +2344,9 @@
       "operator": "Ignitis ON",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.234961,
-      "lon": 23.516836,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 22.0,
-      "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.707303,
-      "lon": 25.175199,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.711443,
-      "lon": 25.304257,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.704047,
-      "lon": 25.276436,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.717008,
-      "lon": 25.282205,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.719052,
@@ -1532,106 +2355,9 @@
       "operator": "Ignitis ON",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.71679,
-      "lon": 25.245092,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.729505,
-      "lon": 25.270719,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.730837,
-      "lon": 25.247003,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.727296,
-      "lon": 25.233539,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.73482,
-      "lon": 25.221149,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.734471,
-      "lon": 25.338179,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.740275,
-      "lon": 25.275585,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.753024,
-      "lon": 25.284256,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.773609,
-      "lon": 25.272413,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 54.776797,
-      "lon": 25.336471,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3
-    },
-    {
-      "lat": 55.252508,
-      "lon": 25.984492,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": 22.0,
-      "price": null,
-      "sockets": 2
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.197537,
@@ -1640,7 +2366,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.707548,
@@ -1649,7 +2377,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.870138,
@@ -1658,7 +2388,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.870075,
@@ -1667,7 +2399,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.939124,
@@ -1676,16 +2410,9 @@
       "operator": "AutoPildyk",
       "power_kw": null,
       "price": null,
-      "sockets": 8
-    },
-    {
-      "lat": 54.7037,
-      "lon": 25.278711,
-      "name": "Spark",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 8,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.919756,
@@ -1694,16 +2421,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.695575,
-      "lon": 25.259082,
-      "name": "Spark",
-      "operator": "Spark",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.7151,
@@ -1712,7 +2432,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.719276,
@@ -1721,7 +2443,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.903738,
@@ -1730,7 +2454,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.90317,
@@ -1739,16 +2465,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.731525,
-      "lon": 25.246922,
-      "name": "Spark",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.91883,
@@ -1757,7 +2476,9 @@
       "operator": "uniPark",
       "power_kw": null,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 56.004547,
@@ -1766,34 +2487,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.933278,
-      "lon": 23.817404,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.723962,
-      "lon": 25.319644,
-      "name": "Inbalance grid",
-      "operator": "Inbalance grid",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.819116,
-      "lon": 23.857523,
-      "name": "Ionity Garliava",
-      "operator": "Ionity",
-      "power_kw": 350.0,
-      "price": null,
-      "sockets": 6
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.10602,
@@ -1801,8 +2497,10 @@
       "name": "UniPark",
       "operator": "UniPark",
       "power_kw": 100.0,
-      "price": 0.89,
-      "sockets": 3
+      "price": null,
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.249319,
@@ -1811,16 +2509,9 @@
       "operator": "Ukmergės rajono savivaldybės administracija",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.686016,
-      "lon": 25.259426,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.924066,
@@ -1829,7 +2520,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.930918,
@@ -1838,7 +2531,9 @@
       "operator": "Eldrive",
       "power_kw": 120.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.938277,
@@ -1847,7 +2542,9 @@
       "operator": "Elinta",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.938279,
@@ -1856,7 +2553,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": 1
+      "sockets": 1,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.91692,
@@ -1865,7 +2564,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.928532,
@@ -1874,16 +2575,9 @@
       "operator": "Elinta",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 55.672587,
-      "lon": 24.336012,
-      "name": "Ionity Aplinkkelis",
-      "operator": "Ionity",
-      "power_kw": 350.0,
-      "price": null,
-      "sockets": 6
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.255347,
@@ -1892,7 +2586,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.685465,
@@ -1901,7 +2597,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.907658,
@@ -1910,16 +2608,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.735999,
-      "lon": 25.221166,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.928803,
@@ -1928,16 +2619,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.710209,
-      "lon": 25.264702,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.709982,
@@ -1946,7 +2630,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.909005,
@@ -1955,16 +2641,9 @@
       "operator": "Elinta Charge",
       "power_kw": 50.0,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 55.959553,
-      "lon": 21.145188,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.646506,
@@ -1973,7 +2652,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.722941,
@@ -1982,25 +2663,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 55.484255,
-      "lon": 22.587155,
-      "name": "Ionity Kryžkalnis",
-      "operator": "Ionity",
-      "power_kw": 350.0,
-      "price": null,
-      "sockets": 6
-    },
-    {
-      "lat": 55.895629,
-      "lon": 21.237208,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": 1
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.709507,
@@ -2009,7 +2674,9 @@
       "operator": "Vilniaus apšvietimas",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.754348,
@@ -2018,7 +2685,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.752273,
@@ -2027,16 +2696,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.647369,
-      "lon": 25.276488,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.658222,
@@ -2045,7 +2707,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.702797,
@@ -2054,7 +2718,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.48473,
@@ -2063,7 +2729,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.624165,
@@ -2072,16 +2740,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 5
-    },
-    {
-      "lat": 54.705126,
-      "lon": 25.272551,
-      "name": "Spark",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 5,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.730595,
@@ -2090,7 +2751,9 @@
       "operator": "Lidl",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.713758,
@@ -2099,7 +2762,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.737617,
@@ -2108,7 +2773,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.933586,
@@ -2117,7 +2784,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.404775,
@@ -2126,7 +2795,9 @@
       "operator": "Elinta",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.8494,
@@ -2135,7 +2806,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.559025,
@@ -2144,7 +2817,9 @@
       "operator": "Elinta Charge",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.553517,
@@ -2153,7 +2828,9 @@
       "operator": "Elinta Charge",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.701311,
@@ -2162,7 +2839,9 @@
       "operator": "Transporto Kompetencijų agentūra",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.525687,
@@ -2171,7 +2850,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": 22
+      "sockets": 22,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.36445,
@@ -2180,7 +2861,9 @@
       "operator": "Eleport",
       "power_kw": 300.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.914177,
@@ -2189,16 +2872,9 @@
       "operator": "Eleport",
       "power_kw": 11.0,
       "price": null,
-      "sockets": 2
-    },
-    {
-      "lat": 54.728848,
-      "lon": 25.270339,
-      "name": "Spark",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.658794,
@@ -2207,7 +2883,9 @@
       "operator": "Elektrum",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.64398,
@@ -2216,7 +2894,9 @@
       "operator": "IKI",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.645664,
@@ -2225,7 +2905,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.686068,
@@ -2234,7 +2916,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.895091,
@@ -2243,7 +2927,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 56.122819,
@@ -2252,7 +2938,9 @@
       "operator": "Inbalance",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.73886,
@@ -2261,7 +2949,9 @@
       "operator": "Dentavita",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.727354,
@@ -2270,7 +2960,9 @@
       "operator": "IKI Dembava",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.726946,
@@ -2279,7 +2971,9 @@
       "operator": "Elinta",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.287638,
@@ -2288,7 +2982,9 @@
       "operator": "Elinta",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.709584,
@@ -2297,7 +2993,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.649847,
@@ -2306,16 +3004,9 @@
       "operator": "Decathlon",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.673248,
-      "lon": 25.27504,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.675403,
@@ -2324,7 +3015,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.652675,
@@ -2333,7 +3026,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.674334,
@@ -2342,7 +3037,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.723712,
@@ -2351,7 +3048,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.927617,
@@ -2360,7 +3059,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.33661,
@@ -2369,7 +3070,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.525086,
@@ -2378,7 +3081,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.725783,
@@ -2387,7 +3092,9 @@
       "operator": "Vilniaus apšvietimas",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.846535,
@@ -2396,7 +3103,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.846545,
@@ -2405,7 +3114,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 56.025946,
@@ -2414,7 +3125,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.658509,
@@ -2423,7 +3136,9 @@
       "operator": "Vilniaus apšvietimas",
       "power_kw": 100.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.93473,
@@ -2432,7 +3147,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.916981,
@@ -2441,7 +3158,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.967056,
@@ -2450,7 +3169,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.934878,
@@ -2459,7 +3180,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.932769,
@@ -2468,7 +3191,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.932893,
@@ -2477,7 +3202,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.932925,
@@ -2486,7 +3213,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.933572,
@@ -2495,7 +3224,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.933898,
@@ -2504,16 +3235,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 4
-    },
-    {
-      "lat": 54.93324,
-      "lon": 23.817169,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.930549,
@@ -2522,7 +3246,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.915133,
@@ -2531,7 +3257,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.563636,
@@ -2540,7 +3268,9 @@
       "operator": "Ignitis ON",
       "power_kw": 11.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.568144,
@@ -2549,7 +3279,9 @@
       "operator": "Ignitis ON",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.566653,
@@ -2558,7 +3290,9 @@
       "operator": "Ignitis ON",
       "power_kw": 180.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.558162,
@@ -2567,7 +3301,9 @@
       "operator": "Ignitis ON",
       "power_kw": 60.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.557237,
@@ -2576,7 +3312,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.556474,
@@ -2585,7 +3323,9 @@
       "operator": "Ignitis ON",
       "power_kw": 60.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.553669,
@@ -2594,7 +3334,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.551952,
@@ -2603,7 +3345,9 @@
       "operator": "Ignitis ON",
       "power_kw": 60.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.5639,
@@ -2612,7 +3356,9 @@
       "operator": "Ignitis ON",
       "power_kw": 60.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.569605,
@@ -2621,7 +3367,9 @@
       "operator": "Ignitis ON",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.550651,
@@ -2630,7 +3378,9 @@
       "operator": "",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.546348,
@@ -2639,7 +3389,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.548028,
@@ -2648,7 +3400,9 @@
       "operator": "Ignitis ON",
       "power_kw": 60.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.26007,
@@ -2657,7 +3411,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.266875,
@@ -2666,7 +3422,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.25585,
@@ -2675,7 +3433,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.498464,
@@ -2684,7 +3444,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.702413,
@@ -2693,7 +3455,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.958602,
@@ -2702,7 +3466,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.699356,
@@ -2711,7 +3477,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.647033,
@@ -2720,7 +3488,9 @@
       "operator": "",
       "power_kw": 22.0,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.830455,
@@ -2729,7 +3499,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.925111,
@@ -2738,7 +3510,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.674705,
@@ -2747,16 +3521,9 @@
       "operator": "Inbalance Grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.740047,
-      "lon": 25.225893,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.649604,
@@ -2765,7 +3532,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.702976,
@@ -2774,7 +3543,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.726424,
@@ -2783,7 +3554,9 @@
       "operator": "Inbalance grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.926279,
@@ -2792,7 +3565,9 @@
       "operator": "Inbalance grid",
       "power_kw": null,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.836083,
@@ -2801,7 +3576,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.836146,
@@ -2810,7 +3587,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.83642,
@@ -2819,7 +3598,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.836401,
@@ -2828,7 +3609,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.279832,
@@ -2837,7 +3620,9 @@
       "operator": "Eldrive",
       "power_kw": 200.0,
       "price": null,
-      "sockets": 20
+      "sockets": 20,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.604898,
@@ -2846,7 +3631,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.909158,
@@ -2855,7 +3642,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.646129,
@@ -2864,7 +3653,9 @@
       "operator": "Enefit",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.646163,
@@ -2873,7 +3664,9 @@
       "operator": "Enefit",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.348517,
@@ -2881,8 +3674,10 @@
       "name": "Elinta",
       "operator": "Elinta",
       "power_kw": null,
-      "price": 0.25,
-      "sockets": 2
+      "price": null,
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.52119,
@@ -2891,7 +3686,9 @@
       "operator": "Ignitis ON",
       "power_kw": 45.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.678583,
@@ -2900,7 +3697,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.658597,
@@ -2909,7 +3708,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.748413,
@@ -2918,7 +3719,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.778811,
@@ -2927,7 +3730,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.82518,
@@ -2936,7 +3741,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.915509,
@@ -2945,7 +3752,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.915111,
@@ -2954,7 +3763,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.915491,
@@ -2963,7 +3774,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.89359,
@@ -2972,7 +3785,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.931258,
@@ -2981,7 +3796,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.925142,
@@ -2990,7 +3807,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.925047,
@@ -2999,7 +3818,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.935095,
@@ -3008,7 +3829,9 @@
       "operator": "Eldrive",
       "power_kw": 50.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.340993,
@@ -3017,7 +3840,9 @@
       "operator": "Elektrum",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.768106,
@@ -3026,7 +3851,9 @@
       "operator": "Eldrive",
       "power_kw": 200.0,
       "price": null,
-      "sockets": 20
+      "sockets": 20,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.954179,
@@ -3035,16 +3862,9 @@
       "operator": "Ignitis ON",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.753114,
-      "lon": 25.28213,
-      "name": "Ignitis",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.715331,
@@ -3053,7 +3873,9 @@
       "operator": "Neste",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.561408,
@@ -3062,7 +3884,9 @@
       "operator": "Enefit",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.400143,
@@ -3071,7 +3895,9 @@
       "operator": "Latvenergo AS",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.464382,
@@ -3080,7 +3906,9 @@
       "operator": "Inbalance grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.715204,
@@ -3089,7 +3917,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.07909,
@@ -3098,7 +3928,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.70658,
@@ -3107,7 +3939,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.723769,
@@ -3116,7 +3950,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.72377,
@@ -3125,7 +3961,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.711352,
@@ -3134,7 +3972,9 @@
       "operator": "Eldrive",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.252853,
@@ -3143,7 +3983,9 @@
       "operator": "Elektrum",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.252093,
@@ -3152,7 +3994,9 @@
       "operator": "Elektrum",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.517181,
@@ -3161,7 +4005,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.623164,
@@ -3170,7 +4016,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.37843,
@@ -3179,7 +4027,9 @@
       "operator": "Elektrum",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.461541,
@@ -3188,34 +4038,9 @@
       "operator": "Inbalancegrid",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.724215,
-      "lon": 25.254718,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.724189,
-      "lon": 25.254717,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.724167,
-      "lon": 25.254717,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.252983,
@@ -3224,7 +4049,9 @@
       "operator": "Elektrum",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.923662,
@@ -3233,7 +4060,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.923648,
@@ -3242,7 +4071,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.677499,
@@ -3250,8 +4081,10 @@
       "name": "UAB Vilniaus apšvietimas",
       "operator": "UAB Vilniaus apšvietimas",
       "power_kw": 7.0,
-      "price": 0.29,
-      "sockets": 1
+      "price": null,
+      "sockets": 1,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.677608,
@@ -3259,8 +4092,10 @@
       "name": "UAB Vilniaus apšvietimas",
       "operator": "UAB Vilniaus apšvietimas",
       "power_kw": 7.0,
-      "price": 0.29,
-      "sockets": 1
+      "price": null,
+      "sockets": 1,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.67694,
@@ -3268,8 +4103,10 @@
       "name": "UAB Vilniaus apšvietimas",
       "operator": "UAB Vilniaus apšvietimas",
       "power_kw": 7.0,
-      "price": 0.29,
-      "sockets": 1
+      "price": null,
+      "sockets": 1,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.677017,
@@ -3277,8 +4114,10 @@
       "name": "UAB Vilniaus apšvietimas",
       "operator": "UAB Vilniaus apšvietimas",
       "power_kw": 7.0,
-      "price": 0.29,
-      "sockets": 1
+      "price": null,
+      "sockets": 1,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.734312,
@@ -3287,16 +4126,9 @@
       "operator": "Inbalance grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.73193,
-      "lon": 25.247001,
-      "name": "Eldrive",
-      "operator": "Eldrive",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.728034,
@@ -3305,7 +4137,9 @@
       "operator": "Eleport",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.717229,
@@ -3314,7 +4148,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.718289,
@@ -3323,7 +4159,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.733801,
@@ -3332,25 +4170,9 @@
       "operator": "Inbalance grid",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.729826,
-      "lon": 25.245899,
-      "name": "Elinta Charge",
-      "operator": "Elinta Charge",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.653286,
-      "lon": 25.278887,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.342539,
@@ -3359,7 +4181,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.81278,
@@ -3368,7 +4192,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 56.24112,
@@ -3377,7 +4203,9 @@
       "operator": "Ignitis ON",
       "power_kw": 180.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.039261,
@@ -3386,7 +4214,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.046055,
@@ -3395,7 +4225,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.046088,
@@ -3404,7 +4236,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.038373,
@@ -3413,7 +4247,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.038338,
@@ -3422,7 +4258,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.03707,
@@ -3431,7 +4269,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.670707,
@@ -3440,7 +4280,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 5
+      "sockets": 5,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.925677,
@@ -3449,7 +4291,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.755891,
@@ -3458,7 +4302,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.668514,
@@ -3467,7 +4313,9 @@
       "operator": "Enefit",
       "power_kw": 320.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.66818,
@@ -3476,7 +4324,9 @@
       "operator": "Enefit",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.669727,
@@ -3485,7 +4335,9 @@
       "operator": "Stuart Energy",
       "power_kw": 300.0,
       "price": null,
-      "sockets": 5
+      "sockets": 5,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.727602,
@@ -3494,7 +4346,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.728825,
@@ -3503,16 +4357,9 @@
       "operator": "Elinta Charge",
       "power_kw": null,
       "price": null,
-      "sockets": null
-    },
-    {
-      "lat": 54.731332,
-      "lon": 25.246531,
-      "name": "eleport",
-      "operator": "eleport",
-      "power_kw": null,
-      "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.929586,
@@ -3521,7 +4368,9 @@
       "operator": "Inbalance",
       "power_kw": 300.0,
       "price": null,
-      "sockets": 3
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.716385,
@@ -3530,7 +4379,9 @@
       "operator": "Unipark",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.627848,
@@ -3539,7 +4390,9 @@
       "operator": "Enefit",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.627866,
@@ -3548,7 +4401,9 @@
       "operator": "Enefit",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.934965,
@@ -3556,8 +4411,10 @@
       "name": "Elektrum",
       "operator": "Elektrum",
       "power_kw": null,
-      "price": 0.44,
-      "sockets": null
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.934929,
@@ -3565,8 +4422,10 @@
       "name": "Elektrum",
       "operator": "Elektrum",
       "power_kw": null,
-      "price": 0.44,
-      "sockets": null
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 55.386001,
@@ -3575,7 +4434,9 @@
       "operator": "Ignitis ON",
       "power_kw": 400.0,
       "price": null,
-      "sockets": 12
+      "sockets": 12,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.909511,
@@ -3584,7 +4445,9 @@
       "operator": "Ignitis ON",
       "power_kw": 200.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.900778,
@@ -3593,7 +4456,9 @@
       "operator": "Ignitis ON",
       "power_kw": 149.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.912521,
@@ -3602,7 +4467,9 @@
       "operator": "Ignitis ON",
       "power_kw": 200.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.915423,
@@ -3611,7 +4478,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.256943,
@@ -3620,7 +4489,9 @@
       "operator": "Ignitis ON",
       "power_kw": 40.0,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.21123,
@@ -3629,7 +4500,9 @@
       "operator": "Ignitis ON",
       "power_kw": 150.0,
       "price": null,
-      "sockets": 4
+      "sockets": 4,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.201734,
@@ -3638,7 +4511,9 @@
       "operator": "Vila Ula",
       "power_kw": null,
       "price": null,
-      "sockets": 2
+      "sockets": 2,
+      "ocpi_id": null,
+      "source": "osm"
     },
     {
       "lat": 54.692954,
@@ -3647,7 +4522,9 @@
       "operator": "",
       "power_kw": null,
       "price": null,
-      "sockets": null
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
     }
   ]
 }

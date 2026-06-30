@@ -14,7 +14,8 @@ let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
-let EV = { chargers: [] };                     // OSM EV charging stations
+let EV = { chargers: [] };                     // EV charging stations (OCPI + OSM)
+let EV_STATUS = {};                            // live occupancy {ocpi_id: {a,t,s}} via Worker proxy
 let fuelType = "petrol95";    // 'petrol95' | 'diesel' | 'lpg' | 'ev'
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
 let view = "list";            // 'list' | 'map'
@@ -43,6 +44,7 @@ async function load() {
     await loadReports();
     await loadOrlenWholesale();
     await loadEv();
+    await loadEvStatus();
     initMunicipalities();
     updateChrome();
     render();
@@ -89,6 +91,31 @@ async function loadEv() {
 
 // --- EV charging mode (fuelType === "ev") -----------------------------------
 
+// Live occupancy via the Worker proxy (the OCPI source blocks browser CORS).
+async function loadEvStatus() {
+    if (!REPORT_API) return;
+    try {
+        const res = await fetch(REPORT_API + "/ev-status", { cache: "no-store" });
+        EV_STATUS = res.ok ? await res.json() : {};
+    } catch (e) { EV_STATUS = {}; }
+}
+
+function evStatus(c) {
+    return (c.ocpi_id && EV_STATUS[c.ocpi_id]) || null;
+}
+
+function evStatusBadge(c) {
+    const st = evStatus(c);
+    if (!st) return "";
+    const m = {
+        available: ["🟢", `Laisva ${st.a}/${st.t}`],
+        busy:      ["🔴", `Užimta (0/${st.t})`],
+        down:      ["⚫", "Neveikia"],
+        unknown:   ["⚪", "Būsena nežinoma"],
+    }[st.s] || ["⚪", ""];
+    return `<span class="ev-status ev-${st.s}">${m[0]} ${m[1]}</span>`;
+}
+
 function getChargers() {
     const q = (document.getElementById("search").value || "").toLowerCase().trim();
     let rows = (EV.chargers || []).filter(c => c.lat != null && c.lon != null);
@@ -101,7 +128,6 @@ function getChargers() {
 
 function evInfo(c) {
     return [c.power_kw ? `${c.power_kw} kW` : null,
-            c.price != null ? `€${c.price.toFixed(2)}/kWh` : null,
             c.sockets ? `${c.sockets} jungtys` : null].filter(Boolean).join(" · ");
 }
 
@@ -114,10 +140,13 @@ function evNav(c) {
 function renderSummaryEv() {
     const box = document.getElementById("summary");
     box.style.display = "block";
+    const total = (EV.chargers || []).length;
     const priced = (EV.chargers || []).filter(c => c.price != null).length;
-    box.innerHTML = `<div class="summary-title">⚡ Elektromobilių įkrovimo stotelės (${(EV.chargers || []).length})</div>
-        <div class="wholesale-ref">Šaltinis: OpenStreetMap · operatorius/galingumas – kur nurodyta;
-        kaina (€/kWh) prieinama tik ${priced} stotelėms (LT tinklai jos beveik neskelbia).</div>`;
+    const live = Object.keys(EV_STATUS).length;
+    box.innerHTML = `<div class="summary-title">⚡ Elektromobilių įkrovimo stotelės (${total})</div>
+        <div class="wholesale-ref">Šaltiniai: <b>Via Lietuva</b> (oficiali AFIR) + OpenStreetMap ·
+        kaina (€/kWh): ${priced} stotelės ·
+        ${live ? `užimtumas realiu laiku 🟢🔴: ${live} stotelės` : "realaus laiko užimtumas – kai įjungtas Worker"}</div>`;
 }
 
 function renderListEv() {
@@ -128,8 +157,9 @@ function renderListEv() {
         rows.map(c => {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
+            const badge = evStatusBadge(c);
             return `<div class="station-card">
-                ${dist}
+                ${dist}${badge}
                 <div class="station-header">
                     <div class="station-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
                     ${c.price != null ? `<div><span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span></div>` : ""}
@@ -148,9 +178,14 @@ function renderMapEv() {
     const rows = getChargers();
     const bounds = [];
     rows.forEach(c => {
-        const icon = L.divIcon({ className: "", html: `<div class="ev-pin">⚡</div>`, iconSize: null, iconAnchor: [11, 11] });
+        const st = evStatus(c);
+        const pinCls = st ? `ev-pin ev-${st.s}` : "ev-pin";
+        const icon = L.divIcon({ className: "", html: `<div class="${pinCls}">⚡</div>`, iconSize: null, iconAnchor: [11, 11] });
         const info = evInfo(c);
+        const badge = evStatusBadge(c);
         const popup = `<div class="popup-name">⚡ ${c.operator || c.name || "Įkrovimo stotelė"}</div>
+            ${badge ? `<div>${badge}</div>` : ""}
+            ${c.price != null ? `<div class="popup-price">€${c.price.toFixed(2)}/kWh</div>` : ""}
             ${info ? `<div>${info}</div>` : ""}
             <div class="popup-nav">${evNav(c)}</div>`;
         L.marker([c.lat, c.lon], { icon }).bindPopup(popup, { minWidth: 200 }).addTo(markersLayer);
@@ -229,6 +264,7 @@ function selectFuel(f) {
     document.querySelectorAll(".fuel-btn").forEach(b => b.classList.remove("active"));
     document.getElementById("btn-" + f).classList.add("active");
     render();
+    if (f === "ev" && REPORT_API) loadEvStatus().then(render);   // refresh live occupancy
 }
 
 function setSort(dir) {

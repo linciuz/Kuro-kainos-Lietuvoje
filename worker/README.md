@@ -37,6 +37,10 @@ app works exactly as before.
 
 - `GET  /reports` → `{ "network|address|municipality": { "petrol95": {price, ts}, ... } }`
 - `POST /report`  `{ station, fuel, price }` → stores it (validates fuel + 0.3–3.5 €/L range)
+- `GET  /ev-status` → live EV occupancy `{ "<ocpi_id>": {a, t, s} }` (a=available,
+  t=total, s=available|busy|down). Proxies Lithuania's official OCPI feed
+  (`ev.vialietuva.lt`), which is open but blocks browser CORS. Edge-cached ~45s.
 
 Reports are advisory: the app shows a reported price with a caveat and lets the
-next official LEA update supersede it. Stored values expire after 48h.
+next official LEA update supersede it. Stored values expire after 48h. Once the
+Worker URL is in `REPORT_API`, the EV tab also shows 🟢/🔴 live availability.
