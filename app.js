@@ -96,6 +96,25 @@ async function loadEv() {
         const res = await fetch("data/sources/ev_chargers.json", { cache: "no-store" });
         EV = res.ok ? await res.json() : { chargers: [] };
     } catch (e) { EV = { chargers: [] }; }
+    tagChargerMunicipalities();
+}
+
+// Tag each charger with the municipality of its nearest fuel station, so the
+// municipality filter (manual or auto-from-location) narrows the EV list too.
+function tagChargerMunicipalities() {
+    const stations = (DATA.stations || []).filter(s => s.lat != null && s.lon != null && s.municipality);
+    if (!stations.length) return;
+    for (const c of (EV.chargers || [])) {
+        if (c.lat == null || c.lon == null) { c._muni = null; continue; }
+        const cosLat = Math.cos(c.lat * Math.PI / 180);
+        let best = null, bestD = Infinity;
+        for (const s of stations) {
+            const dlat = s.lat - c.lat, dlon = (s.lon - c.lon) * cosLat;
+            const d = dlat * dlat + dlon * dlon;   // squared planar dist (no trig) — only need nearest
+            if (d < bestD) { bestD = d; best = s.municipality; }
+        }
+        c._muni = best;
+    }
 }
 
 // --- EV charging mode (fuelType === "ev") -----------------------------------
@@ -126,8 +145,10 @@ function evStatusBadge(c) {
 }
 
 function getChargers() {
+    const muni = document.getElementById("muni-select").value;
     const q = (document.getElementById("search").value || "").toLowerCase().trim();
     let rows = (EV.chargers || []).filter(c => c.lat != null && c.lon != null);
+    if (muni) rows = rows.filter(c => c._muni === muni);
     if (q) rows = rows.filter(c => ((c.operator || "") + " " + (c.name || "")).toLowerCase().includes(q));
     if (userPos) rows.forEach(c => c._dist = haversine(userPos.lat, userPos.lon, c.lat, c.lon));
     if (userPos) rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
@@ -502,7 +523,7 @@ function renderList() {
             const isBest = s[fuelType] === best;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
-            const approxTag = s.approx ? ' <span class="approx-tag">vieta apytikslė · gali būti kitur</span>' : "";
+            const approxTag = s.approx ? ' <span class="approx-tag">lokacija gali būti netiksli - prieš vykstant pasitikslinti!</span>' : "";
             const fl = flagFor(s);
             const flagLine = fl ? `<div class="change-flag">⚠️ Kaina galėjo pasikeisti nuo 10:00 —
                 ${fl.source} tinkle ${fl.direction === "down" ? "pigiau" : "brangiau"}: €${fl.live.toFixed(3)}/L</div>` : "";
@@ -570,7 +591,7 @@ function renderMap() {
             iconSize: null, iconAnchor: [22, 12]
         });
         const dist = (userPos && s._dist != null) ? `<br>📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}` : "";
-        const approxNote = s.approx ? `<br><span style="color:#b3792f">⚠️ vieta apytikslė — tikroji gali būti kitur (navigacija veda pagal adresą)</span>` : "";
+        const approxNote = s.approx ? `<br><span style="color:#b3792f">⚠️ lokacija gali būti netiksli - prieš vykstant pasitikslinti!</span>` : "";
         const popup = `<div class="popup-name">${s.network || "Degalinė"}</div>
             <div>${s.address || ""}</div>
             <div class="popup-price">${FUEL_LABELS[fuelType]}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
