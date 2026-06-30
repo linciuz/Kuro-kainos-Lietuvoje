@@ -181,6 +181,16 @@ def main():
     except Exception as e:
         print(f"[warn] OSM fetch failed: {e}")
         osm = []
+    if not osm:
+        # Overpass is flaky (often 504s from CI). Keep the last-committed OSM
+        # locations rather than shrinking the map (OCPI stays authoritative).
+        try:
+            prev = json.load(open(OUT, encoding="utf-8")).get("chargers", [])
+            osm = [c for c in prev if c.get("source") == "osm"]
+            if osm:
+                print(f"[warn] OSM empty — keeping {len(osm)} previously-committed OSM chargers")
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
 
     # OCPI is authoritative (price + live status). Add OSM chargers only where
     # there isn't already an OCPI charger within ~150 m.

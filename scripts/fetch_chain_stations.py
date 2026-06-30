@@ -163,22 +163,45 @@ CHAINS = [
 ]
 
 
+def load_existing_by_network():
+    """Previously-committed directory, grouped by network, for per-chain fallback."""
+    try:
+        data = json.load(open(OUT, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    by_net = {}
+    for s in data.get("stations", []):
+        by_net.setdefault(s.get("network"), []).append(s)
+    return by_net
+
+
 def main():
+    # Some chain endpoints (e.g. Baltic Petroleum's FSCC API, Viada's site) return
+    # 403/empty from datacenter IPs like GitHub Actions runners. So for any chain
+    # that fails or returns nothing THIS run, fall back to its previously-committed
+    # data instead of dropping it — a per-network outage never loses coordinates.
+    existing = load_existing_by_network()
     stations = []
     for name, fn in CHAINS:
+        got = []
         try:
             got = fn()
-            print(f"[ok] {name}: {len(got)} stations")
-            stations += got
         except Exception as e:
             print(f"[warn] {name} failed: {e}")
+        if got:
+            print(f"[ok] {name}: {len(got)} stations")
+            stations += got
+        else:
+            prev = existing.get(name, [])
+            if prev:
+                print(f"[warn] {name}: fetch empty/failed — keeping {len(prev)} previously-committed stations")
+                stations += prev
+            else:
+                print(f"[warn] {name}: no data this run and none committed before")
 
-    # Never overwrite the committed directory with an empty/collapsed result
-    # (e.g. a transient outage taking out every chain at once) — abort and keep
-    # the last good file instead.
+    # Total-collapse guard: never write a near-empty file (would clobber good data).
     if len(stations) < 50:
-        print(f"[error] only {len(stations)} chain stations collected — too few; "
-              f"aborting WITHOUT writing so the last good file survives.")
+        print(f"[error] only {len(stations)} chain stations — aborting WITHOUT writing.")
         sys.exit(2)
 
     payload = {

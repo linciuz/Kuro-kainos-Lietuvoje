@@ -1,12 +1,774 @@
 {
-  "generated": "2026-06-30T17:00:24Z",
-  "count": 272,
+  "generated": "2026-06-30T17:06:45Z",
+  "count": 509,
   "networks": [
+    "Baltic Petroleum",
     "Circle K",
     "Emsi",
-    "Neste"
+    "Neste",
+    "Viada"
   ],
   "stations": [
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolė, P.Armino g. 69",
+      "city": "Marijampolė",
+      "lat": 54.533904,
+      "lon": 23.353163,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Respublikos g. 113 B, Rokiškis,  Lietuva",
+      "city": "Rokiškis",
+      "lat": 55.946755,
+      "lon": 25.590818,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkai, Leipalingio g. 26",
+      "city": "Druskininkai",
+      "lat": 54.030364,
+      "lon": 23.983674,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Metalo g. 4B",
+      "city": "Vilnius",
+      "lat": 54.640438,
+      "lon": 25.267512,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kauno r. Vilkijos sen., Jaučiakių k.",
+      "city": "Jaučiakių k.",
+      "lat": 55.038374,
+      "lon": 23.607911,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Nida, Nidos - Smiltynės pl. 6",
+      "city": "Nida",
+      "lat": 55.300905,
+      "lon": 20.979956,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Jonavos g. 60A",
+      "city": "Kaunas",
+      "lat": 54.905045,
+      "lon": 23.89955,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkai, Gardino g. 79",
+      "city": "Druskininkai",
+      "lat": 53.99993,
+      "lon": 23.988055,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Prienų r. sav., Veiverių k.",
+      "city": "Veiverių k.",
+      "lat": 54.760985,
+      "lon": 23.713228,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonava, Žemaitės g. 1",
+      "city": "Jonava",
+      "lat": 55.082541,
+      "lon": 24.270744,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėdos r., Sav., Gargždai, Dariaus ir Girėno g.",
+      "city": "Gargždai",
+      "lat": 55.7076,
+      "lon": 21.38056,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Skuodas, Vytauto g. 22",
+      "city": "Skuodas",
+      "lat": 56.259168,
+      "lon": 21.530562,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, H. ir O. Minkovskiu g. 132",
+      "city": "Kaunas",
+      "lat": 54.885791,
+      "lon": 23.912009,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kelmė, V. Putvinskio g. 29",
+      "city": "Kelmė",
+      "lat": 55.641154,
+      "lon": 22.92719,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Alytaus r., Likiškėlių k., Senojo Plento g. 1G",
+      "city": "Likiškėlių k.",
+      "lat": 54.387895,
+      "lon": 23.996028,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Telšių r. sav., Varnių sen., Ožtakių k., Dariaus ir Girėno g. 77",
+      "city": "Ožtakių k.",
+      "lat": 55.730402,
+      "lon": 22.376796,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Tauragės r. sav., Tauragės sen., Taurų k., Tilžės pl. 36",
+      "city": "Taurų k.",
+      "lat": 55.243335,
+      "lon": 22.252982,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+      "city": "Aukštikalnių k.",
+      "lat": 56.070646,
+      "lon": 24.41062,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškis, Šiauliu g. 1A",
+      "city": "Radviliškis",
+      "lat": 55.825541,
+      "lon": 23.523356,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonavos r., Spanėnų k., Plento g. 46",
+      "city": "Spanėnų k.",
+      "lat": 55.058167,
+      "lon": 24.263538,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėnos r. sav., Senoji Varėna, Vilniaus g. 6A",
+      "city": "Senoji Varėna",
+      "lat": 54.25656,
+      "lon": 24.547038,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipeda, Šilutes pl. 1",
+      "city": "Klaipeda",
+      "lat": 55.704933,
+      "lon": 21.163291,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Joniškis, Vilniaus g. 72",
+      "city": "Joniškis",
+      "lat": 56.223278,
+      "lon": 23.597525,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kalvarijos sav., Pasiekų k., Europos g. 12",
+      "city": "Pasiekų k.",
+      "lat": 54.322374,
+      "lon": 23.145167,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolė, Vasaros g. 15",
+      "city": "Marijampolė",
+      "lat": 54.555636,
+      "lon": 23.375454,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Visalaukio g. 2",
+      "city": "Vilnius",
+      "lat": 54.779287,
+      "lon": 25.341874,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Kalvarijų g. 161A",
+      "city": "Vilnius",
+      "lat": 54.723999,
+      "lon": 25.282324,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilalė, Rytinio kelio g. 2",
+      "city": "Šilalė",
+      "lat": 55.490035,
+      "lon": 22.199784,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Savanorių pr. 121",
+      "city": "Vilnius",
+      "lat": 54.660926,
+      "lon": 25.233389,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Rokiškio r. sav., Pandėlio k., Elektrinės g. 1",
+      "city": "Pandėlio k.",
+      "lat": 56.0192,
+      "lon": 25.222228,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėdos r. sav., Priekulė, Klaipėdos g. 61",
+      "city": "Priekulė",
+      "lat": 55.562062,
+      "lon": 21.308618,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėnos r. sav., Merkinė, Vilniaus g. 87",
+      "city": "Merkinė",
+      "lat": 54.169021,
+      "lon": 24.207974,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Ukmergė, Kauno g. 49",
+      "city": "Ukmergė",
+      "lat": 55.240854,
+      "lon": 24.73959,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kauno r. Garliavos sen., Pagirių k., Marijampolės g. 1",
+      "city": "Pagirių k.",
+      "lat": 54.814628,
+      "lon": 23.87254,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Plungės r. sav., Plateliai, Žemaičių Kalvarijos g. 1A",
+      "city": "Plateliai",
+      "lat": 56.043869,
+      "lon": 21.815653,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškis, Miško g. 64",
+      "city": "Radviliškis",
+      "lat": 55.800801,
+      "lon": 23.565702,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vienuolio g. 34A, Anykšciai,  Lietuva",
+      "city": "Anykščiai",
+      "lat": 55.522582,
+      "lon": 25.08799,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Palanga, Ganyklų g. 28C",
+      "city": "Palanga",
+      "lat": 55.923324,
+      "lon": 21.075206,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Trakai, Vilniaus g. 33",
+      "city": "Trakai",
+      "lat": 54.62727,
+      "lon": 24.948711,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Zarasų r. sav., Sarakiškių k., Vytauto g. 61",
+      "city": "Sarakiškių k.",
+      "lat": 55.737287,
+      "lon": 26.272834,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Rinktinės g. 59",
+      "city": "Vilnius",
+      "lat": 54.702833,
+      "lon": 25.288126,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Raudondvario pl. 82",
+      "city": "Kaunas",
+      "lat": 54.907738,
+      "lon": 23.874252,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseinių r., Sav., Girkalnio sen., Girkalnio k., Žemaičių g. 39",
+      "city": "Girkalnio k.",
+      "lat": 55.318307,
+      "lon": 23.210769,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šalčininkai, Vilniaus g. 5A",
+      "city": "Šalčininkai",
+      "lat": 54.317842,
+      "lon": 25.381712,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Rietavas, Dariaus ir Girėno g. 19",
+      "city": "Rietavas",
+      "lat": 55.719508,
+      "lon": 21.928083,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šakių r. sav., Griškabūdis, A. Skelčio g. 4",
+      "city": "Griškabūdis",
+      "lat": 54.852382,
+      "lon": 23.176758,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Gerosios Vilties g. 33",
+      "city": "Vilnius",
+      "lat": 54.666834,
+      "lon": 25.251065,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šiauliai, Kupiškio g. 4",
+      "city": "Šiauliai",
+      "lat": 55.957544,
+      "lon": 23.316059,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jurbarko r. sav., Klišių k., Pievų g. 2",
+      "city": "Klišių k.",
+      "lat": 55.098482,
+      "lon": 22.772921,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Molėtai, Vilniaus g. 104",
+      "city": "Molėtai",
+      "lat": 55.217337,
+      "lon": 25.403375,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilniaus r. sav., Šatrininkų sen., Grigaičiai, Pavilnės g. 1",
+      "city": "Grigaičiai",
+      "lat": 54.681567,
+      "lon": 25.412533,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškio r. sav., Užuovėjos k.",
+      "city": "Užuovėjos k.",
+      "lat": 55.763309,
+      "lon": 23.74254,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Širvintos, Musninkų g. 21",
+      "city": "Širvintos",
+      "lat": 55.032222,
+      "lon": 24.967251,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilutė, Klaipėdos g. 4A",
+      "city": "Šilutė",
+      "lat": 55.352837,
+      "lon": 21.462853,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilniaus r. sav., Avižienių sen., Užubalių k., Senasis Ukmergės kelias 4",
+      "city": "Užubalių k.",
+      "lat": 54.768547,
+      "lon": 25.195795,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jurbarkas, Muitinės g. 22A",
+      "city": "Jurbarkas",
+      "lat": 55.078109,
+      "lon": 22.744778,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Bernardo Brazdžionio g. 2",
+      "city": "Vilnius",
+      "lat": 54.6133,
+      "lon": 25.308675,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikių r., Užežerės k., Gardenio g. 39",
+      "city": "Užežerės k.",
+      "lat": 56.163959,
+      "lon": 22.101525,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pakruojis, Statybininkų g. 28",
+      "city": "Pakruojis",
+      "lat": 55.974508,
+      "lon": 23.86893,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, S. Batoro g. 15",
+      "city": "Vilnius",
+      "lat": 54.692192,
+      "lon": 25.346693,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Zarasų r. sav., Padustėlio k., Vytauto Striogos g. 4A",
+      "city": "Padustėlio k.",
+      "lat": 55.740159,
+      "lon": 25.852449,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kėdainiai, J. Basanavičiaus 95B",
+      "city": "Kėdainiai",
+      "lat": 55.276904,
+      "lon": 23.955788,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Tilžės g. 90",
+      "city": "Klaipėda",
+      "lat": 55.700992,
+      "lon": 21.200408,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Zujūnų g. 2A",
+      "city": "Vilnius",
+      "lat": 54.710932,
+      "lon": 25.161516,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kauno r. sav., Ringaudų sen., Ringaudų k., Gėlių g. 1A",
+      "city": "Ringaudų k.",
+      "lat": 54.890013,
+      "lon": 23.806236,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Utena, J. Basanavičiaus 1B",
+      "city": "Utena",
+      "lat": 55.49533,
+      "lon": 25.575028,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Chemijos g. 6",
+      "city": "Kaunas",
+      "lat": 54.9032,
+      "lon": 23.982769,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilniaus r. sav., Nemenčinės sen., Vilkaraisčio k.",
+      "city": "Vilkaraisčio k.",
+      "lat": 54.863291,
+      "lon": 25.490933,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonavos r., Gudžioniu k., Plento g. 24",
+      "city": "Gudžioniu k.",
+      "lat": 55.099135,
+      "lon": 24.31627,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaišiadorių r., Triliškiu k., Kauno pl. 5",
+      "city": "Triliškiu k.",
+      "lat": 54.816962,
+      "lon": 24.436618,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šakiai, Sodų g. 1",
+      "city": "Šakiai",
+      "lat": 54.945754,
+      "lon": 23.04613,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Molėtų pl. 27A",
+      "city": "Vilnius",
+      "lat": 54.767745,
+      "lon": 25.272406,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "N. Akmenė, V. Kudirkos g. 21A",
+      "city": "N. Akmenė",
+      "lat": 56.318461,
+      "lon": 22.885615,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėna, Čiurlionio g. 63",
+      "city": "Varėna",
+      "lat": 54.218274,
+      "lon": 24.566177,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Lazdijai, Turistu g. 88",
+      "city": "Lazdijai",
+      "lat": 54.220722,
+      "lon": 23.508868,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Vaidoto g. 153",
+      "city": "Kaunas",
+      "lat": 54.861298,
+      "lon": 23.958563,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikių r., Sav., Tirkšliai, Laukų g. 10",
+      "city": "Tirkšliai",
+      "lat": 56.262555,
+      "lon": 22.310453,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilalės raj., Laukuvos sen., Bučių k.",
+      "city": "Šilalės raj., Laukuvos sen.",
+      "lat": 55.57018,
+      "lon": 22.17651,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Biržų r., Valantiškio k.",
+      "city": "Valantiškio k.",
+      "lat": 56.197343,
+      "lon": 24.709643,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Telšiai, Šiauliu pl. 12",
+      "city": "Telšiai",
+      "lat": 56.004156,
+      "lon": 22.24464,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Alytus, Santaikos g. 33",
+      "city": "Alytus",
+      "lat": 54.38677,
+      "lon": 24.033208,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseinių r. sav., Kalnujų sen., Kalnujų k. 1",
+      "city": "Kalnujų k. 1",
+      "lat": 55.335647,
+      "lon": 23.102326,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kupiškio r., Noriūnų k., Parko g. 3A",
+      "city": "Noriūnų k.",
+      "lat": 55.796541,
+      "lon": 24.888993,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikiai, M. Daukšos g. 17",
+      "city": "Mažeikiai",
+      "lat": 56.3051,
+      "lon": 22.350699,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevėžys, Smėlynės g. 169",
+      "city": "Panevėžys",
+      "lat": 55.757611,
+      "lon": 24.367739,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolės r., Pietarių k., Kauno g. 164",
+      "city": "Pietarių k.",
+      "lat": 54.586919,
+      "lon": 23.384638,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Palanga, Klaipėdos pl. 44",
+      "city": "Palanga",
+      "lat": 55.915491,
+      "lon": 21.078212,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Liepu g. 79A",
+      "city": "Klaipėda",
+      "lat": 55.720835,
+      "lon": 21.152538,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkų r., Leipalingis, Merkinės g. 37",
+      "city": "Leipalingis",
+      "lat": 54.094631,
+      "lon": 23.871494,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseiniai, Vilniaus g. 30",
+      "city": "Raseiniai",
+      "lat": 55.370856,
+      "lon": 23.133187,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Prienai, Vilniaus g. 3A",
+      "city": "Prienai",
+      "lat": 54.628393,
+      "lon": 23.958325,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Anykščiai, Mindaugo g. 23",
+      "city": "Anykščiai",
+      "lat": 55.508475,
+      "lon": 25.09633,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Taikos pr. 120",
+      "city": "Kaunas",
+      "lat": 54.917432,
+      "lon": 24.034789,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Antakalnio g. 128",
+      "city": "Vilnius",
+      "lat": 54.722219,
+      "lon": 25.317234,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevežys, Velžio kelias 74",
+      "city": "Panevežys",
+      "lat": 55.721941,
+      "lon": 24.391535,
+      "source": "fscc-api"
+    },
     {
       "network": "Emsi",
       "address": "Klevų g. 15, Plungė, Lietuva",
@@ -2182,6 +2944,1142 @@
       "lat": 54.780709,
       "lon": 25.273898,
       "source": "circlek-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.353078,
+      "lon": 20.993042,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.091617,
+      "lon": 26.255493,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.291439,
+      "lon": 23.802543,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.228639,
+      "lon": 23.528411,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.944519,
+      "lon": 25.585662,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.665036,
+      "lon": 25.246407,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.618239,
+      "lon": 22.901322,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.735655,
+      "lon": 25.258598,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.652826,
+      "lon": 25.272062,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.374389,
+      "lon": 23.879683,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.633263,
+      "lon": 25.150814,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.674293,
+      "lon": 25.222756,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.671095,
+      "lon": 25.262262,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.726381,
+      "lon": 25.326531,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.681942,
+      "lon": 25.314018,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.713628,
+      "lon": 25.277135,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.701431,
+      "lon": 25.203618,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.7018,
+      "lon": 25.00856,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.702992,
+      "lon": 25.204186,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.314052,
+      "lon": 24.86977,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.699175,
+      "lon": 25.26008,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.669526,
+      "lon": 25.27915,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.918202,
+      "lon": 24.039726,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.959162,
+      "lon": 23.864342,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.933537,
+      "lon": 23.968512,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.897772,
+      "lon": 23.958195,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.88737,
+      "lon": 23.921353,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.958815,
+      "lon": 24.039164,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.300252,
+      "lon": 22.360673,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.9249,
+      "lon": 23.942603,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.921398,
+      "lon": 23.810331,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.919993,
+      "lon": 23.948992,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.786851,
+      "lon": 24.713782,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.880985,
+      "lon": 24.009786,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.883351,
+      "lon": 23.89362,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.842387,
+      "lon": 23.849624,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.95897,
+      "lon": 23.866724,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.753699,
+      "lon": 21.131399,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.719252,
+      "lon": 21.141439,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.704435,
+      "lon": 21.221757,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.68327,
+      "lon": 21.160516,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.681852,
+      "lon": 21.185393,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.738781,
+      "lon": 24.310191,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.71465,
+      "lon": 24.335082,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.709283,
+      "lon": 24.373641,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.736987,
+      "lon": 24.387165,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.95475,
+      "lon": 23.315799,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.926413,
+      "lon": 23.307517,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.905387,
+      "lon": 23.260267,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.944117,
+      "lon": 23.33112,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.856593,
+      "lon": 25.173694,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.922716,
+      "lon": 23.357888,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.554417,
+      "lon": 23.362278,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.364881,
+      "lon": 24.837355,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.567798,
+      "lon": 23.33954,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.52123,
+      "lon": 24.312942,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.698178,
+      "lon": 23.517555,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.413986,
+      "lon": 24.010062,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.385069,
+      "lon": 24.050295,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.201428,
+      "lon": 24.748893,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.903891,
+      "lon": 23.835379,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.784677,
+      "lon": 24.654136,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.732312,
+      "lon": 21.376033,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.669271,
+      "lon": 25.104758,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.338921,
+      "lon": 26.145658,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.092675,
+      "lon": 24.281952,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.224483,
+      "lon": 23.600756,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.855237,
+      "lon": 24.441801,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.518623,
+      "lon": 23.773686,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.424482,
+      "lon": 23.232087,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.266503,
+      "lon": 22.311473,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.844616,
+      "lon": 24.979101,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.778825,
+      "lon": 24.364255,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.748535,
+      "lon": 24.393312,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.75316,
+      "lon": 24.312296,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.3392,
+      "lon": 23.163159,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.439646,
+      "lon": 25.327296,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.717891,
+      "lon": 26.21375,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.521814,
+      "lon": 25.086034,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.896081,
+      "lon": 21.220954,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.934343,
+      "lon": 25.585701,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.827582,
+      "lon": 21.185074,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.000001,
+      "lon": 22.947693,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.315942,
+      "lon": 22.302418,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.214689,
+      "lon": 25.437878,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.975126,
+      "lon": 25.745001,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.98042,
+      "lon": 23.857616,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.042226,
+      "lon": 24.378448,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.055978,
+      "lon": 24.407271,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.902952,
+      "lon": 21.830134,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.659001,
+      "lon": 23.947111,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.385937,
+      "lon": 22.901688,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.979081,
+      "lon": 23.136134,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.34274,
+      "lon": 21.496553,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.775194,
+      "lon": 24.810293,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.270144,
+      "lon": 21.547151,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.240879,
+      "lon": 22.305234,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.993413,
+      "lon": 22.240148,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.269227,
+      "lon": 24.810176,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.366827,
+      "lon": 24.337458,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.245907,
+      "lon": 24.743056,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.477844,
+      "lon": 25.581493,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.647593,
+      "lon": 23.029146,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.594607,
+      "lon": 26.438792,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.223871,
+      "lon": 25.405884,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.647457,
+      "lon": 25.304067,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.76388,
+      "lon": 25.19763,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.721488,
+      "lon": 25.295135,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.667155,
+      "lon": 25.17435,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.702535,
+      "lon": 25.218837,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.771212,
+      "lon": 24.820776,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.568675,
+      "lon": 22.1775,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.917943,
+      "lon": 23.873742,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.911393,
+      "lon": 24.021123,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.855157,
+      "lon": 24.013174,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.879029,
+      "lon": 23.933678,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.490155,
+      "lon": 25.650845,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.849536,
+      "lon": 23.966766,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.917558,
+      "lon": 23.863454,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.255178,
+      "lon": 25.990643,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.927483,
+      "lon": 24.043117,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.927182,
+      "lon": 23.974693,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.884491,
+      "lon": 23.89482,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.927013,
+      "lon": 23.662037,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.675209,
+      "lon": 21.153005,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.890543,
+      "lon": 21.278423,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.881956,
+      "lon": 23.205613,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.497257,
+      "lon": 25.630563,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.125425,
+      "lon": 26.145594,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.16851,
+      "lon": 26.015011,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.045727,
+      "lon": 24.942613,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.541219,
+      "lon": 25.134763,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.594795,
+      "lon": 26.456705,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.713978,
+      "lon": 23.64982,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.956317,
+      "lon": 23.342812,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.541632,
+      "lon": 24.107633,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 54.774119,
+      "lon": 23.889722,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.703742,
+      "lon": 24.38079,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 56.202143,
+      "lon": 24.737832,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.898651,
+      "lon": 21.840158,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.670113,
+      "lon": 24.349612,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "",
+      "city": "",
+      "lat": 55.633679,
+      "lon": 22.942879,
+      "source": "viada-web"
     }
   ]
 }
