@@ -277,21 +277,25 @@ function updateChrome() {
     }
 }
 
-// Top banner: only the DRASTIC "prices may rise" alert (the persistent weekly
-// average + direction lives in the bottom footer widget below).
+// Top banner: the prominent alert for a DRASTIC weekly move — red when prices
+// are likely to rise, green when likely to drop. Hidden when stable (that's the
+// calm "→ rinka stabili" state shown only in the bottom strip).
 function renderOilBanner() {
     const el = document.getElementById("oil-banner");
     if (!el) return;
-    if (!OIL || fuelType === "ev" || !(OIL.level === "rise" || OIL.level === "strong")) {
-        el.style.display = "none";
-        return;
-    }
-    const wk = OIL.week_change_pct, sign = wk > 0 ? "+" : "";
-    el.className = "oil-banner oil-" + OIL.level;
+    const L = OIL && OIL.level;
+    if (!OIL || fuelType === "ev" || L === "stable") { el.style.display = "none"; return; }
+    const chg = OIL.avg_change_pct, sign = chg > 0 ? "+" : "";
+    const up = (L === "rise" || L === "strong_up");
+    const msg = {
+        strong_up:   "degalų kainos netrukus greičiausiai <b>kils</b>",
+        rise:        "degalų kainos artimiausiu metu gali <b>kilti</b>",
+        fall:        "degalų kainos artimiausiu metu gali <b>mažėti</b>",
+        strong_down: "degalų kainos netrukus greičiausiai <b>mažės</b>",
+    }[L] || "";
+    el.className = "oil-banner " + (up ? "oil-rise" : "oil-fall");
     el.style.display = "block";
-    el.innerHTML = OIL.level === "strong"
-        ? `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos netrukus greičiausiai <b>kils</b>.`
-        : `🛢️ Brent nafta per savaitę <b>${sign}${wk}%</b> → degalų kainos artimiausiu metu gali <b>kilti</b>.`;
+    el.innerHTML = `🛢️ Brent nafta per savaitę <b>${sign}${chg}%</b> → ${msg}.`;
 }
 
 // Bottom footer: always-visible weekly-average Brent price + a direction
@@ -304,11 +308,11 @@ function renderOilFooter() {
     const chg = (OIL.avg_change_pct != null ? OIL.avg_change_pct : OIL.week_change_pct);
     const sign = chg > 0 ? "+" : "";
     const ind = {
-        strong: ["↑", "degalų kainos gali kilti", "up"],
-        rise:   ["↑", "degalų kainos gali kilti", "up"],
-        watch:  ["↗", "galimas kainų kilimas", "up"],
-        fall:   ["↓", "kainos gali mažėti", "down"],
-        stable: ["→", "rinka stabili", "flat"],
+        strong_up:   ["↑", "degalų kainos gali kilti", "up"],
+        rise:        ["↑", "degalų kainos gali kilti", "up"],
+        stable:      ["→", "rinka stabili", "flat"],
+        fall:        ["↓", "degalų kainos gali mažėti", "down"],
+        strong_down: ["↓", "degalų kainos gali mažėti", "down"],
     }[OIL.level] || ["→", "rinka stabili", "flat"];
     el.className = "oil-footer oil-ind-" + ind[2];
     el.style.display = "flex";

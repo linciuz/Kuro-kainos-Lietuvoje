@@ -65,17 +65,20 @@ def main():
     prev_week_avg = round(sum(prev5) / len(prev5), 2)
     avg_chg = round(100 * (week_avg - prev_week_avg) / prev_week_avg, 1)
 
-    # Crude->pump pass-through is partial/lagged, so use a meaningful band.
-    if week_chg >= 8:
-        level = "strong"      # likely rise, strongly
-    elif week_chg >= 5:
-        level = "rise"        # fuel prices may rise
-    elif week_chg >= 3:
-        level = "watch"
-    elif week_chg <= -5:
-        level = "fall"        # may fall
+    # Symmetric ±5% bands on the SAME smoothed week-over-week AVERAGE change the
+    # app shows: >= +5% likely pushes fuel prices UP, <= -5% DOWN, and in between
+    # (-5%..+5%) the market is stable. Stronger wording past ±8%.
+    ac = avg_chg
+    if ac >= 8:
+        level = "strong_up"      # prices likely to rise
+    elif ac >= 5:
+        level = "rise"           # prices may rise
+    elif ac <= -8:
+        level = "strong_down"    # prices likely to drop
+    elif ac <= -5:
+        level = "fall"           # prices may drop
     else:
-        level = "stable"
+        level = "stable"         # -5% .. +5%
 
     payload = {
         "updated": dt.date.today().isoformat(),
