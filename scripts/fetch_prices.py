@@ -33,6 +33,14 @@ import sys
 import requests
 from openpyxl import load_workbook
 
+# Make stdout/stderr UTF-8 so Lithuanian text in the logs doesn't crash on a
+# Windows console (cp1252). No-op where stdout is already UTF-8 (e.g. CI).
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 PAGE_URL = "https://www.ena.lt/degalu-kainos-degalinese/"
 OUT_PATH = os.path.join("data", "stations.json")
 DEBUG_HEADERS_PATH = os.path.join("data", "_debug_headers.json")
@@ -42,9 +50,12 @@ UA = "Mozilla/5.0 (compatible; KuroKainosBot/1.0; +https://github.com/)"
 # Excel header text. Extend these lists if the log shows unmapped columns.
 KEYWORDS = {
     "network":      ["tinkl", "imone", "prekes zenkl", "operatorius", "brand"],
-    "address":      ["adres", "gatve", "degalines pavadinim", "vieta"],
+    # NB: no bare "vieta" here - the LEA file has two "Degalines vieta (...)"
+    # columns (Savivaldybe and Gyvenviete, gatve); "vieta" would greedily grab
+    # the savivaldybe column and steal it from `municipality`.
+    "address":      ["gatve", "gyvenviet", "adres", "degalines pavadinim"],
     "municipality": ["savivaldyb"],
-    "locality":     ["gyvenviet", "miest", "kaim"],
+    "locality":     ["miest", "kaim"],
     "fuel":         ["degalu rus", "kuro rus", "produkt", "rusis"],   # long-format fuel column
     "price":        ["kaina"],                                        # long-format single price column
 }
@@ -86,11 +97,37 @@ def find_latest_excel_link(html):
     return links[0]
 
 
+def _looks_like_xlsx(content):
+    # .xlsx is a zip; it always starts with the PK signature.
+    return content[:2] == b"PK"
+
+
 def download_shared_xlsx(share_url):
-    """Download an anonymously-shared SharePoint/OneDrive file."""
+    """Download an anonymously-shared SharePoint/OneDrive file.
+
+    Primary method (works for SharePoint Online tenant share links like
+    ltenergagen.sharepoint.com/:x:/...): append download=1 to the share URL,
+    which makes SharePoint stream the raw file and follow redirects to it.
+    Falls back to the consumer OneDrive shares API for personal-OneDrive links.
+    """
+    headers = {"User-Agent": UA}
+
+    # Primary: download=1 on the share link itself (keeps the ?e= access token).
+    sep = "&" if "?" in share_url else "?"
+    direct = share_url + sep + "download=1"
+    try:
+        r = requests.get(direct, headers=headers, allow_redirects=True, timeout=60)
+        if r.status_code == 200 and _looks_like_xlsx(r.content):
+            return r.content
+        print(f"[warn] download=1 returned status={r.status_code} "
+              f"ct={r.headers.get('content-type','')[:40]} - trying fallback")
+    except requests.RequestException as e:
+        print(f"[warn] download=1 request failed: {e} - trying fallback")
+
+    # Fallback: consumer OneDrive shares API (u! base64 of the share URL).
     enc = base64.urlsafe_b64encode(share_url.encode()).decode().rstrip("=")
     api = f"https://api.onedrive.com/v1.0/shares/u!{enc}/driveItem/content"
-    r = requests.get(api, headers={"User-Agent": UA}, allow_redirects=True, timeout=60)
+    r = requests.get(api, headers=headers, allow_redirects=True, timeout=60)
     r.raise_for_status()
     return r.content
 
@@ -106,24 +143,44 @@ def header_row_index(ws, max_scan=15):
 
 
 def map_columns(headers):
-    """Map column index -> our field name, using KEYWORDS."""
+    """Map column index -> our field name, using KEYWORDS.
+
+    Each column is assigned to at most one role (first match wins) so a single
+    column can't satisfy two fields - e.g. the savivaldybe column being read as
+    both `address` and `municipality`, which would corrupt the per-station key
+    and silently merge distinct stations.
+    """
     mapping = {}
     fuel_cols = {}
+    used = set()
+
+    # Pass 1: wide-format fuel price columns (only if "kaina" or a fuel word present).
     for idx, h in enumerate(headers):
         hd = deaccent(str(h))
         if not hd.strip():
             continue
-        # wide-format fuel price columns (only if the word "kaina" or a fuel word present)
         for fuel, kws in FUEL_COLUMN_KEYWORDS.items():
+            if fuel in fuel_cols:
+                continue
             if any(k in hd for k in kws) and ("kaina" in hd or any(
                     f in hd for f in ["benzin", "dyzel", "dujos", "snd", "lpg"])):
-                fuel_cols.setdefault(fuel, idx)
-        # generic fields
+                fuel_cols[fuel] = idx
+                used.add(idx)
+
+    # Pass 2: generic text fields, each column claimed by at most one field.
+    for idx, h in enumerate(headers):
+        if idx in used:
+            continue
+        hd = deaccent(str(h))
+        if not hd.strip():
+            continue
         for field, kws in KEYWORDS.items():
             if field in mapping:
                 continue
             if any(k in hd for k in kws):
                 mapping[field] = idx
+                used.add(idx)
+                break
     return mapping, fuel_cols
 
 
@@ -170,16 +227,28 @@ def parse_workbook(xbytes):
     def key(net, addr, muni):
         return f"{net}|{addr}|{muni}"
 
+    def cell(r, field):
+        """Value of `field`'s column for row r, as a clean string ('' if blank).
+        Blank Excel cells are None; without this they'd become the literal
+        string 'None' and leak in as fake stations (e.g. footer rows)."""
+        idx = mapping.get(field)
+        if idx is None or idx >= len(r):
+            return ""
+        v = r[idx]
+        return "" if v is None else str(v).strip()
+
     if fuel_cols:
         # WIDE format: one row per station, a price column per fuel
         for r in data_rows:
             if not r or all(c in (None, "") for c in r):
                 continue
-            net = str(r[mapping["network"]]).strip() if "network" in mapping and mapping["network"] < len(r) else ""
-            addr = str(r[mapping["address"]]).strip() if "address" in mapping and mapping["address"] < len(r) else ""
-            muni = str(r[mapping["municipality"]]).strip() if "municipality" in mapping and mapping["municipality"] < len(r) else ""
-            loc = str(r[mapping["locality"]]).strip() if "locality" in mapping and mapping["locality"] < len(r) else ""
-            if not (net or addr):
+            net = cell(r, "network")
+            addr = cell(r, "address")
+            muni = cell(r, "municipality")
+            loc = cell(r, "locality")
+            # A real station always has a company; blank-company rows are the
+            # spreadsheet's footer (national average / "Duomenys: N degalines").
+            if not net:
                 continue
             st = stations.setdefault(key(net, addr, muni), {
                 "network": net, "address": addr, "municipality": muni,
@@ -198,13 +267,13 @@ def parse_workbook(xbytes):
         for r in data_rows:
             if not r or all(c in (None, "") for c in r):
                 continue
-            net = str(r[mapping["network"]]).strip() if "network" in mapping and mapping["network"] < len(r) else ""
-            addr = str(r[mapping["address"]]).strip() if "address" in mapping and mapping["address"] < len(r) else ""
-            muni = str(r[mapping["municipality"]]).strip() if "municipality" in mapping and mapping["municipality"] < len(r) else ""
-            loc = str(r[mapping["locality"]]).strip() if "locality" in mapping and mapping["locality"] < len(r) else ""
-            fuel_raw = deaccent(str(r[mapping["fuel"]])) if mapping["fuel"] < len(r) else ""
+            net = cell(r, "network")
+            addr = cell(r, "address")
+            muni = cell(r, "municipality")
+            loc = cell(r, "locality")
+            fuel_raw = deaccent(cell(r, "fuel"))
             price = to_float(r[mapping["price"]]) if mapping["price"] < len(r) else None
-            if not (net or addr) or price is None:
+            if not net or price is None:
                 continue
             fuel = None
             for fk, kws in FUEL_VALUE_KEYWORDS.items():

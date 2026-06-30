@@ -1,12 +1,6930 @@
 {
-  "updated": "2026-06-16",
+  "updated": "2026-06-30",
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://www.ena.lt/degalu-kainos-degalinese/",
-  "note": "Pradiniai duomenys - oficialūs šalies vidurkiai. Visų degalinių sąrašas atsiras po pirmo automatinio atnaujinimo.",
   "summary": {
-    "petrol95": { "min": 1.629, "avg": 1.832, "max": 1.94 },
-    "diesel": { "min": 1.699, "avg": 1.89, "max": 1.999 },
-    "lpg": { "min": 0.7, "avg": 0.831, "max": 0.969 }
+    "petrol95": {
+      "min": 1.69,
+      "avg": 1.864,
+      "max": 1.984,
+      "count": 733
+    },
+    "diesel": {
+      "min": 1.839,
+      "avg": 2.002,
+      "max": 2.12,
+      "count": 735
+    },
+    "lpg": {
+      "min": 0.79,
+      "avg": 0.909,
+      "max": 0.999,
+      "count": 603
+    }
   },
-  "stations": []
+  "stations": [
+    {
+      "network": "Baltic Petroleum",
+      "address": "N. Akmenė, V. Kudirkos g. 21A",
+      "municipality": "Akmenės r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.959,
+      "lpg": 0.86
+    },
+    {
+      "network": "Eniris",
+      "address": "Plento g.2, Ventos m.",
+      "municipality": "Akmenės r. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.919,
+      "lpg": 0.899
+    },
+    {
+      "network": "Eniris",
+      "address": "Skabeikių k. 4",
+      "municipality": "Akmenės r. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.919,
+      "lpg": 0.879
+    },
+    {
+      "network": "Saurida",
+      "address": "Naujoji Akmenė V. Kudirkos 18A",
+      "municipality": "Akmenės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Akmenės I kaimas Plento g. 1",
+      "municipality": "Akmenės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Pašakarnių km. Pašakarnių g. 1",
+      "municipality": "Akmenės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Alytus, Santaikos g. 33",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.859
+    },
+    {
+      "network": "Circle K",
+      "address": "Naujoji g. 120, Alytus",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.99,
+      "lpg": 0.919
+    },
+    {
+      "network": "Circle K",
+      "address": "Rūtų g. 2B, Alytus",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.059,
+      "lpg": 0.919
+    },
+    {
+      "network": "Emsi",
+      "address": "Ūdrijos g.2, Alytus",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.93,
+      "lpg": 0.86
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Santaikos g. 34A, Alytus",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Ūdrijos g. 31, Alytus",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Kauno g. 73, Alytus",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.979,
+      "lpg": 0.869
+    },
+    {
+      "network": "Saurida",
+      "address": "Alytus Miškininkų g. 7",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": null
+    },
+    {
+      "network": "Saurida",
+      "address": "Alytus Pramonės g. 5",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Viada",
+      "address": "Alytus, Naujoji g. 27",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.059,
+      "lpg": 0.919
+    },
+    {
+      "network": "Viada",
+      "address": "Alytus, Ulonų g. 33B",
+      "municipality": "Alytaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.059,
+      "lpg": 0.919
+    },
+    {
+      "network": "Alauša",
+      "address": "Santaikos g. 2A, Santaikos k.",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Likiškėlių k.",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.959,
+      "lpg": 0.889
+    },
+    {
+      "network": "Skulas",
+      "address": "Simnas, Alytaus g. 48",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.97,
+      "lpg": 0.89
+    },
+    {
+      "network": "Skulas",
+      "address": "Likiškėlių k., Kalninės g. 5",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.96,
+      "lpg": 0.88
+    },
+    {
+      "network": "Stateta",
+      "address": "Alytaus k.",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Stateta",
+      "address": "Kauno g.1, Miklusėnai",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Stateta",
+      "address": "Kaniukų k.",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Daugų k., Neveiglo g. 25",
+      "municipality": "Alytaus r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.939
+    },
+    {
+      "network": "Alauša",
+      "address": "Bajorų k.",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.949,
+      "lpg": 0.879
+    },
+    {
+      "network": "Alauša",
+      "address": "A. Vienuolio g. 32A, Anykščiai",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.754,
+      "diesel": 1.954,
+      "lpg": 0.849
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Anykščiai, Mindaugo g. 23",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.959,
+      "lpg": 0.849
+    },
+    {
+      "network": "Degta",
+      "address": "Anykščiai, Vienuolio g. 34A",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "network": "Narjanta",
+      "address": "Pumpučių g. 25, Pumpučiai",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 2.019,
+      "lpg": 0.949
+    },
+    {
+      "network": "Narjanta",
+      "address": "Sausalaukės k. 2",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.819,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Narjanta",
+      "address": "Vilniaus g. 32, Troškūnai",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Anykščiai, A. Vienuolio g. 34",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.059,
+      "lpg": 0.939
+    },
+    {
+      "network": "Viada",
+      "address": "Anykščiai, Piliakalnio g. 9",
+      "municipality": "Anykščių r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.059,
+      "lpg": 0.939
+    },
+    {
+      "network": "Borusta",
+      "address": "Prienų g. 14, Birštonas",
+      "municipality": "Birštono sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.909
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Valantiškio k.",
+      "municipality": "Biržų r. sav.",
+      "locality": "",
+      "petrol95": 1.809,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Kilučių g. 93, Biržai",
+      "municipality": "Biržų r. sav.",
+      "locality": "",
+      "petrol95": 1.814,
+      "diesel": 1.994,
+      "lpg": 0.96
+    },
+    {
+      "network": "Emsi",
+      "address": "Jaunimo g.2a, Biržai",
+      "municipality": "Biržų r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.969,
+      "lpg": 0.89
+    },
+    {
+      "network": "Narjanta",
+      "address": "S. Nėries g. 35, Vabalninkas",
+      "municipality": "Biržų r. sav.",
+      "locality": "",
+      "petrol95": 1.809,
+      "diesel": 1.999,
+      "lpg": 0.89
+    },
+    {
+      "network": "Viada",
+      "address": "Biržai, Parodos g. 2",
+      "municipality": "Biržų r. sav.",
+      "locality": "",
+      "petrol95": 1.819,
+      "diesel": 2.009,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Biržai, Pasvalio g. 1B",
+      "municipality": "Biržų r. sav.",
+      "locality": "",
+      "petrol95": 1.819,
+      "diesel": 2.009,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkai, Gardino g. 79",
+      "municipality": "Druskininkų sav.",
+      "locality": "",
+      "petrol95": 1.909,
+      "diesel": 2.039,
+      "lpg": 0.949
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Druskininkai, Leipalingio g. 26",
+      "municipality": "Druskininkų sav.",
+      "locality": "",
+      "petrol95": 1.909,
+      "diesel": 2.039,
+      "lpg": 0.949
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Leipalingis, Merkinės g. 37",
+      "municipality": "Druskininkų sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.049,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "M. K. Čiurlionio g. 113, Druskininkai",
+      "municipality": "Druskininkų sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Tomega",
+      "address": "Gardino g. 98, Druskininkai",
+      "municipality": "Druskininkų sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.96,
+      "lpg": 0.95
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Dubijos g. 36",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Sabališkių g. 1F, Elektrėnai",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.089,
+      "lpg": 0.969
+    },
+    {
+      "network": "Degta",
+      "address": "Vievis, Kauno g. 55A",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Sabališkių g. 1U, Elektrėnai",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.934,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "​Žilvičių g. 1 A, Kakliniškių k.",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Elektrėnai, Elektrinės g. 6",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.949
+    },
+    {
+      "network": "Viada",
+      "address": "Vievis, Kauno g. 26A",
+      "municipality": "Elektrėnų sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Švenčionių g. 29A, Ignalina",
+      "municipality": "Ignalinos r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 2.029,
+      "lpg": 0.869
+    },
+    {
+      "network": "Propano ir butano dujų centras",
+      "address": "Švenčionių 35, Ignalina",
+      "municipality": "Ignalinos r. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 2.059,
+      "lpg": 0.88
+    },
+    {
+      "network": "Viada",
+      "address": "Ignalina, Turistų g. 28A",
+      "municipality": "Ignalinos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Gudžionių k., Plento g. 24",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": 0.919
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Spanėnų k., Plento g. 46",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.049,
+      "lpg": 0.9
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jonava, Žemaitės g. 1",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.049,
+      "lpg": 0.919
+    },
+    {
+      "network": "Circle K",
+      "address": "Vasario 16-osios g. 33, Jonava",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.089,
+      "lpg": 0.949
+    },
+    {
+      "network": "Emsi",
+      "address": "Vasario 16-osios g.70, Jonava",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Plento g. 7, Gudžionių k.",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Jonava, Darbininkų g. 4D",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.949
+    },
+    {
+      "network": "Vimijula",
+      "address": "Kauno g. 2A, Ručiūnų k.",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.82,
+      "diesel": 2.04,
+      "lpg": 0.97
+    },
+    {
+      "network": "Žibalas",
+      "address": "Jonava, Taurostos g. 16a",
+      "municipality": "Jonavos r. sav.",
+      "locality": "",
+      "petrol95": 1.98,
+      "diesel": 2.09,
+      "lpg": 0.96
+    },
+    {
+      "network": "Apsaga",
+      "address": "Radikių k.",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 2.029,
+      "lpg": 0.925
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Joniškis, Vilniaus g. 72",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.979,
+      "lpg": 0.859
+    },
+    {
+      "network": "Circle K",
+      "address": "Sidabros g. 2A, Satkūnų k.",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.069,
+      "lpg": 0.925
+    },
+    {
+      "network": "S.Rimkevičiaus komercinė įmonė",
+      "address": "Turgaus g. 3, Joniškis",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "S.Rimkevičiaus komercinė įmonė",
+      "address": "Miškininkų g. 14, Pelėdnagiai",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.969,
+      "lpg": 0.899
+    },
+    {
+      "network": "Skaistčio ŽŪB",
+      "address": "Skaistgirys, Liepų g.22",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.99,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Joniškis, Vilniaus g. 51",
+      "municipality": "Joniškio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.069,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jurbarkas, Muitinės g. 22A",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.95,
+      "lpg": 0.87
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klišių k., Pievų g. 2",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.95,
+      "lpg": 0.87
+    },
+    {
+      "network": "Eniris",
+      "address": "Tauragės g. 29, Rimšų k.",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.91,
+      "diesel": 2.04,
+      "lpg": 0.92
+    },
+    {
+      "network": "GM Circle K",
+      "address": "Muitinės g. 34A, Jurbarkas",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Muitinės g. 32, Jurbarkas",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Knygnešių g. 9, Jurbarkas",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "network": "Gelvybė",
+      "address": "S. Šimkaus g. 69, Seredžius",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.91,
+      "lpg": null
+    },
+    {
+      "network": "Gelvybė",
+      "address": "S. Daukanto g. 66, Jurbarkas",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "network": "Saurida",
+      "address": "Pašvenčio km.",
+      "municipality": "Jurbarko r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.89,
+      "lpg": 0.86
+    },
+    {
+      "network": "A. Praškevičiaus IĮ",
+      "address": "Kalvių g. 4, Šventininkų k.",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.89,
+      "lpg": 0.86
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Triliškių k., Kauno pl. 5",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": 0.869
+    },
+    {
+      "network": "Emsi",
+      "address": "Paukštininkų g.4a, Kaišiadorys",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": 0.87
+    },
+    {
+      "network": "Eniris",
+      "address": "Bačkonių k., Pastrėvio g. 1A,",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.969,
+      "lpg": 0.869
+    },
+    {
+      "network": "Orlen",
+      "address": "Žiežmarių k.",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": 0.899
+    },
+    {
+      "network": "Saurida",
+      "address": "Rumšiškės Lekavičiaus g. 71",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Topgas",
+      "address": "Paukštininkų g.13, Kaišiadorys",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.87
+    },
+    {
+      "network": "Viada",
+      "address": "Kaišiadorys, Gedimino g. 135",
+      "municipality": "Kaišiadorių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Europos g. 17, Salaperaugio k.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.039,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Europos g. 13a, Salaperaugio k.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Muitinės g. 5B, Brazavo k.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Europos g. 1, Salaperaugio k.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Europos g. 6, N.Valios k.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Nostrada (RV Transport)",
+      "address": "Kazlavo km. 4 Kalvarijos sav.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.92,
+      "diesel": 2.03,
+      "lpg": null
+    },
+    {
+      "network": "Saurida",
+      "address": "Kreivukės km.",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Kušliškių km. Suvalkijos g. 15",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.86
+    },
+    {
+      "network": "Stateta",
+      "address": "Turgaus g. 4, Kreivukė",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Kalvarija, Dariaus ir Girėno g. 81",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Pelucmurgių k., Muitinės g. 35",
+      "municipality": "Kalvarijos sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": null
+    },
+    {
+      "network": "Alauša",
+      "address": "Palemono g. 171, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Raudondvario pl. 82",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Jonavos g. 60A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.949,
+      "lpg": 0.899
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Minkovskių g. 132",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.989,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Chemijos g. 6",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Vaidoto g. 153",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.069,
+      "lpg": 0.949
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kaunas, Taikos pr. 120",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.939,
+      "lpg": 0.899
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Marvelės g. 132, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": 0.95
+    },
+    {
+      "network": "Circle K",
+      "address": "Pramonės pr. 18, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.024,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Raudondvario pl. 107A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.029,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "R. Kalantos g. 159, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.014,
+      "lpg": 0.969
+    },
+    {
+      "network": "Circle K",
+      "address": "Savanorių pr. 321, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Veiverių g. 49A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.964,
+      "diesel": 2.084,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Vakarinis aplinkkelis 10, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.023,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Žemaičių pl. 19, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.014,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Taikos pr. 52A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.049,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Briedžių takas 6B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Islandijos pl. 61C, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Karaliaus Mindaugo pr. 34A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.984,
+      "diesel": 2.084,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "R. Kalantos g. 68, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Varnių g. 46, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Islandijos pl. 32, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.024,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Savanorių pr. 404B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Tvirtovės alėja 33a, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Sukilėlių pr. 120, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 2.019,
+      "lpg": 0.899
+    },
+    {
+      "network": "Circle K",
+      "address": "K. Baršausko g. 57, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.944,
+      "diesel": 2.044,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Jonavos g. 38, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 2.029,
+      "lpg": 0.9
+    },
+    {
+      "network": "Deguva",
+      "address": "Raudondvario pl.234,Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.88
+    },
+    {
+      "network": "Dujovita",
+      "address": "Islandijos pl. 191D, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Dujovita",
+      "address": "Jonavos g. 110, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Emsi",
+      "address": "Ateities pl.40B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.719,
+      "diesel": 1.919,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Draugystės g.8B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.999,
+      "lpg": 0.869
+    },
+    {
+      "network": "Emsi",
+      "address": "Jonavos g. 292B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.929,
+      "lpg": 0.85
+    },
+    {
+      "network": "Emsi",
+      "address": "Liuksemburgo aklg. 27, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.949,
+      "lpg": 0.859
+    },
+    {
+      "network": "Emsi",
+      "address": "Masiulio g.16C, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.969,
+      "lpg": 0.899
+    },
+    {
+      "network": "Emsi",
+      "address": "Savanorių pr.402A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Emsi",
+      "address": "Palemono g. 3A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.91,
+      "lpg": null
+    },
+    {
+      "network": "Jozita",
+      "address": "Kaunas, Kuršių 13A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Kaunas, Jonavos g. 51",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Kaunas, Betygalos g. 8",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Kaunas, Baltų pr. 141A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Kaunas, Partizanų g. 87G",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Pramonės pr. 6A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Jonavos g. 110, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Veiverių g. 132D, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.924,
+      "diesel": 2.044,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Žemaičių pl. 26, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "R. Kalantos g. 27, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Ateities pl. 50B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.824,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Taikos pr. 80A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 2.014,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Birželio 23-iosios g. 23A, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Islandijos pl. 191E, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Raudondvario pl. 103, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Kuršių g. 1, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Tunelio g. 26, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.914,
+      "diesel": 2.014,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Savanorių pr. 441C, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Vakarinis aplinkkelis 18, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Europos pr. 43, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Kalvarijos g. 138, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "network": "Orlen",
+      "address": "Pramonės pr. 37, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.989,
+      "lpg": 0.879
+    },
+    {
+      "network": "Orlen",
+      "address": "Varnių g. 50, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.969,
+      "lpg": 0.869
+    },
+    {
+      "network": "Orlen",
+      "address": "Veiverių g. 148 B, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "network": "Regusa",
+      "address": "Marijampolės pl. 20, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.73,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Kaunas Garažų g. 20",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.9,
+      "lpg": 0.86
+    },
+    {
+      "network": "Skulas",
+      "address": "Kaunas, Ašigalio g. 1 A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.929,
+      "lpg": 0.829
+    },
+    {
+      "network": "Skulas",
+      "address": "Kaunas, Marvelės g. 106 D",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.929,
+      "lpg": null
+    },
+    {
+      "network": "Tormenta",
+      "address": "Linkuvos g. 77, Kaunas",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.94,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, A. Juozapavičiaus pr. 90",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Ateities pl. 105",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Ateities pl. 37A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.949
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Baltijos g. 90B",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Biruliškių g. 18A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Didžioji g. 84",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Islandijos pl. 61A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, K. Baršausko g. 64",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Karaliaus Mindaugo pr. 54",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Marijampolės pl. 29",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Miežėnų g. 18",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, P. Lukšio g. 66A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Pramonės pr. 44",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": 0.949
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Raudondvario pl. 288",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Statybininkų g. 3A",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, T. Masiulio g. 22B",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Veiverių g. 117",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaunas, Veiverių g. 124B",
+      "municipality": "Kauno m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Jaučiakių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pagirių k., Marijampolės g. 1",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.969,
+      "lpg": 0.899
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Ringaudų k., Gėlių g. 1A",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.979,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Baltijos g. 1, Mastaičių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": 0.999
+    },
+    {
+      "network": "Emsi",
+      "address": "Ilgakiemio k., Kauno g.25",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.86
+    },
+    {
+      "network": "Emsi",
+      "address": "Marijampolės g. 58, Mastaičių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.86
+    },
+    {
+      "network": "Emsi",
+      "address": "Vandžiogalos pl.86A, Kaunas",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.97,
+      "lpg": 0.88
+    },
+    {
+      "network": "Emsi",
+      "address": "Žemaitkiemis, Stasio Krasausko g. 21",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Jozita",
+      "address": "Garliava, Vytauto g. 111A",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Ramučiai, K. Bielinio g. 2A",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Vijoklių g. 1C, Ramučių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Vakarų g. 14, Kumpių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.844,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Biruliškių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Orlen",
+      "address": "Beržų g. 2N, Ringaudai",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Saurida",
+      "address": "Domeikava Muitinės g. 2",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Babtai Vandžiogalos g. 3",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.91,
+      "lpg": 0.86
+    },
+    {
+      "network": "Skulas",
+      "address": "Virbališkių k., Verslo g. 2",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.8,
+      "diesel": 1.93,
+      "lpg": 0.83
+    },
+    {
+      "network": "Stateta",
+      "address": "Erdvės g. 78, Ramučių k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Giraitės k., Automagistralės g. 4",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Ilgakiemio k., Prienų g. 22",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kampiškių k., Baltijos g. 41",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kumpių k., Verslo g. 13A",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Margavos k.",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Zapyškis, Vytauto g. 20A",
+      "municipality": "Kauno r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Regusa",
+      "address": "Medelyno g. 4A, Jūrės k.",
+      "municipality": "Kazlų Rūdos sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.97,
+      "lpg": 0.89
+    },
+    {
+      "network": "Regusa",
+      "address": "S. Daukanto g. 19D, Kazlų Rūda",
+      "municipality": "Kazlų Rūdos sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.97,
+      "lpg": 0.89
+    },
+    {
+      "network": "Viada",
+      "address": "Ąžuolų Būdos k.",
+      "municipality": "Kazlų Rūdos sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Antivis",
+      "address": "Tytuvėnai, Žemaitės g.14",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.84,
+      "diesel": 1.99,
+      "lpg": 0.93
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Kęstučio g. 1B, Kelmė",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": 0.939
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Kuršukų k., Plento g. 1",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Maironių k., Kuršių g. 2",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.8,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "network": "Eniris",
+      "address": "Puttvinskio g. 29, Kelmė",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.899,
+      "lpg": 0.849
+    },
+    {
+      "network": "Eniris",
+      "address": "Žemaitės g. 52, Užventis",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.93,
+      "lpg": 0.95
+    },
+    {
+      "network": "Jozita",
+      "address": "Kelmė, V.Putvinskio g. 37",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Raimondo Balsio IĮ",
+      "address": "Ramučių k., Luokės 2",
+      "municipality": "Kelmės r. sav.",
+      "locality": "",
+      "petrol95": 1.8,
+      "diesel": 1.99,
+      "lpg": 0.92
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Šilutės pl. 1",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.989,
+      "lpg": 0.899
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Tilžės g. 90",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.989,
+      "lpg": 0.909
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Klaipėda, Liepų g. 79A",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.989,
+      "lpg": 0.909
+    },
+    {
+      "network": "Circle K",
+      "address": "Minijos g. 90, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.069,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Taikos pr. 61B, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "H. Manto g. 96, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.089,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Taikos pr. 112A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.039,
+      "lpg": 0.92
+    },
+    {
+      "network": "Circle K",
+      "address": "Vilniaus pl. 1A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.064,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Tilžės g. 56A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.049,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Jūrininkų pr. 31, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.049,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Sausio 15-osios g. 2, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Minijos g.154A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.85
+    },
+    {
+      "network": "Emsi",
+      "address": "Taikos pr.124, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.85
+    },
+    {
+      "network": "Jozita",
+      "address": "Klaipėda, Taikos pr. 157",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Klaipėda, Priestočio g. 26",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Plieno g. 1, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Šilutės pl. 30, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Taikos pr. 60, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Minijos g. 119, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Artojo g. 2, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Smiltelės g. 17, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Šilutės pl. 5C, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Minijos g. 44, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.989,
+      "lpg": 0.879
+    },
+    {
+      "network": "Orlen",
+      "address": "Šilutės pl. 26 A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.869
+    },
+    {
+      "network": "Orlen",
+      "address": "Šilutės pl. 94, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Stateta",
+      "address": "Minijos g. 90, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Trevena",
+      "address": "Kretingos g. 28A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.93
+    },
+    {
+      "network": "Trevena",
+      "address": "Minijos g. 152A, Klaipėda",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.93
+    },
+    {
+      "network": "Viada",
+      "address": "Klaipėda, Liepojos g. 242",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Klaipėda, Nemuno g. 139",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Klaipėda, Priestočio g. 28",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Klaipėda, Šilutės pl. 52",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Klaipėda, Taikos pr. 70A-1",
+      "municipality": "Klaipėdos m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Adukesta",
+      "address": "Laisvės g. 50, Maciuičių k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.98,
+      "lpg": 0.93
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Priekulė, Klaipėdos g. 61",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.99,
+      "lpg": 0.92
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Gargždai, Dariaus ir Girėno g. 10",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.939,
+      "lpg": 0.859
+    },
+    {
+      "network": "Circle K",
+      "address": "Vilniaus pl. 21, Jakų k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.969,
+      "diesel": 2.079,
+      "lpg": 0.94
+    },
+    {
+      "network": "Emsi",
+      "address": "Durpyno 63, Jonušų k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.989,
+      "lpg": 0.89
+    },
+    {
+      "network": "Emsi",
+      "address": "Medelyno g.126 Kalotės k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.95,
+      "lpg": 0.86
+    },
+    {
+      "network": "Jozita",
+      "address": "Klipščių k., Šilelių g.1",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Gargždai, Gamyklos g. 1",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Trepkalnių k., Mokyklos g. 2",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Vilniaus pl. 9, Jakų k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Sendvario g. 2, Sudmantų k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Vilniaus pl. 13, Jakų k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 2.029,
+      "lpg": 0.889
+    },
+    {
+      "network": "Saurida",
+      "address": "Klaipėda Jūrininkų pr. 29",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.86
+    },
+    {
+      "network": "Trevena",
+      "address": "Kretingos pl. 1, Gargždai",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.93
+    },
+    {
+      "network": "Trevena",
+      "address": "Klaipėdos g. 39, Gargždai",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.74,
+      "diesel": 1.93,
+      "lpg": 0.89
+    },
+    {
+      "network": "Trevena",
+      "address": "Šv. Kristoforo g. 4, Dituvos k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.93
+    },
+    {
+      "network": "Trevena",
+      "address": "Veiviržėnų g. 29, Pyktiškės k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.98,
+      "lpg": 0.93
+    },
+    {
+      "network": "Viada",
+      "address": "Gargždai, Vilniaus pl. 65",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kretingalė, Klaipėdos g. 1A",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Sudmantų k., Vilniaus pl. 6",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Vlantana",
+      "address": "Dvaro g. 1, Gobergiškės k.",
+      "municipality": "Klaipėdos r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Klaipėdos g. 155, Kretinga",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Eniris",
+      "address": "Tiekėjų g. 34a, Kretinga",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.86,
+      "diesel": 2.04,
+      "lpg": 0.94
+    },
+    {
+      "network": "Eniris",
+      "address": "Platelių g. 1 a, Laivių k.",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.87,
+      "diesel": 2.05,
+      "lpg": 0.96
+    },
+    {
+      "network": "I.Stonkuvienės prekybos įmonė",
+      "address": "Kretingos 51, Kartena",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.86,
+      "diesel": 2.12,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Vilimiškės k.",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Trevena",
+      "address": "Laisvės g. 15, Darbėnai",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.88,
+      "diesel": 2.05,
+      "lpg": 0.94
+    },
+    {
+      "network": "Trevena",
+      "address": "Vilniaus g. 29B, Kretinga",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.88,
+      "diesel": 2.05,
+      "lpg": 0.94
+    },
+    {
+      "network": "Viada",
+      "address": "Kretinga, Vytauto g. 163",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kretingsodžio k.",
+      "municipality": "Kretingos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Noriūnų k., Parko g. 3A",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.909,
+      "lpg": 0.849
+    },
+    {
+      "network": "Narjanta",
+      "address": "Kikonių g. 10, Aleksandrijos k.",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 2.019,
+      "lpg": 0.969
+    },
+    {
+      "network": "Narjanta",
+      "address": "Dvariškių vs. 2",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Stateta",
+      "address": "Panevėžio g. 9, Kupiškis",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Topgas",
+      "address": "Slavinčiškio g.18, Slavinčiškis",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "network": "Velseka",
+      "address": "Panevėžio g. 5, Kupiškis",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.739,
+      "diesel": 1.889,
+      "lpg": 0.859
+    },
+    {
+      "network": "Viada",
+      "address": "Kerelių k. 1A",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kupiškis, Pergalės g. 15",
+      "municipality": "Kupiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kėdainiai, J. Basanavičiaus g. 95B",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "J. Basanavičiaus g. 40a, Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": null
+    },
+    {
+      "network": "Dujovita",
+      "address": "Basanavičiaus g. 91E, Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.91
+    },
+    {
+      "network": "Emsi",
+      "address": "Juodgirio k.1,",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Eniris",
+      "address": "Ruoščių k. 1",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.723,
+      "diesel": 1.899,
+      "lpg": 0.92
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Aristavos g. 4, Aristava",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.91,
+      "lpg": 0.9
+    },
+    {
+      "network": "M.Augustinaičio IĮ",
+      "address": "Kėdainių g. 44 Šingalių k.",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.9,
+      "diesel": 1.99,
+      "lpg": 0.93
+    },
+    {
+      "network": "Mindega",
+      "address": "Ramygalos g 55, Šėta",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.84,
+      "diesel": 1.95,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "J. Basanavičiaus g. 91E, Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "S.Savicko įmonė",
+      "address": "Šėtos g. 120 , Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "S.Savicko įmonė",
+      "address": "Dariaus ir Girėno 23 A, Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.039,
+      "lpg": 0.91
+    },
+    {
+      "network": "S.Savicko įmonė",
+      "address": "Gedimino g. 50 , Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.039,
+      "lpg": 0.91
+    },
+    {
+      "network": "S.Savicko įmonė",
+      "address": "Vandžiogalos g 29,Saviečių k.",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.039,
+      "lpg": 0.91
+    },
+    {
+      "network": "S.Savicko įmonė (Circle K)",
+      "address": "J.Basanavičiaus g. 103, Kėdainiai",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.939
+    },
+    {
+      "network": "Viada",
+      "address": "Dotnuva, Tilto g. 2A",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Gudžiūnų k., Baisogalos g. 5",
+      "municipality": "Kėdainių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Lazdijai, Turistų g. 88",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.709,
+      "diesel": 1.909,
+      "lpg": 0.889
+    },
+    {
+      "network": "Circle K",
+      "address": "Nekrūnų k. 1",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "network": "Emsi",
+      "address": "Lazdijų sen., Janaslavo k.11",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.709,
+      "diesel": 1.909,
+      "lpg": null
+    },
+    {
+      "network": "Eniris",
+      "address": "Alytaus g. 59, Krosnos k.",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.959,
+      "lpg": 0.889
+    },
+    {
+      "network": "Melkasta",
+      "address": "Kalvelių k., Lazdijų pl. 29",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.9
+    },
+    {
+      "network": "Melkasta",
+      "address": "Seirijų mstl., Algirdo g. 35A",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.9
+    },
+    {
+      "network": "Saurida",
+      "address": "Panarvės km.",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Viada",
+      "address": "Lazdijai, Turistų g. 32",
+      "municipality": "Lazdijų r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 2.059,
+      "lpg": 0.929
+    },
+    {
+      "network": "Alauša",
+      "address": "Plytinės g. 2, Puskelnių k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "network": "Alauša",
+      "address": "Stoties g. 49, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.859
+    },
+    {
+      "network": "Alauša",
+      "address": "Sporto g. 50A, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pasiekų k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.999,
+      "lpg": 0.919
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pietarių k. Kauno g. 164",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.969,
+      "lpg": 0.939
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolė, Vasaros g. 15",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.969,
+      "lpg": 0.909
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Marijampolė, P. Armino g. 69",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "network": "Circle K",
+      "address": "Kauno g. 130, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.049,
+      "lpg": 0.92
+    },
+    {
+      "network": "Circle K",
+      "address": "Jono Dailidės g. 10, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Stoties g. 6B, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.86
+    },
+    {
+      "network": "Emsi",
+      "address": "Kauno g.165, Pietarių k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.869
+    },
+    {
+      "network": "Emsi",
+      "address": "Skaisčiūnų k., Europos g.11",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.869
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Stoties g. 4C, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Vilkaviškio g. 61D, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Aleksandravo k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.859
+    },
+    {
+      "network": "Regusa",
+      "address": "Sodo g. 11, Gavaltuvos k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.97,
+      "lpg": 0.89
+    },
+    {
+      "network": "Saurida",
+      "address": "Marijampolė Statybininkų g. 8",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.97,
+      "lpg": 0.86
+    },
+    {
+      "network": "Stateta",
+      "address": "Kantališkių k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Topgas",
+      "address": "Gėlyno g.25, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.9
+    },
+    {
+      "network": "Valdegra",
+      "address": "Prienų g.7, Igliaukos k.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Marijampolė, Geležinkelio g. 5",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.059,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Marijampolė, J. Ambrazevičiaus-Brazaičio g. 2",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.059,
+      "lpg": 0.929
+    },
+    {
+      "network": "Virši",
+      "address": "L.Taunio g. 3, Pasūduonės km.",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": 1.964,
+      "diesel": 2.054,
+      "lpg": 0.915
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Užežerės k., Gardenio g. 39",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Mažeikiai, M. Daukšos g. 17",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.969,
+      "lpg": 0.869
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Tirkšliai, Laukų g. 10",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Žemaitijos g. 57, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.909,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Eniris",
+      "address": "Laižuvos g. 82 d, Mažeikiai,",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.739,
+      "diesel": 1.859,
+      "lpg": 0.879
+    },
+    {
+      "network": "Eu Verslas",
+      "address": "Viekšnių g. 24, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.959,
+      "lpg": 0.859
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "M. Daukšos g. 29, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "​Skuodo g. 14, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Orlen",
+      "address": "Žemaitijos g. 42, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "network": "RV",
+      "address": "Algirdo g. 42, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.88
+    },
+    {
+      "network": "RV",
+      "address": "Daukšos g. 29/Žemaitijos g. 69, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.87
+    },
+    {
+      "network": "Tripletas",
+      "address": "Sedos g. 16, Mažeikiai",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.96,
+      "lpg": 0.87
+    },
+    {
+      "network": "Tumasa",
+      "address": "Židikai, Mažeikiu g. 10",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 2.02,
+      "lpg": 0.95
+    },
+    {
+      "network": "Viada",
+      "address": "Mažeikiai, Montuotojų g. 2A",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Mažeikiai, Žemaitijos g. 75",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Visvilas",
+      "address": "Laukų g. 2C.,Tirkšlių m.",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.96,
+      "lpg": 0.87
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Molėtai, Vilniaus g.104",
+      "municipality": "Molėtų r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": 0.899
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Smėlinkos k.",
+      "municipality": "Molėtų r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Aplinkkelio g. 165, Molėtai",
+      "municipality": "Molėtų r. sav.",
+      "locality": "",
+      "petrol95": 1.884,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Molėtai, Vilniaus g. 101",
+      "municipality": "Molėtų r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Gojaus k., Utenos g. 16",
+      "municipality": "Molėtų r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Neringa, Nidos-Smiltynės pl. 6",
+      "municipality": "Neringos sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.099,
+      "lpg": null
+    },
+    {
+      "network": "Eniris",
+      "address": "Klaipėdos g. 6b, Pagėgiai",
+      "municipality": "Pagėgių sav.",
+      "locality": "",
+      "petrol95": 1.88,
+      "diesel": 1.99,
+      "lpg": 0.94
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pakruojis, Statybininkų g. 28",
+      "municipality": "Pakruojo r. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.949,
+      "lpg": 0.86
+    },
+    {
+      "network": "Jozita",
+      "address": "Kuosiškių k. 4",
+      "municipality": "Pakruojo r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Naftrus",
+      "address": "Topolių g. 1, Degučių k.",
+      "municipality": "Pakruojo r. sav.",
+      "locality": "",
+      "petrol95": 1.69,
+      "diesel": 1.9,
+      "lpg": 0.86
+    },
+    {
+      "network": "Viada",
+      "address": "Pakruojis, Vytauto Didžiojo g. 98",
+      "municipality": "Pakruojo r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Palanga, Klaipėdos pl. 44",
+      "municipality": "Palangos m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.969,
+      "lpg": 0.919
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Palanga, Ganyklų g. 28C",
+      "municipality": "Palangos m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.949,
+      "lpg": 0.919
+    },
+    {
+      "network": "Circle K",
+      "address": "Kretingos g. 56, Palanga",
+      "municipality": "Palangos m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.039,
+      "lpg": 0.979
+    },
+    {
+      "network": "Šventosios investicijos",
+      "address": "Elijos g.26 Palanga (Šventoji)",
+      "municipality": "Palangos m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.059,
+      "lpg": 0.999
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevėžys, Velžio kelias 74",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.969,
+      "lpg": 0.879
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevėžys, Smėlynės g. 169",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.969,
+      "lpg": 0.899
+    },
+    {
+      "network": "Circle K",
+      "address": "J. Basanavičiaus g. 63, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.939
+    },
+    {
+      "network": "Circle K",
+      "address": "Parko g. 7A, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.934,
+      "diesel": 2.029,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Klaipėdos g. 92A, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.914,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "network": "Deliuvis",
+      "address": "Pušaloto g. 140, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.729,
+      "diesel": 1.919,
+      "lpg": 0.889
+    },
+    {
+      "network": "Deliuvis",
+      "address": "G.Petkevičaitės-Bitės 35C, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.729,
+      "diesel": 1.919,
+      "lpg": 0.889
+    },
+    {
+      "network": "Deliuvis",
+      "address": "S.Kerbedžio 2, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.729,
+      "diesel": 1.919,
+      "lpg": 0.889
+    },
+    {
+      "network": "Emsi",
+      "address": "Nemuno g.79A, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.739,
+      "diesel": 1.939,
+      "lpg": 0.889
+    },
+    {
+      "network": "Jozita",
+      "address": "Panevėžys, S. Kerbedžio g. 7F",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Klaipėdos g. 81, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Ramygalos g. 145B, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Klaipėdos g. 66,  Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Margirio g. 1B, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Klaipėdos g. 144B, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Klaipėdos g. 162 D, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.999,
+      "lpg": 0.889
+    },
+    {
+      "network": "Orlen",
+      "address": "Senamiesčio g. 115, Panevėžys",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.959,
+      "lpg": 0.869
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, J. Janonio g. 28A",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, Navadolio g. 31",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.939
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, Pušaloto g. 193A",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, Ramygalos g. 155",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.939
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, Ramygalos g. 186G",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.939
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, Senamiesčio g. 116A",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.949
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžys, Venslaviškio g. 16",
+      "municipality": "Panevėžio m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Baltijos Kelio g. 33, Ūtos k.",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.029,
+      "lpg": 0.979
+    },
+    {
+      "network": "Circle K",
+      "address": "Panevėžio aplinkl. 20, Šilagalio k.",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.029,
+      "lpg": 0.949
+    },
+    {
+      "network": "Emsi",
+      "address": "Ramygalos g.186A, Panevėžys",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.739,
+      "diesel": 1.939,
+      "lpg": 0.88
+    },
+    {
+      "network": "Emsi",
+      "address": "Šilagalio k., Panevėžio aplinkl.12",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.949,
+      "lpg": 0.879
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Panevėžio aplinkl. 7, Šilagalio k.",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Panevėžio aplinkl. 22, Šilagalio k.",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Šiaulių g. 50, Nausodės k.",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 2.029,
+      "lpg": 0.899
+    },
+    {
+      "network": "Stateta",
+      "address": "Žemdirbių g. 15, Paliūniškio k.",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Krekenava, Tilto g. 35",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Ramygala, Vienkiemio g. 1B",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Šilagalio k., Panevėžio aplinkl. 5",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.049,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Tičkūnų k., Tičkūnų g. 31",
+      "municipality": "Panevėžio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Aukštikalnio k., Mūšos g. 19",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.93,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Pasvalys, Taikos g.24",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.939,
+      "lpg": 0.86
+    },
+    {
+      "network": "Emsi",
+      "address": "Sereikonių k., Baltijos kelio g.2",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.939,
+      "lpg": 0.889
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Ąžuolpamūšio g. 1A, Raubonių k..",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Pakelės namai",
+      "address": "Liepų g. 4, Škilinpamūšio k.",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.95
+    },
+    {
+      "network": "Pakelės namai",
+      "address": "Pasienio g. 10, Škilinpamūšio k.",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.95
+    },
+    {
+      "network": "Skulas",
+      "address": "Pasvalys, Mūšos g. 2 E",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.9,
+      "lpg": 0.82
+    },
+    {
+      "network": "Topgas",
+      "address": "Stoties g.25, Pasvalys",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "network": "Viada",
+      "address": "Brazdigalos k. 1",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Pasvalys, Vilniaus g. 50",
+      "municipality": "Pasvalio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Plateliai,  Ž. Kalvarijos g. 1A",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 2.039,
+      "lpg": 0.869
+    },
+    {
+      "network": "Eniris",
+      "address": "Dariaus ir Girėno g. 31, Plungė",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.99,
+      "lpg": null
+    },
+    {
+      "network": "Eniris",
+      "address": "Minijos g. 1, Aleksandravo k.",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.99,
+      "lpg": 0.96
+    },
+    {
+      "network": "Eu Verslas",
+      "address": "Telšių g. 127, Jovaišiškės k.",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.85
+    },
+    {
+      "network": "Eu Verslas",
+      "address": "Stoties g. 7C, Plungė",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.85
+    },
+    {
+      "network": "Eu Verslas",
+      "address": "Rietavo g. 107, Pakerų k.",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.869,
+      "lpg": null
+    },
+    {
+      "network": "Jozita",
+      "address": "Varkaliai, Žemaičių g. 2A",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Madalva",
+      "address": "Plungė , Lentpjūvės g.10A",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "VVARFF (Circle K)",
+      "address": "Pramogų g. 4, Truikių k.",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.788,
+      "diesel": 1.955,
+      "lpg": 0.909
+    },
+    {
+      "network": "Viada",
+      "address": "Plungė, J. Tumo-Vaižganto g. 102",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Plungė, Žaltakalnio g. 10",
+      "municipality": "Plungės r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Prienai, Vilniaus g. 3A",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.969,
+      "lpg": 0.909
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Veiverių k.",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.059,
+      "lpg": 0.91
+    },
+    {
+      "network": "Borusta",
+      "address": "Piliakalnio g. 3, Stakliškės",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.909,
+      "lpg": 0.889
+    },
+    {
+      "network": "Eniris",
+      "address": "Alytaus pl. 2, Mardosų k.",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.97
+    },
+    {
+      "network": "Orlen",
+      "address": "Alytaus g. 2, ​Verbyliškių k.",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.999,
+      "lpg": 0.889
+    },
+    {
+      "network": "Saurida",
+      "address": "Ignacavos km. Kauno pl. 18",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Mauručiai Liepų g. 20",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.88,
+      "lpg": null
+    },
+    {
+      "network": "Stateta",
+      "address": "Gustaičių k.",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Grigaliūnų k. 11",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.95
+    },
+    {
+      "network": "Viada",
+      "address": "Mačiūnų k., Kauno pl. 40",
+      "municipality": "Prienų r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Apsaga",
+      "address": "Šiaulių g.12, Radviliškis",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "network": "Apsaga",
+      "address": "Beržų g. 19, Baisogalos k.",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.865,
+      "diesel": 2.015,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškis, Miško g. 64",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.969,
+      "lpg": 0.89
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Užuovėjos k.",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.949,
+      "lpg": 0.87
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Radviliškis, Šiaulių g. 1A",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.949,
+      "lpg": 0.89
+    },
+    {
+      "network": "Circle K",
+      "address": "Gedimino g. 42B, Radviliškis",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.94
+    },
+    {
+      "network": "Emsi",
+      "address": "Miško g.62, Radviliškis",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.969,
+      "lpg": 0.86
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Versmės g. 2, Radviliškis",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Saurida",
+      "address": "Radviliškis Gedimino g. 50C",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.9,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Velžių km .Radviliškio plentas 2",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.86
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseiniai, Vilniaus g. 30",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.969,
+      "lpg": 0.86
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Kalnujų k. 1",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.989,
+      "lpg": 0.909
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Girkalnio k., Žemaičių g. 39",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.969,
+      "lpg": 0.9
+    },
+    {
+      "network": "Circle K",
+      "address": "Pikelių k. 1",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": 0.969
+    },
+    {
+      "network": "Emsi",
+      "address": "Žemaičių g. 34, Ariogala",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Emsi",
+      "address": "Raščių k. 1A",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Eniris",
+      "address": "Jurbarko g. 34, Raseiniai",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.86
+    },
+    {
+      "network": "Jozita",
+      "address": "Raseiniai, Liepų g. 10e",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Raseiniai, Maironio g. 78b",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Naftrus",
+      "address": "Šilo g. 1, Ylių k.",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.9
+    },
+    {
+      "network": "Naftrus",
+      "address": "Pievų g. 17, Slabados k.",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.97,
+      "lpg": 0.87
+    },
+    {
+      "network": "Naftrus",
+      "address": "Vilniaus g. 3B, Raseiniai",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.719,
+      "diesel": 1.949,
+      "lpg": 0.86
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Pušyno g. 11, Ylių k.",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Pikelių k. 6",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.079,
+      "lpg": 0.919
+    },
+    {
+      "network": "Orlen",
+      "address": "Pikelių k. 8",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.079,
+      "lpg": 0.919
+    },
+    {
+      "network": "Viada",
+      "address": "Vejukų k. 5",
+      "municipality": "Raseinių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Rietavas, Dariaus ir Girėno g. 19",
+      "municipality": "Rietavo sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.959,
+      "lpg": 0.88
+    },
+    {
+      "network": "Gazimpeksas",
+      "address": "Tverai, Rietavo g. 32",
+      "municipality": "Rietavo sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.99,
+      "lpg": 0.85
+    },
+    {
+      "network": "Plungės lagūna (Circle K)",
+      "address": "Plungės g. 32, Rietavas",
+      "municipality": "Rietavo sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.999,
+      "lpg": 0.969
+    },
+    {
+      "network": "Trevena",
+      "address": "Lėgų k. 1, Rietavas",
+      "municipality": "Rietavo sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.98,
+      "lpg": 0.93
+    },
+    {
+      "network": "Trevena",
+      "address": "Kvėdarnos g. 2, Vatušių k.",
+      "municipality": "Rietavo sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.93
+    },
+    {
+      "network": "Alauša",
+      "address": "Dariaus ir Girėno g. 36, Obeliai",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Pandėlio k., Elektrinės g. 1",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.039,
+      "lpg": 0.849
+    },
+    {
+      "network": "Circle K",
+      "address": "Respublikos g. 111A, Rokiškis",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "DVS Topolis",
+      "address": "Panevėžio 7c, Rokiškis",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.959
+    },
+    {
+      "network": "Degta",
+      "address": "Rokiškis, Respublikos g.113B,",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.013,
+      "lpg": 0.899
+    },
+    {
+      "network": "Lašų ŽŪB",
+      "address": "Vytėnų vs 9, Vytėnai",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.87,
+      "diesel": 2.06,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Rokiškis, Panevėžio g. 5",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Rokiškis, Žemaitės g. 2C",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Skuodas, Vytauto g. 22",
+      "municipality": "Skuodo r. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.939,
+      "lpg": 0.88
+    },
+    {
+      "network": "Eniris",
+      "address": "Skuodo g. 7, Stripinių k.",
+      "municipality": "Skuodo r. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.919,
+      "lpg": 0.879
+    },
+    {
+      "network": "Gazimpeksas",
+      "address": "Skuodas,Vytauto g. 20",
+      "municipality": "Skuodo r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "network": "Saurida",
+      "address": "Skuodas Vytauto g. 20",
+      "municipality": "Skuodo r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.9,
+      "lpg": 0.86
+    },
+    {
+      "network": "Viada",
+      "address": "Skuodas, Vilniaus g. 50",
+      "municipality": "Skuodo r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Taurų k., Tilžės pl. 36",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.929,
+      "lpg": 0.9
+    },
+    {
+      "network": "Bonsa",
+      "address": "Tilžės pl. 46, Taurai",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.699,
+      "diesel": 1.839,
+      "lpg": 0.8
+    },
+    {
+      "network": "Bonsa",
+      "address": "Vaidatonių k. 1",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.7,
+      "diesel": 1.85,
+      "lpg": 0.9
+    },
+    {
+      "network": "Circle K",
+      "address": "Gedimino g. 47, Tauragė",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.099,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Dariaus ir Girėno g. 83A, Tauragė",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Eniris",
+      "address": "Adakavo g. 1, Skaudvilė",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.91,
+      "diesel": 2.04,
+      "lpg": 0.94
+    },
+    {
+      "network": "Jozita",
+      "address": "Papušynės k, Šilalės g. 105",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Littaura",
+      "address": "Pramonės g. 6, Tauragė",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.97,
+      "lpg": null
+    },
+    {
+      "network": "Madalva",
+      "address": "Žygaičių k., Žygaičių g.2",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.91,
+      "lpg": 0.79
+    },
+    {
+      "network": "Madalva",
+      "address": "Tauragė , Dariaus ir Girėno g.49",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Madalva",
+      "address": "Tauragė , Pramonės g.10A",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Dariaus ir Girėno g. 130A, Tauragė",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Gedimino g. 46, Tauragė",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "network": "Viada",
+      "address": "Tauragė, Dariaus ir Girėno g. 138A",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Tauragė, Pramonės g. 1",
+      "municipality": "Tauragės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Telšiai, Šiaulių pl. 12",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.019,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Ožtakių k., Dariaus ir Girėno g. 77",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.019,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Luokės g. 70, Telšiai",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.069,
+      "lpg": 0.929
+    },
+    {
+      "network": "Eniris",
+      "address": "Telšių g. 2 b, Rainių k.",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.91,
+      "diesel": 2.01,
+      "lpg": 0.93
+    },
+    {
+      "network": "Eniris",
+      "address": "Mažeikių g. 1, Telšiai",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.91,
+      "diesel": 2.01,
+      "lpg": 0.92
+    },
+    {
+      "network": "Eniris",
+      "address": "Beržų g. 24/Drąsiųjų 7, Tryškiai",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.89,
+      "diesel": 1.99,
+      "lpg": 0.94
+    },
+    {
+      "network": "Gazimpeksas",
+      "address": "Telšiai, Mažeikių g. 7A",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "network": "Leosta",
+      "address": "Telšių g. 66, LT-88238, Luokė",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.87,
+      "diesel": 2.08,
+      "lpg": 0.92
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Šiaulių pl. 1A, Gaudikaičių k.",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.914,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "​Plungės g. 33 D, Telšiai",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "network": "Prie Luksto",
+      "address": "Telšiai, Masčio g. 21",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.975,
+      "diesel": 2.065,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Telšiai, Pramonės g. 2A",
+      "municipality": "Telšių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.069,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Trakai, Vilniaus g. 33",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.049,
+      "lpg": 0.949
+    },
+    {
+      "network": "Borusta",
+      "address": "Vilniaus g. 2a, Aukštadvaris",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.93,
+      "lpg": 0.89
+    },
+    {
+      "network": "Circle K",
+      "address": "Didžiulio g. 5, Dėdeliškių k.",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": 0.999
+    },
+    {
+      "network": "Emsi",
+      "address": "Sodų g.3A, Lentvaris",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.97,
+      "lpg": 0.899
+    },
+    {
+      "network": "Emsi",
+      "address": "Sausių g.2 Sausių k..",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": 1.82,
+      "diesel": 1.94,
+      "lpg": 0.87
+    },
+    {
+      "network": "Kriketas",
+      "address": "Senkelio g. 13, Trakai",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Aukštųjų Semeniukų k., Logistikos g. 9",
+      "municipality": "Trakų r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Kauno g. 37, Ukmergė",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.884,
+      "diesel": 1.984,
+      "lpg": 0.864
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Ukmergė, Kauno g. 49",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 1.989,
+      "lpg": 0.869
+    },
+    {
+      "network": "Bemija",
+      "address": "Dariaus ir Girėmo g. 31, Ukmergė",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.95,
+      "lpg": 0.89
+    },
+    {
+      "network": "Circle K",
+      "address": "Ežero g. 7, Kurėnų k.",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": 0.999
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Kauno g. 45B, Ukmergė",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Saurida",
+      "address": "Ukmergė Kareivinių g. 64",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Ukmergė Vilniaus g. 122",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Pageležių km.",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.88,
+      "lpg": 0.82
+    },
+    {
+      "network": "Viada",
+      "address": "Ukmergė, Žiedo g. 15",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Dukstynos k., Vytauto g. 131",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Šventupės k., Beržų g. 13",
+      "municipality": "Ukmergės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Palijoniškio g. 1, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Alauša",
+      "address": "Plento g. 17, Daugailiai",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Alauša",
+      "address": "J. Basanavičiaus g. 1C, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.794,
+      "diesel": 1.954,
+      "lpg": 0.894
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Utena, Basanavičiaus g. 1B",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Zarasų g. 9, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 1.979,
+      "lpg": 0.899
+    },
+    {
+      "network": "Circle K",
+      "address": "J. Basanavičiaus g. 108a, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "J. Basanavičiaus g. 3, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.909,
+      "diesel": 2.009,
+      "lpg": 0.969
+    },
+    {
+      "network": "Dujotena",
+      "address": "Molėtų g. 94, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "J. Basanavičiaus g. 129, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Kupiškio g. 12, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "network": "Stateta",
+      "address": "Palangos g. 66, Utena",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Utentra",
+      "address": "Utena, Pramonės g. 16",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": 1.919,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Utena, Metalo g. 8",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Utena, Pramonės g. 23",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Gedimino k., Vyturio g. 2",
+      "municipality": "Utenos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.939
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Varėna, Čiurlionio g. 63",
+      "municipality": "Varėnos r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Merkinė, Vilniaus g. 87",
+      "municipality": "Varėnos r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.049,
+      "lpg": 0.969
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Senoji Varėna, Vilniaus g. 6A",
+      "municipality": "Varėnos r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.069,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "Savanorių g. 5, Varėna",
+      "municipality": "Varėnos r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.079,
+      "lpg": 0.969
+    },
+    {
+      "network": "Viada",
+      "address": "Valkininkai, Vilniaus g. 6",
+      "municipality": "Varėnos r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Vilkaviškio g. 10, Serdokų k.",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.819,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "Emsi",
+      "address": "S.Nėries g.38, Vilkaviškis",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.979,
+      "lpg": 0.89
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Marijampolės g. 8, Rūdos k.",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.91,
+      "lpg": 0.91
+    },
+    {
+      "network": "Melkasta",
+      "address": "Gulbiniškių k. 7",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.95,
+      "lpg": 0.91
+    },
+    {
+      "network": "Osijos dujos",
+      "address": "Pamiškės g. 1, Osijos k.",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.96
+    },
+    {
+      "network": "Regusa",
+      "address": "J. Basanavičiaus g. 45A, Kybartai",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.81,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "network": "Viada",
+      "address": "Vilkaviškis, Vytauto g. 105",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Vildega",
+      "address": "Vytauto g. 2D, Vilkaviškis",
+      "municipality": "Vilkaviškio r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.979,
+      "lpg": 0.89
+    },
+    {
+      "network": "Alauša",
+      "address": "Kalvarijų g. 204G, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.774,
+      "diesel": 1.964,
+      "lpg": 0.859
+    },
+    {
+      "network": "Alauša",
+      "address": "Kirtimų g. 23A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": 0.919
+    },
+    {
+      "network": "Alauša",
+      "address": "Pelesos g. 1/2, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.039,
+      "lpg": 0.899
+    },
+    {
+      "network": "Alauša",
+      "address": "Vilniaus g. 8, Grigiškės",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Alauša",
+      "address": "Šiaurės g. 39, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.774,
+      "diesel": 1.974,
+      "lpg": 0.899
+    },
+    {
+      "network": "Alauša",
+      "address": "Šv. Stepono g. 44, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Alauša",
+      "address": "Buivydiškių g. 5, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Alauša",
+      "address": "Laisvės pr. 125A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.959,
+      "lpg": null
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Antakalnio g. 128",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.859
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Gerosios Vilties g. 33",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.909,
+      "diesel": 2.029,
+      "lpg": 0.949
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Savanorių pr. 121",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.959,
+      "lpg": 0.849
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius  Kalvarijų g. 161A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.969,
+      "lpg": 0.859
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Metalo g. 4B",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.989,
+      "lpg": 0.889
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Molėtų pl. 27A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.949,
+      "lpg": 0.939
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, S. Batoro g. 15",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.959,
+      "lpg": 0.919
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Rinktinės g. 59",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.969,
+      "lpg": 0.949
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Brazdžionio g. 2",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.959,
+      "lpg": null
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Visalaukio g. 2",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.979,
+      "lpg": 0.929
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilnius, Zujūnų g. 2A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.919
+    },
+    {
+      "network": "Circle K",
+      "address": "Geležinio Vilko g. 2A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Baltupio g. 10, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 2.019,
+      "lpg": 0.929
+    },
+    {
+      "network": "Circle K",
+      "address": "A. P. Kavoliuko g. 32A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.969,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Sporto g. 16A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.079,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Ukmergės g. 231, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.059,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Kareivių g. 13, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.034,
+      "lpg": 0.969
+    },
+    {
+      "network": "Circle K",
+      "address": "A. Goštauto g. 13, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Laisvės pr. 43C, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.819,
+      "diesel": 1.979,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "J. Tiškevičiaus g. 24, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.944,
+      "diesel": 2.064,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Eišiškių pl. 11, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Talino g. 2B, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.999
+    },
+    {
+      "network": "Circle K",
+      "address": "Geležinio Vilko g. 39, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Prūsų g. 26 A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.999
+    },
+    {
+      "network": "Circle K",
+      "address": "Geležinio Vilko g. 24, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Oslo g. 12, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Savanorių pr. 118, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.054,
+      "lpg": 0.919
+    },
+    {
+      "network": "Circle K",
+      "address": "P. Žadeikos g. 1a, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.024,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Savanorių pr. 119A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.054,
+      "lpg": 0.919
+    },
+    {
+      "network": "Circle K",
+      "address": "Kareivių g. 3, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.969,
+      "lpg": 0.939
+    },
+    {
+      "network": "Circle K",
+      "address": "Geležinio Vilko g. 4, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Gariūnų g. 45, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Vilnius, Spyglių g. 2",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Emsi",
+      "address": "Jeruzalės 2, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.739,
+      "diesel": 1.919,
+      "lpg": 0.859
+    },
+    {
+      "network": "Emsi",
+      "address": "Kareivių g. 4, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.959,
+      "lpg": 0.879
+    },
+    {
+      "network": "Emsi",
+      "address": "Kirtimų g. 33, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.949,
+      "lpg": 0.849
+    },
+    {
+      "network": "Emsi",
+      "address": "Laisvės pr. 80B, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.979,
+      "lpg": 0.889
+    },
+    {
+      "network": "Emsi",
+      "address": "Liepkalnio g.112A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.959,
+      "lpg": 0.89
+    },
+    {
+      "network": "Emsi",
+      "address": "Pajautos g. 31, Vilnius (Pilaitė)",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.959,
+      "lpg": 0.91
+    },
+    {
+      "network": "Emsi",
+      "address": "Savanorių 225, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.959,
+      "lpg": 0.849
+    },
+    {
+      "network": "Emsi",
+      "address": "Gunkliškių g.2F, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.899
+    },
+    {
+      "network": "Jozita",
+      "address": "Vilnius, Ukmergės g. 130",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Vilnius, Parko g. 64",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Vilnius, Pramonės g. 18",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Vilnius, Baltosios Vokės g 35",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Servečės g. 2, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Ukmergės g. 296, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Talino g. 2C, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Erfurto g. 41, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Geležinio Vilko g. 63, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.884,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "S. Stanevičiaus g. 3, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Žirmūnų g. 68B, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.904,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Rygos g. 2, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Savanorių pr. 220A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.874,
+      "diesel": 2.014,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Parodų g. 1A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Kauno g. 26, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Savanorių pr. 187, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.874,
+      "diesel": 2.014,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Kedrų g. 2, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Molėtų pl. 8, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.874,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "P. Lukšio g. 22, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.894,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Žirmūnų g. 54C, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.904,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Subačiaus g. 64, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.914,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Dariaus ir Girėno g. 17, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Architektų g. 130, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.914,
+      "diesel": 2.014,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Justiniškių g. 14B, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Geležinio Vilko g. 37A, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Pilaitės pr. 27, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Žirnių g. 17, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "J. Tiškevičiaus g. 19, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.889,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Eišiškių pl. 82, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Gariūnų g. 55, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.914,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Panerių g. 42, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Geležinio Vilko g. 41, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Juodasis kl. 32, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Orlen",
+      "address": "O. ​Milašiaus g. 31, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Orlen",
+      "address": "Ukmergės g. 319, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.979,
+      "lpg": 0.889
+    },
+    {
+      "network": "Orlen",
+      "address": "Žirmūnų g. 1T, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.979,
+      "lpg": 0.889
+    },
+    {
+      "network": "Saurida",
+      "address": "Vilnius, Jankiškių g. 43a",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Vilnius, Rygos g. 2",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Vilnius Stanevičiaus g. 3A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.84
+    },
+    {
+      "network": "Skulas",
+      "address": "Vilnius, J.Kazlausko g. 34",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.959,
+      "lpg": 0.849
+    },
+    {
+      "network": "Stateta",
+      "address": "Ukmergės g. 246, Vilnius",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Ateities g. 17B",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.049,
+      "lpg": 0.929
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Dariaus ir Girėno g. 30A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Gariūnų g. 16A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Grigiškės, Kovo 11-osios g. 75",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Justiniškių g. 12",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Kirtimų g. 29",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Laisvės pr. 8",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Liepkalnio g. 128A",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Naugarduko g. 74",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Nemenčinės pl. 5",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Olandų g. 57",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Ozo g. 12",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Pilaitės pr. 13",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Pilaitės pr. 28",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Saltoniškių g. 12",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Sodų g. 22",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Verkių g. 52",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.049,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Vilnius, Vilkpėdės g. 2",
+      "municipality": "Vilniaus m. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.059,
+      "lpg": null
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Vilkaraisčio k.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 1.96,
+      "lpg": 0.89
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Užubalių k. Senasis Ukmergės kelias 4",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.969,
+      "lpg": 0.899
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Grigaičiai, Pavilnės g.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.979,
+      "lpg": 0.939
+    },
+    {
+      "network": "Circle K",
+      "address": "Sudervės g. 2G, Avižienių k.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 2.024,
+      "lpg": 0.959
+    },
+    {
+      "network": "Circle K",
+      "address": "Molėtų g. 15, Didžiosios Riešės k.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Bukiškio k. Ukmergės g.437",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": 0.89
+    },
+    {
+      "network": "Emsi",
+      "address": "Mokyklos g. 26, Maišiagalos mstl.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": 0.899
+    },
+    {
+      "network": "Emsi",
+      "address": "Medininkų k., Pasieniečių g.10",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Emsi",
+      "address": "Taikos g.1, Kreivalaužių k.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.91,
+      "lpg": 0.89
+    },
+    {
+      "network": "Eniris",
+      "address": "Kalnuotės 1 k.",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.959,
+      "lpg": 0.919
+    },
+    {
+      "network": "Jozita",
+      "address": "Rudamina, Jašiūnų g. 2",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Kenaoil",
+      "address": "Miško g.6, Kena",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null
+    },
+    {
+      "network": "Medelsta",
+      "address": "Pagirių k., Durpių g.45",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.99,
+      "lpg": 0.93
+    },
+    {
+      "network": "Saurida",
+      "address": "Čekoniškių km",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": null
+    },
+    {
+      "network": "Saurida",
+      "address": "Zujūnai Buivydiškių g. 1A",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.92,
+      "lpg": 0.85
+    },
+    {
+      "network": "Viada",
+      "address": "Avižienių k., Ožiarūčių g. 1a",
+      "municipality": "Vilniaus r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Kosmoso g. 3, Visaginas",
+      "municipality": "Visagino sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.979,
+      "lpg": 0.859
+    },
+    {
+      "network": "Autograndas",
+      "address": "Taikos pr. 47",
+      "municipality": "Visagino sav.",
+      "locality": "",
+      "petrol95": 1.854,
+      "diesel": 1.976,
+      "lpg": null
+    },
+    {
+      "network": "Saurida",
+      "address": "Visaginas Kosmoso g. 1",
+      "municipality": "Visagino sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Viada",
+      "address": "Visaginas, Statybininkų g. 1",
+      "municipality": "Visagino sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Visaginas, Taikos pr. 23B",
+      "municipality": "Visagino sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Sarakiškių k., Vytauto g. 61",
+      "municipality": "Zarasų r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": 0.839
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Padustėlis, V. Striogos g. 4A",
+      "municipality": "Zarasų r. sav.",
+      "locality": "",
+      "petrol95": 1.839,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Juodalaukių k. 2",
+      "municipality": "Zarasų r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Šakių g. 51, Kudirkos Naumiestis",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.789,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šakiai, Sodų g. 1",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.91,
+      "lpg": 0.9
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Griškabūdis",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.93,
+      "lpg": null
+    },
+    {
+      "network": "GM Circle K",
+      "address": "Kauno g. 68, Girėnų k.",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null
+    },
+    {
+      "network": "Gelvybė",
+      "address": "V. Kudirkos g. 11D, Šakiai",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.91,
+      "lpg": 0.9
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Mozūriškiai, Mozūriškių 10",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.91,
+      "lpg": null
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Sūduvos g. 3, Kiduliai",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "network": "Gelvybė",
+      "address": "Kauno g. 50, Girėnai",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.91,
+      "lpg": 0.9
+    },
+    {
+      "network": "Saurida",
+      "address": "Lėkėčių km. Šakių g. 3",
+      "municipality": "Šakių r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.9,
+      "lpg": 0.86
+    },
+    {
+      "network": "Alauša",
+      "address": "Skraičionių g. 1, Skraičionių k.",
+      "municipality": "Šalčininkų r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.039,
+      "lpg": 0.904
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šalčininkai, Vilniaus g. 5A",
+      "municipality": "Šalčininkų r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": 0.939
+    },
+    {
+      "network": "Tomega",
+      "address": "Tartoko k.",
+      "municipality": "Šalčininkų r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "network": "Tomega",
+      "address": "Dumblės k.",
+      "municipality": "Šalčininkų r. sav.",
+      "locality": "",
+      "petrol95": 1.949,
+      "diesel": 2.079,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Jašiūnai, Lydos g. 13",
+      "municipality": "Šalčininkų r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Apsaga",
+      "address": "Vilniaus g.16, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.829,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Apsaga",
+      "address": "Pramonės g. 3A, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.995,
+      "lpg": 0.899
+    },
+    {
+      "network": "Apsaga",
+      "address": "Pramonės g. 28, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Apsaga",
+      "address": "Nuklono g. 4, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "network": "Apsaga",
+      "address": "Tilžės g. 223, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.849,
+      "diesel": 1.995,
+      "lpg": 0.899
+    },
+    {
+      "network": "Apsaga",
+      "address": "V. Bielskio g. 47A, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.84,
+      "diesel": 1.98,
+      "lpg": 0.89
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šiauliai, Kupiškio g. 4",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.969,
+      "lpg": 0.89
+    },
+    {
+      "network": "Circle K",
+      "address": "Dubijos g. 20A, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.969,
+      "diesel": 2.069,
+      "lpg": 0.969
+    },
+    {
+      "network": "Circle K",
+      "address": "Pramonės g. 17a, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": 0.949
+    },
+    {
+      "network": "Circle K",
+      "address": "Vilniaus g. 62, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "network": "Circle K",
+      "address": "Tilžės g. 25, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.929,
+      "diesel": 2.049,
+      "lpg": 0.969
+    },
+    {
+      "network": "Emsi",
+      "address": "Sembos g.5, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.779,
+      "diesel": 1.919,
+      "lpg": 0.86
+    },
+    {
+      "network": "Jozita",
+      "address": "Šiauliai, Architektų g. 80",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Šiauliai, Girulių g. 1",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Junasa",
+      "address": "Žemaitės g. 131c",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.899,
+      "lpg": 0.84
+    },
+    {
+      "network": "Junasa",
+      "address": "Bačiūnų g. 12a",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.899,
+      "lpg": 0.84
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Gegužių g. 28, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Tilžės g. 72, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Dubijos g. 18A, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Orlen",
+      "address": "Serbentų g. 82, Šiauliai",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.859,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "network": "Plovimo sistemos",
+      "address": "Gegužių g. 28",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.909
+    },
+    {
+      "network": "Saurida",
+      "address": "Šiauliai Vilniaus g. 373A",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Saurida",
+      "address": "Šiauliai Pramonės g. 7C",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.94,
+      "lpg": 0.86
+    },
+    {
+      "network": "Viada",
+      "address": "Šiauliai, Dubijos g. 1C",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Šiauliai, Gegužių g. 26",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Šiauliai, J. Basanavičiaus g. 122A",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Šiauliai, Tilžės g. 274",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Šiauliai, Užmiesčio g. 2",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Alauša",
+      "address": "Plento g. 2B, Kairiai",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.989,
+      "lpg": 0.899
+    },
+    {
+      "network": "Atsiauta",
+      "address": "Vytauto 80, Kuršėnai",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.85,
+      "diesel": 2.05,
+      "lpg": 0.95
+    },
+    {
+      "network": "Boost Petrol",
+      "address": "Ginkūnų k., Aušros g. 26",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.939,
+      "diesel": 2.059,
+      "lpg": 0.939
+    },
+    {
+      "network": "Circle K",
+      "address": "Plento g. 1, Kuršėnai",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Jozita",
+      "address": "Toliočiai, Plento g. 2B",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Junasa",
+      "address": "M. Katiliškio g. 50, Gruzdžiai",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.749,
+      "diesel": 1.899,
+      "lpg": 0.84
+    },
+    {
+      "network": "Viada",
+      "address": "Aukštelkės k., Ilgoji g. 1",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kuršėnai, Vilniaus g. 38A",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kužiai, Draugystės g. 2",
+      "municipality": "Šiaulių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilalė, Rytinio Kelio g. 2",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.769,
+      "diesel": 1.939,
+      "lpg": 0.859
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Bučių k.",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.97,
+      "lpg": 0.86
+    },
+    {
+      "network": "Circle K",
+      "address": "Dvaro g. 3, Košių II k.",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.979,
+      "diesel": 2.099,
+      "lpg": 0.969
+    },
+    {
+      "network": "Eniris",
+      "address": "Paršežerio g.1, Vabalų k.",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.76,
+      "diesel": 1.99,
+      "lpg": 0.92
+    },
+    {
+      "network": "Eniris",
+      "address": "Rytinio Kelio g. 2a, Šilalė",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.74,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "network": "Jozita",
+      "address": "Šolių k., Pietinio Kelio g. 9",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Madalva",
+      "address": "Gineikių k.",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.84
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Katyčių k., Šilalės r.",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.879,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "network": "Pynauja",
+      "address": "Dvaro g.1, Papynaujo k.,Kvėdarna",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.94
+    },
+    {
+      "network": "Saurida",
+      "address": "Šilalė Rytinio kelio g. 19",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.9,
+      "lpg": 0.85
+    },
+    {
+      "network": "Viada",
+      "address": "Kuodaičių k.",
+      "municipality": "Šilalės r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Andopas",
+      "address": "Ramučių g.43",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.92,
+      "lpg": 0.88
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Šilutė, Klaipėdos g. 4A",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.759,
+      "diesel": 1.959,
+      "lpg": 0.889
+    },
+    {
+      "network": "Circle K",
+      "address": "Cintjoniškių g. 15, Šilutė",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.035,
+      "lpg": 0.95
+    },
+    {
+      "network": "Emsi",
+      "address": "Gluosnių g.4A, Šilutė",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.75,
+      "diesel": 1.96,
+      "lpg": 0.88
+    },
+    {
+      "network": "Eniris",
+      "address": "Klaipėdos g. 76, Žemaičių Naumiestis",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.81,
+      "diesel": 1.99,
+      "lpg": 0.92
+    },
+    {
+      "network": "Jozita",
+      "address": "Šilutė, Šiaurės g. 1",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "network": "Jozita",
+      "address": "Traksėdžių k., Klaipėdos. 1",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.79,
+      "diesel": 1.92,
+      "lpg": 0.83
+    },
+    {
+      "network": "Trevena",
+      "address": "Tilžės g. 21, Saugų k.",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.89
+    },
+    {
+      "network": "Trevena",
+      "address": "Liepų g. 4, Žemaitkiemio k.",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.77,
+      "diesel": 1.95,
+      "lpg": 0.89
+    },
+    {
+      "network": "Viada",
+      "address": "Šilutė, Tilžės g. 59",
+      "municipality": "Šilutės r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "network": "V.Marcinkevičiaus IĮ",
+      "address": "Bažnyčios 7., Pavilnučio k.",
+      "municipality": "Šilutės r.sav.",
+      "locality": "",
+      "petrol95": 1.78,
+      "diesel": 1.94,
+      "lpg": 0.92
+    },
+    {
+      "network": "Alauša",
+      "address": "Paširvio g. 1, Paširvinčio k.",
+      "municipality": "Širvintų r. sav.",
+      "locality": "",
+      "petrol95": 1.794,
+      "diesel": 1.974,
+      "lpg": 0.874
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Širvintos, Musninkų g. 21",
+      "municipality": "Širvintų r. sav.",
+      "locality": "",
+      "petrol95": 1.799,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "network": "Viada",
+      "address": "Širvintos, Plento g. 4",
+      "municipality": "Širvintų r. sav.",
+      "locality": "",
+      "petrol95": 1.899,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Neste Lietuva",
+      "address": "Vilniaus g. 94, Pabradė",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": 1.919,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "network": "Propano ir butano dujų centras",
+      "address": "Aukštaičių g. 2a, Cirkliškio k.",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": 1.92,
+      "diesel": 2.06,
+      "lpg": 0.93
+    },
+    {
+      "network": "RV",
+      "address": "Mokyklos g. 23, Švenčionys",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.93
+    },
+    {
+      "network": "Viada",
+      "address": "Švenčionys, Vilniaus g. 50A",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Kaltanėnai, Utenos g. 1",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": null
+    },
+    {
+      "network": "Viada",
+      "address": "Pabradė, Vilniaus g. 116B",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "network": "Viada",
+      "address": "Švenčionėliai, Žemutinė g. 51A",
+      "municipality": "Švenčionių r. sav.",
+      "locality": "",
+      "petrol95": 1.959,
+      "diesel": 2.099,
+      "lpg": 0.959
+    }
+  ]
 }
