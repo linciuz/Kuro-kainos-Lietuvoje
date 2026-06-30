@@ -5,7 +5,12 @@
     "lv": "🚛 Dīzelis",
     "et": "🚛 Diisel",
     "uk": "🚛 Дизель",
-    "ru": "🚛 Дизель"
+    "ru": "🚛 Дизель",
+    "de": "🚛 Diesel",
+    "sv": "🚛 Diesel",
+    "fi": "🚛 Diesel",
+    "no": "🚛 Diesel",
+    "pl": "🚛 Diesel"
   },
   "btn_lpg": {
     "lt": "🔥 Dujos",
@@ -13,7 +18,12 @@
     "lv": "🔥 Gāze",
     "et": "🔥 Gaas",
     "uk": "🔥 Газ",
-    "ru": "🔥 Газ"
+    "ru": "🔥 Газ",
+    "de": "🔥 Autogas",
+    "sv": "🔥 Gasol",
+    "fi": "🔥 Nestekaasu",
+    "no": "🔥 LPG",
+    "pl": "🔥 LPG"
   },
   "view_list": {
     "lt": "📋 Sąrašas",
@@ -21,7 +31,12 @@
     "lv": "📋 Saraksts",
     "et": "📋 Loend",
     "uk": "📋 Список",
-    "ru": "📋 Список"
+    "ru": "📋 Список",
+    "de": "📋 Liste",
+    "sv": "📋 Lista",
+    "fi": "📋 Lista",
+    "no": "📋 Liste",
+    "pl": "📋 Lista"
   },
   "view_map": {
     "lt": "🗺️ Žemėlapis",
@@ -29,7 +44,12 @@
     "lv": "🗺️ Karte",
     "et": "🗺️ Kaart",
     "uk": "🗺️ Карта",
-    "ru": "🗺️ Карта"
+    "ru": "🗺️ Карта",
+    "de": "🗺️ Karte",
+    "sv": "🗺️ Karta",
+    "fi": "🗺️ Kartta",
+    "no": "🗺️ Kart",
+    "pl": "🗺️ Mapa"
   },
   "locate": {
     "lt": "📍 Rasti artimiausias prie manęs",
@@ -37,7 +57,12 @@
     "lv": "📍 Atrast tuvākās man",
     "et": "📍 Leia lähimad",
     "uk": "📍 Знайти найближчі до мене",
-    "ru": "📍 Найти ближайшие ко мне"
+    "ru": "📍 Найти ближайшие ко мне",
+    "de": "📍 Nächste in meiner Nähe finden",
+    "sv": "📍 Hitta närmaste till mig",
+    "fi": "📍 Etsi lähimmät",
+    "no": "📍 Finn nærmeste",
+    "pl": "📍 Znajdź najbliższe"
   },
   "search_ph": {
     "lt": "Ieškoti (tinklas, adresas)…",
@@ -45,7 +70,12 @@
     "lv": "Meklēt (tīkls, adrese)…",
     "et": "Otsi (kett, aadress)…",
     "uk": "Пошук (мережа, адреса)…",
-    "ru": "Поиск (сеть, адрес)…"
+    "ru": "Поиск (сеть, адрес)…",
+    "de": "Suchen (Kette, Adresse)…",
+    "sv": "Sök (kedja, adress)…",
+    "fi": "Hae (ketju, osoite)…",
+    "no": "Søk (kjede, adresse)…",
+    "pl": "Szukaj (sieć, adres)…"
   },
   "sort_label": {
     "lt": "Rūšiuoti:",
@@ -53,7 +83,12 @@
     "lv": "Kārtot:",
     "et": "Sorteeri:",
     "uk": "Сортувати:",
-    "ru": "Сортировка:"
+    "ru": "Сортировка:",
+    "de": "Sortieren:",
+    "sv": "Sortera:",
+    "fi": "Lajittele:",
+    "no": "Sortér:",
+    "pl": "Sortuj:"
   },
   "sort_cheap": {
     "lt": "💰 Pigiausios",
@@ -61,7 +96,12 @@
     "lv": "💰 Lētākās",
     "et": "💰 Odavaimad",
     "uk": "💰 Найдешевші",
-    "ru": "💰 Самые дешёвые"
+    "ru": "💰 Самые дешёвые",
+    "de": "💰 Günstigste",
+    "sv": "💰 Billigast",
+    "fi": "💰 Halvimmat",
+    "no": "💰 Billigste",
+    "pl": "💰 Najtańsze"
   },
   "sort_dear": {
     "lt": "Brangiausios",
@@ -69,7 +109,12 @@
     "lv": "Dārgākās",
     "et": "Kalleimad",
     "uk": "Найдорожчі",
-    "ru": "Самые дорогие"
+    "ru": "Самые дорогие",
+    "de": "Teuerste",
+    "sv": "Dyrast",
+    "fi": "Kalleimmat",
+    "no": "Dyreste",
+    "pl": "Najdroższe"
   },
   "sort_near": {
     "lt": "📍 Arčiausios",
@@ -77,7 +122,12 @@
     "lv": "📍 Tuvākās",
     "et": "📍 Lähimad",
     "uk": "📍 Найближчі",
-    "ru": "📍 Ближайшие"
+    "ru": "📍 Ближайшие",
+    "de": "📍 Nächste",
+    "sv": "📍 Närmast",
+    "fi": "📍 Lähimmät",
+    "no": "📍 Nærmeste",
+    "pl": "📍 Najbliższe"
   },
   "loading": {
     "lt": "Kraunama…",
@@ -85,7 +135,12 @@
     "lv": "Ielādē…",
     "et": "Laadimine…",
     "uk": "Завантаження…",
-    "ru": "Загрузка…"
+    "ru": "Загрузка…",
+    "de": "Wird geladen…",
+    "sv": "Laddar…",
+    "fi": "Ladataan…",
+    "no": "Laster…",
+    "pl": "Ładowanie…"
   },
   "loading_data": {
     "lt": "Kraunama oficialūs duomenys…",
@@ -93,7 +148,12 @@
     "lv": "Ielādē oficiālos datus…",
     "et": "Laadin ametlikke andmeid…",
     "uk": "Завантаження офіційних даних…",
-    "ru": "Загрузка официальных данных…"
+    "ru": "Загрузка официальных данных…",
+    "de": "Offizielle Daten werden geladen…",
+    "sv": "Laddar officiella data…",
+    "fi": "Ladataan virallisia tietoja…",
+    "no": "Laster offisielle data…",
+    "pl": "Ładowanie oficjalnych danych…"
   },
   "fuel_petrol95": {
     "lt": "95 benzinas",
@@ -101,7 +161,12 @@
     "lv": "95 benzīns",
     "et": "95 bensiin",
     "uk": "Бензин 95",
-    "ru": "Бензин 95"
+    "ru": "Бензин 95",
+    "de": "Benzin 95",
+    "sv": "95 bensin",
+    "fi": "95-bensiini",
+    "no": "95 bensin",
+    "pl": "Benzyna 95"
   },
   "fuel_diesel": {
     "lt": "Dyzelinas",
@@ -109,7 +174,12 @@
     "lv": "Dīzelis",
     "et": "Diisel",
     "uk": "Дизель",
-    "ru": "Дизель"
+    "ru": "Дизель",
+    "de": "Diesel",
+    "sv": "Diesel",
+    "fi": "Diesel",
+    "no": "Diesel",
+    "pl": "Diesel"
   },
   "fuel_lpg": {
     "lt": "Dujos (SND)",
@@ -117,7 +187,12 @@
     "lv": "Gāze (LPG)",
     "et": "Gaas (LPG)",
     "uk": "Газ (СНГ)",
-    "ru": "Газ (СНГ)"
+    "ru": "Газ (СНГ)",
+    "de": "Autogas (LPG)",
+    "sv": "Gasol (LPG)",
+    "fi": "Nestekaasu (LPG)",
+    "no": "LPG",
+    "pl": "LPG"
   },
   "all_munis": {
     "lt": "Visos savivaldybės",
@@ -125,7 +200,12 @@
     "lv": "Visas pašvaldības",
     "et": "Kõik omavalitsused",
     "uk": "Усі громади",
-    "ru": "Все муниципалитеты"
+    "ru": "Все муниципалитеты",
+    "de": "Alle Gemeinden",
+    "sv": "Alla kommuner",
+    "fi": "Kaikki kunnat",
+    "no": "Alle kommuner",
+    "pl": "Wszystkie gminy"
   },
   "big_cities": {
     "lt": "Didmiesčiai",
@@ -133,7 +213,12 @@
     "lv": "Lielpilsētas",
     "et": "Suurlinnad",
     "uk": "Великі міста",
-    "ru": "Крупные города"
+    "ru": "Крупные города",
+    "de": "Großstädte",
+    "sv": "Storstäder",
+    "fi": "Suuret kaupungit",
+    "no": "Storbyer",
+    "pl": "Duże miasta"
   },
   "other_munis": {
     "lt": "Kitos savivaldybės",
@@ -141,7 +226,12 @@
     "lv": "Citas pašvaldības",
     "et": "Muud omavalitsused",
     "uk": "Інші громади",
-    "ru": "Другие муниципалитеты"
+    "ru": "Другие муниципалитеты",
+    "de": "Andere Gemeinden",
+    "sv": "Övriga kommuner",
+    "fi": "Muut kunnat",
+    "no": "Andre kommuner",
+    "pl": "Inne gminy"
   },
   "source": {
     "lt": "Šaltinis:",
@@ -149,7 +239,12 @@
     "lv": "Avots:",
     "et": "Allikas:",
     "uk": "Джерело:",
-    "ru": "Источник:"
+    "ru": "Источник:",
+    "de": "Quelle:",
+    "sv": "Källa:",
+    "fi": "Lähde:",
+    "no": "Kilde:",
+    "pl": "Źródło:"
   },
   "data_stale": {
     "lt": "⚠️ Duomenys gali būti pasenę — paskutinis atnaujinimas {date} (prieš {days} d.)",
@@ -157,7 +252,12 @@
     "lv": "⚠️ Dati var būt novecojuši — pēdējā atjaunināšana {date} (pirms {days} d.)",
     "et": "⚠️ Andmed võivad olla aegunud — viimati uuendatud {date} ({days} päeva tagasi)",
     "uk": "⚠️ Дані можуть бути застарілими — останнє оновлення {date} ({days} дн. тому)",
-    "ru": "⚠️ Данные могут быть устаревшими — последнее обновление {date} ({days} дн. назад)"
+    "ru": "⚠️ Данные могут быть устаревшими — последнее обновление {date} ({days} дн. назад)",
+    "de": "⚠️ Daten könnten veraltet sein — zuletzt aktualisiert am {date} (vor {days} Tagen)",
+    "sv": "⚠️ Uppgifterna kan vara inaktuella — senast uppdaterade {date} (för {days} dagar sedan)",
+    "fi": "⚠️ Tiedot voivat olla vanhentuneita — viimeksi päivitetty {date} ({days} päivää sitten)",
+    "no": "⚠️ Dataene kan være utdaterte — sist oppdatert {date} (for {days} dager siden)",
+    "pl": "⚠️ Dane mogą być nieaktualne — ostatnia aktualizacja {date} ({days} dni temu)"
   },
   "data_updated": {
     "lt": "Duomenys atnaujinti: {date}",
@@ -165,7 +265,12 @@
     "lv": "Dati atjaunināti: {date}",
     "et": "Andmed uuendatud: {date}",
     "uk": "Дані оновлено: {date}",
-    "ru": "Данные обновлены: {date}"
+    "ru": "Данные обновлены: {date}",
+    "de": "Daten aktualisiert: {date}",
+    "sv": "Uppgifter uppdaterade: {date}",
+    "fi": "Tiedot päivitetty: {date}",
+    "no": "Data oppdatert: {date}",
+    "pl": "Dane zaktualizowano: {date}"
   },
   "oil_brent": {
     "lt": "Brent nafta",
@@ -173,7 +278,12 @@
     "lv": "Brent nafta",
     "et": "Brent toornafta",
     "uk": "Нафта Brent",
-    "ru": "Нефть Brent"
+    "ru": "Нефть Brent",
+    "de": "Brent-Rohöl",
+    "sv": "Brent-råolja",
+    "fi": "Brent-raakaöljy",
+    "no": "Brent-råolje",
+    "pl": "Ropa Brent"
   },
   "oil_weekavg": {
     "lt": "savaitės vid.",
@@ -181,7 +291,12 @@
     "lv": "nedēļas vid.",
     "et": "nädala kesk.",
     "uk": "сер. за тиждень",
-    "ru": "сред. за неделю"
+    "ru": "сред. за неделю",
+    "de": "Wochendurchschnitt",
+    "sv": "veckogenomsnitt",
+    "fi": "viikon ka.",
+    "no": "ukesnitt",
+    "pl": "śr. tygodniowa"
   },
   "oil_perweek": {
     "lt": "per savaitę",
@@ -189,7 +304,12 @@
     "lv": "šonedēļ",
     "et": "sel nädalal",
     "uk": "за тиждень",
-    "ru": "за неделю"
+    "ru": "за неделю",
+    "de": "diese Woche",
+    "sv": "denna vecka",
+    "fi": "tällä viikolla",
+    "no": "denne uken",
+    "pl": "w tym tygodniu"
   },
   "oil_up": {
     "lt": "degalų kainos gali kilti",
@@ -197,7 +317,12 @@
     "lv": "degvielas cenas var celties",
     "et": "kütusehinnad võivad tõusta",
     "uk": "ціни на пальне можуть зрости",
-    "ru": "цены на топливо могут вырасти"
+    "ru": "цены на топливо могут вырасти",
+    "de": "Kraftstoffpreise könnten steigen",
+    "sv": "bränslepriserna kan stiga",
+    "fi": "polttoaineen hinnat voivat nousta",
+    "no": "drivstoffprisene kan stige",
+    "pl": "ceny paliw mogą wzrosnąć"
   },
   "oil_flat": {
     "lt": "rinka stabili",
@@ -205,7 +330,12 @@
     "lv": "tirgus ir stabils",
     "et": "turg on stabiilne",
     "uk": "ринок стабільний",
-    "ru": "рынок стабилен"
+    "ru": "рынок стабилен",
+    "de": "Markt ist stabil",
+    "sv": "marknaden är stabil",
+    "fi": "markkina on vakaa",
+    "no": "markedet er stabilt",
+    "pl": "rynek stabilny"
   },
   "oil_down": {
     "lt": "degalų kainos gali mažėti",
@@ -213,7 +343,12 @@
     "lv": "degvielas cenas var krist",
     "et": "kütusehinnad võivad langeda",
     "uk": "ціни на пальне можуть знизитися",
-    "ru": "цены на топливо могут снизиться"
+    "ru": "цены на топливо могут снизиться",
+    "de": "Kraftstoffpreise könnten sinken",
+    "sv": "bränslepriserna kan sjunka",
+    "fi": "polttoaineen hinnat voivat laskea",
+    "no": "drivstoffprisene kan falle",
+    "pl": "ceny paliw mogą spaść"
   },
   "banner_change": {
     "lt": "⚠️ {fuel}: kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo.",
@@ -221,7 +356,12 @@
     "lv": "⚠️ {fuel}: dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma.",
     "et": "⚠️ {fuel}: mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda.",
     "uk": "⚠️ {fuel}: ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00.",
-    "ru": "⚠️ {fuel}: цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00."
+    "ru": "⚠️ {fuel}: цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00.",
+    "de": "⚠️ {fuel}: Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben.",
+    "sv": "⚠️ {fuel}: priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00.",
+    "fi": "⚠️ {fuel}: joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen.",
+    "no": "⚠️ {fuel}: noen kjeders ({chains}) priser kan ha endret seg siden den offisielle oppdateringen kl. 10:00.",
+    "pl": "⚠️ {fuel}: ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00."
   },
   "ws_orlen": {
     "lt": "🏭 Orlen didmeninė kaina ({date}):",
@@ -229,7 +369,12 @@
     "lv": "🏭 Orlen vairumtirdzniecības cena ({date}):",
     "et": "🏭 Orlen hulgihind ({date}):",
     "uk": "🏭 Оптова ціна Orlen ({date}):",
-    "ru": "🏭 Оптовая цена Orlen ({date}):"
+    "ru": "🏭 Оптовая цена Orlen ({date}):",
+    "de": "🏭 Orlen Großhandelspreis ({date}):",
+    "sv": "🏭 Orlen partipris ({date}):",
+    "fi": "🏭 Orlen tukkuhinta ({date}):",
+    "no": "🏭 Orlen engrospris ({date}):",
+    "pl": "🏭 Cena hurtowa Orlen ({date}):"
   },
   "ws_nomarkup": {
     "lt": "be antkainio — ne degalinės kaina",
@@ -237,7 +382,12 @@
     "lv": "bez uzcenojuma — nav degvielas uzpildes stacijas cena",
     "et": "ilma juurdehindluseta — pole tankla hind",
     "uk": "без націнки — це не ціна на заправці",
-    "ru": "без наценки — не цена на заправке"
+    "ru": "без наценки — не цена на заправке",
+    "de": "ohne Aufschlag — kein Tankstellenpreis",
+    "sv": "exkl. påslag — inte ett pumppris",
+    "fi": "ilman katetta — ei aseman hinta",
+    "no": "uten påslag — ikke pumpepris",
+    "pl": "bez marży — to nie cena na stacji"
   },
   "ws_agri": {
     "lt": "Agro",
@@ -245,7 +395,12 @@
     "lv": "Agro",
     "et": "Agro",
     "uk": "Агро",
-    "ru": "Агро"
+    "ru": "Агро",
+    "de": "Agrar",
+    "sv": "Agro",
+    "fi": "Agri",
+    "no": "Agri",
+    "pl": "Agro"
   },
   "ws_lpg": {
     "lt": "Dujos",
@@ -253,7 +408,12 @@
     "lv": "Gāze",
     "et": "Gaas",
     "uk": "Газ",
-    "ru": "Газ"
+    "ru": "Газ",
+    "de": "Autogas",
+    "sv": "Gasol",
+    "fi": "Nestekaasu",
+    "no": "LPG",
+    "pl": "LPG"
   },
   "summary_national": {
     "lt": "{fuel} — šalies kainos (oficialios)",
@@ -261,7 +421,12 @@
     "lv": "{fuel} — valsts cenas (oficiālas)",
     "et": "{fuel} — riigi hinnad (ametlikud)",
     "uk": "{fuel} — ціни по країні (офіційні)",
-    "ru": "{fuel} — цены по стране (официальные)"
+    "ru": "{fuel} — цены по стране (официальные)",
+    "de": "{fuel} — landesweite Preise (offiziell)",
+    "sv": "{fuel} — rikspriser (officiella)",
+    "fi": "{fuel} — koko maan hinnat (viralliset)",
+    "no": "{fuel} — nasjonale priser (offisielle)",
+    "pl": "{fuel} — ceny krajowe (oficjalne)"
   },
   "stat_cheapest": {
     "lt": "Pigiausia",
@@ -269,7 +434,12 @@
     "lv": "Lētākā",
     "et": "Odavaim",
     "uk": "Найдешевша",
-    "ru": "Минимум"
+    "ru": "Минимум",
+    "de": "Günstigste",
+    "sv": "Billigast",
+    "fi": "Halvin",
+    "no": "Billigst",
+    "pl": "Najtańsza"
   },
   "stat_avg": {
     "lt": "Vidutinė",
@@ -277,7 +447,12 @@
     "lv": "Vidējā",
     "et": "Keskmine",
     "uk": "Середня",
-    "ru": "Средняя"
+    "ru": "Средняя",
+    "de": "Durchschnitt",
+    "sv": "Genomsnitt",
+    "fi": "Keskiarvo",
+    "no": "Gjennomsnitt",
+    "pl": "Średnia"
   },
   "stat_dearest": {
     "lt": "Brangiausia",
@@ -285,7 +460,12 @@
     "lv": "Dārgākā",
     "et": "Kalleim",
     "uk": "Найдорожча",
-    "ru": "Максимум"
+    "ru": "Максимум",
+    "de": "Teuerste",
+    "sv": "Dyrast",
+    "fi": "Kallein",
+    "no": "Dyrest",
+    "pl": "Najdroższa"
   },
   "ev_title": {
     "lt": "⚡ Elektromobilių įkrovimo stotelės ({n})",
@@ -293,7 +473,12 @@
     "lv": "⚡ EV uzlādes stacijas ({n})",
     "et": "⚡ EV laadimisjaamad ({n})",
     "uk": "⚡ Зарядні станції для електромобілів ({n})",
-    "ru": "⚡ Зарядные станции для электромобилей ({n})"
+    "ru": "⚡ Зарядные станции для электромобилей ({n})",
+    "de": "⚡ EV-Ladestationen ({n})",
+    "sv": "⚡ Laddstationer för elbilar ({n})",
+    "fi": "⚡ EV-latausasemat ({n})",
+    "no": "⚡ Ladestasjoner for elbil ({n})",
+    "pl": "⚡ Stacje ładowania EV ({n})"
   },
   "ev_sources": {
     "lt": "Šaltiniai: <b>Via Lietuva</b> (oficiali AFIR) + OpenStreetMap",
@@ -301,7 +486,12 @@
     "lv": "Avoti: <b>Via Lietuva</b> (oficiālais AFIR) + OpenStreetMap",
     "et": "Allikad: <b>Via Lietuva</b> (ametlik AFIR) + OpenStreetMap",
     "uk": "Джерела: <b>Via Lietuva</b> (офіційний AFIR) + OpenStreetMap",
-    "ru": "Источники: <b>Via Lietuva</b> (официальный AFIR) + OpenStreetMap"
+    "ru": "Источники: <b>Via Lietuva</b> (официальный AFIR) + OpenStreetMap",
+    "de": "Quellen: <b>Via Lietuva</b> (offiziell AFIR) + OpenStreetMap",
+    "sv": "Källor: <b>Via Lietuva</b> (officiell AFIR) + OpenStreetMap",
+    "fi": "Lähteet: <b>Via Lietuva</b> (virallinen AFIR) + OpenStreetMap",
+    "no": "Kilder: <b>Via Lietuva</b> (offisiell AFIR) + OpenStreetMap",
+    "pl": "Źródła: <b>Via Lietuva</b> (oficjalny AFIR) + OpenStreetMap"
   },
   "ev_price_count": {
     "lt": "kaina (€/kWh): {n} stotelės",
@@ -309,7 +499,12 @@
     "lv": "cena (€/kWh): {n} stacijas",
     "et": "hind (€/kWh): {n} jaama",
     "uk": "ціна (€/kWh): {n} станцій",
-    "ru": "цена (€/kWh): {n} станций"
+    "ru": "цена (€/kWh): {n} станций",
+    "de": "Preis (€/kWh): {n} Stationen",
+    "sv": "pris (€/kWh): {n} stationer",
+    "fi": "hinta (€/kWh): {n} asemaa",
+    "no": "pris (€/kWh): {n} stasjoner",
+    "pl": "cena (€/kWh): {n} stacji"
   },
   "ev_live_count": {
     "lt": "užimtumas realiu laiku 🟢🔴: {n} stotelės",
@@ -317,7 +512,12 @@
     "lv": "noslodze reāllaikā 🟢🔴: {n} stacijas",
     "et": "reaalajas hõivatus 🟢🔴: {n} jaama",
     "uk": "завантаженість у реальному часі 🟢🔴: {n} станцій",
-    "ru": "загруженность в реальном времени 🟢🔴: {n} станций"
+    "ru": "загруженность в реальном времени 🟢🔴: {n} станций",
+    "de": "Live-Auslastung 🟢🔴: {n} Stationen",
+    "sv": "beläggning i realtid 🟢🔴: {n} stationer",
+    "fi": "varaustilanne reaaliajassa 🟢🔴: {n} asemaa",
+    "no": "sanntidsbelegg 🟢🔴: {n} stasjoner",
+    "pl": "obłożenie na żywo 🟢🔴: {n} stacji"
   },
   "ev_live_off": {
     "lt": "realaus laiko užimtumas – kai įjungtas Worker",
@@ -325,7 +525,12 @@
     "lv": "noslodze reāllaikā – kad Worker ir ieslēgts",
     "et": "reaalajas hõivatus – kui Worker on sisse lülitatud",
     "uk": "завантаженість у реальному часі – коли увімкнено Worker",
-    "ru": "загруженность в реальном времени — когда включён Worker"
+    "ru": "загруженность в реальном времени — когда включён Worker",
+    "de": "Auslastung in Echtzeit – wenn der Worker aktiviert ist",
+    "sv": "beläggning i realtid – när Worker är aktiverad",
+    "fi": "reaaliaikainen varaustilanne – kun Worker on käytössä",
+    "no": "sanntidsbelegg – når Worker er på",
+    "pl": "obłożenie w czasie rzeczywistym – gdy Worker jest włączony"
   },
   "ev_status_free": {
     "lt": "Laisva {a}/{t}",
@@ -333,7 +538,12 @@
     "lv": "Brīvas {a}/{t}",
     "et": "Vaba {a}/{t}",
     "uk": "Вільно {a}/{t}",
-    "ru": "Свободно {a}/{t}"
+    "ru": "Свободно {a}/{t}",
+    "de": "Frei {a}/{t}",
+    "sv": "Lediga {a}/{t}",
+    "fi": "Vapaana {a}/{t}",
+    "no": "Ledig {a}/{t}",
+    "pl": "Wolne {a}/{t}"
   },
   "ev_status_busy": {
     "lt": "Užimta (0/{t})",
@@ -341,7 +551,12 @@
     "lv": "Aizņemta (0/{t})",
     "et": "Hõivatud (0/{t})",
     "uk": "Зайнято (0/{t})",
-    "ru": "Занято (0/{t})"
+    "ru": "Занято (0/{t})",
+    "de": "Belegt (0/{t})",
+    "sv": "Upptaget (0/{t})",
+    "fi": "Varattu (0/{t})",
+    "no": "Opptatt (0/{t})",
+    "pl": "Zajęte (0/{t})"
   },
   "ev_status_down": {
     "lt": "Neveikia",
@@ -349,7 +564,12 @@
     "lv": "Nedarbojas",
     "et": "Ei tööta",
     "uk": "Не працює",
-    "ru": "Не работает"
+    "ru": "Не работает",
+    "de": "Außer Betrieb",
+    "sv": "Ur funktion",
+    "fi": "Ei toiminnassa",
+    "no": "Ute av drift",
+    "pl": "Nie działa"
   },
   "ev_status_unknown": {
     "lt": "Būsena nežinoma",
@@ -357,7 +577,12 @@
     "lv": "Statuss nezināms",
     "et": "Olek teadmata",
     "uk": "Статус невідомий",
-    "ru": "Статус неизвестен"
+    "ru": "Статус неизвестен",
+    "de": "Status unbekannt",
+    "sv": "Status okänd",
+    "fi": "Tila tuntematon",
+    "no": "Status ukjent",
+    "pl": "Status nieznany"
   },
   "ev_sockets": {
     "lt": "{n} jungtys",
@@ -365,7 +590,12 @@
     "lv": "{n} savienotāji",
     "et": "{n} pistikut",
     "uk": "{n} конекторів",
-    "ru": "{n} разъёмов"
+    "ru": "{n} разъёмов",
+    "de": "{n} Anschlüsse",
+    "sv": "{n} kontakter",
+    "fi": "{n} liitintä",
+    "no": "{n} kontakter",
+    "pl": "{n} złączy"
   },
   "ev_charger": {
     "lt": "Įkrovimo stotelė",
@@ -373,7 +603,12 @@
     "lv": "Uzlādes stacija",
     "et": "Laadimisjaam",
     "uk": "Зарядна станція",
-    "ru": "Зарядная станция"
+    "ru": "Зарядная станция",
+    "de": "Ladestation",
+    "sv": "Laddstation",
+    "fi": "Latausasema",
+    "no": "Ladestasjon",
+    "pl": "Stacja ładowania"
   },
   "nothing_found": {
     "lt": "Nieko nerasta.",
@@ -381,7 +616,12 @@
     "lv": "Nekas nav atrasts.",
     "et": "Midagi ei leitud.",
     "uk": "Нічого не знайдено.",
-    "ru": "Ничего не найдено."
+    "ru": "Ничего не найдено.",
+    "de": "Nichts gefunden.",
+    "sv": "Inget hittades.",
+    "fi": "Ei tuloksia.",
+    "no": "Ingen treff.",
+    "pl": "Nic nie znaleziono."
   },
   "showing_chargers": {
     "lt": "Rodoma stotelių: {n}",
@@ -389,7 +629,12 @@
     "lv": "Rāda stacijas: {n}",
     "et": "Kuvatud jaamu: {n}",
     "uk": "Показано станцій: {n}",
-    "ru": "Показано станций: {n}"
+    "ru": "Показано станций: {n}",
+    "de": "Angezeigte Stationen: {n}",
+    "sv": "Visar stationer: {n}",
+    "fi": "Näytetään asemia: {n}",
+    "no": "Viser stasjoner: {n}",
+    "pl": "Wyświetlane stacje: {n}"
   },
   "order_near": {
     "lt": "artimiausios pirmos",
@@ -397,7 +642,12 @@
     "lv": "tuvākās vispirms",
     "et": "lähimad eespool",
     "uk": "спочатку найближчі",
-    "ru": "сначала ближайшие"
+    "ru": "сначала ближайшие",
+    "de": "nächste zuerst",
+    "sv": "närmast först",
+    "fi": "lähimmät ensin",
+    "no": "nærmeste først",
+    "pl": "najpierw najbliższe"
   },
   "order_cheap": {
     "lt": "pigiausios pirmos",
@@ -405,7 +655,12 @@
     "lv": "lētākās vispirms",
     "et": "odavaimad eespool",
     "uk": "спочатку найдешевші",
-    "ru": "сначала дешёвые"
+    "ru": "сначала дешёвые",
+    "de": "günstigste zuerst",
+    "sv": "billigast först",
+    "fi": "halvimmat ensin",
+    "no": "billigste først",
+    "pl": "najpierw najtańsze"
   },
   "order_dear": {
     "lt": "brangiausios pirmos",
@@ -413,7 +668,12 @@
     "lv": "dārgākās vispirms",
     "et": "kalleimad eespool",
     "uk": "спочатку найдорожчі",
-    "ru": "сначала дорогие"
+    "ru": "сначала дорогие",
+    "de": "teuerste zuerst",
+    "sv": "dyrast först",
+    "fi": "kalleimmat ensin",
+    "no": "dyreste først",
+    "pl": "najpierw najdroższe"
   },
   "report_prompt": {
     "lt": "Įveskite {fuel} kainą (€/L), pvz. 1.699:",
@@ -421,7 +681,12 @@
     "lv": "Ievadiet {fuel} cenu (€/L), piem. 1.699:",
     "et": "Sisesta {fuel} hind (€/L), nt 1.699:",
     "uk": "Введіть ціну {fuel} (€/L), напр. 1.699:",
-    "ru": "Введите цену {fuel} (€/L), например 1.699:"
+    "ru": "Введите цену {fuel} (€/L), например 1.699:",
+    "de": "Geben Sie den {fuel}-Preis ein (€/L), z. B. 1.699:",
+    "sv": "Ange priset för {fuel} (€/L), t.ex. 1.699:",
+    "fi": "Anna {fuel} hinta (€/L), esim. 1.699:",
+    "no": "Skriv inn {fuel}-prisen (€/L), f.eks. 1.699:",
+    "pl": "Podaj cenę {fuel} (€/L), np. 1.699:"
   },
   "report_invalid": {
     "lt": "Neteisinga kaina.",
@@ -429,7 +694,12 @@
     "lv": "Nepareiza cena.",
     "et": "Vigane hind.",
     "uk": "Хибна ціна.",
-    "ru": "Неверная цена."
+    "ru": "Неверная цена.",
+    "de": "Ungültiger Preis.",
+    "sv": "Ogiltigt pris.",
+    "fi": "Virheellinen hinta.",
+    "no": "Ugyldig pris.",
+    "pl": "Nieprawidłowa cena."
   },
   "report_failed": {
     "lt": "Nepavyko išsiųsti. Bandykite vėliau.",
@@ -437,7 +707,12 @@
     "lv": "Neizdevās nosūtīt. Mēģiniet vēlāk.",
     "et": "Saatmine ebaõnnestus. Proovi hiljem uuesti.",
     "uk": "Не вдалося надіслати. Спробуйте пізніше.",
-    "ru": "Не удалось отправить. Попробуйте позже."
+    "ru": "Не удалось отправить. Попробуйте позже.",
+    "de": "Senden fehlgeschlagen. Bitte später erneut versuchen.",
+    "sv": "Kunde inte skicka. Försök igen senare.",
+    "fi": "Lähetys epäonnistui. Yritä myöhemmin uudelleen.",
+    "no": "Kunne ikke sende. Prøv igjen senere.",
+    "pl": "Nie udało się wysłać. Spróbuj później."
   },
   "report_line": {
     "lt": "🗣️ Pranešta kaina: €{price}/L — gali skirtis nuo oficialios, kol bus atnaujinta",
@@ -445,7 +720,12 @@
     "lv": "🗣️ Ziņotā cena: €{price}/L — var atšķirties no oficiālās līdz atjaunināšanai",
     "et": "🗣️ Teatatud hind: €{price}/L — võib enne uuendamist ametlikust erineda",
     "uk": "🗣️ Повідомлена ціна: €{price}/L — може відрізнятися від офіційної до оновлення",
-    "ru": "🗣️ Сообщённая цена: €{price}/L — может отличаться от официальной до обновления"
+    "ru": "🗣️ Сообщённая цена: €{price}/L — может отличаться от официальной до обновления",
+    "de": "🗣️ Gemeldeter Preis: €{price}/L — kann bis zur Aktualisierung vom offiziellen abweichen",
+    "sv": "🗣️ Rapporterat pris: €{price}/L — kan avvika från det officiella tills det uppdateras",
+    "fi": "🗣️ Ilmoitettu hinta: €{price}/L — voi poiketa virallisesta ennen päivitystä",
+    "no": "🗣️ Rapportert pris: €{price}/L — kan avvike fra den offisielle til den oppdateres",
+    "pl": "🗣️ Zgłoszona cena: €{price}/L — może różnić się od oficjalnej do czasu aktualizacji"
   },
   "report_btn": {
     "lt": "🗣️ Pranešti kainą",
@@ -453,7 +733,12 @@
     "lv": "🗣️ Ziņot cenu",
     "et": "🗣️ Teata hinnast",
     "uk": "🗣️ Повідомити ціну",
-    "ru": "🗣️ Сообщить цену"
+    "ru": "🗣️ Сообщить цену",
+    "de": "🗣️ Preis melden",
+    "sv": "🗣️ Rapportera ett pris",
+    "fi": "🗣️ Ilmoita hinta",
+    "no": "🗣️ Rapportér pris",
+    "pl": "🗣️ Zgłoś cenę"
   },
   "empty_list": {
     "lt": "Šalies vidurkiai rodomi viršuje.<br>Visų degalinių sąrašas atsiras po automatinio duomenų atnaujinimo.",
@@ -461,7 +746,12 @@
     "lv": "Valsts vidējās cenas redzamas augšā.<br>Pilns staciju saraksts parādīsies pēc automātiskās datu atjaunināšanas.",
     "et": "Riigi keskmised on kuvatud üleval.<br>Kõigi tanklate loend ilmub pärast automaatset andmete uuendust.",
     "uk": "Середні ціни по країні показано вгорі.<br>Повний список заправок з'явиться після автоматичного оновлення даних.",
-    "ru": "Средние цены по стране показаны выше.<br>Полный список заправок появится после автоматического обновления данных."
+    "ru": "Средние цены по стране показаны выше.<br>Полный список заправок появится после автоматического обновления данных.",
+    "de": "Die landesweiten Durchschnittspreise werden oben angezeigt.<br>Die vollständige Tankstellenliste erscheint nach der automatischen Datenaktualisierung.",
+    "sv": "Riksgenomsnitt visas ovan.<br>Den fullständiga stationslistan visas efter den automatiska datauppdateringen.",
+    "fi": "Koko maan keskiarvot näkyvät yllä.<br>Täydellinen asemalista ilmestyy automaattisen tietojen päivityksen jälkeen.",
+    "no": "Nasjonale gjennomsnitt vises øverst.<br>Hele stasjonslisten vises etter den automatiske dataoppdateringen.",
+    "pl": "Średnie ceny krajowe pokazano powyżej.<br>Pełna lista stacji pojawi się po automatycznej aktualizacji danych."
   },
   "no_filter": {
     "lt": "Nieko nerasta pagal pasirinktus filtrus.",
@@ -469,7 +759,12 @@
     "lv": "Pēc izvēlētajiem filtriem nekas nav atrasts.",
     "et": "Valitud filtritele ei leitud midagi.",
     "uk": "Нічого не знайдено за обраними фільтрами.",
-    "ru": "По выбранным фильтрам ничего не найдено."
+    "ru": "По выбранным фильтрам ничего не найдено.",
+    "de": "Nichts für die gewählten Filter gefunden.",
+    "sv": "Inget hittades för de valda filtren.",
+    "fi": "Valituilla suodattimilla ei löytynyt tuloksia.",
+    "no": "Ingen treff for de valgte filtrene.",
+    "pl": "Nic nie znaleziono dla wybranych filtrów."
   },
   "showing_stations": {
     "lt": "Rodoma degalinių: {n}",
@@ -477,7 +772,12 @@
     "lv": "Rāda stacijas: {n}",
     "et": "Kuvatud tanklaid: {n}",
     "uk": "Показано заправок: {n}",
-    "ru": "Показано заправок: {n}"
+    "ru": "Показано заправок: {n}",
+    "de": "Angezeigte Tankstellen: {n}",
+    "sv": "Visar stationer: {n}",
+    "fi": "Näytetään asemia: {n}",
+    "no": "Viser stasjoner: {n}",
+    "pl": "Wyświetlane stacje: {n}"
   },
   "sorted_dist": {
     "lt": "rūšiuojama pagal atstumą",
@@ -485,7 +785,12 @@
     "lv": "kārtots pēc attāluma",
     "et": "sorteeritud kauguse järgi",
     "uk": "відсортовано за відстанню",
-    "ru": "сортировка по расстоянию"
+    "ru": "сортировка по расстоянию",
+    "de": "nach Entfernung sortiert",
+    "sv": "sorterat efter avstånd",
+    "fi": "lajiteltu etäisyyden mukaan",
+    "no": "sortert etter avstand",
+    "pl": "posortowano według odległości"
   },
   "badge_cheapest": {
     "lt": "⭐ PIGIAUSIA",
@@ -493,7 +798,12 @@
     "lv": "⭐ LĒTĀKĀ",
     "et": "⭐ ODAVAIM",
     "uk": "⭐ НАЙДЕШЕВША",
-    "ru": "⭐ ДЕШЕВЛЕ ВСЕХ"
+    "ru": "⭐ ДЕШЕВЛЕ ВСЕХ",
+    "de": "⭐ GÜNSTIGSTE",
+    "sv": "⭐ BILLIGAST",
+    "fi": "⭐ HALVIN",
+    "no": "⭐ BILLIGST",
+    "pl": "⭐ NAJTAŃSZA"
   },
   "approx_warn": {
     "lt": "lokacija gali būti netiksli - prieš vykstant pasitikslinti!",
@@ -501,7 +811,12 @@
     "lv": "atrašanās vieta var būt neprecīza — pārbaudiet pirms došanās!",
     "et": "asukoht võib olla ebatäpne — kontrolli enne sõitu üle!",
     "uk": "розташування може бути неточним — уточніть перед поїздкою!",
-    "ru": "местоположение может быть неточным — уточните перед поездкой!"
+    "ru": "местоположение может быть неточным — уточните перед поездкой!",
+    "de": "Standort kann ungenau sein — vor der Fahrt prüfen!",
+    "sv": "platsen kan vara oprecis — dubbelkolla innan du åker!",
+    "fi": "sijainti voi olla epätarkka — varmista ennen lähtöä!",
+    "no": "plasseringen kan være unøyaktig — dobbeltsjekk før du drar!",
+    "pl": "lokalizacja może być niedokładna — sprawdź przed wyjazdem!"
   },
   "flag_change": {
     "lt": "⚠️ Kaina galėjo pasikeisti nuo 10:00 — {src} tinkle {dir}: €{price}/L",
@@ -509,7 +824,12 @@
     "lv": "⚠️ Cena, iespējams, mainījusies kopš plkst. 10:00 — {dir} {src} tīklā: €{price}/L",
     "et": "⚠️ Hind võis pärast kella 10:00 muutuda — {src} ketis {dir}: €{price}/L",
     "uk": "⚠️ Ціна могла змінитися після 10:00 — у мережі {src} {dir}: €{price}/L",
-    "ru": "⚠️ Цена могла измениться после 10:00 — {dir} в сети {src}: €{price}/L"
+    "ru": "⚠️ Цена могла измениться после 10:00 — {dir} в сети {src}: €{price}/L",
+    "de": "⚠️ Preis könnte sich seit 10:00 geändert haben — {dir} im Netz {src}: €{price}/L",
+    "sv": "⚠️ Priset kan ha ändrats sedan kl. 10:00 — {dir} i {src}-kedjan: €{price}/L",
+    "fi": "⚠️ Hinta on voinut muuttua klo 10:00 jälkeen — {src}-ketjussa {dir}: €{price}/L",
+    "no": "⚠️ Prisen kan ha endret seg siden kl. 10:00 — {dir} i {src}-kjeden: €{price}/L",
+    "pl": "⚠️ Cena mogła się zmienić od 10:00 — {dir} w sieci {src}: €{price}/L"
   },
   "cheaper": {
     "lt": "pigiau",
@@ -517,7 +837,12 @@
     "lv": "lētāk",
     "et": "odavam",
     "uk": "дешевше",
-    "ru": "дешевле"
+    "ru": "дешевле",
+    "de": "günstiger",
+    "sv": "billigare",
+    "fi": "halvempi",
+    "no": "billigere",
+    "pl": "taniej"
   },
   "dearer": {
     "lt": "brangiau",
@@ -525,7 +850,12 @@
     "lv": "dārgāk",
     "et": "kallim",
     "uk": "дорожче",
-    "ru": "дороже"
+    "ru": "дороже",
+    "de": "teurer",
+    "sv": "dyrare",
+    "fi": "kalliimpi",
+    "no": "dyrere",
+    "pl": "drożej"
   },
   "station_default": {
     "lt": "Degalinė",
@@ -533,7 +863,12 @@
     "lv": "Degvielas uzpildes stacija",
     "et": "Tankla",
     "uk": "Заправка",
-    "ru": "Заправка"
+    "ru": "Заправка",
+    "de": "Tankstelle",
+    "sv": "Bensinstation",
+    "fi": "Huoltoasema",
+    "no": "Bensinstasjon",
+    "pl": "Stacja paliw"
   },
   "you_are_here": {
     "lt": "Jūs esate čia",
@@ -541,7 +876,12 @@
     "lv": "Jūs atrodaties šeit",
     "et": "Sa oled siin",
     "uk": "Ви тут",
-    "ru": "Вы здесь"
+    "ru": "Вы здесь",
+    "de": "Sie sind hier",
+    "sv": "Du är här",
+    "fi": "Olet tässä",
+    "no": "Du er her",
+    "pl": "Tu jesteś"
   },
   "loc_unsupported": {
     "lt": "📍 Vietos nustatymas nepalaikomas",
@@ -549,7 +889,12 @@
     "lv": "📍 Atrašanās vietas noteikšana netiek atbalstīta",
     "et": "📍 Asukoha tuvastamist ei toetata",
     "uk": "📍 Визначення місцезнаходження не підтримується",
-    "ru": "📍 Определение местоположения не поддерживается"
+    "ru": "📍 Определение местоположения не поддерживается",
+    "de": "📍 Standortbestimmung nicht unterstützt",
+    "sv": "📍 Platstjänster stöds inte",
+    "fi": "📍 Sijaintia ei tueta",
+    "no": "📍 Posisjon støttes ikke",
+    "pl": "📍 Lokalizacja nie jest obsługiwana"
   },
   "loc_detecting": {
     "lt": "📍 Nustatoma vieta…",
@@ -557,7 +902,12 @@
     "lv": "📍 Nosaka atrašanās vietu…",
     "et": "📍 Tuvastan asukohta…",
     "uk": "📍 Визначення місцезнаходження…",
-    "ru": "📍 Определение местоположения…"
+    "ru": "📍 Определение местоположения…",
+    "de": "📍 Standort wird ermittelt…",
+    "sv": "📍 Söker plats…",
+    "fi": "📍 Paikannetaan…",
+    "no": "📍 Finner posisjon…",
+    "pl": "📍 Ustalanie lokalizacji…"
   },
   "loc_set_muni": {
     "lt": "📍 {muni} · artimiausios pirmos",
@@ -565,7 +915,12 @@
     "lv": "📍 {muni} · tuvākās vispirms",
     "et": "📍 {muni} · lähimad eespool",
     "uk": "📍 {muni} · спочатку найближчі",
-    "ru": "📍 {muni} · сначала ближайшие"
+    "ru": "📍 {muni} · сначала ближайшие",
+    "de": "📍 {muni} · nächste zuerst",
+    "sv": "📍 {muni} · närmast först",
+    "fi": "📍 {muni} · lähimmät ensin",
+    "no": "📍 {muni} · nærmeste først",
+    "pl": "📍 {muni} · najpierw najbliższe"
   },
   "loc_set": {
     "lt": "📍 Vieta nustatyta · artimiausios pirmos",
@@ -573,7 +928,12 @@
     "lv": "📍 Atrašanās vieta noteikta · tuvākās vispirms",
     "et": "📍 Asukoht määratud · lähimad eespool",
     "uk": "📍 Місцезнаходження визначено · спочатку найближчі",
-    "ru": "📍 Местоположение определено · сначала ближайшие"
+    "ru": "📍 Местоположение определено · сначала ближайшие",
+    "de": "📍 Standort ermittelt · nächste zuerst",
+    "sv": "📍 Plats fastställd · närmast först",
+    "fi": "📍 Sijainti määritetty · lähimmät ensin",
+    "no": "📍 Posisjon funnet · nærmeste først",
+    "pl": "📍 Lokalizacja ustalona · najpierw najbliższe"
   },
   "loc_denied": {
     "lt": "📍 Vietos prieiga atmesta – įjunkite leidimą",
@@ -581,7 +941,12 @@
     "lv": "📍 Piekļuve atrašanās vietai liegta – ieslēdziet atļauju",
     "et": "📍 Asukohale juurdepääs keelatud – luba õigus",
     "uk": "📍 Доступ до місцезнаходження відхилено – увімкніть дозвіл",
-    "ru": "📍 Доступ к местоположению запрещён — включите разрешение"
+    "ru": "📍 Доступ к местоположению запрещён — включите разрешение",
+    "de": "📍 Standortzugriff verweigert – Berechtigung aktivieren",
+    "sv": "📍 Platsåtkomst nekad – aktivera behörigheten",
+    "fi": "📍 Sijainnin käyttö estetty – salli oikeus",
+    "no": "📍 Posisjonstilgang avvist – slå på tillatelsen",
+    "pl": "📍 Brak dostępu do lokalizacji – włącz uprawnienie"
   },
   "loc_failed": {
     "lt": "📍 Nepavyko nustatyti vietos",
@@ -589,6 +954,11 @@
     "lv": "📍 Neizdevās noteikt atrašanās vietu",
     "et": "📍 Asukohta ei õnnestunud määrata",
     "uk": "📍 Не вдалося визначити місцезнаходження",
-    "ru": "📍 Не удалось определить местоположение"
+    "ru": "📍 Не удалось определить местоположение",
+    "de": "📍 Standort konnte nicht ermittelt werden",
+    "sv": "📍 Kunde inte fastställa platsen",
+    "fi": "📍 Sijaintia ei voitu määrittää",
+    "no": "📍 Kunne ikke finne posisjonen",
+    "pl": "📍 Nie udało się ustalić lokalizacji"
   }
 }

@@ -16,6 +16,11 @@ LANGS = [
     ("en", "\U0001F1EC\U0001F1E7", "EN"),
     ("uk", "\U0001F1FA\U0001F1E6", "UA"),
     ("ru", "\U0001F1F7\U0001F1FA", "RU"),
+    ("pl", "\U0001F1F5\U0001F1F1", "PL"),
+    ("de", "\U0001F1E9\U0001F1EA", "DE"),
+    ("sv", "\U0001F1F8\U0001F1EA", "SE"),
+    ("fi", "\U0001F1EB\U0001F1EE", "FI"),
+    ("no", "\U0001F1F3\U0001F1F4", "NO"),
 ]
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

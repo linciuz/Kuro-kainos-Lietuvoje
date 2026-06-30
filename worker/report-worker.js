@@ -31,20 +31,32 @@ function json(obj, status = 200) {
 const OCPI_LOCATIONS = "https://ev.vialietuva.lt/ocpi/2.3.0/locations";
 
 async function evStatus() {
-  const r = await fetch(OCPI_LOCATIONS, { headers: { "Accept": "application/json" } });
-  if (!r.ok) return {};
-  const body = await r.json();
+  // The OCPI feed paginates (X-Total-Count ~2943); a single fetch returns only
+  // ~94 rows, so walk it by offset. Ids repeat across pages — union the EVSEs.
+  const sites = {};
+  let offset = 0, total = Infinity;
+  while (offset < total) {
+    const r = await fetch(`${OCPI_LOCATIONS}?offset=${offset}&limit=1000`, { headers: { "Accept": "application/json" } });
+    if (!r.ok) break;
+    if (total === Infinity) total = parseInt(r.headers.get("X-Total-Count") || "0", 10) || 0;
+    const batch = (await r.json()).data || [];
+    if (!batch.length) break;
+    for (const loc of batch) {
+      const id = String(loc.id);
+      (sites[id] = sites[id] || []).push(...(loc.evses || []));
+    }
+    offset += batch.length;
+    if (!total) break;
+  }
   const out = {};
-  for (const loc of (body.data || [])) {
-    const evses = loc.evses || [];
+  for (const [id, evses] of Object.entries(sites)) {
     let avail = 0;
     for (const e of evses) if (e.status === "AVAILABLE") avail++;
-    const total = evses.length;
     let s = "unknown";
     if (avail > 0) s = "available";
     else if (evses.some(e => e.status === "CHARGING" || e.status === "BLOCKED")) s = "busy";
     else if (evses.some(e => e.status === "OUTOFORDER" || e.status === "INOPERATIVE")) s = "down";
-    out[String(loc.id)] = { a: avail, t: total, s };
+    out[id] = { a: avail, t: evses.length, s };
   }
   return out;
 }

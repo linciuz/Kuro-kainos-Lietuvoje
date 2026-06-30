@@ -255,8 +255,12 @@ function renderListEv() {
     const order = (sortDir === "dist" && userPos) ? " · " + t("order_near")
         : sortDir === "asc" ? " · " + t("order_cheap")
         : sortDir === "desc" ? " · " + t("order_dear") : "";
-    list.innerHTML = `<div class="count-line">${t("showing_chargers", { n: rows.length })}${order}</div>` +
-        rows.map(c => {
+    const LIST_MAX = 600;                       // keep the DOM snappy on phones
+    const total = rows.length;
+    const shown = rows.slice(0, LIST_MAX);
+    const nLabel = total > LIST_MAX ? `${LIST_MAX} / ${total}` : `${total}`;
+    list.innerHTML = `<div class="count-line">${t("showing_chargers", { n: nLabel })}${order}</div>` +
+        shown.map(c => {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
             const badge = evStatusBadge(c);
@@ -279,7 +283,7 @@ function renderMapEv() {
     if (!map) return;
     setTimeout(() => map.invalidateSize(), 0);
     markersLayer.clearLayers();
-    const rows = getChargers();
+    const rows = getChargers().slice(0, 500);   // cap markers (sorted, so most relevant first)
     const bounds = [];
     rows.forEach(c => {
         const st = evStatus(c);
