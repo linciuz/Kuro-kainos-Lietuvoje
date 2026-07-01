@@ -36,9 +36,7 @@ REPORT_ID = "60850ad8-c1ee-47ef-8a08-339eaee7bff4"
 MODEL_ID = 8451841
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36"
 FUELMAP = {"95 benzinas": "petrol95", "Dyzelinas": "diesel", "SND": "lpg"}
-_CTX = ssl.create_default_context()
-_CTX.check_hostname = False
-_CTX.verify_mode = ssl.CERT_NONE
+_CTX = ssl.create_default_context()   # verify TLS — ena.lt + Microsoft wabi present valid certs
 
 
 def _get(url, data=None, headers=None):

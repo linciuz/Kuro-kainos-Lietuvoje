@@ -136,9 +136,13 @@ function stationKey(s) {
     return `${s.network || ""}|${s.address || ""}|${s.municipality || ""}`;
 }
 
-function escAttr(s) {
-    return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// Escape data-derived text before it goes into innerHTML / Leaflet popups —
+// station & charger names/addresses/operators come from world-editable sources
+// (OpenStreetMap tags, the LEA registry), so they are untrusted.
+function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;");
 }
+const escAttr = esc;   // back-compat alias
 
 async function loadReports() {
     if (!REPORT_API) return;
@@ -283,11 +287,11 @@ function renderListEv() {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
             const badge = evStatusBadge(c);
-            const addr = c.address ? `${c.address}${c.city ? ", " + c.city : ""}` : "";
+            const addr = c.address ? esc(`${c.address}${c.city ? ", " + c.city : ""}`) : "";
             return `<div class="station-card">
                 ${dist}${badge}
                 <div class="station-header">
-                    <div class="station-name">⚡ ${c.operator || c.name || t("ev_charger")}</div>
+                    <div class="station-name">⚡ ${esc(c.operator || c.name || t("ev_charger"))}</div>
                     ${c.price != null ? `<div><span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span></div>` : ""}
                 </div>
                 ${addr ? `<div class="station-address">${addr}</div>` : ""}
@@ -310,8 +314,8 @@ function renderMapEv() {
         const icon = L.divIcon({ className: "", html: `<div class="${pinCls}">⚡</div>`, iconSize: null, iconAnchor: [11, 11] });
         const info = evInfo(c);
         const badge = evStatusBadge(c);
-        const addr = c.address ? `${c.address}${c.city ? ", " + c.city : ""}` : "";
-        const popup = `<div class="popup-name">⚡ ${c.operator || c.name || t("ev_charger")}</div>
+        const addr = c.address ? esc(`${c.address}${c.city ? ", " + c.city : ""}`) : "";
+        const popup = `<div class="popup-name">⚡ ${esc(c.operator || c.name || t("ev_charger"))}</div>
             ${addr ? `<div class="popup-addr">${addr}</div>` : ""}
             ${badge ? `<div>${badge}</div>` : ""}
             ${c.price != null ? `<div class="popup-price">€${c.price.toFixed(2)}/kWh</div>` : ""}
@@ -382,7 +386,7 @@ function initMunicipalities() {
         .map(s => (s.municipality || "").trim()).filter(Boolean))];
     const big = BIG_CITIES.filter(m => all.includes(m));
     const rest = all.filter(m => !BIG_CITIES.includes(m)).sort((a, b) => a.localeCompare(b, "lt"));
-    const opt = m => `<option value="${m}">${m}</option>`;
+    const opt = m => `<option value="${esc(m)}">${esc(m)}</option>`;
     sel.innerHTML = `<option value="">${t("all_munis")}</option>` +
         (big.length ? `<optgroup label="${t("big_cities")}">${big.map(opt).join("")}</optgroup>` : "") +
         `<optgroup label="${t("other_munis")}">${rest.map(opt).join("")}</optgroup>`;
@@ -432,6 +436,13 @@ function renderOilFooter() {
 function scrollListTop() {
     const l = document.getElementById("stations-list");
     if (l) l.scrollTop = 0;
+}
+
+// Debounce the search box so a full ~780-card re-render doesn't run on every keystroke.
+let _searchTimer = null;
+function onSearchInput() {
+    clearTimeout(_searchTimer);
+    _searchTimer = setTimeout(render, 150);
 }
 
 function selectFuel(f) {
@@ -650,9 +661,10 @@ function renderList() {
     const total = (DATA.stations || []).filter(s =>
         s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
     const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
+    const shown = rows.slice(0, 600);           // keep the DOM snappy on phones (like the EV list)
     list.innerHTML =
         `<div class="count-line">${t("showing_stations", { n: nLabel })}</div>` +
-        rows.map(s => {
+        shown.map(s => {
             const isBest = s[fuelType] != null && s[fuelType] === best;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
@@ -666,13 +678,13 @@ function renderList() {
             <div class="station-card">
                 ${isBest ? `<div class="best-price-badge">${t("badge_cheapest")}</div>` : ''}${dist}
                 <div class="station-header">
-                    <div class="station-name">${s.network || t("station_default")}</div>
+                    <div class="station-name">${esc(s.network || t("station_default"))}</div>
                     <div>${s[fuelType] != null
                         ? `<span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span>`
                         : `<span class="no-price-badge">${t("no_price")}</span>`}</div>
                 </div>
-                <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
-                <div class="station-muni">📍 ${s.municipality || ""}${approxTag}</div>
+                <div class="station-address">${esc(s.address || "")}${s.locality ? ", " + esc(s.locality) : ""}</div>
+                <div class="station-muni">📍 ${esc(s.municipality || "")}${approxTag}</div>
                 ${fuelChips(s)}
                 ${flagLine}${repLine}
                 <div class="nav-row">${navButtons(s)}</div>
@@ -743,8 +755,8 @@ function renderMap() {
         const priceLine = p != null
             ? `<div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>`
             : `<div class="no-price-badge">${t("no_price")}</div>`;
-        const popup = `<div class="popup-name">${s.network || t("station_default")}</div>
-            <div>${s.address || ""}</div>
+        const popup = `<div class="popup-name">${esc(s.network || t("station_default"))}</div>
+            <div>${esc(s.address || "")}</div>
             ${priceLine}${dist}${approxNote}
             ${fuelChips(s)}
             <div class="popup-nav">${navButtons(s)}</div>`;

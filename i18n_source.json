@@ -129,32 +129,6 @@
     "no": "📍 Nærmeste",
     "pl": "📍 Najbliższe"
   },
-  "loading": {
-    "lt": "Kraunama…",
-    "en": "Loading…",
-    "lv": "Ielādē…",
-    "et": "Laadimine…",
-    "uk": "Завантаження…",
-    "ru": "Загрузка…",
-    "de": "Wird geladen…",
-    "sv": "Laddar…",
-    "fi": "Ladataan…",
-    "no": "Laster…",
-    "pl": "Ładowanie…"
-  },
-  "loading_data": {
-    "lt": "Kraunama oficialūs duomenys…",
-    "en": "Loading official data…",
-    "lv": "Ielādē oficiālos datus…",
-    "et": "Laadin ametlikke andmeid…",
-    "uk": "Завантаження офіційних даних…",
-    "ru": "Загрузка официальных данных…",
-    "de": "Offizielle Daten werden geladen…",
-    "sv": "Laddar officiella data…",
-    "fi": "Ladataan virallisia tietoja…",
-    "no": "Laster offisielle data…",
-    "pl": "Ładowanie oficjalnych danych…"
-  },
   "fuel_petrol95": {
     "lt": "Benzinas 95",
     "en": "Petrol 95",
@@ -350,19 +324,6 @@
     "no": "drivstoffprisene kan falle",
     "pl": "ceny paliw mogą spaść"
   },
-  "banner_change": {
-    "lt": "⚠️ {fuel}: kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo.",
-    "en": "⚠️ {fuel}: some networks' ({chains}) prices may have changed since the official 10:00 update.",
-    "lv": "⚠️ {fuel}: dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma.",
-    "et": "⚠️ {fuel}: mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda.",
-    "uk": "⚠️ {fuel}: ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00.",
-    "ru": "⚠️ {fuel}: цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00.",
-    "de": "⚠️ {fuel}: Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben.",
-    "sv": "⚠️ {fuel}: priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00.",
-    "fi": "⚠️ {fuel}: joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen.",
-    "no": "⚠️ {fuel}: noen kjeders ({chains}) priser kan ha endret seg siden den offisielle oppdateringen kl. 10:00.",
-    "pl": "⚠️ {fuel}: ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00."
-  },
   "ws_orlen": {
     "lt": "🏭 Orlen didmeninė kaina ({date}):",
     "en": "🏭 Orlen wholesale price ({date}):",
@@ -375,19 +336,6 @@
     "fi": "🏭 Orlen tukkuhinta ({date}):",
     "no": "🏭 Orlen engrospris ({date}):",
     "pl": "🏭 Cena hurtowa Orlen ({date}):"
-  },
-  "ws_nomarkup": {
-    "lt": "be antkainio — ne degalinės kaina",
-    "en": "excl. markup — not a pump price",
-    "lv": "bez uzcenojuma — nav degvielas uzpildes stacijas cena",
-    "et": "ilma juurdehindluseta — pole tankla hind",
-    "uk": "без націнки — це не ціна на заправці",
-    "ru": "без наценки — не цена на заправке",
-    "de": "ohne Aufschlag — kein Tankstellenpreis",
-    "sv": "exkl. påslag — inte ett pumppris",
-    "fi": "ilman katetta — ei aseman hinta",
-    "no": "uten påslag — ikke pumpepris",
-    "pl": "bez marży — to nie cena na stacji"
   },
   "ws_agri": {
     "lt": "Agro dyzelinas",
@@ -414,19 +362,6 @@
     "fi": "Nestekaasu",
     "no": "LPG",
     "pl": "LPG"
-  },
-  "summary_national": {
-    "lt": "{fuel} — šalies kainos (oficialios)",
-    "en": "{fuel} — national prices (official)",
-    "lv": "{fuel} — valsts cenas (oficiālas)",
-    "et": "{fuel} — riigi hinnad (ametlikud)",
-    "uk": "{fuel} — ціни по країні (офіційні)",
-    "ru": "{fuel} — цены по стране (официальные)",
-    "de": "{fuel} — landesweite Preise (offiziell)",
-    "sv": "{fuel} — rikspriser (officiella)",
-    "fi": "{fuel} — koko maan hinnat (viralliset)",
-    "no": "{fuel} — nasjonale priser (offisielle)",
-    "pl": "{fuel} — ceny krajowe (oficjalne)"
   },
   "stat_cheapest": {
     "lt": "Pigiausia",
@@ -467,19 +402,6 @@
     "no": "Dyrest",
     "pl": "Najdroższa"
   },
-  "ev_title": {
-    "lt": "⚡ Elektromobilių įkrovimo stotelės ({n})",
-    "en": "⚡ EV charging stations ({n})",
-    "lv": "⚡ EV uzlādes stacijas ({n})",
-    "et": "⚡ EV laadimisjaamad ({n})",
-    "uk": "⚡ Зарядні станції для електромобілів ({n})",
-    "ru": "⚡ Зарядные станции для электромобилей ({n})",
-    "de": "⚡ EV-Ladestationen ({n})",
-    "sv": "⚡ Laddstationer för elbilar ({n})",
-    "fi": "⚡ EV-latausasemat ({n})",
-    "no": "⚡ Ladestasjoner for elbil ({n})",
-    "pl": "⚡ Stacje ładowania EV ({n})"
-  },
   "ev_sources": {
     "lt": "Šaltiniai: <b>Via Lietuva</b> (oficiali AFIR) + OpenStreetMap",
     "en": "Sources: <b>Via Lietuva</b> (official AFIR) + OpenStreetMap",
@@ -505,32 +427,6 @@
     "fi": "hinta (€/kWh): {n} asemaa",
     "no": "pris (€/kWh): {n} stasjoner",
     "pl": "cena (€/kWh): {n} stacji"
-  },
-  "ev_live_count": {
-    "lt": "užimtumas realiu laiku 🟢🔴: {n} stotelės",
-    "en": "live occupancy 🟢🔴: {n} stations",
-    "lv": "noslodze reāllaikā 🟢🔴: {n} stacijas",
-    "et": "reaalajas hõivatus 🟢🔴: {n} jaama",
-    "uk": "завантаженість у реальному часі 🟢🔴: {n} станцій",
-    "ru": "загруженность в реальном времени 🟢🔴: {n} станций",
-    "de": "Live-Auslastung 🟢🔴: {n} Stationen",
-    "sv": "beläggning i realtid 🟢🔴: {n} stationer",
-    "fi": "varaustilanne reaaliajassa 🟢🔴: {n} asemaa",
-    "no": "sanntidsbelegg 🟢🔴: {n} stasjoner",
-    "pl": "obłożenie na żywo 🟢🔴: {n} stacji"
-  },
-  "ev_live_off": {
-    "lt": "realaus laiko užimtumas – kai įjungtas Worker",
-    "en": "real-time occupancy – when the Worker is enabled",
-    "lv": "noslodze reāllaikā – kad Worker ir ieslēgts",
-    "et": "reaalajas hõivatus – kui Worker on sisse lülitatud",
-    "uk": "завантаженість у реальному часі – коли увімкнено Worker",
-    "ru": "загруженность в реальном времени — когда включён Worker",
-    "de": "Auslastung in Echtzeit – wenn der Worker aktiviert ist",
-    "sv": "beläggning i realtid – när Worker är aktiverad",
-    "fi": "reaaliaikainen varaustilanne – kun Worker on käytössä",
-    "no": "sanntidsbelegg – når Worker er på",
-    "pl": "obłożenie w czasie rzeczywistym – gdy Worker jest włączony"
   },
   "ev_status_free": {
     "lt": "Laisva {a}/{t}",
@@ -636,45 +532,6 @@
     "no": "Viser stasjoner: {n}",
     "pl": "Wyświetlane stacje: {n}"
   },
-  "order_near": {
-    "lt": "artimiausios pirmos",
-    "en": "nearest first",
-    "lv": "tuvākās vispirms",
-    "et": "lähimad eespool",
-    "uk": "спочатку найближчі",
-    "ru": "сначала ближайшие",
-    "de": "nächste zuerst",
-    "sv": "närmast först",
-    "fi": "lähimmät ensin",
-    "no": "nærmeste først",
-    "pl": "najpierw najbliższe"
-  },
-  "order_cheap": {
-    "lt": "pigiausios pirmos",
-    "en": "cheapest first",
-    "lv": "lētākās vispirms",
-    "et": "odavaimad eespool",
-    "uk": "спочатку найдешевші",
-    "ru": "сначала дешёвые",
-    "de": "günstigste zuerst",
-    "sv": "billigast först",
-    "fi": "halvimmat ensin",
-    "no": "billigste først",
-    "pl": "najpierw najtańsze"
-  },
-  "order_dear": {
-    "lt": "brangiausios pirmos",
-    "en": "most expensive first",
-    "lv": "dārgākās vispirms",
-    "et": "kalleimad eespool",
-    "uk": "спочатку найдорожчі",
-    "ru": "сначала дорогие",
-    "de": "teuerste zuerst",
-    "sv": "dyrast först",
-    "fi": "kalleimmat ensin",
-    "no": "dyreste først",
-    "pl": "najpierw najdroższe"
-  },
   "report_prompt": {
     "lt": "Įveskite {fuel} kainą (€/L), pvz. 1.699:",
     "en": "Enter the {fuel} price (€/L), e.g. 1.699:",
@@ -779,19 +636,6 @@
     "no": "Viser stasjoner: {n}",
     "pl": "Wyświetlane stacje: {n}"
   },
-  "sorted_dist": {
-    "lt": "rūšiuojama pagal atstumą",
-    "en": "sorted by distance",
-    "lv": "kārtots pēc attāluma",
-    "et": "sorteeritud kauguse järgi",
-    "uk": "відсортовано за відстанню",
-    "ru": "сортировка по расстоянию",
-    "de": "nach Entfernung sortiert",
-    "sv": "sorterat efter avstånd",
-    "fi": "lajiteltu etäisyyden mukaan",
-    "no": "sortert etter avstand",
-    "pl": "posortowano według odległości"
-  },
   "badge_cheapest": {
     "lt": "⭐ PIGIAUSIA",
     "en": "⭐ CHEAPEST",
@@ -830,32 +674,6 @@
     "sv": "⚠️ Priset kan ha ändrats sedan kl. 10:00 — €{price}/L",
     "fi": "⚠️ Hinta on voinut muuttua klo 10:00 jälkeen — €{price}/L",
     "no": "⚠️ Prisen kan ha endret seg siden kl. 10:00 — €{price}/L"
-  },
-  "cheaper": {
-    "lt": "pigiau",
-    "en": "cheaper",
-    "lv": "lētāk",
-    "et": "odavam",
-    "uk": "дешевше",
-    "ru": "дешевле",
-    "de": "günstiger",
-    "sv": "billigare",
-    "fi": "halvempi",
-    "no": "billigere",
-    "pl": "taniej"
-  },
-  "dearer": {
-    "lt": "brangiau",
-    "en": "more expensive",
-    "lv": "dārgāk",
-    "et": "kallim",
-    "uk": "дорожче",
-    "ru": "дороже",
-    "de": "teurer",
-    "sv": "dyrare",
-    "fi": "kalliimpi",
-    "no": "dyrere",
-    "pl": "drożej"
   },
   "station_default": {
     "lt": "Degalinė",

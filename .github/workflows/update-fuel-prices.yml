@@ -75,6 +75,15 @@ jobs:
             echo "No changes."
           else
             git commit -m "Update fuel prices ($(date -u +%Y-%m-%d))"
-            git pull --rebase --autostash origin main || true
-            git push
+            # Publish with retries; on a data conflict prefer this run's fresh
+            # regeneration (-X theirs). Fail loudly if it truly can't push.
+            for i in 1 2 3 4 5; do
+              if git fetch origin main && git rebase -X theirs origin/main && git push; then
+                echo "published (attempt $i)"; exit 0
+              fi
+              echo "publish attempt $i failed — retrying"
+              git rebase --abort 2>/dev/null || true
+              sleep $((RANDOM % 8 + 3))
+            done
+            echo "::error::failed to publish updated data after 5 attempts"; exit 1
           fi

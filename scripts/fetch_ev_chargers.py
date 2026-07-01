@@ -46,9 +46,7 @@ OCPI_LOCATIONS = "https://ev.vialietuva.lt/ocpi/2.3.0/locations"
 OCPI_TARIFFS = "https://ev.vialietuva.lt/ocpi/2.3.0/tariffs"
 IGNITIS_MAP = "https://ignitison.lt/zemelapis"
 UA_BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
-_CTX = ssl.create_default_context()
-_CTX.check_hostname = False
-_CTX.verify_mode = ssl.CERT_NONE
+_CTX = ssl.create_default_context()   # verify TLS — ev.vialietuva.lt presents a valid cert
 
 
 def in_lt(lat, lon):

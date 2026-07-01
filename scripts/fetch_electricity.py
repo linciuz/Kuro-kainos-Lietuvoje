@@ -18,9 +18,7 @@ import urllib.request
 
 OUT = os.path.join("data", "electricity.json")
 UA = "KuroKainosLietuvoje/1.0"
-_CTX = ssl.create_default_context()
-_CTX.check_hostname = False
-_CTX.verify_mode = ssl.CERT_NONE
+_CTX = ssl.create_default_context()   # verify TLS — Elering presents a valid cert
 
 
 def getj(url):

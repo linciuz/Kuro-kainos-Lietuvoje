@@ -60,7 +60,9 @@ def main():
     # Weekly average (last 5 trading days) + previous week, for a smoothed
     # week-over-week signal shown at the bottom of the app.
     last5 = [c for _, c in series[-5:]]
-    prev5 = [c for _, c in series[-10:-5]] or last5
+    prev5 = [c for _, c in series[-10:-5]]
+    if len(prev5) < 5:            # <10 data points: no real prior week to compare
+        prev5 = last5             # -> avg_chg ~ 0 (stable), not a skewed 1-vs-5 ratio
     week_avg = round(sum(last5) / len(last5), 2)
     prev_week_avg = round(sum(prev5) / len(prev5), 2)
     avg_chg = round(100 * (week_avg - prev_week_avg) / prev_week_avg, 1)
