@@ -2,17 +2,21 @@ name: Update fuel prices
 
 on:
   schedule:
-    # LEA publishes by 10:00 local (07:00 UTC in summer). GitHub's scheduler is
-    # best-effort and often delays/SKIPS runs, so fire several times through the
-    # day; the commit step is idempotent (only commits when data actually
-    # changed), so the extra attempts are free insurance. Times are UTC.
-    - cron: "15 8 * * 1-5"    # ~11:15 LT
-    - cron: "15 11 * * 1-5"   # ~14:15 LT (retry if the morning slot was skipped)
-    - cron: "15 15 * * 1-5"   # ~18:15 LT (last-chance retry)
+    # Daily FULL refresh: prices PLUS the heavy chain-directory + EV-charger
+    # fetches (which change rarely, so once/twice a day is enough). Frequent
+    # price-only refreshes live in update-prices.yml. Offset from that workflow's
+    # :15 slots; the shared concurrency group serializes them regardless. UTC.
+    - cron: "45 5 * * 1-5"    # ~08:45 Lithuania (morning full refresh)
+    - cron: "45 13 * * 1-5"   # ~16:45 Lithuania (afternoon, refreshes directories)
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
   contents: write
+
+# Shared with update-prices.yml so the two never push simultaneously.
+concurrency:
+  group: kk-data-write
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -30,7 +34,7 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Fetch latest prices
-        run: python scripts/fetch_prices.py
+        run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
 
       - name: Geocode stations (cached; only new addresses hit Nominatim)
         run: python scripts/geocode.py
@@ -65,5 +69,6 @@ jobs:
             echo "No changes."
           else
             git commit -m "Update fuel prices ($(date -u +%Y-%m-%d))"
+            git pull --rebase --autostash origin main || true
             git push
           fi

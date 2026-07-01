@@ -1,0 +1,64 @@
+name: Update prices (frequent)
+
+# Fast-changing PRICE data only (no heavy chain/EV directory fetches — those run
+# once a day in update-fuel-prices.yml). Runs HOURLY through the Lithuanian
+# morning so we grab LEA's once-a-day file within ~1h of it being published
+# (and survive GitHub's flaky scheduler), then a couple of afternoon refreshes.
+#
+# GitHub cron is UTC-only. Lithuania is UTC+3 (summer) / UTC+2 (winter), so the
+# 04:15-10:15 UTC band = ~06:15-13:15 local, covering the 7-12 LT morning in
+# both seasons. LEA publishes on working days, so Mon-Fri.
+on:
+  schedule:
+    - cron: "15 4-10 * * 1-5"   # hourly, ~07:15-13:15 Lithuania
+    - cron: "15 14 * * 1-5"     # ~17:15 Lithuania (afternoon, ~every 5h)
+    - cron: "15 19 * * 1-5"     # ~22:15 Lithuania
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Serialize with the daily full run so the two never push at the same time.
+concurrency:
+  group: kk-data-write
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+
+      # LEA daily prices. Non-fatal: if the SharePoint file is briefly down, we
+      # keep the last stations.json and still refresh the other sources below.
+      - name: Fetch LEA prices
+        run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
+      - name: Geocode new stations (cached)
+        run: python scripts/geocode.py || echo "geocode failed (non-fatal)"
+      - name: Snap onto exact chain coords (uses last daily directory)
+        run: python scripts/merge_chain_coords.py || echo "merge failed (non-fatal)"
+      - name: Circle K live prices
+        run: python scripts/fetch_circlek.py || echo "Circle K failed (non-fatal)"
+      - name: Orlen wholesale reference
+        run: python scripts/fetch_orlen_wholesale.py || echo "Orlen failed (non-fatal)"
+      - name: Compare sources vs LEA -> discrepancies
+        run: python scripts/compare.py || echo "compare failed (non-fatal)"
+      - name: Brent oil price + weekly trend
+        run: python scripts/fetch_oil.py || echo "oil failed (non-fatal)"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json || true
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update prices ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
