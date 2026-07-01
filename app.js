@@ -426,11 +426,20 @@ function renderOilFooter() {
         ${t("oil_perweek")} ${sign}${chg}% <span class="oil-ind">${ind[0]} ${t(ind[1])}</span>`;
 }
 
+// After changing fuel/sort, jump the list back to the top so re-rendering from a
+// scrolled-down position doesn't strand you at the end of the new list. (The list
+// scrolls inside its own 60vh container, so this resets that, not the page.)
+function scrollListTop() {
+    const l = document.getElementById("stations-list");
+    if (l) l.scrollTop = 0;
+}
+
 function selectFuel(f) {
     fuelType = f;
     document.querySelectorAll(".fuel-btn").forEach(b => b.classList.remove("active"));
     document.getElementById("btn-" + f).classList.add("active");
     render();
+    scrollListTop();
     if (f === "ev" && REPORT_API) loadEvStatus().then(render);   // refresh live occupancy
 }
 
@@ -440,6 +449,7 @@ function setSort(dir) {
     ["asc", "desc", "dist"].forEach(d =>
         document.getElementById("sort-" + d).classList.toggle("active", d === dir));
     render();
+    scrollListTop();
 }
 
 function setView(v) {
