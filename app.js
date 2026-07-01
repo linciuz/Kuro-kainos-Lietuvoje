@@ -490,6 +490,16 @@ function fmtDist(km) {
     return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(km < 10 ? 1 : 0)} km`;
 }
 
+// Fuel-availability chips (⛽ 95 / 🚛 diesel / 🔥 LPG). Fuels this station sells
+// are highlighted; ones it doesn't are greyed out — so it's clear a station may
+// not carry every fuel type.
+const FUEL_ICONS = [["petrol95", "⛽"], ["diesel", "🚛"], ["lpg", "🔥"]];
+function fuelChips(s) {
+    const chips = FUEL_ICONS.map(([k, ic]) =>
+        `<span class="fuel-chip ${s[k] != null ? "" : "off"}" title="${escAttr(t("fuel_" + k))}">${ic}</span>`).join("");
+    return `<div class="fuel-chips"><span class="lbl">${t("fuels_label")}</span>${chips}</div>`;
+}
+
 // --- shared row selection --------------------------------------------------
 
 function getRows() {
@@ -613,6 +623,7 @@ function renderList() {
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
                 <div class="station-muni">📍 ${s.municipality || ""}${approxTag}</div>
+                ${fuelChips(s)}
                 ${flagLine}${repLine}
                 <div class="nav-row">${navButtons(s)}</div>
                 ${repBtn ? `<div class="report-row">${repBtn}</div>` : ""}
@@ -677,6 +688,7 @@ function renderMap() {
         const popup = `<div class="popup-name">${s.network || t("station_default")}</div>
             <div>${s.address || ""}</div>
             <div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
+            ${fuelChips(s)}
             <div class="popup-nav">${navButtons(s)}</div>`;
         L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { minWidth: 220 }).addTo(markersLayer);
         bounds.push([s.lat, s.lon]);

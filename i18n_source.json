@@ -960,5 +960,18 @@
     "fi": "📍 Sijaintia ei voitu määrittää",
     "no": "📍 Kunne ikke finne posisjonen",
     "pl": "📍 Nie udało się ustalić lokalizacji"
+  },
+  "fuels_label": {
+    "lt": "Kuro rūšys:",
+    "en": "Fuel types:",
+    "lv": "Degvielas veidi:",
+    "et": "Kütuseliigid:",
+    "uk": "Види палива:",
+    "ru": "Виды топлива:",
+    "pl": "Rodzaje paliwa:",
+    "de": "Kraftstoffarten:",
+    "sv": "Bränsletyper:",
+    "fi": "Polttoainetyypit:",
+    "no": "Drivstofftyper:"
   }
 }
