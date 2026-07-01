@@ -856,5 +856,18 @@
     "sv": "Elmarknadspris",
     "fi": "Sähkön markkinahinta",
     "no": "Strømmarkedspris"
+  },
+  "radius_label": {
+    "lt": "Atstumas:",
+    "en": "Distance:",
+    "lv": "Attālums:",
+    "et": "Kaugus:",
+    "uk": "Відстань:",
+    "ru": "Расстояние:",
+    "pl": "Odległość:",
+    "de": "Entfernung:",
+    "sv": "Avstånd:",
+    "fi": "Etäisyys:",
+    "no": "Avstand:"
   }
 }

@@ -67,7 +67,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Benzinas 95",
     "national_title": "Šalies kainos (oficialios)",
     "banner_change_all": "⚠️ Kai kurių degalinių kainos galėjo pasikeisti nuo 10:00 valandos oficialaus kainų pranešimo.",
-    "el_market": "Elektros rinkos kaina"
+    "el_market": "Elektros rinkos kaina",
+    "radius_label": "Atstumas:"
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -135,7 +136,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Benzīns 95",
     "national_title": "Valsts cenas (oficiālas)",
     "banner_change_all": "⚠️ Dažu degvielas uzpildes staciju cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 cenu paziņojuma.",
-    "el_market": "Elektrības tirgus cena"
+    "el_market": "Elektrības tirgus cena",
+    "radius_label": "Attālums:"
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -203,7 +205,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Bensiin 95",
     "national_title": "Riigi hinnad (ametlikud)",
     "banner_change_all": "⚠️ Mõne tankla hinnad võisid pärast ametlikku kella 10:00 hinnateadet muutuda.",
-    "el_market": "Elektri turuhind"
+    "el_market": "Elektri turuhind",
+    "radius_label": "Kaugus:"
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -271,7 +274,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Petrol 95",
     "national_title": "National prices (official)",
     "banner_change_all": "⚠️ Some stations' prices may have changed since the official 10:00 price announcement.",
-    "el_market": "Electricity market price"
+    "el_market": "Electricity market price",
+    "radius_label": "Distance:"
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -339,7 +343,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Бензин 95",
     "national_title": "Ціни по країні (офіційні)",
     "banner_change_all": "⚠️ Ціни деяких заправок могли змінитися після офіційного оголошення цін о 10:00.",
-    "el_market": "Ринкова ціна електроенергії"
+    "el_market": "Ринкова ціна електроенергії",
+    "radius_label": "Відстань:"
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -407,7 +412,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Бензин 95",
     "national_title": "Цены по стране (официальные)",
     "banner_change_all": "⚠️ Цены некоторых заправок могли измениться после официального объявления цен в 10:00.",
-    "el_market": "Рыночная цена электроэнергии"
+    "el_market": "Рыночная цена электроэнергии",
+    "radius_label": "Расстояние:"
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -475,7 +481,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Benzyna 95",
     "national_title": "Ceny krajowe (oficjalne)",
     "banner_change_all": "⚠️ Ceny niektórych stacji mogły się zmienić od oficjalnego ogłoszenia cen o 10:00.",
-    "el_market": "Rynkowa cena energii"
+    "el_market": "Rynkowa cena energii",
+    "radius_label": "Odległość:"
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -543,7 +550,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Benzin 95",
     "national_title": "Landesweite Preise (offiziell)",
     "banner_change_all": "⚠️ Die Preise einiger Tankstellen könnten sich seit der offiziellen Preisbekanntgabe um 10:00 geändert haben.",
-    "el_market": "Strommarktpreis"
+    "el_market": "Strommarktpreis",
+    "radius_label": "Entfernung:"
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -611,7 +619,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Bensin 95",
     "national_title": "Rikspriser (officiella)",
     "banner_change_all": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00.",
-    "el_market": "Elmarknadspris"
+    "el_market": "Elmarknadspris",
+    "radius_label": "Avstånd:"
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -679,7 +688,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Bensiini 95",
     "national_title": "Maan hinnat (viralliset)",
     "banner_change_all": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen.",
-    "el_market": "Sähkön markkinahinta"
+    "el_market": "Sähkön markkinahinta",
+    "radius_label": "Etäisyys:"
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -747,7 +757,8 @@ const STRINGS = {
     "btn_petrol95": "⛽ Bensin 95",
     "national_title": "Landspriser (offisielle)",
     "banner_change_all": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00.",
-    "el_market": "Strømmarkedspris"
+    "el_market": "Strømmarkedspris",
+    "radius_label": "Avstand:"
   }
 };
 let lang = (function () { try { return localStorage.getItem("kk_lang") || ""; } catch (e) { return ""; } })();

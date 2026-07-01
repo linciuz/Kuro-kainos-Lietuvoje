@@ -131,7 +131,10 @@ def nominatim(q):
     return None
 
 
-MAX_MUNI_KM = 40   # a real station sits within ~this of its municipality centroid
+# A station should sit within ~this of the MEDIAN of its municipality's stations
+# (a robust, self-calibrating centre — most stations in a muni are correct, so
+# an outlier this far out is a wrong-rajonas name collision).
+MAX_MUNI_KM = 45
 
 
 def haversine(a, b, c, d):
@@ -141,66 +144,66 @@ def haversine(a, b, c, d):
     return 2 * R * math.asin(math.sqrt(h))
 
 
-def muni_centroid(cm, cache):
-    """Municipality centroid (cached under a reserved key). Used to sanity-check
-    'exact' hits — Nominatim otherwise happily returns a same-named village in the
-    WRONG rajonas and we'd trust it as precise, pinning stations 40-190 km off."""
-    if not cm:
-        return None
-    key = f"__muni__ | {cm}"
-    if key not in cache:
-        res = nominatim(f"{cm}, Lietuva")
-        time.sleep(SLEEP)
-        cache[key] = {"lat": res[0], "lon": res[1]} if res else None
-    return cache[key]
-
-
-def geocode_station(addr, muni, cache):
+def geocode_station(addr, muni):
     """Street-level first (a few query shapes), then town locality, then
-    municipality centroid. The last two are flagged approx=True.
-
-    Kept deliberately lean on request count (each call sleeps ~1s for the
-    Nominatim policy): most addresses resolve in the first 1-2 queries; only
-    failures fall through to the muni-pinned and centroid fallbacks.
+    municipality centroid. The last two are flagged approx=True. Wrong-rajonas
+    name collisions in the exact step are caught later by the median sanity pass.
     """
     cm = clean_muni(muni)
-    centroid = muni_centroid(cm, cache) if cm else None
 
-    def near_muni(res):
-        # Accept an exact hit only if it lands within the stated municipality
-        # (or if we have no centroid to validate against).
-        return res and (centroid is None
-                        or haversine(res[0], res[1], centroid["lat"], centroid["lon"]) <= MAX_MUNI_KM)
-
-    # 1) Exact: a few best street-first variants, no municipality pin — but the
-    # hit MUST fall in the stated municipality, else it's a wrong-rajonas collision.
+    # 1) Exact: a few best street-first variants, no municipality pin.
     variants = street_first_queries(addr)[:4]
     for v in variants:
         res = nominatim(f"{v}, Lietuva")
         time.sleep(SLEEP)
-        if near_muni(res):
+        if res:
             return {"lat": res[0], "lon": res[1], "approx": False}
 
     # 1b) One municipality-pinned retry of the best variant (ambiguous streets).
     if variants and cm:
         res = nominatim(f"{variants[0]}, {cm}, Lietuva")
         time.sleep(SLEEP)
-        if near_muni(res):
+        if res:
             return {"lat": res[0], "lon": res[1], "approx": False}
 
-    # 2) Approx: the town/village embedded in the address, PINNED to the
-    # municipality so an ambiguous name can't match the wrong city.
+    # 2) Approx: the town/village embedded in the address, PINNED to the muni.
     town = town_segment(addr)
     if town and cm and town.lower() != cm.lower():
         res = nominatim(f"{town}, {cm}, Lietuva")
         time.sleep(SLEEP)
-        if near_muni(res):
+        if res:
             return {"lat": res[0], "lon": res[1], "approx": True}
 
-    # 3) Approx: municipality centroid (reuse the one already fetched above).
-    if centroid:
-        return {"lat": centroid["lat"], "lon": centroid["lon"], "approx": True}
+    # 3) Approx: municipality centroid.
+    if cm:
+        res = nominatim(f"{cm}, Lietuva")
+        time.sleep(SLEEP)
+        if res:
+            return {"lat": res[0], "lon": res[1], "approx": True}
     return None
+
+
+def median_sanity(stations):
+    """Downgrade 'exact' hits that land far from the MEDIAN of their municipality's
+    stations — those are Nominatim wrong-rajonas name collisions (a same-named
+    village in another district) that would otherwise show as trustworthy and
+    corrupt the distance sort. Post-pass over coords, so it self-heals each run."""
+    from statistics import median
+    groups = {}
+    for s in stations:
+        if s.get("lat") is not None and s.get("municipality"):
+            groups.setdefault(s["municipality"], []).append(s)
+    fixed = 0
+    for g in groups.values():
+        if len(g) < 4:           # too few for a reliable median
+            continue
+        mlat = median(x["lat"] for x in g)
+        mlon = median(x["lon"] for x in g)
+        for s in g:
+            if not s.get("approx") and haversine(s["lat"], s["lon"], mlat, mlon) > MAX_MUNI_KM:
+                s["lat"], s["lon"], s["approx"] = round(mlat, 6), round(mlon, 6), True
+                fixed += 1
+    return fixed
 
 
 def main():
@@ -219,21 +222,9 @@ def main():
         cache = {k: v for k, v in cache.items() if v and not v.get("approx")}
         print(f"[info] retry-approx: dropped {before - len(cache)} approx/failed cache entries")
 
-    # Purge previously-cached 'exact' hits that landed in the wrong municipality
-    # (>MAX_MUNI_KM from its centroid) so they get re-geocoded with the sanity check.
-    if "--recheck" in sys.argv:
-        dropped = 0
-        for k in list(cache):
-            if k.startswith("__muni__"):
-                continue
-            v = cache[k]
-            if not v or v.get("approx"):
-                continue
-            c = muni_centroid(clean_muni(k.rsplit(" | ", 1)[-1]), cache)
-            if c and haversine(v["lat"], v["lon"], c["lat"], c["lon"]) > MAX_MUNI_KM:
-                del cache[k]
-                dropped += 1
-        print(f"[info] recheck: dropped {dropped} exact hits >{MAX_MUNI_KM} km from their municipality")
+    # Drop reserved municipality-centroid keys left by an earlier approach.
+    for k in [k for k in cache if k.startswith("__muni__")]:
+        del cache[k]
 
     for i, s in enumerate(stations):
         addr = (s.get("address") or "").strip()
@@ -242,7 +233,7 @@ def main():
 
         if key not in cache:
             try:
-                cache[key] = geocode_station(addr, muni, cache)  # dict or None (cache the miss too)
+                cache[key] = geocode_station(addr, muni)  # dict or None (cache the miss too)
             except Exception as e:
                 print(f"[warn] geocode failed for '{key}': {e}")
                 continue  # transient: don't cache, retry next run
@@ -257,12 +248,13 @@ def main():
             s["lat"], s["lon"], s["approx"] = ll["lat"], ll["lon"], ll.get("approx", False)
             applied += 1
 
+    downgraded = median_sanity(stations)
     save_json(CACHE, cache, indent=0)
     save_json(STATIONS, data, indent=2)
     located = sum(1 for s in stations if s.get("lat") is not None)
     exact = sum(1 for s in stations if s.get("lat") is not None and not s.get("approx"))
-    print(f"[ok] new geocodes: {new_calls}; stations with coords: {located}/{len(stations)} "
-          f"({exact} exact, {located - exact} approx municipality centroid)")
+    print(f"[ok] new geocodes: {new_calls}; sanity-downgraded {downgraded}; "
+          f"stations with coords: {located}/{len(stations)} ({exact} exact, {located - exact} approx)")
 
 
 if __name__ == "__main__":

@@ -20,6 +20,7 @@ let EV = { chargers: [] };                     // EV charging stations (OCPI + O
 let EV_STATUS = {};                            // live occupancy {ocpi_id: {a,t,s}} via Worker proxy
 let fuelType = "petrol95";    // 'petrol95' | 'diesel' | 'lpg' | 'ev'
 let sortDir = "asc";          // 'asc' | 'desc' | 'dist'
+let radiusKm = 0;             // 0 = off; otherwise show only stations within this many km of userPos
 let view = "list";            // 'list' | 'map'
 let userPos = null;           // {lat, lon} once geolocation granted
 let map = null, markersLayer = null, userMarker = null;
@@ -238,6 +239,7 @@ function getChargers() {
     if (muni) rows = rows.filter(c => c._muni === muni);
     if (q) rows = rows.filter(c => ((c.operator || "") + " " + (c.name || "")).toLowerCase().includes(q));
     if (userPos) rows.forEach(c => c._dist = haversine(userPos.lat, userPos.lon, c.lat, c.lon));
+    if (userPos && radiusKm) rows = rows.filter(c => c._dist != null && c._dist <= radiusKm);
     // Honour the cheapest/expensive/nearest buttons. Chargers without a €/kWh
     // price always sort to the bottom (ranked by power) so priced ones lead.
     const byPower = (a, b) => (b.power_kw || 0) - (a.power_kw || 0);
@@ -468,6 +470,17 @@ function setSort(dir) {
     scrollListTop();
 }
 
+// "Cheapest within X km" — filter to a radius around the user's location. Picking
+// a radius clears the municipality scope so it's a clean distance filter.
+function setRadius(km) {
+    if (km && !userPos) return;
+    radiusKm = km;
+    document.querySelectorAll(".radius-btn").forEach(b => b.classList.toggle("active", +b.dataset.km === km));
+    if (km) document.getElementById("muni-select").value = "";
+    render();
+    scrollListTop();
+}
+
 function setView(v) {
     view = v;
     document.getElementById("view-list").classList.toggle("active", v === "list");
@@ -502,6 +515,7 @@ function locate() {
             btn.disabled = false;
             btn.classList.add("on");
             document.getElementById("sort-dist").disabled = false;
+            document.getElementById("radius-row").style.display = "flex";   // enable "within X km"
             // Auto-scope to the user's area so cheapest/priciest are LOCAL, not national.
             const muni = nearestStationMuni(userPos);
             const sel = document.getElementById("muni-select");
@@ -565,6 +579,7 @@ function getRows() {
         s._dist = (s.lat != null && s.lon != null)
             ? haversine(userPos.lat, userPos.lon, s.lat, s.lon) : null;
     });
+    if (userPos && radiusKm) rows = rows.filter(s => s._dist != null && s._dist <= radiusKm);
 
     if (sortDir === "dist" && userPos) {
         rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));

@@ -81,6 +81,12 @@
         }
         .sort-btn.active { background: #007AFF; color: white; border-color: #007AFF; }
         .sort-btn:disabled { opacity: .45; cursor: default; }
+        .radius-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+        .radius-btn {
+            flex: 1; min-width: 52px; padding: 8px; border: 1px solid #ddd; background: #f8f9fa;
+            border-radius: 8px; cursor: pointer; font-size: 13px;
+        }
+        .radius-btn.active { background: #28a745; color: white; border-color: #28a745; }
 
         .summary { background: #f8f9fa; margin: 0 15px 10px; padding: 12px; border-radius: 8px; }
         .summary-title { font-size: 12px; color: #666; margin-bottom: 8px; text-align: center; }
@@ -258,6 +264,14 @@
                 <button class="sort-btn active" id="sort-asc" onclick="setSort('asc')" data-i18n="sort_cheap">💰 Pigiausios</button>
                 <button class="sort-btn" id="sort-desc" onclick="setSort('desc')" data-i18n="sort_dear">Brangiausios</button>
                 <button class="sort-btn" id="sort-dist" onclick="setSort('dist')" data-i18n="sort_near" disabled>📍 Arčiausios</button>
+            </div>
+            <div class="radius-row" id="radius-row" style="display:none">
+                <span class="sort-label" data-i18n="radius_label">Atstumas:</span>
+                <button class="radius-btn" data-km="2" onclick="setRadius(2)">2 km</button>
+                <button class="radius-btn" data-km="5" onclick="setRadius(5)">5 km</button>
+                <button class="radius-btn" data-km="10" onclick="setRadius(10)">10 km</button>
+                <button class="radius-btn" data-km="25" onclick="setRadius(25)">25 km</button>
+                <button class="radius-btn active" data-km="0" onclick="setRadius(0)">∞</button>
             </div>
         </div>
 
