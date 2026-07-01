@@ -302,6 +302,7 @@ function renderMapEv() {
         bounds.push([c.lat, c.lon]);
     });
     if (!userPos && bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
+    addUserMarker();   // keep the "you are here" pin on top of the charger pins
 }
 
 // An active report = reported AFTER the latest official LEA snapshot.
@@ -464,11 +465,8 @@ function locate() {
             renderLocateBtn();
             setSort("dist");
             if (map) {
-                if (userMarker) userMarker.remove();
-                userMarker = L.circleMarker([userPos.lat, userPos.lon], {
-                    radius: 8, color: "#fff", weight: 2, fillColor: "#1a73e8", fillOpacity: 1
-                }).addTo(map).bindPopup(t("you_are_here"));
-                map.setView([userPos.lat, userPos.lon], 12);
+                addUserMarker();
+                map.setView([userPos.lat, userPos.lon], 13);
             }
         },
         (err) => {
@@ -632,11 +630,20 @@ function ensureMap() {
     }).addTo(map);
     markersLayer = L.layerGroup().addTo(map);
     if (userPos) {
-        userMarker = L.circleMarker([userPos.lat, userPos.lon], {
-            radius: 8, color: "#fff", weight: 2, fillColor: "#1a73e8", fillOpacity: 1
-        }).addTo(map).bindPopup(t("you_are_here"));
-        map.setView([userPos.lat, userPos.lon], 12);
+        addUserMarker();
+        map.setView([userPos.lat, userPos.lon], 13);
     }
+}
+
+// A distinctive pulsing "you are here" marker. Uses a divIcon marker (marker
+// pane) with a high zIndexOffset so it always sits ABOVE the charger/price pins
+// — a plain circleMarker sits on a lower pane and gets buried under them.
+function addUserMarker() {
+    if (!map || !userPos) return;
+    if (userMarker) userMarker.remove();
+    const icon = L.divIcon({ className: "", html: '<div class="user-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] });
+    userMarker = L.marker([userPos.lat, userPos.lon], { icon, zIndexOffset: 1000, keyboard: false })
+        .addTo(map).bindPopup(t("you_are_here"));
 }
 
 function renderMap() {
@@ -676,7 +683,7 @@ function renderMap() {
     });
 
     if (!userPos && bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
-    if (capped) console.log(`Map capped at ${MAX} nearest/cheapest stations.`);
+    addUserMarker();   // keep the "you are here" pin on top of the price pins
 }
 
 window.addEventListener("load", load);

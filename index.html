@@ -183,6 +183,16 @@
         .price-pin.cheap { background: #1faa4b; }
         .price-pin.dear { background: #dc3545; }
         .price-pin.approx { border-style: dashed; opacity: 0.8; }
+        .user-dot {
+            width: 18px; height: 18px; border-radius: 50%;
+            background: #1a73e8; border: 3px solid #fff; box-sizing: border-box;
+            box-shadow: 0 0 0 rgba(26,115,232,.5); animation: userpulse 1.8s ease-out infinite;
+        }
+        @keyframes userpulse {
+            0%   { box-shadow: 0 0 0 0 rgba(26,115,232,.55); }
+            70%  { box-shadow: 0 0 0 16px rgba(26,115,232,0); }
+            100% { box-shadow: 0 0 0 0 rgba(26,115,232,0); }
+        }
         .leaflet-popup-content { margin: 10px 12px; font-size: 13px; }
         .popup-name { font-weight: bold; font-size: 15px; color: #333; }
         .popup-addr { color: #666; font-size: 12px; margin: 2px 0 4px; }

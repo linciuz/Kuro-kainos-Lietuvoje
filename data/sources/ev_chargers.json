@@ -25122,19 +25122,6 @@
       "source": "osm"
     },
     {
-      "lat": 55.726946,
-      "lon": 24.363022,
-      "name": "Elinta",
-      "operator": "Elinta Charge",
-      "address": "",
-      "city": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null,
-      "ocpi_id": null,
-      "source": "osm"
-    },
-    {
       "lat": 55.525086,
       "lon": 25.125628,
       "name": "Įkrovimo stotelė",
@@ -25354,6 +25341,19 @@
       "sockets": null,
       "ocpi_id": null,
       "source": "osm"
+    },
+    {
+      "lat": 55.72952,
+      "lon": 24.364596,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "address": "Elektros g. 9A",
+      "city": "Panevėžys",
+      "power_kw": null,
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "manual"
     }
   ]
 }

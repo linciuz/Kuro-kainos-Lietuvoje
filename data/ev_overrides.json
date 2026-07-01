@@ -1,0 +1,16 @@
+{
+  "note": "Manually verified EV chargers that are missing from the national AFIR registry and OSM. Applied by fetch_ev_chargers.py: each entry is added as source=manual, and any fuzzy OSM node within 400 m is dropped in its favour. price/power may be null when unknown.",
+  "stations": [
+    {
+      "operator": "Elinta Charge",
+      "name": "Elinta Charge",
+      "address": "Elektros g. 9A",
+      "city": "Panevėžys",
+      "lat": 55.7295199,
+      "lon": 24.3645956,
+      "power_kw": null,
+      "price": null,
+      "note": "Elinta HQ charging station (on Google Maps, verified by user); not registered in the national AFIR feed"
+    }
+  ]
+}

@@ -33,6 +33,7 @@ for _s in (sys.stdout, sys.stderr):
         pass
 
 OUT = os.path.join("data", "sources", "ev_chargers.json")
+EV_OVERRIDES = os.path.join("data", "ev_overrides.json")
 LT_BBOX = (53.7, 56.6, 20.8, 27.0)
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
@@ -327,6 +328,26 @@ def main():
             chargers.append(o)
     print(f"[ok] merged: {len(ocpi)} OCPI + {ign_added} new Ignitis + "
           f"{len(chargers) - len(ocpi) - ign_added} OSM")
+
+    # Manually-verified stations the public feeds miss (e.g. Elinta's own HQ
+    # charger). A nearby fuzzy OSM node is dropped in favour of the verified point.
+    try:
+        overrides = json.load(open(EV_OVERRIDES, encoding="utf-8")).get("stations", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        overrides = []
+    for m in overrides:
+        chargers = [c for c in chargers
+                    if not (c.get("source") == "osm" and haversine(m["lat"], m["lon"], c["lat"], c["lon"]) < 0.4)]
+        chargers.append({
+            "lat": round(m["lat"], 6), "lon": round(m["lon"], 6),
+            "name": (m.get("name") or m.get("operator") or "").strip(),
+            "operator": norm_operator(m.get("operator") or ""),
+            "address": (m.get("address") or "").strip(), "city": (m.get("city") or "").strip(),
+            "power_kw": m.get("power_kw"), "price": m.get("price"),
+            "sockets": m.get("sockets"), "ocpi_id": None, "source": "manual",
+        })
+    if overrides:
+        print(f"[ok] applied {len(overrides)} manual override station(s)")
 
     # Don't clobber the committed file with an empty result if sources fail.
     if len(chargers) < 30:
