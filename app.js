@@ -239,24 +239,19 @@ function evNav(c) {
 function renderSummaryEv() {
     const box = document.getElementById("summary");
     box.style.display = "block";
-    const total = (EV.chargers || []).length;
     const priced = (EV.chargers || []).filter(c => c.price != null).length;
-    box.innerHTML = `<div class="summary-title">${t("ev_title", { n: total })}</div>
-        <div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`;
+    box.innerHTML = `<div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`;
 }
 
 function renderListEv() {
     const list = document.getElementById("stations-list");
     const rows = getChargers();
     if (!rows.length) { list.innerHTML = `<div class="msg">${t("nothing_found")}</div>`; return; }
-    const order = (sortDir === "dist" && userPos) ? " · " + t("order_near")
-        : sortDir === "asc" ? " · " + t("order_cheap")
-        : sortDir === "desc" ? " · " + t("order_dear") : "";
     const LIST_MAX = 600;                       // keep the DOM snappy on phones
     const filtered = rows.length, totalCh = (EV.chargers || []).length;
     const shown = rows.slice(0, LIST_MAX);
     const nLabel = filtered < totalCh ? `${filtered} / ${totalCh}` : `${totalCh}`;  // your area / overall
-    list.innerHTML = `<div class="count-line">${t("showing_chargers", { n: nLabel })}${order}</div>` +
+    list.innerHTML = `<div class="count-line">${t("showing_chargers", { n: nLabel })}</div>` +
         shown.map(c => {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
             const info = evInfo(c);
@@ -551,11 +546,10 @@ function render() {
 function renderBanner() {
     const el = document.getElementById("change-banner");
     if (!el) return;
-    const flagged = DISCREP.items || [];   // all fuels, not just the selected one
+    const flagged = DISCREP.items || [];   // any fuel, any network
     if (!flagged.length) { el.style.display = "none"; return; }
-    const chains = [...new Set(flagged.map(it => it.source))].join(", ");
     el.style.display = "block";
-    el.innerHTML = t("banner_change_all", { chains });
+    el.innerHTML = t("banner_change_all");
 }
 
 function renderSummary() {
@@ -620,7 +614,7 @@ function renderList() {
         s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
     const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
     list.innerHTML =
-        `<div class="count-line">${t("showing_stations", { n: nLabel })}${userPos ? " · " + t("sorted_dist") : ""}</div>` +
+        `<div class="count-line">${t("showing_stations", { n: nLabel })}</div>` +
         rows.map(s => {
             const isBest = s[fuelType] != null && s[fuelType] === best;
             const dist = (userPos && s._dist != null)

@@ -1014,16 +1014,16 @@
     "no": "Landspriser (offisielle)"
   },
   "banner_change_all": {
-    "lt": "⚠️ Kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo.",
-    "en": "⚠️ Some networks' ({chains}) prices may have changed since the official 10:00 update.",
-    "lv": "⚠️ Dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma.",
-    "et": "⚠️ Mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda.",
-    "uk": "⚠️ Ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00.",
-    "ru": "⚠️ Цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00.",
-    "pl": "⚠️ Ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00.",
-    "de": "⚠️ Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben.",
-    "sv": "⚠️ Priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00.",
-    "fi": "⚠️ Joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen.",
-    "no": "⚠️ Prisene hos noen kjeder ({chains}) kan ha endret seg siden den offisielle oppdateringen kl. 10:00."
+    "lt": "⚠️ Kai kurių degalinių kainos galėjo pasikeisti nuo 10:00 valandos oficialaus kainų pranešimo.",
+    "en": "⚠️ Some stations' prices may have changed since the official 10:00 price announcement.",
+    "lv": "⚠️ Dažu degvielas uzpildes staciju cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 cenu paziņojuma.",
+    "et": "⚠️ Mõne tankla hinnad võisid pärast ametlikku kella 10:00 hinnateadet muutuda.",
+    "uk": "⚠️ Ціни деяких заправок могли змінитися після офіційного оголошення цін о 10:00.",
+    "ru": "⚠️ Цены некоторых заправок могли измениться после официального объявления цен в 10:00.",
+    "pl": "⚠️ Ceny niektórych stacji mogły się zmienić od oficjalnego ogłoszenia cen o 10:00.",
+    "de": "⚠️ Die Preise einiger Tankstellen könnten sich seit der offiziellen Preisbekanntgabe um 10:00 geändert haben.",
+    "sv": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00.",
+    "fi": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen.",
+    "no": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
   }
 }

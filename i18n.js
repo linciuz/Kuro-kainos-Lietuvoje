@@ -80,7 +80,7 @@ const STRINGS = {
     "no_price": "Kaina nepateikta",
     "btn_petrol95": "⛽ Benzinas 95",
     "national_title": "Šalies kainos (oficialios)",
-    "banner_change_all": "⚠️ Kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo."
+    "banner_change_all": "⚠️ Kai kurių degalinių kainos galėjo pasikeisti nuo 10:00 valandos oficialaus kainų pranešimo."
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -161,7 +161,7 @@ const STRINGS = {
     "no_price": "Cena nav norādīta",
     "btn_petrol95": "⛽ Benzīns 95",
     "national_title": "Valsts cenas (oficiālas)",
-    "banner_change_all": "⚠️ Dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma."
+    "banner_change_all": "⚠️ Dažu degvielas uzpildes staciju cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 cenu paziņojuma."
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -242,7 +242,7 @@ const STRINGS = {
     "no_price": "Hind puudub",
     "btn_petrol95": "⛽ Bensiin 95",
     "national_title": "Riigi hinnad (ametlikud)",
-    "banner_change_all": "⚠️ Mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda."
+    "banner_change_all": "⚠️ Mõne tankla hinnad võisid pärast ametlikku kella 10:00 hinnateadet muutuda."
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -323,7 +323,7 @@ const STRINGS = {
     "no_price": "Price not reported",
     "btn_petrol95": "⛽ Petrol 95",
     "national_title": "National prices (official)",
-    "banner_change_all": "⚠️ Some networks' ({chains}) prices may have changed since the official 10:00 update."
+    "banner_change_all": "⚠️ Some stations' prices may have changed since the official 10:00 price announcement."
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -404,7 +404,7 @@ const STRINGS = {
     "no_price": "Ціна не вказана",
     "btn_petrol95": "⛽ Бензин 95",
     "national_title": "Ціни по країні (офіційні)",
-    "banner_change_all": "⚠️ Ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00."
+    "banner_change_all": "⚠️ Ціни деяких заправок могли змінитися після офіційного оголошення цін о 10:00."
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -485,7 +485,7 @@ const STRINGS = {
     "no_price": "Цена не указана",
     "btn_petrol95": "⛽ Бензин 95",
     "national_title": "Цены по стране (официальные)",
-    "banner_change_all": "⚠️ Цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00."
+    "banner_change_all": "⚠️ Цены некоторых заправок могли измениться после официального объявления цен в 10:00."
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -566,7 +566,7 @@ const STRINGS = {
     "no_price": "Cena niepodana",
     "btn_petrol95": "⛽ Benzyna 95",
     "national_title": "Ceny krajowe (oficjalne)",
-    "banner_change_all": "⚠️ Ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00."
+    "banner_change_all": "⚠️ Ceny niektórych stacji mogły się zmienić od oficjalnego ogłoszenia cen o 10:00."
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -647,7 +647,7 @@ const STRINGS = {
     "no_price": "Kein Preis angegeben",
     "btn_petrol95": "⛽ Benzin 95",
     "national_title": "Landesweite Preise (offiziell)",
-    "banner_change_all": "⚠️ Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben."
+    "banner_change_all": "⚠️ Die Preise einiger Tankstellen könnten sich seit der offiziellen Preisbekanntgabe um 10:00 geändert haben."
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -728,7 +728,7 @@ const STRINGS = {
     "no_price": "Pris saknas",
     "btn_petrol95": "⛽ Bensin 95",
     "national_title": "Rikspriser (officiella)",
-    "banner_change_all": "⚠️ Priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00."
+    "banner_change_all": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00."
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -809,7 +809,7 @@ const STRINGS = {
     "no_price": "Hintaa ei ilmoitettu",
     "btn_petrol95": "⛽ Bensiini 95",
     "national_title": "Maan hinnat (viralliset)",
-    "banner_change_all": "⚠️ Joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen."
+    "banner_change_all": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen."
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -890,7 +890,7 @@ const STRINGS = {
     "no_price": "Pris ikke oppgitt",
     "btn_petrol95": "⛽ Bensin 95",
     "national_title": "Landspriser (offisielle)",
-    "banner_change_all": "⚠️ Prisene hos noen kjeder ({chains}) kan ha endret seg siden den offisielle oppdateringen kl. 10:00."
+    "banner_change_all": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
   }
 };
 let lang = (function () { try { return localStorage.getItem("kk_lang") || ""; } catch (e) { return ""; } })();
