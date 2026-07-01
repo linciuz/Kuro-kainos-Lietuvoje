@@ -178,7 +178,7 @@ def map_columns(headers):
     # Pass 1: wide-format fuel price columns (only if "kaina" or a fuel word present).
     for idx, h in enumerate(headers):
         hd = deaccent(str(h))
-        if not hd.strip():
+        if not hd.strip() or idx in used:
             continue
         for fuel, kws in FUEL_COLUMN_KEYWORDS.items():
             if fuel in fuel_cols:
@@ -187,6 +187,7 @@ def map_columns(headers):
                     f in hd for f in ["benzin", "dyzel", "dujos", "snd", "lpg"])):
                 fuel_cols[fuel] = idx
                 used.add(idx)
+                break        # one column -> one fuel role only
 
     # Pass 2: generic text fields, each column claimed by at most one field.
     for idx, h in enumerate(headers):

@@ -34,7 +34,7 @@ for _s in (sys.stdout, sys.stderr):
 
 OUT = os.path.join("data", "sources", "ev_chargers.json")
 EV_OVERRIDES = os.path.join("data", "ev_overrides.json")
-LT_BBOX = (53.7, 56.6, 20.8, 27.0)
+LT_BBOX = (53.7, 56.45, 20.8, 27.0)   # Lithuania's northernmost point is ~56.45N; 56.6 leaked LV chargers
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",

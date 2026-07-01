@@ -136,6 +136,7 @@ def norm_addr(a):
     parts = []
     for p in (a or "").lower().split(","):
         p = re.sub(r'\b\d{5}\b', "", p)
+        p = re.sub(r'\bkm\.', "k.", p)        # "Kazlavo km. 4" == "Kazlavo k. 4" (abbrev typo)
         p = re.sub(r'\s+', " ", p).strip()
         if p:
             parts.append(p)

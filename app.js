@@ -116,7 +116,12 @@ async function load() {
     await loadElectricity();
     await loadEv();
     await loadEvStatus();
+    // Preserve the chosen municipality across a foreground refetch (initMunicipalities
+    // rebuilds the <select> and would otherwise reset it to "All municipalities").
+    const _muniSel = document.getElementById("muni-select");
+    const _keepMuni = _muniSel ? _muniSel.value : "";
     initMunicipalities();
+    if (_muniSel && _keepMuni && [..._muniSel.options].some(o => o.value === _keepMuni)) _muniSel.value = _keepMuni;
     buildLangSwitcher();
     applyStaticI18n();
     updateChrome();

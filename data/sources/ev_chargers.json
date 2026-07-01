@@ -1,7 +1,7 @@
 {
   "generated": "2026-07-01T16:11:00Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 1954,
+  "count": 1953,
   "ocpi_count": 1888,
   "with_price": 1855,
   "chargers": [
@@ -24548,19 +24548,6 @@
       "sockets": 12,
       "ocpi_id": "15381",
       "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 56.582753,
-      "lon": 26.686055,
-      "name": "Hotel Raibais Asaris",
-      "operator": "Ignitis ON",
-      "address": "Raibais Asaris",
-      "city": "",
-      "power_kw": 200,
-      "price": 0.39,
-      "sockets": 2,
-      "ocpi_id": null,
-      "source": "ignitis"
     },
     {
       "lat": 56.228173,

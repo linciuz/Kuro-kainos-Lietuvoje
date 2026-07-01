@@ -15,6 +15,7 @@ Nominatim usage policy: max 1 request/second, real User-Agent. We honour both.
 """
 
 import json
+import math
 import os
 import re
 import sys
@@ -130,7 +131,31 @@ def nominatim(q):
     return None
 
 
-def geocode_station(addr, muni):
+MAX_MUNI_KM = 40   # a real station sits within ~this of its municipality centroid
+
+
+def haversine(a, b, c, d):
+    R = 6371.0
+    dlat, dlon = math.radians(c - a), math.radians(d - b)
+    h = math.sin(dlat / 2) ** 2 + math.cos(math.radians(a)) * math.cos(math.radians(c)) * math.sin(dlon / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(h))
+
+
+def muni_centroid(cm, cache):
+    """Municipality centroid (cached under a reserved key). Used to sanity-check
+    'exact' hits — Nominatim otherwise happily returns a same-named village in the
+    WRONG rajonas and we'd trust it as precise, pinning stations 40-190 km off."""
+    if not cm:
+        return None
+    key = f"__muni__ | {cm}"
+    if key not in cache:
+        res = nominatim(f"{cm}, Lietuva")
+        time.sleep(SLEEP)
+        cache[key] = {"lat": res[0], "lon": res[1]} if res else None
+    return cache[key]
+
+
+def geocode_station(addr, muni, cache):
     """Street-level first (a few query shapes), then town locality, then
     municipality centroid. The last two are flagged approx=True.
 
@@ -139,20 +164,28 @@ def geocode_station(addr, muni):
     failures fall through to the muni-pinned and centroid fallbacks.
     """
     cm = clean_muni(muni)
+    centroid = muni_centroid(cm, cache) if cm else None
 
-    # 1) Exact: a few best street-first variants, no municipality pin.
+    def near_muni(res):
+        # Accept an exact hit only if it lands within the stated municipality
+        # (or if we have no centroid to validate against).
+        return res and (centroid is None
+                        or haversine(res[0], res[1], centroid["lat"], centroid["lon"]) <= MAX_MUNI_KM)
+
+    # 1) Exact: a few best street-first variants, no municipality pin — but the
+    # hit MUST fall in the stated municipality, else it's a wrong-rajonas collision.
     variants = street_first_queries(addr)[:4]
     for v in variants:
         res = nominatim(f"{v}, Lietuva")
         time.sleep(SLEEP)
-        if res:
+        if near_muni(res):
             return {"lat": res[0], "lon": res[1], "approx": False}
 
     # 1b) One municipality-pinned retry of the best variant (ambiguous streets).
     if variants and cm:
         res = nominatim(f"{variants[0]}, {cm}, Lietuva")
         time.sleep(SLEEP)
-        if res:
+        if near_muni(res):
             return {"lat": res[0], "lon": res[1], "approx": False}
 
     # 2) Approx: the town/village embedded in the address, PINNED to the
@@ -161,15 +194,12 @@ def geocode_station(addr, muni):
     if town and cm and town.lower() != cm.lower():
         res = nominatim(f"{town}, {cm}, Lietuva")
         time.sleep(SLEEP)
-        if res:
+        if near_muni(res):
             return {"lat": res[0], "lon": res[1], "approx": True}
 
-    # 3) Approx: municipality centroid.
-    if cm:
-        res = nominatim(f"{cm}, Lietuva")
-        time.sleep(SLEEP)
-        if res:
-            return {"lat": res[0], "lon": res[1], "approx": True}
+    # 3) Approx: municipality centroid (reuse the one already fetched above).
+    if centroid:
+        return {"lat": centroid["lat"], "lon": centroid["lon"], "approx": True}
     return None
 
 
@@ -189,6 +219,22 @@ def main():
         cache = {k: v for k, v in cache.items() if v and not v.get("approx")}
         print(f"[info] retry-approx: dropped {before - len(cache)} approx/failed cache entries")
 
+    # Purge previously-cached 'exact' hits that landed in the wrong municipality
+    # (>MAX_MUNI_KM from its centroid) so they get re-geocoded with the sanity check.
+    if "--recheck" in sys.argv:
+        dropped = 0
+        for k in list(cache):
+            if k.startswith("__muni__"):
+                continue
+            v = cache[k]
+            if not v or v.get("approx"):
+                continue
+            c = muni_centroid(clean_muni(k.rsplit(" | ", 1)[-1]), cache)
+            if c and haversine(v["lat"], v["lon"], c["lat"], c["lon"]) > MAX_MUNI_KM:
+                del cache[k]
+                dropped += 1
+        print(f"[info] recheck: dropped {dropped} exact hits >{MAX_MUNI_KM} km from their municipality")
+
     for i, s in enumerate(stations):
         addr = (s.get("address") or "").strip()
         muni = (s.get("municipality") or "").strip()
@@ -196,7 +242,7 @@ def main():
 
         if key not in cache:
             try:
-                cache[key] = geocode_station(addr, muni)  # dict or None (cache the miss too)
+                cache[key] = geocode_station(addr, muni, cache)  # dict or None (cache the miss too)
             except Exception as e:
                 print(f"[warn] geocode failed for '{key}': {e}")
                 continue  # transient: don't cache, retry next run

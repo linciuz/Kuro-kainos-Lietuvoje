@@ -168,6 +168,9 @@ def apply_overrides(stations):
         nc = deaccent(o.get("network_contains", ""))
         ac = deaccent(o.get("address_contains", ""))
         mc = deaccent(o.get("municipality_contains", ""))
+        if not (nc or ac or mc):     # all-blank matchers would hit EVERY station
+            print(f"[warn] skipping coord override with no matchers: {o.get('label', '?')}")
+            continue
         for s in stations:
             if (nc in deaccent(s.get("network", "")) and ac in deaccent(s.get("address", ""))
                     and mc in deaccent(s.get("municipality", ""))):
