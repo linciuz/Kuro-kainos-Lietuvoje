@@ -76,6 +76,20 @@ document.addEventListener("click", (e) => {
     if (m && !m.hidden && !e.target.closest("#lang-switcher")) m.hidden = true;
 });
 
+// Drop price-less registry stations that duplicate a priced station of the SAME
+// operator at the same spot. The daily Excel and the Power BI registry format
+// addresses differently (comma placement/order), so a few duplicates slip past
+// the address-based dedup; same operator + exact coords within ~70 m = the same
+// physical station. (Runs each load, so it self-heals across daily refreshes.)
+function dedupePricelessStations() {
+    const priced = (DATA.stations || []).filter(s => !s.no_price && s.lat != null && s.lon != null);
+    DATA.stations = (DATA.stations || []).filter(s => {
+        if (!s.no_price || s.approx || s.lat == null) return true;
+        return !priced.some(p => (p.network || "") === (s.network || "")
+            && haversine(s.lat, s.lon, p.lat, p.lon) < 0.07);
+    });
+}
+
 async function load() {
     try {
         const res = await fetch("data/stations.json", { cache: "no-store" });
@@ -94,6 +108,7 @@ async function load() {
             stations: []
         };
     }
+    dedupePricelessStations();
     await loadDiscrepancies();
     await loadReports();
     await loadOrlenWholesale();

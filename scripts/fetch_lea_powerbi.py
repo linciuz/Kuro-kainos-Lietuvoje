@@ -132,8 +132,16 @@ def fetch_powerbi():
 
 
 def norm_addr(a):
-    a = re.sub(r'\s+', ' ', (a or "").lower()).strip()
-    return re.sub(r',?\s*\d{5}\b', '', a)
+    # Order-independent: the Excel writes "Locality, Street, Postcode" while the
+    # Power BI writes "Street, Locality" — split on commas, drop the postcode,
+    # sort the parts, so the same station matches regardless of component order.
+    parts = []
+    for p in (a or "").lower().split(","):
+        p = re.sub(r'\b\d{5}\b', "", p)
+        p = re.sub(r'\s+', " ", p).strip()
+        if p:
+            parts.append(p)
+    return "|".join(sorted(parts))
 
 
 def committed_pbi():

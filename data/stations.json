@@ -9466,24 +9466,6 @@
       "approx": false
     },
     {
-      "network": "UAB Bonsa",
-      "address": "Tverai, Rietavo g. 32, 90282",
-      "municipality": "Rietavo sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "fuels": [
-        "diesel",
-        "lpg",
-        "petrol95"
-      ],
-      "no_price": true,
-      "lat": 55.736244,
-      "lon": 22.13831,
-      "approx": false
-    },
-    {
       "network": "UAB Dujotena",
       "address": "Utena, Molėtų g. 94, 28106",
       "municipality": "Utenos r. sav.",
@@ -9728,39 +9710,6 @@
     },
     {
       "network": "UAB Neste Lietuva",
-      "address": "Europos g. 6, N. Valios k.",
-      "municipality": "Kalvarijos sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "fuels": [
-        "diesel"
-      ],
-      "no_price": true,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
-    },
-    {
-      "network": "UAB Neste Lietuva",
-      "address": "Klaipėdos g. 66, Panevėžys",
-      "municipality": "Panevėžio m. sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "fuels": [
-        "diesel",
-        "petrol95"
-      ],
-      "no_price": true,
-      "lat": 55.727745,
-      "lon": 24.348805,
-      "approx": false
-    },
-    {
-      "network": "UAB Neste Lietuva",
       "address": "Ąžuolpamūšio g. 1A, Raubonys",
       "municipality": "Pasvalio r. sav.",
       "locality": "",
@@ -9791,24 +9740,6 @@
       "no_price": true,
       "lat": 54.739711,
       "lon": 25.280496,
-      "approx": true
-    },
-    {
-      "network": "UAB Pakelės namai",
-      "address": "Pasienio g. 10, Škilinpamūšio k.",
-      "municipality": "Pasvalio r. sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "fuels": [
-        "diesel",
-        "lpg",
-        "petrol95"
-      ],
-      "no_price": true,
-      "lat": 56.070691,
-      "lon": 24.384284,
       "approx": true
     },
     {
@@ -10663,24 +10594,6 @@
       "lat": 56.31764,
       "lon": 22.013597,
       "approx": false
-    },
-    {
-      "network": "UAB Viada LT",
-      "address": "Ilgakiemio k., Prienų g. 22",
-      "municipality": "Kauno r. sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "fuels": [
-        "diesel",
-        "lpg",
-        "petrol95"
-      ],
-      "no_price": true,
-      "lat": 54.903788,
-      "lon": 24.537266,
-      "approx": true
     },
     {
       "network": "UAB Viada LT",
