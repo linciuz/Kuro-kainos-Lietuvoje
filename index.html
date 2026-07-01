@@ -152,8 +152,12 @@
             flex: 1; text-align: center; text-decoration: none; color: white; border: none;
             padding: 9px 10px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700;
         }
-        .nav-gmaps { background: #1a73e8; }
+        .nav-gmaps { background: #1a73e8; color: #fff; }
         .nav-waze { background: #33ccff; color: #06283d; }
+        /* Leaflet's .leaflet-container a link colour overrides .nav-btn inside map
+           popups (higher specificity) — restore readable button text there. */
+        .leaflet-popup-content a.nav-gmaps { color: #fff; }
+        .leaflet-popup-content a.nav-waze { color: #06283d; }
 
         .msg { text-align: center; padding: 30px 15px; color: #666; font-size: 14px; }
 

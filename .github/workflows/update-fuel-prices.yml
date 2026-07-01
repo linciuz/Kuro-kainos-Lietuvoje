@@ -2,9 +2,13 @@ name: Update fuel prices
 
 on:
   schedule:
-    # 08:15 UTC = ~11:15 in Lithuania (summer). LEA publishes by 10:00 local.
-    # Mon-Fri only (stations report on working days).
-    - cron: "15 8 * * 1-5"
+    # LEA publishes by 10:00 local (07:00 UTC in summer). GitHub's scheduler is
+    # best-effort and often delays/SKIPS runs, so fire several times through the
+    # day; the commit step is idempotent (only commits when data actually
+    # changed), so the extra attempts are free insurance. Times are UTC.
+    - cron: "15 8 * * 1-5"    # ~11:15 LT
+    - cron: "15 11 * * 1-5"   # ~14:15 LT (retry if the morning slot was skipped)
+    - cron: "15 15 * * 1-5"   # ~18:15 LT (last-chance retry)
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
