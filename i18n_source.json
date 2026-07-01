@@ -156,8 +156,8 @@
     "pl": "Ładowanie oficjalnych danych…"
   },
   "fuel_petrol95": {
-    "lt": "95 benzinas",
-    "en": "95 petrol",
+    "lt": "Benzinas 95",
+    "en": "Petrol 95",
     "lv": "95 benzīns",
     "et": "95 bensiin",
     "uk": "Бензин 95",
@@ -390,17 +390,17 @@
     "pl": "bez marży — to nie cena na stacji"
   },
   "ws_agri": {
-    "lt": "Agro",
-    "en": "Agri",
-    "lv": "Agro",
-    "et": "Agro",
-    "uk": "Агро",
-    "ru": "Агро",
-    "de": "Agrar",
-    "sv": "Agro",
-    "fi": "Agri",
-    "no": "Agri",
-    "pl": "Agro"
+    "lt": "Agro dyzelinas",
+    "en": "Agro Diesel",
+    "lv": "Agro dīzelis",
+    "et": "Agrodiisel",
+    "uk": "Агродизель",
+    "ru": "Агродизель",
+    "pl": "Diesel Agro",
+    "de": "Agrardiesel",
+    "sv": "Agrodiesel",
+    "fi": "Agridiesel",
+    "no": "Agrodiesel"
   },
   "ws_lpg": {
     "lt": "Dujos",
@@ -986,5 +986,44 @@
     "sv": "Pris saknas",
     "fi": "Hintaa ei ilmoitettu",
     "no": "Pris ikke oppgitt"
+  },
+  "btn_petrol95": {
+    "lt": "⛽ Benzinas 95",
+    "en": "⛽ Petrol 95",
+    "lv": "⛽ Benzīns 95",
+    "et": "⛽ Bensiin 95",
+    "uk": "⛽ Бензин 95",
+    "ru": "⛽ Бензин 95",
+    "pl": "⛽ Benzyna 95",
+    "de": "⛽ Benzin 95",
+    "sv": "⛽ Bensin 95",
+    "fi": "⛽ Bensiini 95",
+    "no": "⛽ Bensin 95"
+  },
+  "national_title": {
+    "lt": "Šalies kainos (oficialios)",
+    "en": "National prices (official)",
+    "lv": "Valsts cenas (oficiālas)",
+    "et": "Riigi hinnad (ametlikud)",
+    "uk": "Ціни по країні (офіційні)",
+    "ru": "Цены по стране (официальные)",
+    "pl": "Ceny krajowe (oficjalne)",
+    "de": "Landesweite Preise (offiziell)",
+    "sv": "Rikspriser (officiella)",
+    "fi": "Maan hinnat (viralliset)",
+    "no": "Landspriser (offisielle)"
+  },
+  "banner_change_all": {
+    "lt": "⚠️ Kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo.",
+    "en": "⚠️ Some networks' ({chains}) prices may have changed since the official 10:00 update.",
+    "lv": "⚠️ Dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma.",
+    "et": "⚠️ Mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda.",
+    "uk": "⚠️ Ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00.",
+    "ru": "⚠️ Цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00.",
+    "pl": "⚠️ Ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00.",
+    "de": "⚠️ Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben.",
+    "sv": "⚠️ Priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00.",
+    "fi": "⚠️ Joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen.",
+    "no": "⚠️ Prisene hos noen kjeder ({chains}) kan ha endret seg siden den offisielle oppdateringen kl. 10:00."
   }
 }

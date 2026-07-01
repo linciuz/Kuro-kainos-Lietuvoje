@@ -241,11 +241,8 @@ function renderSummaryEv() {
     box.style.display = "block";
     const total = (EV.chargers || []).length;
     const priced = (EV.chargers || []).filter(c => c.price != null).length;
-    const live = Object.keys(EV_STATUS).length;
     box.innerHTML = `<div class="summary-title">${t("ev_title", { n: total })}</div>
-        <div class="wholesale-ref">${t("ev_sources")} ·
-        ${t("ev_price_count", { n: priced })} ·
-        ${live ? t("ev_live_count", { n: live }) : t("ev_live_off")}</div>`;
+        <div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`;
 }
 
 function renderListEv() {
@@ -256,9 +253,9 @@ function renderListEv() {
         : sortDir === "asc" ? " · " + t("order_cheap")
         : sortDir === "desc" ? " · " + t("order_dear") : "";
     const LIST_MAX = 600;                       // keep the DOM snappy on phones
-    const total = rows.length;
+    const filtered = rows.length, totalCh = (EV.chargers || []).length;
     const shown = rows.slice(0, LIST_MAX);
-    const nLabel = total > LIST_MAX ? `${LIST_MAX} / ${total}` : `${total}`;
+    const nLabel = filtered < totalCh ? `${filtered} / ${totalCh}` : `${totalCh}`;  // your area / overall
     list.innerHTML = `<div class="count-line">${t("showing_chargers", { n: nLabel })}${order}</div>` +
         shown.map(c => {
             const dist = (userPos && c._dist != null) ? `<span class="dist-badge">📍 ${fmtDist(c._dist)}</span>` : "";
@@ -554,34 +551,42 @@ function render() {
 function renderBanner() {
     const el = document.getElementById("change-banner");
     if (!el) return;
-    const flagged = (DISCREP.items || []).filter(it => it.fuel === fuelType);
+    const flagged = DISCREP.items || [];   // all fuels, not just the selected one
     if (!flagged.length) { el.style.display = "none"; return; }
     const chains = [...new Set(flagged.map(it => it.source))].join(", ");
     el.style.display = "block";
-    el.innerHTML = t("banner_change", { fuel: t("fuel_" + fuelType), chains });
+    el.innerHTML = t("banner_change_all", { chains });
 }
 
 function renderSummary() {
-    const s = (DATA.summary || {})[fuelType];
     const box = document.getElementById("summary");
-    if (!s) { box.style.display = "none"; return; }
+    const sum = DATA.summary || {};
+    // All three fuels at once: cheapest / average / most expensive.
+    const FUELS = [["petrol95", t("fuel_petrol95")], ["diesel", t("fuel_diesel")], ["lpg", t("ws_lpg")]];
+    const rows = FUELS.filter(([k]) => sum[k]).map(([k, label]) => {
+        const s = sum[k];
+        return `<tr><td>${label}</td>
+            <td class="lo">€${s.min.toFixed(3)}</td>
+            <td class="avg">€${s.avg.toFixed(3)}</td>
+            <td class="hi">€${s.max.toFixed(3)}</td></tr>`;
+    }).join("");
+    if (!rows) { box.style.display = "none"; return; }
     box.style.display = "block";
-    const WS_LABELS = { petrol95: "95", diesel: t("fuel_diesel"), diesel_agri: t("ws_agri"), lpg: t("ws_lpg") };
+    // Orlen wholesale reference (all products, with clear names).
+    const WS_LABELS = { petrol95: t("fuel_petrol95"), diesel: t("fuel_diesel"), diesel_agri: t("ws_agri"), lpg: t("ws_lpg") };
     let wsLine = "";
     if (ORLEN_WS && ORLEN_WS.prices) {
         const parts = ["petrol95", "diesel", "diesel_agri", "lpg"]
             .filter(k => ORLEN_WS.prices[k] != null)
             .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
-        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: ORLEN_WS.stated_date || "" })}
-            ${parts.join(" · ")} <br><i>${t("ws_nomarkup")}</i></div>`;
+        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: ORLEN_WS.stated_date || "" })} ${parts.join(" · ")}</div>`;
     }
     box.innerHTML = `
-        <div class="summary-title">${t("summary_national", { fuel: t("fuel_" + fuelType) })}</div>
-        <div class="summary-stats">
-            <div><div class="stat-label">${t("stat_cheapest")}</div><div class="stat-value lowest">€${s.min.toFixed(3)}</div></div>
-            <div><div class="stat-label">${t("stat_avg")}</div><div class="stat-value">€${s.avg.toFixed(3)}</div></div>
-            <div><div class="stat-label">${t("stat_dearest")}</div><div class="stat-value highest">€${s.max.toFixed(3)}</div></div>
-        </div>${wsLine}`;
+        <div class="summary-title">${t("national_title")}</div>
+        <table class="nat-table">
+            <thead><tr><th></th><th>${t("stat_cheapest")}</th><th>${t("stat_avg")}</th><th>${t("stat_dearest")}</th></tr></thead>
+            <tbody>${rows}</tbody>
+        </table>${wsLine}`;
 }
 
 function navButtons(s) {
@@ -611,8 +616,11 @@ function renderList() {
 
     const priced = rows.filter(r => r[fuelType] != null);
     const best = priced.length ? Math.min(...priced.map(r => r[fuelType])) : null;
+    const total = (DATA.stations || []).filter(s =>
+        s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
+    const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
     list.innerHTML =
-        `<div class="count-line">${t("showing_stations", { n: rows.length })}${userPos ? " · " + t("sorted_dist") : ""}</div>` +
+        `<div class="count-line">${t("showing_stations", { n: nLabel })}${userPos ? " · " + t("sorted_dist") : ""}</div>` +
         rows.map(s => {
             const isBest = s[fuelType] != null && s[fuelType] === best;
             const dist = (userPos && s._dist != null)

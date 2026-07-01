@@ -14,7 +14,7 @@ const STRINGS = {
     "sort_near": "📍 Arčiausios",
     "loading": "Kraunama…",
     "loading_data": "Kraunama oficialūs duomenys…",
-    "fuel_petrol95": "95 benzinas",
+    "fuel_petrol95": "Benzinas 95",
     "fuel_diesel": "Dyzelinas",
     "fuel_lpg": "Dujos (SND)",
     "all_munis": "Visos savivaldybės",
@@ -32,7 +32,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo.",
     "ws_orlen": "🏭 Orlen didmeninė kaina ({date}):",
     "ws_nomarkup": "be antkainio — ne degalinės kaina",
-    "ws_agri": "Agro",
+    "ws_agri": "Agro dyzelinas",
     "ws_lpg": "Dujos",
     "summary_national": "{fuel} — šalies kainos (oficialios)",
     "stat_cheapest": "Pigiausia",
@@ -77,7 +77,10 @@ const STRINGS = {
     "loc_denied": "📍 Vietos prieiga atmesta – įjunkite leidimą",
     "loc_failed": "📍 Nepavyko nustatyti vietos",
     "fuels_label": "Kuro rūšys:",
-    "no_price": "Kaina nepateikta"
+    "no_price": "Kaina nepateikta",
+    "btn_petrol95": "⛽ Benzinas 95",
+    "national_title": "Šalies kainos (oficialios)",
+    "banner_change_all": "⚠️ Kai kurių tinklų ({chains}) kainos galėjo pasikeisti nuo 10:00 oficialaus pranešimo."
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -110,7 +113,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma.",
     "ws_orlen": "🏭 Orlen vairumtirdzniecības cena ({date}):",
     "ws_nomarkup": "bez uzcenojuma — nav degvielas uzpildes stacijas cena",
-    "ws_agri": "Agro",
+    "ws_agri": "Agro dīzelis",
     "ws_lpg": "Gāze",
     "summary_national": "{fuel} — valsts cenas (oficiālas)",
     "stat_cheapest": "Lētākā",
@@ -155,7 +158,10 @@ const STRINGS = {
     "loc_denied": "📍 Piekļuve atrašanās vietai liegta – ieslēdziet atļauju",
     "loc_failed": "📍 Neizdevās noteikt atrašanās vietu",
     "fuels_label": "Degvielas veidi:",
-    "no_price": "Cena nav norādīta"
+    "no_price": "Cena nav norādīta",
+    "btn_petrol95": "⛽ Benzīns 95",
+    "national_title": "Valsts cenas (oficiālas)",
+    "banner_change_all": "⚠️ Dažu tīklu ({chains}) cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 atjauninājuma."
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -188,7 +194,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda.",
     "ws_orlen": "🏭 Orlen hulgihind ({date}):",
     "ws_nomarkup": "ilma juurdehindluseta — pole tankla hind",
-    "ws_agri": "Agro",
+    "ws_agri": "Agrodiisel",
     "ws_lpg": "Gaas",
     "summary_national": "{fuel} — riigi hinnad (ametlikud)",
     "stat_cheapest": "Odavaim",
@@ -233,7 +239,10 @@ const STRINGS = {
     "loc_denied": "📍 Asukohale juurdepääs keelatud – luba õigus",
     "loc_failed": "📍 Asukohta ei õnnestunud määrata",
     "fuels_label": "Kütuseliigid:",
-    "no_price": "Hind puudub"
+    "no_price": "Hind puudub",
+    "btn_petrol95": "⛽ Bensiin 95",
+    "national_title": "Riigi hinnad (ametlikud)",
+    "banner_change_all": "⚠️ Mõne keti ({chains}) hinnad võisid pärast ametlikku kella 10:00 uuendust muutuda."
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -248,7 +257,7 @@ const STRINGS = {
     "sort_near": "📍 Nearest",
     "loading": "Loading…",
     "loading_data": "Loading official data…",
-    "fuel_petrol95": "95 petrol",
+    "fuel_petrol95": "Petrol 95",
     "fuel_diesel": "Diesel",
     "fuel_lpg": "LPG",
     "all_munis": "All municipalities",
@@ -266,7 +275,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: some networks' ({chains}) prices may have changed since the official 10:00 update.",
     "ws_orlen": "🏭 Orlen wholesale price ({date}):",
     "ws_nomarkup": "excl. markup — not a pump price",
-    "ws_agri": "Agri",
+    "ws_agri": "Agro Diesel",
     "ws_lpg": "LPG",
     "summary_national": "{fuel} — national prices (official)",
     "stat_cheapest": "Cheapest",
@@ -311,7 +320,10 @@ const STRINGS = {
     "loc_denied": "📍 Location access denied – enable the permission",
     "loc_failed": "📍 Could not determine location",
     "fuels_label": "Fuel types:",
-    "no_price": "Price not reported"
+    "no_price": "Price not reported",
+    "btn_petrol95": "⛽ Petrol 95",
+    "national_title": "National prices (official)",
+    "banner_change_all": "⚠️ Some networks' ({chains}) prices may have changed since the official 10:00 update."
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -344,7 +356,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00.",
     "ws_orlen": "🏭 Оптова ціна Orlen ({date}):",
     "ws_nomarkup": "без націнки — це не ціна на заправці",
-    "ws_agri": "Агро",
+    "ws_agri": "Агродизель",
     "ws_lpg": "Газ",
     "summary_national": "{fuel} — ціни по країні (офіційні)",
     "stat_cheapest": "Найдешевша",
@@ -389,7 +401,10 @@ const STRINGS = {
     "loc_denied": "📍 Доступ до місцезнаходження відхилено – увімкніть дозвіл",
     "loc_failed": "📍 Не вдалося визначити місцезнаходження",
     "fuels_label": "Види палива:",
-    "no_price": "Ціна не вказана"
+    "no_price": "Ціна не вказана",
+    "btn_petrol95": "⛽ Бензин 95",
+    "national_title": "Ціни по країні (офіційні)",
+    "banner_change_all": "⚠️ Ціни деяких мереж ({chains}) могли змінитися після офіційного оновлення о 10:00."
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -422,7 +437,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00.",
     "ws_orlen": "🏭 Оптовая цена Orlen ({date}):",
     "ws_nomarkup": "без наценки — не цена на заправке",
-    "ws_agri": "Агро",
+    "ws_agri": "Агродизель",
     "ws_lpg": "Газ",
     "summary_national": "{fuel} — цены по стране (официальные)",
     "stat_cheapest": "Минимум",
@@ -467,7 +482,10 @@ const STRINGS = {
     "loc_denied": "📍 Доступ к местоположению запрещён — включите разрешение",
     "loc_failed": "📍 Не удалось определить местоположение",
     "fuels_label": "Виды топлива:",
-    "no_price": "Цена не указана"
+    "no_price": "Цена не указана",
+    "btn_petrol95": "⛽ Бензин 95",
+    "national_title": "Цены по стране (официальные)",
+    "banner_change_all": "⚠️ Цены некоторых сетей ({chains}) могли измениться после официального обновления в 10:00."
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -500,7 +518,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00.",
     "ws_orlen": "🏭 Cena hurtowa Orlen ({date}):",
     "ws_nomarkup": "bez marży — to nie cena na stacji",
-    "ws_agri": "Agro",
+    "ws_agri": "Diesel Agro",
     "ws_lpg": "LPG",
     "summary_national": "{fuel} — ceny krajowe (oficjalne)",
     "stat_cheapest": "Najtańsza",
@@ -545,7 +563,10 @@ const STRINGS = {
     "loc_denied": "📍 Brak dostępu do lokalizacji – włącz uprawnienie",
     "loc_failed": "📍 Nie udało się ustalić lokalizacji",
     "fuels_label": "Rodzaje paliwa:",
-    "no_price": "Cena niepodana"
+    "no_price": "Cena niepodana",
+    "btn_petrol95": "⛽ Benzyna 95",
+    "national_title": "Ceny krajowe (oficjalne)",
+    "banner_change_all": "⚠️ Ceny niektórych sieci ({chains}) mogły się zmienić od oficjalnej aktualizacji o 10:00."
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -578,7 +599,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben.",
     "ws_orlen": "🏭 Orlen Großhandelspreis ({date}):",
     "ws_nomarkup": "ohne Aufschlag — kein Tankstellenpreis",
-    "ws_agri": "Agrar",
+    "ws_agri": "Agrardiesel",
     "ws_lpg": "Autogas",
     "summary_national": "{fuel} — landesweite Preise (offiziell)",
     "stat_cheapest": "Günstigste",
@@ -623,7 +644,10 @@ const STRINGS = {
     "loc_denied": "📍 Standortzugriff verweigert – Berechtigung aktivieren",
     "loc_failed": "📍 Standort konnte nicht ermittelt werden",
     "fuels_label": "Kraftstoffarten:",
-    "no_price": "Kein Preis angegeben"
+    "no_price": "Kein Preis angegeben",
+    "btn_petrol95": "⛽ Benzin 95",
+    "national_title": "Landesweite Preise (offiziell)",
+    "banner_change_all": "⚠️ Die Preise einiger Ketten ({chains}) könnten sich seit dem offiziellen Update um 10:00 geändert haben."
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -656,7 +680,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00.",
     "ws_orlen": "🏭 Orlen partipris ({date}):",
     "ws_nomarkup": "exkl. påslag — inte ett pumppris",
-    "ws_agri": "Agro",
+    "ws_agri": "Agrodiesel",
     "ws_lpg": "Gasol",
     "summary_national": "{fuel} — rikspriser (officiella)",
     "stat_cheapest": "Billigast",
@@ -701,7 +725,10 @@ const STRINGS = {
     "loc_denied": "📍 Platsåtkomst nekad – aktivera behörigheten",
     "loc_failed": "📍 Kunde inte fastställa platsen",
     "fuels_label": "Bränsletyper:",
-    "no_price": "Pris saknas"
+    "no_price": "Pris saknas",
+    "btn_petrol95": "⛽ Bensin 95",
+    "national_title": "Rikspriser (officiella)",
+    "banner_change_all": "⚠️ Priserna hos vissa kedjor ({chains}) kan ha ändrats sedan den officiella uppdateringen kl. 10:00."
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -734,7 +761,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen.",
     "ws_orlen": "🏭 Orlen tukkuhinta ({date}):",
     "ws_nomarkup": "ilman katetta — ei aseman hinta",
-    "ws_agri": "Agri",
+    "ws_agri": "Agridiesel",
     "ws_lpg": "Nestekaasu",
     "summary_national": "{fuel} — koko maan hinnat (viralliset)",
     "stat_cheapest": "Halvin",
@@ -779,7 +806,10 @@ const STRINGS = {
     "loc_denied": "📍 Sijainnin käyttö estetty – salli oikeus",
     "loc_failed": "📍 Sijaintia ei voitu määrittää",
     "fuels_label": "Polttoainetyypit:",
-    "no_price": "Hintaa ei ilmoitettu"
+    "no_price": "Hintaa ei ilmoitettu",
+    "btn_petrol95": "⛽ Bensiini 95",
+    "national_title": "Maan hinnat (viralliset)",
+    "banner_change_all": "⚠️ Joidenkin ketjujen ({chains}) hinnat ovat voineet muuttua virallisen klo 10:00 päivityksen jälkeen."
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -812,7 +842,7 @@ const STRINGS = {
     "banner_change": "⚠️ {fuel}: noen kjeders ({chains}) priser kan ha endret seg siden den offisielle oppdateringen kl. 10:00.",
     "ws_orlen": "🏭 Orlen engrospris ({date}):",
     "ws_nomarkup": "uten påslag — ikke pumpepris",
-    "ws_agri": "Agri",
+    "ws_agri": "Agrodiesel",
     "ws_lpg": "LPG",
     "summary_national": "{fuel} — nasjonale priser (offisielle)",
     "stat_cheapest": "Billigst",
@@ -857,7 +887,10 @@ const STRINGS = {
     "loc_denied": "📍 Posisjonstilgang avvist – slå på tillatelsen",
     "loc_failed": "📍 Kunne ikke finne posisjonen",
     "fuels_label": "Drivstofftyper:",
-    "no_price": "Pris ikke oppgitt"
+    "no_price": "Pris ikke oppgitt",
+    "btn_petrol95": "⛽ Bensin 95",
+    "national_title": "Landspriser (offisielle)",
+    "banner_change_all": "⚠️ Prisene hos noen kjeder ({chains}) kan ha endret seg siden den offisielle oppdateringen kl. 10:00."
   }
 };
 let lang = (function () { try { return localStorage.getItem("kk_lang") || ""; } catch (e) { return ""; } })();
