@@ -15,6 +15,7 @@ let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
 let OIL = null;                                // Brent crude weekly trend
+let ELEC = null;                               // LT day-ahead electricity market price
 let EV = { chargers: [] };                     // EV charging stations (OCPI + OSM)
 let EV_STATUS = {};                            // live occupancy {ocpi_id: {a,t,s}} via Worker proxy
 let fuelType = "petrol95";    // 'petrol95' | 'diesel' | 'lpg' | 'ev'
@@ -97,6 +98,7 @@ async function load() {
     await loadReports();
     await loadOrlenWholesale();
     await loadOil();
+    await loadElectricity();
     await loadEv();
     await loadEvStatus();
     initMunicipalities();
@@ -143,6 +145,13 @@ async function loadOil() {
         const res = await fetch("data/oil.json", { cache: "no-store" });
         OIL = res.ok ? await res.json() : null;
     } catch (e) { OIL = null; }
+}
+
+async function loadElectricity() {
+    try {
+        const res = await fetch("data/electricity.json", { cache: "no-store" });
+        ELEC = res.ok ? await res.json() : null;
+    } catch (e) { ELEC = null; }
 }
 
 async function loadEv() {
@@ -240,7 +249,10 @@ function renderSummaryEv() {
     const box = document.getElementById("summary");
     box.style.display = "block";
     const priced = (EV.chargers || []).filter(c => c.price != null).length;
-    box.innerHTML = `<div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`;
+    const elLine = (ELEC && ELEC.current_ct_kwh != null)
+        ? `<div class="summary-title">⚡ ${t("el_market")}: <b>${ELEC.current_ct_kwh.toFixed(1)} ct/kWh</b> · ${t("oil_weekavg")} <b>${ELEC.week_avg_ct_kwh.toFixed(1)} ct/kWh</b></div>`
+        : "";
+    box.innerHTML = elLine + `<div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`;
 }
 
 function renderListEv() {
@@ -621,8 +633,7 @@ function renderList() {
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
             const approxTag = s.approx ? ` <span class="approx-tag">${t("approx_warn")}</span>` : "";
             const fl = flagFor(s);
-            const flagLine = fl ? `<div class="change-flag">${t("flag_change", {
-                src: fl.source, dir: fl.direction === "down" ? t("cheaper") : t("dearer"), price: fl.live.toFixed(3) })}</div>` : "";
+            const flagLine = fl ? `<div class="change-flag">${t("flag_change", { price: fl.live.toFixed(3) })}</div>` : "";
             const rep = reportFor(s);
             const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3) })}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";

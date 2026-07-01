@@ -51,12 +51,14 @@ jobs:
         run: python scripts/compare.py || echo "compare failed (non-fatal)"
       - name: Brent oil price + weekly trend
         run: python scripts/fetch_oil.py || echo "oil failed (non-fatal)"
+      - name: LT electricity market price
+        run: python scripts/fetch_electricity.py || echo "electricity failed (non-fatal)"
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json || true
+          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json data/electricity.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else

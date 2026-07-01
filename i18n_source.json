@@ -819,17 +819,17 @@
     "pl": "lokalizacja może być niedokładna — sprawdź przed wyjazdem!"
   },
   "flag_change": {
-    "lt": "⚠️ Kaina galėjo pasikeisti nuo 10:00 — {src} tinkle {dir}: €{price}/L",
-    "en": "⚠️ Price may have changed since 10:00 — {dir} in the {src} network: €{price}/L",
-    "lv": "⚠️ Cena, iespējams, mainījusies kopš plkst. 10:00 — {dir} {src} tīklā: €{price}/L",
-    "et": "⚠️ Hind võis pärast kella 10:00 muutuda — {src} ketis {dir}: €{price}/L",
-    "uk": "⚠️ Ціна могла змінитися після 10:00 — у мережі {src} {dir}: €{price}/L",
-    "ru": "⚠️ Цена могла измениться после 10:00 — {dir} в сети {src}: €{price}/L",
-    "de": "⚠️ Preis könnte sich seit 10:00 geändert haben — {dir} im Netz {src}: €{price}/L",
-    "sv": "⚠️ Priset kan ha ändrats sedan kl. 10:00 — {dir} i {src}-kedjan: €{price}/L",
-    "fi": "⚠️ Hinta on voinut muuttua klo 10:00 jälkeen — {src}-ketjussa {dir}: €{price}/L",
-    "no": "⚠️ Prisen kan ha endret seg siden kl. 10:00 — {dir} i {src}-kjeden: €{price}/L",
-    "pl": "⚠️ Cena mogła się zmienić od 10:00 — {dir} w sieci {src}: €{price}/L"
+    "lt": "⚠️ Kaina galėjo pasikeisti nuo 10:00 valandos — €{price}/L",
+    "en": "⚠️ Price may have changed since 10:00 — €{price}/L",
+    "lv": "⚠️ Cena, iespējams, mainījusies kopš plkst. 10:00 — €{price}/L",
+    "et": "⚠️ Hind võis pärast kella 10:00 muutuda — €{price}/L",
+    "uk": "⚠️ Ціна могла змінитися після 10:00 — €{price}/L",
+    "ru": "⚠️ Цена могла измениться после 10:00 — €{price}/L",
+    "pl": "⚠️ Cena mogła się zmienić od 10:00 — €{price}/L",
+    "de": "⚠️ Preis könnte sich seit 10:00 geändert haben — €{price}/L",
+    "sv": "⚠️ Priset kan ha ändrats sedan kl. 10:00 — €{price}/L",
+    "fi": "⚠️ Hinta on voinut muuttua klo 10:00 jälkeen — €{price}/L",
+    "no": "⚠️ Prisen kan ha endret seg siden kl. 10:00 — €{price}/L"
   },
   "cheaper": {
     "lt": "pigiau",
@@ -1025,5 +1025,18 @@
     "sv": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00.",
     "fi": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen.",
     "no": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
+  },
+  "el_market": {
+    "lt": "Elektros rinkos kaina",
+    "en": "Electricity market price",
+    "lv": "Elektrības tirgus cena",
+    "et": "Elektri turuhind",
+    "uk": "Ринкова ціна електроенергії",
+    "ru": "Рыночная цена электроэнергии",
+    "pl": "Rynkowa cena energii",
+    "de": "Strommarktpreis",
+    "sv": "Elmarknadspris",
+    "fi": "Sähkön markkinahinta",
+    "no": "Strømmarkedspris"
   }
 }

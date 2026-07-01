@@ -65,7 +65,7 @@ const STRINGS = {
     "sorted_dist": "rūšiuojama pagal atstumą",
     "badge_cheapest": "⭐ PIGIAUSIA",
     "approx_warn": "lokacija gali būti netiksli - prieš vykstant pasitikslinti!",
-    "flag_change": "⚠️ Kaina galėjo pasikeisti nuo 10:00 — {src} tinkle {dir}: €{price}/L",
+    "flag_change": "⚠️ Kaina galėjo pasikeisti nuo 10:00 valandos — €{price}/L",
     "cheaper": "pigiau",
     "dearer": "brangiau",
     "station_default": "Degalinė",
@@ -80,7 +80,8 @@ const STRINGS = {
     "no_price": "Kaina nepateikta",
     "btn_petrol95": "⛽ Benzinas 95",
     "national_title": "Šalies kainos (oficialios)",
-    "banner_change_all": "⚠️ Kai kurių degalinių kainos galėjo pasikeisti nuo 10:00 valandos oficialaus kainų pranešimo."
+    "banner_change_all": "⚠️ Kai kurių degalinių kainos galėjo pasikeisti nuo 10:00 valandos oficialaus kainų pranešimo.",
+    "el_market": "Elektros rinkos kaina"
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -146,7 +147,7 @@ const STRINGS = {
     "sorted_dist": "kārtots pēc attāluma",
     "badge_cheapest": "⭐ LĒTĀKĀ",
     "approx_warn": "atrašanās vieta var būt neprecīza — pārbaudiet pirms došanās!",
-    "flag_change": "⚠️ Cena, iespējams, mainījusies kopš plkst. 10:00 — {dir} {src} tīklā: €{price}/L",
+    "flag_change": "⚠️ Cena, iespējams, mainījusies kopš plkst. 10:00 — €{price}/L",
     "cheaper": "lētāk",
     "dearer": "dārgāk",
     "station_default": "Degvielas uzpildes stacija",
@@ -161,7 +162,8 @@ const STRINGS = {
     "no_price": "Cena nav norādīta",
     "btn_petrol95": "⛽ Benzīns 95",
     "national_title": "Valsts cenas (oficiālas)",
-    "banner_change_all": "⚠️ Dažu degvielas uzpildes staciju cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 cenu paziņojuma."
+    "banner_change_all": "⚠️ Dažu degvielas uzpildes staciju cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 cenu paziņojuma.",
+    "el_market": "Elektrības tirgus cena"
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -227,7 +229,7 @@ const STRINGS = {
     "sorted_dist": "sorteeritud kauguse järgi",
     "badge_cheapest": "⭐ ODAVAIM",
     "approx_warn": "asukoht võib olla ebatäpne — kontrolli enne sõitu üle!",
-    "flag_change": "⚠️ Hind võis pärast kella 10:00 muutuda — {src} ketis {dir}: €{price}/L",
+    "flag_change": "⚠️ Hind võis pärast kella 10:00 muutuda — €{price}/L",
     "cheaper": "odavam",
     "dearer": "kallim",
     "station_default": "Tankla",
@@ -242,7 +244,8 @@ const STRINGS = {
     "no_price": "Hind puudub",
     "btn_petrol95": "⛽ Bensiin 95",
     "national_title": "Riigi hinnad (ametlikud)",
-    "banner_change_all": "⚠️ Mõne tankla hinnad võisid pärast ametlikku kella 10:00 hinnateadet muutuda."
+    "banner_change_all": "⚠️ Mõne tankla hinnad võisid pärast ametlikku kella 10:00 hinnateadet muutuda.",
+    "el_market": "Elektri turuhind"
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -308,7 +311,7 @@ const STRINGS = {
     "sorted_dist": "sorted by distance",
     "badge_cheapest": "⭐ CHEAPEST",
     "approx_warn": "location may be inexact — double-check before you go!",
-    "flag_change": "⚠️ Price may have changed since 10:00 — {dir} in the {src} network: €{price}/L",
+    "flag_change": "⚠️ Price may have changed since 10:00 — €{price}/L",
     "cheaper": "cheaper",
     "dearer": "more expensive",
     "station_default": "Fuel station",
@@ -323,7 +326,8 @@ const STRINGS = {
     "no_price": "Price not reported",
     "btn_petrol95": "⛽ Petrol 95",
     "national_title": "National prices (official)",
-    "banner_change_all": "⚠️ Some stations' prices may have changed since the official 10:00 price announcement."
+    "banner_change_all": "⚠️ Some stations' prices may have changed since the official 10:00 price announcement.",
+    "el_market": "Electricity market price"
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -389,7 +393,7 @@ const STRINGS = {
     "sorted_dist": "відсортовано за відстанню",
     "badge_cheapest": "⭐ НАЙДЕШЕВША",
     "approx_warn": "розташування може бути неточним — уточніть перед поїздкою!",
-    "flag_change": "⚠️ Ціна могла змінитися після 10:00 — у мережі {src} {dir}: €{price}/L",
+    "flag_change": "⚠️ Ціна могла змінитися після 10:00 — €{price}/L",
     "cheaper": "дешевше",
     "dearer": "дорожче",
     "station_default": "Заправка",
@@ -404,7 +408,8 @@ const STRINGS = {
     "no_price": "Ціна не вказана",
     "btn_petrol95": "⛽ Бензин 95",
     "national_title": "Ціни по країні (офіційні)",
-    "banner_change_all": "⚠️ Ціни деяких заправок могли змінитися після офіційного оголошення цін о 10:00."
+    "banner_change_all": "⚠️ Ціни деяких заправок могли змінитися після офіційного оголошення цін о 10:00.",
+    "el_market": "Ринкова ціна електроенергії"
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -470,7 +475,7 @@ const STRINGS = {
     "sorted_dist": "сортировка по расстоянию",
     "badge_cheapest": "⭐ ДЕШЕВЛЕ ВСЕХ",
     "approx_warn": "местоположение может быть неточным — уточните перед поездкой!",
-    "flag_change": "⚠️ Цена могла измениться после 10:00 — {dir} в сети {src}: €{price}/L",
+    "flag_change": "⚠️ Цена могла измениться после 10:00 — €{price}/L",
     "cheaper": "дешевле",
     "dearer": "дороже",
     "station_default": "Заправка",
@@ -485,7 +490,8 @@ const STRINGS = {
     "no_price": "Цена не указана",
     "btn_petrol95": "⛽ Бензин 95",
     "national_title": "Цены по стране (официальные)",
-    "banner_change_all": "⚠️ Цены некоторых заправок могли измениться после официального объявления цен в 10:00."
+    "banner_change_all": "⚠️ Цены некоторых заправок могли измениться после официального объявления цен в 10:00.",
+    "el_market": "Рыночная цена электроэнергии"
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -551,7 +557,7 @@ const STRINGS = {
     "sorted_dist": "posortowano według odległości",
     "badge_cheapest": "⭐ NAJTAŃSZA",
     "approx_warn": "lokalizacja może być niedokładna — sprawdź przed wyjazdem!",
-    "flag_change": "⚠️ Cena mogła się zmienić od 10:00 — {dir} w sieci {src}: €{price}/L",
+    "flag_change": "⚠️ Cena mogła się zmienić od 10:00 — €{price}/L",
     "cheaper": "taniej",
     "dearer": "drożej",
     "station_default": "Stacja paliw",
@@ -566,7 +572,8 @@ const STRINGS = {
     "no_price": "Cena niepodana",
     "btn_petrol95": "⛽ Benzyna 95",
     "national_title": "Ceny krajowe (oficjalne)",
-    "banner_change_all": "⚠️ Ceny niektórych stacji mogły się zmienić od oficjalnego ogłoszenia cen o 10:00."
+    "banner_change_all": "⚠️ Ceny niektórych stacji mogły się zmienić od oficjalnego ogłoszenia cen o 10:00.",
+    "el_market": "Rynkowa cena energii"
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -632,7 +639,7 @@ const STRINGS = {
     "sorted_dist": "nach Entfernung sortiert",
     "badge_cheapest": "⭐ GÜNSTIGSTE",
     "approx_warn": "Standort kann ungenau sein — vor der Fahrt prüfen!",
-    "flag_change": "⚠️ Preis könnte sich seit 10:00 geändert haben — {dir} im Netz {src}: €{price}/L",
+    "flag_change": "⚠️ Preis könnte sich seit 10:00 geändert haben — €{price}/L",
     "cheaper": "günstiger",
     "dearer": "teurer",
     "station_default": "Tankstelle",
@@ -647,7 +654,8 @@ const STRINGS = {
     "no_price": "Kein Preis angegeben",
     "btn_petrol95": "⛽ Benzin 95",
     "national_title": "Landesweite Preise (offiziell)",
-    "banner_change_all": "⚠️ Die Preise einiger Tankstellen könnten sich seit der offiziellen Preisbekanntgabe um 10:00 geändert haben."
+    "banner_change_all": "⚠️ Die Preise einiger Tankstellen könnten sich seit der offiziellen Preisbekanntgabe um 10:00 geändert haben.",
+    "el_market": "Strommarktpreis"
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -713,7 +721,7 @@ const STRINGS = {
     "sorted_dist": "sorterat efter avstånd",
     "badge_cheapest": "⭐ BILLIGAST",
     "approx_warn": "platsen kan vara oprecis — dubbelkolla innan du åker!",
-    "flag_change": "⚠️ Priset kan ha ändrats sedan kl. 10:00 — {dir} i {src}-kedjan: €{price}/L",
+    "flag_change": "⚠️ Priset kan ha ändrats sedan kl. 10:00 — €{price}/L",
     "cheaper": "billigare",
     "dearer": "dyrare",
     "station_default": "Bensinstation",
@@ -728,7 +736,8 @@ const STRINGS = {
     "no_price": "Pris saknas",
     "btn_petrol95": "⛽ Bensin 95",
     "national_title": "Rikspriser (officiella)",
-    "banner_change_all": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00."
+    "banner_change_all": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00.",
+    "el_market": "Elmarknadspris"
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -794,7 +803,7 @@ const STRINGS = {
     "sorted_dist": "lajiteltu etäisyyden mukaan",
     "badge_cheapest": "⭐ HALVIN",
     "approx_warn": "sijainti voi olla epätarkka — varmista ennen lähtöä!",
-    "flag_change": "⚠️ Hinta on voinut muuttua klo 10:00 jälkeen — {src}-ketjussa {dir}: €{price}/L",
+    "flag_change": "⚠️ Hinta on voinut muuttua klo 10:00 jälkeen — €{price}/L",
     "cheaper": "halvempi",
     "dearer": "kalliimpi",
     "station_default": "Huoltoasema",
@@ -809,7 +818,8 @@ const STRINGS = {
     "no_price": "Hintaa ei ilmoitettu",
     "btn_petrol95": "⛽ Bensiini 95",
     "national_title": "Maan hinnat (viralliset)",
-    "banner_change_all": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen."
+    "banner_change_all": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen.",
+    "el_market": "Sähkön markkinahinta"
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -875,7 +885,7 @@ const STRINGS = {
     "sorted_dist": "sortert etter avstand",
     "badge_cheapest": "⭐ BILLIGST",
     "approx_warn": "plasseringen kan være unøyaktig — dobbeltsjekk før du drar!",
-    "flag_change": "⚠️ Prisen kan ha endret seg siden kl. 10:00 — {dir} i {src}-kjeden: €{price}/L",
+    "flag_change": "⚠️ Prisen kan ha endret seg siden kl. 10:00 — €{price}/L",
     "cheaper": "billigere",
     "dearer": "dyrere",
     "station_default": "Bensinstasjon",
@@ -890,7 +900,8 @@ const STRINGS = {
     "no_price": "Pris ikke oppgitt",
     "btn_petrol95": "⛽ Bensin 95",
     "national_title": "Landspriser (offisielle)",
-    "banner_change_all": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
+    "banner_change_all": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00.",
+    "el_market": "Strømmarkedspris"
   }
 };
 let lang = (function () { try { return localStorage.getItem("kk_lang") || ""; } catch (e) { return ""; } })();
