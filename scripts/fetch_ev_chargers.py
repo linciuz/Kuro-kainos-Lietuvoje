@@ -54,6 +54,19 @@ def in_lt(lat, lon):
     return LT_BBOX[0] <= lat <= LT_BBOX[1] and LT_BBOX[2] <= lon <= LT_BBOX[3]
 
 
+# The official registry lists Elinta Charge's public network under its platform
+# company "Stuart Energy, UAB" — relabel to the brand drivers actually recognize.
+OPERATOR_ALIASES = {
+    "stuart energy, uab": "Elinta Charge",
+    "stuart energy": "Elinta Charge",
+    "elinta": "Elinta Charge",
+}
+
+
+def norm_operator(op):
+    return OPERATOR_ALIASES.get((op or "").strip().lower(), (op or "").strip())
+
+
 def haversine(a, b, c, d):
     R = 6371.0
     dlat, dlon = math.radians(c - a), math.radians(d - b)
@@ -122,7 +135,7 @@ def fetch_ocpi():
             rec = {
                 "lat": round(lat, 6), "lon": round(lon, 6),
                 "name": (loc.get("name") or (loc.get("operator") or {}).get("name") or "").strip(),
-                "operator": ((loc.get("operator") or {}).get("name") or "").strip(),
+                "operator": norm_operator((loc.get("operator") or {}).get("name") or ""),
                 "address": (loc.get("address") or "").strip(),
                 "city": (loc.get("city") or "").strip(),
                 "power_kw": None, "price": None, "sockets": None,
@@ -227,6 +240,7 @@ def fetch_osm():
         operator = t.get("operator") or t.get("network") or t.get("brand") or ""
         if re.search(r"ignitis", operator, re.I):
             operator = "Ignitis ON"
+        operator = norm_operator(operator)
         sockets = sum(int(re.search(r"\d+", str(v)).group()) for k, v in t.items()
                       if k.startswith("socket:") and not k.endswith(("output", "voltage", "current"))
                       and re.search(r"\d", str(v))) or None
