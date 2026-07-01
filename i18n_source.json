@@ -973,5 +973,18 @@
     "sv": "Bränsletyper:",
     "fi": "Polttoainetyypit:",
     "no": "Drivstofftyper:"
+  },
+  "no_price": {
+    "lt": "Kaina nepateikta",
+    "en": "Price not reported",
+    "lv": "Cena nav norādīta",
+    "et": "Hind puudub",
+    "uk": "Ціна не вказана",
+    "ru": "Цена не указана",
+    "pl": "Cena niepodana",
+    "de": "Kein Preis angegeben",
+    "sv": "Pris saknas",
+    "fi": "Hintaa ei ilmoitettu",
+    "no": "Pris ikke oppgitt"
   }
 }

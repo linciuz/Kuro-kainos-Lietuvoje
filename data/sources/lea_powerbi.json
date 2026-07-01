@@ -1,0 +1,8211 @@
+{
+  "count": 843,
+  "stations": [
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Marijampolės sav.",
+      "address": "Aleksandravo k., 68100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Kauno g. 73, 62107",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kauno r. sav.",
+      "address": "Biruliškių k., 54469",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Jakų k., Vilniaus pl. 13, 92498",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Elektrėnų sav.",
+      "address": "Kakliniškių k., Žilvičių g. 1A, 26138",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Kalvarijos g. 138, 46403",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Pramonės pr. 37, 51271",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Varnių g. 50, 48401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 148B, 46392",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Minijos g. 44, 91197",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 26A, 91177",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 94, 95264",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Skuodo g. 14, 89100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Žemaitijos g. 42, 89239",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Nausodė, Šiaulių g. 50, 38366",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Raseinių r. sav.",
+      "address": "Nemakščių apyl., Pikelių k. 6, 60375",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Klaipėdos g. 162 D, 37372",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Senamiesčio g. 115, 35114",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pikelių k. 8, 60375",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kauno r. sav.",
+      "address": "Ringaudų k., Beržų g. 2N, 53335",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Gedimino g. 46, 72336",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Plungės g. 33 D, 87329",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Prienų r. sav.",
+      "address": "Verbyliškių k., Alytaus g. 2, 59431",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kretingos r. sav.",
+      "address": "Vilimiškės k., 97220",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Juodasis kl. 32, 11307",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, O. Milašiaus g. 31, 10102",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ukmergės g. 319, 06305",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Žirmūnų g. 1T, 09239",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Serbentų g. 82, 77126",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "AB Orlen Baltics Retail",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Žiežmarių k., Kauno pl. 6, 56232",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "Agroserviso kooperatyvas Pynauja",
+      "municipality": "Šilalės r. sav.",
+      "address": "Kvėdarna, Papynaujo k., Dvaro g. 1, 75342",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "GM (Circle K)",
+      "municipality": "Šakių r. sav.",
+      "address": "Girėnų k., Kauno g. 68, 71129",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "GM (Circle K)",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, Muitinės g. 34A, 74106",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "I.Stonkuvienės prekybos įmonė",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kartena, Kretingos g. 51, 97351",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "IĮ A. Praškevičiaus",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Migonių k., Kalvių g. 4, 56292",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "IĮ M.Augustinaičio",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Šingalių k., Kėdainių g. 44, 58185",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "IĮ Raimondo Balsio",
+      "municipality": "Kelmės r. sav.",
+      "address": "Ramučių k., Luokės g. 2, 86377",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "IĮ V.Marcinkevičiaus",
+      "municipality": "Šilutės r. sav.",
+      "address": "Pavilnučio k., Bažnyčios g. 7, 99392",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
+      "municipality": "Joniškio r. sav.",
+      "address": "Skaistgirys, Liepų g. 22, 84380",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "Lašų žemės ūkio bendrovė",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Vytėnai, Vytėnų vs 9, 42255",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "MB Tormenta",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Linkuvos g. 77, 48314",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "Nostrada (RV Transport)",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kazlavo k.",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "Nostrada (RV Transport)",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kazlavo k. 4, 69285",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, Dariaus ir Girėno 23 A, 57149",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, Gedimino g. 50, 57309",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, J.Basanavičiaus g. 103, 57350",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, Šėtos g. 120, 58115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Saviečių k., Vandžiogalos g. 29, 58151",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "Sigito Rimkevičiaus komercinė įmonė",
+      "municipality": "Joniškio r. sav.",
+      "address": "Joniškis, Turgaus g. 3, 84172",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "Sigito Rimkevičiaus komercinė įmonė",
+      "municipality": "Joniškio r. sav.",
+      "address": "Pelėdnagiai, Miškininkų g. 14, 58163",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB AS 24 Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Salaperaugio k, Europos g. 17, 69286",
+      "fuels": [
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Adukesta",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Maciuičių k., Laisvės g. 50, 96159",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Anykščių r. sav.",
+      "address": "Bajorų k., Šimonių g. 36, 29352",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Utenos r. sav.",
+      "address": "Daugailių k., Plento g. 17, 28414",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Grigiškės, Vilniaus g. 8, 27101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Ignalinos r. sav.",
+      "address": "Ignalina, Švenčionių g. 29A, 30132",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kairiai, Plento g. 2B, 80114",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Palemono g. 171, 52107",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Šakių r. sav.",
+      "address": "Kudirkos Naumiestis, Šakių g. 51, 71319",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Sporto g. 50A, 68110",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Stoties g. 49, 68261",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Obeliai, Dariaus ir Girėno g. 36, 42209",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Širvintų r. sav.",
+      "address": "Paširvinčio k., Paširvio g. 1, 19128",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Marijampolės sav.",
+      "address": "Puskelnių k., Plytinės g. 2, 68103",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Kalvarijos sav.",
+      "address": "Salaperaugio k, Europos g. 17, 69286",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Kalvarijos sav.",
+      "address": "Salaperaugio k., Europos g. 17, 69286",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Alytaus r. sav.",
+      "address": "Santaikos k., Santaikos g. 2A, 64283",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Skraičionių k., Skraičionių g. 1, 17140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Skraičionys, Skraičionių g. 1, 17140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Kauno g. 37, 20120",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, J. Basanavičiaus g. 1C, 28134",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Palijoniškio g. 1, 28183",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Buivydiškių g. 5, 07171",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kalvarijų g. 204G, 08247",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kirtimų g. 23A, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Vilnius, Laisvės pr. 125A, 06118",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pelesos g. 1, 02161",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Šiaurės g. 39, 11110",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Šv. Stepono g. 44, 01312",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Alauša",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Kosmoso g. 3, 31142",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Andopas",
+      "municipality": "Šilutės r. sav.",
+      "address": "Ramučių g.43,  Barzdūnų k.",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Andopas",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Ramučių g. 43, 99150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Antivis",
+      "municipality": "Kelmės r. sav.",
+      "address": "Tytuvėnai, Žemaitės g. 14, 86490",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Baisogalos k., Beržų g. 19, 82323",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Joniškio r. sav.",
+      "address": "Radikių k., 13, 84164",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Šiaulių g. 12, 82142",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Nuklono g. 4, 78349",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Pramonės g. 28, 77116",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Pramonės g. 3A, 78140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Tilžės g. 223, 76200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, V. Bielskio g. 47A, 76159",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Vilniaus g. 16, 76265",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Atsiauta",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kuršėnai, Vytauto g. 80, 81146",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Autograndas",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Taikos pr. 47, 31217",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Santaikos g. 33, 62100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, Mindaugo g. 23, 29141",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šilalės r. sav.",
+      "address": "Bučių k., 75381",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Druskininkų sav.",
+      "address": "Druskininkai, Gardino g. 79, 69191",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Druskininkų sav.",
+      "address": "Druskininkai, Leipalingio g. 26, 66371",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Dariaus ir Girėno g. 10, 96144",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Raseinių r. sav.",
+      "address": "Girkalnio k., Žemaičių g. 39, 60311",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Grigaičiai, Pavilnės g. 1, 11236",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šakių r. sav.",
+      "address": "Griškabūdis, A. Skelčio g., 71296",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Gudžionių k., Plento g. 24",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Gudžionių k., Plento g. 24, 58244",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno r. sav.",
+      "address": "Jaučakių k., 54217",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Žemaitės g. 1, 55134",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Joniškio r. sav.",
+      "address": "Joniškis, Vilniaus g. 72, 84172",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, Muitinės g. 22A, 74111",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Raseinių r. sav.",
+      "address": "Kalnujų k. 1, 60191",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Taikos pr. 120, 52140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Chemijos g. 6, 51344",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 60A, 44191",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Minkovskių g. 132, 46245",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 82, 47179",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Vaidoto g. 153, 45392",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Tilžės g. 90, 91101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Liepų g. 79A, 92195",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 1, 91109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Klišių k., Pievų g. 2, 74211",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, J. Basanavičiaus g. 95B, 57352",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Lazdijai, Turistų g. 88, 67102",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Druskininkų sav.",
+      "address": "Leipalingis, Merkinės g. 37, 67280",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Alytaus r. sav.",
+      "address": "Likiškėliai, Pabalių g. 11, 64381",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, P. Armino g. 69, 68127",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Vasaros g. 15, 68266",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, M. Daukšos g. 17, 89234",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Varėnos r. sav.",
+      "address": "Merkinė, Vilniaus g. 87, 65333",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Molėtų r. sav.",
+      "address": "Molėtai, Vilniaus g. 104, 33114",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Akmenės r. sav.",
+      "address": "Naujoji Akmenė, V. Kudirkos g. 21A, 85145",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Neringos sav.",
+      "address": "Neringa, Nidos-Smiltynės pl. 6, 93125",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Noriūnų k., Parko g. 3A, 40395",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Telšių r. sav.",
+      "address": "Ožtakių k., Dariaus ir Girėno g. 76, 88321",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Zarasų r. sav.",
+      "address": "Padustėlio k., V. Striogos g. 4A, 32306",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno r. sav.",
+      "address": "Pagirių k., Marijampolės g. 1, 53282",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Pakruojis, Statybininkų g. 28, 83163",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Palangos m. sav.",
+      "address": "Palanga, Ganyklų g. 28C, 00126",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Palangos m. sav.",
+      "address": "Palanga, Klaipėdos pl. 44, 00111",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Pandėlio k., Elektrinės g. 1, 42370",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Smėlynės g. 169, 37454",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Velžio kl. 74, 36148",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kalvarijos sav.",
+      "address": "Pasiekų k., Europos g. 12",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kalvarijos sav.",
+      "address": "Pasiekų k., Europos g. 12, 69270",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Mūšos g. 18, 39104",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Pietarių k., Kauno g. 164, 68100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Plungės r. sav.",
+      "address": "Plateliai,  Žemaičių Kalvarijos g. 1A, 90421",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Priekulė, Klaipėdos g. 61, 96342",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Prienų r. sav.",
+      "address": "Prienai, Vilniaus g. 3A, 59115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Miško g. 64, 82128",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Šiaulių g. 1A, 82142",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Vilniaus g. 30, 60183",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Rietavo sav.",
+      "address": "Rietavas, Dariaus ir Girėno g. 19, 90316",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kauno r. sav.",
+      "address": "Ringaudų k., Gėlių g. 1A, 53335",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Zarasų r. sav.",
+      "address": "Sarakiškių k., Vytauto g. 61, 32139",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Varėnos r. sav.",
+      "address": "Senosios Varėnos k., Vilniaus g. 6A, 65486",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vytauto g. 22",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vytauto g. 22, 98122",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Spanėnų k., Plento g. 46, 55305",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Tauragės r. sav.",
+      "address": "Taurų k., Tilžės pl. 362, 72142",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Šiaulių pl. 12, 88101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Tirkšliai, Laukų g. 10, 89330",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Trakų r. sav.",
+      "address": "Trakai, Vilniaus g. 33, 21118",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Triliškių k., Kauno pl. 5, 56179",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Kauno g. 49, 20115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Basanavičiaus g. 1B, 28138",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Užežerės k., Gardenio g. 39, 89382",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Užubalių k., Senasis Ukmergės kl. 4, 14013",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Užuovėjos k., 82215",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Biržų r. sav.",
+      "address": "Valantiškio k., 41131",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Varėnos r. sav.",
+      "address": "Varėna, M. K. Čiurlionio g. 63, 65219",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Prienų r. sav.",
+      "address": "Veiverių k., Kauno g. 85, 59285",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Vilkaraisčio k., 15173",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 121, 03150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 187, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Visalaukio g. 2, 08401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius,  Kalvarijų g. 161A, 08311",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Antakalnio g. 128, 10200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, B. Brazdžionio g. 2, 47266",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gerosios Vilties g. 33, 03202",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Metalo g. 4B, 02189",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Molėtų pl. 27A, 08450",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Rinktinės g. 59, 09318",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, S. Batoro g. 15, 11100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Zujūnų g. 2A, 06200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šakių r. sav.",
+      "address": "Šakiai, Sodų g. 1, 71136",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Šalčininkai, Vilniaus g. 5A, 17102",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Kupiškio g. 4, 76146",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šilalė, Rytinio kelio g. 2, 75122",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Klaipėdos g. 4A, 99116",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Širvintų r. sav.",
+      "address": "Širvintos, Musninkų g. 21, 19126",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Bemija",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Dariaus ir Girėno g. 31, 20150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Bemija",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Dariaus ir Girėno g. 31, 20154",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Bonsa",
+      "municipality": "Rietavo sav.",
+      "address": "Rietavo g. 32, Tverai",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Bonsa",
+      "municipality": "Tauragės r. sav.",
+      "address": "Taurai, Tilžės pl. 46, 72142",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Bonsa",
+      "municipality": "Rietavo sav.",
+      "address": "Tverai, Rietavo g. 32, 90282",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Bonsa",
+      "municipality": "Tauragės r. sav.",
+      "address": "Vaidatonių k. 1, 73406",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Elektrėnų sav.",
+      "address": "Elektrėnai, Dubijos g. 36, 26130",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Ginkūnų k., Aušros g. 26, 81492",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Marvelės g. 132, 46230",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kelmė, Kęstučio g. 1B, 86139",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kuršukų k., Plento g. 1, 86120",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Kelmės r. sav.",
+      "address": "Maironių k., Kuršių g. 2, 86203",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Molėtų r. sav.",
+      "address": "Smėlinkos vs. 1, 33171",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Boost Petrol",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Zarasų g. 9, 28216",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Borusta",
+      "municipality": "Trakų r. sav.",
+      "address": "Aukštadvaris, Vilniaus g. 2a, 21253",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Borusta",
+      "municipality": "Birštono sav.",
+      "address": "Birštonas, Prienų g. 14, 59219",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Borusta",
+      "municipality": "Prienų r. sav.",
+      "address": "Stakliškės, Piliakalnio g. 3, 59370",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Naujoji g. 120, 62175",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Rūtų g. 2B, 62119",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Avižienių k., Sudervės g. 2G, 14198",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Biržų r. sav.",
+      "address": "Biržai, Kilučių g. 93, 41154",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Brazavo k., Muitinės g. 5B, 69231",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Didžiosios Riešės k., Molėtų g. 15, 14262",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Druskininkų sav.",
+      "address": "Druskininkai, M. K. Čiurlionio g. 113, 66161",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Trakų r. sav.",
+      "address": "Dėdeliškių k., Didžiulio g. 5, 21401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Elektrėnų sav.",
+      "address": "Elektrėnai, Sabališkių g. 1F, 26128",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Jakų k., Vilniaus pl. 21, 92498",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Vasario 16-osios g. 33, 55164",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Briedžių takas 6B, 49106",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Islandijos pl. 32, 47446",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Islandijos pl. 61C, 49117",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 38, 44263",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, K. Baršausko g. 57, 51423",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Karaliaus Mindaugo pr. 34A, 44306",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Pramonės pr. 18, 51183",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, R. Kalantos g. 159, 52314",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, R. Kalantos g. 68, 52365",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 107A, 47186",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 321, 50120",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 404B, 50301",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 441C, 49185",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Sukilėlių pr. 120, 49237",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Taikos pr. 52A, 51305",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Tvirtovės al. 33A, 50157",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Vakarinio aplinkkelio 10, 48182",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Vakarinis aplinkkelis 18, 48182",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Varnių g. 46, 48403",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 49A, 46336",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Žemaičių pl. 19, 48255",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, H. Manto g. 96, 92295",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Jūrininkų pr. 31, 95225",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Minijos g. 90, 93234",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Sausio 15-osios g. 2, 91200",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 112A, 93150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 61B, 91182",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Tilžės g. 56A, 91110",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Vilniaus pl. 1A, 94105",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šilalės r. sav.",
+      "address": "Košių II k., Dvaro g. 3, 75226",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretinga, Klaipėdos g. 155, 97156",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Kurėnų k., Ežero g. 7, 20102",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kuršėnai, Plento g. 1, 81115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, J. Basanavičiaus g. 40A, 57290",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, J. Dailidės g. 10, 68307",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Kauno g. 130, 68230",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kauno r. sav.",
+      "address": "Mastaičių k., Baltijos g. 1, 53289",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Žemaitijos g. 57, 89128",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Nekrūnų k. 1, 67171",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Palangos m. sav.",
+      "address": "Palanga, Kretingos g. 56, 00111",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, J. Basanavičiaus g. 63, 36204",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Klaipėdos g. 92A, 37383",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Parko g. 7A, 35189",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pikelių k. 1, 60376",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Gedimino g. 42B, 82174",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Respublikos g. 111A, 42135",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Salaperaugio k., Europos g. 13a, 69286",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Joniškio r. sav.",
+      "address": "Satkūnų k., Sidabros g. 2A, 84101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Serdokų k., Vilkaviškio g. 10, 70201",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Dariaus ir Girėno g. 83A, 72192",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Gedimino g. 47, 72294",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Luokės g. 70, 87128",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, J. Basanavičiaus g. 108A, 28214",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, J. Basanavičiaus g. 3, 28134",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Varėnos r. sav.",
+      "address": "Varėna, Savanorių g. 5, 65186",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, A. Goštauto g. 13, 01108",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, A. P. Kavoliuko g. 32A, 04329",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Baltupio g. 10, 08303",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Eišiškių pl. 11, 02184",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gariūnų g. 45, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 24, 08412",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 2A, 03150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 39, 08104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 4, 08104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, J. Tiškevičiaus g. 24, 02231",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kareivių g. 13, 09109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kareivių g. 3, 08221",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Laisvės pr. 43C, 05112",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Oslo g. 12, 04123",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, P. Žadeikos g. 1A, 06319",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Prūsų g. 26A, 02154",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 118, 03153",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 119A, 03150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 121, 03150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Sporto g. 16A, 09200",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Talino g. 2B, 05200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ukmergės g. 231, 07156",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Dubijos g. 20A, 77207",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Pramonės g. 17, 78136",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Tilžės g. 25, 78229",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Vilniaus g. 62, 76251",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl. 20, 36258",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Cintjoniškių g. 15, 99116",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Circle K Lietuva",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Ūtos k., Baltijos Kelio g. 33, 35189",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB DVS Topolis",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Panevėžio g. 7C, 42163",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Degta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, Vienuolio g. 34A, 29148",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Degta",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Respublikos g. 113B, 42150",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Degta",
+      "municipality": "Elektrėnų sav.",
+      "address": "Vievis, Kauno g. 55A, 21371",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Deguva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 234, 47158",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, G. Petkevičaitės-Bitės g. 35C, 37138",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Pušaloto g. 140, 35100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, S. Kerbedžio g. 2, 35135",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, S. Kerbedžio g. 7F, 35104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Dujotena",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Molėtų g. 94, 28106",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Dujovita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Islandijos pl. 191D, 49170",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Dujovita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 110, 44136",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Dujovita",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, Basanavičiaus g. 91E, 57356",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB EU Verslas",
+      "municipality": "Plungės r. sav.",
+      "address": "Jovaišiškės k., Telšių g. 127, 90107",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB EU Verslas",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Viekšnių g. 24, 89235",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB EU Verslas",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, Rietavo g. 109, 90106",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB EU Verslas",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, Stoties g. 7C, 90115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Ūdrijos g. 2, 62402",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Raseinių r. sav.",
+      "address": "Ariogala, Žemaičių g. 30, 60255",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Biržų r. sav.",
+      "address": "Biržai, Jaunimo g. 2a, 41168",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Bukiškis, Ukmergės g. 437, 14183",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Ilgakiemio k., Kauno g. 25, 53288",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Vasario 16-osios g. 70, 55165",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Jonušų k., Durpyno g. 63, 96173",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Juodgirio k. 1, 58212",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Kaišiadorys, Paukštininkų g. 4a, 56160",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Kalotės k., Medelyno g. 126, 96332",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Armoniškių g. 31, 46401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ateities pl. 40B, 52112",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Draugystės g. 8B, 51262",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 292B, 44131",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Palemono g. 3A, 52159",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 402A, 49281",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 404B, 50301",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, T. Masiulio g. 16A, 52375",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Kaunas, Vandžiogalos pl. 86A, 47478",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Minijos g. 154A, 93263",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 124, 94286",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Kreivalaužių k., Taikos g. 1, 15166",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Lazdijų sen., Janaslavo k. 11, 67170",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Trakų r. sav.",
+      "address": "Lentvaris, Sodų g. 3, 25117",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Maišiagala, Mokyklos g. 26, 14243",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Stoties g. 6B, 68110",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Mastaičių k., Marijampolės g. 58, 53285",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Medininkų k., Pasieniečių g.10, 13192",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Nemuno g. 79A, 35189",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Panevėžys, Ramygalos g. 186A, 36224",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Taikos g. 24, 39132",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Pietarių k., Kauno g. 165, 68100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Miško g. 62, 77158",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raščių k. 1A, 60298",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Trakų r. sav.",
+      "address": "Sausių k., Sausių g. 2, 21401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Sereikonių k., Baltijos kelio g. 2, 39236",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Skaisčiūnų k., Europos g. 11, 69338",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Vilkaviškis, S. Nėries g. 38, 70165",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gunkliškių g. 2F, 02231",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Jeruzalės g. 2, 08414",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kareivių g. 4, 09109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kirtimų g. 33, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Laisvės pr. 80B, 06125",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Liepkalnio g. 112A, 02121",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Liepkalnio g. 128A, 02121",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pajautos g. 31, 06200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 118, 03153",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 225, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Spyglių g. 2, 27101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Sembos g. 5, 78347",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl. 12, 38242",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Gluosnių g. 4A, 99116",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Žemaitkiemis, S. Krasausko g. 21, 54340",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Alytaus g. 59, Krosnos k., 67443",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Bačkonių k., Pastrėvio g. 1A, 56240",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Kalnuotės 1 k, 15130",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Kalnuotės 1 k. 15130",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kelmė, Putvinskio g. 29, 86113",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretinga, Tiekėjų g. 34a, 97187",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Kretingos r. sav.",
+      "address": "Laivių k., Platelių g. 1a, 97317",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Prienų r. sav.",
+      "address": "Mardosų k., Alytaus pl. 2, 59240",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Laižuvos g. 82d, 89213",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Plungės r. sav.",
+      "address": "Minijos g. 1, Aleksandravo k., 90390",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Pagėgių sav.",
+      "address": "Pagėgiai, Klaipėdos g. 6b, 99290",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, Dariaus ir Girėno g. 31, 90118",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Rainių k., Telšių g. 2B, 88401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Jurbarko g. 34, 60180",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Rimšų k., Tauragės g. 29, 74280",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Ruoščių k. 1, 57109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Akmenės r. sav.",
+      "address": "Skabeikių k. 4, 85233",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Tauragės r. sav.",
+      "address": "Skaudvilė, Adakavo g. 1, 73435",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Skuodo r. sav.",
+      "address": "Stripinių k., Skuodo g. 7, 98347",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Mažeikių g. 1, 87101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Tryškiai, Beržų g. 24/Drąsiujų g. 7, 88155",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Tryškiai, Beržų g. 24/Drąsiųjų g. 7, 88155",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Kelmės r. sav.",
+      "address": "Užventis, Žemaitės g. 52, 86343",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Šilalės r. sav.",
+      "address": "Vabalų k., Paršežerio g. 1, 75406",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Akmenės r. sav.",
+      "address": "Venta, Plento g. 2, 85302",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šilalė, Rytinio Kelio g. 2a, 75122",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Eniris",
+      "municipality": "Šilutės r. sav.",
+      "address": "Žemaičių Naumiestis, Klaipėdos g. 76, 99206",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB GM Manufacturing Lithuania",
+      "municipality": "Šakių r. sav.",
+      "address": "Girėnų k., Kauno g. 68, 71129",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB GM Manufacturing Lithuania",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, Muitinės g. 34A, 74106",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Gazimpeksas",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vytauto g. 20, 98123",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gazimpeksas",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Mažeikių g. 7A, 87101",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gazimpeksas",
+      "municipality": "Rietavo sav.",
+      "address": "Tverai, Rietavo g. 32",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Aristava, Aristavos g. 4, 58111",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Girėnai, Kauno g. 50, 71129",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, Knygnešių g. 9, 74212",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, Muitinės g. 32, 74111",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, S. Daukanto g. 66, 74170",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Kiduliai, Sūduvos g. 3, 71400",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Mozūriškiai, Mozūriškių 10, 71382",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Rūdos k., Marijampolės g. 8, 70313",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Seredžius, S. Šimkaus g. 69, 74425",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Šakiai, V. Kudirkos g. 11D, 71124",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Gindana",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Priešpilio g. 5, 91240",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Gindana",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Priešpilio g.5",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Gamyklos g. 1, 96155",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno r. sav.",
+      "address": "Garliava, Vytauto g. 111A, 53253",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Baltų pr. 141A, 47126",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Betygalos g. 8, 47183",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 51, 44131",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Kuršių g. 13A, 48109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Partizanų g. 87G, 50312",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kelmė, V. Putvinskio g. 37, 86113",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Priestočio g. 26, 92228",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 157, 94285",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Kuosiškių k. 4, 83169",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, S. Kerbedžio g. 2, 35135",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, S. Kerbedžio g. 7F, 35104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Tauragės r. sav.",
+      "address": "Papušynės k, Šilalės g. 105, 72189",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Tauragės r. sav.",
+      "address": "Papušynės k., Šilalės g. 105, 72175",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Kauno r. sav.",
+      "address": "Ramučiai, K. Bielinio g. 2A, 54465",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Liepų g. 10E, 60119",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Maironio g. 78b, 60120",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Rudamina, Jašiūnų g. 2, 13255",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Slengių k., Šilelių g. 1, 92338",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Toliočiai, Plento g. 2B, 76322",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Šilutės r. sav.",
+      "address": "Traksėdžių k., Klaipėdos. 60, 99104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Trepkalnių k., Mokyklos g. 2, 96278",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Plungės r. sav.",
+      "address": "Varkaliai, Žemaičių g. 2A, 90105",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Baltosios Vokės g. 35, 02243",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Parko g. 64, 11225",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pramonės g. 18, 11115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ukmergės g. 130, 08100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Architektų g. 80, 78171",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Girulių g. 1, 78132",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Šiaurės g. 1, 99116",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Jozita",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šolių k., Pietinio Kelio g. 9, 75126",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Junasa, Degalinė",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Gruzdžiai, M. Katiliškio g. 50, 81428",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Junasa, Degalinė",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Bačiūnų g. 12a, 77109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Junasa, Degalinė",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Žemaitės g. 131c, 76175",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Kenaoil",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Kena, Miško g. 6, 13146",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Kriketas",
+      "municipality": "Trakų r. sav.",
+      "address": "Trakai, Senkelio g. 13, 21107",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Leosta",
+      "municipality": "Telšių r. sav.",
+      "address": "Luokė, Telšių g. 66, 88236",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Littaura",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Pramonės g. 6, 72324",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Madalva",
+      "municipality": "Šilalės r. sav.",
+      "address": "Gineikių k., 75445",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Madalva",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, Lentpjūvės g. 10A, 90118",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė , Pramonės g.10A",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Dariaus ir Girėno g. 49, 72221",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Pramonės g. 10A, 72359",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Žygaičių k., Žygaičių g. 2, 73282",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Medelsta",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Pagirių k., Durpių g. 45, 14118",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Melkasta",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Gulbiniškių k. 7, 70481",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Melkasta",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Kalvelių k., Lazdijų pl. 29, 67333",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Melkasta",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Seirijai, Algirdo g. 35A, 67227",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Mindega",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Šėta, Ramygalos g. 55, 58129",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Naftos dujos",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Algirdo g. 42, 89101",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Naftos dujos",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Daukšos g. 29 / Žemaitijos g. 69, 89132",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Naftos dujos",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Švenčionys, Mokyklos g. 23, 18111",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Naftrus",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Degučių k., Topolių g. 1, 83291",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Naftrus",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Vilniaus g. 3B, 60187",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Naftrus",
+      "municipality": "Raseinių r. sav.",
+      "address": "Slabados k., Pievų g. 19, 60109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Naftrus",
+      "municipality": "Raseinių r. sav.",
+      "address": "Ylių k., Šilo g. 1, 60389",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Narjanta",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Aleksandrijos k., Kikonių g. 10, 40335",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Narjanta",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Dvariškių vs. 2, 40402",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Narjanta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Pumpučiai, Pumpučių g. 25, 29253",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Narjanta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Sausalaukės k. 2, 29345",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Narjanta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Troškūnai, Vilniaus g. 32, 29306",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Narjanta",
+      "municipality": "Biržų r. sav.",
+      "address": "Vabalninkas, S. Nėries g. 35, 41341",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Santaikos g. 34A, 62123",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Ūdrijos g. 31, 62411",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Elektrėnų sav.",
+      "address": "Elektrėnai, Sabališkių g. 1U, 26141",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Europos g. 6, N. Valios k.",
+      "fuels": [
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Telšių r. sav.",
+      "address": "Gaudikaičių k., Šiaulių pl. 1A, 87100",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Jonavos r. sav.",
+      "address": "Gudžionių k., Šilų sen., Plento g. 7, 55462",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Jakų k., Vilniaus pl. 9, 96322",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Šilalės r. sav.",
+      "address": "Katyčių k., 75493",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ateities pl. 50B, 52106",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Birželio 23-iosios g. 23A, 50220",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Europos pr. 43, 46329",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Islandijos pl. 191E, 49168",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 110, 44136",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Kuršių g. 1, 48106",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Pramonės pr. 6A, 51267",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, R. Kalantos g. 27, 52303",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 103, 47185",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 402A, 49281",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Savanorių pr. 441C, 49185",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Taikos pr. 80A, 50441",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Tunelio g. 26, 44391",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Vakarinio aplinkkelio 10, 48182",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Vakarinis aplinkkelis 18, 48182",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 132D, 46337",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Žemaičių pl. 26, 48256",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Artojo g. 2, 92105",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Minijos g. 119, 93231",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Plieno g. 1, 95112",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Smiltelės g. 17, 95188",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 60, 93225",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 30, 91177",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 5C, 91109",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Klaipėdos g. 66, Panevėžys",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno r. sav.",
+      "address": "Kumpių k., Vakarų g. 14, 47425",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, J. Basanavičiaus g. 91E, 57356",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Stoties g. 4C, 68112",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Vilkaviškio g. 61D, 68153",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, M. Daukšos g. 29, 89132",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Molėtų r. sav.",
+      "address": "Molėtai, Aplinkkelio g. 165, 33134",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "N. Valios k., Europos g. 6, 69270",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Pabradė, Vilniaus g. 94, 18177",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevežys, Klaipėdos g. 144B, 37376",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Klaipėdos g. 66,  35193",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Klaipėdos g. 81, 37106",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Margirio g. 1B, 36248",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Ramygalos g. 145B, 36225",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Versmės g. 2, 82197",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kauno r. sav.",
+      "address": "Ramučių k., Vijoklių g. 1C, 54467",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Raubonių k., Ąžuolpamūšio g. 1A, 39447",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Salaperaugio k., Europos g. 1, 69286",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Sudmantų k., Sendvario g. 2, 96327",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Dariaus ir Girėno g. 130A, 72194",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Kauno g. 45B, 20119",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, J. Basanavičiaus g. 129, 28216",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Kupiškio g. 12, 28135",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Architektų g. 130, 04216",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Dariaus ir Girėno g. 17, 02169",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Eišiškių pl. 82, 02200",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Erfurto g. 41, 04226",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gariūnų g. 55, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 37A, 08104",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 41, 09300",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Geležinio Vilko g. 63, 08104",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, J. Tiškevičiaus g. 19, 02231",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Justiniškių g. 14B, 05131",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kauno g. 26, 03212",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kedrų g. 2, 03159",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Molėtų pl. 8, 08426",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, P. Lukšio g. 22, 09108",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Panerių g. 42, 03202",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Parodų g. 1A, 04133",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pilaitės pr. 27, 06269",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Rygos g. 2, 05259",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, S. Stanevičiaus g. 3, 07131",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 187, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 220A, 02301",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 225, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Servečės g. 2, 02121",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Subačiaus g. 64, 11342",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Talino g. 2C, 05200",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ukmergės g. 296, 12105",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Žirmūnų g. 54C, 08233",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Žirmūnų g. 68B, 09113",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Žirnių g. 17, 02118",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Raseinių r. sav.",
+      "address": "Ylių k., Pušyno g. 11, 60389",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Ąžuolpamūšio g. 1A, Raubonys",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Dubijos g. 18A, 77172",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Gegužių g. 28, 78348",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Tilžės g. 72, 78140",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl. 22, 36258",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Neste Lietuva",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl. 7, 36224",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Nostrada",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kazlavo k. 4, 69285",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Nostrada",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kazlavo km. 4, 69285",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Osijos dujos",
+      "municipality": "Marijampolės sav.",
+      "address": "Gėlių g. 25, Marijampolė",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Osijos dujos",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Osijos k., Pamiškės g. 1, 70205",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Pakelės namai",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasienio g. 10, Škilinpamūšio k.",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Pakelės namai",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Škilinpamūšio k., Liepų g. 4, 39421",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Pakelės namai",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Škilinpamūšio k., Pasienio g. 10, 39421",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Plovimo sistemos",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Gegužių g. 28, 78322",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Plungės lagūna",
+      "municipality": "Rietavo sav.",
+      "address": "Rietavas, Plungės g. 32, 90313",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Prie Luksto",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Masčio g. 21, 87139",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Propano ir butano dujų centras",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Cirkliškio k., Aukštaičių g. 2A, 18122",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Propano ir butano dujų centras",
+      "municipality": "Ignalinos r. sav.",
+      "address": "Ignalina, Švenčionių g. 35, 30132",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Regusa",
+      "municipality": "Marijampolės sav.",
+      "address": "Gavaltuvos k., Sodo g. 11, 69370",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Regusa",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "Jūrės k., Medelyno g. 4A, 69446",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Regusa",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Marijampolės pl. 20, 46147",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Regusa",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "Kazlų Rūda, S. Daukanto g. 19D, 69430",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Regusa",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Kybartai, J. Basanavičiaus g. 45A, 70417",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Akmenės I k., Plento g. 1, 85380",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Akmenės I kaimas Plento g. 1",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Akmenės I kaimas Plento g. 1, 85380",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus Miškininkų g. 7, 62201",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus Pramonės g. 5, 62175",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Miškininkų g. 7, 62201",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Pramonės g. 5, 62323",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Babtai Vandžiogalos g. 3, 54328",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Babtai, Vandžiogalos g. 3, 54328",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Domeikava Muitinės g. 2, 54359",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Domeikava, Muitinės g. 2, 54359",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Prienų r. sav.",
+      "address": "Ignacavos k., Kauno pl. 18, 59149",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Prienų r. sav.",
+      "address": "Ignacavos km. Kauno pl. 18, 59149",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas Garažų g. 20, 50313",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Garažų g. 20, 50314",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Klaipėda Jūrininkų pr. 29, 95225",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Klaipėda, Jūrininkų pr. 29, 95225",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kreivukės k., 69232",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kreivukės km., 69232",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kušliškių km. Suvalkijos g. 15, 69200",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šakių r. sav.",
+      "address": "Lėkėčių k., Šakių g. 3, 71229",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šakių r. sav.",
+      "address": "Lėkėčių km. Šakių g. 3, 71227",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė Statybininkų g. 8,68108",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Statybininkų g. 8, 68108",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Prienų r. sav.",
+      "address": "Mauručiai Liepų g. 20, 59290",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Prienų r. sav.",
+      "address": "Mauručiai, Liepų g. 20, 59290",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Naujoji Akmenė V. Kudirkos 18A, 85171",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Naujoji Akmenė,  V. Kudirkos g. 18A, 85171",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Pageležių k, 20278",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Pageležių km., 20278",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Panarvės k., 67168",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Panarvės km., 67168",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Pašakarnių k. Pašakarnių g. 1, 85271",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Pašakarnių km. Pašakarnių g. 1, 85271",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Pašvenčio k., 74218",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Pašvenčio km., 74218",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis Gedimino g. 50C, 82482",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Gedimino g. 50C, 82482",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Rumšiškės Lekavičiaus g. 71, 56337",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Rumšiškės, Lekavičiaus g. 71, 56337",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vytauto g. 20, 98123",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė Kareivinių g. 64, 20184",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė Vilniaus g. 122, 20167",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Kareivinių g. 64, 20184",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Vilniaus g. 122, 20168",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Velžių k., Radviliškio plentas 2, 82218",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Velžių km .Radviliškio plentas 2, 82218",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius Stanevičiaus g. 3A, 07131",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Jankiškių g. 43a, 02300",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Rygos g. 2, 05259",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Rygos g. 2, 05264",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Stanevičiaus g. 3A, 07131",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas Kosmoso g. 1, 31140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Kosmoso g. 1, 31142",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Zujūnai Buivydiškių g. 1A, 14160",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Zujūnai, Buivydiškių g. 1A, 14160",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Čekoniškių k., 14207",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Čekoniškių km, 14207",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai Pramonės g. 7C, 78140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai Vilniaus g. 373A, 76326",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Pramonės g. 7C, 78140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Vilniaus g. 373A, 76326",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šilalė Rytinio kelio g. 19, 75133",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šilalė, Rytinio kelio g. 19, 75133",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ašigalio g. 1A, 49161",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Marvelės g. 106D, 46205",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Alytaus r. sav.",
+      "address": "Likiškėlių k., Kalninės g. 5, 62442",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Mūšos g. 2E, 39105",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Alytaus r. sav.",
+      "address": "Simnas, Alytaus g. 48, 64313",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, J.Kazlausko g. 33",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, J.Kazlausko g. 33, 08314",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Skulas",
+      "municipality": "Kauno r. sav.",
+      "address": "Virbališkių k., Verslo g. 2, 53458",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Alytaus r. sav.",
+      "address": "Alytaus k., 64464",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Santaikos g. 28 B, 62123",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Prienų r. sav.",
+      "address": "Gustaičių k., 59296",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Alytaus r. sav.",
+      "address": "Kaniūkų k., 64104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Marijampolės sav.",
+      "address": "Kantališkių k., 69841",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Minijos g. 90, 93239",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kreivukė, Turgaus g. 4, 69232",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kupiškis, Panevėžio g. 9, 40134",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Alytaus r. sav.",
+      "address": "Miklusėnai, Kauno g. 1, 62461",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Paliūniškio k., Žemdirbių g. 15, 38440",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Kauno r. sav.",
+      "address": "Ramučių k., Erdvės g. 78, 54463",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Palangos g. 66, 28140",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Stateta",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ukmergės g. 246, 06120",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Tomega",
+      "municipality": "Druskininkų sav.",
+      "address": "Druskininkai, Gardino g. 98, 66225",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Tomega",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Dumblės k., 17178",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Tomega",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Tartoko k., 17127",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Topgas",
+      "municipality": "Marijampolės sav.",
+      "address": "Gėlyno g.25, Marijampolė",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Topgas",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Kaišiadorys, Paukštininkų g. 13, 56161",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Topgas",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Slavinčiškis, Slavinčiškio g. 18, 40333",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Topgas",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Stoties g.25, Pasvalys",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Kretingos r. sav.",
+      "address": "Darbėnai, Laisvės g. 15, 97264",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Dituvos k., Šv. Kristoforo g. 4, 96357",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Klaipėdos g. 39, 96157",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Kretingos pl. 1, 96105",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Kretingos g. 28A, 92211",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Minijos g. 152A, 93263",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretinga, Vilniaus g. 29B, 97101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Pyktiškės k., Veiviržėnų g. 29, 96303",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Rietavo sav.",
+      "address": "Rietavas, Lėgų k. 1, 90305",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Šilutės r. sav.",
+      "address": "Saugų k., Tilžės g. 21, 99409",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Rietavo sav.",
+      "address": "Vatušių k., Kvėdarnos g. 2, 90307",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Trevena",
+      "municipality": "Šilutės r. sav.",
+      "address": "Žemaitkiemio k., Liepų g. 4, 99317",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Tripletas",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Sedos g. 16, 89233",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Tumasa",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Židikai, Mažeikiu g. 10, 89442",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Tumasa",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Židikai, Mažeikių g. 10, 89442",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Utentra",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Pramonės g. 16, 28119",
+      "fuels": [
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB VIRŠI Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Pasūduonės k., L.Taunio g. 3, 69331",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB VVARFF",
+      "municipality": "Plungės r. sav.",
+      "address": "Truikių k., Pramogų g. 4, 90110",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Valdegra",
+      "municipality": "Marijampolės sav.",
+      "address": "Igliauka, Prienų g. 7, 69117",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Velseka",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kupiškis, Panevėžio g. 5, 40134",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Naujoji g. 27, 62175",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Ulonų g. 33B, 62136",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, A. Vienuolio g. 34, 29148",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, Piliakalnio g. 9, 29109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Aukštelkės k., Ilgoji g. 1, 80184",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Trakų r. sav.",
+      "address": "Aukštųjų Semeniukų k., Logistikos g. 9, 21401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Avižienių k., Ožiarūčių g. 1A, 14185",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Biržų r. sav.",
+      "address": "Biržai, Parodos g. 2, 41136",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Biržų r. sav.",
+      "address": "Biržai, Pasvalio g. 1B, 41132",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Brazdigalos k. 1, 39198",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Alytaus r. sav.",
+      "address": "Daugų k., Neveiglo g. 25, 64144",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Dotnuva, Tilto g. 2A, 58352",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Dukstynos k., Vytauto g. 131, 20186",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Elektrėnų sav.",
+      "address": "Elektrėnai, Elektrinės g. 6, 26109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Vilniaus pl. 65, 96173",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Utenos r. sav.",
+      "address": "Gediminas, Vyturio g. 2, 28126",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Giraitės k., Automagistralės g. 4, 54310",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Molėtų r. sav.",
+      "address": "Gojaus k., Utenos g. 16, 33165",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Prienų r. sav.",
+      "address": "Grigaliūnų k. 11, 59281",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Gudžiūnų k., Baisogalos g. 5, 58267",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Ignalinos r. sav.",
+      "address": "Ignalina, Turistų g. 28A, 30138",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Ilgakiemio k., Prienų g. 22",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Ilgakiemio k., Prienų g. 22,",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Jašiūnai, Lydos g. 13, 17247",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Darbininkų g. 4D, 55101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Joniškio r. sav.",
+      "address": "Joniškis, Vilniaus g. 51, 84166",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Zarasų r. sav.",
+      "address": "Juodalaukių k. 2, 32104",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Kaišiadorys, Gedimino g. 135, 56173",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Kaltanėnai, Utenos g. 1, 18239",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kalvarija, Dariaus ir Girėno g. 81, 69206",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Kampiškių k., Baltijos g. 41, 09300",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, A. Juozapavičiaus pr. 90, 45267",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ateities pl. 105, 52119",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ateities pl. 37A, 52119",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Baltijos g. 90B, 47130",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Biruliškių g. 18A, 51205",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Didžioji g. 84, 45462",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Islandijos pl. 61A, 49117",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, K. Baršausko g. 64, 44405",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Karaliaus Mindaugo pr. 54, 44351",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Marijampolės pl. 29, 45438",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Miežėnų g. 18, 47115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, P. Lukšio g. 66A, 49404",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Pramonės pr. 44, 50302",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 288, 47164",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Statybininkų g. 3A, 50124",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, T. Masiulio g. 22B, 52447",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 117, 46354",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 124B, 46282",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kerelių k. 1A, 40473",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Liepojos g. 242, 92330",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Nemuno g. 139, 93185",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Priestočio g. 28, 92191",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 70A-1, 93202",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 52, 94181",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Krekenava, Tilto g. 35, 38305",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretinga, Vytauto g. 163, 97133",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Kretingalė, Klaipėdos g. 1A, 96332",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretingsodžio k., 97100",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Kumpių k., Verslo g. 13A, 54311",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šilalės r. sav.",
+      "address": "Kuodaičių k., 75101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kupiškis, Pergalės g. 15, 40109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kuršėnai, Vilniaus g. 38A, 81136",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kužiai, Draugystės g. 2, 80260",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Lazdijai, Turistų g. 32, 67102",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Margavos k., 54471",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Geležinkelio g. 5, 68305",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, J. Ambrazevičiaus-Brazaičio g. 2, 68161",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Prienų r. sav.",
+      "address": "Mačiūnų k., Kauno pl. 40, 59157",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Montuotojų g. 2A, 89101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Žemaitijos g. 75, 89132",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Molėtų r. sav.",
+      "address": "Molėtai, Vilniaus g. 101, 33112",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Pabradė, Vilniaus g. 116B, 18177",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Pakruojis, Vytauto Didžiojo g. 98, 83162",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, J. Janonio g. 28A, 35101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Navadolio g. 31, 36252",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Pušaloto g. 193A, 191A",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Ramygalos g. 155, 36224",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Ramygalos g. 186G, 36224",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Senamiesčio g. 116A, 35115",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Venslaviškio g. 16, 35116",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Vilniaus g. 50, 39177",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kalvarijos sav.",
+      "address": "Pelucmurgių k., Muitinės g. 35, 69270",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, J. Tumo-Vaižganto g. 102, 90160",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, Žaltakalnio g. 10, 90158",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Ramygala, Vienkiemio g. 1B, 38262",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Panevėžio g. 5, 42163",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Žemaitės g. 2C, 42164",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vilniaus g. 50, 98119",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Sudmantų k., Vilniaus pl. 6",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Dariaus ir Girėno g. 138, 72194",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Pramonės g. 1, 72338",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Pramonės g. 2A, 87101",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Tičkūnų k., Tičkūnų g. 31, 38410",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Žiedo g. 15, 20127",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Metalo g. 8, 28216",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Pramonės g. 23, 28124",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Varėnos r. sav.",
+      "address": "Valkininkai, Vilniaus g. 6, 65438",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Raseinių r. sav.",
+      "address": "Vejukų k. 5, 60345",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Elektrėnų sav.",
+      "address": "Vievis, Kauno g. 26A, 21376",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Vilkaviškis, Vytauto g. 105, 70118",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ateities g. 17B, 06326",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Dariaus ir Girėno g. 30A, 02169",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gariūnų g. 16A, 21401",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Grigiškės, Kovo 11-osios g. 75, 27119",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Justiniškių g. 12, 05131",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kirtimų g. 29, 02244",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Laisvės pr. 8, 04133",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Liepkalnio g. 112A, 02121",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Liepkalnio g. 128A, 02121",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Naugarduko g. 74, 03203",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Nemenčinės pl. 5, 10222",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Olandų g. 57, 01205",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ozo g. 12, 08311",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pilaitės pr. 13, 06264",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pilaitės pr. 28, 06264",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Saltoniškių g. 12, 08105",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Sodų g. 22, 03211",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Verkių g. 52, 09109",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Vilkpėdės g. 2, 03151",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Statybininkų g. 1, 31138",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Taikos pr. 23B, 31107",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kauno r. sav.",
+      "address": "Zapyškis, Vytauto g. 20A, 53419",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "Ąžuolų Būdos k.",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "Ąžuolų Būdos k., Marijampolės g. 53, 69452",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Dubijos g. 1C,",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Gegužių g. 26, 78348",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, J. Basanavičiaus g. 122A, 76161",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Tilžės g. 274, 76201",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Užmiesčio g. 2, 76273",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl. 5, 36258",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Tilžės g. 59, 99168",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Širvintų r. sav.",
+      "address": "Širvintos, Plento g. 4, 19117",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Šventupės k., Beržų g. 13, 20360",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Švenčionys, Vilniaus g. 50A, 18123",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Viada LT",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Švenčionėliai, Žemutinė g. 51A, 18212",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Vildega",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Vilkaviškis, Vytauto g. 2D, 70137",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Vimijula",
+      "municipality": "Jonavos r. sav.",
+      "address": "Ručiūnų k., Kauno g. 2A, 55355",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Visvilas",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Tirkšlių k., Laukų g. 2C, 89330",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Vlantana",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gobergiškės k., Dvaro g. 1, 92498",
+      "fuels": [
+        "petrol95",
+        "diesel"
+      ]
+    },
+    {
+      "company": "UAB Šventosios investicijos",
+      "municipality": "Palangos m. sav.",
+      "address": "Palanga (Šventoji), Elijos g. 26, 00319",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Žibalas",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Taurostos g. 16A, 55195",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    }
+  ]
+}

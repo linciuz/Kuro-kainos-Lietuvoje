@@ -37,6 +37,8 @@ jobs:
       # keep the last stations.json and still refresh the other sources below.
       - name: Fetch LEA prices
         run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
+      - name: Re-add full station list (price-less registry stations, from committed cache)
+        run: python scripts/fetch_lea_powerbi.py --merge-only || echo "merge failed (non-fatal)"
       - name: Geocode new stations (cached)
         run: python scripts/geocode.py || echo "geocode failed (non-fatal)"
       - name: Snap onto exact chain coords (uses last daily directory)

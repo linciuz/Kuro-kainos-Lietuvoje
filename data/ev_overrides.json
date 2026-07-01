@@ -11,6 +11,50 @@
       "power_kw": null,
       "price": null,
       "note": "Elinta HQ charging station (on Google Maps, verified by user); not registered in the national AFIR feed"
+    },
+    {
+      "operator": "VIAFAST",
+      "name": "VIAFAST Vilnius",
+      "address": "Visorių g. 8",
+      "city": "Vilnius",
+      "lat": 54.737683,
+      "lon": 25.257937,
+      "power_kw": null,
+      "price": null,
+      "note": "Public fast-charging network, missing from AFIR/OSM (found via Chargemap diff)"
+    },
+    {
+      "operator": "Latvenergo",
+      "name": "Latvenergo Mažeikiai",
+      "address": "Gamyklos g. 31E",
+      "city": "Mažeikiai",
+      "lat": 56.315166,
+      "lon": 22.32186,
+      "power_kw": null,
+      "price": null,
+      "note": "Public charger, missing from AFIR/OSM (found via Chargemap diff)"
+    },
+    {
+      "operator": "Elinta Charge",
+      "name": "Elinta Charge Žiežmariai",
+      "address": "A1, Triliškės",
+      "city": "Kaišiadorių r.",
+      "lat": 54.816849,
+      "lon": 24.457186,
+      "power_kw": null,
+      "price": null,
+      "note": "Elinta network, A1 highway; missing from AFIR/OSM (Chargemap + PlugShare)"
+    },
+    {
+      "operator": "Elinta Charge",
+      "name": "Elinta Charge Tytuvėnai",
+      "address": "Maironio g. 2B",
+      "city": "Tytuvėnai",
+      "lat": 55.59779,
+      "lon": 23.20155,
+      "power_kw": null,
+      "price": null,
+      "note": "Elinta network; missing from AFIR/OSM (found via PlugShare diff)"
     }
   ]
 }

@@ -7568,5 +7568,305 @@
 "lat": 54.630862,
 "lon": 24.922588,
 "approx": false
+},
+"Kartena, Kretingos g. 51, 97351 | Kretingos r. sav.": {
+"lat": 55.916984,
+"lon": 21.467518,
+"approx": false
+},
+"Skaistgirys, Liepų g. 22, 84380 | Joniškio r. sav.": {
+"lat": 56.310494,
+"lon": 23.380833,
+"approx": false
+},
+"Kazlavo k. | Kalvarijos sav.": {
+"lat": 54.739711,
+"lon": 25.280496,
+"approx": true
+},
+"Salaperaugio k, Europos g. 17, 69286 | Kalvarijos sav.": {
+"lat": 54.739711,
+"lon": 25.280496,
+"approx": true
+},
+"Skraičionių k., Skraičionių g. 1, 17140 | Šalčininkų r. sav.": {
+"lat": 54.205646,
+"lon": 25.615742,
+"approx": true
+},
+"Ramučių g.43,  Barzdūnų k. | Šilutės r. sav.": {
+"lat": 55.353403,
+"lon": 21.496449,
+"approx": true
+},
+"Rietavo g. 32, Tverai | Rietavo sav.": {
+"lat": 55.736244,
+"lon": 22.13831,
+"approx": false
+},
+"Tverai, Rietavo g. 32, 90282 | Rietavo sav.": {
+"lat": 55.736244,
+"lon": 22.13831,
+"approx": false
+},
+"Utena, Molėtų g. 94, 28106 | Utenos r. sav.": {
+"lat": 55.482959,
+"lon": 25.571026,
+"approx": false
+},
+"Kalnuotės 1 k, 15130 | Vilniaus r. sav.": {
+"lat": 54.68285,
+"lon": 25.285623,
+"approx": true
+},
+"Tryškiai, Beržų g. 24/Drąsiujų g. 7, 88155 | Telšių r. sav.": {
+"lat": 56.058942,
+"lon": 22.578612,
+"approx": true
+},
+"Priešpilio g.5 | Klaipėdos m. sav.": {
+"lat": 55.704145,
+"lon": 21.129605,
+"approx": false
+},
+"Papušynės k, Šilalės g. 105, 72189 | Tauragės r. sav.": {
+"lat": 55.25215,
+"lon": 22.284136,
+"approx": true
+},
+"Europos g. 6, N. Valios k. | Kalvarijos sav.": {
+"lat": 54.739711,
+"lon": 25.280496,
+"approx": true
+},
+"Klaipėdos g. 66, Panevėžys | Panevėžio m. sav.": {
+"lat": 55.727745,
+"lon": 24.348805,
+"approx": false
+},
+"Ąžuolpamūšio g. 1A, Raubonys | Pasvalio r. sav.": {
+"lat": 56.115276,
+"lon": 24.470681,
+"approx": false
+},
+"Kazlavo km. 4, 69285 | Kalvarijos sav.": {
+"lat": 54.739711,
+"lon": 25.280496,
+"approx": true
+},
+"Alytus Miškininkų g. 7, 62201 | Alytaus m. sav.": {
+"lat": 54.411306,
+"lon": 24.06765,
+"approx": false
+},
+"Alytus Pramonės g. 5, 62175 | Alytaus m. sav.": {
+"lat": 54.423527,
+"lon": 24.020394,
+"approx": false
+},
+"Babtai Vandžiogalos g. 3, 54328 | Kauno r. sav.": {
+"lat": 55.096967,
+"lon": 23.806249,
+"approx": false
+},
+"Domeikava Muitinės g. 2, 54359 | Kauno r. sav.": {
+"lat": 54.956377,
+"lon": 23.905112,
+"approx": false
+},
+"Ignacavos km. Kauno pl. 18, 59149 | Prienų r. sav.": {
+"lat": 54.580056,
+"lon": 23.887564,
+"approx": true
+},
+"Kaunas Garažų g. 20, 50313 | Kauno m. sav.": {
+"lat": 54.923684,
+"lon": 24.000842,
+"approx": false
+},
+"Klaipėda Jūrininkų pr. 29, 95225 | Klaipėdos r. sav.": {
+"lat": 55.656839,
+"lon": 21.183821,
+"approx": false
+},
+"Kreivukės km., 69232 | Kalvarijos sav.": {
+"lat": 54.739711,
+"lon": 25.280496,
+"approx": true
+},
+"Kušliškių km. Suvalkijos g. 15, 69200 | Kalvarijos sav.": {
+"lat": 54.432412,
+"lon": 23.203198,
+"approx": true
+},
+"Lėkėčių km. Šakių g. 3, 71227 | Šakių r. sav.": {
+"lat": 54.981946,
+"lon": 23.504211,
+"approx": true
+},
+"Marijampolė Statybininkų g. 8,68108 | Marijampolės sav.": {
+"lat": 54.577893,
+"lon": 23.376915,
+"approx": false
+},
+"Mauručiai Liepų g. 20, 59290 | Prienų r. sav.": {
+"lat": 54.771033,
+"lon": 23.765466,
+"approx": false
+},
+"Naujoji Akmenė V. Kudirkos 18A, 85171 | Akmenės r. sav.": {
+"lat": 56.304061,
+"lon": 22.838615,
+"approx": true
+},
+"Pageležių km., 20278 | Ukmergės r. sav.": {
+"lat": 54.73932,
+"lon": 25.227399,
+"approx": true
+},
+"Panarvės km., 67168 | Lazdijų r. sav.": {
+"lat": 54.250702,
+"lon": 23.546831,
+"approx": false
+},
+"Pašakarnių km. Pašakarnių g. 1, 85271 | Akmenės r. sav.": {
+"lat": 56.270845,
+"lon": 22.885925,
+"approx": true
+},
+"Pašvenčio km., 74218 | Jurbarko r. sav.": {
+"lat": 55.083916,
+"lon": 22.606942,
+"approx": false
+},
+"Radviliškis Gedimino g. 50C, 82482 | Radviliškio r. sav.": {
+"lat": 55.814602,
+"lon": 23.553195,
+"approx": false
+},
+"Rumšiškės Lekavičiaus g. 71, 56337 | Kauno r. sav.": {
+"lat": 54.87185,
+"lon": 24.213203,
+"approx": false
+},
+"Ukmergė Kareivinių g. 64, 20184 | Ukmergės r. sav.": {
+"lat": 55.258993,
+"lon": 24.790387,
+"approx": false
+},
+"Ukmergė Vilniaus g. 122, 20167 | Ukmergės r. sav.": {
+"lat": 55.211548,
+"lon": 24.795213,
+"approx": false
+},
+"Velžių km .Radviliškio plentas 2, 82218 | Radviliškio r. sav.": {
+"lat": 55.774164,
+"lon": 23.662382,
+"approx": true
+},
+"Vilnius Stanevičiaus g. 3A, 07131 | Vilniaus m. sav.": {
+"lat": 54.728038,
+"lon": 25.254387,
+"approx": false
+},
+"Visaginas Kosmoso g. 1, 31140 | Visagino sav.": {
+"lat": 55.597425,
+"lon": 26.403381,
+"approx": false
+},
+"Zujūnai Buivydiškių g. 1A, 14160 | Vilniaus r. sav.": {
+"lat": 54.724842,
+"lon": 25.185979,
+"approx": false
+},
+"Čekoniškių km, 14207 | Vilniaus r. sav.": {
+"lat": 54.710674,
+"lon": 25.156488,
+"approx": false
+},
+"Šiauliai Pramonės g. 7C, 78140 | Šiaulių m. sav.": {
+"lat": 55.916466,
+"lon": 23.301941,
+"approx": false
+},
+"Šiauliai Vilniaus g. 373A, 76326 | Šiaulių m. sav.": {
+"lat": 55.943011,
+"lon": 23.281386,
+"approx": false
+},
+"Šilalė Rytinio kelio g. 19, 75133 | Šilalės r. sav.": {
+"lat": 55.49185,
+"lon": 22.199277,
+"approx": false
+},
+"Darbėnai, Laisvės g. 15, 97264 | Kretingos r. sav.": {
+"lat": 56.026775,
+"lon": 21.262624,
+"approx": false
+},
+"Dituvos k., Šv. Kristoforo g. 4, 96357 | Klaipėdos r. sav.": {
+"lat": 55.574424,
+"lon": 21.259853,
+"approx": true
+},
+"Gargždai, Klaipėdos g. 39, 96157 | Klaipėdos r. sav.": {
+"lat": 55.712282,
+"lon": 21.381627,
+"approx": false
+},
+"Gargždai, Kretingos pl. 1, 96105 | Klaipėdos r. sav.": {
+"lat": 55.721342,
+"lon": 21.385487,
+"approx": false
+},
+"Klaipėda, Kretingos g. 28A, 92211 | Klaipėdos m. sav.": {
+"lat": 55.728398,
+"lon": 21.132584,
+"approx": false
+},
+"Klaipėda, Minijos g. 152A, 93263 | Klaipėdos m. sav.": {
+"lat": 55.669656,
+"lon": 21.158613,
+"approx": false
+},
+"Kretinga, Vilniaus g. 29B, 97101 | Kretingos r. sav.": {
+"lat": 55.896943,
+"lon": 21.244326,
+"approx": false
+},
+"Pyktiškės k., Veiviržėnų g. 29, 96303 | Klaipėdos r. sav.": {
+"lat": 55.73292,
+"lon": 24.293659,
+"approx": true
+},
+"Rietavas, Lėgų k. 1, 90305 | Rietavo sav.": {
+"lat": 55.722941,
+"lon": 21.92708,
+"approx": true
+},
+"Saugų k., Tilžės g. 21, 99409 | Šilutės r. sav.": {
+"lat": 55.333748,
+"lon": 21.515529,
+"approx": true
+},
+"Vatušių k., Kvėdarnos g. 2, 90307 | Rietavo sav.": {
+"lat": 55.723467,
+"lon": 21.949398,
+"approx": true
+},
+"Žemaitkiemio k., Liepų g. 4, 99317 | Šilutės r. sav.": {
+"lat": 55.333748,
+"lon": 21.515529,
+"approx": true
+},
+"Židikai, Mažeikiu g. 10, 89442 | Mažeikių r. sav.": {
+"lat": 56.31764,
+"lon": 22.013597,
+"approx": false
+},
+"Ąžuolų Būdos k., Marijampolės g. 53, 69452 | Kazlų Rūdos sav.": {
+"lat": 54.79014,
+"lon": 23.448325,
+"approx": true
 }
 }

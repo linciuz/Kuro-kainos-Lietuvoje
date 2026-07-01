@@ -76,7 +76,8 @@ const STRINGS = {
     "loc_set": "📍 Vieta nustatyta · artimiausios pirmos",
     "loc_denied": "📍 Vietos prieiga atmesta – įjunkite leidimą",
     "loc_failed": "📍 Nepavyko nustatyti vietos",
-    "fuels_label": "Kuro rūšys:"
+    "fuels_label": "Kuro rūšys:",
+    "no_price": "Kaina nepateikta"
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -153,7 +154,8 @@ const STRINGS = {
     "loc_set": "📍 Atrašanās vieta noteikta · tuvākās vispirms",
     "loc_denied": "📍 Piekļuve atrašanās vietai liegta – ieslēdziet atļauju",
     "loc_failed": "📍 Neizdevās noteikt atrašanās vietu",
-    "fuels_label": "Degvielas veidi:"
+    "fuels_label": "Degvielas veidi:",
+    "no_price": "Cena nav norādīta"
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -230,7 +232,8 @@ const STRINGS = {
     "loc_set": "📍 Asukoht määratud · lähimad eespool",
     "loc_denied": "📍 Asukohale juurdepääs keelatud – luba õigus",
     "loc_failed": "📍 Asukohta ei õnnestunud määrata",
-    "fuels_label": "Kütuseliigid:"
+    "fuels_label": "Kütuseliigid:",
+    "no_price": "Hind puudub"
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -307,7 +310,8 @@ const STRINGS = {
     "loc_set": "📍 Location set · nearest first",
     "loc_denied": "📍 Location access denied – enable the permission",
     "loc_failed": "📍 Could not determine location",
-    "fuels_label": "Fuel types:"
+    "fuels_label": "Fuel types:",
+    "no_price": "Price not reported"
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -384,7 +388,8 @@ const STRINGS = {
     "loc_set": "📍 Місцезнаходження визначено · спочатку найближчі",
     "loc_denied": "📍 Доступ до місцезнаходження відхилено – увімкніть дозвіл",
     "loc_failed": "📍 Не вдалося визначити місцезнаходження",
-    "fuels_label": "Види палива:"
+    "fuels_label": "Види палива:",
+    "no_price": "Ціна не вказана"
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -461,7 +466,8 @@ const STRINGS = {
     "loc_set": "📍 Местоположение определено · сначала ближайшие",
     "loc_denied": "📍 Доступ к местоположению запрещён — включите разрешение",
     "loc_failed": "📍 Не удалось определить местоположение",
-    "fuels_label": "Виды топлива:"
+    "fuels_label": "Виды топлива:",
+    "no_price": "Цена не указана"
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -538,7 +544,8 @@ const STRINGS = {
     "loc_set": "📍 Lokalizacja ustalona · najpierw najbliższe",
     "loc_denied": "📍 Brak dostępu do lokalizacji – włącz uprawnienie",
     "loc_failed": "📍 Nie udało się ustalić lokalizacji",
-    "fuels_label": "Rodzaje paliwa:"
+    "fuels_label": "Rodzaje paliwa:",
+    "no_price": "Cena niepodana"
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -615,7 +622,8 @@ const STRINGS = {
     "loc_set": "📍 Standort ermittelt · nächste zuerst",
     "loc_denied": "📍 Standortzugriff verweigert – Berechtigung aktivieren",
     "loc_failed": "📍 Standort konnte nicht ermittelt werden",
-    "fuels_label": "Kraftstoffarten:"
+    "fuels_label": "Kraftstoffarten:",
+    "no_price": "Kein Preis angegeben"
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -692,7 +700,8 @@ const STRINGS = {
     "loc_set": "📍 Plats fastställd · närmast först",
     "loc_denied": "📍 Platsåtkomst nekad – aktivera behörigheten",
     "loc_failed": "📍 Kunde inte fastställa platsen",
-    "fuels_label": "Bränsletyper:"
+    "fuels_label": "Bränsletyper:",
+    "no_price": "Pris saknas"
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -769,7 +778,8 @@ const STRINGS = {
     "loc_set": "📍 Sijainti määritetty · lähimmät ensin",
     "loc_denied": "📍 Sijainnin käyttö estetty – salli oikeus",
     "loc_failed": "📍 Sijaintia ei voitu määrittää",
-    "fuels_label": "Polttoainetyypit:"
+    "fuels_label": "Polttoainetyypit:",
+    "no_price": "Hintaa ei ilmoitettu"
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -846,7 +856,8 @@ const STRINGS = {
     "loc_set": "📍 Posisjon funnet · nærmeste først",
     "loc_denied": "📍 Posisjonstilgang avvist – slå på tillatelsen",
     "loc_failed": "📍 Kunne ikke finne posisjonen",
-    "fuels_label": "Drivstofftyper:"
+    "fuels_label": "Drivstofftyper:",
+    "no_price": "Pris ikke oppgitt"
   }
 };
 let lang = (function () { try { return localStorage.getItem("kk_lang") || ""; } catch (e) { return ""; } })();

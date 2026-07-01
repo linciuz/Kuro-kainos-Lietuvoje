@@ -36,6 +36,9 @@ jobs:
       - name: Fetch latest prices
         run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
 
+      - name: Add full station list from LEA Power BI (price-less registry stations)
+        run: python scripts/fetch_lea_powerbi.py || echo "Power BI fetch failed (non-fatal)"
+
       - name: Geocode stations (cached; only new addresses hit Nominatim)
         run: python scripts/geocode.py
 
@@ -64,7 +67,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/discrepancies.json data/oil.json || true
+          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else

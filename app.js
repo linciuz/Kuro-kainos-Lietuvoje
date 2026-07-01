@@ -495,8 +495,11 @@ function fmtDist(km) {
 // not carry every fuel type.
 const FUEL_ICONS = [["petrol95", "⛽"], ["diesel", "🚛"], ["lpg", "🔥"]];
 function fuelChips(s) {
+    // A fuel is "available" if the station has a price for it OR (for price-less
+    // stations from the full registry) it's listed in s.fuels.
+    const has = k => s[k] != null || (s.fuels || []).includes(k);
     const chips = FUEL_ICONS.map(([k, ic]) =>
-        `<span class="fuel-chip ${s[k] != null ? "" : "off"}" title="${escAttr(t("fuel_" + k))}">${ic}</span>`).join("");
+        `<span class="fuel-chip ${has(k) ? "" : "off"}" title="${escAttr(t("fuel_" + k))}">${ic}</span>`).join("");
     return `<div class="fuel-chips"><span class="lbl">${t("fuels_label")}</span>${chips}</div>`;
 }
 
@@ -506,7 +509,9 @@ function getRows() {
     const muni = document.getElementById("muni-select").value;
     const q = (document.getElementById("search").value || "").toLowerCase().trim();
 
-    let rows = (DATA.stations || []).filter(s => s[fuelType] != null);
+    // Priced stations for this fuel + price-less registry stations that sell it.
+    let rows = (DATA.stations || []).filter(s =>
+        s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType)));
     if (muni) rows = rows.filter(s => (s.municipality || "") === muni);
     if (q) rows = rows.filter(s =>
         ((s.network || "") + " " + (s.address || "") + " " + (s.locality || "")).toLowerCase().includes(q));
@@ -519,7 +524,11 @@ function getRows() {
     if (sortDir === "dist" && userPos) {
         rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
     } else {
-        rows.sort((a, b) => sortDir === "asc" ? a[fuelType] - b[fuelType] : b[fuelType] - a[fuelType]);
+        rows.sort((a, b) => {
+            const ap = a[fuelType], bp = b[fuelType];   // price-less (null) sort to the bottom
+            if (ap == null || bp == null) return (ap == null) - (bp == null);
+            return sortDir === "asc" ? ap - bp : bp - ap;
+        });
     }
     return rows;
 }
@@ -600,11 +609,12 @@ function renderList() {
     const rows = getRows();
     if (rows.length === 0) { list.innerHTML = `<div class="msg">${t("no_filter")}</div>`; return; }
 
-    const best = Math.min(...rows.map(r => r[fuelType]));
+    const priced = rows.filter(r => r[fuelType] != null);
+    const best = priced.length ? Math.min(...priced.map(r => r[fuelType])) : null;
     list.innerHTML =
         `<div class="count-line">${t("showing_stations", { n: rows.length })}${userPos ? " · " + t("sorted_dist") : ""}</div>` +
         rows.map(s => {
-            const isBest = s[fuelType] === best;
+            const isBest = s[fuelType] != null && s[fuelType] === best;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
             const approxTag = s.approx ? ` <span class="approx-tag">${t("approx_warn")}</span>` : "";
@@ -619,7 +629,9 @@ function renderList() {
                 ${isBest ? `<div class="best-price-badge">${t("badge_cheapest")}</div>` : ''}${dist}
                 <div class="station-header">
                     <div class="station-name">${s.network || t("station_default")}</div>
-                    <div><span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span></div>
+                    <div>${s[fuelType] != null
+                        ? `<span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span>`
+                        : `<span class="no-price-badge">${t("no_price")}</span>`}</div>
                 </div>
                 <div class="station-address">${s.address || ""}${s.locality ? ", " + s.locality : ""}</div>
                 <div class="station-muni">📍 ${s.municipality || ""}${approxTag}</div>
@@ -669,25 +681,33 @@ function renderMap() {
     rows = rows.slice(0, MAX);
     if (rows.length === 0) return;
 
-    const prices = rows.map(r => r[fuelType]);
+    const prices = rows.map(r => r[fuelType]).filter(p => p != null);
     const lo = Math.min(...prices), hi = Math.max(...prices);
     const bounds = [];
 
     rows.forEach(s => {
         const p = s[fuelType];
-        let cls = "price-pin";
-        if (p <= lo + (hi - lo) * 0.25) cls += " cheap";
-        else if (p >= lo + (hi - lo) * 0.75) cls += " dear";
+        let cls = "price-pin", label;
+        if (p == null) {                       // price-less registry station
+            cls += " noprice"; label = "?";
+        } else {
+            if (p <= lo + (hi - lo) * 0.25) cls += " cheap";
+            else if (p >= lo + (hi - lo) * 0.75) cls += " dear";
+            label = `€${p.toFixed(2)}`;
+        }
         if (s.approx) cls += " approx";
         const icon = L.divIcon({
-            className: "", html: `<div class="${cls}">€${p.toFixed(2)}</div>`,
+            className: "", html: `<div class="${cls}">${label}</div>`,
             iconSize: null, iconAnchor: [22, 12]
         });
         const dist = (userPos && s._dist != null) ? `<br>📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}` : "";
         const approxNote = s.approx ? `<br><span style="color:#b3792f">⚠️ ${t("approx_warn")}</span>` : "";
+        const priceLine = p != null
+            ? `<div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>`
+            : `<div class="no-price-badge">${t("no_price")}</div>`;
         const popup = `<div class="popup-name">${s.network || t("station_default")}</div>
             <div>${s.address || ""}</div>
-            <div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>${dist}${approxNote}
+            ${priceLine}${dist}${approxNote}
             ${fuelChips(s)}
             <div class="popup-nav">${navButtons(s)}</div>`;
         L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { minWidth: 220 }).addTo(markersLayer);
