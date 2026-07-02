@@ -11,3 +11,9 @@ Thumbs.db
 
 # Local dev tooling (preview server config)
 .claude/
+
+# Capacitor native shells + build (generated locally, not committed)
+node_modules/
+www/
+android/
+ios/

@@ -68,7 +68,14 @@ const STRINGS = {
     "national_title": "Šalies kainos (oficialios)",
     "banner_change_all": "⚠️ Kai kurių degalinių kainos galėjo pasikeisti nuo 10:00 valandos oficialaus kainų pranešimo.",
     "el_market": "Elektros rinkos kaina",
-    "radius_label": "Atstumas:"
+    "radius_label": "Atstumas:",
+    "support": "Paremk",
+    "favourites": "Mėgstami",
+    "no_favourites": "Kol kas nėra mėgstamų — palieskite ☆ kortelėje",
+    "alert_title": "Kaina krito!",
+    "alert_body": "{fuel} atpigo iki €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Signalai įjungti — pranešime, kai jūsų rajone kainos kris",
+    "trend_label": "Vidutinės kainos tendencija"
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -137,7 +144,14 @@ const STRINGS = {
     "national_title": "Valsts cenas (oficiālas)",
     "banner_change_all": "⚠️ Dažu degvielas uzpildes staciju cenas, iespējams, mainījušās kopš oficiālā plkst. 10:00 cenu paziņojuma.",
     "el_market": "Elektrības tirgus cena",
-    "radius_label": "Attālums:"
+    "radius_label": "Attālums:",
+    "support": "Atbalstīt",
+    "favourites": "Iecienītie",
+    "no_favourites": "Pagaidām nav iecienīto — pieskarieties ☆",
+    "alert_title": "Cena kritusies!",
+    "alert_body": "{fuel} nokrita līdz €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Brīdinājumi ieslēgti",
+    "trend_label": "Vidējās cenas tendence"
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -206,7 +220,14 @@ const STRINGS = {
     "national_title": "Riigi hinnad (ametlikud)",
     "banner_change_all": "⚠️ Mõne tankla hinnad võisid pärast ametlikku kella 10:00 hinnateadet muutuda.",
     "el_market": "Elektri turuhind",
-    "radius_label": "Kaugus:"
+    "radius_label": "Kaugus:",
+    "support": "Toeta",
+    "favourites": "Lemmikud",
+    "no_favourites": "Lemmikuid veel pole — puuduta ☆",
+    "alert_title": "Hind langes!",
+    "alert_body": "{fuel} langes hinnani €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Teavitused sees",
+    "trend_label": "Keskmise hinna trend"
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -275,7 +296,14 @@ const STRINGS = {
     "national_title": "National prices (official)",
     "banner_change_all": "⚠️ Some stations' prices may have changed since the official 10:00 price announcement.",
     "el_market": "Electricity market price",
-    "radius_label": "Distance:"
+    "radius_label": "Distance:",
+    "support": "Support",
+    "favourites": "Favourites",
+    "no_favourites": "No favourites yet — tap ☆ on a card",
+    "alert_title": "Price drop!",
+    "alert_body": "{fuel} dropped to €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Alerts on — we'll notify you when prices drop in your area",
+    "trend_label": "Average price trend"
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -344,7 +372,14 @@ const STRINGS = {
     "national_title": "Ціни по країні (офіційні)",
     "banner_change_all": "⚠️ Ціни деяких заправок могли змінитися після офіційного оголошення цін о 10:00.",
     "el_market": "Ринкова ціна електроенергії",
-    "radius_label": "Відстань:"
+    "radius_label": "Відстань:",
+    "support": "Підтримати",
+    "favourites": "Обране",
+    "no_favourites": "Поки що немає обраного — торкніться ☆",
+    "alert_title": "Ціна впала!",
+    "alert_body": "{fuel} подешевшав до €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Сповіщення увімкнено",
+    "trend_label": "Тенденція середньої ціни"
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -413,7 +448,14 @@ const STRINGS = {
     "national_title": "Цены по стране (официальные)",
     "banner_change_all": "⚠️ Цены некоторых заправок могли измениться после официального объявления цен в 10:00.",
     "el_market": "Рыночная цена электроэнергии",
-    "radius_label": "Расстояние:"
+    "radius_label": "Расстояние:",
+    "support": "Поддержать",
+    "favourites": "Избранное",
+    "no_favourites": "Пока нет избранного — нажмите ☆",
+    "alert_title": "Цена упала!",
+    "alert_body": "{fuel} подешевел до €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Оповещения включены",
+    "trend_label": "Динамика средней цены"
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -482,7 +524,14 @@ const STRINGS = {
     "national_title": "Ceny krajowe (oficjalne)",
     "banner_change_all": "⚠️ Ceny niektórych stacji mogły się zmienić od oficjalnego ogłoszenia cen o 10:00.",
     "el_market": "Rynkowa cena energii",
-    "radius_label": "Odległość:"
+    "radius_label": "Odległość:",
+    "support": "Wesprzyj",
+    "favourites": "Ulubione",
+    "no_favourites": "Brak ulubionych — dotknij ☆",
+    "alert_title": "Cena spadła!",
+    "alert_body": "{fuel} staniał do €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Alerty włączone",
+    "trend_label": "Trend średniej ceny"
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -551,7 +600,14 @@ const STRINGS = {
     "national_title": "Landesweite Preise (offiziell)",
     "banner_change_all": "⚠️ Die Preise einiger Tankstellen könnten sich seit der offiziellen Preisbekanntgabe um 10:00 geändert haben.",
     "el_market": "Strommarktpreis",
-    "radius_label": "Entfernung:"
+    "radius_label": "Entfernung:",
+    "support": "Unterstützen",
+    "favourites": "Favoriten",
+    "no_favourites": "Noch keine Favoriten — tippe auf ☆",
+    "alert_title": "Preis gefallen!",
+    "alert_body": "{fuel} auf €{price}/L gefallen ({area})",
+    "alerts_on_msg": "🔔 Benachrichtigungen an",
+    "trend_label": "Durchschnittspreis-Trend"
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -620,7 +676,14 @@ const STRINGS = {
     "national_title": "Rikspriser (officiella)",
     "banner_change_all": "⚠️ Priserna på vissa stationer kan ha ändrats sedan det officiella prismeddelandet kl. 10:00.",
     "el_market": "Elmarknadspris",
-    "radius_label": "Avstånd:"
+    "radius_label": "Avstånd:",
+    "support": "Stöd",
+    "favourites": "Favoriter",
+    "no_favourites": "Inga favoriter än — tryck på ☆",
+    "alert_title": "Priset sjönk!",
+    "alert_body": "{fuel} sjönk till €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Aviseringar på",
+    "trend_label": "Snittpristrend"
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -689,7 +752,14 @@ const STRINGS = {
     "national_title": "Maan hinnat (viralliset)",
     "banner_change_all": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen.",
     "el_market": "Sähkön markkinahinta",
-    "radius_label": "Etäisyys:"
+    "radius_label": "Etäisyys:",
+    "support": "Tue",
+    "favourites": "Suosikit",
+    "no_favourites": "Ei suosikkeja — napauta ☆",
+    "alert_title": "Hinta laski!",
+    "alert_body": "{fuel} laski hintaan €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Ilmoitukset päällä",
+    "trend_label": "Keskihinnan trendi"
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -758,7 +828,14 @@ const STRINGS = {
     "national_title": "Landspriser (offisielle)",
     "banner_change_all": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00.",
     "el_market": "Strømmarkedspris",
-    "radius_label": "Avstand:"
+    "radius_label": "Avstand:",
+    "support": "Støtt",
+    "favourites": "Favoritter",
+    "no_favourites": "Ingen favoritter — trykk ☆",
+    "alert_title": "Prisen falt!",
+    "alert_body": "{fuel} falt til €{price}/L ({area})",
+    "alerts_on_msg": "🔔 Varsler på",
+    "trend_label": "Snittpristrend"
   }
 };
 let lang = (function () { try { return localStorage.getItem("kk_lang") || ""; } catch (e) { return ""; } })();

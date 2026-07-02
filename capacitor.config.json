@@ -1,0 +1,12 @@
+{
+  "appId": "lt.kurokainos.app",
+  "appName": "Kuro Kainos",
+  "webDir": "www",
+  "server": {
+    "url": "https://linciuz.github.io/Kuro-kainos-Lietuvoje/",
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "PushNotifications": { "presentationOptions": ["badge", "sound", "alert"] }
+  }
+}

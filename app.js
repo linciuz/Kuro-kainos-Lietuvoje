@@ -10,6 +10,18 @@
 const REPORT_API = "";
 const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
+// --- engagement / monetization features (ALL enabled for testing; later split
+//     into free vs "Kuro Pro"). Set DONATE_URL to your Ko-fi/BuyMeACoffee/PayPal.
+const DONATE_URL = "https://ko-fi.com/kurokainos";
+
+function lsGet(k, def) { try { const v = localStorage.getItem(k); return v == null ? def : JSON.parse(v); } catch (e) { return def; } }
+function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+let FAVS = lsGet("kk_favs", []);                 // starred station/charger keys
+let showFavsOnly = false;                        // favourites-only filter
+let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {} });   // price-drop push alerts
+let HISTORY = null;                              // daily national price-summary snapshots
+
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
@@ -64,6 +76,8 @@ function setLang(code) {
     const sel = document.getElementById("muni-select");
     const keep = sel ? sel.value : "";
     buildLangSwitcher();
+    buildActionBar();
+    updateFeatureButtons();
     applyStaticI18n();
     initMunicipalities();
     if (sel && keep && [...sel.options].some(o => o.value === keep)) sel.value = keep;
@@ -117,6 +131,7 @@ async function load() {
     await loadElectricity();
     await loadEv();
     await loadEvStatus();
+    await loadHistory();
     // Preserve the chosen municipality across a foreground refetch (initMunicipalities
     // rebuilds the <select> and would otherwise reset it to "All municipalities").
     const _muniSel = document.getElementById("muni-select");
@@ -126,12 +141,17 @@ async function load() {
     buildLangSwitcher();
     applyStaticI18n();
     updateChrome();
+    buildActionBar();
     render();
+    updateFeatureButtons();
+    checkPriceAlerts();     // notify if the cheapest in the user's area dropped since last visit
     // Delegate report-button clicks (station keys can contain quotes/pipes).
     const list = document.getElementById("stations-list");
     if (list && !list._reportBound) {
         list._reportBound = true;
         list.addEventListener("click", (e) => {
+            const fb = e.target.closest(".fav-btn");
+            if (fb) { toggleFav(fb.dataset.key); return; }
             const b = e.target.closest(".report-btn");
             if (b) reportPrice(b.dataset.key, fuelType);
         });
@@ -140,6 +160,90 @@ async function load() {
 
 function stationKey(s) {
     return `${s.network || ""}|${s.address || ""}|${s.municipality || ""}`;
+}
+
+// --- favourites (starred stations & chargers, kept in localStorage) ----------
+function chargerKey(c) { return "ev:" + (c.ocpi_id || `${c.operator}|${c.lat}|${c.lon}`); }
+function favKey(x) { return fuelType === "ev" ? chargerKey(x) : "st:" + stationKey(x); }
+function isFav(key) { return FAVS.includes(key); }
+function toggleFav(key) {
+    const i = FAVS.indexOf(key);
+    if (i >= 0) FAVS.splice(i, 1); else FAVS.push(key);
+    lsSet("kk_favs", FAVS);
+    render();
+    updateFeatureButtons();
+}
+function toggleFavsOnly() { showFavsOnly = !showFavsOnly; updateFeatureButtons(); render(); scrollListTop(); }
+
+// --- price-drop alerts (local: fire when the app is opened / refetched) ------
+async function toggleAlerts() {
+    if (!ALERTS.enabled) {
+        if ("Notification" in window && Notification.permission !== "granted") {
+            if (await Notification.requestPermission() !== "granted") return;
+        }
+        ALERTS.enabled = true;
+        ALERTS.seen = currentCheapest();      // baseline: only alert on FUTURE drops
+        alert(t("alerts_on_msg"));
+    } else {
+        ALERTS.enabled = false;
+    }
+    lsSet("kk_alerts", ALERTS);
+    updateFeatureButtons();
+}
+function currentCheapest() {
+    const muni = (document.getElementById("muni-select") || {}).value || "";
+    const out = {};
+    for (const f of ["petrol95", "diesel", "lpg"]) {
+        const p = (DATA.stations || []).filter(s => s[f] != null && (!muni || s.municipality === muni)).map(s => s[f]);
+        if (p.length) out[f] = Math.min(...p);
+    }
+    return out;
+}
+function checkPriceAlerts() {
+    if (!ALERTS.enabled || !("Notification" in window) || Notification.permission !== "granted") return;
+    const now = currentCheapest();
+    const area = (document.getElementById("muni-select") || {}).value || "Lietuva";
+    for (const f of ["petrol95", "diesel", "lpg"]) {
+        if (now[f] != null && ALERTS.seen[f] != null && now[f] < ALERTS.seen[f] - 0.0005) {
+            try { new Notification(t("alert_title"), { body: t("alert_body", { fuel: t("fuel_" + f), price: now[f].toFixed(3), area }), icon: "icon-192.png" }); } catch (e) {}
+        }
+    }
+    ALERTS.seen = now;
+    lsSet("kk_alerts", ALERTS);
+}
+
+function openDonate() { window.open(DONATE_URL, "_blank", "noopener"); }
+
+function updateFeatureButtons() {
+    const fb = document.getElementById("fav-toggle");
+    if (fb) fb.classList.toggle("on", showFavsOnly);
+    const ab = document.getElementById("alert-toggle");
+    if (ab) ab.classList.toggle("on", ALERTS.enabled);
+}
+
+function buildActionBar() {
+    const box = document.getElementById("action-bar");
+    if (!box) return;
+    box.innerHTML =
+        `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" title="${esc(t("favourites"))}">★</button>
+         <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alert_title"))}">🔔</button>
+         <button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`;
+}
+
+async function loadHistory() {
+    try {
+        const res = await fetch("data/price_history.json", { cache: "no-store" });
+        HISTORY = res.ok ? await res.json() : null;
+    } catch (e) { HISTORY = null; }
+}
+
+// Tiny inline sparkline for the price-history trend.
+function sparkline(vals, color) {
+    vals = (vals || []).filter(v => v != null);
+    if (vals.length < 2) return "";
+    const w = 60, h = 16, lo = Math.min(...vals), hi = Math.max(...vals), span = hi - lo || 1;
+    const pts = vals.map((v, i) => `${((i / (vals.length - 1)) * w).toFixed(1)},${(h - ((v - lo) / span) * h).toFixed(1)}`).join(" ");
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="vertical-align:middle"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
 }
 
 // Escape data-derived text before it goes into innerHTML / Leaflet popups —
@@ -238,6 +342,7 @@ function getChargers() {
     let rows = (EV.chargers || []).filter(c => c.lat != null && c.lon != null);
     if (muni) rows = rows.filter(c => c._muni === muni);
     if (q) rows = rows.filter(c => ((c.operator || "") + " " + (c.name || "")).toLowerCase().includes(q));
+    if (showFavsOnly) rows = rows.filter(c => isFav(favKey(c)));
     if (userPos) rows.forEach(c => c._dist = haversine(userPos.lat, userPos.lon, c.lat, c.lon));
     if (userPos && radiusKm) rows = rows.filter(c => c._dist != null && c._dist <= radiusKm);
     // Honour the cheapest/expensive/nearest buttons. Chargers without a €/kWh
@@ -284,7 +389,7 @@ function renderSummaryEv() {
 function renderListEv() {
     const list = document.getElementById("stations-list");
     const rows = getChargers();
-    if (!rows.length) { list.innerHTML = `<div class="msg">${t("nothing_found")}</div>`; return; }
+    if (!rows.length) { list.innerHTML = `<div class="msg">${showFavsOnly ? t("no_favourites") : t("nothing_found")}</div>`; return; }
     const LIST_MAX = 600;                       // keep the DOM snappy on phones
     const filtered = rows.length, totalCh = (EV.chargers || []).length;
     const shown = rows.slice(0, LIST_MAX);
@@ -296,6 +401,7 @@ function renderListEv() {
             const badge = evStatusBadge(c);
             const addr = c.address ? esc(`${c.address}${c.city ? ", " + c.city : ""}`) : "";
             return `<div class="station-card">
+                <button class="fav-btn" data-key="${esc(favKey(c))}">${isFav(favKey(c)) ? "★" : "☆"}</button>
                 ${dist}${badge}
                 <div class="station-header">
                     <div class="station-name">⚡ ${esc(c.operator || c.name || t("ev_charger"))}</div>
@@ -574,6 +680,7 @@ function getRows() {
     if (muni) rows = rows.filter(s => (s.municipality || "") === muni);
     if (q) rows = rows.filter(s =>
         ((s.network || "") + " " + (s.address || "") + " " + (s.locality || "")).toLowerCase().includes(q));
+    if (showFavsOnly) rows = rows.filter(s => isFav(favKey(s)));
 
     if (userPos) rows.forEach(s => {
         s._dist = (s.lat != null && s.lon != null)
@@ -643,12 +750,20 @@ function renderSummary() {
             .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
         if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: ORLEN_WS.stated_date || "" })} ${parts.join(" · ")}</div>`;
     }
+    // Price-history trend (grows as the daily pipeline accumulates snapshots).
+    let trendLine = "";
+    const H = (HISTORY && HISTORY.history) || [];
+    if (H.length >= 2) {
+        const win = H.slice(-14);
+        const sp = f => sparkline(win.map(h => h[f] && h[f].avg), "#007AFF");
+        trendLine = `<div class="wholesale-ref">${t("trend_label")}: ⛽ ${sp("petrol95")} 🚛 ${sp("diesel")} 🔥 ${sp("lpg")}</div>`;
+    }
     box.innerHTML = `
         <div class="summary-title">${t("national_title")}</div>
         <table class="nat-table">
             <thead><tr><th></th><th>${t("stat_cheapest")}</th><th>${t("stat_avg")}</th><th>${t("stat_dearest")}</th></tr></thead>
             <tbody>${rows}</tbody>
-        </table>${wsLine}`;
+        </table>${wsLine}${trendLine}`;
 }
 
 function navButtons(s) {
@@ -674,7 +789,7 @@ function renderList() {
         return;
     }
     const rows = getRows();
-    if (rows.length === 0) { list.innerHTML = `<div class="msg">${t("no_filter")}</div>`; return; }
+    if (rows.length === 0) { list.innerHTML = `<div class="msg">${showFavsOnly ? t("no_favourites") : t("no_filter")}</div>`; return; }
 
     const priced = rows.filter(r => r[fuelType] != null);
     const best = priced.length ? Math.min(...priced.map(r => r[fuelType])) : null;
@@ -696,6 +811,7 @@ function renderList() {
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
             return `
             <div class="station-card">
+                <button class="fav-btn" data-key="${esc(favKey(s))}">${isFav(favKey(s)) ? "★" : "☆"}</button>
                 ${isBest ? `<div class="best-price-badge">${t("badge_cheapest")}</div>` : ''}${dist}
                 <div class="station-header">
                     <div class="station-name">${esc(s.network || t("station_default"))}</div>

@@ -37,6 +37,8 @@ jobs:
       # keep the last stations.json and still refresh the other sources below.
       - name: Fetch LEA prices
         run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
+      - name: Snapshot daily national price for the history trend
+        run: python scripts/append_history.py || echo "history snapshot failed (non-fatal)"
       - name: Re-add full station list (price-less registry stations, from committed cache)
         run: python scripts/fetch_lea_powerbi.py --merge-only || echo "merge failed (non-fatal)"
       - name: Geocode new stations (cached)
@@ -58,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json data/electricity.json || true
+          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else
