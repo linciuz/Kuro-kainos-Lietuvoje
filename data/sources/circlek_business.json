@@ -1,0 +1,18 @@
+{
+  "source": "Circle K (verslo fiksuota kaina)",
+  "source_url": "https://www.circlek.lt/verslui/degalai/fiksuota-kaina",
+  "scope": "business_fixed_incl_vat",
+  "unit": "EUR/L su PVM",
+  "fetched": "2026-07-02",
+  "stated_date": "02.07",
+  "prices": {
+    "diesel": 1.809,
+    "petrol95": 1.719,
+    "lpg": 0.809,
+    "adblue": 0.809,
+    "diesel_plus": 1.898,
+    "petrol95_plus": 1.808,
+    "petrol98": 1.818,
+    "xtl": 2.108
+  }
+}

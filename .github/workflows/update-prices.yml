@@ -56,6 +56,8 @@ jobs:
         run: python scripts/merge_chain_coords.py || echo "merge failed (non-fatal)"
       - name: Circle K live prices
         run: python scripts/fetch_circlek.py || echo "Circle K failed (non-fatal)"
+      - name: Circle K business fixed price (today-stamped reference)
+        run: python scripts/fetch_circlek_business.py || echo "Circle K business failed (non-fatal)"
       - name: Orlen wholesale reference
         run: python scripts/fetch_orlen_wholesale.py || echo "Orlen failed (non-fatal)"
       - name: Compare sources vs LEA -> discrepancies
@@ -69,7 +71,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json || true
+          git add data/stations.json data/geocode_cache.json data/sources/circlek.json data/sources/circlek_business.json data/sources/orlen_wholesale.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else

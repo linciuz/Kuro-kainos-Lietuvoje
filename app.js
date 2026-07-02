@@ -26,6 +26,7 @@ let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
+let CK_BIZ = null;                             // Circle K business fixed price (today-stamped, incl. VAT)
 let OIL = null;                                // Brent crude weekly trend
 let ELEC = null;                               // LT day-ahead electricity market price
 let EV = { chargers: [] };                     // EV charging stations (OCPI + OSM)
@@ -127,6 +128,7 @@ async function load() {
     await loadDiscrepancies();
     await loadReports();
     await loadOrlenWholesale();
+    await loadCircleKBusiness();
     await loadOil();
     await loadElectricity();
     await loadEv();
@@ -267,6 +269,13 @@ async function loadOrlenWholesale() {
         const res = await fetch("data/sources/orlen_wholesale.json", { cache: "no-store" });
         ORLEN_WS = res.ok ? await res.json() : null;
     } catch (e) { ORLEN_WS = null; }
+}
+
+async function loadCircleKBusiness() {
+    try {
+        const res = await fetch("data/sources/circlek_business.json", { cache: "no-store" });
+        CK_BIZ = res.ok ? await res.json() : null;
+    } catch (e) { CK_BIZ = null; }
 }
 
 async function loadOil() {
@@ -750,6 +759,16 @@ function renderSummary() {
             .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
         if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: ORLEN_WS.stated_date || "" })} ${parts.join(" · ")}</div>`;
     }
+    // Circle K business fixed price (VAT-incl) — the one genuine SAME-DAY (today)
+    // reference, shown right below Orlen. Order: 95, diesel, LPG, 98, AdBlue.
+    let ckbLine = "";
+    if (CK_BIZ && CK_BIZ.prices) {
+        const CKB_LABELS = { petrol95: t("fuel_petrol95"), diesel: t("fuel_diesel"), lpg: t("ws_lpg"), petrol98: t("fuel_98"), adblue: t("fuel_adblue") };
+        const parts = ["petrol95", "diesel", "lpg", "petrol98", "adblue"]
+            .filter(k => CK_BIZ.prices[k] != null)
+            .map(k => `${CKB_LABELS[k]} <b>€${CK_BIZ.prices[k].toFixed(3)}</b>`);
+        if (parts.length) ckbLine = `<div class="wholesale-ref">${t("ws_circlek_biz", { date: CK_BIZ.stated_date || "" })} ${parts.join(" · ")}</div>`;
+    }
     // Price-history trend (grows as the daily pipeline accumulates snapshots).
     let trendLine = "";
     const H = (HISTORY && HISTORY.history) || [];
@@ -763,7 +782,7 @@ function renderSummary() {
         <table class="nat-table">
             <thead><tr><th></th><th>${t("stat_cheapest")}</th><th>${t("stat_avg")}</th><th>${t("stat_dearest")}</th></tr></thead>
             <tbody>${rows}</tbody>
-        </table>${wsLine}${trendLine}`;
+        </table>${wsLine}${ckbLine}${trendLine}`;
 }
 
 function navButtons(s) {

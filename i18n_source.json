@@ -337,6 +337,45 @@
     "no": "🏭 Orlen engrospris ({date}):",
     "pl": "🏭 Cena hurtowa Orlen ({date}):"
   },
+  "fuel_98": {
+    "lt": "Benzinas 98",
+    "en": "Petrol 98",
+    "lv": "Benzīns 98",
+    "et": "Bensiin 98",
+    "uk": "Бензин 98",
+    "ru": "Бензин 98",
+    "de": "Benzin 98",
+    "sv": "Bensin 98",
+    "fi": "Bensiini 98",
+    "no": "Bensin 98",
+    "pl": "Benzyna 98"
+  },
+  "fuel_adblue": {
+    "lt": "AdBlue",
+    "en": "AdBlue",
+    "lv": "AdBlue",
+    "et": "AdBlue",
+    "uk": "AdBlue",
+    "ru": "AdBlue",
+    "de": "AdBlue",
+    "sv": "AdBlue",
+    "fi": "AdBlue",
+    "no": "AdBlue",
+    "pl": "AdBlue"
+  },
+  "ws_circlek_biz": {
+    "lt": "⛽ Circle K verslo kaina (su PVM, {date}):",
+    "en": "⛽ Circle K business price (incl. VAT, {date}):",
+    "lv": "⛽ Circle K biznesa cena (ar PVN, {date}):",
+    "et": "⛽ Circle K ärihind (koos KM, {date}):",
+    "uk": "⛽ Бізнес-ціна Circle K (з ПДВ, {date}):",
+    "ru": "⛽ Бизнес-цена Circle K (с НДС, {date}):",
+    "de": "⛽ Circle K Geschäftspreis (inkl. MwSt., {date}):",
+    "sv": "⛽ Circle K företagspris (inkl. moms, {date}):",
+    "fi": "⛽ Circle K yrityshinta (sis. ALV, {date}):",
+    "no": "⛽ Circle K bedriftspris (inkl. mva., {date}):",
+    "pl": "⛽ Circle K cena biznesowa (z VAT, {date}):"
+  },
   "ws_agri": {
     "lt": "Agro dyzelinas",
     "en": "Agro Diesel",
