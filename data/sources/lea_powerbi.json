@@ -1,5 +1,5 @@
 {
-  "count": 843,
+  "count": 844,
   "stations": [
     {
       "company": "AB Orlen Baltics Retail",
@@ -5550,6 +5550,14 @@
       "company": "UAB Osijos dujos",
       "municipality": "Marijampolės sav.",
       "address": "Gėlių g. 25, Marijampolė",
+      "fuels": [
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Osijos dujos",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Gėlių g. 25,",
       "fuels": [
         "lpg"
       ]
