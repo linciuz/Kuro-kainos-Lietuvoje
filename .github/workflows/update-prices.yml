@@ -10,6 +10,14 @@ name: Update prices (frequent)
 # both seasons. LEA publishes on working days, so Mon-Fri.
 on:
   schedule:
+    # LEA publishes its once-a-day file at ~10:00 Lithuania. Poll DENSELY across
+    # that window so new prices (and Orlen's wholesale point, published ~1
+    # business day in arrears) reach users within ~10 min of going live:
+    #   */10 6-8 UTC = 09:00-11:59 (summer, UTC+3) / 08:00-10:59 (winter, UTC+2)
+    #   -> covers 10:00 local in BOTH seasons at 10-minute resolution.
+    - cron: "*/10 6-8 * * 1-5"  # every 10 min through the ~10:00 LT publish window
+    # Hourly safety net either side of that window (survives GitHub's flaky
+    # scheduler and catches any late LEA re-publish through the afternoon).
     - cron: "15 4-10 * * 1-5"   # hourly, ~07:15-13:15 Lithuania
     - cron: "15 14 * * 1-5"     # ~17:15 Lithuania (afternoon, ~every 5h)
     - cron: "15 19 * * 1-5"     # ~22:15 Lithuania
