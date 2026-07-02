@@ -10,16 +10,17 @@ name: Update prices (frequent)
 # both seasons. LEA publishes on working days, so Mon-Fri.
 on:
   schedule:
-    # LEA publishes its once-a-day file at ~10:00 Lithuania. Poll DENSELY across
-    # that window so new prices (and Orlen's wholesale point, published ~1
-    # business day in arrears) reach users within ~10 min of going live:
-    #   */10 6-8 UTC = 09:00-11:59 (summer, UTC+3) / 08:00-10:59 (winter, UTC+2)
-    #   -> covers 10:00 local in BOTH seasons at 10-minute resolution.
-    - cron: "*/10 6-8 * * 1-5"  # every 10 min through the ~10:00 LT publish window
-    # Hourly safety net either side of that window (survives GitHub's flaky
-    # scheduler and catches any late LEA re-publish through the afternoon).
-    - cron: "15 4-10 * * 1-5"   # hourly, ~07:15-13:15 Lithuania
-    - cron: "15 14 * * 1-5"     # ~17:15 Lithuania (afternoon, ~every 5h)
+    # Two morning updates land at DIFFERENT times, so poll the whole morning:
+    #  - ORLEN's wholesale point (yesterday's SETTLED price) posts EARLY, well
+    #    before 10:00 — no reason to wait for the LEA window to refresh it.
+    #  - LEA's retail file publishes ~10:00 Lithuania.
+    # Every 15 min catches Orlen's fresh point the moment it posts AND LEA within
+    # ~15 min, and survives GitHub's flaky scheduler (many redundant slots). A
+    # run where nothing changed just skips the commit, so extra slots are cheap.
+    #   */15 3-9 UTC = 06:00-12:59 (summer, UTC+3) / 05:00-11:59 (winter, UTC+2)
+    - cron: "*/15 3-9 * * 1-5"  # every 15 min across the whole LT morning
+    - cron: "15 11 * * 1-5"     # ~14:15 LT (early-afternoon catch-all)
+    - cron: "15 14 * * 1-5"     # ~17:15 Lithuania
     - cron: "15 19 * * 1-5"     # ~22:15 Lithuania
   workflow_dispatch: {}
 
