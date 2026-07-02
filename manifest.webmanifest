@@ -4,7 +4,7 @@
   "description": "Oficialios degalų kainos Lietuvos degalinėse: artimiausios prie jūsų, žemėlapis ir navigacija (LEA duomenys)",
   "start_url": "./",
   "scope": "./",
-  "display": "standalone",
+  "display": "browser",
   "orientation": "portrait",
   "lang": "lt",
   "background_color": "#667eea",
