@@ -1,9 +1,25 @@
 {
-  "generated": "2026-07-03T06:38:13Z",
-  "lea_date": "2026-07-02",
+  "generated": "2026-07-03T08:40:38Z",
+  "lea_date": "2026-07-03",
   "threshold": 0.015,
   "sources": [
     "Circle K"
   ],
-  "items": []
+  "items": [
+    {
+      "chain": "Circle K",
+      "networks": [
+        "UAB Circle K Lietuva"
+      ],
+      "fuel": "petrol95",
+      "lea_min": 1.619,
+      "live": 1.639,
+      "delta": 0.02,
+      "direction": "up",
+      "scope": "network_lowest",
+      "source": "Circle K",
+      "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
+      "stated_date": "Liepos 3"
+    }
+  ]
 }
