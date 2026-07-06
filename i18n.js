@@ -78,6 +78,8 @@ const STRINGS = {
     "alert_title": "Kaina krito!",
     "alert_body": "{fuel} atpigo iki €{price}/L ({area})",
     "alerts_on_msg": "🔔 Signalai įjungti — pranešime, kai jūsų rajone kainos kris",
+    "alerts_unsupported": "Šis įrenginys nepalaiko pranešimų.",
+    "alerts_denied": "Pranešimai išjungti. Įjunkite juos naršyklės nustatymuose.",
     "trend_label": "Vidutinės kainos tendencija"
   },
   "lv": {
@@ -157,6 +159,8 @@ const STRINGS = {
     "alert_title": "Cena kritusies!",
     "alert_body": "{fuel} nokrita līdz €{price}/L ({area})",
     "alerts_on_msg": "🔔 Brīdinājumi ieslēgti",
+    "alerts_unsupported": "Šī ierīce neatbalsta paziņojumus.",
+    "alerts_denied": "Paziņojumi ir bloķēti. Iespējojiet tos pārlūka iestatījumos.",
     "trend_label": "Vidējās cenas tendence"
   },
   "et": {
@@ -236,6 +240,8 @@ const STRINGS = {
     "alert_title": "Hind langes!",
     "alert_body": "{fuel} langes hinnani €{price}/L ({area})",
     "alerts_on_msg": "🔔 Teavitused sees",
+    "alerts_unsupported": "See seade ei toeta teavitusi.",
+    "alerts_denied": "Teavitused on blokeeritud. Luba need brauseri seadetes.",
     "trend_label": "Keskmise hinna trend"
   },
   "en": {
@@ -315,6 +321,8 @@ const STRINGS = {
     "alert_title": "Price drop!",
     "alert_body": "{fuel} dropped to €{price}/L ({area})",
     "alerts_on_msg": "🔔 Alerts on — we'll notify you when prices drop in your area",
+    "alerts_unsupported": "This device doesn't support notifications.",
+    "alerts_denied": "Notifications are blocked. Enable them in your browser settings.",
     "trend_label": "Average price trend"
   },
   "uk": {
@@ -394,6 +402,8 @@ const STRINGS = {
     "alert_title": "Ціна впала!",
     "alert_body": "{fuel} подешевшав до €{price}/L ({area})",
     "alerts_on_msg": "🔔 Сповіщення увімкнено",
+    "alerts_unsupported": "Цей пристрій не підтримує сповіщення.",
+    "alerts_denied": "Сповіщення заблоковано. Увімкніть їх у налаштуваннях браузера.",
     "trend_label": "Тенденція середньої ціни"
   },
   "ru": {
@@ -473,6 +483,8 @@ const STRINGS = {
     "alert_title": "Цена упала!",
     "alert_body": "{fuel} подешевел до €{price}/L ({area})",
     "alerts_on_msg": "🔔 Оповещения включены",
+    "alerts_unsupported": "Это устройство не поддерживает уведомления.",
+    "alerts_denied": "Уведомления заблокированы. Включите их в настройках браузера.",
     "trend_label": "Динамика средней цены"
   },
   "pl": {
@@ -552,6 +564,8 @@ const STRINGS = {
     "alert_title": "Cena spadła!",
     "alert_body": "{fuel} staniał do €{price}/L ({area})",
     "alerts_on_msg": "🔔 Alerty włączone",
+    "alerts_unsupported": "To urządzenie nie obsługuje powiadomień.",
+    "alerts_denied": "Powiadomienia są zablokowane. Włącz je w ustawieniach przeglądarki.",
     "trend_label": "Trend średniej ceny"
   },
   "de": {
@@ -631,6 +645,8 @@ const STRINGS = {
     "alert_title": "Preis gefallen!",
     "alert_body": "{fuel} auf €{price}/L gefallen ({area})",
     "alerts_on_msg": "🔔 Benachrichtigungen an",
+    "alerts_unsupported": "Dieses Gerät unterstützt keine Benachrichtigungen.",
+    "alerts_denied": "Benachrichtigungen sind blockiert. Aktivieren Sie sie in den Browsereinstellungen.",
     "trend_label": "Durchschnittspreis-Trend"
   },
   "sv": {
@@ -710,6 +726,8 @@ const STRINGS = {
     "alert_title": "Priset sjönk!",
     "alert_body": "{fuel} sjönk till €{price}/L ({area})",
     "alerts_on_msg": "🔔 Aviseringar på",
+    "alerts_unsupported": "Den här enheten stöder inte aviseringar.",
+    "alerts_denied": "Aviseringar är blockerade. Aktivera dem i webbläsarens inställningar.",
     "trend_label": "Snittpristrend"
   },
   "fi": {
@@ -789,6 +807,8 @@ const STRINGS = {
     "alert_title": "Hinta laski!",
     "alert_body": "{fuel} laski hintaan €{price}/L ({area})",
     "alerts_on_msg": "🔔 Ilmoitukset päällä",
+    "alerts_unsupported": "Tämä laite ei tue ilmoituksia.",
+    "alerts_denied": "Ilmoitukset on estetty. Ota ne käyttöön selaimen asetuksissa.",
     "trend_label": "Keskihinnan trendi"
   },
   "no": {
@@ -868,6 +888,8 @@ const STRINGS = {
     "alert_title": "Prisen falt!",
     "alert_body": "{fuel} falt til €{price}/L ({area})",
     "alerts_on_msg": "🔔 Varsler på",
+    "alerts_unsupported": "Denne enheten støtter ikke varsler.",
+    "alerts_denied": "Varsler er blokkert. Aktiver dem i nettleserinnstillingene.",
     "trend_label": "Snittpristrend"
   }
 };

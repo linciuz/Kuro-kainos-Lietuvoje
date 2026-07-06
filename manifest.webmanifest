@@ -1,14 +1,14 @@
 {
-  "name": "Kuro Kainos Lietuvoje",
-  "short_name": "Kuro Kainos",
+  "name": "Fuelis",
+  "short_name": "Fuelis",
   "description": "Oficialios degalų kainos Lietuvos degalinėse: artimiausios prie jūsų, žemėlapis ir navigacija (LEA duomenys)",
   "start_url": "./",
   "scope": "./",
   "display": "browser",
   "orientation": "portrait",
   "lang": "lt",
-  "background_color": "#667eea",
-  "theme_color": "#007AFF",
+  "background_color": "#1673E8",
+  "theme_color": "#0057D8",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },

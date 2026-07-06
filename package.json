@@ -1,7 +1,7 @@
 {
-  "name": "kuro-kainos",
+  "name": "fuelis",
   "version": "1.0.0",
-  "description": "Kuro Kainos Lietuvoje — native Android/iOS shell (Capacitor) around the PWA.",
+  "description": "Fuelis — native Android/iOS shell (Capacitor) around the PWA.",
   "private": true,
   "scripts": {
     "mkwww": "node -e \"const fs=require('fs');fs.mkdirSync('www',{recursive:true});for(const f of ['index.html','app.js','i18n.js','service-worker.js','manifest.webmanifest']){if(fs.existsSync(f))fs.copyFileSync(f,'www/'+f)};for(const f of fs.readdirSync('.')){if(/\\.(png|ico|svg)$/.test(f))fs.copyFileSync(f,'www/'+f)};fs.cpSync('data','www/data',{recursive:true});console.log('www/ built')\"",

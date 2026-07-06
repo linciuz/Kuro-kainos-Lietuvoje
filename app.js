@@ -1,4 +1,4 @@
-// Kuro Kainos Lietuvoje - official LEA prices + nearest-to-me + map with price POIs.
+// Fuelis - official LEA prices + nearest-to-me + map with price POIs.
 // Data shape (scripts/fetch_prices.py + scripts/geocode.py):
 // { updated, source, source_url, summary:{...}, stations:[{network,address,municipality,
 //   locality,petrol95,diesel,lpg, lat, lon, approx}] }
@@ -11,15 +11,15 @@ const REPORT_API = "";
 const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
 // --- engagement / monetization features (ALL enabled for testing; later split
-//     into free vs "Kuro Pro"). Set DONATE_URL to your Ko-fi/BuyMeACoffee/PayPal.
-const DONATE_URL = "https://ko-fi.com/kurokainos";
+//     into free vs "Fuelis Pro"). Set DONATE_URL to your Ko-fi/BuyMeACoffee/PayPal.
+const DONATE_URL = "https://ko-fi.com/fuelis";
 
 function lsGet(k, def) { try { const v = localStorage.getItem(k); return v == null ? def : JSON.parse(v); } catch (e) { return def; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
 let FAVS = lsGet("kk_favs", []);                 // starred station/charger keys
 let showFavsOnly = false;                        // favourites-only filter
-let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {} });   // price-drop push alerts
+let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {}, muni: "" });   // price-drop alerts (scope frozen at enable time)
 let HISTORY = null;                              // daily national price-summary snapshots
 
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
@@ -178,13 +178,30 @@ function toggleFav(key) {
 function toggleFavsOnly() { showFavsOnly = !showFavsOnly; updateFeatureButtons(); render(); scrollListTop(); }
 
 // --- price-drop alerts (local: fire when the app is opened / refetched) ------
+function currentMuni() { return (document.getElementById("muni-select") || {}).value || ""; }
+
+// Deliver a notification via the service worker — REQUIRED on Android Chrome and
+// in the Play/TWA WebView, where the page-context `new Notification()` throws
+// "Illegal constructor". Fall back to the constructor on desktop browsers.
+async function showNotification(title, opts) {
+    try {
+        if ("serviceWorker" in navigator) {
+            const reg = await navigator.serviceWorker.ready;
+            if (reg && reg.showNotification) { await reg.showNotification(title, opts); return true; }
+        }
+    } catch (e) {}
+    try { new Notification(title, opts); return true; } catch (e) {}
+    return false;
+}
+
 async function toggleAlerts() {
     if (!ALERTS.enabled) {
-        if ("Notification" in window && Notification.permission !== "granted") {
-            if (await Notification.requestPermission() !== "granted") return;
-        }
+        if (!("Notification" in window)) { alert(t("alerts_unsupported")); return; }
+        if (Notification.permission !== "granted"
+            && await Notification.requestPermission() !== "granted") { alert(t("alerts_denied")); return; }
         ALERTS.enabled = true;
-        ALERTS.seen = currentCheapest();      // baseline: only alert on FUTURE drops
+        ALERTS.muni = currentMuni();                 // freeze the scope so the baseline and every
+        ALERTS.seen = currentCheapest(ALERTS.muni);  // future check compare like-for-like
         alert(t("alerts_on_msg"));
     } else {
         ALERTS.enabled = false;
@@ -192,8 +209,9 @@ async function toggleAlerts() {
     lsSet("kk_alerts", ALERTS);
     updateFeatureButtons();
 }
-function currentCheapest() {
-    const muni = (document.getElementById("muni-select") || {}).value || "";
+
+function currentCheapest(muni) {
+    if (muni == null) muni = currentMuni();
     const out = {};
     for (const f of ["petrol95", "diesel", "lpg"]) {
         const p = (DATA.stations || []).filter(s => s[f] != null && (!muni || s.municipality === muni)).map(s => s[f]);
@@ -201,16 +219,22 @@ function currentCheapest() {
     }
     return out;
 }
-function checkPriceAlerts() {
+
+async function checkPriceAlerts() {
     if (!ALERTS.enabled || !("Notification" in window) || Notification.permission !== "granted") return;
-    const now = currentCheapest();
-    const area = (document.getElementById("muni-select") || {}).value || "Lietuva";
+    const scope = ALERTS.muni || "";                 // frozen scope — NOT the live municipality select
+    const now = currentCheapest(scope);
+    if (!Object.keys(now).length) return;            // failed/offline load left an empty dataset —
+                                                     // don't touch the baseline or we'd swallow real drops
+    const area = scope || "Lietuva";
+    const seen = ALERTS.seen || {};
     for (const f of ["petrol95", "diesel", "lpg"]) {
-        if (now[f] != null && ALERTS.seen[f] != null && now[f] < ALERTS.seen[f] - 0.0005) {
-            try { new Notification(t("alert_title"), { body: t("alert_body", { fuel: t("fuel_" + f), price: now[f].toFixed(3), area }), icon: "icon-192.png" }); } catch (e) {}
+        if (now[f] != null && seen[f] != null && now[f] < seen[f] - 0.0005) {
+            showNotification(t("alert_title"), { body: t("alert_body", { fuel: t("fuel_" + f), price: now[f].toFixed(3), area }), icon: "icon-192.png" });
         }
+        if (now[f] != null) seen[f] = now[f];        // raise/lower only fuels present in this load
     }
-    ALERTS.seen = now;
+    ALERTS.seen = seen;
     lsSet("kk_alerts", ALERTS);
 }
 

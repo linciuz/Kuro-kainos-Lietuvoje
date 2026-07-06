@@ -987,6 +987,32 @@
     "fi": "🔔 Ilmoitukset päällä",
     "no": "🔔 Varsler på"
   },
+  "alerts_unsupported": {
+    "lt": "Šis įrenginys nepalaiko pranešimų.",
+    "en": "This device doesn't support notifications.",
+    "lv": "Šī ierīce neatbalsta paziņojumus.",
+    "et": "See seade ei toeta teavitusi.",
+    "uk": "Цей пристрій не підтримує сповіщення.",
+    "ru": "Это устройство не поддерживает уведомления.",
+    "pl": "To urządzenie nie obsługuje powiadomień.",
+    "de": "Dieses Gerät unterstützt keine Benachrichtigungen.",
+    "sv": "Den här enheten stöder inte aviseringar.",
+    "fi": "Tämä laite ei tue ilmoituksia.",
+    "no": "Denne enheten støtter ikke varsler."
+  },
+  "alerts_denied": {
+    "lt": "Pranešimai išjungti. Įjunkite juos naršyklės nustatymuose.",
+    "en": "Notifications are blocked. Enable them in your browser settings.",
+    "lv": "Paziņojumi ir bloķēti. Iespējojiet tos pārlūka iestatījumos.",
+    "et": "Teavitused on blokeeritud. Luba need brauseri seadetes.",
+    "uk": "Сповіщення заблоковано. Увімкніть їх у налаштуваннях браузера.",
+    "ru": "Уведомления заблокированы. Включите их в настройках браузера.",
+    "pl": "Powiadomienia są zablokowane. Włącz je w ustawieniach przeglądarki.",
+    "de": "Benachrichtigungen sind blockiert. Aktivieren Sie sie in den Browsereinstellungen.",
+    "sv": "Aviseringar är blockerade. Aktivera dem i webbläsarens inställningar.",
+    "fi": "Ilmoitukset on estetty. Ota ne käyttöön selaimen asetuksissa.",
+    "no": "Varsler er blokkert. Aktiver dem i nettleserinnstillingene."
+  },
   "trend_label": {
     "lt": "Vidutinės kainos tendencija",
     "en": "Average price trend",
