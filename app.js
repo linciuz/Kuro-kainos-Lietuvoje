@@ -23,6 +23,40 @@ let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {}, muni: "" });   // pr
 let HISTORY = null;                              // daily national price-summary snapshots
 let FUELLOG = lsGet("kk_fuellog", []);           // [{date, litres, km, price}] fuel-log entries
 
+// --- Loyalty-card effective price (opt-in, default OFF) ----------------------
+// User-entered per-network discount in ¢/L, kept in kk_loyalty. Rendered ONLY as
+// a secondary "su kortele / with card" badge ALONGSIDE the official price — it
+// never replaces the official price and never feeds the national summary,
+// cheapest badge, or sort order (all of which stay on the official price).
+let LOYALTY = lsGet("kk_loyalty", { enabled: false, cents: {} });
+if (!LOYALTY || typeof LOYALTY !== "object") LOYALTY = { enabled: false, cents: {} };
+if (typeof LOYALTY.enabled !== "boolean") LOYALTY.enabled = false;
+if (!LOYALTY.cents || typeof LOYALTY.cents !== "object") LOYALTY.cents = {};
+
+// Major branded networks that run loyalty programs: brand label -> legal company
+// name exactly as it appears in stations.json (s.network).
+const LOYALTY_NETWORKS = [
+    ["Circle K", "UAB Circle K Lietuva"],
+    ["Viada", "UAB Viada LT"],
+    ["Neste", "UAB Neste Lietuva"],
+    ["Baltic Petroleum", "UAB Baltic Petroleum"],
+    ["Orlen", "AB Orlen Baltics Retail"],
+];
+
+// Discount in ¢/L configured for this station's network (>0), else 0 — also 0
+// whenever the whole feature is toggled off.
+function loyaltyCents(s) {
+    if (!LOYALTY.enabled || !s) return 0;
+    const c = LOYALTY.cents[s.network];
+    return (typeof c === "number" && isFinite(c) && c > 0) ? c : 0;
+}
+// Effective €/L after a ¢/L discount, clamped so it can never go negative.
+function loyaltyPrice(price, cents) { return Math.max(0, price - cents / 100); }
+// Format a ¢/L value compactly (integer when whole, one decimal otherwise).
+function loyaltyFmt(c) { return c % 1 ? c.toFixed(1) : String(c); }
+// Tidy a legal company name for display ("UAB Viada LT" -> "Viada LT").
+function loyaltyLabel(net) { return String(net || "").replace(/^(UAB|AB|VšĮ|VŠĮ|MB|IĮ|Iį)\s+/i, ""); }
+
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
@@ -313,6 +347,17 @@ function renderTools() {
       </section>
 
       <section class="tool-card">
+        <h3>💳 ${esc(t("loyalty_title"))}</h3>
+        <div class="tool-note">${esc(t("loyalty_note"))}</div>
+        <label class="loyalty-switch">
+          <input type="checkbox" id="loyalty-enabled" ${LOYALTY.enabled ? "checked" : ""} onchange="toggleLoyalty(this.checked)">
+          <span>${esc(t("loyalty_enable"))}</span>
+        </label>
+        <div class="loyalty-config${LOYALTY.enabled ? "" : " off"}">${loyaltyConfigHtml()}</div>
+        <div class="tool-note loyalty-disclaimer">${esc(t("loyalty_disclaimer"))}</div>
+      </section>
+
+      <section class="tool-card">
         <h3>${esc(t("log_title"))}</h3>
         <div class="log-add-row">
           <input id="lg-date" type="date" value="${todayISO()}">
@@ -324,6 +369,73 @@ function renderTools() {
         <div id="log-body" class="log-body"></div>
       </section>`;
     renderLog();
+}
+
+// Build the per-network discount rows: the 5 major branded networks are always
+// shown; any other network the user has already configured gets a row too; and
+// an "add another network" picker lists every remaining network in the data.
+function loyaltyConfigHtml() {
+    const majorLegals = new Set(LOYALTY_NETWORKS.map(m => m[1]));
+    const rows = LOYALTY_NETWORKS.map(([brand, legal]) => loyaltyRowHtml(brand, legal));
+    const extras = Object.keys(LOYALTY.cents).filter(n => !majorLegals.has(n))
+        .sort((a, b) => a.localeCompare(b, "lt"));
+    for (const legal of extras) rows.push(loyaltyRowHtml(loyaltyLabel(legal), legal));
+
+    const shown = new Set([...majorLegals, ...extras]);
+    const others = [...new Set((DATA.stations || []).map(s => s.network).filter(Boolean))]
+        .filter(n => !shown.has(n))
+        .sort((a, b) => a.localeCompare(b, "lt"));
+    const addSel = others.length
+        ? `<select class="loyalty-add" onchange="addLoyaltyNet(this.value); this.value='';">
+             <option value="">${esc(t("loyalty_add"))}</option>
+             ${others.map(n => `<option value="${escAttr(n)}">${esc(loyaltyLabel(n))}</option>`).join("")}
+           </select>`
+        : "";
+    return `<div class="loyalty-rows">${rows.join("")}</div>${addSel}`;
+}
+
+function loyaltyRowHtml(label, legal) {
+    const c = LOYALTY.cents[legal];
+    const val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
+    return `<div class="loyalty-row">
+        <span class="loyalty-net">${esc(label)}</span>
+        <input type="number" inputmode="decimal" step="0.1" min="0" max="50" placeholder="0"
+               value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
+               ${LOYALTY.enabled ? "" : "disabled"}>
+        <span class="loyalty-unit">¢/L</span>
+    </div>`;
+}
+
+function toggleLoyalty(on) {
+    LOYALTY.enabled = !!on;
+    lsSet("kk_loyalty", LOYALTY);
+    renderTools();   // enable/disable the ¢/L inputs
+    render();        // add/remove badges on the list & map
+}
+
+// Live-update as the user types a ¢/L value. A blank/0/invalid value removes the
+// discount (so no badge). render() refreshes the badges but never touches the
+// Tools modal DOM, so the input the user is typing in is preserved.
+function setLoyalty(input) {
+    const net = input.dataset.net;
+    if (!net) return;
+    const v = parseFloat(String(input.value || "").replace(",", "."));
+    if (isFinite(v) && v > 0) LOYALTY.cents[net] = Math.min(v, 50);
+    else delete LOYALTY.cents[net];
+    lsSet("kk_loyalty", LOYALTY);
+    render();
+}
+
+function addLoyaltyNet(net) {
+    if (!net || LOYALTY.cents[net] != null) return;
+    LOYALTY.cents[net] = 0;   // adds an (empty) row; 0 yields no badge until a value is typed
+    lsSet("kk_loyalty", LOYALTY);
+    renderTools();
+    try {
+        const sel = '.loyalty-row input[data-net="' + ((window.CSS && CSS.escape) ? CSS.escape(net) : net) + '"]';
+        const el = document.querySelector(sel);
+        if (el) el.focus();
+    } catch (e) {}
 }
 
 function calcConsumption() {
@@ -1024,6 +1136,10 @@ function renderList() {
             const rep = reportFor(s);
             const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3) })}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
+            const lc = s[fuelType] != null ? loyaltyCents(s) : 0;
+            const loyaltyLine = lc > 0
+                ? `<div class="loyalty-line" title="−${loyaltyFmt(lc)} ¢/L">💳 ${esc(t("loyalty_with_card"))} <span class="loyalty-price">€${loyaltyPrice(s[fuelType], lc).toFixed(3)}</span><span class="price-unit">/L</span></div>`
+                : "";
             return `
             <div class="station-card">
                 <button class="fav-btn" data-key="${esc(favKey(s))}">${isFav(favKey(s)) ? "★" : "☆"}</button>
@@ -1031,7 +1147,7 @@ function renderList() {
                 <div class="station-header">
                     <div class="station-name">${esc(s.network || t("station_default"))}</div>
                     <div>${s[fuelType] != null
-                        ? `<span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span>`
+                        ? `<span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span>${loyaltyLine}`
                         : `<span class="no-price-badge">${t("no_price")}</span>`}</div>
                 </div>
                 <div class="station-address">${esc(s.address || "")}${s.locality ? ", " + esc(s.locality) : ""}</div>
@@ -1106,9 +1222,13 @@ function renderMap() {
         const priceLine = p != null
             ? `<div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>`
             : `<div class="no-price-badge">${t("no_price")}</div>`;
+        const plc = p != null ? loyaltyCents(s) : 0;
+        const loyaltyPop = plc > 0
+            ? `<div class="popup-loyalty">💳 ${esc(t("loyalty_with_card"))}: €${loyaltyPrice(p, plc).toFixed(3)}/L</div>`
+            : "";
         const popup = `<div class="popup-name">${esc(s.network || t("station_default"))}</div>
             <div>${esc(s.address || "")}</div>
-            ${priceLine}${dist}${approxNote}
+            ${priceLine}${loyaltyPop}${dist}${approxNote}
             ${fuelChips(s)}
             <div class="popup-nav">${navButtons(s)}</div>`;
         L.marker([s.lat, s.lon], { icon }).bindPopup(popup, { minWidth: 220 }).addTo(markersLayer);

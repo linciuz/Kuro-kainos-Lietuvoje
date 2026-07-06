@@ -117,7 +117,13 @@ const STRINGS = {
     "tool_log_empty": "Žurnalas tuščias. Pridėkite pildymą arba įrašykite iš skaičiuoklės.",
     "tool_export": "Eksportuoti (CSV)",
     "tool_delete": "Ištrinti",
-    "trend_label": "Vidutinės kainos tendencija"
+    "trend_label": "Vidutinės kainos tendencija",
+    "loyalty_title": "Lojalumo kortelė",
+    "loyalty_note": "Įveskite nuolaidą (¢/L), kurią suteikia jūsų kortelė kiekviename tinkle. Rodoma tik kaip papildoma kaina šalia oficialios — jos nekeičia.",
+    "loyalty_enable": "Rodyti kainą su lojalumo kortele",
+    "loyalty_with_card": "su kortele",
+    "loyalty_add": "+ Pridėti kitą tinklą…",
+    "loyalty_disclaimer": "⚠️ Kainos su kortele yra apytikslės ir priklauso nuo kortelės sąlygų — oficiali kaina yra svarbiausia."
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -471,7 +477,13 @@ const STRINGS = {
     "tool_log_empty": "Log is empty. Add a fill-up or save one from the calculator.",
     "tool_export": "Export (CSV)",
     "tool_delete": "Delete",
-    "trend_label": "Average price trend"
+    "trend_label": "Average price trend",
+    "loyalty_title": "Loyalty card",
+    "loyalty_note": "Enter the discount (¢/L) your card gives at each network. Shown only as an extra price beside the official one — it never replaces it.",
+    "loyalty_enable": "Show price with loyalty card",
+    "loyalty_with_card": "with card",
+    "loyalty_add": "+ Add another network…",
+    "loyalty_disclaimer": "⚠️ Card prices are estimates and depend on your card's terms — the official price is authoritative."
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",

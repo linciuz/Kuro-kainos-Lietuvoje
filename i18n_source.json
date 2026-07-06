@@ -1506,5 +1506,29 @@
     "sv": "Snittpristrend",
     "fi": "Keskihinnan trendi",
     "no": "Snittpristrend"
+  },
+  "loyalty_title": {
+    "lt": "Lojalumo kortelė",
+    "en": "Loyalty card"
+  },
+  "loyalty_note": {
+    "lt": "Įveskite nuolaidą (¢/L), kurią suteikia jūsų kortelė kiekviename tinkle. Rodoma tik kaip papildoma kaina šalia oficialios — jos nekeičia.",
+    "en": "Enter the discount (¢/L) your card gives at each network. Shown only as an extra price beside the official one — it never replaces it."
+  },
+  "loyalty_enable": {
+    "lt": "Rodyti kainą su lojalumo kortele",
+    "en": "Show price with loyalty card"
+  },
+  "loyalty_with_card": {
+    "lt": "su kortele",
+    "en": "with card"
+  },
+  "loyalty_add": {
+    "lt": "+ Pridėti kitą tinklą…",
+    "en": "+ Add another network…"
+  },
+  "loyalty_disclaimer": {
+    "lt": "⚠️ Kainos su kortele yra apytikslės ir priklauso nuo kortelės sąlygų — oficiali kaina yra svarbiausia.",
+    "en": "⚠️ Card prices are estimates and depend on your card's terms — the official price is authoritative."
   }
 }
