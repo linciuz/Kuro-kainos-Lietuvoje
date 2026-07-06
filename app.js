@@ -21,6 +21,7 @@ let FAVS = lsGet("kk_favs", []);                 // starred station/charger keys
 let showFavsOnly = false;                        // favourites-only filter
 let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {}, muni: "" });   // price-drop alerts (scope frozen at enable time)
 let HISTORY = null;                              // daily national price-summary snapshots
+let FUELLOG = lsGet("kk_fuellog", []);           // [{date, litres, km, price}] fuel-log entries
 
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
 let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
@@ -253,7 +254,178 @@ function buildActionBar() {
     box.innerHTML =
         `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" title="${esc(t("favourites"))}">★</button>
          <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alert_title"))}">🔔</button>
+         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>
          <button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`;
+}
+
+// ---- Fuelis Tools: consumption calculator, "worth the detour?", fuel
+//      comparison, and a fill-up log — all client-side, saved in localStorage. --
+function toolNum(id) { const v = parseFloat((document.getElementById(id) || {}).value); return isFinite(v) ? v : null; }
+function toolFmt(n, d) { d = d == null ? 2 : d; return (n == null || !isFinite(n)) ? "–" : n.toLocaleString("lt-LT", { minimumFractionDigits: d, maximumFractionDigits: d }); }
+function todayISO() { return new Date().toISOString().slice(0, 10); }
+
+function openTools() {
+    renderTools();
+    const m = document.getElementById("tools-modal");
+    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); }
+}
+function closeTools() {
+    const m = document.getElementById("tools-modal");
+    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
+}
+
+function renderTools() {
+    const title = document.getElementById("tools-title");
+    if (title) title.textContent = "🧮 " + t("tools_title");
+    const body = document.getElementById("tools-body");
+    if (!body) return;
+    const p95 = currentCheapest("").petrol95, pdie = currentCheapest("").diesel;
+    const priceHint = (p95 || pdie || 1.7).toFixed(3);
+    body.innerHTML = `
+      <section class="tool-card">
+        <h3>${esc(t("cc_title"))}</h3>
+        <label>${esc(t("cc_litres"))}<input id="cc-litres" type="number" inputmode="decimal" step="0.01" min="0" placeholder="45"></label>
+        <label>${esc(t("cc_km"))}<input id="cc-km" type="number" inputmode="decimal" step="0.1" min="0" placeholder="600"></label>
+        <label>${esc(t("cc_price"))}<input id="cc-price" type="number" inputmode="decimal" step="0.001" min="0" placeholder="${priceHint}"></label>
+        <button type="button" class="tool-btn" onclick="calcConsumption()">${esc(t("tool_calc"))}</button>
+        <div id="cc-out" class="tool-out"></div>
+      </section>
+
+      <section class="tool-card">
+        <h3>${esc(t("wd_title"))}</h3>
+        <label>${esc(t("wd_cons"))}<input id="wd-cons" type="number" inputmode="decimal" step="0.1" min="0" placeholder="7.0"></label>
+        <label>${esc(t("wd_here"))}<input id="wd-here" type="number" inputmode="decimal" step="0.001" min="0" placeholder="${priceHint}"></label>
+        <label>${esc(t("wd_there"))}<input id="wd-there" type="number" inputmode="decimal" step="0.001" min="0"></label>
+        <label>${esc(t("wd_dist"))}<input id="wd-dist" type="number" inputmode="decimal" step="0.1" min="0" placeholder="5"></label>
+        <label>${esc(t("wd_litres"))}<input id="wd-litres" type="number" inputmode="decimal" step="0.1" min="0" placeholder="45"></label>
+        <button type="button" class="tool-btn" onclick="calcDetour()">${esc(t("tool_calc"))}</button>
+        <div id="wd-out" class="tool-out"></div>
+      </section>
+
+      <section class="tool-card">
+        <h3>${esc(t("cmp_title"))}</h3>
+        <div class="tool-note">${esc(t("cmp_note"))}</div>
+        <label>${esc(t("fuel_petrol95"))} (L/100&nbsp;km)<input id="cmp-petrol95" type="number" inputmode="decimal" step="0.1" min="0" placeholder="7.5"></label>
+        <label>${esc(t("fuel_diesel"))} (L/100&nbsp;km)<input id="cmp-diesel" type="number" inputmode="decimal" step="0.1" min="0" placeholder="5.5"></label>
+        <label>${esc(t("ws_lpg"))} (L/100&nbsp;km)<input id="cmp-lpg" type="number" inputmode="decimal" step="0.1" min="0" placeholder="9.5"></label>
+        <button type="button" class="tool-btn" onclick="calcCompare()">${esc(t("tool_calc"))}</button>
+        <div id="cmp-out" class="tool-out"></div>
+      </section>
+
+      <section class="tool-card">
+        <h3>${esc(t("log_title"))}</h3>
+        <div class="log-add-row">
+          <input id="lg-date" type="date" value="${todayISO()}">
+          <input id="lg-litres" type="number" inputmode="decimal" step="0.01" min="0" placeholder="${esc(t("cc_litres"))}">
+          <input id="lg-km" type="number" inputmode="decimal" step="0.1" min="0" placeholder="km">
+          <input id="lg-price" type="number" inputmode="decimal" step="0.001" min="0" placeholder="€/L">
+          <button type="button" class="tool-btn small" onclick="addLogManual()">${esc(t("log_add"))}</button>
+        </div>
+        <div id="log-body" class="log-body"></div>
+      </section>`;
+    renderLog();
+}
+
+function calcConsumption() {
+    const L = toolNum("cc-litres"), km = toolNum("cc-km"), price = toolNum("cc-price");
+    const out = document.getElementById("cc-out");
+    if (!L || !km || L <= 0 || km <= 0) { out.innerHTML = `<div class="tool-hint">${esc(t("tool_need_lkm"))}</div>`; return; }
+    const cons = L / km * 100;
+    let html = `<div class="res-row"><span>${esc(t("tool_consumption"))}</span><b>${toolFmt(cons, 1)} L/100&nbsp;km</b></div>`;
+    if (price && price > 0) {
+        html += `<div class="res-row"><span>${esc(t("tool_total_cost"))}</span><b>€${toolFmt(L * price)}</b></div>
+                 <div class="res-row"><span>${esc(t("tool_per100"))}</span><b>€${toolFmt(cons * price)}</b></div>
+                 <div class="res-row"><span>${esc(t("tool_perkm"))}</span><b>€${toolFmt(L * price / km, 3)}</b></div>`;
+    }
+    html += `<button type="button" class="tool-btn save" onclick="saveLogFromCalc()">${esc(t("tool_save_log"))}</button>`;
+    out.innerHTML = html;
+}
+function saveLogFromCalc() {
+    const L = toolNum("cc-litres"), km = toolNum("cc-km"), price = toolNum("cc-price");
+    if (!L || !km) return;
+    FUELLOG.push({ date: todayISO(), litres: L, km: km, price: price || null });
+    lsSet("kk_fuellog", FUELLOG);
+    renderLog();
+    document.getElementById("cc-out").insertAdjacentHTML("beforeend", `<div class="tool-ok">${esc(t("tool_saved"))}</div>`);
+}
+
+function calcDetour() {
+    const cons = toolNum("wd-cons"), here = toolNum("wd-here"), there = toolNum("wd-there"),
+          dist = toolNum("wd-dist"), litres = toolNum("wd-litres");
+    const out = document.getElementById("wd-out");
+    if (cons == null || here == null || there == null || dist == null || litres == null) {
+        out.innerHTML = `<div class="tool-hint">${esc(t("tool_fill_fields"))}</div>`; return;
+    }
+    const gross = litres * (here - there);                 // saved on the fill
+    const detour = (2 * dist) * (cons / 100) * there;      // round-trip fuel burned to get there
+    const net = gross - detour;
+    const good = net > 0;
+    out.innerHTML =
+        `<div class="res-row"><span>${esc(t("tool_gross_saving"))}</span><b>€${toolFmt(gross)}</b></div>
+         <div class="res-row"><span>${esc(t("tool_detour_cost"))}</span><b>€${toolFmt(detour)}</b></div>
+         <div class="res-row big ${good ? "good" : "bad"}"><span>${esc(t("tool_net_saving"))}</span><b>€${toolFmt(net)}</b></div>
+         <div class="verdict-line ${good ? "good" : "bad"}">${esc(good ? t("tool_worth_yes") : t("tool_worth_no"))}</div>`;
+}
+
+function calcCompare() {
+    const cheap = currentCheapest("");
+    const rows = [["petrol95", t("fuel_petrol95")], ["diesel", t("fuel_diesel")], ["lpg", t("ws_lpg")]]
+        .map(([k, label]) => { const c = toolNum("cmp-" + k), p = cheap[k]; return (c && p) ? { label, per100: c * p, price: p } : null; })
+        .filter(Boolean).sort((a, b) => a.per100 - b.per100);
+    const out = document.getElementById("cmp-out");
+    if (!rows.length) { out.innerHTML = `<div class="tool-hint">${esc(t("cmp_hint"))}</div>`; return; }
+    out.innerHTML = rows.map((r, i) =>
+        `<div class="res-row ${i === 0 ? "good" : ""}"><span>${esc(r.label)}${i === 0 ? " ★" : ""} <small>(€${toolFmt(r.price, 3)}/L)</small></span><b>€${toolFmt(r.per100)}/100&nbsp;km</b></div>`
+    ).join("");
+}
+
+function renderLog() {
+    const box = document.getElementById("log-body");
+    if (!box) return;
+    if (!FUELLOG.length) { box.innerHTML = `<div class="tool-hint">${esc(t("tool_log_empty"))}</div>`; return; }
+    let tL = 0, tKm = 0, tCost = 0;
+    const rows = FUELLOG.map((e, idx) => {
+        const cons = e.km ? e.litres / e.km * 100 : null;
+        const cost = e.price ? e.litres * e.price : null;
+        tL += e.litres || 0; tKm += e.km || 0; tCost += cost || 0;
+        return { idx, html:
+            `<div class="log-row">
+               <div class="log-main"><b>${esc(e.date)}</b> · ${toolFmt(e.litres, 1)} L · ${toolFmt(e.km, 0)} km${e.price ? ` · €${toolFmt(e.price, 3)}/L` : ""}</div>
+               <div class="log-sub">${cons != null ? `${toolFmt(cons, 1)} L/100 km` : ""}${cost != null ? ` · €${toolFmt(cost)}` : ""}
+                 <button type="button" class="log-del" onclick="delLog(${idx})" title="${esc(t("tool_delete"))}">✕</button></div>
+             </div>` };
+    });
+    const avg = tKm ? tL / tKm * 100 : null;
+    box.innerHTML =
+        `<div class="log-summary">
+           <div><span>${esc(t("tool_avg_cons"))}</span><b>${toolFmt(avg, 1)} L/100 km</b></div>
+           <div><span>${esc(t("tool_total_spent"))}</span><b>€${toolFmt(tCost)}</b></div>
+           <div><span>${esc(t("tool_total_km"))}</span><b>${toolFmt(tKm, 0)} km</b></div>
+         </div>
+         ${rows.slice().reverse().map(r => r.html).join("")}
+         <button type="button" class="tool-btn ghost" onclick="exportLog()">${esc(t("tool_export"))}</button>`;
+}
+function addLogManual() {
+    const L = toolNum("lg-litres"), km = toolNum("lg-km"), price = toolNum("lg-price");
+    const date = (document.getElementById("lg-date") || {}).value || todayISO();
+    if (!L || !km) return;
+    FUELLOG.push({ date, litres: L, km: km, price: price || null });
+    lsSet("kk_fuellog", FUELLOG);
+    ["lg-litres", "lg-km", "lg-price"].forEach(id => { const el = document.getElementById(id); if (el) el.value = ""; });
+    renderLog();
+}
+function delLog(i) { FUELLOG.splice(i, 1); lsSet("kk_fuellog", FUELLOG); renderLog(); }
+function exportLog() {
+    const head = "date,litres,km,price_eur_per_l,consumption_l_per_100km,cost_eur\n";
+    const lines = FUELLOG.map(e => {
+        const cons = e.km ? (e.litres / e.km * 100).toFixed(2) : "";
+        const cost = e.price ? (e.litres * e.price).toFixed(2) : "";
+        return [e.date, e.litres, e.km, e.price != null ? e.price : "", cons, cost].join(",");
+    }).join("\n");
+    const blob = new Blob([head + lines], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = "fuelis-log.csv"; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
 async function loadHistory() {

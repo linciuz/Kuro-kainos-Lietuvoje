@@ -239,6 +239,53 @@
             background: #f8f9fa; padding: 14px; text-align: center;
             border-top: 1px solid #e0e0e0; font-size: 12px; color: #666;
         }
+        /* --- Fuelis Tools (calculators + fuel log) modal --- */
+        body.modal-open { overflow: hidden; }
+        .tools-modal { position: fixed; inset: 0; z-index: 3000; display: none;
+            background: rgba(20,28,40,0.45); align-items: flex-end; justify-content: center; }
+        .tools-modal.open { display: flex; }
+        .tools-sheet { background: #f5f6f8; width: 100%; max-width: 560px; max-height: 92vh;
+            border-radius: 16px 16px 0 0; display: flex; flex-direction: column; box-shadow: 0 -6px 30px rgba(0,0,0,0.25); }
+        @media (min-width: 600px) { .tools-modal { align-items: center; } .tools-sheet { border-radius: 16px; } }
+        .tools-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px;
+            border-bottom: 1px solid #e2e5ea; background: #fff; border-radius: 16px 16px 0 0; }
+        #tools-title { font-size: 17px; font-weight: 650; color: #1b2430; }
+        .tools-close { border: none; background: #eceef2; width: 32px; height: 32px; border-radius: 50%; font-size: 15px; cursor: pointer; color: #444; }
+        .tools-body { overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 12px; -webkit-overflow-scrolling: touch; }
+        .tool-card { background: #fff; border: 1px solid #e6e8ec; border-radius: 12px; padding: 14px; }
+        .tool-card h3 { margin: 0 0 10px; font-size: 15px; font-weight: 650; color: #1b2430; }
+        .tool-note { font-size: 12px; color: #6b7480; margin: -4px 0 10px; }
+        .tool-card label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: #55606d; margin-bottom: 9px; }
+        .tool-card input { font-size: 16px; padding: 9px 11px; border: 1px solid #d3d7dd; border-radius: 8px; background: #fff; color: #1b2430; width: 100%; }
+        .tool-card input:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.12); }
+        .tool-btn { margin-top: 4px; width: 100%; padding: 10px; border: none; border-radius: 8px; background: #007AFF; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; }
+        .tool-btn.save { background: #20b268; margin-top: 10px; }
+        .tool-btn.ghost { background: #eef1f5; color: #1b2430; margin-top: 10px; }
+        .tool-btn.small { width: auto; padding: 9px 14px; margin-top: 0; }
+        .tool-out { margin-top: 12px; }
+        .res-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px solid #eef0f3; font-size: 13.5px; color: #55606d; }
+        .res-row:last-child { border-bottom: none; }
+        .res-row b { color: #1b2430; font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .res-row small { color: #8a929c; font-weight: 400; }
+        .res-row.good b { color: #1b9e5a; }
+        .res-row.big { padding-top: 10px; } .res-row.big b { font-size: 19px; }
+        .res-row.bad b { color: #c2453a; }
+        .verdict-line { margin-top: 8px; text-align: center; font-weight: 650; font-size: 15px; padding: 8px; border-radius: 8px; }
+        .verdict-line.good { background: #e9f7ef; color: #1b9e5a; }
+        .verdict-line.bad { background: #fbeeec; color: #c2453a; }
+        .tool-hint { font-size: 13px; color: #8a929c; padding: 6px 0; }
+        .tool-ok { margin-top: 8px; color: #1b9e5a; font-weight: 600; font-size: 13px; }
+        .log-add-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+        .log-add-row input { flex: 1 1 70px; min-width: 0; font-size: 15px; padding: 8px; border: 1px solid #d3d7dd; border-radius: 7px; }
+        .log-add-row input[type=date] { flex: 1 1 120px; }
+        .log-summary { display: flex; gap: 8px; margin-bottom: 10px; }
+        .log-summary > div { flex: 1; background: #f3f6fb; border-radius: 9px; padding: 8px; text-align: center; }
+        .log-summary span { display: block; font-size: 11px; color: #6b7480; margin-bottom: 2px; }
+        .log-summary b { font-size: 14px; color: #1b2430; font-variant-numeric: tabular-nums; }
+        .log-row { padding: 8px 0; border-bottom: 1px solid #eef0f3; }
+        .log-main { font-size: 13px; color: #1b2430; }
+        .log-sub { font-size: 12px; color: #6b7480; display: flex; align-items: center; gap: 6px; margin-top: 2px; }
+        .log-del { margin-left: auto; border: none; background: #f3eded; color: #c2453a; width: 22px; height: 22px; border-radius: 50%; cursor: pointer; font-size: 12px; }
     </style>
 </head>
 <body>
@@ -315,5 +362,14 @@
           navigator.serviceWorker.register("service-worker.js").catch(() => {}));
       }
     </script>
+    <div id="tools-modal" class="tools-modal" onclick="if(event.target===this)closeTools()">
+      <div class="tools-sheet">
+        <div class="tools-head">
+          <span id="tools-title">🧮</span>
+          <button type="button" class="tools-close" onclick="closeTools()" aria-label="Close">✕</button>
+        </div>
+        <div class="tools-body" id="tools-body"></div>
+      </div>
+    </div>
 </body>
 </html>
