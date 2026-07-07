@@ -1027,8 +1027,8 @@
     "no": "Kalkulatorer"
   },
   "cc_title": {
-    "lt": "Sąnaudų skaičiuoklė",
-    "en": "Consumption calculator",
+    "lt": "Kuro sąnaudų skaičiuoklė",
+    "en": "Fuel consumption calculator",
     "lv": "Patēriņa kalkulators",
     "et": "Kulukalkulaator",
     "uk": "Калькулятор витрати",
@@ -1040,8 +1040,8 @@
     "no": "Forbrukskalkulator"
   },
   "cc_litres": {
-    "lt": "Kuro kiekis (L)",
-    "en": "Fuel amount (L)",
+    "lt": "Sunaudoto kuro kiekis (L)",
+    "en": "Fuel used (L)",
     "lv": "Degvielas daudzums (L)",
     "et": "Kütuse kogus (L)",
     "uk": "Кількість пального (L)",
@@ -1183,8 +1183,8 @@
     "no": "Skriv inn drivstoffmengde og distanse"
   },
   "wd_title": {
-    "lt": "Ar verta važiuoti pigiau?",
-    "en": "Worth the detour?",
+    "lt": "Ar verta važiuoti toliau, kad užsipilti pigiau?",
+    "en": "Worth driving further to fill up cheaper?",
     "lv": "Vai vērts braukt tālāk?",
     "et": "Kas ümbersõit tasub end ära?",
     "uk": "Чи варто робити гак?",
@@ -1196,8 +1196,8 @@
     "no": "Verdt omveien?"
   },
   "wd_cons": {
-    "lt": "Jūsų sąnaudos (L/100 km)",
-    "en": "Your consumption (L/100 km)",
+    "lt": "Kuro sąnaudos (L/100 km)",
+    "en": "Fuel consumption (L/100 km)",
     "lv": "Jūsu patēriņš (L/100 km)",
     "et": "Sinu kulu (L/100 km)",
     "uk": "Ваша витрата (L/100 km)",
@@ -1339,8 +1339,8 @@
     "no": "Fyll ut alle felt"
   },
   "cmp_title": {
-    "lt": "Kuro palyginimas",
-    "en": "Fuel comparison",
+    "lt": "Kuro tipų palyginimas",
+    "en": "Fuel type comparison",
     "lv": "Degvielu salīdzinājums",
     "et": "Kütuste võrdlus",
     "uk": "Порівняння пального",
@@ -1508,16 +1508,16 @@
     "no": "Snittpristrend"
   },
   "loyalty_title": {
-    "lt": "Lojalumo kortelė",
-    "en": "Loyalty card"
+    "lt": "Nuolaidos",
+    "en": "Discounts"
   },
   "loyalty_note": {
     "lt": "Nuolaidą suteikia lojalumo kortelė arba tinklo programėlė. Įveskite nuolaidą (¢/L), kurią gaunate jūs — ji priklauso nuo naudojimo, dienos ir sąlygų, todėl gali skirtis. Rodoma tik kaip papildoma kaina šalia oficialios, jos nekeičia.",
     "en": "The discount comes from a loyalty card or the network's app. Enter the discount (¢/L) you personally get — it depends on usage, the day and conditions, so it can vary. Shown only as an extra price beside the official one, never replacing it."
   },
   "loyalty_enable": {
-    "lt": "Rodyti kainą su lojalumo kortele",
-    "en": "Show price with loyalty card"
+    "lt": "Rodyti kainą su nuolaida",
+    "en": "Show price with discount"
   },
   "loyalty_with_card": {
     "lt": "su kortele",
@@ -1532,20 +1532,20 @@
     "en": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative."
   },
   "loyalty_note_bp": {
-    "lt": "Programėlėje (CASH PRICE+) ≈ −0,5 ¢/L, penktadieniais didesnė (Bakadienis). −3 ¢/L kortelė nurodyta oficialiai, bet reta (gali būti pasenusi).",
-    "en": "App (CASH PRICE+) ≈ −0.5 ¢/L, bigger on Fridays (Bakadienis). A −3 ¢/L card is officially listed but rarely seen (may be outdated)."
+    "lt": "Programėle −0,5 ¢/L, penktadieniais „Bakadienis“ – speciali skelbiama kaina. Kortele −3 ¢/L.",
+    "en": "App −0.5 ¢/L; Friday “Bakadienis” is a special announced price. Card −3 ¢/L."
   },
   "loyalty_note_circlek": {
-    "lt": "EXTRA kortele −3,5 ¢/L (didėja lankantis dažniau); pasitaiko didesnių savaitgalio ar trečiadienio akcijų.",
-    "en": "EXTRA card −3.5 ¢/L (rises with frequent visits); bigger weekend or Wednesday promos appear at times."
+    "lt": "Programėle/kortele −3,5 ¢/L (didėja lankantis dažniau); vasarą savaitgaliais −10 ¢/L; pasitaiko trečiadienio akcijų.",
+    "en": "App/card −3.5 ¢/L (rises with frequent visits); −10 ¢/L on summer weekends; Wednesday promos appear at times."
   },
   "loyalty_note_viada": {
-    "lt": "Vasarą savaitgaliais visada −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
-    "en": "In summer, always −10 ¢/L on weekends; Wednesdays have a special announced price."
+    "lt": "Programėle/kortele −3 ¢/L (didėja užsipylus virš 70L/mėn.); vasarą savaitgaliais −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
+    "en": "App/card −3 ¢/L (rises above 70 L/mo); −10 ¢/L on summer weekends; Wednesdays have a special announced price."
   },
   "loyalty_note_neste": {
-    "lt": "Kortele −3,5 ¢/L; trečiadieniais „nuolaidadienis“ iki −7 ¢/L (kortele ar programėle).",
-    "en": "Card −3.5 ¢/L; Wednesday “discount day” up to −7 ¢/L (card or app)."
+    "lt": "Programėle/kortele −3,5 ¢/L; trečiadieniais „nuolaidadienis“ −7 ¢/L.",
+    "en": "App/card −3.5 ¢/L; Wednesday “discount day” −7 ¢/L."
   },
   "loyalty_note_emsi": {
     "lt": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",

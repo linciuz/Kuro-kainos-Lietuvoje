@@ -388,7 +388,7 @@ function renderTools() {
       </section>
 
       <section class="tool-card">
-        <h3>💳 ${esc(t("loyalty_title"))}</h3>
+        <h3>${esc(t("loyalty_title"))}</h3>
         <div class="tool-note">${esc(t("loyalty_note"))}</div>
         <label class="loyalty-switch">
           <input type="checkbox" id="loyalty-enabled" ${LOYALTY.enabled ? "checked" : ""} onchange="toggleLoyalty(this.checked)">
