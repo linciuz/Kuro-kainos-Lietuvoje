@@ -13,6 +13,9 @@ const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map vie
 // --- engagement / monetization features (ALL enabled for testing; later split
 //     into free vs "Fuelis Pro"). Set DONATE_URL to your Ko-fi/BuyMeACoffee/PayPal.
 const DONATE_URL = "https://ko-fi.com/fuelis";
+// Contact-form endpoint. Swap the plain email for the FormSubmit masked endpoint
+// (https://formsubmit.co/<random-hash>) to keep the address out of the page source.
+const CONTACT_ENDPOINT = "https://formsubmit.co/linuxui@gmail.com";
 
 // Google Play bans in-app external donation links, so hide the ☕ Support button
 // inside the Android TWA. The wrapper launches with ?src=twa (twa-manifest
@@ -420,7 +423,7 @@ function renderContact() {
     if (!body) return;
     body.innerHTML = `
       <form id="contact-form" class="tool-card" onsubmit="return submitContact(event)"
-            action="https://formsubmit.co/linuxui@gmail.com" method="POST" enctype="multipart/form-data" target="ff_iframe">
+            action="${CONTACT_ENDPOINT}" method="POST" enctype="multipart/form-data" target="ff_iframe">
         <div class="tool-note">${esc(t("contact_intro"))}</div>
         <input type="hidden" name="_subject" id="cf-subject" value="Fuelis">
         <input type="hidden" name="_captcha" value="false">
