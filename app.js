@@ -82,6 +82,14 @@ function loyaltyCents(s) {
 }
 // Effective €/L after a ¢/L discount, clamped so it can never go negative.
 function loyaltyPrice(price, cents) { return Math.max(0, price - cents / 100); }
+// Effective per-litre price at the current fuel for CHEAPEST sorting + the ⭐
+// badge: official price minus this station's loyalty discount (0 when the feature
+// is off or the network has none), so "cheapest" reflects what the user actually
+// pays. The national summary deliberately stays on official prices.
+function effPrice(s) {
+    const p = s[fuelType];
+    return p == null ? null : loyaltyPrice(p, loyaltyCents(s));
+}
 // Format a ¢/L value compactly: up to 2 decimals, trailing zeros trimmed
 // (so 3 -> "3", 3.5 -> "3.5", 0.05 -> "0.05").
 function loyaltyFmt(c) { return Number(Number(c).toFixed(2)).toString(); }
@@ -1092,7 +1100,7 @@ function getRows() {
         rows.sort((a, b) => (a._dist ?? Infinity) - (b._dist ?? Infinity));
     } else {
         rows.sort((a, b) => {
-            const ap = a[fuelType], bp = b[fuelType];   // price-less (null) sort to the bottom
+            const ap = effPrice(a), bp = effPrice(b);   // discounted when loyalty on; price-less (null) sort to the bottom
             if (ap == null || bp == null) return (ap == null) - (bp == null);
             return sortDir === "asc" ? ap - bp : bp - ap;
         });
@@ -1202,7 +1210,7 @@ function renderList() {
     if (rows.length === 0) { list.innerHTML = `<div class="msg">${showFavsOnly ? t("no_favourites") : t("no_filter")}</div>`; return; }
 
     const priced = rows.filter(r => r[fuelType] != null);
-    const best = priced.length ? Math.min(...priced.map(r => r[fuelType])) : null;
+    const best = priced.length ? Math.min(...priced.map(r => effPrice(r))) : null;   // discounted when loyalty on
     const total = (DATA.stations || []).filter(s =>
         s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
     const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
@@ -1210,7 +1218,7 @@ function renderList() {
     list.innerHTML =
         `<div class="count-line">${t("showing_stations", { n: nLabel })}</div>` +
         shown.map(s => {
-            const isBest = s[fuelType] != null && s[fuelType] === best;
+            const isBest = s[fuelType] != null && effPrice(s) === best;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
             const approxTag = s.approx ? ` <span class="approx-tag">${t("approx_warn")}</span>` : "";
