@@ -1530,5 +1530,21 @@
   "loyalty_disclaimer": {
     "lt": "⚠️ Kainos su kortele yra apytikslės — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Oficiali kaina yra svarbiausia.",
     "en": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative."
+  },
+  "loyalty_note_bp": {
+    "lt": "Kasdienė nuolaida programėlėje labai maža; penktadieniais didesnė.",
+    "en": "Everyday app discount is very small; bigger on Fridays."
+  },
+  "loyalty_note_viada": {
+    "lt": "Trečiadieniais ir vasaros savaitgaliais gerokai didesnė (skelbiama dieną prieš).",
+    "en": "Much bigger on Wednesdays and summer weekends (announced a day ahead)."
+  },
+  "loyalty_note_neste": {
+    "lt": "Programėlėje kartais iki −7 ¢/L.",
+    "en": "Up to −7 ¢/L in the app."
+  },
+  "loyalty_note_emsi": {
+    "lt": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",
+    "en": "−1 ¢/L for students with an ID; usually none otherwise."
   }
 }

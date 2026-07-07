@@ -51,6 +51,17 @@ const LOYALTY_NETWORKS = [
 const LOYALTY_TYPICAL = {
     "UAB Circle K Lietuva": "3.5",   // typical card/app discount
     "UAB Neste Lietuva": "3.5",      // typical; Neste app can reach ~7
+    "UAB Baltic Petroleum": "0.05",  // everyday app discount is genuinely tiny; bigger on Fridays
+};
+
+// Optional per-network condition note shown under the config row (i18n key) —
+// captures the "depends on the day / your status" caveats so a tiny or absent
+// typical value isn't the whole story.
+const LOYALTY_NOTES = {
+    "UAB Baltic Petroleum": "loyalty_note_bp",
+    "UAB Viada LT": "loyalty_note_viada",
+    "UAB Neste Lietuva": "loyalty_note_neste",
+    "UAB Emsi": "loyalty_note_emsi",
 };
 
 // Discount in ¢/L configured for this station's network (>0), else 0 — also 0
@@ -62,8 +73,9 @@ function loyaltyCents(s) {
 }
 // Effective €/L after a ¢/L discount, clamped so it can never go negative.
 function loyaltyPrice(price, cents) { return Math.max(0, price - cents / 100); }
-// Format a ¢/L value compactly (integer when whole, one decimal otherwise).
-function loyaltyFmt(c) { return c % 1 ? c.toFixed(1) : String(c); }
+// Format a ¢/L value compactly: up to 2 decimals, trailing zeros trimmed
+// (so 3 -> "3", 3.5 -> "3.5", 0.05 -> "0.05").
+function loyaltyFmt(c) { return Number(Number(c).toFixed(2)).toString(); }
 // Tidy a legal company name for display ("UAB Viada LT" -> "Viada LT").
 function loyaltyLabel(net) { return String(net || "").replace(/^(UAB|AB|VšĮ|VŠĮ|MB|IĮ|Iį)\s+/i, ""); }
 
@@ -408,12 +420,16 @@ function loyaltyRowHtml(label, legal) {
     const c = LOYALTY.cents[legal];
     const val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
     const ph = LOYALTY_TYPICAL[legal] || "0";   // typical value as a hint only
-    return `<div class="loyalty-row">
+    const noteKey = LOYALTY_NOTES[legal];
+    const note = noteKey ? `<div class="loyalty-row-note">↳ ${esc(t(noteKey))}</div>` : "";
+    return `<div class="loyalty-item">
+      <div class="loyalty-row">
         <span class="loyalty-net">${esc(label)}</span>
-        <input type="number" inputmode="decimal" step="0.1" min="0" max="50" placeholder="${escAttr(ph)}"
+        <input type="number" inputmode="decimal" step="any" min="0" max="50" placeholder="${escAttr(ph)}"
                value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
                ${LOYALTY.enabled ? "" : "disabled"}>
         <span class="loyalty-unit">¢/L</span>
+      </div>${note}
     </div>`;
 }
 
@@ -1148,8 +1164,11 @@ function renderList() {
             const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3) })}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
             const lc = s[fuelType] != null ? loyaltyCents(s) : 0;
-            const loyaltyLine = lc > 0
-                ? `<div class="loyalty-line" title="−${loyaltyFmt(lc)} ¢/L">💳 ${esc(t("loyalty_with_card"))} <span class="loyalty-price">€${loyaltyPrice(s[fuelType], lc).toFixed(3)}</span><span class="price-unit">/L</span></div>`
+            // Suppress the badge when the discount is too small to change the
+            // 3-decimal price — showing an identical "with card" price reads as a bug.
+            const lDisc = lc > 0 ? loyaltyPrice(s[fuelType], lc).toFixed(3) : null;
+            const loyaltyLine = (lDisc && lDisc !== s[fuelType].toFixed(3))
+                ? `<div class="loyalty-line" title="−${loyaltyFmt(lc)} ¢/L">💳 ${esc(t("loyalty_with_card"))} <span class="loyalty-price">€${lDisc}</span><span class="price-unit">/L</span></div>`
                 : "";
             return `
             <div class="station-card">
@@ -1234,8 +1253,9 @@ function renderMap() {
             ? `<div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>`
             : `<div class="no-price-badge">${t("no_price")}</div>`;
         const plc = p != null ? loyaltyCents(s) : 0;
-        const loyaltyPop = plc > 0
-            ? `<div class="popup-loyalty">💳 ${esc(t("loyalty_with_card"))}: €${loyaltyPrice(p, plc).toFixed(3)}/L</div>`
+        const pDisc = plc > 0 ? loyaltyPrice(p, plc).toFixed(3) : null;
+        const loyaltyPop = (pDisc && pDisc !== p.toFixed(3))
+            ? `<div class="popup-loyalty">💳 ${esc(t("loyalty_with_card"))}: €${pDisc}/L</div>`
             : "";
         const popup = `<div class="popup-name">${esc(s.network || t("station_default"))}</div>
             <div>${esc(s.address || "")}</div>
