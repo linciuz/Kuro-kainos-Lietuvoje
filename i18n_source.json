@@ -884,8 +884,8 @@
     "no": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
   },
   "banner_side": {
-    "lt": "ℹ️ Kainos — oficialus LEA sąrašas (10:00 val.). Degalinėje kaina dienos bėgyje gali skirtis — kilti ar kristi (pvz. prieš akcijų dienas). Patikrinkite vietoje.",
-    "en": "ℹ️ Prices are LEA's official 10:00 list. At the pump they can differ during the day — up or down (e.g. before discount days). Check on site."
+    "lt": "Oficialus LEA kainų sąrašas paskelbiamas 10:00 val.\nSavaitgaliais sąrašas neatnaujinamas.\nKainos degalinėse dienos bėgyje gali keistis.",
+    "en": "The official LEA price list is published at 10:00.\nThe list is not updated on weekends.\nPrices at stations can change during the day."
   },
   "el_market": {
     "lt": "Elektros rinkos kaina",
@@ -914,7 +914,7 @@
     "no": "Avstand:"
   },
   "support": {
-    "lt": "Paremk",
+    "lt": "Paremti",
     "en": "Support",
     "lv": "Atbalstīt",
     "et": "Toeta",
