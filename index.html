@@ -256,11 +256,14 @@
         .tools-modal { position: fixed; inset: 0; z-index: 3000; display: none;
             background: rgba(20,28,40,0.45); align-items: flex-end; justify-content: center; }
         .tools-modal.open { display: flex; }
-        .tools-sheet { background: #f5f6f8; width: 100%; max-width: 560px; max-height: 92vh;
+        .tools-sheet { background: #f5f6f8; width: 100%; max-width: 560px;
+            max-height: 90vh; max-height: 90dvh;  /* dvh = visible viewport, so the sheet never hides behind the mobile URL bar */
             border-radius: 16px 16px 0 0; display: flex; flex-direction: column; box-shadow: 0 -6px 30px rgba(0,0,0,0.25); }
         @media (min-width: 600px) { .tools-modal { align-items: center; } .tools-sheet { border-radius: 16px; } }
-        .tools-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px;
+        /* Sticky header keeps the ✕ reachable even if the sheet is tall / the URL bar is showing. */
+        .tools-head { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; justify-content: space-between; padding: 14px 16px;
             border-bottom: 1px solid #e2e5ea; background: #fff; border-radius: 16px 16px 0 0; }
+        .tools-close { flex: none; }
         #tools-title { font-size: 17px; font-weight: 650; color: #1b2430; }
         .tools-close { border: none; background: #eceef2; width: 32px; height: 32px; border-radius: 50%; font-size: 15px; cursor: pointer; color: #444; }
         .tools-body { overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 12px; -webkit-overflow-scrolling: touch; }
@@ -268,8 +271,12 @@
         .tool-card h3 { margin: 0 0 10px; font-size: 15px; font-weight: 650; color: #1b2430; }
         .tool-note { font-size: 12px; color: #6b7480; margin: -4px 0 10px; }
         .tool-card label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: #55606d; margin-bottom: 9px; }
-        .tool-card input { font-size: 16px; padding: 9px 11px; border: 1px solid #d3d7dd; border-radius: 8px; background: #fff; color: #1b2430; width: 100%; }
-        .tool-card input:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.12); }
+        .tool-card input, .tool-card select, .tool-card textarea { font-size: 16px; padding: 9px 11px; border: 1px solid #d3d7dd; border-radius: 8px; background: #fff; color: #1b2430; width: 100%; font-family: inherit; }
+        .tool-card textarea { resize: vertical; min-height: 84px; }
+        .tool-card input[type=file] { padding: 7px 9px; font-size: 13px; }
+        .tool-card input:focus, .tool-card select:focus, .tool-card textarea:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.12); }
+        .tool-err { margin-top: 8px; color: #c2453a; font-weight: 600; font-size: 13px; }
+        .act-btn.install { background: #eafaf0; border-color: #b6e6c8; color: #14914e; font-weight: 600; }
         .tool-btn { margin-top: 4px; width: 100%; padding: 10px; border: none; border-radius: 8px; background: #007AFF; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; }
         .tool-btn.save { background: #20b268; margin-top: 10px; }
         .tool-btn.ghost { background: #eef1f5; color: #1b2430; margin-top: 10px; }
@@ -411,5 +418,15 @@
         <div class="tools-body" id="disc-body"></div>
       </div>
     </div>
+    <div id="contact-modal" class="tools-modal" onclick="if(event.target===this)closeContact()">
+      <div class="tools-sheet">
+        <div class="tools-head">
+          <span id="contact-title">✉️</span>
+          <button type="button" class="tools-close" onclick="closeContact()" aria-label="Close">✕</button>
+        </div>
+        <div class="tools-body" id="contact-body"></div>
+      </div>
+    </div>
+    <iframe name="ff_iframe" title="form target" style="display:none" aria-hidden="true"></iframe>
 </body>
 </html>

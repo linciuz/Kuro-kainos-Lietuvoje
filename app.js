@@ -349,6 +349,102 @@ function updateFeatureButtons() {
     if (db) db.classList.toggle("on", LOYALTY.enabled);
 }
 
+// ---- PWA install button ----------------------------------------------------
+let deferredInstallPrompt = null;
+function isStandalone() {
+    return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+}
+function isIOS() { return /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream; }
+function canOfferInstall() { return !isStandalone() && (!!deferredInstallPrompt || isIOS()); }
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();               // suppress the mini-infobar; we show our own button instead
+    deferredInstallPrompt = e;
+    try { buildActionBar(); } catch (x) {}
+});
+window.addEventListener("appinstalled", () => { deferredInstallPrompt = null; try { buildActionBar(); } catch (x) {} });
+async function installApp() {
+    if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        try { await deferredInstallPrompt.userChoice; } catch (e) {}
+        deferredInstallPrompt = null;
+        buildActionBar();
+    } else {
+        alert(t(isIOS() ? "install_ios_hint" : "install_hint"));   // iOS/Safari has no prompt API
+    }
+}
+
+// ---- Contact form (emails the developer via FormSubmit, no backend) ---------
+let contactCaptcha = 0;
+function openContact() {
+    renderContact();
+    const m = document.getElementById("contact-modal");
+    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); }
+}
+function closeContact() {
+    const m = document.getElementById("contact-modal");
+    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
+}
+function cfTopicChange() {
+    const sel = document.getElementById("cf-topic"), wrap = document.getElementById("cf-other-wrap");
+    if (sel && wrap) wrap.style.display = sel.value === "__other" ? "flex" : "none";
+}
+function renderContact() {
+    const title = document.getElementById("contact-title");
+    if (title) title.textContent = "✉️ " + t("contact_title");
+    const a = Math.floor(Math.random() * 8) + 1, b = Math.floor(Math.random() * 8) + 1;
+    contactCaptcha = a + b;
+    const body = document.getElementById("contact-body");
+    if (!body) return;
+    body.innerHTML = `
+      <form id="contact-form" class="tool-card" onsubmit="return submitContact(event)"
+            action="https://formsubmit.co/linuxui@gmail.com" method="POST" enctype="multipart/form-data" target="ff_iframe">
+        <div class="tool-note">${esc(t("contact_intro"))}</div>
+        <input type="hidden" name="_subject" id="cf-subject" value="Fuelis">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="Topic" id="cf-topic-field">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <label>${esc(t("contact_email"))}<input type="email" name="email" required inputmode="email" autocomplete="email"></label>
+        <label>${esc(t("contact_topic"))}
+          <select id="cf-topic" onchange="cfTopicChange()">
+            <option value="${esc(t("contact_topic_bug"))}">${esc(t("contact_topic_bug"))}</option>
+            <option value="${esc(t("contact_topic_improve"))}">${esc(t("contact_topic_improve"))}</option>
+            <option value="__other">${esc(t("contact_topic_other"))}</option>
+          </select></label>
+        <label id="cf-other-wrap" style="display:none">${esc(t("contact_topic_other_ph"))}<input type="text" id="cf-other"></label>
+        <label>${esc(t("contact_message"))}<textarea name="message" rows="4" required></textarea></label>
+        <label>${esc(t("contact_photo"))}<input type="file" name="attachment" accept="image/*"></label>
+        <label>${esc(t("contact_captcha", { a: a, b: b }))}<input type="number" id="cf-captcha" required inputmode="numeric"></label>
+        <button type="submit" class="tool-btn">${esc(t("contact_send"))}</button>
+        <div id="cf-status" class="tool-out"></div>
+      </form>`;
+}
+function submitContact(e) {
+    const status = document.getElementById("cf-status");
+    const ans = parseInt((document.getElementById("cf-captcha") || {}).value, 10);
+    if (ans !== contactCaptcha) {
+        if (status) status.innerHTML = `<div class="tool-err">${esc(t("contact_captcha_wrong"))}</div>`;
+        e.preventDefault();
+        return false;
+    }
+    const sel = document.getElementById("cf-topic");
+    const topic = (sel && sel.value === "__other")
+        ? ((document.getElementById("cf-other") || {}).value || t("contact_topic_other"))
+        : (sel ? sel.value : "");
+    const subj = document.getElementById("cf-subject");
+    const tf = document.getElementById("cf-topic-field");
+    if (subj) subj.value = "Fuelis: " + topic;
+    if (tf) tf.value = topic;
+    if (status) status.innerHTML = `<div class="tool-hint">${esc(t("contact_sending"))}</div>`;
+    const iframe = document.querySelector('iframe[name="ff_iframe"]');
+    if (iframe) iframe.onload = () => {
+        const f = document.getElementById("contact-form");
+        if (f) f.reset();
+        if (status) status.innerHTML = `<div class="tool-ok">${esc(t("contact_sent"))}</div>`;
+    };
+    return true;   // allow the multipart POST to submit into the hidden iframe
+}
+
 function buildActionBar() {
     const box = document.getElementById("action-bar");
     if (!box) return;
@@ -356,7 +452,9 @@ function buildActionBar() {
         `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" title="${esc(t("favourites"))}">★</button>
          <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alert_title"))}">🔔</button>
          <button type="button" class="act-btn" id="disc-toggle" onclick="openDiscounts()" title="${esc(t("loyalty_title"))}">💳</button>
-         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>` +
+         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>
+         <button type="button" class="act-btn" id="contact-toggle" onclick="openContact()" title="${esc(t("contact_title"))}">✉️</button>` +
+        (canOfferInstall() ? `<button type="button" class="act-btn install" onclick="installApp()">⬇️ ${esc(t("install_app"))}</button>` : "") +
         (IS_NATIVE ? "" : `<button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`);
 }
 
