@@ -1219,6 +1219,11 @@ function navButtons(s) {
             <a class="nav-btn nav-waze" href="${waze}" target="_blank" rel="noopener">🚗 Waze</a>`;
 }
 
+// Chevron marks for the cheapest (green, down) / dearest (red, up) list badges —
+// the app-logo arrows. stroke=currentColor so each inherits its badge colour.
+const ARROW_DOWN = '<svg class="badge-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l7 7 7-7"/></svg>';
+const ARROW_UP = '<svg class="badge-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15l7-7 7 7"/></svg>';
+
 function renderList() {
     const list = document.getElementById("stations-list");
     if (!DATA.stations || DATA.stations.length === 0) {
@@ -1230,6 +1235,7 @@ function renderList() {
 
     const priced = rows.filter(r => r[fuelType] != null);
     const best = priced.length ? Math.min(...priced.map(r => effPrice(r))) : null;   // discounted when loyalty on
+    const worst = priced.length ? Math.max(...priced.map(r => effPrice(r))) : null;  // most expensive
     const total = (DATA.stations || []).filter(s =>
         s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
     const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
@@ -1238,6 +1244,7 @@ function renderList() {
         `<div class="count-line">${t("showing_stations", { n: nLabel })}</div>` +
         shown.map(s => {
             const isBest = s[fuelType] != null && effPrice(s) === best;
+            const isWorst = s[fuelType] != null && worst != null && worst > best && effPrice(s) === worst;
             const dist = (userPos && s._dist != null)
                 ? `<span class="dist-badge">📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}</span>` : "";
             const approxTag = s.approx ? ` <span class="approx-tag">${t("approx_warn")}</span>` : "";
@@ -1258,7 +1265,8 @@ function renderList() {
             return `
             <div class="station-card">
                 <button class="fav-btn" data-key="${esc(favKey(s))}">${isFav(favKey(s)) ? "★" : "☆"}</button>
-                ${isBest ? `<div class="best-price-badge">${t("badge_cheapest")}</div>` : ''}${dist}
+                ${isBest ? `<div class="best-price-badge">${ARROW_DOWN} ${t("stat_cheapest")}</div>`
+                  : isWorst ? `<div class="worst-price-badge">${ARROW_UP} ${t("stat_dearest")}</div>` : ''}${dist}
                 <div class="station-header">
                     <div class="station-name">${esc(s.network || t("station_default"))}</div>
                     <div>${s[fuelType] != null

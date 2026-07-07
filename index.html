@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Oficialios degalų kainos Lietuvos degalinėse su žemėlapiu ir artimiausiomis kainomis. Duomenys iš Lietuvos energetikos agentūros (LEA).">
     <title>Fuelis · Kuro kainos Lietuvoje</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%231673E8%22/><path d=%22M50 12 C60 34 76 50 76 66 A26 26 0 1 1 24 66 C24 50 40 34 50 12 Z%22 fill=%22%23fff%22/><path d=%22M37 60 L50 71 L63 60%22 fill=%22none%22 stroke=%22%2320C778%22 stroke-width=%228%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%231673E8%22/><g transform=%22translate(0,-3.5)%22><path d=%22M50 12 C60 34 76 50 76 66 A26 26 0 1 1 24 66 C24 50 40 34 50 12 Z%22 fill=%22%23fff%22/><path d=%22M41 56 L50 51 L59 56%22 fill=%22none%22 stroke=%22%23F0453A%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><path d=%22M37 64 L50 71 L63 64%22 fill=%22none%22 stroke=%22%2320C778%22 stroke-width=%225%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></g></svg>">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0057D8">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -122,10 +122,14 @@
             float: right; background: none; border: none; font-size: 22px; line-height: 1;
             cursor: pointer; color: #f5b301; padding: 0 0 4px 10px;
         }
-        .best-price-badge {
-            background: #4CAF50; color: white; padding: 3px 9px; border-radius: 6px;
-            font-size: 11px; font-weight: bold; display: inline-block; margin-bottom: 6px;
+        .best-price-badge, .worst-price-badge {
+            display: inline-flex; align-items: center; gap: 3px;
+            padding: 3px 9px 3px 6px; border-radius: 6px; margin-bottom: 6px;
+            font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .02em;
         }
+        .best-price-badge { background: #e7f7ee; color: #14914e; }   /* green: cheapest */
+        .worst-price-badge { background: #fdeceb; color: #cf3b30; }  /* red: most expensive */
+        .badge-arrow { width: 13px; height: 13px; display: block; flex: none; }
         .dist-badge {
             background: #eef4ff; color: #0056b3; padding: 3px 9px; border-radius: 6px;
             font-size: 11px; font-weight: bold; display: inline-block; margin-bottom: 6px; margin-left: 6px;
