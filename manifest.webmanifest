@@ -1,7 +1,7 @@
 {
   "name": "Fuelis",
   "short_name": "Fuelis",
-  "description": "Oficialios degalų kainos Lietuvos degalinėse: artimiausios prie jūsų, žemėlapis ir navigacija (LEA duomenys)",
+  "description": "Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

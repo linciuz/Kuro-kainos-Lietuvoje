@@ -884,17 +884,17 @@
     "no": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
   },
   "banner_side": {
-    "lt": "Oficialus kainų sąrašas paskelbiamas 10:00 val.\nSavaitgaliais sąrašas neatnaujinamas.\nKainos degalinėse dienos bėgyje gali keistis.",
-    "en": "The official price list is published at 10:00.\nThe list is not updated on weekends.\nPrices at stations can change during the day.",
-    "lv": "Oficiālais cenu saraksts tiek publicēts plkst. 10:00.\nNedēļas nogalēs saraksts netiek atjaunināts.\nCenas uzpildes stacijās dienas laikā var mainīties.",
-    "et": "Ametlik hinnakiri avaldatakse kell 10:00.\nNädalavahetustel loendit ei uuendata.\nHinnad tanklates võivad päeva jooksul muutuda.",
-    "uk": "Офіційний список цін публікується о 10:00.\nУ вихідні список не оновлюється.\nЦіни на заправках протягом дня можуть змінюватися.",
-    "ru": "Официальный список цен публикуется в 10:00.\nПо выходным он не обновляется.\nЦены на заправках могут меняться в течение дня.",
-    "pl": "Oficjalna lista cen jest publikowana o 10:00.\nW weekendy lista nie jest aktualizowana.\nCeny na stacjach mogą się zmieniać w ciągu dnia.",
-    "de": "Die offizielle Preisliste wird um 10:00 Uhr veröffentlicht.\nAm Wochenende wird die Liste nicht aktualisiert.\nDie Preise an den Tankstellen können sich im Laufe des Tages ändern.",
-    "sv": "Den officiella prislistan publiceras kl. 10:00.\nListan uppdateras inte på helger.\nPriserna på stationerna kan ändras under dagen.",
-    "fi": "Virallinen hintalista julkaistaan klo 10:00.\nListaa ei päivitetä viikonloppuisin.\nAsemien hinnat voivat muuttua päivän aikana.",
-    "no": "Den offisielle prislisten publiseres kl. 10:00.\nListen oppdateres ikke i helgene.\nPrisene på stasjonene kan endres i løpet av dagen."
+    "lt": "Oficialios kainos paskelbiamos 10:00 val.\nSavaitgaliais sąrašas neatnaujinamas.\nKainos degalinėse dienos bėgyje gali keistis.",
+    "en": "Official prices are published at 10:00.\nThe list is not updated on weekends.\nPrices at stations can change during the day.",
+    "lv": "Oficiālās cenas tiek publicētas plkst. 10:00.\nNedēļas nogalēs saraksts netiek atjaunināts.\nCenas uzpildes stacijās dienas laikā var mainīties.",
+    "et": "Ametlikud hinnad avaldatakse kell 10:00.\nNädalavahetustel loendit ei uuendata.\nHinnad tanklates võivad päeva jooksul muutuda.",
+    "uk": "Офіційні ціни публікуються о 10:00.\nУ вихідні список не оновлюється.\nЦіни на заправках протягом дня можуть змінюватися.",
+    "ru": "Официальные цены публикуются в 10:00.\nПо выходным он не обновляется.\nЦены на заправках могут меняться в течение дня.",
+    "pl": "Oficjalne ceny są publikowane o 10:00.\nW weekendy lista nie jest aktualizowana.\nCeny na stacjach mogą się zmieniać w ciągu dnia.",
+    "de": "Die offiziellen Preise werden um 10:00 Uhr veröffentlicht.\nAm Wochenende wird die Liste nicht aktualisiert.\nDie Preise an den Tankstellen können sich im Laufe des Tages ändern.",
+    "sv": "De officiella priserna publiceras kl. 10:00.\nListan uppdateras inte på helger.\nPriserna på stationerna kan ändras under dagen.",
+    "fi": "Viralliset hinnat julkaistaan klo 10:00.\nListaa ei päivitetä viikonloppuisin.\nAsemien hinnat voivat muuttua päivän aikana.",
+    "no": "De offisielle prisene publiseres kl. 10:00.\nListen oppdateres ikke i helgene.\nPrisene på stasjonene kan endres i løpet av dagen."
   },
   "el_market": {
     "lt": "Elektros rinkos kaina",
