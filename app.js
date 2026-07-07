@@ -51,7 +51,7 @@ const LOYALTY_NETWORKS = [
 const LOYALTY_TYPICAL = {
     "UAB Circle K Lietuva": "3.5",   // typical card/app discount
     "UAB Neste Lietuva": "3.5",      // typical; Neste app can reach ~7
-    "UAB Baltic Petroleum": "0.05",  // everyday app discount is genuinely tiny; bigger on Fridays
+    "UAB Baltic Petroleum": "0.5",   // everyday app discount ≈ half a cent (e.g. 1.569 → 1.564); bigger on Fridays
 };
 
 // Optional per-network condition note shown under the config row (i18n key) —
@@ -76,6 +76,16 @@ function loyaltyPrice(price, cents) { return Math.max(0, price - cents / 100); }
 // Format a ¢/L value compactly: up to 2 decimals, trailing zeros trimmed
 // (so 3 -> "3", 3.5 -> "3.5", 0.05 -> "0.05").
 function loyaltyFmt(c) { return Number(Number(c).toFixed(2)).toString(); }
+// A representative €/L price for a network (its cheapest station at the current
+// fuel; falls back to the overall cheapest). Used only for the live config
+// preview so the user can sanity-check the MAGNITUDE of the discount they type.
+function loyaltyRefPrice(legal) {
+    const rf = (fuelType === "ev") ? "petrol95" : fuelType;
+    const own = (DATA.stations || []).filter(s => s.network === legal && s[rf] != null).map(s => s[rf]);
+    if (own.length) return Math.min(...own);
+    const all = (DATA.stations || []).filter(s => s[rf] != null).map(s => s[rf]);
+    return all.length ? Math.min(...all) : null;
+}
 // Tidy a legal company name for display ("UAB Viada LT" -> "Viada LT").
 function loyaltyLabel(net) { return String(net || "").replace(/^(UAB|AB|VšĮ|VŠĮ|MB|IĮ|Iį)\s+/i, ""); }
 
@@ -416,6 +426,17 @@ function loyaltyConfigHtml() {
     return `<div class="loyalty-rows">${rows.join("")}</div>${addSel}`;
 }
 
+// Live "€ref → €disc" preview for a config row so the user can sanity-check the
+// MAGNITUDE of the value they typed (e.g. 0.5 ¢/L visibly changes the price;
+// 0.05 does not). Numbers only — no user data — so it is safe as innerHTML.
+function loyaltyPreviewHtml(legal) {
+    const c = LOYALTY.cents[legal];
+    if (!(typeof c === "number" && isFinite(c) && c > 0)) return "";
+    const ref = loyaltyRefPrice(legal);
+    if (ref == null) return "";
+    return `€${ref.toFixed(3)} → <b>€${loyaltyPrice(ref, c).toFixed(3)}</b>/L`;
+}
+
 function loyaltyRowHtml(label, legal) {
     const c = LOYALTY.cents[legal];
     const val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
@@ -429,7 +450,8 @@ function loyaltyRowHtml(label, legal) {
                value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
                ${LOYALTY.enabled ? "" : "disabled"}>
         <span class="loyalty-unit">¢/L</span>
-      </div>${note}
+      </div>
+      <div class="loyalty-preview">${loyaltyPreviewHtml(legal)}</div>${note}
     </div>`;
 }
 
@@ -450,6 +472,9 @@ function setLoyalty(input) {
     if (isFinite(v) && v > 0) LOYALTY.cents[net] = Math.min(v, 50);
     else delete LOYALTY.cents[net];
     lsSet("kk_loyalty", LOYALTY);
+    const item = input.closest(".loyalty-item");           // live-update this row's preview
+    const prev = item && item.querySelector(".loyalty-preview");
+    if (prev) prev.innerHTML = loyaltyPreviewHtml(net);
     render();
 }
 

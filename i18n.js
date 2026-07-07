@@ -125,7 +125,7 @@ const STRINGS = {
     "loyalty_add": "+ Pridėti kitą tinklą…",
     "loyalty_disclaimer": "⚠️ Kainos su kortele yra apytikslės — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Oficiali kaina yra svarbiausia.",
     "loyalty_note_bp": "Kasdienė nuolaida programėlėje labai maža; penktadieniais didesnė.",
-    "loyalty_note_viada": "Trečiadieniais ir vasaros savaitgaliais gerokai didesnė (skelbiama dieną prieš).",
+    "loyalty_note_viada": "Vasarą savaitgaliais visada −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
     "loyalty_note_neste": "Programėlėje kartais iki −7 ¢/L.",
     "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra."
   },
@@ -489,7 +489,7 @@ const STRINGS = {
     "loyalty_add": "+ Add another network…",
     "loyalty_disclaimer": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative.",
     "loyalty_note_bp": "Everyday app discount is very small; bigger on Fridays.",
-    "loyalty_note_viada": "Much bigger on Wednesdays and summer weekends (announced a day ahead).",
+    "loyalty_note_viada": "In summer, always −10 ¢/L on weekends; Wednesdays have a special announced price.",
     "loyalty_note_neste": "Up to −7 ¢/L in the app.",
     "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise."
   },
