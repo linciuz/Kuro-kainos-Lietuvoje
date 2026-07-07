@@ -349,7 +349,7 @@
             </div>
 
             <div class="fuel-type-selector">
-                <button class="fuel-btn active" id="btn-petrol95" onclick="selectFuel('petrol95')" data-i18n="btn_petrol95">⛽ Petrol 95</button>
+                <button class="fuel-btn active" id="btn-petrol95" onclick="selectFuel('petrol95')" data-i18n="btn_petrol95">⛽ Benzinas 95</button>
                 <button class="fuel-btn" id="btn-diesel" onclick="selectFuel('diesel')" data-i18n="btn_diesel">🚛 Dyzelinas</button>
                 <button class="fuel-btn" id="btn-lpg" onclick="selectFuel('lpg')" data-i18n="btn_lpg">🔥 Dujos</button>
                 <button class="fuel-btn ev" id="btn-ev" onclick="selectFuel('ev')">⚡ EV</button>
@@ -407,6 +407,10 @@
     <script src="i18n.js"></script>
     <script src="app.js"></script>
     <script>
+      // Translate the static controls now (i18n.js + app.js are already parsed),
+      // before the first paint, so labels don't flash from the hardcoded default
+      // to the active language (e.g. "Petrol 95" -> "Benzinas 95").
+      try { applyStaticI18n(); } catch (e) {}
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () =>
           navigator.serviceWorker.register("service-worker.js").catch(() => {}));

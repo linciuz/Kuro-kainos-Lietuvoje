@@ -884,8 +884,8 @@
     "no": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
   },
   "banner_side": {
-    "lt": "Oficialus LEA kainų sąrašas paskelbiamas 10:00 val.\nSavaitgaliais sąrašas neatnaujinamas.\nKainos degalinėse dienos bėgyje gali keistis.",
-    "en": "The official LEA price list is published at 10:00.\nThe list is not updated on weekends.\nPrices at stations can change during the day."
+    "lt": "Oficialus kainų sąrašas paskelbiamas 10:00 val.\nSavaitgaliais sąrašas neatnaujinamas.\nKainos degalinėse dienos bėgyje gali keistis.",
+    "en": "The official price list is published at 10:00.\nThe list is not updated on weekends.\nPrices at stations can change during the day."
   },
   "el_market": {
     "lt": "Elektros rinkos kaina",
