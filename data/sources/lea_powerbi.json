@@ -1,5 +1,5 @@
 {
-  "count": 844,
+  "count": 845,
   "stations": [
     {
       "company": "AB Orlen Baltics Retail",
@@ -5936,6 +5936,16 @@
       "company": "UAB Saurida",
       "municipality": "Marijampolės sav.",
       "address": "Marijampolė, Statybininkų g. 8, 68108",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno m. sav.",
+      "address": "Martinavos g. 1, Neveronių k., 54475",
       "fuels": [
         "petrol95",
         "diesel",
