@@ -329,6 +329,8 @@ function updateFeatureButtons() {
     if (fb) fb.classList.toggle("on", showFavsOnly);
     const ab = document.getElementById("alert-toggle");
     if (ab) ab.classList.toggle("on", ALERTS.enabled);
+    const db = document.getElementById("disc-toggle");
+    if (db) db.classList.toggle("on", LOYALTY.enabled);
 }
 
 function buildActionBar() {
@@ -337,13 +339,14 @@ function buildActionBar() {
     box.innerHTML =
         `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" title="${esc(t("favourites"))}">★</button>
          <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alert_title"))}">🔔</button>
+         <button type="button" class="act-btn" id="disc-toggle" onclick="openDiscounts()" title="${esc(t("loyalty_title"))}">💳</button>
          <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>
          <button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`;
 }
 
 // ---- Fuelis Tools: consumption calculator, "worth the detour?", fuel
 //      comparison, and a fill-up log — all client-side, saved in localStorage. --
-function toolNum(id) { const v = parseFloat((document.getElementById(id) || {}).value); return isFinite(v) ? v : null; }
+function toolNum(id) { const v = parseFloat(String((document.getElementById(id) || {}).value || "").replace(",", ".")); return isFinite(v) ? v : null; }
 function toolFmt(n, d) { d = d == null ? 2 : d; return (n == null || !isFinite(n)) ? "–" : n.toLocaleString("lt-LT", { minimumFractionDigits: d, maximumFractionDigits: d }); }
 function todayISO() { return new Date().toISOString().slice(0, 10); }
 
@@ -357,6 +360,33 @@ function closeTools() {
     if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
 }
 
+// Discounts ("Nuolaidos") — its own tab/modal (shares the tools-modal styles).
+function openDiscounts() {
+    renderDiscounts();
+    const m = document.getElementById("disc-modal");
+    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); }
+}
+function closeDiscounts() {
+    const m = document.getElementById("disc-modal");
+    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
+}
+function renderDiscounts() {
+    const title = document.getElementById("disc-title");
+    if (title) title.textContent = "💳 " + t("loyalty_title");
+    const body = document.getElementById("disc-body");
+    if (!body) return;
+    body.innerHTML = `
+      <section class="tool-card">
+        <div class="tool-note">${esc(t("loyalty_note"))}</div>
+        <label class="loyalty-switch">
+          <input type="checkbox" id="loyalty-enabled" ${LOYALTY.enabled ? "checked" : ""} onchange="toggleLoyalty(this.checked)">
+          <span>${esc(t("loyalty_enable"))}</span>
+        </label>
+        <div class="loyalty-config${LOYALTY.enabled ? "" : " off"}">${loyaltyConfigHtml()}</div>
+        <div class="tool-note loyalty-disclaimer">${esc(t("loyalty_disclaimer"))}</div>
+      </section>`;
+}
+
 function renderTools() {
     const title = document.getElementById("tools-title");
     if (title) title.textContent = "🧮 " + t("tools_title");
@@ -367,20 +397,20 @@ function renderTools() {
     body.innerHTML = `
       <section class="tool-card">
         <h3>${esc(t("cc_title"))}</h3>
-        <label>${esc(t("cc_litres"))}<input id="cc-litres" type="number" inputmode="decimal" step="0.01" min="0" placeholder="45"></label>
-        <label>${esc(t("cc_km"))}<input id="cc-km" type="number" inputmode="decimal" step="0.1" min="0" placeholder="600"></label>
-        <label>${esc(t("cc_price"))}<input id="cc-price" type="number" inputmode="decimal" step="0.001" min="0" placeholder="${priceHint}"></label>
+        <label>${esc(t("cc_litres"))}<input id="cc-litres" type="text" inputmode="decimal" step="0.01" min="0" placeholder="45"></label>
+        <label>${esc(t("cc_km"))}<input id="cc-km" type="text" inputmode="decimal" step="0.1" min="0" placeholder="600"></label>
+        <label>${esc(t("cc_price"))}<input id="cc-price" type="text" inputmode="decimal" step="0.001" min="0" placeholder="${priceHint}"></label>
         <button type="button" class="tool-btn" onclick="calcConsumption()">${esc(t("tool_calc"))}</button>
         <div id="cc-out" class="tool-out"></div>
       </section>
 
       <section class="tool-card">
         <h3>${esc(t("wd_title"))}</h3>
-        <label>${esc(t("wd_cons"))}<input id="wd-cons" type="number" inputmode="decimal" step="0.1" min="0" placeholder="7.0"></label>
-        <label>${esc(t("wd_here"))}<input id="wd-here" type="number" inputmode="decimal" step="0.001" min="0" placeholder="${priceHint}"></label>
-        <label>${esc(t("wd_there"))}<input id="wd-there" type="number" inputmode="decimal" step="0.001" min="0"></label>
-        <label>${esc(t("wd_dist"))}<input id="wd-dist" type="number" inputmode="decimal" step="0.1" min="0" placeholder="5"></label>
-        <label>${esc(t("wd_litres"))}<input id="wd-litres" type="number" inputmode="decimal" step="0.1" min="0" placeholder="45"></label>
+        <label>${esc(t("wd_cons"))}<input id="wd-cons" type="text" inputmode="decimal" step="0.1" min="0" placeholder="7.0"></label>
+        <label>${esc(t("wd_here"))}<input id="wd-here" type="text" inputmode="decimal" step="0.001" min="0" placeholder="${priceHint}"></label>
+        <label>${esc(t("wd_there"))}<input id="wd-there" type="text" inputmode="decimal" step="0.001" min="0"></label>
+        <label>${esc(t("wd_dist"))}<input id="wd-dist" type="text" inputmode="decimal" step="0.1" min="0" placeholder="5"></label>
+        <label>${esc(t("wd_litres"))}<input id="wd-litres" type="text" inputmode="decimal" step="0.1" min="0" placeholder="45"></label>
         <button type="button" class="tool-btn" onclick="calcDetour()">${esc(t("tool_calc"))}</button>
         <div id="wd-out" class="tool-out"></div>
       </section>
@@ -388,31 +418,20 @@ function renderTools() {
       <section class="tool-card">
         <h3>${esc(t("cmp_title"))}</h3>
         <div class="tool-note">${esc(t("cmp_note"))}</div>
-        <label>${esc(t("fuel_petrol95"))} (L/100&nbsp;km)<input id="cmp-petrol95" type="number" inputmode="decimal" step="0.1" min="0" placeholder="7.5"></label>
-        <label>${esc(t("fuel_diesel"))} (L/100&nbsp;km)<input id="cmp-diesel" type="number" inputmode="decimal" step="0.1" min="0" placeholder="5.5"></label>
-        <label>${esc(t("ws_lpg"))} (L/100&nbsp;km)<input id="cmp-lpg" type="number" inputmode="decimal" step="0.1" min="0" placeholder="9.5"></label>
+        <label>${esc(t("fuel_petrol95"))} (L/100&nbsp;km)<input id="cmp-petrol95" type="text" inputmode="decimal" step="0.1" min="0" placeholder="7.5"></label>
+        <label>${esc(t("fuel_diesel"))} (L/100&nbsp;km)<input id="cmp-diesel" type="text" inputmode="decimal" step="0.1" min="0" placeholder="5.5"></label>
+        <label>${esc(t("ws_lpg"))} (L/100&nbsp;km)<input id="cmp-lpg" type="text" inputmode="decimal" step="0.1" min="0" placeholder="9.5"></label>
         <button type="button" class="tool-btn" onclick="calcCompare()">${esc(t("tool_calc"))}</button>
         <div id="cmp-out" class="tool-out"></div>
-      </section>
-
-      <section class="tool-card">
-        <h3>${esc(t("loyalty_title"))}</h3>
-        <div class="tool-note">${esc(t("loyalty_note"))}</div>
-        <label class="loyalty-switch">
-          <input type="checkbox" id="loyalty-enabled" ${LOYALTY.enabled ? "checked" : ""} onchange="toggleLoyalty(this.checked)">
-          <span>${esc(t("loyalty_enable"))}</span>
-        </label>
-        <div class="loyalty-config${LOYALTY.enabled ? "" : " off"}">${loyaltyConfigHtml()}</div>
-        <div class="tool-note loyalty-disclaimer">${esc(t("loyalty_disclaimer"))}</div>
       </section>
 
       <section class="tool-card">
         <h3>${esc(t("log_title"))}</h3>
         <div class="log-add-row">
           <input id="lg-date" type="date" value="${todayISO()}">
-          <input id="lg-litres" type="number" inputmode="decimal" step="0.01" min="0" placeholder="${esc(t("cc_litres"))}">
-          <input id="lg-km" type="number" inputmode="decimal" step="0.1" min="0" placeholder="km">
-          <input id="lg-price" type="number" inputmode="decimal" step="0.001" min="0" placeholder="€/L">
+          <input id="lg-litres" type="text" inputmode="decimal" step="0.01" min="0" placeholder="${esc(t("cc_litres"))}">
+          <input id="lg-km" type="text" inputmode="decimal" step="0.1" min="0" placeholder="km">
+          <input id="lg-price" type="text" inputmode="decimal" step="0.001" min="0" placeholder="€/L">
           <button type="button" class="tool-btn small" onclick="addLogManual()">${esc(t("log_add"))}</button>
         </div>
         <div id="log-body" class="log-body"></div>
@@ -463,7 +482,7 @@ function loyaltyRowHtml(label, legal) {
     return `<div class="loyalty-item">
       <div class="loyalty-row">
         <span class="loyalty-net">${esc(label)}</span>
-        <input type="number" inputmode="decimal" step="any" min="0" max="${LOYALTY_MAX}" placeholder="${escAttr(ph)}"
+        <input type="text" inputmode="decimal" step="any" min="0" max="${LOYALTY_MAX}" placeholder="${escAttr(ph)}"
                value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
                ${LOYALTY.enabled ? "" : "disabled"}>
         <span class="loyalty-unit">¢/L</span>
@@ -487,22 +506,22 @@ function toggleLoyalty(on) {
     }
     lsSet("kk_loyalty", LOYALTY);
     if (seeded) {
-        renderTools();   // repopulate the ¢/L fields with the seeded values
+        renderDiscounts();   // repopulate the ¢/L fields with the seeded values
     } else {
-        // Mutate the config in place — a full rebuild would wipe anything
-        // half-typed into the sibling calculators.
+        // Mutate the config in place — a full rebuild would reset the scroll/state.
         const cfg = document.querySelector(".loyalty-config");
         if (cfg) {
             cfg.classList.toggle("off", !LOYALTY.enabled);
             cfg.querySelectorAll(".loyalty-row input, .loyalty-add").forEach(el => { el.disabled = !LOYALTY.enabled; });
         }
     }
+    updateFeatureButtons();   // highlight the 💳 action button when active
     render();        // add/remove badges on the list & map
 }
 
 // Live-update as the user types a ¢/L value. A blank/0/invalid value removes the
 // discount (so no badge). render() refreshes the badges but never touches the
-// Tools modal DOM, so the input the user is typing in is preserved.
+// discounts modal DOM, so the input the user is typing in is preserved.
 function setLoyalty(input) {
     const net = input.dataset.net;
     if (!net) return;
@@ -521,7 +540,7 @@ function addLoyaltyNet(net) {
     if (!net || !LOYALTY.enabled || LOYALTY.cents[net] != null) return;
     LOYALTY.cents[net] = 0;   // adds an (empty) row; 0 yields no badge until a value is typed
     lsSet("kk_loyalty", LOYALTY);
-    renderTools();
+    renderDiscounts();
     try {
         const sel = '.loyalty-row input[data-net="' + ((window.CSS && CSS.escape) ? CSS.escape(net) : net) + '"]';
         const el = document.querySelector(sel);
@@ -1311,8 +1330,9 @@ function renderMap() {
             label = `€${ep.toFixed(2)}`;
         }
         if (s.approx) cls += " approx";
+        const favStar = isFav(favKey(s)) ? `<span class="pin-fav">★</span>` : "";
         const icon = L.divIcon({
-            className: "", html: `<div class="${cls}">${label}</div>`,
+            className: "", html: `<div class="${cls}">${label}${favStar}</div>`,
             iconSize: null, iconAnchor: [22, 12]
         });
         const dist = (userPos && s._dist != null) ? `<br>📍 ${s.approx ? "~" : ""}${fmtDist(s._dist)}` : "";

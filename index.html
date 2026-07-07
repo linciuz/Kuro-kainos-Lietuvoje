@@ -209,10 +209,13 @@
         .ev-status.ev-busy { color: #dc3545; background: #fdecee; }
         .ev-status.ev-down, .ev-status.ev-unknown { color: #6b7280; }
         .price-pin {
+            position: relative;
             background: #007AFF; color: #fff; font-weight: 700; font-size: 12px;
             padding: 3px 6px; border-radius: 8px; white-space: nowrap;
             border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4); text-align: center;
         }
+        .pin-fav { position: absolute; top: -9px; right: -7px; font-size: 13px; color: #f5b301;
+            line-height: 1; text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff; pointer-events: none; }
         .price-pin.cheap { background: #1faa4b; }
         .price-pin.dear { background: #dc3545; }
         .price-pin.noprice { background: #9aa0a6; }
@@ -389,6 +392,15 @@
           <button type="button" class="tools-close" onclick="closeTools()" aria-label="Close">✕</button>
         </div>
         <div class="tools-body" id="tools-body"></div>
+      </div>
+    </div>
+    <div id="disc-modal" class="tools-modal" onclick="if(event.target===this)closeDiscounts()">
+      <div class="tools-sheet">
+        <div class="tools-head">
+          <span id="disc-title">💳</span>
+          <button type="button" class="tools-close" onclick="closeDiscounts()" aria-label="Close">✕</button>
+        </div>
+        <div class="tools-body" id="disc-body"></div>
       </div>
     </div>
 </body>
