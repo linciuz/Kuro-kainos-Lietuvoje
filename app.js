@@ -466,13 +466,28 @@ function loyaltyRowHtml(label, legal) {
 
 function toggleLoyalty(on) {
     LOYALTY.enabled = !!on;
+    // First enable with nothing configured yet: seed the known typical everyday
+    // discounts so turning it on has an IMMEDIATE visible effect (otherwise the
+    // blank fields mean "on" does nothing). The user can still edit/clear any row.
+    let seeded = false;
+    if (LOYALTY.enabled && Object.keys(LOYALTY.cents).length === 0) {
+        for (const legal in LOYALTY_TYPICAL) {
+            const v = parseFloat(LOYALTY_TYPICAL[legal]);
+            if (isFinite(v) && v > 0) LOYALTY.cents[legal] = v;
+        }
+        seeded = true;
+    }
     lsSet("kk_loyalty", LOYALTY);
-    // Mutate the loyalty config in place rather than renderTools() — a full
-    // rebuild would wipe anything half-typed into the sibling calculators.
-    const cfg = document.querySelector(".loyalty-config");
-    if (cfg) {
-        cfg.classList.toggle("off", !LOYALTY.enabled);
-        cfg.querySelectorAll(".loyalty-row input, .loyalty-add").forEach(el => { el.disabled = !LOYALTY.enabled; });
+    if (seeded) {
+        renderTools();   // repopulate the ¢/L fields with the seeded values
+    } else {
+        // Mutate the config in place — a full rebuild would wipe anything
+        // half-typed into the sibling calculators.
+        const cfg = document.querySelector(".loyalty-config");
+        if (cfg) {
+            cfg.classList.toggle("off", !LOYALTY.enabled);
+            cfg.querySelectorAll(".loyalty-row input, .loyalty-add").forEach(el => { el.disabled = !LOYALTY.enabled; });
+        }
     }
     render();        // add/remove badges on the list & map
 }
