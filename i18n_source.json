@@ -936,17 +936,17 @@
     "no": "Favoritter"
   },
   "no_favourites": {
-    "lt": "Kol kas nėra mėgstamų — palieskite ☆ kortelėje",
-    "en": "No favourites yet — tap ☆ on a card",
-    "lv": "Pagaidām nav iecienīto — pieskarieties ☆",
-    "et": "Lemmikuid veel pole — puuduta ☆",
-    "uk": "Поки що немає обраного — торкніться ☆",
-    "ru": "Пока нет избранного — нажмите ☆",
-    "pl": "Brak ulubionych — dotknij ☆",
-    "de": "Noch keine Favoriten — tippe auf ☆",
-    "sv": "Inga favoriter än — tryck på ☆",
-    "fi": "Ei suosikkeja — napauta ☆",
-    "no": "Ingen favoritter — trykk ☆"
+    "lt": "Kol kas nėra mėgstamiausių — paspauskite ☆ simbolį prie patinkančios degalinės",
+    "en": "No favourites yet — press the ☆ next to a station you like",
+    "lv": "Pagaidām nav iecienīto — nospiediet ☆ pie patīkamas degvielas uzpildes stacijas",
+    "et": "Lemmikuid veel pole — vajuta ☆ meeldiva tankla juures",
+    "uk": "Поки що немає обраного — натисніть ☆ біля станції, яка вам подобається",
+    "ru": "Пока нет избранного — нажмите ☆ рядом с понравившейся заправкой",
+    "pl": "Brak ulubionych — naciśnij ☆ przy stacji, którą lubisz",
+    "de": "Noch keine Favoriten — tippe auf ☆ neben einer Tankstelle, die dir gefällt",
+    "sv": "Inga favoriter än — tryck på ☆ vid en station du gillar",
+    "fi": "Ei vielä suosikkeja — paina ☆ pitämäsi aseman kohdalla",
+    "no": "Ingen favoritter ennå — trykk ☆ ved en stasjon du liker"
   },
   "alert_title": {
     "lt": "Kaina krito!",
