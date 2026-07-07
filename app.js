@@ -1294,19 +1294,21 @@ function renderMap() {
     rows = rows.slice(0, MAX);
     if (rows.length === 0) return;
 
-    const prices = rows.map(r => r[fuelType]).filter(p => p != null);
+    const prices = rows.map(r => effPrice(r)).filter(p => p != null);   // discounted when loyalty on
     const lo = Math.min(...prices), hi = Math.max(...prices);
     const bounds = [];
 
     rows.forEach(s => {
         const p = s[fuelType];
+        const ep = effPrice(s);                // discounted when loyalty on, else official
         let cls = "price-pin", label;
-        if (p == null) {                       // price-less registry station
+        if (ep == null) {                      // price-less registry station
             cls += " noprice"; label = "?";
         } else {
-            if (p <= lo + (hi - lo) * 0.25) cls += " cheap";
-            else if (p >= lo + (hi - lo) * 0.75) cls += " dear";
-            label = `€${p.toFixed(2)}`;
+            if (ep <= lo + (hi - lo) * 0.25) cls += " cheap";
+            else if (ep >= lo + (hi - lo) * 0.75) cls += " dear";
+            if (ep !== p) cls += " disc";      // this pin's price reflects a loyalty discount
+            label = `€${ep.toFixed(2)}`;
         }
         if (s.approx) cls += " approx";
         const icon = L.divIcon({
