@@ -1,0 +1,85 @@
+{
+  "generated": "2026-07-07T07:13:33Z",
+  "disclaimer": "Monitoring artifact — NOT read by the app and never shown as a price. Values are for a maintainer to review before updating the hand-set loyalty hints/notes in app.js. Some pages hide the figure in an image.",
+  "changes": [],
+  "pages": {
+    "viada_card": {
+      "network": "Viada",
+      "url": "https://www.viada.lt/korteles-ir-lojalumas/viadaplus-lojalumas/",
+      "kind": "standing",
+      "available": true,
+      "http_status": 200,
+      "values": [
+        "3 ct/l",
+        "3.5 ct/l"
+      ],
+      "date": "2026 m. vasario 28 d.",
+      "last_error": null,
+      "checked": "2026-07-07T07:13:30Z"
+    },
+    "viada_weekend": {
+      "network": "Viada",
+      "url": "https://www.viada.lt/akcija/nuolaidu-savaitgaliai/",
+      "kind": "standing",
+      "available": true,
+      "http_status": 200,
+      "values": [
+        "10 ct/l"
+      ],
+      "date": null,
+      "last_error": null,
+      "checked": "2026-07-07T07:13:31Z"
+    },
+    "neste_card": {
+      "network": "Neste",
+      "url": "https://www.neste.lt/lt/neste-nuolaidu-kortele",
+      "kind": "standing",
+      "available": true,
+      "http_status": 200,
+      "values": [
+        "1.5 ct/l",
+        "3.5 ct/l"
+      ],
+      "date": null,
+      "last_error": null,
+      "checked": "2026-07-07T07:13:32Z"
+    },
+    "neste_nuolaidadienis": {
+      "network": "Neste",
+      "url": "https://www.neste.lt/lt/nuolaidadienis",
+      "kind": "dynamic",
+      "available": true,
+      "http_status": 200,
+      "values": [
+        "7 ct/l"
+      ],
+      "date": "2026 m. liepos 8 d.",
+      "last_error": null,
+      "checked": "2026-07-07T07:13:32Z"
+    },
+    "bp_card": {
+      "network": "Baltic Petroleum",
+      "url": "https://balticpetroleum.lt/korteles-privatiems",
+      "kind": "standing",
+      "available": true,
+      "http_status": 200,
+      "values": [
+        "0.03 €/l"
+      ],
+      "date": null,
+      "last_error": null,
+      "checked": "2026-07-07T07:13:33Z"
+    },
+    "bp_bakadienis": {
+      "network": "Baltic Petroleum",
+      "url": "https://balticpetroleum.lt/akcijos/bakadienis/65",
+      "kind": "dynamic",
+      "available": true,
+      "http_status": 200,
+      "values": [],
+      "date": null,
+      "last_error": null,
+      "checked": "2026-07-07T07:13:33Z"
+    }
+  }
+}
