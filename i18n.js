@@ -124,7 +124,8 @@ const STRINGS = {
     "loyalty_with_card": "su kortele",
     "loyalty_add": "+ Pridėti kitą tinklą…",
     "loyalty_disclaimer": "⚠️ Kainos su kortele yra apytikslės — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Oficiali kaina yra svarbiausia.",
-    "loyalty_note_bp": "Kortele −3 ¢/L; CASH PRICE+ degalinėse nuolaida maža, penktadieniais didesnė (Bakadienis).",
+    "loyalty_note_bp": "Programėlėje (CASH PRICE+) ≈ −0,5 ¢/L, penktadieniais didesnė (Bakadienis). −3 ¢/L kortelė nurodyta oficialiai, bet reta (gali būti pasenusi).",
+    "loyalty_note_circlek": "EXTRA kortele −3,5 ¢/L (didėja lankantis dažniau); pasitaiko didesnių savaitgalio ar trečiadienio akcijų.",
     "loyalty_note_viada": "Vasarą savaitgaliais visada −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
     "loyalty_note_neste": "Kortele −3,5 ¢/L; trečiadieniais „nuolaidadienis“ iki −7 ¢/L (kortele ar programėle).",
     "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra."
@@ -488,7 +489,8 @@ const STRINGS = {
     "loyalty_with_card": "with card",
     "loyalty_add": "+ Add another network…",
     "loyalty_disclaimer": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative.",
-    "loyalty_note_bp": "Card −3 ¢/L; at CASH PRICE+ stations the discount is small, bigger on Fridays (Bakadienis).",
+    "loyalty_note_bp": "App (CASH PRICE+) ≈ −0.5 ¢/L, bigger on Fridays (Bakadienis). A −3 ¢/L card is officially listed but rarely seen (may be outdated).",
+    "loyalty_note_circlek": "EXTRA card −3.5 ¢/L (rises with frequent visits); bigger weekend or Wednesday promos appear at times.",
     "loyalty_note_viada": "In summer, always −10 ¢/L on weekends; Wednesdays have a special announced price.",
     "loyalty_note_neste": "Card −3.5 ¢/L; Wednesday “discount day” up to −7 ¢/L (card or app).",
     "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise."

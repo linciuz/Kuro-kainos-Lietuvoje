@@ -65,6 +65,15 @@ PAGES = [
      "url": "https://balticpetroleum.lt/korteles-privatiems"},
     {"key": "bp_bakadienis",        "network": "Baltic Petroleum", "kind": "dynamic",
      "url": "https://balticpetroleum.lt/akcijos/bakadienis/65"},
+    {"key": "circlek_extra",        "network": "Circle K",         "kind": "standing",
+     "url": "https://www.circlek.lt/privatiems/extra"},
+    # Weekend/promo page and Viada's seasonal Wednesday page: both DYNAMIC — expect
+    # them to appear/disappear (404 when a promo isn't running). Watched so a new
+    # Wednesday/weekend special (e.g. the rumoured Circle K −12 Wed) gets flagged.
+    {"key": "circlek_10ct",         "network": "Circle K",         "kind": "dynamic",
+     "url": "https://www.circlek.lt/10ct"},
+    {"key": "viada_treciadieniai",  "network": "Viada",            "kind": "dynamic",
+     "url": "https://www.viada.lt/akcija/super-treciadieniai/"},
 ]
 
 DISCLAIMER = ("Monitoring artifact — NOT read by the app and never shown as a price. "

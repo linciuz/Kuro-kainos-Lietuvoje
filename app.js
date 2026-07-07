@@ -61,6 +61,7 @@ const LOYALTY_TYPICAL = {
 // captures the "depends on the day / your status" caveats so a tiny or absent
 // typical value isn't the whole story.
 const LOYALTY_NOTES = {
+    "UAB Circle K Lietuva": "loyalty_note_circlek",
     "UAB Baltic Petroleum": "loyalty_note_bp",
     "UAB Viada LT": "loyalty_note_viada",
     "UAB Neste Lietuva": "loyalty_note_neste",
