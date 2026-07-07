@@ -14,6 +14,22 @@ const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map vie
 //     into free vs "Fuelis Pro"). Set DONATE_URL to your Ko-fi/BuyMeACoffee/PayPal.
 const DONATE_URL = "https://ko-fi.com/fuelis";
 
+// Google Play bans in-app external donation links, so hide the ☕ Support button
+// inside the Android TWA. The wrapper launches with ?src=twa (twa-manifest
+// startUrl) and an android-app:// referrer; persist the flag so it sticks across
+// navigations. On the plain web the button shows as normal.
+const IS_NATIVE = (() => {
+    try {
+        if (localStorage.getItem("kk_native") === "1") return true;
+        const src = new URLSearchParams(location.search).get("src");
+        if (src === "twa" || (document.referrer || "").startsWith("android-app://")) {
+            localStorage.setItem("kk_native", "1");
+            return true;
+        }
+    } catch (e) {}
+    return false;
+})();
+
 function lsGet(k, def) { try { const v = localStorage.getItem(k); return v == null ? def : JSON.parse(v); } catch (e) { return def; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
@@ -340,8 +356,8 @@ function buildActionBar() {
         `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" title="${esc(t("favourites"))}">★</button>
          <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alert_title"))}">🔔</button>
          <button type="button" class="act-btn" id="disc-toggle" onclick="openDiscounts()" title="${esc(t("loyalty_title"))}">💳</button>
-         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>
-         <button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`;
+         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>` +
+        (IS_NATIVE ? "" : `<button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`);
 }
 
 // ---- Fuelis Tools: consumption calculator, "worth the detour?", fuel
