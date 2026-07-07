@@ -1378,7 +1378,7 @@
     "no": "Skriv inn forbruket ditt for minst ett drivstoff"
   },
   "log_title": {
-    "lt": "Pildymų žurnalas",
+    "lt": "Pylimų žurnalas",
     "en": "Fuel log",
     "lv": "Uzpildes žurnāls",
     "et": "Tankimispäevik",
@@ -1456,7 +1456,7 @@
     "no": "Total distanse"
   },
   "tool_log_empty": {
-    "lt": "Žurnalas tuščias. Pridėkite pildymą arba įrašykite iš skaičiuoklės.",
+    "lt": "Žurnalas tuščias. Pridėkite užpylimą arba įrašykite iš skaičiuoklės.",
     "en": "Log is empty. Add a fill-up or save one from the calculator.",
     "lv": "Žurnāls ir tukšs. Pievienojiet uzpildi vai saglabājiet to no kalkulatora.",
     "et": "Päevik on tühi. Lisa tankimine või salvesta see kalkulaatorist.",
@@ -1520,16 +1520,16 @@
     "en": "Show price with discount"
   },
   "loyalty_with_card": {
-    "lt": "su kortele",
-    "en": "with card"
+    "lt": "su nuolaida",
+    "en": "with discount"
   },
   "loyalty_add": {
     "lt": "+ Pridėti kitą tinklą…",
     "en": "+ Add another network…"
   },
   "loyalty_disclaimer": {
-    "lt": "⚠️ Kainos su kortele yra apytikslės — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Oficiali kaina yra svarbiausia.",
-    "en": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative."
+    "lt": "⚠️ Nuolaidos gali skirtis — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Pradinė kaina yra svarbiausia.",
+    "en": "⚠️ Discounts may vary — some networks give a bigger discount on certain days or in their app. The base price is authoritative."
   },
   "loyalty_note_bp": {
     "lt": "Programėle −0,5 ¢/L, penktadieniais „Bakadienis“ – speciali skelbiama kaina. Kortele −3 ¢/L.",
