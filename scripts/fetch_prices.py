@@ -45,6 +45,10 @@ PAGE_URL = "https://www.ena.lt/degalu-kainos-degalinese/"
 OUT_PATH = os.path.join("data", "stations.json")
 DEBUG_HEADERS_PATH = os.path.join("data", "_debug_headers.json")
 UA = "Mozilla/5.0 (compatible; KuroKainosBot/1.0; +https://github.com/)"
+# A real browser UA for the PAGE fetch — some CDNs serve a cached/stale page to
+# non-browser UAs, which can hide a file published minutes earlier.
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
 # Keyword -> field. Matching is case-insensitive and accent-insensitive on the
 # Excel header text. Extend these lists if the log shows unmapped columns.
@@ -86,36 +90,57 @@ def deaccent(s):
 
 
 def find_latest_excel_link(html):
-    """Return the SharePoint link for the CURRENT daily file.
+    """Return the SharePoint link for the CURRENT daily PRICE file.
 
-    The page lists several files: the live one is the anchor labelled
-    'Naujausios degalų kainos (YYYY-MM-DD)', plus older historical snapshots.
-    The first SharePoint link on the page is a HISTORICAL file, so we must
-    match by the anchor text, not by position. We pick the 'Naujausios'
-    anchor (or, failing that, the anchor whose label has the latest date).
+    The page lists several dated files. Two look alike but are DIFFERENT:
+      * 'Naujausios degalų kainos (YYYY-MM-DD)'        <- the daily PRICES  (use this)
+      * 'Naujausias pranešimas apie degalų kainas (…)' <- an ANALYSIS report
+    They usually share a date, but the report can LAG (e.g. after a holiday the
+    prices update while the report stays a few days old). We must pick the
+    latest-dated *prices* file and never the report — matching by label, and
+    taking the newest date, not page position. Every candidate is logged so the
+    run shows exactly what was on the page and which was chosen.
     """
     anchors = re.findall(
         r'<a[^>]+href="(https://[^"]*sharepoint\.com/[^"]+)"[^>]*>(.*?)</a>',
         html, re.I | re.S)
 
-    # 1) Explicit "Naujausios ... kain..." label.
+    cands = []
     for href, text in anchors:
-        td = deaccent(re.sub(r"<[^>]+>", "", text))
-        if "naujausios" in td and "kain" in td:
-            return href
+        label = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", text)).strip()
+        m = re.search(r"(20\d\d-\d\d-\d\d)", label)
+        cands.append({"href": href, "label": label,
+                      "td": deaccent(label), "date": m.group(1) if m else ""})
 
-    # 2) Otherwise the anchor whose label contains the latest YYYY-MM-DD date.
-    dated = []
-    for href, text in anchors:
-        m = re.search(r"(20\d\d-\d\d-\d\d)", text)
-        if m:
-            dated.append((m.group(1), href))
+    print(f"[info] {len(cands)} SharePoint anchor(s) on the page:")
+    for c in cands:
+        print(f"    - [{c['date'] or '          '}] {c['label'][:72]}")
+
+    def pick(subset, why):
+        best = max(subset, key=lambda c: c["date"])   # newest date wins
+        print(f"[info] selected {why}: [{best['date'] or '?'}] {best['label'][:60]}")
+        return best["href"]
+
+    # 1) The daily PRICES file: 'naujausios ... kainos', explicitly NOT the
+    #    'pranešimas' report; take the newest date.
+    price = [c for c in cands if "naujausios" in c["td"]
+             and "kainos" in c["td"] and "pranesim" not in c["td"]]
+    if price:
+        return pick(price, "PRICE file (naujausios degalu kainos)")
+
+    # 2) Any 'naujausios ... kain' anchor (excluding the report), newest date.
+    loose = [c for c in cands if "naujausios" in c["td"]
+             and "kain" in c["td"] and "pranesim" not in c["td"]]
+    if loose:
+        return pick(loose, "loose price match")
+
+    # 3) Any dated anchor, newest date.
+    dated = [c for c in cands if c["date"]]
     if dated:
-        return max(dated)[1]
+        return pick(dated, "newest dated anchor")
 
-    # 3) Fallback: first SharePoint link on the page.
-    links = re.findall(r'href="(https://[^"]*sharepoint\.com/[^"]+)"', html, re.I)
-    return links[0] if links else None
+    # 4) Fallback: first SharePoint link on the page.
+    return cands[0]["href"] if cands else None
 
 
 def _looks_like_xlsx(content):
@@ -338,7 +363,12 @@ def summarize(stations):
 
 def main():
     print(f"[info] fetching page: {PAGE_URL}")
-    html = requests.get(PAGE_URL, headers={"User-Agent": UA}, timeout=60).text
+    # Cache-bust + real browser UA so a just-published file can't be hidden by a
+    # cached bot-UA copy of the page (the 2026-07-07 stale-link failure).
+    bust = f"?_={int(dt.datetime.now(dt.timezone.utc).timestamp())}"
+    html = requests.get(PAGE_URL + bust, headers={
+        "User-Agent": BROWSER_UA, "Cache-Control": "no-cache", "Pragma": "no-cache",
+    }, timeout=60).text
     link = find_latest_excel_link(html)
     if not link:
         print("[error] No SharePoint Excel link found on the page.")
