@@ -1512,8 +1512,8 @@
     "en": "Loyalty card"
   },
   "loyalty_note": {
-    "lt": "Įveskite nuolaidą (¢/L), kurią suteikia jūsų kortelė kiekviename tinkle. Rodoma tik kaip papildoma kaina šalia oficialios — jos nekeičia.",
-    "en": "Enter the discount (¢/L) your card gives at each network. Shown only as an extra price beside the official one — it never replaces it."
+    "lt": "Nuolaidą suteikia lojalumo kortelė arba tinklo programėlė. Įveskite nuolaidą (¢/L), kurią gaunate jūs — ji priklauso nuo naudojimo, dienos ir sąlygų, todėl gali skirtis. Rodoma tik kaip papildoma kaina šalia oficialios, jos nekeičia.",
+    "en": "The discount comes from a loyalty card or the network's app. Enter the discount (¢/L) you personally get — it depends on usage, the day and conditions, so it can vary. Shown only as an extra price beside the official one, never replacing it."
   },
   "loyalty_enable": {
     "lt": "Rodyti kainą su lojalumo kortele",
@@ -1528,7 +1528,7 @@
     "en": "+ Add another network…"
   },
   "loyalty_disclaimer": {
-    "lt": "⚠️ Kainos su kortele yra apytikslės ir priklauso nuo kortelės sąlygų — oficiali kaina yra svarbiausia.",
-    "en": "⚠️ Card prices are estimates and depend on your card's terms — the official price is authoritative."
+    "lt": "⚠️ Kainos su kortele yra apytikslės — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Oficiali kaina yra svarbiausia.",
+    "en": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative."
   }
 }

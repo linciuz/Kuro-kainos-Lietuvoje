@@ -43,6 +43,16 @@ const LOYALTY_NETWORKS = [
     ["Orlen", "AB Orlen Baltics Retail"],
 ];
 
+// Typical everyday ¢/L discount per network — used ONLY as a greyed-out input
+// placeholder/hint, NEVER as an applied value. Real amounts vary by card tier,
+// the network's own app, day of week, and one-off promos (e.g. Viada's bigger
+// Wednesday / summer-weekend deals announced ~1 day ahead), so the user always
+// types their own. Networks without a confirmed typical get no hint (falls to 0).
+const LOYALTY_TYPICAL = {
+    "UAB Circle K Lietuva": "3.5",   // typical card/app discount
+    "UAB Neste Lietuva": "3.5",      // typical; Neste app can reach ~7
+};
+
 // Discount in ¢/L configured for this station's network (>0), else 0 — also 0
 // whenever the whole feature is toggled off.
 function loyaltyCents(s) {
@@ -397,9 +407,10 @@ function loyaltyConfigHtml() {
 function loyaltyRowHtml(label, legal) {
     const c = LOYALTY.cents[legal];
     const val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
+    const ph = LOYALTY_TYPICAL[legal] || "0";   // typical value as a hint only
     return `<div class="loyalty-row">
         <span class="loyalty-net">${esc(label)}</span>
-        <input type="number" inputmode="decimal" step="0.1" min="0" max="50" placeholder="0"
+        <input type="number" inputmode="decimal" step="0.1" min="0" max="50" placeholder="${escAttr(ph)}"
                value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
                ${LOYALTY.enabled ? "" : "disabled"}>
         <span class="loyalty-unit">¢/L</span>

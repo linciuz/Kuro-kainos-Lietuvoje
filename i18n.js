@@ -119,11 +119,11 @@ const STRINGS = {
     "tool_delete": "Ištrinti",
     "trend_label": "Vidutinės kainos tendencija",
     "loyalty_title": "Lojalumo kortelė",
-    "loyalty_note": "Įveskite nuolaidą (¢/L), kurią suteikia jūsų kortelė kiekviename tinkle. Rodoma tik kaip papildoma kaina šalia oficialios — jos nekeičia.",
+    "loyalty_note": "Nuolaidą suteikia lojalumo kortelė arba tinklo programėlė. Įveskite nuolaidą (¢/L), kurią gaunate jūs — ji priklauso nuo naudojimo, dienos ir sąlygų, todėl gali skirtis. Rodoma tik kaip papildoma kaina šalia oficialios, jos nekeičia.",
     "loyalty_enable": "Rodyti kainą su lojalumo kortele",
     "loyalty_with_card": "su kortele",
     "loyalty_add": "+ Pridėti kitą tinklą…",
-    "loyalty_disclaimer": "⚠️ Kainos su kortele yra apytikslės ir priklauso nuo kortelės sąlygų — oficiali kaina yra svarbiausia."
+    "loyalty_disclaimer": "⚠️ Kainos su kortele yra apytikslės — kai kurie tinklai tam tikromis dienomis ar programėlėje taiko didesnę nuolaidą. Oficiali kaina yra svarbiausia."
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -479,11 +479,11 @@ const STRINGS = {
     "tool_delete": "Delete",
     "trend_label": "Average price trend",
     "loyalty_title": "Loyalty card",
-    "loyalty_note": "Enter the discount (¢/L) your card gives at each network. Shown only as an extra price beside the official one — it never replaces it.",
+    "loyalty_note": "The discount comes from a loyalty card or the network's app. Enter the discount (¢/L) you personally get — it depends on usage, the day and conditions, so it can vary. Shown only as an extra price beside the official one, never replacing it.",
     "loyalty_enable": "Show price with loyalty card",
     "loyalty_with_card": "with card",
     "loyalty_add": "+ Add another network…",
-    "loyalty_disclaimer": "⚠️ Card prices are estimates and depend on your card's terms — the official price is authoritative."
+    "loyalty_disclaimer": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative."
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
