@@ -146,6 +146,28 @@ function applyStaticI18n() {
     document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
     document.documentElement.lang = lang;
     renderLocateBtn();
+    setInfoBanner();
+}
+
+// Side-opening info banner: the "prices are LEA's 10:00 snapshot; real pump
+// prices drift during the day (up or down)" caveat. Auto-opens once per session,
+// then lives as a small ℹ️ tab on the left edge.
+function setInfoBanner() {
+    const el = document.getElementById("info-banner-text");
+    if (el) el.textContent = t("banner_side");
+}
+function toggleInfoBanner() {
+    const b = document.getElementById("info-banner");
+    if (b) b.classList.toggle("open");
+}
+function closeInfoBanner() {
+    const b = document.getElementById("info-banner");
+    if (b) b.classList.remove("open");
+    try { sessionStorage.setItem("kk_info_seen", "1"); } catch (e) {}
+}
+function maybeAutoOpenInfo() {
+    try { if (sessionStorage.getItem("kk_info_seen") === "1") return; } catch (e) {}
+    setTimeout(() => { const b = document.getElementById("info-banner"); if (b) b.classList.add("open"); }, 900);
 }
 
 function renderLocateBtn() {
@@ -247,6 +269,7 @@ async function load() {
     render();
     updateFeatureButtons();
     checkPriceAlerts();     // notify if the cheapest in the user's area dropped since last visit
+    maybeAutoOpenInfo();    // slide the "10:00 snapshot" caveat banner in once per session
     // Delegate report-button clicks (station keys can contain quotes/pipes).
     const list = document.getElementById("stations-list");
     if (list && !list._reportBound) {

@@ -883,6 +883,10 @@
     "fi": "⚠️ Joidenkin asemien hinnat ovat voineet muuttua virallisen klo 10:00 hintailmoituksen jälkeen.",
     "no": "⚠️ Prisene på noen stasjoner kan ha endret seg siden den offisielle priskunngjøringen kl. 10:00."
   },
+  "banner_side": {
+    "lt": "ℹ️ Kainos — oficialus LEA sąrašas (10:00 val.). Degalinėje kaina dienos bėgyje gali skirtis — kilti ar kristi (pvz. prieš akcijų dienas). Patikrinkite vietoje.",
+    "en": "ℹ️ Prices are LEA's official 10:00 list. At the pump they can differ during the day — up or down (e.g. before discount days). Check on site."
+  },
   "el_market": {
     "lt": "Elektros rinkos kaina",
     "en": "Electricity market price",
