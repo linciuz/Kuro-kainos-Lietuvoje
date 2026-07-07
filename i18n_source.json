@@ -1532,16 +1532,16 @@
     "en": "⚠️ Card prices are estimates — some networks give a bigger discount on certain days or in their app. The official price is authoritative."
   },
   "loyalty_note_bp": {
-    "lt": "Kasdienė nuolaida programėlėje labai maža; penktadieniais didesnė.",
-    "en": "Everyday app discount is very small; bigger on Fridays."
+    "lt": "Kortele −3 ¢/L; CASH PRICE+ degalinėse nuolaida maža, penktadieniais didesnė (Bakadienis).",
+    "en": "Card −3 ¢/L; at CASH PRICE+ stations the discount is small, bigger on Fridays (Bakadienis)."
   },
   "loyalty_note_viada": {
     "lt": "Vasarą savaitgaliais visada −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
     "en": "In summer, always −10 ¢/L on weekends; Wednesdays have a special announced price."
   },
   "loyalty_note_neste": {
-    "lt": "Programėlėje kartais iki −7 ¢/L.",
-    "en": "Up to −7 ¢/L in the app."
+    "lt": "Kortele −3,5 ¢/L; trečiadieniais „nuolaidadienis“ iki −7 ¢/L (kortele ar programėle).",
+    "en": "Card −3.5 ¢/L; Wednesday “discount day” up to −7 ¢/L (card or app)."
   },
   "loyalty_note_emsi": {
     "lt": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",

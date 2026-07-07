@@ -29,9 +29,11 @@ let FUELLOG = lsGet("kk_fuellog", []);           // [{date, litres, km, price}] 
 // never replaces the official price and never feeds the national summary,
 // cheapest badge, or sort order (all of which stay on the official price).
 let LOYALTY = lsGet("kk_loyalty", { enabled: false, cents: {} });
-if (!LOYALTY || typeof LOYALTY !== "object") LOYALTY = { enabled: false, cents: {} };
+if (!LOYALTY || typeof LOYALTY !== "object" || Array.isArray(LOYALTY)) LOYALTY = { enabled: false, cents: {} };
 if (typeof LOYALTY.enabled !== "boolean") LOYALTY.enabled = false;
-if (!LOYALTY.cents || typeof LOYALTY.cents !== "object") LOYALTY.cents = {};
+// Reject arrays too: JSON.stringify drops named props of an array, silently
+// losing every discount on reload if a corrupt/legacy shape slipped in.
+if (!LOYALTY.cents || typeof LOYALTY.cents !== "object" || Array.isArray(LOYALTY.cents)) LOYALTY.cents = {};
 
 // Major branded networks that run loyalty programs: brand label -> legal company
 // name exactly as it appears in stations.json (s.network).
@@ -50,8 +52,9 @@ const LOYALTY_NETWORKS = [
 // types their own. Networks without a confirmed typical get no hint (falls to 0).
 const LOYALTY_TYPICAL = {
     "UAB Circle K Lietuva": "3.5",   // typical card/app discount
-    "UAB Neste Lietuva": "3.5",      // typical; Neste app can reach ~7
-    "UAB Baltic Petroleum": "0.5",   // everyday app discount ≈ half a cent (e.g. 1.569 → 1.564); bigger on Fridays
+    "UAB Viada LT": "3",             // ViadaPLUS tiered −3 ct/l (≤70 L/mo) → −3.5 (>70 L)
+    "UAB Neste Lietuva": "3.5",      // Neste card −3.5 ct/l LT; Wed "nuolaidadienis" up to −7
+    "UAB Baltic Petroleum": "0.5",   // CASH PRICE+ app ≈ half a cent (e.g. 1.569 → 1.564); card is −3 at regular stations
 };
 
 // Optional per-network condition note shown under the config row (i18n key) —
@@ -63,6 +66,11 @@ const LOYALTY_NOTES = {
     "UAB Neste Lietuva": "loyalty_note_neste",
     "UAB Emsi": "loyalty_note_emsi",
 };
+
+// Sanity cap on the ¢/L a user can enter. Real LT loyalty discounts top out
+// around 10 ¢/L (Viada weekends); 30 leaves generous headroom for promos while
+// keeping a stray/huge value from painting an absurd near-zero effective price.
+const LOYALTY_MAX = 30;
 
 // Discount in ¢/L configured for this station's network (>0), else 0 — also 0
 // whenever the whole feature is toggled off.
@@ -418,7 +426,7 @@ function loyaltyConfigHtml() {
         .filter(n => !shown.has(n))
         .sort((a, b) => a.localeCompare(b, "lt"));
     const addSel = others.length
-        ? `<select class="loyalty-add" onchange="addLoyaltyNet(this.value); this.value='';">
+        ? `<select class="loyalty-add" ${LOYALTY.enabled ? "" : "disabled"} onchange="addLoyaltyNet(this.value); this.value='';">
              <option value="">${esc(t("loyalty_add"))}</option>
              ${others.map(n => `<option value="${escAttr(n)}">${esc(loyaltyLabel(n))}</option>`).join("")}
            </select>`
@@ -446,7 +454,7 @@ function loyaltyRowHtml(label, legal) {
     return `<div class="loyalty-item">
       <div class="loyalty-row">
         <span class="loyalty-net">${esc(label)}</span>
-        <input type="number" inputmode="decimal" step="any" min="0" max="50" placeholder="${escAttr(ph)}"
+        <input type="number" inputmode="decimal" step="any" min="0" max="${LOYALTY_MAX}" placeholder="${escAttr(ph)}"
                value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
                ${LOYALTY.enabled ? "" : "disabled"}>
         <span class="loyalty-unit">¢/L</span>
@@ -458,7 +466,13 @@ function loyaltyRowHtml(label, legal) {
 function toggleLoyalty(on) {
     LOYALTY.enabled = !!on;
     lsSet("kk_loyalty", LOYALTY);
-    renderTools();   // enable/disable the ¢/L inputs
+    // Mutate the loyalty config in place rather than renderTools() — a full
+    // rebuild would wipe anything half-typed into the sibling calculators.
+    const cfg = document.querySelector(".loyalty-config");
+    if (cfg) {
+        cfg.classList.toggle("off", !LOYALTY.enabled);
+        cfg.querySelectorAll(".loyalty-row input, .loyalty-add").forEach(el => { el.disabled = !LOYALTY.enabled; });
+    }
     render();        // add/remove badges on the list & map
 }
 
@@ -468,8 +482,9 @@ function toggleLoyalty(on) {
 function setLoyalty(input) {
     const net = input.dataset.net;
     if (!net) return;
-    const v = parseFloat(String(input.value || "").replace(",", "."));
-    if (isFinite(v) && v > 0) LOYALTY.cents[net] = Math.min(v, 50);
+    let v = parseFloat(String(input.value || "").replace(",", "."));
+    v = isFinite(v) ? Number(v.toFixed(2)) : NaN;   // round-and-persist so stored == displayed (loyaltyFmt is 2dp)
+    if (isFinite(v) && v > 0) LOYALTY.cents[net] = Math.min(v, LOYALTY_MAX);
     else delete LOYALTY.cents[net];
     lsSet("kk_loyalty", LOYALTY);
     const item = input.closest(".loyalty-item");           // live-update this row's preview
@@ -479,7 +494,7 @@ function setLoyalty(input) {
 }
 
 function addLoyaltyNet(net) {
-    if (!net || LOYALTY.cents[net] != null) return;
+    if (!net || !LOYALTY.enabled || LOYALTY.cents[net] != null) return;
     LOYALTY.cents[net] = 0;   // adds an (empty) row; 0 yields no badge until a value is typed
     lsSet("kk_loyalty", LOYALTY);
     renderTools();
@@ -1190,9 +1205,11 @@ function renderList() {
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
             const lc = s[fuelType] != null ? loyaltyCents(s) : 0;
             // Suppress the badge when the discount is too small to change the
-            // 3-decimal price — showing an identical "with card" price reads as a bug.
-            const lDisc = lc > 0 ? loyaltyPrice(s[fuelType], lc).toFixed(3) : null;
-            const loyaltyLine = (lDisc && lDisc !== s[fuelType].toFixed(3))
+            // 3-decimal price (identical "with card" price reads as a bug) or big
+            // enough to zero out the price (an implausible near-zero effective price).
+            const lVal = lc > 0 ? loyaltyPrice(s[fuelType], lc) : 0;
+            const lDisc = lc > 0 ? lVal.toFixed(3) : null;
+            const loyaltyLine = (lDisc && lVal > 0 && lDisc !== s[fuelType].toFixed(3))
                 ? `<div class="loyalty-line" title="−${loyaltyFmt(lc)} ¢/L">💳 ${esc(t("loyalty_with_card"))} <span class="loyalty-price">€${lDisc}</span><span class="price-unit">/L</span></div>`
                 : "";
             return `
@@ -1278,8 +1295,9 @@ function renderMap() {
             ? `<div class="popup-price">${t("fuel_" + fuelType)}: €${p.toFixed(3)}/L</div>`
             : `<div class="no-price-badge">${t("no_price")}</div>`;
         const plc = p != null ? loyaltyCents(s) : 0;
-        const pDisc = plc > 0 ? loyaltyPrice(p, plc).toFixed(3) : null;
-        const loyaltyPop = (pDisc && pDisc !== p.toFixed(3))
+        const pVal = plc > 0 ? loyaltyPrice(p, plc) : 0;
+        const pDisc = plc > 0 ? pVal.toFixed(3) : null;
+        const loyaltyPop = (pDisc && pVal > 0 && pDisc !== p.toFixed(3))
             ? `<div class="popup-loyalty">💳 ${esc(t("loyalty_with_card"))}: €${pDisc}/L</div>`
             : "";
         const popup = `<div class="popup-name">${esc(s.network || t("station_default"))}</div>
