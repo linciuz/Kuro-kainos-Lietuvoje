@@ -32,23 +32,39 @@ function json(obj, status = 200) {
 const OCPI_LOCATIONS = "https://ev.vialietuva.lt/ocpi/2.3.0/locations";
 
 async function evStatus() {
-  // The OCPI feed paginates (X-Total-Count ~2943); a single fetch returns only
-  // ~94 rows, so walk it by offset. Ids repeat across pages — union the EVSEs.
+  // The OCPI feed paginates (X-Total-Count ~2943, ~94 rows/page). Fetch the
+  // first page to learn the total + real page size, then pull the rest with
+  // bounded concurrency (was sequential = ~40s; now ~4-6s). Ids repeat across
+  // pages — union the EVSEs.
   const sites = {};
-  let offset = 0, total = Infinity;
-  while (offset < total) {
-    const r = await fetch(`${OCPI_LOCATIONS}?offset=${offset}&limit=1000`, { headers: { "Accept": "application/json" } });
-    if (!r.ok) break;
-    if (total === Infinity) total = parseInt(r.headers.get("X-Total-Count") || "0", 10) || 0;
-    const batch = (await r.json()).data || [];
-    if (!batch.length) break;
-    for (const loc of batch) {
+  const H = { headers: { "Accept": "application/json" } };
+  const collect = (batch) => {
+    for (const loc of batch || []) {
       const id = String(loc.id);
       (sites[id] = sites[id] || []).push(...(loc.evses || []));
     }
-    offset += batch.length;
-    if (!total) break;
+  };
+  const page = (offset) =>
+    fetch(`${OCPI_LOCATIONS}?offset=${offset}&limit=1000`, H)
+      .then((r) => (r.ok ? r.json() : { data: [] }))
+      .then((j) => j.data || [])
+      .catch(() => []);
+
+  const firstR = await fetch(`${OCPI_LOCATIONS}?offset=0&limit=1000`, H);
+  if (!firstR.ok) return {};
+  const total = parseInt(firstR.headers.get("X-Total-Count") || "0", 10) || 0;
+  const first = (await firstR.json()).data || [];
+  collect(first);
+  const step = first.length || 100;
+
+  const offsets = [];
+  for (let o = step; o < total; o += step) offsets.push(o);
+  const CONC = 10;
+  for (let i = 0; i < offsets.length; i += CONC) {
+    const batches = await Promise.all(offsets.slice(i, i + CONC).map(page));
+    batches.forEach(collect);
   }
+
   const out = {};
   for (const [id, evses] of Object.entries(sites)) {
     let avail = 0;
@@ -74,7 +90,7 @@ export default {
       if (hit) return hit;
       const data = await evStatus();
       const resp = new Response(JSON.stringify(data), {
-        headers: { ...CORS, "Content-Type": "application/json", "Cache-Control": "public, max-age=45" },
+        headers: { ...CORS, "Content-Type": "application/json", "Cache-Control": "public, max-age=180" },
       });
       ctx.waitUntil(cache.put(cacheKey, resp.clone()));
       return resp;

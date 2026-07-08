@@ -7,7 +7,7 @@
 
 // Set to your deployed Cloudflare Worker URL to enable "report a price".
 // Empty = feature hidden, app works as before. See worker/README.md.
-const REPORT_API = "";
+const REPORT_API = "https://kk-reports.fuelis.workers.dev";
 // Visitor counter endpoint. Convention: POST = log a visit + return {total,today};
 // GET = read only. Point it at EITHER your self-hosted PHP logger on OWEXX
 // (e.g. "https://api.fuelis.lt/count.php" — see server/count.php) OR your
@@ -370,7 +370,10 @@ async function load() {
     await loadOil();
     await loadElectricity();
     await loadEv();
-    await loadEvStatus();
+    // Live EV occupancy is a slow upstream (proxied charger feed) — never block
+    // boot on it. Only fetch when starting in EV mode; selectFuel() handles the
+    // switch-to-EV case. Badges fill in when it returns.
+    if (fuelType === "ev") loadEvStatus().then(() => { if (fuelType === "ev") render(); });
     await loadHistory();
     // Preserve the chosen municipality across a foreground refetch (initMunicipalities
     // rebuilds the <select> and would otherwise reset it to "All municipalities").
