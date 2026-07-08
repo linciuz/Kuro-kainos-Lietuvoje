@@ -397,7 +397,11 @@ async function load() {
             const fb = e.target.closest(".fav-btn");
             if (fb) { toggleFav(fb.dataset.key); return; }
             const b = e.target.closest(".report-btn");
-            if (b) reportPrice(b.dataset.key, fuelType);
+            if (b) { reportPrice(b.dataset.key, fuelType); return; }
+            const er = e.target.closest(".evrep-btn");
+            if (er) { evReport(er.dataset.key, "broken"); return; }
+            const eo = e.target.closest(".evok-btn");
+            if (eo) evReport(eo.dataset.key, "ok");
         });
     }
 }
@@ -1091,7 +1095,27 @@ async function loadEvStatus() {
         const res = await fetch(REPORT_API + "/ev-status", { cache: "no-store" });
         EV_STATUS = res.ok ? await res.json() : {};
     } catch (e) { EV_STATUS = {}; }
+    loadEvReports();   // fire-and-forget; re-render when user complaints arrive
 }
+
+// User "neveikia/veikia" reports about chargers (48h TTL server-side).
+let EV_REPORTS = {};
+async function loadEvReports() {
+    if (!REPORT_API) return;
+    try {
+        const res = await fetch(REPORT_API + "/ev-reports", { cache: "no-store" });
+        EV_REPORTS = res.ok ? await res.json() : {};
+        if (fuelType === "ev") render();
+    } catch (e) { EV_REPORTS = {}; }
+}
+
+// "prieš 5 min. / prieš 3 val. / prieš 2 d." from an age in minutes.
+function agoMin(min) {
+    if (min < 60) return t("ago_min", { n: Math.max(1, Math.round(min)) });
+    if (min < 1440) return t("ago_h", { n: Math.round(min / 60) });
+    return t("ago_d", { n: Math.round(min / 1440) });
+}
+function agoTs(ts) { return agoMin((Date.now() - ts) / 60000); }
 
 function evStatus(c) {
     return (c.ocpi_id && EV_STATUS[c.ocpi_id]) || null;
@@ -1106,7 +1130,39 @@ function evStatusBadge(c) {
         down:      ["⚫", t("ev_status_down")],
         unknown:   ["⚪", t("ev_status_unknown")],
     }[st.s] || ["⚪", ""];
-    return `<span class="ev-status ev-${st.s}">${m[0]} ${m[1]}</span>`;
+    // Operator data can go stale (13% of sites are >24h old) — say so instead of
+    // presenting a week-old status as live truth.
+    const stale = (st.m != null && st.m > 1440)
+        ? ` <span class="ev-stale" title="${escAttr(t("ev_stale_hint"))}">⚠️ ${esc(t("ev_updated_ago", { ago: agoMin(st.m) }))}</span>` : "";
+    return `<span class="ev-status ev-${st.s}">${m[0]} ${m[1]}</span>${stale}`;
+}
+
+// Latest user complaint for a charger ("broken" newer than any "ok" counter-report).
+function evUserBroken(c) {
+    const r = EV_REPORTS[chargerKey(c)];
+    return (r && r.s === "broken") ? r : null;
+}
+function evUserNote(c, withButtons) {
+    const br = evUserBroken(c);
+    const note = br ? `<div class="ev-user-note">⚠️ ${esc(t("ev_user_broken", { ago: agoTs(br.ts) }))}</div>` : "";
+    if (!withButtons || !REPORT_API) return note;
+    const btn = br
+        ? `<button class="evok-btn" data-key="${escAttr(chargerKey(c))}">✅ ${esc(t("ev_report_ok"))}</button>`
+        : `<button class="evrep-btn" data-key="${escAttr(chargerKey(c))}">⚠️ ${esc(t("ev_report_btn"))}</button>`;
+    return note + btn;
+}
+async function evReport(key, status) {
+    if (!REPORT_API) return;
+    if (status === "broken" && !confirm(t("ev_report_q"))) return;
+    try {
+        const res = await fetch(REPORT_API + "/ev-report", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ charger: key, status }),
+        });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        EV_REPORTS[key] = { s: status, ts: Date.now() };
+        render();
+    } catch (e) { alert(t("report_failed")); }
 }
 
 function getChargers() {
@@ -1156,7 +1212,8 @@ function renderSummaryEv() {
     const elLine = (ELEC && ELEC.current_ct_kwh != null)
         ? `<div class="summary-title">⚡ ${t("el_market")}: <b>${ELEC.current_ct_kwh.toFixed(1)} ct/kWh</b> · ${t("oil_weekavg")} <b>${ELEC.week_avg_ct_kwh.toFixed(1)} ct/kWh</b></div>`
         : "";
-    box.innerHTML = elLine + `<div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`;
+    box.innerHTML = elLine + `<div class="wholesale-ref">${t("ev_sources")} · ${t("ev_price_count", { n: priced })}</div>`
+        + (REPORT_API ? `<div class="wholesale-ref ev-disclaimer">${esc(t("ev_disclaimer"))}</div>` : "");
 }
 
 function renderListEv() {
@@ -1182,6 +1239,7 @@ function renderListEv() {
                 </div>
                 ${addr ? `<div class="station-address">${addr}</div>` : ""}
                 ${info ? `<div class="station-muni">${info}</div>` : ""}
+                ${evUserNote(c, true)}
                 <div class="nav-row">${evNav(c)}</div>
             </div>`;
         }).join("");
@@ -1204,6 +1262,7 @@ function renderMapEv() {
         const popup = `<div class="popup-name">⚡ ${esc(c.operator || c.name || t("ev_charger"))}</div>
             ${addr ? `<div class="popup-addr">${addr}</div>` : ""}
             ${badge ? `<div>${badge}</div>` : ""}
+            ${evUserNote(c, false)}
             ${c.price != null ? `<div class="popup-price">€${c.price.toFixed(2)}/kWh</div>` : ""}
             ${info ? `<div>${info}</div>` : ""}
             <div class="popup-nav">${evNav(c)}</div>`;
@@ -1597,7 +1656,7 @@ function renderList() {
             const fl = flagFor(s);
             const flagLine = fl ? `<div class="change-flag">${t("flag_change", { price: fl.live.toFixed(3) })}</div>` : "";
             const rep = reportFor(s);
-            const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3) })}</div>` : "";
+            const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3), ago: agoTs(rep.ts) })}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
             const lc = s[fuelType] != null ? loyaltyCents(s) : 0;
             // Suppress the badge when the discount is too small to change the

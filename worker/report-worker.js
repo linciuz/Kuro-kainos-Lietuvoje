@@ -31,6 +31,13 @@ function json(obj, status = 200) {
 // (a=available, t=total connectors, s=overall status). Edge-cached ~45s.
 const OCPI_LOCATIONS = "https://ev.vialietuva.lt/ocpi/2.3.0/locations";
 
+// The feed's last_updated stamps are NAIVE Europe/Vilnius local time. Build a
+// comparable "now" the same way so age math is correct regardless of runtime tz.
+function vilniusNowMs() {
+  const s = new Date().toLocaleString("sv-SE", { timeZone: "Europe/Vilnius" });
+  return Date.parse(s.replace(" ", "T"));
+}
+
 async function evStatus() {
   // The OCPI feed paginates (X-Total-Count ~2943, ~94 rows/page). Fetch the
   // first page to learn the total + real page size, then pull the rest with
@@ -41,7 +48,15 @@ async function evStatus() {
   const collect = (batch) => {
     for (const loc of batch || []) {
       const id = String(loc.id);
-      (sites[id] = sites[id] || []).push(...(loc.evses || []));
+      const slot = (sites[id] = sites[id] || { evses: [], ts: 0 });
+      for (const e of loc.evses || []) {
+        if (e.status === "REMOVED") continue;   // decommissioned — not a real point
+        slot.evses.push(e);
+        const t = Date.parse(e.last_updated || "") || 0;
+        if (t > slot.ts) slot.ts = t;
+      }
+      const lt = Date.parse(loc.last_updated || "") || 0;
+      if (lt > slot.ts) slot.ts = lt;
     }
   };
   const page = (offset) =>
@@ -66,14 +81,20 @@ async function evStatus() {
   }
 
   const out = {};
-  for (const [id, evses] of Object.entries(sites)) {
+  const nowV = vilniusNowMs();
+  for (const [id, slot] of Object.entries(sites)) {
+    const evses = slot.evses;
+    if (!evses.length) continue;               // all points removed — no status to show
     let avail = 0;
     for (const e of evses) if (e.status === "AVAILABLE") avail++;
     let s = "unknown";
     if (avail > 0) s = "available";
     else if (evses.some(e => e.status === "CHARGING" || e.status === "BLOCKED")) s = "busy";
     else if (evses.some(e => e.status === "OUTOFORDER" || e.status === "INOPERATIVE")) s = "down";
-    out[id] = { a: avail, t: evses.length, s };
+    const o = { a: avail, t: evses.length, s };
+    // m = minutes since the operator last updated this site (data freshness).
+    if (slot.ts) o.m = Math.max(0, Math.round((nowV - slot.ts) / 60000));
+    out[id] = o;
   }
   return out;
 }
@@ -99,6 +120,35 @@ export default {
     if (url.pathname === "/reports" && req.method === "GET") {
       const raw = await env.REPORTS.get(KEY);
       return json(raw ? JSON.parse(raw) : {});
+    }
+
+    // User reports about EV chargers ("neveikia" / "veikia" counter-report).
+    // Latest report per charger wins; whole blob expires after 48h so stale
+    // complaints clear themselves once people stop renewing them.
+    if (url.pathname === "/ev-reports" && req.method === "GET") {
+      const raw = await env.REPORTS.get("evreports");
+      return json(raw ? JSON.parse(raw) : {});
+    }
+
+    if (url.pathname === "/ev-report" && req.method === "POST") {
+      let body;
+      try { body = await req.json(); } catch { return json({ error: "bad json" }, 400); }
+      const charger = (body && body.charger || "").toString();
+      const status = body && body.status;
+      if (!charger || charger.length > 200) return json({ error: "bad charger" }, 400);
+      if (status !== "broken" && status !== "ok") return json({ error: "bad status" }, 400);
+
+      const raw = await env.REPORTS.get("evreports");
+      const all = raw ? JSON.parse(raw) : {};
+      all[charger] = { s: status, ts: Date.now() };
+
+      const keys = Object.keys(all);
+      if (keys.length > 500) {                   // bound the blob size
+        keys.sort((a, b) => all[a].ts - all[b].ts);
+        for (const k of keys.slice(0, keys.length - 500)) delete all[k];
+      }
+      await env.REPORTS.put("evreports", JSON.stringify(all), { expirationTtl: TTL });
+      return json({ ok: true });
     }
 
     // Visitor counter at one endpoint: POST /count (or /hit) logs a visit and
