@@ -18,6 +18,7 @@ const FUELS = ["petrol95", "diesel", "lpg"];
 const KEY = "reports";
 const MAX_STATIONS = 1000;      // bound the blob size
 const TTL = 60 * 60 * 48;       // seconds
+const VISITS_TOTAL = "visits:total";     // all-time visitor counter
 
 function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), {
@@ -82,6 +83,36 @@ export default {
     if (url.pathname === "/reports" && req.method === "GET") {
       const raw = await env.REPORTS.get(KEY);
       return json(raw ? JSON.parse(raw) : {});
+    }
+
+    // Visitor counter. The app POSTs /hit at most once per device per day
+    // (client-side dedup), so writes stay well within the free tier. GET /count
+    // reads without incrementing (for an owner check). KV is eventually
+    // consistent, so the total is approximate under heavy concurrency — which is
+    // exactly right for a "visitors" number.
+    if (url.pathname === "/count" && req.method === "GET") {
+      const today = new Date().toISOString().slice(0, 10);
+      const [tot, day] = await Promise.all([
+        env.REPORTS.get(VISITS_TOTAL),
+        env.REPORTS.get("visits:" + today),
+      ]);
+      return json({ total: parseInt(tot || "0", 10), today: parseInt(day || "0", 10) });
+    }
+
+    if (url.pathname === "/hit" && req.method === "POST") {
+      const today = new Date().toISOString().slice(0, 10);
+      const dayKey = "visits:" + today;
+      const [tot, day] = await Promise.all([
+        env.REPORTS.get(VISITS_TOTAL),
+        env.REPORTS.get(dayKey),
+      ]);
+      const total = parseInt(tot || "0", 10) + 1;
+      const dayCount = parseInt(day || "0", 10) + 1;
+      await Promise.all([
+        env.REPORTS.put(VISITS_TOTAL, String(total)),
+        env.REPORTS.put(dayKey, String(dayCount), { expirationTtl: 60 * 60 * 24 * 45 }),
+      ]);
+      return json({ total, today: dayCount });
     }
 
     if (url.pathname === "/report" && req.method === "POST") {

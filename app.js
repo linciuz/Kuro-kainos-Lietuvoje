@@ -8,6 +8,10 @@
 // Set to your deployed Cloudflare Worker URL to enable "report a price".
 // Empty = feature hidden, app works as before. See worker/README.md.
 const REPORT_API = "";
+// Visitor counter (uses the same Worker as REPORT_API: POST /hit once per device
+// per day, GET /count to read). SHOW_VISIT_COUNTER=false keeps it owner-only
+// (still counted, just not displayed in the footer). Dormant until REPORT_API set.
+const SHOW_VISIT_COUNTER = true;
 const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
 // --- engagement / monetization features (ALL enabled for testing; later split
@@ -117,6 +121,35 @@ async function loadNestePromo() {
         const j = res.ok ? await res.json() : null;
         NESTE_PROMO = (j && j.valid_date && j.cents > 0) ? j : null;
     } catch (e) { NESTE_PROMO = null; }
+}
+
+// Visitor counter. Counts at most once per device per day (localStorage dedup),
+// so writes stay tiny; other days just read. Dormant until REPORT_API is wired.
+let VISIT_COUNT = null;
+async function loadVisitCount() {
+    if (!REPORT_API) return;
+    let counted = false;
+    try { counted = localStorage.getItem("kk_visit_day") === localTodayISO(); } catch (e) {}
+    try {
+        const res = counted
+            ? await fetch(REPORT_API.replace(/\/+$/, "") + "/count")
+            : await fetch(REPORT_API.replace(/\/+$/, "") + "/hit", { method: "POST" });
+        if (!res.ok) return;
+        const j = await res.json();
+        if (!counted) { try { localStorage.setItem("kk_visit_day", localTodayISO()); } catch (e) {} }
+        VISIT_COUNT = (j && typeof j.total === "number") ? j.total : null;
+        renderVisitCount();
+    } catch (e) {}
+}
+function renderVisitCount() {
+    const el = document.getElementById("visit-count");
+    if (!el) return;
+    if (SHOW_VISIT_COUNTER && VISIT_COUNT != null && VISIT_COUNT > 0) {
+        el.textContent = "👀 " + t("visits", { n: VISIT_COUNT.toLocaleString("lt-LT") });
+        el.style.display = "";
+    } else {
+        el.style.display = "none";
+    }
 }
 
 // Local (device-timezone) date — promo validity must match the LT calendar day,
@@ -322,6 +355,7 @@ async function load() {
     await loadCircleKBusiness();
     await loadViadaPromos();
     await loadNestePromo();
+    loadVisitCount();   // fire-and-forget; footer updates when it returns
     await loadOil();
     await loadElectricity();
     await loadEv();

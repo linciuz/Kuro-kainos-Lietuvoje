@@ -40,6 +40,15 @@ app works exactly as before.
 - `GET  /ev-status` → live EV occupancy `{ "<ocpi_id>": {a, t, s} }` (a=available,
   t=total, s=available|busy|down). Proxies Lithuania's official OCPI feed
   (`ev.vialietuva.lt`), which is open but blocks browser CORS. Edge-cached ~45s.
+- `POST /hit`   → increments the visitor counter, returns `{ total, today }`. The
+  app calls this at most once per device per day.
+- `GET  /count` → reads `{ total, today }` WITHOUT incrementing (owner check:
+  just open `https://<your-worker>/count` in a browser).
+
+The visitor number shows in the app footer once `REPORT_API` is set. To keep it
+counting but hidden from users, set `SHOW_VISIT_COUNTER = false` in `app.js`
+(you can still read it any time at `/count`). The counter shares the `REPORTS`
+KV namespace — no extra setup.
 
 Reports are advisory: the app shows a reported price with a caveat and lets the
 next official LEA update supersede it. Stored values expire after 48h. Once the

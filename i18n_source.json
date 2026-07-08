@@ -1557,6 +1557,10 @@
     "lt": "Veikia tik su „Safari“ naršykle. Įdiegus „Fuelis“ atsidarys visame ekrane kaip programa.",
     "en": "Works in Safari only. Once added, Fuelis opens full-screen like an app."
   },
+  "visits": {
+    "lt": "{n} apsilankymų",
+    "en": "{n} visits"
+  },
   "install_hint": {
     "lt": "Įdiekite per naršyklės meniu („Įdiegti programą“).",
     "en": "Install from your browser menu (“Install app”).",
