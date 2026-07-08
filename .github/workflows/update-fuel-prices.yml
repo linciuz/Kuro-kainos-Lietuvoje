@@ -75,11 +75,14 @@ jobs:
       - name: Viada promo pointers + Wednesday promo prices
         run: python scripts/fetch_viada_promos.py || echo "viada promos failed (non-fatal)"
 
+      - name: Neste Nuolaidadienis (Wednesday discount)
+        run: python scripts/fetch_neste_promo.py || echo "neste promo failed (non-fatal)"
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json data/sources/loyalty_watch.json data/sources/viada_promos.json || true
+          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json data/sources/loyalty_watch.json data/sources/viada_promos.json data/sources/neste_promo.json || true
           if git diff --staged --quiet; then
             echo "No changes."
           else

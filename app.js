@@ -101,6 +101,7 @@ const LOYALTY_MAX = 30;
 // Discount in ¢/L configured for this station's network (>0), else 0 — also 0
 // whenever the whole feature is toggled off.
 let VIADA_PROMO = null;   // {valid_date, prices:{petrol95,diesel,lpg}, url} from viada.lt "Super trečiadieniai"
+let NESTE_PROMO = null;   // {valid_date, cents} from neste.lt "Nuolaidadienis" (Wednesday −N ct/L, app/card)
 
 async function loadViadaPromos() {
     try {
@@ -108,6 +109,14 @@ async function loadViadaPromos() {
         const j = res.ok ? await res.json() : null;
         VIADA_PROMO = (j && j.wednesday) || null;
     } catch (e) { VIADA_PROMO = null; }
+}
+
+async function loadNestePromo() {
+    try {
+        const res = await fetch("data/sources/neste_promo.json", { cache: "no-store" });
+        const j = res.ok ? await res.json() : null;
+        NESTE_PROMO = (j && j.valid_date && j.cents > 0) ? j : null;
+    } catch (e) { NESTE_PROMO = null; }
 }
 
 // Local (device-timezone) date — promo validity must match the LT calendar day,
@@ -130,11 +139,23 @@ function viadaPromoCents(s, fuel) {
     return Math.round((official - promo) * 10000) / 100;   // € -> ¢/L, 2-decimal precision
 }
 
+// Neste "Nuolaidadienis": neste.lt announces the Wednesday −N ct/L (app/card,
+// all fuels) with the specific date as text. On the stated date ONLY, that
+// figure replaces the user's configured Neste cents (Neste: "nuolaidos
+// nesumuojamos" — the day discount is THE discount, not additive).
+function nestePromoCents(s) {
+    if (!NESTE_PROMO || !s || s.network !== "UAB Neste Lietuva") return null;
+    if (localTodayISO() !== NESTE_PROMO.valid_date) return null;
+    return NESTE_PROMO.cents;
+}
+
 function loyaltyCents(s, fuel) {
     if (!LOYALTY.enabled || !s) return 0;
     if (fuel == null) fuel = fuelType;
     const wed = viadaPromoCents(s, fuel);
     if (wed != null) return wed;
+    const nes = nestePromoCents(s);
+    if (nes != null) return nes;
     const c = LOYALTY.cents[s.network];
     return (typeof c === "number" && isFinite(c) && c > 0) ? c : 0;
 }
@@ -300,6 +321,7 @@ async function load() {
     await loadOrlenWholesale();
     await loadCircleKBusiness();
     await loadViadaPromos();
+    await loadNestePromo();
     await loadOil();
     await loadElectricity();
     await loadEv();
@@ -683,6 +705,11 @@ function loyaltyRowHtml(label, legal) {
             .filter(([k]) => P[k] != null).map(([k, l]) => `${l} €${P[k].toFixed(3)}`).join(" · ");
         const today = localTodayISO() === VIADA_PROMO.valid_date;
         note += `<div class="loyalty-row-note wed${today ? " on" : ""}">🔥 ${esc(t(today ? "loyalty_wed_today" : "loyalty_wed_upcoming", { date: VIADA_PROMO.valid_date }))} ${esc(list)}</div>`;
+    }
+    if (legal === "UAB Neste Lietuva" && NESTE_PROMO) {
+        const today = localTodayISO() === NESTE_PROMO.valid_date;
+        note += `<div class="loyalty-row-note wed${today ? " on" : ""}">🔥 ${esc(t(today ? "loyalty_neste_today" : "loyalty_neste_upcoming",
+            { date: NESTE_PROMO.valid_date, cents: loyaltyFmt(NESTE_PROMO.cents) }))}</div>`;
     }
     return `<div class="loyalty-item">
       <div class="loyalty-row">

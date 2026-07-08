@@ -1905,6 +1905,14 @@
     "lt": "„Super trečiadienis“ {date} — su ViadaPLUS galios akcijos kainos:",
     "en": "“Super Wednesday” {date} — ViadaPLUS promo prices will apply:"
   },
+  "loyalty_neste_today": {
+    "lt": "ŠIANDIEN „Nuolaidadienis“ — su Neste programėle/kortele −{cents} ¢/L visiems degalams (pritaikyta automatiškai).",
+    "en": "TODAY is “Discount day” — −{cents} ¢/L on all fuels with the Neste app/card (applied automatically)."
+  },
+  "loyalty_neste_upcoming": {
+    "lt": "„Nuolaidadienis“ {date} — su Neste programėle/kortele galios −{cents} ¢/L visiems degalams.",
+    "en": "“Discount day” {date} — −{cents} ¢/L on all fuels with the Neste app/card."
+  },
   "contact_offline": {
     "lt": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau.",
     "en": "You're offline — the message was not sent. Try again later."

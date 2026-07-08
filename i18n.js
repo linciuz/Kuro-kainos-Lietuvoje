@@ -150,6 +150,8 @@ const STRINGS = {
     "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",
     "loyalty_wed_today": "ŠIANDIEN „Super trečiadienis“ — su ViadaPLUS taikomos akcijos kainos (nuolaida paskaičiuota automatiškai):",
     "loyalty_wed_upcoming": "„Super trečiadienis“ {date} — su ViadaPLUS galios akcijos kainos:",
+    "loyalty_neste_today": "ŠIANDIEN „Nuolaidadienis“ — su Neste programėle/kortele −{cents} ¢/L visiems degalams (pritaikyta automatiškai).",
+    "loyalty_neste_upcoming": "„Nuolaidadienis“ {date} — su Neste programėle/kortele galios −{cents} ¢/L visiems degalams.",
     "contact_offline": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau."
   },
   "lv": {
@@ -597,6 +599,8 @@ const STRINGS = {
     "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise.",
     "loyalty_wed_today": "TODAY is “Super Wednesday” — ViadaPLUS promo prices apply (discount applied automatically):",
     "loyalty_wed_upcoming": "“Super Wednesday” {date} — ViadaPLUS promo prices will apply:",
+    "loyalty_neste_today": "TODAY is “Discount day” — −{cents} ¢/L on all fuels with the Neste app/card (applied automatically).",
+    "loyalty_neste_upcoming": "“Discount day” {date} — −{cents} ¢/L on all fuels with the Neste app/card.",
     "contact_offline": "You're offline — the message was not sent. Try again later."
   },
   "uk": {
