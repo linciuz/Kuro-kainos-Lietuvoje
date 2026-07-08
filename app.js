@@ -711,6 +711,11 @@ function loyaltyRowHtml(label, legal) {
         note += `<div class="loyalty-row-note wed${today ? " on" : ""}">🔥 ${esc(t(today ? "loyalty_neste_today" : "loyalty_neste_upcoming",
             { date: NESTE_PROMO.valid_date, cents: loyaltyFmt(NESTE_PROMO.cents) }))}</div>`;
     }
+    // Circle K one-time app premium: personal & login-gated, so it can't be
+    // auto-applied — announce it and let the user enter their own value.
+    if (legal === "UAB Circle K Lietuva") {
+        note += `<div class="loyalty-row-note wed">🔥 ${esc(t("loyalty_ck_premium"))}</div>`;
+    }
     return `<div class="loyalty-item">
       <div class="loyalty-row">
         <span class="loyalty-net">${esc(label)}</span>

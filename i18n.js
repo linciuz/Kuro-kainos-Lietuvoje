@@ -152,6 +152,7 @@ const STRINGS = {
     "loyalty_wed_upcoming": "„Super trečiadienis“ {date} — su ViadaPLUS galios akcijos kainos:",
     "loyalty_neste_today": "ŠIANDIEN „Nuolaidadienis“ — su Neste programėle/kortele −{cents} ¢/L visiems degalams (pritaikyta automatiškai).",
     "loyalty_neste_upcoming": "„Nuolaidadienis“ {date} — su Neste programėle/kortele galios −{cents} ¢/L visiems degalams.",
+    "loyalty_ck_premium": "Circle K programėlė kartais dovanoja vienkartinę premiją (pvz. −12 ¢/L vienam pylimui). Ji asmeninė — aktyvavę programėlėje, įveskite ją čia ranka.",
     "contact_offline": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau."
   },
   "lv": {
@@ -601,6 +602,7 @@ const STRINGS = {
     "loyalty_wed_upcoming": "“Super Wednesday” {date} — ViadaPLUS promo prices will apply:",
     "loyalty_neste_today": "TODAY is “Discount day” — −{cents} ¢/L on all fuels with the Neste app/card (applied automatically).",
     "loyalty_neste_upcoming": "“Discount day” {date} — −{cents} ¢/L on all fuels with the Neste app/card.",
+    "loyalty_ck_premium": "The Circle K app sometimes gives a one-time premium (e.g. −12 ¢/L for one fill). It's personal — activate it in the app and enter it here manually.",
     "contact_offline": "You're offline — the message was not sent. Try again later."
   },
   "uk": {

@@ -1913,6 +1913,10 @@
     "lt": "„Nuolaidadienis“ {date} — su Neste programėle/kortele galios −{cents} ¢/L visiems degalams.",
     "en": "“Discount day” {date} — −{cents} ¢/L on all fuels with the Neste app/card."
   },
+  "loyalty_ck_premium": {
+    "lt": "Circle K programėlė kartais dovanoja vienkartinę premiją (pvz. −12 ¢/L vienam pylimui). Ji asmeninė — aktyvavę programėlėje, įveskite ją čia ranka.",
+    "en": "The Circle K app sometimes gives a one-time premium (e.g. −12 ¢/L for one fill). It's personal — activate it in the app and enter it here manually."
+  },
   "contact_offline": {
     "lt": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau.",
     "en": "You're offline — the message was not sent. Try again later."
