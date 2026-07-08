@@ -462,9 +462,40 @@ async function installApp() {
         try { await deferredInstallPrompt.userChoice; } catch (e) {}
         deferredInstallPrompt = null;
         buildActionBar();
+    } else if (isIOS()) {
+        openIosInstall();          // iOS has no install prompt — show the Add-to-Home-Screen guide
     } else {
-        alert(t(isIOS() ? "install_ios_hint" : "install_hint"));   // iOS/Safari has no prompt API
+        alert(t("install_hint"));  // rare: a desktop browser that supports install but hasn't fired the prompt
     }
+}
+
+// iOS "Add to Home Screen" instructions modal (replaces a jarring browser alert()).
+function openIosInstall() {
+    renderIosInstall();
+    const m = document.getElementById("ios-modal");
+    if (m) m.classList.add("open");
+    document.body.classList.add("modal-open");
+}
+function closeIosInstall() {
+    const m = document.getElementById("ios-modal");
+    if (m) m.classList.remove("open");
+    document.body.classList.remove("modal-open");
+}
+function renderIosInstall() {
+    const ttl = document.getElementById("ios-title");
+    if (ttl) ttl.textContent = "📲 " + t("ios_install_title");
+    const body = document.getElementById("ios-body");
+    if (!body) return;
+    const share = `<svg class="ios-share" viewBox="0 0 24 24" fill="none" stroke="#0057D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v11"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-1"/></svg>`;
+    body.innerHTML = `<section class="tool-card">
+      <div class="ios-intro">${esc(t("ios_install_intro"))}</div>
+      <ol class="ios-steps">
+        <li class="ios-step"><span class="n">1</span><span>${esc(t("ios_install_s1"))} ${share}</span></li>
+        <li class="ios-step"><span class="n">2</span><span>${esc(t("ios_install_s2"))}</span></li>
+        <li class="ios-step"><span class="n">3</span><span>${esc(t("ios_install_s3"))}</span></li>
+      </ol>
+      <div class="ios-note">${esc(t("ios_install_note"))}</div>
+    </section>`;
 }
 
 // ---- Contact form (emails the developer via FormSubmit, no backend) ---------

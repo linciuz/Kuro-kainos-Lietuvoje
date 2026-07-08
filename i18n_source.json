@@ -1533,6 +1533,30 @@
     "fi": "Asennus: napauta Jaa (⎋) ja sitten Lisää Koti-valikkoon.",
     "no": "For å installere: trykk på Del (⎋), deretter «Legg til på Hjem-skjerm»."
   },
+  "ios_install_title": {
+    "lt": "Įdiekite „Fuelis“",
+    "en": "Add Fuelis"
+  },
+  "ios_install_intro": {
+    "lt": "Įdiekite programą per Safari naršyklę:",
+    "en": "Install the app using Safari:"
+  },
+  "ios_install_s1": {
+    "lt": "Palieskite „Bendrinti“ mygtuką Safari apačioje",
+    "en": "Tap the Share button at the bottom of Safari"
+  },
+  "ios_install_s2": {
+    "lt": "Slinkite žemyn ir pasirinkite „Į pradžios ekraną“",
+    "en": "Scroll down and choose “Add to Home Screen”"
+  },
+  "ios_install_s3": {
+    "lt": "Viršuje palieskite „Pridėti“",
+    "en": "Tap “Add” in the top corner"
+  },
+  "ios_install_note": {
+    "lt": "Veikia tik su „Safari“ naršykle. Įdiegus „Fuelis“ atsidarys visame ekrane kaip programa.",
+    "en": "Works in Safari only. Once added, Fuelis opens full-screen like an app."
+  },
   "install_hint": {
     "lt": "Įdiekite per naršyklės meniu („Įdiegti programą“).",
     "en": "Install from your browser menu (“Install app”).",

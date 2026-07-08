@@ -277,6 +277,14 @@
         .tool-card input:focus, .tool-card select:focus, .tool-card textarea:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.12); }
         .tool-err { margin-top: 8px; color: #c2453a; font-weight: 600; font-size: 13px; }
         .act-btn.install { background: #eafaf0; border-color: #b6e6c8; color: #14914e; font-weight: 600; }
+        /* iOS "Add to Home Screen" guide */
+        .ios-intro { font-size: 14px; color: #2b3138; margin-bottom: 4px; }
+        .ios-steps { list-style: none; margin: 6px 0 0; padding: 0; }
+        .ios-step { display: flex; align-items: center; gap: 12px; padding: 12px 2px; border-bottom: 1px solid #eef1f4; font-size: 14px; color: #2b3138; line-height: 1.4; }
+        .ios-step:last-child { border-bottom: none; }
+        .ios-step .n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: #0057D8; color: #fff; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+        .ios-step .ios-share { flex: none; width: 24px; height: 24px; vertical-align: middle; }
+        .ios-note { margin-top: 14px; font-size: 12.5px; color: #7a7f87; line-height: 1.45; }
         /* Side-opening info banner: the 10:00-snapshot caveat */
         .info-handle { position: fixed; left: 0; bottom: 88px; z-index: 2401; width: 42px; height: 46px; background: #ffcf66;
             border: none; border-radius: 0 12px 12px 0; box-shadow: 3px 4px 16px rgba(0,0,0,0.22); font-size: 19px;
@@ -441,6 +449,15 @@
           <button type="button" class="tools-close" onclick="closeContact()" aria-label="Close">✕</button>
         </div>
         <div class="tools-body" id="contact-body"></div>
+      </div>
+    </div>
+    <div id="ios-modal" class="tools-modal" onclick="if(event.target===this)closeIosInstall()">
+      <div class="tools-sheet">
+        <div class="tools-head">
+          <span id="ios-title">📲</span>
+          <button type="button" class="tools-close" onclick="closeIosInstall()" aria-label="Close">✕</button>
+        </div>
+        <div class="tools-body" id="ios-body"></div>
       </div>
     </div>
     <button id="info-handle" class="info-handle" onclick="toggleInfoBanner()" aria-label="Info">ℹ️</button>
