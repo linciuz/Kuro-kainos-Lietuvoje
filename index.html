@@ -2,9 +2,72 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.">
-    <title>Fuelis · Kuro kainos Lietuvoje</title>
+    <title>Fuelis · Kuro kainos Lietuvoje — degalų kainos, žemėlapis, EV</title>
+    <link rel="canonical" href="https://fuelis.lt/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="keywords" content="degalų kainos, kuro kainos, benzinas 95, dyzelinas, dujos, LPG, degalinės, pigiausi degalai, Lietuva, EV įkrovimo stotelės, degalų žemėlapis, LEA">
+    <meta name="author" content="Fuelis">
+    <!-- Open Graph (Facebook, Messenger, LinkedIn, AI crawlers) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fuelis">
+    <meta property="og:title" content="Fuelis · Kuro kainos Lietuvoje">
+    <meta property="og:description" content="Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.">
+    <meta property="og:url" content="https://fuelis.lt/">
+    <meta property="og:image" content="https://fuelis.lt/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="lt_LT">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fuelis · Kuro kainos Lietuvoje">
+    <meta name="twitter:description" content="Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.">
+    <meta name="twitter:image" content="https://fuelis.lt/og-image.png">
+    <!-- Structured data for Google rich results + AI search understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fuelis.lt/#website",
+          "url": "https://fuelis.lt/",
+          "name": "Fuelis",
+          "inLanguage": "lt",
+          "description": "Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.",
+          "publisher": { "@id": "https://fuelis.lt/#org" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://fuelis.lt/#org",
+          "name": "Fuelis",
+          "url": "https://fuelis.lt/",
+          "logo": { "@type": "ImageObject", "url": "https://fuelis.lt/icon-512.png", "width": 512, "height": 512 }
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://fuelis.lt/#app",
+          "name": "Fuelis",
+          "url": "https://fuelis.lt/",
+          "applicationCategory": "TravelApplication",
+          "operatingSystem": "Web, Android, iOS",
+          "browserRequirements": "Requires JavaScript",
+          "inLanguage": ["lt", "en", "lv", "et", "uk", "ru", "pl", "de", "sv", "fi", "no"],
+          "description": "Oficialios LEA degalų kainos Lietuvos degalinėse — benzinas 95, dyzelinas ir dujos (LPG). Rask pigiausią ir artimiausią degalinę žemėlapyje, EV įkrovimo stoteles bei nuolaidas.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+          "featureList": [
+            "Oficialios LEA degalų kainos (benzinas, dyzelinas, dujos)",
+            "Artimiausių ir pigiausių degalinių paieška",
+            "Interaktyvus žemėlapis",
+            "EV įkrovimo stotelės su užimtumu",
+            "Nuolaidų ir sąnaudų skaičiuoklė"
+          ],
+          "publisher": { "@id": "https://fuelis.lt/#org" }
+        }
+      ]
+    }
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%231673E8%22/><g transform=%22translate(0,-3.5)%22><path d=%22M50 12 C60 34 76 50 76 66 A26 26 0 1 1 24 66 C24 50 40 34 50 12 Z%22 fill=%22%23fff%22/><path d=%22M41 56 L50 51 L59 56%22 fill=%22none%22 stroke=%22%23F0453A%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><path d=%22M37 64 L50 71 L63 64%22 fill=%22none%22 stroke=%22%2320C778%22 stroke-width=%225%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></g></svg>">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#0057D8">
@@ -16,6 +79,7 @@
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -348,6 +412,8 @@
 </head>
 <body>
     <div class="app-container">
+        <h1 class="sr-only">Fuelis — oficialios degalų kainos Lietuvoje: benzinas 95, dyzelinas, dujos ir EV įkrovimo stotelės</h1>
+        <noscript><p style="padding:16px;text-align:center;color:#333">Fuelis rodo oficialias LEA degalų kainas Lietuvos degalinėse — benziną, dyzeliną ir dujas su interaktyviu žemėlapiu, artimiausių ir pigiausių degalinių paieška bei EV įkrovimo stotelėmis. Programai veikti reikalingas JavaScript.</p></noscript>
         <div class="change-banner" id="change-banner" style="display:none"></div>
 
         <div class="controls">
