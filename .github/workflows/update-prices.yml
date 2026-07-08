@@ -14,14 +14,18 @@ on:
     #  - ORLEN's wholesale point (yesterday's SETTLED price) posts EARLY, well
     #    before 10:00 — no reason to wait for the LEA window to refresh it.
     #  - LEA's retail file publishes ~10:00 Lithuania.
-    # Every 15 min catches Orlen's fresh point the moment it posts AND LEA within
-    # ~15 min, and survives GitHub's flaky scheduler (many redundant slots). A
-    # run where nothing changed just skips the commit, so extra slots are cheap.
-    #   */15 3-9 UTC = 06:00-12:59 (summer, UTC+3) / 05:00-11:59 (winter, UTC+2)
-    - cron: "*/15 3-9 * * 1-5"  # every 15 min across the whole LT morning
-    - cron: "15 11 * * 1-5"     # ~14:15 LT (early-afternoon catch-all)
-    - cron: "15 14 * * 1-5"     # ~17:15 Lithuania
-    - cron: "15 19 * * 1-5"     # ~22:15 Lithuania
+    # GitHub's scheduler DROPS events under load, worst at the congested
+    # :00/:15/:30/:45 minutes — on 2026-07-08 a "*/15" cron went silent for ~7
+    # slots straight across LEA's 10:00 publication. Mitigation: ODD minutes
+    # (off the congestion peaks) and TWO overlapping expressions offset by ~7
+    # minutes, so the morning only stalls if BOTH independent event streams drop
+    # repeatedly. No-change runs skip the commit, so extra slots are cheap.
+    #   hours 3-9 UTC = 06:00-12:59 LT (summer) / 05:00-11:59 (winter)
+    - cron: "4,19,34,49 3-9 * * 1-5"   # every 15 min, odd offsets
+    - cron: "11,26,41,56 3-9 * * 1-5"  # second stream, staggered ~7 min
+    - cron: "23 11 * * 1-5"     # ~14:23 LT (early-afternoon catch-all)
+    - cron: "23 14 * * 1-5"     # ~17:23 Lithuania
+    - cron: "23 19 * * 1-5"     # ~22:23 Lithuania
   workflow_dispatch: {}
 
 permissions:
