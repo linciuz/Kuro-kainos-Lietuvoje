@@ -684,10 +684,22 @@ function loyaltyConfigHtml() {
 // MAGNITUDE of the value they typed (e.g. 0.5 ¢/L visibly changes the price;
 // 0.05 does not). Numbers only — no user data — so it is safe as innerHTML.
 function loyaltyPreviewHtml(legal) {
-    const c = LOYALTY.cents[legal];
-    if (!(typeof c === "number" && isFinite(c) && c > 0)) return "";
     const ref = loyaltyRefPrice(legal);
     if (ref == null) return "";
+    // Promo-aware: on a Wednesday promo day the APPLIED discount can differ from
+    // the field value (e.g. Neste −7 instead of the configured 3.5), so preview
+    // through loyaltyCents with a probe station at the reference price.
+    const rf = (fuelType === "ev") ? "petrol95" : fuelType;
+    const probe = { network: legal };
+    probe[rf] = ref;
+    let c;
+    if (LOYALTY.enabled) {
+        c = loyaltyCents(probe, rf);
+    } else {
+        const sc = LOYALTY.cents[legal];
+        c = (typeof sc === "number" && isFinite(sc) && sc > 0) ? sc : 0;
+    }
+    if (!(c > 0)) return "";
     return `€${ref.toFixed(3)} → <b>€${loyaltyPrice(ref, c).toFixed(3)}</b>/L`;
 }
 
@@ -699,22 +711,24 @@ function loyaltyRowHtml(label, legal) {
     let note = noteKey ? `<div class="loyalty-row-note">↳ ${esc(t(noteKey))}</div>` : "";
     // Viada Wednesday promo: show the officially-announced absolute prices and
     // whether they apply today or on the upcoming date.
-    if (legal === "UAB Viada LT" && VIADA_PROMO && VIADA_PROMO.prices) {
+    // Wednesday-only promo announcements (all three networks run their specials
+    // on trečiadienis; the notes would only confuse on other days).
+    const isWed = new Date().getDay() === 3;
+    if (isWed && legal === "UAB Viada LT" && VIADA_PROMO && VIADA_PROMO.prices
+        && localTodayISO() === VIADA_PROMO.valid_date) {
         const P = VIADA_PROMO.prices;
         const list = [["petrol95", t("fuel_petrol95")], ["diesel", t("fuel_diesel")], ["lpg", t("ws_lpg")]]
             .filter(([k]) => P[k] != null).map(([k, l]) => `${l} €${P[k].toFixed(3)}`).join(" · ");
-        const today = localTodayISO() === VIADA_PROMO.valid_date;
-        note += `<div class="loyalty-row-note wed${today ? " on" : ""}">🔥 ${esc(t(today ? "loyalty_wed_today" : "loyalty_wed_upcoming", { date: VIADA_PROMO.valid_date }))} ${esc(list)}</div>`;
+        note += `<div class="loyalty-row-note wed on">🔥 ${esc(t("loyalty_wed_today"))} ${esc(list)}</div>`;
     }
-    if (legal === "UAB Neste Lietuva" && NESTE_PROMO) {
-        const today = localTodayISO() === NESTE_PROMO.valid_date;
-        note += `<div class="loyalty-row-note wed${today ? " on" : ""}">🔥 ${esc(t(today ? "loyalty_neste_today" : "loyalty_neste_upcoming",
-            { date: NESTE_PROMO.valid_date, cents: loyaltyFmt(NESTE_PROMO.cents) }))}</div>`;
+    if (isWed && legal === "UAB Neste Lietuva" && NESTE_PROMO
+        && localTodayISO() === NESTE_PROMO.valid_date) {
+        note += `<div class="loyalty-row-note wed on">🔥 ${esc(t("loyalty_neste_today", { cents: loyaltyFmt(NESTE_PROMO.cents) }))}</div>`;
     }
-    // Circle K one-time app premium: personal & login-gated, so it can't be
-    // auto-applied — announce it and let the user enter their own value.
-    if (legal === "UAB Circle K Lietuva") {
-        note += `<div class="loyalty-row-note wed">🔥 ${esc(t("loyalty_ck_premium"))}</div>`;
+    // Circle K's one-time app discount is also a Wednesday offer, but personal &
+    // login-gated — announce it; the user enters their own value.
+    if (isWed && legal === "UAB Circle K Lietuva") {
+        note += `<div class="loyalty-row-note wed on">🔥 ${esc(t("loyalty_ck_premium"))}</div>`;
     }
     return `<div class="loyalty-item">
       <div class="loyalty-row">

@@ -148,11 +148,9 @@ const STRINGS = {
     "loyalty_note_viada": "Programėle/kortele −3 ¢/L (didėja užsipylus virš 70L/mėn.); vasarą savaitgaliais −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
     "loyalty_note_neste": "Programėle/kortele −3,5 ¢/L; trečiadieniais „nuolaidadienis“ −7 ¢/L.",
     "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",
-    "loyalty_wed_today": "ŠIANDIEN „Super trečiadienis“ — su ViadaPLUS taikomos akcijos kainos (nuolaida paskaičiuota automatiškai):",
-    "loyalty_wed_upcoming": "„Super trečiadienis“ {date} — su ViadaPLUS galios akcijos kainos:",
-    "loyalty_neste_today": "ŠIANDIEN „Nuolaidadienis“ — su Neste programėle/kortele −{cents} ¢/L visiems degalams (pritaikyta automatiškai).",
-    "loyalty_neste_upcoming": "„Nuolaidadienis“ {date} — su Neste programėle/kortele galios −{cents} ¢/L visiems degalams.",
-    "loyalty_ck_premium": "Circle K programėlė kartais dovanoja vienkartinę premiją (pvz. −12 ¢/L vienam pylimui). Ji asmeninė — aktyvavę programėlėje, įveskite ją čia ranka.",
+    "loyalty_wed_today": "ŠIANDIEN „Super trečiadienis“ —",
+    "loyalty_neste_today": "ŠIANDIEN „Nuolaidadienis“ — −{cents} ¢/L",
+    "loyalty_ck_premium": "Circle K programėlė trečiadienį siūlo vienkartinę nuolaidą ( −12 ¢/L vienam pylimui).",
     "contact_offline": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau."
   },
   "lv": {
@@ -598,11 +596,9 @@ const STRINGS = {
     "loyalty_note_viada": "App/card −3 ¢/L (rises above 70 L/mo); −10 ¢/L on summer weekends; Wednesdays have a special announced price.",
     "loyalty_note_neste": "App/card −3.5 ¢/L; Wednesday “discount day” −7 ¢/L.",
     "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise.",
-    "loyalty_wed_today": "TODAY is “Super Wednesday” — ViadaPLUS promo prices apply (discount applied automatically):",
-    "loyalty_wed_upcoming": "“Super Wednesday” {date} — ViadaPLUS promo prices will apply:",
-    "loyalty_neste_today": "TODAY is “Discount day” — −{cents} ¢/L on all fuels with the Neste app/card (applied automatically).",
-    "loyalty_neste_upcoming": "“Discount day” {date} — −{cents} ¢/L on all fuels with the Neste app/card.",
-    "loyalty_ck_premium": "The Circle K app sometimes gives a one-time premium (e.g. −12 ¢/L for one fill). It's personal — activate it in the app and enter it here manually.",
+    "loyalty_wed_today": "TODAY “Super Wednesday” —",
+    "loyalty_neste_today": "TODAY “Discount day” — −{cents} ¢/L",
+    "loyalty_ck_premium": "On Wednesdays the Circle K app offers a one-time discount ( −12 ¢/L for one fill).",
     "contact_offline": "You're offline — the message was not sent. Try again later."
   },
   "uk": {
