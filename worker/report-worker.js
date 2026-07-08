@@ -85,33 +85,27 @@ export default {
       return json(raw ? JSON.parse(raw) : {});
     }
 
-    // Visitor counter. The app POSTs /hit at most once per device per day
-    // (client-side dedup), so writes stay well within the free tier. GET /count
-    // reads without incrementing (for an owner check). KV is eventually
-    // consistent, so the total is approximate under heavy concurrency — which is
-    // exactly right for a "visitors" number.
-    if (url.pathname === "/count" && req.method === "GET") {
-      const today = new Date().toISOString().slice(0, 10);
-      const [tot, day] = await Promise.all([
-        env.REPORTS.get(VISITS_TOTAL),
-        env.REPORTS.get("visits:" + today),
-      ]);
-      return json({ total: parseInt(tot || "0", 10), today: parseInt(day || "0", 10) });
-    }
-
-    if (url.pathname === "/hit" && req.method === "POST") {
+    // Visitor counter at one endpoint: POST /count (or /hit) logs a visit and
+    // returns {total,today}; GET /count reads without incrementing (owner check).
+    // The app POSTs at most once per device per day, so writes stay well within
+    // the free tier. KV is eventually consistent → the total is approximate under
+    // heavy concurrency, which is exactly right for a "visitors" number.
+    if (url.pathname === "/count" || url.pathname === "/hit") {
       const today = new Date().toISOString().slice(0, 10);
       const dayKey = "visits:" + today;
       const [tot, day] = await Promise.all([
         env.REPORTS.get(VISITS_TOTAL),
         env.REPORTS.get(dayKey),
       ]);
-      const total = parseInt(tot || "0", 10) + 1;
-      const dayCount = parseInt(day || "0", 10) + 1;
-      await Promise.all([
-        env.REPORTS.put(VISITS_TOTAL, String(total)),
-        env.REPORTS.put(dayKey, String(dayCount), { expirationTtl: 60 * 60 * 24 * 45 }),
-      ]);
+      let total = parseInt(tot || "0", 10);
+      let dayCount = parseInt(day || "0", 10);
+      if (req.method === "POST") {
+        total += 1; dayCount += 1;
+        await Promise.all([
+          env.REPORTS.put(VISITS_TOTAL, String(total)),
+          env.REPORTS.put(dayKey, String(dayCount), { expirationTtl: 60 * 60 * 24 * 45 }),
+        ]);
+      }
       return json({ total, today: dayCount });
     }
 

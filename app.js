@@ -8,9 +8,12 @@
 // Set to your deployed Cloudflare Worker URL to enable "report a price".
 // Empty = feature hidden, app works as before. See worker/README.md.
 const REPORT_API = "";
-// Visitor counter (uses the same Worker as REPORT_API: POST /hit once per device
-// per day, GET /count to read). SHOW_VISIT_COUNTER=false keeps it owner-only
-// (still counted, just not displayed in the footer). Dormant until REPORT_API set.
+// Visitor counter endpoint. Convention: POST = log a visit + return {total,today};
+// GET = read only. Point it at EITHER your self-hosted PHP logger on OWEXX
+// (e.g. "https://api.fuelis.lt/count.php" — see server/count.php) OR your
+// Cloudflare Worker's "/count". Leave empty and it falls back to REPORT_API+"/count".
+// SHOW_VISIT_COUNTER=false keeps it counting but hidden. Dormant until one is set.
+const COUNT_API = "https://kk-reports.fuelis.workers.dev/count";
 const SHOW_VISIT_COUNTER = true;
 const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map view
 
@@ -123,17 +126,23 @@ async function loadNestePromo() {
     } catch (e) { NESTE_PROMO = null; }
 }
 
-// Visitor counter. Counts at most once per device per day (localStorage dedup),
-// so writes stay tiny; other days just read. Dormant until REPORT_API is wired.
+// Visitor counter. One endpoint (COUNT_API, or REPORT_API+"/count"): POST logs a
+// visit + returns {total,today}, GET reads only. We POST at most once per device
+// per day (localStorage dedup) so the log stays lean; other loads just read.
+// Dormant until an endpoint is configured.
 let VISIT_COUNT = null;
+function countEndpoint() {
+    if (COUNT_API) return COUNT_API;
+    if (REPORT_API) return REPORT_API.replace(/\/+$/, "") + "/count";
+    return "";
+}
 async function loadVisitCount() {
-    if (!REPORT_API) return;
+    const api = countEndpoint();
+    if (!api) return;
     let counted = false;
     try { counted = localStorage.getItem("kk_visit_day") === localTodayISO(); } catch (e) {}
     try {
-        const res = counted
-            ? await fetch(REPORT_API.replace(/\/+$/, "") + "/count")
-            : await fetch(REPORT_API.replace(/\/+$/, "") + "/hit", { method: "POST" });
+        const res = counted ? await fetch(api) : await fetch(api, { method: "POST" });
         if (!res.ok) return;
         const j = await res.json();
         if (!counted) { try { localStorage.setItem("kk_visit_day", localTodayISO()); } catch (e) {} }

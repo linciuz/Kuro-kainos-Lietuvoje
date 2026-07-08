@@ -6,5 +6,5 @@ compatibility_date = "2024-11-01"
 #   npx wrangler kv namespace create REPORTS
 # It prints an id like: { binding = "REPORTS", id = "xxxx…" }
 kv_namespaces = [
-  { binding = "REPORTS", id = "PASTE_KV_NAMESPACE_ID_HERE" }
+  { binding = "REPORTS", id = "e2122714f84342ee9b5503a24047f3dd" }
 ]
