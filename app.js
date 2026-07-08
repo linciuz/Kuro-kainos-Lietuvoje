@@ -141,11 +141,13 @@ async function loadVisitCount() {
     if (!api) return;
     let counted = false;
     try { counted = localStorage.getItem("kk_visit_day") === localTodayISO(); } catch (e) {}
+    // Mark today as counted BEFORE the POST — otherwise a second load() (e.g. the
+    // foreground-refetch) firing before the first POST resolves would double-count.
+    if (!counted) { try { localStorage.setItem("kk_visit_day", localTodayISO()); } catch (e) {} }
     try {
         const res = counted ? await fetch(api) : await fetch(api, { method: "POST" });
         if (!res.ok) return;
         const j = await res.json();
-        if (!counted) { try { localStorage.setItem("kk_visit_day", localTodayISO()); } catch (e) {} }
         VISIT_COUNT = (j && typeof j.total === "number") ? j.total : null;
         renderVisitCount();
     } catch (e) {}
