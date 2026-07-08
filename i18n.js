@@ -150,7 +150,7 @@ const STRINGS = {
     "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",
     "loyalty_wed_today": "ŠIANDIEN „Super trečiadienis“ —",
     "loyalty_neste_today": "ŠIANDIEN „Nuolaidadienis“ — −{cents} ¢/L",
-    "loyalty_ck_premium": "Circle K programėlė trečiadienį siūlo vienkartinę nuolaidą ( −12 ¢/L vienam pylimui).",
+    "loyalty_ck_premium": "ŠIANDIEN Circle K programėlė siūlo vienkartinę nuolaidą −12 ¢/L vienam pylimui.",
     "contact_offline": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau."
   },
   "lv": {
@@ -598,7 +598,7 @@ const STRINGS = {
     "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise.",
     "loyalty_wed_today": "TODAY “Super Wednesday” —",
     "loyalty_neste_today": "TODAY “Discount day” — −{cents} ¢/L",
-    "loyalty_ck_premium": "On Wednesdays the Circle K app offers a one-time discount ( −12 ¢/L for one fill).",
+    "loyalty_ck_premium": "TODAY the Circle K app offers a one-time discount −12 ¢/L for one fill.",
     "contact_offline": "You're offline — the message was not sent. Try again later."
   },
   "uk": {

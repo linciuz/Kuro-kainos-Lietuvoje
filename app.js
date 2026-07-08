@@ -705,7 +705,16 @@ function loyaltyPreviewHtml(legal) {
 
 function loyaltyRowHtml(label, legal) {
     const c = LOYALTY.cents[legal];
-    const val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
+    let val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
+    // On Neste's promo day the flat announced discount IS the applied value —
+    // show it in the field (locked), so the table matches the prices; the
+    // user's everyday value returns tomorrow untouched.
+    let promoLock = false;
+    if (LOYALTY.enabled && legal === "UAB Neste Lietuva" && NESTE_PROMO
+        && localTodayISO() === NESTE_PROMO.valid_date) {
+        val = loyaltyFmt(NESTE_PROMO.cents);
+        promoLock = true;
+    }
     const ph = LOYALTY_TYPICAL[legal] || "0";   // typical value as a hint only
     const noteKey = LOYALTY_NOTES[legal];
     let note = noteKey ? `<div class="loyalty-row-note">↳ ${esc(t(noteKey))}</div>` : "";
@@ -735,7 +744,7 @@ function loyaltyRowHtml(label, legal) {
         <span class="loyalty-net">${esc(label)}</span>
         <input type="text" inputmode="decimal" step="any" min="0" max="${LOYALTY_MAX}" placeholder="${escAttr(ph)}"
                value="${escAttr(val)}" data-net="${escAttr(legal)}" oninput="setLoyalty(this)"
-               ${LOYALTY.enabled ? "" : "disabled"}>
+               ${promoLock ? 'data-promolock="1"' : ""} ${(LOYALTY.enabled && !promoLock) ? "" : "disabled"}>
         <span class="loyalty-unit">¢/L</span>
       </div>
       <div class="loyalty-preview">${loyaltyPreviewHtml(legal)}</div>${note}
@@ -768,7 +777,9 @@ function toggleLoyalty(on) {
         const cfg = document.querySelector(".loyalty-config");
         if (cfg) {
             cfg.classList.toggle("off", !LOYALTY.enabled);
-            cfg.querySelectorAll(".loyalty-row input, .loyalty-add").forEach(el => { el.disabled = !LOYALTY.enabled; });
+            cfg.querySelectorAll(".loyalty-row input, .loyalty-add").forEach(el => {
+                el.disabled = !LOYALTY.enabled || el.dataset.promolock === "1";   // keep promo-day fields locked
+            });
         }
     }
     updateFeatureButtons();   // highlight the 💳 action button when active
