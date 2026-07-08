@@ -39,6 +39,12 @@ function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch
 let FAVS = lsGet("kk_favs", []);                 // starred station/charger keys
 let showFavsOnly = false;                        // favourites-only filter
 let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {}, muni: "" });   // price-drop alerts (scope frozen at enable time)
+// Migrate the pre-muni stored shape: without this, an old muni-scoped baseline
+// would be compared against NATIONAL prices once and fire a false "price
+// dropped" alert. Clearing seen re-baselines silently on the next check.
+if (!ALERTS || typeof ALERTS !== "object") ALERTS = { enabled: false, seen: {}, muni: "" };
+if (typeof ALERTS.muni !== "string") { ALERTS.muni = ""; ALERTS.seen = {}; }
+if (!ALERTS.seen || typeof ALERTS.seen !== "object") ALERTS.seen = {};
 let HISTORY = null;                              // daily national price-summary snapshots
 let FUELLOG = lsGet("kk_fuellog", []);           // [{date, litres, km, price}] fuel-log entries
 
@@ -94,8 +100,41 @@ const LOYALTY_MAX = 30;
 
 // Discount in ¢/L configured for this station's network (>0), else 0 — also 0
 // whenever the whole feature is toggled off.
-function loyaltyCents(s) {
+let VIADA_PROMO = null;   // {valid_date, prices:{petrol95,diesel,lpg}, url} from viada.lt "Super trečiadieniai"
+
+async function loadViadaPromos() {
+    try {
+        const res = await fetch("data/sources/viada_promos.json", { cache: "no-store" });
+        const j = res.ok ? await res.json() : null;
+        VIADA_PROMO = (j && j.wednesday) || null;
+    } catch (e) { VIADA_PROMO = null; }
+}
+
+// Local (device-timezone) date — promo validity must match the LT calendar day,
+// and toISOString() would flip to the previous UTC day between 00:00 and 03:00.
+function localTodayISO() {
+    const d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+// Viada "Super trečiadienis": viada.lt publishes the day's absolute promo prices
+// (with ViadaPLUS). On the stated date ONLY, the Viada discount becomes
+// official-price − promo-price, per station per fuel; any other day (or if the
+// promo wouldn't lower the price) falls through to the user's configured cents.
+function viadaPromoCents(s, fuel) {
+    if (!VIADA_PROMO || !VIADA_PROMO.prices || !s || s.network !== "UAB Viada LT") return null;
+    if (localTodayISO() !== VIADA_PROMO.valid_date) return null;
+    const promo = VIADA_PROMO.prices[fuel];
+    const official = s[fuel];
+    if (promo == null || official == null || official <= promo) return null;   // never raise a price
+    return Math.round((official - promo) * 10000) / 100;   // € -> ¢/L, 2-decimal precision
+}
+
+function loyaltyCents(s, fuel) {
     if (!LOYALTY.enabled || !s) return 0;
+    if (fuel == null) fuel = fuelType;
+    const wed = viadaPromoCents(s, fuel);
+    if (wed != null) return wed;
     const c = LOYALTY.cents[s.network];
     return (typeof c === "number" && isFinite(c) && c > 0) ? c : 0;
 }
@@ -161,7 +200,13 @@ function setInfoBanner() {
 }
 function toggleInfoBanner() {
     const b = document.getElementById("info-banner");
-    if (b) b.classList.toggle("open");
+    if (!b) return;
+    b.classList.toggle("open");
+    // Closing via the ℹ️ tab counts as "seen" too — otherwise the 10-min
+    // foreground refetch would auto-slide the banner back open mid-session.
+    if (!b.classList.contains("open")) {
+        try { sessionStorage.setItem("kk_info_seen", "1"); } catch (e) {}
+    }
 }
 function closeInfoBanner() {
     const b = document.getElementById("info-banner");
@@ -254,6 +299,7 @@ async function load() {
     await loadReports();
     await loadOrlenWholesale();
     await loadCircleKBusiness();
+    await loadViadaPromos();
     await loadOil();
     await loadElectricity();
     await loadEv();
@@ -447,6 +493,14 @@ function renderContact() {
 }
 function submitContact(e) {
     const status = document.getElementById("cf-status");
+    // Offline guard: the hidden cross-origin iframe fires onload even for the
+    // browser's error page, which would show a false "sent ✓". Catch the one
+    // failure mode we CAN detect client-side.
+    if (navigator.onLine === false) {
+        if (status) status.innerHTML = `<div class="tool-err">${esc(t("contact_offline"))}</div>`;
+        e.preventDefault();
+        return false;
+    }
     const ans = parseInt((document.getElementById("cf-captcha") || {}).value, 10);
     if (ans !== contactCaptcha) {
         if (status) status.innerHTML = `<div class="tool-err">${esc(t("contact_captcha_wrong"))}</div>`;
@@ -466,6 +520,7 @@ function submitContact(e) {
     if (iframe) iframe.onload = () => {
         const f = document.getElementById("contact-form");
         if (f) f.reset();
+        cfTopicChange();   // reset() restores the select but not the "Other" row visibility
         if (status) status.innerHTML = `<div class="tool-ok">${esc(t("contact_sent"))}</div>`;
     };
     return true;   // allow the multipart POST to submit into the hidden iframe
@@ -482,6 +537,7 @@ function buildActionBar() {
          <button type="button" class="act-btn" id="contact-toggle" onclick="openContact()" title="${esc(t("contact_title"))}">✉️</button>` +
         (canOfferInstall() ? `<button type="button" class="act-btn install" onclick="installApp()">⬇️ ${esc(t("install_app"))}</button>` : "") +
         (IS_NATIVE ? "" : `<button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`);
+    updateFeatureButtons();   // a rebuild wipes the ★/🔔/💳 active highlights — always re-apply
 }
 
 // ---- Fuelis Tools: consumption calculator, "worth the detour?", fuel
@@ -618,7 +674,16 @@ function loyaltyRowHtml(label, legal) {
     const val = (typeof c === "number" && isFinite(c) && c > 0) ? loyaltyFmt(c) : "";
     const ph = LOYALTY_TYPICAL[legal] || "0";   // typical value as a hint only
     const noteKey = LOYALTY_NOTES[legal];
-    const note = noteKey ? `<div class="loyalty-row-note">↳ ${esc(t(noteKey))}</div>` : "";
+    let note = noteKey ? `<div class="loyalty-row-note">↳ ${esc(t(noteKey))}</div>` : "";
+    // Viada Wednesday promo: show the officially-announced absolute prices and
+    // whether they apply today or on the upcoming date.
+    if (legal === "UAB Viada LT" && VIADA_PROMO && VIADA_PROMO.prices) {
+        const P = VIADA_PROMO.prices;
+        const list = [["petrol95", t("fuel_petrol95")], ["diesel", t("fuel_diesel")], ["lpg", t("ws_lpg")]]
+            .filter(([k]) => P[k] != null).map(([k, l]) => `${l} €${P[k].toFixed(3)}`).join(" · ");
+        const today = localTodayISO() === VIADA_PROMO.valid_date;
+        note += `<div class="loyalty-row-note wed${today ? " on" : ""}">🔥 ${esc(t(today ? "loyalty_wed_today" : "loyalty_wed_upcoming", { date: VIADA_PROMO.valid_date }))} ${esc(list)}</div>`;
+    }
     return `<div class="loyalty-item">
       <div class="loyalty-row">
         <span class="loyalty-net">${esc(label)}</span>
@@ -637,12 +702,17 @@ function toggleLoyalty(on) {
     // discounts so turning it on has an IMMEDIATE visible effect (otherwise the
     // blank fields mean "on" does nothing). The user can still edit/clear any row.
     let seeded = false;
-    if (LOYALTY.enabled && Object.keys(LOYALTY.cents).length === 0) {
-        for (const legal in LOYALTY_TYPICAL) {
-            const v = parseFloat(LOYALTY_TYPICAL[legal]);
-            if (isFinite(v) && v > 0) LOYALTY.cents[legal] = v;
+    // Seed only on GENUINE first-time setup (tracked by LOYALTY.seeded) — a user
+    // who deliberately cleared every value must not get them re-seeded on toggle.
+    if (LOYALTY.enabled && !LOYALTY.seeded) {
+        if (Object.keys(LOYALTY.cents).length === 0) {
+            for (const legal in LOYALTY_TYPICAL) {
+                const v = parseFloat(LOYALTY_TYPICAL[legal]);
+                if (isFinite(v) && v > 0) LOYALTY.cents[legal] = v;
+            }
+            seeded = true;
         }
-        seeded = true;
+        LOYALTY.seeded = true;
     }
     lsSet("kk_loyalty", LOYALTY);
     if (seeded) {
@@ -704,7 +774,7 @@ function calcConsumption() {
 }
 function saveLogFromCalc() {
     const L = toolNum("cc-litres"), km = toolNum("cc-km"), price = toolNum("cc-price");
-    if (!L || !km) return;
+    if (!L || !km || L <= 0 || km <= 0) return;   // reject negatives — they corrupt the averages
     FUELLOG.push({ date: todayISO(), litres: L, km: km, price: price || null });
     lsSet("kk_fuellog", FUELLOG);
     renderLog();
@@ -770,7 +840,7 @@ function renderLog() {
 function addLogManual() {
     const L = toolNum("lg-litres"), km = toolNum("lg-km"), price = toolNum("lg-price");
     const date = (document.getElementById("lg-date") || {}).value || todayISO();
-    if (!L || !km) return;
+    if (!L || !km || L <= 0 || km <= 0) return;   // reject negatives — they corrupt the averages
     FUELLOG.push({ date, litres: L, km: km, price: price || null });
     lsSet("kk_fuellog", FUELLOG);
     ["lg-litres", "lg-km", "lg-price"].forEach(id => { const el = document.getElementById(id); if (el) el.value = ""; });

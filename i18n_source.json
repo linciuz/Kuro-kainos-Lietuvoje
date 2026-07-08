@@ -1896,5 +1896,17 @@
     "sv": "−1 ¢/L för studenter med studentkort; annars vanligtvis ingen rabatt.",
     "fi": "Opiskelijoille opiskelijakortilla −1 ¢/L; muille yleensä ei alennusta.",
     "no": "−1 ¢/L for studenter med studentbevis; ellers vanligvis ingen."
+  },
+  "loyalty_wed_today": {
+    "lt": "ŠIANDIEN „Super trečiadienis“ — su ViadaPLUS taikomos akcijos kainos (nuolaida paskaičiuota automatiškai):",
+    "en": "TODAY is “Super Wednesday” — ViadaPLUS promo prices apply (discount applied automatically):"
+  },
+  "loyalty_wed_upcoming": {
+    "lt": "„Super trečiadienis“ {date} — su ViadaPLUS galios akcijos kainos:",
+    "en": "“Super Wednesday” {date} — ViadaPLUS promo prices will apply:"
+  },
+  "contact_offline": {
+    "lt": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau.",
+    "en": "You're offline — the message was not sent. Try again later."
   }
 }

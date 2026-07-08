@@ -134,8 +134,9 @@ def find_latest_excel_link(html):
     if loose:
         return pick(loose, "loose price match")
 
-    # 3) Any dated anchor, newest date.
-    dated = [c for c in cands if c["date"]]
+    # 3) Any dated anchor, newest date — still excluding the 'pranešimas' report,
+    #    which is dated too and often newest (the exact 2026-07-07 failure mode).
+    dated = [c for c in cands if c["date"] and "pranesim" not in c["td"]]
     if dated:
         return pick(dated, "newest dated anchor")
 

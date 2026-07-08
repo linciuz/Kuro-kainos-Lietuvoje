@@ -1,0 +1,58 @@
+{
+  "generated": "2026-07-08T06:08:48Z",
+  "network": "Viada",
+  "source": "viada.lt (official promo pages)",
+  "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
+  "count": 5,
+  "promos": [
+    {
+      "title": "Nuolaidų savaitgaliai (ViadaPLUS)",
+      "url": "https://www.viada.lt/akcija/nuolaidu-savaitgaliai/",
+      "slug": "nuolaidu-savaitgaliai",
+      "fuel_related": true,
+      "kind": "standing",
+      "active": true
+    },
+    {
+      "title": "Nuolaidos su VIADA STUDY kortele",
+      "url": "https://www.viada.lt/akcija/nuolaidos-su-viada-study-kortele/",
+      "slug": "nuolaidos-su-viada-study-kortele",
+      "fuel_related": true,
+      "kind": "standing",
+      "active": true
+    },
+    {
+      "title": "Nuolaidos su VIADA AGRO kortele",
+      "url": "https://www.viada.lt/akcija/nuolaidos-su-viada-agro-kortele/",
+      "slug": "nuolaidos-su-viada-agro-kortele",
+      "fuel_related": true,
+      "kind": "standing",
+      "active": true
+    },
+    {
+      "title": "Super trečiadieniai",
+      "url": "https://www.viada.lt/akcija/super-treciadieniai/",
+      "slug": "super-treciadieniai",
+      "fuel_related": true,
+      "kind": "seasonal",
+      "active": true
+    },
+    {
+      "title": "Nuo 2026 m. sausio 1d. - keičiasi „ViadaPLUS“ lojalumo programos sąlygos ir taisyklės",
+      "url": "https://www.viada.lt/akcija/nuo-2026-m-sausio-1d-keiciasi-viadaplus-lojalumo-programos-salygos-ir-taisykles/",
+      "slug": "nuo-2026-m-sausio-1d-keiciasi-viadaplus-lojalumo-programos-salygos-ir-taisykles",
+      "fuel_related": true,
+      "kind": "listed",
+      "active": true
+    }
+  ],
+  "wednesday": {
+    "valid_date": "2026-07-08",
+    "prices": {
+      "diesel": 1.669,
+      "petrol95": 1.569,
+      "lpg": 0.659
+    },
+    "url": "https://www.viada.lt/akcija/super-treciadieniai/"
+  }
+}

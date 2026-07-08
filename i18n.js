@@ -147,7 +147,10 @@ const STRINGS = {
     "loyalty_note_circlek": "Programėle/kortele −3,5 ¢/L (didėja lankantis dažniau); vasarą savaitgaliais −10 ¢/L; pasitaiko trečiadienio akcijų.",
     "loyalty_note_viada": "Programėle/kortele −3 ¢/L (didėja užsipylus virš 70L/mėn.); vasarą savaitgaliais −10 ¢/L; trečiadieniais – speciali skelbiama kaina.",
     "loyalty_note_neste": "Programėle/kortele −3,5 ¢/L; trečiadieniais „nuolaidadienis“ −7 ¢/L.",
-    "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra."
+    "loyalty_note_emsi": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",
+    "loyalty_wed_today": "ŠIANDIEN „Super trečiadienis“ — su ViadaPLUS taikomos akcijos kainos (nuolaida paskaičiuota automatiškai):",
+    "loyalty_wed_upcoming": "„Super trečiadienis“ {date} — su ViadaPLUS galios akcijos kainos:",
+    "contact_offline": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau."
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -591,7 +594,10 @@ const STRINGS = {
     "loyalty_note_circlek": "App/card −3.5 ¢/L (rises with frequent visits); −10 ¢/L on summer weekends; Wednesday promos appear at times.",
     "loyalty_note_viada": "App/card −3 ¢/L (rises above 70 L/mo); −10 ¢/L on summer weekends; Wednesdays have a special announced price.",
     "loyalty_note_neste": "App/card −3.5 ¢/L; Wednesday “discount day” −7 ¢/L.",
-    "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise."
+    "loyalty_note_emsi": "−1 ¢/L for students with an ID; usually none otherwise.",
+    "loyalty_wed_today": "TODAY is “Super Wednesday” — ViadaPLUS promo prices apply (discount applied automatically):",
+    "loyalty_wed_upcoming": "“Super Wednesday” {date} — ViadaPLUS promo prices will apply:",
+    "contact_offline": "You're offline — the message was not sent. Try again later."
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
