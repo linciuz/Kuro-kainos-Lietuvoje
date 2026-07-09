@@ -346,6 +346,9 @@
         .ev-user-note { margin-top: 6px; font-size: 12.5px; color: #c2453a; font-weight: 600; }
         .ev-user-note.busy { color: #b3261e; }
         .ev-user-note.ok { color: #14914e; }
+        /* User notes sit right-aligned UNDER the €/kWh price where the eye lands */
+        .ev-price-col { text-align: right; max-width: 55%; }
+        .ev-price-col .ev-user-note, .ev-price-col .report-line { margin-top: 3px; font-size: 12px; }
         /* Announce buttons: a row below nav, same visual language as .report-btn */
         .ev-report-row { display: flex; gap: 8px; }
         .evavail-btn, .evprice-btn, .evst-btn { flex: 1; padding: 8px; border-radius: 8px; cursor: pointer;

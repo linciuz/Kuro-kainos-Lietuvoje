@@ -1290,11 +1290,10 @@ function renderListEv() {
                 ${dist}${badge}
                 <div class="station-header">
                     <div class="station-name">⚡ ${esc(c.operator || c.name || t("ev_charger"))}</div>
-                    ${c.price != null ? `<div><span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span></div>` : ""}
+                    <div class="ev-price-col">${c.price != null ? `<span class="station-price">€${c.price.toFixed(2)}</span><span class="price-unit">/kWh</span>` : ""}${evUserNote(c)}</div>
                 </div>
                 ${addr ? `<div class="station-address">${addr}</div>` : ""}
                 ${info ? `<div class="station-muni">${info}</div>` : ""}
-                ${evUserNote(c)}
                 <div class="nav-row">${evNav(c)}</div>
                 ${evReportRow(c)}
             </div>`;
