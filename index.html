@@ -458,7 +458,8 @@
 
             <div class="filter-row">
                 <select id="muni-select" onchange="render()"><option value="">Visos savivaldybės</option></select>
-                <input class="search-input" id="search" type="text" placeholder="Ieškoti (tinklas, adresas)…" data-i18n-ph="search_ph" oninput="onSearchInput()">
+                <input class="search-input" id="search" type="search" enterkeyhint="search" placeholder="Ieškoti (tinklas, adresas)…" data-i18n-ph="search_ph" oninput="onSearchInput()"
+                       onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur();}">
             </div>
             <div class="sort-row">
                 <span class="sort-label" data-i18n="sort_label">Rūšiuoti:</span>
