@@ -17,7 +17,8 @@ const CORS = {
 const FUELS = ["petrol95", "diesel", "lpg"];
 const KEY = "reports";
 const MAX_STATIONS = 1000;      // bound the blob size
-const TTL = 60 * 60 * 48;       // seconds
+const TTL = 60 * 60 * 72;       // seconds; 72h so a Friday-evening report survives
+                                // the no-LEA weekend until Monday's ~10:00 list
 const VISITS_TOTAL = "visits:total";     // all-time visitor counter
 
 function json(obj, status = 200) {

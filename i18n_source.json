@@ -611,8 +611,8 @@
     "pl": "Nie udało się wysłać. Spróbuj później."
   },
   "report_line": {
-    "lt": "🗣️ Pranešta kaina: €{price}/L ({ago}) — oficiali atsinaujins kitą rytą 10:00",
-    "en": "🗣️ Reported price: €{price}/L ({ago}) — the official one refreshes next morning at 10:00",
+    "lt": "🗣️ Pranešta kaina: €{price}/L ({ago}) — rodoma, kol atsinaujins oficialus sąrašas",
+    "en": "🗣️ Reported price: €{price}/L ({ago}) — shown until the official list refreshes",
     "lv": "🗣️ Ziņotā cena: €{price}/L — var atšķirties no oficiālās līdz atjaunināšanai",
     "et": "🗣️ Teatatud hind: €{price}/L — võib enne uuendamist ametlikust erineda",
     "uk": "🗣️ Повідомлена ціна: €{price}/L — може відрізнятися від офіційної до оновлення",

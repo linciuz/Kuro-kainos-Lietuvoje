@@ -51,5 +51,5 @@ counting but hidden from users, set `SHOW_VISIT_COUNTER = false` in `app.js`
 KV namespace — no extra setup.
 
 Reports are advisory: the app shows a reported price with a caveat and lets the
-next official LEA update supersede it. Stored values expire after 48h. Once the
+next official LEA update supersede it. Stored values expire after 72h (so weekend reports survive until Monday's list). Once the
 Worker URL is in `REPORT_API`, the EV tab also shows 🟢/🔴 live availability.
