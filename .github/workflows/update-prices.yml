@@ -10,22 +10,13 @@ name: Update prices (frequent)
 # both seasons. LEA publishes on working days, so Mon-Fri.
 on:
   schedule:
-    # Two morning updates land at DIFFERENT times, so poll the whole morning:
-    #  - ORLEN's wholesale point (yesterday's SETTLED price) posts EARLY, well
-    #    before 10:00 — no reason to wait for the LEA window to refresh it.
-    #  - LEA's retail file publishes ~10:00 Lithuania.
-    # GitHub's scheduler DROPS events under load, worst at the congested
-    # :00/:15/:30/:45 minutes — on 2026-07-08 a "*/15" cron went silent for ~7
-    # slots straight across LEA's 10:00 publication. Mitigation: ODD minutes
-    # (off the congestion peaks) and TWO overlapping expressions offset by ~7
-    # minutes, so the morning only stalls if BOTH independent event streams drop
-    # repeatedly. No-change runs skip the commit, so extra slots are cheap.
-    #   hours 3-9 UTC = 06:00-12:59 LT (summer) / 05:00-11:59 (winter)
-    - cron: "4,19,34,49 3-9 * * 1-5"   # every 15 min, odd offsets
-    - cron: "11,26,41,56 3-9 * * 1-5"  # second stream, staggered ~7 min
-    - cron: "23 11 * * 1-5"     # ~14:23 LT (early-afternoon catch-all)
-    - cron: "23 14 * * 1-5"     # ~17:23 Lithuania
-    - cron: "23 19 * * 1-5"     # ~22:23 Lithuania
+    # PRIMARY scheduling lives in the Cloudflare Worker cron (worker/wrangler.toml),
+    # which fires reliably and pokes this workflow via workflow_dispatch on the
+    # lean user-tuned plan (hourly 07-11 LT, dense around LEA's 10:00, 15:00, 01:00).
+    # The entries below are only a sparse DEAD-MAN BACKUP in case the Worker/token
+    # ever breaks — odd minutes, off GitHub's congested :00/:15/:30/:45 peaks.
+    - cron: "47 6,7 * * 1-5"    # 09:47 + 10:47 LT (would catch a missed LEA pickup)
+    - cron: "47 12 * * 1-5"     # 15:47 LT afternoon safety net
   workflow_dispatch: {}
 
 permissions:

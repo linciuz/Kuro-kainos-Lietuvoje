@@ -12,9 +12,14 @@ kv_namespaces = [
   { binding = "REPORTS", id = "e2122714f84342ee9b5503a24047f3dd" }
 ]
 
-# Reliable replacement for GitHub's flaky cron: poke the price workflow every
-# 10 min through the LEA morning window (06-09 UTC = 09:00-12:59 LT summer) +
-# afternoon/evening catch-ups. Needs the GH_TOKEN secret:
-#   npx wrangler secret put GH_TOKEN
+# Poke the price workflow on a lean schedule (user-tuned; UTC = LT−3 summer).
+# LT times: 07,08,09,10,11 hourly · 09:10/09:30/10:10/10:30 around LEA's 10:00
+# publication · 15:00 afternoon · 01:00 night catch-all.
+# NOTE for winter (UTC+2, from late Oct): shift hours +1 LT — revisit then.
+# Needs the GH_TOKEN secret:  npx wrangler secret put GH_TOKEN
 [triggers]
-crons = ["*/10 6-9 * * 1-5", "23 11,14,19 * * 1-5"]
+crons = [
+  "0 4,5,6,7,8 * * 1-5",   # 07:00 08:00 09:00 10:00 11:00 LT
+  "10,30 6,7 * * 1-5",     # 09:10 09:30 10:10 10:30 LT (LEA window)
+  "0 12,22 * * 1-5",       # 15:00 LT + 01:00 LT (next day)
+]
