@@ -389,6 +389,7 @@ async function load() {
     updateFeatureButtons();
     checkPriceAlerts();     // notify if the cheapest in the user's area dropped since last visit
     maybeAutoOpenInfo();    // slide the "10:00 snapshot" caveat banner in once per session
+    maybeAutoLocate();      // silent locate when permission is ALREADY granted (never prompts)
     // Delegate report-button clicks (station keys can contain quotes/pipes).
     const list = document.getElementById("stations-list");
     if (list && !list._reportBound) {
@@ -1495,6 +1496,22 @@ function nearestStationMuni(pos) {
         if (d < bestD) { bestD = d; best = s.municipality; }
     }
     return best;
+}
+
+// Auto-locate ONLY when the browser reports the permission is already granted —
+// then getCurrentPosition is silent (no iOS/Android prompt). We never ambush
+// with a permission dialog on load; the first-ever ask stays behind the button
+// tap. Once granted persistently (e.g. the installed home-screen app), every
+// open locates automatically with zero prompts and zero taps.
+let _autoLocated = false;
+async function maybeAutoLocate() {
+    if (_autoLocated || userPos || fuelType === "ev") return;
+    _autoLocated = true;
+    if (!navigator.geolocation || !navigator.permissions || !navigator.permissions.query) return;
+    try {
+        const st = await navigator.permissions.query({ name: "geolocation" });
+        if (st.state === "granted") locate();
+    } catch (e) {}
 }
 
 function locate() {
