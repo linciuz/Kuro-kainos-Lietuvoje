@@ -504,7 +504,11 @@ let deferredInstallPrompt = null;
 function isStandalone() {
     return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
 }
-function isIOS() { return /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream; }
+function isIOS() {
+    // iPadOS 13+ Safari reports a macOS UA, so also detect a touch-capable "Mac".
+    const touchMac = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+    return (/iphone|ipad|ipod/i.test(navigator.userAgent) || touchMac) && !window.MSStream;
+}
 function canOfferInstall() { return !isStandalone() && (!!deferredInstallPrompt || isIOS()); }
 window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();               // suppress the mini-infobar; we show our own button instead
@@ -1149,7 +1153,7 @@ function evUserAvail(c) {
     const r = EV_REPORTS[chargerKey(c)];
     if (!r || !r.s || !r.ts) return null;
     const ageMin = (Date.now() - r.ts) / 60000;
-    const win = { broken: Infinity, busy: 180, ok: 1440 }[r.s];
+    const win = { broken: 4320, busy: 180, ok: 1440 }[r.s];   // broken 72h, busy 3h, ok 24h
     return (win != null && ageMin <= win) ? r : null;
 }
 function evUserNote(c) {
@@ -1655,7 +1659,7 @@ function renderSummary() {
         const parts = ["petrol95", "diesel", "diesel_agri", "lpg"]
             .filter(k => ORLEN_WS.prices[k] != null)
             .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
-        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: ORLEN_WS.stated_date || "" })} ${parts.join(" · ")}</div>`;
+        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: esc(ORLEN_WS.stated_date || "") })} ${parts.join(" · ")}</div>`;
     }
     // Circle K business fixed price (VAT-incl) — the one genuine SAME-DAY (today)
     // reference, shown right below Orlen. Order: 95, diesel, LPG, 98, AdBlue.
@@ -1665,7 +1669,7 @@ function renderSummary() {
         const parts = ["petrol95", "diesel", "lpg", "petrol98", "adblue"]
             .filter(k => CK_BIZ.prices[k] != null)
             .map(k => `${CKB_LABELS[k]} <b>€${CK_BIZ.prices[k].toFixed(3)}</b>`);
-        if (parts.length) ckbLine = `<div class="wholesale-ref">${t("ws_circlek_biz", { date: CK_BIZ.stated_date || "" })} ${parts.join(" · ")}</div>`;
+        if (parts.length) ckbLine = `<div class="wholesale-ref">${t("ws_circlek_biz", { date: esc(CK_BIZ.stated_date || "") })} ${parts.join(" · ")}</div>`;
     }
     // Price-history trend (grows as the daily pipeline accumulates snapshots).
     let trendLine = "";
