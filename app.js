@@ -139,6 +139,7 @@ function countEndpoint() {
 async function loadVisitCount() {
     const api = countEndpoint();
     if (!api) return;
+    if (navigator.webdriver) return;   // headless crawlers render JS too — don't count (or bill) them
     let counted = false;
     try { counted = localStorage.getItem("kk_visit_day") === localTodayISO(); } catch (e) {}
     // Mark today as counted BEFORE the POST — otherwise a second load() (e.g. the

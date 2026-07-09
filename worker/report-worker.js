@@ -118,17 +118,30 @@ export default {
       return resp;
     }
 
+    // KV-op economy (free tier: 100k reads but only 1k writes/day): GETs of the
+    // KV blobs are edge-cached ~30s so page loads cost ~0 KV reads; the POSTs
+    // purge the cache (same-colo) so fresh reports still appear immediately.
+    const kvCacheKey = (name) => new Request(url.origin + "/__kv/" + name);
+    const cachedKv = async (name, maxAge) => {
+      const hit = await caches.default.match(kvCacheKey(name));
+      if (hit) return hit;
+      const raw = await env.REPORTS.get(name);
+      const resp = new Response(raw || "{}", {
+        headers: { ...CORS, "Content-Type": "application/json", "Cache-Control": "public, max-age=" + maxAge },
+      });
+      ctx.waitUntil(caches.default.put(kvCacheKey(name), resp.clone()));
+      return resp;
+    };
+
     if (url.pathname === "/reports" && req.method === "GET") {
-      const raw = await env.REPORTS.get(KEY);
-      return json(raw ? JSON.parse(raw) : {});
+      return cachedKv(KEY, 30);
     }
 
     // User reports about EV chargers ("neveikia" / "veikia" counter-report).
     // Latest report per charger wins; whole blob expires after 48h so stale
     // complaints clear themselves once people stop renewing them.
     if (url.pathname === "/ev-reports" && req.method === "GET") {
-      const raw = await env.REPORTS.get("evreports");
-      return json(raw ? JSON.parse(raw) : {});
+      return cachedKv("evreports", 30);
     }
 
     if (url.pathname === "/ev-report" && req.method === "POST") {
@@ -156,31 +169,44 @@ export default {
         for (const k of keys.slice(0, keys.length - 500)) delete all[k];
       }
       await env.REPORTS.put("evreports", JSON.stringify(all), { expirationTtl: TTL });
+      ctx.waitUntil(caches.default.delete(kvCacheKey("evreports")));
       return json({ ok: true });
     }
 
     // Visitor counter at one endpoint: POST /count (or /hit) logs a visit and
     // returns {total,today}; GET /count reads without incrementing (owner check).
-    // The app POSTs at most once per device per day, so writes stay well within
-    // the free tier. KV is eventually consistent → the total is approximate under
-    // heavy concurrency, which is exactly right for a "visitors" number.
+    // KV-op economy: everything lives in ONE key {t,d,day} (1 read + 1 write per
+    // counted visit, was 2+2), and GETs are edge-cached 60s (~0 KV reads). KV is
+    // eventually consistent → the total is approximate under heavy concurrency,
+    // which is exactly right for a "visitors" number.
     if (url.pathname === "/count" || url.pathname === "/hit") {
       const today = new Date().toISOString().slice(0, 10);
-      const dayKey = "visits:" + today;
-      const [tot, day] = await Promise.all([
-        env.REPORTS.get(VISITS_TOTAL),
-        env.REPORTS.get(dayKey),
-      ]);
-      let total = parseInt(tot || "0", 10);
-      let dayCount = parseInt(day || "0", 10);
-      if (req.method === "POST") {
-        total += 1; dayCount += 1;
-        await Promise.all([
-          env.REPORTS.put(VISITS_TOTAL, String(total)),
-          env.REPORTS.put(dayKey, String(dayCount), { expirationTtl: 60 * 60 * 24 * 45 }),
+      const readVisits = async () => {
+        const raw = await env.REPORTS.get("visits2");
+        if (raw) { try { return JSON.parse(raw); } catch (e) {} }
+        // one-time migration from the old two-key layout
+        const [tot, day] = await Promise.all([
+          env.REPORTS.get(VISITS_TOTAL),
+          env.REPORTS.get("visits:" + today),
         ]);
+        return { t: parseInt(tot || "0", 10), d: parseInt(day || "0", 10), day: today };
+      };
+      if (req.method === "GET") {
+        const hit = await caches.default.match(kvCacheKey("count"));
+        if (hit) return hit;
+        const v = await readVisits();
+        const resp = new Response(JSON.stringify({ total: v.t, today: v.day === today ? v.d : 0 }), {
+          headers: { ...CORS, "Content-Type": "application/json", "Cache-Control": "public, max-age=60" },
+        });
+        ctx.waitUntil(caches.default.put(kvCacheKey("count"), resp.clone()));
+        return resp;
       }
-      return json({ total, today: dayCount });
+      const v = await readVisits();
+      v.t += 1;
+      v.d = (v.day === today ? v.d : 0) + 1;
+      v.day = today;
+      await env.REPORTS.put("visits2", JSON.stringify(v));
+      return json({ total: v.t, today: v.d });
     }
 
     if (url.pathname === "/report" && req.method === "POST") {
@@ -209,6 +235,7 @@ export default {
       }
 
       await env.REPORTS.put(KEY, JSON.stringify(all), { expirationTtl: TTL });
+      ctx.waitUntil(caches.default.delete(kvCacheKey(KEY)));
       return json({ ok: true, station, fuel, price: all[station][fuel].price });
     }
 
