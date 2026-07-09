@@ -344,9 +344,13 @@
         /* EV status freshness + user problem-reports */
         .ev-stale { font-size: 11px; color: #b07818; white-space: nowrap; }
         .ev-user-note { margin-top: 6px; font-size: 12.5px; color: #c2453a; font-weight: 600; }
-        .evrep-btn, .evok-btn { margin-top: 6px; padding: 4px 8px; border: 1px solid #e0c9a0; border-radius: 8px;
-            background: #fff8e1; color: #7a5b00; font-size: 12px; cursor: pointer; }
-        .evok-btn { border-color: #b6e6c8; background: #eafaf0; color: #14914e; }
+        /* Announce buttons: a row below nav, same visual language as .report-btn */
+        .ev-report-row { display: flex; gap: 8px; }
+        .evrep-btn, .evok-btn, .evprice-btn { flex: 1; padding: 8px; border-radius: 8px; cursor: pointer;
+            font-size: 12px; font-weight: 600; }
+        .evrep-btn { border: 1px dashed #d4a95f; background: #fff8e1; color: #7a5b00; }
+        .evok-btn { border: 1px dashed #6fbf8a; background: #eafaf0; color: #14914e; }
+        .evprice-btn { border: 1px dashed #9b7fd4; background: #f7f3ff; color: #4a2f7a; }
         .ev-disclaimer { font-size: 11.5px; color: #9aa0a8; }
         /* iOS "Add to Home Screen" guide */
         .ios-intro { font-size: 14px; color: #2b3138; margin-bottom: 4px; }

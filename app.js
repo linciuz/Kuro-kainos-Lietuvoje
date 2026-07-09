@@ -1144,7 +1144,7 @@ function evUserBroken(c) {
     const r = EV_REPORTS[chargerKey(c)];
     return (r && r.s === "broken") ? r : null;
 }
-function evUserNote(c, withButtons) {
+function evUserNote(c) {
     const r = EV_REPORTS[chargerKey(c)] || {};
     const br = evUserBroken(c);
     let note = br ? `<div class="ev-user-note">⚠️ ${esc(t("ev_user_broken", { ago: agoTs(br.ts) }))}</div>` : "";
@@ -1152,12 +1152,18 @@ function evUserNote(c, withButtons) {
     if (r.p != null && r.pts) {
         note += `<div class="report-line">${t("ev_price_line", { price: r.p.toFixed(2), ago: agoTs(r.pts) })}</div>`;
     }
-    if (!withButtons || !REPORT_API) return note;
+    return note;
+}
+// Announce buttons in their own row BELOW navigation, matching the fuel cards'
+// report button (was: two cramped inline buttons squeezed above the nav row).
+function evReportRow(c) {
+    if (!REPORT_API) return "";
+    const br = evUserBroken(c);
     const btn = br
         ? `<button class="evok-btn" data-key="${escAttr(chargerKey(c))}">✅ ${esc(t("ev_report_ok"))}</button>`
         : `<button class="evrep-btn" data-key="${escAttr(chargerKey(c))}">⚠️ ${esc(t("ev_report_btn"))}</button>`;
     const priceBtn = `<button class="evprice-btn" data-key="${escAttr(chargerKey(c))}">🗣️ ${esc(t("report_btn_short"))}</button>`;
-    return note + btn + " " + priceBtn;
+    return `<div class="report-row ev-report-row">${btn}${priceBtn}</div>`;
 }
 
 async function evReportPrice(key) {
@@ -1266,8 +1272,9 @@ function renderListEv() {
                 </div>
                 ${addr ? `<div class="station-address">${addr}</div>` : ""}
                 ${info ? `<div class="station-muni">${info}</div>` : ""}
-                ${evUserNote(c, true)}
+                ${evUserNote(c)}
                 <div class="nav-row">${evNav(c)}</div>
+                ${evReportRow(c)}
             </div>`;
         }).join("");
 }
@@ -1289,7 +1296,7 @@ function renderMapEv() {
         const popup = `<div class="popup-name">⚡ ${esc(c.operator || c.name || t("ev_charger"))}</div>
             ${addr ? `<div class="popup-addr">${addr}</div>` : ""}
             ${badge ? `<div>${badge}</div>` : ""}
-            ${evUserNote(c, false)}
+            ${evUserNote(c)}
             ${c.price != null ? `<div class="popup-price">€${c.price.toFixed(2)}/kWh</div>` : ""}
             ${info ? `<div>${info}</div>` : ""}
             <div class="popup-nav">${evNav(c)}</div>`;
