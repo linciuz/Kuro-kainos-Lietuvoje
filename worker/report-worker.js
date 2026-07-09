@@ -139,7 +139,7 @@ export default {
       const price = (body && body.price != null) ? Number(body.price) : null;
       if (!charger || charger.length > 200) return json({ error: "bad charger" }, 400);
       if (status == null && price == null) return json({ error: "empty report" }, 400);
-      if (status != null && status !== "broken" && status !== "ok") return json({ error: "bad status" }, 400);
+      if (status != null && !["broken", "ok", "busy"].includes(status)) return json({ error: "bad status" }, 400);
       if (price != null && !(price >= 0.05 && price <= 2)) return json({ error: "price out of range" }, 400);
 
       const raw = await env.REPORTS.get("evreports");

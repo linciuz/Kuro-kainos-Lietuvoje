@@ -344,13 +344,17 @@
         /* EV status freshness + user problem-reports */
         .ev-stale { font-size: 11px; color: #b07818; white-space: nowrap; }
         .ev-user-note { margin-top: 6px; font-size: 12.5px; color: #c2453a; font-weight: 600; }
+        .ev-user-note.busy { color: #b3261e; }
+        .ev-user-note.ok { color: #14914e; }
         /* Announce buttons: a row below nav, same visual language as .report-btn */
         .ev-report-row { display: flex; gap: 8px; }
-        .evrep-btn, .evok-btn, .evprice-btn { flex: 1; padding: 8px; border-radius: 8px; cursor: pointer;
+        .evavail-btn, .evprice-btn, .evst-btn { flex: 1; padding: 8px; border-radius: 8px; cursor: pointer;
             font-size: 12px; font-weight: 600; }
-        .evrep-btn { border: 1px dashed #d4a95f; background: #fff8e1; color: #7a5b00; }
-        .evok-btn { border: 1px dashed #6fbf8a; background: #eafaf0; color: #14914e; }
+        .evavail-btn { border: 1px dashed #7fa8d4; background: #f0f6ff; color: #1c4e8a; }
         .evprice-btn { border: 1px dashed #9b7fd4; background: #f7f3ff; color: #4a2f7a; }
+        .evst-btn.ok { border: 1px dashed #6fbf8a; background: #eafaf0; color: #14914e; }
+        .evst-btn.busy { border: 1px dashed #e0a29d; background: #fdf0ef; color: #b3261e; }
+        .evst-btn.broken { border: 1px dashed #a8adb5; background: #f2f3f5; color: #3c4147; }
         .ev-disclaimer { font-size: 11.5px; color: #9aa0a8; }
         /* iOS "Add to Home Screen" guide */
         .ios-intro { font-size: 14px; color: #2b3138; margin-bottom: 4px; }

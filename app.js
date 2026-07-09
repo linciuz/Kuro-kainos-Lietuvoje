@@ -398,10 +398,10 @@ async function load() {
             if (fb) { toggleFav(fb.dataset.key); return; }
             const b = e.target.closest(".report-btn");
             if (b) { reportPrice(b.dataset.key, fuelType); return; }
-            const er = e.target.closest(".evrep-btn");
-            if (er) { evReport(er.dataset.key, "broken"); return; }
-            const eo = e.target.closest(".evok-btn");
-            if (eo) { evReport(eo.dataset.key, "ok"); return; }
+            const ea = e.target.closest(".evavail-btn");
+            if (ea) { evAvailChooser(ea.closest(".ev-report-row"), ea.dataset.key); return; }
+            const es = e.target.closest(".evst-btn");
+            if (es) { evReport(es.dataset.key, es.dataset.s); return; }
             const ep = e.target.closest(".evprice-btn");
             if (ep) evReportPrice(ep.dataset.key);
         });
@@ -1140,14 +1140,28 @@ function evStatusBadge(c) {
 }
 
 // Latest user complaint for a charger ("broken" newer than any "ok" counter-report).
-function evUserBroken(c) {
+// Latest user availability report, shown only while it's still meaningful:
+// "neveikia" persists (server TTL caps it), "užimta" is transient (3 h),
+// "veikia" confirms for a day.
+function evUserAvail(c) {
     const r = EV_REPORTS[chargerKey(c)];
-    return (r && r.s === "broken") ? r : null;
+    if (!r || !r.s || !r.ts) return null;
+    const ageMin = (Date.now() - r.ts) / 60000;
+    const win = { broken: Infinity, busy: 180, ok: 1440 }[r.s];
+    return (win != null && ageMin <= win) ? r : null;
 }
 function evUserNote(c) {
     const r = EV_REPORTS[chargerKey(c)] || {};
-    const br = evUserBroken(c);
-    let note = br ? `<div class="ev-user-note">⚠️ ${esc(t("ev_user_broken", { ago: agoTs(br.ts) }))}</div>` : "";
+    const av = evUserAvail(c);
+    let note = "";
+    if (av) {
+        const m = {
+            broken: ["⚠️", "ev_user_broken"],
+            busy:   ["🔴", "ev_user_busy"],
+            ok:     ["🟢", "ev_user_ok"],
+        }[av.s];
+        note = `<div class="ev-user-note ${av.s}">${m[0]} ${esc(t(m[1], { ago: agoTs(av.ts) }))}</div>`;
+    }
     // User-reported €/kWh price (chargers' prices are often missing or stale).
     if (r.p != null && r.pts) {
         note += `<div class="report-line">${t("ev_price_line", { price: r.p.toFixed(2), ago: agoTs(r.pts) })}</div>`;
@@ -1155,15 +1169,21 @@ function evUserNote(c) {
     return note;
 }
 // Announce buttons in their own row BELOW navigation, matching the fuel cards'
-// report button (was: two cramped inline buttons squeezed above the nav row).
+// report button. "Prieinamumas" expands in place into the three-state chooser.
 function evReportRow(c) {
     if (!REPORT_API) return "";
-    const br = evUserBroken(c);
-    const btn = br
-        ? `<button class="evok-btn" data-key="${escAttr(chargerKey(c))}">✅ ${esc(t("ev_report_ok"))}</button>`
-        : `<button class="evrep-btn" data-key="${escAttr(chargerKey(c))}">⚠️ ${esc(t("ev_report_btn"))}</button>`;
-    const priceBtn = `<button class="evprice-btn" data-key="${escAttr(chargerKey(c))}">🗣️ ${esc(t("report_btn_short"))}</button>`;
-    return `<div class="report-row ev-report-row">${btn}${priceBtn}</div>`;
+    const key = escAttr(chargerKey(c));
+    return `<div class="report-row ev-report-row">
+      <button class="evavail-btn" data-key="${key}">🚦 ${esc(t("ev_avail_btn"))}</button>
+      <button class="evprice-btn" data-key="${key}">🗣️ ${esc(t("report_btn_short"))}</button>
+    </div>`;
+}
+function evAvailChooser(rowEl, key) {
+    const k = escAttr(key);
+    rowEl.innerHTML = `
+      <button class="evst-btn ok" data-key="${k}" data-s="ok">🟢 ${esc(t("ev_st_ok"))}</button>
+      <button class="evst-btn busy" data-key="${k}" data-s="busy">🔴 ${esc(t("ev_st_busy"))}</button>
+      <button class="evst-btn broken" data-key="${k}" data-s="broken">⚫ ${esc(t("ev_st_broken"))}</button>`;
 }
 
 async function evReportPrice(key) {
@@ -1186,14 +1206,16 @@ async function evReportPrice(key) {
 }
 async function evReport(key, status) {
     if (!REPORT_API) return;
-    if (status === "broken" && !confirm(t("ev_report_q"))) return;
+    // No confirm: picking one of the three explicit states IS the deliberate choice.
     try {
         const res = await fetch(REPORT_API + "/ev-report", {
             method: "POST", headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ charger: key, status }),
         });
         if (!res.ok) throw new Error("HTTP " + res.status);
-        EV_REPORTS[key] = { s: status, ts: Date.now() };
+        const cur = EV_REPORTS[key] || {};
+        cur.s = status; cur.ts = Date.now();
+        EV_REPORTS[key] = cur;
         render();
     } catch (e) { alert(t("report_failed")); }
 }
