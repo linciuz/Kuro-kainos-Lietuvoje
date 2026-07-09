@@ -16,6 +16,14 @@
       "lat": 55.386231,
       "lon": 23.042885,
       "label": "Naftrus, Slabados k., Pievų g. 19, Raseinių r. (patikrinta)"
+    },
+    {
+      "network_contains": "lašų žemės",
+      "address_contains": "Vytėnų",
+      "municipality_contains": "Rokiškio",
+      "lat": 55.8574667,
+      "lon": 25.7336514,
+      "label": "Lašų žemės ūkio bendrovė, Vytėnai, Vytėnų vs 9, Rokiškio r. (patikrinta 2026-07-09)"
     }
   ]
 }
