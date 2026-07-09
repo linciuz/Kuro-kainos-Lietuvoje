@@ -572,8 +572,8 @@
     "pl": "Wyświetlane stacje: {n}"
   },
   "report_prompt": {
-    "lt": "Įveskite {fuel} kainą (€/L), pvz. 1.699:",
-    "en": "Enter the {fuel} price (€/L), e.g. 1.699:",
+    "lt": "KEIČIATE: {fuel} kainą.\n\nĮveskite matytą kainą (€/L), pvz. 1.699:",
+    "en": "YOU ARE CHANGING: the {fuel} price.\n\nEnter the price you saw (€/L), e.g. 1.699:",
     "lv": "Ievadiet {fuel} cenu (€/L), piem. 1.699:",
     "et": "Sisesta {fuel} hind (€/L), nt 1.699:",
     "uk": "Введіть ціну {fuel} (€/L), напр. 1.699:",

@@ -1550,8 +1550,10 @@ function fuelChips(s) {
     // A fuel is "available" if the station has a price for it OR (for price-less
     // stations from the full registry) it's listed in s.fuels.
     const has = k => s[k] != null || (s.fuels || []).includes(k);
+    // Mirror the top fuel selector: the chip of the currently SELECTED fuel gets
+    // the same active background, so the card echoes what you're looking at.
     const chips = FUEL_ICONS.map(([k, ic]) =>
-        `<span class="fuel-chip ${has(k) ? "" : "off"}" title="${escAttr(t("fuel_" + k))}">${ic}</span>`).join("");
+        `<span class="fuel-chip ${has(k) ? (k === fuelType ? "sel" : "") : "off"}" title="${escAttr(t("fuel_" + k))}">${ic}</span>`).join("");
     return `<div class="fuel-chips"><span class="lbl">${t("fuels_label")}</span>${chips}</div>`;
 }
 
