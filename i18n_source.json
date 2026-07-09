@@ -1601,6 +1601,22 @@
     "lt": "⚠️ Užimtumo būsenos — operatorių pateikiami duomenys; gali vėluoti ar būti netikslios.",
     "en": "⚠️ Occupancy statuses come from the operators; they can lag or be inaccurate."
   },
+  "report_btn_short": {
+    "lt": "Pranešti kainą",
+    "en": "Report price"
+  },
+  "ev_price_prompt": {
+    "lt": "Įveskite kainą €/kWh, pvz. 0.45:",
+    "en": "Enter the price in €/kWh, e.g. 0.45:"
+  },
+  "ev_price_line": {
+    "lt": "🗣️ Pranešta kaina: €{price}/kWh ({ago})",
+    "en": "🗣️ Reported price: €{price}/kWh ({ago})"
+  },
+  "ev_price_invalid": {
+    "lt": "Kaina turi būti tarp €0.05 ir €2.00 už kWh.",
+    "en": "The price must be between €0.05 and €2.00 per kWh."
+  },
   "install_hint": {
     "lt": "Įdiekite per naršyklės meniu („Įdiegti programą“).",
     "en": "Install from your browser menu (“Install app”).",

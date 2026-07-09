@@ -135,16 +135,23 @@ export default {
       try { body = await req.json(); } catch { return json({ error: "bad json" }, 400); }
       const charger = (body && body.charger || "").toString();
       const status = body && body.status;
+      const price = (body && body.price != null) ? Number(body.price) : null;
       if (!charger || charger.length > 200) return json({ error: "bad charger" }, 400);
-      if (status !== "broken" && status !== "ok") return json({ error: "bad status" }, 400);
+      if (status == null && price == null) return json({ error: "empty report" }, 400);
+      if (status != null && status !== "broken" && status !== "ok") return json({ error: "bad status" }, 400);
+      if (price != null && !(price >= 0.05 && price <= 2)) return json({ error: "price out of range" }, 400);
 
       const raw = await env.REPORTS.get("evreports");
       const all = raw ? JSON.parse(raw) : {};
-      all[charger] = { s: status, ts: Date.now() };
+      const cur = all[charger] || {};
+      if (status != null) { cur.s = status; cur.ts = Date.now(); }
+      if (price != null) { cur.p = Math.round(price * 1000) / 1000; cur.pts = Date.now(); }
+      all[charger] = cur;
 
       const keys = Object.keys(all);
       if (keys.length > 500) {                   // bound the blob size
-        keys.sort((a, b) => all[a].ts - all[b].ts);
+        const newest = (o) => Math.max(o.ts || 0, o.pts || 0);
+        keys.sort((a, b) => newest(all[a]) - newest(all[b]));
         for (const k of keys.slice(0, keys.length - 500)) delete all[k];
       }
       await env.REPORTS.put("evreports", JSON.stringify(all), { expirationTtl: TTL });
@@ -205,5 +212,27 @@ export default {
     }
 
     return json({ error: "not found" }, 404);
+  },
+
+  // Cron trigger (see wrangler.toml): GitHub's own scheduler has been dropping
+  // most of its slots (2026-07-08/09: hour-plus gaps straight across LEA's 10:00
+  // publication), so Cloudflare — whose crons fire reliably — pokes the price
+  // workflow via workflow_dispatch instead. The workflow's concurrency group +
+  // no-change commit skip make redundant pokes free.
+  async scheduled(event, env, ctx) {
+    if (!env.GH_TOKEN) return;
+    ctx.waitUntil(fetch(
+      "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
+      {
+        method: "POST",
+        headers: {
+          "Authorization": "Bearer " + env.GH_TOKEN,
+          "Accept": "application/vnd.github+json",
+          "Content-Type": "application/json",
+          "User-Agent": "fuelis-cron-worker",
+        },
+        body: JSON.stringify({ ref: "main" }),
+      },
+    ));
   },
 };

@@ -2,6 +2,13 @@ name = "kk-reports"
 main = "report-worker.js"
 compatibility_date = "2024-11-01"
 
+# Reliable replacement for GitHub's flaky cron: poke the price workflow every
+# 10 min through the LEA morning window (06-09 UTC = 09:00-12:59 LT summer) +
+# afternoon/evening catch-ups. Needs the GH_TOKEN secret:
+#   npx wrangler secret put GH_TOKEN
+[triggers]
+crons = ["*/10 6-9 * * 1-5", "23 11,14,19 * * 1-5"]
+
 # Create the KV namespace once, then paste its id below:
 #   npx wrangler kv namespace create REPORTS
 # It prints an id like: { binding = "REPORTS", id = "xxxx…" }

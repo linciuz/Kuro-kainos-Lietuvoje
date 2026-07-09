@@ -401,7 +401,9 @@ async function load() {
             const er = e.target.closest(".evrep-btn");
             if (er) { evReport(er.dataset.key, "broken"); return; }
             const eo = e.target.closest(".evok-btn");
-            if (eo) evReport(eo.dataset.key, "ok");
+            if (eo) { evReport(eo.dataset.key, "ok"); return; }
+            const ep = e.target.closest(".evprice-btn");
+            if (ep) evReportPrice(ep.dataset.key);
         });
     }
 }
@@ -1143,13 +1145,38 @@ function evUserBroken(c) {
     return (r && r.s === "broken") ? r : null;
 }
 function evUserNote(c, withButtons) {
+    const r = EV_REPORTS[chargerKey(c)] || {};
     const br = evUserBroken(c);
-    const note = br ? `<div class="ev-user-note">⚠️ ${esc(t("ev_user_broken", { ago: agoTs(br.ts) }))}</div>` : "";
+    let note = br ? `<div class="ev-user-note">⚠️ ${esc(t("ev_user_broken", { ago: agoTs(br.ts) }))}</div>` : "";
+    // User-reported €/kWh price (chargers' prices are often missing or stale).
+    if (r.p != null && r.pts) {
+        note += `<div class="report-line">${t("ev_price_line", { price: r.p.toFixed(2), ago: agoTs(r.pts) })}</div>`;
+    }
     if (!withButtons || !REPORT_API) return note;
     const btn = br
         ? `<button class="evok-btn" data-key="${escAttr(chargerKey(c))}">✅ ${esc(t("ev_report_ok"))}</button>`
         : `<button class="evrep-btn" data-key="${escAttr(chargerKey(c))}">⚠️ ${esc(t("ev_report_btn"))}</button>`;
-    return note + btn;
+    const priceBtn = `<button class="evprice-btn" data-key="${escAttr(chargerKey(c))}">🗣️ ${esc(t("report_btn_short"))}</button>`;
+    return note + btn + " " + priceBtn;
+}
+
+async function evReportPrice(key) {
+    if (!REPORT_API) return;
+    const input = prompt(t("ev_price_prompt"));
+    if (input == null) return;
+    const price = parseFloat(String(input).replace(",", "."));
+    if (!(price >= 0.05 && price <= 2)) { alert(t("ev_price_invalid")); return; }
+    try {
+        const res = await fetch(REPORT_API + "/ev-report", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ charger: key, price }),
+        });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const cur = EV_REPORTS[key] || {};
+        cur.p = Math.round(price * 1000) / 1000; cur.pts = Date.now();
+        EV_REPORTS[key] = cur;
+        render();
+    } catch (e) { alert(t("report_failed")); }
 }
 async function evReport(key, status) {
     if (!REPORT_API) return;
