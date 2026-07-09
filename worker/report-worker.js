@@ -27,6 +27,26 @@ function json(obj, status = 200) {
   });
 }
 
+// Lithuanian calendar day (matches the client's localTodayISO dedup; UTC would
+// roll over at 03:00 LT and split a Lithuanian day across two counter buckets).
+function vilniusDay() {
+  return new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Vilnius" });
+}
+
+// Cheap per-IP write guard via the Cache API (zero KV cost). Returns true if
+// this IP already wrote for `tag` within `windowSec` — used to cap KV writes to
+// ~unique IPs and blunt a single-IP POST flood draining the 1k/day write quota.
+// Cache is per-colo, so it stops the common single-source loop; a CF WAF
+// rate-limit rule (dashboard) covers the distributed case.
+async function recentlyWrote(ctx, ip, tag, windowSec) {
+  const key = new Request("https://guard.local/" + tag + "/" + encodeURIComponent(ip));
+  if (await caches.default.match(key)) return true;
+  ctx.waitUntil(caches.default.put(key, new Response("1", {
+    headers: { "Cache-Control": "max-age=" + windowSec },
+  })));
+  return false;
+}
+
 // Live EV occupancy proxy: the Lithuania NAP OCPI endpoint is open but blocks
 // browser CORS, so we fetch it here and return a compact {ocpi_id: {a,t,s}} map
 // (a=available, t=total connectors, s=overall status). Edge-cached ~45s.
@@ -107,7 +127,10 @@ export default {
 
     if (url.pathname === "/ev-status" && req.method === "GET") {
       const cache = caches.default;
-      const cacheKey = new Request(url.toString(), req);
+      // Fixed cache key (ignore ?query) — otherwise a ?_=random cache-buster
+      // bypasses the edge cache and turns us into an amplifier hammering the
+      // upstream OCPI feed on every request.
+      const cacheKey = new Request(url.origin + "/ev-status");
       let hit = await cache.match(cacheKey);
       if (hit) return hit;
       const data = await evStatus();
@@ -154,6 +177,8 @@ export default {
       if (status == null && price == null) return json({ error: "empty report" }, 400);
       if (status != null && !["broken", "ok", "busy"].includes(status)) return json({ error: "bad status" }, 400);
       if (price != null && !(price >= 0.05 && price <= 2)) return json({ error: "price out of range" }, 400);
+      const ip = req.headers.get("CF-Connecting-IP") || "0";
+      if (await recentlyWrote(ctx, ip, "evrep", 15)) return json({ error: "slow down" }, 429);
 
       const raw = await env.REPORTS.get("evreports");
       const all = raw ? JSON.parse(raw) : {};
@@ -161,6 +186,14 @@ export default {
       if (status != null) { cur.s = status; cur.ts = Date.now(); }
       if (price != null) { cur.p = Math.round(price * 1000) / 1000; cur.pts = Date.now(); }
       all[charger] = cur;
+
+      // Age out reports older than 72h independently, so a "neveikia" doesn't
+      // live forever just because unrelated reports keep renewing the blob TTL.
+      const cutoff = Date.now() - 72 * 3600 * 1000;
+      for (const kk of Object.keys(all)) {
+        const e = all[kk];
+        if ((e.ts || 0) < cutoff && (e.pts || 0) < cutoff) delete all[kk];
+      }
 
       const keys = Object.keys(all);
       if (keys.length > 500) {                   // bound the blob size
@@ -180,7 +213,7 @@ export default {
     // eventually consistent → the total is approximate under heavy concurrency,
     // which is exactly right for a "visitors" number.
     if (url.pathname === "/count" || url.pathname === "/hit") {
-      const today = new Date().toISOString().slice(0, 10);
+      const today = vilniusDay();
       const readVisits = async () => {
         const raw = await env.REPORTS.get("visits2");
         if (raw) { try { return JSON.parse(raw); } catch (e) {} }
@@ -191,7 +224,8 @@ export default {
         ]);
         return { t: parseInt(tot || "0", 10), d: parseInt(day || "0", 10), day: today };
       };
-      if (req.method === "GET") {
+      // Only a real POST increments; GET/HEAD/probe just read (HEAD used to inflate it).
+      if (req.method !== "POST") {
         const hit = await caches.default.match(kvCacheKey("count"));
         if (hit) return hit;
         const v = await readVisits();
@@ -201,11 +235,18 @@ export default {
         ctx.waitUntil(caches.default.put(kvCacheKey("count"), resp.clone()));
         return resp;
       }
+      // Cap writes to ~one per IP per day: blocks the write-quota drain AND
+      // counter inflation, while still counting each real visitor once.
+      const ip = req.headers.get("CF-Connecting-IP") || "0";
       const v = await readVisits();
+      if (await recentlyWrote(ctx, ip, "count-" + today, 86400)) {
+        return json({ total: v.t, today: v.day === today ? v.d : 0 });   // no KV write
+      }
       v.t += 1;
       v.d = (v.day === today ? v.d : 0) + 1;
       v.day = today;
       await env.REPORTS.put("visits2", JSON.stringify(v));
+      ctx.waitUntil(caches.default.delete(kvCacheKey("count")));
       return json({ total: v.t, today: v.d });
     }
 
@@ -218,6 +259,8 @@ export default {
       if (!station || station.length > 200) return json({ error: "bad station" }, 400);
       if (!FUELS.includes(fuel)) return json({ error: "bad fuel" }, 400);
       if (!(price >= 0.3 && price <= 3.5)) return json({ error: "price out of range" }, 400);
+      const rip = req.headers.get("CF-Connecting-IP") || "0";
+      if (await recentlyWrote(ctx, rip, "report", 15)) return json({ error: "slow down" }, 429);
 
       const raw = await env.REPORTS.get(KEY);
       const all = raw ? JSON.parse(raw) : {};
