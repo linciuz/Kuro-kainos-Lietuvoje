@@ -1055,6 +1055,33 @@ function calcCompare() {
     ).join("");
 }
 
+// Line chart of fuel consumption (L/100 km) per fill-up over time — the log's
+// headline metric, so the user can see their economy trending up or down.
+function logChart(entries) {
+    const pts = entries.filter(e => e.km > 0 && e.litres > 0)
+        .slice().sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0))
+        .map(e => ({ date: e.date, cons: e.litres / e.km * 100 }));
+    if (pts.length < 2) return "";
+    const W = 320, H = 120, padL = 30, padR = 8, padT = 10, padB = 20;
+    const vals = pts.map(p => p.cons);
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    if (hi - lo < 0.5) { const m = (hi + lo) / 2; lo = m - 0.5; hi = m + 0.5; }
+    const span = hi - lo;
+    const xi = i => padL + (pts.length === 1 ? 0 : (i / (pts.length - 1)) * (W - padL - padR));
+    const yv = v => padT + (1 - (v - lo) / span) * (H - padT - padB);
+    let grid = "";
+    for (let g = 0; g <= 2; g++) {
+        const v = lo + span * g / 2, y = yv(v);
+        grid += `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" stroke="#e2e7ee" stroke-width="1"/>`;
+        grid += `<text x="${padL - 4}" y="${(y + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#9aa0a8">${v.toFixed(1)}</text>`;
+    }
+    const line = `<polyline points="${pts.map((p, i) => `${xi(i).toFixed(1)},${yv(p.cons).toFixed(1)}`).join(" ")}" fill="none" stroke="#0057D8" stroke-width="2"/>`;
+    const dots = pts.map((p, i) => `<circle cx="${xi(i).toFixed(1)}" cy="${yv(p.cons).toFixed(1)}" r="2.5" fill="#0057D8"/>`).join("");
+    const idxs = pts.length <= 2 ? [0, pts.length - 1] : [0, Math.floor((pts.length - 1) / 2), pts.length - 1];
+    const xlab = idxs.map(i => `<text x="${xi(i).toFixed(1)}" y="${H - 6}" text-anchor="${i === 0 ? "start" : i === pts.length - 1 ? "end" : "middle"}" font-size="9" fill="#9aa0a8">${shortMd(pts[i].date)}</text>`).join("");
+    return `<div class="log-chart-wrap"><div class="log-chart-title">${esc(t("log_chart_title"))}</div><svg viewBox="0 0 ${W} ${H}">${grid}${line}${dots}${xlab}</svg></div>`;
+}
+
 function renderLog() {
     const box = document.getElementById("log-body");
     if (!box) return;
@@ -1078,6 +1105,7 @@ function renderLog() {
            <div><span>${esc(t("tool_total_spent"))}</span><b>€${toolFmt(tCost)}</b></div>
            <div><span>${esc(t("tool_total_km"))}</span><b>${toolFmt(tKm, 0)} km</b></div>
          </div>
+         ${logChart(FUELLOG)}
          ${rows.slice().reverse().map(r => r.html).join("")}
          <div class="log-io">
            <button type="button" class="tool-btn ghost" onclick="exportLog()">⬇️ ${esc(t("tool_export"))}</button>

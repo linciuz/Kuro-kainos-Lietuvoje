@@ -1582,8 +1582,12 @@
     "en": "Share"
   },
   "share_view_title": {
-    "lt": "Dalintis su draugu",
-    "en": "Share this with a friend"
+    "lt": "Dalintis su draugais",
+    "en": "Share with friends"
+  },
+  "log_chart_title": {
+    "lt": "Sąnaudų kitimas (L/100 km)",
+    "en": "Consumption trend (L/100 km)"
   },
   "share_all_lt": {
     "lt": "Lietuvoje",
