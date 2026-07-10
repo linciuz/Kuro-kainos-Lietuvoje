@@ -172,7 +172,9 @@
         .nat-table th:first-child, .nat-table td:first-child { text-align: left; font-weight: 600; color: #333; font-size: 13px; }
         .nat-table tbody tr { border-top: 1px solid #ececec; }
         .nat-table .lo { color: #1faa4b; font-weight: bold; }
-        .nat-table .avg { color: #333; font-weight: bold; }
+        /* Average = the headline number: highlighted column so it's the eye's anchor */
+        .nat-table th.avg-col, .nat-table td.avg { background: #eaf1ff; color: #0057D8; font-weight: 800; }
+        .nat-table td.avg { border-radius: 4px; }
         .nat-table .hi { color: #dc3545; font-weight: bold; }
         .wholesale-ref {
             margin-top: 10px; padding-top: 8px; border-top: 1px dashed #d8d8d8;
@@ -352,10 +354,15 @@
         .tool-card input:focus, .tool-card select:focus, .tool-card textarea:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.12); }
         .tool-err { margin-top: 8px; color: #c2453a; font-weight: 600; font-size: 13px; }
         .act-btn.install { background: #eafaf0; border-color: #b6e6c8; color: #14914e; font-weight: 600; }
-        /* Price-history chart */
-        .trend-open { display: inline-flex; align-items: center; gap: 6px; background: none; border: none; padding: 2px 0;
-            font: inherit; color: inherit; cursor: pointer; }
+        /* Price-history chart — centred highlighted strip so the trend stands out */
+        .trend-open { display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%;
+            margin-top: 10px; padding: 8px 6px; background: #eaf1ff; border: none; border-radius: 8px;
+            font: inherit; color: #0057D8; font-weight: 600; cursor: pointer; }
         .trend-open .trend-cta { font-size: 15px; }
+        .log-io { display: flex; gap: 8px; }
+        .log-io .tool-btn { flex: 1; }
+        .csv-import { display: inline-flex; align-items: center; justify-content: center; }
+        .csv-import { cursor: pointer; }
         .chart-tog-row { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
         .chart-tog { flex: 1; min-width: 64px; padding: 7px 6px; border: 1px solid #d6e4ff; background: #f4f8ff; color: #1c4e8a;
             border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }

@@ -744,6 +744,16 @@ function applyUrlState() {
 function toolNum(id) { const v = parseFloat(String((document.getElementById(id) || {}).value || "").replace(",", ".")); return isFinite(v) ? v : null; }
 function toolFmt(n, d) { d = d == null ? 2 : d; return (n == null || !isFinite(n)) ? "–" : n.toLocaleString("lt-LT", { minimumFractionDigits: d, maximumFractionDigits: d }); }
 function todayISO() { return new Date().toISOString().slice(0, 10); }
+// Short date as MM-DD (matches the big-endian LT yyyy-mm-dd order, not dd.mm).
+// Accepts ISO "yyyy-mm-dd" or the legacy "dd.mm" the wholesale fetchers emit.
+function shortMd(s) {
+    s = String(s || "").trim();
+    let m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (m) return m[2] + "-" + m[3];
+    m = s.match(/^(\d{1,2})[.\-\/](\d{1,2})$/);   // legacy dd.mm -> mm-dd
+    if (m) return m[2].padStart(2, "0") + "-" + m[1].padStart(2, "0");
+    return s;
+}
 
 function openTools() {
     renderTools();
@@ -1069,7 +1079,47 @@ function renderLog() {
            <div><span>${esc(t("tool_total_km"))}</span><b>${toolFmt(tKm, 0)} km</b></div>
          </div>
          ${rows.slice().reverse().map(r => r.html).join("")}
-         <button type="button" class="tool-btn ghost" onclick="exportLog()">${esc(t("tool_export"))}</button>`;
+         <div class="log-io">
+           <button type="button" class="tool-btn ghost" onclick="exportLog()">⬇️ ${esc(t("tool_export"))}</button>
+           <label class="tool-btn ghost csv-import">⬆️ ${esc(t("tool_import"))}<input type="file" accept=".csv,text/csv" onchange="importLog(this)" hidden></label>
+         </div>
+         <div class="tool-hint">${esc(t("tool_import_hint"))}</div>`;
+}
+// Restore/merge a fuel log from a previously exported CSV (round-trip back into
+// the same viewer). Appends rows, deduped by date+litres+km; the log list itself
+// is the "viewer".
+function importLog(input) {
+    const file = input.files && input.files[0];
+    input.value = "";
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+        try {
+            const lines = String(reader.result || "").split(/\r?\n/);
+            const seen = new Set(FUELLOG.map(e => e.date + "|" + e.litres + "|" + e.km));
+            let added = 0;
+            for (const line of lines) {
+                const c = line.split(",");
+                const date = (c[0] || "").trim();
+                if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;         // skips header + junk
+                const litres = parseFloat(String(c[1]).replace(",", "."));
+                const km = parseFloat(String(c[2]).replace(",", "."));
+                const priceRaw = (c[3] != null ? String(c[3]).trim() : "");
+                const price = priceRaw ? parseFloat(priceRaw.replace(",", ".")) : null;
+                if (!(litres > 0) || !(km > 0)) continue;
+                const key = date + "|" + litres + "|" + km;
+                if (seen.has(key)) continue;
+                seen.add(key);
+                FUELLOG.push({ date, litres, km, price: (price >= 0 && isFinite(price)) ? price : null });
+                added++;
+            }
+            FUELLOG.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+            lsSet("kk_fuellog", FUELLOG);
+            renderLog();
+            toast(t("tool_import_done", { n: added }));
+        } catch (e) { toast(t("tool_import_fail")); }
+    };
+    reader.readAsText(file);
 }
 function addLogManual() {
     const L = toolNum("lg-litres"), km = toolNum("lg-km"), price = toolNum("lg-price");
@@ -1184,7 +1234,7 @@ function priceChartSvg(series, fuel) {
         grid += `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" stroke="#eceff3" stroke-width="1"/>`;
         grid += `<text x="${padL - 5}" y="${(y + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#9aa0a8">${v.toFixed(2)}</text>`;
     }
-    const fmt = d => { const p = d.split("-"); return p[2] + "." + p[1]; };
+    const fmt = d => shortMd(d);   // mm-dd
     const idxs = n <= 2 ? [0, n - 1] : [0, Math.floor((n - 1) / 2), n - 1];
     let xlab = "";
     for (const i of idxs) xlab += `<text x="${xi(i).toFixed(1)}" y="${H - 8}" text-anchor="${i === 0 ? "start" : i === n - 1 ? "end" : "middle"}" font-size="9" fill="#9aa0a8">${fmt(series[i].date)}</text>`;
@@ -1829,7 +1879,7 @@ function renderSummary() {
         const parts = ["petrol95", "diesel", "diesel_agri", "lpg"]
             .filter(k => ORLEN_WS.prices[k] != null)
             .map(k => `${WS_LABELS[k]} <b>€${ORLEN_WS.prices[k].toFixed(3)}</b>`);
-        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: esc(ORLEN_WS.stated_date || "") })} ${parts.join(" · ")}</div>`;
+        if (parts.length) wsLine = `<div class="wholesale-ref">${t("ws_orlen", { date: esc(shortMd(ORLEN_WS.stated_date)) })} ${parts.join(" · ")}</div>`;
     }
     // Circle K business fixed price (VAT-incl) — the one genuine SAME-DAY (today)
     // reference, shown right below Orlen. Order: 95, diesel, LPG, 98, AdBlue.
@@ -1839,7 +1889,7 @@ function renderSummary() {
         const parts = ["petrol95", "diesel", "lpg", "petrol98", "adblue"]
             .filter(k => CK_BIZ.prices[k] != null)
             .map(k => `${CKB_LABELS[k]} <b>€${CK_BIZ.prices[k].toFixed(3)}</b>`);
-        if (parts.length) ckbLine = `<div class="wholesale-ref">${t("ws_circlek_biz", { date: esc(CK_BIZ.stated_date || "") })} ${parts.join(" · ")}</div>`;
+        if (parts.length) ckbLine = `<div class="wholesale-ref">${t("ws_circlek_biz", { date: esc(shortMd(CK_BIZ.stated_date)) })} ${parts.join(" · ")}</div>`;
     }
     // Price-history trend (grows as the daily pipeline accumulates snapshots).
     let trendLine = "";
@@ -1852,7 +1902,7 @@ function renderSummary() {
     box.innerHTML = `
         <div class="summary-title">${t("national_title")}</div>
         <table class="nat-table">
-            <thead><tr><th></th><th>${t("stat_cheapest")}</th><th>${t("stat_avg")}</th><th>${t("stat_dearest")}</th></tr></thead>
+            <thead><tr><th></th><th>${t("stat_cheapest")}</th><th class="avg-col">${t("stat_avg")}</th><th>${t("stat_dearest")}</th></tr></thead>
             <tbody>${rows}</tbody>
         </table>${wsLine}${ckbLine}${trendLine}`;
 }
@@ -1928,10 +1978,11 @@ function renderList() {
                         ? `<span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span>${loyaltyLine}`
                         : `<span class="no-price-badge">${t("no_price")}</span>`}</div>
                 </div>
+                ${repLine}
                 <div class="station-address">${esc(s.address || "")}${s.locality ? ", " + esc(s.locality) : ""}</div>
                 <div class="station-muni">📍 ${esc(s.municipality || "")}${approxTag}</div>
                 ${fuelChips(s)}
-                ${flagLine}${repLine}
+                ${flagLine}
                 <div class="nav-row">${navButtons(s)}</div>
                 <div class="report-row">${shareBtn}${repBtn}</div>
             </div>`;

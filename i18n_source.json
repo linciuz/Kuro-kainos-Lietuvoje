@@ -1481,6 +1481,22 @@
     "fi": "Loki on tyhjä. Lisää tankkaus tai tallenna se laskurista.",
     "no": "Loggen er tom. Legg til en fylling eller lagre en fra kalkulatoren."
   },
+  "tool_import": {
+    "lt": "Įkelti (CSV)",
+    "en": "Import (CSV)"
+  },
+  "tool_import_hint": {
+    "lt": "Įkelkite anksčiau eksportuotą CSV, kad atkurtumėte ar perkeltumėte savo žurnalą į kitą įrenginį.",
+    "en": "Upload a previously exported CSV to restore your log or move it to another device."
+  },
+  "tool_import_done": {
+    "lt": "Įkelta įrašų: {n} ✓",
+    "en": "Imported {n} entries ✓"
+  },
+  "tool_import_fail": {
+    "lt": "Nepavyko nuskaityti CSV",
+    "en": "Couldn't read the CSV"
+  },
   "tool_export": {
     "lt": "Eksportuoti (CSV)",
     "en": "Export (CSV)",
@@ -1566,8 +1582,8 @@
     "en": "Share"
   },
   "share_view_title": {
-    "lt": "Dalintis šiuo vaizdu",
-    "en": "Share this view"
+    "lt": "Dalintis su draugu",
+    "en": "Share this with a friend"
   },
   "share_all_lt": {
     "lt": "Lietuvoje",
