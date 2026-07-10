@@ -22,7 +22,9 @@ const LT_CENTER = [55.17, 23.88];   // Lithuania centre, for the default map vie
 const DONATE_URL = "https://ko-fi.com/fuelis";
 // Contact-form endpoint. Swap the plain email for the FormSubmit masked endpoint
 // (https://formsubmit.co/<random-hash>) to keep the address out of the page source.
-const CONTACT_ENDPOINT = "https://formsubmit.co/linuxui@gmail.com";
+// FormSubmit masked endpoint (random string mapped to the owner's email
+// server-side) — keeps the address out of the public page source.
+const CONTACT_ENDPOINT = "https://formsubmit.co/c3b01d524fb6ace4c2549e2810066f7c";
 
 // Google Play bans in-app external donation links, so hide the ☕ Support button
 // inside the Android TWA. The wrapper launches with ?src=twa (twa-manifest
