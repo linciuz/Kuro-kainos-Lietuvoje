@@ -39,6 +39,9 @@ jobs:
       - name: Snapshot daily national price for the history trend
         run: python scripts/append_history.py || echo "history snapshot failed (non-fatal)"
 
+      - name: Backfill LEA historical prices (2026-04-08 onward, idempotent)
+        run: python scripts/fetch_lea_history.py || echo "history backfill failed (non-fatal)"
+
       - name: Add full station list from LEA Power BI (price-less registry stations)
         run: python scripts/fetch_lea_powerbi.py || echo "Power BI fetch failed (non-fatal)"
 
