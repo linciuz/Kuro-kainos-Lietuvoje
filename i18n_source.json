@@ -1011,9 +1011,13 @@
     "lt": "{fuel}: pigiausia kaina šoktelėjo €{old} → €{price} ({area}). Spėkite užsipilti — ne visos degalinės dar pabrangino.",
     "en": "{fuel}: the cheapest price jumped €{old} → €{price} ({area}). Fill up now — not all stations have repriced yet."
   },
+  "alerts_feature_title": {
+    "lt": "Kainų pokyčių pranešimai",
+    "en": "Price-change alerts"
+  },
   "alerts_on_msg": {
-    "lt": "🔔 Signalai įjungti — pranešime, kai jūsų rajone kainos kris arba staigiai kils",
-    "en": "🔔 Alerts on — we'll notify you when prices drop or spike in your area",
+    "lt": "🔔 Signalai įjungti — pranešime apie kainų pokyčius jūsų rajone (kris >3 ¢ ar šoktels ≥10 ¢)",
+    "en": "🔔 Alerts on — we'll notify you about price changes in your area (drop >3 ¢ or jump ≥10 ¢)",
     "lv": "🔔 Brīdinājumi ieslēgti",
     "et": "🔔 Teavitused sees",
     "uk": "🔔 Сповіщення увімкнено",
@@ -1622,8 +1626,8 @@
     "en": "Your favourite stations — quick access"
   },
   "help_alerts": {
-    "lt": "Pranešimai, kai kaina jūsų rajone krinta",
-    "en": "Alerts when the price in your area drops"
+    "lt": "Pranešimai apie kainų pokyčius jūsų rajone",
+    "en": "Alerts about price changes in your area"
   },
   "help_disc": {
     "lt": "Nuolaidos — rodyti kainą su lojalumo nuolaida",
