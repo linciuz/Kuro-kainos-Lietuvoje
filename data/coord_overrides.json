@@ -24,6 +24,14 @@
       "lat": 55.8574667,
       "lon": 25.7336514,
       "label": "Lašų žemės ūkio bendrovė, Vytėnai, Vytėnų vs 9, Rokiškio r. (patikrinta 2026-07-09)"
+    },
+    {
+      "network_contains": "jozita",
+      "address_contains": "Kuosišk",
+      "municipality_contains": "Pakruojo",
+      "lat": 56.073104,
+      "lon": 23.831915,
+      "label": "UAB Jozita, Kuosiškių k. 4, Pakruojo r. (patikrinta 2026-07-10 — coords exact)"
     }
   ]
 }

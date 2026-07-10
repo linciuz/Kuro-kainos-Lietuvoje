@@ -4344,7 +4344,8 @@
       "lpg": 0.67,
       "lat": 56.073104,
       "lon": 23.831915,
-      "approx": true
+      "approx": false,
+      "coord_source": "verified"
     },
     {
       "network": "UAB Naftrus",

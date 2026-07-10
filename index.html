@@ -363,11 +363,15 @@
            any language (side-by-side let the longer label wrap and mismatch). */
         .log-io { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
         .log-io .tool-btn { margin-top: 0; height: 44px; padding: 0 10px; white-space: nowrap; line-height: 1;
-            display: flex; align-items: center; justify-content: center; gap: 6px; }
+            font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; }
         /* fuel-log consumption chart */
         .log-chart-wrap { margin: 4px 0 10px; padding: 8px; background: #f3f6fb; border-radius: 9px; }
         .log-chart-title { font-size: 11px; color: #666; text-align: center; margin-bottom: 4px; }
         .log-chart-wrap svg { width: 100%; height: auto; display: block; }
+        /* report-price modal */
+        .tool-label { display: block; font-size: 12px; color: #6b7480; margin: 8px 0 4px; }
+        .report-disc { margin-top: 12px; }
+        .rep-disc { color: #14914e; font-weight: 700; white-space: nowrap; }
         .chart-tog-row { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
         .chart-tog { flex: 1; min-width: 64px; padding: 7px 6px; border: 1px solid #d6e4ff; background: #f4f8ff; color: #1c4e8a;
             border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }
@@ -595,6 +599,15 @@
           <button type="button" class="tools-close" onclick="closeIosInstall()" aria-label="Close">✕</button>
         </div>
         <div class="tools-body" id="ios-body"></div>
+      </div>
+    </div>
+    <div id="report-modal" class="tools-modal" onclick="if(event.target===this)closeReport()">
+      <div class="tools-sheet">
+        <div class="tools-head">
+          <span id="report-title">🗣️</span>
+          <button type="button" class="tools-close" onclick="closeReport()" aria-label="Close">✕</button>
+        </div>
+        <div class="tools-body" id="report-body"></div>
       </div>
     </div>
     <button id="info-handle" class="info-handle" onclick="toggleInfoBanner()" aria-label="Info">ℹ️</button>

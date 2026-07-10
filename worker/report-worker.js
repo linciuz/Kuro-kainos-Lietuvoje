@@ -275,10 +275,9 @@ export default {
 
       const raw = await env.REPORTS.get(KEY);
       const all = raw ? JSON.parse(raw) : {};
-      (all[station] = all[station] || {})[fuel] = {
-        price: Math.round(price * 1000) / 1000,
-        ts: Date.now(),
-      };
+      const rec = { price: Math.round(price * 1000) / 1000, ts: Date.now() };
+      if (body && body.discount) rec.d = true;   // reporter flagged it as a discounted (loyalty) price
+      (all[station] = all[station] || {})[fuel] = rec;
 
       // Prune oldest stations if we exceed the cap.
       const keys = Object.keys(all);

@@ -584,6 +584,22 @@
     "no": "Skriv inn {fuel}-prisen (€/L), f.eks. 1.699:",
     "pl": "Podaj cenę {fuel} (€/L), np. 1.699:"
   },
+  "report_price_label": {
+    "lt": "Kaina degalinėje (€/L)",
+    "en": "Price at the station (€/L)"
+  },
+  "report_discount_q": {
+    "lt": "Kaina su nuolaida (lojalumo kortele ar programėle)",
+    "en": "Price includes a discount (loyalty card or app)"
+  },
+  "report_send": {
+    "lt": "Pranešti kainą",
+    "en": "Report price"
+  },
+  "report_with_discount": {
+    "lt": "· su nuolaida",
+    "en": "· with discount"
+  },
   "report_invalid": {
     "lt": "Neteisinga kaina.",
     "en": "Invalid price.",

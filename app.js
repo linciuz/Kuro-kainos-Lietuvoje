@@ -1589,21 +1589,59 @@ function reportFor(s) {
     return rep.ts > officialTs ? rep : null;
 }
 
-async function reportPrice(key, fuel) {
+// Report a pump price via a small modal: the price field is PREFILLED with the
+// station's currently-shown price (a realistic starting point), plus a "with a
+// discount?" checkbox so a loyalty price isn't mistaken for the official one.
+let _reportCtx = null;
+function reportPrice(key, fuel) {
     if (!REPORT_API) return;
-    const input = prompt(t("report_prompt", { fuel: t("fuel_" + fuel) }));
-    if (input == null) return;
-    const price = parseFloat(input.replace(",", "."));
-    if (!(price >= 0.3 && price <= 3.5)) { alert(t("report_invalid")); return; }
+    const s = (DATA.stations || []).find(x => stationKey(x) === key);
+    _reportCtx = { key, fuel };
+    const cur = (s && s[fuel] != null) ? s[fuel].toFixed(3) : "";
+    const ttl = document.getElementById("report-title");
+    if (ttl) ttl.textContent = "🗣️ " + t("report_btn");
+    const body = document.getElementById("report-body");
+    if (body) body.innerHTML = `
+      <section class="tool-card">
+        <div class="tool-note">${esc(s ? (s.network || t("station_default")) : "")} · ${esc(t("fuel_" + fuel))}</div>
+        <label class="tool-label">${esc(t("report_price_label"))}</label>
+        <input id="rp-price" type="text" inputmode="decimal" step="0.001" value="${escAttr(cur)}" placeholder="${escAttr(cur || "1.699")}">
+        <label class="loyalty-switch report-disc">
+          <input type="checkbox" id="rp-discount"><span>${esc(t("report_discount_q"))}</span>
+        </label>
+        <div id="rp-status"></div>
+        <button type="button" class="tool-btn" onclick="submitReport()">${esc(t("report_send"))}</button>
+      </section>`;
+    const m = document.getElementById("report-modal");
+    if (m) m.classList.add("open");
+    document.body.classList.add("modal-open");
+    setTimeout(() => { const i = document.getElementById("rp-price"); if (i) { i.focus(); i.select(); } }, 60);
+}
+function closeReport() {
+    const m = document.getElementById("report-modal");
+    if (m) m.classList.remove("open");
+    document.body.classList.remove("modal-open");
+}
+async function submitReport() {
+    if (!REPORT_API || !_reportCtx) return;
+    const status = document.getElementById("rp-status");
+    const price = parseFloat(String((document.getElementById("rp-price") || {}).value || "").replace(",", "."));
+    const discount = !!(document.getElementById("rp-discount") || {}).checked;
+    if (!(price >= 0.3 && price <= 3.5)) {
+        if (status) status.innerHTML = `<div class="tool-err">${esc(t("report_invalid"))}</div>`;
+        return;
+    }
+    const { key, fuel } = _reportCtx;
     try {
         const res = await fetch(REPORT_API + "/report", {
             method: "POST", headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ station: key, fuel, price }),
+            body: JSON.stringify({ station: key, fuel, price, discount }),
         });
         if (!res.ok) throw new Error("HTTP " + res.status);
-        (REPORTS[key] = REPORTS[key] || {})[fuel] = { price: Math.round(price * 1000) / 1000, ts: Date.now() };
+        (REPORTS[key] = REPORTS[key] || {})[fuel] = { price: Math.round(price * 1000) / 1000, ts: Date.now(), d: discount };
+        closeReport();
         render();
-    } catch (e) { alert(t("report_failed")); }
+    } catch (e) { if (status) status.innerHTML = `<div class="tool-err">${esc(t("report_failed"))}</div>`; }
 }
 
 async function loadDiscrepancies() {
@@ -1983,7 +2021,7 @@ function renderList() {
             const fl = flagFor(s);
             const flagLine = fl ? `<div class="change-flag">${t("flag_change", { price: fl.live.toFixed(3) })}</div>` : "";
             const rep = reportFor(s);
-            const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3), ago: agoTs(rep.ts) })}</div>` : "";
+            const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3), ago: agoTs(rep.ts) })}${rep.d ? ` <b class="rep-disc">${esc(t("report_with_discount"))}</b>` : ""}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
             const shareBtn = `<button class="share-btn" data-key="${escAttr(stationKey(s))}">🔗 ${esc(t("share_btn"))}</button>`;
             const lc = s[fuelType] != null ? loyaltyCents(s) : 0;
