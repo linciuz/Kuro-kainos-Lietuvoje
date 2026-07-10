@@ -1605,6 +1605,38 @@
     "lt": "Sąnaudų kitimas (L/100 km)",
     "en": "Consumption trend (L/100 km)"
   },
+  "help_title": {
+    "lt": "Ką reiškia mygtukai?",
+    "en": "What the buttons do"
+  },
+  "help_favs": {
+    "lt": "Mėgstamiausios degalinės — greitas priėjimas",
+    "en": "Your favourite stations — quick access"
+  },
+  "help_alerts": {
+    "lt": "Pranešimai, kai kaina jūsų rajone krinta",
+    "en": "Alerts when the price in your area drops"
+  },
+  "help_disc": {
+    "lt": "Nuolaidos — rodyti kainą su lojalumo nuolaida",
+    "en": "Discounts — show the price with your loyalty discount"
+  },
+  "help_tools": {
+    "lt": "Skaičiuoklės ir pylimų žurnalas",
+    "en": "Calculators & fuel log"
+  },
+  "help_contact": {
+    "lt": "Susisiekite su mumis",
+    "en": "Contact us"
+  },
+  "help_share": {
+    "lt": "Pasidalinkite su draugais",
+    "en": "Share with friends"
+  },
+  "help_support": {
+    "lt": "Paremkite projektą",
+    "en": "Support the project"
+  },
   "share_all_lt": {
     "lt": "Lietuvoje",
     "en": "in Lithuania"

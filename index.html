@@ -418,8 +418,25 @@
             border: none; border-radius: 0 12px 12px 0; box-shadow: 3px 4px 16px rgba(0,0,0,0.22); font-size: 19px;
             cursor: pointer; color: #6b4e00; line-height: 1; }   /* always-visible, always-clickable tab */
         .info-banner { position: fixed; left: 42px; bottom: 88px; z-index: 2400; max-width: min(300px, calc(100vw - 58px));
-            transform: translateX(calc(-100% - 42px)); transition: transform .3s ease; }   /* slides in beside the tab */
-        .info-banner.open { transform: translateX(0); }
+            /* translateY centers the panel's midline on the 46px tab (down by half
+               its own height minus half the tab); X does the slide. */
+            transform: translate(calc(-100% - 42px), calc(50% - 23px)); transition: transform .3s ease; }
+        .info-banner.open { transform: translate(0, calc(50% - 23px)); }
+        /* Help tab: explains the top action-bar buttons (upper-left, slides from left) */
+        .help-handle { position: fixed; left: 0; top: 120px; z-index: 2401; width: 42px; height: 46px; background: #dbeafe;
+            border: none; border-radius: 0 12px 12px 0; box-shadow: 3px 4px 16px rgba(0,0,0,0.22); font-size: 21px;
+            font-weight: 700; cursor: pointer; color: #1c4e8a; line-height: 1; }
+        .help-banner { position: fixed; left: 42px; top: 120px; z-index: 2400; max-width: min(330px, calc(100vw - 58px));
+            transform: translateX(calc(-100% - 42px)); transition: transform .3s ease; }
+        .help-banner.open { transform: translateX(0); }
+        .help-content { background: #fff; border: 1px solid #cfe0f5; border-radius: 0 12px 12px 0; padding: 12px 14px;
+            box-shadow: 4px 5px 20px rgba(0,0,0,0.22); font-size: 12.5px; color: #2b3138; max-height: 72vh; overflow-y: auto; }
+        .help-title { font-weight: 700; font-size: 13px; margin: 0 0 8px; color: #1c4e8a; }
+        .help-item { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; line-height: 1.35; border-top: 1px solid #f0f4f9; }
+        .help-item:first-of-type { border-top: none; }
+        .help-item .hi { flex: none; width: 22px; text-align: center; }
+        .help-x { float: right; background: none; border: none; color: #8a929c; font-size: 15px; line-height: 1; cursor: pointer; padding: 0; }
+        @media (prefers-reduced-motion: reduce) { .help-banner { transition: none; } }
         .info-content { background: #fff8e1; border: 1px solid #ffe0a3; border-radius: 0 12px 12px 0;
             padding: 11px 12px; box-shadow: 4px 5px 20px rgba(0,0,0,0.22); font-size: 12.5px; color: #7a5b00;
             line-height: 1.5; display: flex; gap: 8px; align-items: flex-start; white-space: pre-line; }
@@ -614,6 +631,8 @@
     <aside id="info-banner" class="info-banner">
       <div class="info-content"><span id="info-banner-text"></span><button class="info-x" onclick="closeInfoBanner()" aria-label="Close">✕</button></div>
     </aside>
+    <button id="help-handle" class="help-handle" onclick="toggleHelp()" aria-label="Help">?</button>
+    <aside id="help-banner" class="help-banner"><div class="help-content" id="help-content"></div></aside>
     <iframe name="ff_iframe" title="form target" style="display:none" aria-hidden="true"></iframe>
 </body>
 </html>

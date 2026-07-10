@@ -286,6 +286,30 @@ function maybeAutoOpenInfo() {
     setTimeout(() => { const b = document.getElementById("info-banner"); if (b) b.classList.add("open"); }, 900);
 }
 
+// Upper "?" tab → a side banner legend explaining the top action-bar buttons.
+function toggleHelp() {
+    const b = document.getElementById("help-banner");
+    if (!b) return;
+    if (!b.classList.contains("open")) renderHelp();
+    b.classList.toggle("open");
+}
+function closeHelp() {
+    const b = document.getElementById("help-banner");
+    if (b) b.classList.remove("open");
+}
+function renderHelp() {
+    const el = document.getElementById("help-content");
+    if (!el) return;
+    const items = [
+        ["★", t("help_favs")], ["🔔", t("help_alerts")], ["💳", t("help_disc")],
+        ["🧮", t("help_tools")], ["✉️", t("help_contact")], ["🔗", t("help_share")],
+    ];
+    if (!IS_NATIVE) items.push(["☕", t("help_support")]);
+    el.innerHTML = `<button class="help-x" onclick="closeHelp()" aria-label="Close">✕</button>
+      <div class="help-title">❓ ${esc(t("help_title"))}</div>` +
+      items.map(([ic, txt]) => `<div class="help-item"><span class="hi">${ic}</span><span>${esc(txt)}</span></div>`).join("");
+}
+
 function renderLocateBtn() {
     const btn = document.getElementById("locate-btn");
     if (btn) btn.textContent = t(locateState.key, locateState.vars);
