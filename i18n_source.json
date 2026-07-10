@@ -1561,6 +1561,34 @@
     "lt": "{n} apsilankymų",
     "en": "{n} visits"
   },
+  "share_btn": {
+    "lt": "Dalintis",
+    "en": "Share"
+  },
+  "share_view_title": {
+    "lt": "Dalintis šiuo vaizdu",
+    "en": "Share this view"
+  },
+  "share_all_lt": {
+    "lt": "Lietuvoje",
+    "en": "in Lithuania"
+  },
+  "share_view_text": {
+    "lt": "⛽ {fuel} kainos ({where}) — rasta Fuelis.lt 🇱🇹",
+    "en": "⛽ {fuel} prices ({where}) — found on Fuelis.lt 🇱🇹"
+  },
+  "share_station_text": {
+    "lt": "⛽ {net}: {fuel} {price} — {addr}. Rasta Fuelis.lt 🇱🇹",
+    "en": "⛽ {net}: {fuel} {price} — {addr}. Found on Fuelis.lt 🇱🇹"
+  },
+  "share_copied": {
+    "lt": "Nuoroda nukopijuota ✓",
+    "en": "Link copied ✓"
+  },
+  "share_copy_manual": {
+    "lt": "Nukopijuokite nuorodą:",
+    "en": "Copy this link:"
+  },
   "ago_min": {
     "lt": "prieš {n} min.",
     "en": "{n} min ago"

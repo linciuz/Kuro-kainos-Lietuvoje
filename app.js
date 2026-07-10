@@ -390,6 +390,7 @@ async function load() {
     buildActionBar();
     render();
     updateFeatureButtons();
+    applyUrlState();        // restore fuel/muni/view/search from a shared link (once)
     checkPriceAlerts();     // notify if the cheapest in the user's area dropped since last visit
     maybeAutoOpenInfo();    // slide the "10:00 snapshot" caveat banner in once per session
     maybeAutoLocate();      // silent locate when permission is ALREADY granted (never prompts)
@@ -402,6 +403,8 @@ async function load() {
             if (fb) { toggleFav(fb.dataset.key); return; }
             const b = e.target.closest(".report-btn");
             if (b) { reportPrice(b.dataset.key, fuelType); return; }
+            const sh = e.target.closest(".share-btn");
+            if (sh) { shareStation(sh.dataset.key); return; }
             const ea = e.target.closest(".evavail-btn");
             if (ea) { evAvailChooser(ea.closest(".ev-report-row"), ea.dataset.key); return; }
             const es = e.target.closest(".evst-btn");
@@ -649,10 +652,91 @@ function buildActionBar() {
          <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alert_title"))}">🔔</button>
          <button type="button" class="act-btn" id="disc-toggle" onclick="openDiscounts()" title="${esc(t("loyalty_title"))}">💳</button>
          <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>
-         <button type="button" class="act-btn" id="contact-toggle" onclick="openContact()" title="${esc(t("contact_title"))}">✉️</button>` +
+         <button type="button" class="act-btn" id="contact-toggle" onclick="openContact()" title="${esc(t("contact_title"))}">✉️</button>
+         <button type="button" class="act-btn" id="share-toggle" onclick="shareView()" title="${esc(t("share_view_title"))}">🔗</button>` +
         (canOfferInstall() ? `<button type="button" class="act-btn install" onclick="installApp()">⬇️ ${esc(t("install_app"))}</button>` : "") +
         (IS_NATIVE ? "" : `<button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`);
     updateFeatureButtons();   // a rebuild wipes the ★/🔔/💳 active highlights — always re-apply
+}
+
+// --- shareable links -------------------------------------------------------
+const SITE_URL = "https://fuelis.lt/";   // canonical (share the brand, not github.io)
+
+// Build a link that restores the current view (fuel + municipality + list/map +
+// search), optionally centred on one station.
+function shareState(extra) {
+    const p = new URLSearchParams();
+    if (fuelType && fuelType !== "petrol95") p.set("fuel", fuelType);
+    const muni = (document.getElementById("muni-select") || {}).value || "";
+    if (muni) p.set("muni", muni);
+    if (view && view !== "list") p.set("view", view);
+    const q = ((document.getElementById("search") || {}).value || "").trim();
+    if (q) p.set("q", q);
+    if (extra) for (const k in extra) p.set(k, extra[k]);
+    const qs = p.toString();
+    return SITE_URL + (qs ? "?" + qs : "");
+}
+
+// Native share sheet where available (mobile), clipboard fallback otherwise.
+async function doShare(text, url) {
+    if (navigator.share) {
+        try { await navigator.share({ title: "Fuelis", text, url }); return; }
+        catch (e) { if (e && e.name === "AbortError") return; }
+    }
+    const full = text + " " + url;
+    try { await navigator.clipboard.writeText(full); toast(t("share_copied")); }
+    catch (e) { prompt(t("share_copy_manual"), full); }
+}
+
+function shareView() {
+    const muni = (document.getElementById("muni-select") || {}).value || "";
+    const where = muni || t("share_all_lt");
+    const fuelLabel = t("fuel_" + fuelType);
+    doShare(t("share_view_text", { fuel: fuelLabel, where }), shareState());
+}
+
+function shareStation(key) {
+    const s = (DATA.stations || []).find(x => stationKey(x) === key);
+    if (!s) return;
+    const price = s[fuelType] != null ? "€" + s[fuelType].toFixed(3) + "/L" : "";
+    doShare(t("share_station_text", {
+        net: loyaltyLabel(s.network) || t("station_default"),
+        fuel: t("fuel_" + fuelType), price, addr: s.address || "",
+    }), shareState({ station: key }));
+}
+
+function toast(msg) {
+    let el = document.getElementById("kk-toast");
+    if (!el) { el = document.createElement("div"); el.id = "kk-toast"; el.className = "kk-toast"; document.body.appendChild(el); }
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove("show"), 2200);
+}
+
+// Restore state from a shared URL — once, on first load only.
+let _urlStateApplied = false;
+function applyUrlState() {
+    if (_urlStateApplied) return;
+    _urlStateApplied = true;
+    let p;
+    try { p = new URLSearchParams(location.search); } catch (e) { return; }
+    const fuel = p.get("fuel");
+    if (fuel && ["petrol95", "diesel", "lpg", "ev"].includes(fuel) && document.getElementById("btn-" + fuel)) selectFuel(fuel);
+    const muni = p.get("muni");
+    if (muni) { const sel = document.getElementById("muni-select"); if (sel && [...sel.options].some(o => o.value === muni)) sel.value = muni; }
+    const q = p.get("q");
+    if (q) { const s = document.getElementById("search"); if (s) s.value = q; }
+    const v = p.get("view");
+    if (v === "map" || v === "list") setView(v);
+    render();
+    // If a specific station was shared, scroll to it and flash a highlight.
+    const st = p.get("station");
+    if (st && view !== "map") setTimeout(() => {
+        const card = document.querySelector(`.share-btn[data-key="${(window.CSS && CSS.escape) ? CSS.escape(st) : st}"]`);
+        const host = card && card.closest(".station-card");
+        if (host) { host.scrollIntoView({ block: "center" }); host.classList.add("flash"); setTimeout(() => host.classList.remove("flash"), 1600); }
+    }, 300);
 }
 
 // ---- Fuelis Tools: consumption calculator, "worth the detour?", fuel
@@ -1595,6 +1679,8 @@ function nearestStationMuni(pos) {
 let _autoLocated = false;
 async function maybeAutoLocate() {
     if (_autoLocated || userPos || fuelType === "ev") return;
+    // A shared link that pins a municipality wins over silent auto-locate.
+    try { if (new URLSearchParams(location.search).get("muni")) { _autoLocated = true; return; } } catch (e) {}
     _autoLocated = true;
     if (!navigator.geolocation || !navigator.permissions || !navigator.permissions.query) return;
     try {
@@ -1821,6 +1907,7 @@ function renderList() {
             const rep = reportFor(s);
             const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3), ago: agoTs(rep.ts) })}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
+            const shareBtn = `<button class="share-btn" data-key="${escAttr(stationKey(s))}">🔗 ${esc(t("share_btn"))}</button>`;
             const lc = s[fuelType] != null ? loyaltyCents(s) : 0;
             // Suppress the badge when the discount is too small to change the
             // 3-decimal price (identical "with card" price reads as a bug) or big
@@ -1846,7 +1933,7 @@ function renderList() {
                 ${fuelChips(s)}
                 ${flagLine}${repLine}
                 <div class="nav-row">${navButtons(s)}</div>
-                ${repBtn ? `<div class="report-row">${repBtn}</div>` : ""}
+                <div class="report-row">${shareBtn}${repBtn}</div>
             </div>`;
         }).join("");
 }
