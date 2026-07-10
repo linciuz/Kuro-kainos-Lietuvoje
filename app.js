@@ -510,6 +510,10 @@ async function checkPriceAlerts() {
     for (const f of ["petrol95", "diesel", "lpg"]) {
         if (now[f] != null && seen[f] != null && now[f] < seen[f] - 0.0005) {
             showNotification(t("alert_title"), { body: t("alert_body", { fuel: t("fuel_" + f), price: now[f].toFixed(3), area }), icon: "icon-192.png" });
+        } else if (now[f] != null && seen[f] != null && now[f] >= seen[f] + 0.02) {
+            // Rapid RISE (≥2 ¢/L on the area's cheapest — repricing wave, not noise):
+            // warn early so people can still fill up at stations that haven't lifted yet.
+            showNotification(t("alert_rise_title"), { body: t("alert_rise_body", { fuel: t("fuel_" + f), old: seen[f].toFixed(3), price: now[f].toFixed(3), area }), icon: "icon-192.png" });
         }
         if (now[f] != null) seen[f] = now[f];        // raise/lower only fuels present in this load
     }

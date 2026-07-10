@@ -1003,9 +1003,17 @@
     "fi": "{fuel} laski hintaan €{price}/L ({area})",
     "no": "{fuel} falt til €{price}/L ({area})"
   },
+  "alert_rise_title": {
+    "lt": "⚠️ Kainos kyla!",
+    "en": "⚠️ Prices are rising!"
+  },
+  "alert_rise_body": {
+    "lt": "{fuel}: pigiausia kaina šoktelėjo €{old} → €{price} ({area}). Spėkite užsipilti — ne visos degalinės dar pabrangino.",
+    "en": "{fuel}: the cheapest price jumped €{old} → €{price} ({area}). Fill up now — not all stations have repriced yet."
+  },
   "alerts_on_msg": {
-    "lt": "🔔 Signalai įjungti — pranešime, kai jūsų rajone kainos kris",
-    "en": "🔔 Alerts on — we'll notify you when prices drop in your area",
+    "lt": "🔔 Signalai įjungti — pranešime, kai jūsų rajone kainos kris arba staigiai kils",
+    "en": "🔔 Alerts on — we'll notify you when prices drop or spike in your area",
     "lv": "🔔 Brīdinājumi ieslēgti",
     "et": "🔔 Teavitused sees",
     "uk": "🔔 Сповіщення увімкнено",
