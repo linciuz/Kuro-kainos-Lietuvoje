@@ -41,9 +41,10 @@ function vilniusDay() {
 async function recentlyWrote(ctx, ip, tag, windowSec) {
   const key = new Request("https://guard.local/" + tag + "/" + encodeURIComponent(ip));
   if (await caches.default.match(key)) return true;
-  ctx.waitUntil(caches.default.put(key, new Response("1", {
-    headers: { "Cache-Control": "max-age=" + windowSec },
-  })));
+  // AWAIT the marker (not waitUntil) so the very next request in a rapid sequence
+  // sees it — deferring the put let a sequential burst race straight past it and
+  // still drain KV writes.
+  await caches.default.put(key, new Response("1", { headers: { "Cache-Control": "max-age=" + windowSec } }));
   return false;
 }
 
@@ -124,6 +125,16 @@ export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
+
+    // Real per-IP rate limit on writes (native Workers binding; guarded so the
+    // Worker still runs if the binding is ever absent). 30 write-POSTs / 60s / IP.
+    if (req.method === "POST" && env.RL) {
+      const ip = req.headers.get("CF-Connecting-IP") || "0";
+      try {
+        const { success } = await env.RL.limit({ key: ip });
+        if (!success) return json({ error: "rate limited" }, 429);
+      } catch (e) { /* binding hiccup — fall through to the cache-based guards */ }
+    }
 
     if (url.pathname === "/ev-status" && req.method === "GET") {
       const cache = caches.default;

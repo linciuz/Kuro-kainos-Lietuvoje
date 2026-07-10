@@ -12,6 +12,14 @@ kv_namespaces = [
   { binding = "REPORTS", id = "e2122714f84342ee9b5503a24047f3dd" }
 ]
 
+# Native Workers rate limiter (free tier): caps write POSTs per IP as a real
+# cross-request limit on top of the per-edge Cache API guard in the code.
+[[unsafe.bindings]]
+name = "RL"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }
+
 # Poke the price workflow on a lean schedule (user-tuned; UTC = LT−3 summer).
 # LT times: 07,08,09,10,11 hourly · 09:10/09:30/10:10/10:30 around LEA's 10:00
 # publication · 15:00 afternoon · 01:00 night catch-all.
