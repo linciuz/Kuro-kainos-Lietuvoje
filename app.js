@@ -1024,6 +1024,88 @@ function sparkline(vals, color) {
     return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="vertical-align:middle"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
 }
 
+// --- full price-history chart (tap the trend line to open) -----------------
+const CHART_COLORS = { petrol95: "#007AFF", diesel: "#1c9e57", lpg: "#e0850f" };
+let chartFuel = "petrol95", chartRange = 90;
+
+function openChart(fuel) {
+    chartFuel = fuel || (fuelType === "ev" ? "petrol95" : fuelType);
+    renderChartModal();
+    const m = document.getElementById("chart-modal");
+    if (m) m.classList.add("open");
+    document.body.classList.add("modal-open");
+}
+function closeChart() {
+    const m = document.getElementById("chart-modal");
+    if (m) m.classList.remove("open");
+    document.body.classList.remove("modal-open");
+}
+function setChartFuel(f) { chartFuel = f; renderChartModal(); }
+function setChartRange(r) { chartRange = r; renderChartModal(); }
+
+function renderChartModal() {
+    const ttl = document.getElementById("chart-title");
+    if (ttl) ttl.textContent = "📈 " + t("chart_title");
+    const body = document.getElementById("chart-body");
+    if (!body) return;
+    const all = (HISTORY && HISTORY.history) || [];
+    const series = all.filter(h => h[chartFuel] && h[chartFuel].avg != null).slice(-chartRange);
+    const fuelBtns = [["petrol95", "⛽"], ["diesel", "🚛"], ["lpg", "🔥"]].map(([k, ic]) =>
+        `<button class="chart-tog ${k === chartFuel ? "sel" : ""}" onclick="setChartFuel('${k}')">${ic} ${esc(t("fuel_" + k))}</button>`).join("");
+    const rangeBtns = [[30, "30 d."], [90, "90 d."], [9999, t("chart_all")]].map(([r, lbl]) =>
+        `<button class="chart-tog sm ${r === chartRange ? "sel" : ""}" onclick="setChartRange(${r})">${esc(lbl)}</button>`).join("");
+    let chart, stat = "";
+    if (series.length < 2) {
+        chart = `<div class="chart-empty">${esc(t("chart_need_data"))}</div>`;
+    } else {
+        chart = priceChartSvg(series, chartFuel);
+        const first = series[0][chartFuel].avg, last = series[series.length - 1][chartFuel].avg;
+        const diff = last - first, pct = first ? diff / first * 100 : 0;
+        const cls = diff > 0 ? "up" : diff < 0 ? "down" : "";
+        const arrow = diff > 0 ? "▲" : diff < 0 ? "▼" : "■";
+        stat = `<div class="chart-stat">${t("chart_latest")}: <b>€${last.toFixed(3)}</b> ·
+            <span class="${cls}">${arrow} ${diff >= 0 ? "+" : ""}${diff.toFixed(3)} (${pct >= 0 ? "+" : ""}${pct.toFixed(1)}%)</span>
+            <span class="chart-over">${esc(t("chart_over", { n: series.length }))}</span></div>`;
+    }
+    body.innerHTML = `<section class="tool-card">
+        <div class="chart-tog-row">${fuelBtns}</div>
+        <div class="chart-tog-row">${rangeBtns}</div>
+        ${stat}
+        <div class="chart-wrap">${chart}</div>
+        <div class="chart-legend"><span class="lg-band" style="background:${CHART_COLORS[chartFuel]}"></span>${esc(t("chart_minmax"))}
+            &nbsp;<span class="lg-line" style="background:${CHART_COLORS[chartFuel]}"></span>${esc(t("chart_avg"))}</div>
+        <div class="tool-note">${esc(t("chart_note"))}</div>
+    </section>`;
+}
+
+// Dependency-free SVG: shaded min–max band + bold avg line + axes.
+function priceChartSvg(series, fuel) {
+    const color = CHART_COLORS[fuel] || "#007AFF";
+    const n = series.length, W = 320, H = 190, padL = 42, padR = 10, padT = 12, padB = 26;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+    let lo = Infinity, hi = -Infinity;
+    for (const h of series) { const d = h[fuel]; if (d.min < lo) lo = d.min; if (d.max > hi) hi = d.max; }
+    const pad = (hi - lo) * 0.08 || 0.05; lo -= pad; hi += pad;
+    const xi = i => padL + (n === 1 ? plotW / 2 : (i / (n - 1)) * plotW);
+    const yv = v => padT + (1 - (v - lo) / (hi - lo)) * plotH;
+    const top = series.map((h, i) => `${xi(i).toFixed(1)},${yv(h[fuel].max).toFixed(1)}`);
+    const bot = series.map((h, i) => `${xi(i).toFixed(1)},${yv(h[fuel].min).toFixed(1)}`).reverse();
+    const band = `<polygon points="${top.concat(bot).join(" ")}" fill="${color}" fill-opacity="0.13"/>`;
+    const avg = `<polyline points="${series.map((h, i) => `${xi(i).toFixed(1)},${yv(h[fuel].avg).toFixed(1)}`).join(" ")}" fill="none" stroke="${color}" stroke-width="2"/>`;
+    let grid = "";
+    for (let g = 0; g <= 3; g++) {
+        const v = lo + (hi - lo) * g / 3, y = yv(v);
+        grid += `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" stroke="#eceff3" stroke-width="1"/>`;
+        grid += `<text x="${padL - 5}" y="${(y + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#9aa0a8">${v.toFixed(2)}</text>`;
+    }
+    const fmt = d => { const p = d.split("-"); return p[2] + "." + p[1]; };
+    const idxs = n <= 2 ? [0, n - 1] : [0, Math.floor((n - 1) / 2), n - 1];
+    let xlab = "";
+    for (const i of idxs) xlab += `<text x="${xi(i).toFixed(1)}" y="${H - 8}" text-anchor="${i === 0 ? "start" : i === n - 1 ? "end" : "middle"}" font-size="9" fill="#9aa0a8">${fmt(series[i].date)}</text>`;
+    const dot = `<circle cx="${xi(n - 1).toFixed(1)}" cy="${yv(series[n - 1][fuel].avg).toFixed(1)}" r="3" fill="${color}"/>`;
+    return `<svg viewBox="0 0 ${W} ${H}" class="price-chart" preserveAspectRatio="xMidYMid meet">${grid}${band}${avg}${dot}${xlab}</svg>`;
+}
+
 // Escape data-derived text before it goes into innerHTML / Leaflet popups —
 // station & charger names/addresses/operators come from world-editable sources
 // (OpenStreetMap tags, the LEA registry), so they are untrusted.
@@ -1677,7 +1759,7 @@ function renderSummary() {
     if (H.length >= 2) {
         const win = H.slice(-14);
         const sp = f => sparkline(win.map(h => h[f] && h[f].avg), "#007AFF");
-        trendLine = `<div class="wholesale-ref">${t("trend_label")}: ⛽ ${sp("petrol95")} 🚛 ${sp("diesel")} 🔥 ${sp("lpg")}</div>`;
+        trendLine = `<button type="button" class="trend-open" onclick="openChart()" title="${esc(t("chart_title"))}">${t("trend_label")}: ⛽ ${sp("petrol95")} 🚛 ${sp("diesel")} 🔥 ${sp("lpg")} <span class="trend-cta">📈</span></button>`;
     }
     box.innerHTML = `
         <div class="summary-title">${t("national_title")}</div>

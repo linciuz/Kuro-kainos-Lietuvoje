@@ -1837,6 +1837,38 @@
     "fi": "Kiitos! Viestisi lähetettiin ✓",
     "no": "Takk! Meldingen din ble sendt ✓"
   },
+  "chart_title": {
+    "lt": "Kainų istorija",
+    "en": "Price history"
+  },
+  "chart_all": {
+    "lt": "Visa",
+    "en": "All"
+  },
+  "chart_latest": {
+    "lt": "Naujausia",
+    "en": "Latest"
+  },
+  "chart_over": {
+    "lt": "per {n} d.",
+    "en": "over {n} days"
+  },
+  "chart_minmax": {
+    "lt": "min–max",
+    "en": "min–max"
+  },
+  "chart_avg": {
+    "lt": "vidutinė",
+    "en": "average"
+  },
+  "chart_note": {
+    "lt": "Oficialios LEA šalies žemiausios / vidutinės / aukščiausios kainos. Kaupiama kasdien.",
+    "en": "Official LEA national low / average / high prices, accumulated daily."
+  },
+  "chart_need_data": {
+    "lt": "Per mažai duomenų grafikui — kaupiama kasdien.",
+    "en": "Not enough data yet — accumulating daily."
+  },
   "trend_label": {
     "lt": "Vidutinės kainos tendencija",
     "en": "Average price trend",
