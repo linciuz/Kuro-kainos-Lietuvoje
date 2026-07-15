@@ -36,6 +36,12 @@ jobs:
       - name: Fetch latest prices
         run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
 
+      # Ground-truth guard: re-check the LIVE ena.lt listing and re-fetch if we're
+      # behind the newest published file (self-heals a stale-page race). Non-fatal
+      # here — the post-commit gate is what alerts on a genuine miss.
+      - name: Freshness self-heal (re-fetch if behind LEA)
+        run: python scripts/verify_freshness.py || echo "freshness self-heal warning (non-fatal)"
+
       - name: Snapshot daily national price for the history trend
         run: python scripts/append_history.py || echo "history snapshot failed (non-fatal)"
 
@@ -102,3 +108,9 @@ jobs:
             done
             echo "::error::failed to publish updated data after 5 attempts"; exit 1
           fi
+
+      # FINAL GATE. Compare what we actually publish against the live LEA listing.
+      # If LEA has a newer file than we serve, FAIL the run (red X + email) so a
+      # stale publish can never be reported as success.
+      - name: Freshness gate (fail loudly if still behind LEA)
+        run: python scripts/verify_freshness.py --check-only

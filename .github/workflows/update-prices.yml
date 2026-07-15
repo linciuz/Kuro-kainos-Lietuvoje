@@ -41,6 +41,11 @@ jobs:
       # keep the last stations.json and still refresh the other sources below.
       - name: Fetch LEA prices
         run: python scripts/fetch_prices.py || echo "LEA fetch failed (non-fatal) — keeping last prices"
+      # Ground-truth guard: re-check the LIVE ena.lt listing and, if we're behind
+      # the newest published file, re-fetch to self-heal a stale-page race.
+      # Non-fatal here — the post-commit gate is what alerts on a real miss.
+      - name: Freshness self-heal (re-fetch if behind LEA)
+        run: python scripts/verify_freshness.py || echo "freshness self-heal warning (non-fatal)"
       - name: Snapshot daily national price for the history trend
         run: python scripts/append_history.py || echo "history snapshot failed (non-fatal)"
       - name: Re-add full station list (price-less registry stations, from committed cache)
@@ -87,3 +92,11 @@ jobs:
             done
             echo "::error::failed to publish updated data after 5 attempts"; exit 1
           fi
+
+      # FINAL GATE. After everything is committed, compare what we actually
+      # publish against the live LEA listing. If LEA has a newer file than we
+      # serve, FAIL the run (red X + email) so a stale publish can NEVER be
+      # reported as success. This is the system-level answer to "you kept telling
+      # me it's fine while the site showed yesterday's prices".
+      - name: Freshness gate (fail loudly if still behind LEA)
+        run: python scripts/verify_freshness.py --check-only
