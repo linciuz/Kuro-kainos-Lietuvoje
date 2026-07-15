@@ -75,11 +75,20 @@ LISTING = "https://www.viada.lt/akcijos/"
 BASE = "https://www.viada.lt/akcija/"
 
 # viada.lt turned on Cloudflare bot protection ~2026-07-08, which 403s GitHub
-# Actions runners (residential IPs still pass). Our own Worker fetches from the
-# Cloudflare edge, which DOES pass (verified 2026-07-15), so on a direct-fetch
-# failure we retry through this slug-whitelisted proxy route. Direct-first so
-# the pipeline self-heals if Viada ever unblocks datacenter IPs.
+# Actions runners (residential IPs still pass). Fallback chain, direct-first so
+# the pipeline self-heals if Viada ever unblocks datacenter IPs:
+#   1. direct fetch;
+#   2. our Worker's slug-whitelisted proxy — measured 2026-07-15: request-context
+#      Worker subrequests KEEP the caller's identity and cron-context ones are
+#      403'd too, so this only helps via its KV copy if Viada ever relaxes the
+#      Worker block; kept because it costs one request and self-heals;
+#   3. r.jina.ai public reader (fetches from ITS infra, passes the WAF —
+#      verified 2026-07-15; X-Return-Format: html gives the raw page so the
+#      parser below works unchanged).
+# A wrong price can never slip through any layer: parse_wednesday still demands
+# the explicit validity date, >=2 fuels, and the sane price band.
 PROXY = "https://kk-reports.fuelis.workers.dev/proxy/viada?slug="
+JINA = "https://r.jina.ai/"
 
 DISCLAIMER = ("Pointer only. No price is fetched or implied — Viada bakes discount "
               "figures into promo images and gates exact prices behind app login. "
@@ -145,50 +154,82 @@ def _proxy_slug(url):
     return m.group(1) if m else None
 
 
-def http_text(url):
-    """Direct fetch first; on bot-block/failure retry via the Cloudflare-edge
-    proxy (viada.lt 403s datacenter IPs like GitHub runners since ~2026-07-08).
-    404s are NOT proxied — a genuinely absent promo page must stay absent."""
+def _jina_get(url):
+    """Fetch through the r.jina.ai public reader (its own egress passes Viada's
+    WAF). X-Return-Format: html returns the raw page, so parsing is unchanged.
+    Longer timeout: the reader renders the page before responding.
+    NOTE: jina 403s browser-UA strings from non-browser clients (and 1010s empty
+    UAs) — an honest tool UA is both required and politer."""
+    req = urllib.request.Request(JINA + url, headers={
+        "User-Agent": "fuelis-lt/1.0 (+https://fuelis.lt; fuel price app data fetcher)",
+        "X-Return-Format": "html"})
+    resp = urllib.request.urlopen(req, timeout=90)
+    raw = resp.read()
+    if resp.headers.get("Content-Encoding") == "gzip":
+        raw = gzip.decompress(raw)
+    return resp.status, raw.decode("utf-8", "replace")
+
+
+def _err_note(kind, url, exc):
+    """Record a failed attempt (with challenge-page body head when available)."""
+    if isinstance(exc, urllib.error.HTTPError):
+        body = ""
+        try:
+            body = exc.read().decode("utf-8", "replace")
+        except Exception:
+            pass
+        _note(kind, url, f"HTTP {exc.code}", body)
+        return f"HTTP {exc.code}"
+    _note(kind, url, f"{type(exc).__name__}: {exc}")
+    return f"{type(exc).__name__}"
+
+
+def http_text(url, fallbacks=True):
+    """Layered fetch: direct -> Worker proxy (KV copy) -> jina reader.
+    A direct 404 is NOT retried anywhere — a genuinely absent promo page
+    (deal not running) must stay absent. fallbacks=False keeps the probe
+    direct-only (used for auto-discovered food promos: nice-to-have links
+    that don't justify hammering the fallback services ~20x per run)."""
     try:
         return _http_get(url)
     except urllib.error.HTTPError as e:
         if e.code == 404:
             raise
-        body = ""
-        try:
-            body = e.read().decode("utf-8", "replace")
-        except Exception:
-            pass
-        direct_err = f"HTTP {e.code}"
-        _note("direct", url, direct_err, body)
+        _err_note("direct", url, e)
     except Exception as e:
-        direct_err = f"{type(e).__name__}: {e}"
-        _note("direct", url, direct_err)
+        _err_note("direct", url, e)
+    if not fallbacks:
+        raise RuntimeError(f"direct fetch failed for {url} (no fallbacks for this page)")
+
     slug = _proxy_slug(url)
-    if not slug:
-        raise RuntimeError(f"direct fetch failed ({direct_err}) and no proxy mapping for {url}")
-    print(f"[info] direct fetch failed ({direct_err}) — retrying via edge proxy: {slug}")
-    try:
-        return _http_get(PROXY + slug)
-    except urllib.error.HTTPError as e:
-        body = ""
+    if slug:
+        print(f"[info] direct fetch failed — trying edge proxy: {slug}")
         try:
-            body = e.read().decode("utf-8", "replace")
-        except Exception:
-            pass
-        _note("proxy", PROXY + slug, f"HTTP {e.code}", body)
-        raise
+            return _http_get(PROXY + slug)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                raise                    # pass-through: upstream page truly gone
+            _err_note("proxy", PROXY + slug, e)
+        except Exception as e:
+            _err_note("proxy", PROXY + slug, e)
+
+    print(f"[info] proxy failed too — trying jina reader")
+    try:
+        return _jina_get(url)
     except Exception as e:
-        _note("proxy", PROXY + slug, f"{type(e).__name__}: {e}")
+        _err_note("jina", JINA + url, e)
         raise
 
 
 def main_content(html):
     """Strip chrome (script/style/nav/header/footer) so per-litre wording in the
-    site menu, footer, or a "related promos" strip can't false-flag a food page."""
+    site menu, footer, or a "related promos" strip can't false-flag a food page.
+    Unescape entities AFTER tag-stripping: the jina reader re-serializes NBSP as
+    literal '&nbsp;' text ('1,599&nbsp;Eur/l'), which \\s doesn't match — that
+    silently dropped 3 of 4 Wednesday prices (2026-07-15)."""
     h = re.sub(r"<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ",
                html, flags=re.S | re.I)
-    return re.sub(r"<[^>]+>", " ", h)
+    return _html.unescape(re.sub(r"<[^>]+>", " ", h))
 
 
 def page_title(html, slug):
@@ -208,7 +249,7 @@ def probe_promo(slug, fallback_title, kind):
     """Return a price-free pointer dict if the page is live & fuel-related, else None."""
     url = BASE + slug + "/"
     try:
-        status, html = http_text(url)
+        status, html = http_text(url, fallbacks=(kind != "listed"))
     except urllib.error.HTTPError as e:
         if e.code != 404:
             print(f"[warn] {slug}: HTTP {e.code}")
@@ -326,16 +367,31 @@ def main():
     # 3) Wednesday promo prices (plain text + explicit validity date — the one
     #    page whose numbers we DO extract; see the docstring for the guardrails).
     wednesday = None
+    wed_page_gone = False
     try:
         wurl = BASE + "super-treciadieniai/"
         status, whtml = http_text(wurl)
         if status == 200:
             wednesday = parse_wednesday(whtml, wurl)
     except urllib.error.HTTPError as e:
-        if e.code != 404:
+        if e.code == 404:
+            wed_page_gone = True         # promo over — dropping the block is correct
+        else:
             print(f"[warn] wednesday page: HTTP {e.code}")
     except Exception as e:
         print(f"[warn] wednesday page: {type(e).__name__}: {e}")
+
+    # Carry-forward guard: a fetch/parse hiccup must not clobber a wednesday
+    # block that is still valid for today or later (that would silently strip
+    # an active discount mid-day). Only a REAL 404 (deal ended) drops it; the
+    # app's own valid_date==today check keeps any carried value safe.
+    if wednesday is None and not wed_page_gone:
+        prev = load_existing()
+        pw = (prev or {}).get("wednesday")
+        if pw and pw.get("valid_date", "") >= dt.date.today().isoformat():
+            print(f"[info] wednesday parse unavailable this run — carrying forward the "
+                  f"still-valid block ({pw.get('valid_date')})")
+            wednesday = pw
 
     # Fallback: if this run found nothing (site outage / datacenter-IP 403), keep the
     # previously-committed pointers rather than clobbering a good file with an empty one.
