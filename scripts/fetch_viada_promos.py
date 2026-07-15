@@ -111,6 +111,20 @@ FUEL_PAGE_RE = re.compile(
     r"\bbenzin\w*|\bdyzelin\w*|\bdujoms?\b|\bdujų\b)", re.I)
 
 
+# Fetch-failure diagnostics, committed by the workflow as
+# data/sources/viada_debug.json so runner-side errors are readable without
+# Actions-log access (the logs API needs auth; this file doesn't).
+DEBUG_OUT = os.path.join("data", "sources", "viada_debug.json")
+DEBUG = {"attempts": []}
+
+
+def _note(kind, url, err, body=""):
+    DEBUG["attempts"].append({
+        "kind": kind, "url": url, "err": err,
+        "body_head": re.sub(r"\s+", " ", body)[:300],
+    })
+
+
 def _http_get(url):
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
@@ -140,14 +154,33 @@ def http_text(url):
     except urllib.error.HTTPError as e:
         if e.code == 404:
             raise
+        body = ""
+        try:
+            body = e.read().decode("utf-8", "replace")
+        except Exception:
+            pass
         direct_err = f"HTTP {e.code}"
+        _note("direct", url, direct_err, body)
     except Exception as e:
         direct_err = f"{type(e).__name__}: {e}"
+        _note("direct", url, direct_err)
     slug = _proxy_slug(url)
     if not slug:
         raise RuntimeError(f"direct fetch failed ({direct_err}) and no proxy mapping for {url}")
     print(f"[info] direct fetch failed ({direct_err}) — retrying via edge proxy: {slug}")
-    return _http_get(PROXY + slug)
+    try:
+        return _http_get(PROXY + slug)
+    except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode("utf-8", "replace")
+        except Exception:
+            pass
+        _note("proxy", PROXY + slug, f"HTTP {e.code}", body)
+        raise
+    except Exception as e:
+        _note("proxy", PROXY + slug, f"{type(e).__name__}: {e}")
+        raise
 
 
 def main_content(html):
@@ -330,5 +363,23 @@ def main():
     print(f"[ok] wrote {OUT}: {len(promos)} pointers")
 
 
+def dump_debug():
+    """Always write the fetch-attempt diagnostics (empty attempts == all direct
+    fetches OK). Committed by the workflow so runner-side failures are readable
+    from raw.githubusercontent.com without Actions-log auth."""
+    DEBUG["generated"] = dt.datetime.now(dt.timezone.utc).replace(
+        microsecond=0, tzinfo=None).isoformat() + "Z"
+    DEBUG["attempt_count"] = len(DEBUG["attempts"])
+    try:
+        os.makedirs(os.path.dirname(DEBUG_OUT), exist_ok=True)
+        json.dump(DEBUG, open(DEBUG_OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print(f"[info] wrote {DEBUG_OUT} ({len(DEBUG['attempts'])} failed attempt(s) recorded)")
+    except Exception as e:
+        print(f"[warn] debug dump failed: {e}")
+
+
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    finally:
+        dump_debug()
