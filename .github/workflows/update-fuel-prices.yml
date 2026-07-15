@@ -8,7 +8,7 @@ on:
     # :15 slots; the shared concurrency group serializes them regardless. UTC.
     - cron: "45 5 * * 1-5"    # ~08:45 Lithuania (morning full refresh)
     - cron: "45 13 * * 1-5"   # ~16:45 Lithuania (afternoon, refreshes directories)
-    - cron: "5 18 * * 2"      # TEMP (remove after green): verify the unstaged-tree publish fix live, 2026-07-15 evening
+    - cron: "25 20 * * *"     # TEMP (remove after green): verify the unstaged-tree publish fix live, 2026-07-15 evening
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
