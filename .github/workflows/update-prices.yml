@@ -11,11 +11,11 @@ name: Update prices (frequent)
 on:
   schedule:
     # PRIMARY scheduling lives in the Cloudflare Worker cron (worker/wrangler.toml),
-    # which fires reliably and pokes this workflow via workflow_dispatch on the
-    # lean user-tuned plan (hourly 07-11 LT, dense around LEA's 10:00, 15:00, 01:00).
+    # which fires reliably and pokes this via workflow_dispatch every 15 min across
+    # 09:00-14:00 LT (LEA's real publish window is ~11:00-noon, not the nominal 10:00).
     # The entries below are only a sparse DEAD-MAN BACKUP in case the Worker/token
     # ever breaks — odd minutes, off GitHub's congested :00/:15/:30/:45 peaks.
-    - cron: "47 6,7 * * 1-5"    # 09:47 + 10:47 LT (would catch a missed LEA pickup)
+    - cron: "47 8,9 * * 1-5"    # 11:47 + 12:47 LT (inside the real LEA window)
     - cron: "47 12 * * 1-5"     # 15:47 LT afternoon safety net
   workflow_dispatch: {}
 

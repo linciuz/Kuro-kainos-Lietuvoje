@@ -20,14 +20,16 @@ type = "ratelimit"
 namespace_id = "1001"
 simple = { limit = 30, period = 60 }
 
-# Poke the price workflow on a lean schedule (user-tuned; UTC = LT−3 summer).
-# LT times: 07,08,09,10,11 hourly · 09:10/09:30/10:10/10:30 around LEA's 10:00
-# publication · 15:00 afternoon · 01:00 night catch-all.
+# Poke the price workflow (UTC = LT−3 in summer). MEASURED 2026-07: LEA's "10:00"
+# is only the nominal reporting deadline — the actual public Excel appears much
+# later, typically ~11:00–noon LT (07-15: still only yesterday's file at 10:30 LT).
+# So the dense window covers 09:00–14:00 LT every 15 min to grab it the moment it
+# drops, plus an early Orlen check and afternoon/night catch-alls.
 # NOTE for winter (UTC+2, from late Oct): shift hours +1 LT — revisit then.
 # Needs the GH_TOKEN secret:  npx wrangler secret put GH_TOKEN
 [triggers]
 crons = [
-  "0 4,5,6,7,8 * * 1-5",   # 07:00 08:00 09:00 10:00 11:00 LT
-  "10,30 6,7 * * 1-5",     # 09:10 09:30 10:10 10:30 LT (LEA window)
+  "0 4,5 * * 1-5",         # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
+  "*/15 6-10 * * 1-5",     # every 15 min 09:00–13:59 LT — the real LEA publication window
   "0 12,22 * * 1-5",       # 15:00 LT + 01:00 LT (next day)
 ]
