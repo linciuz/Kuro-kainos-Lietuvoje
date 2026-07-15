@@ -74,6 +74,13 @@ UA_WEB = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/12
 LISTING = "https://www.viada.lt/akcijos/"
 BASE = "https://www.viada.lt/akcija/"
 
+# viada.lt turned on Cloudflare bot protection ~2026-07-08, which 403s GitHub
+# Actions runners (residential IPs still pass). Our own Worker fetches from the
+# Cloudflare edge, which DOES pass (verified 2026-07-15), so on a direct-fetch
+# failure we retry through this slug-whitelisted proxy route. Direct-first so
+# the pipeline self-heals if Viada ever unblocks datacenter IPs.
+PROXY = "https://kk-reports.fuelis.workers.dev/proxy/viada?slug="
+
 DISCLAIMER = ("Pointer only. No price is fetched or implied — Viada bakes discount "
               "figures into promo images and gates exact prices behind app login. "
               "Confirm the amount on the official page / in the Viada app.")
@@ -104,7 +111,7 @@ FUEL_PAGE_RE = re.compile(
     r"\bbenzin\w*|\bdyzelin\w*|\bdujoms?\b|\bdujų\b)", re.I)
 
 
-def http_text(url):
+def _http_get(url):
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE          # viada.lt has presented a self-signed chain
@@ -114,6 +121,33 @@ def http_text(url):
     if resp.headers.get("Content-Encoding") == "gzip":
         raw = gzip.decompress(raw)
     return resp.status, raw.decode("utf-8", "replace")
+
+
+def _proxy_slug(url):
+    """Map a viada.lt URL onto the Worker proxy's slug parameter (or None)."""
+    if url == LISTING:
+        return "akcijos"
+    m = re.match(re.escape(BASE) + r"([a-z0-9-]{1,80})/?$", url)
+    return m.group(1) if m else None
+
+
+def http_text(url):
+    """Direct fetch first; on bot-block/failure retry via the Cloudflare-edge
+    proxy (viada.lt 403s datacenter IPs like GitHub runners since ~2026-07-08).
+    404s are NOT proxied — a genuinely absent promo page must stay absent."""
+    try:
+        return _http_get(url)
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            raise
+        direct_err = f"HTTP {e.code}"
+    except Exception as e:
+        direct_err = f"{type(e).__name__}: {e}"
+    slug = _proxy_slug(url)
+    if not slug:
+        raise RuntimeError(f"direct fetch failed ({direct_err}) and no proxy mapping for {url}")
+    print(f"[info] direct fetch failed ({direct_err}) — retrying via edge proxy: {slug}")
+    return _http_get(PROXY + slug)
 
 
 def main_content(html):

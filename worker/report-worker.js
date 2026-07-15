@@ -136,6 +136,45 @@ export default {
       } catch (e) { /* binding hiccup — fall through to the cache-based guards */ }
     }
 
+    // Datacenter-IP workaround for the Viada promo fetcher: viada.lt sits behind
+    // Cloudflare bot protection (enabled ~2026-07-08) that 403s GitHub Actions
+    // runners, so the workflow fetches the promo pages through this edge-side
+    // proxy instead. NOT an open proxy: only viada.lt promo pages reachable via
+    // a slug whitelist pattern, GET-only, 200s edge-cached 10 min (so even the
+    // every-15-min workflow window costs viada.lt ~1 fetch per page per 10 min).
+    if (url.pathname === "/proxy/viada" && req.method === "GET") {
+      const slug = url.searchParams.get("slug") || "";
+      if (slug !== "akcijos" && !/^[a-z0-9-]{1,80}$/.test(slug))
+        return json({ error: "bad slug" }, 400);
+      const target = slug === "akcijos"
+        ? "https://www.viada.lt/akcijos/"
+        : "https://www.viada.lt/akcija/" + slug + "/";
+      const cacheKey = new Request(url.origin + "/__viada/" + slug);
+      const hit = await caches.default.match(cacheKey);
+      if (hit) return hit;
+      let upstream;
+      try {
+        upstream = await fetch(target, {
+          headers: {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "lt",
+          },
+          redirect: "follow",
+        });
+      } catch (e) {
+        return json({ error: "upstream fetch failed" }, 502);
+      }
+      const body = await upstream.text();
+      const resp = new Response(body, {
+        status: upstream.status,
+        headers: { ...CORS, "Content-Type": "text/html; charset=utf-8",
+                   "Cache-Control": "public, max-age=600" },
+      });
+      if (upstream.status === 200) ctx.waitUntil(caches.default.put(cacheKey, resp.clone()));
+      return resp;
+    }
+
     if (url.pathname === "/ev-status" && req.method === "GET") {
       const cache = caches.default;
       // Fixed cache key (ignore ?query) — otherwise a ?_=random cache-buster
