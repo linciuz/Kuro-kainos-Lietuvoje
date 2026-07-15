@@ -48,6 +48,49 @@ async function recentlyWrote(ctx, ip, tag, windowSec) {
   return false;
 }
 
+// --- Viada promo-page cache (see /proxy/viada route + scheduled()) ----------
+// Slugs the cron keeps warm in KV. Mirrors the curated list in
+// scripts/fetch_viada_promos.py (STANDING + SEASONAL + the /akcijos/ listing).
+const VIADA_SLUGS = [
+  "akcijos", "super-treciadieniai", "savaitgaliauk-ir-keliauk",
+  "nuolaidu-savaitgaliai", "nuolaidos-su-viada-study-kortele",
+  "nuolaidos-su-viada-agro-kortele",
+];
+const VIADA_TARGET = (slug) => slug === "akcijos"
+  ? "https://www.viada.lt/akcijos/"
+  : "https://www.viada.lt/akcija/" + slug + "/";
+const VIADA_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml",
+  "Accept-Language": "lt",
+};
+
+// Cron-context refresh: scheduled() subrequests carry no visitor identity, so
+// (unlike the request-context pass-through) viada.lt's WAF evaluates Cloudflare
+// itself, not a datacenter caller. KV-write economy: HTML written only when it
+// actually changed (~a handful/day); one small probe record per cron fire.
+async function refreshViadaCache(env) {
+  const probe = { ts: new Date().toISOString(), statuses: {} };
+  for (const slug of VIADA_SLUGS) {
+    try {
+      const r = await fetch(VIADA_TARGET(slug), { headers: VIADA_HEADERS, redirect: "follow" });
+      probe.statuses[slug] = r.status;
+      if (r.status === 200) {
+        const html = await r.text();
+        const old = await env.REPORTS.get("viada_html:" + slug);
+        if (old !== html)
+          await env.REPORTS.put("viada_html:" + slug, html, { expirationTtl: 7 * 86400 });
+      } else if (r.status === 404) {
+        // promo page removed (deal over) — drop the copy so the proxy 404s too
+        await env.REPORTS.delete("viada_html:" + slug);
+      }
+    } catch (e) {
+      probe.statuses[slug] = "ERR:" + (e && e.message ? e.message.slice(0, 60) : "?");
+    }
+  }
+  await env.REPORTS.put("viada_probe", JSON.stringify(probe), { expirationTtl: 3 * 86400 });
+}
+
 // Live EV occupancy proxy: the Lithuania NAP OCPI endpoint is open but blocks
 // browser CORS, so we fetch it here and return a compact {ocpi_id: {a,t,s}} map
 // (a=available, t=total connectors, s=overall status). Edge-cached ~45s.
@@ -138,41 +181,49 @@ export default {
 
     // Datacenter-IP workaround for the Viada promo fetcher: viada.lt sits behind
     // Cloudflare bot protection (enabled ~2026-07-08) that 403s GitHub Actions
-    // runners, so the workflow fetches the promo pages through this edge-side
-    // proxy instead. NOT an open proxy: only viada.lt promo pages reachable via
-    // a slug whitelist pattern, GET-only, 200s edge-cached 10 min (so even the
-    // every-15-min workflow window costs viada.lt ~1 fetch per page per 10 min).
+    // runners. IMPORTANT (measured 2026-07-15): a Worker subrequest to another
+    // Cloudflare-proxied zone KEEPS the original visitor's identity, so a live
+    // pass-through fetch here is 403'd for runner callers too. The cron handler
+    // has no visitor context, so scheduled() refreshes the pages into KV
+    // (viada_html:<slug>) and this route serves live-if-possible, KV otherwise.
+    // NOT an open proxy: slug-whitelisted viada.lt promo pages only, GET-only.
     if (url.pathname === "/proxy/viada" && req.method === "GET") {
       const slug = url.searchParams.get("slug") || "";
       if (slug !== "akcijos" && !/^[a-z0-9-]{1,80}$/.test(slug))
         return json({ error: "bad slug" }, 400);
-      const target = slug === "akcijos"
-        ? "https://www.viada.lt/akcijos/"
-        : "https://www.viada.lt/akcija/" + slug + "/";
+      const html = (body, status, srcTag, cacheable) => {
+        const r = new Response(body, {
+          status, headers: { ...CORS, "Content-Type": "text/html; charset=utf-8",
+                             "X-Fuelis-Source": srcTag,
+                             "Cache-Control": cacheable ? "public, max-age=600" : "no-store" },
+        });
+        return r;
+      };
       const cacheKey = new Request(url.origin + "/__viada/" + slug);
       const hit = await caches.default.match(cacheKey);
       if (hit) return hit;
-      let upstream;
+      let upstream = null;
       try {
-        upstream = await fetch(target, {
-          headers: {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml",
-            "Accept-Language": "lt",
-          },
-          redirect: "follow",
-        });
-      } catch (e) {
-        return json({ error: "upstream fetch failed" }, 502);
+        upstream = await fetch(VIADA_TARGET(slug), { headers: VIADA_HEADERS, redirect: "follow" });
+      } catch (e) { /* fall through to KV */ }
+      if (upstream && upstream.status === 200) {
+        const resp = html(await upstream.text(), 200, "live", true);
+        ctx.waitUntil(caches.default.put(cacheKey, resp.clone()));
+        return resp;
       }
-      const body = await upstream.text();
-      const resp = new Response(body, {
-        status: upstream.status,
-        headers: { ...CORS, "Content-Type": "text/html; charset=utf-8",
-                   "Cache-Control": "public, max-age=600" },
-      });
-      if (upstream.status === 200) ctx.waitUntil(caches.default.put(cacheKey, resp.clone()));
-      return resp;
+      const cached = await env.REPORTS.get("viada_html:" + slug);
+      if (cached !== null) return html(cached, 200, "kv-cron-cache", false);
+      // no live page, no cron copy — pass the real status through (404 must
+      // stay 404: an absent promo page means the deal isn't running)
+      return html(upstream ? await upstream.text() : "", upstream ? upstream.status : 502,
+                  "live-error", false);
+    }
+
+    // Cron-fetch health: when did scheduled() last probe viada.lt and what did
+    // it get per page? (Diagnoses whether cron-context fetches pass the WAF.)
+    if (url.pathname === "/viada-probe" && req.method === "GET") {
+      const raw = await env.REPORTS.get("viada_probe");
+      return json(raw ? JSON.parse(raw) : { never_ran: true });
     }
 
     if (url.pathname === "/ev-status" && req.method === "GET") {
@@ -340,19 +391,24 @@ export default {
   // workflow via workflow_dispatch instead. The workflow's concurrency group +
   // no-change commit skip make redundant pokes free.
   async scheduled(event, env, ctx) {
-    if (!env.GH_TOKEN) return;
-    ctx.waitUntil(fetch(
-      "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
-      {
-        method: "POST",
-        headers: {
-          "Authorization": "Bearer " + env.GH_TOKEN,
-          "Accept": "application/vnd.github+json",
-          "Content-Type": "application/json",
-          "User-Agent": "fuelis-cron-worker",
+    // Refresh the Viada promo-page KV cache BEFORE poking the workflow, so the
+    // run that this poke triggers already finds today's pages in /proxy/viada.
+    ctx.waitUntil((async () => {
+      try { await refreshViadaCache(env); } catch (e) { /* never block the poke */ }
+      if (!env.GH_TOKEN) return;
+      await fetch(
+        "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
+        {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer " + env.GH_TOKEN,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+            "User-Agent": "fuelis-cron-worker",
+          },
+          body: JSON.stringify({ ref: "main" }),
         },
-        body: JSON.stringify({ ref: "main" }),
-      },
-    ));
+      );
+    })());
   },
 };
