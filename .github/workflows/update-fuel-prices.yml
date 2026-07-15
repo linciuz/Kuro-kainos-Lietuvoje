@@ -8,6 +8,7 @@ on:
     # :15 slots; the shared concurrency group serializes them regardless. UTC.
     - cron: "45 5 * * 1-5"    # ~08:45 Lithuania (morning full refresh)
     - cron: "45 13 * * 1-5"   # ~16:45 Lithuania (afternoon, refreshes directories)
+    - cron: "5 18 * * 2"      # TEMP (remove after green): verify the unstaged-tree publish fix live, 2026-07-15 evening
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
@@ -91,7 +92,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json data/sources/loyalty_watch.json data/sources/viada_promos.json data/sources/neste_promo.json || true
+          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json data/sources/loyalty_watch.json data/sources/viada_promos.json data/sources/viada_debug.json data/sources/neste_promo.json || true
+          # Also stage every modified TRACKED file under data/ — a script updating
+          # a tracked output that's missing from the list above must not leave the
+          # tree dirty (git rebase refuses on unstaged changes; that killed the
+          # 2026-07-15 15:10 run 5/5 retries). New files still need explicit adds.
+          git add -u data/ || true
           if git diff --staged --quiet; then
             echo "No changes."
           else
