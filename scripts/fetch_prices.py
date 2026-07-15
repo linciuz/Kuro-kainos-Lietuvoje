@@ -140,8 +140,12 @@ def find_latest_excel_link(html):
     if dated:
         return pick(dated, "newest dated anchor")
 
-    # 4) Fallback: first SharePoint link on the page.
-    return cands[0]["href"] if cands else None
+    # No blind fallback: the first SharePoint link on the page is a stale May
+    # wide-format snapshot, so grabbing "whatever is first" would publish OLD
+    # data with a green run. Better to fail (keeps last good file) and let the
+    # freshness gates make the miss loud.
+    print("[error] no dated 'naujausios ... kainos' anchor found — refusing to guess")
+    return None
 
 
 def _looks_like_xlsx(content):
@@ -390,14 +394,17 @@ def main():
 
     # Use the file's own date; warn loudly if it is stale (LEA sometimes leaves
     # old daily snapshots linked) or if averages look implausible.
-    updated = file_date or dt.date.today().isoformat()
-    if file_date:
-        age = (dt.date.today() - dt.date.fromisoformat(file_date)).days
-        print(f"[info] data date (from file): {file_date} ({age} day(s) old)")
-        if age > 3:
-            print(f"[warn] LEA file looks STALE ({age} days old) - check the source link!")
-    else:
-        print("[warn] no date column detected; falling back to today()")
+    # NO today() fallback: stamping an undated workbook with today's date would
+    # fake freshness and blind every downstream age gate. If the date column
+    # vanishes (format change), fail and keep the last good file instead.
+    if not file_date:
+        print("[error] no date column detected — refusing to stamp today() over unknown-age data.")
+        sys.exit(4)
+    updated = file_date
+    age = (dt.date.today() - dt.date.fromisoformat(file_date)).days
+    print(f"[info] data date (from file): {file_date} ({age} day(s) old)")
+    if age > 3:
+        print(f"[warn] LEA file looks STALE ({age} days old) - check the source link!")
 
     summary = summarize(stations)
     p95 = summary.get("petrol95", {}).get("avg")

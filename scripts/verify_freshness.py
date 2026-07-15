@@ -79,7 +79,11 @@ def check_only():
     lea, ours = lea_newest_price_date(), our_date()
     print(f"[freshness gate] LEA newest PRICE file: {lea or '?'} | our data: {ours or '?'}")
     if lea is None:
-        print("[freshness gate] LEA unreachable — cannot verify; not failing the run.")
+        # Don't silently pass: unreachable-from-runner is exactly how the viada.lt
+        # datacenter-IP block looked. The local-file gate (verify_sources.py)
+        # still enforces business-day freshness, so this stays a warning.
+        print("::warning::LEA page unreachable from this runner — could not ground-truth "
+              "the published date (possible bot-block; verify_sources.py still enforces age).")
         return 0
     if not ours or ours < lea:
         print(f"::error::STALE PUBLISH: LEA has {lea} but we published {ours}. "

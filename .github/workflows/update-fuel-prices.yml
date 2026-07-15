@@ -109,8 +109,11 @@ jobs:
             echo "::error::failed to publish updated data after 5 attempts"; exit 1
           fi
 
-      # FINAL GATE. Compare what we actually publish against the live LEA listing.
-      # If LEA has a newer file than we serve, FAIL the run (red X + email) so a
-      # stale publish can never be reported as success.
+      # FINAL GATES. (1) network: our published date vs the live LEA listing;
+      # (2) local: per-source business-day freshness + integrity rules that
+      # catch any silently-failing fetcher (the steps above are all non-fatal).
+      # Either failing FAILS the run (red X + email) — stale can never be green.
       - name: Freshness gate (fail loudly if still behind LEA)
         run: python scripts/verify_freshness.py --check-only
+      - name: Source staleness gate (fail loudly if any source rotted)
+        run: python scripts/verify_sources.py
