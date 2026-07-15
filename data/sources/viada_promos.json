@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T08:17:10Z",
+  "generated": "2026-07-15T09:30:32Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
@@ -38,11 +38,11 @@
       "active": true
     },
     {
-      "title": "Nuo 2026 m. sausio 1d. - keičiasi „ViadaPLUS“ lojalumo programos sąlygos ir taisyklės",
-      "url": "https://www.viada.lt/akcija/nuo-2026-m-sausio-1d-keiciasi-viadaplus-lojalumo-programos-salygos-ir-taisykles/",
-      "slug": "nuo-2026-m-sausio-1d-keiciasi-viadaplus-lojalumo-programos-salygos-ir-taisykles",
+      "title": "Savaitgaliauk ir keliauk",
+      "url": "https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
+      "slug": "savaitgaliauk-ir-keliauk",
       "fuel_related": true,
-      "kind": "listed",
+      "kind": "seasonal",
       "active": true
     }
   ],
@@ -54,6 +54,5 @@
       "lpg": 0.659
     },
     "url": "https://www.viada.lt/akcija/super-treciadieniai/"
-  },
-  "generated_stale_kept": true
+  }
 }
