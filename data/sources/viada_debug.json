@@ -49,6 +49,12 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
+      "kind": "jina",
+      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
+      "err": "HTTP 429",
+      "body_head": "{\"data\":null,\"retryAfter\":0,\"retryAfterDate\":\"2026-07-16T06:15:30.598Z\",\"code\":429,\"name\":\"RateLimitTriggeredError\",\"status\":42903,\"message\":\"Per IP rate limit exceeded\",\"readableMessage\":\"RateLimitTriggeredError: Per IP rate limit exceeded\"}"
+    },
+    {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
       "err": "HTTP 403",
@@ -181,6 +187,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     }
   ],
-  "generated": "2026-07-16T06:00:38Z",
-  "attempt_count": 30
+  "generated": "2026-07-16T06:15:32Z",
+  "attempt_count": 31
 }

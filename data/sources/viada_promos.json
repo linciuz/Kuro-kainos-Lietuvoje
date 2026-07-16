@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-16T06:00:38Z",
+  "generated": "2026-07-16T06:15:32Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
-  "count": 5,
+  "count": 4,
   "promos": [
     {
       "title": "Nuolaidų savaitgaliai (ViadaPLUS)",
@@ -27,14 +27,6 @@
       "slug": "nuolaidos-su-viada-agro-kortele",
       "fuel_related": true,
       "kind": "standing",
-      "active": true
-    },
-    {
-      "title": "Super trečiadieniai",
-      "url": "https://www.viada.lt/akcija/super-treciadieniai/",
-      "slug": "super-treciadieniai",
-      "fuel_related": true,
-      "kind": "seasonal",
       "active": true
     },
     {
