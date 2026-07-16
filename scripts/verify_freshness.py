@@ -22,6 +22,7 @@ Run standalone anytime (`python scripts/verify_freshness.py`) to get the honest
 answer, or as a workflow step after fetch_prices.
 """
 
+import datetime as dt
 import json
 import os
 import re
@@ -72,10 +73,56 @@ def our_date():
         return None
 
 
+# Cross-run memory of an observed LEA gap, committed by the workflows.
+# MEASURED 2026-07-16 ~11:00 LT: at the instant LEA publishes, their page can
+# show the new file while the download still serves yesterday's (CDN/SharePoint
+# propagation race) — the next 15-min run healed it. A gap younger than GRACE
+# therefore only WARNS; only a gap that PERSISTS goes red (one honest email,
+# no publish-moment alarm spam). verify_sources.py's 13:00 rule stays the
+# independent hard backstop.
+GAP_MARKER = os.path.join("data", "_lea_gap.json")
+GRACE_MINUTES = 45
+
+
+def _read_gap():
+    try:
+        return json.load(open(GAP_MARKER, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+
+def _note_gap(lea, ours):
+    """Record when we FIRST saw this specific LEA date without matching it.
+    Keeps the original first_seen while the gap is unchanged."""
+    g = _read_gap()
+    if not g or g.get("lea") != lea:
+        g = {"lea": lea, "ours": ours,
+             "first_seen_utc": dt.datetime.now(dt.timezone.utc)
+                 .replace(microsecond=0).isoformat()}
+        json.dump(g, open(GAP_MARKER, "w", encoding="utf-8"), indent=2)
+        print(f"[freshness] gap marker written: behind {lea} since {g['first_seen_utc']}")
+    return g
+
+
+def _clear_gap():
+    if os.path.exists(GAP_MARKER):
+        os.remove(GAP_MARKER)
+        print("[freshness] gap resolved — marker cleared.")
+
+
+def _gap_age_minutes(g):
+    try:
+        first = dt.datetime.fromisoformat(g["first_seen_utc"])
+        return (dt.datetime.now(dt.timezone.utc) - first).total_seconds() / 60
+    except (KeyError, ValueError):
+        return None
+
+
 def check_only():
-    """Just compare — no re-fetch. Exit 1 (fail the CI job -> owner gets an
-    email) if we are genuinely behind LEA's newest published file. Used as the
-    final GATE after commit so a stale publish can never end as a green run."""
+    """Just compare — no re-fetch. Used as the final GATE after commit.
+    Behind LEA and the gap has PERSISTED past GRACE_MINUTES -> exit 1 (red run,
+    owner gets an email). A younger gap -> ::warning:: only, because the dense
+    15-min schedule usually heals the publish-moment race on the next run."""
     lea, ours = lea_newest_price_date(), our_date()
     print(f"[freshness gate] LEA newest PRICE file: {lea or '?'} | our data: {ours or '?'}")
     if lea is None:
@@ -86,11 +133,18 @@ def check_only():
               "the published date (possible bot-block; verify_sources.py still enforces age).")
         return 0
     if not ours or ours < lea:
-        print(f"::error::STALE PUBLISH: LEA has {lea} but we published {ours}. "
-              f"The site is showing old prices while LEA has newer — fetch_prices "
-              f"could not pick it up (bot-block? SharePoint link/format change?). "
-              f"Run `python scripts/verify_freshness.py` locally to reproduce.")
-        return 1
+        g = _read_gap() or {}
+        age = _gap_age_minutes(g) if g.get("lea") == lea else None
+        if age is not None and age > GRACE_MINUTES:
+            print(f"::error::STALE PUBLISH: LEA has {lea} but we still publish {ours} "
+                  f"after {age:.0f} min of retries. fetch_prices cannot pick it up "
+                  f"(bot-block? SharePoint link/format change?). "
+                  f"Run `python scripts/verify_freshness.py` locally to reproduce.")
+            return 1
+        print(f"::warning::Behind LEA ({ours} vs {lea}) — publish-moment race, within the "
+              f"{GRACE_MINUTES}-min grace (age: {age if age is not None else 0:.0f} min). "
+              f"The next scheduled run should heal it; persisting past grace turns this red.")
+        return 0
     print("[freshness gate] OK — we are current with LEA.")
     return 0
 
@@ -108,8 +162,9 @@ def self_heal():
             return 0
         if ours and ours >= lea:
             print("[freshness] OK — we are current with LEA (nothing newer to fetch).")
+            _clear_gap()
             return 0
-        print(f"::warning::Behind LEA — we have {ours}, LEA has {lea}. Re-fetching (attempt {attempt + 1}/3).")
+        print(f"[freshness] behind LEA — we have {ours}, LEA has {lea}. Re-fetching (attempt {attempt + 1}/3).")
         try:
             fp.main()   # re-run the fetch; picks the newest file on the page
         except SystemExit:
@@ -117,7 +172,12 @@ def self_heal():
         except Exception as e:
             print(f"[freshness] re-fetch raised {type(e).__name__}: {e}")
         time.sleep(3)
-    print("[freshness] still behind after 3 attempts — leaving self-heal to the post-commit gate.")
+    # Still behind: stamp (or keep) the gap marker so the gate can tell a fresh
+    # publish-moment race from a persistent failure. Committed with the data.
+    lea, ours = lea_newest_price_date(), our_date()
+    if lea and (not ours or ours < lea):
+        _note_gap(lea, ours)
+    print("[freshness] still behind after 3 attempts — the post-commit gate decides loudness.")
     return 0
 
 

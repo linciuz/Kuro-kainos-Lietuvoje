@@ -91,7 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json data/sources/loyalty_watch.json data/sources/viada_promos.json data/sources/viada_debug.json data/sources/neste_promo.json || true
+          git add data/_lea_gap.json data/stations.json data/_debug_headers.json data/geocode_cache.json data/sources/circlek.json data/sources/chain_stations.json data/sources/orlen_wholesale.json data/sources/ev_chargers.json data/sources/lea_powerbi.json data/discrepancies.json data/oil.json data/electricity.json data/price_history.json data/sources/loyalty_watch.json data/sources/viada_promos.json data/sources/viada_debug.json data/sources/neste_promo.json || true
           # Also stage every modified TRACKED file under data/ — a script updating
           # a tracked output that's missing from the list above must not leave the
           # tree dirty (git rebase refuses on unstaged changes; that killed the
