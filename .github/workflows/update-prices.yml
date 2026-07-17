@@ -19,6 +19,12 @@ on:
     - cron: "47 10 * * 1-5"     # 13:47 LT summer / 12:47 LT winter — season-proof slot
     - cron: "47 12 * * 1-5"     # 15:47 LT afternoon safety net
   workflow_dispatch: {}
+  # Token-free manual trigger: committing any change to .github/poke starts a
+  # price run via plain git push (workflow_dispatch needs an API token; this
+  # doesn't). Added 2026-07-17 when BOTH schedulers went quiet overnight.
+  push:
+    branches: [main]
+    paths: [".github/poke"]
 
 permissions:
   contents: write
