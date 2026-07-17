@@ -89,6 +89,86 @@ def deaccent(s):
     return s
 
 
+def blocks_price_candidates(html):
+    """Candidates parsed from PARAGRAPH TEXT next to the anchors.
+
+    2026-07-17 markup change: LEA's hand-edited CMS page moved the label
+    ('Naujausios degalų kainos (YYYY-MM-DD)') OUT of the anchor — anchors are
+    now empty, and their title= attributes carry stale copy-pasted dates. So:
+    split into <p> blocks; a block whose plain text carries a dated 'naujausi…'
+    label yields one candidate per SharePoint href in it (in order — the right
+    one is usually first, but main() validates the downloaded file's own date
+    against the label before accepting, so order only affects attempt count).
+    """
+    out = []
+    for block in re.split(r"</p\s*>", html):
+        hrefs = re.findall(r'href="(https://[^"]*sharepoint\.com/[^"]+)"', block)
+        if not hrefs:
+            continue
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", block)).strip()
+        td = deaccent(text)
+        m = re.search(r"naujausi\w*[^()]{0,80}\((20\d\d-\d\d-\d\d)\)", td)
+        if not m or "pranesim" in td:
+            continue
+        for href in hrefs:
+            out.append({"href": href, "label": text[:90], "td": td, "date": m.group(1)})
+    return out
+
+
+def find_price_candidates(html):
+    """Ordered candidate links for the CURRENT daily PRICE file (best first).
+    Anchor-label parsing (old markup) first, then block-text parsing (new
+    markup); within each, newest label date wins. main() download-validates."""
+    anchors = re.findall(
+        r'<a[^>]+href="(https://[^"]*sharepoint\.com/[^"]+)"[^>]*>(.*?)</a>',
+        html, re.I | re.S)
+    cands = []
+    for href, text in anchors:
+        label = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", text)).strip()
+        m = re.search(r"(20\d\d-\d\d-\d\d)", label)
+        cands.append({"href": href, "label": label,
+                      "td": deaccent(label), "date": m.group(1) if m else ""})
+    block_cands = blocks_price_candidates(html)
+
+    print(f"[info] {len(cands)} SharePoint anchor(s), {len(block_cands)} block-text candidate(s):")
+    for c in cands + block_cands:
+        print(f"    - [{c['date'] or '          '}] {c['label'][:72]}")
+
+    ordered, seen = [], set()
+
+    def add(subset, why):
+        for c in sorted(subset, key=lambda c: c["date"], reverse=True):
+            if c["href"] not in seen:
+                seen.add(c["href"])
+                ordered.append(c)
+                print(f"[info] candidate ({why}): [{c['date'] or '?'}] {c['href'][:70]}")
+
+    # 1) anchor-labeled PRICE file (pre-2026-07-17 markup)
+    add([c for c in cands if "naujausios" in c["td"] and "kainos" in c["td"]
+         and "pranesim" not in c["td"]], "anchor label")
+    # 2) block-text label beside the anchor (2026-07-17 markup)
+    add(block_cands, "block text")
+    # 3) any dated anchor except the 'pranešimas' report
+    add([c for c in cands if c["date"] and "pranesim" not in c["td"]], "dated anchor")
+    # NO blind first-link fallback: grabbing "whatever is first" published a
+    # stale May snapshot once. Empty list -> caller fails safe, gates go loud.
+    return ordered
+
+
+def lea_price_dates(html):
+    """All label dates of PRICE files visible on the page (both markups) —
+    the ground truth verify_freshness compares our published date against."""
+    dates = {c["date"] for c in blocks_price_candidates(html)}
+    for href, text in re.findall(
+            r'<a[^>]+href="(https://[^"]*sharepoint\.com/[^"]+)"[^>]*>(.*?)</a>', html, re.I | re.S):
+        label = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", text)).strip()
+        td = deaccent(label)
+        m = re.search(r"(20\d\d-\d\d-\d\d)", label)
+        if m and "naujausios" in td and "kain" in td and "pranesim" not in td:
+            dates.add(m.group(1))
+    return sorted(dates)
+
+
 def find_latest_excel_link(html):
     """Return the SharePoint link for the CURRENT daily PRICE file.
 
@@ -374,23 +454,58 @@ def main():
     html = requests.get(PAGE_URL + bust, headers={
         "User-Agent": BROWSER_UA, "Cache-Control": "no-cache", "Pragma": "no-cache",
     }, timeout=60).text
-    link = find_latest_excel_link(html)
-    if not link:
-        print("[error] No SharePoint Excel link found on the page.")
+    cands = find_price_candidates(html)
+    if not cands:
+        print("[error] No dated PRICE-file candidate found on the page — refusing to guess.")
         sys.exit(1)
-    print(f"[info] latest Excel link: {link}")
 
-    xbytes = download_shared_xlsx(link)
-    print(f"[info] downloaded {len(xbytes)} bytes")
+    # Try candidates in order; ACCEPT the first whose file's OWN date column
+    # matches its page label (LEA's anchors carry stale copy-paste titles and
+    # several links can share one paragraph — only the file itself is truth).
+    # Fall back to the newest-dated file actually downloaded, loudly.
+    stations = file_date = None
+    tried = []
+    for c in cands[:5]:
+        try:
+            xbytes = download_shared_xlsx(c["href"])
+            st, fd = parse_workbook(xbytes)
+        except Exception as e:
+            print(f"[warn] candidate download/parse failed ({type(e).__name__}: {e}) — next")
+            continue
+        if not st:
+            print(f"[warn] candidate parsed 0 stations — next")
+            continue
+        tried.append((fd or "", st, c))
+        if fd and c["date"] and fd == c["date"]:
+            stations, file_date = st, fd
+            print(f"[ok] file date {fd} matches page label — accepted")
+            break
+        print(f"[warn] file date {fd!r} != label {c['date']!r} — trying next candidate")
+    if stations is None and tried:
+        tried.sort(key=lambda t: t[0], reverse=True)
+        fd, st, c = tried[0][0], tried[0][1], tried[0][2]
+        stations, file_date = st, (fd or None)
+        print(f"[warn] no candidate matched its label — using newest downloaded file ({fd or '?'}).")
+    if stations is None:
+        print("[error] every candidate failed to download/parse - aborting, keeping last good data.")
+        sys.exit(3)
 
-    stations, file_date = parse_workbook(xbytes)
+    # NEVER REGRESS: measured 2026-07-17 — LEA's label said today but every
+    # link in its paragraph served May archive snapshots. Whatever we picked,
+    # refuse to replace committed data with an OLDER file (equal is fine: same
+    # file re-fetched). The gates make persisting staleness loud; regressing
+    # 2 months quietly is strictly worse than keeping yesterday.
+    try:
+        committed = json.load(open(OUT_PATH, encoding="utf-8")).get("updated") or ""
+    except Exception:
+        committed = ""
+    if file_date and committed and file_date < committed:
+        print(f"[error] newest fetchable file is {file_date} but committed data is {committed} — "
+              f"refusing to regress. Keeping the newer committed data (LEA page mid-edit?).")
+        sys.exit(5)
     print(f"[info] parsed {len(stations)} stations")
     for s in stations[:5]:
         print("   sample:", s)
-
-    if not stations:
-        print("[error] 0 stations parsed - aborting so we don't overwrite good data.")
-        sys.exit(3)
 
     # Use the file's own date; warn loudly if it is stale (LEA sometimes leaves
     # old daily snapshots linked) or if averages look implausible.

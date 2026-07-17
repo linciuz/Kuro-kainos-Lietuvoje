@@ -55,14 +55,9 @@ def lea_newest_price_date():
     except Exception as e:
         print(f"[freshness] could not reach LEA page: {type(e).__name__}: {e}")
         return None
-    dates = []
-    for href, text in re.findall(
-            r'<a[^>]+href="(https://[^"]*sharepoint\.com/[^"]+)"[^>]*>(.*?)</a>', html, re.I | re.S):
-        label = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", text)).strip()
-        td = fp.deaccent(label)
-        m = re.search(r"(20\d\d-\d\d-\d\d)", label)
-        if m and "naujausios" in td and "kain" in td and "pranesim" not in td:
-            dates.append(m.group(1))
+    # Shared two-markup parser (anchor labels AND block text): LEA moved the
+    # label OUT of the anchor on 2026-07-17 and this gate went date-blind.
+    dates = fp.lea_price_dates(html)
     return max(dates) if dates else None
 
 
