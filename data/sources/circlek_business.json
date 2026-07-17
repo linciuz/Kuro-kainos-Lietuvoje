@@ -3,16 +3,16 @@
   "source_url": "https://www.circlek.lt/verslui/degalai/fiksuota-kaina",
   "scope": "business_fixed_incl_vat",
   "unit": "EUR/L su PVM",
-  "fetched": "2026-07-16",
-  "stated_date": "16.07",
+  "fetched": "2026-07-17",
+  "stated_date": "17.07",
   "prices": {
-    "diesel": 1.989,
-    "petrol95": 1.799,
-    "lpg": 0.789,
+    "diesel": 1.939,
+    "petrol95": 1.759,
+    "lpg": 0.779,
     "adblue": 0.799,
-    "diesel_plus": 2.058,
-    "petrol95_plus": 1.888,
-    "petrol98": 1.918,
-    "xtl": 2.288
+    "diesel_plus": 2.028,
+    "petrol95_plus": 1.848,
+    "petrol98": 1.858,
+    "xtl": 2.238
   }
 }
