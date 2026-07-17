@@ -586,19 +586,55 @@
   },
   "report_price_label": {
     "lt": "Kaina degalinėje (€/L)",
-    "en": "Price at the station (€/L)"
+    "en": "Price at the station (€/L)",
+    "lv": "Cena degvielas uzpildes stacijā (€/L)",
+    "et": "Hind tanklas (€/L)",
+    "uk": "Ціна на заправці (€/л)",
+    "ru": "Цена на заправке (€/л)",
+    "pl": "Cena na stacji (€/L)",
+    "de": "Preis an der Tankstelle (€/L)",
+    "sv": "Pris på stationen (€/L)",
+    "fi": "Hinta asemalla (€/L)",
+    "no": "Pris på stasjonen (€/L)"
   },
   "report_discount_q": {
     "lt": "Kaina su nuolaida (lojalumo kortele ar programėle)",
-    "en": "Price includes a discount (loyalty card or app)"
+    "en": "Price includes a discount (loyalty card or app)",
+    "lv": "Cenā iekļauta atlaide (lojalitātes karte vai lietotne)",
+    "et": "Hind sisaldab allahindlust (kliendikaart või äpp)",
+    "uk": "Ціна включає знижку (картка лояльності або застосунок)",
+    "ru": "Цена включает скидку (карта лояльности или приложение)",
+    "pl": "Cena zawiera rabat (karta lojalnościowa lub aplikacja)",
+    "de": "Preis enthält einen Rabatt (Kundenkarte oder App)",
+    "sv": "Priset inkluderar rabatt (lojalitetskort eller app)",
+    "fi": "Hinta sisältää alennuksen (kanta-asiakaskortti tai sovellus)",
+    "no": "Prisen inkluderer rabatt (fordelskort eller app)"
   },
   "report_send": {
     "lt": "Pranešti kainą",
-    "en": "Report price"
+    "en": "Report price",
+    "lv": "Ziņot cenu",
+    "et": "Teata hind",
+    "uk": "Повідомити ціну",
+    "ru": "Сообщить цену",
+    "pl": "Zgłoś cenę",
+    "de": "Preis melden",
+    "sv": "Rapportera pris",
+    "fi": "Ilmoita hinta",
+    "no": "Rapporter pris"
   },
   "report_with_discount": {
     "lt": "· su nuolaida",
-    "en": "· with discount"
+    "en": "· with discount",
+    "lv": "· ar atlaidi",
+    "et": "· allahindlusega",
+    "uk": "· зі знижкою",
+    "ru": "· со скидкой",
+    "pl": "· z rabatem",
+    "de": "· mit Rabatt",
+    "sv": "· med rabatt",
+    "fi": "· alennuksella",
+    "no": "· med rabatt"
   },
   "report_invalid": {
     "lt": "Neteisinga kaina.",
@@ -1005,15 +1041,42 @@
   },
   "alert_rise_title": {
     "lt": "⚠️ Kainos kyla!",
-    "en": "⚠️ Prices are rising!"
+    "en": "⚠️ Prices are rising!",
+    "lv": "⚠️ Cenas aug!",
+    "et": "⚠️ Hinnad tõusevad!",
+    "uk": "⚠️ Ціни зростають!",
+    "ru": "⚠️ Цены растут!",
+    "pl": "⚠️ Ceny rosną!",
+    "de": "⚠️ Die Preise steigen!",
+    "sv": "⚠️ Priserna stiger!",
+    "fi": "⚠️ Hinnat nousevat!",
+    "no": "⚠️ Prisene stiger!"
   },
   "alert_rise_body": {
     "lt": "{fuel}: pigiausia kaina šoktelėjo €{old} → €{price} ({area}). Spėkite užsipilti — ne visos degalinės dar pabrangino.",
-    "en": "{fuel}: the cheapest price jumped €{old} → €{price} ({area}). Fill up now — not all stations have repriced yet."
+    "en": "{fuel}: the cheapest price jumped €{old} → €{price} ({area}). Fill up now — not all stations have repriced yet.",
+    "lv": "{fuel}: zemākā cena pieauga €{old} → €{price} ({area}). Uzpildiet tagad!",
+    "et": "{fuel}: odavaim hind hüppas €{old} → €{price} ({area}). Tangi kohe!",
+    "uk": "{fuel}: найнижча ціна підскочила €{old} → €{price} ({area}). Заправляйтеся зараз!",
+    "ru": "{fuel}: самая низкая цена подскочила €{old} → €{price} ({area}). Заправьтесь сейчас!",
+    "pl": "{fuel}: najniższa cena skoczyła €{old} → €{price} ({area}). Zatankuj teraz!",
+    "de": "{fuel}: Der günstigste Preis sprang von €{old} auf €{price} ({area}). Jetzt tanken!",
+    "sv": "{fuel}: lägsta priset hoppade €{old} → €{price} ({area}). Tanka nu!",
+    "fi": "{fuel}: halvin hinta hyppäsi €{old} → €{price} ({area}). Tankkaa nyt!",
+    "no": "{fuel}: laveste pris hoppet €{old} → €{price} ({area}). Fyll tanken nå!"
   },
   "alerts_feature_title": {
     "lt": "Kainų pokyčių pranešimai",
-    "en": "Price-change alerts"
+    "en": "Price-change alerts",
+    "lv": "Cenu izmaiņu brīdinājumi",
+    "et": "Hinnamuutuste teavitused",
+    "uk": "Сповіщення про зміни цін",
+    "ru": "Уведомления об изменении цен",
+    "pl": "Alerty o zmianach cen",
+    "de": "Preisänderungs-Alarme",
+    "sv": "Prisändringsvarningar",
+    "fi": "Hintamuutoshälytykset",
+    "no": "Prisendringsvarsler"
   },
   "alerts_on_msg": {
     "lt": "🔔 Signalai įjungti — pranešime apie kainų pokyčius jūsų rajone (kris >3 ¢ ar šoktels ≥10 ¢)",
@@ -1511,19 +1574,55 @@
   },
   "tool_import": {
     "lt": "Įkelti (CSV)",
-    "en": "Import (CSV)"
+    "en": "Import (CSV)",
+    "lv": "Importēt (CSV)",
+    "et": "Impordi (CSV)",
+    "uk": "Імпорт (CSV)",
+    "ru": "Импорт (CSV)",
+    "pl": "Import (CSV)",
+    "de": "Import (CSV)",
+    "sv": "Importera (CSV)",
+    "fi": "Tuo (CSV)",
+    "no": "Importer (CSV)"
   },
   "tool_import_hint": {
     "lt": "Įkelkite anksčiau eksportuotą CSV, kad atkurtumėte ar perkeltumėte savo žurnalą į kitą įrenginį.",
-    "en": "Upload a previously exported CSV to restore your log or move it to another device."
+    "en": "Upload a previously exported CSV to restore your log or move it to another device.",
+    "lv": "Augšupielādējiet iepriekš eksportētu CSV, lai atjaunotu žurnālu vai pārnestu to uz citu ierīci.",
+    "et": "Laadi üles varem eksporditud CSV, et taastada logi või viia see teise seadmesse.",
+    "uk": "Завантажте раніше експортований CSV, щоб відновити журнал або перенести його на інший пристрій.",
+    "ru": "Загрузите ранее экспортированный CSV, чтобы восстановить журнал или перенести его на другое устройство.",
+    "pl": "Wgraj wcześniej wyeksportowany CSV, aby przywrócić dziennik lub przenieść go na inne urządzenie.",
+    "de": "Lade eine zuvor exportierte CSV hoch, um dein Fahrtenbuch wiederherzustellen oder auf ein anderes Gerät zu übertragen.",
+    "sv": "Ladda upp en tidigare exporterad CSV för att återställa loggen eller flytta den till en annan enhet.",
+    "fi": "Lataa aiemmin viety CSV palauttaaksesi lokin tai siirtääksesi sen toiselle laitteelle.",
+    "no": "Last opp en tidligere eksportert CSV for å gjenopprette loggen eller flytte den til en annen enhet."
   },
   "tool_import_done": {
     "lt": "Įkelta įrašų: {n} ✓",
-    "en": "Imported {n} entries ✓"
+    "en": "Imported {n} entries ✓",
+    "lv": "Importēti {n} ieraksti ✓",
+    "et": "Imporditud {n} kirjet ✓",
+    "uk": "Імпортовано записів: {n} ✓",
+    "ru": "Импортировано записей: {n} ✓",
+    "pl": "Zaimportowano wpisów: {n} ✓",
+    "de": "{n} Einträge importiert ✓",
+    "sv": "{n} poster importerade ✓",
+    "fi": "{n} merkintää tuotu ✓",
+    "no": "{n} oppføringer importert ✓"
   },
   "tool_import_fail": {
     "lt": "Nepavyko nuskaityti CSV",
-    "en": "Couldn't read the CSV"
+    "en": "Couldn't read the CSV",
+    "lv": "Neizdevās nolasīt CSV",
+    "et": "CSV lugemine ebaõnnestus",
+    "uk": "Не вдалося прочитати CSV",
+    "ru": "Не удалось прочитать CSV",
+    "pl": "Nie udało się odczytać CSV",
+    "de": "CSV konnte nicht gelesen werden",
+    "sv": "Kunde inte läsa CSV-filen",
+    "fi": "CSV:n lukeminen epäonnistui",
+    "no": "Kunne ikke lese CSV-filen"
   },
   "tool_export": {
     "lt": "Eksportuoti (CSV)",
@@ -1579,163 +1678,523 @@
   },
   "ios_install_title": {
     "lt": "Įdiekite „Fuelis“",
-    "en": "Add Fuelis"
+    "en": "Add Fuelis",
+    "lv": "Pievienot Fuelis",
+    "et": "Lisa Fuelis",
+    "uk": "Додати Fuelis",
+    "ru": "Добавить Fuelis",
+    "pl": "Dodaj Fuelis",
+    "de": "Fuelis hinzufügen",
+    "sv": "Lägg till Fuelis",
+    "fi": "Lisää Fuelis",
+    "no": "Legg til Fuelis"
   },
   "ios_install_intro": {
     "lt": "Įdiekite programą per Safari naršyklę:",
-    "en": "Install the app using Safari:"
+    "en": "Install the app using Safari:",
+    "lv": "Instalējiet lietotni, izmantojot Safari:",
+    "et": "Paigalda äpp Safari kaudu:",
+    "uk": "Встановіть застосунок через Safari:",
+    "ru": "Установите приложение через Safari:",
+    "pl": "Zainstaluj aplikację przez Safari:",
+    "de": "Installiere die App über Safari:",
+    "sv": "Installera appen via Safari:",
+    "fi": "Asenna sovellus Safarin kautta:",
+    "no": "Installer appen via Safari:"
   },
   "ios_install_s1": {
     "lt": "Palieskite „Bendrinti“ mygtuką Safari apačioje",
-    "en": "Tap the Share button at the bottom of Safari"
+    "en": "Tap the Share button at the bottom of Safari",
+    "lv": "Pieskarieties pogai “Kopīgot” Safari apakšā",
+    "et": "Puuduta Safari allosas nuppu „Jaga“",
+    "uk": "Торкніться кнопки «Поділитися» внизу Safari",
+    "ru": "Нажмите кнопку «Поделиться» внизу Safari",
+    "pl": "Stuknij przycisk „Udostępnij” na dole Safari",
+    "de": "Tippe unten in Safari auf „Teilen“",
+    "sv": "Tryck på Dela-knappen längst ner i Safari",
+    "fi": "Napauta Jaa-painiketta Safarin alareunassa",
+    "no": "Trykk på Del-knappen nederst i Safari"
   },
   "ios_install_s2": {
     "lt": "Slinkite žemyn ir pasirinkite „Į pradžios ekraną“",
-    "en": "Scroll down and choose “Add to Home Screen”"
+    "en": "Scroll down and choose “Add to Home Screen”",
+    "lv": "Ritiniet uz leju un izvēlieties “Pievienot sākuma ekrānam”",
+    "et": "Keri alla ja vali „Lisa avakuvale“",
+    "uk": "Прокрутіть униз і виберіть «На початковий екран»",
+    "ru": "Прокрутите вниз и выберите «На экран «Домой»»",
+    "pl": "Przewiń w dół i wybierz „Do ekranu początkowego”",
+    "de": "Scrolle nach unten und wähle „Zum Home-Bildschirm“",
+    "sv": "Skrolla ner och välj ”Lägg till på hemskärmen”",
+    "fi": "Vieritä alas ja valitse ”Lisää Koti-valikkoon”",
+    "no": "Bla ned og velg «Legg til på Hjem-skjerm»"
   },
   "ios_install_s3": {
     "lt": "Viršuje palieskite „Pridėti“",
-    "en": "Tap “Add” in the top corner"
+    "en": "Tap “Add” in the top corner",
+    "lv": "Pieskarieties “Pievienot” augšējā stūrī",
+    "et": "Puuduta ülanurgas „Lisa“",
+    "uk": "Торкніться «Додати» у верхньому куті",
+    "ru": "Нажмите «Добавить» в верхнем углу",
+    "pl": "Stuknij „Dodaj” w górnym rogu",
+    "de": "Tippe oben auf „Hinzufügen“",
+    "sv": "Tryck på ”Lägg till” i övre hörnet",
+    "fi": "Napauta ”Lisää” yläkulmassa",
+    "no": "Trykk på «Legg til» i øvre hjørne"
   },
   "ios_install_note": {
     "lt": "Veikia tik su „Safari“ naršykle. Įdiegus „Fuelis“ atsidarys visame ekrane kaip programa.",
-    "en": "Works in Safari only. Once added, Fuelis opens full-screen like an app."
+    "en": "Works in Safari only. Once added, Fuelis opens full-screen like an app.",
+    "lv": "Darbojas tikai Safari. Pēc pievienošanas Fuelis atveras pilnekrānā kā lietotne.",
+    "et": "Töötab ainult Safaris. Pärast lisamist avaneb Fuelis täisekraanil nagu äpp.",
+    "uk": "Працює лише в Safari. Після додавання Fuelis відкривається на весь екран, як застосунок.",
+    "ru": "Работает только в Safari. После добавления Fuelis открывается на весь экран, как приложение.",
+    "pl": "Działa tylko w Safari. Po dodaniu Fuelis otwiera się na pełnym ekranie jak aplikacja.",
+    "de": "Funktioniert nur in Safari. Danach öffnet sich Fuelis im Vollbild wie eine App.",
+    "sv": "Fungerar endast i Safari. Därefter öppnas Fuelis i helskärm som en app.",
+    "fi": "Toimii vain Safarissa. Lisäämisen jälkeen Fuelis avautuu koko näytöllä kuin sovellus.",
+    "no": "Fungerer kun i Safari. Etterpå åpnes Fuelis i fullskjerm som en app."
   },
   "visits": {
     "lt": "{n} apsilankymų",
-    "en": "{n} visits"
+    "en": "{n} visits",
+    "lv": "{n} apmeklējumi",
+    "et": "{n} külastust",
+    "uk": "Відвідувань: {n}",
+    "ru": "Посещений: {n}",
+    "pl": "Odwiedzin: {n}",
+    "de": "{n} Besuche",
+    "sv": "{n} besök",
+    "fi": "{n} käyntiä",
+    "no": "{n} besøk"
   },
   "share_btn": {
     "lt": "Dalintis",
-    "en": "Share"
+    "en": "Share",
+    "lv": "Kopīgot",
+    "et": "Jaga",
+    "uk": "Поділитися",
+    "ru": "Поделиться",
+    "pl": "Udostępnij",
+    "de": "Teilen",
+    "sv": "Dela",
+    "fi": "Jaa",
+    "no": "Del"
   },
   "share_view_title": {
     "lt": "Dalintis su draugais",
-    "en": "Share with friends"
+    "en": "Share with friends",
+    "lv": "Kopīgot ar draugiem",
+    "et": "Jaga sõpradega",
+    "uk": "Поділитися з друзями",
+    "ru": "Поделиться с друзьями",
+    "pl": "Udostępnij znajomym",
+    "de": "Mit Freunden teilen",
+    "sv": "Dela med vänner",
+    "fi": "Jaa ystäville",
+    "no": "Del med venner"
   },
   "log_chart_title": {
     "lt": "Sąnaudų kitimas (L/100 km)",
-    "en": "Consumption trend (L/100 km)"
+    "en": "Consumption trend (L/100 km)",
+    "lv": "Patēriņa tendence (L/100 km)",
+    "et": "Kulutrend (L/100 km)",
+    "uk": "Тенденція витрати (л/100 км)",
+    "ru": "Тренд расхода (л/100 км)",
+    "pl": "Trend spalania (L/100 km)",
+    "de": "Verbrauchstrend (L/100 km)",
+    "sv": "Förbrukningstrend (L/100 km)",
+    "fi": "Kulutustrendi (L/100 km)",
+    "no": "Forbrukstrend (L/100 km)"
   },
   "help_title": {
     "lt": "Ką reiškia mygtukai?",
-    "en": "What the buttons do"
+    "en": "What the buttons do",
+    "lv": "Ko dara pogas",
+    "et": "Mida nupud teevad",
+    "uk": "Що роблять кнопки",
+    "ru": "Что делают кнопки",
+    "pl": "Co robią przyciski",
+    "de": "Was die Buttons tun",
+    "sv": "Vad knapparna gör",
+    "fi": "Mitä painikkeet tekevät",
+    "no": "Hva knappene gjør"
   },
   "help_favs": {
     "lt": "Mėgstamiausios degalinės — greitas priėjimas",
-    "en": "Your favourite stations — quick access"
+    "en": "Your favourite stations — quick access",
+    "lv": "Jūsu iecienītās stacijas — ātra piekļuve",
+    "et": "Sinu lemmiktanklad — kiire ligipääs",
+    "uk": "Ваші улюблені заправки — швидкий доступ",
+    "ru": "Ваши избранные заправки — быстрый доступ",
+    "pl": "Twoje ulubione stacje — szybki dostęp",
+    "de": "Deine Lieblingstankstellen — Schnellzugriff",
+    "sv": "Dina favoritstationer — snabb åtkomst",
+    "fi": "Suosikkiasemasi — nopea pääsy",
+    "no": "Favorittstasjonene dine — rask tilgang"
   },
   "help_alerts": {
     "lt": "Pranešimai apie kainų pokyčius jūsų rajone",
-    "en": "Alerts about price changes in your area"
+    "en": "Alerts about price changes in your area",
+    "lv": "Brīdinājumi par cenu izmaiņām jūsu apkārtnē",
+    "et": "Teavitused hinnamuutustest sinu piirkonnas",
+    "uk": "Сповіщення про зміни цін у вашому районі",
+    "ru": "Уведомления об изменениях цен в вашем районе",
+    "pl": "Alerty o zmianach cen w Twojej okolicy",
+    "de": "Alarme bei Preisänderungen in deiner Umgebung",
+    "sv": "Varningar om prisändringar i ditt område",
+    "fi": "Hälytykset hintamuutoksista alueellasi",
+    "no": "Varsler om prisendringer i ditt område"
   },
   "help_disc": {
     "lt": "Nuolaidos — rodyti kainą su lojalumo nuolaida",
-    "en": "Discounts — show the price with your loyalty discount"
+    "en": "Discounts — show the price with your loyalty discount",
+    "lv": "Atlaides — rādīt cenu ar jūsu lojalitātes atlaidi",
+    "et": "Allahindlused — näita hinda koos sinu püsikliendi soodustusega",
+    "uk": "Знижки — показувати ціну з вашою знижкою лояльності",
+    "ru": "Скидки — показывать цену с вашей скидкой лояльности",
+    "pl": "Rabaty — pokazuj cenę z Twoim rabatem lojalnościowym",
+    "de": "Rabatte — Preis mit deinem Treuerabatt anzeigen",
+    "sv": "Rabatter — visa priset med din lojalitetsrabatt",
+    "fi": "Alennukset — näytä hinta kanta-asiakasalennuksellasi",
+    "no": "Rabatter — vis prisen med din lojalitetsrabatt"
   },
   "help_tools": {
     "lt": "Skaičiuoklės ir pylimų žurnalas",
-    "en": "Calculators & fuel log"
+    "en": "Calculators & fuel log",
+    "lv": "Kalkulatori un degvielas žurnāls",
+    "et": "Kalkulaatorid ja kütuselogi",
+    "uk": "Калькулятори та журнал пального",
+    "ru": "Калькуляторы и журнал топлива",
+    "pl": "Kalkulatory i dziennik paliwa",
+    "de": "Rechner & Tankbuch",
+    "sv": "Kalkylatorer & tankbok",
+    "fi": "Laskurit ja tankkauspäiväkirja",
+    "no": "Kalkulatorer og drivstofflogg"
   },
   "help_contact": {
     "lt": "Susisiekite su mumis",
-    "en": "Contact us"
+    "en": "Contact us",
+    "lv": "Sazinieties ar mums",
+    "et": "Võta meiega ühendust",
+    "uk": "Зв'яжіться з нами",
+    "ru": "Свяжитесь с нами",
+    "pl": "Skontaktuj się z nami",
+    "de": "Kontaktiere uns",
+    "sv": "Kontakta oss",
+    "fi": "Ota yhteyttä",
+    "no": "Kontakt oss"
   },
   "help_share": {
     "lt": "Pasidalinkite su draugais",
-    "en": "Share with friends"
+    "en": "Share with friends",
+    "lv": "Kopīgot ar draugiem",
+    "et": "Jaga sõpradega",
+    "uk": "Поділитися з друзями",
+    "ru": "Поделиться с друзьями",
+    "pl": "Udostępnij znajomym",
+    "de": "Mit Freunden teilen",
+    "sv": "Dela med vänner",
+    "fi": "Jaa ystäville",
+    "no": "Del med venner"
   },
   "help_support": {
     "lt": "Paremkite projektą",
-    "en": "Support the project"
+    "en": "Support the project",
+    "lv": "Atbalstīt projektu",
+    "et": "Toeta projekti",
+    "uk": "Підтримати проєкт",
+    "ru": "Поддержать проект",
+    "pl": "Wesprzyj projekt",
+    "de": "Projekt unterstützen",
+    "sv": "Stöd projektet",
+    "fi": "Tue projektia",
+    "no": "Støtt prosjektet"
   },
   "share_all_lt": {
     "lt": "Lietuvoje",
-    "en": "in Lithuania"
+    "en": "in Lithuania",
+    "lv": "Lietuvā",
+    "et": "Leedus",
+    "uk": "у Литві",
+    "ru": "в Литве",
+    "pl": "na Litwie",
+    "de": "in Litauen",
+    "sv": "i Litauen",
+    "fi": "Liettuassa",
+    "no": "i Litauen"
   },
   "share_view_text": {
     "lt": "⛽ {fuel} kainos ({where}) — rasta Fuelis.lt 🇱🇹",
-    "en": "⛽ {fuel} prices ({where}) — found on Fuelis.lt 🇱🇹"
+    "en": "⛽ {fuel} prices ({where}) — found on Fuelis.lt 🇱🇹",
+    "lv": "⛽ {fuel} cenas ({where}) — atrasts Fuelis.lt 🇱🇹",
+    "et": "⛽ {fuel} hinnad ({where}) — leitud Fuelis.lt 🇱🇹",
+    "uk": "⛽ Ціни на {fuel} ({where}) — знайдено на Fuelis.lt 🇱🇹",
+    "ru": "⛽ Цены на {fuel} ({where}) — найдено на Fuelis.lt 🇱🇹",
+    "pl": "⛽ Ceny {fuel} ({where}) — znaleziono na Fuelis.lt 🇱🇹",
+    "de": "⛽ {fuel}-Preise ({where}) — gefunden auf Fuelis.lt 🇱🇹",
+    "sv": "⛽ {fuel}-priser ({where}) — hittat på Fuelis.lt 🇱🇹",
+    "fi": "⛽ {fuel}-hinnat ({where}) — löydetty Fuelis.lt 🇱🇹",
+    "no": "⛽ {fuel}-priser ({where}) — funnet på Fuelis.lt 🇱🇹"
   },
   "share_station_text": {
     "lt": "⛽ {net}: {fuel} {price} — {addr}. Rasta Fuelis.lt 🇱🇹",
-    "en": "⛽ {net}: {fuel} {price} — {addr}. Found on Fuelis.lt 🇱🇹"
+    "en": "⛽ {net}: {fuel} {price} — {addr}. Found on Fuelis.lt 🇱🇹",
+    "lv": "⛽ {net}: {fuel} {price} — {addr}. Atrasts Fuelis.lt 🇱🇹",
+    "et": "⛽ {net}: {fuel} {price} — {addr}. Leitud Fuelis.lt 🇱🇹",
+    "uk": "⛽ {net}: {fuel} {price} — {addr}. Знайдено на Fuelis.lt 🇱🇹",
+    "ru": "⛽ {net}: {fuel} {price} — {addr}. Найдено на Fuelis.lt 🇱🇹",
+    "pl": "⛽ {net}: {fuel} {price} — {addr}. Znaleziono na Fuelis.lt 🇱🇹",
+    "de": "⛽ {net}: {fuel} {price} — {addr}. Gefunden auf Fuelis.lt 🇱🇹",
+    "sv": "⛽ {net}: {fuel} {price} — {addr}. Hittat på Fuelis.lt 🇱🇹",
+    "fi": "⛽ {net}: {fuel} {price} — {addr}. Löydetty Fuelis.lt 🇱🇹",
+    "no": "⛽ {net}: {fuel} {price} — {addr}. Funnet på Fuelis.lt 🇱🇹"
   },
   "share_copied": {
     "lt": "Nuoroda nukopijuota ✓",
-    "en": "Link copied ✓"
+    "en": "Link copied ✓",
+    "lv": "Saite nokopēta ✓",
+    "et": "Link kopeeritud ✓",
+    "uk": "Посилання скопійовано ✓",
+    "ru": "Ссылка скопирована ✓",
+    "pl": "Link skopiowany ✓",
+    "de": "Link kopiert ✓",
+    "sv": "Länk kopierad ✓",
+    "fi": "Linkki kopioitu ✓",
+    "no": "Lenke kopiert ✓"
   },
   "share_copy_manual": {
     "lt": "Nukopijuokite nuorodą:",
-    "en": "Copy this link:"
+    "en": "Copy this link:",
+    "lv": "Nokopējiet šo saiti:",
+    "et": "Kopeeri see link:",
+    "uk": "Скопіюйте це посилання:",
+    "ru": "Скопируйте эту ссылку:",
+    "pl": "Skopiuj ten link:",
+    "de": "Kopiere diesen Link:",
+    "sv": "Kopiera denna länk:",
+    "fi": "Kopioi tämä linkki:",
+    "no": "Kopier denne lenken:"
   },
   "ago_min": {
     "lt": "prieš {n} min.",
-    "en": "{n} min ago"
+    "en": "{n} min ago",
+    "lv": "pirms {n} min",
+    "et": "{n} min tagasi",
+    "uk": "{n} хв тому",
+    "ru": "{n} мин назад",
+    "pl": "{n} min temu",
+    "de": "vor {n} Min.",
+    "sv": "för {n} min sedan",
+    "fi": "{n} min sitten",
+    "no": "for {n} min siden"
   },
   "ago_h": {
     "lt": "prieš {n} val.",
-    "en": "{n} h ago"
+    "en": "{n} h ago",
+    "lv": "pirms {n} h",
+    "et": "{n} h tagasi",
+    "uk": "{n} год тому",
+    "ru": "{n} ч назад",
+    "pl": "{n} godz. temu",
+    "de": "vor {n} Std.",
+    "sv": "för {n} tim sedan",
+    "fi": "{n} h sitten",
+    "no": "for {n} t siden"
   },
   "ago_d": {
     "lt": "prieš {n} d.",
-    "en": "{n} d ago"
+    "en": "{n} d ago",
+    "lv": "pirms {n} d.",
+    "et": "{n} p tagasi",
+    "uk": "{n} дн. тому",
+    "ru": "{n} дн. назад",
+    "pl": "{n} dni temu",
+    "de": "vor {n} T.",
+    "sv": "för {n} d sedan",
+    "fi": "{n} pv sitten",
+    "no": "for {n} d siden"
   },
   "ev_updated_ago": {
     "lt": "būsena sena ({ago})",
-    "en": "status stale ({ago})"
+    "en": "status stale ({ago})",
+    "lv": "statuss novecojis ({ago})",
+    "et": "olek aegunud ({ago})",
+    "uk": "статус застарів ({ago})",
+    "ru": "статус устарел ({ago})",
+    "pl": "status nieaktualny ({ago})",
+    "de": "Status veraltet ({ago})",
+    "sv": "status inaktuell ({ago})",
+    "fi": "tila vanhentunut ({ago})",
+    "no": "status utdatert ({ago})"
   },
   "ev_stale_hint": {
     "lt": "Operatorius seniai neatnaujino šios stotelės būsenos — ji gali būti netiksli.",
-    "en": "The operator hasn't refreshed this charger's status in a while — it may be inaccurate."
+    "en": "The operator hasn't refreshed this charger's status in a while — it may be inaccurate.",
+    "lv": "Operators kādu laiku nav atjauninājis šī lādētāja statusu — tas var būt neprecīzs.",
+    "et": "Operaator pole selle laadija olekut ammu värskendanud — see võib olla ebatäpne.",
+    "uk": "Оператор давно не оновлював статус цієї зарядки — він може бути неточним.",
+    "ru": "Оператор давно не обновлял статус этой зарядки — он может быть неточным.",
+    "pl": "Operator od dłuższego czasu nie odświeżał statusu tej ładowarki — może być niedokładny.",
+    "de": "Der Betreiber hat den Status dieser Ladesäule länger nicht aktualisiert — er kann ungenau sein.",
+    "sv": "Operatören har inte uppdaterat laddarens status på ett tag — den kan vara felaktig.",
+    "fi": "Operaattori ei ole päivittänyt tämän latauspisteen tilaa vähään aikaan — se voi olla epätarkka.",
+    "no": "Operatøren har ikke oppdatert denne laderens status på en stund — den kan være unøyaktig."
   },
   "ev_user_broken": {
     "lt": "Naudotojai pranešė: neveikia ({ago})",
-    "en": "Users reported: not working ({ago})"
+    "en": "Users reported: not working ({ago})",
+    "lv": "Lietotāji ziņoja: nedarbojas ({ago})",
+    "et": "Kasutajad teatasid: ei tööta ({ago})",
+    "uk": "Користувачі повідомили: не працює ({ago})",
+    "ru": "Пользователи сообщили: не работает ({ago})",
+    "pl": "Użytkownicy zgłosili: nie działa ({ago})",
+    "de": "Nutzer meldeten: außer Betrieb ({ago})",
+    "sv": "Användare rapporterade: fungerar inte ({ago})",
+    "fi": "Käyttäjät ilmoittivat: ei toimi ({ago})",
+    "no": "Brukere rapporterte: virker ikke ({ago})"
   },
   "ev_user_busy": {
     "lt": "Naudotojai pranešė: užimta ({ago})",
-    "en": "Users reported: occupied ({ago})"
+    "en": "Users reported: occupied ({ago})",
+    "lv": "Lietotāji ziņoja: aizņemts ({ago})",
+    "et": "Kasutajad teatasid: hõivatud ({ago})",
+    "uk": "Користувачі повідомили: зайнято ({ago})",
+    "ru": "Пользователи сообщили: занято ({ago})",
+    "pl": "Użytkownicy zgłosili: zajęta ({ago})",
+    "de": "Nutzer meldeten: belegt ({ago})",
+    "sv": "Användare rapporterade: upptagen ({ago})",
+    "fi": "Käyttäjät ilmoittivat: varattu ({ago})",
+    "no": "Brukere rapporterte: opptatt ({ago})"
   },
   "ev_user_ok": {
     "lt": "Naudotojai patvirtino: veikia ({ago})",
-    "en": "Users confirmed: working ({ago})"
+    "en": "Users confirmed: working ({ago})",
+    "lv": "Lietotāji apstiprināja: darbojas ({ago})",
+    "et": "Kasutajad kinnitasid: töötab ({ago})",
+    "uk": "Користувачі підтвердили: працює ({ago})",
+    "ru": "Пользователи подтвердили: работает ({ago})",
+    "pl": "Użytkownicy potwierdzili: działa ({ago})",
+    "de": "Nutzer bestätigten: funktioniert ({ago})",
+    "sv": "Användare bekräftade: fungerar ({ago})",
+    "fi": "Käyttäjät vahvistivat: toimii ({ago})",
+    "no": "Brukere bekreftet: virker ({ago})"
   },
   "ev_avail_btn": {
     "lt": "Prieinamumas",
-    "en": "Availability"
+    "en": "Availability",
+    "lv": "Pieejamība",
+    "et": "Saadavus",
+    "uk": "Доступність",
+    "ru": "Доступность",
+    "pl": "Dostępność",
+    "de": "Verfügbarkeit",
+    "sv": "Tillgänglighet",
+    "fi": "Saatavuus",
+    "no": "Tilgjengelighet"
   },
   "ev_st_ok": {
     "lt": "Veikia",
-    "en": "Working"
+    "en": "Working",
+    "lv": "Darbojas",
+    "et": "Töötab",
+    "uk": "Працює",
+    "ru": "Работает",
+    "pl": "Działa",
+    "de": "Funktioniert",
+    "sv": "Fungerar",
+    "fi": "Toimii",
+    "no": "Virker"
   },
   "ev_st_busy": {
     "lt": "Užimta",
-    "en": "Occupied"
+    "en": "Occupied",
+    "lv": "Aizņemts",
+    "et": "Hõivatud",
+    "uk": "Зайнято",
+    "ru": "Занято",
+    "pl": "Zajęta",
+    "de": "Belegt",
+    "sv": "Upptagen",
+    "fi": "Varattu",
+    "no": "Opptatt"
   },
   "ev_st_broken": {
     "lt": "Neveikia",
-    "en": "Not working"
+    "en": "Not working",
+    "lv": "Nedarbojas",
+    "et": "Ei tööta",
+    "uk": "Не працює",
+    "ru": "Не работает",
+    "pl": "Nie działa",
+    "de": "Außer Betrieb",
+    "sv": "Fungerar inte",
+    "fi": "Ei toimi",
+    "no": "Virker ikke"
   },
   "ev_disclaimer": {
     "lt": "⚠️ Užimtumo būsenos — operatorių pateikiami duomenys; gali vėluoti ar būti netikslios.",
-    "en": "⚠️ Occupancy statuses come from the operators; they can lag or be inaccurate."
+    "en": "⚠️ Occupancy statuses come from the operators; they can lag or be inaccurate.",
+    "lv": "⚠️ Noslodzes statusi nāk no operatoriem; tie var kavēties vai būt neprecīzi.",
+    "et": "⚠️ Hõivatuse olekud tulevad operaatoritelt; need võivad hilineda või olla ebatäpsed.",
+    "uk": "⚠️ Статуси зайнятості надходять від операторів; вони можуть запізнюватися або бути неточними.",
+    "ru": "⚠️ Статусы занятости поступают от операторов; они могут запаздывать или быть неточными.",
+    "pl": "⚠️ Statusy zajętości pochodzą od operatorów; mogą być opóźnione lub niedokładne.",
+    "de": "⚠️ Belegungsstatus kommen von den Betreibern; sie können verzögert oder ungenau sein.",
+    "sv": "⚠️ Beläggningsstatus kommer från operatörerna; de kan släpa efter eller vara felaktiga.",
+    "fi": "⚠️ Käyttötilat tulevat operaattoreilta; ne voivat viivästyä tai olla epätarkkoja.",
+    "no": "⚠️ Opptattstatus kommer fra operatørene; de kan være forsinket eller unøyaktige."
   },
   "report_btn_short": {
     "lt": "Pranešti kainą",
-    "en": "Report price"
+    "en": "Report price",
+    "lv": "Ziņot cenu",
+    "et": "Teata hind",
+    "uk": "Повідомити ціну",
+    "ru": "Сообщить цену",
+    "pl": "Zgłoś cenę",
+    "de": "Preis melden",
+    "sv": "Rapportera pris",
+    "fi": "Ilmoita hinta",
+    "no": "Rapporter pris"
   },
   "ev_price_prompt": {
     "lt": "Įveskite kainą €/kWh, pvz. 0.45:",
-    "en": "Enter the price in €/kWh, e.g. 0.45:"
+    "en": "Enter the price in €/kWh, e.g. 0.45:",
+    "lv": "Ievadiet cenu €/kWh, piem., 0.45:",
+    "et": "Sisesta hind €/kWh, nt 0.45:",
+    "uk": "Введіть ціну в €/кВт·год, напр. 0.45:",
+    "ru": "Введите цену в €/кВт·ч, напр. 0.45:",
+    "pl": "Podaj cenę w €/kWh, np. 0.45:",
+    "de": "Preis in €/kWh eingeben, z. B. 0.45:",
+    "sv": "Ange pris i €/kWh, t.ex. 0.45:",
+    "fi": "Syötä hinta €/kWh, esim. 0.45:",
+    "no": "Angi pris i €/kWh, f.eks. 0.45:"
   },
   "ev_price_line": {
     "lt": "🗣️ Pranešta kaina: €{price}/kWh ({ago})",
-    "en": "🗣️ Reported price: €{price}/kWh ({ago})"
+    "en": "🗣️ Reported price: €{price}/kWh ({ago})",
+    "lv": "🗣️ Ziņotā cena: €{price}/kWh ({ago})",
+    "et": "🗣️ Teatatud hind: €{price}/kWh ({ago})",
+    "uk": "🗣️ Повідомлена ціна: €{price}/кВт·год ({ago})",
+    "ru": "🗣️ Сообщённая цена: €{price}/кВт·ч ({ago})",
+    "pl": "🗣️ Zgłoszona cena: €{price}/kWh ({ago})",
+    "de": "🗣️ Gemeldeter Preis: €{price}/kWh ({ago})",
+    "sv": "🗣️ Rapporterat pris: €{price}/kWh ({ago})",
+    "fi": "🗣️ Ilmoitettu hinta: €{price}/kWh ({ago})",
+    "no": "🗣️ Rapportert pris: €{price}/kWh ({ago})"
   },
   "ev_price_invalid": {
     "lt": "Kaina turi būti tarp €0.05 ir €2.00 už kWh.",
-    "en": "The price must be between €0.05 and €2.00 per kWh."
+    "en": "The price must be between €0.05 and €2.00 per kWh.",
+    "lv": "Cenai jābūt no €0.05 līdz €2.00 par kWh.",
+    "et": "Hind peab olema €0.05–€2.00 kWh kohta.",
+    "uk": "Ціна має бути від €0.05 до €2.00 за кВт·год.",
+    "ru": "Цена должна быть от €0.05 до €2.00 за кВт·ч.",
+    "pl": "Cena musi wynosić od €0.05 do €2.00 za kWh.",
+    "de": "Der Preis muss zwischen €0.05 und €2.00 pro kWh liegen.",
+    "sv": "Priset måste vara mellan €0.05 och €2.00 per kWh.",
+    "fi": "Hinnan on oltava €0.05–€2.00 per kWh.",
+    "no": "Prisen må være mellom €0.05 og €2.00 per kWh."
   },
   "install_hint": {
     "lt": "Įdiekite per naršyklės meniu („Įdiegti programą“).",
@@ -1947,35 +2406,107 @@
   },
   "chart_title": {
     "lt": "Kainų istorija",
-    "en": "Price history"
+    "en": "Price history",
+    "lv": "Cenu vēsture",
+    "et": "Hinnaajalugu",
+    "uk": "Історія цін",
+    "ru": "История цен",
+    "pl": "Historia cen",
+    "de": "Preisverlauf",
+    "sv": "Prishistorik",
+    "fi": "Hintahistoria",
+    "no": "Prishistorikk"
   },
   "chart_all": {
     "lt": "Visa",
-    "en": "All"
+    "en": "All",
+    "lv": "Visas",
+    "et": "Kõik",
+    "uk": "Усі",
+    "ru": "Все",
+    "pl": "Wszystkie",
+    "de": "Alle",
+    "sv": "Alla",
+    "fi": "Kaikki",
+    "no": "Alle"
   },
   "chart_latest": {
     "lt": "Naujausia",
-    "en": "Latest"
+    "en": "Latest",
+    "lv": "Jaunākās",
+    "et": "Viimased",
+    "uk": "Останні",
+    "ru": "Последние",
+    "pl": "Najnowsze",
+    "de": "Neueste",
+    "sv": "Senaste",
+    "fi": "Uusimmat",
+    "no": "Nyeste"
   },
   "chart_over": {
     "lt": "per {n} d.",
-    "en": "over {n} days"
+    "en": "over {n} days",
+    "lv": "{n} dienās",
+    "et": "{n} päeva jooksul",
+    "uk": "за {n} днів",
+    "ru": "за {n} дней",
+    "pl": "z {n} dni",
+    "de": "über {n} Tage",
+    "sv": "under {n} dagar",
+    "fi": "{n} päivän ajalta",
+    "no": "over {n} dager"
   },
   "chart_minmax": {
     "lt": "min–max",
-    "en": "min–max"
+    "en": "min–max",
+    "lv": "min–maks",
+    "et": "min–maks",
+    "uk": "мін–макс",
+    "ru": "мин–макс",
+    "pl": "min–maks",
+    "de": "Min–Max",
+    "sv": "min–max",
+    "fi": "min–max",
+    "no": "min–maks"
   },
   "chart_avg": {
     "lt": "vidutinė",
-    "en": "average"
+    "en": "average",
+    "lv": "vidēji",
+    "et": "keskmine",
+    "uk": "середня",
+    "ru": "средняя",
+    "pl": "średnia",
+    "de": "Durchschnitt",
+    "sv": "genomsnitt",
+    "fi": "keskiarvo",
+    "no": "gjennomsnitt"
   },
   "chart_note": {
     "lt": "Oficialios LEA šalies žemiausios / vidutinės / aukščiausios kainos. Kaupiama kasdien.",
-    "en": "Official LEA national low / average / high prices, accumulated daily."
+    "en": "Official LEA national low / average / high prices, accumulated daily.",
+    "lv": "Oficiālās LEA zemākās / vidējās / augstākās cenas valstī, uzkrātas katru dienu.",
+    "et": "Ametlikud LEA riigi madalaimad / keskmised / kõrgeimad hinnad, kogutud iga päev.",
+    "uk": "Офіційні найнижчі / середні / найвищі ціни LEA по країні, накопичуються щодня.",
+    "ru": "Официальные минимальные / средние / максимальные цены LEA по стране, накапливаются ежедневно.",
+    "pl": "Oficjalne najniższe / średnie / najwyższe ceny LEA w kraju, gromadzone codziennie.",
+    "de": "Offizielle LEA-Landespreise (niedrigster / Durchschnitt / höchster), täglich gesammelt.",
+    "sv": "Officiella LEA-priser för landet (lägsta / genomsnitt / högsta), samlade dagligen.",
+    "fi": "Viralliset LEA:n koko maan alimmat / keskimääräiset / korkeimmat hinnat, kerätään päivittäin.",
+    "no": "Offisielle LEA-priser for landet (laveste / gjennomsnitt / høyeste), samlet daglig."
   },
   "chart_need_data": {
     "lt": "Per mažai duomenų grafikui — kaupiama kasdien.",
-    "en": "Not enough data yet — accumulating daily."
+    "en": "Not enough data yet — accumulating daily.",
+    "lv": "Vēl nepietiek datu — uzkrājam katru dienu.",
+    "et": "Andmeid pole veel piisavalt — kogume iga päev.",
+    "uk": "Даних поки замало — накопичуємо щодня.",
+    "ru": "Данных пока мало — накапливаем ежедневно.",
+    "pl": "Za mało danych — gromadzimy codziennie.",
+    "de": "Noch zu wenig Daten — wir sammeln täglich.",
+    "sv": "Inte tillräckligt med data ännu — vi samlar dagligen.",
+    "fi": "Dataa ei ole vielä tarpeeksi — keräämme päivittäin.",
+    "no": "Ikke nok data ennå — vi samler daglig."
   },
   "trend_label": {
     "lt": "Vidutinės kainos tendencija",
@@ -2135,18 +2666,184 @@
   },
   "loyalty_wed_today": {
     "lt": "ŠIANDIEN „Super trečiadienis“ —",
-    "en": "TODAY “Super Wednesday” —"
+    "en": "TODAY “Super Wednesday” —",
+    "lv": "ŠODIEN “Super trešdiena” —",
+    "et": "TÄNA „Superkolmapäev“ —",
+    "uk": "СЬОГОДНІ «Супер середа» —",
+    "ru": "СЕГОДНЯ «Супер среда» —",
+    "pl": "DZIŚ „Super środa” —",
+    "de": "HEUTE „Super-Mittwoch“ —",
+    "sv": "IDAG ”Superonsdag” —",
+    "fi": "TÄNÄÄN ”Superkeskiviikko” —",
+    "no": "I DAG «Superonsdag» —"
   },
   "loyalty_neste_today": {
     "lt": "ŠIANDIEN „Nuolaidadienis“ — −{cents} ¢/L",
-    "en": "TODAY “Discount day” — −{cents} ¢/L"
+    "en": "TODAY “Discount day” — −{cents} ¢/L",
+    "lv": "ŠODIEN “Atlaižu diena” — −{cents} ¢/L",
+    "et": "TÄNA „Soodustuspäev“ — −{cents} ¢/L",
+    "uk": "СЬОГОДНІ «День знижок» — −{cents} ¢/л",
+    "ru": "СЕГОДНЯ «День скидок» — −{cents} ¢/л",
+    "pl": "DZIŚ „Dzień rabatów” — −{cents} ¢/L",
+    "de": "HEUTE „Rabatttag“ — −{cents} ¢/L",
+    "sv": "IDAG ”Rabattdag” — −{cents} ¢/L",
+    "fi": "TÄNÄÄN ”Alennuspäivä” — −{cents} ¢/L",
+    "no": "I DAG «Rabattdag» — −{cents} ¢/L"
   },
   "loyalty_ck_premium": {
     "lt": "ŠIANDIEN Circle K programėlė siūlo vienkartinę nuolaidą −12 ¢/L vienam pylimui.",
-    "en": "TODAY the Circle K app offers a one-time discount −12 ¢/L for one fill."
+    "en": "TODAY the Circle K app offers a one-time discount −12 ¢/L for one fill.",
+    "lv": "ŠODIEN Circle K lietotne piedāvā vienreizēju atlaidi −12 ¢/L vienai uzpildei.",
+    "et": "TÄNA pakub Circle K äpp ühekordse soodustuse −12 ¢/L ühele tankimisele.",
+    "uk": "СЬОГОДНІ застосунок Circle K дає одноразову знижку −12 ¢/л на одну заправку.",
+    "ru": "СЕГОДНЯ приложение Circle K даёт разовую скидку −12 ¢/л на одну заправку.",
+    "pl": "DZIŚ aplikacja Circle K daje jednorazowy rabat −12 ¢/L na jedno tankowanie.",
+    "de": "HEUTE bietet die Circle-K-App einen einmaligen Rabatt von −12 ¢/L für eine Tankfüllung.",
+    "sv": "IDAG ger Circle K-appen en engångsrabatt på −12 ¢/L för en tankning.",
+    "fi": "TÄNÄÄN Circle K -sovellus antaa kertaluonteisen alennuksen −12 ¢/L yhteen tankkaukseen.",
+    "no": "I DAG gir Circle K-appen en engangsrabatt på −12 ¢/L for én fylling."
   },
   "contact_offline": {
     "lt": "Nėra interneto ryšio — žinutė neišsiųsta. Bandykite vėliau.",
-    "en": "You're offline — the message was not sent. Try again later."
+    "en": "You're offline — the message was not sent. Try again later.",
+    "lv": "Jūs esat bezsaistē — ziņa netika nosūtīta. Mēģiniet vēlāk.",
+    "et": "Oled võrguühenduseta — sõnumit ei saadetud. Proovi hiljem uuesti.",
+    "uk": "Ви офлайн — повідомлення не надіслано. Спробуйте пізніше.",
+    "ru": "Вы офлайн — сообщение не отправлено. Попробуйте позже.",
+    "pl": "Jesteś offline — wiadomość nie została wysłana. Spróbuj później.",
+    "de": "Du bist offline — die Nachricht wurde nicht gesendet. Versuche es später erneut.",
+    "sv": "Du är offline — meddelandet skickades inte. Försök igen senare.",
+    "fi": "Olet offline-tilassa — viestiä ei lähetetty. Yritä myöhemmin uudelleen.",
+    "no": "Du er frakoblet — meldingen ble ikke sendt. Prøv igjen senere."
+  },
+  "fuel_ev": {
+    "lt": "EV",
+    "en": "EV",
+    "lv": "EV",
+    "et": "EV",
+    "uk": "EV",
+    "ru": "EV",
+    "pl": "EV",
+    "de": "EV",
+    "sv": "EV",
+    "fi": "EV",
+    "no": "EV"
+  },
+  "show_more": {
+    "lt": "Rodyti daugiau ({n})",
+    "en": "Show more ({n})",
+    "lv": "Rādīt vairāk ({n})",
+    "et": "Näita rohkem ({n})",
+    "uk": "Показати більше ({n})",
+    "ru": "Показать ещё ({n})",
+    "pl": "Pokaż więcej ({n})",
+    "de": "Mehr anzeigen ({n})",
+    "sv": "Visa fler ({n})",
+    "fi": "Näytä lisää ({n})",
+    "no": "Vis flere ({n})"
+  },
+  "geo_denied_pick": {
+    "lt": "Nepavyko nustatyti vietos — pasirinkite miestą:",
+    "en": "Location unavailable — pick your city:",
+    "lv": "Atrašanās vieta nav pieejama — izvēlieties pilsētu:",
+    "et": "Asukoht pole saadaval — vali oma linn:",
+    "uk": "Локація недоступна — оберіть місто:",
+    "ru": "Локация недоступна — выберите город:",
+    "pl": "Lokalizacja niedostępna — wybierz miasto:",
+    "de": "Standort nicht verfügbar — wähle deine Stadt:",
+    "sv": "Plats ej tillgänglig — välj din stad:",
+    "fi": "Sijainti ei saatavilla — valitse kaupunkisi:",
+    "no": "Posisjon utilgjengelig — velg byen din:"
+  },
+  "offline_note": {
+    "lt": "⚠ Nėra ryšio — rodomi paskutiniai išsaugoti duomenys ({date})",
+    "en": "⚠ Offline — showing last saved data ({date})",
+    "lv": "⚠ Bezsaistē — rādām pēdējos saglabātos datus ({date})",
+    "et": "⚠ Võrguühenduseta — kuvame viimati salvestatud andmeid ({date})",
+    "uk": "⚠ Офлайн — показуємо останні збережені дані ({date})",
+    "ru": "⚠ Офлайн — показаны последние сохранённые данные ({date})",
+    "pl": "⚠ Offline — pokazujemy ostatnio zapisane dane ({date})",
+    "de": "⚠ Offline — letzte gespeicherte Daten ({date})",
+    "sv": "⚠ Offline — visar senast sparade data ({date})",
+    "fi": "⚠ Offline — näytetään viimeksi tallennetut tiedot ({date})",
+    "no": "⚠ Frakoblet — viser sist lagrede data ({date})"
+  },
+  "close": {
+    "lt": "Uždaryti",
+    "en": "Close",
+    "lv": "Aizvērt",
+    "et": "Sulge",
+    "uk": "Закрити",
+    "ru": "Закрыть",
+    "pl": "Zamknij",
+    "de": "Schließen",
+    "sv": "Stäng",
+    "fi": "Sulje",
+    "no": "Lukk"
+  },
+  "lang_label": {
+    "lt": "Kalba",
+    "en": "Language",
+    "lv": "Valoda",
+    "et": "Keel",
+    "uk": "Мова",
+    "ru": "Язык",
+    "pl": "Język",
+    "de": "Sprache",
+    "sv": "Språk",
+    "fi": "Kieli",
+    "no": "Språk"
+  },
+  "yes": {
+    "lt": "yra",
+    "en": "available",
+    "lv": "ir",
+    "et": "olemas",
+    "uk": "є",
+    "ru": "есть",
+    "pl": "jest",
+    "de": "vorhanden",
+    "sv": "finns",
+    "fi": "on",
+    "no": "finnes"
+  },
+  "no": {
+    "lt": "nėra",
+    "en": "not available",
+    "lv": "nav",
+    "et": "puudub",
+    "uk": "немає",
+    "ru": "нет",
+    "pl": "brak",
+    "de": "nicht vorhanden",
+    "sv": "finns ej",
+    "fi": "ei ole",
+    "no": "finnes ikke"
+  },
+  "muni_label": {
+    "lt": "Savivaldybės filtras",
+    "en": "Municipality filter",
+    "lv": "Pašvaldības filtrs",
+    "et": "Omavalitsuse filter",
+    "uk": "Фільтр самоврядування",
+    "ru": "Фильтр самоуправления",
+    "pl": "Filtr gminy",
+    "de": "Gemeindefilter",
+    "sv": "Kommunfilter",
+    "fi": "Kuntasuodatin",
+    "no": "Kommunefilter"
+  },
+  "privacy": {
+    "lt": "Privatumas",
+    "en": "Privacy",
+    "lv": "Privātums",
+    "et": "Privaatsus",
+    "uk": "Приватність",
+    "ru": "Приватность",
+    "pl": "Prywatność",
+    "de": "Datenschutz",
+    "sv": "Integritet",
+    "fi": "Tietosuoja",
+    "no": "Personvern"
   }
 }

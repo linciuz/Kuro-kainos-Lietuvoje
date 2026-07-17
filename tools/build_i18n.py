@@ -8,6 +8,7 @@ Run after editing translations:  python tools/build_i18n.py
 """
 import json
 import os
+import sys
 
 LANGS = [
     ("lt", "\U0001F1F1\U0001F1F9", "LT"),
@@ -40,7 +41,21 @@ def main():
     out = f"""// AUTO-GENERATED from i18n_source.json by tools/build_i18n.py — DO NOT edit by hand.
 const LANGS = {langs_js};
 const STRINGS = {strings_js};
-let lang = (function () {{ try {{ return localStorage.getItem("kk_lang") || ""; }} catch (e) {{ return ""; }} }})();
+let lang = (function () {{
+    try {{
+        const saved = localStorage.getItem("kk_lang");
+        if (saved) return saved;
+        // ?lang=xx wins for shared/crawled links, then the browser's languages —
+        // a first-time Latvian/Polish/German visitor shouldn't land in Lithuanian.
+        const q = new URLSearchParams(location.search).get("lang");
+        if (q) return q;
+        for (const cand of (navigator.languages || [navigator.language || ""])) {{
+            const c = String(cand).toLowerCase().slice(0, 2);
+            if (LANGS.some(l => l.code === c)) return c;
+        }}
+    }} catch (e) {{}}
+    return "";
+}})();
 if (!LANGS.some(l => l.code === lang)) lang = "lt";
 function t(key, vars) {{
     let s = STRINGS[lang] && STRINGS[lang][key];
@@ -55,7 +70,15 @@ function t(key, vars) {{
     n = len(src)
     print(f"[ok] i18n.js: {n} keys x {len(LANGS)} languages")
     if missing:
-        print(f"[warn] {len(missing)} missing translations: {missing[:8]}{'…' if len(missing) > 8 else ''}")
+        # HARD GATE: a key shipped without all 11 languages silently shows
+        # English to 9 audiences — that debt reached 63 keys before anyone
+        # noticed (2026-07 audit). Translate first, or consciously bypass.
+        print(f"[error] {len(missing)} missing translations: {missing[:8]}{'…' if len(missing) > 8 else ''}")
+        if "--allow-missing" in sys.argv:
+            print("[warn] --allow-missing: building anyway")
+        else:
+            print("       translate the keys above (or rerun with --allow-missing).")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
