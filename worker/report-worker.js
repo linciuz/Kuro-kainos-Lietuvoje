@@ -189,7 +189,9 @@ export default {
     // NOT an open proxy: slug-whitelisted viada.lt promo pages only, GET-only.
     if (url.pathname === "/proxy/viada" && req.method === "GET") {
       const slug = url.searchParams.get("slug") || "";
-      if (slug !== "akcijos" && !/^[a-z0-9-]{1,80}$/.test(slug))
+      // STRICT whitelist (was a character-class regex): bounds the cache-key
+      // space, KV reads, and upstream fetches to exactly the six curated pages.
+      if (!VIADA_SLUGS.includes(slug))
         return json({ error: "bad slug" }, 400);
       const html = (body, status, srcTag, cacheable) => {
         const r = new Response(body, {

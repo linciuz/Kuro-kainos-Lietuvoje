@@ -269,7 +269,17 @@ def near_any(c, others, km=0.15):
     return any(haversine(c["lat"], c["lon"], o["lat"], o["lon"]) < km for o in others)
 
 
+def prev_source_health():
+    """Previously-committed per-source health, for carry-forward on fallback runs."""
+    try:
+        p = json.load(open(OUT, encoding="utf-8"))
+        return p.get("source_health") or {}, p.get("generated")
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}, None
+
+
 def main():
+    live = {}   # source -> did THIS run fetch it from the live upstream?
     try:
         ocpi = fetch_ocpi()
         print(f"[ok] OCPI (official, live+price): {len(ocpi)} sites, "
@@ -277,6 +287,7 @@ def main():
     except Exception as e:
         print(f"[warn] OCPI fetch failed: {e}")
         ocpi = []
+    live["ocpi"] = len(ocpi) > 0
     if not ocpi:
         ocpi = committed("vialietuva-ocpi")
         if ocpi:
@@ -286,8 +297,10 @@ def main():
         ignitis = fetch_ignitis()
         print(f"[ok] Ignitis ON: {len(ignitis)} LT sites, "
               f"{sum(1 for c in ignitis if c['price'] is not None)} with €/kWh")
+        live["ignitis"] = len(ignitis) > 0
     except Exception as e:
         print(f"[warn] Ignitis fetch failed: {e}")
+        live["ignitis"] = False
         ignitis = committed("ignitis")
         if ignitis:
             print(f"[warn] Ignitis empty — keeping {len(ignitis)} previously-committed Ignitis sites")
@@ -298,6 +311,7 @@ def main():
     except Exception as e:
         print(f"[warn] OSM fetch failed: {e}")
         osm = []
+    live["osm"] = len(osm) > 0
     if not osm:
         # Overpass is flaky (often 504s from CI). Keep last-committed OSM locations.
         osm = committed("osm")
@@ -353,12 +367,23 @@ def main():
               f"writing so the last good file survives.")
         sys.exit(2)
 
+    # Per-source health: last_success_utc advances ONLY on a live fetch, so a
+    # dead upstream can't hide behind carried-forward data + a fresh run stamp
+    # (verify_sources warns >7 days since last success, fails >21).
+    now_iso = dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z"
+    prev, prev_gen = prev_source_health()
+    health = {}
+    for name in ("ocpi", "ignitis", "osm"):
+        carried = (prev.get(name) or {}).get("last_success_utc") or prev_gen or now_iso
+        health[name] = {"live": bool(live.get(name)),
+                        "last_success_utc": now_iso if live.get(name) else carried}
     payload = {
-        "generated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
+        "generated": now_iso,
         "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
         "count": len(chargers),
         "ocpi_count": len(ocpi),
         "with_price": sum(1 for c in chargers if c["price"] is not None),
+        "source_health": health,
         "chargers": chargers,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

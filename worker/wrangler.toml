@@ -25,11 +25,12 @@ simple = { limit = 30, period = 60 }
 # later, typically ~11:00–noon LT (07-15: still only yesterday's file at 10:30 LT).
 # So the dense window covers 09:00–14:00 LT every 15 min to grab it the moment it
 # drops, plus an early Orlen check and afternoon/night catch-alls.
-# NOTE for winter (UTC+2, from late Oct): shift hours +1 LT — revisit then.
+# Window is 1h wide of the publish window on BOTH ends so the UTC+3 -> UTC+2
+# winter shift needs no edit (extra pokes are free: no-change commit skip).
 # Needs the GH_TOKEN secret:  npx wrangler secret put GH_TOKEN
 [triggers]
 crons = [
   "0 4,5 * * 1-5",         # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
-  "*/15 6-10 * * 1-5",     # every 15 min 09:00–13:59 LT — the real LEA publication window
+  "*/15 6-11 * * 1-5",     # every 15 min: 09:00–14:59 LT summer AND 08:00–13:59 LT winter — season-proof
   "0 12,22 * * 1-5",       # 15:00 LT + 01:00 LT (next day)
 ]

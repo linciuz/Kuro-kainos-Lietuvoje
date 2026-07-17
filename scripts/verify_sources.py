@@ -23,6 +23,7 @@ Exit codes: 0 all fresh/sane; 1 at least one source stale or corrupt.
 import datetime as dt
 import json
 import math
+import re
 import sys
 from zoneinfo import ZoneInfo
 
@@ -111,6 +112,39 @@ def sane(v, lo=0.3, hi=3.5):
     return isinstance(v, (int, float)) and math.isfinite(v) and lo < v < hi
 
 
+# Lithuanian month names (stem match) for parsing pages' own stated dates.
+LT_MONTHS = {"saus": 1, "vas": 2, "kov": 3, "baland": 4, "geguz": 5, "birz": 6,
+             "liep": 7, "rugpj": 8, "rugs": 9, "spal": 10, "lapkri": 11, "gruod": 12}
+_DEACC = str.maketrans("ąčęėįšųūž", "aceeisuuz")
+
+
+def parse_stated_date(txt, ref):
+    """Upstream pages state their price date as 'Liepos 16' or '16.07' (no
+    year). Resolve against ref (today), rolling the year back across Jan 1.
+    Returns a date or None - an unknown format must not fail the gate."""
+    if not txt:
+        return None
+    txt = str(txt).strip().lower().translate(_DEACC)
+    m = re.match(r"^(\d{1,2})\.(\d{1,2})\.?$", txt)
+    if m:
+        day, month = int(m.group(1)), int(m.group(2))
+    else:
+        m = re.match(r"^([a-z]+)\s+(\d{1,2})", txt)
+        if not m:
+            return None
+        month = next((n for stem, n in LT_MONTHS.items() if m.group(1).startswith(stem)), None)
+        if not month:
+            return None
+        day = int(m.group(2))
+    try:
+        d = dt.date(ref.year, month, day)
+    except ValueError:
+        return None
+    if d > ref + dt.timedelta(days=7):     # December date read on Jan 2
+        d = d.replace(year=ref.year - 1)
+    return d
+
+
 # ----------------------------------------------------------------- sources --
 
 def check_stations(now):
@@ -130,11 +164,32 @@ def check_stations(now):
         cnt = (summary.get(f) or {}).get("count", 0)
         if cnt < 300:
             fail(src, f"summary.{f}.count={cnt} (<300) — prices failed to parse?")
-    # LEA publishes ~11:00–12:00 LT on business days; by 13:00 we must have today.
+    # LEA publishes ~11:00-12:00 LT on business days; by 13:00 we must have today.
     need = required_date(now, cutoff_hour=13)
     if updated < need:
         fail(src, f"official prices are from {updated}, but {need} data must exist by now "
-                  f"(LEA business-day rule) — users are seeing outdated prices.")
+                  f"(LEA business-day rule) - users are seeing outdated prices.")
+    # Plausibility bands: a column shift at LEA (e.g. a pre-tax price column)
+    # would parse cleanly and publish ~25% low - averages must stay in band.
+    BANDS = {"petrol95": (1.2, 2.6), "diesel": (1.2, 2.6), "lpg": (0.4, 1.2)}
+    for f, (lo, hi) in BANDS.items():
+        avg = (summary.get(f) or {}).get("avg")
+        if avg is not None and not (lo <= avg <= hi):
+            fail(src, f"summary.{f}.avg={avg} outside plausible band {lo}-{hi} EUR/l - "
+                      f"column shift / unit change at LEA?")
+    # Day-over-day continuity: real LT moves are cents; >8% in one step is a
+    # data accident, not a market move.
+    try:
+        hist = load("data/price_history.json")["history"]
+        prev_entry = next((h for h in reversed(hist) if h.get("date") < d["updated"]), None)
+        for f in BANDS:
+            cur = (summary.get(f) or {}).get("avg")
+            prv = ((prev_entry or {}).get(f) or {}).get("avg")
+            if cur and prv and abs(cur - prv) / prv > 0.08:
+                fail(src, f"{f} national avg jumped {100 * (cur - prv) / prv:+.1f}% vs {prev_entry.get('date')} "
+                          f"({prv} -> {cur}) - implausible one-step move; refusing to bless it.")
+    except Exception:
+        pass   # missing/short history must not block the price gate itself
 
 
 def check_viada(now):
@@ -193,10 +248,13 @@ def check_neste(now):
         fail(src, f"neste_promo.json generated {age_h:.0f}h ago (>96h) — fetch failing repeatedly.")
 
 
-def _check_daily_pricefile(src, path, now, fuels=("petrol95", "diesel")):
+def _check_daily_pricefile(src, path, now, fuels=("petrol95", "diesel"), stated_lag_bd=0):
     """Shared rule for circlek / circlek_biz / orlen: `fetched` (ISO date,
     re-stamped on every successful run) must reach the newest business date by
-    noon LT; petrol95+diesel must be plausible numbers."""
+    noon LT; petrol95+diesel must be plausible; and the page's OWN stated date
+    must be current too - `fetched` alone only proves the scraper ran, not that
+    the upstream moved (a frozen page would pass forever). stated_lag_bd:
+    business days the upstream legitimately lags (Orlen posts prior-day)."""
     try:
         d = load(path)
         fetched = dt.date.fromisoformat(d["fetched"])
@@ -207,8 +265,17 @@ def _check_daily_pricefile(src, path, now, fuels=("petrol95", "diesel")):
             fail(src, f"prices.{f} missing/implausible: {(d.get('prices') or {}).get(f)!r}")
     need = required_date(now, cutoff_hour=12)
     if fetched < need:
-        fail(src, f"fetched={fetched} but {need} data must exist by now — "
+        fail(src, f"fetched={fetched} but {need} data must exist by now - "
                   f"scraper failing silently (site change/block?).")
+    stated = parse_stated_date(d.get("stated_date"), now.date())
+    if stated is not None:
+        allowed = need
+        for _ in range(stated_lag_bd):
+            allowed = prev_business_day(allowed)
+        if stated < allowed:
+            fail(src, f"upstream page still shows its own date as {stated} "
+                      f"(needs >= {allowed}) - the SITE is frozen even though the "
+                      f"scraper runs fine; users see an outdated reference price.")
 
 
 def check_oil(now):
@@ -226,7 +293,16 @@ def check_oil(now):
         fail(src, f"Brent price implausible: {d.get('price')!r}")
     need = required_date(now, cutoff_hour=12)
     if updated < need:
-        fail(src, f"updated={updated} but {need} expected — oil fetch failing silently.")
+        fail(src, f"updated={updated} but {need} expected - oil fetch failing silently.")
+    # Frozen-upstream guard: the newest HISTORY point is the market's own clock.
+    # Trading calendar differs from LT holidays - allow 2 business days of lag.
+    try:
+        last_close = dt.date.fromisoformat(d["history"][-1]["date"])
+        if last_close < prev_business_day(prev_business_day(need)):
+            fail(src, f"newest Brent close is {last_close} - the price API is serving "
+                      f"frozen data (our fetch runs, the market feed does not move).")
+    except (KeyError, IndexError, ValueError, TypeError):
+        pass
 
 
 def check_electricity(now):
@@ -246,8 +322,20 @@ def check_electricity(now):
     if is_business_day(now.date()) and now.hour >= 12:
         morning = now.replace(hour=8, minute=0, second=0, microsecond=0)
         if ts.astimezone(VILNIUS) < morning:
-            fail(src, f"updated={d['updated']} predates today 08:00 LT — "
+            fail(src, f"updated={d['updated']} predates today 08:00 LT - "
                       f"every fetch since morning has failed.")
+    # Frozen-upstream guard: Nord Pool day-ahead publishes EVERY day, so the
+    # newest market point must be recent regardless of weekday. (Field appears
+    # once the updated fetcher ships - tolerate its absence meanwhile.)
+    lp = d.get("last_point_utc")
+    if lp:
+        try:
+            age_h = (now - parse_utc(lp)).total_seconds() / 3600
+            if age_h > 30:
+                fail(src, f"newest market point is {age_h:.0f}h old (>30h) - the Elering "
+                          f"feed is frozen even though our fetch runs.")
+        except ValueError:
+            fail(src, f"last_point_utc unparseable: {lp!r}")
 
 
 def check_ev(now):
@@ -267,7 +355,48 @@ def check_ev(now):
         fail(src, f"with_price={d.get('with_price')} < half of ocpi_count={ocpi} — tariff parse broke.")
     age_h = (now - gen).total_seconds() / 3600
     if age_h > 96:   # 2 runs/business day; 96h clears weekend + holiday Monday
-        fail(src, f"ev_chargers.json generated {age_h:.0f}h ago (>96h) — directory refresh failing.")
+        fail(src, f"ev_chargers.json generated {age_h:.0f}h ago (>96h) - directory refresh failing.")
+    # Per-source health (present once the updated fetcher ships): carried-forward
+    # data with a fresh run stamp must not hide a dead upstream indefinitely.
+    for name, h in (d.get("source_health") or {}).items():
+        ls = h.get("last_success_utc")
+        if not ls:
+            continue
+        try:
+            days = (now - parse_utc(ls)).total_seconds() / 86400
+        except ValueError:
+            continue
+        if days > 21:
+            fail(src, f"source '{name}' last fetched LIVE {days:.0f} days ago (>21) - "
+                      f"the app serves only carried-forward {name} data.")
+        elif days > 7:
+            warn(src, f"source '{name}' has not answered live in {days:.0f} days - "
+                      f"running on carried-forward data.")
+
+
+def check_chain(now):
+    src = "chain"
+    try:
+        d = load("data/sources/chain_stations.json")
+        gen = parse_utc(d["generated"])
+    except Exception as e:
+        return fail(src, f"unreadable chain_stations.json: {type(e).__name__}: {e}")
+    if (d.get("count") or 0) < 100:
+        fail(src, f"only {d.get('count')} chain stations (<100) - directory collapsed.")
+    age_h = (now - gen).total_seconds() / 3600
+    if age_h > 96:
+        fail(src, f"chain_stations.json generated {age_h:.0f}h ago (>96h) - daily refresh failing.")
+    ls = d.get("last_success_utc")
+    if ls:
+        try:
+            days = (now - parse_utc(ls)).total_seconds() / 86400
+            if days > 21:
+                fail(src, f"no chain answered a LIVE fetch in {days:.0f} days (>21) - "
+                          f"all coordinates are carried-forward.")
+            elif days > 7:
+                warn(src, f"no live chain fetch in {days:.0f} days - running on carried-forward directories.")
+        except ValueError:
+            pass
 
 
 def check_history(now):
@@ -303,10 +432,11 @@ def main():
     check_neste(now)
     _check_daily_pricefile("circlek", "data/sources/circlek.json", now)
     _check_daily_pricefile("circlek_biz", "data/sources/circlek_business.json", now)
-    _check_daily_pricefile("orlen", "data/sources/orlen_wholesale.json", now)
+    _check_daily_pricefile("orlen", "data/sources/orlen_wholesale.json", now, stated_lag_bd=1)
     check_oil(now)
     check_electricity(now)
     check_ev(now)
+    check_chain(now)
     check_history(now)
 
     for w in WARNINGS:
@@ -317,7 +447,7 @@ def main():
         print(f"[verify_sources] {len(FAILURES)} source(s) STALE/CORRUPT — failing the run "
               f"so this cannot pass as success.")
         return 1
-    print(f"[verify_sources] all 10 sources fresh & sane"
+    print(f"[verify_sources] all 11 sources fresh & sane"
           + (f" ({len(WARNINGS)} warning(s))" if WARNINGS else "") + ".")
     return 0
 

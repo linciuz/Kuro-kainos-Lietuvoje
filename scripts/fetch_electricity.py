@@ -43,9 +43,13 @@ def main():
     past = [p for ts, p in series if ts <= nowts] or [series[-1][1]]
     current = past[-1]                                  # current hour's price, €/MWh
     week_avg = sum(p for _, p in series) / len(series)  # 7-day average, €/MWh
+    # Newest MARKET point (upstream's own clock). `updated` only says "we ran";
+    # this is what exposes a frozen upstream feed to verify_sources.
+    last_point = dt.datetime.fromtimestamp(max(ts for ts, _ in series), dt.timezone.utc)
 
     payload = {
         "updated": now.replace(microsecond=0, tzinfo=None).isoformat() + "Z",
+        "last_point_utc": last_point.replace(microsecond=0, tzinfo=None).isoformat() + "Z",
         "currency": "EUR",
         "current_eur_mwh": round(current, 2),
         "week_avg_eur_mwh": round(week_avg, 2),

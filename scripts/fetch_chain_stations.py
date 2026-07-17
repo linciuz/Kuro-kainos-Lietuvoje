@@ -200,6 +200,7 @@ def main():
     # data instead of dropping it — a per-network outage never loses coordinates.
     existing = load_existing_by_network()
     stations = []
+    live_count = 0
     for name, fn in CHAINS:
         got = []
         try:
@@ -209,6 +210,7 @@ def main():
         if got:
             print(f"[ok] {name}: {len(got)} stations")
             stations += got
+            live_count += 1
         else:
             prev = existing.get(name, [])
             if prev:
@@ -222,8 +224,20 @@ def main():
         print(f"[error] only {len(stations)} chain stations — aborting WITHOUT writing.")
         sys.exit(2)
 
+    # last_success_utc advances only when at least one chain answered LIVE this
+    # run — all-fallback runs carry the old stamp forward so verify_sources can
+    # see a runner-wide block instead of an eternally-fresh `generated`.
+    now_iso = dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z"
+    prev_ls = None
+    try:
+        p = json.load(open(OUT, encoding="utf-8"))
+        prev_ls = p.get("last_success_utc") or p.get("generated")
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
     payload = {
-        "generated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
+        "generated": now_iso,
+        "last_success_utc": now_iso if live_count else (prev_ls or now_iso),
+        "chains_live": live_count,
         "count": len(stations),
         "networks": sorted({s["network"] for s in stations}),
         "stations": stations,

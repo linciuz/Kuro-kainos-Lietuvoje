@@ -160,9 +160,13 @@ def _jina_get(url):
     Longer timeout: the reader renders the page before responding.
     NOTE: jina 403s browser-UA strings from non-browser clients (and 1010s empty
     UAs) — an honest tool UA is both required and politer."""
-    req = urllib.request.Request(JINA + url, headers={
+    headers = {
         "User-Agent": "fuelis-lt/1.0 (+https://fuelis.lt; fuel price app data fetcher)",
-        "X-Return-Format": "html"})
+        "X-Return-Format": "html"}
+    key = os.environ.get("JINA_API_KEY")
+    if key:
+        headers["Authorization"] = "Bearer " + key   # optional: lifts the shared-IP rate limit
+    req = urllib.request.Request(JINA + url, headers=headers)
     resp = urllib.request.urlopen(req, timeout=90)
     raw = resp.read()
     if resp.headers.get("Content-Encoding") == "gzip":

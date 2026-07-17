@@ -87,6 +87,13 @@ def parse(html):
     return valid, cents
 
 
+def load_existing():
+    try:
+        return json.load(open(OUT, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+
 def main():
     print(f"[info] fetching {URL}")
     payload = {
@@ -101,7 +108,21 @@ def main():
             payload["cents"] = cents
             print(f"[ok] Neste nuolaidadienis: −{cents} ct/L on {valid}")
     except Exception as e:
-        print(f"[warn] fetch failed: {type(e).__name__}: {e} — writing promo-less file")
+        # Carry-forward (the Viada pattern): a fetch hiccup must not clobber a
+        # promo that is still valid today+, and must NOT re-stamp `generated` —
+        # a fresh stamp on a failure run blinds verify_sources' rot rule.
+        prev = load_existing()
+        if prev and prev.get("valid_date", "") >= dt.date.today().isoformat():
+            print(f"[warn] fetch failed: {type(e).__name__}: {e} — keeping previous file "
+                  f"(valid {prev.get('valid_date')}), stale-keep marked")
+            prev["generated_stale_kept"] = True
+            json.dump(prev, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            return
+        if prev:
+            print(f"[warn] fetch failed: {type(e).__name__}: {e} — keeping previous file untouched "
+                  f"(old generated stamp stays visible to the staleness gate)")
+            return
+        print(f"[warn] fetch failed: {type(e).__name__}: {e} — nothing committed before; writing promo-less file")
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(payload, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
