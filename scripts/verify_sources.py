@@ -23,6 +23,7 @@ Exit codes: 0 all fresh/sane; 1 at least one source stale or corrupt.
 import datetime as dt
 import json
 import math
+import os
 import re
 import sys
 from zoneinfo import ZoneInfo
@@ -442,15 +443,87 @@ def main():
     for w in WARNINGS:
         print(f"::warning::{w}")
     if FAILURES:
-        for f in FAILURES:
+        fresh, repeats = split_by_episode(FAILURES, now)
+        for f in fresh:
             print(f"::error::{f}")
-        print(f"[verify_sources] {len(FAILURES)} source(s) STALE/CORRUPT — failing the run "
-              f"so this cannot pass as success.")
-        return 1
+        for f in repeats:
+            print(f"::warning::[repeat — already alarmed this episode] {f}")
+        if fresh:
+            print(f"[verify_sources] {len(fresh)} NEW stale/corrupt finding(s) — failing the run "
+                  f"so this cannot pass as success. ({len(repeats)} known repeat(s).)")
+            return 1
+        print(f"[verify_sources] {len(repeats)} known stale finding(s), all already alarmed this "
+              f"episode — run stays green to avoid alarm spam; a NEW day or a NEW problem "
+              f"re-alarms. Truth remains visible above, in /health, and in the app's date line.")
+        return 0
     print(f"[verify_sources] all 11 sources fresh & sane"
           + (f" ({len(WARNINGS)} warning(s))" if WARNINGS else "") + ".")
     return 0
 
 
+# --- one-red-per-episode damping ---------------------------------------------
+# 2026-07-17 (LEA page outage + restored 15-min crons): an unhealable external
+# failure produced an IDENTICAL red email every 15 minutes. Fix: the FIRST run
+# that records a failure fingerprint goes red (the alarm); repeats of the same
+# fingerprint downgrade to warnings on green runs. The state file is committed
+# by the pipeline's normal `git add -A data/` — but that happens in the COMMIT
+# step, which runs BEFORE this gate. So the workflows call `--record-state`
+# pre-commit (writes the file, always exits 0) and the post-commit gate only
+# READS it: a fingerprint first seen within the last 20 min (i.e. by THIS run's
+# record step) alarms red; older ones are known repeats. Healing a source
+# clears its fingerprints, ending the episode.
+ALARM_STATE = os.path.join("data", "_alarm_state.json")
+
+
+def _fingerprint(msg, now):
+    """Digit-runs normalized (ages/dates vary run-to-run) + keyed by business
+    day: the same persisting problem alarms once per day, a different problem
+    or a new day alarms immediately."""
+    head = re.sub(r"\d+", "N", msg)[:140]
+    return f"{head}|{required_date(now, 13).isoformat()}"
+
+
+def _load_alarm_state():
+    try:
+        return json.load(open(ALARM_STATE, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def record_state(now):
+    """Pre-commit pass: run all checks, persist failure fingerprints with their
+    first_seen stamps (kept across runs while the failure persists)."""
+    state = _load_alarm_state()
+    fps = {_fingerprint(f, now) for f in FAILURES}
+    new_state = {fp: state.get(fp) or now.isoformat() for fp in fps}
+    if new_state != state:
+        json.dump(new_state, open(ALARM_STATE, "w", encoding="utf-8"), indent=1)
+        print(f"[verify_sources] alarm state recorded: {len(new_state)} active fingerprint(s)")
+    else:
+        print(f"[verify_sources] alarm state unchanged ({len(new_state)} active)")
+    return 0
+
+
+def split_by_episode(failures, now):
+    state = _load_alarm_state()
+    fresh, repeats = [], []
+    for f in failures:
+        first = state.get(_fingerprint(f, now))
+        try:
+            age_min = (now - dt.datetime.fromisoformat(first)).total_seconds() / 60 if first else 0
+        except (TypeError, ValueError):
+            age_min = 0
+        (repeats if first and age_min > 20 else fresh).append(f)
+    return fresh, repeats
+
+
 if __name__ == "__main__":
+    if "--record-state" in sys.argv:
+        _now = now_vilnius()
+        check_stations(_now); check_viada(_now); check_neste(_now)
+        _check_daily_pricefile("circlek", "data/sources/circlek.json", _now)
+        _check_daily_pricefile("circlek_biz", "data/sources/circlek_business.json", _now)
+        _check_daily_pricefile("orlen", "data/sources/orlen_wholesale.json", _now, stated_lag_bd=1)
+        check_oil(_now); check_electricity(_now); check_ev(_now); check_chain(_now); check_history(_now)
+        sys.exit(record_state(_now))
     sys.exit(main())

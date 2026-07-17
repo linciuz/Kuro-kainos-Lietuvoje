@@ -83,6 +83,12 @@ jobs:
       - name: Build static municipality pages + sitemap + crawlable index block
         run: python scripts/build_pages.py || echo "page build failed (non-fatal)"
 
+      # Persist failure fingerprints BEFORE the commit (the post-commit gate
+      # only reads them): first detection of a problem alarms red, repeats of
+      # the same episode stay green warnings — one email per episode, not per run.
+      - name: Record alarm-state fingerprints
+        run: python scripts/verify_sources.py --record-state || echo "record-state failed (non-fatal)"
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"

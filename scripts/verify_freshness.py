@@ -131,11 +131,25 @@ def check_only():
         g = _read_gap() or {}
         age = _gap_age_minutes(g) if g.get("lea") == lea else None
         if age is not None and age > GRACE_MINUTES:
-            print(f"::error::STALE PUBLISH: LEA has {lea} but we still publish {ours} "
-                  f"after {age:.0f} min of retries. fetch_prices cannot pick it up "
-                  f"(bot-block? SharePoint link/format change?). "
-                  f"Run `python scripts/verify_freshness.py` locally to reproduce.")
-            return 1
+            # One red per gap: only the run whose self-heal ARMED the alarm
+            # (alarmed_at within ~20 min) fails; later runs warn on green so a
+            # persistent external outage sends one email, not four an hour.
+            recent_alarm = False
+            try:
+                aat = g.get("alarmed_at")
+                recent_alarm = bool(aat) and (dt.datetime.now(dt.timezone.utc)
+                    - dt.datetime.fromisoformat(aat)).total_seconds() < 20 * 60
+            except (TypeError, ValueError):
+                pass
+            if recent_alarm or not g.get("alarmed"):
+                print(f"::error::STALE PUBLISH: LEA has {lea} but we still publish {ours} "
+                      f"after {age:.0f} min of retries. fetch_prices cannot pick it up "
+                      f"(bot-block? SharePoint link/format change?). "
+                      f"Run `python scripts/verify_freshness.py` locally to reproduce.")
+                return 1
+            print(f"::warning::[repeat — already alarmed] still behind LEA ({ours} vs {lea}, "
+                  f"{age:.0f} min) — retries continue every run; a NEW gap re-alarms red.")
+            return 0
         print(f"::warning::Behind LEA ({ours} vs {lea}) — publish-moment race, within the "
               f"{GRACE_MINUTES}-min grace (age: {age if age is not None else 0:.0f} min). "
               f"The next scheduled run should heal it; persisting past grace turns this red.")
@@ -169,9 +183,17 @@ def self_heal():
         time.sleep(3)
     # Still behind: stamp (or keep) the gap marker so the gate can tell a fresh
     # publish-moment race from a persistent failure. Committed with the data.
+    # Once the gap outlives the grace period, mark it alarmed (with a timestamp)
+    # so the gate reds exactly ONCE per gap instead of every 15-min run.
     lea, ours = lea_newest_price_date(), our_date()
     if lea and (not ours or ours < lea):
-        _note_gap(lea, ours)
+        g = _note_gap(lea, ours)
+        age = _gap_age_minutes(g)
+        if age is not None and age > GRACE_MINUTES and not g.get("alarmed"):
+            g["alarmed"] = True
+            g["alarmed_at"] = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+            json.dump(g, open(GAP_MARKER, "w", encoding="utf-8"), indent=2)
+            print("[freshness] gap outlived the grace period — alarm armed for this run's gate.")
     print("[freshness] still behind after 3 attempts — the post-commit gate decides loudness.")
     return 0
 
