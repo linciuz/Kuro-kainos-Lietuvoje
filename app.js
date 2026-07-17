@@ -45,6 +45,21 @@ const IS_NATIVE = (() => {
 function lsGet(k, def) { try { const v = localStorage.getItem(k); return v == null ? def : JSON.parse(v); } catch (e) { return def; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
+// Kick off the ONE fetch the first render needs at script-evaluation time —
+// before the window "load" event (which waits for Leaflet et al.) fires load().
+// Consumed exactly once by load(); later refetches go to the network directly.
+// "no-cache" (not "no-store"): identical freshness (always revalidates with the
+// server) but an unchanged file answers as a ~200-byte 304 instead of a full
+// re-download (~100 KB/visit saved across our data files).
+let _bootStations = null;
+try { _bootStations = fetch("data/stations.json", { cache: "no-cache" }); } catch (e) {}
+
+// 8s guard so one hung endpoint can't stall the secondary-data phase forever
+// (older Safari lacks AbortSignal.timeout — then we simply go without).
+function fetchTimeout(ms) {
+    try { return AbortSignal.timeout(ms || 8000); } catch (e) { return undefined; }
+}
+
 let FAVS = lsGet("kk_favs", []);                 // starred station/charger keys
 let showFavsOnly = false;                        // favourites-only filter
 let ALERTS = lsGet("kk_alerts", { enabled: false, seen: {}, muni: "" });   // price-drop alerts (scope frozen at enable time)
@@ -114,7 +129,7 @@ let NESTE_PROMO = null;   // {valid_date, cents} from neste.lt "Nuolaidadienis" 
 
 async function loadViadaPromos() {
     try {
-        const res = await fetch("data/sources/viada_promos.json", { cache: "no-store" });
+        const res = await fetch("data/sources/viada_promos.json", { cache: "no-cache", signal: fetchTimeout() });
         const j = res.ok ? await res.json() : null;
         VIADA_PROMO = (j && j.wednesday) || null;
     } catch (e) { VIADA_PROMO = null; }
@@ -122,7 +137,7 @@ async function loadViadaPromos() {
 
 async function loadNestePromo() {
     try {
-        const res = await fetch("data/sources/neste_promo.json", { cache: "no-store" });
+        const res = await fetch("data/sources/neste_promo.json", { cache: "no-cache", signal: fetchTimeout() });
         const j = res.ok ? await res.json() : null;
         NESTE_PROMO = (j && j.valid_date && j.cents > 0) ? j : null;
     } catch (e) { NESTE_PROMO = null; }
@@ -254,6 +269,9 @@ let locateState = { key: "locate" };   // current locate-button label, kept re-t
 function applyStaticI18n() {
     document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
     document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+    // aria-labels localize too — an 11-language app must not speak English-only
+    // to screen readers (Close/Info/Help were hardcoded).
+    document.querySelectorAll("[data-i18n-aria]").forEach(el => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
     document.documentElement.lang = lang;
     renderLocateBtn();
     setInfoBanner();
@@ -286,6 +304,20 @@ function maybeAutoOpenInfo() {
     setTimeout(() => { const b = document.getElementById("info-banner"); if (b) b.classList.add("open"); }, 900);
 }
 
+// First visit EVER: slide the "?" legend open once so the seven icon-only
+// header buttons aren't a mystery (their only other affordance is a
+// desktop-only title tooltip). Returns true when it fired — the caller then
+// skips the info banner this session so two panels don't stack.
+function maybeAutoOpenHelp() {
+    try {
+        if (localStorage.getItem("kk_help_shown") === "1") return false;
+        localStorage.setItem("kk_help_shown", "1");
+        try { sessionStorage.setItem("kk_info_seen", "1"); } catch (e) {}
+        setTimeout(() => { try { toggleHelp(); } catch (e) {} }, 1100);
+        return true;
+    } catch (e) { return false; }
+}
+
 // Upper "?" tab → a side banner legend explaining the top action-bar buttons.
 function toggleHelp() {
     const b = document.getElementById("help-banner");
@@ -305,7 +337,7 @@ function renderHelp() {
         ["🧮", t("help_tools")], ["✉️", t("help_contact")], ["🔗", t("help_share")],
     ];
     if (!IS_NATIVE) items.push(["☕", t("help_support")]);
-    el.innerHTML = `<button class="help-x" onclick="closeHelp()" aria-label="Close">✕</button>
+    el.innerHTML = `<button class="help-x" onclick="closeHelp()" aria-label="${escAttr(t("close"))}">✕</button>
       <div class="help-title">❓ ${esc(t("help_title"))}</div>` +
       items.map(([ic, txt]) => `<div class="help-item"><span class="hi">${ic}</span><span>${esc(txt)}</span></div>`).join("");
 }
@@ -320,16 +352,30 @@ function buildLangSwitcher() {
     if (!box) return;
     const cur = LANGS.find(l => l.code === lang) || LANGS[0];
     box.innerHTML =
-        `<button type="button" class="lang-current" onclick="toggleLangMenu(event)">${cur.flag} ${cur.abbr} ▾</button>
+        `<button type="button" class="lang-current" onclick="toggleLangMenu(event)"
+                 aria-haspopup="true" aria-expanded="false" aria-label="${escAttr(t("lang_label"))}">${cur.flag} ${cur.abbr} ▾</button>
          <div class="lang-menu" id="lang-menu" hidden>` +
-        LANGS.map(l => `<button type="button" class="${l.code === lang ? "active" : ""}" onclick="setLang('${l.code}')">${l.flag} ${l.abbr}</button>`).join("") +
+        LANGS.map(l => `<button type="button" class="${l.code === lang ? "active" : ""}"${l.code === lang ? ' aria-current="true"' : ""} lang="${l.code}" onclick="setLang('${l.code}')">${l.flag} ${l.abbr}</button>`).join("") +
         `</div>`;
+    // Menu closes when keyboard focus leaves the switcher entirely.
+    if (!box._focusBound) {
+        box._focusBound = true;
+        box.addEventListener("focusout", () => setTimeout(() => {
+            if (!box.contains(document.activeElement)) {
+                const m = document.getElementById("lang-menu");
+                if (m && !m.hidden) toggleLangMenu();
+            }
+        }, 0));
+    }
 }
 
 function toggleLangMenu(e) {
     if (e) e.stopPropagation();
     const m = document.getElementById("lang-menu");
-    if (m) m.hidden = !m.hidden;
+    if (!m) return;
+    m.hidden = !m.hidden;
+    const btn = m.parentNode.querySelector(".lang-current");
+    if (btn) btn.setAttribute("aria-expanded", String(!m.hidden));
 }
 
 function setLang(code) {
@@ -368,46 +414,62 @@ function dedupePricelessStations() {
     });
 }
 
+// True when the last stations.json fetch failed and we're showing kept/cached
+// data — drives the offline banner in updateChrome().
+let OFFLINE_DATA = false;
+
 async function load() {
+    // ---- Critical path: ONE fetch, then paint. Everything the first render
+    // needs is in stations.json; the other sources only decorate it. ----------
     try {
-        const res = await fetch("data/stations.json", { cache: "no-store" });
+        const boot = _bootStations;
+        _bootStations = null;             // a Response body is one-shot — never reuse
+        const res = boot ? await boot
+                         : await fetch("data/stations.json", { cache: "no-cache", signal: fetchTimeout() });
         if (!res.ok) throw new Error("HTTP " + res.status);
         DATA = await res.json();
+        OFFLINE_DATA = false;
     } catch (e) {
-        DATA = {
-            updated: "2026-06-30",
-            source: "Lietuvos energetikos agentūra (ena.lt)",
-            source_url: "https://www.ena.lt/degalu-kainos-degalinese/",
-            summary: {
-                petrol95: { min: 1.54,  avg: 1.713, max: 1.849 },
-                diesel:   { min: 1.62,  avg: 1.796, max: 1.909 },
-                lpg:      { min: 0.639, avg: 0.782, max: 0.959 }
-            },
-            stations: []
-        };
+        OFFLINE_DATA = true;
+        // A failed FOREGROUND refetch must never wipe live data we already have
+        // (the hardcoded snapshot below is a cold-boot last resort only).
+        if (!(DATA && DATA.stations && DATA.stations.length)) {
+            DATA = {
+                updated: "2026-06-30",
+                source: "Lietuvos energetikos agentūra (ena.lt)",
+                source_url: "https://www.ena.lt/degalu-kainos-degalinese/",
+                summary: {
+                    petrol95: { min: 1.54,  avg: 1.713, max: 1.849 },
+                    diesel:   { min: 1.62,  avg: 1.796, max: 1.909 },
+                    lpg:      { min: 0.639, avg: 0.782, max: 0.959 }
+                },
+                stations: []
+            };
+        }
     }
     dedupePricelessStations();
-    await loadDiscrepancies();
-    await loadReports();
-    await loadOrlenWholesale();
-    await loadCircleKBusiness();
-    await loadViadaPromos();
-    await loadNestePromo();
-    loadVisitCount();   // fire-and-forget; footer updates when it returns
-    await loadOil();
-    await loadElectricity();
-    await loadEv();
-    // Live EV occupancy is a slow upstream (proxied charger feed) — never block
-    // boot on it. Only fetch when starting in EV mode; selectFuel() handles the
-    // switch-to-EV case. Badges fill in when it returns.
-    if (fuelType === "ev") loadEvStatus().then(() => { if (fuelType === "ev") render(); });
-    await loadHistory();
+    // EV data is heavy (~680 KB) — only on the critical path when we BOOT into
+    // EV mode (shared link / restored state); everyone else gets it lazily.
+    if (fuelType === "ev") await ensureEvLoaded();
+
     // Preserve the chosen municipality across a foreground refetch (initMunicipalities
     // rebuilds the <select> and would otherwise reset it to "All municipalities").
     const _muniSel = document.getElementById("muni-select");
     const _keepMuni = _muniSel ? _muniSel.value : "";
     initMunicipalities();
     if (_muniSel && _keepMuni && [..._muniSel.options].some(o => o.value === _keepMuni)) _muniSel.value = _keepMuni;
+    // A city the user explicitly picked (geo-denied quick-pick) becomes the
+    // default scope on later visits — beats opening on the national list.
+    // Loses to: an already-kept selection, a ?muni= share link, and auto-locate
+    // (which overwrites it with the real nearest municipality when it runs).
+    if (_muniSel && !_muniSel.value && !userPos) {
+        try {
+            if (!new URLSearchParams(location.search).get("muni")) {
+                const def = lsGet("kk_muni_default", "");
+                if (def && [..._muniSel.options].some(o => o.value === def)) _muniSel.value = def;
+            }
+        } catch (e) {}
+    }
     buildLangSwitcher();
     applyStaticI18n();
     updateChrome();
@@ -415,8 +477,9 @@ async function load() {
     render();
     updateFeatureButtons();
     applyUrlState();        // restore fuel/muni/view/search from a shared link (once)
-    checkPriceAlerts();     // notify if the cheapest in the user's area dropped since last visit
-    maybeAutoOpenInfo();    // slide the "10:00 snapshot" caveat banner in once per session
+    // First visit ever: the "?" legend wins; otherwise the once-per-session
+    // "10:00 snapshot" caveat banner.
+    if (!maybeAutoOpenHelp()) maybeAutoOpenInfo();
     maybeAutoLocate();      // silent locate when permission is ALREADY granted (never prompts)
     // Delegate report-button clicks (station keys can contain quotes/pipes).
     const list = document.getElementById("stations-list");
@@ -437,6 +500,26 @@ async function load() {
             if (ep) evReportPrice(ep.dataset.key);
         });
     }
+
+    // ---- Secondary sources: promos, reports, oil, history... fetched in
+    // PARALLEL (was: 9 sequential awaits gating first paint — measured 2.3 s
+    // serialized vs 0.24 s for stations.json alone), then ONE decorating
+    // re-render. Each loader already tolerates failure with a safe default.
+    loadVisitCount();   // fire-and-forget; footer updates when it returns
+    await Promise.allSettled([
+        loadDiscrepancies(), loadReports(), loadOrlenWholesale(),
+        loadCircleKBusiness(), loadViadaPromos(), loadNestePromo(),
+        loadOil(), loadElectricity(), loadHistory(),
+    ]);
+    // Live EV occupancy is a slow upstream (proxied charger feed) — never block
+    // on it; badges fill in when it returns. selectFuel() handles later switches.
+    if (fuelType === "ev" && REPORT_API) loadEvStatus().then(() => { if (fuelType === "ev") render(); });
+    updateChrome();
+    render();
+    updateFeatureButtons();
+    checkPriceAlerts();     // notify if the cheapest in the user's area dropped since last visit
+    // Idle prefetch so the EV tab is instant when the user eventually taps it.
+    if (fuelType !== "ev") (window.requestIdleCallback || ((f) => setTimeout(f, 3000)))(() => ensureEvLoaded());
 }
 
 function stationKey(s) {
@@ -475,13 +558,13 @@ async function showNotification(title, opts) {
 
 async function toggleAlerts() {
     if (!ALERTS.enabled) {
-        if (!("Notification" in window)) { alert(t("alerts_unsupported")); return; }
+        if (!("Notification" in window)) { toast(t("alerts_unsupported")); return; }
         if (Notification.permission !== "granted"
-            && await Notification.requestPermission() !== "granted") { alert(t("alerts_denied")); return; }
+            && await Notification.requestPermission() !== "granted") { toast(t("alerts_denied")); return; }
         ALERTS.enabled = true;
         ALERTS.muni = currentMuni();                 // freeze the scope so the baseline and every
         ALERTS.seen = currentCheapest(ALERTS.muni);  // future check compare like-for-like
-        alert(t("alerts_on_msg"));
+        toast(t("alerts_on_msg"));
     } else {
         ALERTS.enabled = false;
     }
@@ -526,11 +609,11 @@ function openDonate() { window.open(DONATE_URL, "_blank", "noopener"); }
 
 function updateFeatureButtons() {
     const fb = document.getElementById("fav-toggle");
-    if (fb) fb.classList.toggle("on", showFavsOnly);
+    if (fb) { fb.classList.toggle("on", showFavsOnly); fb.setAttribute("aria-pressed", String(showFavsOnly)); }
     const ab = document.getElementById("alert-toggle");
-    if (ab) ab.classList.toggle("on", ALERTS.enabled);
+    if (ab) { ab.classList.toggle("on", ALERTS.enabled); ab.setAttribute("aria-pressed", String(ALERTS.enabled)); }
     const db = document.getElementById("disc-toggle");
-    if (db) db.classList.toggle("on", LOYALTY.enabled);
+    if (db) { db.classList.toggle("on", LOYALTY.enabled); db.setAttribute("aria-pressed", String(LOYALTY.enabled)); }
 }
 
 // ---- PWA install button ----------------------------------------------------
@@ -559,7 +642,7 @@ async function installApp() {
     } else if (isIOS()) {
         openIosInstall();          // iOS has no install prompt — show the Add-to-Home-Screen guide
     } else {
-        alert(t("install_hint"));  // rare: a desktop browser that supports install but hasn't fired the prompt
+        toast(t("install_hint"));  // rare: a desktop browser that supports install but hasn't fired the prompt
     }
 }
 
@@ -569,11 +652,13 @@ function openIosInstall() {
     const m = document.getElementById("ios-modal");
     if (m) m.classList.add("open");
     document.body.classList.add("modal-open");
+    _dlgOpened("ios-modal");
 }
 function closeIosInstall() {
     const m = document.getElementById("ios-modal");
     if (m) m.classList.remove("open");
     document.body.classList.remove("modal-open");
+    _dlgClosed();
 }
 function renderIosInstall() {
     const ttl = document.getElementById("ios-title");
@@ -597,11 +682,11 @@ let contactCaptcha = 0;
 function openContact() {
     renderContact();
     const m = document.getElementById("contact-modal");
-    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); }
+    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); _dlgOpened("contact-modal"); }
 }
 function closeContact() {
     const m = document.getElementById("contact-modal");
-    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
+    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); _dlgClosed(); }
 }
 function cfTopicChange() {
     const sel = document.getElementById("cf-topic"), wrap = document.getElementById("cf-other-wrap");
@@ -635,7 +720,7 @@ function renderContact() {
         <label>${esc(t("contact_photo"))}<input type="file" name="attachment" accept="image/*"></label>
         <label>${esc(t("contact_captcha", { a: a, b: b }))}<input type="number" id="cf-captcha" required inputmode="numeric"></label>
         <button type="submit" class="tool-btn">${esc(t("contact_send"))}</button>
-        <div id="cf-status" class="tool-out"></div>
+        <div id="cf-status" role="alert" class="tool-out"></div>
       </form>`;
 }
 function submitContact(e) {
@@ -677,12 +762,12 @@ function buildActionBar() {
     const box = document.getElementById("action-bar");
     if (!box) return;
     box.innerHTML =
-        `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" title="${esc(t("favourites"))}">★</button>
-         <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" title="${esc(t("alerts_feature_title"))}">🔔</button>
-         <button type="button" class="act-btn" id="disc-toggle" onclick="openDiscounts()" title="${esc(t("loyalty_title"))}">💳</button>
-         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}">🧮</button>
-         <button type="button" class="act-btn" id="contact-toggle" onclick="openContact()" title="${esc(t("contact_title"))}">✉️</button>
-         <button type="button" class="act-btn" id="share-toggle" onclick="shareView()" title="${esc(t("share_view_title"))}">🔗</button>` +
+        `<button type="button" class="act-btn" id="fav-toggle" onclick="toggleFavsOnly()" aria-pressed="false" title="${esc(t("favourites"))}" aria-label="${escAttr(t("favourites"))}">★</button>
+         <button type="button" class="act-btn" id="alert-toggle" onclick="toggleAlerts()" aria-pressed="false" title="${esc(t("alerts_feature_title"))}" aria-label="${escAttr(t("alerts_feature_title"))}">🔔</button>
+         <button type="button" class="act-btn" id="disc-toggle" onclick="openDiscounts()" title="${esc(t("loyalty_title"))}" aria-label="${escAttr(t("loyalty_title"))}">💳</button>
+         <button type="button" class="act-btn" id="tools-toggle" onclick="openTools()" title="${esc(t("tools_title"))}" aria-label="${escAttr(t("tools_title"))}">🧮</button>
+         <button type="button" class="act-btn" id="contact-toggle" onclick="openContact()" title="${esc(t("contact_title"))}" aria-label="${escAttr(t("contact_title"))}">✉️</button>
+         <button type="button" class="act-btn" id="share-toggle" onclick="shareView()" title="${esc(t("share_view_title"))}" aria-label="${escAttr(t("share_view_title"))}">🔗</button>` +
         (canOfferInstall() ? `<button type="button" class="act-btn install" onclick="installApp()">⬇️ ${esc(t("install_app"))}</button>` : "") +
         (IS_NATIVE ? "" : `<button type="button" class="act-btn donate" onclick="openDonate()">☕ ${esc(t("support"))}</button>`);
     updateFeatureButtons();   // a rebuild wipes the ★/🔔/💳 active highlights — always re-apply
@@ -696,6 +781,7 @@ const SITE_URL = "https://fuelis.lt/";   // canonical (share the brand, not gith
 function shareState(extra) {
     const p = new URLSearchParams();
     if (fuelType && fuelType !== "petrol95") p.set("fuel", fuelType);
+    if (lang && lang !== "lt") p.set("lang", lang);   // the link opens in the sharer's language
     const muni = (document.getElementById("muni-select") || {}).value || "";
     if (muni) p.set("muni", muni);
     if (view && view !== "list") p.set("view", view);
@@ -736,12 +822,59 @@ function shareStation(key) {
 
 function toast(msg) {
     let el = document.getElementById("kk-toast");
-    if (!el) { el = document.createElement("div"); el.id = "kk-toast"; el.className = "kk-toast"; document.body.appendChild(el); }
+    if (!el) {
+        el = document.createElement("div");
+        el.id = "kk-toast"; el.className = "kk-toast";
+        el.setAttribute("role", "status");   // implicit aria-live=polite: announced to screen readers
+        document.body.appendChild(el);
+    }
     el.textContent = msg;
     el.classList.add("show");
     clearTimeout(el._t);
     el._t = setTimeout(() => el.classList.remove("show"), 2200);
 }
+
+// --- dialog accessibility: focus moves INTO an opened modal, returns to the
+// opener on close; Escape closes the top layer; Tab cycles inside the sheet. --
+let _dlgOpener = null;
+function _dlgOpened(id) {
+    const m = document.getElementById(id);
+    if (!m) return;
+    _dlgOpener = document.activeElement;
+    const c = m.querySelector(".tools-close");
+    if (c) setTimeout(() => { try { c.focus(); } catch (e) {} }, 60);
+}
+function _dlgClosed() {
+    if (_dlgOpener && typeof _dlgOpener.focus === "function") { try { _dlgOpener.focus(); } catch (e) {} }
+    _dlgOpener = null;
+}
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        const open = document.querySelector(".tools-modal.open");
+        if (open) {
+            const btn = open.querySelector(".tools-close");
+            if (btn) btn.click();   // routes through the right close*() incl. its state cleanup
+            return;
+        }
+        const help = document.getElementById("help-banner");
+        if (help && help.classList.contains("open")) { closeHelp(); return; }
+        const info = document.getElementById("info-banner");
+        if (info && info.classList.contains("open")) { closeInfoBanner(); return; }
+        const lm = document.getElementById("lang-menu");
+        if (lm && !lm.hidden) toggleLangMenu();
+        return;
+    }
+    if (e.key === "Tab") {
+        const sheet = document.querySelector(".tools-modal.open .tools-sheet");
+        if (!sheet) return;
+        const f = [...sheet.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')]
+            .filter(el => el.offsetParent !== null && !el.disabled);
+        if (!f.length) return;
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+        else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+    }
+});
 
 // Restore state from a shared URL — once, on first load only.
 let _urlStateApplied = false;
@@ -787,22 +920,22 @@ function shortMd(s) {
 function openTools() {
     renderTools();
     const m = document.getElementById("tools-modal");
-    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); }
+    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); _dlgOpened("tools-modal"); }
 }
 function closeTools() {
     const m = document.getElementById("tools-modal");
-    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
+    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); _dlgClosed(); }
 }
 
 // Discounts ("Nuolaidos") — its own tab/modal (shares the tools-modal styles).
 function openDiscounts() {
     renderDiscounts();
     const m = document.getElementById("disc-modal");
-    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); }
+    if (m) { m.classList.add("open"); document.body.classList.add("modal-open"); _dlgOpened("disc-modal"); }
 }
 function closeDiscounts() {
     const m = document.getElementById("disc-modal");
-    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); }
+    if (m) { m.classList.remove("open"); document.body.classList.remove("modal-open"); _dlgClosed(); }
 }
 function renderDiscounts() {
     const title = document.getElementById("disc-title");
@@ -1203,7 +1336,7 @@ function exportLog() {
 
 async function loadHistory() {
     try {
-        const res = await fetch("data/price_history.json", { cache: "no-store" });
+        const res = await fetch("data/price_history.json", { cache: "no-cache", signal: fetchTimeout() });
         HISTORY = res.ok ? await res.json() : null;
     } catch (e) { HISTORY = null; }
 }
@@ -1227,11 +1360,13 @@ function openChart(fuel) {
     const m = document.getElementById("chart-modal");
     if (m) m.classList.add("open");
     document.body.classList.add("modal-open");
+    _dlgOpened("chart-modal");
 }
 function closeChart() {
     const m = document.getElementById("chart-modal");
     if (m) m.classList.remove("open");
     document.body.classList.remove("modal-open");
+    _dlgClosed();
 }
 function setChartFuel(f) { chartFuel = f; renderChartModal(); }
 function setChartRange(r) { chartRange = r; renderChartModal(); }
@@ -1310,45 +1445,59 @@ const escAttr = esc;   // back-compat alias
 async function loadReports() {
     if (!REPORT_API) return;
     try {
-        const res = await fetch(REPORT_API + "/reports", { cache: "no-store" });
+        const res = await fetch(REPORT_API + "/reports", { cache: "no-cache", signal: fetchTimeout() });
         REPORTS = res.ok ? await res.json() : {};
     } catch (e) { REPORTS = {}; }
 }
 
 async function loadOrlenWholesale() {
     try {
-        const res = await fetch("data/sources/orlen_wholesale.json", { cache: "no-store" });
+        const res = await fetch("data/sources/orlen_wholesale.json", { cache: "no-cache", signal: fetchTimeout() });
         ORLEN_WS = res.ok ? await res.json() : null;
     } catch (e) { ORLEN_WS = null; }
 }
 
 async function loadCircleKBusiness() {
     try {
-        const res = await fetch("data/sources/circlek_business.json", { cache: "no-store" });
+        const res = await fetch("data/sources/circlek_business.json", { cache: "no-cache", signal: fetchTimeout() });
         CK_BIZ = res.ok ? await res.json() : null;
     } catch (e) { CK_BIZ = null; }
 }
 
 async function loadOil() {
     try {
-        const res = await fetch("data/oil.json", { cache: "no-store" });
+        const res = await fetch("data/oil.json", { cache: "no-cache", signal: fetchTimeout() });
         OIL = res.ok ? await res.json() : null;
     } catch (e) { OIL = null; }
 }
 
 async function loadElectricity() {
     try {
-        const res = await fetch("data/electricity.json", { cache: "no-store" });
+        const res = await fetch("data/electricity.json", { cache: "no-cache", signal: fetchTimeout() });
         ELEC = res.ok ? await res.json() : null;
     } catch (e) { ELEC = null; }
 }
 
 async function loadEv() {
     try {
-        const res = await fetch("data/sources/ev_chargers.json", { cache: "no-store" });
+        const res = await fetch("data/sources/ev_chargers.json", { cache: "no-cache", signal: fetchTimeout(15000) });
         EV = res.ok ? await res.json() : { chargers: [] };
     } catch (e) { EV = { chargers: [] }; }
     tagChargerMunicipalities();
+}
+
+// ev_chargers.json is the app's single heaviest asset (~680 KB raw) and most
+// users never open EV mode — so it loads lazily: on EV select, on an EV shared
+// link, or via idle prefetch. One in-flight promise, retried on failure.
+let _evLoaded = false, _evLoading = null;
+function ensureEvLoaded() {
+    if (_evLoaded) return Promise.resolve();
+    if (_evLoading) return _evLoading;
+    _evLoading = loadEv().then(() => {
+        if ((EV.chargers || []).length) _evLoaded = true;   // empty = failed fetch -> retry next time
+        _evLoading = null;
+    });
+    return _evLoading;
 }
 
 // Tag each charger with the municipality of its nearest fuel station, so the
@@ -1375,7 +1524,7 @@ function tagChargerMunicipalities() {
 async function loadEvStatus() {
     if (!REPORT_API) return;
     try {
-        const res = await fetch(REPORT_API + "/ev-status", { cache: "no-store" });
+        const res = await fetch(REPORT_API + "/ev-status", { cache: "no-cache", signal: fetchTimeout() });
         EV_STATUS = res.ok ? await res.json() : {};
     } catch (e) { EV_STATUS = {}; }
     loadEvReports();   // fire-and-forget; re-render when user complaints arrive
@@ -1386,7 +1535,7 @@ let EV_REPORTS = {};
 async function loadEvReports() {
     if (!REPORT_API) return;
     try {
-        const res = await fetch(REPORT_API + "/ev-reports", { cache: "no-store" });
+        const res = await fetch(REPORT_API + "/ev-reports", { cache: "no-cache", signal: fetchTimeout() });
         EV_REPORTS = res.ok ? await res.json() : {};
         if (fuelType === "ev") render();
     } catch (e) { EV_REPORTS = {}; }
@@ -1472,7 +1621,7 @@ async function evReportPrice(key) {
     const input = prompt(t("ev_price_prompt"));
     if (input == null) return;
     const price = parseFloat(String(input).replace(",", "."));
-    if (!(price >= 0.05 && price <= 2)) { alert(t("ev_price_invalid")); return; }
+    if (!(price >= 0.05 && price <= 2)) { toast(t("ev_price_invalid")); return; }
     try {
         const res = await fetch(REPORT_API + "/ev-report", {
             method: "POST", headers: { "Content-Type": "application/json" },
@@ -1483,7 +1632,7 @@ async function evReportPrice(key) {
         cur.p = Math.round(price * 1000) / 1000; cur.pts = Date.now();
         EV_REPORTS[key] = cur;
         render();
-    } catch (e) { alert(t("report_failed")); }
+    } catch (e) { toast(t("report_failed")); }
 }
 async function evReport(key, status) {
     if (!REPORT_API) return;
@@ -1498,7 +1647,7 @@ async function evReport(key, status) {
         cur.s = status; cur.ts = Date.now();
         EV_REPORTS[key] = cur;
         render();
-    } catch (e) { alert(t("report_failed")); }
+    } catch (e) { toast(t("report_failed")); }
 }
 
 function getChargers() {
@@ -1638,18 +1787,20 @@ function reportPrice(key, fuel) {
         <label class="loyalty-switch report-disc">
           <input type="checkbox" id="rp-discount"><span>${esc(t("report_discount_q"))}</span>
         </label>
-        <div id="rp-status"></div>
+        <div id="rp-status" role="alert"></div>
         <button type="button" class="tool-btn" onclick="submitReport()">${esc(t("report_send"))}</button>
       </section>`;
     const m = document.getElementById("report-modal");
     if (m) m.classList.add("open");
     document.body.classList.add("modal-open");
+    _dlgOpened("report-modal");
     setTimeout(() => { const i = document.getElementById("rp-price"); if (i) { i.focus(); i.select(); } }, 60);
 }
 function closeReport() {
     const m = document.getElementById("report-modal");
     if (m) m.classList.remove("open");
     document.body.classList.remove("modal-open");
+    _dlgClosed();
 }
 async function submitReport() {
     if (!REPORT_API || !_reportCtx) return;
@@ -1675,7 +1826,7 @@ async function submitReport() {
 
 async function loadDiscrepancies() {
     try {
-        const res = await fetch("data/discrepancies.json", { cache: "no-store" });
+        const res = await fetch("data/discrepancies.json", { cache: "no-cache", signal: fetchTimeout() });
         if (!res.ok) throw new Error("HTTP " + res.status);
         const d = await res.json();
         const byNetwork = {};
@@ -1711,11 +1862,43 @@ function initMunicipalities() {
         `<optgroup label="${t("other_munis")}">${rest.map(opt).join("")}</optgroup>`;
 }
 
+// Compact headline strip above the list: tappable per-fuel national averages
+// (the full min/avg/max table + trend stays in #summary below the list, but the
+// headline numbers must be visible without scrolling past hundreds of cards).
+function renderSummaryStrip() {
+    const el = document.getElementById("summary-strip");
+    if (!el) return;
+    const sum = DATA.summary || {};
+    const FUELS = [["petrol95", "⛽"], ["diesel", "🚛"], ["lpg", "🔥"]];
+    const pills = FUELS.filter(([k]) => sum[k] && sum[k].avg != null).map(([k, ic]) =>
+        `<button type="button" class="strip-pill${fuelType === k ? " active" : ""}" onclick="selectFuel('${k}')"
+                 title="${escAttr(t("stat_avg"))}">${ic} <b>€${sum[k].avg.toFixed(3)}</b></button>`).join("");
+    if (!pills) { el.style.display = "none"; return; }
+    const H = (HISTORY && HISTORY.history) || [];
+    const chart = H.length >= 2
+        ? `<button type="button" class="strip-pill" onclick="openChart()" title="${escAttr(t("chart_title"))}">📈</button>` : "";
+    const date = DATA.updated
+        ? `<span class="strip-date${OFFLINE_DATA ? " stale" : ""}">${esc(t("data_updated", { date: shortMd(DATA.updated) }))}</span>` : "";
+    el.style.display = "flex";
+    el.innerHTML = pills + chart + date;
+    // The live strip supersedes the pipeline-injected static crawler line.
+    const cp = document.getElementById("crawl-prices");
+    if (cp) cp.remove();
+}
+
 function updateChrome() {
+    renderSummaryStrip();
     document.getElementById("source-line").innerHTML =
         `${t("source")} <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
     const upd = document.getElementById("updated-line");
     if (!DATA.updated) { upd.textContent = ""; upd.className = ""; return; }
+    // Offline / fetch-failed: the shown prices are the last SAVED copy — say so
+    // honestly instead of the reassuring "updated <date>" line.
+    if (OFFLINE_DATA) {
+        upd.className = "stale";
+        upd.textContent = t("offline_note", { date: DATA.updated });
+        return;
+    }
     // LEA publishes Mon–Fri; >4 days old means a missed/failed update — warn.
     const days = Math.floor((Date.now() - Date.parse(DATA.updated)) / 86400000);
     if (days > 4) {
@@ -1766,18 +1949,27 @@ function onSearchInput() {
 
 function selectFuel(f) {
     fuelType = f;
-    document.querySelectorAll(".fuel-btn").forEach(b => b.classList.remove("active"));
-    document.getElementById("btn-" + f).classList.add("active");
+    document.querySelectorAll(".fuel-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-pressed", "false"); });
+    const fbtn = document.getElementById("btn-" + f);
+    fbtn.classList.add("active");
+    fbtn.setAttribute("aria-pressed", "true");
     render();
     scrollListTop();
-    if (f === "ev" && REPORT_API) loadEvStatus().then(render);   // refresh live occupancy
+    if (f === "ev") {
+        // Charger data is lazy-loaded; render again once it lands (first tap only).
+        ensureEvLoaded().then(() => { if (fuelType === "ev") render(); });
+        if (REPORT_API) loadEvStatus().then(() => { if (fuelType === "ev") render(); });   // live occupancy
+    }
 }
 
 function setSort(dir) {
     if (dir === "dist" && !userPos) return;
     sortDir = dir;
-    ["asc", "desc", "dist"].forEach(d =>
-        document.getElementById("sort-" + d).classList.toggle("active", d === dir));
+    ["asc", "desc", "dist"].forEach(d => {
+        const b = document.getElementById("sort-" + d);
+        b.classList.toggle("active", d === dir);
+        b.setAttribute("aria-pressed", String(d === dir));
+    });
     render();
     scrollListTop();
 }
@@ -1787,7 +1979,10 @@ function setSort(dir) {
 function setRadius(km) {
     if (km && !userPos) return;
     radiusKm = km;
-    document.querySelectorAll(".radius-btn").forEach(b => b.classList.toggle("active", +b.dataset.km === km));
+    document.querySelectorAll(".radius-btn").forEach(b => {
+        b.classList.toggle("active", +b.dataset.km === km);
+        b.setAttribute("aria-pressed", String(+b.dataset.km === km));
+    });
     if (km) document.getElementById("muni-select").value = "";
     render();
     scrollListTop();
@@ -1796,7 +1991,9 @@ function setRadius(km) {
 function setView(v) {
     view = v;
     document.getElementById("view-list").classList.toggle("active", v === "list");
+    document.getElementById("view-list").setAttribute("aria-pressed", String(v === "list"));
     document.getElementById("view-map").classList.toggle("active", v === "map");
+    document.getElementById("view-map").setAttribute("aria-pressed", String(v === "map"));
     document.getElementById("list-view").style.display = v === "list" ? "block" : "none";
     document.getElementById("map-view").style.display = v === "map" ? "block" : "none";
     if (v === "map") ensureMap();
@@ -1862,9 +2059,38 @@ function locate() {
             btn.disabled = false;
             locateState = err.code === 1 ? { key: "loc_denied" } : { key: "loc_failed" };
             renderLocateBtn();
+            showCityPick();   // denial must not be a dead end — offer the manual path
         },
         { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
     );
+}
+
+// Geolocation denied/failed: hand the user the fallback instead of a dead end —
+// one-tap big-city chips right above the list. The choice persists as the
+// default scope for future visits (kk_muni_default).
+function showCityPick() {
+    if (document.getElementById("city-pick")) return;
+    const sel = document.getElementById("muni-select");
+    if (!sel) return;
+    const avail = new Set([...sel.options].map(o => o.value));
+    const chips = BIG_CITIES.filter(m => avail.has(m)).map(m =>
+        `<button type="button" class="city-chip" data-muni="${escAttr(m)}">${esc(m.replace(/\s*m\.\s*sav\.$/, ""))}</button>`).join("");
+    if (!chips) return;
+    const row = document.createElement("div");
+    row.id = "city-pick";
+    row.className = "city-pick";
+    row.innerHTML = `<span>${esc(t("geo_denied_pick"))}</span>${chips}`;
+    row.addEventListener("click", (e) => {
+        const b = e.target.closest(".city-chip");
+        if (!b) return;
+        sel.value = b.dataset.muni;
+        lsSet("kk_muni_default", b.dataset.muni);
+        row.remove();
+        render();
+        scrollListTop();
+    });
+    const anchor = document.querySelector(".filter-row");
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(row, anchor);
 }
 
 function haversine(aLat, aLon, bLat, bLon) {
@@ -1890,7 +2116,7 @@ function fuelChips(s) {
     // Mirror the top fuel selector: the chip of the currently SELECTED fuel gets
     // the same active background, so the card echoes what you're looking at.
     const chips = FUEL_ICONS.map(([k, ic]) =>
-        `<span class="fuel-chip ${has(k) ? (k === fuelType ? "sel" : "") : "off"}" title="${escAttr(t("fuel_" + k))}">${ic}</span>`).join("");
+        `<span class="fuel-chip ${has(k) ? (k === fuelType ? "sel" : "") : "off"}" role="img" title="${escAttr(t("fuel_" + k))}" aria-label="${escAttr(t("fuel_" + k) + ": " + t(has(k) ? "yes" : "no"))}">${ic}</span>`).join("");
     return `<div class="fuel-chips"><span class="lbl">${t("fuels_label")}</span>${chips}</div>`;
 }
 
@@ -1930,6 +2156,7 @@ function getRows() {
 
 function render() {
     renderOilFooter();
+    renderSummaryStrip();   // keep the headline pills' active state in sync
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
         document.getElementById("change-banner").style.display = "none";
@@ -2038,10 +2265,29 @@ function renderList() {
     const total = (DATA.stations || []).filter(s =>
         s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
     const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
-    const shown = rows.slice(0, 600);           // keep the DOM snappy on phones (like the EV list)
+    const shown = rows.slice(0, 600);           // hard ceiling (like the EV list)
+    // Chunked render: 600 cards ≈ 10k DOM nodes in one innerHTML froze mid-range
+    // phones for seconds. Parse the first chunk now; the rest appends on demand.
+    const cards = shown.map(s => stationCardHtml(s, best, worst));
+    _listRest = cards.slice(LIST_CHUNK);
     list.innerHTML =
         `<div class="count-line">${t("showing_stations", { n: nLabel })}</div>` +
-        shown.map(s => {
+        cards.slice(0, LIST_CHUNK).join("") +
+        (_listRest.length ? `<button type="button" class="show-more-btn" id="show-more" onclick="showMoreCards()">${esc(t("show_more", { n: _listRest.length }))}</button>` : "");
+}
+
+const LIST_CHUNK = 60;
+let _listRest = [];
+function showMoreCards() {
+    const btn = document.getElementById("show-more");
+    if (!btn) return;
+    btn.insertAdjacentHTML("beforebegin", _listRest.splice(0, 2 * LIST_CHUNK).join(""));
+    if (_listRest.length) btn.textContent = t("show_more", { n: _listRest.length });
+    else btn.remove();
+}
+
+function stationCardHtml(s, best, worst) {
+    return ((s) => {
             const isBest = s[fuelType] != null && effPrice(s) === best;
             const isWorst = s[fuelType] != null && worst != null && worst > best && effPrice(s) === worst;
             const dist = (userPos && s._dist != null)
@@ -2063,8 +2309,8 @@ function renderList() {
                 ? `<div class="loyalty-line" title="−${loyaltyFmt(lc)} ¢/L">💳 ${esc(t("loyalty_with_card"))} <span class="loyalty-price">€${lDisc}</span><span class="price-unit">/L</span></div>`
                 : "";
             return `
-            <div class="station-card">
-                <button class="fav-btn" data-key="${esc(favKey(s))}">${isFav(favKey(s)) ? "★" : "☆"}</button>
+            <div class="station-card" role="listitem">
+                <button class="fav-btn" data-key="${esc(favKey(s))}" aria-pressed="${isFav(favKey(s))}" aria-label="${escAttr(t("favourites"))}">${isFav(favKey(s)) ? "★" : "☆"}</button>
                 ${isBest ? `<div class="best-price-badge">${ARROW_DOWN} ${t("stat_cheapest")}</div>`
                   : isWorst ? `<div class="worst-price-badge">${ARROW_UP} ${t("stat_dearest")}</div>` : ''}${dist}
                 <div class="station-header">
@@ -2081,7 +2327,7 @@ function renderList() {
                 <div class="nav-row">${navButtons(s)}</div>
                 <div class="report-row">${shareBtn}${repBtn}</div>
             </div>`;
-        }).join("");
+    })(s);
 }
 
 // --- map -------------------------------------------------------------------

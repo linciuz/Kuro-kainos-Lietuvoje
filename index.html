@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.">
+    <meta name="description" content="Oficialios degalų kainos 806 Lietuvos degalinių (2026-07-16): dyzelinas vid. €1.864, benzinas 95 vid. €1.731, dujos €0.759. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
     <title>Fuelis · Kuro kainos Lietuvoje — degalų kainos, žemėlapis, EV</title>
     <link rel="canonical" href="https://fuelis.lt/">
+    <link rel="alternate" hreflang="x-default" href="https://fuelis.lt/">
+    <link rel="alternate" hreflang="lt" href="https://fuelis.lt/?lang=lt">
+    <link rel="alternate" hreflang="en" href="https://fuelis.lt/?lang=en">
+    <link rel="alternate" hreflang="lv" href="https://fuelis.lt/?lang=lv">
+    <link rel="alternate" hreflang="et" href="https://fuelis.lt/?lang=et">
+    <link rel="alternate" hreflang="uk" href="https://fuelis.lt/?lang=uk">
+    <link rel="alternate" hreflang="ru" href="https://fuelis.lt/?lang=ru">
+    <link rel="alternate" hreflang="pl" href="https://fuelis.lt/?lang=pl">
+    <link rel="alternate" hreflang="de" href="https://fuelis.lt/?lang=de">
+    <link rel="alternate" hreflang="sv" href="https://fuelis.lt/?lang=sv">
+    <link rel="alternate" hreflang="fi" href="https://fuelis.lt/?lang=fi">
+    <link rel="alternate" hreflang="no" href="https://fuelis.lt/?lang=no">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta name="keywords" content="degalų kainos, kuro kainos, benzinas 95, dyzelinas, dujos, LPG, degalinės, pigiausi degalai, Lietuva, EV įkrovimo stotelės, degalų žemėlapis, LEA">
     <meta name="author" content="Fuelis">
@@ -13,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Fuelis">
     <meta property="og:title" content="Fuelis · Kuro kainos Lietuvoje">
-    <meta property="og:description" content="Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.">
+    <meta property="og:description" content="Oficialios degalų kainos 806 Lietuvos degalinių (2026-07-16): dyzelinas vid. €1.864, benzinas 95 vid. €1.731, dujos €0.759. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
     <meta property="og:url" content="https://fuelis.lt/">
     <meta property="og:image" content="https://fuelis.lt/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -22,7 +34,7 @@
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fuelis · Kuro kainos Lietuvoje">
-    <meta name="twitter:description" content="Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.">
+    <meta name="twitter:description" content="Oficialios degalų kainos 806 Lietuvos degalinių (2026-07-16): dyzelinas vid. €1.864, benzinas 95 vid. €1.731, dujos €0.759. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
     <meta name="twitter:image" content="https://fuelis.lt/og-image.png">
     <!-- Structured data for Google rich results + AI search understanding -->
     <script type="application/ld+json">
@@ -75,8 +87,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Fuelis">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <!-- Self-hosted Leaflet (was unpkg CDN): same-origin = service-worker
+         cacheable for offline, immune to CDN outage, no third-party connection,
+         and one less render-blocking cross-origin request. -->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- Everything the page loads is same-origin except OSM map tiles, the
+         report Worker, and the FormSubmit contact endpoint — pinned by CSP. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org; connect-src 'self' https://kk-reports.fuelis.workers.dev https://formsubmit.co; form-action 'self' https://formsubmit.co; base-uri 'self'; frame-ancestors 'self'; object-src 'none'">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
@@ -95,7 +112,29 @@
         .act-btn {
             padding: 5px 9px; border: 1px solid #d0d0d0; border-radius: 8px; background: #fff;
             cursor: pointer; font-size: 13px; color: #333; line-height: 1;
+            /* 44px minimum hit area (WCAG 2.5.8 / Apple HIG) without visual bloat */
+            position: relative;
         }
+        .act-btn::after { content: ""; position: absolute; inset: -9px 0; }
+        /* Headline strip above the list: tap a pill to switch fuel */
+        /* Static crawler-readable price line (pipeline-injected); the app swaps
+           it for the live strip on boot. Same info, fresher — not cloaking. */
+        .crawl-prices { padding: 8px 15px 0; background: #fff; font-size: 12.5px; color: #55606d; }
+        .summary-strip { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 10px 15px 0; background: #fff; }
+        .strip-pill { border: 1px solid #e2e6ec; background: #fff; border-radius: 16px; padding: 7px 11px;
+            font-size: 12.5px; cursor: pointer; color: #1b2430; font-family: inherit; min-height: 34px; line-height: 1.2; }
+        .strip-pill b { font-variant-numeric: tabular-nums; }
+        .strip-pill.active { border-color: #0062CC; background: #eef4ff; color: #0056b3; }
+        .strip-date { margin-left: auto; font-size: 11.5px; color: #6b7280; }
+        .strip-date.stale { color: #b3261e; font-weight: 700; }
+        /* Big-city quick pick shown when geolocation is denied/unavailable */
+        .city-pick { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 8px; font-size: 12.5px; color: #55606d; }
+        .city-chip { border: 1px solid #cfe0f5; background: #f0f6ff; color: #1c4e8a; border-radius: 16px;
+            padding: 8px 13px; font-size: 13px; font-family: inherit; cursor: pointer; min-height: 36px; }
+        /* Chunked list: load the rest on demand instead of a 10k-node initial DOM */
+        .show-more-btn { display: block; width: 100%; margin: 10px 0 4px; padding: 12px; border: 1px dashed #b9c4d0;
+            border-radius: 10px; background: #f7f9fc; color: #1c4e8a; font-size: 14px; font-weight: 600;
+            font-family: inherit; cursor: pointer; min-height: 44px; }
         .act-btn.on { background: #eef4ff; border-color: #007AFF; color: #0056b3; }
         .act-btn.donate { background: #fff2e0; border-color: #ffcf99; color: #a15b00; font-weight: 600; }
         .lang-switcher { position: relative; }
@@ -122,8 +161,8 @@
             border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 600;
         }
         .fuel-btn.active { background: #007AFF; color: white; }
-        .fuel-btn.ev { border-color: #1faa4b; color: #1faa4b; }
-        .fuel-btn.ev.active { background: #1faa4b; color: white; }
+        .fuel-btn.ev { border-color: #15803d; color: #15803d; }
+        .fuel-btn.ev.active { background: #15803d; color: white; }
 
         .view-toggle { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
         .view-btn {
@@ -134,7 +173,7 @@
 
         .locate-btn {
             width: 100%; padding: 12px; margin-bottom: 10px; border: none; border-radius: 10px;
-            background: #28a745; color: white; font-size: 14px; font-weight: 700; cursor: pointer;
+            background: #1e7e34; color: white; font-size: 14px; font-weight: 700; cursor: pointer;
         }
         .locate-btn.on { background: #0056b3; }
         .locate-btn:disabled { opacity: .7; cursor: default; }
@@ -157,7 +196,7 @@
             flex: 1; min-width: 52px; padding: 8px; border: 1px solid #ddd; background: #f8f9fa;
             border-radius: 8px; cursor: pointer; font-size: 13px;
         }
-        .radius-btn.active { background: #28a745; color: white; border-color: #28a745; }
+        .radius-btn.active { background: #1e7e34; color: white; border-color: #1e7e34; }
 
         .summary { background: #f8f9fa; margin: 0 15px 10px; padding: 12px; border-radius: 8px; }
         .summary-title { font-size: 12px; color: #666; margin-bottom: 8px; text-align: center; }
@@ -165,17 +204,17 @@
         .stat-label { font-size: 11px; color: #666; }
         .stat-value { font-size: 18px; font-weight: bold; }
         .stat-value.lowest { color: #4CAF50; }
-        .stat-value.highest { color: #dc3545; }
+        .stat-value.highest { color: #c22333; }
         .nat-table { width: 100%; border-collapse: collapse; }
         .nat-table th { font-size: 11px; color: #666; font-weight: 600; padding: 4px 6px; }
         .nat-table td { padding: 7px 6px; text-align: center; font-size: 15px; }
         .nat-table th:first-child, .nat-table td:first-child { text-align: left; font-weight: 600; color: #333; font-size: 13px; }
         .nat-table tbody tr { border-top: 1px solid #ececec; }
-        .nat-table .lo { color: #1faa4b; font-weight: bold; }
+        .nat-table .lo { color: #15803d; font-weight: bold; }
         /* Average = the headline number: highlighted column so it's the eye's anchor */
         .nat-table th.avg-col, .nat-table td.avg { background: #eaf1ff; color: #0057D8; font-weight: 800; }
         .nat-table td.avg { border-radius: 4px; }
-        .nat-table .hi { color: #dc3545; font-weight: bold; }
+        .nat-table .hi { color: #c22333; font-weight: bold; }
         .wholesale-ref {
             margin-top: 10px; padding-top: 8px; border-top: 1px dashed #d8d8d8;
             font-size: 11px; color: #777; text-align: center;
@@ -190,15 +229,16 @@
         }
         .fav-btn {
             float: right; background: none; border: none; font-size: 22px; line-height: 1;
-            cursor: pointer; color: #f5b301; padding: 0 0 4px 10px;
+            cursor: pointer; color: #f5b301; padding: 8px 0 10px 14px;   /* ≥44px hit area */
+            margin: -8px 0 -4px 0;   /* padding grows the target, margins keep the layout */
         }
         .best-price-badge, .worst-price-badge {
             display: inline-flex; align-items: center; gap: 3px;
             padding: 3px 9px 3px 6px; border-radius: 6px; margin-bottom: 6px;
             font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .02em;
         }
-        .best-price-badge { background: #e7f7ee; color: #14914e; }   /* green: cheapest */
-        .worst-price-badge { background: #fdeceb; color: #cf3b30; }  /* red: most expensive */
+        .best-price-badge { background: #e7f7ee; color: #15803d; }   /* green: cheapest */
+        .worst-price-badge { background: #fdeceb; color: #c22333; }  /* red: most expensive */
         .badge-arrow { width: 13px; height: 13px; display: block; flex: none; }
         .dist-badge {
             background: #eef4ff; color: #0056b3; padding: 3px 9px; border-radius: 6px;
@@ -207,7 +247,7 @@
         .station-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
         .station-name { font-size: 17px; font-weight: bold; color: #333; }
         .station-price { font-size: 22px; font-weight: bold; color: #007AFF; white-space: nowrap; }
-        .no-price-badge { font-size: 12px; color: #8a8f98; font-weight: 600; white-space: nowrap; }
+        .no-price-badge { font-size: 12px; color: #6b7280; font-weight: 600; white-space: nowrap; }
         .price-unit { font-size: 13px; color: #666; }
         .station-address { color: #666; font-size: 13px; margin: 6px 0 10px; }
         .station-muni { font-size: 12px; color: #888; margin-bottom: 10px; }
@@ -282,16 +322,16 @@
             padding: 3px 4px; border-radius: 50%; border: 2px solid #fff;
             box-shadow: 0 1px 4px rgba(0,0,0,.4);
         }
-        .ev-pin.ev-available { background: #1faa4b; }
-        .ev-pin.ev-busy { background: #dc3545; }
+        .ev-pin.ev-available { background: #15803d; }
+        .ev-pin.ev-busy { background: #c22333; }
         .ev-pin.ev-down { background: #6b7280; }
         .ev-pin.ev-unknown { background: #9aa0a6; }
         .ev-status {
             display: inline-block; margin-bottom: 6px; font-size: 11px; font-weight: 700;
             padding: 2px 8px; border-radius: 6px; background: #f1f3f4;
         }
-        .ev-status.ev-available { color: #1faa4b; background: #e9f7ee; }
-        .ev-status.ev-busy { color: #dc3545; background: #fdecee; }
+        .ev-status.ev-available { color: #15803d; background: #e9f7ee; }
+        .ev-status.ev-busy { color: #c22333; background: #fdecee; }
         .ev-status.ev-down, .ev-status.ev-unknown { color: #6b7280; }
         .price-pin {
             position: relative;
@@ -301,8 +341,8 @@
         }
         .pin-fav { position: absolute; top: -9px; right: -7px; font-size: 13px; color: #f5b301;
             line-height: 1; text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff; pointer-events: none; }
-        .price-pin.cheap { background: #1faa4b; }
-        .price-pin.dear { background: #dc3545; }
+        .price-pin.cheap { background: #15803d; }
+        .price-pin.dear { background: #c22333; }
         .price-pin.noprice { background: #9aa0a6; }
         .price-pin.approx { border-style: dashed; opacity: 0.8; }
         .price-pin.disc { box-shadow: 0 0 0 2px #1b9e5a, 0 1px 4px rgba(0,0,0,.4); }  /* discounted (loyalty) price */
@@ -353,7 +393,7 @@
         .tool-card input[type=file] { padding: 7px 9px; font-size: 13px; }
         .tool-card input:focus, .tool-card select:focus, .tool-card textarea:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.12); }
         .tool-err { margin-top: 8px; color: #c2453a; font-weight: 600; font-size: 13px; }
-        .act-btn.install { background: #eafaf0; border-color: #b6e6c8; color: #14914e; font-weight: 600; }
+        .act-btn.install { background: #eafaf0; border-color: #b6e6c8; color: #15803d; font-weight: 600; }
         /* Price-history chart — centred highlighted strip so the trend stands out */
         .trend-open { display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%;
             margin-top: 10px; padding: 8px 6px; background: #eaf1ff; border: none; border-radius: 8px;
@@ -371,7 +411,7 @@
         /* report-price modal */
         .tool-label { display: block; font-size: 12px; color: #6b7480; margin: 8px 0 4px; }
         .report-disc { margin-top: 12px; }
-        .rep-disc { color: #14914e; font-weight: 700; white-space: nowrap; }
+        .rep-disc { color: #15803d; font-weight: 700; white-space: nowrap; }
         .chart-tog-row { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
         .chart-tog { flex: 1; min-width: 64px; padding: 7px 6px; border: 1px solid #d6e4ff; background: #f4f8ff; color: #1c4e8a;
             border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }
@@ -379,19 +419,19 @@
         .chart-tog.sel { background: #007AFF; border-color: #007AFF; color: #fff; }
         .chart-stat { font-size: 13px; color: #2b3138; margin: 4px 0 8px; }
         .chart-stat .up { color: #b3261e; font-weight: 700; }
-        .chart-stat .down { color: #14914e; font-weight: 700; }
-        .chart-over { color: #9aa0a8; }
+        .chart-stat .down { color: #15803d; font-weight: 700; }
+        .chart-over { color: #6b7280; }
         .chart-wrap { width: 100%; }
         .price-chart { width: 100%; height: auto; display: block; }
         .chart-legend { font-size: 11.5px; color: #7a7f87; margin-top: 8px; display: flex; align-items: center; }
         .chart-legend .lg-band { display: inline-block; width: 14px; height: 10px; border-radius: 2px; opacity: .18; margin-right: 4px; }
         .chart-legend .lg-line { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 4px; }
-        .chart-empty { padding: 30px 10px; text-align: center; color: #9aa0a8; font-size: 13px; }
+        .chart-empty { padding: 30px 10px; text-align: center; color: #6b7280; font-size: 13px; }
         /* EV status freshness + user problem-reports */
         .ev-stale { font-size: 11px; color: #b07818; white-space: nowrap; }
         .ev-user-note { margin-top: 6px; font-size: 12.5px; color: #c2453a; font-weight: 600; }
         .ev-user-note.busy { color: #b3261e; }
-        .ev-user-note.ok { color: #14914e; }
+        .ev-user-note.ok { color: #15803d; }
         /* User notes sit right-aligned UNDER the €/kWh price where the eye lands */
         .ev-price-col { text-align: right; max-width: 55%; }
         .ev-price-col .ev-user-note, .ev-price-col .report-line { margin-top: 3px; font-size: 12px; }
@@ -401,10 +441,10 @@
             font-size: 12px; font-weight: 600; }
         .evavail-btn { border: 1px dashed #7fa8d4; background: #f0f6ff; color: #1c4e8a; }
         .evprice-btn { border: 1px dashed #9b7fd4; background: #f7f3ff; color: #4a2f7a; }
-        .evst-btn.ok { border: 1px dashed #6fbf8a; background: #eafaf0; color: #14914e; }
+        .evst-btn.ok { border: 1px dashed #6fbf8a; background: #eafaf0; color: #15803d; }
         .evst-btn.busy { border: 1px dashed #e0a29d; background: #fdf0ef; color: #b3261e; }
         .evst-btn.broken { border: 1px dashed #a8adb5; background: #f2f3f5; color: #3c4147; }
-        .ev-disclaimer { font-size: 11.5px; color: #9aa0a8; }
+        .ev-disclaimer { font-size: 11.5px; color: #6b7280; }
         /* iOS "Add to Home Screen" guide */
         .ios-intro { font-size: 14px; color: #2b3138; margin-bottom: 4px; }
         .ios-steps { list-style: none; margin: 6px 0 0; padding: 0; }
@@ -435,29 +475,29 @@
         .help-item { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; line-height: 1.35; border-top: 1px solid #f0f4f9; }
         .help-item:first-of-type { border-top: none; }
         .help-item .hi { flex: none; width: 22px; text-align: center; }
-        .help-x { float: right; background: none; border: none; color: #8a929c; font-size: 15px; line-height: 1; cursor: pointer; padding: 0; }
+        .help-x { float: right; background: none; border: none; color: #6b7280; font-size: 16px; line-height: 1; cursor: pointer; padding: 8px; margin: -8px -8px 0 0; }
         @media (prefers-reduced-motion: reduce) { .help-banner { transition: none; } }
         .info-content { background: #fff8e1; border: 1px solid #ffe0a3; border-radius: 0 12px 12px 0;
             padding: 11px 12px; box-shadow: 4px 5px 20px rgba(0,0,0,0.22); font-size: 12.5px; color: #7a5b00;
             line-height: 1.5; display: flex; gap: 8px; align-items: flex-start; white-space: pre-line; }
-        .info-x { flex: none; background: none; border: none; color: #b07818; font-size: 14px; line-height: 1; cursor: pointer; padding: 0 0 0 2px; }
+        .info-x { flex: none; background: none; border: none; color: #b07818; font-size: 15px; line-height: 1; cursor: pointer; padding: 8px; margin: -8px -6px -8px 0; }
         @media (prefers-reduced-motion: reduce) { .info-banner { transition: none; } }
         .tool-btn { box-sizing: border-box; margin-top: 4px; width: 100%; padding: 10px; border: none; border-radius: 8px; background: #007AFF; color: #fff; font-size: 14px; font-weight: 600; font-family: inherit; line-height: 1.2; cursor: pointer; text-align: center; }
-        .tool-btn.save { background: #20b268; margin-top: 10px; }
+        .tool-btn.save { background: #1e7e34; margin-top: 10px; }
         .tool-btn.ghost { background: #eef1f5; color: #1b2430; margin-top: 10px; }
         .tool-btn.small { width: auto; padding: 9px 14px; margin-top: 0; }
         .tool-out { margin-top: 12px; }
         .res-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px solid #eef0f3; font-size: 13.5px; color: #55606d; }
         .res-row:last-child { border-bottom: none; }
         .res-row b { color: #1b2430; font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-        .res-row small { color: #8a929c; font-weight: 400; }
+        .res-row small { color: #6b7280; font-weight: 400; }
         .res-row.good b { color: #1b9e5a; }
         .res-row.big { padding-top: 10px; } .res-row.big b { font-size: 19px; }
         .res-row.bad b { color: #c2453a; }
         .verdict-line { margin-top: 8px; text-align: center; font-weight: 650; font-size: 15px; padding: 8px; border-radius: 8px; }
         .verdict-line.good { background: #e9f7ef; color: #1b9e5a; }
         .verdict-line.bad { background: #fbeeec; color: #c2453a; }
-        .tool-hint { font-size: 13px; color: #8a929c; padding: 6px 0; }
+        .tool-hint { font-size: 13px; color: #6b7280; padding: 6px 0; }
         .tool-ok { margin-top: 8px; color: #1b9e5a; font-weight: 600; font-size: 13px; }
         /* --- Loyalty-card effective price --- */
         .loyalty-line { margin-top: 3px; font-size: 12px; font-weight: 600; color: #1b9e5a; white-space: nowrap; text-align: right; }
@@ -471,11 +511,11 @@
         .loyalty-preview { font-size: 11.5px; color: #55606d; padding-left: 1px; font-variant-numeric: tabular-nums; }
         .loyalty-preview:empty { display: none; }
         .loyalty-preview b { color: #1b9e5a; }
-        .loyalty-row-note { font-size: 11.5px; color: #8a929c; padding-left: 1px; line-height: 1.35; }
+        .loyalty-row-note { font-size: 11.5px; color: #6b7280; padding-left: 1px; line-height: 1.35; }
         .loyalty-row { display: flex; align-items: center; gap: 8px; }
         .loyalty-net { flex: 1; min-width: 0; font-size: 13px; color: #55606d; }
         .tool-card .loyalty-row input { width: 84px; flex: none; text-align: right; margin: 0; }
-        .loyalty-unit { width: 28px; font-size: 12px; color: #8a929c; }
+        .loyalty-unit { width: 28px; font-size: 12px; color: #6b7280; }
         .loyalty-add { margin-top: 10px; width: 100%; font-size: 14px; padding: 9px 11px; border: 1px solid #d3d7dd; border-radius: 8px; background: #fff; color: #1b2430; }
         .loyalty-disclaimer { margin-top: 12px; margin-bottom: 0; }
         .log-add-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
@@ -488,7 +528,13 @@
         .log-row { padding: 8px 0; border-bottom: 1px solid #eef0f3; }
         .log-main { font-size: 13px; color: #1b2430; }
         .log-sub { font-size: 12px; color: #6b7480; display: flex; align-items: center; gap: 6px; margin-top: 2px; }
-        .log-del { margin-left: auto; border: none; background: #f3eded; color: #c2453a; width: 22px; height: 22px; border-radius: 50%; cursor: pointer; font-size: 12px; }
+        .log-del { margin-left: auto; border: none; background: #f3eded; color: #c2453a; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 13px; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .user-dot { animation: none !important; }
+            .station-card.flash { animation: none !important; background: #fff6d6; }
+            .kk-toast { transition: opacity .25s !important; }
+        }
     </style>
 </head>
 <body>
@@ -497,49 +543,56 @@
         <noscript><p style="padding:16px;text-align:center;color:#333">Fuelis rodo oficialias LEA degalų kainas Lietuvos degalinėse — benziną, dyzeliną ir dujas su interaktyviu žemėlapiu, artimiausių ir pigiausių degalinių paieška bei EV įkrovimo stotelėmis. Programai veikti reikalingas JavaScript.</p></noscript>
         <div class="change-banner" id="change-banner" style="display:none"></div>
 
-        <div class="controls">
+        <header class="controls">
             <div class="topbar">
                 <div class="action-bar" id="action-bar"></div>
                 <div class="lang-switcher" id="lang-switcher"></div>
             </div>
 
             <div class="fuel-type-selector">
-                <button class="fuel-btn active" id="btn-petrol95" onclick="selectFuel('petrol95')" data-i18n="btn_petrol95">⛽ Benzinas 95</button>
-                <button class="fuel-btn" id="btn-diesel" onclick="selectFuel('diesel')" data-i18n="btn_diesel">🚛 Dyzelinas</button>
-                <button class="fuel-btn" id="btn-lpg" onclick="selectFuel('lpg')" data-i18n="btn_lpg">🔥 Dujos</button>
-                <button class="fuel-btn ev" id="btn-ev" onclick="selectFuel('ev')">⚡ EV</button>
+                <button class="fuel-btn active" aria-pressed="true" id="btn-petrol95" onclick="selectFuel('petrol95')" data-i18n="btn_petrol95">⛽ Benzinas 95</button>
+                <button class="fuel-btn" aria-pressed="false" id="btn-diesel" onclick="selectFuel('diesel')" data-i18n="btn_diesel">🚛 Dyzelinas</button>
+                <button class="fuel-btn" aria-pressed="false" id="btn-lpg" onclick="selectFuel('lpg')" data-i18n="btn_lpg">🔥 Dujos</button>
+                <button class="fuel-btn ev" aria-pressed="false" id="btn-ev" onclick="selectFuel('ev')">⚡ EV</button>
             </div>
 
             <div class="view-toggle">
-                <button class="view-btn active" id="view-list" onclick="setView('list')" data-i18n="view_list">📋 Sąrašas</button>
-                <button class="view-btn" id="view-map" onclick="setView('map')" data-i18n="view_map">🗺️ Žemėlapis</button>
+                <button class="view-btn active" aria-pressed="true" id="view-list" onclick="setView('list')" data-i18n="view_list">📋 Sąrašas</button>
+                <button class="view-btn" aria-pressed="false" id="view-map" onclick="setView('map')" data-i18n="view_map">🗺️ Žemėlapis</button>
             </div>
 
             <button class="locate-btn" id="locate-btn" onclick="locate()">📍 Rasti artimiausias prie manęs</button>
 
             <div class="filter-row">
-                <select id="muni-select" onchange="render()"><option value="">Visos savivaldybės</option></select>
-                <input class="search-input" id="search" type="search" enterkeyhint="search" placeholder="Ieškoti (tinklas, adresas)…" data-i18n-ph="search_ph" oninput="onSearchInput()"
+                <select id="muni-select" aria-label="Savivaldybės filtras" data-i18n-aria="muni_label" onchange="render()"><option value="">Visos savivaldybės</option></select>
+                <input class="search-input" id="search" type="search" aria-label="Ieškoti" data-i18n-aria="search_ph" enterkeyhint="search" placeholder="Ieškoti (tinklas, adresas)…" data-i18n-ph="search_ph" oninput="onSearchInput()"
                        onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur();}">
             </div>
             <div class="sort-row">
                 <span class="sort-label" data-i18n="sort_label">Rūšiuoti:</span>
-                <button class="sort-btn active" id="sort-asc" onclick="setSort('asc')" data-i18n="sort_cheap">💰 Pigiausios</button>
-                <button class="sort-btn" id="sort-desc" onclick="setSort('desc')" data-i18n="sort_dear">Brangiausios</button>
-                <button class="sort-btn" id="sort-dist" onclick="setSort('dist')" data-i18n="sort_near" disabled>📍 Arčiausios</button>
+                <button class="sort-btn active" aria-pressed="true" id="sort-asc" onclick="setSort('asc')" data-i18n="sort_cheap">💰 Pigiausios</button>
+                <button class="sort-btn" aria-pressed="false" id="sort-desc" onclick="setSort('desc')" data-i18n="sort_dear">Brangiausios</button>
+                <button class="sort-btn" aria-pressed="false" id="sort-dist" onclick="setSort('dist')" data-i18n="sort_near" disabled>📍 Arčiausios</button>
             </div>
             <div class="radius-row" id="radius-row" style="display:none">
                 <span class="sort-label" data-i18n="radius_label">Atstumas:</span>
-                <button class="radius-btn" data-km="2" onclick="setRadius(2)">2 km</button>
-                <button class="radius-btn" data-km="5" onclick="setRadius(5)">5 km</button>
-                <button class="radius-btn" data-km="10" onclick="setRadius(10)">10 km</button>
-                <button class="radius-btn" data-km="25" onclick="setRadius(25)">25 km</button>
-                <button class="radius-btn active" data-km="0" onclick="setRadius(0)">∞</button>
+                <button class="radius-btn" aria-pressed="false" data-km="2" onclick="setRadius(2)">2 km</button>
+                <button class="radius-btn" aria-pressed="false" data-km="5" onclick="setRadius(5)">5 km</button>
+                <button class="radius-btn" aria-pressed="false" data-km="10" onclick="setRadius(10)">10 km</button>
+                <button class="radius-btn" aria-pressed="false" data-km="25" onclick="setRadius(25)">25 km</button>
+                <button class="radius-btn active" aria-pressed="true" data-km="0" onclick="setRadius(0)">∞</button>
             </div>
-        </div>
+        </header>
+
+        <main>
+        <!-- Compact headline strip: per-fuel national averages + freshness date,
+             ABOVE the list (the full table + trend stays below, but the headline
+             numbers must not require scrolling past ~600 cards to find). -->
+        <div id="summary-strip" class="summary-strip" style="display:none"></div>
+        <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices"><p>Atnaujinta 2026-07-16: dyzelinas vid. €1.864, benzinas 95 vid. €1.731, dujos €0.759 — 806 degalinės. <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
 
         <div id="list-view">
-            <div class="stations-container" id="stations-list">
+            <div class="stations-container" id="stations-list" role="list">
                 <div class="msg">Kraunama…</div>
             </div>
         </div>
@@ -551,16 +604,17 @@
         <div class="summary" id="summary"></div>
 
         <div class="oil-footer" id="oil-footer" style="display:none"></div>
+        </main>
 
-        <div class="footer">
+        <footer class="footer">
             <p id="source-line">Kraunama oficialūs duomenys…</p>
             <p id="updated-line"></p>
             <p id="visit-count" style="display:none"></p>
-        </div>
+            <p><a href="privatumas.html" data-i18n="privacy" style="color:#6b7280;font-size:12px">Privatumas</a></p>
+        </footer>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
     <script src="i18n.js"></script>
     <script src="app.js"></script>
     <script>
@@ -573,65 +627,65 @@
           navigator.serviceWorker.register("service-worker.js").catch(() => {}));
       }
     </script>
-    <div id="tools-modal" class="tools-modal" onclick="if(event.target===this)closeTools()">
+    <div id="tools-modal" class="tools-modal" role="dialog" aria-modal="true" aria-labelledby="tools-title" onclick="if(event.target===this)closeTools()">
       <div class="tools-sheet">
         <div class="tools-head">
-          <span id="tools-title">🧮</span>
-          <button type="button" class="tools-close" onclick="closeTools()" aria-label="Close">✕</button>
+          <span id="tools-title" role="heading" aria-level="2">🧮</span>
+          <button type="button" class="tools-close" onclick="closeTools()" aria-label="Uždaryti" data-i18n-aria="close">✕</button>
         </div>
         <div class="tools-body" id="tools-body"></div>
       </div>
     </div>
-    <div id="disc-modal" class="tools-modal" onclick="if(event.target===this)closeDiscounts()">
+    <div id="disc-modal" class="tools-modal" role="dialog" aria-modal="true" aria-labelledby="disc-title" onclick="if(event.target===this)closeDiscounts()">
       <div class="tools-sheet">
         <div class="tools-head">
-          <span id="disc-title">💳</span>
-          <button type="button" class="tools-close" onclick="closeDiscounts()" aria-label="Close">✕</button>
+          <span id="disc-title" role="heading" aria-level="2">💳</span>
+          <button type="button" class="tools-close" onclick="closeDiscounts()" aria-label="Uždaryti" data-i18n-aria="close">✕</button>
         </div>
         <div class="tools-body" id="disc-body"></div>
       </div>
     </div>
-    <div id="contact-modal" class="tools-modal" onclick="if(event.target===this)closeContact()">
+    <div id="contact-modal" class="tools-modal" role="dialog" aria-modal="true" aria-labelledby="contact-title" onclick="if(event.target===this)closeContact()">
       <div class="tools-sheet">
         <div class="tools-head">
-          <span id="contact-title">✉️</span>
-          <button type="button" class="tools-close" onclick="closeContact()" aria-label="Close">✕</button>
+          <span id="contact-title" role="heading" aria-level="2">✉️</span>
+          <button type="button" class="tools-close" onclick="closeContact()" aria-label="Uždaryti" data-i18n-aria="close">✕</button>
         </div>
         <div class="tools-body" id="contact-body"></div>
       </div>
     </div>
-    <div id="chart-modal" class="tools-modal" onclick="if(event.target===this)closeChart()">
+    <div id="chart-modal" class="tools-modal" role="dialog" aria-modal="true" aria-labelledby="chart-title" onclick="if(event.target===this)closeChart()">
       <div class="tools-sheet">
         <div class="tools-head">
-          <span id="chart-title">📈</span>
-          <button type="button" class="tools-close" onclick="closeChart()" aria-label="Close">✕</button>
+          <span id="chart-title" role="heading" aria-level="2">📈</span>
+          <button type="button" class="tools-close" onclick="closeChart()" aria-label="Uždaryti" data-i18n-aria="close">✕</button>
         </div>
         <div class="tools-body" id="chart-body"></div>
       </div>
     </div>
-    <div id="ios-modal" class="tools-modal" onclick="if(event.target===this)closeIosInstall()">
+    <div id="ios-modal" class="tools-modal" role="dialog" aria-modal="true" aria-labelledby="ios-title" onclick="if(event.target===this)closeIosInstall()">
       <div class="tools-sheet">
         <div class="tools-head">
-          <span id="ios-title">📲</span>
-          <button type="button" class="tools-close" onclick="closeIosInstall()" aria-label="Close">✕</button>
+          <span id="ios-title" role="heading" aria-level="2">📲</span>
+          <button type="button" class="tools-close" onclick="closeIosInstall()" aria-label="Uždaryti" data-i18n-aria="close">✕</button>
         </div>
         <div class="tools-body" id="ios-body"></div>
       </div>
     </div>
-    <div id="report-modal" class="tools-modal" onclick="if(event.target===this)closeReport()">
+    <div id="report-modal" class="tools-modal" role="dialog" aria-modal="true" aria-labelledby="report-title" onclick="if(event.target===this)closeReport()">
       <div class="tools-sheet">
         <div class="tools-head">
-          <span id="report-title">🗣️</span>
-          <button type="button" class="tools-close" onclick="closeReport()" aria-label="Close">✕</button>
+          <span id="report-title" role="heading" aria-level="2">🗣️</span>
+          <button type="button" class="tools-close" onclick="closeReport()" aria-label="Uždaryti" data-i18n-aria="close">✕</button>
         </div>
         <div class="tools-body" id="report-body"></div>
       </div>
     </div>
     <button id="info-handle" class="info-handle" onclick="toggleInfoBanner()" aria-label="Info">ℹ️</button>
     <aside id="info-banner" class="info-banner">
-      <div class="info-content"><span id="info-banner-text"></span><button class="info-x" onclick="closeInfoBanner()" aria-label="Close">✕</button></div>
+      <div class="info-content"><span id="info-banner-text"></span><button class="info-x" onclick="closeInfoBanner()" aria-label="Uždaryti" data-i18n-aria="close">✕</button></div>
     </aside>
-    <button id="help-handle" class="help-handle" onclick="toggleHelp()" aria-label="Help">?</button>
+    <button id="help-handle" class="help-handle" onclick="toggleHelp()" aria-label="Pagalba" data-i18n-aria="help_title">?</button>
     <aside id="help-banner" class="help-banner"><div class="help-content" id="help-content"></div></aside>
     <iframe name="ff_iframe" title="form target" style="display:none" aria-hidden="true"></iframe>
 </body>
