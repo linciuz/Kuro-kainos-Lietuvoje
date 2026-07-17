@@ -228,6 +228,21 @@ export default {
       return json(raw ? JSON.parse(raw) : { never_ran: true });
     }
 
+    // Scheduler dead-man readout: last cron fire + last GitHub dispatch outcome.
+    // One curl answers "is Cloudflare's cron firing?" and "is GH_TOKEN alive?" —
+    // the 2026-07-17 incident (both schedulers quiet overnight, site silently
+    // a day stale) took manual forensics to even notice.
+    if (url.pathname === "/health" && req.method === "GET") {
+      const [cron, poke] = await Promise.all([
+        env.REPORTS.get("viada_probe"), env.REPORTS.get("last_poke"),
+      ]);
+      return json({
+        now: new Date().toISOString(),
+        last_cron_fire: cron ? JSON.parse(cron).ts : null,
+        last_dispatch: poke ? JSON.parse(poke) : null,
+      });
+    }
+
     if (url.pathname === "/ev-status" && req.method === "GET") {
       const cache = caches.default;
       // Fixed cache key (ignore ?query) — otherwise a ?_=random cache-buster
@@ -397,20 +412,32 @@ export default {
     // run that this poke triggers already finds today's pages in /proxy/viada.
     ctx.waitUntil((async () => {
       try { await refreshViadaCache(env); } catch (e) { /* never block the poke */ }
-      if (!env.GH_TOKEN) return;
-      await fetch(
-        "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
-        {
-          method: "POST",
-          headers: {
-            "Authorization": "Bearer " + env.GH_TOKEN,
-            "Accept": "application/vnd.github+json",
-            "Content-Type": "application/json",
-            "User-Agent": "fuelis-cron-worker",
-          },
-          body: JSON.stringify({ ref: "main" }),
-        },
-      );
+      // Record the dispatch OUTCOME (see /health): a 401 from an expired
+      // GH_TOKEN used to vanish silently while the pipeline starved.
+      const rec = { ts: new Date().toISOString(), status: null, error: null };
+      try {
+        if (!env.GH_TOKEN) {
+          rec.error = "GH_TOKEN secret not set";
+        } else {
+          const r = await fetch(
+            "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
+            {
+              method: "POST",
+              headers: {
+                "Authorization": "Bearer " + env.GH_TOKEN,
+                "Accept": "application/vnd.github+json",
+                "Content-Type": "application/json",
+                "User-Agent": "fuelis-cron-worker",
+              },
+              body: JSON.stringify({ ref: "main" }),
+            },
+          );
+          rec.status = r.status;   // 204 = accepted; 401/403 = token dead
+        }
+      } catch (e) {
+        rec.error = String(e && e.message || e).slice(0, 120);
+      }
+      try { await env.REPORTS.put("last_poke", JSON.stringify(rec)); } catch (e) {}
     })());
   },
 };
