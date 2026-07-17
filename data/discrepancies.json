@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T22:00:38Z",
+  "generated": "2026-07-17T07:40:15Z",
   "lea_date": "2026-07-16",
   "threshold": 0.015,
   "sources": [
@@ -13,13 +13,13 @@
       ],
       "fuel": "petrol95",
       "lea_min": 1.679,
-      "live": 1.699,
-      "delta": 0.02,
+      "live": 1.694,
+      "delta": 0.015,
       "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
-      "stated_date": "Liepos 16"
+      "stated_date": "Liepos 17"
     },
     {
       "chain": "Circle K",
@@ -28,13 +28,13 @@
       ],
       "fuel": "diesel",
       "lea_min": 1.809,
-      "live": 1.839,
-      "delta": 0.03,
+      "live": 1.864,
+      "delta": 0.055,
       "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
-      "stated_date": "Liepos 16"
+      "stated_date": "Liepos 17"
     }
   ]
 }
