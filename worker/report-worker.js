@@ -65,6 +65,62 @@ const VIADA_HEADERS = {
   "Accept-Language": "lt",
 };
 
+// Fire the price workflow and record the outcome (see /health). `source` says
+// which trigger asked — cron or the traffic dead-man — for diagnosability.
+async function dispatchPriceRun(env, source) {
+  const rec = { ts: new Date().toISOString(), source, status: null, error: null };
+  try {
+    if (!env.GH_TOKEN) {
+      rec.error = "GH_TOKEN secret not set";
+    } else {
+      const r = await fetch(
+        "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
+        {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer " + env.GH_TOKEN,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+            "User-Agent": "fuelis-cron-worker",
+          },
+          body: JSON.stringify({ ref: "main" }),
+        },
+      );
+      rec.status = r.status;   // 204 = accepted; 401/403 = token dead
+    }
+  } catch (e) {
+    rec.error = String(e && e.message || e).slice(0, 120);
+  }
+  try { await env.REPORTS.put("last_poke", JSON.stringify(rec)); } catch (e) {}
+  return rec;
+}
+
+// --- traffic-driven dead-man scheduler --------------------------------------
+// 2026-07-17: Cloudflare's cron went silent overnight AND GitHub's backup
+// crons skipped — nothing ran, nothing alarmed. Third, structurally different
+// trigger: ANY app request during the LEA business window may fire the poke
+// when the last dispatch is >30 min old. As long as one visitor (or uptime
+// bot) opens the app, prices update even with every cron dead.
+async function maybeTrafficPoke(env, ctx) {
+  const now = new Date();
+  const dow = now.getUTCDay();
+  const h = now.getUTCHours();
+  if (dow === 0 || dow === 6 || h < 4 || h > 13) return;   // Mon-Fri ~07:00-16:59 LT
+  // Cheap per-edge debounce so a burst of visitors doesn't stampede KV.
+  const guard = new Request("https://kk-reports.internal/__poke-guard");
+  if (await caches.default.match(guard)) return;
+  ctx.waitUntil((async () => {
+    try {
+      const raw = await env.REPORTS.get("last_poke");
+      const last = raw ? Date.parse(JSON.parse(raw).ts) : 0;
+      if (Date.now() - last < 30 * 60 * 1000) return;
+      await dispatchPriceRun(env, "traffic-deadman");
+    } catch (e) { /* best-effort */ }
+  })());
+  const resp = new Response("1", { headers: { "Cache-Control": "max-age=300" } });
+  ctx.waitUntil(caches.default.put(guard, resp));
+}
+
 // Cron-context refresh: scheduled() subrequests carry no visitor identity, so
 // (unlike the request-context pass-through) viada.lt's WAF evaluates Cloudflare
 // itself, not a datacenter caller. KV-write economy: HTML written only when it
@@ -168,6 +224,10 @@ export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
+
+    // Traffic-driven dead-man: app visits keep the price pipeline alive even
+    // when every cron is dead (never blocks or fails the actual request).
+    try { await maybeTrafficPoke(env, ctx); } catch (e) {}
 
     // Real per-IP rate limit on writes (native Workers binding; guarded so the
     // Worker still runs if the binding is ever absent). 30 write-POSTs / 60s / IP.
@@ -412,32 +472,7 @@ export default {
     // run that this poke triggers already finds today's pages in /proxy/viada.
     ctx.waitUntil((async () => {
       try { await refreshViadaCache(env); } catch (e) { /* never block the poke */ }
-      // Record the dispatch OUTCOME (see /health): a 401 from an expired
-      // GH_TOKEN used to vanish silently while the pipeline starved.
-      const rec = { ts: new Date().toISOString(), status: null, error: null };
-      try {
-        if (!env.GH_TOKEN) {
-          rec.error = "GH_TOKEN secret not set";
-        } else {
-          const r = await fetch(
-            "https://api.github.com/repos/linciuz/Kuro-kainos-Lietuvoje/actions/workflows/update-prices.yml/dispatches",
-            {
-              method: "POST",
-              headers: {
-                "Authorization": "Bearer " + env.GH_TOKEN,
-                "Accept": "application/vnd.github+json",
-                "Content-Type": "application/json",
-                "User-Agent": "fuelis-cron-worker",
-              },
-              body: JSON.stringify({ ref: "main" }),
-            },
-          );
-          rec.status = r.status;   // 204 = accepted; 401/403 = token dead
-        }
-      } catch (e) {
-        rec.error = String(e && e.message || e).slice(0, 120);
-      }
-      try { await env.REPORTS.put("last_poke", JSON.stringify(rec)); } catch (e) {}
+      await dispatchPriceRun(env, "cron");
     })());
   },
 };
