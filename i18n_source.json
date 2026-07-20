@@ -2652,17 +2652,17 @@
     "no": "App/kort −3.5 ¢/L; onsdagens «rabattdag» −7 ¢/L."
   },
   "loyalty_note_emsi": {
-    "lt": "Studentams su pažymėjimu −1 ¢/L; kitiems paprastai nuolaidos nėra.",
-    "en": "−1 ¢/L for students with an ID; usually none otherwise.",
-    "lv": "Studentiem ar apliecību −1 ¢/L; citādi parasti nav.",
-    "et": "Õpilas- või tudengipiletiga −1 ¢/L; muidu tavaliselt soodustust pole.",
-    "uk": "−1 ¢/L студентам за пред’явленням посвідчення; зазвичай інших знижок немає.",
-    "ru": "−1 ¢/L для студентов по студенческому билету; в остальных случаях скидки обычно нет.",
-    "pl": "Dla studentów z legitymacją −1 ¢/L; dla pozostałych zwykle brak zniżki.",
-    "de": "−1 ¢/L für Studierende mit Ausweis; sonst meist keine.",
-    "sv": "−1 ¢/L för studenter med studentkort; annars vanligtvis ingen rabatt.",
-    "fi": "Opiskelijoille opiskelijakortilla −1 ¢/L; muille yleensä ei alennusta.",
-    "no": "−1 ¢/L for studenter med studentbevis; ellers vanligvis ingen."
+    "lt": "Nauja Emsi lojalumo kortelė — −3 ¢/L; studentams su pažymėjimu −1 ¢/L.",
+    "en": "New Emsi loyalty card — −3 ¢/L; students with an ID −1 ¢/L.",
+    "lv": "Jaunā Emsi lojalitātes karte — −3 ¢/L; studentiem ar apliecību −1 ¢/L.",
+    "et": "Uus Emsi kliendikaart — −3 ¢/L; tudengitele (ID-ga) −1 ¢/L.",
+    "uk": "Нова картка лояльності Emsi — −3 ¢/л; студентам із посвідченням −1 ¢/л.",
+    "ru": "Новая карта лояльности Emsi — −3 ¢/л; студентам с удостоверением −1 ¢/л.",
+    "pl": "Nowa karta lojalnościowa Emsi — −3 ¢/L; studenci z legitymacją −1 ¢/L.",
+    "de": "Neue Emsi-Kundenkarte — −3 ¢/L; Studierende mit Ausweis −1 ¢/L.",
+    "sv": "Nytt Emsi-lojalitetskort — −3 ¢/L; studenter med leg −1 ¢/L.",
+    "fi": "Uusi Emsi-kanta-asiakaskortti — −3 ¢/L; opiskelijoille (todistuksella) −1 ¢/L.",
+    "no": "Nytt Emsi-fordelskort — −3 ¢/L; studenter med bevis −1 ¢/L."
   },
   "loyalty_wed_today": {
     "lt": "ŠIANDIEN „Super trečiadienis“ —",

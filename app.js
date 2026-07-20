@@ -92,6 +92,7 @@ const LOYALTY_NETWORKS = [
     ["Neste", "UAB Neste Lietuva"],
     ["Baltic Petroleum", "UAB Baltic Petroleum"],
     ["Orlen", "AB Orlen Baltics Retail"],
+    ["Emsi", "UAB Emsi"],
 ];
 
 // Typical everyday ¢/L discount per network — used ONLY as a greyed-out input
@@ -104,6 +105,7 @@ const LOYALTY_TYPICAL = {
     "UAB Viada LT": "3",             // ViadaPLUS tiered −3 ct/l (≤70 L/mo) → −3.5 (>70 L)
     "UAB Neste Lietuva": "3.5",      // Neste card −3.5 ct/l LT; Wed "nuolaidadienis" up to −7
     "UAB Baltic Petroleum": "0.5",   // CASH PRICE+ app ≈ half a cent (e.g. 1.569 → 1.564); card is −3 at regular stations
+    "UAB Emsi": "3",                 // new Emsi loyalty card −3 ct/L (launched ~2026-07, user-confirmed)
 };
 
 // Optional per-network condition note shown under the config row (i18n key) —
