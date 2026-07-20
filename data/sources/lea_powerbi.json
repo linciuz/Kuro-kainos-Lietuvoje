@@ -1,5 +1,5 @@
 {
-  "count": 845,
+  "count": 846,
   "stations": [
     {
       "company": "AB Orlen Baltics Retail",
@@ -1516,6 +1516,16 @@
       "company": "UAB Baltic Petroleum",
       "municipality": "Kauno r. sav.",
       "address": "Ringaudų k., Gėlių g. 1A, 53335",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Baltic Petroleum",
+      "municipality": "Kalvarijos sav.",
+      "address": "Salaperaugio k., Europos g. 9, 69286",
       "fuels": [
         "petrol95",
         "diesel",
