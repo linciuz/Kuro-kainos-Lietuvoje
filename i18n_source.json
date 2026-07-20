@@ -2652,17 +2652,17 @@
     "no": "App/kort −3.5 ¢/L; onsdagens «rabattdag» −7 ¢/L."
   },
   "loyalty_note_emsi": {
-    "lt": "Nauja Emsi lojalumo kortelė — −3 ¢/L; studentams su pažymėjimu −1 ¢/L.",
-    "en": "New Emsi loyalty card — −3 ¢/L; students with an ID −1 ¢/L.",
-    "lv": "Jaunā Emsi lojalitātes karte — −3 ¢/L; studentiem ar apliecību −1 ¢/L.",
-    "et": "Uus Emsi kliendikaart — −3 ¢/L; tudengitele (ID-ga) −1 ¢/L.",
-    "uk": "Нова картка лояльності Emsi — −3 ¢/л; студентам із посвідченням −1 ¢/л.",
-    "ru": "Новая карта лояльности Emsi — −3 ¢/л; студентам с удостоверением −1 ¢/л.",
-    "pl": "Nowa karta lojalnościowa Emsi — −3 ¢/L; studenci z legitymacją −1 ¢/L.",
-    "de": "Neue Emsi-Kundenkarte — −3 ¢/L; Studierende mit Ausweis −1 ¢/L.",
-    "sv": "Nytt Emsi-lojalitetskort — −3 ¢/L; studenter med leg −1 ¢/L.",
-    "fi": "Uusi Emsi-kanta-asiakaskortti — −3 ¢/L; opiskelijoille (todistuksella) −1 ¢/L.",
-    "no": "Nytt Emsi-fordelskort — −3 ¢/L; studenter med bevis −1 ¢/L."
+    "lt": "Su Emsi kortele — −3 ¢/L.",
+    "en": "With the Emsi card — −3 ¢/L.",
+    "lv": "Ar Emsi karti — −3 ¢/L.",
+    "et": "Emsi kaardiga — −3 ¢/L.",
+    "uk": "З карткою Emsi — −3 ¢/л.",
+    "ru": "С картой Emsi — −3 ¢/л.",
+    "pl": "Z kartą Emsi — −3 ¢/L.",
+    "de": "Mit der Emsi-Karte — −3 ¢/L.",
+    "sv": "Med Emsi-kortet — −3 ¢/L.",
+    "fi": "Emsi-kortilla — −3 ¢/L.",
+    "no": "Med Emsi-kortet — −3 ¢/L."
   },
   "loyalty_wed_today": {
     "lt": "ŠIANDIEN „Super trečiadienis“ —",
