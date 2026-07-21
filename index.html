@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Oficialios degalų kainos 808 Lietuvos degalinių (2026-07-21): dyzelinas vid. €1.985, benzinas 95 vid. €1.831, dujos €0.759. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
+    <meta name="description" content="Oficialios degalų kainos 807 Lietuvos degalinių (2026-07-20): dyzelinas vid. €1.895, benzinas 95 vid. €1.732, dujos €0.757. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
     <title>Fuelis · Kuro kainos Lietuvoje — degalų kainos, žemėlapis, EV</title>
     <link rel="canonical" href="https://fuelis.lt/">
     <link rel="alternate" hreflang="x-default" href="https://fuelis.lt/">
@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Fuelis">
     <meta property="og:title" content="Fuelis · Kuro kainos Lietuvoje">
-    <meta property="og:description" content="Oficialios degalų kainos 808 Lietuvos degalinių (2026-07-21): dyzelinas vid. €1.985, benzinas 95 vid. €1.831, dujos €0.759. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
+    <meta property="og:description" content="Oficialios degalų kainos 807 Lietuvos degalinių (2026-07-20): dyzelinas vid. €1.895, benzinas 95 vid. €1.732, dujos €0.757. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
     <meta property="og:url" content="https://fuelis.lt/">
     <meta property="og:image" content="https://fuelis.lt/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -34,7 +34,7 @@
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fuelis · Kuro kainos Lietuvoje">
-    <meta name="twitter:description" content="Oficialios degalų kainos 808 Lietuvos degalinių (2026-07-21): dyzelinas vid. €1.985, benzinas 95 vid. €1.831, dujos €0.759. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
+    <meta name="twitter:description" content="Oficialios degalų kainos 807 Lietuvos degalinių (2026-07-20): dyzelinas vid. €1.895, benzinas 95 vid. €1.732, dujos €0.757. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.">
     <meta name="twitter:image" content="https://fuelis.lt/og-image.png">
     <!-- Structured data for Google rich results + AI search understanding -->
     <script type="application/ld+json">
@@ -116,17 +116,9 @@
             position: relative;
         }
         .act-btn::after { content: ""; position: absolute; inset: -9px 0; }
-        /* Headline strip above the list: tap a pill to switch fuel */
         /* Static crawler-readable price line (pipeline-injected); the app swaps
-           it for the live strip on boot. Same info, fresher — not cloaking. */
+           it for the live UI on boot. Same info, fresher — not cloaking. */
         .crawl-prices { padding: 8px 15px 0; background: #fff; font-size: 12.5px; color: #55606d; }
-        .summary-strip { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 10px 15px 0; background: #fff; }
-        .strip-pill { border: 1px solid #e2e6ec; background: #fff; border-radius: 16px; padding: 7px 11px;
-            font-size: 12.5px; cursor: pointer; color: #1b2430; font-family: inherit; min-height: 34px; line-height: 1.2; }
-        .strip-pill b { font-variant-numeric: tabular-nums; }
-        .strip-pill.active { border-color: #0062CC; background: #eef4ff; color: #0056b3; }
-        .strip-date { margin-left: auto; font-size: 11.5px; color: #6b7280; }
-        .strip-date.stale { color: #b3261e; font-weight: 700; }
         /* Big-city quick pick shown when geolocation is denied/unavailable */
         .city-pick { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 8px; font-size: 12.5px; color: #55606d; }
         .city-chip { border: 1px solid #cfe0f5; background: #f0f6ff; color: #1c4e8a; border-radius: 16px;
@@ -585,11 +577,7 @@
         </header>
 
         <main>
-        <!-- Compact headline strip: per-fuel national averages + freshness date,
-             ABOVE the list (the full table + trend stays below, but the headline
-             numbers must not require scrolling past ~600 cards to find). -->
-        <div id="summary-strip" class="summary-strip" style="display:none"></div>
-        <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices"><p>Atnaujinta 2026-07-21: dyzelinas vid. €1.985, benzinas 95 vid. €1.831, dujos €0.759 — 808 degalinės. <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
+        <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices"><p>Atnaujinta 2026-07-20: dyzelinas vid. €1.895, benzinas 95 vid. €1.732, dujos €0.757 — 807 degalinės. <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
 
         <div id="list-view">
             <div class="stations-container" id="stations-list" role="list">

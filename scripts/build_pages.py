@@ -206,8 +206,7 @@ def refresh_index_html(summary, updated, n_stations):
     if "FUELIS:STATIC-PRICES" in s:
         s = re.sub(r'<!-- FUELIS:STATIC-PRICES -->.*?<!-- /FUELIS:STATIC-PRICES -->', block, s, flags=re.S)
     else:
-        s = s.replace('<div id="summary-strip" class="summary-strip" style="display:none"></div>',
-                      '<div id="summary-strip" class="summary-strip" style="display:none"></div>\n        ' + block)
+        s = s.replace('<div id="list-view">', block + '\n\n        <div id="list-view">')
     open(p, "w", encoding="utf-8", newline="\n").write(s)
 
 

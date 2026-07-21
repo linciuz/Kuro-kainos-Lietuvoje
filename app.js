@@ -450,6 +450,7 @@ async function load() {
         }
     }
     dedupePricelessStations();
+    seedNewLoyaltyNetworks();   // a network added since the user enabled discounts joins once
     // EV data is heavy (~680 KB) — only on the critical path when we BOOT into
     // EV mode (shared link / restored state); everyone else gets it lazily.
     if (fuelType === "ev") await ensureEvLoaded();
@@ -1102,8 +1103,36 @@ function loyaltyRowHtml(label, legal) {
     </div>`;
 }
 
+// Networks that existed when per-network "seen" tracking was introduced —
+// pre-existing configs are treated as having already seen (and possibly
+// deliberately cleared) these, so they are never force-reseeded.
+const LOYALTY_PRE_SEEN = ["UAB Circle K Lietuva", "UAB Viada LT", "UAB Neste Lietuva",
+                          "UAB Baltic Petroleum", "AB Orlen Baltics Retail"];
+
+// A network ADDED LATER (e.g. Emsi's card, 2026-07) auto-joins an already-ON
+// config with its typical value — once. The user clearing it afterwards sticks
+// (tracked via LOYALTY.seen), matching the enable-time seeding philosophy.
+function seedNewLoyaltyNetworks() {
+    if (!Array.isArray(LOYALTY.seen)) {
+        LOYALTY.seen = [...new Set([...Object.keys(LOYALTY.cents), ...LOYALTY_PRE_SEEN])];
+    }
+    let changed = false;
+    if (LOYALTY.enabled) {
+        for (const legal in LOYALTY_TYPICAL) {
+            if (LOYALTY.seen.includes(legal)) continue;
+            const v = parseFloat(LOYALTY_TYPICAL[legal]);
+            if (isFinite(v) && v > 0 && !(legal in LOYALTY.cents)) LOYALTY.cents[legal] = v;
+            LOYALTY.seen.push(legal);
+            changed = true;
+        }
+    }
+    if (changed) lsSet("kk_loyalty", LOYALTY);
+    return changed;
+}
+
 function toggleLoyalty(on) {
     LOYALTY.enabled = !!on;
+    seedNewLoyaltyNetworks();
     // First enable with nothing configured yet: seed the known typical everyday
     // discounts so turning it on has an IMMEDIATE visible effect (otherwise the
     // blank fields mean "on" does nothing). The user can still edit/clear any row.
@@ -1864,32 +1893,7 @@ function initMunicipalities() {
         `<optgroup label="${t("other_munis")}">${rest.map(opt).join("")}</optgroup>`;
 }
 
-// Compact headline strip above the list: tappable per-fuel national averages
-// (the full min/avg/max table + trend stays in #summary below the list, but the
-// headline numbers must be visible without scrolling past hundreds of cards).
-function renderSummaryStrip() {
-    const el = document.getElementById("summary-strip");
-    if (!el) return;
-    const sum = DATA.summary || {};
-    const FUELS = [["petrol95", "⛽"], ["diesel", "🚛"], ["lpg", "🔥"]];
-    const pills = FUELS.filter(([k]) => sum[k] && sum[k].avg != null).map(([k, ic]) =>
-        `<button type="button" class="strip-pill${fuelType === k ? " active" : ""}" onclick="selectFuel('${k}')"
-                 title="${escAttr(t("stat_avg"))}">${ic} <b>€${sum[k].avg.toFixed(3)}</b></button>`).join("");
-    if (!pills) { el.style.display = "none"; return; }
-    const H = (HISTORY && HISTORY.history) || [];
-    const chart = H.length >= 2
-        ? `<button type="button" class="strip-pill" onclick="openChart()" title="${escAttr(t("chart_title"))}">📈</button>` : "";
-    const date = DATA.updated
-        ? `<span class="strip-date${OFFLINE_DATA ? " stale" : ""}">${esc(t("data_updated", { date: shortMd(DATA.updated) }))}</span>` : "";
-    el.style.display = "flex";
-    el.innerHTML = pills + chart + date;
-    // The live strip supersedes the pipeline-injected static crawler line.
-    const cp = document.getElementById("crawl-prices");
-    if (cp) cp.remove();
-}
-
 function updateChrome() {
-    renderSummaryStrip();
     document.getElementById("source-line").innerHTML =
         `${t("source")} <a href="${DATA.source_url}" target="_blank" rel="noopener">${DATA.source}</a>`;
     const upd = document.getElementById("updated-line");
@@ -2158,7 +2162,9 @@ function getRows() {
 
 function render() {
     renderOilFooter();
-    renderSummaryStrip();   // keep the headline pills' active state in sync
+    // The live UI supersedes the pipeline-injected static crawler price line.
+    const _cp = document.getElementById("crawl-prices");
+    if (_cp) _cp.remove();
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
         document.getElementById("change-banner").style.display = "none";
