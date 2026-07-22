@@ -431,8 +431,12 @@ def main():
     check_stations(now)
     check_viada(now)
     check_neste(now)
-    _check_daily_pricefile("circlek", "data/sources/circlek.json", now)
-    _check_daily_pricefile("circlek_biz", "data/sources/circlek_business.json", now)
+    # stated_lag_bd=1: Circle K bumps its page's own date only when prices
+    # change (measured 2026-07-22: "Liepos 21" still shown at 12:14 the next
+    # day, prices simply unchanged) — a one-business-day label lag is normal
+    # operation, not a freeze. Day TWO of a frozen label still alarms.
+    _check_daily_pricefile("circlek", "data/sources/circlek.json", now, stated_lag_bd=1)
+    _check_daily_pricefile("circlek_biz", "data/sources/circlek_business.json", now, stated_lag_bd=1)
     _check_daily_pricefile("orlen", "data/sources/orlen_wholesale.json", now, stated_lag_bd=1)
     check_oil(now)
     check_electricity(now)
