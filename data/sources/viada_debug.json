@@ -49,6 +49,12 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
+      "kind": "jina",
+      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
+      "err": "HTTP 503",
+      "body_head": "upstream connect error or disconnect/reset before headers. reset reason: connection termination"
+    },
+    {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
       "err": "HTTP 403",
@@ -69,6 +75,12 @@
     {
       "kind": "proxy",
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=akcijos",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/super-treciadieniai/",
       "err": "HTTP 403",
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
@@ -187,6 +199,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     }
   ],
-  "generated": "2026-07-22T07:16:23Z",
-  "attempt_count": 31
+  "generated": "2026-07-22T07:31:55Z",
+  "attempt_count": 33
 }
