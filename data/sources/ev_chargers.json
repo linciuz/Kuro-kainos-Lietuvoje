@@ -1,21 +1,21 @@
 {
-  "generated": "2026-07-22T07:59:34Z",
+  "generated": "2026-07-22T15:23:23Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 1902,
-  "ocpi_count": 1831,
-  "with_price": 1792,
+  "count": 1903,
+  "ocpi_count": 1832,
+  "with_price": 1793,
   "source_health": {
     "ocpi": {
       "live": true,
-      "last_success_utc": "2026-07-22T07:59:34Z"
+      "last_success_utc": "2026-07-22T15:23:23Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-07-22T07:59:34Z"
+      "last_success_utc": "2026-07-22T15:23:23Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-07-22T07:59:34Z"
+      "last_success_utc": "2026-07-22T15:23:23Z"
     }
   },
   "chargers": [
@@ -59,11 +59,11 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 56.0,
-      "lon": 22.94924,
+      "lat": 56.000003,
+      "lon": 22.949172,
       "name": "IKI, Kuršėnai - Vilniaus | Inbalance grid",
       "operator": "In Balance grid, UAB",
-      "address": "Vilniaus g. 44",
+      "address": "Vilniaus g. 40",
       "city": "Kuršėnai",
       "power_kw": 22.0,
       "price": 0.23,
@@ -8620,7 +8620,7 @@
       "address": "Elektrinės 6, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.139,
+      "price": 0.14,
       "sockets": 2,
       "ocpi_id": "3173",
       "source": "vialietuva-ocpi"
@@ -8633,7 +8633,7 @@
       "address": "Kauno g. 34, Vilnius",
       "city": "Vilnius",
       "power_kw": 60.0,
-      "price": 0.275,
+      "price": 0.265,
       "sockets": 3,
       "ocpi_id": "3174",
       "source": "vialietuva-ocpi"
@@ -8750,7 +8750,7 @@
       "address": "Kauno g. 34, Vilnius",
       "city": "Vilnius",
       "power_kw": 240.0,
-      "price": 0.285,
+      "price": 0.275,
       "sockets": 2,
       "ocpi_id": "3189",
       "source": "vialietuva-ocpi"
@@ -20971,7 +20971,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.45,
-      "sockets": 9,
+      "sockets": 7,
       "ocpi_id": "4832",
       "source": "vialietuva-ocpi"
     },
@@ -23820,6 +23820,19 @@
       "price": 0.33,
       "sockets": 2,
       "ocpi_id": "15411",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 54.696066,
+      "lon": 25.27901,
+      "name": "Vilniaus miesto savivaldybė",
+      "operator": "Enefit, UAB",
+      "address": "Konstitucijos pr 3",
+      "city": "Vilnius",
+      "power_kw": 60.0,
+      "price": 0.405,
+      "sockets": 11,
+      "ocpi_id": "15412",
       "source": "vialietuva-ocpi"
     },
     {
