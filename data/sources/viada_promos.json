@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T22:01:27Z",
+  "generated": "2026-07-23T04:01:24Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
@@ -45,14 +45,5 @@
       "kind": "seasonal",
       "active": true
     }
-  ],
-  "wednesday": {
-    "valid_date": "2026-07-22",
-    "prices": {
-      "diesel": 1.859,
-      "petrol95": 1.659,
-      "lpg": 0.659
-    },
-    "url": "https://www.viada.lt/akcija/super-treciadieniai/"
-  }
+  ]
 }
