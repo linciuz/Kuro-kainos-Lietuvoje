@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-23T15:35:32Z",
-  "last_success_utc": "2026-07-23T15:35:32Z",
+  "generated": "2026-07-24T07:57:53Z",
+  "last_success_utc": "2026-07-24T07:57:53Z",
   "chains_live": 3,
-  "count": 506,
+  "count": 500,
   "networks": [
     "Baltic Petroleum",
     "Circle K",
@@ -770,54 +770,6 @@
       "lat": 55.721941,
       "lon": 24.391535,
       "source": "fscc-api"
-    },
-    {
-      "network": "Emsi",
-      "address": "Klevų g. 15, Plungė, Lietuva",
-      "city": "",
-      "lat": 55.904329,
-      "lon": 21.862935,
-      "source": "wpgmza"
-    },
-    {
-      "network": "Emsi",
-      "address": "Antakalnio gatvė 63, Vilnius, Lietuva",
-      "city": "",
-      "lat": 54.712396,
-      "lon": 25.316465,
-      "source": "wpgmza"
-    },
-    {
-      "network": "Emsi",
-      "address": "Žirmūnų gatvė 117, Vilnius, Lietuva",
-      "city": "",
-      "lat": 54.724361,
-      "lon": 25.3044,
-      "source": "wpgmza"
-    },
-    {
-      "network": "Emsi",
-      "address": "Kaunas, Kauno apskritis, Lietuva",
-      "city": "",
-      "lat": 54.898521,
-      "lon": 23.903596,
-      "source": "wpgmza"
-    },
-    {
-      "network": "Emsi",
-      "address": "Utena, Utenos apskritis, Lietuva",
-      "city": "",
-      "lat": 55.50004,
-      "lon": 25.609385,
-      "source": "wpgmza"
-    },
-    {
-      "network": "Emsi",
-      "address": "Lukiškių gatvė 5, Vilnius, Lietuva",
-      "city": "",
-      "lat": 54.693055,
-      "lon": 25.268165,
-      "source": "wpgmza"
     },
     {
       "network": "Emsi",
