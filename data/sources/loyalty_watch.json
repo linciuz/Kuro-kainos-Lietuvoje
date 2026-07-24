@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T07:59:03Z",
+  "generated": "2026-07-24T15:17:42Z",
   "disclaimer": "Monitoring artifact — NOT read by the app and never shown as a price. Values are for a maintainer to review before updating the hand-set loyalty hints/notes in app.js. Some pages hide the figure in an image.",
   "changes": [],
   "pages": {
@@ -15,7 +15,7 @@
       ],
       "date": "2026 m. vasario 28 d.",
       "last_error": "HTTP 403",
-      "checked": "2026-07-24T07:58:59Z"
+      "checked": "2026-07-24T15:17:36Z"
     },
     "viada_weekend": {
       "network": "Viada",
@@ -28,7 +28,7 @@
       ],
       "date": null,
       "last_error": "HTTP 403",
-      "checked": "2026-07-24T07:58:59Z"
+      "checked": "2026-07-24T15:17:36Z"
     },
     "neste_card": {
       "network": "Neste",
@@ -42,7 +42,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-07-24T07:59:01Z"
+      "checked": "2026-07-24T15:17:38Z"
     },
     "neste_nuolaidadienis": {
       "network": "Neste",
@@ -55,7 +55,7 @@
       ],
       "date": "2026 m. liepos 29 d.",
       "last_error": null,
-      "checked": "2026-07-24T07:59:01Z"
+      "checked": "2026-07-24T15:17:40Z"
     },
     "bp_card": {
       "network": "Baltic Petroleum",
@@ -68,7 +68,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-07-24T07:59:02Z"
+      "checked": "2026-07-24T15:17:41Z"
     },
     "bp_bakadienis": {
       "network": "Baltic Petroleum",
@@ -79,7 +79,7 @@
       "values": [],
       "date": null,
       "last_error": null,
-      "checked": "2026-07-24T07:59:02Z"
+      "checked": "2026-07-24T15:17:41Z"
     },
     "circlek_extra": {
       "network": "Circle K",
@@ -92,7 +92,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-07-24T07:59:03Z"
+      "checked": "2026-07-24T15:17:42Z"
     },
     "circlek_10ct": {
       "network": "Circle K",
@@ -105,7 +105,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-07-24T07:59:03Z"
+      "checked": "2026-07-24T15:17:42Z"
     },
     "viada_treciadieniai": {
       "network": "Viada",
@@ -116,7 +116,7 @@
       "values": [],
       "date": null,
       "last_error": "HTTP 403",
-      "checked": "2026-07-24T07:59:03Z"
+      "checked": "2026-07-24T15:17:42Z"
     }
   }
 }
