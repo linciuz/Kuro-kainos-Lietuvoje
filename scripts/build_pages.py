@@ -25,8 +25,12 @@ import datetime as dt
 import html
 import json
 import os
+import math
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from lt_places import place
 
 for _s in (sys.stdout, sys.stderr):
     try:
@@ -74,6 +78,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}.lo{color:#15803d;font
 .meta{color:#6b7280;font-size:12.5px}.cta{display:inline-block;background:#0062CC;color:#fff;padding:11px 18px;
 border-radius:10px;text-decoration:none;font-weight:600;margin-top:6px}
 .bc{font-size:12.5px;color:#6b7280;margin-bottom:4px}.bc a{color:#6b7280}
+.nb{margin:0;padding-left:18px;font-size:14px;line-height:1.7}
 .grid{display:flex;flex-wrap:wrap;gap:8px}.grid a{background:#fff;border:1px solid #e2e6ec;border-radius:10px;
 padding:9px 13px;text-decoration:none;font-size:14px}"""
 
@@ -100,16 +105,63 @@ def page_shell(title, desc, canonical, body, jsonld=None):
 </html>"""
 
 
-def build_muni_page(muni, rows, updated):
+def centroid(rows):
+    pts = [(r["lat"], r["lon"]) for r in rows
+           if isinstance(r.get("lat"), (int, float)) and isinstance(r.get("lon"), (int, float))]
+    if not pts:
+        return None
+    return (sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts))
+
+
+def km(a, b):
+    dlat = (a[0] - b[0]) * 111.0
+    dlon = (a[1] - b[1]) * 111.0 * math.cos(math.radians((a[0] + b[0]) / 2))
+    return math.hypot(dlat, dlon)
+
+
+def plural(n, one, few, many):
+    """Lithuanian numeral agreement: 1/21/31 -> singular, 2-9/22-29 -> plural
+    nominative, 0 and 10-19 -> genitive plural. ("1 degalinės" is wrong.)"""
+    if n % 10 == 1 and n % 100 != 11:
+        return one
+    if 2 <= n % 10 <= 9 and not (11 <= n % 100 <= 19):
+        return few
+    return many
+
+
+def priced_rows(rows):
+    """Stations that actually carry a price — the only ones the tables can show.
+    The headline count MUST use this too: 36 of 60 pages previously announced a
+    total that included price-less registry stations and then contradicted
+    themselves two lines below."""
+    return [r for r in rows if any(isinstance(r.get(k), (int, float))
+                                   for k in ("petrol95", "diesel", "lpg"))]
+
+
+def cheapest_rows(rows, limit=10):
+    """Rank by diesel, then by petrol for stations that sell no diesel — the old
+    version silently DROPPED every diesel-less station (17 of 60 municipalities)
+    while the heading still promised '10 pigiausių'."""
+    def key(r):
+        d = r.get("diesel"); p = r.get("petrol95")
+        return (0 if isinstance(d, (int, float)) else 1,
+                d if isinstance(d, (int, float)) else (p if isinstance(p, (int, float)) else 9e9))
+    return sorted(priced_rows(rows), key=key)[:limit]
+
+
+def build_muni_page(muni, rows, updated, neighbours=()):
     slug = slugify(muni)
     stats = muni_stats(rows)
     if not stats:
         return None
-    short = re.sub(r"\s*(m\.|r\.)?\s*sav\.$", "", muni)
-    title = f"Degalų kainos: {muni} — pigiausios degalinės | Fuelis"
+    name, loc = place(muni)          # "Kaunas" / "Kaune" — what people search
+    priced = priced_rows(rows)
+    n = len(priced)
+
+    title = f"Degalų kainos {loc} — pigiausios degalinės | Fuelis"
     d_avg = stats.get("diesel", {}).get("avg")
     p_avg = stats.get("petrol95", {}).get("avg")
-    desc = (f"Oficialios degalų kainos: {muni} ({updated}). "
+    desc = (f"Degalų kainos {loc} ({updated}), oficialūs LEA duomenys iš {n} degalinių. "
             + (f"Dyzelinas vid. {fmt(d_avg)}, " if d_avg else "")
             + (f"benzinas 95 vid. {fmt(p_avg)}. " if p_avg else "")
             + "Pigiausių degalinių sąrašas ir žemėlapis.")
@@ -119,52 +171,67 @@ def build_muni_page(muni, rows, updated):
         f"<td class='n'>{fmt(s['avg'])}</td><td class='n'>{fmt(s['max'])}</td><td class='n'>{s['n']}</td></tr>"
         for key, label in FUELS if (s := stats.get(key)))
 
-    cheapest = sorted([r for r in rows if isinstance(r.get("diesel"), (int, float))],
-                      key=lambda r: r["diesel"])[:10]
-    if not cheapest:
-        cheapest = sorted([r for r in rows if isinstance(r.get("petrol95"), (int, float))],
-                          key=lambda r: r["petrol95"])[:10]
+    cheapest = cheapest_rows(rows)
     cheap_rows = "".join(
         f"<tr><td>{esc(r.get('network'))}</td><td>{esc(r.get('address'))}</td>"
         f"<td class='n'>{fmt(r.get('petrol95'))}</td><td class='n'>{fmt(r.get('diesel'))}</td>"
         f"<td class='n'>{fmt(r.get('lpg'))}</td></tr>" for r in cheapest)
+    # Honest heading: say what the table actually shows.
+    c = len(cheapest)
+    cheap_title = (f"Visos degalinės ({c})" if c >= n and c > 1 else
+                   "Vienintelė degalinė" if c == 1 else
+                   f"{c} " + plural(c, "pigiausia degalinė", "pigiausios degalinės", "pigiausių degalinių"))
 
+    # schema.org ItemList is an Intangible — it has NO dateModified property
+    # (the old markup emitted one, which fails validation); the date is visible
+    # in the page text instead.
     jsonld = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": f"Pigiausios degalinės: {muni}",
-        "dateModified": updated,
+        "name": f"Pigiausios degalinės — {name}",
         "numberOfItems": len(cheapest),
         "itemListElement": [{
             "@type": "ListItem", "position": i + 1,
             "item": {"@type": "GasStation", "name": r.get("network") or "Degalinė",
                      "address": {"@type": "PostalAddress", "streetAddress": r.get("address") or "",
-                                 "addressLocality": muni, "addressCountry": "LT"}}
+                                 "addressLocality": name, "addressCountry": "LT"}}
         } for i, r in enumerate(cheapest)],
     }
 
+    # Neighbouring municipalities: genuine added value (where to drive if local
+    # prices are bad) AND the internal linking the cluster completely lacked.
+    nb = "".join(
+        f'<li><a href="{SITE}/kainos/{slugify(m)}.html">{esc(place(m)[0])}</a>'
+        f' — dyzelinas nuo {fmt(v)}{"" if d is None else f" ({d:.0f} km)"}</li>'
+        for m, v, d in neighbours)
+    nb_block = (f'<div class="card"><h2>Kaimyninės savivaldybės</h2><ul class="nb">{nb}</ul>'
+                f'<p class="meta">Jei kainos {loc} aukštos, gretimose savivaldybėse gali būti pigiau.</p></div>'
+                if nb else "")
+
     app_url = f"{SITE}/?muni={muni.replace(' ', '%20')}"
-    body = f"""<p class="bc"><a href="{SITE}/">Fuelis</a> › <a href="{SITE}/kainos/">Kainos pagal savivaldybę</a> › {esc(short)}</p>
-<h1>Degalų kainos: {esc(muni)}</h1>
-<p class="meta">Oficialūs LEA (ena.lt) duomenys · atnaujinta {updated} · {len(rows)} degalinės</p>
+    body = f"""<p class="bc"><a href="{SITE}/">Fuelis</a> › <a href="{SITE}/kainos/">Kainos pagal savivaldybę</a> › {esc(name)}</p>
+<h1>Degalų kainos {esc(loc)}</h1>
+<p class="meta">Oficialūs LEA (ena.lt) duomenys · atnaujinta {updated} · {n} {plural(n, "degalinė", "degalinės", "degalinių")} su kainomis · {esc(muni)}</p>
 <div class="card"><h2>Kainų suvestinė</h2>
 <table><thead><tr><th></th><th>Pigiausia</th><th>Vidurkis</th><th>Brangiausia</th><th>Degalinių</th></tr></thead>
 <tbody>{stat_rows}</tbody></table></div>
-<div class="card"><h2>10 pigiausių degalinių</h2>
+<div class="card"><h2>{cheap_title}</h2>
 <table><thead><tr><th>Tinklas</th><th>Adresas</th><th>95</th><th>Dyzelinas</th><th>LPG</th></tr></thead>
 <tbody>{cheap_rows}</tbody></table>
-<p class="meta">Kainos — LEA dienos suvestinė; dienos eigoje degalinėse gali keistis.</p>
+<p class="meta">Rikiuota pagal dyzeliną; degalinės be dyzelino rodomos pagal benziną. Kainos — LEA
+dienos suvestinė, dienos eigoje degalinėse gali keistis.</p>
 <a class="cta" href="{app_url}">Atidaryti žemėlapyje →</a></div>
+{nb_block}
 <p class="meta">Visos savivaldybės: <a href="{SITE}/kainos/">kainos pagal savivaldybę</a> ·
 <a href="{SITE}/">Fuelis — degalų kainų žemėlapis</a></p>"""
     return slug, page_shell(title, desc, f"{SITE}/kainos/{slug}.html", body, jsonld)
 
 
 def build_directory(slugs_munis, updated):
-    links = "".join(f'<a href="{SITE}/kainos/{slug}.html">{esc(re.sub(r"  +", " ", muni))}</a>'
-                    for slug, muni in sorted(slugs_munis, key=lambda x: x[1]))
+    links = "".join(f'<a href="{SITE}/kainos/{slug}.html">{esc(place(muni)[0])}</a>'
+                    for slug, muni in sorted(slugs_munis, key=lambda x: place(x[1])[0]))
     body = f"""<p class="bc"><a href="{SITE}/">Fuelis</a> › Kainos pagal savivaldybę</p>
-<h1>Degalų kainos pagal savivaldybę</h1>
+<h1>Degalų kainos pagal miestus ir savivaldybes</h1>
 <p class="meta">Oficialūs LEA duomenys · atnaujinta {updated}</p>
 <div class="card"><div class="grid">{links}</div></div>
 <p class="meta"><a href="{SITE}/">← Fuelis žemėlapis ir paieška</a></p>"""
@@ -221,9 +288,26 @@ def main():
             by_muni.setdefault(m, []).append(s)
 
     os.makedirs(OUTDIR, exist_ok=True)
+    # Nearest municipalities by station centroid — powers the cross-links.
+    cents = {m: centroid(r) for m, r in by_muni.items()}
+    best_diesel = {}
+    for m, r in by_muni.items():
+        vals = [x["diesel"] for x in r if isinstance(x.get("diesel"), (int, float))]
+        if vals:
+            best_diesel[m] = min(vals)
+
+    def neighbours_of(muni):
+        c = cents.get(muni)
+        if not c:
+            return []
+        near = sorted(((km(c, cents[o]), o) for o in by_muni
+                       if o != muni and cents.get(o) and o in best_diesel),
+                      key=lambda t: t[0])[:5]
+        return [(o, best_diesel[o], d) for d, o in near]
+
     slugs_munis = []
     for muni, rows in by_muni.items():
-        built = build_muni_page(muni, rows, updated)
+        built = build_muni_page(muni, rows, updated, neighbours_of(muni))
         if not built:
             continue
         slug, html_page = built

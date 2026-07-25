@@ -2845,5 +2845,18 @@
     "sv": "Integritet",
     "fi": "Tietosuoja",
     "no": "Personvern"
+  },
+  "prices_by_city": {
+    "lt": "Kainos pagal miestus",
+    "en": "Prices by city",
+    "lv": "Cenas pēc pilsētām",
+    "et": "Hinnad linnade kaupa",
+    "uk": "Ціни за містами",
+    "ru": "Цены по городам",
+    "pl": "Ceny według miast",
+    "de": "Preise nach Stadt",
+    "sv": "Priser per stad",
+    "fi": "Hinnat kaupungeittain",
+    "no": "Priser etter by"
   }
 }

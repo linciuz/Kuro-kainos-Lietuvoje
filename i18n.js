@@ -220,7 +220,8 @@ const STRINGS = {
     "yes": "yra",
     "no": "nėra",
     "muni_label": "Savivaldybės filtras",
-    "privacy": "Privatumas"
+    "privacy": "Privatumas",
+    "prices_by_city": "Kainos pagal miestus"
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -441,7 +442,8 @@ const STRINGS = {
     "yes": "ir",
     "no": "nav",
     "muni_label": "Pašvaldības filtrs",
-    "privacy": "Privātums"
+    "privacy": "Privātums",
+    "prices_by_city": "Cenas pēc pilsētām"
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -662,7 +664,8 @@ const STRINGS = {
     "yes": "olemas",
     "no": "puudub",
     "muni_label": "Omavalitsuse filter",
-    "privacy": "Privaatsus"
+    "privacy": "Privaatsus",
+    "prices_by_city": "Hinnad linnade kaupa"
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -883,7 +886,8 @@ const STRINGS = {
     "yes": "available",
     "no": "not available",
     "muni_label": "Municipality filter",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "prices_by_city": "Prices by city"
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -1104,7 +1108,8 @@ const STRINGS = {
     "yes": "є",
     "no": "немає",
     "muni_label": "Фільтр самоврядування",
-    "privacy": "Приватність"
+    "privacy": "Приватність",
+    "prices_by_city": "Ціни за містами"
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -1325,7 +1330,8 @@ const STRINGS = {
     "yes": "есть",
     "no": "нет",
     "muni_label": "Фильтр самоуправления",
-    "privacy": "Приватность"
+    "privacy": "Приватность",
+    "prices_by_city": "Цены по городам"
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -1546,7 +1552,8 @@ const STRINGS = {
     "yes": "jest",
     "no": "brak",
     "muni_label": "Filtr gminy",
-    "privacy": "Prywatność"
+    "privacy": "Prywatność",
+    "prices_by_city": "Ceny według miast"
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -1767,7 +1774,8 @@ const STRINGS = {
     "yes": "vorhanden",
     "no": "nicht vorhanden",
     "muni_label": "Gemeindefilter",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "prices_by_city": "Preise nach Stadt"
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -1988,7 +1996,8 @@ const STRINGS = {
     "yes": "finns",
     "no": "finns ej",
     "muni_label": "Kommunfilter",
-    "privacy": "Integritet"
+    "privacy": "Integritet",
+    "prices_by_city": "Priser per stad"
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -2209,7 +2218,8 @@ const STRINGS = {
     "yes": "on",
     "no": "ei ole",
     "muni_label": "Kuntasuodatin",
-    "privacy": "Tietosuoja"
+    "privacy": "Tietosuoja",
+    "prices_by_city": "Hinnat kaupungeittain"
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -2430,7 +2440,8 @@ const STRINGS = {
     "yes": "finnes",
     "no": "finnes ikke",
     "muni_label": "Kommunefilter",
-    "privacy": "Personvern"
+    "privacy": "Personvern",
+    "prices_by_city": "Priser etter by"
   }
 };
 let lang = (function () {
