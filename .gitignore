@@ -19,3 +19,6 @@ android/
 ios/
 worker/.wrangler/
 *.log
+
+# Within-run handoff from the evaluate step to the final gate step
+_gate_verdict.json

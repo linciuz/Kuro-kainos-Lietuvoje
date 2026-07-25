@@ -400,6 +400,55 @@ def check_chain(now):
             pass
 
 
+def check_scheduler(now):
+    """Is the PRIMARY scheduler still alive? Cloudflare cron delivery has died
+    twice (2026-07-17, and again after 07-23T22:00 — unnoticed for a day because
+    the traffic dead-man silently covered it). The Worker's /health reports the
+    last cron fire; a stale one means we are running on the backup layer only.
+    WARN, never fail: prices are still fresh, but the redundancy is degraded and
+    that must be visible. Network errors are ignored (this gate is local-first).
+    """
+    src = "scheduler"
+    try:
+        import urllib.request
+        # An identifying UA is required — Cloudflare 403s UA-less requests.
+        req = urllib.request.Request(
+            "https://kk-reports.fuelis.workers.dev/health",
+            headers={"User-Agent": "fuelis-gate/1.0 (+https://fuelis.lt)"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            h = json.load(r)
+    except Exception as e:
+        return warn(src, f"could not read Worker /health ({type(e).__name__}) — "
+                         f"scheduler liveness unknown this run.")
+    last = h.get("last_cron_fire")
+    if not last:
+        return warn(src, "Worker /health reports no cron fire on record — Cloudflare cron "
+                         "delivery may be dead; the traffic dead-man is carrying updates.")
+    try:
+        age_h = (dt.datetime.now(dt.timezone.utc) - parse_utc(last)).total_seconds() / 3600
+    except ValueError:
+        return warn(src, f"unparseable last_cron_fire: {last!r}")
+    # Crons run Mon-Fri only, so raw age is the wrong measure (a normal weekend
+    # gap is ~62h, while a MISSED FRIDAY is only ~34h and must not hide behind a
+    # weekend allowance — that is exactly what happened 2026-07-24). Instead:
+    # find the most recent business day whose cron window has already passed;
+    # at least one fire must have landed on or after that day's first slot.
+    day = now.date()
+    if not (is_business_day(day) and now.hour >= 12):
+        day = prev_business_day(day)
+    window_start = dt.datetime.combine(day, dt.time(4, 0), tzinfo=dt.timezone.utc)
+    if parse_utc(last) < window_start:
+        warn(src, f"no Cloudflare cron fire since {last} — nothing fired during {day}, "
+                  f"a business day ({age_h:.0f}h ago). The PRIMARY scheduler is dead again; "
+                  f"updates are riding on the traffic dead-man. Fix: change the cron set in "
+                  f"worker/wrangler.toml and redeploy to force re-registration (that revived "
+                  f"it on 2026-07-17).")
+    disp = h.get("last_dispatch") or {}
+    if disp.get("status") not in (None, 204):
+        warn(src, f"last GitHub dispatch returned {disp.get('status')} {disp.get('error') or ''} — "
+                  f"GH_TOKEN may be expired/revoked.")
+
+
 def check_history(now):
     src = "history"
     try:
@@ -423,11 +472,12 @@ def check_history(now):
 
 # -------------------------------------------------------------------- main --
 
-def main():
-    now = now_vilnius()
-    print(f"[verify_sources] {now:%Y-%m-%d %H:%M} Vilnius "
-          f"({'business day' if is_business_day(now.date()) else 'weekend/holiday'})")
-
+def run_all_checks(now):
+    """THE canonical rule set. Both the evaluate pass and any direct run go
+    through here — a second copy of this list once drifted (Circle K's
+    stated_lag_bd relaxation was applied to one copy only, 2026-07-22), which
+    recorded a failure fingerprint for a condition the gate considered healthy
+    and could burn an episode's only alarm. Never duplicate this list."""
     check_stations(now)
     check_viada(now)
     check_neste(now)
@@ -443,6 +493,15 @@ def main():
     check_ev(now)
     check_chain(now)
     check_history(now)
+    check_scheduler(now)
+
+
+def main():
+    now = now_vilnius()
+    print(f"[verify_sources] {now:%Y-%m-%d %H:%M} Vilnius "
+          f"({'business day' if is_business_day(now.date()) else 'weekend/holiday'})")
+
+    run_all_checks(now)
 
     for w in WARNINGS:
         print(f"::warning::{w}")
@@ -477,6 +536,9 @@ def main():
 # record step) alarms red; older ones are known repeats. Healing a source
 # clears its fingerprints, ending the episode.
 ALARM_STATE = os.path.join("data", "_alarm_state.json")
+# Deliberately OUTSIDE data/ so it is never committed — it is a within-run
+# handoff from the evaluate step to the final gate step.
+GATE_VERDICT = "_gate_verdict.json"
 
 
 def _fingerprint(msg, now):
@@ -494,21 +556,10 @@ def _load_alarm_state():
         return {}
 
 
-def record_state(now):
-    """Pre-commit pass: run all checks, persist failure fingerprints with their
-    first_seen stamps (kept across runs while the failure persists)."""
-    state = _load_alarm_state()
-    fps = {_fingerprint(f, now) for f in FAILURES}
-    new_state = {fp: state.get(fp) or now.isoformat() for fp in fps}
-    if new_state != state:
-        json.dump(new_state, open(ALARM_STATE, "w", encoding="utf-8"), indent=1)
-        print(f"[verify_sources] alarm state recorded: {len(new_state)} active fingerprint(s)")
-    else:
-        print(f"[verify_sources] alarm state unchanged ({len(new_state)} active)")
-    return 0
-
-
 def split_by_episode(failures, now):
+    """Split current failures into NEW (alarm red) vs already-alarmed repeats.
+    A fingerprint counts as already-alarmed only if a PREVIOUS run persisted it
+    (>20 min ago); anything this run just discovered is fresh."""
     state = _load_alarm_state()
     fresh, repeats = [], []
     for f in failures:
@@ -521,13 +572,72 @@ def split_by_episode(failures, now):
     return fresh, repeats
 
 
+def evaluate(now):
+    """PRE-COMMIT pass: decide red/green ONCE, persist both the decision and the
+    alarm state together, then let the commit step publish the state file.
+
+    This replaces the old two-step design (a --record-state pass that guessed
+    what the later gate would do). That guess was unsound: the state said "an
+    alarm was emitted" whenever a fingerprint was WRITTEN, so any divergence
+    between the two passes — or a gate step that never ran — silently burned an
+    episode's only red. Now one evaluation produces both artifacts, and the
+    final step just replays them.
+    """
+    run_all_checks(now)
+    state = _load_alarm_state()
+    fresh, repeats = split_by_episode(FAILURES, now)
+    # Persist ONLY currently-failing fingerprints: a healed source drops out, so
+    # a recurrence alarms again instead of being mistaken for an old episode.
+    new_state = {}
+    for f in FAILURES:
+        fp = _fingerprint(f, now)
+        new_state[fp] = state.get(fp) or now.isoformat()
+    json.dump(new_state, open(ALARM_STATE, "w", encoding="utf-8"), indent=1)
+
+    verdict = {
+        "rc": 1 if fresh else 0,
+        "errors": fresh,
+        "warnings": WARNINGS + [f"[repeat — already alarmed this episode] {f}" for f in repeats],
+        "checked_utc": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
+    }
+    json.dump(verdict, open(GATE_VERDICT, "w", encoding="utf-8"), indent=1)
+    print(f"[verify_sources] evaluated: {len(fresh)} new finding(s), {len(repeats)} known repeat(s), "
+          f"{len(WARNINGS)} warning(s); state has {len(new_state)} active fingerprint(s).")
+    return 0
+
+
+def replay():
+    """FINAL gate step: replay the pre-commit decision and exit with it.
+    If the verdict file is missing (the evaluate step never ran), fall back to a
+    LIVE run that alarms on ANY failure — erring toward noise, never silence."""
+    try:
+        v = json.load(open(GATE_VERDICT, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("::warning::gate verdict missing — the evaluate step did not run; "
+              "checking live and alarming on ANY failure (damping deliberately bypassed).")
+        now = now_vilnius()
+        run_all_checks(now)
+        for w in WARNINGS:
+            print(f"::warning::{w}")
+        for f in FAILURES:
+            print(f"::error::{f}")
+        return 1 if FAILURES else 0
+    for w in v.get("warnings") or []:
+        print(f"::warning::{w}")
+    for f in v.get("errors") or []:
+        print(f"::error::{f}")
+    if v.get("rc"):
+        print(f"[verify_sources] {len(v.get('errors') or [])} NEW stale/corrupt finding(s) — "
+              f"failing the run so this cannot pass as success.")
+        return 1
+    print("[verify_sources] no NEW findings; any known repeats are listed above as warnings. "
+          "Truth stays visible in the annotations, /health, and the app's date line.")
+    return 0
+
+
 if __name__ == "__main__":
-    if "--record-state" in sys.argv:
-        _now = now_vilnius()
-        check_stations(_now); check_viada(_now); check_neste(_now)
-        _check_daily_pricefile("circlek", "data/sources/circlek.json", _now)
-        _check_daily_pricefile("circlek_biz", "data/sources/circlek_business.json", _now)
-        _check_daily_pricefile("orlen", "data/sources/orlen_wholesale.json", _now, stated_lag_bd=1)
-        check_oil(_now); check_electricity(_now); check_ev(_now); check_chain(_now); check_history(_now)
-        sys.exit(record_state(_now))
+    if "--evaluate" in sys.argv or "--record-state" in sys.argv:   # old flag kept working
+        sys.exit(evaluate(now_vilnius()))
+    if "--replay" in sys.argv:
+        sys.exit(replay())
     sys.exit(main())

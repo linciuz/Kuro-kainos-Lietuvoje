@@ -92,11 +92,13 @@ jobs:
       - name: Build static municipality pages + sitemap + crawlable index block
         run: python scripts/build_pages.py || echo "page build failed (non-fatal)"
 
-      # Persist failure fingerprints BEFORE the commit (the post-commit gate
-      # only reads them): first detection of a problem alarms red, repeats of
-      # the same episode stay green warnings — one email per episode, not per run.
-      - name: Record alarm-state fingerprints
-        run: python scripts/verify_sources.py --record-state || echo "record-state failed (non-fatal)"
+      # Decide red/green ONCE, pre-commit, so the alarm state and the decision
+      # are produced by the SAME evaluation and committed together. (The old
+      # split recorded fingerprints that a diverging gate never alarmed on,
+      # which could silently burn an episode's only email.) Non-fatal: if this
+      # step dies, the gate below re-checks live and alarms on ANY failure.
+      - name: Evaluate source freshness (decides + records alarm state)
+        run: python scripts/verify_sources.py --evaluate || echo "evaluate failed (non-fatal — gate re-checks live)"
 
       - name: Commit updated data
         run: |
@@ -129,5 +131,5 @@ jobs:
       # Either failing FAILS the run (red X + email) — stale can never be green.
       - name: Freshness gate (fail loudly if still behind LEA)
         run: python scripts/verify_freshness.py --check-only
-      - name: Source staleness gate (fail loudly if any source rotted)
-        run: python scripts/verify_sources.py
+      - name: Source staleness gate (replays the pre-commit decision)
+        run: python scripts/verify_sources.py --replay

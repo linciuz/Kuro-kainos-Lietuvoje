@@ -1132,10 +1132,13 @@ function seedNewLoyaltyNetworks() {
 
 function toggleLoyalty(on) {
     LOYALTY.enabled = !!on;
-    seedNewLoyaltyNetworks();
     // First enable with nothing configured yet: seed the known typical everyday
     // discounts so turning it on has an IMMEDIATE visible effect (otherwise the
     // blank fields mean "on" does nothing). The user can still edit/clear any row.
+    // ORDER MATTERS: this first-time seeding must run BEFORE
+    // seedNewLoyaltyNetworks() — that helper adds later-added networks (Emsi) to
+    // `cents`, which would make the "is cents empty?" test below false and leave
+    // a brand-new user with ONLY Emsi seeded instead of all typicals.
     let seeded = false;
     // Seed only on GENUINE first-time setup (tracked by LOYALTY.seeded) — a user
     // who deliberately cleared every value must not get them re-seeded on toggle.
@@ -1149,6 +1152,9 @@ function toggleLoyalty(on) {
         }
         LOYALTY.seeded = true;
     }
+    // Networks added AFTER this user's first setup (e.g. Emsi's card) join now —
+    // runs second so it can never pre-fill `cents` and defeat the test above.
+    if (seedNewLoyaltyNetworks()) seeded = true;
     lsSet("kk_loyalty", LOYALTY);
     if (seeded) {
         renderDiscounts();   // repopulate the ¢/L fields with the seeded values
