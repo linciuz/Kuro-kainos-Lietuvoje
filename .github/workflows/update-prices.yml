@@ -10,14 +10,15 @@ name: Update prices (frequent)
 # both seasons. LEA publishes on working days, so Mon-Fri.
 on:
   schedule:
-    # PRIMARY scheduling lives in the Cloudflare Worker cron (worker/wrangler.toml),
-    # which fires reliably and pokes this via workflow_dispatch every 15 min across
-    # 09:00-14:00 LT (LEA's real publish window is ~11:00-noon, not the nominal 10:00).
-    # The entries below are only a sparse DEAD-MAN BACKUP in case the Worker/token
-    # ever breaks — odd minutes, off GitHub's congested :00/:15/:30/:45 peaks.
-    - cron: "47 8,9 * * 1-5"    # 11:47 + 12:47 LT summer (10:47 + 11:47 winter)
-    - cron: "47 10 * * 1-5"     # 13:47 LT summer / 12:47 LT winter — season-proof slot
-    - cron: "47 12 * * 1-5"     # 15:47 LT afternoon safety net
+    # 2026-07-25: the Cloudflare Worker cron is NO LONGER TRUSTED as primary —
+    # delivery stopped on 07-23 with all 5 triggers still registered (verified via
+    # the CF API), and a schedule-set change did not revive it this time. So these
+    # GitHub slots are now a REAL layer, not a sparse dead-man: every 30 min across
+    # LEA's publish window in both DST regimes, at odd minutes to dodge GitHub's
+    # congested :00/:15/:30/:45 peaks. Two further layers back them up: the Worker's
+    # traffic dead-man (a visitor request pokes a run) and .github/poke.
+    - cron: "13,43 8,9,10,11 * * 1-5"   # every 30 min, 11:13–14:43 LT summer (10:13–13:43 winter)
+    - cron: "47 12 * * 1-5"             # 15:47 LT afternoon safety net
   workflow_dispatch: {}
   # Token-free manual trigger: committing any change to .github/poke starts a
   # price run via plain git push (workflow_dispatch needs an API token; this

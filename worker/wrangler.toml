@@ -30,7 +30,12 @@ simple = { limit = 30, period = 60 }
 # Needs the GH_TOKEN secret:  npx wrangler secret put GH_TOKEN
 [triggers]
 crons = [
-  "0 4,5 * * 1-5",         # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
+  # Split into two identical-timing entries (2026-07-25): Cloudflare cron
+# DELIVERY died silently on 07-23 with the schedules still registered, and
+# only a change to the schedule SET forces re-registration. Same firing
+# times, no behaviour change — the split is the revival lever.
+  "0 4 * * 1-5",
+  "0 5 * * 1-5",         # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
   "*/15 6-11 * * 1-5",     # every 15 min: 09:00–14:59 LT summer AND 08:00–13:59 LT winter — season-proof
   "0 12,22 * * 1-5",       # 15:00 LT + 01:00 LT (next day)
 ]
