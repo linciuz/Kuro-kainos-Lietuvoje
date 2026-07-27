@@ -449,6 +449,32 @@ def check_scheduler(now):
                   f"GH_TOKEN may be expired/revoked.")
 
 
+def check_portal(now):
+    """LEA's operator self-service portal (fetch_lea_portal.py). Today it is a
+    COORDINATE source, not a price source (7% price coverage, 2026-07-27), so
+    the rule guards the coordinate payload and watches adoption: if operators
+    start submitting, this becomes a fresher price feed than the daily Excel
+    and we should switch — that is a WARNING, not a failure."""
+    src = "lea_portal"
+    try:
+        d = load("data/sources/lea_portal.json")
+        gen = parse_utc(d["generated"])
+    except Exception as e:
+        return fail(src, f"unreadable lea_portal.json: {type(e).__name__}: {e}")
+    if (d.get("with_coords") or 0) < 300:
+        fail(src, f"only {d.get('with_coords')} stations with official coords (<300) — "
+                  f"portal feed degraded; our pins fall back to geocoding.")
+    age_h = (now - gen).total_seconds() / 3600
+    if age_h > 96:      # refreshed by the DAILY workflow only
+        fail(src, f"lea_portal.json generated {age_h:.0f}h ago (>96h) — the portal fetch "
+                  f"has been failing (token rotated? API moved?).")
+    share = 100 * (d.get("priced") or 0) / max(1, d.get("count") or 1)
+    if share >= 25:
+        warn(src, f"operators now self-report prices at {share:.0f}% of stations "
+                  f"(was 7% on 2026-07-27) — the portal is becoming a real-time price feed; "
+                  f"consider promoting it above the once-daily LEA Excel.")
+
+
 def check_history(now):
     src = "history"
     try:
@@ -492,6 +518,7 @@ def run_all_checks(now):
     check_electricity(now)
     check_ev(now)
     check_chain(now)
+    check_portal(now)
     check_history(now)
     check_scheduler(now)
 
@@ -519,7 +546,7 @@ def main():
               f"episode — run stays green to avoid alarm spam; a NEW day or a NEW problem "
               f"re-alarms. Truth remains visible above, in /health, and in the app's date line.")
         return 0
-    print(f"[verify_sources] all 11 sources fresh & sane"
+    print(f"[verify_sources] all 12 sources fresh & sane"
           + (f" ({len(WARNINGS)} warning(s))" if WARNINGS else "") + ".")
     return 0
 

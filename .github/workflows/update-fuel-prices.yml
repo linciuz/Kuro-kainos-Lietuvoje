@@ -60,7 +60,13 @@ jobs:
       - name: Collect EV charging stations (OpenStreetMap)
         run: python scripts/fetch_ev_chargers.py || echo "EV charger fetch failed (non-fatal)"
 
-      - name: Snap LEA stations onto exact chain coordinates
+      # LEA's operator self-service portal: official operator-registered
+      # coordinates (fixes ~120 municipality-centroid guesses) + brands/logos.
+      # Not a price source yet — see the script's docstring.
+      - name: LEA self-service portal (official coords, brands)
+        run: python scripts/fetch_lea_portal.py || echo "portal fetch failed (non-fatal)"
+
+      - name: Snap LEA stations onto exact chain + official portal coordinates
         run: python scripts/merge_chain_coords.py || echo "merge failed (non-fatal)"
 
       - name: Fetch independent sources (Circle K)

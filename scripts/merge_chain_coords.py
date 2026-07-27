@@ -20,6 +20,7 @@ import json
 import math
 import os
 import re
+import statistics
 import sys
 
 for _s in (sys.stdout, sys.stderr):
@@ -147,12 +148,77 @@ def main():
                 n += 1
             print(f"[cmp] {dirnet:18s} proximity-matched {n}/{len(lea_for)}")
 
+    portal = apply_portal_coords(stations)
     ov = apply_overrides(stations)
 
     json.dump(lea, open(STATIONS, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     snapped = sum(1 for s in stations if s.get("coord_source") == "chain")
+    fromportal = sum(1 for s in stations if s.get("coord_source") == "lea_portal")
     verified = sum(1 for s in stations if s.get("coord_source") == "verified")
-    print(f"[ok] {snapped} LEA stations on chain coords; {verified} manually-verified overrides ({ov} applied)")
+    still_approx = sum(1 for s in stations if s.get("approx"))
+    print(f"[ok] {snapped} on chain coords; {fromportal} on official LEA-portal coords ({portal} applied); "
+          f"{verified} manually-verified ({ov} applied); {still_approx} still approximate")
+
+
+def apply_portal_coords(stations):
+    """Official operator-registered coordinates from LEA's self-service portal
+    (data/sources/lea_portal.json, see fetch_lea_portal.py).
+
+    Applied ONLY to stations we still place approximately — i.e. municipality
+    centroids from the Nominatim fallback. Chain-snapped coords come from the
+    operator's own site and are already exact, so they are left alone, and the
+    manual overrides below still win. Measured 2026-07-27: this fixes 122 of
+    133 guesses, median correction 11 km (worst 170 km) — pins that were simply
+    in the wrong place for 'nearest to me' and navigation.
+    """
+    try:
+        portal = json.load(open(os.path.join("data", "sources", "lea_portal.json"),
+                                encoding="utf-8"))["stations"]
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
+        print("[warn] no lea_portal.json; skipping official-coordinate merge.")
+        return 0
+    idx = {}
+    for r in portal:
+        if r.get("lat") is None:
+            continue
+        idx.setdefault(norm(r.get("company", "")) + "|" + norm(r.get("address", "")), r)
+        idx.setdefault(norm(r.get("address", "")), r)          # address-only fallback
+
+    # Sanity reference: the median coordinate of each municipality, computed
+    # ONLY from independently-exact stations (chain sites / manual overrides),
+    # so the portal cannot vouch for itself. Same 45 km rule geocode.py uses
+    # against Nominatim picking a same-named village in the wrong rajonas —
+    # measured 2026-07-27, 4 of 99 portal coords fail it, so "official" is
+    # not automatically correct.
+    ref = {}
+    for s in stations:
+        if s.get("coord_source") in ("chain", "verified") and s.get("lat") is not None:
+            ref.setdefault(s.get("municipality"), []).append((s["lat"], s["lon"]))
+    med = {m: (statistics.median(p[0] for p in pts), statistics.median(p[1] for p in pts))
+           for m, pts in ref.items() if len(pts) >= 4}
+
+    applied = rejected = 0
+    for s in stations:
+        if not s.get("approx"):
+            continue                      # already exact — don't touch
+        r = (idx.get(norm(s.get("network", "")) + "|" + norm(s.get("address", "")))
+             or idx.get(norm(s.get("address", ""))))
+        if not r:
+            continue
+        c = med.get(s.get("municipality"))
+        if c and haversine(c[0], c[1], r["lat"], r["lon"]) > 45:
+            print(f"[warn] portal coord for {s.get('network')} / {s.get('address')} is "
+                  f"{haversine(c[0], c[1], r['lat'], r['lon']):.0f} km from {s.get('municipality')} "
+                  f"— rejected, keeping approximate")
+            rejected += 1
+            continue
+        s["lat"], s["lon"] = r["lat"], r["lon"]
+        s["approx"] = False
+        s["coord_source"] = "lea_portal"
+        applied += 1
+    if rejected:
+        print(f"[info] {rejected} portal coord(s) rejected by the municipality sanity check")
+    return applied
 
 
 def apply_overrides(stations):
