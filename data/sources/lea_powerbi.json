@@ -1,5 +1,5 @@
 {
-  "count": 846,
+  "count": 847,
   "stations": [
     {
       "company": "AB Orlen Baltics Retail",
@@ -5995,6 +5995,16 @@
       "company": "UAB Saurida",
       "municipality": "Akmenės r. sav.",
       "address": "Naujoji Akmenė,  V. Kudirkos g. 18A, 85171",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Saurida",
+      "municipality": "Kauno m. sav.",
+      "address": "Neveronių k., Martinavos g. 1, 54475",
       "fuels": [
         "petrol95",
         "diesel",
