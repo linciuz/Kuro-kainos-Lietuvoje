@@ -459,6 +459,14 @@ def check_portal(now):
     try:
         d = load("data/sources/lea_portal.json")
         gen = parse_utc(d["generated"])
+    except FileNotFoundError:
+        # Only the DAILY workflow generates this; the every-15-min one cannot.
+        # A missing file therefore means "the daily job has not run yet", not
+        # "the source rotted" — warn, never fail. Genuine rot is caught by the
+        # 96h age rule below. (Shipping this as a hard fail broke every frequent
+        # run on 2026-07-27 before the first daily run existed.)
+        return warn(src, "lea_portal.json not present yet — the daily workflow "
+                         "generates it; station coordinates fall back to geocoding.")
     except Exception as e:
         return fail(src, f"unreadable lea_portal.json: {type(e).__name__}: {e}")
     if (d.get("with_coords") or 0) < 300:
