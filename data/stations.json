@@ -56,9 +56,10 @@
       "petrol95": 1.749,
       "diesel": 1.949,
       "lpg": 0.759,
-      "lat": 56.304061,
-      "lon": 22.838615,
-      "approx": true
+      "lat": 56.160074,
+      "lon": 22.76078,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -80,9 +81,10 @@
       "petrol95": 1.73,
       "diesel": 1.95,
       "lpg": 0.72,
-      "lat": 56.270845,
-      "lon": 22.885925,
-      "approx": true
+      "lat": 56.298276,
+      "lon": 22.885202,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -92,9 +94,10 @@
       "petrol95": 1.73,
       "diesel": 1.95,
       "lpg": 0.72,
-      "lat": 56.245229,
-      "lon": 23.009627,
-      "approx": true
+      "lat": 56.23861,
+      "lon": 22.750889,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "AB Orlen Baltics Retail",
@@ -256,9 +259,10 @@
       "petrol95": 1.669,
       "diesel": 1.869,
       "lpg": 0.669,
-      "lat": 54.366651,
-      "lon": 23.614102,
-      "approx": true
+      "lat": 54.045097,
+      "lon": 23.526838,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -268,9 +272,10 @@
       "petrol95": 1.759,
       "diesel": 1.959,
       "lpg": 0.689,
-      "lat": 54.386666,
-      "lon": 23.974918,
-      "approx": true
+      "lat": 54.045097,
+      "lon": 23.526838,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Skulas",
@@ -292,9 +297,10 @@
       "petrol95": 1.75,
       "diesel": 1.96,
       "lpg": 0.69,
-      "lat": 54.377241,
-      "lon": 23.983544,
-      "approx": true
+      "lat": 54.045097,
+      "lon": 23.526838,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Stateta",
@@ -353,9 +359,10 @@
       "petrol95": 1.739,
       "diesel": 1.949,
       "lpg": 0.779,
-      "lat": 55.695251,
-      "lon": 25.340621,
-      "approx": true
+      "lat": 55.685124,
+      "lon": 25.35278,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Alauša",
@@ -402,9 +409,10 @@
       "petrol95": 1.779,
       "diesel": 1.999,
       "lpg": 0.819,
-      "lat": 55.523087,
-      "lon": 25.108556,
-      "approx": true
+      "lat": 55.675913,
+      "lon": 25.358703,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Narjanta",
@@ -617,9 +625,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.749,
-      "lat": 54.763291,
-      "lon": 24.769554,
-      "approx": true
+      "lat": 54.7864,
+      "lon": 24.665518,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Boost Petrol",
@@ -833,9 +842,10 @@
       "petrol95": 1.87,
       "diesel": 1.99,
       "lpg": 0.87,
-      "lat": 55.116838,
-      "lon": 24.281573,
-      "approx": true
+      "lat": 55.13002,
+      "lon": 24.189396,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Žibalas",
@@ -869,9 +879,10 @@
       "petrol95": 1.759,
       "diesel": 1.969,
       "lpg": 0.735,
-      "lat": 56.194262,
-      "lon": 23.569477,
-      "approx": true
+      "lat": 56.212868,
+      "lon": 23.574543,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -946,9 +957,10 @@
       "petrol95": 1.85,
       "diesel": 1.99,
       "lpg": 0.87,
-      "lat": 55.217627,
-      "lon": 22.965234,
-      "approx": true
+      "lat": 55.262018,
+      "lon": 22.691796,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB GM Manufacturing Lithuania",
@@ -982,9 +994,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.749,
-      "lat": 54.81459,
-      "lon": 24.461824,
-      "approx": true
+      "lat": 54.816378,
+      "lon": 24.433143,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "IĮ A. Praškevičiaus",
@@ -994,9 +1007,10 @@
       "petrol95": 1.75,
       "diesel": 1.92,
       "lpg": 0.72,
-      "lat": 54.723798,
-      "lon": 24.221308,
-      "approx": true
+      "lat": 54.731242,
+      "lon": 24.235386,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -1031,9 +1045,10 @@
       "petrol95": 1.769,
       "diesel": 1.899,
       "lpg": 0.71,
-      "lat": 54.867654,
-      "lon": 24.403774,
-      "approx": true
+      "lat": 54.802522,
+      "lon": 24.502197,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -1080,9 +1095,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.799,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.321397,
+      "lon": 23.140067,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -1105,9 +1121,10 @@
       "petrol95": 1.839,
       "diesel": 1.979,
       "lpg": 0.819,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.324275,
+      "lon": 23.144682,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -1169,9 +1186,10 @@
       "petrol95": 1.82,
       "diesel": 1.99,
       "lpg": null,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.329083,
+      "lon": 23.148383,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -1181,9 +1199,10 @@
       "petrol95": 1.69,
       "diesel": 1.93,
       "lpg": 0.72,
-      "lat": 54.432412,
-      "lon": 23.203198,
-      "approx": true
+      "lat": 54.436265,
+      "lon": 23.205025,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -1193,9 +1212,10 @@
       "petrol95": null,
       "diesel": null,
       "lpg": 0.72,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.407394,
+      "lon": 23.220975,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Stateta",
@@ -1205,9 +1225,10 @@
       "petrol95": 1.699,
       "diesel": 1.897,
       "lpg": 0.737,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.41083,
+      "lon": 23.206915,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -2313,9 +2334,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.739,
-      "lat": 54.898214,
-      "lon": 23.904482,
-      "approx": true
+      "lat": 54.888774,
+      "lon": 23.818445,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "AB Orlen Baltics Retail",
@@ -2400,9 +2422,10 @@
       "petrol95": 1.709,
       "diesel": 1.909,
       "lpg": 0.709,
-      "lat": 55.06392,
-      "lon": 23.794665,
-      "approx": true
+      "lat": 54.971968,
+      "lon": 23.859064,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -2425,9 +2448,10 @@
       "petrol95": 1.709,
       "diesel": 1.909,
       "lpg": 0.7,
-      "lat": 54.903788,
-      "lon": 24.537266,
-      "approx": true
+      "lat": 54.78387,
+      "lon": 23.876653,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -2511,9 +2535,10 @@
       "petrol95": 1.77,
       "diesel": 1.95,
       "lpg": 0.69,
-      "lat": 54.80642,
-      "lon": 23.789815,
-      "approx": true
+      "lat": 54.903809,
+      "lon": 23.762112,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Stateta",
@@ -2523,9 +2548,10 @@
       "petrol95": 1.699,
       "diesel": 1.897,
       "lpg": 0.737,
-      "lat": 54.926581,
-      "lon": 24.100415,
-      "approx": true
+      "lat": 54.928986,
+      "lon": 24.038212,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -2625,9 +2651,10 @@
       "petrol95": 1.84,
       "diesel": 1.99,
       "lpg": 0.75,
-      "lat": 54.732721,
-      "lon": 23.624932,
-      "approx": true
+      "lat": 54.769261,
+      "lon": 23.486561,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -2637,9 +2664,10 @@
       "petrol95": 1.899,
       "diesel": 2.039,
       "lpg": 0.859,
-      "lat": 54.79014,
-      "lon": 23.448325,
-      "approx": true
+      "lat": 54.69867,
+      "lon": 23.517622,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "IĮ Raimondo Balsio",
@@ -2649,9 +2677,10 @@
       "petrol95": 1.71,
       "diesel": 1.82,
       "lpg": 0.83,
-      "lat": 55.83464,
-      "lon": 22.844632,
-      "approx": true
+      "lat": 55.830219,
+      "lon": 22.853354,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Antivis",
@@ -2685,9 +2714,10 @@
       "petrol95": 1.85,
       "diesel": 2.02,
       "lpg": 0.75,
-      "lat": 55.638208,
-      "lon": 22.938369,
-      "approx": true
+      "lat": 55.602574,
+      "lon": 23.042413,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Boost Petrol",
@@ -2697,9 +2727,10 @@
       "petrol95": 1.889,
       "diesel": 2.089,
       "lpg": 0.829,
-      "lat": 55.638208,
-      "lon": 22.938369,
-      "approx": true
+      "lat": 55.618303,
+      "lon": 22.901401,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Eniris",
@@ -3178,9 +3209,10 @@
       "petrol95": 1.769,
       "diesel": 1.989,
       "lpg": 0.739,
-      "lat": 55.700769,
-      "lon": 21.207012,
-      "approx": true
+      "lat": 55.707884,
+      "lon": 21.245874,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -3229,9 +3261,10 @@
       "petrol95": 1.709,
       "diesel": 1.909,
       "lpg": 0.7,
-      "lat": 55.716045,
-      "lon": 21.288296,
-      "approx": true
+      "lat": 55.711818,
+      "lon": 21.26508,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -3241,9 +3274,10 @@
       "petrol95": 1.7,
       "diesel": 1.9,
       "lpg": 0.7,
-      "lat": 55.776589,
-      "lon": 21.141597,
-      "approx": true
+      "lat": 55.790409,
+      "lon": 21.14172,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -3253,9 +3287,10 @@
       "petrol95": 1.81,
       "diesel": 1.99,
       "lpg": 0.71,
-      "lat": 55.743297,
-      "lon": 21.203117,
-      "approx": true
+      "lat": 55.751499,
+      "lon": 21.173085,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -3265,9 +3300,10 @@
       "petrol95": 1.81,
       "diesel": 1.99,
       "lpg": 0.71,
-      "lat": 55.73292,
-      "lon": 24.293659,
-      "approx": true
+      "lat": 55.608618,
+      "lon": 21.594007,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -3327,9 +3363,10 @@
       "petrol95": 1.83,
       "diesel": 1.96,
       "lpg": 0.74,
-      "lat": 55.73292,
-      "lon": 24.293659,
-      "approx": true
+      "lat": 55.687241,
+      "lon": 21.693525,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Trevena",
@@ -3339,9 +3376,10 @@
       "petrol95": 1.83,
       "diesel": 1.96,
       "lpg": 0.73,
-      "lat": 55.574424,
-      "lon": 21.259853,
-      "approx": true
+      "lat": 55.582082,
+      "lon": 21.285263,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Trevena",
@@ -3414,9 +3452,10 @@
       "petrol95": 1.76,
       "diesel": 1.96,
       "lpg": null,
-      "lat": 55.719208,
-      "lon": 21.314255,
-      "approx": true
+      "lat": 55.720336,
+      "lon": 21.300943,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "AB Orlen Baltics Retail",
@@ -3463,9 +3502,10 @@
       "petrol95": 1.88,
       "diesel": 2.02,
       "lpg": 0.89,
-      "lat": 56.062041,
-      "lon": 21.577004,
-      "approx": true
+      "lat": 56.063149,
+      "lon": 21.582088,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Trevena",
@@ -3538,9 +3578,10 @@
       "petrol95": 1.779,
       "diesel": 1.999,
       "lpg": 0.739,
-      "lat": 55.823651,
-      "lon": 24.982967,
-      "approx": true
+      "lat": 55.770522,
+      "lon": 24.755045,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Narjanta",
@@ -3550,9 +3591,10 @@
       "petrol95": 1.919,
       "diesel": 2.039,
       "lpg": 0.799,
-      "lat": 55.821251,
-      "lon": 25.012076,
-      "approx": true
+      "lat": 55.834259,
+      "lon": 25.009335,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Stateta",
@@ -3624,9 +3666,10 @@
       "petrol95": 1.88,
       "diesel": 2.02,
       "lpg": 0.83,
-      "lat": 55.339637,
-      "lon": 24.011838,
-      "approx": true
+      "lat": 55.252185,
+      "lon": 23.852443,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "Sigito Rimkevičiaus komercinė įmonė",
@@ -3698,9 +3741,10 @@
       "petrol95": 1.763,
       "diesel": 1.914,
       "lpg": 0.85,
-      "lat": 55.339637,
-      "lon": 24.011838,
-      "approx": true
+      "lat": 55.336109,
+      "lon": 23.914917,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Mindega",
@@ -3787,9 +3831,10 @@
       "petrol95": 1.649,
       "diesel": 1.809,
       "lpg": null,
-      "lat": 54.588062,
-      "lon": 25.172137,
-      "approx": true
+      "lat": 54.045097,
+      "lon": 23.526838,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Eniris",
@@ -3799,9 +3844,10 @@
       "petrol95": 1.759,
       "diesel": 1.959,
       "lpg": 0.749,
-      "lat": 54.588062,
-      "lon": 25.172137,
-      "approx": true
+      "lat": 54.045097,
+      "lon": 23.526838,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Melkasta",
@@ -3811,9 +3857,10 @@
       "petrol95": 1.75,
       "diesel": 1.96,
       "lpg": 0.75,
-      "lat": 54.588062,
-      "lon": 25.172137,
-      "approx": true
+      "lat": 54.045097,
+      "lon": 23.526838,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Melkasta",
@@ -3823,9 +3870,10 @@
       "petrol95": 1.75,
       "diesel": 1.96,
       "lpg": 0.75,
-      "lat": 54.419382,
-      "lon": 24.497604,
-      "approx": true
+      "lat": 54.239512,
+      "lon": 23.82307,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -3835,9 +3883,10 @@
       "petrol95": 1.74,
       "diesel": 1.98,
       "lpg": 0.72,
-      "lat": 54.419382,
-      "lon": 24.497604,
-      "approx": true
+      "lat": 54.250702,
+      "lon": 23.546831,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -3860,9 +3909,10 @@
       "petrol95": 1.719,
       "diesel": 1.959,
       "lpg": 0.719,
-      "lat": 54.566438,
-      "lon": 23.361747,
-      "approx": true
+      "lat": 54.58526,
+      "lon": 23.376428,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Alauša",
@@ -4026,9 +4076,10 @@
       "petrol95": 1.8,
       "diesel": 1.96,
       "lpg": 0.75,
-      "lat": 54.67923,
-      "lon": 23.200441,
-      "approx": true
+      "lat": 54.571173,
+      "lon": 23.338512,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -4062,9 +4113,10 @@
       "petrol95": 1.769,
       "diesel": 1.969,
       "lpg": 0.714,
-      "lat": 54.67923,
-      "lon": 23.200441,
-      "approx": true
+      "lat": 54.571173,
+      "lon": 23.338512,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -4200,9 +4252,10 @@
       "petrol95": null,
       "diesel": null,
       "lpg": 0.72,
-      "lat": 56.311048,
-      "lon": 22.348472,
-      "approx": true
+      "lat": 56.301117,
+      "lon": 22.349787,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Naftos dujos",
@@ -4287,9 +4340,10 @@
       "petrol95": 1.78,
       "diesel": 1.95,
       "lpg": 0.69,
-      "lat": 56.306343,
-      "lon": 22.352003,
-      "approx": true
+      "lat": 56.258374,
+      "lon": 22.309437,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -4835,9 +4889,10 @@
       "petrol95": 1.689,
       "diesel": 1.839,
       "lpg": 0.709,
-      "lat": 55.690015,
-      "lon": 24.379081,
-      "approx": true
+      "lat": 55.66986,
+      "lon": 24.346327,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4860,9 +4915,10 @@
       "petrol95": 1.699,
       "diesel": 1.897,
       "lpg": 0.737,
-      "lat": 55.793321,
-      "lon": 24.442826,
-      "approx": true
+      "lat": 55.78769,
+      "lon": 24.439271,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -4936,9 +4992,10 @@
       "petrol95": 1.719,
       "diesel": 1.919,
       "lpg": 0.699,
-      "lat": 56.070691,
-      "lon": 24.384284,
-      "approx": true
+      "lat": 55.90653,
+      "lon": 24.33872,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -4973,9 +5030,10 @@
       "petrol95": 1.81,
       "diesel": 1.99,
       "lpg": 0.85,
-      "lat": 56.070691,
-      "lon": 24.384284,
-      "approx": true
+      "lat": 56.267299,
+      "lon": 24.370877,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Pakelės namai",
@@ -4985,9 +5043,10 @@
       "petrol95": 1.81,
       "diesel": 1.99,
       "lpg": 0.85,
-      "lat": 56.070691,
-      "lon": 24.384284,
-      "approx": true
+      "lat": 56.271805,
+      "lon": 24.36813,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Skulas",
@@ -5048,9 +5107,10 @@
       "petrol95": 1.789,
       "diesel": 1.989,
       "lpg": 0.72,
-      "lat": 55.953916,
-      "lon": 21.833541,
-      "approx": true
+      "lat": 55.90791,
+      "lon": 21.871847,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB EU Verslas",
@@ -5096,9 +5156,10 @@
       "petrol95": 1.79,
       "diesel": 1.99,
       "lpg": 0.85,
-      "lat": 55.926053,
-      "lon": 21.630711,
-      "approx": true
+      "lat": 55.929085,
+      "lon": 21.619962,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -5132,9 +5193,10 @@
       "petrol95": 1.856,
       "diesel": 2.046,
       "lpg": 0.826,
-      "lat": 55.925553,
-      "lon": 21.861473,
-      "approx": true
+      "lat": 55.939079,
+      "lon": 21.88014,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -5170,9 +5232,10 @@
       "petrol95": 1.769,
       "diesel": 1.999,
       "lpg": 0.739,
-      "lat": 54.64029,
-      "lon": 23.939218,
-      "approx": true
+      "lat": 54.578928,
+      "lon": 24.170385,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -5182,9 +5245,10 @@
       "petrol95": 1.869,
       "diesel": 2.009,
       "lpg": 0.78,
-      "lat": 54.776742,
-      "lon": 23.726472,
-      "approx": true
+      "lat": 54.761219,
+      "lon": 23.713183,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -5219,9 +5283,10 @@
       "petrol95": 1.72,
       "diesel": 1.92,
       "lpg": 0.81,
-      "lat": 54.64029,
-      "lon": 23.939218,
-      "approx": true
+      "lat": 54.508921,
+      "lon": 23.909659,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -5231,9 +5296,10 @@
       "petrol95": 1.74,
       "diesel": 1.96,
       "lpg": 0.72,
-      "lat": 54.64029,
-      "lon": 23.939218,
-      "approx": true
+      "lat": 54.646657,
+      "lon": 23.930492,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -5293,9 +5359,10 @@
       "petrol95": 1.749,
       "diesel": 1.979,
       "lpg": 0.749,
-      "lat": 55.559282,
-      "lon": 23.636983,
-      "approx": true
+      "lat": 55.634717,
+      "lon": 23.73339,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Apsaga",
@@ -5394,9 +5461,10 @@
       "petrol95": 1.72,
       "diesel": 1.94,
       "lpg": 0.7,
-      "lat": 55.693417,
-      "lon": 23.650122,
-      "approx": true
+      "lat": 55.814742,
+      "lon": 23.553075,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -5418,9 +5486,10 @@
       "petrol95": 1.849,
       "diesel": 2.039,
       "lpg": 0.839,
-      "lat": 55.376456,
-      "lon": 23.1989,
-      "approx": true
+      "lat": 55.46464,
+      "lon": 22.684693,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "AB Orlen Baltics Retail",
@@ -5430,9 +5499,10 @@
       "petrol95": 1.849,
       "diesel": 2.039,
       "lpg": 0.839,
-      "lat": 55.376456,
-      "lon": 23.1989,
-      "approx": true
+      "lat": 55.461884,
+      "lon": 22.695743,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -5494,9 +5564,10 @@
       "petrol95": 1.709,
       "diesel": 1.909,
       "lpg": 0.709,
-      "lat": 55.376456,
-      "lon": 23.1989,
-      "approx": true
+      "lat": 55.277998,
+      "lon": 23.341487,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -5605,9 +5676,10 @@
       "petrol95": 1.83,
       "diesel": 1.96,
       "lpg": 0.74,
-      "lat": 55.722941,
-      "lon": 21.92708,
-      "approx": true
+      "lat": 55.626937,
+      "lon": 21.971782,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Trevena",
@@ -5617,9 +5689,10 @@
       "petrol95": 1.83,
       "diesel": 1.96,
       "lpg": 0.74,
-      "lat": 55.723467,
-      "lon": 21.949398,
-      "approx": true
+      "lat": 55.71864,
+      "lon": 21.932234,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "Lašų žemės ūkio bendrovė",
@@ -5719,9 +5792,10 @@
       "petrol95": 1.79,
       "diesel": 1.95,
       "lpg": 0.88,
-      "lat": 56.280754,
-      "lon": 21.844629,
-      "approx": true
+      "lat": 56.284055,
+      "lon": 21.833129,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -5768,9 +5842,10 @@
       "petrol95": 1.719,
       "diesel": 1.929,
       "lpg": 0.71,
-      "lat": 55.233845,
-      "lon": 22.272365,
-      "approx": true
+      "lat": 55.243365,
+      "lon": 22.253057,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Bonsa",
@@ -5842,9 +5917,10 @@
       "petrol95": 1.81,
       "diesel": 1.98,
       "lpg": 0.71,
-      "lat": 55.25215,
-      "lon": 22.284136,
-      "approx": true
+      "lat": 55.272135,
+      "lon": 22.286446,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Littaura",
@@ -5866,9 +5942,10 @@
       "petrol95": 1.76,
       "diesel": 1.92,
       "lpg": 0.66,
-      "lat": 55.312869,
-      "lon": 22.024596,
-      "approx": true
+      "lat": 55.305445,
+      "lon": 22.040464,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Madalva",
@@ -5953,9 +6030,10 @@
       "petrol95": 1.829,
       "diesel": 2.039,
       "lpg": 0.789,
-      "lat": 55.983638,
-      "lon": 22.250663,
-      "approx": true
+      "lat": 55.731606,
+      "lon": 22.376751,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -5991,9 +6069,10 @@
       "petrol95": 1.79,
       "diesel": 1.99,
       "lpg": 0.86,
-      "lat": 56.058942,
-      "lon": 22.578612,
-      "approx": true
+      "lat": 56.062159,
+      "lon": 22.582456,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Eniris",
@@ -6003,9 +6082,10 @@
       "petrol95": 1.79,
       "diesel": 1.99,
       "lpg": 0.76,
-      "lat": 55.953996,
-      "lon": 22.301106,
-      "approx": true
+      "lat": 55.956635,
+      "lon": 22.301251,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Eniris",
@@ -6127,9 +6207,10 @@
       "petrol95": 1.69,
       "diesel": 1.89,
       "lpg": 0.69,
-      "lat": 54.704591,
-      "lon": 24.99443,
-      "approx": true
+      "lat": 54.707586,
+      "lon": 24.995999,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -6252,9 +6333,10 @@
       "petrol95": 1.75,
       "diesel": 1.95,
       "lpg": 0.72,
-      "lat": 54.782767,
-      "lon": 25.181001,
-      "approx": true
+      "lat": 55.165167,
+      "lon": 24.515292,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -6327,9 +6409,10 @@
       "petrol95": 1.669,
       "diesel": 1.869,
       "lpg": 0.669,
-      "lat": 55.579007,
-      "lon": 26.13135,
-      "approx": true
+      "lat": 55.59585,
+      "lon": 25.833879,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -6492,9 +6575,10 @@
       "petrol95": 1.879,
       "diesel": 2.059,
       "lpg": 0.809,
-      "lat": 54.304211,
-      "lon": 24.892972,
-      "approx": true
+      "lat": 54.256927,
+      "lon": 24.54718,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -6569,9 +6653,10 @@
       "petrol95": 1.75,
       "diesel": 1.93,
       "lpg": 0.75,
-      "lat": 54.65286,
-      "lon": 23.031244,
-      "approx": true
+      "lat": 55.025517,
+      "lon": 24.245274,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Regusa",
@@ -8026,9 +8111,10 @@
       "petrol95": 1.699,
       "diesel": 1.899,
       "lpg": 0.69,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.863437,
+      "lon": 25.490851,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -8076,9 +8162,10 @@
       "petrol95": 1.809,
       "diesel": 2.009,
       "lpg": null,
-      "lat": 54.563768,
-      "lon": 25.573106,
-      "approx": true
+      "lat": 54.549657,
+      "lon": 25.679862,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -8088,9 +8175,10 @@
       "petrol95": 1.7,
       "diesel": 1.9,
       "lpg": 0.7,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.835867,
+      "lon": 25.460167,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -8113,9 +8201,10 @@
       "petrol95": 1.799,
       "diesel": 1.959,
       "lpg": 0.799,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.944745,
+      "lon": 25.344296,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -8149,9 +8238,10 @@
       "petrol95": 1.85,
       "diesel": 1.86,
       "lpg": 0.82,
-      "lat": 54.581006,
-      "lon": 25.202652,
-      "approx": true
+      "lat": 54.569277,
+      "lon": 25.188169,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -8185,9 +8275,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.749,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.764109,
+      "lon": 25.196643,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Alauša",
@@ -8285,9 +8376,10 @@
       "petrol95": 1.899,
       "diesel": 2.039,
       "lpg": 0.799,
-      "lat": 54.680014,
-      "lon": 25.312246,
-      "approx": true
+      "lat": 55.717885,
+      "lon": 26.213842,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -8322,9 +8414,10 @@
       "petrol95": 1.897,
       "diesel": 2.047,
       "lpg": 0.877,
-      "lat": 54.96377,
-      "lon": 23.061573,
-      "approx": true
+      "lat": 54.953131,
+      "lon": 23.083795,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -8334,9 +8427,10 @@
       "petrol95": 1.75,
       "diesel": 1.96,
       "lpg": 0.72,
-      "lat": 54.973158,
-      "lon": 23.500801,
-      "approx": true
+      "lat": 54.977418,
+      "lon": 23.483702,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Alauša",
@@ -8371,9 +8465,10 @@
       "petrol95": 1.879,
       "diesel": 2.029,
       "lpg": null,
-      "lat": 54.378749,
-      "lon": 25.498661,
-      "approx": true
+      "lat": 55.248859,
+      "lon": 25.771358,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Tomega",
@@ -8769,9 +8864,10 @@
       "petrol95": 1.879,
       "diesel": 2.089,
       "lpg": 0.799,
-      "lat": 55.955013,
-      "lon": 23.39264,
-      "approx": true
+      "lat": 55.935761,
+      "lon": 23.077789,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -8857,9 +8953,10 @@
       "petrol95": 1.79,
       "diesel": 1.94,
       "lpg": 0.8,
-      "lat": 55.557621,
-      "lon": 21.999843,
-      "approx": true
+      "lat": 55.566375,
+      "lon": 21.995748,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -8869,9 +8966,10 @@
       "petrol95": 1.789,
       "diesel": 1.949,
       "lpg": 0.71,
-      "lat": 55.483075,
-      "lon": 22.201554,
-      "approx": true
+      "lat": 55.570309,
+      "lon": 22.176687,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -8907,9 +9005,10 @@
       "petrol95": 1.84,
       "diesel": 1.99,
       "lpg": 0.79,
-      "lat": 55.483075,
-      "lon": 22.201554,
-      "approx": true
+      "lat": 55.619824,
+      "lon": 22.246432,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Eniris",
@@ -8931,9 +9030,10 @@
       "petrol95": 1.67,
       "diesel": 1.89,
       "lpg": 0.67,
-      "lat": 55.486489,
-      "lon": 22.179011,
-      "approx": true
+      "lat": 55.485553,
+      "lon": 22.170763,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Madalva",
@@ -8943,9 +9043,10 @@
       "petrol95": null,
       "diesel": null,
       "lpg": 0.75,
-      "lat": 55.483075,
-      "lon": 22.201554,
-      "approx": true
+      "lat": 55.536636,
+      "lon": 22.494906,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -8980,9 +9081,10 @@
       "petrol95": 1.839,
       "diesel": 2.039,
       "lpg": 0.799,
-      "lat": 55.483075,
-      "lon": 22.201554,
-      "approx": true
+      "lat": 55.563619,
+      "lon": 22.194131,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Andopas",
@@ -9055,9 +9157,10 @@
       "petrol95": 1.81,
       "diesel": 1.99,
       "lpg": 0.71,
-      "lat": 55.362172,
-      "lon": 21.449035,
-      "approx": true
+      "lat": 55.376993,
+      "lon": 21.470241,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Jozita",
@@ -9079,9 +9182,10 @@
       "petrol95": 1.83,
       "diesel": 1.96,
       "lpg": 0.72,
-      "lat": 55.333748,
-      "lon": 21.515529,
-      "approx": true
+      "lat": 55.464493,
+      "lon": 21.470231,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Trevena",
@@ -9091,9 +9195,10 @@
       "petrol95": 1.83,
       "diesel": 1.96,
       "lpg": 0.72,
-      "lat": 55.333748,
-      "lon": 21.515529,
-      "approx": true
+      "lat": 55.227536,
+      "lon": 21.701884,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -9116,9 +9221,10 @@
       "petrol95": 1.669,
       "diesel": 1.869,
       "lpg": 0.669,
-      "lat": 55.030522,
-      "lon": 24.978789,
-      "approx": true
+      "lat": 55.024699,
+      "lon": 24.985517,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -9179,9 +9285,10 @@
       "petrol95": 1.86,
       "diesel": 2.05,
       "lpg": 0.85,
-      "lat": 55.069736,
-      "lon": 25.998318,
-      "approx": true
+      "lat": 55.120077,
+      "lon": 26.131287,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -9266,9 +9373,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.333748,
-      "lon": 21.515529,
-      "approx": true
+      "lat": 55.507549,
+      "lon": 21.603071,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
@@ -9390,9 +9498,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.339637,
-      "lon": 24.011838,
-      "approx": true
+      "lat": 55.16705,
+      "lon": 23.994779,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB AS 24 Lietuva",
@@ -9406,9 +9515,10 @@
         "diesel"
       ],
       "no_price": true,
-      "lat": 54.739711,
-      "lon": 25.280496,
-      "approx": true
+      "lat": 54.321397,
+      "lon": 23.140067,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Adukesta",
@@ -9424,9 +9534,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.708349,
-      "lon": 21.441219,
-      "approx": true
+      "lat": 55.693541,
+      "lon": 21.413752,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Alauša",
@@ -9477,9 +9588,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 54.67923,
-      "lon": 23.200441,
-      "approx": true
+      "lat": 54.571173,
+      "lon": 23.338512,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Alauša",
@@ -9600,9 +9712,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 54.68285,
-      "lon": 25.285623,
-      "approx": true
+      "lat": 54.944745,
+      "lon": 25.344296,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Eniris",
@@ -9618,9 +9731,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 56.058942,
-      "lon": 22.578612,
-      "approx": true
+      "lat": 56.062159,
+      "lon": 22.582456,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Gelvybė",
@@ -9744,9 +9858,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.02042,
-      "lon": 22.962869,
-      "approx": true
+      "lat": 55.021499,
+      "lon": 22.971428,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Gelvybė",
@@ -9762,9 +9877,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 54.770355,
-      "lon": 22.863166,
-      "approx": true
+      "lat": 54.602041,
+      "lon": 23.194865,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Gelvybė",
@@ -9833,9 +9949,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.25215,
-      "lon": 22.284136,
-      "approx": true
+      "lat": 55.272135,
+      "lon": 22.286446,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Kriketas",
@@ -9885,9 +10002,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 56.073104,
-      "lon": 23.831915,
-      "approx": true
+      "lat": 55.970813,
+      "lon": 23.587424,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Naftrus",
@@ -9940,9 +10058,10 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.376456,
-      "lon": 23.1989,
-      "approx": true
+      "lat": 55.413324,
+      "lon": 22.82195,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -10007,9 +10126,10 @@
         "lpg"
       ],
       "no_price": true,
-      "lat": 54.770355,
-      "lon": 22.863166,
-      "approx": true
+      "lat": 54.636546,
+      "lon": 23.006066,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
