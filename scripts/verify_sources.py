@@ -589,7 +589,25 @@ def _fingerprint(msg, now):
     day: the same persisting problem alarms once per day, a different problem
     or a new day alarms immediately."""
     head = re.sub(r"\d+", "N", msg)[:140]
-    return f"{head}|{required_date(now, 13).isoformat()}"
+    # Keyed by the business day the data SHOULD have (not the wall date), plus
+    # how many business days we are actually behind. Without the second term a
+    # single fingerprint spans a long weekend/holiday — demonstrated in
+    # production 2026-07-29, where a 2-day price outage kept reporting
+    # "[repeat - already alarmed]" on GREEN runs. Each further day of staleness
+    # is genuinely new news and earns exactly one more alarm.
+    behind = ""
+    try:
+        pub = load("data/stations.json").get("updated")
+        if pub:
+            d0, need = dt.date.fromisoformat(pub), required_date(now, 13)
+            n = 0
+            while d0 < need and n < 30:
+                need = prev_business_day(need)
+                n += 1
+            behind = f"|behind{n}"
+    except Exception:
+        pass
+    return f"{head}|{required_date(now, 13).isoformat()}{behind}"
 
 
 def _load_alarm_state():

@@ -543,12 +543,28 @@ def main():
     stations = file_date = None
     source = "Lietuvos energetikos agentūra (ena.lt)"
     source_url = PAGE_URL
+    # Runner-side diagnostics, committed as data/_price_source_debug.json: the
+    # fetch step is "|| echo non-fatal" and the Actions logs API needs auth
+    # (403s), so a CI-only failure is otherwise INVISIBLE — which is exactly how
+    # this silently stopped updating for 2 days (2026-07-27 -> 07-29) while runs
+    # stayed green. Same trick that diagnosed the viada.lt block.
+    dbg = {"checked_utc": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat() + "Z"}
     try:
         stations, file_date = portal_stations()
         source_url = "https://degalukainos.ena.lt/"
+        dbg.update(portal="ok", file_date=file_date, stations=len(stations))
     except Exception as e:
+        import traceback
+        dbg.update(portal="FAILED", error=f"{type(e).__name__}: {e}",
+                   trace=traceback.format_exc()[-700:])
         print(f"[warn] portal source unavailable ({type(e).__name__}: {e}) — "
               f"falling back to the SharePoint scraper.")
+    try:
+        os.makedirs("data", exist_ok=True)
+        json.dump(dbg, open(os.path.join("data", "_price_source_debug.json"), "w",
+                            encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception:
+        pass
 
     if stations is None:
         print(f"[info] fetching page: {PAGE_URL}")
