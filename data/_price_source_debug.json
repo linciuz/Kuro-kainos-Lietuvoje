@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-07-29T05:34:03+00:00Z",
+ "checked_utc": "2026-07-29T06:00:25+00:00Z",
  "engine": "ok",
  "file_date": "2026-07-28",
  "stations": 767,
@@ -14,14 +14,14 @@
    "ok": true,
    "date": "2026-07-28",
    "error": null,
-   "fetched_utc": "2026-07-29T05:34:04+00:00Z"
+   "fetched_utc": "2026-07-29T06:00:29+00:00Z"
   },
   {
    "source": "sharepoint",
    "ok": true,
    "date": "2026-07-28",
    "error": null,
-   "fetched_utc": "2026-07-29T05:34:07+00:00Z"
+   "fetched_utc": "2026-07-29T06:00:30+00:00Z"
   }
  ]
 }
