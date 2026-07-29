@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-07-29T08:30:41+00:00Z",
+    "resolved_utc": "2026-07-29T08:45:41+00:00Z",
     "winner_counts": {
       "sharepoint": 12,
       "portal": 749,
@@ -15,14 +15,14 @@
         "ok": true,
         "date": "2026-07-29",
         "error": null,
-        "fetched_utc": "2026-07-29T08:30:39+00:00Z"
+        "fetched_utc": "2026-07-29T08:45:39+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": true,
         "date": "2026-07-28",
         "error": null,
-        "fetched_utc": "2026-07-29T08:30:41+00:00Z"
+        "fetched_utc": "2026-07-29T08:45:41+00:00Z"
       }
     ]
   },
