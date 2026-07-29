@@ -2858,5 +2858,31 @@
     "sv": "Priser per stad",
     "fi": "Hinnat kaupungeittain",
     "no": "Priser etter by"
+  },
+  "price_intraday": {
+    "lt": "atnaujinta {time}",
+    "en": "updated {time}",
+    "lv": "atjaunināts {time}",
+    "et": "uuendatud {time}",
+    "uk": "оновлено {time}",
+    "ru": "обновлено {time}",
+    "pl": "zaktualizowano {time}",
+    "de": "aktualisiert {time}",
+    "sv": "uppdaterad {time}",
+    "fi": "päivitetty {time}",
+    "no": "oppdatert {time}"
+  },
+  "price_intraday_hint": {
+    "lt": "Degalinė pati atnaujino kainą po 10:00 sąrašo",
+    "en": "The station updated this price itself after the 10:00 list",
+    "lv": "Degvielas uzpildes stacija pati atjaunināja cenu pēc 10:00 saraksta",
+    "et": "Tankla uuendas selle hinna ise pärast 10:00 nimekirja",
+    "uk": "Заправка сама оновила ціну після списку о 10:00",
+    "ru": "Заправка сама обновила цену после списка в 10:00",
+    "pl": "Stacja sama zaktualizowała tę cenę po liście z 10:00",
+    "de": "Die Station hat diesen Preis nach der 10:00-Liste selbst aktualisiert",
+    "sv": "Stationen uppdaterade själv priset efter 10:00-listan",
+    "fi": "Asema päivitti hinnan itse klo 10:00 listan jälkeen",
+    "no": "Stasjonen oppdaterte prisen selv etter 10:00-listen"
   }
 }

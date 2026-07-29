@@ -2309,6 +2309,13 @@ function stationCardHtml(s, best, worst) {
             const approxTag = s.approx ? ` <span class="approx-tag">${t("approx_warn")}</span>` : "";
             const fl = flagFor(s);
             const flagLine = fl ? `<div class="change-flag">${t("flag_change", { price: fl.live.toFixed(3) })}</div>` : "";
+            // Operator re-reported this price AFTER LEA's 10:00 daily list — the
+            // one case where we know more than the official snapshot, so it is
+            // worth a line. Stations still on the 10:00 file show nothing
+            // (a clock on all 700 would be noise, not information).
+            const intraday = s.price_intraday && s.price_time
+                ? `<div class="intraday-line" title="${escAttr(t("price_intraday_hint"))}">🕒 ${esc(t("price_intraday", { time: s.price_time }))}</div>`
+                : "";
             const rep = reportFor(s);
             const repLine = rep ? `<div class="report-line">${t("report_line", { price: rep.price.toFixed(3), ago: agoTs(rep.ts) })}${rep.d ? ` <b class="rep-disc">${esc(t("report_with_discount"))}</b>` : ""}</div>` : "";
             const repBtn = REPORT_API ? `<button class="report-btn" data-key="${escAttr(stationKey(s))}">${t("report_btn")}</button>` : "";
@@ -2333,7 +2340,7 @@ function stationCardHtml(s, best, worst) {
                         ? `<span class="station-price">€${s[fuelType].toFixed(3)}</span><span class="price-unit">/L</span>${loyaltyLine}`
                         : `<span class="no-price-badge">${t("no_price")}</span>`}</div>
                 </div>
-                ${repLine}
+                ${intraday}${repLine}
                 <div class="station-address">${esc(s.address || "")}${s.locality ? ", " + esc(s.locality) : ""}</div>
                 <div class="station-muni">📍 ${esc(s.municipality || "")}${approxTag}</div>
                 ${fuelChips(s)}

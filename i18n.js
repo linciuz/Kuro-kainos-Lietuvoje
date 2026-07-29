@@ -221,7 +221,9 @@ const STRINGS = {
     "no": "nėra",
     "muni_label": "Savivaldybės filtras",
     "privacy": "Privatumas",
-    "prices_by_city": "Kainos pagal miestus"
+    "prices_by_city": "Kainos pagal miestus",
+    "price_intraday": "atnaujinta {time}",
+    "price_intraday_hint": "Degalinė pati atnaujino kainą po 10:00 sąrašo"
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -443,7 +445,9 @@ const STRINGS = {
     "no": "nav",
     "muni_label": "Pašvaldības filtrs",
     "privacy": "Privātums",
-    "prices_by_city": "Cenas pēc pilsētām"
+    "prices_by_city": "Cenas pēc pilsētām",
+    "price_intraday": "atjaunināts {time}",
+    "price_intraday_hint": "Degvielas uzpildes stacija pati atjaunināja cenu pēc 10:00 saraksta"
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -665,7 +669,9 @@ const STRINGS = {
     "no": "puudub",
     "muni_label": "Omavalitsuse filter",
     "privacy": "Privaatsus",
-    "prices_by_city": "Hinnad linnade kaupa"
+    "prices_by_city": "Hinnad linnade kaupa",
+    "price_intraday": "uuendatud {time}",
+    "price_intraday_hint": "Tankla uuendas selle hinna ise pärast 10:00 nimekirja"
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -887,7 +893,9 @@ const STRINGS = {
     "no": "not available",
     "muni_label": "Municipality filter",
     "privacy": "Privacy",
-    "prices_by_city": "Prices by city"
+    "prices_by_city": "Prices by city",
+    "price_intraday": "updated {time}",
+    "price_intraday_hint": "The station updated this price itself after the 10:00 list"
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -1109,7 +1117,9 @@ const STRINGS = {
     "no": "немає",
     "muni_label": "Фільтр самоврядування",
     "privacy": "Приватність",
-    "prices_by_city": "Ціни за містами"
+    "prices_by_city": "Ціни за містами",
+    "price_intraday": "оновлено {time}",
+    "price_intraday_hint": "Заправка сама оновила ціну після списку о 10:00"
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -1331,7 +1341,9 @@ const STRINGS = {
     "no": "нет",
     "muni_label": "Фильтр самоуправления",
     "privacy": "Приватность",
-    "prices_by_city": "Цены по городам"
+    "prices_by_city": "Цены по городам",
+    "price_intraday": "обновлено {time}",
+    "price_intraday_hint": "Заправка сама обновила цену после списка в 10:00"
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -1553,7 +1565,9 @@ const STRINGS = {
     "no": "brak",
     "muni_label": "Filtr gminy",
     "privacy": "Prywatność",
-    "prices_by_city": "Ceny według miast"
+    "prices_by_city": "Ceny według miast",
+    "price_intraday": "zaktualizowano {time}",
+    "price_intraday_hint": "Stacja sama zaktualizowała tę cenę po liście z 10:00"
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -1775,7 +1789,9 @@ const STRINGS = {
     "no": "nicht vorhanden",
     "muni_label": "Gemeindefilter",
     "privacy": "Datenschutz",
-    "prices_by_city": "Preise nach Stadt"
+    "prices_by_city": "Preise nach Stadt",
+    "price_intraday": "aktualisiert {time}",
+    "price_intraday_hint": "Die Station hat diesen Preis nach der 10:00-Liste selbst aktualisiert"
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -1997,7 +2013,9 @@ const STRINGS = {
     "no": "finns ej",
     "muni_label": "Kommunfilter",
     "privacy": "Integritet",
-    "prices_by_city": "Priser per stad"
+    "prices_by_city": "Priser per stad",
+    "price_intraday": "uppdaterad {time}",
+    "price_intraday_hint": "Stationen uppdaterade själv priset efter 10:00-listan"
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -2219,7 +2237,9 @@ const STRINGS = {
     "no": "ei ole",
     "muni_label": "Kuntasuodatin",
     "privacy": "Tietosuoja",
-    "prices_by_city": "Hinnat kaupungeittain"
+    "prices_by_city": "Hinnat kaupungeittain",
+    "price_intraday": "päivitetty {time}",
+    "price_intraday_hint": "Asema päivitti hinnan itse klo 10:00 listan jälkeen"
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -2441,7 +2461,9 @@ const STRINGS = {
     "no": "finnes ikke",
     "muni_label": "Kommunefilter",
     "privacy": "Personvern",
-    "prices_by_city": "Priser etter by"
+    "prices_by_city": "Priser etter by",
+    "price_intraday": "oppdatert {time}",
+    "price_intraday_hint": "Stasjonen oppdaterte prisen selv etter 10:00-listen"
   }
 };
 let lang = (function () {

@@ -226,8 +226,18 @@ def merge(results):
         stamps = [(prov[(k, f)][0], prov[(k, f)][1]) for f in FUELS if (k, f) in prov]
         if stamps:
             newest = max(stamps, key=lambda x: x[0])
-            s["price_updated"] = newest[0].astimezone(VILNIUS).replace(microsecond=0).isoformat()
+            ts = newest[0]
+            local = ts.astimezone(VILNIUS)
+            s["price_updated"] = local.replace(microsecond=0).isoformat()
             s["price_src"] = newest[1]
+            # INTRADAY = this operator re-reported AFTER the day's official
+            # 10:00 snapshot, so it is genuinely newer than the daily file.
+            # Computed here (not in the app) so the UI stays dumb and this stays
+            # testable: the app just shows a clock when the flag is set.
+            snap = snapshot_ts(local.date().isoformat())
+            if snap and ts > snap:
+                s["price_intraday"] = True
+                s["price_time"] = local.strftime("%H:%M")
     return list(merged.values())
 
 

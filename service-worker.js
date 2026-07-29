@@ -2,7 +2,7 @@
 // Network-first for code + data so updates always reach users (with offline
 // cache fallback); cache-first only for SAME-ORIGIN images. Bump CACHE on
 // shell changes.
-const CACHE = "kk-v61";
+const CACHE = "kk-v62";
 const SHELL = [
   "./", "./index.html", "./app.js", "./i18n.js", "./manifest.webmanifest",
   "./icon-192.png", "./icon-512.png",
