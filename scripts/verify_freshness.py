@@ -43,9 +43,32 @@ for _s in (sys.stdout, sys.stderr):
 STATIONS = os.path.join("data", "stations.json")
 
 
-def lea_newest_price_date():
-    """Newest date among the live 'Naujausios degalų kainos (DATE)' PRICE files
-    on ena.lt (excludes the 'pranešimas' analysis report). None if unreachable."""
+def portal_newest_price_date():
+    """Newest submit date visible in LEA's portal API — the ground truth since
+    2026-07-28, when LEA removed the SharePoint links from ena.lt and migrated
+    everything to degalukainos.ena.lt. Independent of what WE published: it asks
+    the source directly. None if unreachable."""
+    try:
+        import fetch_lea_portal as portal
+        base, token = portal.discover_credentials()
+        raw = json.loads(portal.get(
+            f"{base}/read/prices?per_page=3000",
+            {"Authorization": f"Bearer {token}", "Accept": "application/json"}))
+    except Exception as e:
+        print(f"[freshness] could not reach the portal API: {type(e).__name__}: {e}")
+        return None
+    dates = set()
+    for r in raw.get("data") or []:
+        m = re.search(r"20\d\d-\d\d-\d\d", str(r.get("submitted_at") or ""))
+        if m:
+            dates.add(m.group(0))
+    return max(dates) if dates else None
+
+
+def sharepoint_newest_price_date():
+    """Newest 'Naujausios degalų kainos (DATE)' label still on ena.lt, if any.
+    LEA stripped these on 2026-07-28; kept because they may return, and because
+    a second independent opinion is worth having. None if absent/unreachable."""
     bust = f"?_={int(time.time())}"
     try:
         html = requests.get(fp.PAGE_URL + bust, headers={
@@ -59,6 +82,19 @@ def lea_newest_price_date():
     # label OUT of the anchor on 2026-07-17 and this gate went date-blind.
     dates = fp.lea_price_dates(html)
     return max(dates) if dates else None
+
+
+def lea_newest_price_date():
+    """Newest price date LEA offers ANYWHERE — portal first (the live feed),
+    SharePoint second. Taking the max means a working source can't be masked by
+    a retired one: the 07-28 migration made the old page return nothing, which
+    would otherwise read as 'unverifiable' forever."""
+    p = portal_newest_price_date()
+    s = sharepoint_newest_price_date()
+    both = [d for d in (p, s) if d]
+    if p and s and p != s:
+        print(f"[freshness] portal says {p}, ena.lt page says {s} — using the newer.")
+    return max(both) if both else None
 
 
 def our_date():

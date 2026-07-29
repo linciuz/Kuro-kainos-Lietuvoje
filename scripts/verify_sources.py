@@ -450,11 +450,13 @@ def check_scheduler(now):
 
 
 def check_portal(now):
-    """LEA's operator self-service portal (fetch_lea_portal.py). Today it is a
-    COORDINATE source, not a price source (7% price coverage, 2026-07-27), so
-    the rule guards the coordinate payload and watches adoption: if operators
-    start submitting, this becomes a fresher price feed than the daily Excel
-    and we should switch — that is a WARNING, not a failure."""
+    """LEA's portal (degalukainos.ena.lt) — the PRIMARY price source since
+    2026-07-28, when LEA stripped the SharePoint links from ena.lt and price
+    coverage jumped 7% -> 94% overnight (portal prices matched the last Excel
+    to the 3rd decimal). fetch_prices.py reads the API directly; this file is
+    the coordinate payload + an adoption record. The rule therefore guards
+    BOTH: coordinates, and the price coverage that fetch_prices now depends on
+    (a collapse there silently pushes us back onto the retired Excel)."""
     src = "lea_portal"
     try:
         d = load("data/sources/lea_portal.json")
@@ -477,7 +479,13 @@ def check_portal(now):
         fail(src, f"lea_portal.json generated {age_h:.0f}h ago (>96h) — the portal fetch "
                   f"has been failing (token rotated? API moved?).")
     share = 100 * (d.get("priced") or 0) / max(1, d.get("count") or 1)
-    if share >= 25:
+    # Since 2026-07-28 fetch_prices depends on this coverage. Sustained collapse
+    # means we are quietly running on the fallback (or on nothing) — say so.
+    if share < 50:
+        fail(src, f"portal price coverage fell to {share:.0f}% (<50%) — fetch_prices "
+                  f"falls back to the retired SharePoint Excel, which LEA no longer "
+                  f"links; check the portal API before the fallback runs out.")
+    elif share >= 25:
         warn(src, f"operators now self-report prices at {share:.0f}% of stations "
                   f"(was 7% on 2026-07-27) — the portal is becoming a real-time price feed; "
                   f"consider promoting it above the once-daily LEA Excel.")

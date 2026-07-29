@@ -89,6 +89,12 @@ def deaccent(s):
     return s
 
 
+def station_key(net, addr, muni):
+    """One station identity rule for BOTH price sources (Excel + portal), so the
+    two can never disagree about what counts as the same physical station."""
+    return f"{net}|{addr}|{muni}"
+
+
 def blocks_price_candidates(html):
     """Candidates parsed from PARAGRAPH TEXT next to the anchors.
 
@@ -356,8 +362,7 @@ def parse_workbook(xbytes):
     data_rows = rows[hidx + 1:]
     stations = {}
 
-    def key(net, addr, muni):
-        return f"{net}|{addr}|{muni}"
+    key = station_key
 
     def cell(r, field):
         """Value of `field`'s column for row r, as a clean string ('' if blank).
@@ -434,35 +439,66 @@ def parse_workbook(xbytes):
     return list(stations.values()), file_date
 
 
-def summarize(stations):
-    out = {}
-    for fuel in ("petrol95", "diesel", "lpg"):
-        vals = [s[fuel] for s in stations if s.get(fuel)]
-        if vals:
-            out[fuel] = {"min": round(min(vals), 3),
-                         "avg": round(sum(vals) / len(vals), 3),
-                         "max": round(max(vals), 3),
-                         "count": len(vals)}
-    return out
+# --- LEA's new self-service portal (primary source since 2026-07-28) ----------
+# LEA restructured ena.lt on 2026-07-28: the daily SharePoint Excel link was
+# removed from the page and the whole thing migrated to degalukainos.ena.lt, a
+# Vue SPA backed by a public JSON API. Overnight the API's price coverage jumped
+# 7% -> 94% and its prices matched the SharePoint file to the 3rd decimal, so it
+# IS the daily feed now (plus official coords + per-station submit timestamps).
+# We source prices from it FIRST and keep the SharePoint scraper as a fallback,
+# because LEA still generates the Excel and the portal could yet wobble.
+PORTAL_FUELS = {"benzinas_95": "petrol95", "dyzelinas": "diesel", "snd": "lpg"}
 
 
-def main():
-    print(f"[info] fetching page: {PAGE_URL}")
-    # Cache-bust + real browser UA so a just-published file can't be hidden by a
-    # cached bot-UA copy of the page (the 2026-07-07 stale-link failure).
-    bust = f"?_={int(dt.datetime.now(dt.timezone.utc).timestamp())}"
-    html = requests.get(PAGE_URL + bust, headers={
-        "User-Agent": BROWSER_UA, "Cache-Control": "no-cache", "Pragma": "no-cache",
-    }, timeout=60).text
-    cands = find_price_candidates(html)
-    if not cands:
-        print("[error] No dated PRICE-file candidate found on the page — refusing to guess.")
-        sys.exit(1)
+def portal_stations():
+    """Return (stations, file_date) in parse_workbook's shape, sourced from the
+    portal API. Raises on any failure or thin coverage so main() falls back to
+    the SharePoint scraper. Prices only — coords come from the same downstream
+    steps as before (geocode + chain snap + the lea_portal coord merge)."""
+    import fetch_lea_portal as portal
+    base, token = portal.discover_credentials()
+    # portal.get() returns raw text, not parsed JSON.
+    raw = json.loads(portal.get(f"{base}/read/prices?per_page=3000",
+                                {"Authorization": f"Bearer {token}", "Accept": "application/json"}))
+    rows = raw.get("data") or []
+    if len(rows) < 500:
+        raise RuntimeError(f"portal returned only {len(rows)} rows")
 
-    # Try candidates in order; ACCEPT the first whose file's OWN date column
-    # matches its page label (LEA's anchors carry stale copy-paste titles and
-    # several links can share one paragraph — only the file itself is truth).
-    # Fall back to the newest-dated file actually downloaded, loudly.
+    stations, dates = {}, set()
+    for r in rows:
+        net = (r.get("company_name") or "").strip()
+        addr = (r.get("address") or "").strip()
+        muni = (r.get("municipality") or "").strip()
+        if not net:
+            continue
+        st = stations.setdefault(station_key(net, addr, muni), {
+            "network": net, "address": addr, "municipality": muni,
+            "locality": "", "petrol95": None, "diesel": None, "lpg": None})
+        fuel = PORTAL_FUELS.get(r.get("fuel_type"))
+        price = to_float(r.get("price"))
+        if fuel and price and 0.3 < price < 3.5:
+            st[fuel] = price
+        m = re.search(r"20\d\d-\d\d-\d\d", str(r.get("submitted_at") or ""))
+        if m:
+            dates.add(m.group(0))
+
+    priced = [s for s in stations.values() if any(s[f] is not None for f in ("petrol95", "diesel", "lpg"))]
+    if len(priced) < 400:
+        raise RuntimeError(f"portal has only {len(priced)} priced stations (<400) — not usable yet")
+    file_date = max(dates) if dates else None
+    print(f"[ok] portal: {len(stations)} stations, {len(priced)} priced, newest submit {file_date}")
+    return list(stations.values()), file_date
+
+
+def _sharepoint_stations(cands):
+    """FALLBACK source: the daily SharePoint Excel still linked from ena.lt.
+
+    Try candidates in order; ACCEPT the first whose file's OWN date column
+    matches its page label (LEA's anchors carry stale copy-paste titles and
+    several links can share one paragraph — only the file itself is truth).
+    Fall back to the newest-dated file actually downloaded, loudly.
+    Exits the process if nothing usable downloads, so the last good data stays.
+    """
     stations = file_date = None
     tried = []
     for c in cands[:5]:
@@ -477,18 +513,56 @@ def main():
             continue
         tried.append((fd or "", st, c))
         if fd and c["date"] and fd == c["date"]:
-            stations, file_date = st, fd
             print(f"[ok] file date {fd} matches page label — accepted")
-            break
+            return st, fd
         print(f"[warn] file date {fd!r} != label {c['date']!r} — trying next candidate")
-    if stations is None and tried:
+    if tried:
         tried.sort(key=lambda t: t[0], reverse=True)
-        fd, st, c = tried[0][0], tried[0][1], tried[0][2]
-        stations, file_date = st, (fd or None)
+        fd, st, _c = tried[0]
         print(f"[warn] no candidate matched its label — using newest downloaded file ({fd or '?'}).")
+        return st, (fd or None)
+    print("[error] every candidate failed to download/parse - aborting, keeping last good data.")
+    sys.exit(3)
+
+
+def summarize(stations):
+    out = {}
+    for fuel in ("petrol95", "diesel", "lpg"):
+        vals = [s[fuel] for s in stations if s.get(fuel)]
+        if vals:
+            out[fuel] = {"min": round(min(vals), 3),
+                         "avg": round(sum(vals) / len(vals), 3),
+                         "max": round(max(vals), 3),
+                         "count": len(vals)}
+    return out
+
+
+def main():
+    # PRIMARY: LEA's new portal API (see portal_stations). PRICE_SOURCE records
+    # which fed the published file, so the freshness gate can tell them apart.
+    stations = file_date = None
+    source = "Lietuvos energetikos agentūra (ena.lt)"
+    source_url = PAGE_URL
+    try:
+        stations, file_date = portal_stations()
+        source_url = "https://degalukainos.ena.lt/"
+    except Exception as e:
+        print(f"[warn] portal source unavailable ({type(e).__name__}: {e}) — "
+              f"falling back to the SharePoint scraper.")
+
     if stations is None:
-        print("[error] every candidate failed to download/parse - aborting, keeping last good data.")
-        sys.exit(3)
+        print(f"[info] fetching page: {PAGE_URL}")
+        # Cache-bust + real browser UA so a just-published file can't be hidden by a
+        # cached bot-UA copy of the page (the 2026-07-07 stale-link failure).
+        bust = f"?_={int(dt.datetime.now(dt.timezone.utc).timestamp())}"
+        html = requests.get(PAGE_URL + bust, headers={
+            "User-Agent": BROWSER_UA, "Cache-Control": "no-cache", "Pragma": "no-cache",
+        }, timeout=60).text
+        cands = find_price_candidates(html)
+        if not cands:
+            print("[error] Portal down AND no SharePoint candidate on the page — refusing to guess.")
+            sys.exit(1)
+        stations, file_date = _sharepoint_stations(cands)
 
     # NEVER REGRESS: measured 2026-07-17 — LEA's label said today but every
     # link in its paragraph served May archive snapshots. Whatever we picked,
@@ -528,8 +602,9 @@ def main():
 
     payload = {
         "updated": updated,
-        "source": "Lietuvos energetikos agentūra (ena.lt)",
-        "source_url": PAGE_URL,
+        "source": source,
+        "source_url": source_url,
+        "price_source": "portal" if source_url.startswith("https://degalukainos") else "sharepoint",
         "summary": summary,
         "stations": sorted(stations, key=lambda s: (s.get("municipality") or "", s.get("network") or "")),
     }
