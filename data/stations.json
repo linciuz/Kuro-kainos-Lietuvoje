@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-07-29T08:00:33+00:00Z",
+    "resolved_utc": "2026-07-29T08:10:12+00:00Z",
     "winner_counts": {
       "sharepoint": 12,
       "portal": 749,
@@ -15,14 +15,14 @@
         "ok": true,
         "date": "2026-07-29",
         "error": null,
-        "fetched_utc": "2026-07-29T08:00:31+00:00Z"
+        "fetched_utc": "2026-07-29T08:10:10+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": true,
         "date": "2026-07-28",
         "error": null,
-        "fetched_utc": "2026-07-29T08:00:33+00:00Z"
+        "fetched_utc": "2026-07-29T08:10:12+00:00Z"
       }
     ]
   },
@@ -749,8 +749,8 @@
       "lpg": 0.749,
       "price_updated": "2026-07-29T09:36:47+03:00",
       "price_src": "portal",
-      "lat": 54.7864,
-      "lon": 24.665518,
+      "lat": 54.842881,
+      "lon": 24.664767,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6466,8 +6466,8 @@
       "lpg": 0.739,
       "price_updated": "2026-07-29T09:36:46+03:00",
       "price_src": "portal",
-      "lat": 54.578928,
-      "lon": 24.170385,
+      "lat": 54.579084,
+      "lon": 24.170438,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6762,8 +6762,8 @@
       "lpg": 0.859,
       "price_updated": "2026-07-29T09:36:46+03:00",
       "price_src": "portal",
-      "lat": 55.461884,
-      "lon": 22.695743,
+      "lat": 55.464558,
+      "lon": 22.68467,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6777,8 +6777,8 @@
       "lpg": 0.859,
       "price_updated": "2026-07-29T09:36:46+03:00",
       "price_src": "portal",
-      "lat": 55.46464,
-      "lon": 22.684693,
+      "lat": 55.464586,
+      "lon": 22.684682,
       "approx": false,
       "coord_source": "lea_portal"
     },
