@@ -543,42 +543,39 @@ def main():
     stations = file_date = None
     source = "Lietuvos energetikos agentūra (ena.lt)"
     source_url = PAGE_URL
-    # Runner-side diagnostics, committed as data/_price_source_debug.json: the
-    # fetch step is "|| echo non-fatal" and the Actions logs API needs auth
-    # (403s), so a CI-only failure is otherwise INVISIBLE — which is exactly how
-    # this silently stopped updating for 2 days (2026-07-27 -> 07-29) while runs
-    # stayed green. Same trick that diagnosed the viada.lt block.
+    # MULTI-SOURCE ENGINE (scripts/price_engine.py): poll every LEA channel and
+    # keep the freshest price PER STATION AND PER FUEL. LEA's channels do not
+    # update in lockstep — measured 2026-07-29, the portal carried 225 stations
+    # fresher than that morning's spreadsheet (real intraday self-reports, some
+    # at 12:39) while the spreadsheet led on 488. Racing them means a late or
+    # broken channel can no longer hold the whole app back.
+    # Diagnostics are committed (data/_price_source_debug.json) because the fetch
+    # step is non-fatal and the Actions log API needs auth we do not have — that
+    # combination once hid a 2-day outage behind green runs.
+    import price_engine
     dbg = {"checked_utc": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat() + "Z"}
+    stations = file_date = None
+    engine_meta = None
     try:
-        stations, file_date = portal_stations()
+        stations, file_date, engine_meta = price_engine.resolve()
         source_url = "https://degalukainos.ena.lt/"
-        dbg.update(portal="ok", file_date=file_date, stations=len(stations))
+        dbg.update(engine="ok", file_date=file_date,
+                   stations=len(stations), winners=engine_meta.get("winner_counts"),
+                   sources=engine_meta.get("sources"))
     except Exception as e:
         import traceback
-        dbg.update(portal="FAILED", error=f"{type(e).__name__}: {e}",
+        dbg.update(engine="FAILED", error=f"{type(e).__name__}: {e}",
                    trace=traceback.format_exc()[-700:])
-        print(f"[warn] portal source unavailable ({type(e).__name__}: {e}) — "
-              f"falling back to the SharePoint scraper.")
+        print(f"[error] every price source failed ({type(e).__name__}: {e}) — "
+              f"keeping the last good data.")
     try:
         os.makedirs("data", exist_ok=True)
         json.dump(dbg, open(os.path.join("data", "_price_source_debug.json"), "w",
                             encoding="utf-8"), ensure_ascii=False, indent=1)
     except Exception:
         pass
-
     if stations is None:
-        print(f"[info] fetching page: {PAGE_URL}")
-        # Cache-bust + real browser UA so a just-published file can't be hidden by a
-        # cached bot-UA copy of the page (the 2026-07-07 stale-link failure).
-        bust = f"?_={int(dt.datetime.now(dt.timezone.utc).timestamp())}"
-        html = requests.get(PAGE_URL + bust, headers={
-            "User-Agent": BROWSER_UA, "Cache-Control": "no-cache", "Pragma": "no-cache",
-        }, timeout=60).text
-        cands = find_price_candidates(html)
-        if not cands:
-            print("[error] Portal down AND no SharePoint candidate on the page — refusing to guess.")
-            sys.exit(1)
-        stations, file_date = _sharepoint_stations(cands)
+        sys.exit(1)
 
     # NEVER REGRESS: measured 2026-07-17 — LEA's label said today but every
     # link in its paragraph served May archive snapshots. Whatever we picked,
@@ -620,7 +617,7 @@ def main():
         "updated": updated,
         "source": source,
         "source_url": source_url,
-        "price_source": "portal" if source_url.startswith("https://degalukainos") else "sharepoint",
+        "price_engine": engine_meta,
         "summary": summary,
         "stations": sorted(stations, key=lambda s: (s.get("municipality") or "", s.get("network") or "")),
     }

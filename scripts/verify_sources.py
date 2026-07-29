@@ -449,6 +449,35 @@ def check_scheduler(now):
                   f"GH_TOKEN may be expired/revoked.")
 
 
+def check_price_engine(now):
+    """The multi-source engine races LEA's channels (portal / spreadsheet) and
+    keeps the freshest price per station. Redundancy hides single-source
+    failures BY DESIGN — which is exactly how a dead channel could rot for
+    weeks unnoticed. So: surviving on one source is a WARNING (users are fine,
+    but the safety margin is gone), and losing them all is already fatal
+    upstream. Also flags a channel that is merely LAGGING the winner."""
+    src = "price_engine"
+    try:
+        d = load("data/stations.json").get("price_engine")
+    except Exception:
+        return
+    if not d:
+        return warn(src, "no engine metadata in stations.json — published by an "
+                         "older fetch_prices? (expected after a rollback)")
+    srcs = d.get("sources") or []
+    dead = [x for x in srcs if not x.get("ok")]
+    alive = [x for x in srcs if x.get("ok")]
+    if len(alive) <= 1 and dead:
+        warn(src, f"running on a single price channel — {', '.join(x['source'] for x in dead)} "
+                  f"failing ({(dead[0].get('error') or '')[:110]}). Prices are fine, but the "
+                  f"redundancy that protects them is gone.")
+    dates = [x.get("date") for x in alive if x.get("date")]
+    if len(dates) > 1 and min(dates) < max(dates):
+        behind = [x["source"] for x in alive if x.get("date") == min(dates)]
+        warn(src, f"channel(s) {', '.join(behind)} lagging on {min(dates)} while another "
+                  f"already has {max(dates)} — the engine is correctly using the newer.")
+
+
 def check_portal(now):
     """LEA's portal (degalukainos.ena.lt) — the PRIMARY price source since
     2026-07-28, when LEA stripped the SharePoint links from ena.lt and price
@@ -482,13 +511,9 @@ def check_portal(now):
     # Since 2026-07-28 fetch_prices depends on this coverage. Sustained collapse
     # means we are quietly running on the fallback (or on nothing) — say so.
     if share < 50:
-        fail(src, f"portal price coverage fell to {share:.0f}% (<50%) — fetch_prices "
-                  f"falls back to the retired SharePoint Excel, which LEA no longer "
-                  f"links; check the portal API before the fallback runs out.")
-    elif share >= 25:
-        warn(src, f"operators now self-report prices at {share:.0f}% of stations "
-                  f"(was 7% on 2026-07-27) — the portal is becoming a real-time price feed; "
-                  f"consider promoting it above the once-daily LEA Excel.")
+        fail(src, f"portal price coverage fell to {share:.0f}% (<50%) — this channel is "
+                  f"degraded, so the engine is leaning on the spreadsheet alone; check the "
+                  f"portal API. (94% is the healthy steady state since 2026-07-28.)")
 
 
 def check_history(now):
@@ -535,6 +560,7 @@ def run_all_checks(now):
     check_ev(now)
     check_chain(now)
     check_portal(now)
+    check_price_engine(now)
     check_history(now)
     check_scheduler(now)
 
