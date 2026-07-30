@@ -1,11 +1,11 @@
 {
- "checked_utc": "2026-07-30T09:00:26+00:00Z",
+ "checked_utc": "2026-07-30T09:15:27+00:00Z",
  "engine": "ok",
  "file_date": "2026-07-30",
  "stations": 767,
  "winners": {
-  "portal": 755,
-  "sharepoint": 7,
+  "portal": 756,
+  "sharepoint": 6,
   "null": 5
  },
  "sources": [
@@ -14,14 +14,14 @@
    "ok": true,
    "date": "2026-07-30",
    "error": null,
-   "fetched_utc": "2026-07-30T09:00:31+00:00Z"
+   "fetched_utc": "2026-07-30T09:15:32+00:00Z"
   },
   {
    "source": "sharepoint",
    "ok": true,
    "date": "2026-07-28",
    "error": null,
-   "fetched_utc": "2026-07-30T09:00:34+00:00Z"
+   "fetched_utc": "2026-07-30T09:15:34+00:00Z"
   }
  ]
 }

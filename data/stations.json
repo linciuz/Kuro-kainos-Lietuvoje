@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-07-30T09:00:34+00:00Z",
+    "resolved_utc": "2026-07-30T09:15:34+00:00Z",
     "winner_counts": {
-      "portal": 755,
-      "sharepoint": 7,
+      "portal": 756,
+      "sharepoint": 6,
       "null": 5
     },
     "sources": [
@@ -15,14 +15,14 @@
         "ok": true,
         "date": "2026-07-30",
         "error": null,
-        "fetched_utc": "2026-07-30T09:00:31+00:00Z"
+        "fetched_utc": "2026-07-30T09:15:32+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": true,
         "date": "2026-07-28",
         "error": null,
-        "fetched_utc": "2026-07-30T09:00:34+00:00Z"
+        "fetched_utc": "2026-07-30T09:15:34+00:00Z"
       }
     ]
   },
@@ -1489,11 +1489,13 @@
       "address": "Kazlavo k. 4, 69285",
       "municipality": "Kalvarijos sav.",
       "locality": "",
-      "petrol95": 1.89,
-      "diesel": 2.12,
+      "petrol95": 1.82,
+      "diesel": 2.02,
       "lpg": null,
-      "price_updated": "2026-07-28T10:00:00+03:00",
-      "price_src": "sharepoint",
+      "price_updated": "2026-07-30T12:06:43+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:06",
       "lat": 54.329083,
       "lon": 23.148383,
       "approx": false,
