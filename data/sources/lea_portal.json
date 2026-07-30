@@ -1,11 +1,11 @@
 {
- "generated": "2026-07-30T07:58:06Z",
+ "generated": "2026-07-30T15:35:50Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-07-30 10:30:03",
+ "api_last_updated": "2026-07-30 12:40:33",
  "count": 767,
- "with_coords": 752,
- "priced": 755,
+ "with_coords": 751,
+ "priced": 759,
  "stations": [
   {
    "company": "UAB Baltic Petroleum",
@@ -33,8 +33,8 @@
    "brand": "Kvistija",
    "municipality": "Akmenės r. sav.",
    "address": "Skabeikių k. 4, 85233",
-   "lat": 56.160074,
-   "lon": 22.76078,
+   "lat": 56.160143,
+   "lon": 22.760735,
    "fuels": [
     "lpg",
     "diesel",
@@ -321,8 +321,8 @@
    "brand": "Stateta",
    "municipality": "Alytaus m. sav.",
    "address": "Alytus, Santaikos g. 28 B, 62123",
-   "lat": 54.387521,
-   "lon": 24.031856,
+   "lat": 54.407635,
+   "lon": 24.085155,
    "fuels": [
     "diesel",
     "petrol95"
@@ -340,8 +340,8 @@
    "brand": "VIADA LT",
    "municipality": "Alytaus m. sav.",
    "address": "Alytus, Naujoji g. 27, 62175",
-   "lat": 54.414041,
-   "lon": 24.010164,
+   "lat": 54.414014,
+   "lon": 24.009986,
    "fuels": [
     "lpg",
     "diesel",
@@ -361,8 +361,8 @@
    "brand": "VIADA LT",
    "municipality": "Alytaus m. sav.",
    "address": "Alytus, Ulonų g. 33B, 62136",
-   "lat": 54.384786,
-   "lon": 24.050026,
+   "lat": 54.384666,
+   "lon": 24.050258,
    "fuels": [
     "lpg",
     "diesel",
@@ -466,8 +466,8 @@
    "brand": "Stateta",
    "municipality": "Alytaus r. sav.",
    "address": "Alytaus k., 64464",
-   "lat": 54.407139,
-   "lon": 24.101763,
+   "lat": 54.407731,
+   "lon": 24.08522,
    "fuels": [
     "lpg",
     "diesel",
@@ -487,8 +487,8 @@
    "brand": "Stateta",
    "municipality": "Alytaus r. sav.",
    "address": "Kaniūkų k., 64104",
-   "lat": 54.365305,
-   "lon": 24.106088,
+   "lat": 54.366043,
+   "lon": 24.121869,
    "fuels": [
     "lpg",
     "diesel",
@@ -508,8 +508,8 @@
    "brand": "Stateta",
    "municipality": "Alytaus r. sav.",
    "address": "Miklusėnai, Kauno g. 1, 62461",
-   "lat": 54.428042,
-   "lon": 24.001399,
+   "lat": 54.428038,
+   "lon": 24.001201,
    "fuels": [
     "lpg",
     "diesel",
@@ -529,8 +529,8 @@
    "brand": "VIADA LT",
    "municipality": "Alytaus r. sav.",
    "address": "Daugų k., Neveiglo g. 25, 64144",
-   "lat": 54.045097,
-   "lon": 23.526838,
+   "lat": 54.366788,
+   "lon": 24.337608,
    "fuels": [
     "lpg",
     "diesel",
@@ -620,18 +620,22 @@
     "diesel",
     "petrol95"
    ],
-   "prices": {},
+   "prices": {
+    "lpg": 0.709,
+    "diesel": 1.989,
+    "petrol95": 1.799
+   },
    "gas_station_id": 309,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:30:03.000000Z"
+   "submitted_at": "2026-07-30T09:27:39.000000Z"
   },
   {
    "company": "UAB Narjanta",
    "brand": "Narjanta",
    "municipality": "Anykščių r. sav.",
    "address": "Pumpučiai, Pumpučių g. 25, 29253",
-   "lat": 55.424311,
-   "lon": 24.920495,
+   "lat": 55.675843,
+   "lon": 25.358674,
    "fuels": [
     "lpg",
     "diesel",
@@ -651,8 +655,8 @@
    "brand": "Narjanta",
    "municipality": "Anykščių r. sav.",
    "address": "Sausalaukės k. 2, 29345",
-   "lat": 55.675913,
-   "lon": 25.358703,
+   "lat": 55.67584,
+   "lon": 25.358668,
    "fuels": [
     "lpg",
     "diesel",
@@ -672,8 +676,8 @@
    "brand": "Narjanta",
    "municipality": "Anykščių r. sav.",
    "address": "Troškūnai, Vilniaus g. 32, 29306",
-   "lat": 55.584853,
-   "lon": 24.87846,
+   "lat": 55.584901,
+   "lon": 24.878353,
    "fuels": [
     "lpg",
     "diesel",
@@ -693,8 +697,8 @@
    "brand": "VIADA LT",
    "municipality": "Anykščių r. sav.",
    "address": "Anykščiai, A. Vienuolio g. 34, 29148",
-   "lat": 55.522041,
-   "lon": 25.086365,
+   "lat": 55.521954,
+   "lon": 25.086687,
    "fuels": [
     "lpg",
     "diesel",
@@ -714,8 +718,8 @@
    "brand": "VIADA LT",
    "municipality": "Anykščių r. sav.",
    "address": "Anykščiai, Piliakalnio g. 9, 29109",
-   "lat": 55.541326,
-   "lon": 25.134941,
+   "lat": 55.541269,
+   "lon": 25.13477,
    "fuels": [
     "lpg",
     "diesel",
@@ -819,8 +823,8 @@
    "brand": "Narjanta",
    "municipality": "Biržų r. sav.",
    "address": "Vabalninkas, S. Nėries g. 35, 41341",
-   "lat": 55.974978,
-   "lon": 24.740122,
+   "lat": 55.974946,
+   "lon": 24.740194,
    "fuels": [
     "lpg",
     "diesel",
@@ -840,8 +844,8 @@
    "brand": "VIADA LT",
    "municipality": "Biržų r. sav.",
    "address": "Biržai, Parodos g. 2, 41136",
-   "lat": 56.201309,
-   "lon": 24.749021,
+   "lat": 56.201284,
+   "lon": 24.748798,
    "fuels": [
     "lpg",
     "diesel",
@@ -861,8 +865,8 @@
    "brand": "VIADA LT",
    "municipality": "Biržų r. sav.",
    "address": "Biržai, Pasvalio g. 1B, 41132",
-   "lat": 56.201931,
-   "lon": 24.737796,
+   "lat": 56.202027,
+   "lon": 24.737704,
    "fuels": [
     "lpg",
     "diesel",
@@ -966,8 +970,8 @@
    "brand": "Tomega",
    "municipality": "Druskininkų sav.",
    "address": "Druskininkai, Gardino g. 98, 66225",
-   "lat": 53.990179,
-   "lon": 24.005703,
+   "lat": 53.990293,
+   "lon": 24.005671,
    "fuels": [
     "lpg",
     "diesel",
@@ -1057,10 +1061,14 @@
     "diesel",
     "petrol95"
    ],
-   "prices": {},
+   "prices": {
+    "lpg": 0.839,
+    "diesel": 2.169,
+    "petrol95": 1.949
+   },
    "gas_station_id": 311,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:30:03.000000Z"
+   "submitted_at": "2026-07-30T09:27:39.000000Z"
   },
   {
    "company": "UAB Neste Lietuva",
@@ -1086,8 +1094,8 @@
    "brand": "VIADA LT",
    "municipality": "Elektrėnų sav.",
    "address": "Elektrėnai, Elektrinės g. 6, 26109",
-   "lat": 54.784519,
-   "lon": 24.654245,
+   "lat": 54.784567,
+   "lon": 24.654298,
    "fuels": [
     "lpg",
     "diesel",
@@ -1149,8 +1157,8 @@
    "brand": "Propano ir butano dujų centras",
    "municipality": "Ignalinos r. sav.",
    "address": "Ignalina, Švenčionių g. 35, 30132",
-   "lat": 55.327181,
-   "lon": 26.17448,
+   "lat": 55.329504,
+   "lon": 26.163855,
    "fuels": [
     "lpg",
     "diesel",
@@ -1170,8 +1178,8 @@
    "brand": "VIADA LT",
    "municipality": "Ignalinos r. sav.",
    "address": "Ignalina, Turistų g. 28A, 30138",
-   "lat": 55.338952,
-   "lon": 26.145575,
+   "lat": 55.338981,
+   "lon": 26.145608,
    "fuels": [
     "lpg",
     "diesel",
@@ -1294,8 +1302,8 @@
    "brand": "Neste Plento",
    "municipality": "Jonavos r. sav.",
    "address": "Gudžionių k., Šilų sen., Plento g. 7, 55462",
-   "lat": 55.095561,
-   "lon": 24.312088,
+   "lat": 55.095487,
+   "lon": 24.312631,
    "fuels": [
     "diesel",
     "petrol95"
@@ -1313,8 +1321,8 @@
    "brand": "VIADA LT",
    "municipality": "Jonavos r. sav.",
    "address": "Jonava, Darbininkų g. 4D, 55101",
-   "lat": 55.093726,
-   "lon": 24.282767,
+   "lat": 55.093753,
+   "lon": 24.282612,
    "fuels": [
     "lpg",
     "diesel",
@@ -1334,29 +1342,29 @@
    "brand": "Vimijula",
    "municipality": "Jonavos r. sav.",
    "address": "Ručiūnų k., Kauno g. 2A, 55355",
-   "lat": 55.13002,
-   "lon": 24.189396,
+   "lat": 55.137949,
+   "lon": 24.193271,
    "fuels": [
     "lpg",
     "diesel",
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.87,
-    "diesel": 1.99,
+    "lpg": 0.86,
+    "diesel": 2.02,
     "petrol95": 1.87
    },
    "gas_station_id": 782,
    "logo_url": null,
-   "submitted_at": "2026-07-30T06:54:50.000000Z"
+   "submitted_at": "2026-07-30T09:25:31.000000Z"
   },
   {
    "company": "UAB Žibalas",
    "brand": "Žibalas",
    "municipality": "Jonavos r. sav.",
    "address": "Jonava, Taurostos g. 16A, 55195",
-   "lat": 55.084337,
-   "lon": 24.316871,
+   "lat": 55.072115,
+   "lon": 24.294946,
    "fuels": [
     "lpg",
     "diesel",
@@ -1476,8 +1484,8 @@
    "brand": "VIADA LT",
    "municipality": "Joniškio r. sav.",
    "address": "Joniškis, Vilniaus g. 51, 84166",
-   "lat": 56.224615,
-   "lon": 23.601124,
+   "lat": 56.224652,
+   "lon": 23.600988,
    "fuels": [
     "lpg",
     "diesel",
@@ -1539,8 +1547,8 @@
    "brand": "Milda",
    "municipality": "Jurbarko r. sav.",
    "address": "Rimšų k., Tauragės g. 29, 74280",
-   "lat": 55.262018,
-   "lon": 22.691796,
+   "lat": 55.262044,
+   "lon": 22.69182,
    "fuels": [
     "lpg",
     "diesel",
@@ -1593,7 +1601,7 @@
    },
    "gas_station_id": 404,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1614,7 +1622,7 @@
    },
    "gas_station_id": 405,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1635,7 +1643,7 @@
    },
    "gas_station_id": 406,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1654,15 +1662,15 @@
    },
    "gas_station_id": 408,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Saurida",
    "brand": "Saurida",
    "municipality": "Jurbarko r. sav.",
    "address": "Pašvenčio k., 74218",
-   "lat": 55.083916,
-   "lon": 22.606942,
+   "lat": 55.082318,
+   "lon": 22.610923,
    "fuels": [
     "lpg",
     "diesel",
@@ -1766,8 +1774,8 @@
    "brand": "Kvistija",
    "municipality": "Kaišiadorių r. sav.",
    "address": "Bačkonių k., Pastrėvio g. 1A, 56240",
-   "lat": 54.802522,
-   "lon": 24.502197,
+   "lat": null,
+   "lon": null,
    "fuels": [
     "lpg",
     "diesel",
@@ -1808,8 +1816,8 @@
    "brand": "Topgas",
    "municipality": "Kaišiadorių r. sav.",
    "address": "Kaišiadorys, Paukštininkų g. 13, 56161",
-   "lat": 54.865105,
-   "lon": 24.434153,
+   "lat": 54.865133,
+   "lon": 24.434154,
    "fuels": [
     "lpg"
    ],
@@ -1888,8 +1896,8 @@
    "brand": "Baltic Petroleum",
    "municipality": "Kalvarijos sav.",
    "address": "Salaperaugio k., Europos g. 9, 69286",
-   "lat": 54.324275,
-   "lon": 23.144682,
+   "lat": 54.324264,
+   "lon": 23.14466,
    "fuels": [
     "lpg",
     "diesel",
@@ -1947,8 +1955,8 @@
    "brand": "Neste Kalvarijos 2",
    "municipality": "Kalvarijos sav.",
    "address": "N. Valios k., Europos g. 6, 69270",
-   "lat": 54.32833,
-   "lon": 23.150567,
+   "lat": 54.328247,
+   "lon": 23.150562,
    "fuels": [
     "diesel"
    ],
@@ -1964,8 +1972,8 @@
    "brand": "Neste Kalvarijos 1",
    "municipality": "Kalvarijos sav.",
    "address": "Salaperaugio k., Europos g. 1, 69286",
-   "lat": 54.329987,
-   "lon": 23.150212,
+   "lat": 54.329829,
+   "lon": 23.150218,
    "fuels": [
     "diesel",
     "petrol95"
@@ -1983,24 +1991,27 @@
    "brand": "RV Transport",
    "municipality": "Kalvarijos sav.",
    "address": "Kazlavo k. 4, 69285",
-   "lat": 54.329083,
-   "lon": 23.148383,
+   "lat": 54.32897,
+   "lon": 23.148446,
    "fuels": [
     "diesel",
     "petrol95"
    ],
-   "prices": {},
+   "prices": {
+    "diesel": 2.02,
+    "petrol95": 1.82
+   },
    "gas_station_id": 557,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:30:03.000000Z"
+   "submitted_at": "2026-07-30T09:06:43.000000Z"
   },
   {
    "company": "UAB Saurida",
    "brand": "Saurida",
    "municipality": "Kalvarijos sav.",
    "address": "Kreivukės k., 69232",
-   "lat": 54.407394,
-   "lon": 23.220975,
+   "lat": 54.407333,
+   "lon": 23.221005,
    "fuels": [
     "lpg"
    ],
@@ -2037,8 +2048,8 @@
    "brand": "Stateta",
    "municipality": "Kalvarijos sav.",
    "address": "Kreivukė, Turgaus g. 4, 69232",
-   "lat": 54.41083,
-   "lon": 23.206915,
+   "lat": 54.410916,
+   "lon": 23.206718,
    "fuels": [
     "lpg",
     "diesel",
@@ -2058,8 +2069,8 @@
    "brand": "VIADA LT",
    "municipality": "Kalvarijos sav.",
    "address": "Kalvarija, Dariaus ir Girėno g. 81, 69206",
-   "lat": 54.424472,
-   "lon": 23.231922,
+   "lat": 54.424417,
+   "lon": 23.232033,
    "fuels": [
     "lpg",
     "diesel",
@@ -2079,8 +2090,8 @@
    "brand": "VIADA LT",
    "municipality": "Kalvarijos sav.",
    "address": "Pelucmurgių k., Muitinės g. 35, 69270",
-   "lat": 54.339956,
-   "lon": 23.163082,
+   "lat": 54.339802,
+   "lon": 23.163057,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3026,8 +3037,8 @@
    "brand": "Neste Ateities",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Ateities pl. 50B, 52106",
-   "lat": 54.926029,
-   "lon": 24.060562,
+   "lat": 54.926215,
+   "lon": 24.060324,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3045,8 +3056,8 @@
    "brand": "Neste Birželio",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Birželio 23-iosios g. 23A, 50220",
-   "lat": 54.915978,
-   "lon": 23.953599,
+   "lat": 54.916241,
+   "lon": 23.954033,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3064,8 +3075,8 @@
    "brand": "Neste Europos",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Europos pr. 43, 46329",
-   "lat": 54.875801,
-   "lon": 23.912098,
+   "lat": 54.875338,
+   "lon": 23.911496,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3083,8 +3094,8 @@
    "brand": "Neste Islandijos",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Islandijos pl. 191E, 49168",
-   "lat": 54.931419,
-   "lon": 23.950806,
+   "lat": 54.931426,
+   "lon": 23.950821,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3102,8 +3113,8 @@
    "brand": "Neste Jonavos",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Jonavos g. 110, 44136",
-   "lat": 54.913328,
-   "lon": 23.911651,
+   "lat": 54.913306,
+   "lon": 23.911621,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3121,8 +3132,8 @@
    "brand": "Neste Kuršių",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Kuršių g. 1, 48106",
-   "lat": 54.936167,
-   "lon": 23.885321,
+   "lat": 54.936177,
+   "lon": 23.885284,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3140,8 +3151,8 @@
    "brand": "Neste Pramonės",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Pramonės pr. 6A, 51267",
-   "lat": 54.909942,
-   "lon": 23.983767,
+   "lat": 54.909961,
+   "lon": 23.983725,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3159,8 +3170,8 @@
    "brand": "Neste Kalantos",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, R. Kalantos g. 27, 52303",
-   "lat": 54.89507,
-   "lon": 23.985918,
+   "lat": 54.895075,
+   "lon": 23.985943,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3178,8 +3189,8 @@
    "brand": "Neste Raudondvario",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Raudondvario pl. 103, 47185",
-   "lat": 54.906862,
-   "lon": 23.872822,
+   "lat": 54.906844,
+   "lon": 23.872861,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3197,8 +3208,8 @@
    "brand": "Neste Muravos",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Savanorių pr. 441C, 49185",
-   "lat": 54.929354,
-   "lon": 23.973476,
+   "lat": 54.929378,
+   "lon": 23.973446,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3216,8 +3227,8 @@
    "brand": "Neste Taikos žiedo",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Taikos pr. 80A, 50441",
-   "lat": 54.912211,
-   "lon": 23.972588,
+   "lat": 54.912105,
+   "lon": 23.972618,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3235,8 +3246,8 @@
    "brand": "Neste Tunelio",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Tunelio g. 26, 44391",
-   "lat": 54.894655,
-   "lon": 23.944278,
+   "lat": 54.894823,
+   "lon": 23.944235,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3254,8 +3265,8 @@
    "brand": "Neste Volvo",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Vakarinis aplinkkelis 18, 48182",
-   "lat": 54.898654,
-   "lon": 23.907119,
+   "lat": 54.933806,
+   "lon": 23.867744,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3273,8 +3284,8 @@
    "brand": "Neste Veiverių",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Veiverių g. 132D, 46337",
-   "lat": 54.875505,
-   "lon": 23.89097,
+   "lat": 54.875741,
+   "lon": 23.890928,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3292,8 +3303,8 @@
    "brand": "Neste Žemaičių",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Žemaičių pl. 26, 48256",
-   "lat": 54.925531,
-   "lon": 23.891793,
+   "lat": 54.925511,
+   "lon": 23.891794,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3416,8 +3427,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, A. Juozapavičiaus pr. 90, 45267",
-   "lat": 54.877847,
-   "lon": 23.93456,
+   "lat": 54.878549,
+   "lon": 23.934338,
    "fuels": [
     "lpg",
     "diesel",
@@ -3437,7 +3448,7 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Ateities pl. 105, 52119",
-   "lat": 54.9272,
+   "lat": 54.927368,
    "lon": 24.043042,
    "fuels": [
     "lpg",
@@ -3458,8 +3469,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Ateities pl. 37A, 52119",
-   "lat": 54.918207,
-   "lon": 24.039667,
+   "lat": 54.91819,
+   "lon": 24.04,
    "fuels": [
     "lpg",
     "diesel",
@@ -3479,8 +3490,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Baltijos g. 90B, 47130",
-   "lat": 54.918009,
-   "lon": 23.873666,
+   "lat": 54.917916,
+   "lon": 23.873746,
    "fuels": [
     "lpg",
     "diesel",
@@ -3500,8 +3511,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Biruliškių g. 18A, 51205",
-   "lat": 54.910579,
-   "lon": 24.023226,
+   "lat": 54.911391,
+   "lon": 24.020894,
    "fuels": [
     "diesel",
     "petrol95"
@@ -3519,8 +3530,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Didžioji g. 84, 45462",
-   "lat": 54.855108,
-   "lon": 24.01312,
+   "lat": 54.855174,
+   "lon": 24.013259,
    "fuels": [
     "lpg",
     "diesel",
@@ -3540,8 +3551,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Islandijos pl. 61A, 49117",
-   "lat": 54.933529,
-   "lon": 23.968479,
+   "lat": 54.933542,
+   "lon": 23.968506,
    "fuels": [
     "lpg",
     "diesel",
@@ -3561,8 +3572,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, K. Baršausko g. 64, 44405",
-   "lat": 54.897572,
-   "lon": 23.958373,
+   "lat": 54.897661,
+   "lon": 23.958102,
    "fuels": [
     "lpg",
     "diesel",
@@ -3582,8 +3593,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Karaliaus Mindaugo pr. 54, 44351",
-   "lat": 54.887534,
-   "lon": 23.921144,
+   "lat": 54.887381,
+   "lon": 23.921328,
    "fuels": [
     "lpg",
     "diesel",
@@ -3603,8 +3614,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Marijampolės pl. 29, 45438",
-   "lat": 54.849545,
-   "lon": 23.967082,
+   "lat": 54.84942,
+   "lon": 23.966911,
    "fuels": [
     "lpg",
     "diesel",
@@ -3624,8 +3635,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Miežėnų g. 18, 47115",
-   "lat": 54.917682,
-   "lon": 23.863055,
+   "lat": 54.917622,
+   "lon": 23.863216,
    "fuels": [
     "lpg",
     "diesel",
@@ -3645,8 +3656,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, P. Lukšio g. 66A, 49404",
-   "lat": 54.924906,
-   "lon": 23.942323,
+   "lat": 54.924931,
+   "lon": 23.942622,
    "fuels": [
     "lpg",
     "diesel",
@@ -3666,8 +3677,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Pramonės pr. 44, 50302",
-   "lat": 54.927221,
-   "lon": 23.974786,
+   "lat": 54.927143,
+   "lon": 23.974632,
    "fuels": [
     "lpg",
     "diesel",
@@ -3687,8 +3698,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Raudondvario pl. 288, 47164",
-   "lat": 54.921391,
-   "lon": 23.810536,
+   "lat": 54.921281,
+   "lon": 23.810505,
    "fuels": [
     "lpg",
     "diesel",
@@ -3708,8 +3719,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Statybininkų g. 3A, 50124",
-   "lat": 54.9201,
-   "lon": 23.948746,
+   "lat": 54.920159,
+   "lon": 23.948812,
    "fuels": [
     "lpg",
     "diesel",
@@ -3729,8 +3740,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, T. Masiulio g. 22B, 52447",
-   "lat": 54.880912,
-   "lon": 24.009787,
+   "lat": 54.880944,
+   "lon": 24.009869,
    "fuels": [
     "lpg",
     "diesel",
@@ -3750,8 +3761,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Veiverių g. 117, 46354",
-   "lat": 54.866449,
-   "lon": 23.889465,
+   "lat": 54.8665,
+   "lon": 23.889237,
    "fuels": [
     "lpg",
     "diesel",
@@ -3771,8 +3782,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno m. sav.",
    "address": "Kaunas, Veiverių g. 124B, 46282",
-   "lat": 54.883336,
-   "lon": 23.893637,
+   "lat": 54.883238,
+   "lon": 23.893837,
    "fuels": [
     "lpg",
     "diesel",
@@ -4044,8 +4055,8 @@
    "brand": "Neste Domeikavos",
    "municipality": "Kauno r. sav.",
    "address": "Kumpių k., Vakarų g. 14, 47425",
-   "lat": 54.950434,
-   "lon": 23.873962,
+   "lat": 54.949882,
+   "lon": 23.873812,
    "fuels": [
     "diesel",
     "petrol95"
@@ -4063,8 +4074,8 @@
    "brand": "Neste Ramučių",
    "municipality": "Kauno r. sav.",
    "address": "Ramučių k., Vijoklių g. 1C, 54467",
-   "lat": 54.948304,
-   "lon": 24.017947,
+   "lat": 54.948345,
+   "lon": 24.017823,
    "fuels": [
     "diesel",
     "petrol95"
@@ -4145,8 +4156,8 @@
    "brand": "Stateta",
    "municipality": "Kauno r. sav.",
    "address": "Ramučių k., Erdvės g. 78, 54463",
-   "lat": 54.928986,
-   "lon": 24.038212,
+   "lat": 54.929051,
+   "lon": 24.038115,
    "fuels": [
     "lpg",
     "diesel",
@@ -4166,8 +4177,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno r. sav.",
    "address": "Giraitės k., Automagistralės g. 4, 54310",
-   "lat": 54.959272,
-   "lon": 23.864319,
+   "lat": 54.959187,
+   "lon": 23.86432,
    "fuels": [
     "lpg",
     "diesel",
@@ -4187,8 +4198,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno r. sav.",
    "address": "Ilgakiemio k., Prienų g. 22,",
-   "lat": 54.77389,
-   "lon": 23.889389,
+   "lat": 54.774097,
+   "lon": 23.88975,
    "fuels": [
     "lpg",
     "diesel",
@@ -4208,8 +4219,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno r. sav.",
    "address": "Kampiškių k., Baltijos g. 41, 09300",
-   "lat": 54.842732,
-   "lon": 23.849441,
+   "lat": 54.842485,
+   "lon": 23.849421,
    "fuels": [
     "lpg",
     "diesel",
@@ -4229,8 +4240,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno r. sav.",
    "address": "Kumpių k., Verslo g. 13A, 54311",
-   "lat": 54.959217,
-   "lon": 23.866809,
+   "lat": 54.958941,
+   "lon": 23.86681,
    "fuels": [
     "lpg",
     "diesel",
@@ -4250,8 +4261,8 @@
    "brand": "VIADA LT",
    "municipality": "Kauno r. sav.",
    "address": "Margavos k., 54471",
-   "lat": 54.955324,
-   "lon": 23.954591,
+   "lat": 54.959513,
+   "lon": 24.039321,
    "fuels": [
     "lpg",
     "diesel",
@@ -4292,8 +4303,8 @@
    "brand": "Regusa",
    "municipality": "Kazlų Rūdos sav.",
    "address": "Jūrės k., Medelyno g. 4A, 69446",
-   "lat": 54.769261,
-   "lon": 23.486561,
+   "lat": 54.850076,
+   "lon": 23.965872,
    "fuels": [
     "lpg",
     "diesel",
@@ -4313,8 +4324,8 @@
    "brand": "Regusa",
    "municipality": "Kazlų Rūdos sav.",
    "address": "Kazlų Rūda, S. Daukanto g. 19D, 69430",
-   "lat": 54.739294,
-   "lon": 23.496223,
+   "lat": 54.739591,
+   "lon": 23.495684,
    "fuels": [
     "lpg",
     "diesel",
@@ -4334,8 +4345,8 @@
    "brand": "VIADA LT",
    "municipality": "Kazlų Rūdos sav.",
    "address": "Ąžuolų Būdos k.",
-   "lat": 54.69867,
-   "lon": 23.517622,
+   "lat": 54.698177,
+   "lon": 23.517613,
    "fuels": [
     "lpg",
     "diesel",
@@ -4460,8 +4471,8 @@
    "brand": "Baltic Petroleum",
    "municipality": "Kelmės r. sav.",
    "address": "Kelmė, Putvinskio g. 29, 86113",
-   "lat": 55.641261,
-   "lon": 22.926883,
+   "lat": 55.641206,
+   "lon": 22.927376,
    "fuels": [
     "lpg",
     "diesel",
@@ -4481,8 +4492,8 @@
    "brand": "Kvistija",
    "municipality": "Kelmės r. sav.",
    "address": "Užventis, Žemaitės g. 52, 86343",
-   "lat": 55.786103,
-   "lon": 22.670903,
+   "lat": 55.786269,
+   "lon": 22.67104,
    "fuels": [
     "lpg",
     "diesel",
@@ -4908,8 +4919,8 @@
    "brand": "Neste Artojo",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Artojo g. 2, 92105",
-   "lat": 55.716811,
-   "lon": 21.150527,
+   "lat": 55.717677,
+   "lon": 21.151733,
    "fuels": [
     "diesel",
     "petrol95"
@@ -4927,8 +4938,8 @@
    "brand": "Neste Minijos",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Minijos g. 119, 93231",
-   "lat": 55.684714,
-   "lon": 21.150523,
+   "lat": 55.684415,
+   "lon": 21.14963,
    "fuels": [
     "diesel",
     "petrol95"
@@ -4946,8 +4957,8 @@
    "brand": "Neste Šilutės",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Plieno g. 1, 95112",
-   "lat": 55.673305,
-   "lon": 21.20153,
+   "lat": 55.672961,
+   "lon": 21.200999,
    "fuels": [
     "diesel",
     "petrol95"
@@ -4965,8 +4976,8 @@
    "brand": "Neste Smiltelės",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Smiltelės g. 17, 95188",
-   "lat": 55.669848,
-   "lon": 21.192951,
+   "lat": 55.670085,
+   "lon": 21.192909,
    "fuels": [
     "diesel",
     "petrol95"
@@ -4984,8 +4995,8 @@
    "brand": "Neste Taikos",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Taikos pr. 60, 93225",
-   "lat": 55.688849,
-   "lon": 21.1551,
+   "lat": 55.688927,
+   "lon": 21.155164,
    "fuels": [
     "diesel",
     "petrol95"
@@ -5003,8 +5014,8 @@
    "brand": "Neste Baltijos",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Šilutės pl. 30, 91177",
-   "lat": 55.693089,
-   "lon": 21.17477,
+   "lat": 55.693137,
+   "lon": 21.17501,
    "fuels": [
     "diesel",
     "petrol95"
@@ -5022,8 +5033,8 @@
    "brand": "Neste Sendvario",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Šilutės pl. 5C, 91109",
-   "lat": 55.703183,
-   "lon": 21.164792,
+   "lat": 55.703175,
+   "lon": 21.164785,
    "fuels": [
     "diesel",
     "petrol95"
@@ -5041,8 +5052,8 @@
    "brand": "Stateta",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Minijos g. 90, 93239",
-   "lat": 55.686493,
-   "lon": 21.145677,
+   "lat": 55.685288,
+   "lon": 21.147101,
    "fuels": [
     "lpg",
     "diesel",
@@ -5104,8 +5115,8 @@
    "brand": "VIADA LT",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Liepojos g. 242, 92330",
-   "lat": 55.753881,
-   "lon": 21.131339,
+   "lat": 55.7538,
+   "lon": 21.131371,
    "fuels": [
     "lpg",
     "diesel",
@@ -5125,8 +5136,8 @@
    "brand": "VIADA LT",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Nemuno g. 139, 93185",
-   "lat": 55.674141,
-   "lon": 21.148915,
+   "lat": 55.675229,
+   "lon": 21.153009,
    "fuels": [
     "lpg",
     "diesel",
@@ -5146,8 +5157,8 @@
    "brand": "VIADA LT",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Priestočio g. 28, 92191",
-   "lat": 55.719274,
-   "lon": 21.141171,
+   "lat": 55.719268,
+   "lon": 21.141161,
    "fuels": [
     "lpg",
     "diesel",
@@ -5167,8 +5178,8 @@
    "brand": "VIADA LT",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Taikos pr. 70A-1, 93202",
-   "lat": 55.662325,
-   "lon": 21.176305,
+   "lat": 55.683289,
+   "lon": 21.16064,
    "fuels": [
     "lpg",
     "diesel",
@@ -5188,8 +5199,8 @@
    "brand": "VIADA LT",
    "municipality": "Klaipėdos m. sav.",
    "address": "Klaipėda, Šilutės pl. 52, 94181",
-   "lat": 55.68174,
-   "lon": 21.185138,
+   "lat": 55.681722,
+   "lon": 21.185171,
    "fuels": [
     "lpg",
     "diesel",
@@ -5419,8 +5430,8 @@
    "brand": "Neste Jakų",
    "municipality": "Klaipėdos r. sav.",
    "address": "Jakų k., Vilniaus pl. 9, 96322",
-   "lat": 55.706436,
-   "lon": 21.238198,
+   "lat": 55.706604,
+   "lon": 21.238572,
    "fuels": [
     "diesel",
     "petrol95"
@@ -5438,8 +5449,8 @@
    "brand": "Neste Sudmantų",
    "municipality": "Klaipėdos r. sav.",
    "address": "Sudmantų k., Sendvario g. 2, 96327",
-   "lat": 55.706212,
-   "lon": 21.202655,
+   "lat": 55.706071,
+   "lon": 21.202589,
    "fuels": [
     "diesel",
     "petrol95"
@@ -5583,8 +5594,8 @@
    "brand": "VIADA LT",
    "municipality": "Klaipėdos r. sav.",
    "address": "Kretingalė, Klaipėdos g. 1A, 96332",
-   "lat": 55.827514,
-   "lon": 21.184985,
+   "lat": 55.827504,
+   "lon": 21.185078,
    "fuels": [
     "lpg",
     "diesel",
@@ -5625,8 +5636,8 @@
    "brand": "Vlantana",
    "municipality": "Klaipėdos r. sav.",
    "address": "Gobergiškės k., Dvaro g. 1, 92498",
-   "lat": 55.720336,
-   "lon": 21.300943,
+   "lat": 55.71917,
+   "lon": 21.293355,
    "fuels": [
     "diesel",
     "petrol95"
@@ -5702,8 +5713,8 @@
    "brand": "Milda",
    "municipality": "Kretingos r. sav.",
    "address": "Kretinga, Tiekėjų g. 34a, 97187",
-   "lat": 55.884461,
-   "lon": 21.221533,
+   "lat": 55.884467,
+   "lon": 21.221628,
    "fuels": [
     "lpg",
     "diesel",
@@ -5723,8 +5734,8 @@
    "brand": "Milda",
    "municipality": "Kretingos r. sav.",
    "address": "Laivių k., Platelių g. 1a, 97317",
-   "lat": 56.063149,
-   "lon": 21.582088,
+   "lat": 56.063165,
+   "lon": 21.582092,
    "fuels": [
     "lpg",
     "diesel",
@@ -5786,8 +5797,8 @@
    "brand": "VIADA LT",
    "municipality": "Kretingos r. sav.",
    "address": "Kretinga, Vytauto g. 163, 97133",
-   "lat": 55.890563,
-   "lon": 21.278272,
+   "lat": 55.890582,
+   "lon": 21.278474,
    "fuels": [
     "lpg",
     "diesel",
@@ -5807,8 +5818,8 @@
    "brand": "VIADA LT",
    "municipality": "Kretingos r. sav.",
    "address": "Kretingsodžio k., 97100",
-   "lat": 55.896131,
-   "lon": 21.221052,
+   "lat": 55.895976,
+   "lon": 21.221096,
    "fuels": [
     "lpg",
     "diesel",
@@ -5849,8 +5860,8 @@
    "brand": "Narjanta",
    "municipality": "Kupiškio r. sav.",
    "address": "Aleksandrijos k., Kikonių g. 10, 40335",
-   "lat": 55.834259,
-   "lon": 25.009335,
+   "lat": 55.834253,
+   "lon": 25.009325,
    "fuels": [
     "lpg",
     "diesel",
@@ -5870,8 +5881,8 @@
    "brand": "Narjanta",
    "municipality": "Kupiškio r. sav.",
    "address": "Dvariškių vs. 2, 40402",
-   "lat": 55.770522,
-   "lon": 24.755045,
+   "lat": 55.773414,
+   "lon": 24.754327,
    "fuels": [
     "lpg",
     "diesel",
@@ -5891,8 +5902,8 @@
    "brand": "Stateta",
    "municipality": "Kupiškio r. sav.",
    "address": "Kupiškis, Panevėžio g. 9, 40134",
-   "lat": 55.826051,
-   "lon": 24.979937,
+   "lat": 55.826039,
+   "lon": 24.979514,
    "fuels": [
     "lpg",
     "diesel",
@@ -5912,8 +5923,8 @@
    "brand": "Topgas",
    "municipality": "Kupiškio r. sav.",
    "address": "Slavinčiškis, Slavinčiškio g. 18, 40333",
-   "lat": 55.832431,
-   "lon": 25.020078,
+   "lat": 55.83155,
+   "lon": 25.019871,
    "fuels": [
     "lpg"
    ],
@@ -5929,8 +5940,8 @@
    "brand": "Velseka",
    "municipality": "Kupiškio r. sav.",
    "address": "Kupiškis, Panevėžio g. 5, 40134",
-   "lat": 55.827499,
-   "lon": 24.985663,
+   "lat": 55.82749,
+   "lon": 24.985695,
    "fuels": [
     "lpg",
     "diesel",
@@ -5950,8 +5961,8 @@
    "brand": "VIADA LT",
    "municipality": "Kupiškio r. sav.",
    "address": "Kerelių k. 1A, 40473",
-   "lat": 55.859242,
-   "lon": 25.172612,
+   "lat": 55.85647,
+   "lon": 25.173454,
    "fuels": [
     "lpg",
     "diesel",
@@ -5971,8 +5982,8 @@
    "brand": "VIADA LT",
    "municipality": "Kupiškio r. sav.",
    "address": "Kupiškis, Pergalės g. 15, 40109",
-   "lat": 55.844575,
-   "lon": 24.978999,
+   "lat": 55.844531,
+   "lon": 24.979015,
    "fuels": [
     "lpg",
     "diesel",
@@ -6215,7 +6226,7 @@
    "brand": "Kvistija",
    "municipality": "Kėdainių r. sav.",
    "address": "Ruoščių k. 1, 57109",
-   "lat": 55.336109,
+   "lat": 55.336183,
    "lon": 23.914917,
    "fuels": [
     "lpg",
@@ -6250,15 +6261,15 @@
    },
    "gas_station_id": 401,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:34.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Mindega",
    "brand": "Mindega",
    "municipality": "Kėdainių r. sav.",
    "address": "Šėta, Ramygalos g. 55, 58129",
-   "lat": 55.290358,
-   "lon": 24.252998,
+   "lat": 55.290432,
+   "lon": 24.252548,
    "fuels": [
     "diesel",
     "petrol95"
@@ -6276,8 +6287,8 @@
    "brand": "Neste Kėdainiai",
    "municipality": "Kėdainių r. sav.",
    "address": "Kėdainiai, J. Basanavičiaus g. 91E, 57356",
-   "lat": 55.278109,
-   "lon": 23.959972,
+   "lat": 55.278129,
+   "lon": 23.959957,
    "fuels": [
     "diesel",
     "petrol95"
@@ -6295,8 +6306,8 @@
    "brand": "VIADA LT",
    "municipality": "Kėdainių r. sav.",
    "address": "Dotnuva, Tilto g. 2A, 58352",
-   "lat": 55.374726,
-   "lon": 23.880788,
+   "lat": 55.374749,
+   "lon": 23.880823,
    "fuels": [
     "lpg",
     "diesel",
@@ -6316,8 +6327,8 @@
    "brand": "VIADA LT",
    "municipality": "Kėdainių r. sav.",
    "address": "Gudžiūnų k., Baisogalos g. 5, 58267",
-   "lat": 55.518659,
-   "lon": 23.773622,
+   "lat": 55.518678,
+   "lon": 23.773649,
    "fuels": [
     "lpg",
     "diesel",
@@ -6398,8 +6409,8 @@
    "brand": "Kvistija",
    "municipality": "Lazdijų r. sav.",
    "address": "Alytaus g. 59, Krosnos k., 67443",
-   "lat": 54.045097,
-   "lon": 23.526838,
+   "lat": 54.379084,
+   "lon": 23.52855,
    "fuels": [
     "lpg",
     "diesel",
@@ -6419,8 +6430,8 @@
    "brand": "Melkasta",
    "municipality": "Lazdijų r. sav.",
    "address": "Kalvelių k., Lazdijų pl. 29, 67333",
-   "lat": 54.045097,
-   "lon": 23.526838,
+   "lat": 54.106116,
+   "lon": 23.673795,
    "fuels": [
     "lpg",
     "diesel",
@@ -6436,8 +6447,8 @@
    "brand": "Melkasta",
    "municipality": "Lazdijų r. sav.",
    "address": "Seirijai, Algirdo g. 35A, 67227",
-   "lat": 54.239512,
-   "lon": 23.82307,
+   "lat": 54.239474,
+   "lon": 23.82318,
    "fuels": [
     "lpg",
     "diesel",
@@ -6474,8 +6485,8 @@
    "brand": "VIADA LT",
    "municipality": "Lazdijų r. sav.",
    "address": "Lazdijai, Turistų g. 32, 67102",
-   "lat": 54.228606,
-   "lon": 23.528102,
+   "lat": 54.228798,
+   "lon": 23.528393,
    "fuels": [
     "lpg",
     "diesel",
@@ -6741,8 +6752,8 @@
    "brand": "Neste Stoties",
    "municipality": "Marijampolės sav.",
    "address": "Marijampolė, Stoties g. 4C, 68112",
-   "lat": 54.560364,
-   "lon": 23.365926,
+   "lat": 54.560395,
+   "lon": 23.365923,
    "fuels": [
     "diesel",
     "petrol95"
@@ -6760,8 +6771,8 @@
    "brand": "Neste Tarpučių",
    "municipality": "Marijampolės sav.",
    "address": "Marijampolė, Vilkaviškio g. 61D, 68153",
-   "lat": 54.56261,
-   "lon": 23.332366,
+   "lat": 54.562574,
+   "lon": 23.332422,
    "fuels": [
     "diesel",
     "petrol95"
@@ -6796,8 +6807,8 @@
    "brand": "Regusa",
    "municipality": "Marijampolės sav.",
    "address": "Gavaltuvos k., Sodo g. 11, 69370",
-   "lat": 54.571173,
-   "lon": 23.338512,
+   "lat": 54.67677,
+   "lon": 23.418013,
    "fuels": [
     "lpg",
     "diesel",
@@ -6836,8 +6847,8 @@
    "brand": "Stateta",
    "municipality": "Marijampolės sav.",
    "address": "Kantališkių k., 69841",
-   "lat": 54.888137,
-   "lon": 23.786984,
+   "lat": 54.634451,
+   "lon": 23.436397,
    "fuels": [
     "lpg",
     "diesel",
@@ -6857,8 +6868,8 @@
    "brand": "VIRŠI Lietuva",
    "municipality": "Marijampolės sav.",
    "address": "Pasūduonės k., L.Taunio g. 3, 69331",
-   "lat": 54.571173,
-   "lon": 23.338512,
+   "lat": 54.475839,
+   "lon": 23.221346,
    "fuels": [
     "lpg",
     "diesel",
@@ -6878,8 +6889,8 @@
    "brand": "Valdegra",
    "municipality": "Marijampolės sav.",
    "address": "Igliauka, Prienų g. 7, 69117",
-   "lat": 54.557819,
-   "lon": 23.656306,
+   "lat": 54.558136,
+   "lon": 23.656393,
    "fuels": [
     "lpg",
     "diesel",
@@ -6899,8 +6910,8 @@
    "brand": "VIADA LT",
    "municipality": "Marijampolės sav.",
    "address": "Marijampolė, Geležinkelio g. 5, 68305",
-   "lat": 54.554367,
-   "lon": 23.362361,
+   "lat": 54.554195,
+   "lon": 23.362265,
    "fuels": [
     "lpg",
     "diesel",
@@ -6920,8 +6931,8 @@
    "brand": "VIADA LT",
    "municipality": "Marijampolės sav.",
    "address": "Marijampolė, J. Ambrazevičiaus-Brazaičio g. 2, 68161",
-   "lat": 54.567734,
-   "lon": 23.339326,
+   "lat": 54.56771,
+   "lon": 23.339548,
    "fuels": [
     "lpg",
     "diesel",
@@ -7086,8 +7097,8 @@
    "brand": "Kvistija",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, Laižuvos g. 82d, 89213",
-   "lat": 56.313743,
-   "lon": 22.368203,
+   "lat": 56.313601,
+   "lon": 22.368269,
    "fuels": [
     "lpg",
     "diesel",
@@ -7107,8 +7118,8 @@
    "brand": "RV",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, Algirdo g. 42, 89101",
-   "lat": 56.315943,
-   "lon": 22.314284,
+   "lat": 56.318579,
+   "lon": 22.318928,
    "fuels": [
     "lpg"
    ],
@@ -7124,8 +7135,8 @@
    "brand": "RV",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, Daukšos g. 29 / Žemaitijos g. 69, 89132",
-   "lat": 56.301117,
-   "lon": 22.349787,
+   "lat": 56.318881,
+   "lon": 22.318919,
    "fuels": [
     "lpg"
    ],
@@ -7141,8 +7152,8 @@
    "brand": "Neste Mažeikių",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, M. Daukšos g. 29, 89132",
-   "lat": 56.301233,
-   "lon": 22.349841,
+   "lat": 56.301252,
+   "lon": 22.349849,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7160,8 +7171,8 @@
    "brand": "Tripletas",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, Sedos g. 16, 89233",
-   "lat": 56.305283,
-   "lon": 22.342488,
+   "lat": 56.305304,
+   "lon": 22.342528,
    "fuels": [
     "lpg",
     "diesel",
@@ -7181,8 +7192,8 @@
    "brand": "Tumasa",
    "municipality": "Mažeikių r. sav.",
    "address": "Židikai, Mažeikių g. 10, 89442",
-   "lat": 56.31764,
-   "lon": 22.013597,
+   "lat": 56.317994,
+   "lon": 22.018626,
    "fuels": [
     "lpg",
     "diesel",
@@ -7202,8 +7213,8 @@
    "brand": "VIADA LT",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, Montuotojų g. 2A, 89101",
-   "lat": 56.315591,
-   "lon": 22.302747,
+   "lat": 56.315927,
+   "lon": 22.302417,
    "fuels": [
     "lpg",
     "diesel",
@@ -7223,8 +7234,8 @@
    "brand": "VIADA LT",
    "municipality": "Mažeikių r. sav.",
    "address": "Mažeikiai, Žemaitijos g. 75, 89132",
-   "lat": 56.300394,
-   "lon": 22.360668,
+   "lat": 56.300314,
+   "lon": 22.360618,
    "fuels": [
     "lpg",
     "diesel",
@@ -7244,8 +7255,8 @@
    "brand": "Visvilas",
    "municipality": "Mažeikių r. sav.",
    "address": "Tirkšlių k., Laukų g. 2C, 89330",
-   "lat": 56.258374,
-   "lon": 22.309437,
+   "lat": 56.258439,
+   "lon": 22.30945,
    "fuels": [
     "lpg",
     "diesel",
@@ -7307,8 +7318,8 @@
    "brand": "Neste Molėtų",
    "municipality": "Molėtų r. sav.",
    "address": "Molėtai, Aplinkkelio g. 165, 33134",
-   "lat": 55.221488,
-   "lon": 25.436304,
+   "lat": 55.221586,
+   "lon": 25.436488,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7326,8 +7337,8 @@
    "brand": "VIADA LT",
    "municipality": "Molėtų r. sav.",
    "address": "Gojaus k., Utenos g. 16, 33165",
-   "lat": 55.214775,
-   "lon": 25.437866,
+   "lat": 55.214692,
+   "lon": 25.437725,
    "fuels": [
     "lpg",
     "diesel",
@@ -7347,8 +7358,8 @@
    "brand": "VIADA LT",
    "municipality": "Molėtų r. sav.",
    "address": "Molėtai, Vilniaus g. 101, 33112",
-   "lat": 55.222844,
-   "lon": 25.404509,
+   "lat": 55.223981,
+   "lon": 25.405534,
    "fuels": [
     "lpg",
     "diesel",
@@ -7387,8 +7398,8 @@
    "brand": "Milda",
    "municipality": "Pagėgių sav.",
    "address": "Pagėgiai, Klaipėdos g. 6b, 99290",
-   "lat": 55.140417,
-   "lon": 21.903415,
+   "lat": 55.140442,
+   "lon": 21.903256,
    "fuels": [
     "lpg",
     "diesel",
@@ -7450,8 +7461,8 @@
    "brand": "Naftrus",
    "municipality": "Pakruojo r. sav.",
    "address": "Degučių k., Topolių g. 1, 83291",
-   "lat": 55.970813,
-   "lon": 23.587424,
+   "lat": 55.970665,
+   "lon": 23.587598,
    "fuels": [
     "lpg",
     "diesel",
@@ -7471,8 +7482,8 @@
    "brand": "VIADA LT",
    "municipality": "Pakruojo r. sav.",
    "address": "Pakruojis, Vytauto Didžiojo g. 98, 83162",
-   "lat": 55.980458,
-   "lon": 23.857967,
+   "lat": 55.980382,
+   "lon": 23.857812,
    "fuels": [
     "lpg",
     "diesel",
@@ -7555,8 +7566,8 @@
    "brand": "Šventosios investicijos",
    "municipality": "Palangos m. sav.",
    "address": "Palanga (Šventoji), Elijos g. 26, 00319",
-   "lat": 56.012842,
-   "lon": 21.103592,
+   "lat": 56.012997,
+   "lon": 21.103792,
    "fuels": [
     "lpg",
     "diesel",
@@ -7826,8 +7837,8 @@
    "brand": "Neste Babilonas",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevežys, Klaipėdos g. 144B, 37376",
-   "lat": 55.73063,
-   "lon": 24.316109,
+   "lat": 55.730662,
+   "lon": 24.316091,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7845,8 +7856,8 @@
    "brand": "Neste Klaipėdos",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Klaipėdos g. 66,  35193",
-   "lat": 55.727745,
-   "lon": 24.348805,
+   "lat": 55.72778,
+   "lon": 24.348839,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7864,8 +7875,8 @@
    "brand": "Neste IKI",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Klaipėdos g. 81, 37106",
-   "lat": 55.728377,
-   "lon": 24.332338,
+   "lat": 55.728425,
+   "lon": 24.332359,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7883,8 +7894,8 @@
    "brand": "Neste Nemuno",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Margirio g. 1B, 36248",
-   "lat": 55.719396,
-   "lon": 24.348867,
+   "lat": 55.719418,
+   "lon": 24.348874,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7902,8 +7913,8 @@
    "brand": "Neste Ramygalos",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Ramygalos g. 145B, 36225",
-   "lat": 55.709517,
-   "lon": 24.374754,
+   "lat": 55.709545,
+   "lon": 24.374745,
    "fuels": [
     "diesel",
     "petrol95"
@@ -7921,8 +7932,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, J. Janonio g. 28A, 35101",
-   "lat": 55.738875,
-   "lon": 24.310136,
+   "lat": 55.738774,
+   "lon": 24.310321,
    "fuels": [
     "lpg",
     "diesel",
@@ -7942,8 +7953,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Navadolio g. 31, 36252",
-   "lat": 55.714597,
-   "lon": 24.335142,
+   "lat": 55.71446,
+   "lon": 24.335266,
    "fuels": [
     "lpg",
     "diesel",
@@ -7963,8 +7974,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Pušaloto g. 193A, 191A",
-   "lat": 55.753396,
-   "lon": 24.312255,
+   "lat": 55.75324,
+   "lon": 24.312202,
    "fuels": [
     "lpg",
     "diesel",
@@ -7984,8 +7995,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Ramygalos g. 155, 36224",
-   "lat": 55.704055,
-   "lon": 24.381157,
+   "lat": 55.704037,
+   "lon": 24.380949,
    "fuels": [
     "lpg",
     "diesel",
@@ -8005,8 +8016,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Ramygalos g. 186G, 36224",
-   "lat": 55.709068,
-   "lon": 24.373349,
+   "lat": 55.709192,
+   "lon": 24.373483,
    "fuels": [
     "lpg",
     "diesel",
@@ -8026,8 +8037,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Senamiesčio g. 116A, 35115",
-   "lat": 55.748575,
-   "lon": 24.393264,
+   "lat": 55.748626,
+   "lon": 24.393177,
    "fuels": [
     "lpg",
     "diesel",
@@ -8047,8 +8058,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio m. sav.",
    "address": "Panevėžys, Venslaviškio g. 16, 35116",
-   "lat": 55.736823,
-   "lon": 24.387118,
+   "lat": 55.736852,
+   "lon": 24.387125,
    "fuels": [
     "lpg",
     "diesel",
@@ -8173,8 +8184,8 @@
    "brand": "Neste Šilagalio žiedo",
    "municipality": "Panevėžio r. sav.",
    "address": "Šilagalio k., Panevėžio aplinkl. 22, 36258",
-   "lat": 55.673049,
-   "lon": 24.334227,
+   "lat": 55.673031,
+   "lon": 24.334251,
    "fuels": [
     "diesel",
     "petrol95"
@@ -8192,8 +8203,8 @@
    "brand": "Neste Šilagalio k.",
    "municipality": "Panevėžio r. sav.",
    "address": "Šilagalio k., Panevėžio aplinkl. 7, 36224",
-   "lat": 55.670525,
-   "lon": 24.348415,
+   "lat": 55.670399,
+   "lon": 24.348427,
    "fuels": [
     "diesel",
     "petrol95"
@@ -8211,8 +8222,8 @@
    "brand": "Stateta",
    "municipality": "Panevėžio r. sav.",
    "address": "Paliūniškio k., Žemdirbių g. 15, 38440",
-   "lat": 55.78769,
-   "lon": 24.439271,
+   "lat": 55.787569,
+   "lon": 24.43921,
    "fuels": [
     "lpg",
     "diesel",
@@ -8232,8 +8243,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio r. sav.",
    "address": "Krekenava, Tilto g. 35, 38305",
-   "lat": 55.542062,
-   "lon": 24.098564,
+   "lat": 55.541553,
+   "lon": 24.107853,
    "fuels": [
     "lpg",
     "diesel",
@@ -8253,8 +8264,8 @@
    "brand": "VIADA LT",
    "municipality": "Panevėžio r. sav.",
    "address": "Ramygala, Vienkiemio g. 1B, 38262",
-   "lat": 55.521185,
-   "lon": 24.31266,
+   "lat": 55.521184,
+   "lon": 24.312792,
    "fuels": [
     "lpg",
     "diesel",
@@ -8375,8 +8386,8 @@
    "brand": "Neste Pasvalio r.",
    "municipality": "Pasvalio r. sav.",
    "address": "Raubonių k., Ąžuolpamūšio g. 1A, 39447",
-   "lat": 56.115321,
-   "lon": 24.470664,
+   "lat": 56.115159,
+   "lon": 24.470569,
    "fuels": [
     "diesel",
     "petrol95"
@@ -8394,8 +8405,8 @@
    "brand": "Pakelės namai",
    "municipality": "Pasvalio r. sav.",
    "address": "Škilinpamūšio k., Liepų g. 4, 39421",
-   "lat": 56.267299,
-   "lon": 24.370877,
+   "lat": 56.267534,
+   "lon": 24.370974,
    "fuels": [
     "lpg",
     "diesel",
@@ -8415,8 +8426,8 @@
    "brand": "Pakelės namai",
    "municipality": "Pasvalio r. sav.",
    "address": "Škilinpamūšio k., Pasienio g. 10, 39421",
-   "lat": 56.271805,
-   "lon": 24.36813,
+   "lat": 56.2725,
+   "lon": 24.367967,
    "fuels": [
     "lpg",
     "diesel",
@@ -8457,8 +8468,8 @@
    "brand": "VIADA LT",
    "municipality": "Pasvalio r. sav.",
    "address": "Brazdigalos k. 1, 39198",
-   "lat": 56.042229,
-   "lon": 24.378185,
+   "lat": 56.042157,
+   "lon": 24.378314,
    "fuels": [
     "lpg",
     "diesel",
@@ -8478,8 +8489,8 @@
    "brand": "VIADA LT",
    "municipality": "Pasvalio r. sav.",
    "address": "Pasvalys, Vilniaus g. 50, 39177",
-   "lat": 56.055939,
-   "lon": 24.407185,
+   "lat": 56.056008,
+   "lon": 24.407404,
    "fuels": [
     "lpg",
     "diesel",
@@ -8581,8 +8592,8 @@
    "brand": "Milda",
    "municipality": "Plungės r. sav.",
    "address": "Minijos g. 1, Aleksandravo k., 90390",
-   "lat": 55.929085,
-   "lon": 21.619962,
+   "lat": 55.929232,
+   "lon": 21.619913,
    "fuels": [
     "lpg",
     "diesel",
@@ -8602,8 +8613,8 @@
    "brand": "Milda",
    "municipality": "Plungės r. sav.",
    "address": "Plungė, Dariaus ir Girėno g. 31, 90118",
-   "lat": 55.919887,
-   "lon": 21.857067,
+   "lat": 55.91994,
+   "lon": 21.857099,
    "fuels": [
     "lpg",
     "diesel",
@@ -8644,8 +8655,8 @@
    "brand": "Madalva",
    "municipality": "Plungės r. sav.",
    "address": "Plungė, Lentpjūvės g. 10A, 90118",
-   "lat": 55.92141,
-   "lon": 21.852581,
+   "lat": 55.921395,
+   "lon": 21.852637,
    "fuels": [
     "lpg"
    ],
@@ -8661,8 +8672,8 @@
    "brand": "Circle K",
    "municipality": "Plungės r. sav.",
    "address": "Truikių k., Pramogų g. 4, 90110",
-   "lat": 55.939079,
-   "lon": 21.88014,
+   "lat": 55.939019,
+   "lon": 21.880091,
    "fuels": [
     "lpg",
     "diesel",
@@ -8682,8 +8693,8 @@
    "brand": "VIADA LT",
    "municipality": "Plungės r. sav.",
    "address": "Plungė, J. Tumo-Vaižganto g. 102, 90160",
-   "lat": 55.903064,
-   "lon": 21.830274,
+   "lat": 55.903026,
+   "lon": 21.830318,
    "fuels": [
     "lpg",
     "diesel",
@@ -8703,8 +8714,8 @@
    "brand": "VIADA LT",
    "municipality": "Plungės r. sav.",
    "address": "Plungė, Žaltakalnio g. 10, 90158",
-   "lat": 55.898292,
-   "lon": 21.839864,
+   "lat": 55.89838,
+   "lon": 21.840071,
    "fuels": [
     "lpg",
     "diesel",
@@ -8808,8 +8819,8 @@
    "brand": "Milda",
    "municipality": "Prienų r. sav.",
    "address": "Mardosų k., Alytaus pl. 2, 59240",
-   "lat": 54.508921,
-   "lon": 23.909659,
+   "lat": 54.508942,
+   "lon": 23.909535,
    "fuels": [
     "lpg",
     "diesel",
@@ -8869,8 +8880,8 @@
    "brand": "Stateta",
    "municipality": "Prienų r. sav.",
    "address": "Gustaičių k., 59296",
-   "lat": 54.503038,
-   "lon": 23.375134,
+   "lat": 54.738421,
+   "lon": 23.710359,
    "fuels": [
     "lpg",
     "diesel",
@@ -8890,8 +8901,8 @@
    "brand": "VIADA LT",
    "municipality": "Prienų r. sav.",
    "address": "Grigaliūnų k. 11, 59281",
-   "lat": 55.151831,
-   "lon": 26.131006,
+   "lat": 54.713949,
+   "lon": 23.649774,
    "fuels": [
     "lpg",
     "diesel",
@@ -8911,8 +8922,8 @@
    "brand": "VIADA LT",
    "municipality": "Prienų r. sav.",
    "address": "Mačiūnų k., Kauno pl. 40, 59157",
-   "lat": 54.661401,
-   "lon": 23.946418,
+   "lat": 54.658967,
+   "lon": 23.947135,
    "fuels": [
     "lpg",
     "diesel",
@@ -9079,8 +9090,8 @@
    "brand": "Neste Radviliškio",
    "municipality": "Radviliškio r. sav.",
    "address": "Radviliškis, Versmės g. 2, 82197",
-   "lat": 55.814272,
-   "lon": 23.546038,
+   "lat": 55.813934,
+   "lon": 23.545741,
    "fuels": [
     "diesel",
     "petrol95"
@@ -9308,8 +9319,8 @@
    "brand": "Milda",
    "municipality": "Raseinių r. sav.",
    "address": "Raseiniai, Jurbarko g. 34, 60180",
-   "lat": 55.370657,
-   "lon": 23.119297,
+   "lat": 55.370635,
+   "lon": 23.119894,
    "fuels": [
     "lpg",
     "diesel",
@@ -9367,8 +9378,8 @@
    "brand": "Naftrus",
    "municipality": "Raseinių r. sav.",
    "address": "Raseiniai, Vilniaus g. 3B, 60187",
-   "lat": 55.370315,
-   "lon": 23.13212,
+   "lat": 55.370455,
+   "lon": 23.132276,
    "fuels": [
     "lpg",
     "diesel",
@@ -9388,8 +9399,8 @@
    "brand": "Naftrus",
    "municipality": "Raseinių r. sav.",
    "address": "Slabados k., Pievų g. 19, 60109",
-   "lat": 55.38617,
-   "lon": 23.043076,
+   "lat": 55.386025,
+   "lon": 23.042566,
    "fuels": [
     "lpg",
     "diesel",
@@ -9409,8 +9420,8 @@
    "brand": "Naftrus",
    "municipality": "Raseinių r. sav.",
    "address": "Ylių k., Šilo g. 1, 60389",
-   "lat": 55.413324,
-   "lon": 22.82195,
+   "lat": 55.413294,
+   "lon": 22.821925,
    "fuels": [
     "lpg",
     "diesel",
@@ -9430,8 +9441,8 @@
    "brand": "Neste Nikola",
    "municipality": "Raseinių r. sav.",
    "address": "Ylių k., Pušyno g. 11, 60389",
-   "lat": 55.41189,
-   "lon": 22.830657,
+   "lat": 55.411805,
+   "lon": 22.830674,
    "fuels": [
     "diesel",
     "petrol95"
@@ -9491,8 +9502,8 @@
    "brand": "Plungės lagūna",
    "municipality": "Rietavo sav.",
    "address": "Rietavas, Plungės g. 32, 90313",
-   "lat": 55.735072,
-   "lon": 21.924055,
+   "lat": 55.734965,
+   "lon": 21.924014,
    "fuels": [
     "lpg",
     "diesel",
@@ -9658,18 +9669,22 @@
     "diesel",
     "petrol95"
    ],
-   "prices": {},
+   "prices": {
+    "lpg": 0.839,
+    "diesel": 2.103,
+    "petrol95": 1.889
+   },
    "gas_station_id": 310,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:30:03.000000Z"
+   "submitted_at": "2026-07-30T09:27:39.000000Z"
   },
   {
    "company": "UAB Viada LT",
    "brand": "VIADA LT",
    "municipality": "Rokiškio r. sav.",
    "address": "Rokiškis, Panevėžio g. 5, 42163",
-   "lat": 55.970191,
-   "lon": 25.556642,
+   "lat": 55.944537,
+   "lon": 25.585231,
    "fuels": [
     "lpg",
     "diesel",
@@ -9689,8 +9704,8 @@
    "brand": "VIADA LT",
    "municipality": "Rokiškio r. sav.",
    "address": "Rokiškis, Žemaitės g. 2C, 42164",
-   "lat": 55.934267,
-   "lon": 25.585647,
+   "lat": 55.934289,
+   "lon": 25.58561,
    "fuels": [
     "lpg",
     "diesel",
@@ -9731,8 +9746,8 @@
    "brand": "Kvistija",
    "municipality": "Skuodo r. sav.",
    "address": "Stripinių k., Skuodo g. 7, 98347",
-   "lat": 56.284055,
-   "lon": 21.833129,
+   "lat": 56.283883,
+   "lon": 21.833054,
    "fuels": [
     "lpg",
     "diesel",
@@ -9773,8 +9788,8 @@
    "brand": "VIADA LT",
    "municipality": "Skuodo r. sav.",
    "address": "Skuodas, Vilniaus g. 50, 98119",
-   "lat": 56.27,
-   "lon": 21.547148,
+   "lat": 56.269979,
+   "lon": 21.547222,
    "fuels": [
     "lpg",
     "diesel",
@@ -9918,8 +9933,8 @@
    "brand": "Milda",
    "municipality": "Tauragės r. sav.",
    "address": "Skaudvilė, Adakavo g. 1, 73435",
-   "lat": 55.401573,
-   "lon": 22.597744,
+   "lat": 55.401598,
+   "lon": 22.597764,
    "fuels": [
     "lpg",
     "diesel",
@@ -9960,8 +9975,8 @@
    "brand": "Littaura",
    "municipality": "Tauragės r. sav.",
    "address": "Tauragė, Pramonės g. 6, 72324",
-   "lat": 55.238271,
-   "lon": 22.297675,
+   "lat": 55.238301,
+   "lon": 22.29774,
    "fuels": [
     "diesel",
     "petrol95"
@@ -9979,8 +9994,8 @@
    "brand": "Madalva",
    "municipality": "Tauragės r. sav.",
    "address": "Tauragė, Dariaus ir Girėno g. 49, 72221",
-   "lat": 55.258347,
-   "lon": 22.294142,
+   "lat": 55.258275,
+   "lon": 22.294626,
    "fuels": [
     "lpg"
    ],
@@ -9996,8 +10011,8 @@
    "brand": "Madalva",
    "municipality": "Tauragės r. sav.",
    "address": "Tauragė, Pramonės g. 10A, 72359",
-   "lat": 55.236448,
-   "lon": 22.296789,
+   "lat": 55.236314,
+   "lon": 22.296947,
    "fuels": [
     "lpg"
    ],
@@ -10013,8 +10028,8 @@
    "brand": "Madalva",
    "municipality": "Tauragės r. sav.",
    "address": "Žygaičių k., Žygaičių g. 2, 73282",
-   "lat": 55.305445,
-   "lon": 22.040464,
+   "lat": 55.303981,
+   "lon": 22.041423,
    "fuels": [
     "lpg",
     "diesel",
@@ -10034,8 +10049,8 @@
    "brand": "Neste Tauragės",
    "municipality": "Tauragės r. sav.",
    "address": "Tauragė, Dariaus ir Girėno g. 130A, 72194",
-   "lat": 55.265316,
-   "lon": 22.308834,
+   "lat": 55.2653,
+   "lon": 22.308798,
    "fuels": [
     "diesel",
     "petrol95"
@@ -10179,8 +10194,8 @@
    "brand": "Milda",
    "municipality": "Telšių r. sav.",
    "address": "Rainių k., Telšių g. 2B, 88401",
-   "lat": 55.956635,
-   "lon": 22.301251,
+   "lat": 55.956615,
+   "lon": 22.30116,
    "fuels": [
     "lpg",
     "diesel",
@@ -10200,8 +10215,8 @@
    "brand": "Milda",
    "municipality": "Telšių r. sav.",
    "address": "Telšiai, Mažeikių g. 1, 87101",
-   "lat": 56.301944,
-   "lon": 22.322252,
+   "lat": 55.999742,
+   "lon": 22.241346,
    "fuels": [
     "lpg",
     "diesel",
@@ -10221,8 +10236,8 @@
    "brand": "Kvistija",
    "municipality": "Telšių r. sav.",
    "address": "Tryškiai, Beržų g. 24/Drąsiųjų g. 7, 88155",
-   "lat": 56.062159,
-   "lon": 22.582456,
+   "lat": 56.062549,
+   "lon": 22.582478,
    "fuels": [
     "lpg",
     "diesel",
@@ -10242,8 +10257,8 @@
    "brand": "Gazimpeksas",
    "municipality": "Telšių r. sav.",
    "address": "Telšiai, Mažeikių g. 7A, 87101",
-   "lat": 56.000522,
-   "lon": 22.24727,
+   "lat": 56.00053,
+   "lon": 22.247385,
    "fuels": [
     "lpg"
    ],
@@ -10259,8 +10274,8 @@
    "brand": "Leosta",
    "municipality": "Telšių r. sav.",
    "address": "Luokė, Telšių g. 66, 88236",
-   "lat": 55.901344,
-   "lon": 22.506292,
+   "lat": 55.901353,
+   "lon": 22.506308,
    "fuels": [
     "lpg",
     "diesel",
@@ -10280,8 +10295,8 @@
    "brand": "Neste Telšių",
    "municipality": "Telšių r. sav.",
    "address": "Gaudikaičių k., Šiaulių pl. 1A, 87100",
-   "lat": 56.004863,
-   "lon": 22.240228,
+   "lat": 56.004996,
+   "lon": 22.24023,
    "fuels": [
     "diesel",
     "petrol95"
@@ -10299,8 +10314,8 @@
    "brand": "Prie Luksto",
    "municipality": "Telšių r. sav.",
    "address": "Telšiai, Masčio g. 21, 87139",
-   "lat": 55.9757,
-   "lon": 22.263657,
+   "lat": 55.975762,
+   "lon": 22.263664,
    "fuels": [
     "lpg",
     "diesel",
@@ -10446,8 +10461,8 @@
    "brand": "Kriketas",
    "municipality": "Trakų r. sav.",
    "address": "Trakai, Senkelio g. 13, 21107",
-   "lat": 54.630862,
-   "lon": 24.922588,
+   "lat": 54.630735,
+   "lon": 24.922138,
    "fuels": [
     "lpg",
     "diesel",
@@ -10467,8 +10482,8 @@
    "brand": "VIADA LT",
    "municipality": "Trakų r. sav.",
    "address": "Aukštųjų Semeniukų k., Logistikos g. 9, 21401",
-   "lat": 54.701773,
-   "lon": 25.009851,
+   "lat": 54.701603,
+   "lon": 25.009661,
    "fuels": [
     "lpg",
     "diesel",
@@ -10572,8 +10587,8 @@
    "brand": "Neste Ukmergės",
    "municipality": "Ukmergės r. sav.",
    "address": "Ukmergė, Kauno g. 45B, 20119",
-   "lat": 55.242038,
-   "lon": 24.742922,
+   "lat": 55.242054,
+   "lon": 24.742908,
    "fuels": [
     "diesel",
     "petrol95"
@@ -10654,8 +10669,8 @@
    "brand": "VIADA LT",
    "municipality": "Ukmergės r. sav.",
    "address": "Dukstynos k., Vytauto g. 131, 20186",
-   "lat": 55.271018,
-   "lon": 24.809584,
+   "lat": 55.269218,
+   "lon": 24.81044,
    "fuels": [
     "lpg",
     "diesel",
@@ -10879,8 +10894,8 @@
    "brand": "Neste Basanavičiaus",
    "municipality": "Utenos r. sav.",
    "address": "Utena, J. Basanavičiaus g. 129, 28216",
-   "lat": 55.505179,
-   "lon": 25.624883,
+   "lat": 55.505096,
+   "lon": 25.624606,
    "fuels": [
     "diesel",
     "petrol95"
@@ -10898,8 +10913,8 @@
    "brand": "Neste Autoturgaus",
    "municipality": "Utenos r. sav.",
    "address": "Utena, Kupiškio g. 12, 28135",
-   "lat": 55.48442,
-   "lon": 25.579684,
+   "lat": 55.481535,
+   "lon": 25.57886,
    "fuels": [
     "diesel",
     "petrol95"
@@ -10917,8 +10932,8 @@
    "brand": "Stateta",
    "municipality": "Utenos r. sav.",
    "address": "Utena, Palangos g. 66, 28140",
-   "lat": 55.498548,
-   "lon": 25.58397,
+   "lat": 55.49858,
+   "lon": 25.58371,
    "fuels": [
     "lpg",
     "diesel",
@@ -10938,8 +10953,8 @@
    "brand": "Utentra",
    "municipality": "Utenos r. sav.",
    "address": "Utena, Pramonės g. 16, 28119",
-   "lat": 55.494679,
-   "lon": 25.645853,
+   "lat": 55.494704,
+   "lon": 25.645821,
    "fuels": [
     "diesel"
    ],
@@ -10955,8 +10970,8 @@
    "brand": "VIADA LT",
    "municipality": "Utenos r. sav.",
    "address": "Gediminas, Vyturio g. 2, 28126",
-   "lat": 55.477815,
-   "lon": 25.581565,
+   "lat": 55.477817,
+   "lon": 25.581519,
    "fuels": [
     "lpg",
     "diesel",
@@ -11174,20 +11189,20 @@
    ],
    "prices": {
     "lpg": 0.73,
-    "diesel": 1.929,
-    "petrol95": 1.729
+    "diesel": 1.959,
+    "petrol95": 1.759
    },
    "gas_station_id": 400,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:34.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Melkasta",
    "brand": "Melkasta",
    "municipality": "Vilkaviškio r. sav.",
    "address": "Gulbiniškių k. 7, 70481",
-   "lat": 55.025517,
-   "lon": 24.245274,
+   "lat": 54.712026,
+   "lon": 23.207954,
    "fuels": [
     "lpg",
     "diesel",
@@ -11203,8 +11218,8 @@
    "brand": "Osijos dujos",
    "municipality": "Vilkaviškio r. sav.",
    "address": "Osijos k., Pamiškės g. 1, 70205",
-   "lat": 54.636546,
-   "lon": 23.006066,
+   "lat": 54.636503,
+   "lon": 23.006549,
    "fuels": [
     "lpg"
    ],
@@ -11220,8 +11235,8 @@
    "brand": "Regusa",
    "municipality": "Vilkaviškio r. sav.",
    "address": "Kybartai, J. Basanavičiaus g. 45A, 70417",
-   "lat": 54.638735,
-   "lon": 22.76328,
+   "lat": 54.638507,
+   "lon": 22.763277,
    "fuels": [
     "lpg",
     "diesel",
@@ -11262,8 +11277,8 @@
    "brand": "Vildega",
    "municipality": "Vilkaviškio r. sav.",
    "address": "Vilkaviškis, Vytauto g. 2D, 70137",
-   "lat": 54.64334,
-   "lon": 23.053086,
+   "lat": 54.643461,
+   "lon": 23.05292,
    "fuels": [
     "lpg",
     "diesel",
@@ -12456,8 +12471,8 @@
    "brand": "Neste Architektų",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Architektų g. 130, 04216",
-   "lat": 54.68084,
-   "lon": 25.207628,
+   "lat": 54.680856,
+   "lon": 25.207612,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12475,8 +12490,8 @@
    "brand": "Neste Kirtimų",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Dariaus ir Girėno g. 17, 02169",
-   "lat": 54.655262,
-   "lon": 25.27027,
+   "lat": 54.655063,
+   "lon": 25.270712,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12494,8 +12509,8 @@
    "brand": "Neste Eišiškių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Eišiškių pl. 82, 02200",
-   "lat": 54.621285,
-   "lon": 25.24294,
+   "lat": 54.621324,
+   "lon": 25.242917,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12513,8 +12528,8 @@
    "brand": "Neste Lazdynų",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Erfurto g. 41, 04226",
-   "lat": 54.67281,
-   "lon": 25.197948,
+   "lat": 54.672613,
+   "lon": 25.198281,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12532,8 +12547,8 @@
    "brand": "Neste Gariūnų",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Gariūnų g. 55, 02300",
-   "lat": 54.658327,
-   "lon": 25.159295,
+   "lat": 54.658315,
+   "lon": 25.158844,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12551,8 +12566,8 @@
    "brand": "Neste Saltoniškių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Geležinio Vilko g. 37A, 08104",
-   "lat": 54.701324,
-   "lon": 25.263805,
+   "lat": 54.701591,
+   "lon": 25.263703,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12570,8 +12585,8 @@
    "brand": "Neste Žalgirio",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Geležinio Vilko g. 41, 09300",
-   "lat": 54.704098,
-   "lon": 25.266896,
+   "lat": 54.704111,
+   "lon": 25.266894,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12589,8 +12604,8 @@
    "brand": "Neste Ozo",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Geležinio Vilko g. 63, 08104",
-   "lat": 54.711947,
-   "lon": 25.270644,
+   "lat": 54.711949,
+   "lon": 25.270621,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12608,8 +12623,8 @@
    "brand": "Neste Trakų Vokės",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, J. Tiškevičiaus g. 19, 02231",
-   "lat": 54.624407,
-   "lon": 25.111981,
+   "lat": 54.624302,
+   "lon": 25.111681,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12627,8 +12642,8 @@
    "brand": "Neste Viršuliškių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Justiniškių g. 14B, 05131",
-   "lat": 54.704909,
-   "lon": 25.214701,
+   "lat": 54.705142,
+   "lon": 25.214987,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12646,8 +12661,8 @@
    "brand": "Neste Kauno",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Kauno g. 26, 03212",
-   "lat": 54.671612,
-   "lon": 25.270971,
+   "lat": 54.67162,
+   "lon": 25.270105,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12665,8 +12680,8 @@
    "brand": "Neste RIMI",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Kedrų g. 2, 03159",
-   "lat": 54.677209,
-   "lon": 25.255644,
+   "lat": 54.677232,
+   "lon": 25.25564,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12684,8 +12699,8 @@
    "brand": "Neste Santariškių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Molėtų pl. 8, 08426",
-   "lat": 54.75485,
-   "lon": 25.271346,
+   "lat": 54.754887,
+   "lon": 25.271255,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12703,8 +12718,8 @@
    "brand": "Neste Lukšio",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, P. Lukšio g. 22, 09108",
-   "lat": 54.711904,
-   "lon": 25.293073,
+   "lat": 54.711953,
+   "lon": 25.293042,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12722,8 +12737,8 @@
    "brand": "Neste Panerių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Panerių g. 42, 03202",
-   "lat": 54.66802,
-   "lon": 25.264287,
+   "lat": 54.668004,
+   "lon": 25.264745,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12741,8 +12756,8 @@
    "brand": "Neste Litexpo",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Parodų g. 1A, 04133",
-   "lat": 54.673423,
-   "lon": 25.224068,
+   "lat": 54.673439,
+   "lon": 25.224051,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12760,8 +12775,8 @@
    "brand": "Neste Pilaitės",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Pilaitės pr. 27, 06269",
-   "lat": 54.709474,
-   "lon": 25.189884,
+   "lat": 54.708863,
+   "lon": 25.189733,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12779,8 +12794,8 @@
    "brand": "Neste Justiniškių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Rygos g. 2, 05259",
-   "lat": 54.71563,
-   "lon": 25.228706,
+   "lat": 54.715603,
+   "lon": 25.228943,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12798,8 +12813,8 @@
    "brand": "Neste Stanevičiaus",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, S. Stanevičiaus g. 3, 07131",
-   "lat": 54.72149,
-   "lon": 25.256115,
+   "lat": 54.721514,
+   "lon": 25.256095,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12817,8 +12832,8 @@
    "brand": "Neste Savanorių 2",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Savanorių pr. 187, 02300",
-   "lat": 54.646852,
-   "lon": 25.210308,
+   "lat": 54.648115,
+   "lon": 25.212462,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12836,8 +12851,8 @@
    "brand": "Neste Savanorių 1",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Savanorių pr. 220A, 02301",
-   "lat": 54.644034,
-   "lon": 25.207458,
+   "lat": 54.644203,
+   "lon": 25.207001,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12855,8 +12870,8 @@
    "brand": "Neste Liepkalnio",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Servečės g. 2, 02121",
-   "lat": 54.634174,
-   "lon": 25.304536,
+   "lat": 54.633776,
+   "lon": 25.304497,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12874,8 +12889,8 @@
    "brand": "Neste Subačiaus",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Subačiaus g. 64, 11342",
-   "lat": 54.676735,
-   "lon": 25.309299,
+   "lat": 54.676755,
+   "lon": 25.309619,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12893,8 +12908,8 @@
    "brand": "Neste Talino",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Talino g. 2C, 05200",
-   "lat": 54.713897,
-   "lon": 25.209684,
+   "lat": 54.713898,
+   "lon": 25.208974,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12912,8 +12927,8 @@
    "brand": "Neste Gabijos",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Ukmergės g. 296, 12105",
-   "lat": 54.736144,
-   "lon": 25.231119,
+   "lat": 54.736193,
+   "lon": 25.231071,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12932,7 +12947,7 @@
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Žirmūnų g. 54C, 08233",
    "lat": 54.706745,
-   "lon": 25.304138,
+   "lon": 25.304163,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12950,8 +12965,8 @@
    "brand": "Neste Žirmūnų",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Žirmūnų g. 68B, 09113",
-   "lat": 54.717444,
-   "lon": 25.304441,
+   "lat": 54.71757,
+   "lon": 25.304512,
    "fuels": [
     "diesel",
     "petrol95"
@@ -12969,8 +12984,8 @@
    "brand": "Neste Žirnių",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Žirnių g. 17, 02118",
-   "lat": 54.656653,
-   "lon": 25.292038,
+   "lat": 54.65655,
+   "lon": 25.292126,
    "fuels": [
     "diesel",
     "petrol95"
@@ -13064,8 +13079,8 @@
    "brand": "Stateta",
    "municipality": "Vilniaus m. sav.",
    "address": "Vilnius, Ukmergės g. 246, 06120",
-   "lat": 54.723146,
-   "lon": 25.241059,
+   "lat": 54.723249,
+   "lon": 25.241756,
    "fuels": [
     "lpg",
     "diesel",
@@ -13642,8 +13657,8 @@
    "brand": "Kvistija",
    "municipality": "Vilniaus r. sav.",
    "address": "Kalnuotės 1 k. 15130",
-   "lat": 54.944745,
-   "lon": 25.344296,
+   "lat": 54.944696,
+   "lon": 25.344243,
    "fuels": [
     "lpg",
     "diesel",
@@ -13684,8 +13699,8 @@
    "brand": "Kenaoil",
    "municipality": "Vilniaus r. sav.",
    "address": "Kena, Miško g. 6, 13146",
-   "lat": 54.646057,
-   "lon": 25.625138,
+   "lat": 54.646121,
+   "lon": 25.625046,
    "fuels": [
     "lpg",
     "diesel",
@@ -13762,8 +13777,8 @@
    "brand": "VIADA LT",
    "municipality": "Vilniaus r. sav.",
    "address": "Avižienių k., Ožiarūčių g. 1A, 14185",
-   "lat": 54.764109,
-   "lon": 25.196643,
+   "lat": 54.764005,
+   "lon": 25.196394,
    "fuels": [
     "lpg",
     "diesel",
@@ -13926,8 +13941,8 @@
    "brand": "VIADA LT",
    "municipality": "Zarasų r. sav.",
    "address": "Juodalaukių k. 2, 32104",
-   "lat": 55.717885,
-   "lon": 26.213842,
+   "lat": 55.717718,
+   "lon": 26.213825,
    "fuels": [
     "lpg",
     "diesel",
@@ -14043,7 +14058,7 @@
    },
    "gas_station_id": 402,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14064,7 +14079,7 @@
    },
    "gas_station_id": 407,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14083,7 +14098,7 @@
    },
    "gas_station_id": 409,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14104,7 +14119,7 @@
    },
    "gas_station_id": 403,
    "logo_url": null,
-   "submitted_at": "2026-07-30T07:09:35.000000Z"
+   "submitted_at": "2026-07-30T09:40:33.000000Z"
   },
   {
    "company": "UAB Saurida",
@@ -14174,8 +14189,8 @@
    "brand": "Tomega",
    "municipality": "Šalčininkų r. sav.",
    "address": "Dumblės k., 17178",
-   "lat": 55.248859,
-   "lon": 25.771358,
+   "lat": 54.160154,
+   "lon": 25.009899,
    "fuels": [
     "diesel",
     "petrol95"
@@ -14193,8 +14208,8 @@
    "brand": "Tomega",
    "municipality": "Šalčininkų r. sav.",
    "address": "Tartoko k., 17127",
-   "lat": 54.456879,
-   "lon": 25.279466,
+   "lat": 54.305922,
+   "lon": 25.360893,
    "fuels": [
     "diesel",
     "petrol95"
@@ -14212,8 +14227,8 @@
    "brand": "VIADA LT",
    "municipality": "Šalčininkų r. sav.",
    "address": "Jašiūnai, Lydos g. 13, 17247",
-   "lat": 54.439564,
-   "lon": 25.32733,
+   "lat": 54.439769,
+   "lon": 25.327315,
    "fuels": [
     "lpg",
     "diesel",
@@ -14544,8 +14559,8 @@
    "brand": "Junasa",
    "municipality": "Šiaulių m. sav.",
    "address": "Šiauliai, Bačiūnų g. 12a, 77109",
-   "lat": 55.89793,
-   "lon": 23.35172,
+   "lat": 55.897895,
+   "lon": 23.351742,
    "fuels": [
     "lpg",
     "diesel",
@@ -14565,8 +14580,8 @@
    "brand": "Junasa",
    "municipality": "Šiaulių m. sav.",
    "address": "Šiauliai, Žemaitės g. 131c, 76175",
-   "lat": 55.948105,
-   "lon": 23.320427,
+   "lat": 55.948015,
+   "lon": 23.320527,
    "fuels": [
     "lpg",
     "diesel",
@@ -14586,8 +14601,8 @@
    "brand": "Neste Dubijos",
    "municipality": "Šiaulių m. sav.",
    "address": "Šiauliai, Dubijos g. 18A, 77172",
-   "lat": 55.929367,
-   "lon": 23.294134,
+   "lat": 55.929291,
+   "lon": 23.294323,
    "fuels": [
     "diesel",
     "petrol95"
@@ -14605,8 +14620,8 @@
    "brand": "Neste Gegužių",
    "municipality": "Šiaulių m. sav.",
    "address": "Šiauliai, Gegužių g. 28, 78348",
-   "lat": 55.905911,
-   "lon": 23.25872,
+   "lat": 55.906072,
+   "lon": 23.259506,
    "fuels": [
     "diesel",
     "petrol95"
@@ -14624,8 +14639,8 @@
    "brand": "Neste Tilžės",
    "municipality": "Šiaulių m. sav.",
    "address": "Šiauliai, Tilžės g. 72, 78140",
-   "lat": 55.920084,
-   "lon": 23.293285,
+   "lat": 55.920287,
+   "lon": 23.292998,
    "fuels": [
     "diesel",
     "petrol95"
@@ -14643,8 +14658,8 @@
    "brand": "Plovimo sistemos",
    "municipality": "Šiaulių m. sav.",
    "address": "Šiauliai, Gegužių g. 28, 78322",
-   "lat": 55.905911,
-   "lon": 23.25872,
+   "lat": 55.906215,
+   "lon": 23.25913,
    "fuels": [
     "lpg"
    ],
@@ -14912,8 +14927,8 @@
    "brand": "Junasa",
    "municipality": "Šiaulių r. sav.",
    "address": "Gruzdžiai, M. Katiliškio g. 50, 81428",
-   "lat": 56.099227,
-   "lon": 23.265819,
+   "lat": 56.099731,
+   "lon": 23.265659,
    "fuels": [
     "lpg",
     "diesel",
@@ -14933,8 +14948,8 @@
    "brand": "VIADA LT",
    "municipality": "Šiaulių r. sav.",
    "address": "Aukštelkės k., Ilgoji g. 1, 80184",
-   "lat": 55.935761,
-   "lon": 23.077789,
+   "lat": 55.881863,
+   "lon": 23.205326,
    "fuels": [
     "lpg",
     "diesel",
@@ -14954,8 +14969,8 @@
    "brand": "VIADA LT",
    "municipality": "Šiaulių r. sav.",
    "address": "Kuršėnai, Vilniaus g. 38A, 81136",
-   "lat": 55.999876,
-   "lon": 22.947656,
+   "lat": 55.999951,
+   "lon": 22.947631,
    "fuels": [
     "lpg",
     "diesel",
@@ -14975,8 +14990,8 @@
    "brand": "VIADA LT",
    "municipality": "Šiaulių r. sav.",
    "address": "Kužiai, Draugystės g. 2, 80260",
-   "lat": 55.979096,
-   "lon": 23.136228,
+   "lat": 55.979187,
+   "lon": 23.136263,
    "fuels": [
     "lpg",
     "diesel",
@@ -15080,8 +15095,8 @@
    "brand": "Milda",
    "municipality": "Šilalės r. sav.",
    "address": "Vabalų k., Paršežerio g. 1, 75406",
-   "lat": 55.619824,
-   "lon": 22.246432,
+   "lat": 55.61976,
+   "lon": 22.246413,
    "fuels": [
     "lpg",
     "diesel",
@@ -15101,8 +15116,8 @@
    "brand": "Milda",
    "municipality": "Šilalės r. sav.",
    "address": "Šilalė, Rytinio Kelio g. 2a, 75122",
-   "lat": 55.485903,
-   "lon": 22.199627,
+   "lat": 55.485906,
+   "lon": 22.199408,
    "fuels": [
     "lpg",
     "diesel",
@@ -15143,8 +15158,8 @@
    "brand": "Madalva",
    "municipality": "Šilalės r. sav.",
    "address": "Gineikių k., 75445",
-   "lat": 55.536636,
-   "lon": 22.494906,
+   "lat": 55.541885,
+   "lon": 22.491621,
    "fuels": [
     "lpg"
    ],
@@ -15160,8 +15175,8 @@
    "brand": "Neste Šilalės r.",
    "municipality": "Šilalės r. sav.",
    "address": "Katyčių k., 75493",
-   "lat": 55.521727,
-   "lon": 22.365772,
+   "lat": 55.521183,
+   "lon": 22.365979,
    "fuels": [
     "diesel",
     "petrol95"
@@ -15200,8 +15215,8 @@
    "brand": "VIADA LT",
    "municipality": "Šilalės r. sav.",
    "address": "Kuodaičių k., 75101",
-   "lat": 55.563619,
-   "lon": 22.194131,
+   "lat": 55.5687,
+   "lon": 22.177633,
    "fuels": [
     "lpg",
     "diesel",
@@ -15322,8 +15337,8 @@
    "brand": "Milda",
    "municipality": "Šilutės r. sav.",
    "address": "Žemaičių Naumiestis, Klaipėdos g. 76, 99206",
-   "lat": 55.355282,
-   "lon": 21.680059,
+   "lat": 55.355305,
+   "lon": 21.680032,
    "fuels": [
     "lpg",
     "diesel",
@@ -15507,8 +15522,8 @@
    "brand": "RV",
    "municipality": "Švenčionių r. sav.",
    "address": "Švenčionys, Mokyklos g. 23, 18111",
-   "lat": 55.137806,
-   "lon": 26.155728,
+   "lat": 55.138414,
+   "lon": 26.156545,
    "fuels": [
     "lpg"
    ],
@@ -15524,8 +15539,8 @@
    "brand": "Neste Pabradės",
    "municipality": "Švenčionių r. sav.",
    "address": "Pabradė, Vilniaus g. 94, 18177",
-   "lat": 54.978537,
-   "lon": 25.756623,
+   "lat": 54.978786,
+   "lon": 25.756278,
    "fuels": [
     "diesel",
     "petrol95"
@@ -15543,8 +15558,8 @@
    "brand": "Propano ir butano dujų centras",
    "municipality": "Švenčionių r. sav.",
    "address": "Cirkliškio k., Aukštaičių g. 2A, 18122",
-   "lat": 55.120077,
-   "lon": 26.131287,
+   "lat": 55.120058,
+   "lon": 26.13143,
    "fuels": [
     "lpg",
     "diesel",
@@ -15583,8 +15598,8 @@
    "brand": "VIADA LT",
    "municipality": "Švenčionių r. sav.",
    "address": "Pabradė, Vilniaus g. 116B, 18177",
-   "lat": 54.975098,
-   "lon": 25.744854,
+   "lat": 54.975124,
+   "lon": 25.744879,
    "fuels": [
     "lpg",
     "diesel",

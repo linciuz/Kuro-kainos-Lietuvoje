@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-07-30T14:55:51+00:00Z",
+    "resolved_utc": "2026-07-30T15:35:03+00:00Z",
     "winner_counts": {
       "portal": 759,
       "sharepoint": 3,
@@ -15,14 +15,14 @@
         "ok": true,
         "date": "2026-07-30",
         "error": null,
-        "fetched_utc": "2026-07-30T14:55:49+00:00Z"
+        "fetched_utc": "2026-07-30T15:35:01+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": true,
         "date": "2026-07-28",
         "error": null,
-        "fetched_utc": "2026-07-30T14:55:51+00:00Z"
+        "fetched_utc": "2026-07-30T15:35:03+00:00Z"
       }
     ]
   },
@@ -72,8 +72,8 @@
       "lpg": 0.759,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 56.160074,
-      "lon": 22.76078,
+      "lat": 56.160143,
+      "lon": 22.760735,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -529,8 +529,8 @@
       "lpg": 0.819,
       "price_updated": "2026-07-30T09:09:52+03:00",
       "price_src": "portal",
-      "lat": 55.675913,
-      "lon": 25.358703,
+      "lat": 55.67584,
+      "lon": 25.358668,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -1022,8 +1022,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "12:25",
-      "lat": 55.13002,
-      "lon": 24.189396,
+      "lat": 55.137949,
+      "lon": 24.193271,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -1167,8 +1167,8 @@
       "lpg": 0.87,
       "price_updated": "2026-07-30T09:55:51+03:00",
       "price_src": "portal",
-      "lat": 55.262018,
-      "lon": 22.691796,
+      "lat": 55.262044,
+      "lon": 22.69182,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -1335,10 +1335,9 @@
       "lpg": 0.71,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 54.802522,
-      "lon": 24.502197,
-      "approx": false,
-      "coord_source": "lea_portal"
+      "lat": 54.867654,
+      "lon": 24.403774,
+      "approx": true
     },
     {
       "network": "UAB Saurida",
@@ -1410,8 +1409,8 @@
       "lpg": 0.819,
       "price_updated": "2026-07-30T09:29:21+03:00",
       "price_src": "portal",
-      "lat": 54.324275,
-      "lon": 23.144682,
+      "lat": 54.324264,
+      "lon": 23.14466,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -1502,8 +1501,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "12:06",
-      "lat": 54.329083,
-      "lon": 23.148383,
+      "lat": 54.32897,
+      "lon": 23.148446,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -1519,8 +1518,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:28",
-      "lat": 54.407394,
-      "lon": 23.220975,
+      "lat": 54.407333,
+      "lon": 23.221005,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -1553,8 +1552,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:03",
-      "lat": 54.41083,
-      "lon": 23.206915,
+      "lat": 54.410916,
+      "lon": 23.206718,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -3099,8 +3098,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:03",
-      "lat": 54.928986,
-      "lon": 24.038212,
+      "lat": 54.929051,
+      "lon": 24.038115,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -3222,8 +3221,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:01",
-      "lat": 54.769261,
-      "lon": 23.486561,
+      "lat": 54.850076,
+      "lon": 23.965872,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -3237,8 +3236,8 @@
       "lpg": 0.859,
       "price_updated": "2026-07-30T09:50:10+03:00",
       "price_src": "portal",
-      "lat": 54.69867,
-      "lon": 23.517622,
+      "lat": 54.698177,
+      "lon": 23.517613,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4192,8 +4191,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:16",
-      "lat": 55.720336,
-      "lon": 21.300943,
+      "lat": 55.71917,
+      "lon": 21.293355,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4248,8 +4247,8 @@
       "lpg": 0.89,
       "price_updated": "2026-07-30T09:55:51+03:00",
       "price_src": "portal",
-      "lat": 56.063149,
-      "lon": 21.582088,
+      "lat": 56.063165,
+      "lon": 21.582092,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4354,8 +4353,8 @@
       "lpg": 0.799,
       "price_updated": "2026-07-30T09:09:53+03:00",
       "price_src": "portal",
-      "lat": 55.834259,
-      "lon": 25.009335,
+      "lat": 55.834253,
+      "lon": 25.009325,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4369,8 +4368,8 @@
       "lpg": 0.739,
       "price_updated": "2026-07-30T09:09:53+03:00",
       "price_src": "portal",
-      "lat": 55.770522,
-      "lon": 24.755045,
+      "lat": 55.773414,
+      "lon": 24.754327,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4619,7 +4618,7 @@
       "lpg": 0.85,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 55.336109,
+      "lat": 55.336183,
       "lon": 23.914917,
       "approx": false,
       "coord_source": "lea_portal"
@@ -4754,8 +4753,8 @@
       "lpg": 0.749,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 54.045097,
-      "lon": 23.526838,
+      "lat": 54.379084,
+      "lon": 23.52855,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4769,8 +4768,8 @@
       "lpg": 0.71,
       "price_updated": "2026-07-28T10:00:00+03:00",
       "price_src": "sharepoint",
-      "lat": 54.239512,
-      "lon": 23.82307,
+      "lat": 54.239474,
+      "lon": 23.82318,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -4784,8 +4783,8 @@
       "lpg": 0.71,
       "price_updated": "2026-07-28T10:00:00+03:00",
       "price_src": "sharepoint",
-      "lat": 54.045097,
-      "lon": 23.526838,
+      "lat": 54.106116,
+      "lon": 23.673795,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -5055,8 +5054,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:05",
-      "lat": 54.571173,
-      "lon": 23.338512,
+      "lat": 54.67677,
+      "lon": 23.418013,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -5088,9 +5087,10 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:03",
-      "lat": 54.566438,
-      "lon": 23.361747,
-      "approx": true
+      "lat": 54.634451,
+      "lon": 23.436397,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB VIRŠI Lietuva",
@@ -5102,8 +5102,8 @@
       "lpg": 0.724,
       "price_updated": "2026-07-30T09:11:37+03:00",
       "price_src": "portal",
-      "lat": 54.571173,
-      "lon": 23.338512,
+      "lat": 54.475839,
+      "lon": 23.221346,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -5277,8 +5277,8 @@
       "lpg": 0.73,
       "price_updated": "2026-07-30T09:44:20+03:00",
       "price_src": "portal",
-      "lat": 56.301117,
-      "lon": 22.349787,
+      "lat": 56.318881,
+      "lon": 22.318919,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -5383,8 +5383,8 @@
       "lpg": 0.72,
       "price_updated": "2026-07-30T09:24:57+03:00",
       "price_src": "portal",
-      "lat": 56.258374,
-      "lon": 22.309437,
+      "lat": 56.258439,
+      "lon": 22.30945,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -5535,8 +5535,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:12",
-      "lat": 55.970813,
-      "lon": 23.587424,
+      "lat": 55.970665,
+      "lon": 23.587598,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6084,8 +6084,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:03",
-      "lat": 55.78769,
-      "lon": 24.439271,
+      "lat": 55.787569,
+      "lon": 24.43921,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6217,8 +6217,8 @@
       "lpg": 0.85,
       "price_updated": "2026-07-30T09:32:07+03:00",
       "price_src": "portal",
-      "lat": 56.271805,
-      "lon": 24.36813,
+      "lat": 56.2725,
+      "lon": 24.367967,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6232,8 +6232,8 @@
       "lpg": 0.85,
       "price_updated": "2026-07-30T09:32:07+03:00",
       "price_src": "portal",
-      "lat": 56.267299,
-      "lon": 24.370877,
+      "lat": 56.267534,
+      "lon": 24.370974,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6349,8 +6349,8 @@
       "lpg": 0.85,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 55.929085,
-      "lon": 21.619962,
+      "lat": 55.929232,
+      "lon": 21.619913,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6406,8 +6406,8 @@
       "lpg": 0.826,
       "price_updated": "2026-07-30T07:51:32+03:00",
       "price_src": "portal",
-      "lat": 55.939079,
-      "lon": 21.88014,
+      "lat": 55.939019,
+      "lon": 21.880091,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6510,8 +6510,8 @@
       "lpg": 0.81,
       "price_updated": "2026-07-30T09:55:51+03:00",
       "price_src": "portal",
-      "lat": 54.508921,
-      "lon": 23.909659,
+      "lat": 54.508942,
+      "lon": 23.909535,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6919,8 +6919,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:12",
-      "lat": 55.413324,
-      "lon": 22.82195,
+      "lat": 55.413294,
+      "lon": 22.821925,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -7196,8 +7196,8 @@
       "lpg": 0.88,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 56.284055,
-      "lon": 21.833129,
+      "lat": 56.283883,
+      "lon": 21.833054,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -7400,8 +7400,8 @@
       "lpg": 0.66,
       "price_updated": "2026-07-30T09:12:25+03:00",
       "price_src": "portal",
-      "lat": 55.305445,
-      "lon": 22.040464,
+      "lat": 55.303981,
+      "lon": 22.041423,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -7519,8 +7519,8 @@
       "lpg": 0.86,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 56.062159,
-      "lon": 22.582456,
+      "lat": 56.062549,
+      "lon": 22.582478,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -7548,8 +7548,8 @@
       "lpg": 0.76,
       "price_updated": "2026-07-30T09:55:51+03:00",
       "price_src": "portal",
-      "lat": 55.956635,
-      "lon": 22.301251,
+      "lat": 55.956615,
+      "lon": 22.30116,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -8252,8 +8252,8 @@
       "lpg": 0.75,
       "price_updated": "2026-07-28T10:00:00+03:00",
       "price_src": "sharepoint",
-      "lat": 55.025517,
-      "lon": 24.245274,
+      "lat": 54.712026,
+      "lon": 23.207954,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -8267,8 +8267,8 @@
       "lpg": 0.8,
       "price_updated": "2026-07-30T08:59:32+03:00",
       "price_src": "portal",
-      "lat": 54.636546,
-      "lon": 23.006066,
+      "lat": 54.636503,
+      "lon": 23.006549,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -10067,8 +10067,8 @@
       "lpg": 0.789,
       "price_updated": "2026-07-30T09:55:52+03:00",
       "price_src": "portal",
-      "lat": 54.944745,
-      "lon": 25.344296,
+      "lat": 54.944696,
+      "lon": 25.344243,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -10157,8 +10157,8 @@
       "lpg": 0.769,
       "price_updated": "2026-07-30T09:50:14+03:00",
       "price_src": "portal",
-      "lat": 54.764109,
-      "lon": 25.196643,
+      "lat": 54.764005,
+      "lon": 25.196394,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -10276,8 +10276,8 @@
       "lpg": 0.799,
       "price_updated": "2026-07-30T09:50:15+03:00",
       "price_src": "portal",
-      "lat": 55.717885,
-      "lon": 26.213842,
+      "lat": 55.717718,
+      "lon": 26.213825,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -10460,8 +10460,8 @@
       "lpg": null,
       "price_updated": "2026-07-30T09:38:56+03:00",
       "price_src": "portal",
-      "lat": 55.248859,
-      "lon": 25.771358,
+      "lat": 54.160154,
+      "lon": 25.009899,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11125,8 +11125,8 @@
       "lpg": 0.79,
       "price_updated": "2026-07-30T09:55:51+03:00",
       "price_src": "portal",
-      "lat": 55.619824,
-      "lon": 22.246432,
+      "lat": 55.61976,
+      "lon": 22.246413,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11155,8 +11155,8 @@
       "lpg": 0.75,
       "price_updated": "2026-07-30T09:12:25+03:00",
       "price_src": "portal",
-      "lat": 55.536636,
-      "lon": 22.494906,
+      "lat": 55.541885,
+      "lon": 22.491621,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11201,8 +11201,8 @@
       "lpg": 0.799,
       "price_updated": "2026-07-30T09:50:13+03:00",
       "price_src": "portal",
-      "lat": 55.563619,
-      "lon": 22.194131,
+      "lat": 55.5687,
+      "lon": 22.177633,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11454,8 +11454,8 @@
       "lpg": 0.85,
       "price_updated": "2026-07-30T08:47:34+03:00",
       "price_src": "portal",
-      "lat": 55.120077,
-      "lon": 26.131287,
+      "lat": 55.120058,
+      "lon": 26.13143,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11640,8 +11640,8 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 54.944745,
-      "lon": 25.344296,
+      "lat": 54.944696,
+      "lon": 25.344243,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11659,8 +11659,8 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 56.062159,
-      "lon": 22.582456,
+      "lat": 56.062549,
+      "lon": 22.582478,
       "approx": false,
       "coord_source": "lea_portal"
     },
