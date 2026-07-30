@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-07-30T07:45:32+00:00Z",
+    "resolved_utc": "2026-07-30T07:57:10+00:00Z",
     "winner_counts": {
       "portal": 755,
       "sharepoint": 7,
@@ -15,14 +15,14 @@
         "ok": true,
         "date": "2026-07-30",
         "error": null,
-        "fetched_utc": "2026-07-30T07:45:30+00:00Z"
+        "fetched_utc": "2026-07-30T07:57:07+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": true,
         "date": "2026-07-28",
         "error": null,
-        "fetched_utc": "2026-07-30T07:45:32+00:00Z"
+        "fetched_utc": "2026-07-30T07:57:10+00:00Z"
       }
     ]
   },
@@ -3981,8 +3981,8 @@
       "lpg": 0.71,
       "price_updated": "2026-07-30T09:42:45+03:00",
       "price_src": "portal",
-      "lat": 55.608618,
-      "lon": 21.594007,
+      "lat": 55.608508,
+      "lon": 21.594044,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -3996,8 +3996,8 @@
       "lpg": 0.71,
       "price_updated": "2026-07-30T09:42:45+03:00",
       "price_src": "portal",
-      "lat": 55.751499,
-      "lon": 21.173085,
+      "lat": 55.751399,
+      "lon": 21.173099,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -6326,8 +6326,8 @@
       "lpg": 0.72,
       "price_updated": "2026-07-30T09:56:26+03:00",
       "price_src": "portal",
-      "lat": 55.90791,
-      "lon": 21.871847,
+      "lat": 55.908076,
+      "lon": 21.871509,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -7333,8 +7333,8 @@
       "lpg": 0.71,
       "price_updated": "2026-07-30T09:42:45+03:00",
       "price_src": "portal",
-      "lat": 55.272135,
-      "lon": 22.286446,
+      "lat": 55.271681,
+      "lon": 22.286524,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -8227,8 +8227,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:09",
-      "lat": 54.602041,
-      "lon": 23.194865,
+      "lat": 54.601906,
+      "lon": 23.194935,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -10324,8 +10324,8 @@
       "lpg": 0.877,
       "price_updated": "2026-07-30T06:53:03+03:00",
       "price_src": "portal",
-      "lat": 54.953131,
-      "lon": 23.083795,
+      "lat": 54.952838,
+      "lon": 23.080151,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -10341,8 +10341,8 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:09",
-      "lat": 55.021499,
-      "lon": 22.971428,
+      "lat": 55.021603,
+      "lon": 22.969559,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11130,8 +11130,8 @@
       "lpg": 0.67,
       "price_updated": "2026-07-30T09:42:44+03:00",
       "price_src": "portal",
-      "lat": 55.485553,
-      "lon": 22.170763,
+      "lat": 55.485443,
+      "lon": 22.170707,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11306,8 +11306,8 @@
       "lpg": 0.71,
       "price_updated": "2026-07-30T09:42:44+03:00",
       "price_src": "portal",
-      "lat": 55.376993,
-      "lon": 21.470241,
+      "lat": 55.376855,
+      "lon": 21.470259,
       "approx": false,
       "coord_source": "lea_portal"
     },
@@ -11685,8 +11685,8 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 55.272135,
-      "lon": 22.286446,
+      "lat": 55.271681,
+      "lon": 22.286524,
       "approx": false,
       "coord_source": "lea_portal"
     },
