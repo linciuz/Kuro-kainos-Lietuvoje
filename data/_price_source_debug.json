@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-08-02T06:00:53+00:00Z",
+ "checked_utc": "2026-08-02T06:15:46+00:00Z",
  "engine": "ok",
  "file_date": "2026-07-28",
  "stations": 709,
@@ -12,14 +12,14 @@
    "ok": false,
    "date": null,
    "error": "RuntimeError: portal has only 69 priced stations",
-   "fetched_utc": "2026-08-02T06:00:57+00:00Z"
+   "fetched_utc": "2026-08-02T06:15:49+00:00Z"
   },
   {
    "source": "sharepoint",
    "ok": true,
    "date": "2026-07-28",
    "error": null,
-   "fetched_utc": "2026-08-02T06:00:58+00:00Z"
+   "fetched_utc": "2026-08-02T06:15:50+00:00Z"
   }
  ]
 }
