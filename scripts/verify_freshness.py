@@ -57,12 +57,28 @@ def portal_newest_price_date():
     except Exception as e:
         print(f"[freshness] could not reach the portal API: {type(e).__name__}: {e}")
         return None
-    dates = set()
+    # submitted_at is "record last touched", NOT "price submitted": measured
+    # 2026-08-02 (Sunday) every one of the 2086 rows carried that day's stamp
+    # while only 70 STATIONS actually had a price. Counting bare stamps made the
+    # gate believe LEA had published on a Saturday and a Sunday, and it emailed
+    # the owner a STALE PUBLISH alarm each time. LEA does not publish weekends.
+    # So only count a date that looks like a real publication: enough priced
+    # stations to be the day's dataset, not a weekend trickle.
+    by_date = {}
     for r in raw.get("data") or []:
+        if r.get("price") is None:
+            continue
         m = re.search(r"20\d\d-\d\d-\d\d", str(r.get("submitted_at") or ""))
-        if m:
-            dates.add(m.group(0))
-    return max(dates) if dates else None
+        if not m:
+            continue
+        key = (r.get("company_name") or "", r.get("address") or "")
+        by_date.setdefault(m.group(0), set()).add(key)
+    real = [d for d, sts in by_date.items() if len(sts) >= MIN_PUBLICATION_STATIONS]
+    if not real:
+        thin = {d: len(v) for d, v in sorted(by_date.items())}
+        print(f"[freshness] portal has no full publication yet (priced stations by date: {thin})")
+        return None
+    return max(real)
 
 
 def sharepoint_newest_price_date():
@@ -113,6 +129,10 @@ def our_date():
 # independent hard backstop.
 GAP_MARKER = os.path.join("data", "_lea_gap.json")
 GRACE_MINUTES = 45
+# A real daily publication covers most of the ~800 stations. Anything smaller is
+# a trickle of self-reports (weekends, early morning) and must not be mistaken
+# for "LEA published a newer day".
+MIN_PUBLICATION_STATIONS = 300
 
 
 def _read_gap():

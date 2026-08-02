@@ -66,6 +66,9 @@ PORTAL_FUELS = {"benzinas_95": "petrol95", "dyzelinas": "diesel", "snd": "lpg"}
 # ones and still re-scan the page in case they come back.
 LINKS_PATH = os.path.join("data", "sources", "lea_sharepoint_links.json")
 PUBLISH_HOUR_LT = 10          # LEA's nominal publication time
+# A channel this far behind the freshest one is treated as broken, not merged.
+# 4 days clears a normal Fri->Mon weekend gap plus a public holiday.
+STALE_SOURCE_DAYS = 4
 
 
 def _now_utc():
@@ -230,8 +233,13 @@ def merge(results):
             local = ts.astimezone(VILNIUS)
             s["price_updated"] = local.replace(microsecond=0).isoformat()
             s["price_src"] = newest[1]
-            # INTRADAY = this operator re-reported AFTER the day's official
-            # 10:00 snapshot, so it is genuinely newer than the daily file.
+            # INTRADAY = this RECORD carries a stamp later than the day's
+            # official 10:00 snapshot. NOTE (measured 2026-08-02): submitted_at
+            # is "record last touched", NOT "operator submitted a new price" —
+            # all 2086 rows carried that day's stamp including 1897 with no
+            # price at all, and priced rows arrived in batches (184 at 07:30).
+            # So this flag means "fresher record than the morning list", which
+            # is all we can honestly support; the UI wording says exactly that.
             # Computed here (not in the app) so the UI stays dumb and this stays
             # testable: the app just shows a clock when the flag is set.
             snap = snapshot_ts(local.date().isoformat())
@@ -256,6 +264,30 @@ def resolve():
     ok = [r for r in results if r["ok"]]
     if not ok:
         raise RuntimeError("every price source failed")
+
+    # STALE-CHANNEL GUARD. The SharePoint link LEA left us points at a FIXED
+    # file, so once they stopped publishing new links that channel froze (stuck
+    # on 2026-07-28 while the portal moved on). A frozen channel still "works",
+    # so without this it would keep winning the merge for any station the live
+    # channel happens to lack — quietly serving days-old prices as current.
+    # Anything more than STALE_SOURCE_DAYS behind the leader is dropped.
+    newest = max(r["date"] for r in ok if r["date"])
+    fresh = []
+    for r in ok:
+        if not r["date"]:
+            continue
+        behind = (dt.date.fromisoformat(newest) - dt.date.fromisoformat(r["date"])).days
+        if behind > STALE_SOURCE_DAYS:
+            r["ok"] = False
+            r["error"] = (f"frozen: {r['date']} is {behind} days behind {newest} — "
+                          f"dropped from the merge so it cannot serve stale prices")
+            print(f"[engine] {r['source']}: DROPPED — {r['error']}")
+        else:
+            fresh.append(r)
+    results = [r for r in results]        # keep all for reporting
+    ok = fresh
+    if not ok:
+        raise RuntimeError("every price source is stale")
     stations = merge(results)
     priced = [s for s in stations if any(s.get(f) is not None for f in FUELS)]
     if len(priced) < 400:
