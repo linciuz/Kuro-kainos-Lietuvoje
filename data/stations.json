@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-03T09:01:01+00:00Z",
+    "resolved_utc": "2026-08-03T09:16:19+00:00Z",
     "winner_counts": {
       "portal": 757,
       "null": 10
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-03",
         "error": null,
-        "fetched_utc": "2026-08-03T09:00:59+00:00Z"
+        "fetched_utc": "2026-08-03T09:16:17+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 6 days behind 2026-08-03 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-03T09:01:01+00:00Z"
+        "fetched_utc": "2026-08-03T09:16:19+00:00Z"
       }
     ]
   },
@@ -10707,10 +10707,10 @@
       "petrol95": null,
       "diesel": null,
       "lpg": 0.729,
-      "price_updated": "2026-08-03T10:30:03+03:00",
+      "price_updated": "2026-08-03T12:14:31+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "12:14",
       "lat": 55.905911,
       "lon": 23.25872,
       "approx": false
