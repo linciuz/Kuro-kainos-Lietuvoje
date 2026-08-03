@@ -1,25 +1,26 @@
 {
- "checked_utc": "2026-08-03T07:15:36+00:00Z",
+ "checked_utc": "2026-08-03T07:30:52+00:00Z",
  "engine": "ok",
- "file_date": "2026-07-28",
- "stations": 709,
+ "file_date": "2026-08-03",
+ "stations": 767,
  "winners": {
-  "sharepoint": 709
+  "null": 11,
+  "portal": 756
  },
  "sources": [
   {
    "source": "portal",
-   "ok": false,
-   "date": null,
-   "error": "RuntimeError: portal has only 70 priced stations",
-   "fetched_utc": "2026-08-03T07:15:40+00:00Z"
+   "ok": true,
+   "date": "2026-08-03",
+   "error": null,
+   "fetched_utc": "2026-08-03T07:30:57+00:00Z"
   },
   {
    "source": "sharepoint",
-   "ok": true,
+   "ok": false,
    "date": "2026-07-28",
-   "error": null,
-   "fetched_utc": "2026-08-03T07:15:42+00:00Z"
+   "error": "frozen: 2026-07-28 is 6 days behind 2026-08-03 — dropped from the merge so it cannot serve stale prices",
+   "fetched_utc": "2026-08-03T07:30:59+00:00Z"
   }
  ]
 }
