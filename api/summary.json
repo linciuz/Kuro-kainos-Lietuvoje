@@ -1,0 +1,51 @@
+{
+ "$schema_version": 1,
+ "price_date": "2026-08-04",
+ "currency": "EUR",
+ "stations_with_prices": 729,
+ "national": {
+  "petrol95": {
+   "min": 1.689,
+   "avg": 1.825,
+   "max": 1.94,
+   "count": 706
+  },
+  "diesel": {
+   "min": 1.94,
+   "avg": 2.088,
+   "max": 2.199,
+   "count": 708
+  },
+  "lpg": {
+   "min": 0.66,
+   "avg": 0.772,
+   "max": 0.94,
+   "count": 574
+  }
+ },
+ "cheapest": {
+  "petrol95": {
+   "price": 1.689,
+   "network": "UAB Baltic Petroleum",
+   "address": "Alytus, Santaikos g. 33, 62100",
+   "municipality": "Alytaus m. sav."
+  },
+  "diesel": {
+   "price": 1.94,
+   "network": "UAB Eniris",
+   "address": "Plungė, Dariaus ir Girėno g. 31, 90118",
+   "municipality": "Plungės r. sav."
+  },
+  "lpg": {
+   "price": 0.66,
+   "network": "UAB Madalva",
+   "address": "Plungė, Lentpjūvės g. 10A, 90118",
+   "municipality": "Plungės r. sav."
+  }
+ },
+ "source": "Lietuvos energetikos agentura (LEA)",
+ "source_url": "https://degalukainos.ena.lt/",
+ "compiled_by": "https://fuelis.lt",
+ "docs": "https://fuelis.lt/atviri-duomenys.html",
+ "attribution": "Duomenys: Lietuvos energetikos agentura (LEA). Rinkinys: Fuelis (https://fuelis.lt)."
+}

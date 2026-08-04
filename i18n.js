@@ -222,6 +222,7 @@ const STRINGS = {
     "muni_label": "Savivaldybės filtras",
     "privacy": "Privatumas",
     "prices_by_city": "Kainos pagal miestus",
+    "open_data": "Atviri duomenys",
     "price_intraday": "atnaujinta {time}",
     "price_intraday_hint": "LEA įrašo laikas — naujesnis nei 10:00 sąrašas (pati kaina gali būti nepakitusi)"
   },
@@ -446,6 +447,7 @@ const STRINGS = {
     "muni_label": "Pašvaldības filtrs",
     "privacy": "Privātums",
     "prices_by_city": "Cenas pēc pilsētām",
+    "open_data": "Atvērtie dati",
     "price_intraday": "atjaunināts {time}",
     "price_intraday_hint": "LEA ieraksta laiks — jaunāks nekā plkst. 10:00 saraksts (cena var būt nemainīga)"
   },
@@ -670,6 +672,7 @@ const STRINGS = {
     "muni_label": "Omavalitsuse filter",
     "privacy": "Privaatsus",
     "prices_by_city": "Hinnad linnade kaupa",
+    "open_data": "Avaandmed",
     "price_intraday": "uuendatud {time}",
     "price_intraday_hint": "LEA kirje aeg — uuem kui kella 10:00 nimekiri (hind ise võib olla muutumatu)"
   },
@@ -894,6 +897,7 @@ const STRINGS = {
     "muni_label": "Municipality filter",
     "privacy": "Privacy",
     "prices_by_city": "Prices by city",
+    "open_data": "Open data",
     "price_intraday": "updated {time}",
     "price_intraday_hint": "LEA record time — newer than the 10:00 list (the price itself may be unchanged)"
   },
@@ -1118,6 +1122,7 @@ const STRINGS = {
     "muni_label": "Фільтр самоврядування",
     "privacy": "Приватність",
     "prices_by_city": "Ціни за містами",
+    "open_data": "Відкриті дані",
     "price_intraday": "оновлено {time}",
     "price_intraday_hint": "Час запису LEA — новіший за список о 10:00 (сама ціна могла не змінитися)"
   },
@@ -1342,6 +1347,7 @@ const STRINGS = {
     "muni_label": "Фильтр самоуправления",
     "privacy": "Приватность",
     "prices_by_city": "Цены по городам",
+    "open_data": "Открытые данные",
     "price_intraday": "обновлено {time}",
     "price_intraday_hint": "Время записи LEA — новее списка в 10:00 (сама цена могла не измениться)"
   },
@@ -1566,6 +1572,7 @@ const STRINGS = {
     "muni_label": "Filtr gminy",
     "privacy": "Prywatność",
     "prices_by_city": "Ceny według miast",
+    "open_data": "Otwarte dane",
     "price_intraday": "zaktualizowano {time}",
     "price_intraday_hint": "Czas wpisu LEA — nowszy niż lista z 10:00 (sama cena może być bez zmian)"
   },
@@ -1790,6 +1797,7 @@ const STRINGS = {
     "muni_label": "Gemeindefilter",
     "privacy": "Datenschutz",
     "prices_by_city": "Preise nach Stadt",
+    "open_data": "Offene Daten",
     "price_intraday": "aktualisiert {time}",
     "price_intraday_hint": "LEA-Datensatzzeit — neuer als die 10:00-Liste (der Preis selbst kann unverändert sein)"
   },
@@ -2014,6 +2022,7 @@ const STRINGS = {
     "muni_label": "Kommunfilter",
     "privacy": "Integritet",
     "prices_by_city": "Priser per stad",
+    "open_data": "Öppna data",
     "price_intraday": "uppdaterad {time}",
     "price_intraday_hint": "LEA-postens tid — nyare än 10:00-listan (priset kan vara oförändrat)"
   },
@@ -2238,6 +2247,7 @@ const STRINGS = {
     "muni_label": "Kuntasuodatin",
     "privacy": "Tietosuoja",
     "prices_by_city": "Hinnat kaupungeittain",
+    "open_data": "Avoin data",
     "price_intraday": "päivitetty {time}",
     "price_intraday_hint": "LEA-tietueen aika — uudempi kuin klo 10:00 lista (hinta voi olla ennallaan)"
   },
@@ -2462,6 +2472,7 @@ const STRINGS = {
     "muni_label": "Kommunefilter",
     "privacy": "Personvern",
     "prices_by_city": "Priser etter by",
+    "open_data": "Åpne data",
     "price_intraday": "oppdatert {time}",
     "price_intraday_hint": "LEA-oppføringens tid — nyere enn 10:00-listen (prisen kan være uendret)"
   }

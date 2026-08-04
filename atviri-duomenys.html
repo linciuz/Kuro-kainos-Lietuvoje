@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atviri duomenys — degalų kainų API | Fuelis</title>
+<meta name="description" content="Nemokama, atvira Lietuvos degalų kainų API: JSON ir CSV, 729 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys, paruošti programuotojams.">
+<link rel="canonical" href="https://fuelis.lt/atviri-duomenys.html">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fuelis">
+<meta property="og:title" content="Atviri duomenys — Lietuvos degalų kainų API">
+<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 729 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys.">
+<meta property="og:url" content="https://fuelis.lt/atviri-duomenys.html">
+<meta property="og:image" content="https://fuelis.lt/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Fuelis — degalų kainos" href="https://fuelis.lt/feed.xml">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "Lietuvos degalų kainos (Fuelis atviri duomenys)",
+ "description": "Kasdien atnaujinamos oficialios LEA degalų kainos (benzinas 95, dyzelinas, dujos) 729 Lietuvos degalinių, su koordinatėmis. JSON ir CSV formatais.",
+ "url": "https://fuelis.lt/atviri-duomenys.html",
+ "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
+ "isAccessibleForFree": true,
+ "temporalCoverage": "2026-04-08/..",
+ "spatialCoverage": { "@type": "Place", "name": "Lietuva" },
+ "creator": { "@type": "Organization", "name": "Fuelis", "url": "https://fuelis.lt/" },
+ "includedInDataCatalog": { "@type": "DataCatalog", "name": "Fuelis" },
+ "distribution": [
+  { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json" },
+  { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv" },
+  { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json" },
+  { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json" }
+ ]
+}
+</script>
+<style>
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{font:16px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#22303f;background:#f4f6fa;padding:18px}
+ .wrap{max-width:860px;margin:0 auto;background:#fff;border-radius:16px;padding:26px 24px 34px;box-shadow:0 8px 30px rgba(20,40,80,.09)}
+ h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .35em}
+ h2{font-size:1.16rem;margin:1.7em 0 .5em;padding-top:.5em;border-top:1px solid #e6ebf3}
+ h3{font-size:1rem;margin:1.2em 0 .35em}
+ p,li{margin-bottom:.6em} ul,ol{padding-left:1.3em}
+ a{color:#1560c4}
+ .bc{font-size:.85rem;color:#6b7a8d;margin-bottom:.8em}
+ .lead{font-size:1.05rem;color:#3d4c5e}
+ code{background:#eef2f8;padding:.12em .38em;border-radius:5px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+ pre{background:#1d2632;color:#e7edf6;padding:14px 16px;border-radius:10px;overflow-x:auto;font-size:.83rem;line-height:1.5;margin:.6em 0 1em}
+ pre code{background:none;padding:0;color:inherit;font-size:inherit}
+ table{width:100%;border-collapse:collapse;margin:.5em 0 1em;font-size:.92rem;display:block;overflow-x:auto}
+ th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e6ebf3;vertical-align:top}
+ th{background:#f7f9fc;font-weight:600;white-space:nowrap}
+ .ep{font-family:ui-monospace,Menlo,monospace;font-size:.86rem;white-space:nowrap}
+ .note{background:#f0f6ff;border-left:4px solid #1560c4;padding:11px 14px;border-radius:0 8px 8px 0;margin:1em 0;font-size:.94rem}
+ .warn{background:#fff6e8;border-left-color:#e0891a}
+ footer{margin-top:2em;padding-top:1em;border-top:1px solid #e6ebf3;font-size:.88rem;color:#6b7a8d}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="bc"><a href="https://fuelis.lt/">Fuelis</a> › Atviri duomenys</p>
+<h1>Atviri degalų kainų duomenys (API)</h1>
+<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>729 degalinių</strong> su kainomis ir koordinatėmis,
+atnaujinama kasdien (paskutinis rinkinys: <strong>2026-08-04</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+
+<div class="note">Kodėl tai egzistuoja: LEA kainas skelbia viešai, bet portale ir „Power BI“ skydelyje —
+iš jų programiškai pasiimti duomenis nėra paprasta. Čia tie patys duomenys pateikiami
+stabilia, dokumentuota schema, kad juos galėtum tiesiog <code>fetch</code>-inti.</div>
+
+<h2>Galiniai taškai</h2>
+<table>
+<tr><th>URL</th><th>Kas tai</th><th>Dydis</th></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/summary.json">/api/summary.json</a></td><td>Šalies vidurkiai + pigiausia degalinė kiekvienam kurui. <strong>Pradėk nuo šito</strong> — botams ir valdikliams to paprastai užtenka.</td><td>~1 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/prices.json">/api/prices.json</a></td><td>Visos degalinės: tinklas, adresas, savivaldybė, koordinatės, trys kainos, atnaujinimo laikas.</td><td>~163 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/prices.csv">/api/prices.csv</a></td><td>Tas pats CSV — „Excel“, „Google Sheets“, R, pandas.</td><td>~92 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/history.json">/api/history.json</a></td><td>Dienos šalies min./vid./maks. nuo 2026-04-08 — grafikams ir tendencijoms.</td><td>~30 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/feed.xml">/feed.xml</a></td><td>RSS: kasdienė kainų santrauka.</td><td>—</td></tr>
+</table>
+<p>Visi failai atiduodami su <code>Access-Control-Allow-Origin: *</code>, tad juos gali kviesti tiesiai iš naršyklės.</p>
+
+<h2>Pavyzdžiai</h2>
+<h3>Šiandienos vidurkiai (curl)</h3>
+<pre><code>curl -s https://fuelis.lt/api/summary.json | jq '.national'</code></pre>
+<h3>Pigiausias dyzelinas (JavaScript)</h3>
+<pre><code>const r = await fetch("https://fuelis.lt/api/summary.json").then(r =&gt; r.json());
+console.log(r.cheapest.diesel);
+// { price: 1.94, network: "…", address: "…", municipality: "…" }</code></pre>
+<h3>Į „pandas“ (Python)</h3>
+<pre><code>import pandas as pd
+df = pd.read_csv("https://fuelis.lt/api/prices.csv")
+print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</code></pre>
+
+<h2>Laukai (<code>stations[]</code>)</h2>
+<table>
+<tr><th>Laukas</th><th>Tipas</th><th>Paaiškinimas</th></tr>
+<tr><td><code>network</code></td><td>string</td><td>Įmonė / tinklas, kaip nurodyta LEA.</td></tr>
+<tr><td><code>address</code></td><td>string</td><td>Degalinės adresas.</td></tr>
+<tr><td><code>municipality</code></td><td>string</td><td>Savivaldybė (pvz. <code>Kauno m. sav.</code>).</td></tr>
+<tr><td><code>lat</code>, <code>lon</code></td><td>number</td><td>WGS-84. Daugumai — oficialios operatoriaus koordinatės; likusios geokoduotos.</td></tr>
+<tr><td><code>petrol95</code>, <code>diesel</code>, <code>lpg</code></td><td>number | null</td><td>EUR už litrą. <code>null</code> = degalinė to kuro neteikia arba kainos nepateikė.</td></tr>
+<tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kada LEA įraše paskutinį kartą fiksuota ši kaina.</td></tr>
+</table>
+<pre><code>{
+ &quot;network&quot;: &quot;UAB Baltic Petroleum&quot;,
+ &quot;address&quot;: &quot;Naujoji Akmenė, V. Kudirkos g. 21A, 85145&quot;,
+ &quot;municipality&quot;: &quot;Akmenės r. sav.&quot;,
+ &quot;lat&quot;: 56.318461,
+ &quot;lon&quot;: 22.885615,
+ &quot;petrol95&quot;: 1.769,
+ &quot;diesel&quot;: 2.039,
+ &quot;lpg&quot;: 0.72,
+ &quot;price_updated&quot;: &quot;2026-08-04T09:19:56+03:00&quot;
+}</code></pre>
+
+<h2>Atnaujinimo dažnis</h2>
+<p>LEA skelbia apie <strong>10:00</strong> Lietuvos laiku darbo dienomis. Mūsų konvejeris tikrina dažniau ir
+paskelbia iškart, kai atsiranda naujesni duomenys, todėl <code>price_date</code> paprastai pasikeičia
+per kelias minutes nuo LEA paskelbimo. Savaitgaliais ir per šventes LEA neskelbia — tuomet
+lieka paskutinės darbo dienos kainos.</p>
+
+<h2>Licencija ir nuorodos</h2>
+<p>Kainos yra <strong>LEA vieši duomenys</strong> — jos mums nepriklauso, todėl jų ir nelicencijuojame.
+Laisvai (taip pat ir komerciškai) siūlome <em>rinkinį</em>: išvalytą, geokoduotą, stabilios schemos.</p>
+<ul>
+<li>Naudok kam nori — programai, tyrimui, straipsniui, botui.</li>
+<li>Nurodyk pirminį šaltinį: <strong>Lietuvos energetikos agentūra (LEA)</strong>, <a href="https://degalukainos.ena.lt/" rel="nofollow">degalukainos.ena.lt</a>.</li>
+<li>Būtume dėkingi už nuorodą į <a href="https://fuelis.lt/">fuelis.lt</a>.</li>
+</ul>
+<div class="note warn"><strong>Be garantijų.</strong> Duomenys teikiami tokie, kokie yra. Kainos degalinėje
+gali skirtis nuo paskelbtų LEA. Prieš pildamas — pasitikrink kolonėlėje.</div>
+
+<h2>Klausimai</h2>
+<p>Radai klaidą, reikia kito formato ar lauko? Rašyk per <a href="https://fuelis.lt/">fuelis.lt</a> kontaktų formą.
+Jei kuri kažką su šiais duomenimis — parodyk, mielai pasidalinsime.</p>
+
+<footer>
+<p><a href="https://fuelis.lt/">← Fuelis: degalų kainų žemėlapis</a> · <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a> · <a href="https://fuelis.lt/privatumas.html">Privatumas</a></p>
+<p>Duomenys: Lietuvos energetikos agentura (LEA). Rinkinys: Fuelis (https://fuelis.lt).</p>
+</footer>
+</div>
+</body>
+</html>

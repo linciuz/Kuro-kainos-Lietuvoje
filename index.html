@@ -70,6 +70,9 @@
     </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%231673E8%22/><g transform=%22translate(0,-3.5)%22><path d=%22M50 12 C60 34 76 50 76 66 A26 26 0 1 1 24 66 C24 50 40 34 50 12 Z%22 fill=%22%23fff%22/><path d=%22M41 56 L50 51 L59 56%22 fill=%22none%22 stroke=%22%23F0453A%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><path d=%22M37 64 L50 71 L63 64%22 fill=%22none%22 stroke=%22%2320C778%22 stroke-width=%225%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></g></svg>">
     <link rel="manifest" href="manifest.webmanifest">
+    <!-- Auto-discovery for feed readers, aggregators and IFTTT/Zapier-style bots.
+         Costs nothing and is how a daily-updating site gets picked up passively. -->
+    <link rel="alternate" type="application/rss+xml" title="Fuelis — degalų kainos" href="https://fuelis.lt/feed.xml">
     <meta name="theme-color" content="#0057D8">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -568,7 +571,7 @@
         </header>
 
         <main>
-        <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices"><p>Atnaujinta 2026-08-04: dyzelinas vid. €2.088, benzinas 95 vid. €1.825, dujos €0.772 — 808 degalinės. <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
+        <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices"><p>Atnaujinta 2026-08-04: dyzelinas vid. €2.088, benzinas 95 vid. €1.825, dujos €0.772 — 808 degalinės. <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a> · <a href="https://fuelis.lt/atviri-duomenys.html">Atviri duomenys (API)</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
 
         <div id="list-view">
             <div class="stations-container" id="stations-list" role="list">
@@ -590,7 +593,13 @@
             <p id="updated-line"></p>
             <p id="visit-count" style="display:none"></p>
             <p style="font-size:12px">
+              <!-- These links live in the PERMANENT footer, not in the
+                   pipeline-injected #crawl-prices block: render() removes that
+                   block on boot, so anything only listed there is invisible to
+                   a JS-rendering crawler (and to users). -->
               <a href="kainos/" data-i18n="prices_by_city" style="color:#6b7280">Kainos pagal miestus</a>
+              <span style="color:#c3c8d0"> · </span>
+              <a href="atviri-duomenys.html" data-i18n="open_data" style="color:#6b7280">Atviri duomenys</a>
               <span style="color:#c3c8d0"> · </span>
               <a href="privatumas.html" data-i18n="privacy" style="color:#6b7280">Privatumas</a>
             </p>

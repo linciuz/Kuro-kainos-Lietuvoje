@@ -234,14 +234,16 @@ def build_directory(slugs_munis, updated):
 <h1>Degalų kainos pagal miestus ir savivaldybes</h1>
 <p class="meta">Oficialūs LEA duomenys · atnaujinta {updated}</p>
 <div class="card"><div class="grid">{links}</div></div>
-<p class="meta"><a href="{SITE}/">← Fuelis žemėlapis ir paieška</a></p>"""
+<p class="meta"><a href="{SITE}/">← Fuelis žemėlapis ir paieška</a> ·
+<a href="{SITE}/atviri-duomenys.html">Atviri duomenys (JSON/CSV API)</a></p>"""
     return page_shell("Degalų kainos pagal savivaldybę | Fuelis",
                       f"Oficialios degalų kainos visose Lietuvos savivaldybėse ({updated}): benzinas 95, dyzelinas, dujos.",
                       f"{SITE}/kainos/", body)
 
 
 def build_sitemap(slugs, updated):
-    urls = [f"{SITE}/", f"{SITE}/kainos/", f"{SITE}/privatumas.html"]
+    urls = [f"{SITE}/", f"{SITE}/kainos/", f"{SITE}/atviri-duomenys.html",
+            f"{SITE}/privatumas.html"]
     urls += [f"{SITE}/kainos/{s}.html" for s in sorted(slugs)]
     entries = "\n".join(
         f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{updated}</lastmod>\n"
@@ -269,7 +271,11 @@ def refresh_index_html(summary, updated, n_stations):
 
     block = (f'<!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices">'
              f'<p>Atnaujinta {updated}: {esc(line)} — {n_stations} degalinės. '
-             f'<a href="{SITE}/kainos/">Kainos pagal savivaldybę</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->')
+             f'<a href="{SITE}/kainos/">Kainos pagal savivaldybę</a> · '
+             # The homepage is the ONE page Google reliably crawls, so every page
+             # we want discovered has to be reachable from this block.
+             f'<a href="{SITE}/atviri-duomenys.html">Atviri duomenys (API)</a>.'
+             f'</p></div><!-- /FUELIS:STATIC-PRICES -->')
     if "FUELIS:STATIC-PRICES" in s:
         s = re.sub(r'<!-- FUELIS:STATIC-PRICES -->.*?<!-- /FUELIS:STATIC-PRICES -->', block, s, flags=re.S)
     else:
