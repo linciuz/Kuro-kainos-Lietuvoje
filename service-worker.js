@@ -2,7 +2,7 @@
 // Network-first for code + data so updates always reach users (with offline
 // cache fallback); cache-first only for SAME-ORIGIN images. Bump CACHE on
 // shell changes.
-const CACHE = "kk-v62";
+const CACHE = "kk-v63";
 const SHELL = [
   "./", "./index.html", "./app.js", "./i18n.js", "./manifest.webmanifest",
   "./icon-192.png", "./icon-512.png",
@@ -54,8 +54,14 @@ self.addEventListener("fetch", (e) => {
         if (r && r.ok) { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, cp)); }
         return r;
       })
+      // Offline navigation: prefer the ACTUAL page if we have it, and only fall
+      // back to the app shell if we don't. The old order tried index.html first,
+      // which meant an offline visit to /kainos/kaunas.html or
+      // /atviri-duomenys.html silently rendered the map app instead of the page
+      // the user asked for. ignoreSearch still lets shared links like
+      // /?fuel=diesel&muni=... match the cached "./" entry.
       .catch(() => (e.request.mode === "navigate"
-        ? caches.match("./index.html").then((r) => r || caches.match(e.request, { ignoreSearch: true }))
+        ? caches.match(e.request, { ignoreSearch: true }).then((r) => r || caches.match("./index.html"))
         : caches.match(e.request)))
   );
 });
