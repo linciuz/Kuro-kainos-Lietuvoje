@@ -1,11 +1,11 @@
 {
- "checked_utc": "2026-08-04T08:15:32+00:00Z",
+ "checked_utc": "2026-08-04T08:30:24+00:00Z",
  "engine": "ok",
  "file_date": "2026-08-04",
  "stations": 767,
  "winners": {
-  "null": 39,
-  "portal": 728
+  "portal": 728,
+  "null": 39
  },
  "sources": [
   {
@@ -13,14 +13,14 @@
    "ok": true,
    "date": "2026-08-04",
    "error": null,
-   "fetched_utc": "2026-08-04T08:15:36+00:00Z"
+   "fetched_utc": "2026-08-04T08:30:27+00:00Z"
   },
   {
    "source": "sharepoint",
    "ok": false,
    "date": "2026-07-28",
    "error": "frozen: 2026-07-28 is 7 days behind 2026-08-04 — dropped from the merge so it cannot serve stale prices",
-   "fetched_utc": "2026-08-04T08:15:38+00:00Z"
+   "fetched_utc": "2026-08-04T08:30:29+00:00Z"
   }
  ]
 }
