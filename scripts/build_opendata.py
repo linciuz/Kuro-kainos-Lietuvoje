@@ -112,7 +112,7 @@ def cheapest(rows):
 def build_prices_json(meta, updated, rows):
     doc = {
         "$schema_version": 1,
-        "generated_utc": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat() + "Z",
+        "generated_utc": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "price_date": updated,
         "currency": "EUR",
         "unit": "EUR per litre",

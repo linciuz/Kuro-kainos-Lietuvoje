@@ -164,7 +164,8 @@ def main():
         return 0
 
     status, body = submit(key, key_location, batch)
-    stamp = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat() + "Z"
+    stamp = (dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+             .isoformat().replace("+00:00", "Z"))
     print(f"[indexnow] submitted {len(batch)} URL(s) ({why}) -> HTTP {status} {body[:160]!r}")
 
     if status in (200, 202):
