@@ -85,6 +85,20 @@ jobs:
       - name: Build static municipality pages + sitemap + crawlable index block
         run: python scripts/build_pages.py || echo "page build failed (non-fatal)"
 
+      # Public JSON/CSV endpoints + RSS + the documented open-data page. These
+      # are the linkable asset: a citable URL is the one kind of backlink you can
+      # earn honestly, and fuelis.lt currently has zero inbound links.
+      - name: Build open-data endpoints (JSON/CSV/RSS) + docs page
+        run: python scripts/build_opendata.py || echo "open-data build failed (non-fatal)"
+
+      # Push "these URLs changed" to Bing/Yandex/Seznam/Naver (NOT Google — it
+      # doesn't participate). Runs BEFORE the commit so its state file is
+      # committed in the same push; the ~1 min until Pages deploys is harmless
+      # because IndexNow queues crawls rather than fetching synchronously, and a
+      # new price date re-announces every URL daily anyway.
+      - name: Announce changed URLs via IndexNow
+        run: python scripts/ping_indexnow.py || echo "indexnow ping failed (non-fatal)"
+
       # Decide red/green ONCE, pre-commit, so the alarm state and the decision
       # are produced by the SAME evaluation and committed together. (The old
       # split recorded fingerprints that a diverging gate never alarmed on,
@@ -100,7 +114,7 @@ jobs:
           # Stage EVERYTHING under data/ (modified+deleted+NEW): one missing
           # pathspec used to no-op the whole explicit list, and a new tracked
           # output missing from it wedged the rebase (2026-07-15 15:10 run).
-          git add -A data/ kainos/ sitemap.xml index.html || true
+          git add -A data/ kainos/ api/ sitemap.xml index.html feed.xml atviri-duomenys.html || true
           if git diff --staged --quiet; then
             echo "No changes."
           else
