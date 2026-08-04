@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-04T10:15:32+00:00Z",
+    "resolved_utc": "2026-08-04T10:30:34+00:00Z",
     "winner_counts": {
       "portal": 729,
       "null": 38
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-04",
         "error": null,
-        "fetched_utc": "2026-08-04T10:15:30+00:00Z"
+        "fetched_utc": "2026-08-04T10:30:31+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 7 days behind 2026-08-04 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-04T10:15:32+00:00Z"
+        "fetched_utc": "2026-08-04T10:30:34+00:00Z"
       }
     ]
   },
@@ -10804,12 +10804,12 @@
       "municipality": "Šiaulių m. sav.",
       "locality": "",
       "petrol95": 1.749,
-      "diesel": 1.959,
+      "diesel": 1.999,
       "lpg": 0.69,
-      "price_updated": "2026-08-04T10:30:02+03:00",
+      "price_updated": "2026-08-04T13:20:47+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "13:20",
       "lat": 55.948105,
       "lon": 23.320427,
       "approx": false
@@ -10820,12 +10820,12 @@
       "municipality": "Šiaulių m. sav.",
       "locality": "",
       "petrol95": 1.749,
-      "diesel": 1.989,
+      "diesel": 1.999,
       "lpg": 0.69,
-      "price_updated": "2026-08-04T10:30:02+03:00",
+      "price_updated": "2026-08-04T13:20:47+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "13:20",
       "lat": 55.89793,
       "lon": 23.35172,
       "approx": false
@@ -11076,12 +11076,12 @@
       "municipality": "Šiaulių r. sav.",
       "locality": "",
       "petrol95": 1.749,
-      "diesel": 1.989,
+      "diesel": 1.999,
       "lpg": 0.69,
-      "price_updated": "2026-08-04T10:30:02+03:00",
+      "price_updated": "2026-08-04T13:20:47+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "13:20",
       "lat": 56.099227,
       "lon": 23.265819,
       "approx": false
