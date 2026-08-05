@@ -6,13 +6,13 @@
   "fetched": "2026-08-05",
   "stated_date": "05.08",
   "prices": {
-    "diesel": 2.149,
-    "petrol95": 1.889,
+    "diesel": 2.139,
+    "petrol95": 1.869,
     "lpg": 0.799,
-    "adblue": 0.799,
-    "diesel_plus": 2.238,
-    "petrol95_plus": 1.978,
-    "petrol98": 1.988,
-    "xtl": 2.448
+    "adblue": 0.824,
+    "diesel_plus": 2.228,
+    "petrol95_plus": 1.958,
+    "petrol98": 1.968,
+    "xtl": 2.438
   }
 }
