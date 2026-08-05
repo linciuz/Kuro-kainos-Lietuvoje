@@ -80,6 +80,16 @@ def esc(s):
             .replace(">", "&gt;").replace('"', "&quot;"))
 
 
+def sz(path):
+    """Real on-disk size for schema.org contentSize. Called only after the file
+    has been written (build_docs_page runs last), so this never guesses."""
+    try:
+        b = os.path.getsize(path)
+    except OSError:
+        return ""
+    return f"{b / 1024:.0f} KB" if b >= 1024 else f"{b} B"
+
+
 def load():
     d = json.load(open(STATIONS, encoding="utf-8"))
     return d, d.get("updated"), d.get("stations") or []
@@ -290,15 +300,24 @@ def build_docs_page(updated, rows):
  "url": "{SITE}/atviri-duomenys.html",
  "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
  "isAccessibleForFree": true,
+ "identifier": "{SITE}/atviri-duomenys.html",
+ "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje",
+ "license": "{SITE}/atviri-duomenys.html#licencija",
  "temporalCoverage": "2026-04-08/..",
  "spatialCoverage": {{ "@type": "Place", "name": "Lietuva" }},
- "creator": {{ "@type": "Organization", "name": "Fuelis", "url": "{SITE}/" }},
+ "variableMeasured": [
+  {{ "@type": "PropertyValue", "name": "Benzinas 95", "description": "Petrol RON 95 pump price", "unitText": "EUR/L" }},
+  {{ "@type": "PropertyValue", "name": "Dyzelinas", "description": "Diesel pump price", "unitText": "EUR/L" }},
+  {{ "@type": "PropertyValue", "name": "Dujos (LPG)", "description": "Autogas/LPG pump price", "unitText": "EUR/L" }}
+ ],
+ "creator": {{ "@type": "Organization", "name": "Fuelis", "url": "{SITE}/",
+               "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje" }},
  "includedInDataCatalog": {{ "@type": "DataCatalog", "name": "Fuelis" }},
  "distribution": [
-  {{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "{SITE}/api/prices.json" }},
-  {{ "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "{SITE}/api/prices.csv" }},
-  {{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "{SITE}/api/summary.json" }},
-  {{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "{SITE}/api/history.json" }}
+  {{ "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "{SITE}/api/prices.json", "contentSize": "{sz('api/prices.json')}" }},
+  {{ "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "{SITE}/api/prices.csv", "contentSize": "{sz('api/prices.csv')}" }},
+  {{ "@type": "DataDownload", "name": "Dienos santrauka (JSON)", "encodingFormat": "application/json", "contentUrl": "{SITE}/api/summary.json", "contentSize": "{sz('api/summary.json')}" }},
+  {{ "@type": "DataDownload", "name": "Kainų istorija (JSON)", "encodingFormat": "application/json", "contentUrl": "{SITE}/api/history.json", "contentSize": "{sz('api/history.json')}" }}
  ]
 }}
 </script>
@@ -377,7 +396,7 @@ paskelbia iškart, kai atsiranda naujesni duomenys, todėl <code>price_date</cod
 per kelias minutes nuo LEA paskelbimo. Savaitgaliais ir per šventes LEA neskelbia — tuomet
 lieka paskutinės darbo dienos kainos.</p>
 
-<h2>Licencija ir nuorodos</h2>
+<h2 id="licencija">Licencija ir nuorodos</h2>
 <p>Kainos yra <strong>LEA vieši duomenys</strong> — jos mums nepriklauso, todėl jų ir nelicencijuojame.
 Laisvai (taip pat ir komerciškai) siūlome <em>rinkinį</em>: išvalytą, geokoduotą, stabilios schemos.</p>
 <ul>

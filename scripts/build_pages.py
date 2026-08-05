@@ -84,7 +84,25 @@ border-radius:10px;text-decoration:none;font-weight:600;margin-top:6px}
 padding:9px 13px;text-decoration:none;font-size:14px}"""
 
 
+def breadcrumb(trail):
+    """BreadcrumbList for a [(name, url), ...] trail.
+
+    Every page already RENDERS a breadcrumb ("Fuelis › Kainos pagal savivaldybę
+    › Kaunas") with no markup behind it. Marking it up is what tells a crawler
+    the hub is the parent of all 60 children — the hub is the single chokepoint
+    those children are discovered through, and it carried no structured data at
+    all while its children carried ItemList/GasStation."""
+    return {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u}
+                            for i, (n, u) in enumerate(trail)],
+    }
+
+
 def page_shell(title, desc, canonical, body, jsonld=None):
+    # A list of nodes becomes a @graph; a single dict is emitted as-is.
+    if isinstance(jsonld, list):
+        jsonld = {"@context": "https://schema.org", "@graph": jsonld}
     ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else ""
     return f"""<!DOCTYPE html>
 <html lang="lt">
@@ -187,7 +205,6 @@ def build_muni_page(muni, rows, updated, neighbours=()):
     # (the old markup emitted one, which fails validation); the date is visible
     # in the page text instead.
     jsonld = {
-        "@context": "https://schema.org",
         "@type": "ItemList",
         "name": f"Pigiausios degalinės — {name}",
         "numberOfItems": len(cheapest),
@@ -225,6 +242,11 @@ dienos suvestinė, dienos eigoje degalinėse gali keistis.</p>
 {nb_block}
 <p class="meta">Visos savivaldybės: <a href="{SITE}/kainos/">kainos pagal savivaldybę</a> ·
 <a href="{SITE}/">Fuelis — degalų kainų žemėlapis</a></p>"""
+    jsonld = [jsonld, breadcrumb([
+        ("Fuelis", f"{SITE}/"),
+        ("Kainos pagal savivaldybę", f"{SITE}/kainos/"),
+        (name, f"{SITE}/kainos/{slug}.html"),
+    ])]
     return slug, page_shell(title, desc, f"{SITE}/kainos/{slug}.html", body, jsonld)
 
 
@@ -237,9 +259,32 @@ def build_directory(slugs_munis, updated):
 <div class="card"><div class="grid">{links}</div></div>
 <p class="meta"><a href="{SITE}/">← Fuelis žemėlapis ir paieška</a> ·
 <a href="{SITE}/atviri-duomenys.html">Atviri duomenys (JSON/CSV API)</a></p>"""
+    ordered = sorted(slugs_munis, key=lambda x: place(x[1])[0])
+    jsonld = [
+        {
+            "@type": "CollectionPage",
+            "@id": f"{SITE}/kainos/",
+            "name": "Degalų kainos pagal savivaldybę",
+            "inLanguage": "lt",
+            "isPartOf": {"@type": "WebSite", "@id": f"{SITE}/#website"},
+            # Naming every child here makes the parent/child relationship
+            # explicit instead of leaving it implied by 60 anchor tags.
+            "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": len(ordered),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1,
+                     "name": place(muni)[0], "url": f"{SITE}/kainos/{slug}.html"}
+                    for i, (slug, muni) in enumerate(ordered)
+                ],
+            },
+        },
+        breadcrumb([("Fuelis", f"{SITE}/"),
+                    ("Kainos pagal savivaldybę", f"{SITE}/kainos/")]),
+    ]
     return page_shell("Degalų kainos pagal savivaldybę | Fuelis",
                       f"Oficialios degalų kainos visose Lietuvos savivaldybėse ({updated}): benzinas 95, dyzelinas, dujos.",
-                      f"{SITE}/kainos/", body)
+                      f"{SITE}/kainos/", body, jsonld)
 
 
 # Per-URL lastmod memory: {url: {"hash": ..., "lastmod": ...}}. Committed with

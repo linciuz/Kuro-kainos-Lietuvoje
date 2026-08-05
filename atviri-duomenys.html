@@ -24,15 +24,24 @@
  "url": "https://fuelis.lt/atviri-duomenys.html",
  "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
  "isAccessibleForFree": true,
+ "identifier": "https://fuelis.lt/atviri-duomenys.html",
+ "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje",
+ "license": "https://fuelis.lt/atviri-duomenys.html#licencija",
  "temporalCoverage": "2026-04-08/..",
  "spatialCoverage": { "@type": "Place", "name": "Lietuva" },
- "creator": { "@type": "Organization", "name": "Fuelis", "url": "https://fuelis.lt/" },
+ "variableMeasured": [
+  { "@type": "PropertyValue", "name": "Benzinas 95", "description": "Petrol RON 95 pump price", "unitText": "EUR/L" },
+  { "@type": "PropertyValue", "name": "Dyzelinas", "description": "Diesel pump price", "unitText": "EUR/L" },
+  { "@type": "PropertyValue", "name": "Dujos (LPG)", "description": "Autogas/LPG pump price", "unitText": "EUR/L" }
+ ],
+ "creator": { "@type": "Organization", "name": "Fuelis", "url": "https://fuelis.lt/",
+               "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje" },
  "includedInDataCatalog": { "@type": "DataCatalog", "name": "Fuelis" },
  "distribution": [
-  { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json" },
-  { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv" },
-  { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json" },
-  { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json" }
+  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "201 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "101 KB" },
+  { "@type": "DataDownload", "name": "Dienos santrauka (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json", "contentSize": "1 KB" },
+  { "@type": "DataDownload", "name": "Kainų istorija (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json", "contentSize": "17 KB" }
  ]
 }
 </script>
@@ -121,7 +130,7 @@ paskelbia iškart, kai atsiranda naujesni duomenys, todėl <code>price_date</cod
 per kelias minutes nuo LEA paskelbimo. Savaitgaliais ir per šventes LEA neskelbia — tuomet
 lieka paskutinės darbo dienos kainos.</p>
 
-<h2>Licencija ir nuorodos</h2>
+<h2 id="licencija">Licencija ir nuorodos</h2>
 <p>Kainos yra <strong>LEA vieši duomenys</strong> — jos mums nepriklauso, todėl jų ir nelicencijuojame.
 Laisvai (taip pat ir komerciškai) siūlome <em>rinkinį</em>: išvalytą, geokoduotą, stabilios schemos.</p>
 <ul>
