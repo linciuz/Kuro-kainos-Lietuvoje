@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-05T09:31:16Z",
+ "generated_utc": "2026-08-05T09:46:08Z",
  "price_date": "2026-08-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.669,
    "avg": 1.778,
    "max": 1.94,
-   "count": 732
+   "count": 733
   },
   "diesel": {
    "min": 1.889,
    "avg": 2.027,
    "max": 2.199,
-   "count": 734
+   "count": 735
   },
   "lpg": {
    "min": 0.66,
    "avg": 0.761,
    "max": 0.94,
-   "count": 599
+   "count": 600
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 759,
+ "count": 760,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4699,6 +4699,17 @@
    "diesel": null,
    "lpg": 0.66,
    "price_updated": "2026-08-05T09:02:12+03:00"
+  },
+  {
+   "network": "UAB VVARFF",
+   "address": "Truikių k., Pramogų g. 4, 90110",
+   "municipality": "Plungės r. sav.",
+   "lat": 55.939019,
+   "lon": 21.880091,
+   "petrol95": 1.866,
+   "diesel": 2.146,
+   "lpg": 0.826,
+   "price_updated": "2026-08-05T12:43:07+03:00"
   },
   {
    "network": "UAB Viada LT",

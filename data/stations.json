@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-05T09:30:58+00:00Z",
+    "resolved_utc": "2026-08-05T09:45:50+00:00Z",
     "winner_counts": {
-      "portal": 759,
-      "null": 8
+      "portal": 760,
+      "null": 7
     },
     "sources": [
       {
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-05",
         "error": null,
-        "fetched_utc": "2026-08-05T09:30:56+00:00Z"
+        "fetched_utc": "2026-08-05T09:45:49+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 8 days behind 2026-08-05 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-05T09:30:58+00:00Z"
+        "fetched_utc": "2026-08-05T09:45:50+00:00Z"
       }
     ]
   },
@@ -30,19 +30,19 @@
       "min": 1.669,
       "avg": 1.778,
       "max": 1.94,
-      "count": 732
+      "count": 733
     },
     "diesel": {
       "min": 1.889,
       "avg": 2.027,
       "max": 2.199,
-      "count": 734
+      "count": 735
     },
     "lpg": {
       "min": 0.66,
       "avg": 0.761,
       "max": 0.94,
-      "count": 599
+      "count": 600
     }
   },
   "stations": [
@@ -6403,9 +6403,13 @@
       "address": "Truikių k., Pramogų g. 4, 90110",
       "municipality": "Plungės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.866,
+      "diesel": 2.146,
+      "lpg": 0.826,
+      "price_updated": "2026-08-05T12:43:07+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:43",
       "lat": 55.939019,
       "lon": 21.880091,
       "approx": false,
