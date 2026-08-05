@@ -82,14 +82,14 @@ jobs:
       - name: LT electricity market price
         run: python scripts/fetch_electricity.py || echo "electricity failed (non-fatal)"
 
-      - name: Build static municipality pages + sitemap + crawlable index block
-        run: python scripts/build_pages.py || echo "page build failed (non-fatal)"
-
       # Public JSON/CSV endpoints + RSS + the documented open-data page. These
       # are the linkable asset: a citable URL is the one kind of backlink you can
       # earn honestly, and fuelis.lt currently has zero inbound links.
       - name: Build open-data endpoints (JSON/CSV/RSS) + docs page
         run: python scripts/build_opendata.py || echo "open-data build failed (non-fatal)"
+
+      - name: Build static municipality pages + sitemap + crawlable index block
+        run: python scripts/build_pages.py || echo "page build failed (non-fatal)"
 
       # Push "these URLs changed" to Bing/Yandex/Seznam/Naver (NOT Google — it
       # doesn't participate). Runs BEFORE the commit so its state file is

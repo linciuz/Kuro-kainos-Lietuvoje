@@ -22,6 +22,7 @@ Pure local-file work (no network) — safe to run in every pipeline pass.
 """
 
 import datetime as dt
+import hashlib
 import html
 import json
 import os
@@ -241,14 +242,66 @@ def build_directory(slugs_munis, updated):
                       f"{SITE}/kainos/", body)
 
 
+# Per-URL lastmod memory: {url: {"hash": ..., "lastmod": ...}}. Committed with
+# the data so the whole pipeline shares one honest record of when each page
+# genuinely last changed.
+LASTMOD_STATE = os.path.join("data", "_page_lastmod.json")
+
+
+def page_lastmods(url_to_path, updated):
+    """lastmod driven by the page's actual CONTENT HASH, not by "today".
+
+    Every URL previously carried the same lastmod, which was false: a privacy
+    policy does not change daily. Google only uses lastmod when it is
+    "consistently and verifiably accurate" — one demonstrably wrong entry
+    teaches it to discount the signal for the whole file, and on a domain with
+    no inbound links that hint is the only crawl-scheduling leverage we have.
+
+    Double duty: the same hashes are what let a future run tell a genuinely
+    changed page from an unchanged one, instead of re-announcing all 64 URLs.
+    """
+    try:
+        state = json.load(open(LASTMOD_STATE, encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        state = {}
+    out, changed = {}, 0
+    for url, path in url_to_path.items():
+        try:
+            content = open(path, encoding="utf-8").read()
+        except OSError:
+            # Page not built this run — keep whatever we last knew about it
+            # rather than inventing a fresh timestamp.
+            out[url] = (state.get(url) or {}).get("lastmod", updated)
+            continue
+        h = hashlib.sha256(content.encode("utf-8")).hexdigest()[:16]
+        prev = state.get(url) or {}
+        if prev.get("hash") == h and prev.get("lastmod"):
+            out[url] = prev["lastmod"]
+        else:
+            out[url] = updated
+            state[url] = {"hash": h, "lastmod": updated}
+            changed += 1
+    json.dump(state, open(LASTMOD_STATE, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1, sort_keys=True)
+    print(f"[sitemap] {changed}/{len(url_to_path)} pages changed content this run")
+    return out
+
+
 def build_sitemap(slugs, updated):
-    urls = [f"{SITE}/", f"{SITE}/kainos/", f"{SITE}/atviri-duomenys.html",
-            f"{SITE}/privatumas.html"]
-    urls += [f"{SITE}/kainos/{s}.html" for s in sorted(slugs)]
+    url_to_path = {
+        f"{SITE}/": "index.html",
+        f"{SITE}/kainos/": os.path.join(OUTDIR, "index.html"),
+        f"{SITE}/atviri-duomenys.html": "atviri-duomenys.html",
+        f"{SITE}/privatumas.html": "privatumas.html",
+    }
+    for s in sorted(slugs):
+        url_to_path[f"{SITE}/kainos/{s}.html"] = os.path.join(OUTDIR, f"{s}.html")
+    lastmod = page_lastmods(url_to_path, updated)
+    # <changefreq> and <priority> are dropped deliberately: Google's own
+    # documentation states it ignores both. They were 128 lines of dead bytes.
     entries = "\n".join(
-        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{updated}</lastmod>\n"
-        f"    <changefreq>daily</changefreq>\n    <priority>{'1.0' if u.endswith('.lt/') else '0.7'}</priority>\n  </url>"
-        for u in urls)
+        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{lastmod[u]}</lastmod>\n  </url>"
+        for u in url_to_path)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}\n</urlset>\n'
 
 
@@ -321,9 +374,17 @@ def main():
         slugs_munis.append((slug, muni))
     open(os.path.join(OUTDIR, "index.html"), "w", encoding="utf-8", newline="\n").write(
         build_directory(slugs_munis, updated))
+    # The headline count must be PRICED stations, not the whole registry. The
+    # description read "Oficialios degalų kainos 808 Lietuvos degalinių" while
+    # only 729 of those 808 carry a price — the other 79 are price-less registry
+    # entries we plot on the map. The municipality pages already got this right
+    # via priced_rows(); the homepage meta did not, and it's the one line
+    # search results and link previews actually quote.
+    refresh_index_html(d.get("summary") or {}, updated, len(priced_rows(stations)))
+    # Sitemap LAST: page_lastmods() hashes the files on disk, so index.html must
+    # already be rewritten or its hash would be one build stale every run.
     open("sitemap.xml", "w", encoding="utf-8", newline="\n").write(
         build_sitemap([s for s, _ in slugs_munis], updated))
-    refresh_index_html(d.get("summary") or {}, updated, len(stations))
     print(f"[ok] built {len(slugs_munis)} municipality pages + directory + sitemap; index.html refreshed")
 
 
