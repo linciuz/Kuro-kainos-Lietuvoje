@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-05T08:31:05Z",
+ "generated_utc": "2026-08-05T08:46:10Z",
  "price_date": "2026-08-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -7610,10 +7610,10 @@
    "municipality": "Šalčininkų r. sav.",
    "lat": 54.160154,
    "lon": 25.009899,
-   "petrol95": 1.859,
-   "diesel": 2.159,
+   "petrol95": 1.729,
+   "diesel": 1.969,
    "lpg": null,
-   "price_updated": "2026-08-05T08:09:38+03:00"
+   "price_updated": "2026-08-05T11:42:46+03:00"
   },
   {
    "network": "UAB Tomega",
@@ -7621,10 +7621,10 @@
    "municipality": "Šalčininkų r. sav.",
    "lat": 54.456879,
    "lon": 25.279466,
-   "petrol95": 1.849,
-   "diesel": 2.149,
+   "petrol95": 1.719,
+   "diesel": 1.959,
    "lpg": null,
-   "price_updated": "2026-08-05T08:09:14+03:00"
+   "price_updated": "2026-08-05T11:39:23+03:00"
   },
   {
    "network": "UAB Viada LT",

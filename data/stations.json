@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-05T08:30:49+00:00Z",
+    "resolved_utc": "2026-08-05T08:45:51+00:00Z",
     "winner_counts": {
-      "null": 9,
-      "portal": 758
+      "portal": 758,
+      "null": 9
     },
     "sources": [
       {
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-05",
         "error": null,
-        "fetched_utc": "2026-08-05T08:30:47+00:00Z"
+        "fetched_utc": "2026-08-05T08:45:49+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 8 days behind 2026-08-05 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-05T08:30:49+00:00Z"
+        "fetched_utc": "2026-08-05T08:45:51+00:00Z"
       }
     ]
   },
@@ -10423,11 +10423,13 @@
       "address": "Dumblės k., 17178",
       "municipality": "Šalčininkų r. sav.",
       "locality": "",
-      "petrol95": 1.859,
-      "diesel": 2.159,
+      "petrol95": 1.729,
+      "diesel": 1.969,
       "lpg": null,
-      "price_updated": "2026-08-05T08:09:38+03:00",
+      "price_updated": "2026-08-05T11:42:46+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:42",
       "lat": 54.160154,
       "lon": 25.009899,
       "approx": false,
@@ -10438,11 +10440,13 @@
       "address": "Tartoko k., 17127",
       "municipality": "Šalčininkų r. sav.",
       "locality": "",
-      "petrol95": 1.849,
-      "diesel": 2.149,
+      "petrol95": 1.719,
+      "diesel": 1.959,
       "lpg": null,
-      "price_updated": "2026-08-05T08:09:14+03:00",
+      "price_updated": "2026-08-05T11:39:23+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:39",
       "lat": 54.456879,
       "lon": 25.279466,
       "approx": false
