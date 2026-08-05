@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-05T09:15:57+00:00Z",
+    "resolved_utc": "2026-08-05T09:30:58+00:00Z",
     "winner_counts": {
-      "portal": 758,
-      "null": 9
+      "portal": 759,
+      "null": 8
     },
     "sources": [
       {
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-05",
         "error": null,
-        "fetched_utc": "2026-08-05T09:15:55+00:00Z"
+        "fetched_utc": "2026-08-05T09:30:56+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 8 days behind 2026-08-05 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-05T09:15:57+00:00Z"
+        "fetched_utc": "2026-08-05T09:30:58+00:00Z"
       }
     ]
   },
@@ -30,13 +30,13 @@
       "min": 1.669,
       "avg": 1.778,
       "max": 1.94,
-      "count": 731
+      "count": 732
     },
     "diesel": {
       "min": 1.889,
       "avg": 2.027,
       "max": 2.199,
-      "count": 733
+      "count": 734
     },
     "lpg": {
       "min": 0.66,
@@ -1624,9 +1624,13 @@
       "address": "Kaunas, Linkuvos g. 77, 48314",
       "municipality": "Kauno m. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
+      "petrol95": 1.77,
+      "diesel": 1.99,
       "lpg": null,
+      "price_updated": "2026-08-05T12:25:18+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:25",
       "lat": 54.9143,
       "lon": 23.887705,
       "approx": false
