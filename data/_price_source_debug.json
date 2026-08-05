@@ -1,26 +1,26 @@
 {
- "checked_utc": "2026-08-05T07:15:52+00:00Z",
+ "checked_utc": "2026-08-05T07:30:43+00:00Z",
  "engine": "ok",
- "file_date": "2026-08-04",
+ "file_date": "2026-08-05",
  "stations": 767,
  "winners": {
-  "portal": 729,
-  "null": 38
+  "null": 9,
+  "portal": 758
  },
  "sources": [
   {
    "source": "portal",
    "ok": true,
-   "date": "2026-08-04",
+   "date": "2026-08-05",
    "error": null,
-   "fetched_utc": "2026-08-05T07:15:58+00:00Z"
+   "fetched_utc": "2026-08-05T07:30:48+00:00Z"
   },
   {
    "source": "sharepoint",
    "ok": false,
    "date": "2026-07-28",
-   "error": "frozen: 2026-07-28 is 7 days behind 2026-08-04 — dropped from the merge so it cannot serve stale prices",
-   "fetched_utc": "2026-08-05T07:16:00+00:00Z"
+   "error": "frozen: 2026-07-28 is 8 days behind 2026-08-05 — dropped from the merge so it cannot serve stale prices",
+   "fetched_utc": "2026-08-05T07:30:50+00:00Z"
   }
  ]
 }
