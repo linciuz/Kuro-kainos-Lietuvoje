@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-05T15:03:07Z",
+ "generated_utc": "2026-08-05T15:52:06Z",
  "price_date": "2026-08-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3549,8 +3549,8 @@
    "network": "AB Orlen Baltics Retail",
    "address": "Aleksandravo k., 68100",
    "municipality": "Marijampolės sav.",
-   "lat": 54.58526,
-   "lon": 23.376428,
+   "lat": 54.583087,
+   "lon": 23.370864,
    "petrol95": 1.669,
    "diesel": 1.899,
    "lpg": 0.729,
