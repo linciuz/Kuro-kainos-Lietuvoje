@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-08-06T08:15:22+00:00Z",
+ "checked_utc": "2026-08-06T08:30:33+00:00Z",
  "engine": "ok",
  "file_date": "2026-08-06",
  "stations": 767,
@@ -13,14 +13,14 @@
    "ok": true,
    "date": "2026-08-06",
    "error": null,
-   "fetched_utc": "2026-08-06T08:15:26+00:00Z"
+   "fetched_utc": "2026-08-06T08:30:38+00:00Z"
   },
   {
    "source": "sharepoint",
    "ok": false,
    "date": "2026-07-28",
    "error": "frozen: 2026-07-28 is 9 days behind 2026-08-06 — dropped from the merge so it cannot serve stale prices",
-   "fetched_utc": "2026-08-06T08:15:28+00:00Z"
+   "fetched_utc": "2026-08-06T08:30:40+00:00Z"
   }
  ]
 }
