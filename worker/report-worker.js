@@ -107,18 +107,44 @@ async function maybeTrafficPoke(env, ctx) {
   const h = now.getUTCHours();
   if (dow === 0 || dow === 6 || h < 4 || h > 13) return;   // Mon-Fri ~07:00-16:59 LT
   // Cheap per-edge debounce so a burst of visitors doesn't stampede KV.
+  //
+  // MEASURED 2026-08-06: this fired TWICE for the same slot repeatedly —
+  // workflow_dispatch pairs landing in the same SECOND (12:44:16, 13:27:58,
+  // 13:58:21 UTC; none on a cron minute, so all of them were this function).
+  // Classic check-then-act: BOTH guards used to be written only AFTER the work
+  // was already under way — the Cache guard in a trailing waitUntil, and
+  // last_poke inside dispatchPriceRun after the ~300 ms GitHub POST returned.
+  // Two concurrent visitors therefore both read a stale marker and both poked,
+  // doubling the commit rate and the Pages deploys that collide with it.
+  // Fix: CLAIM FIRST, dispatch second.
   const guard = new Request("https://kk-reports.internal/__poke-guard");
   if (await caches.default.match(guard)) return;
+  // Claim this edge before any further await, so a second request arriving
+  // mid-flight sees the guard rather than racing us to the KV read.
+  try {
+    await caches.default.put(guard, new Response("1", {
+      headers: { "Cache-Control": "max-age=300" },
+    }));
+  } catch (e) { /* cache unavailable — the KV claim below still applies */ }
   ctx.waitUntil((async () => {
     try {
       const raw = await env.REPORTS.get("last_poke");
       const last = raw ? Date.parse(JSON.parse(raw).ts) : 0;
       if (Date.now() - last < 30 * 60 * 1000) return;
+      // Stake the KV claim BEFORE the slow POST. dispatchPriceRun overwrites
+      // this with the real outcome; what matters is that the window where a
+      // racer sees an old timestamp is now a KV write, not a round-trip to
+      // GitHub. (KV is eventually consistent, so a cross-edge race inside the
+      // propagation window is still possible — it is merely rare now, and a
+      // double poke stays harmless: the concurrency group serialises the runs
+      // and an unchanged run commits nothing.)
+      await env.REPORTS.put("last_poke", JSON.stringify({
+        ts: new Date().toISOString(), source: "traffic-deadman",
+        status: null, error: "claimed, dispatch in flight",
+      }));
       await dispatchPriceRun(env, "traffic-deadman");
     } catch (e) { /* best-effort */ }
   })());
-  const resp = new Response("1", { headers: { "Cache-Control": "max-age=300" } });
-  ctx.waitUntil(caches.default.put(guard, resp));
 }
 
 // Cron-context refresh: scheduled() subrequests carry no visitor identity, so

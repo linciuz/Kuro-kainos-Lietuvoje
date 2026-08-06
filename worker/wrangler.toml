@@ -29,11 +29,17 @@ simple = { limit = 30, period = 60 }
 # winter shift needs no edit (extra pokes are free: no-change commit skip).
 # Needs the GH_TOKEN secret:  npx wrangler secret put GH_TOKEN
 [triggers]
+# REVIVAL LEVER (2026-07-25): Cloudflare cron DELIVERY died silently on 07-23
+# with the schedules still registered, and only a change to the schedule SET
+# forces re-registration. So if pokes stop arriving while /health still shows
+# the triggers, EDIT THIS LIST (any real change) and redeploy.
+#
+# The entries below are all DISTINCT times — there are no duplicates here, and
+# a duplicated cron would not be harmless anyway: each registered entry fires
+# its own scheduled() invocation. (An earlier comment claimed these were two
+# identical-timing entries with "no behaviour change"; it described a state
+# this file is no longer in, and it caused a misdiagnosis on 2026-08-06.)
 crons = [
-  # Split into two identical-timing entries (2026-07-25): Cloudflare cron
-# DELIVERY died silently on 07-23 with the schedules still registered, and
-# only a change to the schedule SET forces re-registration. Same firing
-# times, no behaviour change — the split is the revival lever.
   "0 4 * * 1-5",
   "0 5 * * 1-5",         # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
   "*/15 6-11 * * 1-5",     # every 15 min: 09:00–14:59 LT summer AND 08:00–13:59 LT winter — season-proof
