@@ -130,6 +130,13 @@ jobs:
           git add -A data/ kainos/ api/ sitemap.xml index.html feed.xml atviri-duomenys.html || true
           if git diff --staged --quiet; then
             echo "No changes."
+          # Brent + electricity spot move on nearly every 15-min run and used to
+          # publish 74% of all commits by themselves, each burning a Pages build.
+          # They are context, not pump prices, so they ride along with the next
+          # real change (and always publish at least once a day). Fail-safe: if
+          # this script errors it exits 0 and we commit as before.
+          elif ! python scripts/should_commit.py; then
+            echo "Context-only change - not publishing."
           else
             git commit -m "Update fuel prices ($(date -u +%Y-%m-%d))"
             # Publish with retries; on a data conflict prefer this run's fresh
