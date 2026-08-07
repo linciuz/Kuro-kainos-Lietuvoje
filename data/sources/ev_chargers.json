@@ -1,21 +1,21 @@
 {
-  "generated": "2026-08-07T06:53:34Z",
+  "generated": "2026-08-07T14:40:14Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 2037,
-  "ocpi_count": 1967,
-  "with_price": 1931,
+  "count": 2034,
+  "ocpi_count": 1964,
+  "with_price": 1930,
   "source_health": {
     "ocpi": {
       "live": true,
-      "last_success_utc": "2026-08-07T06:53:34Z"
+      "last_success_utc": "2026-08-07T14:40:14Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-08-07T06:53:34Z"
+      "last_success_utc": "2026-08-07T14:40:14Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-08-07T06:53:34Z"
+      "last_success_utc": "2026-08-07T14:40:14Z"
     }
   },
   "chargers": [
@@ -2029,7 +2029,7 @@
       "address": "P. Lukšio g. 18, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.149,
+      "price": 0.148,
       "sockets": 1,
       "ocpi_id": "1508",
       "source": "vialietuva-ocpi"
@@ -8607,7 +8607,7 @@
       "address": "P. Lukšio g. 18, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.149,
+      "price": 0.148,
       "sockets": 1,
       "ocpi_id": "3172",
       "source": "vialietuva-ocpi"
@@ -8620,7 +8620,7 @@
       "address": "Elektrinės 6, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.069,
+      "price": 0.068,
       "sockets": 2,
       "ocpi_id": "3173",
       "source": "vialietuva-ocpi"
@@ -19975,19 +19975,6 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 55.2274,
-      "lon": 22.281448,
-      "name": "Eldrive Lithuania Tauragės autobusų parkas | PARTNERIS",
-      "operator": "Eldrive Lithuania, UAB",
-      "address": "Pramonės gatvė 30",
-      "city": "Tauragė",
-      "power_kw": 50.0,
-      "price": 0.29,
-      "sockets": 10,
-      "ocpi_id": "4586",
-      "source": "vialietuva-ocpi"
-    },
-    {
       "lat": 54.912158,
       "lon": 23.879818,
       "name": "Meditalika (Radvilų Dvaro g. 4) | Inbalance grid",
@@ -20141,32 +20128,6 @@
       "price": 0.4,
       "sockets": 1,
       "ocpi_id": "4599",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 55.227393,
-      "lon": 22.281551,
-      "name": "Pramonės g. 30, Tauragė",
-      "operator": "Elinta Charge",
-      "address": "Pramonės g. 30, Tauragė",
-      "city": "Tauragė",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3,
-      "ocpi_id": "4600",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 55.227386,
-      "lon": 22.281419,
-      "name": "Pramonės g. 30, Tauragė",
-      "operator": "Elinta Charge",
-      "address": "Pramonės g. 30, Tauragė",
-      "city": "Tauragė",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3,
-      "ocpi_id": "4601",
       "source": "vialietuva-ocpi"
     },
     {
@@ -20606,7 +20567,7 @@
       "address": "P. Lukšio g. 18, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.149,
+      "price": 0.148,
       "sockets": 1,
       "ocpi_id": "4805",
       "source": "vialietuva-ocpi"
