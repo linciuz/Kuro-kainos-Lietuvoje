@@ -194,6 +194,30 @@ def main():
     if "--audit" in sys.argv:
         i = sys.argv.index("--audit")
         return audit(int(sys.argv[i + 1]) if len(sys.argv) > i + 1 else 40)
+
+    # --range OLD NEW: is NEW meaningfully different from OLD?
+    #
+    # Used after the publish rebase. MEASURED 2026-08-07T04:48:04Z: two runs
+    # started in the SAME SECOND from the SAME base (d52cba9) — GitHub's
+    # concurrency group does not reliably serialise simultaneous triggers. Each
+    # honestly saw real changes against its own base, so both committed; the
+    # loser rebased on top and pushed a second commit carrying nothing but a
+    # moved clock and an electricity tick.
+    #
+    # Re-asking AFTER the rebase is what catches it: once our commit sits on top
+    # of the winner's, the question becomes "is anything of ours still worth
+    # publishing?" — and for a duplicate poke the answer is no.
+    if "--range" in sys.argv:
+        i = sys.argv.index("--range")
+        old, new = sys.argv[i + 1], sys.argv[i + 2]
+        keep, reasons = decide(old, new)
+        if keep:
+            print(f"[commit] still worth publishing vs {old}: {', '.join(reasons[:6])}")
+            return 0
+        print(f"[commit] another run already published this data — nothing left "
+              f"vs {old}{' (only ' + ', '.join(reasons) + ')' if reasons else ''}.")
+        return 1
+
     keep, reasons = decide("HEAD")
     if keep:
         print(f"[commit] real changes: {', '.join(reasons[:6])}"

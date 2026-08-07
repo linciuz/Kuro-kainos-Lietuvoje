@@ -142,8 +142,19 @@ jobs:
             # Publish with retries; on a data conflict prefer this run's fresh
             # regeneration (-X theirs). Fail loudly if it truly can't push.
             for i in 1 2 3 4 5; do
-              if git fetch origin main && git rebase -X theirs origin/main && git push; then
-                echo "published (attempt $i)"; exit 0
+              if git fetch origin main && git rebase -X theirs origin/main; then
+                # A PARALLEL run may have published the same data while we worked.
+                # Measured 2026-08-07T04:48:04Z: two runs started in the same
+                # second from the same base commit, so GitHub's concurrency group
+                # does not reliably serialise simultaneous triggers. Both honestly
+                # saw changes against their own base; the loser then pushed a
+                # second commit containing only a moved clock. Re-ask AFTER the
+                # rebase, when the real question is whether anything of OURS is
+                # still worth publishing on top of the winner's commit.
+                if ! python scripts/should_commit.py --range origin/main HEAD; then
+                  echo "superseded by a parallel run - nothing left to push."; exit 0
+                fi
+                if git push; then echo "published (attempt $i)"; exit 0; fi
               fi
               echo "publish attempt $i failed — retrying"
               git rebase --abort 2>/dev/null || true
