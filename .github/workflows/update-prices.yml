@@ -18,6 +18,16 @@ on:
     # LEA's publish window in both DST regimes, at odd minutes to dodge GitHub's
     # congested :00/:15/:30/:45 peaks. Two further layers back them up: the Worker's
     # traffic dead-man (a visitor request pokes a run) and .github/poke.
+    # 2026-08-07: Cloudflare cron delivery died for the THIRD time (07-17,
+    # 07-23, and 08-06T22:00 -> silent for 11h), and this time pulling the
+    # revival lever (changing the schedule set + redeploying) did NOT bring it
+    # back within two hours. It cannot be trusted with the one window that
+    # matters, and until today GitHub's own slots started at 08:13 UTC =
+    # 11:13 LT — TWO HOURS AFTER LEA's ~10:00 LT publish. The publish window was
+    # covered only by Cloudflare's */15 and the traffic dead-man (which needs a
+    # visitor to show up and self-throttles to one poke per 30 min).
+    # These two hours are now covered by GitHub itself, depending on nobody:
+    - cron: "11,41 6,7 * * 1-5"         # every 30 min, 09:11–10:41 LT summer (08:11–09:41 winter)
     - cron: "13,43 8,9,10,11 * * 1-5"   # every 30 min, 11:13–14:43 LT summer (10:13–13:43 winter)
     - cron: "47 12 * * 1-5"             # 15:47 LT afternoon safety net
   workflow_dispatch: {}
