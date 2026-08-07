@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-07T09:12:42+00:00Z",
+    "resolved_utc": "2026-08-07T11:04:48+00:00Z",
     "winner_counts": {
       "portal": 762,
       "null": 5
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-07",
         "error": null,
-        "fetched_utc": "2026-08-07T09:12:41+00:00Z"
+        "fetched_utc": "2026-08-07T11:04:46+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 10 days behind 2026-08-07 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-07T09:12:42+00:00Z"
+        "fetched_utc": "2026-08-07T11:04:48+00:00Z"
       }
     ]
   },
@@ -5111,11 +5111,13 @@
       "address": "Pasūduonės k., L.Taunio g. 3, 69331",
       "municipality": "Marijampolės sav.",
       "locality": "",
-      "petrol95": 1.779,
-      "diesel": 2.069,
-      "lpg": 0.744,
-      "price_updated": "2026-08-07T09:50:35+03:00",
+      "petrol95": 1.764,
+      "diesel": 2.024,
+      "lpg": 0.794,
+      "price_updated": "2026-08-07T14:03:04+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 54.475839,
       "lon": 23.221346,
       "approx": false,
