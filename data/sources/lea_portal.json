@@ -1,8 +1,8 @@
 {
- "generated": "2026-08-06T08:08:43Z",
+ "generated": "2026-08-07T06:53:37Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-08-06 10:30:04",
+ "api_last_updated": "2026-08-06 13:57:16",
  "count": 767,
  "with_coords": 766,
  "priced": 763,
@@ -147,12 +147,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.899,
-    "petrol95": 1.689
+    "diesel": 1.919,
+    "petrol95": 1.679
    },
    "gas_station_id": 9,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -1000,12 +1000,12 @@
    ],
    "prices": {
     "lpg": 0.749,
-    "diesel": 1.999,
-    "petrol95": 1.739
+    "diesel": 2.049,
+    "petrol95": 1.769
    },
    "gas_station_id": 38,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "UAB Boost Petrol",
@@ -1699,12 +1699,12 @@
    ],
    "prices": {
     "lpg": 0.749,
-    "diesel": 1.999,
-    "petrol95": 1.739
+    "diesel": 2.049,
+    "petrol95": 1.769
    },
    "gas_station_id": 66,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "IĮ A. Praškevičiaus",
@@ -2123,7 +2123,7 @@
    },
    "gas_station_id": 36,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -2144,7 +2144,7 @@
    },
    "gas_station_id": 11,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:41.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -2165,7 +2165,7 @@
    },
    "gas_station_id": 13,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:41.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -2186,7 +2186,7 @@
    },
    "gas_station_id": 35,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "MB Tormenta",
@@ -3812,12 +3812,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.919,
-    "petrol95": 1.689
+    "diesel": 1.949,
+    "petrol95": 1.699
    },
    "gas_station_id": 34,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -3833,12 +3833,12 @@
    ],
    "prices": {
     "lpg": 0.759,
-    "diesel": 1.999,
-    "petrol95": 1.739
+    "diesel": 2.039,
+    "petrol95": 1.759
    },
    "gas_station_id": 62,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -4543,12 +4543,12 @@
    ],
    "prices": {
     "lpg": 0.739,
-    "diesel": 1.959,
+    "diesel": 1.979,
     "petrol95": 1.699
    },
    "gas_station_id": 39,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:41.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -4569,7 +4569,7 @@
    },
    "gas_station_id": 61,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -4585,12 +4585,12 @@
    ],
    "prices": {
     "lpg": 0.739,
-    "diesel": 1.949,
-    "petrol95": 1.719
+    "diesel": 1.979,
+    "petrol95": 1.699
    },
    "gas_station_id": 60,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -5229,12 +5229,12 @@
    ],
    "prices": {
     "lpg": 0.739,
-    "diesel": 1.959,
-    "petrol95": 1.729
+    "diesel": 1.999,
+    "petrol95": 1.739
    },
    "gas_station_id": 30,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Adukesta",
@@ -5664,12 +5664,12 @@
    ],
    "prices": {
     "lpg": 0.739,
-    "diesel": 1.949,
+    "diesel": 1.999,
     "petrol95": 1.749
    },
    "gas_station_id": 58,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "I.Stonkuvienės prekybos įmonė",
@@ -6528,7 +6528,7 @@
    },
    "gas_station_id": 28,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -6974,7 +6974,7 @@
    },
    "gas_station_id": 41,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:41.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -6995,7 +6995,7 @@
    },
    "gas_station_id": 43,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:41.000000Z"
+   "submitted_at": "2026-08-06T10:57:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -7605,11 +7605,11 @@
    "prices": {
     "lpg": 0.739,
     "diesel": 1.979,
-    "petrol95": 1.719
+    "petrol95": 1.729
    },
    "gas_station_id": 55,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -7625,12 +7625,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.959,
+    "diesel": 1.939,
     "petrol95": 1.699
    },
    "gas_station_id": 56,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -8097,11 +8097,11 @@
    "prices": {
     "lpg": 0.749,
     "diesel": 1.999,
-    "petrol95": 1.739
+    "petrol95": 1.749
    },
    "gas_station_id": 54,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -8757,7 +8757,7 @@
    },
    "gas_station_id": 53,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9168,12 +9168,12 @@
    ],
    "prices": {
     "lpg": 0.839,
-    "diesel": 2.099,
-    "petrol95": 1.799
+    "diesel": 2.119,
+    "petrol95": 1.819
    },
    "gas_station_id": 51,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -9189,12 +9189,12 @@
    ],
    "prices": {
     "lpg": 0.839,
-    "diesel": 2.099,
-    "petrol95": 1.799
+    "diesel": 2.119,
+    "petrol95": 1.819
    },
    "gas_station_id": 52,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:40.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9826,12 +9826,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.959,
+    "diesel": 1.979,
     "petrol95": 1.699
    },
    "gas_station_id": 44,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -10127,12 +10127,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.969,
-    "petrol95": 1.729
+    "diesel": 1.979,
+    "petrol95": 1.699
    },
    "gas_station_id": 49,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -10562,12 +10562,12 @@
    ],
    "prices": {
     "lpg": 0.76,
-    "diesel": 2.05,
-    "petrol95": 1.85
+    "diesel": 1.97,
+    "petrol95": 1.72
    },
    "gas_station_id": 217,
    "logo_url": null,
-   "submitted_at": "2026-08-06T07:30:02.000000Z"
+   "submitted_at": "2026-08-06T08:53:14.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11319,12 +11319,12 @@
    ],
    "prices": {
     "lpg": 0.749,
-    "diesel": 1.999,
+    "diesel": 2.019,
     "petrol95": 1.739
    },
    "gas_station_id": 45,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -11340,12 +11340,12 @@
    ],
    "prices": {
     "lpg": 0.739,
-    "diesel": 1.999,
+    "diesel": 2.019,
     "petrol95": 1.739
    },
    "gas_station_id": 46,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -11361,12 +11361,12 @@
    ],
    "prices": {
     "lpg": 0.739,
-    "diesel": 1.959,
+    "diesel": 1.999,
     "petrol95": 1.719
    },
    "gas_station_id": 47,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -11382,12 +11382,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.949,
+    "diesel": 1.969,
     "petrol95": 1.719
    },
    "gas_station_id": 48,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -14269,12 +14269,12 @@
    ],
    "prices": {
     "lpg": 0.729,
-    "diesel": 1.959,
-    "petrol95": 1.729
+    "diesel": 1.979,
+    "petrol95": 1.719
    },
    "gas_station_id": 50,
    "logo_url": null,
-   "submitted_at": "2026-08-06T06:39:39.000000Z"
+   "submitted_at": "2026-08-06T10:57:15.000000Z"
   },
   {
    "company": "UAB Apsaga",
