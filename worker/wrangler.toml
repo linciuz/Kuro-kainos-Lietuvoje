@@ -40,8 +40,13 @@ simple = { limit = 30, period = 60 }
 # identical-timing entries with "no behaviour change"; it described a state
 # this file is no longer in, and it caused a misdiagnosis on 2026-08-06.)
 crons = [
-  "0 4 * * 1-5",
-  "0 5 * * 1-5",         # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
+  # 2026-08-07: delivery died AGAIN — last fire 2026-08-06T22:00:35Z, then seven
+  # slots missed in a row while every trigger stayed registered. Merging the two
+  # 04:00/05:00 entries into one CHANGES THE SET (2 entries -> 1) with identical
+  # firing times, which is exactly what the revival lever needs. Pulling the
+  # lever costs nothing; leaving it dead costs LEA's publish window, because
+  # GitHub's own crons do not start until 08:13 UTC (11:13 LT).
+  "0 4,5 * * 1-5",       # 07:00, 08:00 LT (early — Orlen wholesale posts before LEA)
   "*/15 6-11 * * 1-5",     # every 15 min: 09:00–14:59 LT summer AND 08:00–13:59 LT winter — season-proof
   "0 12,22 * * 1-5",       # 15:00 LT + 01:00 LT (next day)
 ]
