@@ -494,6 +494,27 @@ export default {
   // workflow via workflow_dispatch instead. The workflow's concurrency group +
   // no-change commit skip make redundant pokes free.
   async scheduled(event, env, ctx) {
+    // WEEKDAY GATE LIVES HERE, NOT IN THE CRON EXPRESSION.
+    //
+    // The cron used to say "* * 1-5" and we assumed Mon-Fri. It is not. Measured
+    // across four consecutive days (2026-08-06..09): fired Thu, SILENT Fri,
+    // SILENT Sat, fired Sun. Standard cron (0=Sunday) predicts Friday fires —
+    // it did not. Cloudflare's numbering makes "1-5" mean SUNDAY..THURSDAY.
+    //
+    // That single fact explains both incidents previously written off as
+    // "Cloudflare cron delivery randomly dies": 2026-07-23 and 2026-08-06 each
+    // show the identical signature — last fire THURSDAY 22:00, nothing Friday
+    // or Saturday, back on Sunday. The scheduler was never broken and the
+    // "revival lever" never revived anything; Friday, a LEA PUBLISH DAY, simply
+    // had no Cloudflare cron at all, while Sunday ran ~27 times for nothing.
+    //
+    // So the cron expressions no longer carry a day field (they fire every day)
+    // and the weekday decision is made here, where getUTCDay() is unambiguously
+    // 0=Sunday. Correct under either numbering, and it cannot silently drift
+    // again. LEA does not publish on weekends.
+    const dow = new Date(event.scheduledTime || Date.now()).getUTCDay();
+    if (dow === 0 || dow === 6) return;
+
     // Refresh the Viada promo-page KV cache BEFORE poking the workflow, so the
     // run that this poke triggers already finds today's pages in /proxy/viada.
     ctx.waitUntil((async () => {
