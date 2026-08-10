@@ -510,10 +510,30 @@ def check_portal(now):
     share = 100 * (d.get("priced") or 0) / max(1, d.get("count") or 1)
     # Since 2026-07-28 fetch_prices depends on this coverage. Sustained collapse
     # means we are quietly running on the fallback (or on nothing) — say so.
+    #
+    # BUT the portal's prices are TRANSIENT, not a standing table: they drain and
+    # refill around LEA's publication. Measured 69 priced stations Mon 2026-08-10
+    # at 10:05 LT (9%) with every priced row still stamped Sunday, versus 729
+    # (94%) on a weekday afternoon, and 70 on a Sunday. Low coverage BEFORE the
+    # day's submissions land is the normal resting state, not a degraded feed.
+    #
+    # Enforcing 50% unconditionally therefore fired on a schedule rather than on
+    # a fault: it reds every run before ~publication and all weekend, which is
+    # exactly the alarm-fatigue this gate is supposed to avoid. Same shape as the
+    # weekend false alarm already fixed in verify_freshness.py, and it follows
+    # the cutoff convention used by check_oil/check_electricity above.
     if share < 50:
-        fail(src, f"portal price coverage fell to {share:.0f}% (<50%) — this channel is "
-                  f"degraded, so the engine is leaning on the spreadsheet alone; check the "
-                  f"portal API. (94% is the healthy steady state since 2026-07-28.)")
+        msg = (f"portal price coverage {share:.0f}% (<50%) — the engine is leaning on the "
+               f"spreadsheet alone; check the portal API. (94% is the healthy steady "
+               f"state since 2026-07-28.)")
+        lt = now.astimezone(VILNIUS)
+        if is_business_day(now.date()) and lt.hour >= 13:
+            # LEA publishes ~10:00 LT; three hours of slack. Still low now = real.
+            fail(src, msg + " Past 13:00 LT on a business day, so this is not the "
+                            "pre-publication dip — the channel is genuinely degraded.")
+        else:
+            warn(src, msg + " Before 13:00 LT / not a business day, so this is the "
+                            "normal pre-publication dip — not alarming yet.")
 
 
 def check_history(now):
