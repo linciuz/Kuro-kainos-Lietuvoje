@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-10T12:49:48+00:00Z",
+    "resolved_utc": "2026-08-10T14:42:04+00:00Z",
     "winner_counts": {
       "portal": 721,
       "null": 46
@@ -14,14 +14,14 @@
         "ok": true,
         "date": "2026-08-10",
         "error": null,
-        "fetched_utc": "2026-08-10T12:49:46+00:00Z"
+        "fetched_utc": "2026-08-10T14:42:02+00:00Z"
       },
       {
         "source": "sharepoint",
         "ok": false,
         "date": "2026-07-28",
         "error": "frozen: 2026-07-28 is 13 days behind 2026-08-10 — dropped from the merge so it cannot serve stale prices",
-        "fetched_utc": "2026-08-10T12:49:48+00:00Z"
+        "fetched_utc": "2026-08-10T14:42:04+00:00Z"
       }
     ]
   },
@@ -5211,9 +5211,10 @@
       "lpg": 0.73,
       "price_updated": "2026-08-10T09:25:02+03:00",
       "price_src": "portal",
-      "lat": 56.311048,
-      "lon": 22.348472,
-      "approx": true
+      "lat": 56.318881,
+      "lon": 22.318919,
+      "approx": false,
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Neste Lietuva",
