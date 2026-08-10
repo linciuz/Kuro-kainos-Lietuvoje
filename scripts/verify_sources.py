@@ -526,14 +526,23 @@ def check_portal(now):
         msg = (f"portal price coverage {share:.0f}% (<50%) — the engine is leaning on the "
                f"spreadsheet alone; check the portal API. (94% is the healthy steady "
                f"state since 2026-07-28.)")
-        lt = now.astimezone(VILNIUS)
-        if is_business_day(now.date()) and lt.hour >= 13:
-            # LEA publishes ~10:00 LT; three hours of slack. Still low now = real.
-            fail(src, msg + " Past 13:00 LT on a business day, so this is not the "
-                            "pre-publication dip — the channel is genuinely degraded.")
+        # Judge by WHEN THE SNAPSHOT WAS TAKEN, not when this gate happens to run.
+        # lea_portal.json is written by the DAILY workflow only, so the every-15-min
+        # runs replay the same file all day. Testing `now` therefore turned one
+        # pre-publication reading into a red run on EVERY frequent run after 13:00:
+        # measured 2026-08-10, the file was generated 06:57Z (09:57 LT, before LEA
+        # published) at 9%, and the live portal was already back to 94% by the time
+        # the 10:15Z run failed on that stale number. The coverage figure belongs to
+        # the moment it was sampled, so the cutoff has to be applied there.
+        lt = gen.astimezone(VILNIUS)
+        if is_business_day(gen.date()) and lt.hour >= 13:
+            # Sampled past 13:00 LT on a business day — three hours after LEA's
+            # ~10:00 publication, so a low reading then is genuinely degraded.
+            fail(src, msg + f" Snapshot taken {lt:%H:%M} LT on a business day, well "
+                            f"after LEA publishes — not the pre-publication dip.")
         else:
-            warn(src, msg + " Before 13:00 LT / not a business day, so this is the "
-                            "normal pre-publication dip — not alarming yet.")
+            warn(src, msg + f" Snapshot taken {lt:%H:%M} LT, before the day's "
+                            f"submissions land — this is the normal dip, not a fault.")
 
 
 def check_history(now):
