@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-10T08:16:33Z",
+ "generated_utc": "2026-08-10T08:46:43Z",
  "price_date": "2026-08-10",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -815,7 +815,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": 0.72,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -826,7 +826,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": 0.72,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -837,7 +837,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": 0.72,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -848,7 +848,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": null,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -3199,10 +3199,10 @@
    "municipality": "Kėdainių r. sav.",
    "lat": 55.297137,
    "lon": 24.07692,
-   "petrol95": 1.809,
-   "diesel": 2.029,
+   "petrol95": 1.799,
+   "diesel": 1.999,
    "lpg": 0.73,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:21+03:00"
   },
   {
    "network": "UAB Mindega",
@@ -5707,10 +5707,10 @@
    "municipality": "Vilkaviškio r. sav.",
    "lat": 54.601906,
    "lon": 23.194935,
-   "petrol95": 1.699,
-   "diesel": 1.929,
-   "lpg": 0.7,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "petrol95": 1.69,
+   "diesel": 1.99,
+   "lpg": 0.74,
+   "price_updated": "2026-08-10T11:37:21+03:00"
   },
   {
    "network": "UAB Melkasta",
@@ -7184,7 +7184,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": 0.73,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:21+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7195,7 +7195,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": 0.72,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7206,7 +7206,7 @@
    "petrol95": 1.79,
    "diesel": 1.99,
    "lpg": null,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7217,7 +7217,7 @@
    "petrol95": 1.799,
    "diesel": 1.999,
    "lpg": 0.73,
-   "price_updated": "2026-08-10T10:30:02+03:00"
+   "price_updated": "2026-08-10T11:37:22+03:00"
   },
   {
    "network": "UAB Alauša",
