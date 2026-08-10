@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-10T08:01:36Z",
+ "generated_utc": "2026-08-10T08:16:33Z",
  "price_date": "2026-08-10",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -903,7 +903,7 @@
    "petrol95": null,
    "diesel": null,
    "lpg": 0.73,
-   "price_updated": "2026-08-10T10:30:03+03:00"
+   "price_updated": "2026-08-10T11:06:21+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -3037,7 +3037,7 @@
    "petrol95": null,
    "diesel": null,
    "lpg": 0.71,
-   "price_updated": "2026-08-10T10:30:03+03:00"
+   "price_updated": "2026-08-10T11:06:21+03:00"
   },
   {
    "network": "UAB Velseka",
