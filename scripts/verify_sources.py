@@ -465,7 +465,14 @@ def check_price_engine(now):
         return warn(src, "no engine metadata in stations.json — published by an "
                          "older fetch_prices? (expected after a rollback)")
     srcs = d.get("sources") or []
-    dead = [x for x in srcs if not x.get("ok")]
+    # A RETIRED channel is a state, not a fault. LEA retired the SharePoint
+    # spreadsheet on 2026-07-28 and has not relinked it (verified 2026-08-10:
+    # zero "sharepoint" occurrences on ena.lt, and /read/prices is the only
+    # endpoint their API exposes — the other four 404). Counting it as "dead"
+    # produced a warning on EVERY run that no action could ever clear, which
+    # trains you to skim past warnings and would have buried the next real one.
+    # It still warns properly if the PORTAL dies, which is the actionable case.
+    dead = [x for x in srcs if not x.get("ok") and not x.get("retired")]
     alive = [x for x in srcs if x.get("ok")]
     if len(alive) <= 1 and dead:
         warn(src, f"running on a single price channel — {', '.join(x['source'] for x in dead)} "

@@ -8,10 +8,19 @@ Data pipeline — LEA has a public JSON API since 2026-07-28:
   REMOVED the SharePoint links from ena.lt and migrated here; portal price coverage went 7% -> 94%
   overnight and matched the final Excel to the 3rd decimal. `updated` = newest `submitted_at`.
   The payload records `price_source: "portal" | "sharepoint"` so you can see which fed a file.
-- FALLBACK: `_sharepoint_stations()` — the old daily Excel, if LEA ever relinks it. The CURRENT
-  one is labelled "Naujausios degalų kainos (YYYY-MM-DD)" (LONG format: Įmonė/Savivaldybė/Adresas/
-  Degalų tipas/Kaina/Pateikimo data); the FIRST sharepoint link is a stale May snapshot in WIDE
-  format — do not use it. `updated` comes from the file's date column, never today().
+- RETIRED: the SharePoint Excel. LEA stripped the links on 2026-07-28 and has NOT restored them
+  (verified 2026-08-10: zero "sharepoint" occurrences on ena.lt). `price_engine.from_sharepoint()`
+  now re-scans the page every run but no longer downloads the one frozen link we still hold, and
+  reports `retired: True` instead of "failing" — `verify_sources.check_price_engine` skips retired
+  channels, so this no longer emits a warning nothing can clear. A relink revives it automatically.
+  If it ever returns: the file is labelled "Naujausios degalų kainos (YYYY-MM-DD)" (LONG format:
+  Įmonė/Savivaldybė/Adresas/Degalų tipas/Kaina/Pateikimo data); the FIRST sharepoint link is a
+  stale May snapshot in WIDE format — do not use it. `updated` comes from the file's date column.
+- **THERE IS NO SECOND PRICE CHANNEL.** `/read/prices` is the only endpoint the portal API exposes
+  (/read/stations, /read/companies, /read/fuel-types, /read/municipalities all 404), and
+  /dk-zemelapis/ publishes no data endpoint. Power BI stays excluded — its `Kaina` is pre-tax,
+  ~25-30% below pump. What protects the app is the never-regress guard in fetch_prices plus the
+  freshness gates, NOT redundancy. Restoring a real second source needs a non-LEA origin.
 - scripts/fetch_lea_portal.py — same API, folded per station: official operator-registered
   lat/lon (fixed 120 wrong pins), consumer brand, logo, per-station submit timestamps.
   merge_chain_coords.py applies those coords last (coord_source="lea_portal").

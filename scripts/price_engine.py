@@ -11,9 +11,19 @@ lockstep (owner's observation, 2026-07-29, confirmed by measurement):
   * PORTAL  degalukainos.ena.lt  — operators self-service. Measured 111 distinct
     submitted_at values in one day, including stations updating at 12:39 in the
     AFTERNOON. This is a genuine intraday feed, not a daily dump.
-  * SPREADSHEET  the daily SharePoint Excel — the official snapshot. Sometimes
-    carries a new day before the other channels show it.
+  * SPREADSHEET  the daily SharePoint Excel — RETIRED by LEA on 2026-07-28 and
+    still gone (verified 2026-08-10: zero "sharepoint" occurrences on ena.lt).
+    Kept as a revival watch only: the page is re-scanned every run, so a relink
+    revives the channel automatically. See from_sharepoint().
   * POWER BI  the /dk-irankis/ monitoring tool — often LAGS the spreadsheet.
+
+SINGLE-CHANNEL REALITY (2026-08-10). LEA consolidated everything into ONE API:
+/read/prices is the only endpoint their portal exposes — /read/stations,
+/read/companies, /read/fuel-types and /read/municipalities all 404. There is no
+second official price surface left to race, so the redundancy this file was
+built for cannot currently be restored. What still protects the app is the
+never-regress guard in fetch_prices (a failed fetch cannot overwrite good data
+with worse) plus the freshness gates, NOT a second channel.
 
 Nominal publication is 10:00 LT, "sometimes a little later". So whichever
 channel happens to lead at a given minute should win. This engine polls every
@@ -101,7 +111,7 @@ def snapshot_ts(date_str):
 
 def _result(name, ok, stations=None, date=None, error=None):
     return {"source": name, "ok": ok, "stations": stations or [],
-            "date": date, "error": error,
+            "date": date, "error": error, "retired": False,
             "fetched_utc": _now_utc().replace(microsecond=0).isoformat() + "Z"}
 
 
@@ -162,8 +172,24 @@ def _remember_link(url):
 
 
 def from_sharepoint():
-    """The official daily Excel. Links vanished from ena.lt on 2026-07-28, so we
-    try any that reappear on the page FIRST, then the last-known ones."""
+    """The official daily Excel — RETIRED BY LEA, kept only as a revival watch.
+
+    LEA stripped the links on 2026-07-28 and has not restored them: verified
+    2026-08-10, ena.lt contains ZERO occurrences of "sharepoint" and no price
+    file of any kind. The single link we still hold points at a FIXED file, so
+    it is frozen on 2026-07-28 forever.
+
+    Downloading that frozen workbook every 15-minute run cost a request and an
+    Excel parse to produce a result the stale-channel guard then threw away, and
+    it reported the channel as "failing" — a fault that can never be cleared,
+    which is exactly the kind of permanent warning that teaches you to ignore
+    warnings.
+
+    So: still scan ena.lt every run (cheap, and it means a relink revives this
+    channel automatically with no code change), but if the page offers nothing,
+    report RETIRED rather than pretending to fetch. Retired is a state, not a
+    fault — see check_price_engine, which no longer counts it as a dead channel.
+    """
     import fetch_prices as fp
     import requests
     urls = []
@@ -173,9 +199,14 @@ def from_sharepoint():
         urls += [c["href"] for c in fp.find_price_candidates(html)]
     except Exception as e:
         print(f"[engine] ena.lt page scan failed: {type(e).__name__}: {e}")
-    urls += [u for u in _known_links() if u not in urls]
     if not urls:
-        raise RuntimeError("no SharePoint link known or discoverable")
+        # Deliberately NOT falling back to _known_links(): that link is the
+        # frozen one, and fetching it only manufactures a stale result.
+        r = _result("sharepoint", False,
+                    error="retired by LEA on 2026-07-28 — no price file listed on "
+                          "ena.lt; watching for a relink every run")
+        r["retired"] = True
+        return r
     last = None
     for u in urls[:4]:
         try:
@@ -255,7 +286,11 @@ def resolve():
     for name, fn in SOURCES.items():
         try:
             r = fn()
-            print(f"[engine] {name}: OK, date {r['date']}, {len(r['stations'])} stations")
+            if r["ok"]:
+                print(f"[engine] {name}: OK, date {r['date']}, {len(r['stations'])} stations")
+            else:
+                state = "RETIRED" if r.get("retired") else "unavailable"
+                print(f"[engine] {name}: {state} — {r.get('error')}")
         except Exception as e:
             r = _result(name, False, error=f"{type(e).__name__}: {e}")
             print(f"[engine] {name}: FAILED — {r['error']}")
@@ -300,7 +335,8 @@ def resolve():
     meta = {
         "resolved_utc": _now_utc().replace(microsecond=0).isoformat() + "Z",
         "winner_counts": by_src,
-        "sources": [{k: r[k] for k in ("source", "ok", "date", "error", "fetched_utc")}
+        "sources": [{k: r.get(k) for k in ("source", "ok", "date", "error",
+                                                   "retired", "fetched_utc")}
                     for r in results],
     }
     print(f"[engine] merged {len(stations)} stations ({len(priced)} priced), "
