@@ -5333,9 +5333,9 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:03",
-      "lat": 56.318881,
-      "lon": 22.318919,
-      "approx": false,
+      "lat": 56.311048,
+      "lon": 22.348472,
+      "approx": true,
       "coord_source": "lea_portal"
     },
     {
