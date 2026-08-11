@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-11T07:30:44+00:00Z",
+    "resolved_utc": "2026-08-11T08:15:42+00:00Z",
     "winner_counts": {
-      "portal": 728,
-      "null": 39
+      "portal": 731,
+      "null": 36
     },
     "sources": [
       {
@@ -15,7 +15,7 @@
         "date": "2026-08-11",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-11T07:30:43+00:00Z"
+        "fetched_utc": "2026-08-11T08:15:41+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -23,7 +23,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-11T07:30:44+00:00Z"
+        "fetched_utc": "2026-08-11T08:15:42+00:00Z"
       }
     ]
   },
@@ -32,19 +32,19 @@
       "min": 1.639,
       "avg": 1.79,
       "max": 1.879,
-      "count": 702
+      "count": 705
     },
     "diesel": {
       "min": 1.85,
-      "avg": 2.044,
+      "avg": 2.045,
       "max": 2.15,
-      "count": 704
+      "count": 707
     },
     "lpg": {
       "min": 0.66,
       "avg": 0.767,
       "max": 0.94,
-      "count": 570
+      "count": 573
     }
   },
   "stations": [
@@ -475,9 +475,13 @@
       "address": "Anykščiai, Vienuolio g. 34A, 29148",
       "municipality": "Anykščių r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.809,
+      "diesel": 2.079,
+      "lpg": 0.709,
+      "price_updated": "2026-08-11T11:03:38+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:03",
       "lat": 55.5226,
       "lon": 25.087988,
       "approx": false
@@ -779,9 +783,13 @@
       "address": "Vievis, Kauno g. 55A, 21371",
       "municipality": "Elektrėnų sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.869,
+      "diesel": 2.139,
+      "lpg": 0.839,
+      "price_updated": "2026-08-11T11:03:38+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:03",
       "lat": 54.775219,
       "lon": 24.810495,
       "approx": false
@@ -1167,10 +1175,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": null,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.078909,
       "lon": 23.396923,
       "approx": false
@@ -1183,10 +1191,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.72,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.082536,
       "lon": 22.788996,
       "approx": false
@@ -1199,10 +1207,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.72,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.077197,
       "lon": 22.751,
       "approx": false
@@ -1215,10 +1223,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.72,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.085493,
       "lon": 22.745538,
       "approx": false
@@ -4552,13 +4560,13 @@
       "address": "Aristava, Aristavos g. 4, 58111",
       "municipality": "Kėdainių r. sav.",
       "locality": "",
-      "petrol95": 1.799,
-      "diesel": 1.999,
-      "lpg": 0.73,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "petrol95": 1.769,
+      "diesel": 2.039,
+      "lpg": 0.769,
+      "price_updated": "2026-08-11T11:10:56+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.297137,
       "lon": 24.07692,
       "approx": false
@@ -7004,9 +7012,13 @@
       "address": "Rokiškis, Respublikos g. 113B, 42150",
       "municipality": "Rokiškio r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.779,
+      "diesel": 2.073,
+      "lpg": 0.839,
+      "price_updated": "2026-08-11T11:03:38+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:03",
       "lat": 55.946682,
       "lon": 25.591055,
       "approx": false
@@ -8091,10 +8103,10 @@
       "petrol95": 1.69,
       "diesel": 1.99,
       "lpg": 0.74,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:56+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 54.601906,
       "lon": 23.194935,
       "approx": false,
@@ -10181,10 +10193,10 @@
       "petrol95": 1.79,
       "diesel": 1.99,
       "lpg": null,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.021603,
       "lon": 22.969559,
       "approx": false,
@@ -10198,10 +10210,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.72,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 55.063839,
       "lon": 22.780717,
       "approx": false
@@ -10214,10 +10226,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.73,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 54.954139,
       "lon": 23.024637,
       "approx": false
@@ -10230,10 +10242,10 @@
       "petrol95": 1.799,
       "diesel": 1.999,
       "lpg": 0.73,
-      "price_updated": "2026-08-11T10:30:03+03:00",
+      "price_updated": "2026-08-11T11:10:56+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "11:10",
       "lat": 54.952753,
       "lon": 23.080294,
       "approx": false
