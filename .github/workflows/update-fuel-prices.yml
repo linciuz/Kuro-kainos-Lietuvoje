@@ -75,6 +75,15 @@ jobs:
       - name: Fetch Orlen wholesale reference
         run: python scripts/fetch_orlen_wholesale.py || echo "Orlen wholesale fetch failed (non-fatal)"
 
+      # Our ONLY non-LEA price opinion. Surveyed the six biggest chains on
+      # 2026-08-11: Viada, Baltic Petroleum, Neste, Emsi and Orlen retail all
+      # decline to publish pump prices publicly, so Saurida is the sole chain
+      # that lets us ask "does LEA still match what the operator itself says?".
+      # DAILY only, not every 15 min — it is a 282 KB page and a cross-check,
+      # not a price source; check_saurida allows 72h of age.
+      - name: Saurida per-station prices (independent LEA cross-check)
+        run: python scripts/fetch_saurida.py || echo "Saurida cross-check failed (non-fatal)"
+
       - name: Compare sources vs LEA -> discrepancies.json
         run: python scripts/compare.py || echo "compare failed (non-fatal)"
 

@@ -575,6 +575,59 @@ def check_history(now):
 
 # -------------------------------------------------------------------- main --
 
+def check_saurida(now):
+    """Our ONLY non-LEA price source — a genuine second opinion.
+
+    Surveyed the six biggest chains 2026-08-11: Viada, Baltic Petroleum, Neste,
+    Emsi and Orlen retail all decline to publish pump prices publicly (per-user
+    app pricing, or stated policy). Saurida is the sole exception and publishes
+    a per-station table, so it is the one place we can ask "does LEA still match
+    what the operator itself says?".
+
+    It earned its place immediately: on 2026-08-11 LEA had Saurida frozen at
+    petrol95 1.650 / diesel 1.850 since 08-06 — six days — while Saurida's own
+    page said 1.690 / 1.900 and other chains moved repeatedly.
+
+    WARNS, never fails. A divergence means LEA lags for one 34-station chain;
+    that is worth knowing, not worth reddening a run. Aggregator sites are
+    deliberately not used as a cross-check — degalukaina.lt and friends take
+    their data FROM LEA, so they would launder LEA back in as a fake second
+    opinion and make the pipeline look redundant while it is not."""
+    src = "saurida"
+    try:
+        d = load("data/sources/saurida.json")
+        fetched = parse_utc(d["fetched"])
+    except FileNotFoundError:
+        return warn(src, "saurida.json not present yet — the cross-check has not run.")
+    except Exception as e:
+        return fail(src, f"unreadable saurida.json: {type(e).__name__}: {e}")
+
+    age_h = (now - fetched).total_seconds() / 3600
+    if age_h > 72:
+        return warn(src, f"cross-check is {age_h:.0f}h old (>72h) — the Saurida fetch "
+                         f"is failing, so we have lost our only non-LEA price opinion.")
+    try:
+        lea = load("data/stations.json").get("stations") or []
+    except Exception:
+        return
+    ours = [s for s in lea if s.get("network") == "UAB Saurida"]
+    if not ours:
+        return
+    for fuel in ("petrol95", "diesel"):
+        theirs = (d.get("summary") or {}).get(fuel) or {}
+        vals = sorted(s[fuel] for s in ours if isinstance(s.get(fuel), (int, float)))
+        if not vals or "min" not in theirs:
+            continue
+        gap = theirs["min"] - vals[0]
+        # 0.02 EUR/l: comfortably above rounding (LEA carries Saurida at 2
+        # decimals, the chain page at 2) and below any real intraday move.
+        if abs(gap) > 0.02:
+            warn(src, f"Saurida's own page says {fuel} from {theirs['min']:.3f} but LEA "
+                      f"has {vals[0]:.3f} ({gap:+.3f}) — LEA looks stale for this chain's "
+                      f"{len(vals)} stations. The operator's own page is the fresher "
+                      f"authority here; we still publish LEA.")
+
+
 def run_all_checks(now):
     """THE canonical rule set. Both the evaluate pass and any direct run go
     through here — a second copy of this list once drifted (Circle K's
@@ -595,6 +648,7 @@ def run_all_checks(now):
     check_electricity(now)
     check_ev(now)
     check_chain(now)
+    check_saurida(now)
     check_portal(now)
     check_price_engine(now)
     check_history(now)
