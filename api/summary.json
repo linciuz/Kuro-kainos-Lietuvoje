@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-10",
+ "price_date": "2026-08-11",
  "currency": "EUR",
- "stations_with_prices": 721,
+ "stations_with_prices": 728,
  "national": {
   "petrol95": {
-   "min": 1.619,
-   "avg": 1.736,
-   "max": 1.899,
-   "count": 699
+   "min": 1.639,
+   "avg": 1.79,
+   "max": 1.879,
+   "count": 702
   },
   "diesel": {
-   "min": 1.879,
-   "avg": 1.984,
-   "max": 2.17,
-   "count": 701
+   "min": 1.85,
+   "avg": 2.044,
+   "max": 2.15,
+   "count": 704
   },
   "lpg": {
    "min": 0.66,
-   "avg": 0.766,
+   "avg": 0.767,
    "max": 0.94,
-   "count": 565
+   "count": 570
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.619,
-   "network": "UAB Baltic Petroleum",
-   "address": "Klaipėda, Liepų g. 79A, 92195",
-   "municipality": "Klaipėdos m. sav."
+   "price": 1.639,
+   "network": "UAB Emsi",
+   "address": "Lazdijų sen., Janaslavo k. 11, 67170",
+   "municipality": "Lazdijų r. sav."
   },
   "diesel": {
-   "price": 1.879,
-   "network": "UAB Baltic Petroleum",
-   "address": "Mažeikiai, M. Daukšos g. 17, 89234",
-   "municipality": "Mažeikių r. sav."
+   "price": 1.85,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.66,
