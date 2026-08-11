@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-11T06:34:59+00:00Z",
+    "resolved_utc": "2026-08-11T07:00:50+00:00Z",
     "winner_counts": {
       "portal": 721,
       "null": 46
@@ -15,7 +15,7 @@
         "date": "2026-08-10",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-11T06:34:58+00:00Z"
+        "fetched_utc": "2026-08-11T07:00:49+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -23,7 +23,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-11T06:34:59+00:00Z"
+        "fetched_utc": "2026-08-11T07:00:50+00:00Z"
       }
     ]
   },
