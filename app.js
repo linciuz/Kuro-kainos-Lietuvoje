@@ -2313,7 +2313,14 @@ function stationCardHtml(s, best, worst) {
             // one case where we know more than the official snapshot, so it is
             // worth a line. Stations still on the 10:00 file show nothing
             // (a clock on all 700 would be noise, not information).
-            const intraday = s.price_intraday && s.price_time
+            // Attribution has to be PER STATION now: since 2026-08-11 a handful
+            // of Saurida stations are served from the chain's own page because
+            // LEA had them frozen for six days. The footer still credits LEA,
+            // which is true for ~96% of stations — but claiming it for these
+            // would be wrong, so they say where the number actually came from.
+            const intraday = s.price_src === "saurida"
+                ? `<div class="intraday-line" title="${escAttr(t("price_operator_hint"))}">🏷️ ${esc(t("price_operator"))}</div>`
+                : s.price_intraday && s.price_time
                 ? `<div class="intraday-line" title="${escAttr(t("price_intraday_hint"))}">🕒 ${esc(t("price_intraday", { time: s.price_time }))}</div>`
                 : "";
             const rep = reportFor(s);

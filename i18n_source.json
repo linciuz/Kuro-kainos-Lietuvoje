@@ -2897,5 +2897,31 @@
   "sv": "LEA-postens tid — nyare än 10:00-listan (priset kan vara oförändrat)",
   "fi": "LEA-tietueen aika — uudempi kuin klo 10:00 lista (hinta voi olla ennallaan)",
   "no": "LEA-oppføringens tid — nyere enn 10:00-listen (prisen kan være uendret)"
+ },
+ "price_operator": {
+  "lt": "tinklo skelbiama kaina",
+  "en": "operator's own price",
+  "lv": "tīkla publicētā cena",
+  "et": "keti enda avaldatud hind",
+  "uk": "ціна від мережі",
+  "ru": "цена с сайта сети",
+  "pl": "cena podana przez sieć",
+  "de": "Preis der Kette selbst",
+  "sv": "kedjans eget pris",
+  "fi": "ketjun oma hinta",
+  "no": "kjedens egen pris"
+ },
+ "price_operator_hint": {
+  "lt": "Kainą skelbia pats degalinių tinklas savo svetainėje — ji naujesnė nei LEA sąrašas.",
+  "en": "Published by the fuel chain itself on its own website — newer than the LEA list.",
+  "lv": "Publicē pati degvielas ķēde savā vietnē — jaunāka nekā LEA saraksts.",
+  "et": "Avaldab kütuseketi ise oma veebilehel — värskem kui LEA nimekiri.",
+  "uk": "Оприлюднено самою мережею АЗС на її сайті — новіше за перелік LEA.",
+  "ru": "Опубликовано самой сетью АЗС на её сайте — новее списка LEA.",
+  "pl": "Publikowana przez samą sieć stacji na jej stronie — nowsza niż lista LEA.",
+  "de": "Von der Tankstellenkette selbst veröffentlicht — neuer als die LEA-Liste.",
+  "sv": "Publicerat av bensinkedjan själv — nyare än LEA-listan.",
+  "fi": "Ketjun itsensä julkaisema hinta — tuoreempi kuin LEA:n lista.",
+  "no": "Publisert av kjeden selv — nyere enn LEA-listen."
  }
 }

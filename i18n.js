@@ -224,7 +224,9 @@ const STRINGS = {
     "prices_by_city": "Kainos pagal miestus",
     "open_data": "Atviri duomenys",
     "price_intraday": "atnaujinta {time}",
-    "price_intraday_hint": "LEA įrašo laikas — naujesnis nei 10:00 sąrašas (pati kaina gali būti nepakitusi)"
+    "price_intraday_hint": "LEA įrašo laikas — naujesnis nei 10:00 sąrašas (pati kaina gali būti nepakitusi)",
+    "price_operator": "tinklo skelbiama kaina",
+    "price_operator_hint": "Kainą skelbia pats degalinių tinklas savo svetainėje — ji naujesnė nei LEA sąrašas."
   },
   "lv": {
     "btn_diesel": "🚛 Dīzelis",
@@ -449,7 +451,9 @@ const STRINGS = {
     "prices_by_city": "Cenas pēc pilsētām",
     "open_data": "Atvērtie dati",
     "price_intraday": "atjaunināts {time}",
-    "price_intraday_hint": "LEA ieraksta laiks — jaunāks nekā plkst. 10:00 saraksts (cena var būt nemainīga)"
+    "price_intraday_hint": "LEA ieraksta laiks — jaunāks nekā plkst. 10:00 saraksts (cena var būt nemainīga)",
+    "price_operator": "tīkla publicētā cena",
+    "price_operator_hint": "Publicē pati degvielas ķēde savā vietnē — jaunāka nekā LEA saraksts."
   },
   "et": {
     "btn_diesel": "🚛 Diisel",
@@ -674,7 +678,9 @@ const STRINGS = {
     "prices_by_city": "Hinnad linnade kaupa",
     "open_data": "Avaandmed",
     "price_intraday": "uuendatud {time}",
-    "price_intraday_hint": "LEA kirje aeg — uuem kui kella 10:00 nimekiri (hind ise võib olla muutumatu)"
+    "price_intraday_hint": "LEA kirje aeg — uuem kui kella 10:00 nimekiri (hind ise võib olla muutumatu)",
+    "price_operator": "keti enda avaldatud hind",
+    "price_operator_hint": "Avaldab kütuseketi ise oma veebilehel — värskem kui LEA nimekiri."
   },
   "en": {
     "btn_diesel": "🚛 Diesel",
@@ -899,7 +905,9 @@ const STRINGS = {
     "prices_by_city": "Prices by city",
     "open_data": "Open data",
     "price_intraday": "updated {time}",
-    "price_intraday_hint": "LEA record time — newer than the 10:00 list (the price itself may be unchanged)"
+    "price_intraday_hint": "LEA record time — newer than the 10:00 list (the price itself may be unchanged)",
+    "price_operator": "operator's own price",
+    "price_operator_hint": "Published by the fuel chain itself on its own website — newer than the LEA list."
   },
   "uk": {
     "btn_diesel": "🚛 Дизель",
@@ -1124,7 +1132,9 @@ const STRINGS = {
     "prices_by_city": "Ціни за містами",
     "open_data": "Відкриті дані",
     "price_intraday": "оновлено {time}",
-    "price_intraday_hint": "Час запису LEA — новіший за список о 10:00 (сама ціна могла не змінитися)"
+    "price_intraday_hint": "Час запису LEA — новіший за список о 10:00 (сама ціна могла не змінитися)",
+    "price_operator": "ціна від мережі",
+    "price_operator_hint": "Оприлюднено самою мережею АЗС на її сайті — новіше за перелік LEA."
   },
   "ru": {
     "btn_diesel": "🚛 Дизель",
@@ -1349,7 +1359,9 @@ const STRINGS = {
     "prices_by_city": "Цены по городам",
     "open_data": "Открытые данные",
     "price_intraday": "обновлено {time}",
-    "price_intraday_hint": "Время записи LEA — новее списка в 10:00 (сама цена могла не измениться)"
+    "price_intraday_hint": "Время записи LEA — новее списка в 10:00 (сама цена могла не измениться)",
+    "price_operator": "цена с сайта сети",
+    "price_operator_hint": "Опубликовано самой сетью АЗС на её сайте — новее списка LEA."
   },
   "pl": {
     "btn_diesel": "🚛 Diesel",
@@ -1574,7 +1586,9 @@ const STRINGS = {
     "prices_by_city": "Ceny według miast",
     "open_data": "Otwarte dane",
     "price_intraday": "zaktualizowano {time}",
-    "price_intraday_hint": "Czas wpisu LEA — nowszy niż lista z 10:00 (sama cena może być bez zmian)"
+    "price_intraday_hint": "Czas wpisu LEA — nowszy niż lista z 10:00 (sama cena może być bez zmian)",
+    "price_operator": "cena podana przez sieć",
+    "price_operator_hint": "Publikowana przez samą sieć stacji na jej stronie — nowsza niż lista LEA."
   },
   "de": {
     "btn_diesel": "🚛 Diesel",
@@ -1799,7 +1813,9 @@ const STRINGS = {
     "prices_by_city": "Preise nach Stadt",
     "open_data": "Offene Daten",
     "price_intraday": "aktualisiert {time}",
-    "price_intraday_hint": "LEA-Datensatzzeit — neuer als die 10:00-Liste (der Preis selbst kann unverändert sein)"
+    "price_intraday_hint": "LEA-Datensatzzeit — neuer als die 10:00-Liste (der Preis selbst kann unverändert sein)",
+    "price_operator": "Preis der Kette selbst",
+    "price_operator_hint": "Von der Tankstellenkette selbst veröffentlicht — neuer als die LEA-Liste."
   },
   "sv": {
     "btn_diesel": "🚛 Diesel",
@@ -2024,7 +2040,9 @@ const STRINGS = {
     "prices_by_city": "Priser per stad",
     "open_data": "Öppna data",
     "price_intraday": "uppdaterad {time}",
-    "price_intraday_hint": "LEA-postens tid — nyare än 10:00-listan (priset kan vara oförändrat)"
+    "price_intraday_hint": "LEA-postens tid — nyare än 10:00-listan (priset kan vara oförändrat)",
+    "price_operator": "kedjans eget pris",
+    "price_operator_hint": "Publicerat av bensinkedjan själv — nyare än LEA-listan."
   },
   "fi": {
     "btn_diesel": "🚛 Diesel",
@@ -2249,7 +2267,9 @@ const STRINGS = {
     "prices_by_city": "Hinnat kaupungeittain",
     "open_data": "Avoin data",
     "price_intraday": "päivitetty {time}",
-    "price_intraday_hint": "LEA-tietueen aika — uudempi kuin klo 10:00 lista (hinta voi olla ennallaan)"
+    "price_intraday_hint": "LEA-tietueen aika — uudempi kuin klo 10:00 lista (hinta voi olla ennallaan)",
+    "price_operator": "ketjun oma hinta",
+    "price_operator_hint": "Ketjun itsensä julkaisema hinta — tuoreempi kuin LEA:n lista."
   },
   "no": {
     "btn_diesel": "🚛 Diesel",
@@ -2474,7 +2494,9 @@ const STRINGS = {
     "prices_by_city": "Priser etter by",
     "open_data": "Åpne data",
     "price_intraday": "oppdatert {time}",
-    "price_intraday_hint": "LEA-oppføringens tid — nyere enn 10:00-listen (prisen kan være uendret)"
+    "price_intraday_hint": "LEA-oppføringens tid — nyere enn 10:00-listen (prisen kan være uendret)",
+    "price_operator": "kjedens egen pris",
+    "price_operator_hint": "Publisert av kjeden selv — nyere enn LEA-listen."
   }
 };
 let lang = (function () {

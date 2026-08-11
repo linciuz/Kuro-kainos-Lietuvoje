@@ -280,6 +280,117 @@ def merge(results):
     return list(merged.values())
 
 
+SAURIDA_PATH = os.path.join("data", "sources", "saurida.json")
+SAURIDA_NETWORK = "UAB Saurida"
+SAURIDA_MAX_AGE_H = 48        # fetched daily; older than this and we do not trust it
+SAURIDA_MAX_GAP = 0.25        # a bigger median gap means a different price BASIS, not a move
+SAURIDA_STOP = {"sav", "k", "g", "pr", "al", "r", "m", "kel", "plentas"}
+
+
+def _deacc(x):
+    import unicodedata
+    x = unicodedata.normalize("NFKD", (x or "").lower())
+    return "".join(c for c in x if not unicodedata.combining(c))
+
+
+def _stems(x, n=5):
+    """Lithuanian place names decline hard — the operator writes "Pasakarniai"
+    where LEA writes "Pasakarniu k.". Comparing 5-char stems bridges that; whole
+    words do not (measured: naive matching found 2/34, stems find 29/34)."""
+    ws = re.sub(r"[^a-z0-9]+", " ", _deacc(x)).split()
+    return {w[:n] for w in ws if len(w) > 3 and w not in SAURIDA_STOP}
+
+
+def _nums(x):
+    return set(re.findall(r"\b\d{1,3}[a-z]?\b", _deacc(x)))
+
+
+def saurida_overlay(stations):
+    """Serve Saurida's OWN published prices where they are newer than LEA's.
+
+    Saurida is the only Lithuanian chain besides Circle K that publishes real
+    per-station prices (surveyed 2026-08-11: Viada, Baltic Petroleum, Neste,
+    Emsi and Orlen retail all decline to). It is therefore the only place we can
+    beat LEA when LEA lags — and LEA does lag: measured 2026-08-11, LEA had this
+    chain frozen at 1.650/1.850 since 08-06 while the operator showed 1.690/1.900.
+
+    A MIS-JOIN WOULD BE THE WORST BUG THIS APP CAN HAVE — one station's price
+    shown at another station's address — so a row is used ONLY when it has a
+    single unambiguous winner. Validation that the joins are right, run against
+    live data: every one of the 27 matched petrol95 pairs showed the identical
+    +0.040 offset, and diesel 24/27 at +0.050. Random mis-joins cannot produce
+    a constant offset; a scattered distribution here would mean the matcher is
+    wrong, which is exactly what the basis guard below re-checks every run.
+    """
+    try:
+        d = json.load(open(SAURIDA_PATH, encoding="utf-8"))
+        fetched = _parse_ts(d["fetched"])
+    except (OSError, json.JSONDecodeError, KeyError, TypeError):
+        return 0
+    if not fetched or (_now_utc() - fetched).total_seconds() / 3600 > SAURIDA_MAX_AGE_H:
+        print("[engine] saurida: cross-check too old to serve — leaving LEA prices")
+        return 0
+
+    rows = d.get("prices") or []
+    ours = [s for s in stations if s.get("network") == SAURIDA_NETWORK]
+    pairs = []
+    used = set()
+    for p in rows:
+        ps, pn = _stems(p.get("name")), _nums(p.get("name"))
+        cands = []
+        for i, s in enumerate(ours):
+            if i in used:
+                continue
+            overlap = ps & _stems(f"{s.get('address')} {s.get('municipality')}")
+            if not overlap:
+                continue
+            score = len(overlap) + (2 if pn and pn & _nums(s.get("address")) else 0)
+            cands.append((score, i))
+        cands.sort(key=lambda t: -t[0])
+        # A single CLEAR winner only. Ties are ambiguous and get dropped.
+        if cands and (len(cands) == 1 or cands[0][0] > cands[1][0]):
+            used.add(cands[0][1])
+            pairs.append((p, ours[cands[0][1]]))
+
+    # BASIS GUARD. The chain being a few cents off LEA is a price move; being far
+    # off means we are reading a different KIND of number (ex-VAT, a promo, or a
+    # shifted column) and must not publish it. Cheap, and it re-validates the
+    # matcher every run rather than trusting a one-off measurement.
+    gaps = [abs(p[f] - s[f]) for p, s in pairs for f in FUELS
+            if p.get(f) is not None and isinstance(s.get(f), (int, float))]
+    if gaps:
+        gaps.sort()
+        median_gap = gaps[len(gaps) // 2]
+        if median_gap > SAURIDA_MAX_GAP:
+            print(f"::warning::[engine] saurida median gap vs LEA is {median_gap:.3f} "
+                  f"(>{SAURIDA_MAX_GAP}) — refusing to serve; wrong price basis or bad join.")
+            return 0
+
+    local = fetched.astimezone(VILNIUS)
+    stamp = local.replace(microsecond=0).isoformat()
+    applied = 0
+    for p, s in pairs:
+        prev = _parse_ts(s.get("price_updated"))
+        if prev and fetched <= prev:
+            continue            # LEA already has something newer — leave it alone
+        touched = False
+        for f in FUELS:
+            v = p.get(f)
+            if v is None or v == s.get(f):
+                continue
+            s[f] = v
+            touched = True
+        if touched:
+            s["price_updated"] = stamp
+            s["price_src"] = "saurida"
+            s.pop("price_intraday", None)   # not an LEA record stamp; wording differs
+            s.pop("price_time", None)
+            applied += 1
+    print(f"[engine] saurida: {len(pairs)}/{len(rows)} rows joined, {applied} stations "
+          f"served from the operator's own page")
+    return applied
+
+
 def resolve():
     """Poll every source, merge, and report. Returns (stations, updated, meta)."""
     results = []
@@ -324,6 +435,9 @@ def resolve():
     if not ok:
         raise RuntimeError("every price source is stale")
     stations = merge(results)
+    # Applied AFTER the LEA merge and only where it is strictly newer, so LEA
+    # stays the default and the operator's own page only wins when it is ahead.
+    saurida_served = saurida_overlay(stations)
     priced = [s for s in stations if any(s.get(f) is not None for f in FUELS)]
     if len(priced) < 400:
         raise RuntimeError(f"merged result has only {len(priced)} priced stations")
@@ -335,6 +449,7 @@ def resolve():
     meta = {
         "resolved_utc": _now_utc().replace(microsecond=0).isoformat() + "Z",
         "winner_counts": by_src,
+        "saurida_served": saurida_served,
         "sources": [{k: r.get(k) for k in ("source", "ok", "date", "error",
                                                    "retired", "fetched_utc")}
                     for r in results],
