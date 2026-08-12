@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-12T07:30:59Z",
+ "generated_utc": "2026-08-12T08:16:11Z",
  "price_date": "2026-08-12",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.659,
    "avg": 0.763,
    "max": 0.94,
-   "count": 568
+   "count": 571
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Anykščių r. sav."
   }
  },
- "count": 727,
+ "count": 730,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -3709,6 +3709,28 @@
    "diesel": 1.959,
    "lpg": 0.739,
    "price_updated": "2026-08-12T09:42:16+03:00"
+  },
+  {
+   "network": "UAB Naftos dujos",
+   "address": "Mažeikiai, Algirdo g. 42, 89101",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.315943,
+   "lon": 22.314284,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.71,
+   "price_updated": "2026-08-12T11:15:07+03:00"
+  },
+  {
+   "network": "UAB Naftos dujos",
+   "address": "Mažeikiai, Daukšos g. 29 / Žemaitijos g. 69, 89132",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.318881,
+   "lon": 22.318919,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.73,
+   "price_updated": "2026-08-12T11:14:51+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -7988,6 +8010,17 @@
    "diesel": 2.059,
    "lpg": 0.769,
    "price_updated": "2026-08-12T09:53:47+03:00"
+  },
+  {
+   "network": "UAB Naftos dujos",
+   "address": "Švenčionys, Mokyklos g. 23, 18111",
+   "municipality": "Švenčionių r. sav.",
+   "lat": 55.137806,
+   "lon": 26.155728,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.85,
+   "price_updated": "2026-08-12T11:15:20+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
