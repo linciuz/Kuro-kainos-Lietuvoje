@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T10:31:08Z",
+  "generated": "2026-08-12T12:01:08Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
@@ -54,6 +54,5 @@
       "lpg": 0.659
     },
     "url": "https://www.viada.lt/akcija/super-treciadieniai/"
-  },
-  "generated_stale_kept": true
+  }
 }
