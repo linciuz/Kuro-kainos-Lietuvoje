@@ -1,46 +1,46 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-12",
+ "price_date": "2026-08-13",
  "currency": "EUR",
- "stations_with_prices": 760,
+ "stations_with_prices": 743,
  "national": {
   "petrol95": {
-   "min": 1.639,
-   "avg": 1.766,
-   "max": 1.879,
-   "count": 734
+   "min": 1.649,
+   "avg": 1.761,
+   "max": 1.87,
+   "count": 717
   },
   "diesel": {
-   "min": 1.869,
-   "avg": 2.021,
-   "max": 2.15,
-   "count": 736
+   "min": 1.04,
+   "avg": 2.017,
+   "max": 2.139,
+   "count": 719
   },
   "lpg": {
-   "min": 0.659,
-   "avg": 0.758,
+   "min": 0.66,
+   "avg": 0.765,
    "max": 0.94,
-   "count": 601
+   "count": 585
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.639,
+   "price": 1.649,
    "network": "UAB Baltic Petroleum",
-   "address": "Anykščiai, Mindaugo g. 23, 29141",
-   "municipality": "Anykščių r. sav."
+   "address": "Šilutė, Klaipėdos g. 4A, 99116",
+   "municipality": "Šilutės r. sav."
   },
   "diesel": {
-   "price": 1.869,
-   "network": "UAB Baltic Petroleum",
-   "address": "Anykščiai, Mindaugo g. 23, 29141",
-   "municipality": "Anykščių r. sav."
+   "price": 1.04,
+   "network": "UAB Apsaga",
+   "address": "Radikių k., 13, 84164",
+   "municipality": "Joniškio r. sav."
   },
   "lpg": {
-   "price": 0.659,
-   "network": "UAB Alauša",
-   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
-   "municipality": "Anykščių r. sav."
+   "price": 0.66,
+   "network": "UAB Madalva",
+   "address": "Plungė, Lentpjūvės g. 10A, 90118",
+   "municipality": "Plungės r. sav."
   }
  },
  "source": "Lietuvos energetikos agentura (LEA)",
