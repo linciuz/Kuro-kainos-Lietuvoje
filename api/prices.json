@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-13T07:30:59Z",
+ "generated_utc": "2026-08-13T07:45:52Z",
  "price_date": "2026-08-13",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -24,8 +24,8 @@
    "count": 717
   },
   "diesel": {
-   "min": 1.04,
-   "avg": 2.017,
+   "min": 1.889,
+   "avg": 2.018,
    "max": 2.139,
    "count": 719
   },
@@ -44,10 +44,10 @@
    "municipality": "Šilutės r. sav."
   },
   "diesel": {
-   "price": 1.04,
-   "network": "UAB Apsaga",
-   "address": "Radikių k., 13, 84164",
-   "municipality": "Joniškio r. sav."
+   "price": 1.889,
+   "network": "UAB Baltic Petroleum",
+   "address": "Noriūnų k., Parko g. 3A, 40395",
+   "municipality": "Kupiškio r. sav."
   },
   "lpg": {
    "price": 0.66,
@@ -769,9 +769,9 @@
    "lat": 56.207315,
    "lon": 23.5803,
    "petrol95": 1.77,
-   "diesel": 1.04,
+   "diesel": 2.04,
    "lpg": 0.789,
-   "price_updated": "2026-08-13T09:13:45+03:00"
+   "price_updated": "2026-08-13T10:36:24+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
