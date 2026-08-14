@@ -36,6 +36,13 @@ for _s in (sys.stdout, sys.stderr):
 
 VILNIUS = ZoneInfo("Europe/Vilnius")
 
+# Business days an upstream may legitimately show the SAME self-stated date
+# before we call the page dead rather than merely unchanged. Chains hold a
+# price for days in a flat market (measured: Circle K held "rugpjucio 7"
+# across a weekend and "rugpjucio 12" for three days), so this has to clear
+# a normal quiet week without firing.
+STATED_DEAD_BD = 10
+
 FAILURES, WARNINGS = [], []
 
 
@@ -274,9 +281,39 @@ def _check_daily_pricefile(src, path, now, fuels=("petrol95", "diesel"), stated_
         for _ in range(stated_lag_bd):
             allowed = prev_business_day(allowed)
         if stated < allowed:
-            fail(src, f"upstream page still shows its own date as {stated} "
-                      f"(needs >= {allowed}) - the SITE is frozen even though the "
-                      f"scraper runs fine; users see an outdated reference price.")
+            # A CHANGE-DRIVEN LABEL CANNOT PROVE FRESHNESS, so an old one only
+            # warns. Circle K bumps its date exactly when prices move — measured
+            # over two weeks of our own history, the label and the prices always
+            # moved TOGETHER: 08-07 @1.689/1.949, 08-10 @1.819/2.089, 08-11
+            # @1.749/2.009, 08-12 @1.729/1.989, then three days with BOTH
+            # unchanged. "rugpjucio 7" likewise held across a whole weekend.
+            #
+            # So a stale label means "prices have not changed", which is normal
+            # market behaviour, not a frozen site — and failing on it produced a
+            # red run every time a chain simply held its price for two days.
+            # There is no way to tell frozen-page from unchanged-prices out of
+            # this label alone, so it must not be a hard gate.
+            #
+            # Proportionate because these files are NOT published prices:
+            # circlek.json feeds compare.py's discrepancy report only, and
+            # circlek_business.json is shown with its own stated date, so a
+            # stale value is displayed honestly rather than passed off as today.
+            # The real scraper-failure detector is the `fetched` rule above,
+            # which is untouched and still fails hard.
+            behind = 0
+            probe = allowed
+            while probe > stated and behind < STATED_DEAD_BD:
+                probe = prev_business_day(probe)
+                behind += 1
+            if behind >= STATED_DEAD_BD:
+                fail(src, f"upstream page has shown the same date {stated} for "
+                          f"{STATED_DEAD_BD}+ business days - that is no longer a price "
+                          f"that simply has not moved; the page looks genuinely dead.")
+            else:
+                warn(src, f"upstream page still shows its own date as {stated} "
+                          f"({behind} business day(s) back). Circle K only bumps this when "
+                          f"prices change, so this normally just means prices have held - "
+                          f"it turns red at {STATED_DEAD_BD} business days.")
 
 
 def check_oil(now):
