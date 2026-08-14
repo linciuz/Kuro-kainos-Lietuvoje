@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-14T10:31:19Z",
+ "generated_utc": "2026-08-14T10:37:00Z",
  "price_date": "2026-08-14",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.66,
    "avg": 0.765,
    "max": 0.94,
-   "count": 584
+   "count": 585
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 742,
+ "count": 743,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -5018,6 +5018,17 @@
    "diesel": 2.139,
    "lpg": 0.899,
    "price_updated": "2026-08-14T09:56:35+03:00"
+  },
+  {
+   "network": "UAB DVS Topolis",
+   "address": "Rokiškis, Panevėžio g. 7C, 42163",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.94306,
+   "lon": 25.585657,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.899,
+   "price_updated": "2026-08-14T13:36:12+03:00"
   },
   {
    "network": "UAB Degta",
