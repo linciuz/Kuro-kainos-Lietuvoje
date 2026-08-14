@@ -1,18 +1,10 @@
 {
-  "generated": "2026-08-14T04:01:06Z",
+  "generated": "2026-08-14T04:31:54Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
-  "count": 5,
+  "count": 4,
   "promos": [
-    {
-      "title": "Nuolaidų savaitgaliai (ViadaPLUS)",
-      "url": "https://www.viada.lt/akcija/nuolaidu-savaitgaliai/",
-      "slug": "nuolaidu-savaitgaliai",
-      "fuel_related": true,
-      "kind": "standing",
-      "active": true
-    },
     {
       "title": "Nuolaidos su VIADA STUDY kortele",
       "url": "https://www.viada.lt/akcija/nuolaidos-su-viada-study-kortele/",
