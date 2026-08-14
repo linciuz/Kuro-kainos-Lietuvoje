@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-14T06:59:54Z",
+ "generated_utc": "2026-08-14T07:15:59Z",
  "price_date": "2026-08-13",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -925,7 +925,7 @@
    "petrol95": 1.8,
    "diesel": 1.96,
    "lpg": 0.72,
-   "price_updated": "2026-08-13T17:43:26+03:00"
+   "price_updated": "2026-08-14T09:59:39+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -4819,7 +4819,7 @@
    "petrol95": 1.69,
    "diesel": 1.95,
    "lpg": 0.72,
-   "price_updated": "2026-08-13T17:43:26+03:00"
+   "price_updated": "2026-08-14T09:59:39+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -4830,7 +4830,7 @@
    "petrol95": 1.72,
    "diesel": 1.97,
    "lpg": 0.72,
-   "price_updated": "2026-08-13T17:43:26+03:00"
+   "price_updated": "2026-08-14T09:59:39+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -7778,7 +7778,7 @@
    "petrol95": 1.78,
    "diesel": 2.0,
    "lpg": 0.72,
-   "price_updated": "2026-08-13T17:43:26+03:00"
+   "price_updated": "2026-08-14T09:59:39+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -8042,7 +8042,7 @@
    "petrol95": 1.76,
    "diesel": 1.95,
    "lpg": 0.7,
-   "price_updated": "2026-08-13T17:43:26+03:00"
+   "price_updated": "2026-08-14T09:59:39+03:00"
   },
   {
    "network": "UAB Viada LT",
