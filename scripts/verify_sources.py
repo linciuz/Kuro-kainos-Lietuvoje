@@ -368,10 +368,27 @@ def check_electricity(now):
     lp = d.get("last_point_utc")
     if lp:
         try:
-            age_h = (now - parse_utc(lp)).total_seconds() / 3600
-            if age_h > 30:
-                fail(src, f"newest market point is {age_h:.0f}h old (>30h) - the Elering "
-                          f"feed is frozen even though our fetch runs.")
+            # Judge the FEED by the FETCH's clock, not the gate's — the same bug
+            # class as the portal coverage fix (snapshot time vs run time),
+            # instance four. Measured Sunday 2026-08-16: last_point sat 5 MINUTES
+            # after its own fetch (healthy), but 42h behind `now`, because the
+            # crons are Mon-Fri and nothing had fetched since Friday — so the old
+            # `now - lp` form claimed "the Elering feed is frozen even though our
+            # fetch runs" on a weekend when the fetch deliberately does not run.
+            # (The 08-14 sweep cleared this rule against history from the era
+            # when the Cloudflare Sun..Thu cron bug still ran Sunday pipelines,
+            # which kept weekend data fresh and masked exactly this.)
+            # feed_lag = how far the newest market point trails the moment WE
+            # last fetched: ~0 or negative when healthy (day-ahead points can
+            # lead the fetch), large only when Elering serves frozen data to a
+            # RUNNING fetch — the genuine 2026-08-09 incident (37h) still fires.
+            # A fetch that stops running is the business-day `updated` rule's
+            # job above, exactly like every other source in this file.
+            feed_lag_h = (ts - parse_utc(lp)).total_seconds() / 3600
+            if feed_lag_h > 30:
+                fail(src, f"newest market point trails our own successful fetch by "
+                          f"{feed_lag_h:.0f}h (>30h) - Elering is serving frozen data "
+                          f"to a running fetch.")
         except ValueError:
             fail(src, f"last_point_utc unparseable: {lp!r}")
 
@@ -602,12 +619,31 @@ def check_history(now):
     if last != s_updated:
         fail(src, f"history last entry {last} != published stations date {s_updated} — "
                   f"today's snapshot was never appended (trend chart silently frozen).")
+    # BUSINESS days, not calendar days. This was the only rule in the file that
+    # measured staleness on the wall calendar, and the Lithuanian holiday
+    # calendar can produce SIX calendar days between consecutive business days
+    # (whenever Dec 24/25/26 land Mon-Wed or Wed-Fri astride a weekend:
+    # 2029-12-27, 2031-12-29, 2035-12-27, ... — measured max gap over 2026-2100
+    # is 6, so a threshold of 5 was BELOW what a perfectly healthy pipeline can
+    # legitimately reach). At those moments check_stations — holiday-aware via
+    # required_date() — was green on the very same fact, and this rule reddened
+    # ~7-9 runs every Christmas-bridge morning until LEA published (~11:00).
+    # Verified in both directions: 2029-12-27 healthy -> gap=1 (green); a real
+    # 3-business-day stall -> gap=4 (RED). The business-day form is also
+    # STRICTLY more sensitive on real stalls that the calendar form missed
+    # (Fri run, last publish Mon: 3 business days behind, calendar gap only 4).
+    # check_stations stays the primary detector (red at 13:00 on the FIRST
+    # missed publication); this is the redundant backstop behind it.
     try:
-        days = (now.date() - dt.date.fromisoformat(last)).days
-        if days > 5:
-            fail(src, f"history last entry {last} is {days} days old (>5) — pipeline stalled.")
-    except Exception:
-        fail(src, f"history last date unparseable: {last!r}")
+        last_d = dt.date.fromisoformat(last)
+    except (TypeError, ValueError):
+        return fail(src, f"history last date unparseable: {last!r}")
+    gap, probe = 0, now.date()
+    while probe > last_d and gap < 30:
+        probe = prev_business_day(probe)
+        gap += 1
+    if gap > 3:
+        fail(src, f"history last entry {last} is {gap} business days behind — pipeline stalled.")
 
 
 # -------------------------------------------------------------------- main --
