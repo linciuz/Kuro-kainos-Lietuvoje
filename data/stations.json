@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-17T08:15:50+00:00Z",
+    "resolved_utc": "2026-08-17T08:30:46+00:00Z",
     "winner_counts": {
       "portal": 747,
       "null": 20
@@ -16,7 +16,7 @@
         "date": "2026-08-17",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-17T08:15:49+00:00Z"
+        "fetched_utc": "2026-08-17T08:30:45+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-17T08:15:50+00:00Z"
+        "fetched_utc": "2026-08-17T08:30:46+00:00Z"
       }
     ]
   },
@@ -5171,13 +5171,13 @@
       "address": "Mažeikiai, Viekšnių g. 24, 89235",
       "municipality": "Mažeikių r. sav.",
       "locality": "",
-      "petrol95": 1.729,
-      "diesel": 1.959,
+      "petrol95": 1.839,
+      "diesel": 2.089,
       "lpg": 0.729,
-      "price_updated": "2026-08-17T10:00:16+03:00",
+      "price_updated": "2026-08-17T11:23:58+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:00",
+      "price_time": "11:23",
       "lat": 56.304209,
       "lon": 22.360258,
       "approx": false
@@ -6235,10 +6235,10 @@
       "petrol95": 1.759,
       "diesel": 1.989,
       "lpg": null,
-      "price_updated": "2026-08-17T10:00:16+03:00",
+      "price_updated": "2026-08-17T11:23:58+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:00",
+      "price_time": "11:23",
       "lat": 55.895636,
       "lon": 21.862065,
       "approx": false
@@ -6248,13 +6248,13 @@
       "address": "Plungė, Stoties g. 7C, 90115",
       "municipality": "Plungės r. sav.",
       "locality": "",
-      "petrol95": 1.75,
-      "diesel": 1.99,
+      "petrol95": 1.83,
+      "diesel": 2.08,
       "lpg": 0.73,
-      "price_updated": "2026-08-17T10:00:16+03:00",
+      "price_updated": "2026-08-17T11:23:58+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:00",
+      "price_time": "11:23",
       "lat": 55.920377,
       "lon": 21.832127,
       "approx": false
@@ -6264,13 +6264,13 @@
       "address": "Jovaišiškės k., Telšių g. 127, 90107",
       "municipality": "Plungės r. sav.",
       "locality": "",
-      "petrol95": 1.749,
-      "diesel": 1.989,
+      "petrol95": 1.839,
+      "diesel": 2.089,
       "lpg": 0.73,
-      "price_updated": "2026-08-17T10:00:16+03:00",
+      "price_updated": "2026-08-17T11:23:58+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:00",
+      "price_time": "11:23",
       "lat": 55.908076,
       "lon": 21.871509,
       "approx": false,

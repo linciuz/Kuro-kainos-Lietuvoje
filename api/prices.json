@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-17T08:16:14Z",
+ "generated_utc": "2026-08-17T08:31:04Z",
  "price_date": "2026-08-17",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3738,10 +3738,10 @@
    "municipality": "Mažeikių r. sav.",
    "lat": 56.304209,
    "lon": 22.360258,
-   "petrol95": 1.729,
-   "diesel": 1.959,
+   "petrol95": 1.839,
+   "diesel": 2.089,
    "lpg": 0.729,
-   "price_updated": "2026-08-17T10:00:16+03:00"
+   "price_updated": "2026-08-17T11:23:58+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -4519,10 +4519,10 @@
    "municipality": "Plungės r. sav.",
    "lat": 55.908076,
    "lon": 21.871509,
-   "petrol95": 1.749,
-   "diesel": 1.989,
+   "petrol95": 1.839,
+   "diesel": 2.089,
    "lpg": 0.73,
-   "price_updated": "2026-08-17T10:00:16+03:00"
+   "price_updated": "2026-08-17T11:23:58+03:00"
   },
   {
    "network": "UAB EU Verslas",
@@ -4533,7 +4533,7 @@
    "petrol95": 1.759,
    "diesel": 1.989,
    "lpg": null,
-   "price_updated": "2026-08-17T10:00:16+03:00"
+   "price_updated": "2026-08-17T11:23:58+03:00"
   },
   {
    "network": "UAB EU Verslas",
@@ -4541,10 +4541,10 @@
    "municipality": "Plungės r. sav.",
    "lat": 55.920377,
    "lon": 21.832127,
-   "petrol95": 1.75,
-   "diesel": 1.99,
+   "petrol95": 1.83,
+   "diesel": 2.08,
    "lpg": 0.73,
-   "price_updated": "2026-08-17T10:00:16+03:00"
+   "price_updated": "2026-08-17T11:23:58+03:00"
   },
   {
    "network": "UAB Eniris",
