@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-14",
+ "price_date": "2026-08-17",
  "currency": "EUR",
- "stations_with_prices": 743,
+ "stations_with_prices": 747,
  "national": {
   "petrol95": {
-   "min": 1.65,
-   "avg": 1.75,
+   "min": 1.619,
+   "avg": 1.742,
    "max": 1.869,
-   "count": 720
+   "count": 723
   },
   "diesel": {
-   "min": 1.899,
-   "avg": 2.018,
+   "min": 1.909,
+   "avg": 2.011,
    "max": 2.139,
-   "count": 722
+   "count": 725
   },
   "lpg": {
    "min": 0.66,
-   "avg": 0.765,
+   "avg": 0.766,
    "max": 0.94,
-   "count": 585
+   "count": 588
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.65,
-   "network": "UAB Jozita",
-   "address": "Gargždai, Gamyklos g. 1, 96155",
-   "municipality": "Klaipėdos r. sav."
+   "price": 1.619,
+   "network": "UAB Baltic Petroleum",
+   "address": "Klaipėda, Šilutės pl. 1, 91109",
+   "municipality": "Klaipėdos m. sav."
   },
   "diesel": {
-   "price": 1.899,
-   "network": "UAB Alauša",
-   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
-   "municipality": "Anykščių r. sav."
+   "price": 1.909,
+   "network": "UAB Baltic Petroleum",
+   "address": "Klaipėda, Liepų g. 79A, 92195",
+   "municipality": "Klaipėdos m. sav."
   },
   "lpg": {
    "price": 0.66,
