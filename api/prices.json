@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-17T14:05:47Z",
+ "generated_utc": "2026-08-17T22:01:38Z",
  "price_date": "2026-08-17",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -24,7 +24,7 @@
    "count": 723
   },
   "diesel": {
-   "min": 1.909,
+   "min": 1.9,
    "avg": 2.011,
    "max": 2.139,
    "count": 725
@@ -44,10 +44,10 @@
    "municipality": "Klaipėdos m. sav."
   },
   "diesel": {
-   "price": 1.909,
-   "network": "UAB Baltic Petroleum",
-   "address": "Klaipėda, Liepų g. 79A, 92195",
-   "municipality": "Klaipėdos m. sav."
+   "price": 1.9,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.66,
@@ -208,9 +208,9 @@
    "lat": 54.411306,
    "lon": 24.06765,
    "petrol95": 1.72,
-   "diesel": 1.98,
+   "diesel": 1.94,
    "lpg": null,
-   "price_updated": "2026-08-17T09:47:10+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -946,8 +946,8 @@
    "lon": 22.606942,
    "petrol95": 1.8,
    "diesel": 1.96,
-   "lpg": 0.69,
-   "price_updated": "2026-08-17T09:47:11+03:00"
+   "lpg": 0.72,
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -1143,9 +1143,9 @@
    "lat": 54.436202,
    "lon": 23.204823,
    "petrol95": 1.69,
-   "diesel": 1.95,
+   "diesel": 1.9,
    "lpg": 0.72,
-   "price_updated": "2026-08-17T09:47:10+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -1858,9 +1858,9 @@
    "lat": 54.924573,
    "lon": 24.079127,
    "petrol95": 1.69,
-   "diesel": 1.98,
+   "diesel": 1.95,
    "lpg": 0.72,
-   "price_updated": "2026-08-17T09:47:11+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2254,9 +2254,9 @@
    "lat": 54.956377,
    "lon": 23.905112,
    "petrol95": 1.75,
-   "diesel": 1.98,
+   "diesel": 1.95,
    "lpg": 0.72,
-   "price_updated": "2026-08-17T09:47:11+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -3607,9 +3607,9 @@
    "lat": 54.577893,
    "lon": 23.376915,
    "petrol95": 1.71,
-   "diesel": 1.95,
+   "diesel": 1.92,
    "lpg": null,
-   "price_updated": "2026-08-17T09:47:11+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4685,9 +4685,9 @@
    "lat": 54.771033,
    "lon": 23.765466,
    "petrol95": 1.74,
-   "diesel": 1.95,
+   "diesel": 1.92,
    "lpg": null,
-   "price_updated": "2026-08-17T09:47:10+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4818,8 +4818,8 @@
    "lon": 23.553195,
    "petrol95": 1.69,
    "diesel": 1.95,
-   "lpg": 0.7,
-   "price_updated": "2026-08-17T09:47:09+03:00"
+   "lpg": 0.72,
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -4829,8 +4829,8 @@
    "lon": 23.553075,
    "petrol95": 1.72,
    "diesel": 1.97,
-   "lpg": 0.7,
-   "price_updated": "2026-08-17T09:47:10+03:00"
+   "lpg": 0.72,
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -7292,9 +7292,9 @@
    "lat": 54.710674,
    "lon": 25.156488,
    "petrol95": 1.72,
-   "diesel": 1.98,
+   "diesel": 1.93,
    "lpg": null,
-   "price_updated": "2026-08-17T09:47:11+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7799,8 +7799,8 @@
    "lon": 23.281619,
    "petrol95": 1.78,
    "diesel": 2.0,
-   "lpg": 0.71,
-   "price_updated": "2026-08-17T09:47:10+03:00"
+   "lpg": 0.72,
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -8062,9 +8062,9 @@
    "lat": 55.49185,
    "lon": 22.199277,
    "petrol95": 1.76,
-   "diesel": 1.96,
+   "diesel": 1.95,
    "lpg": 0.7,
-   "price_updated": "2026-08-17T09:47:10+03:00"
+   "price_updated": "2026-08-17T17:05:33+03:00"
   },
   {
    "network": "UAB Viada LT",

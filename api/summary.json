@@ -11,7 +11,7 @@
    "count": 723
   },
   "diesel": {
-   "min": 1.909,
+   "min": 1.9,
    "avg": 2.011,
    "max": 2.139,
    "count": 725
@@ -31,10 +31,10 @@
    "municipality": "Klaipėdos m. sav."
   },
   "diesel": {
-   "price": 1.909,
-   "network": "UAB Baltic Petroleum",
-   "address": "Klaipėda, Liepų g. 79A, 92195",
-   "municipality": "Klaipėdos m. sav."
+   "price": 1.9,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.66,
