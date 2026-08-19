@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-19T08:31:32Z",
+ "generated_utc": "2026-08-19T10:16:29Z",
  "price_date": "2026-08-19",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.66,
    "avg": 0.761,
    "max": 0.94,
-   "count": 552
+   "count": 553
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 710,
+ "count": 711,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -218,10 +218,10 @@
    "municipality": "Alytaus m. sav.",
    "lat": 54.387521,
    "lon": 24.031856,
-   "petrol95": 1.699,
-   "diesel": 1.989,
+   "petrol95": 1.689,
+   "diesel": 1.979,
    "lpg": null,
-   "price_updated": "2026-08-19T10:30:05+03:00"
+   "price_updated": "2026-08-19T13:11:33+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -298,7 +298,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -309,7 +309,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -320,7 +320,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -1090,7 +1090,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2168,7 +2168,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2619,7 +2619,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:33+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2949,7 +2949,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:33+03:00"
   },
   {
    "network": "UAB Topgas",
@@ -3433,7 +3433,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB VIRŠI Lietuva",
@@ -4104,7 +4104,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -4434,7 +4434,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:33+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -4754,6 +4754,17 @@
    "diesel": 2.159,
    "lpg": 0.899,
    "price_updated": "2026-08-19T11:05:39+03:00"
+  },
+  {
+   "network": "UAB DVS Topolis",
+   "address": "Rokiškis, Panevėžio g. 7C, 42163",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.94306,
+   "lon": 25.585657,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.899,
+   "price_updated": "2026-08-19T13:07:34+03:00"
   },
   {
    "network": "UAB Degta",
@@ -5413,7 +5424,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Utentra",
@@ -6546,7 +6557,7 @@
    "petrol95": 1.719,
    "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T13:11:32+03:00"
   },
   {
    "network": "UAB Viada LT",
