@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-19T08:16:12+00:00Z",
+    "resolved_utc": "2026-08-19T08:31:14+00:00Z",
     "winner_counts": {
-      "portal": 709,
-      "null": 58
+      "portal": 710,
+      "null": 57
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-08-19",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-19T08:16:11+00:00Z"
+        "fetched_utc": "2026-08-19T08:31:14+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-19T08:16:12+00:00Z"
+        "fetched_utc": "2026-08-19T08:31:14+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.668,
       "avg": 1.795,
       "max": 1.899,
-      "count": 684
+      "count": 685
     },
     "diesel": {
       "min": 1.939,
       "avg": 2.059,
       "max": 2.159,
-      "count": 686
+      "count": 687
     },
     "lpg": {
       "min": 0.66,
       "avg": 0.761,
       "max": 0.94,
-      "count": 551
+      "count": 552
     }
   },
   "stations": [
@@ -1633,13 +1633,13 @@
       "address": "Kaunas, Linkuvos g. 77, 48314",
       "municipality": "Kauno m. sav.",
       "locality": "",
-      "petrol95": 1.79,
+      "petrol95": 1.81,
       "diesel": 2.07,
       "lpg": null,
-      "price_updated": "2026-08-19T10:01:34+03:00",
+      "price_updated": "2026-08-19T11:26:12+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:01",
+      "price_time": "11:26",
       "lat": 54.9143,
       "lon": 23.887705,
       "approx": false
@@ -8080,10 +8080,12 @@
       "municipality": "Utenos r. sav.",
       "locality": "",
       "petrol95": null,
-      "diesel": 1.969,
+      "diesel": 1.989,
       "lpg": null,
-      "price_updated": "2026-08-19T09:56:44+03:00",
+      "price_updated": "2026-08-19T11:25:24+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:25",
       "lat": 55.494679,
       "lon": 25.645853,
       "approx": false
@@ -11280,9 +11282,13 @@
       "address": "Pavilnučio k., Bažnyčios g. 7, 99392",
       "municipality": "Šilutės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.79,
+      "diesel": 2.04,
+      "lpg": 0.74,
+      "price_updated": "2026-08-19T11:29:05+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:29",
       "lat": 55.513817,
       "lon": 21.609833,
       "approx": false,
