@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-19T14:20:43Z",
+ "generated_utc": "2026-08-19T22:01:36Z",
  "price_date": "2026-08-19",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -1078,8 +1078,8 @@
    "lon": 23.204823,
    "petrol95": 1.75,
    "diesel": 2.0,
-   "lpg": 0.74,
-   "price_updated": "2026-08-19T09:35:37+03:00"
+   "lpg": 0.72,
+   "price_updated": "2026-08-19T17:20:28+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -2145,8 +2145,8 @@
    "lon": 23.905112,
    "petrol95": 1.75,
    "diesel": 2.01,
-   "lpg": 0.74,
-   "price_updated": "2026-08-19T09:35:38+03:00"
+   "lpg": 0.72,
+   "price_updated": "2026-08-19T17:20:28+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -5234,10 +5234,10 @@
    "municipality": "Telšių r. sav.",
    "lat": 55.901344,
    "lon": 22.506292,
-   "petrol95": 1.77,
-   "diesel": 2.06,
+   "petrol95": 1.87,
+   "diesel": 2.12,
    "lpg": 0.8,
-   "price_updated": "2026-08-19T10:30:04+03:00"
+   "price_updated": "2026-08-19T21:02:57+03:00"
   },
   {
    "network": "UAB Neste Lietuva",

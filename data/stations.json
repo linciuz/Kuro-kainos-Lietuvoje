@@ -3,12 +3,13 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-19T14:17:08+00:00Z",
+    "resolved_utc": "2026-08-19T22:01:11+00:00Z",
     "winner_counts": {
-      "portal": 727,
-      "null": 40
+      "portal": 725,
+      "null": 40,
+      "saurida": 2
     },
-    "saurida_served": 0,
+    "saurida_served": 2,
     "sources": [
       {
         "source": "portal",
@@ -16,7 +17,7 @@
         "date": "2026-08-19",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-19T14:17:07+00:00Z"
+        "fetched_utc": "2026-08-19T22:01:10+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-19T14:17:08+00:00Z"
+        "fetched_utc": "2026-08-19T22:01:11+00:00Z"
       }
     ]
   },
@@ -1525,9 +1526,9 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 2.0,
-      "lpg": 0.74,
-      "price_updated": "2026-08-19T09:35:37+03:00",
-      "price_src": "portal",
+      "lpg": 0.72,
+      "price_updated": "2026-08-19T17:20:28+03:00",
+      "price_src": "saurida",
       "lat": 54.436202,
       "lon": 23.204823,
       "approx": false,
@@ -3085,9 +3086,9 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 2.01,
-      "lpg": 0.74,
-      "price_updated": "2026-08-19T09:35:38+03:00",
-      "price_src": "portal",
+      "lpg": 0.72,
+      "price_updated": "2026-08-19T17:20:28+03:00",
+      "price_src": "saurida",
       "lat": 54.956377,
       "lon": 23.905112,
       "approx": false
@@ -7645,13 +7646,13 @@
       "address": "Luokė, Telšių g. 66, 88236",
       "municipality": "Telšių r. sav.",
       "locality": "",
-      "petrol95": 1.77,
-      "diesel": 2.06,
+      "petrol95": 1.87,
+      "diesel": 2.12,
       "lpg": 0.8,
-      "price_updated": "2026-08-19T10:30:04+03:00",
+      "price_updated": "2026-08-19T21:02:57+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "21:02",
       "lat": 55.901344,
       "lon": 22.506292,
       "approx": false
