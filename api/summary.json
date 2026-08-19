@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-18",
+ "price_date": "2026-08-19",
  "currency": "EUR",
- "stations_with_prices": 749,
+ "stations_with_prices": 709,
  "national": {
   "petrol95": {
-   "min": 1.659,
-   "avg": 1.824,
-   "max": 1.909,
-   "count": 724
+   "min": 1.668,
+   "avg": 1.796,
+   "max": 1.899,
+   "count": 684
   },
   "diesel": {
-   "min": 1.944,
-   "avg": 2.085,
-   "max": 2.169,
-   "count": 726
+   "min": 1.939,
+   "avg": 2.061,
+   "max": 2.159,
+   "count": 686
   },
   "lpg": {
    "min": 0.66,
-   "avg": 0.767,
+   "avg": 0.762,
    "max": 0.94,
-   "count": 591
+   "count": 551
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.659,
+   "price": 1.668,
+   "network": "UAB Autograndas",
+   "address": "Visaginas, Taikos pr. 47, 31217",
+   "municipality": "Visagino sav."
+  },
+  "diesel": {
+   "price": 1.939,
    "network": "UAB Alauša",
    "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
    "municipality": "Anykščių r. sav."
-  },
-  "diesel": {
-   "price": 1.944,
-   "network": "UAB Eniris",
-   "address": "Ruoščių k. 1, 57109",
-   "municipality": "Kėdainių r. sav."
   },
   "lpg": {
    "price": 0.66,
