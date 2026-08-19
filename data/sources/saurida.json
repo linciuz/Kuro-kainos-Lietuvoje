@@ -3,68 +3,67 @@
  "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
  "scope": "per_station",
  "role": "independent cross-check against LEA — NOT published to the app",
- "fetched": "2026-08-19T06:03:05Z",
+ "fetched": "2026-08-19T14:20:28Z",
  "stations": 34,
  "summary": {
   "diesel": {
-   "min": 1.97,
-   "max": 2.04,
-   "count": 16,
-   "median": 1.99
+   "min": 2.01,
+   "max": 2.07,
+   "count": 22,
+   "median": 2.03
   },
   "petrol95": {
-   "min": 1.69,
-   "max": 1.8,
+   "min": 1.72,
+   "max": 1.81,
    "count": 31,
-   "median": 1.74
+   "median": 1.75
   },
   "lpg": {
    "min": 0.67,
-   "max": 0.72,
+   "max": 0.76,
    "count": 30,
-   "median": 0.72
+   "median": 0.73
   }
  },
  "prices": [
   {
    "name": "Kušliškiai",
-   "diesel": 1.97,
-   "petrol95": 1.69,
+   "petrol95": 1.75,
    "lpg": 0.72
   },
   {
+   "name": "Mauručiai",
+   "petrol95": 1.72
+  },
+  {
    "name": "Klaipėda",
-   "petrol95": 1.72,
+   "petrol95": 1.75,
    "lpg": 0.67
   },
   {
    "name": "Domeikava",
+   "diesel": 2.01,
    "petrol95": 1.75,
    "lpg": 0.72
   },
   {
    "name": "Marijampolė",
-   "diesel": 1.97,
-   "petrol95": 1.71
-  },
-  {
-   "name": "Mauručiai",
-   "diesel": 1.97,
-   "petrol95": 1.74
+   "diesel": 2.04,
+   "petrol95": 1.77
   },
   {
    "name": "Vilnius, Stanevičiaus g. 3A",
-   "lpg": 0.72
+   "lpg": 0.74
   },
   {
    "name": "Vilnius, Rygos g. 2B",
-   "lpg": 0.72
+   "lpg": 0.74
   },
   {
    "name": "Velžiai",
-   "diesel": 1.99,
-   "petrol95": 1.72,
-   "lpg": 0.72
+   "diesel": 2.03,
+   "petrol95": 1.74,
+   "lpg": 0.73
   },
   {
    "name": "Visaginas",
@@ -74,71 +73,73 @@
   },
   {
    "name": "Neveronys, Martinavos g.",
-   "petrol95": 1.69,
-   "lpg": 0.72
+   "petrol95": 1.75,
+   "lpg": 0.74
   },
   {
    "name": "Vilnius, Jankiškių g.",
-   "diesel": 1.99,
-   "petrol95": 1.74,
-   "lpg": 0.72
+   "diesel": 2.05,
+   "petrol95": 1.77,
+   "lpg": 0.74
   },
   {
    "name": "Ukmergė, Vilniaus g.",
-   "diesel": 2.01,
-   "petrol95": 1.75,
-   "lpg": 0.72
+   "diesel": 2.05,
+   "petrol95": 1.79,
+   "lpg": 0.74
   },
   {
    "name": "Ukmergė, Kareivinių g.",
-   "diesel": 2.01,
-   "petrol95": 1.75,
-   "lpg": 0.72
+   "diesel": 2.05,
+   "petrol95": 1.79,
+   "lpg": 0.74
   },
   {
    "name": "Šilalė",
-   "petrol95": 1.76,
+   "diesel": 2.03,
+   "petrol95": 1.79,
    "lpg": 0.7
   },
   {
    "name": "Šiauliai, Vilniaus g.",
-   "diesel": 2.02,
-   "petrol95": 1.78,
-   "lpg": 0.72
+   "diesel": 2.05,
+   "petrol95": 1.81,
+   "lpg": 0.73
   },
   {
    "name": "Šiauliai, Pramonės g.",
-   "petrol95": 1.77,
-   "lpg": 0.71
+   "diesel": 2.05,
+   "petrol95": 1.81,
+   "lpg": 0.73
   },
   {
    "name": "Skuodas",
-   "diesel": 1.97,
-   "petrol95": 1.74,
-   "lpg": 0.68
+   "petrol95": 1.78,
+   "lpg": 0.69
   },
   {
    "name": "Rumšiškės",
+   "diesel": 2.02,
    "petrol95": 1.79,
-   "lpg": 0.72
+   "lpg": 0.74
   },
   {
    "name": "Radviliškis",
-   "diesel": 1.97,
-   "petrol95": 1.69,
-   "lpg": 0.72
+   "diesel": 2.03,
+   "petrol95": 1.74,
+   "lpg": 0.73
   },
   {
    "name": "Prienai",
-   "diesel": 2.01,
+   "diesel": 2.03,
    "petrol95": 1.74,
-   "lpg": 0.72
+   "lpg": 0.76
   },
   {
    "name": "Pašvenčiai",
-   "diesel": 1.99,
+   "diesel": 2.07,
    "petrol95": 1.8,
-   "lpg": 0.72
+   "lpg": 0.71
   },
   {
    "name": "Pašakarniai",
@@ -147,8 +148,9 @@
   },
   {
    "name": "Pageležiai",
-   "petrol95": 1.75,
-   "lpg": 0.72
+   "diesel": 2.03,
+   "petrol95": 1.77,
+   "lpg": 0.74
   },
   {
    "name": "N.Akmenė",
@@ -158,32 +160,35 @@
   },
   {
    "name": "Lekėčiai",
+   "diesel": 2.02,
    "petrol95": 1.75,
    "lpg": 0.72
   },
   {
    "name": "Lazdijai",
-   "diesel": 1.99,
-   "petrol95": 1.74,
-   "lpg": 0.72
+   "diesel": 2.02,
+   "petrol95": 1.76,
+   "lpg": 0.74
   },
   {
    "name": "Kalvarija",
-   "lpg": 0.72
+   "lpg": 0.74
   },
   {
    "name": "Čekoniškės",
-   "petrol95": 1.72
+   "diesel": 2.02,
+   "petrol95": 1.74
   },
   {
    "name": "Babtai",
+   "diesel": 2.02,
    "petrol95": 1.75,
-   "lpg": 0.72
+   "lpg": 0.75
   },
   {
    "name": "Kaunas",
    "diesel": 2.01,
-   "petrol95": 1.69,
+   "petrol95": 1.75,
    "lpg": 0.72
   },
   {
@@ -202,8 +207,9 @@
   },
   {
    "name": "Zujūnai",
-   "petrol95": 1.72,
-   "lpg": 0.72
+   "diesel": 2.02,
+   "petrol95": 1.74,
+   "lpg": 0.74
   }
  ]
 }
