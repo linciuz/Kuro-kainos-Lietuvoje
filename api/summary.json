@@ -1,46 +1,46 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-19",
+ "price_date": "2026-08-20",
  "currency": "EUR",
- "stations_with_prices": 727,
+ "stations_with_prices": 754,
  "national": {
   "petrol95": {
-   "min": 1.668,
-   "avg": 1.792,
+   "min": 1.649,
+   "avg": 1.779,
    "max": 1.899,
-   "count": 701
+   "count": 732
   },
   "diesel": {
-   "min": 1.939,
-   "avg": 2.057,
+   "min": 1.949,
+   "avg": 2.049,
    "max": 2.159,
-   "count": 703
+   "count": 734
   },
   "lpg": {
-   "min": 0.66,
-   "avg": 0.761,
+   "min": 0.67,
+   "avg": 0.766,
    "max": 0.94,
-   "count": 569
+   "count": 594
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.668,
-   "network": "UAB Autograndas",
-   "address": "Visaginas, Taikos pr. 47, 31217",
-   "municipality": "Visagino sav."
+   "price": 1.649,
+   "network": "UAB Baltic Petroleum",
+   "address": "Mažeikiai, M. Daukšos g. 17, 89234",
+   "municipality": "Mažeikių r. sav."
   },
   "diesel": {
-   "price": 1.939,
-   "network": "UAB Alauša",
-   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
-   "municipality": "Anykščių r. sav."
+   "price": 1.949,
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Savanorių pr. 121, 03150",
+   "municipality": "Vilniaus m. sav."
   },
   "lpg": {
-   "price": 0.66,
-   "network": "UAB Madalva",
-   "address": "Plungė, Lentpjūvės g. 10A, 90118",
-   "municipality": "Plungės r. sav."
+   "price": 0.67,
+   "network": "UAB Saurida",
+   "address": "Klaipėda, Jūrininkų pr. 29, 95225",
+   "municipality": "Klaipėdos r. sav."
   }
  },
  "source": "Lietuvos energetikos agentura (LEA)",
