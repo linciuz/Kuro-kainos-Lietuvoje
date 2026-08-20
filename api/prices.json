@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-20T06:03:25Z",
+ "generated_utc": "2026-08-20T06:16:23Z",
  "price_date": "2026-08-19",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -1079,7 +1079,7 @@
    "petrol95": 1.75,
    "diesel": 2.0,
    "lpg": 0.72,
-   "price_updated": "2026-08-19T17:20:28+03:00"
+   "price_updated": "2026-08-20T09:03:12+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -2146,7 +2146,7 @@
    "petrol95": 1.75,
    "diesel": 2.01,
    "lpg": 0.72,
-   "price_updated": "2026-08-19T17:20:28+03:00"
+   "price_updated": "2026-08-20T09:03:12+03:00"
   },
   {
    "network": "UAB Skulas",
