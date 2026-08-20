@@ -13,12 +13,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/nuolaidu-savaitgaliai/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
-    },
-    {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/nuolaidos-su-viada-study-kortele/",
       "err": "HTTP 403",
@@ -29,12 +23,6 @@
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=nuolaidos-su-viada-study-kortele",
       "err": "HTTP 403",
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
-    },
-    {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/nuolaidos-su-viada-study-kortele/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
     },
     {
       "kind": "direct",
@@ -49,12 +37,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/nuolaidos-su-viada-agro-kortele/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
-    },
-    {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/super-treciadieniai/",
       "err": "HTTP 403",
@@ -65,12 +47,6 @@
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=super-treciadieniai",
       "err": "HTTP 403",
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
-    },
-    {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
     },
     {
       "kind": "direct",
@@ -85,12 +61,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
-    },
-    {
       "kind": "direct",
       "url": "https://www.viada.lt/akcijos/",
       "err": "HTTP 403",
@@ -103,10 +73,88 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcijos/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/alfo-ivanausko-sumustiniams-30-nuolaida-su-viadaplus/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/menesio-pasiulymai-keturi-uzkandziai-30-pigiau/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/pyragelis-3-vnt-uz-specialia-kaina/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/saldus-pasiulymas-twix-white-kava/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/chefline-guzzini-akcija/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/skoniu-keliones-su-alfu-ivanausku/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/desrainis-ir-pepsi-pigiau/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/plovyklos-abonementas-50/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/stilinga-vasara-veza-viada/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/perkant-musu-salotas-kava-nemokamai-viada-lt/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/kas-6-sliurpis-nemokamai/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/kiekviena-kava-nusipelne-bandeles/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/nuo-2026-m-sausio-1d-keiciasi-viadaplus-lojalumo-programos-salygos-ir-taisykles/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "direct",
+      "url": "https://www.viada.lt/akcija/viada-klientams-nuolaidos-su-lidl-plus/",
+      "err": "HTTP 403",
+      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
       "kind": "direct",
@@ -119,14 +167,8 @@
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=super-treciadieniai",
       "err": "HTTP 403",
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
-    },
-    {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
-      "err": "HTTP 401",
-      "body_head": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from performing anonymous queries due to bad IP reputation. Please authenticate.\",\"readableMessage\":\"AuthenticationRequiredError: You have been blocked from performing anonymous queries due t"
     }
   ],
-  "generated": "2026-08-20T09:16:24Z",
-  "attempt_count": 21
+  "generated": "2026-08-20T09:31:33Z",
+  "attempt_count": 28
 }
