@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T09:31:33Z",
+  "generated": "2026-08-20T10:01:26Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
@@ -45,6 +45,5 @@
       "kind": "seasonal",
       "active": true
     }
-  ],
-  "generated_stale_kept": true
+  ]
 }
