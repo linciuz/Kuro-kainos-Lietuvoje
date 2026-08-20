@@ -1,8 +1,8 @@
 {
- "generated": "2026-08-19T14:20:22Z",
+ "generated": "2026-08-20T06:03:06Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-08-19 15:59:08",
+ "api_last_updated": "2026-08-19 21:02:57",
  "count": 767,
  "with_coords": 766,
  "priced": 727,
@@ -10172,12 +10172,12 @@
    ],
    "prices": {
     "lpg": 0.8,
-    "diesel": 2.06,
-    "petrol95": 1.77
+    "diesel": 2.12,
+    "petrol95": 1.87
    },
    "gas_station_id": 447,
    "logo_url": null,
-   "submitted_at": "2026-08-19T07:30:04.000000Z"
+   "submitted_at": "2026-08-19T18:02:57.000000Z"
   },
   {
    "company": "UAB Neste Lietuva",
