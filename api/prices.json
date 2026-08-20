@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-20T08:01:26Z",
+ "generated_utc": "2026-08-20T08:16:35Z",
  "price_date": "2026-08-20",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.649,
    "avg": 1.779,
    "max": 1.899,
-   "count": 735
+   "count": 736
   },
   "diesel": {
    "min": 1.949,
    "avg": 2.049,
    "max": 2.159,
-   "count": 737
+   "count": 738
   },
   "lpg": {
    "min": 0.67,
    "avg": 0.766,
    "max": 0.94,
-   "count": 597
+   "count": 598
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Klaipėdos r. sav."
   }
  },
- "count": 757,
+ "count": 758,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -761,6 +761,17 @@
    "diesel": 2.099,
    "lpg": 0.789,
    "price_updated": "2026-08-20T09:50:47+03:00"
+  },
+  {
+   "network": "UAB Vimijula",
+   "address": "Ručiūnų k., Kauno g. 2A, 55355",
+   "municipality": "Jonavos r. sav.",
+   "lat": 55.137949,
+   "lon": 24.193271,
+   "petrol95": 1.82,
+   "diesel": 2.09,
+   "lpg": 0.83,
+   "price_updated": "2026-08-20T11:02:10+03:00"
   },
   {
    "network": "UAB Žibalas",
