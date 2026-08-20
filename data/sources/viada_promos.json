@@ -45,5 +45,6 @@
       "kind": "seasonal",
       "active": true
     }
-  ]
+  ],
+  "generated_stale_kept": true
 }
