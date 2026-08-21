@@ -1,26 +1,26 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-20",
+ "price_date": "2026-08-21",
  "currency": "EUR",
- "stations_with_prices": 758,
+ "stations_with_prices": 756,
  "national": {
   "petrol95": {
    "min": 1.649,
-   "avg": 1.779,
-   "max": 1.899,
-   "count": 736
+   "avg": 1.772,
+   "max": 1.929,
+   "count": 734
   },
   "diesel": {
    "min": 1.949,
-   "avg": 2.049,
-   "max": 2.159,
-   "count": 738
+   "avg": 2.053,
+   "max": 2.199,
+   "count": 736
   },
   "lpg": {
-   "min": 0.67,
-   "avg": 0.766,
+   "min": 0.654,
+   "avg": 0.765,
    "max": 0.94,
-   "count": 598
+   "count": 597
   }
  },
  "cheapest": {
@@ -37,10 +37,10 @@
    "municipality": "Vilniaus m. sav."
   },
   "lpg": {
-   "price": 0.67,
-   "network": "UAB Saurida",
-   "address": "Klaipėda, Jūrininkų pr. 29, 95225",
-   "municipality": "Klaipėdos r. sav."
+   "price": 0.654,
+   "network": "UAB Alauša",
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
+   "municipality": "Utenos r. sav."
   }
  },
  "source": "Lietuvos energetikos agentura (LEA)",
