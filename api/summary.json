@@ -2,7 +2,7 @@
  "$schema_version": 1,
  "price_date": "2026-08-21",
  "currency": "EUR",
- "stations_with_prices": 756,
+ "stations_with_prices": 757,
  "national": {
   "petrol95": {
    "min": 1.649,
@@ -20,7 +20,7 @@
    "min": 0.654,
    "avg": 0.764,
    "max": 0.94,
-   "count": 597
+   "count": 598
   }
  },
  "cheapest": {
