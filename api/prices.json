@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-24T08:01:00Z",
+ "generated_utc": "2026-08-24T08:25:34Z",
  "price_date": "2026-08-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -2608,7 +2608,7 @@
    "petrol95": 1.82,
    "diesel": 2.02,
    "lpg": null,
-   "price_updated": "2026-08-24T10:30:04+03:00"
+   "price_updated": "2026-08-24T11:16:31+03:00"
   },
   {
    "network": "UAB Jozita",
