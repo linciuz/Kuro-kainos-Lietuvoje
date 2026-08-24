@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-24T09:46:00Z",
+ "generated_utc": "2026-08-24T11:31:05Z",
  "price_date": "2026-08-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.639,
    "avg": 1.763,
    "max": 1.929,
-   "count": 721
+   "count": 724
   },
   "diesel": {
    "min": 1.939,
-   "avg": 2.045,
+   "avg": 2.046,
    "max": 2.2,
-   "count": 723
+   "count": 726
   },
   "lpg": {
    "min": 0.67,
    "avg": 0.764,
    "max": 0.94,
-   "count": 594
+   "count": 597
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Klaipėdos r. sav."
   }
  },
- "count": 748,
+ "count": 751,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -367,6 +367,17 @@
    "price_updated": "2026-08-24T09:32:10+03:00"
   },
   {
+   "network": "UAB Degta",
+   "address": "Anykščiai, Vienuolio g. 34A, 29148",
+   "municipality": "Anykščių r. sav.",
+   "lat": 55.5226,
+   "lon": 25.087988,
+   "petrol95": 1.839,
+   "diesel": 2.139,
+   "lpg": 0.709,
+   "price_updated": "2026-08-24T14:26:41+03:00"
+  },
+  {
    "network": "UAB Narjanta",
    "address": "Pumpučiai, Pumpučių g. 25, 29253",
    "municipality": "Anykščių r. sav.",
@@ -585,6 +596,17 @@
    "diesel": 2.079,
    "lpg": 0.799,
    "price_updated": "2026-08-24T09:54:16+03:00"
+  },
+  {
+   "network": "UAB Degta",
+   "address": "Vievis, Kauno g. 55A, 21371",
+   "municipality": "Elektrėnų sav.",
+   "lat": 54.775219,
+   "lon": 24.810495,
+   "petrol95": 1.929,
+   "diesel": 2.199,
+   "lpg": 0.879,
+   "price_updated": "2026-08-24T14:26:41+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -5095,6 +5117,17 @@
    "diesel": null,
    "lpg": 0.899,
    "price_updated": "2026-08-24T09:27:37+03:00"
+  },
+  {
+   "network": "UAB Degta",
+   "address": "Rokiškis, Respublikos g. 113B, 42150",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.946682,
+   "lon": 25.591055,
+   "petrol95": 1.839,
+   "diesel": 2.093,
+   "lpg": 0.839,
+   "price_updated": "2026-08-24T14:26:41+03:00"
   },
   {
    "network": "UAB Viada LT",

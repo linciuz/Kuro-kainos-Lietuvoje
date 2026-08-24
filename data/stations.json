@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-24T09:45:38+00:00Z",
+    "resolved_utc": "2026-08-24T11:30:39+00:00Z",
     "winner_counts": {
-      "portal": 748,
-      "null": 19
+      "portal": 751,
+      "null": 16
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-08-24",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-24T09:45:37+00:00Z"
+        "fetched_utc": "2026-08-24T11:30:38+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-24T09:45:38+00:00Z"
+        "fetched_utc": "2026-08-24T11:30:39+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.639,
       "avg": 1.763,
       "max": 1.929,
-      "count": 721
+      "count": 724
     },
     "diesel": {
       "min": 1.939,
-      "avg": 2.045,
+      "avg": 2.046,
       "max": 2.2,
-      "count": 723
+      "count": 726
     },
     "lpg": {
       "min": 0.67,
       "avg": 0.764,
       "max": 0.94,
-      "count": 594
+      "count": 597
     }
   },
   "stations": [
@@ -476,9 +476,13 @@
       "address": "Anykščiai, Vienuolio g. 34A, 29148",
       "municipality": "Anykščių r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.839,
+      "diesel": 2.139,
+      "lpg": 0.709,
+      "price_updated": "2026-08-24T14:26:41+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:26",
       "lat": 55.5226,
       "lon": 25.087988,
       "approx": false
@@ -784,9 +788,13 @@
       "address": "Vievis, Kauno g. 55A, 21371",
       "municipality": "Elektrėnų sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.929,
+      "diesel": 2.199,
+      "lpg": 0.879,
+      "price_updated": "2026-08-24T14:26:41+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:26",
       "lat": 54.775219,
       "lon": 24.810495,
       "approx": false
@@ -7079,9 +7087,13 @@
       "address": "Rokiškis, Respublikos g. 113B, 42150",
       "municipality": "Rokiškio r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.839,
+      "diesel": 2.093,
+      "lpg": 0.839,
+      "price_updated": "2026-08-24T14:26:41+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:26",
       "lat": 55.946682,
       "lon": 25.591055,
       "approx": false
