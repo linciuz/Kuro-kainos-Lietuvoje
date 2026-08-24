@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-24T08:45:54Z",
+ "generated_utc": "2026-08-24T09:46:00Z",
  "price_date": "2026-08-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,13 +19,13 @@
  "summary": {
   "petrol95": {
    "min": 1.639,
-   "avg": 1.764,
+   "avg": 1.763,
    "max": 1.929,
    "count": 721
   },
   "diesel": {
    "min": 1.939,
-   "avg": 2.046,
+   "avg": 2.045,
    "max": 2.2,
    "count": 723
   },
@@ -845,10 +845,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.085493,
    "lon": 22.745538,
-   "petrol95": 1.849,
-   "diesel": 2.059,
+   "petrol95": 1.779,
+   "diesel": 2.039,
    "lpg": 0.72,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -856,10 +856,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.077197,
    "lon": 22.751,
-   "petrol95": 1.849,
-   "diesel": 2.059,
+   "petrol95": 1.779,
+   "diesel": 2.039,
    "lpg": 0.72,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -867,10 +867,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.082536,
    "lon": 22.788996,
-   "petrol95": 1.849,
-   "diesel": 2.059,
+   "petrol95": 1.779,
+   "diesel": 2.039,
    "lpg": 0.72,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -878,10 +878,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.078909,
    "lon": 23.396923,
-   "petrol95": 1.849,
-   "diesel": 2.059,
+   "petrol95": 1.779,
+   "diesel": 2.039,
    "lpg": null,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -3331,10 +3331,10 @@
    "municipality": "Kėdainių r. sav.",
    "lat": 55.297137,
    "lon": 24.07692,
-   "petrol95": 1.849,
-   "diesel": 2.059,
-   "lpg": 0.769,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "petrol95": 1.779,
+   "diesel": 2.039,
+   "lpg": 0.72,
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -5883,10 +5883,10 @@
    "municipality": "Vilkaviškio r. sav.",
    "lat": 54.601906,
    "lon": 23.194935,
-   "petrol95": 1.769,
-   "diesel": 2.029,
-   "lpg": 0.74,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "petrol95": 1.699,
+   "diesel": 1.999,
+   "lpg": 0.71,
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Melkasta",
@@ -7426,7 +7426,7 @@
    "petrol95": 1.849,
    "diesel": 2.059,
    "lpg": 0.73,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7434,10 +7434,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 55.063839,
    "lon": 22.780717,
-   "petrol95": 1.849,
-   "diesel": 2.059,
+   "petrol95": 1.779,
+   "diesel": 2.039,
    "lpg": 0.72,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7445,10 +7445,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 55.021603,
    "lon": 22.969559,
-   "petrol95": 1.83,
-   "diesel": 2.05,
+   "petrol95": 1.849,
+   "diesel": 2.059,
    "lpg": null,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7459,7 +7459,7 @@
    "petrol95": 1.849,
    "diesel": 2.059,
    "lpg": 0.73,
-   "price_updated": "2026-08-24T10:30:02+03:00"
+   "price_updated": "2026-08-24T12:43:59+03:00"
   },
   {
    "network": "UAB Saurida",
