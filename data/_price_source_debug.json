@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-08-24T05:00:33+00:00Z",
+ "checked_utc": "2026-08-24T06:15:31+00:00Z",
  "engine": "FAILED",
  "error": "RuntimeError: every price source failed",
  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/Kuro-kainos-Lietuvoje/Kuro-kainos-Lietuvoje/scripts/fetch_prices.py\", line 560, in main\n    stations, file_date, engine_meta = price_engine.resolve()\n                                       ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Kuro-kainos-Lietuvoje/Kuro-kainos-Lietuvoje/scripts/price_engine.py\", line 412, in resolve\n    raise RuntimeError(\"every price source failed\")\nRuntimeError: every price source failed\n"
