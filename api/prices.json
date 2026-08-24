@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-24T08:25:34Z",
+ "generated_utc": "2026-08-24T08:45:54Z",
  "price_date": "2026-08-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -26,7 +26,7 @@
   "diesel": {
    "min": 1.939,
    "avg": 2.046,
-   "max": 2.199,
+   "max": 2.2,
    "count": 723
   },
   "lpg": {
@@ -746,10 +746,10 @@
    "municipality": "Jonavos r. sav.",
    "lat": 55.067137,
    "lon": 24.287969,
-   "petrol95": 1.83,
-   "diesel": 2.1,
+   "petrol95": 1.9,
+   "diesel": 2.2,
    "lpg": 0.82,
-   "price_updated": "2026-08-24T10:30:04+03:00"
+   "price_updated": "2026-08-24T11:31:52+03:00"
   },
   {
    "network": "Sigito Rimkevičiaus komercinė įmonė",
