@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-25T11:30:57Z",
+ "generated_utc": "2026-08-25T11:59:19Z",
  "price_date": "2026-08-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,13 +19,13 @@
  "summary": {
   "petrol95": {
    "min": 1.69,
-   "avg": 1.829,
+   "avg": 1.828,
    "max": 1.899,
    "count": 731
   },
   "diesel": {
    "min": 1.98,
-   "avg": 2.114,
+   "avg": 2.113,
    "max": 2.199,
    "count": 733
   },
@@ -133,7 +133,7 @@
    "petrol95": 1.719,
    "diesel": 2.019,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -571,9 +571,9 @@
    "lat": 54.790914,
    "lon": 24.670579,
    "petrol95": 1.829,
-   "diesel": 2.129,
+   "diesel": 2.119,
    "lpg": 0.739,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "UAB Boost Petrol",
@@ -945,9 +945,9 @@
    "lat": 54.816269,
    "lon": 24.433142,
    "petrol95": 1.829,
-   "diesel": 2.129,
+   "diesel": 2.119,
    "lpg": 0.739,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -1167,7 +1167,7 @@
    "petrol95": 1.789,
    "diesel": 2.089,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -1175,10 +1175,10 @@
    "municipality": "Kauno m. sav.",
    "lat": 54.915802,
    "lon": 23.984205,
-   "petrol95": 1.819,
-   "diesel": 2.119,
+   "petrol95": 1.799,
+   "diesel": 2.099,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -1187,9 +1187,9 @@
    "lat": 54.913801,
    "lon": 23.90685,
    "petrol95": 1.769,
-   "diesel": 2.069,
+   "diesel": 2.029,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -1200,7 +1200,7 @@
    "petrol95": 1.819,
    "diesel": 2.119,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "MB Tormenta",
@@ -2089,9 +2089,9 @@
    "lat": 54.924319,
    "lon": 24.011308,
    "petrol95": 1.729,
-   "diesel": 2.029,
+   "diesel": 2.019,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -2099,10 +2099,10 @@
    "municipality": "Kauno r. sav.",
    "lat": 54.888672,
    "lon": 23.818451,
-   "petrol95": 1.829,
-   "diesel": 2.129,
+   "petrol95": 1.819,
+   "diesel": 2.109,
    "lpg": 0.729,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -2473,10 +2473,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.693868,
    "lon": 21.14027,
-   "petrol95": 1.799,
-   "diesel": 2.099,
+   "petrol95": 1.779,
+   "diesel": 2.069,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -2487,7 +2487,7 @@
    "petrol95": 1.729,
    "diesel": 2.029,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -2495,10 +2495,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.668161,
    "lon": 21.208649,
-   "petrol95": 1.799,
-   "diesel": 2.099,
+   "petrol95": 1.779,
+   "diesel": 2.059,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -2847,10 +2847,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.707827,
    "lon": 21.245804,
-   "petrol95": 1.829,
-   "diesel": 2.129,
+   "petrol95": 1.789,
+   "diesel": 2.089,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Adukesta",
@@ -3067,10 +3067,10 @@
    "municipality": "Kretingos r. sav.",
    "lat": 55.89617,
    "lon": 21.093042,
-   "petrol95": 1.829,
-   "diesel": 2.129,
+   "petrol95": 1.819,
+   "diesel": 2.119,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "I.Stonkuvienės prekybos įmonė",
@@ -3521,7 +3521,7 @@
    "petrol95": 1.759,
    "diesel": 2.059,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Alauša",
@@ -3749,10 +3749,10 @@
    "municipality": "Mažeikių r. sav.",
    "lat": 56.314455,
    "lon": 22.310973,
-   "petrol95": 1.799,
+   "petrol95": 1.789,
    "diesel": 2.099,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -3760,10 +3760,10 @@
    "municipality": "Mažeikių r. sav.",
    "lat": 56.302043,
    "lon": 22.342474,
-   "petrol95": 1.799,
-   "diesel": 2.099,
+   "petrol95": 1.749,
+   "diesel": 2.079,
    "lpg": 0.729,
-   "price_updated": "2026-08-25T09:31:07+03:00"
+   "price_updated": "2026-08-25T14:53:11+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -4068,10 +4068,10 @@
    "municipality": "Panevėžio m. sav.",
    "lat": 55.73174,
    "lon": 24.303173,
-   "petrol95": 1.819,
-   "diesel": 2.119,
+   "petrol95": 1.799,
+   "diesel": 2.089,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -4080,9 +4080,9 @@
    "lat": 55.748199,
    "lon": 24.390815,
    "petrol95": 1.799,
-   "diesel": 2.099,
+   "diesel": 2.069,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -4332,10 +4332,10 @@
    "municipality": "Panevėžio r. sav.",
    "lat": 55.733843,
    "lon": 24.263559,
-   "petrol95": 1.829,
-   "diesel": 2.129,
+   "petrol95": 1.819,
+   "diesel": 2.099,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -4687,7 +4687,7 @@
    "petrol95": 1.799,
    "diesel": 2.099,
    "lpg": 0.729,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -4907,7 +4907,7 @@
    "petrol95": 1.829,
    "diesel": 2.129,
    "lpg": 0.729,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -4918,7 +4918,7 @@
    "petrol95": 1.829,
    "diesel": 2.129,
    "lpg": 0.729,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -5237,7 +5237,7 @@
    "petrol95": 1.799,
    "diesel": 2.089,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:05+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -5402,7 +5402,7 @@
    "petrol95": 1.799,
    "diesel": 2.099,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -6029,7 +6029,7 @@
    "petrol95": 1.829,
    "diesel": 2.129,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:05+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -6040,7 +6040,7 @@
    "petrol95": 1.829,
    "diesel": 2.129,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:05+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -6048,10 +6048,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.736926,
    "lon": 25.232113,
-   "petrol95": 1.819,
-   "diesel": 2.119,
+   "petrol95": 1.799,
+   "diesel": 2.089,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:05+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -6059,10 +6059,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.696007,
    "lon": 25.3001,
-   "petrol95": 1.819,
-   "diesel": 2.119,
+   "petrol95": 1.799,
+   "diesel": 2.099,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:05+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Alauša",
@@ -7611,9 +7611,9 @@
    "lat": 55.913609,
    "lon": 23.336876,
    "petrol95": 1.799,
-   "diesel": 2.089,
+   "diesel": 2.079,
    "lpg": 0.719,
-   "price_updated": "2026-08-25T09:31:06+03:00"
+   "price_updated": "2026-08-25T14:53:10+03:00"
   },
   {
    "network": "UAB Apsaga",
