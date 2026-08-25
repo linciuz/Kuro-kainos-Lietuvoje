@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-25T09:30:57Z",
+ "generated_utc": "2026-08-25T11:30:57Z",
  "price_date": "2026-08-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.69,
    "avg": 1.829,
    "max": 1.899,
-   "count": 729
+   "count": 731
   },
   "diesel": {
    "min": 1.98,
    "avg": 2.114,
    "max": 2.199,
-   "count": 731
+   "count": 733
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.766,
+   "avg": 0.767,
    "max": 0.94,
-   "count": 594
+   "count": 596
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 752,
+ "count": 754,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4501,6 +4501,28 @@
    "diesel": 2.129,
    "lpg": null,
    "price_updated": "2026-08-25T10:04:10+03:00"
+  },
+  {
+   "network": "UAB Pakelės namai",
+   "address": "Škilinpamūšio k., Liepų g. 4, 39421",
+   "municipality": "Pasvalio r. sav.",
+   "lat": 56.267534,
+   "lon": 24.370974,
+   "petrol95": 1.81,
+   "diesel": 2.05,
+   "lpg": 0.85,
+   "price_updated": "2026-08-25T14:24:34+03:00"
+  },
+  {
+   "network": "UAB Pakelės namai",
+   "address": "Škilinpamūšio k., Pasienio g. 10, 39421",
+   "municipality": "Pasvalio r. sav.",
+   "lat": 56.2725,
+   "lon": 24.367967,
+   "petrol95": 1.81,
+   "diesel": 2.05,
+   "lpg": 0.85,
+   "price_updated": "2026-08-25T14:24:35+03:00"
   },
   {
    "network": "UAB Skulas",
