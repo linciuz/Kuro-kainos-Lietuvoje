@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-25T09:00:55Z",
+ "generated_utc": "2026-08-25T09:30:57Z",
  "price_date": "2026-08-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.69,
    "avg": 1.829,
    "max": 1.899,
-   "count": 728
+   "count": 729
   },
   "diesel": {
    "min": 1.98,
    "avg": 2.114,
    "max": 2.199,
-   "count": 730
+   "count": 731
   },
   "lpg": {
    "min": 0.67,
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 751,
+ "count": 752,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -1201,6 +1201,17 @@
    "diesel": 2.119,
    "lpg": 0.719,
    "price_updated": "2026-08-25T09:31:06+03:00"
+  },
+  {
+   "network": "MB Tormenta",
+   "address": "Kaunas, Linkuvos g. 77, 48314",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.9143,
+   "lon": 23.887705,
+   "petrol95": 1.77,
+   "diesel": 2.04,
+   "lpg": null,
+   "price_updated": "2026-08-25T12:29:35+03:00"
   },
   {
    "network": "UAB Alauša",
