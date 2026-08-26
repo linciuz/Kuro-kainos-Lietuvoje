@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atviri duomenys — degalų kainų API | Fuelis</title>
-<meta name="description" content="Nemokama, atvira Lietuvos degalų kainų API: JSON ir CSV, 754 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys, paruošti programuotojams.">
+<meta name="description" content="Nemokama, atvira Lietuvos degalų kainų API: JSON ir CSV, 721 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys, paruošti programuotojams.">
 <link rel="canonical" href="https://fuelis.lt/atviri-duomenys.html">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fuelis">
 <meta property="og:title" content="Atviri duomenys — Lietuvos degalų kainų API">
-<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 754 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys.">
+<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 721 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys.">
 <meta property="og:url" content="https://fuelis.lt/atviri-duomenys.html">
 <meta property="og:image" content="https://fuelis.lt/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
  "@context": "https://schema.org",
  "@type": "Dataset",
  "name": "Lietuvos degalų kainos (Fuelis atviri duomenys)",
- "description": "Kasdien atnaujinamos oficialios LEA degalų kainos (benzinas 95, dyzelinas, dujos) 754 Lietuvos degalinių, su koordinatėmis. JSON ir CSV formatais.",
+ "description": "Kasdien atnaujinamos oficialios LEA degalų kainos (benzinas 95, dyzelinas, dujos) 721 Lietuvos degalinių, su koordinatėmis. JSON ir CSV formatais.",
  "url": "https://fuelis.lt/atviri-duomenys.html",
  "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
  "isAccessibleForFree": true,
@@ -38,8 +38,8 @@
                "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje" },
  "includedInDataCatalog": { "@type": "DataCatalog", "name": "Fuelis" },
  "distribution": [
-  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "208 KB" },
-  { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "105 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "199 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "100 KB" },
   { "@type": "DataDownload", "name": "Dienos santrauka (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json", "contentSize": "1 KB" },
   { "@type": "DataDownload", "name": "Kainų istorija (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json", "contentSize": "21 KB" }
  ]
@@ -72,8 +72,8 @@
 <div class="wrap">
 <p class="bc"><a href="https://fuelis.lt/">Fuelis</a> › Atviri duomenys</p>
 <h1>Atviri degalų kainų duomenys (API)</h1>
-<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>754 degalinių</strong> su kainomis ir koordinatėmis,
-atnaujinama kasdien (paskutinis rinkinys: <strong>2026-08-25</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>721 degalinių</strong> su kainomis ir koordinatėmis,
+atnaujinama kasdien (paskutinis rinkinys: <strong>2026-08-26</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
 
 <div class="note">Kodėl tai egzistuoja: LEA kainas skelbia viešai, bet portale ir „Power BI“ skydelyje —
 iš jų programiškai pasiimti duomenis nėra paprasta. Čia tie patys duomenys pateikiami
@@ -83,8 +83,8 @@ stabilia, dokumentuota schema, kad juos galėtum tiesiog <code>fetch</code>-inti
 <table>
 <tr><th>URL</th><th>Kas tai</th><th>Dydis</th></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/api/summary.json">/api/summary.json</a></td><td>Šalies vidurkiai + pigiausia degalinė kiekvienam kurui. <strong>Pradėk nuo šito</strong> — botams ir valdikliams to paprastai užtenka.</td><td>~1 KB</td></tr>
-<tr><td class="ep"><a href="https://fuelis.lt/api/prices.json">/api/prices.json</a></td><td>Visos degalinės: tinklas, adresas, savivaldybė, koordinatės, trys kainos, atnaujinimo laikas.</td><td>~169 KB</td></tr>
-<tr><td class="ep"><a href="https://fuelis.lt/api/prices.csv">/api/prices.csv</a></td><td>Tas pats CSV — „Excel“, „Google Sheets“, R, pandas.</td><td>~95 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/prices.json">/api/prices.json</a></td><td>Visos degalinės: tinklas, adresas, savivaldybė, koordinatės, trys kainos, atnaujinimo laikas.</td><td>~161 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/prices.csv">/api/prices.csv</a></td><td>Tas pats CSV — „Excel“, „Google Sheets“, R, pandas.</td><td>~91 KB</td></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/api/history.json">/api/history.json</a></td><td>Dienos šalies min./vid./maks. nuo 2026-04-08 — grafikams ir tendencijoms.</td><td>~30 KB</td></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/feed.xml">/feed.xml</a></td><td>RSS: kasdienė kainų santrauka.</td><td>—</td></tr>
 </table>
@@ -118,10 +118,10 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
  &quot;municipality&quot;: &quot;Akmenės r. sav.&quot;,
  &quot;lat&quot;: 56.318461,
  &quot;lon&quot;: 22.885615,
- &quot;petrol95&quot;: 1.819,
- &quot;diesel&quot;: 2.049,
+ &quot;petrol95&quot;: 1.749,
+ &quot;diesel&quot;: 2.029,
  &quot;lpg&quot;: 0.72,
- &quot;price_updated&quot;: &quot;2026-08-25T09:38:44+03:00&quot;
+ &quot;price_updated&quot;: &quot;2026-08-26T09:25:54+03:00&quot;
 }</code></pre>
 
 <h2>Atnaujinimo dažnis</h2>
