@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-26T07:31:02Z",
+ "generated_utc": "2026-08-26T08:16:07Z",
  "price_date": "2026-08-26",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.689,
    "avg": 1.796,
    "max": 1.929,
-   "count": 702
+   "count": 729
   },
   "diesel": {
    "min": 1.949,
-   "avg": 2.077,
+   "avg": 2.075,
    "max": 2.199,
-   "count": 703
+   "count": 730
   },
   "lpg": {
    "min": 0.669,
-   "avg": 0.764,
+   "avg": 0.76,
    "max": 0.94,
-   "count": 564
+   "count": 594
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Alytaus r. sav."
   }
  },
- "count": 721,
+ "count": 752,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -1588,6 +1588,61 @@
    "price_updated": "2026-08-26T08:59:58+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Kaunas, Baltų pr. 141A, 47126",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.922867,
+   "lon": 23.869879,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Kaunas, Betygalos g. 8, 47183",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.904512,
+   "lon": 23.879723,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Kaunas, Jonavos g. 51, 44131",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.933919,
+   "lon": 23.917586,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Kaunas, Kuršių g. 13A, 48109",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.936126,
+   "lon": 23.895943,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Kaunas, Partizanų g. 87G, 50312",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.927344,
+   "lon": 23.999205,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Kaunas, Ateities pl. 50B, 52106",
    "municipality": "Kauno m. sav.",
@@ -2116,6 +2171,28 @@
    "price_updated": "2026-08-26T09:00:00+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Garliava, Vytauto g. 111A, 53253",
+   "municipality": "Kauno r. sav.",
+   "lat": 54.828209,
+   "lon": 23.873085,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Ramučiai, K. Bielinio g. 2A, 54465",
+   "municipality": "Kauno r. sav.",
+   "lat": 54.94093,
+   "lon": 24.023464,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Kumpių k., Vakarų g. 14, 47425",
    "municipality": "Kauno r. sav.",
@@ -2358,6 +2435,17 @@
    "price_updated": "2026-08-26T09:58:18+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Kelmė, V. Putvinskio g. 37, 86113",
+   "municipality": "Kelmės r. sav.",
+   "lat": 55.643415,
+   "lon": 22.925581,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
    "network": "AB Orlen Baltics Retail",
    "address": "Klaipėda, Minijos g. 44, 91197",
    "municipality": "Klaipėdos m. sav.",
@@ -2545,6 +2633,28 @@
    "price_updated": "2026-08-26T10:30:05+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Klaipėda, Priestočio g. 26, 92228",
+   "municipality": "Klaipėdos m. sav.",
+   "lat": 55.720315,
+   "lon": 21.136634,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Klaipėda, Taikos pr. 157, 94285",
+   "municipality": "Klaipėdos m. sav.",
+   "lat": 55.660874,
+   "lon": 21.178123,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Klaipėda, Artojo g. 2, 92105",
    "municipality": "Klaipėdos m. sav.",
@@ -2638,10 +2748,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.728398,
    "lon": 21.132584,
-   "petrol95": 1.79,
-   "diesel": 2.04,
-   "lpg": 0.77,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "petrol95": 1.78,
+   "diesel": 2.08,
+   "lpg": 0.74,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2649,10 +2759,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.669656,
    "lon": 21.158613,
-   "petrol95": 1.79,
-   "diesel": 2.04,
-   "lpg": 0.77,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "petrol95": 1.78,
+   "diesel": 2.08,
+   "lpg": 0.73,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2787,6 +2897,39 @@
    "price_updated": "2026-08-26T08:59:58+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Gargždai, Gamyklos g. 1, 96155",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.706416,
+   "lon": 21.363484,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Slengių k., Šilelių g. 1, 92338",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.751399,
+   "lon": 21.173099,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Trepkalnių k., Mokyklos g. 2, 96278",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.608508,
+   "lon": 21.594044,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Jakų k., Vilniaus pl. 9, 96322",
    "municipality": "Klaipėdos r. sav.",
@@ -2825,10 +2968,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.582082,
    "lon": 21.285263,
-   "petrol95": 1.79,
-   "diesel": 2.04,
-   "lpg": 0.77,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "petrol95": 1.78,
+   "diesel": 2.08,
+   "lpg": 0.74,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2836,10 +2979,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.712282,
    "lon": 21.381627,
-   "petrol95": 1.79,
-   "diesel": 2.01,
-   "lpg": 0.76,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "petrol95": 1.77,
+   "diesel": 2.06,
+   "lpg": 0.73,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2848,9 +2991,9 @@
    "lat": 55.721342,
    "lon": 21.385487,
    "petrol95": 1.81,
-   "diesel": 2.04,
-   "lpg": 0.77,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "diesel": 2.09,
+   "lpg": 0.76,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2858,10 +3001,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.687241,
    "lon": 21.693525,
-   "petrol95": 1.79,
-   "diesel": 2.04,
-   "lpg": 0.77,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "petrol95": 1.78,
+   "diesel": 2.08,
+   "lpg": 0.74,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2895,6 +3038,17 @@
    "diesel": 2.159,
    "lpg": 0.799,
    "price_updated": "2026-08-26T09:41:56+03:00"
+  },
+  {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.72,
+   "diesel": 2.02,
+   "lpg": null,
+   "price_updated": "2026-08-26T11:04:03+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -2960,7 +3114,7 @@
    "petrol95": 1.85,
    "diesel": 2.13,
    "lpg": 0.89,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2971,7 +3125,7 @@
    "petrol95": 1.85,
    "diesel": 2.13,
    "lpg": 0.89,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -3843,6 +3997,17 @@
    "price_updated": "2026-08-26T09:25:54+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Kuosiškių k. 4, 83169",
+   "municipality": "Pakruojo r. sav.",
+   "lat": 56.073104,
+   "lon": 23.831915,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
    "network": "UAB Viada LT",
    "address": "Pakruojis, Vytauto Didžiojo g. 98, 83162",
    "municipality": "Pakruojo r. sav.",
@@ -4017,6 +4182,17 @@
    "diesel": 1.989,
    "lpg": 0.699,
    "price_updated": "2026-08-26T08:59:59+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Panevėžys, S. Kerbedžio g. 7F, 35104",
+   "municipality": "Panevėžio m. sav.",
+   "lat": 55.744776,
+   "lon": 24.34628,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -4426,6 +4602,17 @@
    "price_updated": "2026-08-26T09:58:18+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Varkaliai, Žemaičių g. 2A, 90105",
+   "municipality": "Plungės r. sav.",
+   "lat": 55.896951,
+   "lon": 21.82134,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Madalva",
    "address": "Plungė, Lentpjūvės g. 10A, 90118",
    "municipality": "Plungės r. sav.",
@@ -4789,6 +4976,28 @@
    "price_updated": "2026-08-26T09:58:18+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Raseiniai, Liepų g. 10E, 60119",
+   "municipality": "Raseinių r. sav.",
+   "lat": 55.391232,
+   "lon": 23.127085,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Raseiniai, Maironio g. 78b, 60120",
+   "municipality": "Raseinių r. sav.",
+   "lat": 55.389992,
+   "lon": 23.130755,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Ylių k., Pušyno g. 11, 60389",
    "municipality": "Raseinių r. sav.",
@@ -4838,10 +5047,10 @@
    "municipality": "Rietavo sav.",
    "lat": 55.626937,
    "lon": 21.971782,
-   "petrol95": 1.79,
-   "diesel": 2.04,
-   "lpg": 0.77,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "petrol95": 1.78,
+   "diesel": 2.08,
+   "lpg": 0.74,
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -4849,10 +5058,10 @@
    "municipality": "Rietavo sav.",
    "lat": 55.718446,
    "lon": 21.932212,
-   "petrol95": 1.74,
-   "diesel": 2.01,
+   "petrol95": 1.77,
+   "diesel": 2.06,
    "lpg": 0.74,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "Lašų žemės ūkio bendrovė",
@@ -5062,6 +5271,17 @@
    "diesel": 2.12,
    "lpg": 0.87,
    "price_updated": "2026-08-26T09:58:18+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Papušynės k., Šilalės g. 105, 72175",
+   "municipality": "Tauragės r. sav.",
+   "lat": 55.271681,
+   "lon": 22.286524,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:44+03:00"
   },
   {
    "network": "UAB Littaura",
@@ -6340,6 +6560,50 @@
    "price_updated": "2026-08-26T08:59:57+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Vilnius, Baltosios Vokės g. 35, 02243",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.613359,
+   "lon": 25.183731,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Vilnius, Parko g. 64, 11225",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.685908,
+   "lon": 25.430592,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Vilnius, Pramonės g. 18, 11115",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.695952,
+   "lon": 25.43208,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Vilnius, Ukmergės g. 130, 08100",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.703205,
+   "lon": 25.257443,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Vilnius, Architektų g. 130, 04216",
    "municipality": "Vilniaus m. sav.",
@@ -7011,6 +7275,17 @@
    "price_updated": "2026-08-26T09:58:19+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Rudamina, Jašiūnų g. 2, 13255",
+   "municipality": "Vilniaus r. sav.",
+   "lat": 54.597188,
+   "lon": 25.315148,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Kenaoil",
    "address": "Kena, Miško g. 6, 13146",
    "municipality": "Vilniaus r. sav.",
@@ -7440,6 +7715,28 @@
    "price_updated": "2026-08-26T09:00:00+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Šiauliai, Architektų g. 80, 78171",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.924529,
+   "lon": 23.279541,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Šiauliai, Girulių g. 1, 78132",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.922129,
+   "lon": 23.297137,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:42+03:00"
+  },
+  {
    "network": "UAB Junasa, Degalinė",
    "address": "Šiauliai, Bačiūnų g. 12a, 77109",
    "municipality": "Šiaulių m. sav.",
@@ -7627,6 +7924,17 @@
    "price_updated": "2026-08-26T09:53:14+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Toliočiai, Plento g. 2B, 76322",
+   "municipality": "Šiaulių r. sav.",
+   "lat": 55.954334,
+   "lon": 23.255989,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
    "network": "UAB Junasa, Degalinė",
    "address": "Gruzdžiai, M. Katiliškio g. 50, 81428",
    "municipality": "Šiaulių r. sav.",
@@ -7735,6 +8043,17 @@
    "diesel": 2.03,
    "lpg": 0.73,
    "price_updated": "2026-08-26T09:58:18+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Šolių k., Pietinio Kelio g. 9, 75126",
+   "municipality": "Šilalės r. sav.",
+   "lat": 55.485443,
+   "lon": 22.170707,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
   },
   {
    "network": "UAB Madalva",
@@ -7847,15 +8166,37 @@
    "price_updated": "2026-08-26T09:58:18+03:00"
   },
   {
+   "network": "UAB Jozita",
+   "address": "Traksėdžių k., Klaipėdos. 60, 99104",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.376855,
+   "lon": 21.470259,
+   "petrol95": 1.79,
+   "diesel": 2.02,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:43+03:00"
+  },
+  {
+   "network": "UAB Jozita",
+   "address": "Šilutė, Šiaurės g. 1, 99116",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.356609,
+   "lon": 21.469056,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.68,
+   "price_updated": "2026-08-26T11:01:44+03:00"
+  },
+  {
    "network": "UAB Trevena",
    "address": "Saugų k., Tilžės g. 21, 99409",
    "municipality": "Šilutės r. sav.",
    "lat": 55.464353,
    "lon": 21.470278,
-   "petrol95": 1.79,
-   "diesel": 2.01,
+   "petrol95": 1.77,
+   "diesel": 2.06,
    "lpg": 0.72,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "price_updated": "2026-08-26T11:14:25+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -7863,10 +8204,10 @@
    "municipality": "Šilutės r. sav.",
    "lat": 55.227536,
    "lon": 21.701884,
-   "petrol95": 1.79,
-   "diesel": 2.01,
+   "petrol95": 1.77,
+   "diesel": 2.06,
    "lpg": 0.72,
-   "price_updated": "2026-08-26T10:30:04+03:00"
+   "price_updated": "2026-08-26T11:14:24+03:00"
   },
   {
    "network": "UAB Viada LT",
