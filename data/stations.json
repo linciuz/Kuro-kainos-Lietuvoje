@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-26T04:58:05+00:00Z",
+    "resolved_utc": "2026-08-26T06:00:37+00:00Z",
     "winner_counts": {
       "portal": 749,
-      "null": 13,
+      "null": 12,
       "saurida": 5
     },
     "saurida_served": 5,
@@ -17,7 +17,7 @@
         "date": "2026-08-25",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-26T04:58:04+00:00Z"
+        "fetched_utc": "2026-08-26T06:00:36+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-26T04:58:05+00:00Z"
+        "fetched_utc": "2026-08-26T06:00:37+00:00Z"
       }
     ]
   },
@@ -7208,18 +7208,6 @@
       "coord_source": "chain"
     },
     {
-      "network": "UAB DVS Topolis",
-      "address": "Rokiškis, Panevėžio g. 7C, 42163",
-      "municipality": "Rokiškio r. sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "lat": 55.94306,
-      "lon": 25.585657,
-      "approx": false
-    },
-    {
       "network": "UAB Degta",
       "address": "Rokiškis, Respublikos g. 113B, 42150",
       "municipality": "Rokiškio r. sav.",
@@ -11800,6 +11788,22 @@
       "no_price": true,
       "lat": 55.736244,
       "lon": 22.13831,
+      "approx": false
+    },
+    {
+      "network": "UAB DVS Topolis",
+      "address": "Rokiškis, Panevėžio g. 7C, 42163",
+      "municipality": "Rokiškio r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null,
+      "fuels": [
+        "lpg"
+      ],
+      "no_price": true,
+      "lat": 55.94306,
+      "lon": 25.585657,
       "approx": false
     },
     {
