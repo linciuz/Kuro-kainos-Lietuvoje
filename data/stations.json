@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-26T08:15:39+00:00Z",
+    "resolved_utc": "2026-08-26T08:58:06+00:00Z",
     "winner_counts": {
-      "portal": 752,
-      "null": 15
+      "portal": 754,
+      "null": 13
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-08-26",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-26T08:15:38+00:00Z"
+        "fetched_utc": "2026-08-26T08:58:05+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-26T08:15:39+00:00Z"
+        "fetched_utc": "2026-08-26T08:58:06+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.689,
       "avg": 1.796,
       "max": 1.929,
-      "count": 729
+      "count": 731
     },
     "diesel": {
       "min": 1.949,
       "avg": 2.075,
       "max": 2.199,
-      "count": 730
+      "count": 732
     },
     "lpg": {
       "min": 0.669,
       "avg": 0.76,
       "max": 0.94,
-      "count": 594
+      "count": 596
     }
   },
   "stations": [
@@ -6265,9 +6265,13 @@
       "address": "Škilinpamūšio k., Pasienio g. 10, 39421",
       "municipality": "Pasvalio r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.81,
+      "diesel": 2.05,
+      "lpg": 0.85,
+      "price_updated": "2026-08-26T11:57:53+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:57",
       "lat": 56.2725,
       "lon": 24.367967,
       "approx": false,
@@ -6278,9 +6282,13 @@
       "address": "Škilinpamūšio k., Liepų g. 4, 39421",
       "municipality": "Pasvalio r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.81,
+      "diesel": 2.05,
+      "lpg": 0.85,
+      "price_updated": "2026-08-26T11:57:53+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:57",
       "lat": 56.267534,
       "lon": 24.370974,
       "approx": false,
