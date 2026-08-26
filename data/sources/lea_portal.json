@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-25T14:27:43Z",
+ "generated": "2026-08-26T06:05:49Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
  "api_last_updated": "2026-08-25 14:53:11",
- "count": 767,
- "with_coords": 766,
+ "count": 766,
+ "with_coords": 765,
  "priced": 754,
  "stations": [
   {
@@ -9628,21 +9628,6 @@
    "gas_station_id": 302,
    "logo_url": null,
    "submitted_at": "2026-08-25T06:53:29.000000Z"
-  },
-  {
-   "company": "UAB DVS Topolis",
-   "brand": "DVS Topolis",
-   "municipality": "Rokiškio r. sav.",
-   "address": "Rokiškis, Panevėžio g. 7C, 42163",
-   "lat": 55.943176,
-   "lon": 25.58559,
-   "fuels": [
-    "lpg"
-   ],
-   "prices": {},
-   "gas_station_id": 320,
-   "logo_url": null,
-   "submitted_at": "2026-08-25T07:30:03.000000Z"
   },
   {
    "company": "UAB Degta",
