@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-27T09:30:51Z",
+ "generated_utc": "2026-08-27T10:00:58Z",
  "price_date": "2026-08-27",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.669,
    "avg": 0.765,
    "max": 0.94,
-   "count": 590
+   "count": 591
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kauno m. sav."
   }
  },
- "count": 748,
+ "count": 749,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -5128,6 +5128,17 @@
    "diesel": 2.199,
    "lpg": 0.899,
    "price_updated": "2026-08-27T09:55:12+03:00"
+  },
+  {
+   "network": "UAB DVS Topolis",
+   "address": "Rokiškis, Panevėžio g. 7C, 42163",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.94306,
+   "lon": 25.585657,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.899,
+   "price_updated": "2026-08-27T12:53:17+03:00"
   },
   {
    "network": "UAB Viada LT",
