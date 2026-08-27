@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-27T08:30:51Z",
+ "generated_utc": "2026-08-27T08:45:58Z",
  "price_date": "2026-08-27",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -230,9 +230,9 @@
    "lat": 54.387521,
    "lon": 24.031856,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.979,
    "lpg": null,
-   "price_updated": "2026-08-27T10:30:04+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -307,9 +307,9 @@
    "lat": 54.407139,
    "lon": 24.101763,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -318,9 +318,9 @@
    "lat": 54.365305,
    "lon": 24.106088,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -329,9 +329,9 @@
    "lat": 54.428042,
    "lon": 24.001399,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -1121,9 +1121,9 @@
    "lat": 54.410916,
    "lon": 23.206718,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2243,9 +2243,9 @@
    "lat": 54.929051,
    "lon": 24.038115,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2727,9 +2727,9 @@
    "lat": 55.686493,
    "lon": 21.145677,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3167,9 +3167,9 @@
    "lat": 55.826051,
    "lon": 24.979937,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Topgas",
@@ -3651,9 +3651,9 @@
    "lat": 54.634451,
    "lon": 23.436397,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB VIRŠI Lietuva",
@@ -4388,9 +4388,9 @@
    "lat": 55.787569,
    "lon": 24.43921,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -4729,9 +4729,9 @@
    "lat": 54.503038,
    "lon": 23.375134,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -5763,9 +5763,9 @@
    "lat": 55.498548,
    "lon": 25.58397,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Utentra",
@@ -6929,9 +6929,9 @@
    "lat": 54.723146,
    "lon": 25.241059,
    "petrol95": 1.699,
-   "diesel": 1.959,
+   "diesel": 1.999,
    "lpg": 0.737,
-   "price_updated": "2026-08-27T10:30:03+03:00"
+   "price_updated": "2026-08-27T11:32:58+03:00"
   },
   {
    "network": "UAB Viada LT",
