@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-08-27T07:30:37+00:00Z",
+    "resolved_utc": "2026-08-27T08:00:38+00:00Z",
     "winner_counts": {
-      "portal": 744,
-      "null": 23
+      "portal": 747,
+      "null": 20
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-08-27",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-08-27T07:30:36+00:00Z"
+        "fetched_utc": "2026-08-27T08:00:37+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-08-27T07:30:37+00:00Z"
+        "fetched_utc": "2026-08-27T08:00:38+00:00Z"
       }
     ]
   },
@@ -45,7 +45,7 @@
       "min": 0.669,
       "avg": 0.765,
       "max": 0.94,
-      "count": 586
+      "count": 589
     }
   },
   "stations": [
@@ -5212,28 +5212,36 @@
     },
     {
       "network": "UAB Naftos dujos",
-      "address": "Mažeikiai, Algirdo g. 42, 89101",
-      "municipality": "Mažeikių r. sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
-      "lat": 56.315943,
-      "lon": 22.314284,
-      "approx": false
-    },
-    {
-      "network": "UAB Naftos dujos",
       "address": "Mažeikiai, Daukšos g. 29 / Žemaitijos g. 69, 89132",
       "municipality": "Mažeikių r. sav.",
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null,
+      "lpg": 0.73,
+      "price_updated": "2026-08-27T11:00:08+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 56.318881,
       "lon": 22.318919,
       "approx": false,
       "coord_source": "lea_portal"
+    },
+    {
+      "network": "UAB Naftos dujos",
+      "address": "Mažeikiai, Algirdo g. 42, 89101",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": 0.71,
+      "price_updated": "2026-08-27T11:00:00+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
+      "lat": 56.315943,
+      "lon": 22.314284,
+      "approx": false
     },
     {
       "network": "UAB Neste Lietuva",
@@ -11291,7 +11299,11 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null,
+      "lpg": 0.85,
+      "price_updated": "2026-08-27T11:00:14+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 55.137806,
       "lon": 26.155728,
       "approx": false
