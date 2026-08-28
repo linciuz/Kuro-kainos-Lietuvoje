@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-08-27",
+ "price_date": "2026-08-28",
  "currency": "EUR",
- "stations_with_prices": 749,
+ "stations_with_prices": 754,
  "national": {
   "petrol95": {
-   "min": 1.69,
-   "avg": 1.787,
-   "max": 1.959,
-   "count": 731
+   "min": 1.659,
+   "avg": 1.779,
+   "max": 1.929,
+   "count": 727
   },
   "diesel": {
-   "min": 1.954,
-   "avg": 2.064,
+   "min": 1.929,
+   "avg": 2.052,
    "max": 2.199,
-   "count": 733
+   "count": 729
   },
   "lpg": {
    "min": 0.669,
-   "avg": 0.765,
+   "avg": 0.763,
    "max": 0.94,
-   "count": 591
+   "count": 597
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.69,
-   "network": "UAB Emsi",
-   "address": "Klaipėda, Minijos g. 154A, 93263",
-   "municipality": "Klaipėdos m. sav."
+   "price": 1.659,
+   "network": "UAB Alauša",
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
+   "municipality": "Utenos r. sav."
   },
   "diesel": {
-   "price": 1.954,
-   "network": "UAB Neste Lietuva",
-   "address": "Alytus, Santaikos g. 34A, 62123",
-   "municipality": "Alytaus m. sav."
+   "price": 1.929,
+   "network": "UAB Alauša",
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
+   "municipality": "Utenos r. sav."
   },
   "lpg": {
    "price": 0.669,
