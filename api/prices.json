@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-28T08:15:49Z",
+ "generated_utc": "2026-08-28T08:46:02Z",
  "price_date": "2026-08-28",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -5509,10 +5509,10 @@
    "municipality": "Telšių r. sav.",
    "lat": 55.901344,
    "lon": 22.506292,
-   "petrol95": 1.86,
-   "diesel": 2.15,
+   "petrol95": 1.8,
+   "diesel": 2.1,
    "lpg": 0.8,
-   "price_updated": "2026-08-28T10:30:02+03:00"
+   "price_updated": "2026-08-28T11:36:29+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
