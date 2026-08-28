@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-28T17:43:59Z",
+ "generated_utc": "2026-08-28T18:40:35Z",
  "price_date": "2026-08-28",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -934,9 +934,9 @@
    "lat": 55.083916,
    "lon": 22.606942,
    "petrol95": 1.77,
-   "diesel": 2.02,
+   "diesel": 2.05,
    "lpg": 0.7,
-   "price_updated": "2026-08-28T09:45:16+03:00"
+   "price_updated": "2026-08-28T20:43:37+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -1131,10 +1131,10 @@
    "municipality": "Kalvarijos sav.",
    "lat": 54.436202,
    "lon": 23.204823,
-   "petrol95": 1.74,
-   "diesel": 1.98,
+   "petrol95": 1.72,
+   "diesel": 1.99,
    "lpg": 0.73,
-   "price_updated": "2026-08-28T09:45:16+03:00"
+   "price_updated": "2026-08-28T20:43:37+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -5731,8 +5731,8 @@
    "lon": 24.790387,
    "petrol95": 1.79,
    "diesel": 2.02,
-   "lpg": 0.72,
-   "price_updated": "2026-08-28T09:45:15+03:00"
+   "lpg": 0.7,
+   "price_updated": "2026-08-28T20:43:37+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7403,8 +7403,8 @@
    "lon": 25.185979,
    "petrol95": 1.79,
    "diesel": 2.02,
-   "lpg": 0.72,
-   "price_updated": "2026-08-28T09:45:16+03:00"
+   "lpg": 0.74,
+   "price_updated": "2026-08-28T20:43:37+03:00"
   },
   {
    "network": "UAB Saurida",
