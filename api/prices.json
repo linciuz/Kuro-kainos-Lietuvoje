@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-31T12:01:56Z",
+ "generated_utc": "2026-08-31T13:46:48Z",
  "price_date": "2026-08-31",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -2751,7 +2751,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2762,7 +2762,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.73,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2971,7 +2971,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2982,7 +2982,7 @@
    "petrol95": 1.71,
    "diesel": 1.96,
    "lpg": 0.73,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2993,7 +2993,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.76,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3004,7 +3004,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -3103,7 +3103,7 @@
    "petrol95": 1.81,
    "diesel": 2.13,
    "lpg": 0.86,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3114,7 +3114,7 @@
    "petrol95": 1.81,
    "diesel": 2.13,
    "lpg": 0.86,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -5094,7 +5094,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -5105,7 +5105,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "Lašų žemės ūkio bendrovė",
@@ -8251,7 +8251,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -8262,7 +8262,7 @@
    "petrol95": 1.74,
    "diesel": 1.99,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T10:30:03+03:00"
+   "price_updated": "2026-08-31T15:36:34+03:00"
   },
   {
    "network": "UAB Viada LT",
