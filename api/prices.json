@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-31T09:31:14Z",
+ "generated_utc": "2026-08-31T11:31:24Z",
  "price_date": "2026-08-31",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.659,
    "avg": 1.788,
    "max": 1.919,
-   "count": 730
+   "count": 733
   },
   "diesel": {
    "min": 1.899,
    "avg": 2.041,
    "max": 2.199,
-   "count": 732
+   "count": 735
   },
   "lpg": {
    "min": 0.67,
    "avg": 0.766,
    "max": 0.94,
-   "count": 596
+   "count": 599
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 754,
+ "count": 757,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -7792,6 +7792,28 @@
    "price_updated": "2026-08-31T09:59:10+03:00"
   },
   {
+   "network": "UAB Junasa, Degalinė",
+   "address": "Šiauliai, Bačiūnų g. 12a, 77109",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.89793,
+   "lon": 23.35172,
+   "petrol95": 1.729,
+   "diesel": 1.999,
+   "lpg": 0.69,
+   "price_updated": "2026-08-31T14:17:05+03:00"
+  },
+  {
+   "network": "UAB Junasa, Degalinė",
+   "address": "Šiauliai, Žemaitės g. 131c, 76175",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.948105,
+   "lon": 23.320427,
+   "petrol95": 1.729,
+   "diesel": 1.999,
+   "lpg": 0.69,
+   "price_updated": "2026-08-31T14:17:05+03:00"
+  },
+  {
    "network": "UAB Neste Lietuva",
    "address": "Šiauliai, Dubijos g. 18A, 77172",
    "municipality": "Šiaulių m. sav.",
@@ -7966,6 +7988,17 @@
    "diesel": 1.99,
    "lpg": 0.69,
    "price_updated": "2026-08-31T09:59:10+03:00"
+  },
+  {
+   "network": "UAB Junasa, Degalinė",
+   "address": "Gruzdžiai, M. Katiliškio g. 50, 81428",
+   "municipality": "Šiaulių r. sav.",
+   "lat": 56.099227,
+   "lon": 23.265819,
+   "petrol95": 1.729,
+   "diesel": 1.999,
+   "lpg": 0.69,
+   "price_updated": "2026-08-31T14:17:05+03:00"
   },
   {
    "network": "UAB Viada LT",
