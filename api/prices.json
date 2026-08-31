@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-08-31T19:42:07Z",
+ "generated_utc": "2026-08-31T22:01:21Z",
  "price_date": "2026-08-31",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -122,7 +122,7 @@
    "petrol95": 1.79,
    "diesel": 2.02,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -210,7 +210,7 @@
    "petrol95": 1.79,
    "diesel": 2.02,
    "lpg": null,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -221,7 +221,7 @@
    "petrol95": 1.79,
    "diesel": 2.02,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -936,7 +936,7 @@
    "petrol95": 1.79,
    "diesel": 2.02,
    "lpg": 0.7,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -1002,7 +1002,7 @@
    "petrol95": 1.8,
    "diesel": 2.02,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Topgas",
@@ -1123,7 +1123,7 @@
    "petrol95": 1.76,
    "diesel": 1.99,
    "lpg": 0.73,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -1838,7 +1838,7 @@
    "petrol95": 1.78,
    "diesel": 1.97,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -1849,7 +1849,7 @@
    "petrol95": 1.79,
    "diesel": 2.02,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2234,7 +2234,7 @@
    "petrol95": 1.78,
    "diesel": 2.03,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -2245,7 +2245,7 @@
    "petrol95": 1.78,
    "diesel": 2.04,
    "lpg": 0.73,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2960,7 +2960,7 @@
    "petrol95": 1.77,
    "diesel": 2.02,
    "lpg": 0.69,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3653,7 +3653,7 @@
    "petrol95": 1.79,
    "diesel": 1.99,
    "lpg": null,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4731,7 +4731,7 @@
    "petrol95": 1.81,
    "diesel": 2.03,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -4742,7 +4742,7 @@
    "petrol95": 1.79,
    "diesel": 1.99,
    "lpg": null,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4874,7 +4874,7 @@
    "petrol95": 1.79,
    "diesel": 1.99,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5226,7 +5226,7 @@
    "petrol95": 1.8,
    "diesel": 2.0,
    "lpg": 0.7,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -5688,7 +5688,7 @@
    "petrol95": 1.8,
    "diesel": 2.02,
    "lpg": 0.7,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5699,7 +5699,7 @@
    "petrol95": 1.8,
    "diesel": 2.02,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -6964,7 +6964,7 @@
    "petrol95": 1.81,
    "diesel": 2.02,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7360,7 +7360,7 @@
    "petrol95": 1.81,
    "diesel": 2.02,
    "lpg": 0.74,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7415,7 +7415,7 @@
    "petrol95": 1.81,
    "diesel": 2.02,
    "lpg": 0.72,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7866,7 +7866,7 @@
    "petrol95": 1.79,
    "diesel": 2.0,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7877,7 +7877,7 @@
    "petrol95": 1.79,
    "diesel": 2.0,
    "lpg": 0.71,
-   "price_updated": "2026-08-31T14:51:30+03:00"
+   "price_updated": "2026-08-31T22:41:49+03:00"
   },
   {
    "network": "UAB Viada LT",
