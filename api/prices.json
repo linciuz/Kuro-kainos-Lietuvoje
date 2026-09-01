@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-01T17:28:16Z",
+ "generated_utc": "2026-09-01T22:01:43Z",
  "price_date": "2026-09-01",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -25,7 +25,7 @@
   },
   "diesel": {
    "min": 1.95,
-   "avg": 2.088,
+   "avg": 2.089,
    "max": 2.239,
    "count": 733
   },
@@ -1143,9 +1143,9 @@
    "lat": 54.436202,
    "lon": 23.204823,
    "petrol95": 1.78,
-   "diesel": 1.98,
+   "diesel": 2.06,
    "lpg": 0.73,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -3695,9 +3695,9 @@
    "lat": 54.577893,
    "lon": 23.376915,
    "petrol95": 1.79,
-   "diesel": 2.02,
+   "diesel": 2.06,
    "lpg": null,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4915,10 +4915,10 @@
    "municipality": "Radviliškio r. sav.",
    "lat": 55.814602,
    "lon": 23.553195,
-   "petrol95": 1.79,
-   "diesel": 2.01,
+   "petrol95": 1.82,
+   "diesel": 2.03,
    "lpg": 0.71,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -4926,10 +4926,10 @@
    "municipality": "Radviliškio r. sav.",
    "lat": 55.814742,
    "lon": 23.553075,
-   "petrol95": 1.79,
-   "diesel": 2.01,
+   "petrol95": 1.82,
+   "diesel": 2.03,
    "lpg": 0.7,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -5697,9 +5697,9 @@
    "lat": 55.165001,
    "lon": 24.515676,
    "petrol95": 1.8,
-   "diesel": 2.01,
+   "diesel": 2.05,
    "lpg": 0.72,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5707,10 +5707,10 @@
    "municipality": "Ukmergės r. sav.",
    "lat": 55.258993,
    "lon": 24.790387,
-   "petrol95": 1.8,
-   "diesel": 2.02,
+   "petrol95": 1.82,
+   "diesel": 2.06,
    "lpg": 0.7,
-   "price_updated": "2026-09-01T13:28:43+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -6984,9 +6984,9 @@
    "lat": 54.65189,
    "lon": 25.185668,
    "petrol95": 1.81,
-   "diesel": 2.04,
+   "diesel": 2.06,
    "lpg": 0.72,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7382,7 +7382,7 @@
    "petrol95": 1.76,
    "diesel": 2.04,
    "lpg": null,
-   "price_updated": "2026-09-01T13:28:43+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7424,9 +7424,9 @@
    "lat": 55.597425,
    "lon": 26.403381,
    "petrol95": 1.81,
-   "diesel": 2.02,
+   "diesel": 2.04,
    "lpg": 0.72,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7874,10 +7874,10 @@
    "municipality": "Šiaulių m. sav.",
    "lat": 55.916466,
    "lon": 23.301941,
-   "petrol95": 1.79,
-   "diesel": 2.01,
+   "petrol95": 1.82,
+   "diesel": 2.03,
    "lpg": 0.71,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7885,10 +7885,10 @@
    "municipality": "Šiaulių m. sav.",
    "lat": 55.942819,
    "lon": 23.281619,
-   "petrol95": 1.79,
-   "diesel": 2.01,
+   "petrol95": 1.82,
+   "diesel": 2.03,
    "lpg": 0.71,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "price_updated": "2026-09-01T20:28:01+03:00"
   },
   {
    "network": "UAB Viada LT",
