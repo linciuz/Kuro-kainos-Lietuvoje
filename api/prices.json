@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-01T10:28:57Z",
+ "generated_utc": "2026-09-01T10:31:33Z",
  "price_date": "2026-09-01",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -5709,8 +5709,8 @@
    "lon": 24.790387,
    "petrol95": 1.8,
    "diesel": 2.02,
-   "lpg": 0.72,
-   "price_updated": "2026-09-01T09:14:51+03:00"
+   "lpg": 0.7,
+   "price_updated": "2026-09-01T13:28:43+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7379,10 +7379,10 @@
    "municipality": "Vilniaus r. sav.",
    "lat": 54.710674,
    "lon": 25.156488,
-   "petrol95": 1.79,
+   "petrol95": 1.76,
    "diesel": 2.04,
    "lpg": null,
-   "price_updated": "2026-09-01T09:14:52+03:00"
+   "price_updated": "2026-09-01T13:28:43+03:00"
   },
   {
    "network": "UAB Viada LT",

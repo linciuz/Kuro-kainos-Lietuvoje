@@ -3,12 +3,13 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-01T10:27:29+00:00Z",
+    "resolved_utc": "2026-09-01T10:31:16+00:00Z",
     "winner_counts": {
-      "portal": 758,
-      "null": 9
+      "portal": 756,
+      "null": 9,
+      "saurida": 2
     },
-    "saurida_served": 0,
+    "saurida_served": 2,
     "sources": [
       {
         "source": "portal",
@@ -16,7 +17,7 @@
         "date": "2026-09-01",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-01T10:27:28+00:00Z"
+        "fetched_utc": "2026-09-01T10:31:15+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-01T10:27:29+00:00Z"
+        "fetched_utc": "2026-09-01T10:31:16+00:00Z"
       }
     ]
   },
@@ -7900,9 +7901,9 @@
       "locality": "",
       "petrol95": 1.8,
       "diesel": 2.02,
-      "lpg": 0.72,
-      "price_updated": "2026-09-01T09:14:51+03:00",
-      "price_src": "portal",
+      "lpg": 0.7,
+      "price_updated": "2026-09-01T13:28:43+03:00",
+      "price_src": "saurida",
       "lat": 55.258993,
       "lon": 24.790387,
       "approx": false
@@ -10215,11 +10216,11 @@
       "address": "Čekoniškių k., 14207",
       "municipality": "Vilniaus r. sav.",
       "locality": "",
-      "petrol95": 1.79,
+      "petrol95": 1.76,
       "diesel": 2.04,
       "lpg": null,
-      "price_updated": "2026-09-01T09:14:52+03:00",
-      "price_src": "portal",
+      "price_updated": "2026-09-01T13:28:43+03:00",
+      "price_src": "saurida",
       "lat": 54.710674,
       "lon": 25.156488,
       "approx": false
