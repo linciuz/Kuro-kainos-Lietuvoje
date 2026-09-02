@@ -4,11 +4,11 @@
   "scope": "business_fixed_incl_vat",
   "unit": "EUR/L su PVM",
   "fetched": "2026-09-02",
-  "stated_date": "02.09",
+  "stated_date": "03.09",
   "prices": {
     "diesel": 2.149,
     "petrol95": 1.889,
-    "lpg": 0.819,
+    "lpg": 0.829,
     "adblue": 0.849,
     "diesel_plus": 2.238,
     "petrol95_plus": 1.978,
