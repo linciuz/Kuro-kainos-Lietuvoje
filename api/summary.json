@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-01",
+ "price_date": "2026-09-02",
  "currency": "EUR",
- "stations_with_prices": 758,
+ "stations_with_prices": 756,
  "national": {
   "petrol95": {
-   "min": 1.09,
-   "avg": 1.839,
-   "max": 1.949,
-   "count": 731
+   "min": 1.699,
+   "avg": 1.827,
+   "max": 2.009,
+   "count": 729
   },
   "diesel": {
-   "min": 1.95,
-   "avg": 2.089,
-   "max": 2.239,
-   "count": 733
+   "min": 1.96,
+   "avg": 2.076,
+   "max": 2.219,
+   "count": 731
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.778,
+   "avg": 0.771,
    "max": 0.94,
-   "count": 601
+   "count": 596
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.09,
-   "network": "UAB Apsaga",
-   "address": "Šiauliai, Pramonės g. 28, 77116",
-   "municipality": "Šiaulių m. sav."
+   "price": 1.699,
+   "network": "UAB Eniris",
+   "address": "Kalnuotės 1 k. 15130",
+   "municipality": "Vilniaus r. sav."
   },
   "diesel": {
-   "price": 1.95,
-   "network": "UAB Tripletas",
-   "address": "Mažeikiai, Sedos g. 16, 89233",
-   "municipality": "Mažeikių r. sav."
+   "price": 1.96,
+   "network": "UAB Trevena",
+   "address": "Gargždai, Klaipėdos g. 39, 96157",
+   "municipality": "Klaipėdos r. sav."
   },
   "lpg": {
    "price": 0.67,
