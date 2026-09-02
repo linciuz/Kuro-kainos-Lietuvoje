@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-02T07:31:30Z",
+ "generated_utc": "2026-09-02T08:16:45Z",
  "price_date": "2026-09-02",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.699,
    "avg": 1.827,
    "max": 2.009,
-   "count": 729
+   "count": 730
   },
   "diesel": {
    "min": 1.96,
    "avg": 2.076,
    "max": 2.219,
-   "count": 731
+   "count": 732
   },
   "lpg": {
    "min": 0.67,
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 756,
+ "count": 757,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -1113,6 +1113,17 @@
    "diesel": 2.079,
    "lpg": null,
    "price_updated": "2026-09-02T09:47:39+03:00"
+  },
+  {
+   "network": "UAB Nostrada",
+   "address": "Kazlavo k. 4, 69285",
+   "municipality": "Kalvarijos sav.",
+   "lat": 54.32897,
+   "lon": 23.148446,
+   "petrol95": 1.82,
+   "diesel": 2.07,
+   "lpg": null,
+   "price_updated": "2026-09-02T11:14:50+03:00"
   },
   {
    "network": "UAB Saurida",
