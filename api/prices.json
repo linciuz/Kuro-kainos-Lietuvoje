@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-02T12:44:45Z",
+ "generated_utc": "2026-09-02T13:37:51Z",
  "price_date": "2026-09-02",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,13 +19,13 @@
  "summary": {
   "petrol95": {
    "min": 1.699,
-   "avg": 1.826,
+   "avg": 1.827,
    "max": 1.959,
    "count": 730
   },
   "diesel": {
-   "min": 1.96,
-   "avg": 2.075,
+   "min": 1.968,
+   "avg": 2.076,
    "max": 2.269,
    "count": 732
   },
@@ -44,10 +44,10 @@
    "municipality": "Vilniaus r. sav."
   },
   "diesel": {
-   "price": 1.96,
-   "network": "UAB Trevena",
-   "address": "Gargždai, Klaipėdos g. 39, 96157",
-   "municipality": "Klaipėdos r. sav."
+   "price": 1.968,
+   "network": "UAB Autograndas",
+   "address": "Visaginas, Taikos pr. 47, 31217",
+   "municipality": "Visagino sav."
   },
   "lpg": {
    "price": 0.67,
@@ -2792,10 +2792,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.728398,
    "lon": 21.132584,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.74,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2803,10 +2803,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.669656,
    "lon": 21.158613,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.73,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -3012,10 +3012,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.582082,
    "lon": 21.285263,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.74,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3023,10 +3023,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.712282,
    "lon": 21.381627,
-   "petrol95": 1.71,
-   "diesel": 1.96,
+   "petrol95": 1.76,
+   "diesel": 2.06,
    "lpg": 0.73,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3034,10 +3034,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.721342,
    "lon": 21.385487,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.81,
+   "diesel": 2.11,
    "lpg": 0.76,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3045,10 +3045,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.687241,
    "lon": 21.693525,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.74,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -3144,10 +3144,10 @@
    "municipality": "Kretingos r. sav.",
    "lat": 56.026775,
    "lon": 21.262624,
-   "petrol95": 1.81,
-   "diesel": 2.13,
+   "petrol95": 1.89,
+   "diesel": 2.15,
    "lpg": 0.86,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3155,10 +3155,10 @@
    "municipality": "Kretingos r. sav.",
    "lat": 55.896943,
    "lon": 21.244326,
-   "petrol95": 1.81,
-   "diesel": 2.13,
+   "petrol95": 1.89,
+   "diesel": 2.15,
    "lpg": 0.86,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -5091,10 +5091,10 @@
    "municipality": "Rietavo sav.",
    "lat": 55.626937,
    "lon": 21.971782,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.74,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -5102,10 +5102,10 @@
    "municipality": "Rietavo sav.",
    "lat": 55.718446,
    "lon": 21.932212,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.74,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "Lašų žemės ūkio bendrovė",
@@ -8248,10 +8248,10 @@
    "municipality": "Šilutės r. sav.",
    "lat": 55.464353,
    "lon": 21.470278,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.72,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:40+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -8259,10 +8259,10 @@
    "municipality": "Šilutės r. sav.",
    "lat": 55.227536,
    "lon": 21.701884,
-   "petrol95": 1.74,
-   "diesel": 1.99,
+   "petrol95": 1.79,
+   "diesel": 2.07,
    "lpg": 0.72,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "price_updated": "2026-09-02T16:08:39+03:00"
   },
   {
    "network": "UAB Viada LT",

@@ -6,13 +6,13 @@
  "national": {
   "petrol95": {
    "min": 1.699,
-   "avg": 1.826,
+   "avg": 1.827,
    "max": 1.959,
    "count": 730
   },
   "diesel": {
-   "min": 1.96,
-   "avg": 2.075,
+   "min": 1.968,
+   "avg": 2.076,
    "max": 2.269,
    "count": 732
   },
@@ -31,10 +31,10 @@
    "municipality": "Vilniaus r. sav."
   },
   "diesel": {
-   "price": 1.96,
-   "network": "UAB Trevena",
-   "address": "Gargždai, Klaipėdos g. 39, 96157",
-   "municipality": "Klaipėdos r. sav."
+   "price": 1.968,
+   "network": "UAB Autograndas",
+   "address": "Visaginas, Taikos pr. 47, 31217",
+   "municipality": "Visagino sav."
   },
   "lpg": {
    "price": 0.67,
