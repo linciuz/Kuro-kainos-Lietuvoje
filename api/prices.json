@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-02T09:16:39Z",
+ "generated_utc": "2026-09-02T09:31:36Z",
  "price_date": "2026-09-02",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3782,10 +3782,10 @@
    "municipality": "Mažeikių r. sav.",
    "lat": 56.304209,
    "lon": 22.360258,
-   "petrol95": 1.739,
-   "diesel": 1.999,
-   "lpg": 0.729,
-   "price_updated": "2026-09-02T08:32:41+03:00"
+   "petrol95": 1.729,
+   "diesel": 1.979,
+   "lpg": 0.689,
+   "price_updated": "2026-09-02T12:30:47+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -4566,7 +4566,7 @@
    "petrol95": 1.729,
    "diesel": 1.979,
    "lpg": 0.689,
-   "price_updated": "2026-09-02T08:32:42+03:00"
+   "price_updated": "2026-09-02T12:30:47+03:00"
   },
   {
    "network": "UAB EU Verslas",
@@ -4577,7 +4577,7 @@
    "petrol95": 1.799,
    "diesel": 2.029,
    "lpg": null,
-   "price_updated": "2026-09-02T08:32:42+03:00"
+   "price_updated": "2026-09-02T12:30:47+03:00"
   },
   {
    "network": "UAB EU Verslas",
@@ -4588,7 +4588,7 @@
    "petrol95": 1.73,
    "diesel": 1.98,
    "lpg": 0.69,
-   "price_updated": "2026-09-02T08:32:42+03:00"
+   "price_updated": "2026-09-02T12:30:47+03:00"
   },
   {
    "network": "UAB Eniris",
