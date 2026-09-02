@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-02T10:31:36Z",
+ "generated_utc": "2026-09-02T12:44:45Z",
  "price_date": "2026-09-02",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -779,10 +779,10 @@
    "municipality": "Jonavos r. sav.",
    "lat": 55.067137,
    "lon": 24.287969,
-   "petrol95": 1.84,
-   "diesel": 2.12,
-   "lpg": 0.82,
-   "price_updated": "2026-09-02T10:30:04+03:00"
+   "petrol95": 1.88,
+   "diesel": 2.16,
+   "lpg": 0.84,
+   "price_updated": "2026-09-02T15:34:09+03:00"
   },
   {
    "network": "Joniškio rajono Skaistčio žemės ūkio bendrovė",

@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-02T10:31:13+00:00Z",
+    "resolved_utc": "2026-09-02T12:44:16+00:00Z",
     "winner_counts": {
       "portal": 757,
       "null": 10
@@ -16,7 +16,7 @@
         "date": "2026-09-02",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-02T10:31:12+00:00Z"
+        "fetched_utc": "2026-09-02T12:44:15+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-02T10:31:13+00:00Z"
+        "fetched_utc": "2026-09-02T12:44:16+00:00Z"
       }
     ]
   },
@@ -1036,13 +1036,13 @@
       "address": "Jonava, Taurostos g. 16A, 55195",
       "municipality": "Jonavos r. sav.",
       "locality": "",
-      "petrol95": 1.84,
-      "diesel": 2.12,
-      "lpg": 0.82,
-      "price_updated": "2026-09-02T10:30:04+03:00",
+      "petrol95": 1.88,
+      "diesel": 2.16,
+      "lpg": 0.84,
+      "price_updated": "2026-09-02T15:34:09+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "15:34",
       "lat": 55.067137,
       "lon": 24.287969,
       "approx": false
