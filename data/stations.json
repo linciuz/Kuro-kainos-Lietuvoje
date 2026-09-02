@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-02T08:16:08+00:00Z",
+    "resolved_utc": "2026-09-02T08:31:13+00:00Z",
     "winner_counts": {
       "portal": 757,
       "null": 10
@@ -16,7 +16,7 @@
         "date": "2026-09-02",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-02T08:16:07+00:00Z"
+        "fetched_utc": "2026-09-02T08:31:12+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-02T08:16:08+00:00Z"
+        "fetched_utc": "2026-09-02T08:31:13+00:00Z"
       }
     ]
   },
@@ -6591,6 +6591,20 @@
     },
     {
       "network": "UAB Apsaga",
+      "address": "Radviliškis, Šiaulių g. 12, 82142",
+      "municipality": "Radviliškio r. sav.",
+      "locality": "",
+      "petrol95": 1.834,
+      "diesel": 2.084,
+      "lpg": 0.775,
+      "price_updated": "2026-09-02T09:45:00+03:00",
+      "price_src": "portal",
+      "lat": 55.81545,
+      "lon": 23.543683,
+      "approx": false
+    },
+    {
+      "network": "UAB Apsaga",
       "address": "Baisogalos k., Beržų g. 19, 82323",
       "municipality": "Radviliškio r. sav.",
       "locality": "",
@@ -6603,20 +6617,6 @@
       "lon": 23.733381,
       "approx": false,
       "coord_source": "lea_portal"
-    },
-    {
-      "network": "UAB Apsaga",
-      "address": "Radviliškis, Šiaulių g. 12, 82142",
-      "municipality": "Radviliškio r. sav.",
-      "locality": "",
-      "petrol95": 1.834,
-      "diesel": 2.084,
-      "lpg": 0.775,
-      "price_updated": "2026-09-02T09:45:00+03:00",
-      "price_src": "portal",
-      "lat": 55.81545,
-      "lon": 23.543683,
-      "approx": false
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -10511,6 +10511,20 @@
     },
     {
       "network": "UAB Apsaga",
+      "address": "Šiauliai, Pramonės g. 28, 77116",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.869,
+      "diesel": 2.059,
+      "lpg": null,
+      "price_updated": "2026-09-02T09:45:00+03:00",
+      "price_src": "portal",
+      "lat": 55.904952,
+      "lon": 23.328068,
+      "approx": false
+    },
+    {
+      "network": "UAB Apsaga",
       "address": "Šiauliai, Pramonės g. 3A, 78140",
       "municipality": "Šiaulių m. sav.",
       "locality": "",
@@ -10563,20 +10577,6 @@
       "price_src": "portal",
       "lat": 55.91673,
       "lon": 23.246901,
-      "approx": false
-    },
-    {
-      "network": "UAB Apsaga",
-      "address": "Šiauliai, Pramonės g. 28, 77116",
-      "municipality": "Šiaulių m. sav.",
-      "locality": "",
-      "petrol95": 1.869,
-      "diesel": 2.059,
-      "lpg": null,
-      "price_updated": "2026-09-02T09:45:00+03:00",
-      "price_src": "portal",
-      "lat": 55.904952,
-      "lon": 23.328068,
       "approx": false
     },
     {
