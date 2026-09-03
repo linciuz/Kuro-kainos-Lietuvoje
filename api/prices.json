@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-03T11:12:42Z",
+ "generated_utc": "2026-09-03T11:16:27Z",
  "price_date": "2026-09-03",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3210,10 +3210,10 @@
    "municipality": "Kupiškio r. sav.",
    "lat": 55.834253,
    "lon": 25.009325,
-   "petrol95": 1.829,
-   "diesel": 2.069,
+   "petrol95": 1.909,
+   "diesel": 2.129,
    "lpg": 0.799,
-   "price_updated": "2026-09-03T09:45:46+03:00"
+   "price_updated": "2026-09-03T14:15:56+03:00"
   },
   {
    "network": "UAB Narjanta",
