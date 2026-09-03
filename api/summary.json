@@ -1,26 +1,26 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-02",
+ "price_date": "2026-09-03",
  "currency": "EUR",
- "stations_with_prices": 757,
+ "stations_with_prices": 763,
  "national": {
   "petrol95": {
    "min": 1.699,
-   "avg": 1.827,
+   "avg": 1.843,
    "max": 1.959,
-   "count": 730
+   "count": 736
   },
   "diesel": {
-   "min": 1.968,
-   "avg": 2.076,
-   "max": 2.269,
-   "count": 732
+   "min": 1.989,
+   "avg": 2.093,
+   "max": 2.239,
+   "count": 738
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.77,
+   "avg": 0.781,
    "max": 0.94,
-   "count": 596
+   "count": 600
   }
  },
  "cheapest": {
@@ -31,10 +31,10 @@
    "municipality": "Vilniaus r. sav."
   },
   "diesel": {
-   "price": 1.968,
-   "network": "UAB Autograndas",
-   "address": "Visaginas, Taikos pr. 47, 31217",
-   "municipality": "Visagino sav."
+   "price": 1.989,
+   "network": "UAB Baltic Petroleum",
+   "address": "Lazdijai, Turistų g. 88, 67102",
+   "municipality": "Lazdijų r. sav."
   },
   "lpg": {
    "price": 0.67,
