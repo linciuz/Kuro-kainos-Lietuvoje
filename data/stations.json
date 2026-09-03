@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-03T07:31:12+00:00Z",
+    "resolved_utc": "2026-09-03T08:16:03+00:00Z",
     "winner_counts": {
       "portal": 763,
       "null": 4
@@ -16,7 +16,7 @@
         "date": "2026-09-03",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-03T07:31:11+00:00Z"
+        "fetched_utc": "2026-09-03T08:16:02+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-03T07:31:12+00:00Z"
+        "fetched_utc": "2026-09-03T08:16:03+00:00Z"
       }
     ]
   },
@@ -487,8 +487,10 @@
       "petrol95": 1.799,
       "diesel": 2.039,
       "lpg": 0.739,
-      "price_updated": "2026-09-03T09:43:43+03:00",
+      "price_updated": "2026-09-03T11:11:40+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:11",
       "lat": 55.5226,
       "lon": 25.087988,
       "approx": false
@@ -807,8 +809,10 @@
       "petrol95": 1.959,
       "diesel": 2.229,
       "lpg": 0.929,
-      "price_updated": "2026-09-03T09:43:43+03:00",
+      "price_updated": "2026-09-03T11:11:40+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:11",
       "lat": 54.775219,
       "lon": 24.810495,
       "approx": false
@@ -7228,8 +7232,10 @@
       "petrol95": 1.839,
       "diesel": 2.093,
       "lpg": 0.869,
-      "price_updated": "2026-09-03T09:43:43+03:00",
+      "price_updated": "2026-09-03T11:11:40+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:11",
       "lat": 55.946682,
       "lon": 25.591055,
       "approx": false
@@ -8172,10 +8178,12 @@
       "municipality": "Utenos r. sav.",
       "locality": "",
       "petrol95": null,
-      "diesel": 2.039,
+      "diesel": 2.089,
       "lpg": null,
-      "price_updated": "2026-09-03T09:02:33+03:00",
+      "price_updated": "2026-09-03T11:15:30+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:15",
       "lat": 55.494679,
       "lon": 25.645853,
       "approx": false
