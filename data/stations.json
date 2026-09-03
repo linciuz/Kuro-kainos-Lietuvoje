@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-03T10:16:09+00:00Z",
+    "resolved_utc": "2026-09-03T11:12:23+00:00Z",
     "winner_counts": {
       "portal": 762,
       "null": 4,
@@ -17,7 +17,7 @@
         "date": "2026-09-03",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-03T10:16:08+00:00Z"
+        "fetched_utc": "2026-09-03T11:12:22+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-03T10:16:09+00:00Z"
+        "fetched_utc": "2026-09-03T11:12:23+00:00Z"
       }
     ]
   },
@@ -501,11 +501,13 @@
       "address": "Troškūnai, Vilniaus g. 32, 29306",
       "municipality": "Anykščių r. sav.",
       "locality": "",
-      "petrol95": 1.839,
-      "diesel": 2.089,
+      "petrol95": 1.899,
+      "diesel": 2.139,
       "lpg": 0.719,
-      "price_updated": "2026-09-03T09:45:46+03:00",
+      "price_updated": "2026-09-03T14:08:31+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:08",
       "lat": 55.584853,
       "lon": 24.87846,
       "approx": false
