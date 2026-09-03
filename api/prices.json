@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-03T10:06:39Z",
+ "generated_utc": "2026-09-03T10:16:27Z",
  "price_date": "2026-09-03",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -7644,9 +7644,9 @@
    "lat": 54.977307,
    "lon": 23.483572,
    "petrol95": 1.84,
-   "diesel": 2.08,
+   "diesel": 2.05,
    "lpg": 0.74,
-   "price_updated": "2026-09-03T09:36:24+03:00"
+   "price_updated": "2026-09-03T13:06:23+03:00"
   },
   {
    "network": "UAB Alauša",
