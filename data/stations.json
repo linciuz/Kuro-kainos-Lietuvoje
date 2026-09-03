@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-03T11:16:10+00:00Z",
+    "resolved_utc": "2026-09-03T16:42:14+00:00Z",
     "winner_counts": {
       "portal": 762,
       "null": 4,
@@ -17,7 +17,7 @@
         "date": "2026-09-03",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-03T11:16:09+00:00Z"
+        "fetched_utc": "2026-09-03T16:42:13+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-03T11:16:10+00:00Z"
+        "fetched_utc": "2026-09-03T16:42:14+00:00Z"
       }
     ]
   },
@@ -1026,13 +1026,13 @@
       "address": "Ručiūnų k., Kauno g. 2A, 55355",
       "municipality": "Jonavos r. sav.",
       "locality": "",
-      "petrol95": 1.82,
-      "diesel": 2.09,
+      "petrol95": 1.86,
+      "diesel": 2.14,
       "lpg": 0.83,
-      "price_updated": "2026-09-03T10:30:03+03:00",
+      "price_updated": "2026-09-03T18:31:44+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "18:31",
       "lat": 55.137949,
       "lon": 24.193271,
       "approx": false,
@@ -1043,13 +1043,13 @@
       "address": "Jonava, Taurostos g. 16A, 55195",
       "municipality": "Jonavos r. sav.",
       "locality": "",
-      "petrol95": 1.84,
-      "diesel": 2.12,
-      "lpg": 0.82,
-      "price_updated": "2026-09-03T10:30:03+03:00",
+      "petrol95": 1.94,
+      "diesel": 2.2,
+      "lpg": 0.84,
+      "price_updated": "2026-09-03T16:31:36+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:30",
+      "price_time": "16:31",
       "lat": 55.067137,
       "lon": 24.287969,
       "approx": false

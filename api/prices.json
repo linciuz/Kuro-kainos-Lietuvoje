@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-03T11:16:27Z",
+ "generated_utc": "2026-09-03T16:42:41Z",
  "price_date": "2026-09-03",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -768,10 +768,10 @@
    "municipality": "Jonavos r. sav.",
    "lat": 55.137949,
    "lon": 24.193271,
-   "petrol95": 1.82,
-   "diesel": 2.09,
+   "petrol95": 1.86,
+   "diesel": 2.14,
    "lpg": 0.83,
-   "price_updated": "2026-09-03T10:30:03+03:00"
+   "price_updated": "2026-09-03T18:31:44+03:00"
   },
   {
    "network": "UAB Žibalas",
@@ -779,10 +779,10 @@
    "municipality": "Jonavos r. sav.",
    "lat": 55.067137,
    "lon": 24.287969,
-   "petrol95": 1.84,
-   "diesel": 2.12,
-   "lpg": 0.82,
-   "price_updated": "2026-09-03T10:30:03+03:00"
+   "petrol95": 1.94,
+   "diesel": 2.2,
+   "lpg": 0.84,
+   "price_updated": "2026-09-03T16:31:36+03:00"
   },
   {
    "network": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
