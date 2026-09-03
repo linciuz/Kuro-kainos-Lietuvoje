@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-03T08:16:03+00:00Z",
+    "resolved_utc": "2026-09-03T08:31:13+00:00Z",
     "winner_counts": {
       "portal": 763,
       "null": 4
@@ -16,7 +16,7 @@
         "date": "2026-09-03",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-03T08:16:02+00:00Z"
+        "fetched_utc": "2026-09-03T08:31:12+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-03T08:16:03+00:00Z"
+        "fetched_utc": "2026-09-03T08:31:13+00:00Z"
       }
     ]
   },
@@ -4242,12 +4242,12 @@
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
       "petrol95": 1.79,
-      "diesel": 2.06,
+      "diesel": 2.07,
       "lpg": null,
-      "price_updated": "2026-09-03T10:09:40+03:00",
+      "price_updated": "2026-09-03T11:27:59+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:09",
+      "price_time": "11:27",
       "lat": 55.71917,
       "lon": 21.293355,
       "approx": false,
