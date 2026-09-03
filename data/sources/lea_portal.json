@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-03T10:06:16Z",
+ "generated": "2026-09-03T17:15:04Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-03 11:33:14",
+ "api_last_updated": "2026-09-03 18:31:44",
  "count": 767,
  "with_coords": 766,
  "priced": 763,
@@ -685,12 +685,12 @@
    ],
    "prices": {
     "lpg": 0.719,
-    "diesel": 2.089,
-    "petrol95": 1.839
+    "diesel": 2.139,
+    "petrol95": 1.899
    },
    "gas_station_id": 469,
    "logo_url": null,
-   "submitted_at": "2026-09-03T06:45:46.000000Z"
+   "submitted_at": "2026-09-03T11:08:31.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -1351,12 +1351,12 @@
    ],
    "prices": {
     "lpg": 0.83,
-    "diesel": 2.09,
-    "petrol95": 1.82
+    "diesel": 2.14,
+    "petrol95": 1.86
    },
    "gas_station_id": 782,
    "logo_url": null,
-   "submitted_at": "2026-09-03T07:30:03.000000Z"
+   "submitted_at": "2026-09-03T15:31:44.000000Z"
   },
   {
    "company": "UAB Žibalas",
@@ -1366,18 +1366,18 @@
    "lat": 55.072115,
    "lon": 24.294946,
    "fuels": [
-    "lpg",
+    "petrol95",
     "diesel",
-    "petrol95"
+    "lpg"
    ],
    "prices": {
-    "lpg": 0.82,
-    "diesel": 2.12,
-    "petrol95": 1.84
+    "petrol95": 1.94,
+    "diesel": 2.2,
+    "lpg": 0.84
    },
    "gas_station_id": 788,
    "logo_url": null,
-   "submitted_at": "2026-09-03T07:30:03.000000Z"
+   "submitted_at": "2026-09-03T13:31:36.000000Z"
   },
   {
    "company": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
@@ -5875,12 +5875,12 @@
    ],
    "prices": {
     "lpg": 0.799,
-    "diesel": 2.069,
-    "petrol95": 1.829
+    "diesel": 2.129,
+    "petrol95": 1.909
    },
    "gas_station_id": 471,
    "logo_url": null,
-   "submitted_at": "2026-09-03T06:45:46.000000Z"
+   "submitted_at": "2026-09-03T11:15:56.000000Z"
   },
   {
    "company": "UAB Narjanta",
