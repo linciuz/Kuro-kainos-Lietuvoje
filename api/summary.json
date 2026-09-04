@@ -2,19 +2,19 @@
  "$schema_version": 1,
  "price_date": "2026-09-04",
  "currency": "EUR",
- "stations_with_prices": 666,
+ "stations_with_prices": 667,
  "national": {
   "petrol95": {
    "min": 1.75,
    "avg": 1.869,
    "max": 1.999,
-   "count": 639
+   "count": 640
   },
   "diesel": {
-   "min": 1.979,
-   "avg": 2.112,
+   "min": 1.12,
+   "avg": 2.111,
    "max": 2.299,
-   "count": 641
+   "count": 642
   },
   "lpg": {
    "min": 0.67,
@@ -31,10 +31,10 @@
    "municipality": "Plungės r. sav."
   },
   "diesel": {
-   "price": 1.979,
-   "network": "UAB Stateta",
-   "address": "Alytus, Santaikos g. 28 B, 62123",
-   "municipality": "Alytaus m. sav."
+   "price": 1.12,
+   "network": "MB Tormenta",
+   "address": "Kaunas, Linkuvos g. 77, 48314",
+   "municipality": "Kauno m. sav."
   },
   "lpg": {
    "price": 0.67,

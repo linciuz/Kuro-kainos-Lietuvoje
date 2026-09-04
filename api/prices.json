@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-04T07:32:18Z",
+ "generated_utc": "2026-09-04T08:17:03Z",
  "price_date": "2026-09-04",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.75,
    "avg": 1.869,
    "max": 1.999,
-   "count": 639
+   "count": 640
   },
   "diesel": {
-   "min": 1.979,
-   "avg": 2.112,
+   "min": 1.12,
+   "avg": 2.111,
    "max": 2.299,
-   "count": 641
+   "count": 642
   },
   "lpg": {
    "min": 0.67,
@@ -44,10 +44,10 @@
    "municipality": "Plungės r. sav."
   },
   "diesel": {
-   "price": 1.979,
-   "network": "UAB Stateta",
-   "address": "Alytus, Santaikos g. 28 B, 62123",
-   "municipality": "Alytaus m. sav."
+   "price": 1.12,
+   "network": "MB Tormenta",
+   "address": "Kaunas, Linkuvos g. 77, 48314",
+   "municipality": "Kauno m. sav."
   },
   "lpg": {
    "price": 0.67,
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 666,
+ "count": 667,
  "stations": [
   {
    "network": "UAB Eniris",
@@ -1025,6 +1025,17 @@
    "diesel": 2.109,
    "lpg": 0.739,
    "price_updated": "2026-09-04T09:37:31+03:00"
+  },
+  {
+   "network": "MB Tormenta",
+   "address": "Kaunas, Linkuvos g. 77, 48314",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.9143,
+   "lon": 23.887705,
+   "petrol95": 1.89,
+   "diesel": 1.12,
+   "lpg": null,
+   "price_updated": "2026-09-04T11:03:18+03:00"
   },
   {
    "network": "UAB Alauša",
@@ -2738,9 +2749,9 @@
    "lat": 55.71917,
    "lon": 21.293355,
    "petrol95": 1.84,
-   "diesel": 2.09,
+   "diesel": 2.1,
    "lpg": null,
-   "price_updated": "2026-09-04T10:14:44+03:00"
+   "price_updated": "2026-09-04T11:12:05+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -5147,9 +5158,9 @@
    "lat": 55.494679,
    "lon": 25.645853,
    "petrol95": null,
-   "diesel": 2.059,
+   "diesel": 2.019,
    "lpg": null,
-   "price_updated": "2026-09-04T09:05:18+03:00"
+   "price_updated": "2026-09-04T11:09:47+03:00"
   },
   {
    "network": "UAB Viada LT",

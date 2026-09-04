@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-04T07:31:16+00:00Z",
+    "resolved_utc": "2026-09-04T08:16:05+00:00Z",
     "winner_counts": {
-      "null": 101,
-      "portal": 666
+      "portal": 667,
+      "null": 100
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-09-04",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-04T07:31:15+00:00Z"
+        "fetched_utc": "2026-09-04T08:16:04+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-04T07:31:16+00:00Z"
+        "fetched_utc": "2026-09-04T08:16:05+00:00Z"
       }
     ]
   },
@@ -33,13 +33,13 @@
       "min": 1.75,
       "avg": 1.869,
       "max": 1.999,
-      "count": 639
+      "count": 640
     },
     "diesel": {
-      "min": 1.979,
-      "avg": 2.112,
+      "min": 1.12,
+      "avg": 2.111,
       "max": 2.299,
-      "count": 641
+      "count": 642
     },
     "lpg": {
       "min": 0.67,
@@ -1595,9 +1595,13 @@
       "address": "Kaunas, Linkuvos g. 77, 48314",
       "municipality": "Kauno m. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
+      "petrol95": 1.89,
+      "diesel": 1.12,
       "lpg": null,
+      "price_updated": "2026-09-04T11:03:18+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:03",
       "lat": 54.9143,
       "lon": 23.887705,
       "approx": false
@@ -4132,12 +4136,12 @@
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
       "petrol95": 1.84,
-      "diesel": 2.09,
+      "diesel": 2.1,
       "lpg": null,
-      "price_updated": "2026-09-04T10:14:44+03:00",
+      "price_updated": "2026-09-04T11:12:05+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "10:14",
+      "price_time": "11:12",
       "lat": 55.71917,
       "lon": 21.293355,
       "approx": false,
@@ -7944,10 +7948,12 @@
       "municipality": "Utenos r. sav.",
       "locality": "",
       "petrol95": null,
-      "diesel": 2.059,
+      "diesel": 2.019,
       "lpg": null,
-      "price_updated": "2026-09-04T09:05:18+03:00",
+      "price_updated": "2026-09-04T11:09:47+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:09",
       "lat": 55.494679,
       "lon": 25.645853,
       "approx": false
