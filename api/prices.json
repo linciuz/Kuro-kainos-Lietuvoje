@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-04T10:01:27Z",
+ "generated_utc": "2026-09-04T11:48:05Z",
  "price_date": "2026-09-04",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,21 +19,21 @@
  "summary": {
   "petrol95": {
    "min": 1.75,
-   "avg": 1.868,
+   "avg": 1.87,
    "max": 1.999,
-   "count": 642
+   "count": 734
   },
   "diesel": {
    "min": 1.12,
-   "avg": 2.111,
+   "avg": 2.116,
    "max": 2.299,
-   "count": 644
+   "count": 736
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.79,
+   "avg": 0.789,
    "max": 0.94,
-   "count": 513
+   "count": 599
   }
  },
  "cheapest": {
@@ -56,8 +56,19 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 669,
+ "count": 761,
  "stations": [
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Naujoji Akmenė, V. Kudirkos g. 21A, 85145",
+   "municipality": "Akmenės r. sav.",
+   "lat": 56.318461,
+   "lon": 22.885615,
+   "petrol95": 1.879,
+   "diesel": 2.169,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
   {
    "network": "UAB Eniris",
    "address": "Skabeikių k. 4, 85233",
@@ -123,6 +134,17 @@
    "diesel": 2.099,
    "lpg": 0.739,
    "price_updated": "2026-09-04T09:37:31+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Alytus, Santaikos g. 33, 62100",
+   "municipality": "Alytaus m. sav.",
+   "lat": 54.38677,
+   "lon": 24.033208,
+   "petrol95": 1.819,
+   "diesel": 2.079,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -246,6 +268,17 @@
    "price_updated": "2026-09-04T09:41:21+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Likiškėliai, Pabalių g. 11, 64381",
+   "municipality": "Alytaus r. sav.",
+   "lat": 54.387784,
+   "lon": 23.996155,
+   "petrol95": 1.859,
+   "diesel": 2.149,
+   "lpg": 0.769,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Skulas",
    "address": "Likiškėlių k., Kalninės g. 5, 62442",
    "municipality": "Alytaus r. sav.",
@@ -334,6 +367,17 @@
    "price_updated": "2026-09-04T09:41:20+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Anykščiai, Mindaugo g. 23, 29141",
+   "municipality": "Anykščių r. sav.",
+   "lat": 55.508475,
+   "lon": 25.09633,
+   "petrol95": 1.859,
+   "diesel": 2.169,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
    "network": "UAB Degta",
    "address": "Anykščiai, Vienuolio g. 34A, 29148",
    "municipality": "Anykščių r. sav.",
@@ -411,6 +455,17 @@
    "price_updated": "2026-09-04T09:39:00+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Valantiškio k., 41131",
+   "municipality": "Biržų r. sav.",
+   "lat": 56.197343,
+   "lon": 24.709643,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Biržai, Kilučių g. 93, 41154",
    "municipality": "Biržų r. sav.",
@@ -464,6 +519,39 @@
    "diesel": 2.199,
    "lpg": 0.829,
    "price_updated": "2026-09-04T09:59:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Druskininkai, Gardino g. 79, 69191",
+   "municipality": "Druskininkų sav.",
+   "lat": 53.99993,
+   "lon": 23.988055,
+   "petrol95": 1.969,
+   "diesel": 2.199,
+   "lpg": 0.819,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Druskininkai, Leipalingio g. 26, 66371",
+   "municipality": "Druskininkų sav.",
+   "lat": 54.030364,
+   "lon": 23.983674,
+   "petrol95": 1.969,
+   "diesel": 2.199,
+   "lpg": 0.819,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Leipalingis, Merkinės g. 37, 67280",
+   "municipality": "Druskininkų sav.",
+   "lat": 54.094631,
+   "lon": 23.871494,
+   "petrol95": 1.959,
+   "diesel": 2.189,
+   "lpg": 0.819,
+   "price_updated": "2026-09-04T14:42:51+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -598,6 +686,39 @@
    "price_updated": "2026-09-04T09:59:49+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Gudžionių k., Plento g. 24, 58244",
+   "municipality": "Jonavos r. sav.",
+   "lat": 55.099135,
+   "lon": 24.31627,
+   "petrol95": 1.849,
+   "diesel": 2.129,
+   "lpg": 0.829,
+   "price_updated": "2026-09-04T14:42:47+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Jonava, Žemaitės g. 1, 55134",
+   "municipality": "Jonavos r. sav.",
+   "lat": 55.082541,
+   "lon": 24.270744,
+   "petrol95": 1.889,
+   "diesel": 2.129,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Spanėnų k., Plento g. 46, 55305",
+   "municipality": "Jonavos r. sav.",
+   "lat": 55.058167,
+   "lon": 24.263538,
+   "petrol95": 1.889,
+   "diesel": 2.129,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Jonava, Vasario 16-osios g. 33, 55164",
    "municipality": "Jonavos r. sav.",
@@ -686,6 +807,17 @@
    "price_updated": "2026-09-04T09:18:08+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Joniškis, Vilniaus g. 72, 84172",
+   "municipality": "Joniškio r. sav.",
+   "lat": 56.223278,
+   "lon": 23.597525,
+   "petrol95": 1.859,
+   "diesel": 2.179,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Satkūnų k., Sidabros g. 2A, 84101",
    "municipality": "Joniškio r. sav.",
@@ -706,6 +838,28 @@
    "diesel": 2.159,
    "lpg": 0.799,
    "price_updated": "2026-09-04T09:59:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Jurbarkas, Muitinės g. 22A, 74111",
+   "municipality": "Jurbarko r. sav.",
+   "lat": 55.078109,
+   "lon": 22.744778,
+   "petrol95": 1.909,
+   "diesel": 2.209,
+   "lpg": 0.79,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Klišių k., Pievų g. 2, 74211",
+   "municipality": "Jurbarko r. sav.",
+   "lat": 55.098482,
+   "lon": 22.772921,
+   "petrol95": 1.909,
+   "diesel": 2.209,
+   "lpg": 0.79,
+   "price_updated": "2026-09-04T14:42:51+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -807,6 +961,17 @@
    "price_updated": "2026-09-04T09:57:44+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Triliškių k., Kauno pl. 5, 56179",
+   "municipality": "Kaišiadorių r. sav.",
+   "lat": 54.816962,
+   "lon": 24.436618,
+   "petrol95": 1.889,
+   "diesel": 2.179,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Emsi",
    "address": "Kaišiadorys, Paukštininkų g. 4a, 56160",
    "municipality": "Kaišiadorių r. sav.",
@@ -871,6 +1036,28 @@
    "diesel": 2.099,
    "lpg": 0.759,
    "price_updated": "2026-09-04T09:41:21+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Pasiekų k., Europos g. 12, 69270",
+   "municipality": "Kalvarijos sav.",
+   "lat": 54.322374,
+   "lon": 23.145167,
+   "petrol95": 1.889,
+   "diesel": 2.219,
+   "lpg": 0.889,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Salaperaugio k., Europos g. 9, 69286",
+   "municipality": "Kalvarijos sav.",
+   "lat": 54.324264,
+   "lon": 23.14466,
+   "petrol95": 1.889,
+   "diesel": 2.189,
+   "lpg": 0.859,
+   "price_updated": "2026-09-04T14:42:49+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1047,6 +1234,61 @@
    "diesel": 1.999,
    "lpg": null,
    "price_updated": "2026-09-04T09:41:20+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kaunas, Taikos pr. 120, 52140",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.917432,
+   "lon": 24.034789,
+   "petrol95": 1.879,
+   "diesel": 2.169,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kaunas, Chemijos g. 6, 51344",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.9032,
+   "lon": 23.982769,
+   "petrol95": 1.869,
+   "diesel": 2.139,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kaunas, Jonavos g. 60A, 44191",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.905045,
+   "lon": 23.89955,
+   "petrol95": 1.849,
+   "diesel": 2.089,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kaunas, Raudondvario pl. 82, 47179",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.907738,
+   "lon": 23.874252,
+   "petrol95": 1.849,
+   "diesel": 2.089,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kaunas, Vaidoto g. 153, 45392",
+   "municipality": "Kauno m. sav.",
+   "lat": 54.861298,
+   "lon": 23.958563,
+   "petrol95": 1.899,
+   "diesel": 2.169,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:50+03:00"
   },
   {
    "network": "UAB Boost Petrol",
@@ -1874,6 +2116,39 @@
    "price_updated": "2026-09-04T09:37:31+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Jaučakių k., 54217",
+   "municipality": "Kauno r. sav.",
+   "lat": 55.046176,
+   "lon": 23.588632,
+   "petrol95": 1.869,
+   "diesel": 2.179,
+   "lpg": 0.759,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Pagirių k., Marijampolės g. 1, 53282",
+   "municipality": "Kauno r. sav.",
+   "lat": 54.814628,
+   "lon": 23.87254,
+   "petrol95": 1.909,
+   "diesel": 2.169,
+   "lpg": 0.759,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Ringaudų k., Gėlių g. 1A, 53335",
+   "municipality": "Kauno r. sav.",
+   "lat": 54.890013,
+   "lon": 23.806236,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Mastaičių k., Baltijos g. 1, 53289",
    "municipality": "Kauno r. sav.",
@@ -2237,6 +2512,39 @@
    "price_updated": "2026-09-04T09:37:31+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Klaipėda, Tilžės g. 90, 91101",
+   "municipality": "Klaipėdos m. sav.",
+   "lat": 55.700992,
+   "lon": 21.200408,
+   "petrol95": 1.859,
+   "diesel": 2.129,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Klaipėda, Liepų g. 79A, 92195",
+   "municipality": "Klaipėdos m. sav.",
+   "lat": 55.720835,
+   "lon": 21.152538,
+   "petrol95": 1.839,
+   "diesel": 2.089,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Klaipėda, Šilutės pl. 1, 91109",
+   "municipality": "Klaipėdos m. sav.",
+   "lat": 55.704933,
+   "lon": 21.163291,
+   "petrol95": 1.839,
+   "diesel": 2.109,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Klaipėda, H. Manto g. 96, 92295",
    "municipality": "Klaipėdos m. sav.",
@@ -2567,6 +2875,28 @@
    "price_updated": "2026-09-04T10:30:02+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Gargždai, Dariaus ir Girėno g. 10, 96144",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.7076,
+   "lon": 21.38056,
+   "petrol95": 1.859,
+   "diesel": 2.199,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Priekulė, Klaipėdos g. 61, 96342",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.562062,
+   "lon": 21.308618,
+   "petrol95": 1.889,
+   "diesel": 2.149,
+   "lpg": 0.75,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Jakų k., Vilniaus pl. 21, 92498",
    "municipality": "Klaipėdos r. sav.",
@@ -2842,6 +3172,17 @@
    "price_updated": "2026-09-04T09:59:50+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Noriūnų k., Parko g. 3A, 40395",
+   "municipality": "Kupiškio r. sav.",
+   "lat": 55.796541,
+   "lon": 24.888993,
+   "petrol95": 1.839,
+   "diesel": 2.129,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
    "network": "UAB Narjanta",
    "address": "Aleksandrijos k., Kikonių g. 10, 40335",
    "municipality": "Kupiškio r. sav.",
@@ -2996,6 +3337,17 @@
    "price_updated": "2026-09-04T08:46:14+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kėdainiai, J. Basanavičiaus g. 95B, 57352",
+   "municipality": "Kėdainių r. sav.",
+   "lat": 55.276904,
+   "lon": 23.955788,
+   "petrol95": 1.839,
+   "diesel": 2.069,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Kėdainiai, J. Basanavičiaus g. 40A, 57290",
    "municipality": "Kėdainių r. sav.",
@@ -3093,6 +3445,17 @@
    "diesel": 2.229,
    "lpg": 0.929,
    "price_updated": "2026-09-04T09:59:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Lazdijai, Turistų g. 88, 67102",
+   "municipality": "Lazdijų r. sav.",
+   "lat": 54.220722,
+   "lon": 23.508868,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -3203,6 +3566,39 @@
    "diesel": 2.029,
    "lpg": 0.699,
    "price_updated": "2026-09-04T09:41:20+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Marijampolė, P. Armino g. 69, 68127",
+   "municipality": "Marijampolės sav.",
+   "lat": 54.533904,
+   "lon": 23.353163,
+   "petrol95": 1.859,
+   "diesel": 2.129,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Marijampolė, Vasaros g. 15, 68266",
+   "municipality": "Marijampolės sav.",
+   "lat": 54.555636,
+   "lon": 23.375454,
+   "petrol95": 1.839,
+   "diesel": 2.089,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Pietarių k., Kauno g. 164, 68100",
+   "municipality": "Marijampolės sav.",
+   "lat": 54.586919,
+   "lon": 23.384638,
+   "petrol95": 1.859,
+   "diesel": 2.129,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:49+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -3381,6 +3777,39 @@
    "price_updated": "2026-09-04T09:37:32+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Mažeikiai, M. Daukšos g. 17, 89234",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.3051,
+   "lon": 22.350699,
+   "petrol95": 1.859,
+   "diesel": 2.109,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Tirkšliai, Laukų g. 10, 89330",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.262555,
+   "lon": 22.310453,
+   "petrol95": 1.889,
+   "diesel": 2.189,
+   "lpg": null,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Užežerės k., Gardenio g. 39, 89382",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.163959,
+   "lon": 22.101525,
+   "petrol95": 1.889,
+   "diesel": 2.179,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Mažeikiai, Žemaitijos g. 57, 89128",
    "municipality": "Mažeikių r. sav.",
@@ -3502,6 +3931,17 @@
    "price_updated": "2026-09-04T09:11:16+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Molėtai, Vilniaus g. 104, 33114",
+   "municipality": "Molėtų r. sav.",
+   "lat": 55.217337,
+   "lon": 25.403375,
+   "petrol95": 1.839,
+   "diesel": 2.099,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
    "network": "UAB Boost Petrol",
    "address": "Smėlinkos vs. 1, 33171",
    "municipality": "Molėtų r. sav.",
@@ -3546,6 +3986,17 @@
    "price_updated": "2026-09-04T09:59:51+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Neringa, Nidos-Smiltynės pl. 6, 93125",
+   "municipality": "Neringos sav.",
+   "lat": 55.300905,
+   "lon": 20.979956,
+   "petrol95": 1.859,
+   "diesel": 2.179,
+   "lpg": null,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Eniris",
    "address": "Pagėgiai, Klaipėdos g. 6b, 99290",
    "municipality": "Pagėgių sav.",
@@ -3555,6 +4006,17 @@
    "diesel": 2.09,
    "lpg": 0.79,
    "price_updated": "2026-09-04T09:50:01+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Pakruojis, Statybininkų g. 28, 83163",
+   "municipality": "Pakruojo r. sav.",
+   "lat": 55.974508,
+   "lon": 23.86893,
+   "petrol95": 1.859,
+   "diesel": 2.139,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:49+03:00"
   },
   {
    "network": "UAB Jozita",
@@ -3588,6 +4050,28 @@
    "diesel": 2.159,
    "lpg": 0.799,
    "price_updated": "2026-09-04T09:59:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Palanga, Ganyklų g. 28C, 00126",
+   "municipality": "Palangos m. sav.",
+   "lat": 55.923324,
+   "lon": 21.075206,
+   "petrol95": 1.889,
+   "diesel": 2.159,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Palanga, Klaipėdos pl. 44, 00111",
+   "municipality": "Palangos m. sav.",
+   "lat": 55.915491,
+   "lon": 21.078212,
+   "petrol95": 1.929,
+   "diesel": 2.209,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -3632,6 +4116,28 @@
    "diesel": 2.099,
    "lpg": 0.739,
    "price_updated": "2026-09-04T09:37:31+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Panevėžys, Smėlynės g. 169, 37454",
+   "municipality": "Panevėžio m. sav.",
+   "lat": 55.757611,
+   "lon": 24.367739,
+   "petrol95": 1.859,
+   "diesel": 2.159,
+   "lpg": 0.769,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Panevėžys, Velžio kl. 74, 36148",
+   "municipality": "Panevėžio m. sav.",
+   "lat": 55.721941,
+   "lon": 24.391535,
+   "petrol95": 1.909,
+   "diesel": 2.169,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -3986,6 +4492,17 @@
    "price_updated": "2026-09-04T09:59:51+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Pasvalys, Mūšos g. 18, 39104",
+   "municipality": "Pasvalio r. sav.",
+   "lat": 56.224824,
+   "lon": 24.401365,
+   "petrol95": 1.859,
+   "diesel": 2.169,
+   "lpg": null,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
    "network": "UAB Emsi",
    "address": "Pasvalys, Taikos g. 24, 39132",
    "municipality": "Pasvalio r. sav.",
@@ -4072,6 +4589,17 @@
    "diesel": 2.199,
    "lpg": 0.799,
    "price_updated": "2026-09-04T09:59:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Plateliai,  Žemaičių Kalvarijos g. 1A, 90421",
+   "municipality": "Plungės r. sav.",
+   "lat": 56.043869,
+   "lon": 21.815653,
+   "petrol95": 1.889,
+   "diesel": 2.189,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:51+03:00"
   },
   {
    "network": "UAB EU Verslas",
@@ -4195,6 +4723,28 @@
    "price_updated": "2026-09-04T09:37:31+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Prienai, Vilniaus g. 3A, 59115",
+   "municipality": "Prienų r. sav.",
+   "lat": 54.628393,
+   "lon": 23.958325,
+   "petrol95": 1.929,
+   "diesel": 2.209,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Veiverių k., Kauno g. 85, 59285",
+   "municipality": "Prienų r. sav.",
+   "lat": 54.761029,
+   "lon": 23.713228,
+   "petrol95": 1.889,
+   "diesel": 2.189,
+   "lpg": 0.8,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
    "network": "UAB Borusta",
    "address": "Stakliškės, Piliakalnio g. 3, 59370",
    "municipality": "Prienų r. sav.",
@@ -4294,6 +4844,39 @@
    "price_updated": "2026-09-04T09:18:08+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Radviliškis, Miško g. 64, 82128",
+   "municipality": "Radviliškio r. sav.",
+   "lat": 55.800801,
+   "lon": 23.565702,
+   "petrol95": 1.879,
+   "diesel": 2.179,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Radviliškis, Šiaulių g. 1A, 82142",
+   "municipality": "Radviliškio r. sav.",
+   "lat": 55.825541,
+   "lon": 23.523356,
+   "petrol95": 1.879,
+   "diesel": 2.179,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Užuovėjos k., 82215",
+   "municipality": "Radviliškio r. sav.",
+   "lat": 55.76333,
+   "lon": 23.742948,
+   "petrol95": 1.899,
+   "diesel": 2.179,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Radviliškis, Gedimino g. 42B, 82174",
    "municipality": "Radviliškio r. sav.",
@@ -4369,6 +4952,39 @@
    "diesel": 2.259,
    "lpg": 0.869,
    "price_updated": "2026-09-04T09:37:31+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Girkalnio k., Žemaičių g. 39, 60311",
+   "municipality": "Raseinių r. sav.",
+   "lat": 55.318307,
+   "lon": 23.210769,
+   "petrol95": 1.879,
+   "diesel": 2.179,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Kalnujų k. 1, 60191",
+   "municipality": "Raseinių r. sav.",
+   "lat": 55.335647,
+   "lon": 23.102326,
+   "petrol95": 1.909,
+   "diesel": 2.189,
+   "lpg": 0.819,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Raseiniai, Vilniaus g. 30, 60183",
+   "municipality": "Raseinių r. sav.",
+   "lat": 55.370856,
+   "lon": 23.133187,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -4492,6 +5108,17 @@
    "price_updated": "2026-09-04T09:59:52+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Rietavas, Dariaus ir Girėno g. 19, 90316",
+   "municipality": "Rietavo sav.",
+   "lat": 55.719508,
+   "lon": 21.928083,
+   "petrol95": 1.879,
+   "diesel": 2.169,
+   "lpg": 0.78,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Plungės lagūna",
    "address": "Rietavas, Plungės g. 32, 90313",
    "municipality": "Rietavo sav.",
@@ -4545,6 +5172,17 @@
    "diesel": 2.149,
    "lpg": null,
    "price_updated": "2026-09-04T09:41:20+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Pandėlio k., Elektrinės g. 1, 42370",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 56.0192,
+   "lon": 25.222228,
+   "petrol95": 1.889,
+   "diesel": 2.169,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:50+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -4602,6 +5240,17 @@
    "price_updated": "2026-09-04T09:59:52+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Skuodas, Vytauto g. 22, 98122",
+   "municipality": "Skuodo r. sav.",
+   "lat": 56.259168,
+   "lon": 21.530562,
+   "petrol95": 1.859,
+   "diesel": 2.079,
+   "lpg": 0.769,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
    "network": "UAB Eniris",
    "address": "Stripinių k., Skuodo g. 7, 98347",
    "municipality": "Skuodo r. sav.",
@@ -4644,6 +5293,17 @@
    "diesel": 2.099,
    "lpg": 0.739,
    "price_updated": "2026-09-04T09:37:30+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Taurų k., Tilžės pl. 362, 72142",
+   "municipality": "Tauragės r. sav.",
+   "lat": 55.243308,
+   "lon": 22.253031,
+   "petrol95": 1.849,
+   "diesel": 2.129,
+   "lpg": 0.75,
+   "price_updated": "2026-09-04T14:42:51+03:00"
   },
   {
    "network": "UAB Bonsa",
@@ -4800,6 +5460,28 @@
    "price_updated": "2026-09-04T09:37:31+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Ožtakių k., Dariaus ir Girėno g. 76, 88321",
+   "municipality": "Telšių r. sav.",
+   "lat": 55.730528,
+   "lon": 22.376891,
+   "petrol95": 1.869,
+   "diesel": 2.169,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Telšiai, Šiaulių pl. 12, 88101",
+   "municipality": "Telšių r. sav.",
+   "lat": 56.004156,
+   "lon": 22.24464,
+   "petrol95": 1.839,
+   "diesel": 2.109,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Telšiai, Luokės g. 70, 87128",
    "municipality": "Telšių r. sav.",
@@ -4899,6 +5581,17 @@
    "price_updated": "2026-09-04T09:59:53+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Trakai, Vilniaus g. 33, 21118",
+   "municipality": "Trakų r. sav.",
+   "lat": 54.62727,
+   "lon": 24.948711,
+   "petrol95": 1.889,
+   "diesel": 2.169,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
    "network": "UAB Borusta",
    "address": "Aukštadvaris, Vilniaus g. 2a, 21253",
    "municipality": "Trakų r. sav.",
@@ -4974,6 +5667,17 @@
    "diesel": 1.989,
    "lpg": 0.699,
    "price_updated": "2026-09-04T09:41:20+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Ukmergė, Kauno g. 49, 20115",
+   "municipality": "Ukmergės r. sav.",
+   "lat": 55.240854,
+   "lon": 24.73959,
+   "petrol95": 1.859,
+   "diesel": 2.119,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB Bemija",
@@ -5108,6 +5812,17 @@
    "price_updated": "2026-09-04T09:41:21+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Utena, Basanavičiaus g. 1B, 28138",
+   "municipality": "Utenos r. sav.",
+   "lat": 55.49533,
+   "lon": 25.575028,
+   "petrol95": 1.849,
+   "diesel": 2.089,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Boost Petrol",
    "address": "Utena, Zarasų g. 9, 28216",
    "municipality": "Utenos r. sav.",
@@ -5216,6 +5931,39 @@
    "diesel": 2.069,
    "lpg": 0.819,
    "price_updated": "2026-09-04T09:59:53+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Merkinė, Vilniaus g. 87, 65333",
+   "municipality": "Varėnos r. sav.",
+   "lat": 54.169021,
+   "lon": 24.207974,
+   "petrol95": 1.959,
+   "diesel": 2.189,
+   "lpg": 0.819,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Senosios Varėnos k., Vilniaus g. 6A, 65486",
+   "municipality": "Varėnos r. sav.",
+   "lat": 54.25651,
+   "lon": 24.547044,
+   "petrol95": 1.859,
+   "diesel": 2.109,
+   "lpg": 0.759,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Varėna, M. K. Čiurlionio g. 63, 65219",
+   "municipality": "Varėnos r. sav.",
+   "lat": 54.218274,
+   "lon": 24.566177,
+   "petrol95": 1.859,
+   "diesel": 2.109,
+   "lpg": 0.759,
+   "price_updated": "2026-09-04T14:42:49+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -5458,6 +6206,127 @@
    "diesel": 1.999,
    "lpg": null,
    "price_updated": "2026-09-04T09:41:20+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Savanorių pr. 121, 03150",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.660926,
+   "lon": 25.233389,
+   "petrol95": 1.849,
+   "diesel": 2.089,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:47+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Visalaukio g. 2, 08401",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.779287,
+   "lon": 25.341874,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.759,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius,  Kalvarijų g. 161A, 08311",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.723999,
+   "lon": 25.282324,
+   "petrol95": 1.899,
+   "diesel": 2.169,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Antakalnio g. 128, 10200",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.722219,
+   "lon": 25.317234,
+   "petrol95": 1.879,
+   "diesel": 2.149,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:47+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, B. Brazdžionio g. 2, 47266",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.6133,
+   "lon": 25.308675,
+   "petrol95": 1.959,
+   "diesel": 2.119,
+   "lpg": null,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Gerosios Vilties g. 33, 03202",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.666834,
+   "lon": 25.251065,
+   "petrol95": 1.879,
+   "diesel": 2.149,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:47+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Metalo g. 4B, 02189",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.640438,
+   "lon": 25.267512,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.819,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Molėtų pl. 27A, 08450",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.767745,
+   "lon": 25.272406,
+   "petrol95": 1.839,
+   "diesel": 2.089,
+   "lpg": 0.769,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Rinktinės g. 59, 09318",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.702833,
+   "lon": 25.288126,
+   "petrol95": 1.839,
+   "diesel": 2.089,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, S. Batoro g. 15, 11100",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.692192,
+   "lon": 25.346693,
+   "petrol95": 1.869,
+   "diesel": 2.139,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilnius, Zujūnų g. 2A, 06200",
+   "municipality": "Vilniaus m. sav.",
+   "lat": 54.710932,
+   "lon": 25.161516,
+   "petrol95": 1.909,
+   "diesel": 2.169,
+   "lpg": 0.75,
+   "price_updated": "2026-09-04T14:42:51+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6395,6 +7264,39 @@
    "price_updated": "2026-09-04T09:59:54+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Grigaičiai, Pavilnės g. 1, 11236",
+   "municipality": "Vilniaus r. sav.",
+   "lat": 54.681567,
+   "lon": 25.412533,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.799,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Užubalių k., Senasis Ukmergės kl. 4, 14013",
+   "municipality": "Vilniaus r. sav.",
+   "lat": 54.768547,
+   "lon": 25.195795,
+   "petrol95": 1.909,
+   "diesel": 2.169,
+   "lpg": 0.759,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Vilkaraisčio k., 15173",
+   "municipality": "Vilniaus r. sav.",
+   "lat": 54.863297,
+   "lon": 25.490979,
+   "petrol95": 1.909,
+   "diesel": 2.169,
+   "lpg": 0.769,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Avižienių k., Sudervės g. 2G, 14198",
    "municipality": "Vilniaus r. sav.",
@@ -6593,6 +7495,28 @@
    "price_updated": "2026-09-04T09:59:54+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Padustėlio k., V. Striogos g. 4A, 32306",
+   "municipality": "Zarasų r. sav.",
+   "lat": 55.740159,
+   "lon": 25.852449,
+   "petrol95": 1.909,
+   "diesel": 2.189,
+   "lpg": null,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Sarakiškių k., Vytauto g. 61, 32139",
+   "municipality": "Zarasų r. sav.",
+   "lat": 55.737287,
+   "lon": 26.272834,
+   "petrol95": 1.909,
+   "diesel": 2.189,
+   "lpg": 0.809,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
    "network": "UAB Viada LT",
    "address": "Juodalaukių k. 2, 32104",
    "municipality": "Zarasų r. sav.",
@@ -6613,6 +7537,28 @@
    "diesel": 2.059,
    "lpg": 0.759,
    "price_updated": "2026-09-04T09:41:20+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Griškabūdis, A. Skelčio g., 71296",
+   "municipality": "Šakių r. sav.",
+   "lat": 54.850499,
+   "lon": 23.171448,
+   "petrol95": 1.909,
+   "diesel": 2.209,
+   "lpg": null,
+   "price_updated": "2026-09-04T14:42:50+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Šakiai, Sodų g. 1, 71136",
+   "municipality": "Šakių r. sav.",
+   "lat": 54.945754,
+   "lon": 23.04613,
+   "petrol95": 1.909,
+   "diesel": 2.209,
+   "lpg": 0.79,
+   "price_updated": "2026-09-04T14:42:48+03:00"
   },
   {
    "network": "UAB GM Manufacturing Lithuania",
@@ -6690,6 +7636,17 @@
    "diesel": 2.099,
    "lpg": 0.799,
    "price_updated": "2026-09-04T09:41:21+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Šalčininkai, Vilniaus g. 5A, 17102",
+   "municipality": "Šalčininkų r. sav.",
+   "lat": 54.317842,
+   "lon": 25.381712,
+   "petrol95": 1.889,
+   "diesel": 2.169,
+   "lpg": 0.789,
+   "price_updated": "2026-09-04T14:42:49+03:00"
   },
   {
    "network": "UAB Tomega",
@@ -6800,6 +7757,17 @@
    "diesel": 2.179,
    "lpg": 0.799,
    "price_updated": "2026-09-04T09:18:08+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Šiauliai, Kupiškio g. 4, 76146",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.957544,
+   "lon": 23.316059,
+   "petrol95": 1.889,
+   "diesel": 2.169,
+   "lpg": 0.77,
+   "price_updated": "2026-09-04T14:42:50+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -7121,6 +8089,28 @@
    "price_updated": "2026-09-04T09:59:52+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Bučių k., 75381",
+   "municipality": "Šilalės r. sav.",
+   "lat": 55.570183,
+   "lon": 22.176658,
+   "petrol95": 1.909,
+   "diesel": 2.179,
+   "lpg": 0.79,
+   "price_updated": "2026-09-04T14:42:51+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Šilalė, Rytinio kelio g. 2, 75122",
+   "municipality": "Šilalės r. sav.",
+   "lat": 55.490035,
+   "lon": 22.199784,
+   "petrol95": 1.879,
+   "diesel": 2.169,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:49+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Košių II k., Dvaro g. 3, 75226",
    "municipality": "Šilalės r. sav.",
@@ -7231,6 +8221,17 @@
    "price_updated": "2026-09-04T09:22:36+03:00"
   },
   {
+   "network": "UAB Baltic Petroleum",
+   "address": "Šilutė, Klaipėdos g. 4A, 99116",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.352837,
+   "lon": 21.462853,
+   "petrol95": 1.909,
+   "diesel": 2.169,
+   "lpg": 0.749,
+   "price_updated": "2026-09-04T14:42:48+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Šilutė, Cintjoniškių g. 15, 99116",
    "municipality": "Šilutės r. sav.",
@@ -7328,6 +8329,17 @@
    "diesel": 2.019,
    "lpg": 0.699,
    "price_updated": "2026-09-04T09:41:21+03:00"
+  },
+  {
+   "network": "UAB Baltic Petroleum",
+   "address": "Širvintos, Musninkų g. 21, 19126",
+   "municipality": "Širvintų r. sav.",
+   "lat": 55.032222,
+   "lon": 24.967251,
+   "petrol95": 1.859,
+   "diesel": 2.139,
+   "lpg": 0.779,
+   "price_updated": "2026-09-04T14:42:49+03:00"
   },
   {
    "network": "UAB Viada LT",
