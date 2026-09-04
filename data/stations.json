@@ -3,12 +3,13 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-04T09:55:51+00:00Z",
+    "resolved_utc": "2026-09-04T10:01:09+00:00Z",
     "winner_counts": {
-      "portal": 669,
-      "null": 98
+      "portal": 668,
+      "null": 98,
+      "saurida": 1
     },
-    "saurida_served": 0,
+    "saurida_served": 1,
     "sources": [
       {
         "source": "portal",
@@ -16,7 +17,7 @@
         "date": "2026-09-04",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-04T09:55:50+00:00Z"
+        "fetched_utc": "2026-09-04T10:01:08+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-04T09:55:51+00:00Z"
+        "fetched_utc": "2026-09-04T10:01:09+00:00Z"
       }
     ]
   },
@@ -3022,10 +3023,10 @@
       "municipality": "Kauno r. sav.",
       "locality": "",
       "petrol95": 1.86,
-      "diesel": 2.12,
+      "diesel": 2.06,
       "lpg": 0.74,
-      "price_updated": "2026-09-04T09:40:38+03:00",
-      "price_src": "portal",
+      "price_updated": "2026-09-04T12:56:55+03:00",
+      "price_src": "saurida",
       "lat": 55.096967,
       "lon": 23.806249,
       "approx": false
