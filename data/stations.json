@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-04T11:47:04+00:00Z",
+    "resolved_utc": "2026-09-04T16:36:58+00:00Z",
     "winner_counts": {
-      "portal": 760,
-      "null": 6,
+      "portal": 761,
+      "null": 5,
       "saurida": 1
     },
     "saurida_served": 1,
@@ -17,7 +17,7 @@
         "date": "2026-09-04",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-04T11:47:03+00:00Z"
+        "fetched_utc": "2026-09-04T16:36:57+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-04T11:47:04+00:00Z"
+        "fetched_utc": "2026-09-04T16:36:58+00:00Z"
       }
     ]
   },
@@ -34,19 +34,19 @@
       "min": 1.75,
       "avg": 1.87,
       "max": 1.999,
-      "count": 734
+      "count": 735
     },
     "diesel": {
       "min": 1.12,
       "avg": 2.116,
       "max": 2.299,
-      "count": 736
+      "count": 737
     },
     "lpg": {
       "min": 0.67,
-      "avg": 0.789,
+      "avg": 0.79,
       "max": 0.94,
-      "count": 599
+      "count": 600
     }
   },
   "stations": [
@@ -11286,9 +11286,13 @@
       "address": "Kvėdarna, Papynaujo k., Dvaro g. 1, 75342",
       "municipality": "Šilalės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.82,
+      "diesel": 2.07,
+      "lpg": 0.8,
+      "price_updated": "2026-09-04T16:43:42+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "16:43",
       "lat": 55.566385,
       "lon": 21.995708,
       "approx": false,

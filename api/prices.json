@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-04T11:48:05Z",
+ "generated_utc": "2026-09-04T16:37:23Z",
  "price_date": "2026-09-04",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.75,
    "avg": 1.87,
    "max": 1.999,
-   "count": 734
+   "count": 735
   },
   "diesel": {
    "min": 1.12,
    "avg": 2.116,
    "max": 2.299,
-   "count": 736
+   "count": 737
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.789,
+   "avg": 0.79,
    "max": 0.94,
-   "count": 599
+   "count": 600
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 761,
+ "count": 762,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -8087,6 +8087,17 @@
    "diesel": 2.259,
    "lpg": 0.899,
    "price_updated": "2026-09-04T09:59:52+03:00"
+  },
+  {
+   "network": "Agroserviso kooperatyvas Pynauja",
+   "address": "Kvėdarna, Papynaujo k., Dvaro g. 1, 75342",
+   "municipality": "Šilalės r. sav.",
+   "lat": 55.566385,
+   "lon": 21.995708,
+   "petrol95": 1.82,
+   "diesel": 2.07,
+   "lpg": 0.8,
+   "price_updated": "2026-09-04T16:43:42+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
