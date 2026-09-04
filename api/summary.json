@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-03",
+ "price_date": "2026-09-04",
  "currency": "EUR",
- "stations_with_prices": 763,
+ "stations_with_prices": 666,
  "national": {
   "petrol95": {
-   "min": 1.699,
-   "avg": 1.843,
-   "max": 1.959,
-   "count": 736
+   "min": 1.75,
+   "avg": 1.869,
+   "max": 1.999,
+   "count": 639
   },
   "diesel": {
-   "min": 1.989,
-   "avg": 2.093,
-   "max": 2.239,
-   "count": 738
+   "min": 1.979,
+   "avg": 2.112,
+   "max": 2.299,
+   "count": 641
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.781,
+   "avg": 0.79,
    "max": 0.94,
-   "count": 600
+   "count": 511
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.699,
+   "price": 1.75,
    "network": "UAB Eniris",
-   "address": "Kalnuotės 1 k. 15130",
-   "municipality": "Vilniaus r. sav."
+   "address": "Plungė, Dariaus ir Girėno g. 31, 90118",
+   "municipality": "Plungės r. sav."
   },
   "diesel": {
-   "price": 1.989,
-   "network": "UAB Baltic Petroleum",
-   "address": "Lazdijai, Turistų g. 88, 67102",
-   "municipality": "Lazdijų r. sav."
+   "price": 1.979,
+   "network": "UAB Stateta",
+   "address": "Alytus, Santaikos g. 28 B, 62123",
+   "municipality": "Alytaus m. sav."
   },
   "lpg": {
    "price": 0.67,

@@ -1,21 +1,20 @@
 {
- "checked_utc": "2026-09-04T06:16:03+00:00Z",
+ "checked_utc": "2026-09-04T07:31:12+00:00Z",
  "engine": "ok",
- "file_date": "2026-09-03",
+ "file_date": "2026-09-04",
  "stations": 767,
  "winners": {
-  "portal": 762,
-  "null": 4,
-  "saurida": 1
+  "null": 101,
+  "portal": 666
  },
  "sources": [
   {
    "source": "portal",
    "ok": true,
-   "date": "2026-09-03",
+   "date": "2026-09-04",
    "error": null,
    "retired": false,
-   "fetched_utc": "2026-09-04T06:16:08+00:00Z"
+   "fetched_utc": "2026-09-04T07:31:15+00:00Z"
   },
   {
    "source": "sharepoint",
@@ -23,7 +22,7 @@
    "date": null,
    "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
    "retired": true,
-   "fetched_utc": "2026-09-04T06:16:09+00:00Z"
+   "fetched_utc": "2026-09-04T07:31:16+00:00Z"
   }
  ]
 }
