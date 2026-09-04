@@ -3,12 +3,12 @@
   "as_of": "2026-09-04",
   "symbol": "Brent",
   "currency": "USD",
-  "price": 95.17,
-  "week_avg": 94.29,
+  "price": 95.35,
+  "week_avg": 94.33,
   "prev_week_avg": 89.52,
-  "avg_change_pct": 5.3,
-  "week_change_pct": 6.6,
-  "month_change_pct": 19.9,
+  "avg_change_pct": 5.4,
+  "week_change_pct": 6.8,
+  "month_change_pct": 20.1,
   "level": "rise",
   "history": [
     {
@@ -105,7 +105,7 @@
     },
     {
       "date": "2026-09-04",
-      "close": 95.17
+      "close": 95.35
     }
   ]
 }
