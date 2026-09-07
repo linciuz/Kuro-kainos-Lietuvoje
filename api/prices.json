@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-07T11:01:24Z",
+ "generated_utc": "2026-09-07T11:31:31Z",
  "price_date": "2026-09-07",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,7 +19,7 @@
  "summary": {
   "petrol95": {
    "min": 1.739,
-   "avg": 1.873,
+   "avg": 1.874,
    "max": 2.017,
    "count": 736
   },
@@ -7984,10 +7984,10 @@
    "municipality": "Šiaulių r. sav.",
    "lat": 56.014796,
    "lon": 22.95141,
-   "petrol95": 1.85,
+   "petrol95": 1.89,
    "diesel": 2.15,
    "lpg": 0.79,
-   "price_updated": "2026-09-07T13:39:54+03:00"
+   "price_updated": "2026-09-07T14:21:41+03:00"
   },
   {
    "network": "UAB Boost Petrol",

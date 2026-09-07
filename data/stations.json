@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-07T11:01:07+00:00Z",
+    "resolved_utc": "2026-09-07T11:31:04+00:00Z",
     "winner_counts": {
       "portal": 759,
       "null": 8
@@ -16,7 +16,7 @@
         "date": "2026-09-07",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-07T11:01:06+00:00Z"
+        "fetched_utc": "2026-09-07T11:31:03+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,14 +24,14 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-07T11:01:07+00:00Z"
+        "fetched_utc": "2026-09-07T11:31:04+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.739,
-      "avg": 1.873,
+      "avg": 1.874,
       "max": 2.017,
       "count": 736
     },
@@ -10852,13 +10852,13 @@
       "address": "Kuršėnai, Vytauto g. 80, 81146",
       "municipality": "Šiaulių r. sav.",
       "locality": "",
-      "petrol95": 1.85,
+      "petrol95": 1.89,
       "diesel": 2.15,
       "lpg": 0.79,
-      "price_updated": "2026-09-07T13:39:54+03:00",
+      "price_updated": "2026-09-07T14:21:41+03:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "13:39",
+      "price_time": "14:21",
       "lat": 56.014796,
       "lon": 22.95141,
       "approx": false
