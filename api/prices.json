@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-07T09:01:23Z",
+ "generated_utc": "2026-09-07T10:45:09Z",
  "price_date": "2026-09-07",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -7985,9 +7985,9 @@
    "lat": 56.014796,
    "lon": 22.95141,
    "petrol95": 1.85,
-   "diesel": 2.09,
+   "diesel": 2.15,
    "lpg": 0.79,
-   "price_updated": "2026-09-07T08:29:07+03:00"
+   "price_updated": "2026-09-07T13:39:54+03:00"
   },
   {
    "network": "UAB Boost Petrol",
