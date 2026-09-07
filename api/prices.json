@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-07T11:31:31Z",
+ "generated_utc": "2026-09-07T12:29:46Z",
  "price_date": "2026-09-07",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -25,7 +25,7 @@
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.117,
+   "avg": 2.118,
    "max": 2.299,
    "count": 738
   },
@@ -1120,10 +1120,10 @@
    "municipality": "Kalvarijos sav.",
    "lat": 54.32897,
    "lon": 23.148446,
-   "petrol95": 1.84,
-   "diesel": 2.09,
+   "petrol95": 1.96,
+   "diesel": 2.19,
    "lpg": null,
-   "price_updated": "2026-09-07T09:52:08+03:00"
+   "price_updated": "2026-09-07T15:07:58+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5663,10 +5663,10 @@
    "municipality": "Ukmergės r. sav.",
    "lat": 55.240724,
    "lon": 24.787348,
-   "petrol95": 1.86,
+   "petrol95": 1.85,
    "diesel": 2.12,
    "lpg": 0.76,
-   "price_updated": "2026-09-07T07:31:39+03:00"
+   "price_updated": "2026-09-07T15:20:32+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
