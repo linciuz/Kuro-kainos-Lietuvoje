@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-07T12:29:46Z",
+ "generated_utc": "2026-09-07T13:37:52Z",
  "price_date": "2026-09-07",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -284,10 +284,10 @@
    "municipality": "Alytaus r. sav.",
    "lat": 54.381896,
    "lon": 23.993186,
-   "petrol95": 1.83,
-   "diesel": 2.07,
-   "lpg": 0.72,
-   "price_updated": "2026-09-07T09:52:48+03:00"
+   "petrol95": 1.85,
+   "diesel": 2.09,
+   "lpg": 0.73,
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -295,10 +295,10 @@
    "municipality": "Alytaus r. sav.",
    "lat": 54.383845,
    "lon": 23.659403,
-   "petrol95": 1.85,
-   "diesel": 2.1,
-   "lpg": 0.74,
-   "price_updated": "2026-09-07T09:52:48+03:00"
+   "petrol95": 1.87,
+   "diesel": 2.11,
+   "lpg": 0.75,
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -1890,10 +1890,10 @@
    "municipality": "Kauno m. sav.",
    "lat": 54.933125,
    "lon": 23.943498,
-   "petrol95": 1.849,
-   "diesel": 2.079,
+   "petrol95": 1.919,
+   "diesel": 2.139,
    "lpg": 0.729,
-   "price_updated": "2026-09-07T09:52:48+03:00"
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -1901,10 +1901,10 @@
    "municipality": "Kauno m. sav.",
    "lat": 54.901238,
    "lon": 23.854402,
-   "petrol95": 1.859,
-   "diesel": 2.089,
+   "petrol95": 1.929,
+   "diesel": 2.149,
    "lpg": 0.729,
-   "price_updated": "2026-09-07T09:52:48+03:00"
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2286,10 +2286,10 @@
    "municipality": "Kauno r. sav.",
    "lat": 54.902527,
    "lon": 23.762716,
-   "petrol95": 1.85,
-   "diesel": 2.09,
+   "petrol95": 1.94,
+   "diesel": 2.15,
    "lpg": 0.73,
-   "price_updated": "2026-09-07T09:52:49+03:00"
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4588,7 +4588,7 @@
    "petrol95": 1.84,
    "diesel": 2.11,
    "lpg": 0.77,
-   "price_updated": "2026-09-07T09:52:49+03:00"
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7027,10 +7027,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.722374,
    "lon": 25.271064,
-   "petrol95": 1.819,
-   "diesel": 2.079,
+   "petrol95": 1.899,
+   "diesel": 2.159,
    "lpg": 0.709,
-   "price_updated": "2026-09-07T09:52:49+03:00"
+   "price_updated": "2026-09-07T16:30:45+03:00"
   },
   {
    "network": "UAB Stateta",
