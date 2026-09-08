@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-08T07:47:32Z",
+ "generated_utc": "2026-09-08T08:01:50Z",
  "price_date": "2026-09-08",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.769,
    "avg": 1.952,
    "max": 2.039,
-   "count": 735
+   "count": 736
   },
   "diesel": {
    "min": 1.999,
    "avg": 2.201,
    "max": 2.299,
-   "count": 737
+   "count": 738
   },
   "lpg": {
    "min": 0.67,
    "avg": 0.799,
    "max": 0.949,
-   "count": 597
+   "count": 598
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 761,
+ "count": 762,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -8219,6 +8219,17 @@
    "diesel": 2.15,
    "lpg": 0.76,
    "price_updated": "2026-09-08T09:24:48+03:00"
+  },
+  {
+   "network": "UAB Andopas",
+   "address": "Šilutė, Ramučių g. 43, 99150",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.358829,
+   "lon": 21.5034,
+   "petrol95": 1.86,
+   "diesel": 2.1,
+   "lpg": 0.75,
+   "price_updated": "2026-09-08T11:00:07+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
