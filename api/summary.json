@@ -1,31 +1,31 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-07",
+ "price_date": "2026-09-08",
  "currency": "EUR",
- "stations_with_prices": 759,
+ "stations_with_prices": 761,
  "national": {
   "petrol95": {
-   "min": 1.739,
-   "avg": 1.876,
-   "max": 2.017,
-   "count": 736
+   "min": 1.769,
+   "avg": 1.952,
+   "max": 2.039,
+   "count": 735
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.119,
+   "avg": 2.201,
    "max": 2.299,
-   "count": 738
+   "count": 737
   },
   "lpg": {
-   "min": 0.68,
-   "avg": 0.79,
+   "min": 0.67,
+   "avg": 0.799,
    "max": 0.949,
-   "count": 596
+   "count": 597
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.739,
+   "price": 1.769,
    "network": "UAB Eniris",
    "address": "Kalnuotės 1 k. 15130",
    "municipality": "Vilniaus r. sav."
@@ -37,10 +37,10 @@
    "municipality": "Kauno m. sav."
   },
   "lpg": {
-   "price": 0.68,
-   "network": "UAB Bonsa",
-   "address": "Taurai, Tilžės pl. 46, 72142",
-   "municipality": "Tauragės r. sav."
+   "price": 0.67,
+   "network": "UAB Madalva",
+   "address": "Plungė, Lentpjūvės g. 10A, 90118",
+   "municipality": "Plungės r. sav."
   }
  },
  "source": "Lietuvos energetikos agentura (LEA)",
