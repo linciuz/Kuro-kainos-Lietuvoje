@@ -3,14 +3,14 @@
  "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
  "scope": "per_station",
  "role": "independent cross-check against LEA — NOT published to the app",
- "fetched": "2026-09-07T18:24:22Z",
+ "fetched": "2026-09-08T10:07:36Z",
  "stations": 34,
  "summary": {
   "diesel": {
-   "min": 2.06,
-   "max": 2.12,
+   "min": 2.1,
+   "max": 2.14,
    "count": 31,
-   "median": 2.1
+   "median": 2.12
   },
   "petrol95": {
    "min": 1.82,
@@ -27,49 +27,43 @@
  },
  "prices": [
   {
-   "name": "Skuodas",
-   "diesel": 2.06,
-   "petrol95": 1.86,
-   "lpg": 0.74
-  },
-  {
-   "name": "Klaipėda",
-   "diesel": 2.08,
-   "petrol95": 1.82,
-   "lpg": 0.73
-  },
-  {
-   "name": "Pašvenčiai",
-   "diesel": 2.1,
-   "petrol95": 1.86,
-   "lpg": 0.73
-  },
-  {
-   "name": "Velžiai",
-   "diesel": 2.1,
-   "petrol95": 1.86,
-   "lpg": 0.74
-  },
-  {
-   "name": "Kušliškiai",
-   "diesel": 2.1,
-   "petrol95": 1.85,
-   "lpg": 0.74
-  },
-  {
-   "name": "Domeikava",
-   "diesel": 2.1,
-   "petrol95": 1.86,
-   "lpg": 0.74
-  },
-  {
    "name": "Marijampolė",
    "diesel": 2.1,
    "petrol95": 1.84
   },
   {
+   "name": "Klaipėda",
+   "diesel": 2.12,
+   "petrol95": 1.82,
+   "lpg": 0.73
+  },
+  {
+   "name": "Pašvenčiai",
+   "diesel": 2.11,
+   "petrol95": 1.86,
+   "lpg": 0.73
+  },
+  {
+   "name": "Velžiai",
+   "diesel": 2.12,
+   "petrol95": 1.86,
+   "lpg": 0.74
+  },
+  {
+   "name": "Kušliškiai",
+   "diesel": 2.12,
+   "petrol95": 1.85,
+   "lpg": 0.74
+  },
+  {
+   "name": "Domeikava",
+   "diesel": 2.12,
+   "petrol95": 1.86,
+   "lpg": 0.74
+  },
+  {
    "name": "Mauručiai",
-   "diesel": 2.09,
+   "diesel": 2.11,
    "petrol95": 1.84
   },
   {
@@ -82,97 +76,103 @@
   },
   {
    "name": "Visaginas",
-   "diesel": 2.1,
+   "diesel": 2.13,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Neveronys, Martinavos g.",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Vilnius, Jankiškių g.",
-   "diesel": 2.1,
+   "diesel": 2.14,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Ukmergė, Vilniaus g.",
-   "diesel": 2.11,
+   "diesel": 2.13,
    "petrol95": 1.87,
    "lpg": 0.74
   },
   {
    "name": "Ukmergė, Kareivinių g.",
-   "diesel": 2.11,
+   "diesel": 2.13,
    "petrol95": 1.87,
    "lpg": 0.74
   },
   {
    "name": "Šilalė",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.87,
    "lpg": 0.74
   },
   {
    "name": "Šiauliai, Vilniaus g.",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.87,
    "lpg": 0.74
   },
   {
    "name": "Šiauliai, Pramonės g.",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.87,
    "lpg": 0.74
   },
   {
+   "name": "Skuodas",
+   "diesel": 2.1,
+   "petrol95": 1.86,
+   "lpg": 0.74
+  },
+  {
    "name": "Rumšiškės",
-   "diesel": 2.12,
+   "diesel": 2.14,
    "petrol95": 1.88,
    "lpg": 0.74
   },
   {
    "name": "Radviliškis",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Prienai",
-   "diesel": 2.11,
+   "diesel": 2.14,
    "petrol95": 1.87,
    "lpg": 0.74
   },
   {
    "name": "Pašakarniai",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Pageležiai",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "N.Akmenė",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Lekėčiai",
-   "diesel": 2.11,
+   "diesel": 2.14,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Lazdijai",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
@@ -182,7 +182,7 @@
   },
   {
    "name": "Čekoniškės",
-   "diesel": 2.1,
+   "diesel": 2.14,
    "petrol95": 1.86
   },
   {
@@ -193,30 +193,30 @@
   },
   {
    "name": "Kaunas",
-   "diesel": 2.08,
+   "diesel": 2.13,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Alytus, Pramonės g.",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Alytus, Miškininkų g.",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86
   },
   {
    "name": "Akmenė",
-   "diesel": 2.1,
+   "diesel": 2.12,
    "petrol95": 1.86,
    "lpg": 0.74
   },
   {
    "name": "Zujūnai",
-   "diesel": 2.1,
+   "diesel": 2.14,
    "petrol95": 1.86,
    "lpg": 0.74
   }
