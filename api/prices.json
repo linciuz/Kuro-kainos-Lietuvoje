@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-08T11:31:48Z",
+ "generated_utc": "2026-09-08T11:46:53Z",
  "price_date": "2026-09-08",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.67,
    "avg": 0.799,
    "max": 0.959,
-   "count": 598
+   "count": 599
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 762,
+ "count": 763,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -7911,6 +7911,17 @@
    "diesel": 2.219,
    "lpg": null,
    "price_updated": "2026-09-08T09:57:30+03:00"
+  },
+  {
+   "network": "UAB Plovimo sistemos",
+   "address": "Šiauliai, Gegužių g. 28, 78322",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.905911,
+   "lon": 23.25872,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.829,
+   "price_updated": "2026-09-08T14:45:06+03:00"
   },
   {
    "network": "UAB Saurida",
