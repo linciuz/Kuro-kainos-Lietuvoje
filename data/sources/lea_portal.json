@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-08T10:07:30Z",
+ "generated": "2026-09-08T17:32:26Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-08 11:12:24",
+ "api_last_updated": "2026-09-08 17:18:47",
  "count": 767,
  "with_coords": 766,
- "priced": 762,
+ "priced": 763,
  "stations": [
   {
    "company": "UAB Baltic Petroleum",
@@ -10552,12 +10552,12 @@
    ],
    "prices": {
     "lpg": 0.76,
-    "diesel": 2.12,
-    "petrol95": 1.85
+    "diesel": 2.19,
+    "petrol95": 1.93
    },
    "gas_station_id": 217,
    "logo_url": null,
-   "submitted_at": "2026-09-08T07:30:02.000000Z"
+   "submitted_at": "2026-09-08T14:18:47.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -14667,10 +14667,12 @@
    "fuels": [
     "lpg"
    ],
-   "prices": {},
+   "prices": {
+    "lpg": 0.829
+   },
    "gas_station_id": 561,
    "logo_url": null,
-   "submitted_at": "2026-09-08T07:30:03.000000Z"
+   "submitted_at": "2026-09-08T11:45:06.000000Z"
   },
   {
    "company": "UAB Saurida",
@@ -14854,12 +14856,12 @@
    ],
    "prices": {
     "lpg": 0.79,
-    "diesel": 2.15,
+    "diesel": 2.19,
     "petrol95": 1.89
    },
    "gas_station_id": 122,
    "logo_url": null,
-   "submitted_at": "2026-09-08T07:30:02.000000Z"
+   "submitted_at": "2026-09-08T12:30:09.000000Z"
   },
   {
    "company": "UAB Boost Petrol",
