@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-08T08:01:50Z",
+ "generated_utc": "2026-09-08T08:16:43Z",
  "price_date": "2026-09-08",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -25,14 +25,14 @@
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.201,
+   "avg": 2.2,
    "max": 2.299,
    "count": 738
   },
   "lpg": {
    "min": 0.67,
    "avg": 0.799,
-   "max": 0.949,
+   "max": 0.959,
    "count": 598
   }
  },
@@ -152,10 +152,10 @@
    "municipality": "Alytaus m. sav.",
    "lat": 54.42474,
    "lon": 24.003441,
-   "petrol95": 1.999,
-   "diesel": 2.249,
-   "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "petrol95": 1.979,
+   "diesel": 2.209,
+   "lpg": 0.819,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -163,10 +163,10 @@
    "municipality": "Alytaus m. sav.",
    "lat": 54.395068,
    "lon": 24.037857,
-   "petrol95": 1.999,
-   "diesel": 2.259,
-   "lpg": 0.779,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "petrol95": 1.989,
+   "diesel": 2.199,
+   "lpg": 0.799,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -471,10 +471,10 @@
    "municipality": "Biržų r. sav.",
    "lat": 56.194803,
    "lon": 24.771856,
-   "petrol95": 1.969,
-   "diesel": 2.219,
+   "petrol95": 1.959,
+   "diesel": 2.199,
    "lpg": 0.84,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -559,10 +559,10 @@
    "municipality": "Druskininkų sav.",
    "lat": 54.010273,
    "lon": 23.993451,
-   "petrol95": 1.999,
-   "diesel": 2.229,
-   "lpg": 0.829,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "petrol95": 1.989,
+   "diesel": 2.239,
+   "lpg": 0.839,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Tomega",
@@ -603,10 +603,10 @@
    "municipality": "Elektrėnų sav.",
    "lat": 54.78921,
    "lon": 24.676086,
-   "petrol95": 1.989,
-   "diesel": 2.249,
+   "petrol95": 1.979,
+   "diesel": 2.239,
    "lpg": 0.829,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Degta",
@@ -727,7 +727,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.799,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -837,7 +837,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.779,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -1079,7 +1079,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1090,7 +1090,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -1321,7 +1321,7 @@
    "petrol95": 1.999,
    "diesel": 2.299,
    "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1332,7 +1332,7 @@
    "petrol95": 1.989,
    "diesel": 2.239,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1343,7 +1343,7 @@
    "petrol95": 1.999,
    "diesel": 2.299,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1354,7 +1354,7 @@
    "petrol95": 1.999,
    "diesel": 2.239,
    "lpg": 0.789,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1365,7 +1365,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": 0.929,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1376,7 +1376,7 @@
    "petrol95": 1.999,
    "diesel": 2.269,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1387,7 +1387,7 @@
    "petrol95": 1.979,
    "diesel": 2.239,
    "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1398,7 +1398,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.789,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1409,7 +1409,7 @@
    "petrol95": 1.969,
    "diesel": 2.229,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1420,7 +1420,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.799,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1431,7 +1431,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1442,7 +1442,7 @@
    "petrol95": 1.979,
    "diesel": 2.239,
    "lpg": 0.839,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1453,7 +1453,7 @@
    "petrol95": 1.999,
    "diesel": 2.229,
    "lpg": 0.799,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1464,7 +1464,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1475,7 +1475,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1486,7 +1486,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": 0.879,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1494,10 +1494,10 @@
    "municipality": "Kauno m. sav.",
    "lat": 54.91451,
    "lon": 23.900006,
-   "petrol95": 1.969,
+   "petrol95": 1.959,
    "diesel": 2.209,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1508,7 +1508,7 @@
    "petrol95": 1.999,
    "diesel": 2.269,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -1519,7 +1519,7 @@
    "petrol95": 1.979,
    "diesel": 2.229,
    "lpg": 0.839,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Deguva",
@@ -2168,7 +2168,7 @@
    "petrol95": 1.999,
    "diesel": 2.299,
    "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -2562,9 +2562,9 @@
    "lat": 55.730408,
    "lon": 21.124619,
    "petrol95": 1.999,
-   "diesel": 2.299,
+   "diesel": 2.269,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2575,7 +2575,7 @@
    "petrol95": 1.989,
    "diesel": 2.229,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2584,9 +2584,9 @@
    "lat": 55.687653,
    "lon": 21.145064,
    "petrol95": 1.999,
-   "diesel": 2.259,
+   "diesel": 2.249,
    "lpg": 0.829,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2594,10 +2594,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.702286,
    "lon": 21.138001,
-   "petrol95": 1.979,
-   "diesel": 2.219,
+   "petrol95": 1.969,
+   "diesel": 2.209,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2608,7 +2608,7 @@
    "petrol95": 1.979,
    "diesel": 2.219,
    "lpg": 0.83,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2617,9 +2617,9 @@
    "lat": 55.69244,
    "lon": 21.153767,
    "petrol95": 1.999,
-   "diesel": 2.259,
+   "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2627,10 +2627,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.704329,
    "lon": 21.160808,
-   "petrol95": 1.979,
-   "diesel": 2.219,
+   "petrol95": 1.969,
+   "diesel": 2.209,
    "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -2641,7 +2641,7 @@
    "petrol95": 1.999,
    "diesel": 2.229,
    "lpg": 0.839,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -2916,7 +2916,7 @@
    "petrol95": 1.989,
    "diesel": 2.249,
    "lpg": 0.86,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -3090,9 +3090,9 @@
    "lat": 55.71917,
    "lon": 21.293355,
    "petrol95": 1.92,
-   "diesel": 2.16,
+   "diesel": 2.17,
    "lpg": null,
-   "price_updated": "2026-09-08T09:55:16+03:00"
+   "price_updated": "2026-09-08T11:10:35+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -3112,9 +3112,9 @@
    "lat": 55.863594,
    "lon": 21.217201,
    "petrol95": 1.999,
-   "diesel": 2.299,
-   "lpg": 0.899,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "diesel": 2.259,
+   "lpg": 0.869,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -3367,7 +3367,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Dujovita",
@@ -3477,7 +3477,7 @@
    "petrol95": 1.999,
    "diesel": 2.239,
    "lpg": 0.759,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -3629,9 +3629,9 @@
    "lat": 54.557125,
    "lon": 23.354007,
    "petrol95": 1.969,
-   "diesel": 2.239,
+   "diesel": 2.229,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -3640,9 +3640,9 @@
    "lat": 54.576249,
    "lon": 23.371213,
    "petrol95": 1.999,
-   "diesel": 2.259,
-   "lpg": 0.839,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "diesel": 2.249,
+   "lpg": 0.84,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -3837,10 +3837,10 @@
    "municipality": "Mažeikių r. sav.",
    "lat": 56.302373,
    "lon": 22.345047,
-   "petrol95": 1.979,
-   "diesel": 2.239,
+   "petrol95": 1.969,
+   "diesel": 2.219,
    "lpg": 0.819,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB EU Verslas",
@@ -4104,7 +4104,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Šventosios investicijos",
@@ -4167,10 +4167,10 @@
    "municipality": "Panevėžio m. sav.",
    "lat": 55.71768,
    "lon": 24.371095,
-   "petrol95": 1.999,
-   "diesel": 2.249,
+   "petrol95": 1.969,
+   "diesel": 2.219,
    "lpg": 0.83,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -4178,10 +4178,10 @@
    "municipality": "Panevėžio m. sav.",
    "lat": 55.728796,
    "lon": 24.339034,
-   "petrol95": 1.959,
-   "diesel": 2.209,
+   "petrol95": 1.949,
+   "diesel": 2.199,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -4189,10 +4189,10 @@
    "municipality": "Panevėžio m. sav.",
    "lat": 55.731853,
    "lon": 24.342399,
-   "petrol95": 1.979,
-   "diesel": 2.229,
+   "petrol95": 1.969,
+   "diesel": 2.219,
    "lpg": 0.819,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Deliuvis",
@@ -4398,10 +4398,10 @@
    "municipality": "Panevėžio r. sav.",
    "lat": 55.67337,
    "lon": 24.33583,
-   "petrol95": 1.989,
-   "diesel": 2.249,
+   "petrol95": 1.979,
+   "diesel": 2.229,
    "lpg": 0.849,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -4409,10 +4409,10 @@
    "municipality": "Panevėžio r. sav.",
    "lat": 55.810469,
    "lon": 24.368724,
-   "petrol95": 1.989,
-   "diesel": 2.249,
+   "petrol95": 1.979,
+   "diesel": 2.229,
    "lpg": 0.939,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -4904,10 +4904,10 @@
    "municipality": "Radviliškio r. sav.",
    "lat": 55.811565,
    "lon": 23.550058,
-   "petrol95": 1.999,
-   "diesel": 2.259,
-   "lpg": 0.78,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "petrol95": 1.979,
+   "diesel": 2.229,
+   "lpg": 0.81,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -5016,8 +5016,8 @@
    "lon": 22.693284,
    "petrol95": 1.999,
    "diesel": 2.299,
-   "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "lpg": 0.959,
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -5215,7 +5215,7 @@
    "petrol95": 1.999,
    "diesel": 2.299,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB DVS Topolis",
@@ -5358,7 +5358,7 @@
    "petrol95": 1.949,
    "diesel": 2.189,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -5369,7 +5369,7 @@
    "petrol95": 1.979,
    "diesel": 2.219,
    "lpg": 0.799,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -5512,7 +5512,7 @@
    "petrol95": 1.989,
    "diesel": 2.249,
    "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -5633,7 +5633,7 @@
    "petrol95": 1.999,
    "diesel": 2.299,
    "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -5710,7 +5710,7 @@
    "petrol95": 1.999,
    "diesel": 2.299,
    "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -5851,9 +5851,9 @@
    "lat": 55.50521,
    "lon": 25.62127,
    "petrol95": 1.999,
-   "diesel": 2.259,
+   "diesel": 2.229,
    "lpg": 0.799,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -5861,10 +5861,10 @@
    "municipality": "Utenos r. sav.",
    "lat": 55.495936,
    "lon": 25.582789,
-   "petrol95": 1.999,
-   "diesel": 2.259,
-   "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "petrol95": 1.989,
+   "diesel": 2.219,
+   "lpg": 0.814,
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -5906,9 +5906,9 @@
    "lat": 55.494679,
    "lon": 25.645853,
    "petrol95": null,
-   "diesel": 2.119,
+   "diesel": 2.159,
    "lpg": null,
-   "price_updated": "2026-09-08T09:17:09+03:00"
+   "price_updated": "2026-09-08T11:02:39+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -5985,7 +5985,7 @@
    "petrol95": 1.999,
    "diesel": 2.239,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -6007,7 +6007,7 @@
    "petrol95": 1.979,
    "diesel": 2.219,
    "lpg": 0.84,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -6345,10 +6345,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.694412,
    "lon": 25.263362,
-   "petrol95": 1.999,
-   "diesel": 2.249,
+   "petrol95": 1.979,
+   "diesel": 2.239,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6359,7 +6359,7 @@
    "petrol95": 1.999,
    "diesel": 2.254,
    "lpg": 0.859,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6370,7 +6370,7 @@
    "petrol95": 1.999,
    "diesel": 2.239,
    "lpg": 0.789,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6381,7 +6381,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.899,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6389,10 +6389,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.658767,
    "lon": 25.16093,
-   "petrol95": 1.989,
-   "diesel": 2.239,
+   "petrol95": 1.979,
+   "diesel": 2.229,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6400,10 +6400,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.75156,
    "lon": 25.26653,
-   "petrol95": 1.989,
-   "diesel": 2.229,
+   "petrol95": 1.969,
+   "diesel": 2.219,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6414,7 +6414,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.899,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6422,10 +6422,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.702357,
    "lon": 25.264761,
-   "petrol95": 1.999,
-   "diesel": 2.249,
+   "petrol95": 1.979,
+   "diesel": 2.239,
    "lpg": 0.899,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6433,10 +6433,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.702899,
    "lon": 25.263932,
-   "petrol95": 1.999,
-   "diesel": 2.249,
+   "petrol95": 1.979,
+   "diesel": 2.239,
    "lpg": 0.899,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6447,7 +6447,7 @@
    "petrol95": 1.994,
    "diesel": 2.254,
    "lpg": 0.859,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6458,7 +6458,7 @@
    "petrol95": 1.999,
    "diesel": 2.244,
    "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6469,7 +6469,7 @@
    "petrol95": 1.989,
    "diesel": 2.239,
    "lpg": 0.849,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6480,7 +6480,7 @@
    "petrol95": 1.989,
    "diesel": 2.219,
    "lpg": 0.839,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6488,10 +6488,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.670986,
    "lon": 25.192105,
-   "petrol95": 1.979,
-   "diesel": 2.229,
+   "petrol95": 1.969,
+   "diesel": 2.219,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6502,7 +6502,7 @@
    "petrol95": 1.999,
    "diesel": 2.224,
    "lpg": 0.849,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6513,7 +6513,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": 0.919,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6524,7 +6524,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6535,7 +6535,7 @@
    "petrol95": 1.999,
    "diesel": 2.249,
    "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6546,7 +6546,7 @@
    "petrol95": 1.999,
    "diesel": 2.244,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6554,10 +6554,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.713292,
    "lon": 25.209223,
-   "petrol95": 1.999,
+   "petrol95": 1.979,
    "diesel": 2.239,
    "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -6568,7 +6568,7 @@
    "petrol95": 1.999,
    "diesel": 2.259,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -7315,8 +7315,8 @@
    "lon": 25.201747,
    "petrol95": 1.999,
    "diesel": 2.249,
-   "lpg": 0.809,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "lpg": 0.839,
+   "price_updated": "2026-09-08T11:12:22+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -7324,10 +7324,10 @@
    "municipality": "Vilniaus r. sav.",
    "lat": 54.780709,
    "lon": 25.273898,
-   "petrol95": 1.949,
-   "diesel": 2.189,
+   "petrol95": 1.929,
+   "diesel": 2.179,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -7789,7 +7789,7 @@
    "petrol95": 1.979,
    "diesel": 2.239,
    "lpg": 0.839,
-   "price_updated": "2026-09-08T09:50:42+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -7797,10 +7797,10 @@
    "municipality": "Šiaulių m. sav.",
    "lat": 55.909327,
    "lon": 23.319346,
-   "petrol95": 1.989,
-   "diesel": 2.239,
+   "petrol95": 1.999,
+   "diesel": 2.259,
    "lpg": 0.829,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -7808,10 +7808,10 @@
    "municipality": "Šiaulių m. sav.",
    "lat": 55.91276,
    "lon": 23.273898,
-   "petrol95": 1.979,
-   "diesel": 2.229,
+   "petrol95": 1.989,
+   "diesel": 2.249,
    "lpg": 0.779,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
@@ -7822,7 +7822,7 @@
    "petrol95": 1.949,
    "diesel": 2.209,
    "lpg": null,
-   "price_updated": "2026-09-08T09:50:45+03:00"
+   "price_updated": "2026-09-08T11:12:24+03:00"
   },
   {
    "network": "UAB Emsi",
@@ -8029,9 +8029,9 @@
    "lat": 55.999324,
    "lon": 22.989745,
    "petrol95": 1.999,
-   "diesel": 2.299,
+   "diesel": 2.259,
    "lpg": 0.899,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Jozita",
@@ -8129,8 +8129,8 @@
    "lon": 22.587226,
    "petrol95": 1.999,
    "diesel": 2.299,
-   "lpg": 0.949,
-   "price_updated": "2026-09-08T09:50:44+03:00"
+   "lpg": 0.959,
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Eniris",
@@ -8251,7 +8251,7 @@
    "petrol95": 1.955,
    "diesel": 2.185,
    "lpg": 0.769,
-   "price_updated": "2026-09-08T09:50:43+03:00"
+   "price_updated": "2026-09-08T11:12:23+03:00"
   },
   {
    "network": "UAB Emsi",
