@@ -6,13 +6,13 @@
  "national": {
   "petrol95": {
    "min": 1.799,
-   "avg": 1.934,
-   "max": 2.019,
+   "avg": 1.932,
+   "max": 2.039,
    "count": 703
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.178,
+   "avg": 2.175,
    "max": 2.299,
    "count": 705
   },
