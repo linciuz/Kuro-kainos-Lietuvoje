@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-08",
+ "price_date": "2026-09-09",
  "currency": "EUR",
- "stations_with_prices": 763,
+ "stations_with_prices": 725,
  "national": {
   "petrol95": {
-   "min": 1.769,
-   "avg": 1.952,
-   "max": 2.039,
-   "count": 736
+   "min": 1.799,
+   "avg": 1.934,
+   "max": 2.019,
+   "count": 702
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.2,
+   "avg": 2.178,
    "max": 2.299,
-   "count": 738
+   "count": 704
   },
   "lpg": {
    "min": 0.67,
    "avg": 0.799,
-   "max": 0.959,
-   "count": 599
+   "max": 0.949,
+   "count": 561
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.769,
-   "network": "UAB Eniris",
-   "address": "Kalnuotės 1 k. 15130",
-   "municipality": "Vilniaus r. sav."
+   "price": 1.799,
+   "network": "UAB Alauša",
+   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
+   "municipality": "Anykščių r. sav."
   },
   "diesel": {
    "price": 1.999,
    "network": "UAB Alauša",
-   "address": "Kaunas, Palemono g. 171, 52107",
-   "municipality": "Kauno m. sav."
+   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
+   "municipality": "Anykščių r. sav."
   },
   "lpg": {
    "price": 0.67,
