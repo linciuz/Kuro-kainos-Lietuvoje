@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-09T10:08:36Z",
+ "generated": "2026-09-09T17:18:01Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-09 12:28:41",
+ "api_last_updated": "2026-09-09 13:35:33",
  "count": 767,
  "with_coords": 766,
  "priced": 726,
@@ -1350,13 +1350,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.83,
-    "diesel": 2.14,
-    "petrol95": 1.86
+    "lpg": 0.84,
+    "diesel": 2.17,
+    "petrol95": 1.94
    },
    "gas_station_id": 782,
    "logo_url": null,
-   "submitted_at": "2026-09-09T07:30:03.000000Z"
+   "submitted_at": "2026-09-09T10:35:33.000000Z"
   },
   {
    "company": "UAB Žibalas",
