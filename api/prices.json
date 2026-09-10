@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-10T07:32:01Z",
+ "generated_utc": "2026-09-10T10:04:08Z",
  "price_date": "2026-09-10",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3802,8 +3802,8 @@
    "network": "UAB Naftos dujos",
    "address": "Mažeikiai, Daukšos g. 29 / Žemaitijos g. 69, 89132",
    "municipality": "Mažeikių r. sav.",
-   "lat": 56.318881,
-   "lon": 22.318919,
+   "lat": 56.301079,
+   "lon": 22.349796,
    "petrol95": null,
    "diesel": null,
    "lpg": 0.76,
