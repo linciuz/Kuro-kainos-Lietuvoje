@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-09",
+ "price_date": "2026-09-10",
  "currency": "EUR",
- "stations_with_prices": 726,
+ "stations_with_prices": 755,
  "national": {
   "petrol95": {
-   "min": 1.799,
-   "avg": 1.934,
-   "max": 2.039,
-   "count": 703
+   "min": 1.82,
+   "avg": 1.93,
+   "max": 2.019,
+   "count": 732
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.176,
+   "avg": 2.169,
    "max": 2.299,
-   "count": 705
+   "count": 734
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.8,
+   "avg": 0.801,
    "max": 0.949,
-   "count": 562
+   "count": 590
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.799,
-   "network": "UAB Alauša",
-   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
-   "municipality": "Anykščių r. sav."
+   "price": 1.82,
+   "network": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
+   "address": "Skaistgirys, Liepų g. 22, 84380",
+   "municipality": "Joniškio r. sav."
   },
   "diesel": {
    "price": 1.999,
-   "network": "UAB Alauša",
-   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
-   "municipality": "Anykščių r. sav."
+   "network": "UAB Neste Lietuva",
+   "address": "Salaperaugio k., Europos g. 1, 69286",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.67,
