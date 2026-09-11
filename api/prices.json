@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-11T07:31:28Z",
+ "generated_utc": "2026-09-11T08:16:55Z",
  "price_date": "2026-09-11",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.77,
    "avg": 1.918,
    "max": 2.019,
-   "count": 703
+   "count": 704
   },
   "diesel": {
    "min": 1.99,
    "avg": 2.169,
    "max": 2.299,
-   "count": 705
+   "count": 706
   },
   "lpg": {
    "min": 0.67,
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 725,
+ "count": 726,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -761,6 +761,17 @@
    "diesel": 2.23,
    "lpg": 0.84,
    "price_updated": "2026-09-11T09:56:31+03:00"
+  },
+  {
+   "network": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
+   "address": "Skaistgirys, Liepų g. 22, 84380",
+   "municipality": "Joniškio r. sav.",
+   "lat": 56.310494,
+   "lon": 23.380833,
+   "petrol95": 1.82,
+   "diesel": 2.06,
+   "lpg": null,
+   "price_updated": "2026-09-11T11:02:50+03:00"
   },
   {
    "network": "Sigito Rimkevičiaus komercinė įmonė",
