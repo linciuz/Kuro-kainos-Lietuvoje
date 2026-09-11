@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-11T10:01:48Z",
+ "generated": "2026-09-11T17:15:26Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-11 11:44:16",
+ "api_last_updated": "2026-09-11 13:51:09",
  "count": 767,
  "with_coords": 766,
- "priced": 756,
+ "priced": 757,
  "stations": [
   {
    "company": "UAB Baltic Petroleum",
@@ -1717,14 +1717,18 @@
    "lat": 54.725988,
    "lon": 24.236187,
    "fuels": [
+    "petrol95",
     "lpg",
-    "diesel",
-    "petrol95"
+    "diesel"
    ],
-   "prices": {},
+   "prices": {
+    "petrol95": 1.87,
+    "lpg": 0.76,
+    "diesel": 2.12
+   },
    "gas_station_id": 70,
    "logo_url": null,
-   "submitted_at": "2026-09-11T07:30:03.000000Z"
+   "submitted_at": "2026-09-11T10:51:09.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
