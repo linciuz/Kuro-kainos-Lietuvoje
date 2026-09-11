@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-10",
+ "price_date": "2026-09-11",
  "currency": "EUR",
- "stations_with_prices": 755,
+ "stations_with_prices": 725,
  "national": {
   "petrol95": {
-   "min": 1.82,
-   "avg": 1.93,
+   "min": 1.77,
+   "avg": 1.918,
    "max": 2.019,
-   "count": 732
+   "count": 703
   },
   "diesel": {
-   "min": 1.999,
+   "min": 1.99,
    "avg": 2.169,
    "max": 2.299,
-   "count": 734
+   "count": 705
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.801,
+   "avg": 0.802,
    "max": 0.949,
-   "count": 590
+   "count": 563
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.82,
-   "network": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
-   "address": "Skaistgirys, Liepų g. 22, 84380",
-   "municipality": "Joniškio r. sav."
+   "price": 1.77,
+   "network": "UAB Jozita",
+   "address": "Kelmė, V. Putvinskio g. 37, 86113",
+   "municipality": "Kelmės r. sav."
   },
   "diesel": {
-   "price": 1.999,
-   "network": "UAB Neste Lietuva",
-   "address": "Salaperaugio k., Europos g. 1, 69286",
-   "municipality": "Kalvarijos sav."
+   "price": 1.99,
+   "network": "UAB Jozita",
+   "address": "Kelmė, V. Putvinskio g. 37, 86113",
+   "municipality": "Kelmės r. sav."
   },
   "lpg": {
    "price": 0.67,

@@ -7,7 +7,7 @@
  "compiled_by": "https://fuelis.lt",
  "docs": "https://fuelis.lt/atviri-duomenys.html",
  "attribution": "Duomenys: Lietuvos energetikos agentura (LEA). Rinkinys: Fuelis (https://fuelis.lt).",
- "days": 95,
+ "days": 96,
  "history": [
   {
    "date": "2026-04-08",
@@ -1716,6 +1716,24 @@
    "lpg": {
     "min": 0.67,
     "avg": 0.801,
+    "max": 0.949
+   }
+  },
+  {
+   "date": "2026-09-11",
+   "petrol95": {
+    "min": 1.77,
+    "avg": 1.918,
+    "max": 2.019
+   },
+   "diesel": {
+    "min": 1.99,
+    "avg": 2.169,
+    "max": 2.299
+   },
+   "lpg": {
+    "min": 0.67,
+    "avg": 0.802,
     "max": 0.949
    }
   }
