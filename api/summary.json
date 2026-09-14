@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-11",
+ "price_date": "2026-09-14",
  "currency": "EUR",
- "stations_with_prices": 757,
+ "stations_with_prices": 759,
  "national": {
   "petrol95": {
-   "min": 1.77,
+   "min": 1.799,
    "avg": 1.917,
    "max": 2.019,
    "count": 735
   },
   "diesel": {
-   "min": 1.99,
-   "avg": 2.168,
-   "max": 2.299,
+   "min": 1.999,
+   "avg": 2.18,
+   "max": 2.307,
    "count": 737
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.801,
+   "avg": 0.808,
    "max": 0.949,
-   "count": 594
+   "count": 596
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.77,
-   "network": "UAB Jozita",
-   "address": "Kelmė, V. Putvinskio g. 37, 86113",
-   "municipality": "Kelmės r. sav."
+   "price": 1.799,
+   "network": "UAB Alauša",
+   "address": "Bajorų k., Šimonių g. 36, 29352",
+   "municipality": "Anykščių r. sav."
   },
   "diesel": {
-   "price": 1.99,
-   "network": "UAB Jozita",
-   "address": "Kelmė, V. Putvinskio g. 37, 86113",
-   "municipality": "Kelmės r. sav."
+   "price": 1.999,
+   "network": "UAB Alauša",
+   "address": "Bajorų k., Šimonių g. 36, 29352",
+   "municipality": "Anykščių r. sav."
   },
   "lpg": {
    "price": 0.67,
