@@ -1,21 +1,21 @@
 {
-  "generated": "2026-09-11T17:15:23Z",
+  "generated": "2026-09-14T10:59:48Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 2118,
-  "ocpi_count": 2045,
-  "with_price": 2006,
+  "count": 2116,
+  "ocpi_count": 2043,
+  "with_price": 2003,
   "source_health": {
     "ocpi": {
       "live": true,
-      "last_success_utc": "2026-09-11T17:15:23Z"
+      "last_success_utc": "2026-09-14T10:59:48Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-09-11T17:15:23Z"
+      "last_success_utc": "2026-09-14T10:59:48Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-09-11T17:15:23Z"
+      "last_success_utc": "2026-09-14T10:59:48Z"
     }
   },
   "chargers": [
@@ -288,7 +288,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "321",
       "source": "vialietuva-ocpi"
     },
@@ -301,7 +301,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "322",
       "source": "vialietuva-ocpi"
     },
@@ -314,7 +314,7 @@
       "city": "Elektrėnai",
       "power_kw": 150.0,
       "price": 0.39,
-      "sockets": 8,
+      "sockets": 5,
       "ocpi_id": "323",
       "source": "vialietuva-ocpi"
     },
@@ -327,7 +327,7 @@
       "city": "Ramučiai",
       "power_kw": 165.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "324",
       "source": "vialietuva-ocpi"
     },
@@ -339,8 +339,8 @@
       "address": "Veiverių g. 142E, Kaunas, Lithuania",
       "city": "Kaunas",
       "power_kw": 150.0,
-      "price": 0.31,
-      "sockets": 6,
+      "price": 0.25,
+      "sockets": 4,
       "ocpi_id": "325",
       "source": "vialietuva-ocpi"
     },
@@ -353,7 +353,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "375",
       "source": "vialietuva-ocpi"
     },
@@ -366,7 +366,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "376",
       "source": "vialietuva-ocpi"
     },
@@ -392,7 +392,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "378",
       "source": "vialietuva-ocpi"
     },
@@ -405,7 +405,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "379",
       "source": "vialietuva-ocpi"
     },
@@ -418,7 +418,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "380",
       "source": "vialietuva-ocpi"
     },
@@ -431,7 +431,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "381",
       "source": "vialietuva-ocpi"
     },
@@ -444,7 +444,7 @@
       "city": "Grigiškės",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "382",
       "source": "vialietuva-ocpi"
     },
@@ -457,7 +457,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.25,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "383",
       "source": "vialietuva-ocpi"
     },
@@ -470,7 +470,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.25,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "384",
       "source": "vialietuva-ocpi"
     },
@@ -483,7 +483,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "385",
       "source": "vialietuva-ocpi"
     },
@@ -496,7 +496,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "386",
       "source": "vialietuva-ocpi"
     },
@@ -509,7 +509,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "387",
       "source": "vialietuva-ocpi"
     },
@@ -522,7 +522,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "388",
       "source": "vialietuva-ocpi"
     },
@@ -535,7 +535,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.29,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "389",
       "source": "vialietuva-ocpi"
     },
@@ -548,7 +548,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "390",
       "source": "vialietuva-ocpi"
     },
@@ -561,7 +561,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "396",
       "source": "vialietuva-ocpi"
     },
@@ -574,7 +574,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "397",
       "source": "vialietuva-ocpi"
     },
@@ -587,7 +587,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "398",
       "source": "vialietuva-ocpi"
     },
@@ -600,7 +600,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "401",
       "source": "vialietuva-ocpi"
     },
@@ -613,7 +613,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "402",
       "source": "vialietuva-ocpi"
     },
@@ -626,7 +626,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "403",
       "source": "vialietuva-ocpi"
     },
@@ -639,7 +639,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "404",
       "source": "vialietuva-ocpi"
     },
@@ -652,7 +652,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "406",
       "source": "vialietuva-ocpi"
     },
@@ -665,7 +665,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "408",
       "source": "vialietuva-ocpi"
     },
@@ -678,7 +678,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.29,
-      "sockets": 12,
+      "sockets": 6,
       "ocpi_id": "409",
       "source": "vialietuva-ocpi"
     },
@@ -691,7 +691,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "410",
       "source": "vialietuva-ocpi"
     },
@@ -704,7 +704,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "412",
       "source": "vialietuva-ocpi"
     },
@@ -717,7 +717,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.25,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "413",
       "source": "vialietuva-ocpi"
     },
@@ -730,7 +730,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "414",
       "source": "vialietuva-ocpi"
     },
@@ -743,7 +743,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "416",
       "source": "vialietuva-ocpi"
     },
@@ -756,7 +756,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "417",
       "source": "vialietuva-ocpi"
     },
@@ -769,7 +769,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "418",
       "source": "vialietuva-ocpi"
     },
@@ -782,7 +782,7 @@
       "city": "Vilnius",
       "power_kw": 100.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "419",
       "source": "vialietuva-ocpi"
     },
@@ -795,7 +795,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "420",
       "source": "vialietuva-ocpi"
     },
@@ -821,7 +821,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "422",
       "source": "vialietuva-ocpi"
     },
@@ -834,7 +834,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "423",
       "source": "vialietuva-ocpi"
     },
@@ -847,7 +847,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "424",
       "source": "vialietuva-ocpi"
     },
@@ -860,7 +860,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "425",
       "source": "vialietuva-ocpi"
     },
@@ -873,7 +873,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "428",
       "source": "vialietuva-ocpi"
     },
@@ -886,7 +886,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "429",
       "source": "vialietuva-ocpi"
     },
@@ -899,7 +899,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "430",
       "source": "vialietuva-ocpi"
     },
@@ -912,7 +912,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "431",
       "source": "vialietuva-ocpi"
     },
@@ -925,7 +925,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.24,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "432",
       "source": "vialietuva-ocpi"
     },
@@ -938,7 +938,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.21,
-      "sockets": 13,
+      "sockets": 8,
       "ocpi_id": "433",
       "source": "vialietuva-ocpi"
     },
@@ -951,7 +951,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 30,
+      "sockets": 15,
       "ocpi_id": "434",
       "source": "vialietuva-ocpi"
     },
@@ -964,7 +964,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.21,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "435",
       "source": "vialietuva-ocpi"
     },
@@ -977,7 +977,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.25,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "436",
       "source": "vialietuva-ocpi"
     },
@@ -989,8 +989,8 @@
       "address": "Žiedo g. 14, Ukmergė, Lithuania",
       "city": "Ukmergė",
       "power_kw": 45.0,
-      "price": 0.29,
-      "sockets": 43,
+      "price": 0.37,
+      "sockets": 27,
       "ocpi_id": "439",
       "source": "vialietuva-ocpi"
     },
@@ -1003,7 +1003,7 @@
       "city": "Pasvalys",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 2,
+      "sockets": 1,
       "ocpi_id": "440",
       "source": "vialietuva-ocpi"
     },
@@ -1029,7 +1029,7 @@
       "city": "Lazdijai",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "442",
       "source": "vialietuva-ocpi"
     },
@@ -1042,7 +1042,7 @@
       "city": "Kantališkių k.",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 5,
       "ocpi_id": "443",
       "source": "vialietuva-ocpi"
     },
@@ -1055,7 +1055,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.39,
-      "sockets": 8,
+      "sockets": 5,
       "ocpi_id": "451",
       "source": "vialietuva-ocpi"
     },
@@ -1068,7 +1068,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 12,
+      "sockets": 6,
       "ocpi_id": "455",
       "source": "vialietuva-ocpi"
     },
@@ -1146,7 +1146,7 @@
       "city": "Druskininkai",
       "power_kw": 22.0,
       "price": 0.08,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "505",
       "source": "vialietuva-ocpi"
     },
@@ -1614,7 +1614,7 @@
       "city": "Šilagalio km.",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 9,
+      "sockets": 5,
       "ocpi_id": "670",
       "source": "vialietuva-ocpi"
     },
@@ -1627,7 +1627,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "671",
       "source": "vialietuva-ocpi"
     },
@@ -1640,7 +1640,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "672",
       "source": "vialietuva-ocpi"
     },
@@ -1705,7 +1705,7 @@
       "city": "Klaipėda",
       "power_kw": 120.0,
       "price": 0.25,
-      "sockets": 12,
+      "sockets": 8,
       "ocpi_id": "704",
       "source": "vialietuva-ocpi"
     },
@@ -1717,8 +1717,8 @@
       "address": "Rūdės g. 14, Šiauliai, Lithuania",
       "city": "Šiauliai",
       "power_kw": 150.0,
-      "price": 0.32,
-      "sockets": 8,
+      "price": 0.24,
+      "sockets": 4,
       "ocpi_id": "705",
       "source": "vialietuva-ocpi"
     },
@@ -1907,7 +1907,7 @@
     {
       "lat": 55.727512,
       "lon": 21.141586,
-      "name": "PLTKLASR15_EDLT-11",
+      "name": "PLTKLASR15_EDLT-9",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Šiaurės prospektas 15",
       "city": "Klaipėda",
@@ -1926,7 +1926,7 @@
       "city": "Vilnius",
       "power_kw": 400.0,
       "price": 0.32,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "1353",
       "source": "vialietuva-ocpi"
     },
@@ -1938,8 +1938,8 @@
       "address": "Senasis Ukmergės kl. 8, Avizieniai, Lithuania",
       "city": "Avižieniai",
       "power_kw": 150.0,
-      "price": 0.32,
-      "sockets": 6,
+      "price": 0.29,
+      "sockets": 3,
       "ocpi_id": "1354",
       "source": "vialietuva-ocpi"
     },
@@ -2029,7 +2029,7 @@
       "address": "P. Lukšio g. 18, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.499,
+      "price": 0.406,
       "sockets": 1,
       "ocpi_id": "1508",
       "source": "vialietuva-ocpi"
@@ -2277,7 +2277,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "1556",
       "source": "vialietuva-ocpi"
     },
@@ -2342,7 +2342,7 @@
       "city": "Mokolai",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 2,
+      "sockets": 1,
       "ocpi_id": "1645",
       "source": "vialietuva-ocpi"
     },
@@ -2394,7 +2394,7 @@
       "city": "Zarasai",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "1653",
       "source": "vialietuva-ocpi"
     },
@@ -2407,7 +2407,7 @@
       "city": "Panevėžys",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 12,
+      "sockets": 6,
       "ocpi_id": "1655",
       "source": "vialietuva-ocpi"
     },
@@ -2420,7 +2420,7 @@
       "city": "Panevėžys",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 9,
+      "sockets": 6,
       "ocpi_id": "1656",
       "source": "vialietuva-ocpi"
     },
@@ -2433,7 +2433,7 @@
       "city": "Antalamėstės kaimas",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "1658",
       "source": "vialietuva-ocpi"
     },
@@ -2445,8 +2445,8 @@
       "address": "Kalno g. 6, Anykščiai, Lithuania",
       "city": "Anykščiai",
       "power_kw": 150.0,
-      "price": 0.31,
-      "sockets": 42,
+      "price": 0.25,
+      "sockets": 22,
       "ocpi_id": "1659",
       "source": "vialietuva-ocpi"
     },
@@ -2472,7 +2472,7 @@
       "city": "Domantų k.",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "1663",
       "source": "vialietuva-ocpi"
     },
@@ -2485,7 +2485,7 @@
       "city": "Radviliškis",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "1664",
       "source": "vialietuva-ocpi"
     },
@@ -2511,7 +2511,7 @@
       "city": "Mankūnų k.",
       "power_kw": 180.0,
       "price": 0.21,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "1844",
       "source": "vialietuva-ocpi"
     },
@@ -2524,7 +2524,7 @@
       "city": "Jonava",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "1845",
       "source": "vialietuva-ocpi"
     },
@@ -2537,7 +2537,7 @@
       "city": "Molėtų raj.",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "1846",
       "source": "vialietuva-ocpi"
     },
@@ -2557,7 +2557,7 @@
     {
       "lat": 54.902504,
       "lon": 23.986025,
-      "name": "PLTKAUCHE8_EDLT-23",
+      "name": "PLTKAUCHE8_EDLT-28",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Chemijos gatvė 8",
       "city": "Kaunas",
@@ -2576,7 +2576,7 @@
       "city": "Pasvalio raj.",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "1851",
       "source": "vialietuva-ocpi"
     },
@@ -2615,7 +2615,7 @@
       "city": "Kirkilai",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "1866",
       "source": "vialietuva-ocpi"
     },
@@ -2628,7 +2628,7 @@
       "city": "Biržai",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "1867",
       "source": "vialietuva-ocpi"
     },
@@ -2641,7 +2641,7 @@
       "city": "Kaunas",
       "power_kw": 50.0,
       "price": 0.25,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "1868",
       "source": "vialietuva-ocpi"
     },
@@ -2654,7 +2654,7 @@
       "city": "Išlaužas",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "1874",
       "source": "vialietuva-ocpi"
     },
@@ -2862,14 +2862,14 @@
       "city": "Garliava",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "1933",
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.695898,
-      "lon": 25.280096,
-      "name": "PLTVILLV21_EDLT-250",
+      "lat": 54.695907,
+      "lon": 25.280082,
+      "name": "PLTVILLV21_EDLT-5",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Lvivo gatvė 21A",
       "city": "Vilnius",
@@ -2888,7 +2888,7 @@
       "city": "Panevėžys",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "1938",
       "source": "vialietuva-ocpi"
     },
@@ -2901,7 +2901,7 @@
       "city": "Juciūnai",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "1939",
       "source": "vialietuva-ocpi"
     },
@@ -2927,7 +2927,7 @@
       "city": "Paluknys",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "1941",
       "source": "vialietuva-ocpi"
     },
@@ -2966,7 +2966,7 @@
       "city": "Ignalina",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "1944",
       "source": "vialietuva-ocpi"
     },
@@ -3174,7 +3174,7 @@
       "city": "Druskininkai",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2439",
       "source": "vialietuva-ocpi"
     },
@@ -3187,7 +3187,7 @@
       "city": "Šeduva",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2575",
       "source": "vialietuva-ocpi"
     },
@@ -3213,7 +3213,7 @@
       "city": "Kaunas",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2577",
       "source": "vialietuva-ocpi"
     },
@@ -3226,7 +3226,7 @@
       "city": "Marijampolio k.",
       "power_kw": 45.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2580",
       "source": "vialietuva-ocpi"
     },
@@ -3239,7 +3239,7 @@
       "city": "Naujosios Kietaviškės",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2581",
       "source": "vialietuva-ocpi"
     },
@@ -3252,7 +3252,7 @@
       "city": "Bagdoniškės",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2584",
       "source": "vialietuva-ocpi"
     },
@@ -3265,7 +3265,7 @@
       "city": "Alytus",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2585",
       "source": "vialietuva-ocpi"
     },
@@ -3278,7 +3278,7 @@
       "city": "Senoji Varėna",
       "power_kw": 40.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2586",
       "source": "vialietuva-ocpi"
     },
@@ -3317,7 +3317,7 @@
       "city": "Radailių k.",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 6,
       "ocpi_id": "2594",
       "source": "vialietuva-ocpi"
     },
@@ -3330,7 +3330,7 @@
       "city": "Kučių kaimas",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2595",
       "source": "vialietuva-ocpi"
     },
@@ -3356,7 +3356,7 @@
       "city": "Šiauliai",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2603",
       "source": "vialietuva-ocpi"
     },
@@ -3369,7 +3369,7 @@
       "city": "Piliuonos k.",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2604",
       "source": "vialietuva-ocpi"
     },
@@ -3395,7 +3395,7 @@
       "city": "Joneikiškių k.",
       "power_kw": 22.0,
       "price": 0.24,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2608",
       "source": "vialietuva-ocpi"
     },
@@ -3408,7 +3408,7 @@
       "city": "Sodeliškių k.",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2609",
       "source": "vialietuva-ocpi"
     },
@@ -3420,8 +3420,8 @@
       "address": "Pakrantės g. 24, Pelėdnagiai",
       "city": "Pelėdnagiai",
       "power_kw": 60.0,
-      "price": 0.24,
-      "sockets": 7,
+      "price": 0.29,
+      "sockets": 4,
       "ocpi_id": "2610",
       "source": "vialietuva-ocpi"
     },
@@ -3434,7 +3434,7 @@
       "city": "Radviliškis",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2611",
       "source": "vialietuva-ocpi"
     },
@@ -3499,7 +3499,7 @@
       "city": "Švenčionys",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2618",
       "source": "vialietuva-ocpi"
     },
@@ -3525,7 +3525,7 @@
       "city": "Šiauliai",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2622",
       "source": "vialietuva-ocpi"
     },
@@ -3538,7 +3538,7 @@
       "city": "Mastaičių k.",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2623",
       "source": "vialietuva-ocpi"
     },
@@ -3551,7 +3551,7 @@
       "city": "Vydmantai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2624",
       "source": "vialietuva-ocpi"
     },
@@ -3564,7 +3564,7 @@
       "city": "Vilnius",
       "power_kw": 11.0,
       "price": 0.29,
-      "sockets": 20,
+      "sockets": 10,
       "ocpi_id": "2625",
       "source": "vialietuva-ocpi"
     },
@@ -3577,7 +3577,7 @@
       "city": "Marijampolė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2626",
       "source": "vialietuva-ocpi"
     },
@@ -3590,7 +3590,7 @@
       "city": "Ukmergė",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2627",
       "source": "vialietuva-ocpi"
     },
@@ -3603,7 +3603,7 @@
       "city": "Burbiškio k.",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2628",
       "source": "vialietuva-ocpi"
     },
@@ -3616,7 +3616,7 @@
       "city": "Palanga",
       "power_kw": 200.0,
       "price": 0.39,
-      "sockets": 40,
+      "sockets": 20,
       "ocpi_id": "2629",
       "source": "vialietuva-ocpi"
     },
@@ -3629,7 +3629,7 @@
       "city": "Palanga",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2630",
       "source": "vialietuva-ocpi"
     },
@@ -3642,7 +3642,7 @@
       "city": "Jaskonių k.",
       "power_kw": 60.0,
       "price": 0.21,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2631",
       "source": "vialietuva-ocpi"
     },
@@ -3655,7 +3655,7 @@
       "city": "Klaipėda",
       "power_kw": 50.0,
       "price": 0.25,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2632",
       "source": "vialietuva-ocpi"
     },
@@ -3668,7 +3668,7 @@
       "city": "Marijampolė",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2633",
       "source": "vialietuva-ocpi"
     },
@@ -3681,7 +3681,7 @@
       "city": "Žemaitkiemio k.",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2634",
       "source": "vialietuva-ocpi"
     },
@@ -3707,7 +3707,7 @@
       "city": "Kėdainiai",
       "power_kw": 45.0,
       "price": 0.21,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2636",
       "source": "vialietuva-ocpi"
     },
@@ -3720,7 +3720,7 @@
       "city": "Didžioji Riešė",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2648",
       "source": "vialietuva-ocpi"
     },
@@ -3733,7 +3733,7 @@
       "city": "Gudelių k.",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2649",
       "source": "vialietuva-ocpi"
     },
@@ -3746,7 +3746,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.29,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2650",
       "source": "vialietuva-ocpi"
     },
@@ -3772,7 +3772,7 @@
       "city": "Jurbarkas",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2652",
       "source": "vialietuva-ocpi"
     },
@@ -3798,7 +3798,7 @@
       "city": "Varėna",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2654",
       "source": "vialietuva-ocpi"
     },
@@ -3811,7 +3811,7 @@
       "city": "Marijampolė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2655",
       "source": "vialietuva-ocpi"
     },
@@ -3823,8 +3823,8 @@
       "address": "Gamyklos g. 27, Rudamina, Vilniaus r.",
       "city": "Rudamina",
       "power_kw": 180.0,
-      "price": 0.24,
-      "sockets": 8,
+      "price": 0.32,
+      "sockets": 4,
       "ocpi_id": "2656",
       "source": "vialietuva-ocpi"
     },
@@ -3837,7 +3837,7 @@
       "city": "Kaunas",
       "power_kw": 240.0,
       "price": 0.24,
-      "sockets": 34,
+      "sockets": 21,
       "ocpi_id": "2657",
       "source": "vialietuva-ocpi"
     },
@@ -3850,7 +3850,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2658",
       "source": "vialietuva-ocpi"
     },
@@ -3863,7 +3863,7 @@
       "city": "Ilgakiemio k.",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2659",
       "source": "vialietuva-ocpi"
     },
@@ -3876,7 +3876,7 @@
       "city": "Kalvarija",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2661",
       "source": "vialietuva-ocpi"
     },
@@ -3954,7 +3954,7 @@
       "city": "Valčiūnai",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2673",
       "source": "vialietuva-ocpi"
     },
@@ -3980,7 +3980,7 @@
       "city": "Marijampolė",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2675",
       "source": "vialietuva-ocpi"
     },
@@ -3993,7 +3993,7 @@
       "city": "Marijampolė",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2676",
       "source": "vialietuva-ocpi"
     },
@@ -4019,7 +4019,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2683",
       "source": "vialietuva-ocpi"
     },
@@ -4032,7 +4032,7 @@
       "city": "Panevėžys",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 14,
+      "sockets": 8,
       "ocpi_id": "2684",
       "source": "vialietuva-ocpi"
     },
@@ -4097,7 +4097,7 @@
       "city": "Panevėžys",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2690",
       "source": "vialietuva-ocpi"
     },
@@ -4110,7 +4110,7 @@
       "city": "Marijampolė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2691",
       "source": "vialietuva-ocpi"
     },
@@ -4136,7 +4136,7 @@
       "city": "Pasvalys, Pasvalio r.",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2693",
       "source": "vialietuva-ocpi"
     },
@@ -4292,7 +4292,7 @@
       "city": "Kėdainiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2706",
       "source": "vialietuva-ocpi"
     },
@@ -4344,7 +4344,7 @@
       "city": "Palanga",
       "power_kw": 22.0,
       "price": null,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2710",
       "source": "vialietuva-ocpi"
     },
@@ -4357,7 +4357,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2716",
       "source": "vialietuva-ocpi"
     },
@@ -4370,7 +4370,7 @@
       "city": "Vilnius",
       "power_kw": 100.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2717",
       "source": "vialietuva-ocpi"
     },
@@ -4383,7 +4383,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "2718",
       "source": "vialietuva-ocpi"
     },
@@ -4396,7 +4396,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "2719",
       "source": "vialietuva-ocpi"
     },
@@ -4422,7 +4422,7 @@
       "city": "Kalino k.",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2724",
       "source": "vialietuva-ocpi"
     },
@@ -4435,7 +4435,7 @@
       "city": "Taujėnai, Ukmergės r.",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2726",
       "source": "vialietuva-ocpi"
     },
@@ -4448,7 +4448,7 @@
       "city": "Marijampolė",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2727",
       "source": "vialietuva-ocpi"
     },
@@ -4461,7 +4461,7 @@
       "city": "Šiauliai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2728",
       "source": "vialietuva-ocpi"
     },
@@ -4487,7 +4487,7 @@
       "city": "Rokiškis",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2734",
       "source": "vialietuva-ocpi"
     },
@@ -4513,7 +4513,7 @@
       "city": "Jurbarkas",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2738",
       "source": "vialietuva-ocpi"
     },
@@ -4526,7 +4526,7 @@
       "city": "Palanga",
       "power_kw": 11.0,
       "price": 0.29,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2739",
       "source": "vialietuva-ocpi"
     },
@@ -4539,7 +4539,7 @@
       "city": "Lapės. Kauno r.",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2740",
       "source": "vialietuva-ocpi"
     },
@@ -4552,7 +4552,7 @@
       "city": "Šilutė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2743",
       "source": "vialietuva-ocpi"
     },
@@ -5482,7 +5482,7 @@
     {
       "lat": 55.461015,
       "lon": 22.693746,
-      "name": "PLTNMKPIK2_EDLT-88",
+      "name": "PLTNMKPIK2_EDLT-89",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Pikeliu k. 2",
       "city": "Pikeliai",
@@ -5501,7 +5501,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "2844",
       "source": "vialietuva-ocpi"
     },
@@ -5514,7 +5514,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2845",
       "source": "vialietuva-ocpi"
     },
@@ -5527,7 +5527,7 @@
       "city": "Marijampolė",
       "power_kw": 40.0,
       "price": 0.21,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2846",
       "source": "vialietuva-ocpi"
     },
@@ -5540,7 +5540,7 @@
       "city": "Marijampolė",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2847",
       "source": "vialietuva-ocpi"
     },
@@ -5566,7 +5566,7 @@
       "city": "Vilkaviškis",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2849",
       "source": "vialietuva-ocpi"
     },
@@ -5579,7 +5579,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2850",
       "source": "vialietuva-ocpi"
     },
@@ -5605,7 +5605,7 @@
       "city": "Pasvalys",
       "power_kw": 60.0,
       "price": 0.21,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2852",
       "source": "vialietuva-ocpi"
     },
@@ -5618,7 +5618,7 @@
       "city": "Pakruojis",
       "power_kw": 60.0,
       "price": 0.25,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2853",
       "source": "vialietuva-ocpi"
     },
@@ -5631,7 +5631,7 @@
       "city": "Bajoriškės, Lazdijų r.",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2855",
       "source": "vialietuva-ocpi"
     },
@@ -5644,7 +5644,7 @@
       "city": "Kėdainiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2856",
       "source": "vialietuva-ocpi"
     },
@@ -5657,7 +5657,7 @@
       "city": "Plungė",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2857",
       "source": "vialietuva-ocpi"
     },
@@ -5670,7 +5670,7 @@
       "city": "Agluonėnai, Klaipėdos r.",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2858",
       "source": "vialietuva-ocpi"
     },
@@ -5683,7 +5683,7 @@
       "city": "Klaipėda",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2859",
       "source": "vialietuva-ocpi"
     },
@@ -5696,7 +5696,7 @@
       "city": "Nida",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2860",
       "source": "vialietuva-ocpi"
     },
@@ -5709,7 +5709,7 @@
       "city": "Kaltanėnai",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2861",
       "source": "vialietuva-ocpi"
     },
@@ -5722,7 +5722,7 @@
       "city": "Panevėžys",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2862",
       "source": "vialietuva-ocpi"
     },
@@ -5735,7 +5735,7 @@
       "city": "Bernotiškiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2863",
       "source": "vialietuva-ocpi"
     },
@@ -6073,7 +6073,7 @@
       "city": "Rokiškis",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2890",
       "source": "vialietuva-ocpi"
     },
@@ -6086,7 +6086,7 @@
       "city": "Kybartai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2891",
       "source": "vialietuva-ocpi"
     },
@@ -6099,7 +6099,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2892",
       "source": "vialietuva-ocpi"
     },
@@ -6112,7 +6112,7 @@
       "city": "Kaunas",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2893",
       "source": "vialietuva-ocpi"
     },
@@ -6125,7 +6125,7 @@
       "city": "Varkaliai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2894",
       "source": "vialietuva-ocpi"
     },
@@ -6151,7 +6151,7 @@
       "city": "Panevėžys",
       "power_kw": 180.0,
       "price": 0.32,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2896",
       "source": "vialietuva-ocpi"
     },
@@ -6164,7 +6164,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2897",
       "source": "vialietuva-ocpi"
     },
@@ -6320,7 +6320,7 @@
       "city": "Kėdainiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2911",
       "source": "vialietuva-ocpi"
     },
@@ -6332,8 +6332,8 @@
       "address": "Karališkių g. 1, Trušelių k.",
       "city": "Trušeliai, Klaipėdos r.",
       "power_kw": 150.0,
-      "price": 0.31,
-      "sockets": 8,
+      "price": 0.27,
+      "sockets": 4,
       "ocpi_id": "2912",
       "source": "vialietuva-ocpi"
     },
@@ -6346,7 +6346,7 @@
       "city": "Kėdainiai",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 25,
+      "sockets": 22,
       "ocpi_id": "2913",
       "source": "vialietuva-ocpi"
     },
@@ -6359,7 +6359,7 @@
       "city": "Jakų k., Klaipėdos r.",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 5,
       "ocpi_id": "2914",
       "source": "vialietuva-ocpi"
     },
@@ -6385,7 +6385,7 @@
       "city": "Druskininkai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2916",
       "source": "vialietuva-ocpi"
     },
@@ -6398,7 +6398,7 @@
       "city": "Mažeikiai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2917",
       "source": "vialietuva-ocpi"
     },
@@ -6411,7 +6411,7 @@
       "city": "Vilkaviškis",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2918",
       "source": "vialietuva-ocpi"
     },
@@ -6489,7 +6489,7 @@
       "city": "Panevėžys",
       "power_kw": 180.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2924",
       "source": "vialietuva-ocpi"
     },
@@ -6554,7 +6554,7 @@
       "city": "Klaipėda",
       "power_kw": 200.0,
       "price": 0.32,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2929",
       "source": "vialietuva-ocpi"
     },
@@ -6580,7 +6580,7 @@
       "city": "Alytaus apskr.",
       "power_kw": 120.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2931",
       "source": "vialietuva-ocpi"
     },
@@ -6723,7 +6723,7 @@
       "city": "Elektrėnai",
       "power_kw": 120.0,
       "price": 0.27,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2942",
       "source": "vialietuva-ocpi"
     },
@@ -6736,7 +6736,7 @@
       "city": "Utena",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "2943",
       "source": "vialietuva-ocpi"
     },
@@ -6749,7 +6749,7 @@
       "city": "Panevėžys",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "2944",
       "source": "vialietuva-ocpi"
     },
@@ -6762,7 +6762,7 @@
       "city": "Šiauliai",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "2945",
       "source": "vialietuva-ocpi"
     },
@@ -6775,7 +6775,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "2981",
       "source": "vialietuva-ocpi"
     },
@@ -6814,7 +6814,7 @@
       "city": "Šilutė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2984",
       "source": "vialietuva-ocpi"
     },
@@ -6944,7 +6944,7 @@
       "city": "Gabšiai",
       "power_kw": 300.0,
       "price": 0.39,
-      "sockets": 11,
+      "sockets": 10,
       "ocpi_id": "2994",
       "source": "vialietuva-ocpi"
     },
@@ -6996,7 +6996,7 @@
       "city": "Mažeikiai",
       "power_kw": 120.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "2999",
       "source": "vialietuva-ocpi"
     },
@@ -7009,7 +7009,7 @@
       "city": "Jundeliškės",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "3000",
       "source": "vialietuva-ocpi"
     },
@@ -7022,7 +7022,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "3001",
       "source": "vialietuva-ocpi"
     },
@@ -7035,7 +7035,7 @@
       "city": "Prienai",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 15,
+      "sockets": 12,
       "ocpi_id": "3002",
       "source": "vialietuva-ocpi"
     },
@@ -7047,8 +7047,8 @@
       "address": "Savanorių a. 22, 35201 Panevėžys, Lithuania",
       "city": "Panevėžys",
       "power_kw": 150.0,
-      "price": 0.32,
-      "sockets": 9,
+      "price": 0.29,
+      "sockets": 8,
       "ocpi_id": "3003",
       "source": "vialietuva-ocpi"
     },
@@ -7092,8 +7092,8 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.762119,
-      "lon": 25.202295,
+      "lat": 54.762438,
+      "lon": 25.202095,
       "name": "Lidl Avižieniai",
       "operator": "Lidl Lietuva, UAB",
       "address": "Draugystės gatvė 2M",
@@ -7118,8 +7118,8 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 55.221231,
-      "lon": 25.437472,
+      "lat": 55.221149,
+      "lon": 25.43764,
       "name": "Lidl Molėtai",
       "operator": "Lidl Lietuva, UAB",
       "address": "Aplinkkelio gatvė 163",
@@ -7131,8 +7131,8 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.780225,
-      "lon": 25.275646,
+      "lat": 54.780442,
+      "lon": 25.275587,
       "name": "Lidl Vilnius Dangeručio gatvė",
       "operator": "Lidl Lietuva, UAB",
       "address": "Dangeručio gatvė 2",
@@ -7157,9 +7157,9 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 55.079074,
-      "lon": 22.776734,
-      "name": "LLT0219EVCP05",
+      "lat": 55.079052,
+      "lon": 22.776906,
+      "name": "Lidl Jurbarkas",
       "operator": "Lidl Lietuva, UAB",
       "address": "Dariaus ir Girėno gatvė 83",
       "city": "Jurbarkas",
@@ -7295,7 +7295,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.39,
-      "sockets": 9,
+      "sockets": 6,
       "ocpi_id": "3059",
       "source": "vialietuva-ocpi"
     },
@@ -7308,7 +7308,7 @@
       "city": "Jakai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "3060",
       "source": "vialietuva-ocpi"
     },
@@ -7320,8 +7320,8 @@
       "address": "Šventosios g. 27B, Kretinga, 97124 Kretingos",
       "city": "Kretinga",
       "power_kw": 150.0,
-      "price": 0.31,
-      "sockets": 8,
+      "price": 0.27,
+      "sockets": 6,
       "ocpi_id": "3062",
       "source": "vialietuva-ocpi"
     },
@@ -7458,7 +7458,7 @@
     {
       "lat": 56.014905,
       "lon": 22.950854,
-      "name": "PLTKURVY80_EDLT-135",
+      "name": "PLTKURVY80_EDLT-136",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Vytauto gatvė 80",
       "city": "Kuršėnai",
@@ -7471,7 +7471,7 @@
     {
       "lat": 55.823995,
       "lon": 25.002368,
-      "name": "PLTKUPKI10_EDLT-139",
+      "name": "PLTKUPKI10_EDLT-140",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Kikonių g. 10B",
       "city": "Pyragiai",
@@ -7568,7 +7568,7 @@
       "city": "Plungė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3081",
       "source": "vialietuva-ocpi"
     },
@@ -7594,7 +7594,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "3083",
       "source": "vialietuva-ocpi"
     },
@@ -7607,7 +7607,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 11,
+      "sockets": 6,
       "ocpi_id": "3084",
       "source": "vialietuva-ocpi"
     },
@@ -7633,7 +7633,7 @@
       "city": "Kretinga",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3086",
       "source": "vialietuva-ocpi"
     },
@@ -7659,7 +7659,7 @@
       "city": "Plungė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "3088",
       "source": "vialietuva-ocpi"
     },
@@ -7672,7 +7672,7 @@
       "city": "Vilnius",
       "power_kw": 360.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3089",
       "source": "vialietuva-ocpi"
     },
@@ -7698,7 +7698,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "3092",
       "source": "vialietuva-ocpi"
     },
@@ -7711,7 +7711,7 @@
       "city": "Kaunas",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3093",
       "source": "vialietuva-ocpi"
     },
@@ -7724,7 +7724,7 @@
       "city": "Talačkoniai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "3094",
       "source": "vialietuva-ocpi"
     },
@@ -7737,7 +7737,7 @@
       "city": "Kelmė",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3095",
       "source": "vialietuva-ocpi"
     },
@@ -7776,7 +7776,7 @@
       "city": "Šiauliai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3102",
       "source": "vialietuva-ocpi"
     },
@@ -7893,7 +7893,7 @@
       "city": "Šakiai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3113",
       "source": "vialietuva-ocpi"
     },
@@ -7957,7 +7957,7 @@
       "address": "K. Donelaičio g. 65, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3132",
       "source": "vialietuva-ocpi"
@@ -7970,7 +7970,7 @@
       "address": "Aukštaičių g. 45, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3133",
       "source": "vialietuva-ocpi"
@@ -7983,7 +7983,7 @@
       "address": "Žemaičių g. 8A, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3134",
       "source": "vialietuva-ocpi"
@@ -7996,7 +7996,7 @@
       "address": "K. Donelaičio g. 65, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3135",
       "source": "vialietuva-ocpi"
@@ -8009,7 +8009,7 @@
       "address": "Eivenių g. 23, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3136",
       "source": "vialietuva-ocpi"
@@ -8022,7 +8022,7 @@
       "address": "T. Masiulio g. 21A, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3137",
       "source": "vialietuva-ocpi"
@@ -8035,7 +8035,7 @@
       "address": "Pramonės pr. 31, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3138",
       "source": "vialietuva-ocpi"
@@ -8049,7 +8049,7 @@
       "city": "Kaunas",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "3139",
       "source": "vialietuva-ocpi"
     },
@@ -8075,7 +8075,7 @@
       "city": "Klaipėda",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3141",
       "source": "vialietuva-ocpi"
     },
@@ -8088,7 +8088,7 @@
       "city": "Mažeikiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "3142",
       "source": "vialietuva-ocpi"
     },
@@ -8101,7 +8101,7 @@
       "city": "Anykščiai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3143",
       "source": "vialietuva-ocpi"
     },
@@ -8126,7 +8126,7 @@
       "address": "Radvilėnų pl. 21, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3149",
       "source": "vialietuva-ocpi"
@@ -8139,7 +8139,7 @@
       "address": "Karaliaus Mindaugo pr. 50, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3150",
       "source": "vialietuva-ocpi"
@@ -8152,7 +8152,7 @@
       "address": "Karaliaus Mindaugo pr. 50, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3151",
       "source": "vialietuva-ocpi"
@@ -8165,7 +8165,7 @@
       "address": "L. Sapiegos g. 3, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3152",
       "source": "vialietuva-ocpi"
@@ -8179,7 +8179,7 @@
       "city": "Nida",
       "power_kw": 45.0,
       "price": 0.4,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3153",
       "source": "vialietuva-ocpi"
     },
@@ -8192,7 +8192,7 @@
       "city": "Juodkrantė",
       "power_kw": 50.0,
       "price": 0.4,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3154",
       "source": "vialietuva-ocpi"
     },
@@ -8204,7 +8204,7 @@
       "address": "Raudondvario pl. 105, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3155",
       "source": "vialietuva-ocpi"
@@ -8217,7 +8217,7 @@
       "address": "Kęstučio g. 74, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3156",
       "source": "vialietuva-ocpi"
@@ -8230,7 +8230,7 @@
       "address": "Baltų pr. 7, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3157",
       "source": "vialietuva-ocpi"
@@ -8243,7 +8243,7 @@
       "address": "Bažnyčios g. 3, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3158",
       "source": "vialietuva-ocpi"
@@ -8256,7 +8256,7 @@
       "address": "Karaliaus Mindaugo pr. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3159",
       "source": "vialietuva-ocpi"
@@ -8308,7 +8308,7 @@
       "address": "Karaliaus Mindaugo pr. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 50.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 3,
       "ocpi_id": "3163",
       "source": "vialietuva-ocpi"
@@ -8321,7 +8321,7 @@
       "address": "P. Lukšio g. 47, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3164",
       "source": "vialietuva-ocpi"
@@ -8334,7 +8334,7 @@
       "address": "Panerių g. 51, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.733,
+      "price": 0.602,
       "sockets": 1,
       "ocpi_id": "3166",
       "source": "vialietuva-ocpi"
@@ -8347,7 +8347,7 @@
       "address": "Panerių g. 51, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.733,
+      "price": 0.602,
       "sockets": 1,
       "ocpi_id": "3167",
       "source": "vialietuva-ocpi"
@@ -8387,7 +8387,7 @@
       "city": "Yliai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "3170",
       "source": "vialietuva-ocpi"
     },
@@ -8412,7 +8412,7 @@
       "address": "P. Lukšio g. 18, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.499,
+      "price": 0.406,
       "sockets": 1,
       "ocpi_id": "3172",
       "source": "vialietuva-ocpi"
@@ -8425,7 +8425,7 @@
       "address": "Elektrinės 6, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.354,
+      "price": 0.278,
       "sockets": 2,
       "ocpi_id": "3173",
       "source": "vialietuva-ocpi"
@@ -8464,7 +8464,7 @@
       "address": "Didžiosios Rinkos a. 5, Kėdainiai",
       "city": "Kėdainiai",
       "power_kw": 22.0,
-      "price": 0.487,
+      "price": 0.404,
       "sockets": 2,
       "ocpi_id": "3181",
       "source": "vialietuva-ocpi"
@@ -8491,7 +8491,7 @@
       "city": "Marijampolė",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3183",
       "source": "vialietuva-ocpi"
     },
@@ -8503,7 +8503,7 @@
       "address": "J. Basanavičiaus g. 51A, Kėdainiai",
       "city": "Kėdainiai",
       "power_kw": 50.0,
-      "price": 0.487,
+      "price": 0.404,
       "sockets": 3,
       "ocpi_id": "3184",
       "source": "vialietuva-ocpi"
@@ -8529,7 +8529,7 @@
       "address": "Taikos pr. 80, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.448,
+      "price": 0.368,
       "sockets": 2,
       "ocpi_id": "3186",
       "source": "vialietuva-ocpi"
@@ -8542,7 +8542,7 @@
       "address": "Parko g. 14, Visaginas",
       "city": "Visaginas",
       "power_kw": 50.0,
-      "price": 0.448,
+      "price": 0.368,
       "sockets": 3,
       "ocpi_id": "3187",
       "source": "vialietuva-ocpi"
@@ -8568,7 +8568,7 @@
       "address": "Vilnų g. 6, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "3190",
       "source": "vialietuva-ocpi"
@@ -8581,7 +8581,7 @@
       "address": "Mindaugo g. 23, Kėdainiai",
       "city": "Kėdainiai",
       "power_kw": 22.0,
-      "price": 0.487,
+      "price": 0.404,
       "sockets": 2,
       "ocpi_id": "3193",
       "source": "vialietuva-ocpi"
@@ -8594,7 +8594,7 @@
       "address": "S. Dariaus ir S. Girėno g. 50A, Kėdainiai",
       "city": "Kėdainiai",
       "power_kw": 22.0,
-      "price": 0.487,
+      "price": 0.404,
       "sockets": 2,
       "ocpi_id": "3194",
       "source": "vialietuva-ocpi"
@@ -8607,7 +8607,7 @@
       "address": "J. Basanavičiaus g. 93, Kėdainiai",
       "city": "Kėdainiai",
       "power_kw": 22.0,
-      "price": 0.487,
+      "price": 0.404,
       "sockets": 2,
       "ocpi_id": "3195",
       "source": "vialietuva-ocpi"
@@ -8647,7 +8647,7 @@
       "city": "Šilalė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "3202",
       "source": "vialietuva-ocpi"
     },
@@ -8686,7 +8686,7 @@
       "city": "Tauragė",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "3205",
       "source": "vialietuva-ocpi"
     },
@@ -8719,7 +8719,7 @@
     {
       "lat": 54.704459,
       "lon": 25.271508,
-      "name": "PLTVILZ114_EDLT-127",
+      "name": "PLTVILZ114_EDLT-124",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Žalgirio gatvė 114",
       "city": "Vilnius",
@@ -8751,7 +8751,7 @@
       "city": "Šiauliai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3214",
       "source": "vialietuva-ocpi"
     },
@@ -8764,7 +8764,7 @@
       "city": "Mažeikiai",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "3216",
       "source": "vialietuva-ocpi"
     },
@@ -8959,7 +8959,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3241",
       "source": "vialietuva-ocpi"
     },
@@ -8972,7 +8972,7 @@
       "city": "Mažeikiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 6,
       "ocpi_id": "3242",
       "source": "vialietuva-ocpi"
     },
@@ -8985,7 +8985,7 @@
       "city": "Alytus",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3243",
       "source": "vialietuva-ocpi"
     },
@@ -9063,7 +9063,7 @@
       "city": "Alytus",
       "power_kw": 115.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "3249",
       "source": "vialietuva-ocpi"
     },
@@ -9505,7 +9505,7 @@
       "city": "Garliava",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "3341",
       "source": "vialietuva-ocpi"
     },
@@ -9648,7 +9648,7 @@
       "city": "Vilnius",
       "power_kw": 120.0,
       "price": 0.37,
-      "sockets": 9,
+      "sockets": 8,
       "ocpi_id": "3391",
       "source": "vialietuva-ocpi"
     },
@@ -9764,8 +9764,8 @@
       "address": "Karaliaus Mindaugo Prospektas 38",
       "city": "Kaunas",
       "power_kw": 150.0,
-      "price": 0.37,
-      "sockets": 18,
+      "price": 0.29,
+      "sockets": 14,
       "ocpi_id": "3400",
       "source": "vialietuva-ocpi"
     },
@@ -10011,7 +10011,7 @@
       "address": "L. Petravičiaus a. 4A, 85145 Naujoji Akmenė",
       "city": "Naujoji Akmenė",
       "power_kw": 22.0,
-      "price": 0.16,
+      "price": 0.17,
       "sockets": 2,
       "ocpi_id": "3420",
       "source": "vialietuva-ocpi"
@@ -10129,7 +10129,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.37,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "3430",
       "source": "vialietuva-ocpi"
     },
@@ -10337,7 +10337,7 @@
       "city": "Kaunas",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 12,
+      "sockets": 8,
       "ocpi_id": "3447",
       "source": "vialietuva-ocpi"
     },
@@ -10350,7 +10350,7 @@
       "city": "Alytus",
       "power_kw": 120.0,
       "price": 0.37,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "3448",
       "source": "vialietuva-ocpi"
     },
@@ -10363,7 +10363,7 @@
       "city": "Kaunas",
       "power_kw": 50.0,
       "price": 0.37,
-      "sockets": 12,
+      "sockets": 10,
       "ocpi_id": "3449",
       "source": "vialietuva-ocpi"
     },
@@ -10389,7 +10389,7 @@
       "city": "Biruliškės",
       "power_kw": 50.0,
       "price": 0.37,
-      "sockets": 9,
+      "sockets": 8,
       "ocpi_id": "3451",
       "source": "vialietuva-ocpi"
     },
@@ -10493,7 +10493,7 @@
       "city": "Kaunas",
       "power_kw": 300.0,
       "price": 0.37,
-      "sockets": 9,
+      "sockets": 7,
       "ocpi_id": "3459",
       "source": "vialietuva-ocpi"
     },
@@ -10506,7 +10506,7 @@
       "city": "Šiauliai",
       "power_kw": 120.0,
       "price": 0.29,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "3460",
       "source": "vialietuva-ocpi"
     },
@@ -10519,7 +10519,7 @@
       "city": "Verėduva",
       "power_kw": 400.0,
       "price": 0.37,
-      "sockets": 31,
+      "sockets": 21,
       "ocpi_id": "3461",
       "source": "vialietuva-ocpi"
     },
@@ -10545,7 +10545,7 @@
       "city": "Kaunas",
       "power_kw": 50.0,
       "price": 0.29,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "3463",
       "source": "vialietuva-ocpi"
     },
@@ -10558,7 +10558,7 @@
       "city": "Sausių kaimas",
       "power_kw": 200.0,
       "price": 0.37,
-      "sockets": 5,
+      "sockets": 4,
       "ocpi_id": "3464",
       "source": "vialietuva-ocpi"
     },
@@ -10610,7 +10610,7 @@
       "city": "Vainotiškiai",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3468",
       "source": "vialietuva-ocpi"
     },
@@ -10635,8 +10635,8 @@
       "address": "Sakalo g. 1, 33133 Molėtai, Lithuania",
       "city": "Molėtai",
       "power_kw": 150.0,
-      "price": 0.31,
-      "sockets": 5,
+      "price": 0.27,
+      "sockets": 4,
       "ocpi_id": "3470",
       "source": "vialietuva-ocpi"
     },
@@ -10649,7 +10649,7 @@
       "city": "Karmėlava, Kauno r.",
       "power_kw": 55.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3471",
       "source": "vialietuva-ocpi"
     },
@@ -10701,7 +10701,7 @@
       "city": "Širvintos",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "3478",
       "source": "vialietuva-ocpi"
     },
@@ -10713,8 +10713,8 @@
       "address": "Savanorių pr. 119C, Vilnius, 03150 Vilniaus m",
       "city": "Vilnius",
       "power_kw": 150.0,
-      "price": 0.32,
-      "sockets": 8,
+      "price": 0.31,
+      "sockets": 4,
       "ocpi_id": "3479",
       "source": "vialietuva-ocpi"
     },
@@ -10753,7 +10753,7 @@
       "city": "Rietavas",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3490",
       "source": "vialietuva-ocpi"
     },
@@ -10766,7 +10766,7 @@
       "city": "Alytus",
       "power_kw": 180.0,
       "price": 0.31,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3491",
       "source": "vialietuva-ocpi"
     },
@@ -10779,7 +10779,7 @@
       "city": "Marijampolė",
       "power_kw": 60.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3594",
       "source": "vialietuva-ocpi"
     },
@@ -10792,7 +10792,7 @@
       "city": "Ukmergė",
       "power_kw": 128.0,
       "price": 0.27,
-      "sockets": 8,
+      "sockets": 6,
       "ocpi_id": "3595",
       "source": "vialietuva-ocpi"
     },
@@ -10805,7 +10805,7 @@
       "city": "Kaunas",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 15,
+      "sockets": 12,
       "ocpi_id": "3596",
       "source": "vialietuva-ocpi"
     },
@@ -10844,7 +10844,7 @@
       "city": "Kelmė",
       "power_kw": 50.0,
       "price": 0.37,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3599",
       "source": "vialietuva-ocpi"
     },
@@ -10870,7 +10870,7 @@
       "city": "Šiauliai",
       "power_kw": 150.0,
       "price": 0.37,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "3601",
       "source": "vialietuva-ocpi"
     },
@@ -10882,8 +10882,8 @@
       "address": "M. K. Čiurlionio g. 50, Druskininkai, 66142 D",
       "city": "Druskininkai",
       "power_kw": 200.0,
-      "price": 0.31,
-      "sockets": 8,
+      "price": 0.27,
+      "sockets": 4,
       "ocpi_id": "3602",
       "source": "vialietuva-ocpi"
     },
@@ -10901,8 +10901,8 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.922187,
-      "lon": 23.883246,
+      "lat": 54.922165,
+      "lon": 23.88361,
       "name": "Lidl Kaunas",
       "operator": "Lidl Lietuva, UAB",
       "address": "Baltijos Gatvė 48a",
@@ -10922,7 +10922,7 @@
       "city": "Ramučiai",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3606",
       "source": "vialietuva-ocpi"
     },
@@ -10974,7 +10974,7 @@
       "city": "Palanga",
       "power_kw": 150.0,
       "price": 0.37,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3615",
       "source": "vialietuva-ocpi"
     },
@@ -10987,7 +10987,7 @@
       "city": "Ukmergė",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3618",
       "source": "vialietuva-ocpi"
     },
@@ -11000,7 +11000,7 @@
       "city": "Ukmergė",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3619",
       "source": "vialietuva-ocpi"
     },
@@ -11091,7 +11091,7 @@
       "city": "Jonučiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3629",
       "source": "vialietuva-ocpi"
     },
@@ -11104,7 +11104,7 @@
       "city": "Kaunas",
       "power_kw": 149.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3630",
       "source": "vialietuva-ocpi"
     },
@@ -11117,7 +11117,7 @@
       "city": "Radviliškis",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 12,
+      "sockets": 6,
       "ocpi_id": "3631",
       "source": "vialietuva-ocpi"
     },
@@ -11130,7 +11130,7 @@
       "city": "Vilnius",
       "power_kw": 200.0,
       "price": 0.32,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3632",
       "source": "vialietuva-ocpi"
     },
@@ -11142,8 +11142,8 @@
       "address": "Pramonės pr. 29, 51285 Kaunas, Lithuania",
       "city": "Kaunas",
       "power_kw": 150.0,
-      "price": 0.31,
-      "sockets": 6,
+      "price": 0.27,
+      "sockets": 4,
       "ocpi_id": "3633",
       "source": "vialietuva-ocpi"
     },
@@ -11260,7 +11260,7 @@
       "city": "Panevėžys",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "3678",
       "source": "vialietuva-ocpi"
     },
@@ -11273,7 +11273,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.37,
-      "sockets": 11,
+      "sockets": 10,
       "ocpi_id": "3681",
       "source": "vialietuva-ocpi"
     },
@@ -11351,7 +11351,7 @@
       "city": "Vilnius",
       "power_kw": 4.0,
       "price": 0.24,
-      "sockets": 2,
+      "sockets": 1,
       "ocpi_id": "3688",
       "source": "vialietuva-ocpi"
     },
@@ -11551,9 +11551,9 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.71442,
-      "lon": 25.300956,
-      "name": "PLTVILJK23_EDLT-42",
+      "lat": 54.714356,
+      "lon": 25.300874,
+      "name": "PLTVILJK23_EDLT-246",
       "operator": "Elektrum Lietuva, UAB",
       "address": "J. Kubiliaus gatvė 23",
       "city": "Vilnius",
@@ -11605,7 +11605,7 @@
     {
       "lat": 54.02359,
       "lon": 23.972655,
-      "name": "PLTDRUVI13_EDLT-15",
+      "name": "PLTDRUVI13_EDLT-16",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Vilniaus alėja 13-1",
       "city": "Druskininkai",
@@ -11618,7 +11618,7 @@
     {
       "lat": 54.73033,
       "lon": 25.237202,
-      "name": "PLTVILL127_EDLT-54",
+      "name": "PLTVILL127_EDLT-53",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Laisvės prospektas 127",
       "city": "Vilnius",
@@ -11670,7 +11670,7 @@
     {
       "lat": 54.90303,
       "lon": 23.898101,
-      "name": "PLTKAUJO60_EDLT-196",
+      "name": "PLTKAUJO60_EDLT-198",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Jonavos gatvė 60",
       "city": "Kaunas",
@@ -11748,7 +11748,7 @@
     {
       "lat": 55.718601,
       "lon": 21.293563,
-      "name": "PLTGOBDVA1_EDLT-61",
+      "name": "PLTGOBDVA1_EDLT-62",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Dvaro Gatvė 1",
       "city": "Gobergiškės",
@@ -12781,7 +12781,7 @@
       "city": "Alytus",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "3805",
       "source": "vialietuva-ocpi"
     },
@@ -13119,7 +13119,7 @@
       "city": "Vilnius",
       "power_kw": 60.0,
       "price": 0.29,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3838",
       "source": "vialietuva-ocpi"
     },
@@ -13132,7 +13132,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3839",
       "source": "vialietuva-ocpi"
     },
@@ -13145,7 +13145,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3840",
       "source": "vialietuva-ocpi"
     },
@@ -13158,7 +13158,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3841",
       "source": "vialietuva-ocpi"
     },
@@ -13171,7 +13171,7 @@
       "city": "Vilnius",
       "power_kw": 45.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3842",
       "source": "vialietuva-ocpi"
     },
@@ -13184,7 +13184,7 @@
       "city": "Vilnius",
       "power_kw": 320.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3843",
       "source": "vialietuva-ocpi"
     },
@@ -13197,7 +13197,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 66,
+      "sockets": 34,
       "ocpi_id": "3844",
       "source": "vialietuva-ocpi"
     },
@@ -13210,7 +13210,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 10,
+      "sockets": 5,
       "ocpi_id": "3845",
       "source": "vialietuva-ocpi"
     },
@@ -13223,7 +13223,7 @@
       "city": "Vilnius",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 12,
+      "sockets": 6,
       "ocpi_id": "3846",
       "source": "vialietuva-ocpi"
     },
@@ -13444,7 +13444,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "3863",
       "source": "vialietuva-ocpi"
     },
@@ -14926,7 +14926,7 @@
       "city": "Jonava",
       "power_kw": 150.0,
       "price": 0.21,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "3986",
       "source": "vialietuva-ocpi"
     },
@@ -16441,7 +16441,7 @@
     {
       "lat": 54.696553,
       "lon": 25.281133,
-      "name": "PLTVILKA24_EDLT-218",
+      "name": "PLTVILKA24_EDLT-225",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Kalvarijų gatvė 24",
       "city": "Vilnius",
@@ -16785,7 +16785,7 @@
       "city": "Šilutė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "4136",
       "source": "vialietuva-ocpi"
     },
@@ -16798,7 +16798,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 9,
+      "sockets": 8,
       "ocpi_id": "4137",
       "source": "vialietuva-ocpi"
     },
@@ -16954,7 +16954,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "4153",
       "source": "vialietuva-ocpi"
     },
@@ -17071,7 +17071,7 @@
       "city": "Šiauliai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "4162",
       "source": "vialietuva-ocpi"
     },
@@ -17123,7 +17123,7 @@
       "city": "Panevėžys",
       "power_kw": 50.0,
       "price": 0.27,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "4167",
       "source": "vialietuva-ocpi"
     },
@@ -17195,7 +17195,7 @@
     {
       "lat": 55.167168,
       "lon": 23.994491,
-      "name": "PLTSAVVA29_EDLT-248",
+      "name": "PLTSAVVA29_EDLT-138",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Vandžiogalos gatvė 29",
       "city": "Saviečių kaimas",
@@ -17968,7 +17968,7 @@
       "city": "Vilnius",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 44,
+      "sockets": 28,
       "ocpi_id": "4240",
       "source": "vialietuva-ocpi"
     },
@@ -17994,7 +17994,7 @@
       "city": "Kaunas",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "4242",
       "source": "vialietuva-ocpi"
     },
@@ -18046,7 +18046,7 @@
       "city": "Vilnius",
       "power_kw": 4.0,
       "price": 0.24,
-      "sockets": 2,
+      "sockets": 1,
       "ocpi_id": "4246",
       "source": "vialietuva-ocpi"
     },
@@ -18098,7 +18098,7 @@
       "city": "Šiauliai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 10,
+      "sockets": 6,
       "ocpi_id": "4250",
       "source": "vialietuva-ocpi"
     },
@@ -18410,7 +18410,7 @@
       "city": "Kaunas",
       "power_kw": 149.0,
       "price": 0.27,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "4275",
       "source": "vialietuva-ocpi"
     },
@@ -18423,7 +18423,7 @@
       "city": "Kaunas",
       "power_kw": 149.0,
       "price": 0.29,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "4277",
       "source": "vialietuva-ocpi"
     },
@@ -18449,7 +18449,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 11,
+      "sockets": 8,
       "ocpi_id": "4279",
       "source": "vialietuva-ocpi"
     },
@@ -18657,7 +18657,7 @@
       "city": "Vilnius",
       "power_kw": 4.0,
       "price": 0.24,
-      "sockets": 1,
+      "sockets": 2,
       "ocpi_id": "4295",
       "source": "vialietuva-ocpi"
     },
@@ -18761,7 +18761,7 @@
       "city": "Kaunas",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "4303",
       "source": "vialietuva-ocpi"
     },
@@ -18774,7 +18774,7 @@
       "city": "Neringa",
       "power_kw": 200.0,
       "price": 0.32,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "4304",
       "source": "vialietuva-ocpi"
     },
@@ -19073,14 +19073,14 @@
       "city": "Visaginas",
       "power_kw": 102.0,
       "price": 0.27,
-      "sockets": 7,
+      "sockets": 6,
       "ocpi_id": "4331",
       "source": "vialietuva-ocpi"
     },
     {
       "lat": 55.914268,
       "lon": 21.077415,
-      "name": "PLTPALKR56_EDLT-191",
+      "name": "PLTPALKR56_EDLT-186",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Kretingos gatvė 56",
       "city": "Palanga",
@@ -19112,7 +19112,7 @@
       "city": "Telšiai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "4334",
       "source": "vialietuva-ocpi"
     },
@@ -19314,7 +19314,7 @@
     {
       "lat": 54.75987,
       "lon": 25.218715,
-      "name": "PLTBUKBI36_EDLT-237",
+      "name": "PLTBUKBI36_EDLT-238",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Bičiulių gatvė 36",
       "city": "Bukiškis",
@@ -19379,7 +19379,7 @@
     {
       "lat": 54.918208,
       "lon": 23.830336,
-      "name": "PLTKAUR169_EDLT-242",
+      "name": "PLTKAUR169_EDLT-249",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Raudondvario plentas 169B",
       "city": "Kaunas",
@@ -19626,7 +19626,7 @@
     {
       "lat": 54.903385,
       "lon": 23.985307,
-      "name": "PLTKAUCH17_EDLT-21",
+      "name": "PLTKAUCH17_EDLT-19",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Chemijos gatvė 17D",
       "city": "Kaunas",
@@ -19761,7 +19761,7 @@
       "address": "Jonavos g. 1F, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4590",
       "source": "vialietuva-ocpi"
@@ -19774,7 +19774,7 @@
       "address": "Jonavos g. 1F, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4591",
       "source": "vialietuva-ocpi"
@@ -19891,7 +19891,7 @@
       "address": "Tirkšlių g. 11, Mažeikiai",
       "city": "",
       "power_kw": 22.0,
-      "price": 0.527,
+      "price": 0.454,
       "sockets": 2,
       "ocpi_id": "4687",
       "source": "vialietuva-ocpi"
@@ -19904,7 +19904,7 @@
       "address": "Naftininkų g. 11, Mažeikiai",
       "city": "",
       "power_kw": 22.0,
-      "price": 0.527,
+      "price": 0.454,
       "sockets": 2,
       "ocpi_id": "4688",
       "source": "vialietuva-ocpi"
@@ -19917,7 +19917,7 @@
       "address": "M. K. Čiurlionio g. 3, Mažeikiai",
       "city": "",
       "power_kw": 22.0,
-      "price": 0.527,
+      "price": 0.454,
       "sockets": 2,
       "ocpi_id": "4689",
       "source": "vialietuva-ocpi"
@@ -19930,7 +19930,7 @@
       "address": "Respublikos g. 17, Mažeikiai",
       "city": "",
       "power_kw": 22.0,
-      "price": 0.527,
+      "price": 0.454,
       "sockets": 2,
       "ocpi_id": "4690",
       "source": "vialietuva-ocpi"
@@ -19982,7 +19982,7 @@
       "address": "A. Kulviečio g. 8, Jonava",
       "city": "Jonava",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4779",
       "source": "vialietuva-ocpi"
@@ -19995,7 +19995,7 @@
       "address": "A. Kulviečio g. 32, Jonava",
       "city": "Jonava",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4780",
       "source": "vialietuva-ocpi"
@@ -20008,7 +20008,7 @@
       "address": "Žeimių g. 17, Jonava",
       "city": "Jonava",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4782",
       "source": "vialietuva-ocpi"
@@ -20086,7 +20086,7 @@
       "address": "Tauragės g. 1, Šilalė",
       "city": "Šilalė",
       "power_kw": 120.0,
-      "price": 0.502,
+      "price": 0.429,
       "sockets": 3,
       "ocpi_id": "4789",
       "source": "vialietuva-ocpi"
@@ -20268,7 +20268,7 @@
       "address": "P. Lukšio g. 18, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.499,
+      "price": 0.406,
       "sockets": 1,
       "ocpi_id": "4805",
       "source": "vialietuva-ocpi"
@@ -20281,7 +20281,7 @@
       "address": "Eivenių g. 23, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4806",
       "source": "vialietuva-ocpi"
@@ -20294,7 +20294,7 @@
       "address": "Jonavos g. 1F, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4807",
       "source": "vialietuva-ocpi"
@@ -20307,7 +20307,7 @@
       "address": "P. Vaičiūno g. 2D, Jonava",
       "city": "Jonava",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "4808",
       "source": "vialietuva-ocpi"
@@ -20542,7 +20542,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.32,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "4829",
       "source": "vialietuva-ocpi"
     },
@@ -20568,7 +20568,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.45,
-      "sockets": 16,
+      "sockets": 8,
       "ocpi_id": "4832",
       "source": "vialietuva-ocpi"
     },
@@ -20606,7 +20606,7 @@
       "address": "Žeimių g. 17, Jonava",
       "city": "Jonava",
       "power_kw": 50.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 3,
       "ocpi_id": "4837",
       "source": "vialietuva-ocpi"
@@ -20619,7 +20619,7 @@
       "address": "J. Basanavičiaus g. 6, Jonava",
       "city": "Jonava",
       "power_kw": 50.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 3,
       "ocpi_id": "4838",
       "source": "vialietuva-ocpi"
@@ -21009,7 +21009,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6798",
       "source": "vialietuva-ocpi"
@@ -21022,7 +21022,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6799",
       "source": "vialietuva-ocpi"
@@ -21035,7 +21035,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6800",
       "source": "vialietuva-ocpi"
@@ -21048,7 +21048,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6801",
       "source": "vialietuva-ocpi"
@@ -21061,7 +21061,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6802",
       "source": "vialietuva-ocpi"
@@ -21074,7 +21074,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6803",
       "source": "vialietuva-ocpi"
@@ -21087,7 +21087,7 @@
       "address": "R. Kalantos g. 49, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6804",
       "source": "vialietuva-ocpi"
@@ -21100,7 +21100,7 @@
       "address": "Raudondvario pl. 93, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6812",
       "source": "vialietuva-ocpi"
@@ -21113,7 +21113,7 @@
       "address": "Raudondvario pl. 157C, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6814",
       "source": "vialietuva-ocpi"
@@ -21139,7 +21139,7 @@
       "address": "Raudondvario pl. 93, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6817",
       "source": "vialietuva-ocpi"
@@ -21152,7 +21152,7 @@
       "address": "Drobės g. 62, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6818",
       "source": "vialietuva-ocpi"
@@ -21165,7 +21165,7 @@
       "address": "Drobės g. 62, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6819",
       "source": "vialietuva-ocpi"
@@ -21178,7 +21178,7 @@
       "address": "Drobės g. 62, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6820",
       "source": "vialietuva-ocpi"
@@ -21191,7 +21191,7 @@
       "address": "Drobės g. 62, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6821",
       "source": "vialietuva-ocpi"
@@ -21204,7 +21204,7 @@
       "address": "R. Kalantos g. 76c, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6822",
       "source": "vialietuva-ocpi"
@@ -21217,7 +21217,7 @@
       "address": "R. Kalantos g. 76c, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 2,
       "ocpi_id": "6823",
       "source": "vialietuva-ocpi"
@@ -21230,7 +21230,7 @@
       "address": "Energetikų g. 20, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.448,
+      "price": 0.368,
       "sockets": 2,
       "ocpi_id": "6825",
       "source": "vialietuva-ocpi"
@@ -21243,7 +21243,7 @@
       "address": "Tarybų g. 12, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.448,
+      "price": 0.368,
       "sockets": 2,
       "ocpi_id": "6826",
       "source": "vialietuva-ocpi"
@@ -21256,7 +21256,7 @@
       "address": "Taikos pr. 7, Visaginas",
       "city": "Visaginas",
       "power_kw": 22.0,
-      "price": 0.448,
+      "price": 0.368,
       "sockets": 2,
       "ocpi_id": "6827",
       "source": "vialietuva-ocpi"
@@ -21355,7 +21355,7 @@
     {
       "lat": 55.959588,
       "lon": 21.145201,
-      "name": "PLTKRELI15_EDLT-162",
+      "name": "PLTKRELI15_EDLT-163",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Liepų gatvė 15",
       "city": "Žibininkai",
@@ -21452,7 +21452,7 @@
       "city": "Kaunas",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "6850",
       "source": "vialietuva-ocpi"
     },
@@ -21465,7 +21465,7 @@
       "city": "Pabradė",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "6853",
       "source": "vialietuva-ocpi"
     },
@@ -21478,7 +21478,7 @@
       "city": "Biržai",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 7,
+      "sockets": 4,
       "ocpi_id": "6855",
       "source": "vialietuva-ocpi"
     },
@@ -21556,7 +21556,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.26,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "6864",
       "source": "vialietuva-ocpi"
     },
@@ -21673,7 +21673,7 @@
       "city": "Marijampolė",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "14376",
       "source": "vialietuva-ocpi"
     },
@@ -21881,7 +21881,7 @@
       "city": "Šiauliai",
       "power_kw": 200.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "14418",
       "source": "vialietuva-ocpi"
     },
@@ -21893,8 +21893,8 @@
       "address": "Gedimino g. 72, 56145 Kaišiadorys, Lithuania",
       "city": "Kaišiadorys",
       "power_kw": 200.0,
-      "price": 0.32,
-      "sockets": 8,
+      "price": 0.31,
+      "sockets": 4,
       "ocpi_id": "14419",
       "source": "vialietuva-ocpi"
     },
@@ -21907,7 +21907,7 @@
       "city": "Kaunas",
       "power_kw": 125.0,
       "price": 0.21,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "14420",
       "source": "vialietuva-ocpi"
     },
@@ -21971,7 +21971,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "14440",
       "source": "vialietuva-ocpi"
@@ -22010,7 +22010,7 @@
       "address": "Aukštakalnio g.  2, Alytus",
       "city": "Alytus",
       "power_kw": 60.0,
-      "price": 0.501,
+      "price": 0.424,
       "sockets": 2,
       "ocpi_id": "14447",
       "source": "vialietuva-ocpi"
@@ -22089,7 +22089,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.29,
-      "sockets": 3,
+      "sockets": 2,
       "ocpi_id": "14454",
       "source": "vialietuva-ocpi"
     },
@@ -22205,7 +22205,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "14470",
       "source": "vialietuva-ocpi"
@@ -22323,7 +22323,7 @@
       "city": "Vejukai",
       "power_kw": 400.0,
       "price": 0.32,
-      "sockets": 19,
+      "sockets": 12,
       "ocpi_id": "14481",
       "source": "vialietuva-ocpi"
     },
@@ -22518,7 +22518,7 @@
       "city": "Kelmė",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 8,
+      "sockets": 4,
       "ocpi_id": "14509",
       "source": "vialietuva-ocpi"
     },
@@ -22635,7 +22635,7 @@
       "city": "Vilnius",
       "power_kw": 75.0,
       "price": 0.29,
-      "sockets": 33,
+      "sockets": 17,
       "ocpi_id": "14525",
       "source": "vialietuva-ocpi"
     },
@@ -22661,7 +22661,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 12,
+      "sockets": 6,
       "ocpi_id": "14528",
       "source": "vialietuva-ocpi"
     },
@@ -22908,7 +22908,7 @@
       "city": "Klaipėda",
       "power_kw": 150.0,
       "price": 0.27,
-      "sockets": 12,
+      "sockets": 8,
       "ocpi_id": "15374",
       "source": "vialietuva-ocpi"
     },
@@ -22954,7 +22954,7 @@
     {
       "lat": 54.702817,
       "lon": 25.287935,
-      "name": "PLTVILRI59_EDLT-281_NOT_LAUNCHED",
+      "name": "PLTVILRI59_EDLT-280_NOT_LAUNCHED",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Rinktinės gatvė 59",
       "city": "Vilnius",
@@ -23012,7 +23012,7 @@
       "city": "Kaunas",
       "power_kw": 360.0,
       "price": 0.32,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "15395",
       "source": "vialietuva-ocpi"
     },
@@ -23102,7 +23102,7 @@
       "address": "Vėtrungių g. 354, Nida, 93132 Neringos sav.,",
       "city": "Nida",
       "power_kw": 22.0,
-      "price": 0.35,
+      "price": 0.34,
       "sockets": 3,
       "ocpi_id": "15407",
       "source": "vialietuva-ocpi"
@@ -23207,7 +23207,7 @@
       "city": "Vilnius",
       "power_kw": 150.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "15416",
       "source": "vialietuva-ocpi"
     },
@@ -24806,7 +24806,7 @@
       "city": "Klaipėda",
       "power_kw": 120.0,
       "price": 0.31,
-      "sockets": 6,
+      "sockets": 4,
       "ocpi_id": "15548",
       "source": "vialietuva-ocpi"
     },
@@ -24818,7 +24818,7 @@
       "address": "Svylos gatvė 6, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15549",
       "source": "vialietuva-ocpi"
@@ -24831,7 +24831,7 @@
       "address": "Svylos gatvė 6, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15550",
       "source": "vialietuva-ocpi"
@@ -24844,7 +24844,7 @@
       "address": "Svylos gatvė 6, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15551",
       "source": "vialietuva-ocpi"
@@ -24857,7 +24857,7 @@
       "address": "Svylos gatvė 6, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15552",
       "source": "vialietuva-ocpi"
@@ -24883,7 +24883,7 @@
       "address": "Paluokesos g. 11, Molėtai",
       "city": "Molėtai",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15554",
       "source": "vialietuva-ocpi"
@@ -24896,7 +24896,7 @@
       "address": "Paluokesos g. 11, Molėtai",
       "city": "Molėtai",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15555",
       "source": "vialietuva-ocpi"
@@ -24974,7 +24974,7 @@
       "address": "J. Ralio g. 7, Jonava",
       "city": "Jonava",
       "power_kw": 22.0,
-      "price": 0.464,
+      "price": 0.381,
       "sockets": 2,
       "ocpi_id": "15562",
       "source": "vialietuva-ocpi"
@@ -25201,58 +25201,6 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 55.917437,
-      "lon": 21.805859,
-      "name": "Birutės g. 50, Plungė",
-      "operator": "Elinta Charge",
-      "address": "Birutės g. 50, Plungė",
-      "city": "Plungė",
-      "power_kw": 22.0,
-      "price": 0.5,
-      "sockets": 2,
-      "ocpi_id": "15580",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 55.917465,
-      "lon": 21.805857,
-      "name": "Birutės g. 50, Plungė",
-      "operator": "Elinta Charge",
-      "address": "Birutės g. 50, Plungė",
-      "city": "Plungė",
-      "power_kw": 22.0,
-      "price": 0.5,
-      "sockets": 2,
-      "ocpi_id": "15581",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 55.918925,
-      "lon": 21.805307,
-      "name": "Birutės g. 50, Plungė",
-      "operator": "Elinta Charge",
-      "address": "Birutės g. 50, Plungė",
-      "city": "Plungė",
-      "power_kw": 22.0,
-      "price": 0.5,
-      "sockets": 2,
-      "ocpi_id": "15582",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 55.918925,
-      "lon": 21.805307,
-      "name": "Birutės g. 50, Plungė",
-      "operator": "Elinta Charge",
-      "address": "Birutės g. 50, Plungė",
-      "city": "Plungė",
-      "power_kw": 22.0,
-      "price": 0.5,
-      "sockets": 2,
-      "ocpi_id": "15583",
-      "source": "vialietuva-ocpi"
-    },
-    {
       "lat": 54.64488,
       "lon": 25.306429,
       "name": "Svylos gatvė 16, Vilnius",
@@ -25260,7 +25208,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15584",
       "source": "vialietuva-ocpi"
@@ -25364,7 +25312,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15592",
       "source": "vialietuva-ocpi"
@@ -25377,7 +25325,7 @@
       "address": "Svylos gatvė 8, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15593",
       "source": "vialietuva-ocpi"
@@ -25390,7 +25338,7 @@
       "address": "Svylos gatvė 8, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15594",
       "source": "vialietuva-ocpi"
@@ -25403,7 +25351,7 @@
       "address": "Svylos gatvė 8, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15595",
       "source": "vialietuva-ocpi"
@@ -25416,7 +25364,7 @@
       "address": "Svylos gatvė 8, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15596",
       "source": "vialietuva-ocpi"
@@ -25429,7 +25377,7 @@
       "address": "Svylos gatvė 6, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15597",
       "source": "vialietuva-ocpi"
@@ -25442,7 +25390,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15598",
       "source": "vialietuva-ocpi"
@@ -25455,7 +25403,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15599",
       "source": "vialietuva-ocpi"
@@ -25468,7 +25416,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15600",
       "source": "vialietuva-ocpi"
@@ -25481,7 +25429,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15601",
       "source": "vialietuva-ocpi"
@@ -25494,7 +25442,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15602",
       "source": "vialietuva-ocpi"
@@ -25507,7 +25455,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15603",
       "source": "vialietuva-ocpi"
@@ -25520,7 +25468,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15604",
       "source": "vialietuva-ocpi"
@@ -25533,7 +25481,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15605",
       "source": "vialietuva-ocpi"
@@ -25546,7 +25494,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15606",
       "source": "vialietuva-ocpi"
@@ -25559,7 +25507,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15607",
       "source": "vialietuva-ocpi"
@@ -25572,7 +25520,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15608",
       "source": "vialietuva-ocpi"
@@ -25585,7 +25533,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15609",
       "source": "vialietuva-ocpi"
@@ -25598,7 +25546,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15610",
       "source": "vialietuva-ocpi"
@@ -25611,7 +25559,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15611",
       "source": "vialietuva-ocpi"
@@ -25624,7 +25572,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15612",
       "source": "vialietuva-ocpi"
@@ -25637,7 +25585,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15613",
       "source": "vialietuva-ocpi"
@@ -25650,7 +25598,7 @@
       "address": "Svylos gatvė 8, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15614",
       "source": "vialietuva-ocpi"
@@ -25663,7 +25611,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15615",
       "source": "vialietuva-ocpi"
@@ -25676,7 +25624,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15616",
       "source": "vialietuva-ocpi"
@@ -25702,7 +25650,7 @@
       "address": "Svylos gatvė 6, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 5,
       "ocpi_id": "15686",
       "source": "vialietuva-ocpi"
@@ -25715,7 +25663,7 @@
       "address": "Svylos gatvė 8, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": null,
       "sockets": 5,
       "ocpi_id": "15687",
       "source": "vialietuva-ocpi"
@@ -25728,7 +25676,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 10,
       "ocpi_id": "15688",
       "source": "vialietuva-ocpi"
@@ -25741,7 +25689,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 10,
       "ocpi_id": "15689",
       "source": "vialietuva-ocpi"
@@ -25754,7 +25702,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 10,
       "ocpi_id": "15690",
       "source": "vialietuva-ocpi"
@@ -25767,7 +25715,7 @@
       "address": "Svylos gatvė 16, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 2,
       "ocpi_id": "15691",
       "source": "vialietuva-ocpi"
@@ -25775,7 +25723,7 @@
     {
       "lat": 54.919808,
       "lon": 24.001557,
-      "name": "PLTKAUT141_EDLT-278_NOT_LAUNCHED",
+      "name": "PLTKAUT141_EDLT-277",
       "operator": "Elektrum Lietuva, UAB",
       "address": "Taikos prospektas 141C",
       "city": "Kaunas",
@@ -25858,7 +25806,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15704",
       "source": "vialietuva-ocpi"
@@ -25871,7 +25819,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15705",
       "source": "vialietuva-ocpi"
@@ -25884,7 +25832,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15706",
       "source": "vialietuva-ocpi"
@@ -25897,7 +25845,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15707",
       "source": "vialietuva-ocpi"
@@ -25910,7 +25858,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15708",
       "source": "vialietuva-ocpi"
@@ -25923,7 +25871,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15709",
       "source": "vialietuva-ocpi"
@@ -25936,7 +25884,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15710",
       "source": "vialietuva-ocpi"
@@ -25949,7 +25897,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15711",
       "source": "vialietuva-ocpi"
@@ -25962,7 +25910,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15712",
       "source": "vialietuva-ocpi"
@@ -25975,7 +25923,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15713",
       "source": "vialietuva-ocpi"
@@ -25988,7 +25936,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15714",
       "source": "vialietuva-ocpi"
@@ -26001,7 +25949,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15715",
       "source": "vialietuva-ocpi"
@@ -26014,7 +25962,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15716",
       "source": "vialietuva-ocpi"
@@ -26027,7 +25975,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15717",
       "source": "vialietuva-ocpi"
@@ -26040,7 +25988,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15718",
       "source": "vialietuva-ocpi"
@@ -26053,7 +26001,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15719",
       "source": "vialietuva-ocpi"
@@ -26066,7 +26014,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15720",
       "source": "vialietuva-ocpi"
@@ -26079,7 +26027,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15721",
       "source": "vialietuva-ocpi"
@@ -26092,7 +26040,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15722",
       "source": "vialietuva-ocpi"
@@ -26105,7 +26053,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15723",
       "source": "vialietuva-ocpi"
@@ -26118,7 +26066,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15724",
       "source": "vialietuva-ocpi"
@@ -26131,7 +26079,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15725",
       "source": "vialietuva-ocpi"
@@ -26144,7 +26092,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15726",
       "source": "vialietuva-ocpi"
@@ -26157,7 +26105,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15727",
       "source": "vialietuva-ocpi"
@@ -26170,7 +26118,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15728",
       "source": "vialietuva-ocpi"
@@ -26183,7 +26131,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15729",
       "source": "vialietuva-ocpi"
@@ -26196,7 +26144,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15730",
       "source": "vialietuva-ocpi"
@@ -26209,7 +26157,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15731",
       "source": "vialietuva-ocpi"
@@ -26222,7 +26170,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15732",
       "source": "vialietuva-ocpi"
@@ -26235,7 +26183,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15733",
       "source": "vialietuva-ocpi"
@@ -26248,7 +26196,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15734",
       "source": "vialietuva-ocpi"
@@ -26261,7 +26209,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15735",
       "source": "vialietuva-ocpi"
@@ -26274,7 +26222,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15736",
       "source": "vialietuva-ocpi"
@@ -26287,7 +26235,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15737",
       "source": "vialietuva-ocpi"
@@ -26300,7 +26248,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15738",
       "source": "vialietuva-ocpi"
@@ -26313,7 +26261,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15739",
       "source": "vialietuva-ocpi"
@@ -26326,7 +26274,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15740",
       "source": "vialietuva-ocpi"
@@ -26339,7 +26287,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15741",
       "source": "vialietuva-ocpi"
@@ -26352,7 +26300,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15742",
       "source": "vialietuva-ocpi"
@@ -26365,7 +26313,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15743",
       "source": "vialietuva-ocpi"
@@ -26378,7 +26326,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15744",
       "source": "vialietuva-ocpi"
@@ -26391,7 +26339,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15745",
       "source": "vialietuva-ocpi"
@@ -26404,7 +26352,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15746",
       "source": "vialietuva-ocpi"
@@ -26417,7 +26365,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15747",
       "source": "vialietuva-ocpi"
@@ -26430,7 +26378,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15748",
       "source": "vialietuva-ocpi"
@@ -26443,7 +26391,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15749",
       "source": "vialietuva-ocpi"
@@ -26456,7 +26404,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15750",
       "source": "vialietuva-ocpi"
@@ -26469,7 +26417,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15751",
       "source": "vialietuva-ocpi"
@@ -26482,7 +26430,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15752",
       "source": "vialietuva-ocpi"
@@ -26495,7 +26443,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15753",
       "source": "vialietuva-ocpi"
@@ -26508,7 +26456,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 1,
       "ocpi_id": "15754",
       "source": "vialietuva-ocpi"
@@ -26521,7 +26469,7 @@
       "address": "Savanorių pr. 276, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.465,
+      "price": 0.377,
       "sockets": 40,
       "ocpi_id": "15756",
       "source": "vialietuva-ocpi"
@@ -26534,7 +26482,7 @@
       "address": "Savanorių pr. 276, Kaunas",
       "city": "Kaunas",
       "power_kw": 22.0,
-      "price": 0.465,
+      "price": 0.377,
       "sockets": 28,
       "ocpi_id": "15757",
       "source": "vialietuva-ocpi"
@@ -26547,7 +26495,7 @@
       "address": "Gaujos g. 4, Vilnius",
       "city": "Vilnius",
       "power_kw": 22.0,
-      "price": 0.33,
+      "price": 0.257,
       "sockets": 54,
       "ocpi_id": "15758",
       "source": "vialietuva-ocpi"
@@ -26560,7 +26508,7 @@
       "address": "Neries krant. 16, Kaunas",
       "city": "Kaunas",
       "power_kw": 150.0,
-      "price": 0.397,
+      "price": 0.317,
       "sockets": 16,
       "ocpi_id": "15760",
       "source": "vialietuva-ocpi"
@@ -26602,6 +26550,32 @@
       "price": 0.31,
       "sockets": 8,
       "ocpi_id": "15763",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 56.302341,
+      "lon": 22.339966,
+      "name": "Eldrive Lithuania Hyper Rimi Mažeikiai",
+      "operator": "Eldrive Lithuania, UAB",
+      "address": "Žemaitijos gatvė 38",
+      "city": "Mažeikiai",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 2,
+      "ocpi_id": "15764",
+      "source": "vialietuva-ocpi"
+    },
+    {
+      "lat": 55.754636,
+      "lon": 21.132977,
+      "name": "Eldrive Lithuania Klaipėdos Holivudas 3",
+      "operator": "Eldrive Lithuania, UAB",
+      "address": "Kretingos gatvė 98A",
+      "city": "Klaipėda",
+      "power_kw": 22.0,
+      "price": 0.29,
+      "sockets": 1,
+      "ocpi_id": "15765",
       "source": "vialietuva-ocpi"
     },
     {
@@ -26904,19 +26878,6 @@
       "source": "osm"
     },
     {
-      "lat": 54.709525,
-      "lon": 25.226856,
-      "name": "Ignitis ON",
-      "operator": "Ignitis ON",
-      "address": "",
-      "city": "",
-      "power_kw": 50.0,
-      "price": null,
-      "sockets": 3,
-      "ocpi_id": null,
-      "source": "osm"
-    },
-    {
       "lat": 54.946215,
       "lon": 24.051814,
       "name": "Įkrovimo stotelė",
@@ -27171,19 +27132,6 @@
       "address": "",
       "city": "",
       "power_kw": null,
-      "price": null,
-      "sockets": null,
-      "ocpi_id": null,
-      "source": "osm"
-    },
-    {
-      "lat": 55.909005,
-      "lon": 21.069149,
-      "name": "Elinta Charge",
-      "operator": "Elinta Charge",
-      "address": "",
-      "city": "",
-      "power_kw": 50.0,
       "price": null,
       "sockets": null,
       "ocpi_id": null,
@@ -27478,6 +27426,32 @@
     {
       "lat": 54.755891,
       "lon": 25.286267,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "address": "",
+      "city": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
+    },
+    {
+      "lat": 54.692954,
+      "lon": 25.399084,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "address": "",
+      "city": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
+    },
+    {
+      "lat": 55.531711,
+      "lon": 21.116553,
       "name": "Įkrovimo stotelė",
       "operator": "",
       "address": "",
