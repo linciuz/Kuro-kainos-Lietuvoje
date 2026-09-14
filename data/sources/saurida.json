@@ -3,7 +3,7 @@
  "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
  "scope": "per_station",
  "role": "independent cross-check against LEA — NOT published to the app",
- "fetched": "2026-09-14T10:59:59Z",
+ "fetched": "2026-09-14T18:53:07Z",
  "stations": 34,
  "summary": {
   "diesel": {
@@ -118,7 +118,7 @@
   },
   {
    "name": "Skuodas",
-   "diesel": 2.18,
+   "diesel": 2.14,
    "petrol95": 1.89,
    "lpg": 0.77
   },
