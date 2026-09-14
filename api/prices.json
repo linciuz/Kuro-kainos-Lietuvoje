@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-14T08:32:21Z",
+ "generated_utc": "2026-09-14T10:01:39Z",
  "price_date": "2026-09-14",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -7831,9 +7831,9 @@
    "lat": 55.89793,
    "lon": 23.35172,
    "petrol95": 1.899,
-   "diesel": 2.099,
-   "lpg": 0.69,
-   "price_updated": "2026-09-14T10:30:03+03:00"
+   "diesel": 2.189,
+   "lpg": 0.74,
+   "price_updated": "2026-09-14T12:49:13+03:00"
   },
   {
    "network": "UAB Junasa, Degalinė",
@@ -7842,9 +7842,9 @@
    "lat": 55.948105,
    "lon": 23.320427,
    "petrol95": 1.899,
-   "diesel": 2.099,
-   "lpg": 0.69,
-   "price_updated": "2026-09-14T10:30:03+03:00"
+   "diesel": 2.189,
+   "lpg": 0.74,
+   "price_updated": "2026-09-14T12:49:13+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -8029,9 +8029,9 @@
    "lat": 56.099227,
    "lon": 23.265819,
    "petrol95": 1.899,
-   "diesel": 2.099,
-   "lpg": 0.69,
-   "price_updated": "2026-09-14T10:30:03+03:00"
+   "diesel": 2.199,
+   "lpg": 0.74,
+   "price_updated": "2026-09-14T12:49:13+03:00"
   },
   {
    "network": "UAB Viada LT",
