@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-14T10:01:39Z",
+ "generated_utc": "2026-09-14T10:31:30Z",
  "price_date": "2026-09-14",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -8204,10 +8204,10 @@
    "municipality": "Šilutės r. sav.",
    "lat": 55.358829,
    "lon": 21.5034,
-   "petrol95": 1.87,
-   "diesel": 2.13,
+   "petrol95": 1.95,
+   "diesel": 2.19,
    "lpg": 0.75,
-   "price_updated": "2026-09-14T09:24:40+03:00"
+   "price_updated": "2026-09-14T13:24:52+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
