@@ -63,8 +63,8 @@
     {
       "kind": "direct",
       "url": "https://www.viada.lt/akcijos/",
-      "err": "HTTP 403",
-      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+      "err": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "body_head": ""
     },
     {
       "kind": "proxy",
@@ -87,8 +87,8 @@
     {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/menesio-pasiulymai-vistienos-pirsteliai-grill-sumustinis-ir-fusion-sumustinis-30/",
-      "err": "HTTP 403",
-      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+      "err": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "body_head": ""
     },
     {
       "kind": "direct",
@@ -99,8 +99,8 @@
     {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/saldziai-pertraukelei-snickers-50-g-pigiau/",
-      "err": "HTTP 403",
-      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+      "err": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "body_head": ""
     },
     {
       "kind": "direct",
@@ -141,8 +141,8 @@
     {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/nuo-2026-m-sausio-1d-keiciasi-viadaplus-lojalumo-programos-salygos-ir-taisykles/",
-      "err": "HTTP 403",
-      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+      "err": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "body_head": ""
     },
     {
       "kind": "direct",
@@ -163,6 +163,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     }
   ],
-  "generated": "2026-09-14T12:43:42Z",
+  "generated": "2026-09-14T12:44:33Z",
   "attempt_count": 27
 }
