@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-14",
+ "price_date": "2026-09-15",
  "currency": "EUR",
- "stations_with_prices": 760,
+ "stations_with_prices": 720,
  "national": {
   "petrol95": {
-   "min": 1.799,
-   "avg": 1.918,
+   "min": 1.829,
+   "avg": 1.952,
    "max": 2.019,
-   "count": 736
+   "count": 698
   },
   "diesel": {
    "min": 1.999,
-   "avg": 2.182,
-   "max": 2.307,
-   "count": 738
+   "avg": 2.233,
+   "max": 2.3,
+   "count": 700
   },
   "lpg": {
    "min": 0.67,
-   "avg": 0.808,
-   "max": 0.949,
-   "count": 596
+   "avg": 0.816,
+   "max": 0.979,
+   "count": 559
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.799,
-   "network": "UAB Alauša",
-   "address": "Bajorų k., Šimonių g. 36, 29352",
-   "municipality": "Anykščių r. sav."
+   "price": 1.829,
+   "network": "UAB Eniris",
+   "address": "Mažeikiai, Laižuvos g. 82d, 89213",
+   "municipality": "Mažeikių r. sav."
   },
   "diesel": {
    "price": 1.999,
-   "network": "UAB Alauša",
-   "address": "Bajorų k., Šimonių g. 36, 29352",
-   "municipality": "Anykščių r. sav."
+   "network": "UAB Neste Lietuva",
+   "address": "N. Valios k., Europos g. 6, 69270",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.67,
