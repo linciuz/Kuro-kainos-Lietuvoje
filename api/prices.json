@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-15T08:46:29Z",
+ "generated_utc": "2026-09-15T09:31:34Z",
  "price_date": "2026-09-15",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -713,10 +713,10 @@
    "municipality": "Jonavos r. sav.",
    "lat": 55.137949,
    "lon": 24.193271,
-   "petrol95": 1.94,
-   "diesel": 2.17,
+   "petrol95": 1.95,
+   "diesel": 2.21,
    "lpg": 0.84,
-   "price_updated": "2026-09-15T10:30:04+03:00"
+   "price_updated": "2026-09-15T12:19:20+03:00"
   },
   {
    "network": "UAB Žibalas",
