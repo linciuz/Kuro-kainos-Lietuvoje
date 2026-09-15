@@ -2,19 +2,19 @@
  "$schema_version": 1,
  "price_date": "2026-09-15",
  "currency": "EUR",
- "stations_with_prices": 721,
+ "stations_with_prices": 722,
  "national": {
   "petrol95": {
    "min": 1.829,
-   "avg": 1.953,
-   "max": 2.19,
-   "count": 699
+   "avg": 1.952,
+   "max": 2.019,
+   "count": 700
   },
   "diesel": {
-   "min": 1.188,
-   "avg": 2.231,
+   "min": 1.999,
+   "avg": 2.233,
    "max": 2.3,
-   "count": 701
+   "count": 702
   },
   "lpg": {
    "min": 0.67,
@@ -31,10 +31,10 @@
    "municipality": "Mažeikių r. sav."
   },
   "diesel": {
-   "price": 1.188,
-   "network": "UAB Littaura",
-   "address": "Tauragė, Pramonės g. 6, 72324",
-   "municipality": "Tauragės r. sav."
+   "price": 1.999,
+   "network": "UAB Neste Lietuva",
+   "address": "N. Valios k., Europos g. 6, 69270",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.67,

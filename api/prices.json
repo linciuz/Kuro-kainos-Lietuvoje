@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-15T08:16:44Z",
+ "generated_utc": "2026-09-15T08:31:22Z",
  "price_date": "2026-09-15",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,15 +19,15 @@
  "summary": {
   "petrol95": {
    "min": 1.829,
-   "avg": 1.953,
-   "max": 2.19,
-   "count": 699
+   "avg": 1.952,
+   "max": 2.019,
+   "count": 700
   },
   "diesel": {
-   "min": 1.188,
-   "avg": 2.231,
+   "min": 1.999,
+   "avg": 2.233,
    "max": 2.3,
-   "count": 701
+   "count": 702
   },
   "lpg": {
    "min": 0.67,
@@ -44,10 +44,10 @@
    "municipality": "Mažeikių r. sav."
   },
   "diesel": {
-   "price": 1.188,
-   "network": "UAB Littaura",
-   "address": "Tauragė, Pramonės g. 6, 72324",
-   "municipality": "Tauragės r. sav."
+   "price": 1.999,
+   "network": "UAB Neste Lietuva",
+   "address": "N. Valios k., Europos g. 6, 69270",
+   "municipality": "Kalvarijos sav."
   },
   "lpg": {
    "price": 0.67,
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 721,
+ "count": 722,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -2875,6 +2875,17 @@
    "price_updated": "2026-09-15T09:40:50+03:00"
   },
   {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.93,
+   "diesel": 2.21,
+   "lpg": null,
+   "price_updated": "2026-09-15T11:19:35+03:00"
+  },
+  {
    "network": "UAB Circle K Lietuva",
    "address": "Kretinga, Klaipėdos g. 155, 97156",
    "municipality": "Kretingos r. sav.",
@@ -5014,10 +5025,10 @@
    "municipality": "Tauragės r. sav.",
    "lat": 55.238271,
    "lon": 22.297675,
-   "petrol95": 2.19,
-   "diesel": 1.188,
+   "petrol95": 1.88,
+   "diesel": 2.19,
    "lpg": null,
-   "price_updated": "2026-09-15T11:13:44+03:00"
+   "price_updated": "2026-09-15T11:17:30+03:00"
   },
   {
    "network": "UAB Madalva",
