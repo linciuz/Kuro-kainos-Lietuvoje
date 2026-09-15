@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-15T09:31:34Z",
+ "generated_utc": "2026-09-15T10:01:21Z",
  "price_date": "2026-09-15",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -461,9 +461,9 @@
    "lat": 55.974978,
    "lon": 24.740122,
    "petrol95": 1.929,
-   "diesel": 2.219,
+   "diesel": 2.249,
    "lpg": 0.75,
-   "price_updated": "2026-09-15T08:16:32+03:00"
+   "price_updated": "2026-09-15T12:58:30+03:00"
   },
   {
    "network": "UAB Viada LT",
