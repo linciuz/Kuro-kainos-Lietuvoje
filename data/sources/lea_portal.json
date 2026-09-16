@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-16T10:19:02Z",
+ "generated": "2026-09-16T17:45:23Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-16 11:16:34",
+ "api_last_updated": "2026-09-16 15:23:59",
  "count": 767,
  "with_coords": 766,
  "priced": 758,
@@ -1362,18 +1362,18 @@
    "lat": 55.072115,
    "lon": 24.294946,
    "fuels": [
-    "lpg",
+    "petrol95",
     "diesel",
-    "petrol95"
+    "lpg"
    ],
    "prices": {
-    "lpg": 0.84,
-    "diesel": 2.23,
-    "petrol95": 1.95
+    "petrol95": 2.0,
+    "diesel": 2.3,
+    "lpg": 0.88
    },
    "gas_station_id": 788,
    "logo_url": null,
-   "submitted_at": "2026-09-16T07:30:04.000000Z"
+   "submitted_at": "2026-09-16T12:23:59.000000Z"
   },
   {
    "company": "Joniškio rajono Skaistčio žemės ūkio bendrovė",
