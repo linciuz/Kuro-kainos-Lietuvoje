@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-16",
+ "price_date": "2026-09-17",
  "currency": "EUR",
- "stations_with_prices": 758,
+ "stations_with_prices": 732,
  "national": {
   "petrol95": {
-   "min": 1.828,
-   "avg": 1.951,
+   "min": 1.849,
+   "avg": 1.944,
    "max": 2.039,
-   "count": 734
+   "count": 705
   },
   "diesel": {
-   "min": 1.999,
-   "avg": 2.227,
-   "max": 2.349,
-   "count": 736
+   "min": 2.113,
+   "avg": 2.23,
+   "max": 2.34,
+   "count": 707
   },
   "lpg": {
    "min": 0.69,
-   "avg": 0.818,
+   "avg": 0.821,
    "max": 0.979,
-   "count": 594
+   "count": 569
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.828,
-   "network": "UAB Autograndas",
-   "address": "Visaginas, Taikos pr. 47, 31217",
-   "municipality": "Visagino sav."
+   "price": 1.849,
+   "network": "UAB Baltic Petroleum",
+   "address": "Alytus, Santaikos g. 33, 62100",
+   "municipality": "Alytaus m. sav."
   },
   "diesel": {
-   "price": 1.999,
-   "network": "UAB Neste Lietuva",
-   "address": "N. Valios k., Europos g. 6, 69270",
-   "municipality": "Kalvarijos sav."
+   "price": 2.113,
+   "network": "UAB Degta",
+   "address": "Rokiškis, Respublikos g. 113B, 42150",
+   "municipality": "Rokiškio r. sav."
   },
   "lpg": {
    "price": 0.69,
