@@ -9,8 +9,8 @@
     {
       "kind": "proxy",
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=nuolaidu-savaitgaliai",
-      "err": "HTTP 403",
-      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+      "err": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "body_head": ""
     },
     {
       "kind": "direct",
@@ -163,6 +163,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     }
   ],
-  "generated": "2026-09-17T10:26:56Z",
+  "generated": "2026-09-17T10:31:25Z",
   "attempt_count": 27
 }
