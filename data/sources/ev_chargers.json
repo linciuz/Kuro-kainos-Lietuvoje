@@ -1,21 +1,21 @@
 {
-  "generated": "2026-09-17T10:26:36Z",
+  "generated": "2026-09-17T17:45:18Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 2109,
+  "count": 2110,
   "ocpi_count": 2035,
   "with_price": 1996,
   "source_health": {
     "ocpi": {
       "live": true,
-      "last_success_utc": "2026-09-17T10:26:36Z"
+      "last_success_utc": "2026-09-17T17:45:18Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-09-17T10:26:36Z"
+      "last_success_utc": "2026-09-17T17:45:18Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-09-17T10:26:36Z"
+      "last_success_utc": "2026-09-17T17:45:18Z"
     }
   },
   "chargers": [
@@ -21920,7 +21920,7 @@
       "city": "Klaipėda",
       "power_kw": 250.0,
       "price": 0.18,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "14423",
       "source": "vialietuva-ocpi"
     },
@@ -23076,7 +23076,7 @@
       "address": "Vėtrungių g. 354, Nida, 93132 Neringos sav.,",
       "city": "Nida",
       "power_kw": 22.0,
-      "price": 0.39,
+      "price": 0.34,
       "sockets": 3,
       "ocpi_id": "15407",
       "source": "vialietuva-ocpi"
@@ -23128,7 +23128,7 @@
       "address": "Respublikos g. 9A, Rokiškis, 42118 Rokiškio r",
       "city": "Rokiškis",
       "power_kw": 22.0,
-      "price": 0.41,
+      "price": 0.36,
       "sockets": 2,
       "ocpi_id": "15411",
       "source": "vialietuva-ocpi"
@@ -27361,6 +27361,19 @@
     {
       "lat": 55.531711,
       "lon": 21.116553,
+      "name": "Įkrovimo stotelė",
+      "operator": "",
+      "address": "",
+      "city": "",
+      "power_kw": null,
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
+    },
+    {
+      "lat": 54.672643,
+      "lon": 25.235712,
       "name": "Įkrovimo stotelė",
       "operator": "",
       "address": "",
