@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-17T17:45:39Z",
+ "generated_utc": "2026-09-17T22:01:34Z",
  "price_date": "2026-09-17",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -122,7 +122,7 @@
    "petrol95": 1.9,
    "diesel": 2.21,
    "lpg": 0.79,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
@@ -199,7 +199,7 @@
    "petrol95": 1.91,
    "diesel": 2.19,
    "lpg": null,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -210,7 +210,7 @@
    "petrol95": 1.91,
    "diesel": 2.19,
    "lpg": 0.8,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -1794,7 +1794,7 @@
    "petrol95": 1.9,
    "diesel": 2.18,
    "lpg": 0.79,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2157,7 +2157,7 @@
    "petrol95": 1.92,
    "diesel": 2.23,
    "lpg": 0.8,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -2850,7 +2850,7 @@
    "petrol95": 1.89,
    "diesel": 2.18,
    "lpg": 0.78,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3378,7 +3378,7 @@
    "petrol95": 1.92,
    "diesel": 2.2,
    "lpg": 0.79,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -4566,7 +4566,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -4577,7 +4577,7 @@
    "petrol95": 1.9,
    "diesel": 2.19,
    "lpg": null,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4709,7 +4709,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.8,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5479,7 +5479,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5490,7 +5490,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -6711,7 +6711,7 @@
    "petrol95": 1.92,
    "diesel": 2.2,
    "lpg": 0.79,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7107,7 +7107,7 @@
    "petrol95": 1.91,
    "diesel": 2.2,
    "lpg": 0.79,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7118,7 +7118,7 @@
    "petrol95": 1.91,
    "diesel": 2.2,
    "lpg": null,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7602,7 +7602,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7613,7 +7613,7 @@
    "petrol95": 1.92,
    "diesel": 2.24,
    "lpg": 0.78,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7877,7 +7877,7 @@
    "petrol95": 1.94,
    "diesel": 2.24,
    "lpg": 0.78,
-   "price_updated": "2026-09-17T13:26:45+03:00"
+   "price_updated": "2026-09-17T20:45:26+03:00"
   },
   {
    "network": "UAB Viada LT",
