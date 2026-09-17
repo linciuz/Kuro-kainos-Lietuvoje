@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-17T07:46:25Z",
+ "generated_utc": "2026-09-17T08:23:04Z",
  "price_date": "2026-09-17",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.849,
    "avg": 1.944,
    "max": 2.039,
-   "count": 705
+   "count": 706
   },
   "diesel": {
    "min": 2.113,
    "avg": 2.23,
    "max": 2.34,
-   "count": 707
+   "count": 708
   },
   "lpg": {
    "min": 0.69,
@@ -56,7 +56,7 @@
    "municipality": "Tauragės r. sav."
   }
  },
- "count": 732,
+ "count": 733,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4919,6 +4919,17 @@
    "diesel": 2.21,
    "lpg": null,
    "price_updated": "2026-09-17T10:30:03+03:00"
+  },
+  {
+   "network": "Lašų žemės ūkio bendrovė",
+   "address": "Vytėnai, Vytėnų vs 9, 42255",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.8574667,
+   "lon": 25.7336514,
+   "petrol95": 1.9,
+   "diesel": 2.15,
+   "lpg": null,
+   "price_updated": "2026-09-17T11:03:09+03:00"
   },
   {
    "network": "UAB Alauša",
