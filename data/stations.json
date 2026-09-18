@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-18T07:31:01+00:00Z",
+    "resolved_utc": "2026-09-18T08:15:58+00:00Z",
     "winner_counts": {
-      "portal": 759,
-      "null": 8
+      "portal": 762,
+      "null": 5
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-09-18",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-18T07:31:01+00:00Z"
+        "fetched_utc": "2026-09-18T08:15:57+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-18T07:31:01+00:00Z"
+        "fetched_utc": "2026-09-18T08:15:58+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.81,
       "avg": 1.939,
       "max": 2.039,
-      "count": 732
+      "count": 735
     },
     "diesel": {
       "min": 2.13,
       "avg": 2.241,
       "max": 2.349,
-      "count": 734
+      "count": 737
     },
     "lpg": {
       "min": 0.69,
       "avg": 0.818,
       "max": 0.979,
-      "count": 596
+      "count": 599
     }
   },
   "stations": [
@@ -4730,9 +4730,13 @@
       "address": "Seirijai, Algirdo g. 35A, 67227",
       "municipality": "Lazdijų r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.94,
+      "diesel": 2.25,
+      "lpg": 0.82,
+      "price_updated": "2026-09-18T11:01:46+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:01",
       "lat": 54.239474,
       "lon": 23.82318,
       "approx": false,
@@ -4743,9 +4747,13 @@
       "address": "Kalvelių k., Lazdijų pl. 29, 67333",
       "municipality": "Lazdijų r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.94,
+      "diesel": 2.25,
+      "lpg": 0.82,
+      "price_updated": "2026-09-18T11:01:46+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:01",
       "lat": 54.106116,
       "lon": 23.673795,
       "approx": false,
@@ -8188,9 +8196,13 @@
       "address": "Gulbiniškių k. 7, 70481",
       "municipality": "Vilkaviškio r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.94,
+      "diesel": 2.25,
+      "lpg": 0.82,
+      "price_updated": "2026-09-18T11:01:46+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:01",
       "lat": 54.712026,
       "lon": 23.207954,
       "approx": false,

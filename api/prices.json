@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-18T07:31:17Z",
+ "generated_utc": "2026-09-18T08:16:15Z",
  "price_date": "2026-09-18",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.81,
    "avg": 1.939,
    "max": 2.039,
-   "count": 732
+   "count": 735
   },
   "diesel": {
    "min": 2.13,
    "avg": 2.241,
    "max": 2.349,
-   "count": 734
+   "count": 737
   },
   "lpg": {
    "min": 0.69,
    "avg": 0.818,
    "max": 0.979,
-   "count": 596
+   "count": 599
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Tauragės r. sav."
   }
  },
- "count": 759,
+ "count": 762,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -3491,6 +3491,28 @@
    "price_updated": "2026-09-18T09:55:17+03:00"
   },
   {
+   "network": "UAB Melkasta",
+   "address": "Kalvelių k., Lazdijų pl. 29, 67333",
+   "municipality": "Lazdijų r. sav.",
+   "lat": 54.106116,
+   "lon": 23.673795,
+   "petrol95": 1.94,
+   "diesel": 2.25,
+   "lpg": 0.82,
+   "price_updated": "2026-09-18T11:01:46+03:00"
+  },
+  {
+   "network": "UAB Melkasta",
+   "address": "Seirijai, Algirdo g. 35A, 67227",
+   "municipality": "Lazdijų r. sav.",
+   "lat": 54.239474,
+   "lon": 23.82318,
+   "petrol95": 1.94,
+   "diesel": 2.25,
+   "lpg": 0.82,
+   "price_updated": "2026-09-18T11:01:46+03:00"
+  },
+  {
    "network": "UAB Saurida",
    "address": "Panarvės k., 67168",
    "municipality": "Lazdijų r. sav.",
@@ -5997,6 +6019,17 @@
    "diesel": 2.179,
    "lpg": 0.77,
    "price_updated": "2026-09-18T10:30:02+03:00"
+  },
+  {
+   "network": "UAB Melkasta",
+   "address": "Gulbiniškių k. 7, 70481",
+   "municipality": "Vilkaviškio r. sav.",
+   "lat": 54.712026,
+   "lon": 23.207954,
+   "petrol95": 1.94,
+   "diesel": 2.25,
+   "lpg": 0.82,
+   "price_updated": "2026-09-18T11:01:46+03:00"
   },
   {
    "network": "UAB Osijos dujos",
