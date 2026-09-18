@@ -1,21 +1,21 @@
 {
-  "generated": "2026-09-17T17:45:18Z",
+  "generated": "2026-09-18T10:03:58Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 2110,
-  "ocpi_count": 2035,
-  "with_price": 1996,
+  "count": 2105,
+  "ocpi_count": 2030,
+  "with_price": 1991,
   "source_health": {
     "ocpi": {
       "live": true,
-      "last_success_utc": "2026-09-17T17:45:18Z"
+      "last_success_utc": "2026-09-18T10:03:58Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-09-17T17:45:18Z"
+      "last_success_utc": "2026-09-18T10:03:58Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-09-17T17:45:18Z"
+      "last_success_utc": "2026-09-18T10:03:58Z"
     }
   },
   "chargers": [
@@ -199,19 +199,6 @@
       "price": 0.23,
       "sockets": 4,
       "ocpi_id": "276",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 55.745173,
-      "lon": 24.371571,
-      "name": "Pervaža Hotel | Inbalance grid",
-      "operator": "In Balance grid, UAB",
-      "address": "Smėlynės str. 112",
-      "city": "Panevėžys",
-      "power_kw": 22.0,
-      "price": 0.23,
-      "sockets": 4,
-      "ocpi_id": "277",
       "source": "vialietuva-ocpi"
     },
     {
@@ -2719,7 +2706,7 @@
       "city": "Viliošiai",
       "power_kw": 22.0,
       "price": 0.248,
-      "sockets": 6,
+      "sockets": 1,
       "ocpi_id": "1921",
       "source": "vialietuva-ocpi"
     },
@@ -3460,7 +3447,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.248,
-      "sockets": 10,
+      "sockets": 8,
       "ocpi_id": "2615",
       "source": "vialietuva-ocpi"
     },
@@ -3486,7 +3473,7 @@
       "city": "Vilnius",
       "power_kw": 22.0,
       "price": 0.248,
-      "sockets": 8,
+      "sockets": 3,
       "ocpi_id": "2617",
       "source": "vialietuva-ocpi"
     },
@@ -3894,19 +3881,6 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 55.979437,
-      "lon": 22.261719,
-      "name": "Elmega Luokės g. 46, Telšiai",
-      "operator": "Enefit, UAB",
-      "address": "Luokės g. 46",
-      "city": "Telšiai",
-      "power_kw": 47.0,
-      "price": 0.289,
-      "sockets": 2,
-      "ocpi_id": "2669",
-      "source": "vialietuva-ocpi"
-    },
-    {
       "lat": 54.646103,
       "lon": 25.05196,
       "name": "Norfa XL Klevų al. 4, Lentvaris",
@@ -4188,7 +4162,7 @@
       "city": "Kelmė",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "2698",
       "source": "vialietuva-ocpi"
     },
@@ -4253,7 +4227,7 @@
       "city": "Tauragė",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "2703",
       "source": "vialietuva-ocpi"
     },
@@ -4747,7 +4721,7 @@
       "city": "Jurbarkas",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "2770",
       "source": "vialietuva-ocpi"
     },
@@ -5969,7 +5943,7 @@
       "city": "Šakiai",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "2881",
       "source": "vialietuva-ocpi"
     },
@@ -6437,7 +6411,7 @@
       "city": "Kaišiadorys",
       "power_kw": 47.0,
       "price": 0.248,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "2920",
       "source": "vialietuva-ocpi"
     },
@@ -6671,7 +6645,7 @@
       "city": "Marijampolė",
       "power_kw": 22.0,
       "price": 0.248,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "2938",
       "source": "vialietuva-ocpi"
     },
@@ -6710,7 +6684,7 @@
       "city": "Zarasai",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 6,
+      "sockets": 5,
       "ocpi_id": "2941",
       "source": "vialietuva-ocpi"
     },
@@ -6905,7 +6879,7 @@
       "city": "Lazdijai",
       "power_kw": 22.0,
       "price": 0.248,
-      "sockets": 6,
+      "sockets": 3,
       "ocpi_id": "2991",
       "source": "vialietuva-ocpi"
     },
@@ -7345,9 +7319,9 @@
       "operator": "Enefit, UAB",
       "address": "Dariaus ir Girėno g. 46",
       "city": "Skuodas",
-      "power_kw": 47.0,
-      "price": 0.289,
-      "sockets": 4,
+      "power_kw": 22.0,
+      "price": 0.248,
+      "sockets": 2,
       "ocpi_id": "3064",
       "source": "vialietuva-ocpi"
     },
@@ -7386,7 +7360,7 @@
       "city": "Lazdijai",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "3067",
       "source": "vialietuva-ocpi"
     },
@@ -7412,7 +7386,7 @@
       "city": "Ziniūnai, Joniškio sen.",
       "power_kw": 240.0,
       "price": 0.405,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "3069",
       "source": "vialietuva-ocpi"
     },
@@ -7516,7 +7490,7 @@
       "city": "Švenčionėliai",
       "power_kw": 47.0,
       "price": 0.289,
-      "sockets": 4,
+      "sockets": 2,
       "ocpi_id": "3077",
       "source": "vialietuva-ocpi"
     },
@@ -7932,7 +7906,7 @@
       "city": "Kupiškis",
       "power_kw": 40.0,
       "price": 0.248,
-      "sockets": 4,
+      "sockets": 3,
       "ocpi_id": "3118",
       "source": "vialietuva-ocpi"
     },
@@ -13813,19 +13787,6 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.684259,
-      "lon": 25.266594,
-      "name": "M. Valančiaus g. 4 1 | Vilniaus apšvietimas | Inbalance grid",
-      "operator": "In Balance grid, UAB",
-      "address": "M. Valančiaus g. 4",
-      "city": "Vilnius",
-      "power_kw": 4.0,
-      "price": 0.24,
-      "sockets": 1,
-      "ocpi_id": "3893",
-      "source": "vialietuva-ocpi"
-    },
-    {
       "lat": 54.693333,
       "lon": 25.267589,
       "name": "Mečetės g. 4 | Vilniaus apšvietimas | Inbalance grid",
@@ -17427,19 +17388,6 @@
       "source": "vialietuva-ocpi"
     },
     {
-      "lat": 54.732943,
-      "lon": 25.260245,
-      "name": "Didlaukio g. 65 (74 atrama)  | Vilniaus apšvietimas | Inbalance grid",
-      "operator": "In Balance grid, UAB",
-      "address": "Didlaukio g. 65",
-      "city": "Vilnius",
-      "power_kw": 4.0,
-      "price": 0.24,
-      "sockets": 1,
-      "ocpi_id": "4192",
-      "source": "vialietuva-ocpi"
-    },
-    {
       "lat": 54.731458,
       "lon": 25.260889,
       "name": "Didlaukio g. 59 (68 atrama)  | Vilniaus apšvietimas | Inbalance grid",
@@ -17528,19 +17476,6 @@
       "price": 0.24,
       "sockets": 1,
       "ocpi_id": "4199",
-      "source": "vialietuva-ocpi"
-    },
-    {
-      "lat": 54.731731,
-      "lon": 25.260842,
-      "name": "Didlaukio g. 61 (69 atrama) | Vilniaus apšvietimas | Inbalance grid",
-      "operator": "In Balance grid, UAB",
-      "address": "Didlaukio g. 61",
-      "city": "Vilnius",
-      "power_kw": 4.0,
-      "price": 0.24,
-      "sockets": 1,
-      "ocpi_id": "4200",
       "source": "vialietuva-ocpi"
     },
     {

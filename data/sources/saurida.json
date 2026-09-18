@@ -3,11 +3,11 @@
  "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
  "scope": "per_station",
  "role": "independent cross-check against LEA — NOT published to the app",
- "fetched": "2026-09-17T17:45:26Z",
+ "fetched": "2026-09-18T10:04:08Z",
  "stations": 34,
  "summary": {
   "diesel": {
-   "min": 2.17,
+   "min": 2.16,
    "max": 2.24,
    "count": 31,
    "median": 2.2
@@ -16,7 +16,7 @@
    "min": 1.88,
    "max": 1.96,
    "count": 31,
-   "median": 1.92
+   "median": 1.91
   },
   "lpg": {
    "min": 0.76,
@@ -26,6 +26,12 @@
   }
  },
  "prices": [
+  {
+   "name": "Velžiai",
+   "diesel": 2.16,
+   "petrol95": 1.9,
+   "lpg": 0.78
+  },
   {
    "name": "Kušliškiai",
    "diesel": 2.17,
@@ -63,12 +69,6 @@
    "lpg": 0.79
   },
   {
-   "name": "Velžiai",
-   "diesel": 2.18,
-   "petrol95": 1.92,
-   "lpg": 0.78
-  },
-  {
    "name": "Visaginas",
    "diesel": 2.22,
    "petrol95": 1.94,
@@ -88,14 +88,14 @@
   },
   {
    "name": "Ukmergė, Vilniaus g.",
-   "diesel": 2.22,
-   "petrol95": 1.92,
+   "diesel": 2.2,
+   "petrol95": 1.9,
    "lpg": 0.78
   },
   {
    "name": "Ukmergė, Kareivinių g.",
    "diesel": 2.22,
-   "petrol95": 1.92,
+   "petrol95": 1.9,
    "lpg": 0.78
   },
   {
@@ -142,7 +142,7 @@
   },
   {
    "name": "Pašakarniai",
-   "diesel": 2.21,
+   "diesel": 2.19,
    "petrol95": 1.9,
    "lpg": 0.79
   },
@@ -154,7 +154,7 @@
   },
   {
    "name": "N.Akmenė",
-   "diesel": 2.21,
+   "diesel": 2.19,
    "petrol95": 1.9,
    "lpg": 0.79
   },
@@ -187,8 +187,8 @@
   },
   {
    "name": "Babtai",
-   "diesel": 2.23,
-   "petrol95": 1.92,
+   "diesel": 2.21,
+   "petrol95": 1.9,
    "lpg": 0.8
   },
   {
@@ -205,12 +205,12 @@
   },
   {
    "name": "Alytus, Miškininkų g.",
-   "diesel": 2.19,
-   "petrol95": 1.91
+   "diesel": 2.17,
+   "petrol95": 1.88
   },
   {
    "name": "Akmenė",
-   "diesel": 2.21,
+   "diesel": 2.19,
    "petrol95": 1.92,
    "lpg": 0.79
   },
