@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-18T10:04:22Z",
+ "generated_utc": "2026-09-18T10:16:31Z",
  "price_date": "2026-09-18",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -120,9 +120,9 @@
    "lat": 56.298148,
    "lon": 22.885039,
    "petrol95": 1.9,
-   "diesel": 2.21,
+   "diesel": 2.19,
    "lpg": 0.79,
-   "price_updated": "2026-09-18T09:31:28+03:00"
+   "price_updated": "2026-09-18T13:04:08+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -2264,10 +2264,10 @@
    "municipality": "Kauno r. sav.",
    "lat": 54.956377,
    "lon": 23.905112,
-   "petrol95": 1.91,
-   "diesel": 2.2,
+   "petrol95": 1.95,
+   "diesel": 2.24,
    "lpg": 0.8,
-   "price_updated": "2026-09-18T09:31:28+03:00"
+   "price_updated": "2026-09-18T13:04:08+03:00"
   },
   {
    "network": "UAB Skulas",
