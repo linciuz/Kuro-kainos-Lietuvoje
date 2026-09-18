@@ -1,21 +1,21 @@
 {
-  "generated": "2026-09-18T10:03:58Z",
+  "generated": "2026-09-18T17:15:15Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
-  "count": 2105,
+  "count": 2104,
   "ocpi_count": 2030,
   "with_price": 1991,
   "source_health": {
     "ocpi": {
       "live": true,
-      "last_success_utc": "2026-09-18T10:03:58Z"
+      "last_success_utc": "2026-09-18T17:15:15Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-09-18T10:03:58Z"
+      "last_success_utc": "2026-09-18T17:15:15Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-09-18T10:03:58Z"
+      "last_success_utc": "2026-09-18T17:15:15Z"
     }
   },
   "chargers": [
@@ -23011,7 +23011,7 @@
       "address": "Vėtrungių g. 354, Nida, 93132 Neringos sav.,",
       "city": "Nida",
       "power_kw": 22.0,
-      "price": 0.34,
+      "price": 0.17,
       "sockets": 3,
       "ocpi_id": "15407",
       "source": "vialietuva-ocpi"
@@ -23063,7 +23063,7 @@
       "address": "Respublikos g. 9A, Rokiškis, 42118 Rokiškio r",
       "city": "Rokiškis",
       "power_kw": 22.0,
-      "price": 0.36,
+      "price": 0.18,
       "sockets": 2,
       "ocpi_id": "15411",
       "source": "vialietuva-ocpi"
@@ -26709,6 +26709,19 @@
       "source": "osm"
     },
     {
+      "lat": 54.709525,
+      "lon": 25.226856,
+      "name": "Ignitis ON",
+      "operator": "Ignitis ON",
+      "address": "",
+      "city": "",
+      "power_kw": 50.0,
+      "price": null,
+      "sockets": 3,
+      "ocpi_id": null,
+      "source": "osm"
+    },
+    {
       "lat": 54.946215,
       "lon": 24.051814,
       "name": "Įkrovimo stotelė",
@@ -26976,6 +26989,19 @@
       "address": "",
       "city": "",
       "power_kw": null,
+      "price": null,
+      "sockets": null,
+      "ocpi_id": null,
+      "source": "osm"
+    },
+    {
+      "lat": 55.909005,
+      "lon": 21.069149,
+      "name": "Elinta Charge",
+      "operator": "Elinta Charge",
+      "address": "",
+      "city": "",
+      "power_kw": 50.0,
       "price": null,
       "sockets": null,
       "ocpi_id": null,
@@ -27270,45 +27296,6 @@
     {
       "lat": 54.755891,
       "lon": 25.286267,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "address": "",
-      "city": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null,
-      "ocpi_id": null,
-      "source": "osm"
-    },
-    {
-      "lat": 54.692954,
-      "lon": 25.399084,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "address": "",
-      "city": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null,
-      "ocpi_id": null,
-      "source": "osm"
-    },
-    {
-      "lat": 55.531711,
-      "lon": 21.116553,
-      "name": "Įkrovimo stotelė",
-      "operator": "",
-      "address": "",
-      "city": "",
-      "power_kw": null,
-      "price": null,
-      "sockets": null,
-      "ocpi_id": null,
-      "source": "osm"
-    },
-    {
-      "lat": 54.672643,
-      "lon": 25.235712,
       "name": "Įkrovimo stotelė",
       "operator": "",
       "address": "",
