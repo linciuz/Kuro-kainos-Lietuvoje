@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-18T09:16:47Z",
+ "generated_utc": "2026-09-18T09:31:21Z",
  "price_date": "2026-09-18",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -769,9 +769,9 @@
    "lat": 55.137949,
    "lon": 24.193271,
    "petrol95": 1.95,
-   "diesel": 2.21,
-   "lpg": 0.84,
-   "price_updated": "2026-09-18T10:30:03+03:00"
+   "diesel": 2.26,
+   "lpg": 0.85,
+   "price_updated": "2026-09-18T12:21:25+03:00"
   },
   {
    "network": "UAB Žibalas",
