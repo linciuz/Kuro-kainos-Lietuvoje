@@ -85,7 +85,7 @@ UAB Baltic Petroleum,"Triliškių k., Kauno pl. 5, 56179",Kaišiadorių r. sav.,
 UAB Emsi,"Kaišiadorys, Paukštininkų g. 4a, 56160",Kaišiadorių r. sav.,54.864351,24.436539,1.899,2.199,0.79,2026-09-21T08:58:54+03:00,2026-09-21
 UAB Eniris,"Bačkonių k., Pastrėvio g. 1A, 56240",Kaišiadorių r. sav.,54.802507,24.502157,1.909,2.179,0.76,2026-09-21T09:52:46+03:00,2026-09-21
 UAB Saurida,"Rumšiškės, Lekavičiaus g. 71, 56337",Kaišiadorių r. sav.,54.87185,24.213203,1.96,2.24,0.8,2026-09-21T10:30:03+03:00,2026-09-21
-UAB Topgas,"Kaišiadorys, Paukštininkų g. 13, 56161",Kaišiadorių r. sav.,54.865105,24.434153,,,0.75,2026-09-21T10:30:03+03:00,2026-09-21
+UAB Topgas,"Kaišiadorys, Paukštininkų g. 13, 56161",Kaišiadorių r. sav.,54.865105,24.434153,,,0.77,2026-09-21T11:34:47+03:00,2026-09-21
 UAB Viada LT,"Kaišiadorys, Gedimino g. 135, 56173",Kaišiadorių r. sav.,54.855237,24.441801,1.999,2.299,0.899,2026-09-21T09:44:34+03:00,2026-09-21
 UAB Alauša,"Salaperaugio k., Europos g. 17, 69286",Kalvarijos sav.,54.32026,23.140098,1.939,2.219,0.839,2026-09-21T09:39:31+03:00,2026-09-21
 UAB Baltic Petroleum,"Pasiekų k., Europos g. 12, 69270",Kalvarijos sav.,54.322374,23.145167,1.919,2.229,0.799,2026-09-21T09:46:10+03:00,2026-09-21
@@ -287,7 +287,7 @@ UAB Baltic Petroleum,"Noriūnų k., Parko g. 3A, 40395",Kupiškio r. sav.,55.796
 UAB Narjanta,"Aleksandrijos k., Kikonių g. 10, 40335",Kupiškio r. sav.,55.834253,25.009325,1.999,2.299,0.799,2026-09-21T09:24:49+03:00,2026-09-21
 UAB Narjanta,"Dvariškių vs. 2, 40402",Kupiškio r. sav.,55.773414,24.754327,1.899,2.269,0.799,2026-09-21T09:24:49+03:00,2026-09-21
 UAB Stateta,"Kupiškis, Panevėžio g. 9, 40134",Kupiškio r. sav.,55.826051,24.979937,1.889,2.189,0.799,2026-09-21T10:02:14+03:00,2026-09-21
-UAB Topgas,"Slavinčiškis, Slavinčiškio g. 18, 40333",Kupiškio r. sav.,55.832431,25.020078,,,0.73,2026-09-21T10:30:03+03:00,2026-09-21
+UAB Topgas,"Slavinčiškis, Slavinčiškio g. 18, 40333",Kupiškio r. sav.,55.832431,25.020078,,,0.76,2026-09-21T11:34:47+03:00,2026-09-21
 UAB Velseka,"Kupiškis, Panevėžio g. 5, 40134",Kupiškio r. sav.,55.827171,24.985997,1.889,2.189,0.729,2026-09-21T10:15:16+03:00,2026-09-21
 UAB Viada LT,"Kerelių k. 1A, 40473",Kupiškio r. sav.,55.856593,25.173694,1.999,2.299,0.829,2026-09-21T09:44:36+03:00,2026-09-21
 UAB Viada LT,"Kupiškis, Pergalės g. 15, 40109",Kupiškio r. sav.,55.844616,24.979101,1.999,2.299,0.829,2026-09-21T09:44:36+03:00,2026-09-21
@@ -738,6 +738,7 @@ UAB Madalva,"Gineikių k., 75445",Šilalės r. sav.,55.541885,22.491621,,,0.75,2
 UAB Neste Lietuva,"Katyčių k., 75493",Šilalės r. sav.,55.5212,22.36586,1.909,2.219,,2026-09-21T08:32:05+03:00,2026-09-21
 UAB Saurida,"Šilalė, Rytinio kelio g. 19, 75133",Šilalės r. sav.,55.49185,22.199277,1.94,2.24,0.78,2026-09-21T10:30:03+03:00,2026-09-21
 UAB Viada LT,"Kuodaičių k., 75101",Šilalės r. sav.,55.5687,22.177633,1.999,2.299,0.899,2026-09-21T09:44:39+03:00,2026-09-21
+IĮ V.Marcinkevičiaus,"Pavilnučio k., Bažnyčios g. 7, 99392",Šilutės r. sav.,55.513817,21.609833,1.98,2.34,0.76,2026-09-21T11:44:56+03:00,2026-09-21
 UAB Andopas,"Šilutė, Ramučių g. 43, 99150",Šilutės r. sav.,55.358829,21.5034,1.93,2.21,0.78,2026-09-21T09:16:08+03:00,2026-09-21
 UAB Baltic Petroleum,"Šilutė, Klaipėdos g. 4A, 99116",Šilutės r. sav.,55.352837,21.462853,1.899,2.199,0.789,2026-09-21T09:46:08+03:00,2026-09-21
 UAB Circle K Lietuva,"Šilutė, Cintjoniškių g. 15, 99116",Šilutės r. sav.,55.350235,21.47432,1.984,2.284,0.829,2026-09-21T09:51:56+03:00,2026-09-21
