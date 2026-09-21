@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-21T11:07:26Z",
+ "generated_utc": "2026-09-21T11:16:25Z",
  "price_date": "2026-09-21",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -2264,10 +2264,10 @@
    "municipality": "Kauno r. sav.",
    "lat": 54.956377,
    "lon": 23.905112,
-   "petrol95": 1.91,
-   "diesel": 2.2,
+   "petrol95": 1.95,
+   "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-09-21T11:51:46+03:00"
+   "price_updated": "2026-09-21T14:07:14+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -5719,9 +5719,9 @@
    "lat": 55.258993,
    "lon": 24.790387,
    "petrol95": 1.89,
-   "diesel": 2.21,
+   "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-21T11:51:46+03:00"
+   "price_updated": "2026-09-21T14:07:14+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7457,9 +7457,9 @@
    "lat": 55.597425,
    "lon": 26.403381,
    "petrol95": 1.94,
-   "diesel": 2.2,
+   "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-21T11:51:46+03:00"
+   "price_updated": "2026-09-21T14:07:14+03:00"
   },
   {
    "network": "UAB Viada LT",
