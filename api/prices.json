@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-21T15:04:45Z",
+ "generated_utc": "2026-09-21T18:20:56Z",
  "price_date": "2026-09-21",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -5674,10 +5674,10 @@
    "municipality": "Ukmergės r. sav.",
    "lat": 55.240724,
    "lon": 24.787348,
-   "petrol95": 1.98,
-   "diesel": 2.25,
-   "lpg": 0.76,
-   "price_updated": "2026-09-21T10:30:02+03:00"
+   "petrol95": 1.99,
+   "diesel": 2.29,
+   "lpg": 0.83,
+   "price_updated": "2026-09-21T19:15:27+03:00"
   },
   {
    "network": "UAB Circle K Lietuva",
