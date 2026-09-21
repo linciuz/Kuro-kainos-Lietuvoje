@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-21T09:01:01+00:00Z",
+    "resolved_utc": "2026-09-21T09:45:58+00:00Z",
     "winner_counts": {
-      "portal": 760,
-      "null": 7
+      "portal": 761,
+      "null": 6
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-09-21",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-21T09:01:00+00:00Z"
+        "fetched_utc": "2026-09-21T09:45:58+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-21T09:01:01+00:00Z"
+        "fetched_utc": "2026-09-21T09:45:58+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.829,
       "avg": 1.931,
       "max": 2.039,
-      "count": 733
+      "count": 734
     },
     "diesel": {
       "min": 2.144,
       "avg": 2.241,
       "max": 2.349,
-      "count": 735
+      "count": 736
     },
     "lpg": {
       "min": 0.69,
       "avg": 0.821,
       "max": 0.979,
-      "count": 595
+      "count": 596
     }
   },
   "stations": [
@@ -10070,9 +10070,13 @@
       "address": "Kena, Miško g. 6, 13146",
       "municipality": "Vilniaus r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 2.039,
+      "diesel": 2.299,
+      "lpg": 0.929,
+      "price_updated": "2026-09-21T12:42:39+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:42",
       "lat": 54.646057,
       "lon": 25.625138,
       "approx": false
