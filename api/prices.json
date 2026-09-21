@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-21T18:56:06Z",
+ "generated_utc": "2026-09-21T22:01:26Z",
  "price_date": "2026-09-21",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -2267,7 +2267,7 @@
    "petrol95": 1.95,
    "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-09-21T14:07:14+03:00"
+   "price_updated": "2026-09-21T21:55:50+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -5721,7 +5721,7 @@
    "petrol95": 1.89,
    "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-21T14:07:14+03:00"
+   "price_updated": "2026-09-21T21:55:50+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7459,7 +7459,7 @@
    "petrol95": 1.94,
    "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-21T14:07:14+03:00"
+   "price_updated": "2026-09-21T21:55:50+03:00"
   },
   {
    "network": "UAB Viada LT",
