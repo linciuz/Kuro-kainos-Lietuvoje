@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-18",
+ "price_date": "2026-09-21",
  "currency": "EUR",
- "stations_with_prices": 762,
+ "stations_with_prices": 759,
  "national": {
   "petrol95": {
-   "min": 1.81,
-   "avg": 1.938,
+   "min": 1.829,
+   "avg": 1.931,
    "max": 2.039,
-   "count": 735
+   "count": 732
   },
   "diesel": {
-   "min": 2.13,
-   "avg": 2.242,
+   "min": 2.144,
+   "avg": 2.241,
    "max": 2.349,
-   "count": 737
+   "count": 734
   },
   "lpg": {
    "min": 0.69,
-   "avg": 0.818,
+   "avg": 0.821,
    "max": 0.979,
-   "count": 599
+   "count": 594
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.81,
-   "network": "UAB Jozita",
-   "address": "Kelmė, V. Putvinskio g. 37, 86113",
-   "municipality": "Kelmės r. sav."
+   "price": 1.829,
+   "network": "UAB Alauša",
+   "address": "Paširvinčio k., Paširvio g. 1, 19128",
+   "municipality": "Širvintų r. sav."
   },
   "diesel": {
-   "price": 2.13,
-   "network": "UAB Jozita",
-   "address": "Kelmė, V. Putvinskio g. 37, 86113",
-   "municipality": "Kelmės r. sav."
+   "price": 2.144,
+   "network": "UAB Eniris",
+   "address": "Ruoščių k. 1, 57109",
+   "municipality": "Kėdainių r. sav."
   },
   "lpg": {
    "price": 0.69,
