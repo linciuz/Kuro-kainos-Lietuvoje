@@ -3,12 +3,13 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-22T10:20:24+00:00Z",
+    "resolved_utc": "2026-09-22T10:31:00+00:00Z",
     "winner_counts": {
-      "portal": 698,
-      "null": 68
+      "portal": 695,
+      "null": 68,
+      "saurida": 3
     },
-    "saurida_served": 0,
+    "saurida_served": 3,
     "sources": [
       {
         "source": "portal",
@@ -16,7 +17,7 @@
         "date": "2026-09-22",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-22T10:20:23+00:00Z"
+        "fetched_utc": "2026-09-22T10:30:59+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,14 +25,14 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-22T10:20:24+00:00Z"
+        "fetched_utc": "2026-09-22T10:31:00+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.859,
-      "avg": 2.02,
+      "avg": 2.021,
       "max": 2.1,
       "count": 679
     },
@@ -3127,11 +3128,11 @@
       "address": "Domeikava, Muitinės g. 2, 54359",
       "municipality": "Kauno r. sav.",
       "locality": "",
-      "petrol95": 1.91,
-      "diesel": 2.2,
+      "petrol95": 1.95,
+      "diesel": 2.24,
       "lpg": 0.79,
-      "price_updated": "2026-09-22T09:41:20+03:00",
-      "price_src": "portal",
+      "price_updated": "2026-09-22T13:21:36+03:00",
+      "price_src": "saurida",
       "lat": 54.956377,
       "lon": 23.905112,
       "approx": false
@@ -8063,10 +8064,10 @@
       "municipality": "Ukmergės r. sav.",
       "locality": "",
       "petrol95": 1.89,
-      "diesel": 2.21,
+      "diesel": 2.22,
       "lpg": 0.78,
-      "price_updated": "2026-09-22T09:41:19+03:00",
-      "price_src": "portal",
+      "price_updated": "2026-09-22T13:21:36+03:00",
+      "price_src": "saurida",
       "lat": 55.258993,
       "lon": 24.790387,
       "approx": false
@@ -10531,10 +10532,10 @@
       "municipality": "Visagino sav.",
       "locality": "",
       "petrol95": 1.94,
-      "diesel": 2.2,
+      "diesel": 2.22,
       "lpg": 0.79,
-      "price_updated": "2026-09-22T09:41:20+03:00",
-      "price_src": "portal",
+      "price_updated": "2026-09-22T13:21:36+03:00",
+      "price_src": "saurida",
       "lat": 55.597425,
       "lon": 26.403381,
       "approx": false
