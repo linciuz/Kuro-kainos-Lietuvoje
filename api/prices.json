@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-23T17:59:29Z",
+ "generated_utc": "2026-09-23T22:01:31Z",
  "price_date": "2026-09-23",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -199,7 +199,7 @@
    "petrol95": 1.88,
    "diesel": 2.22,
    "lpg": null,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -210,7 +210,7 @@
    "petrol95": 1.88,
    "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -2168,7 +2168,7 @@
    "petrol95": 1.95,
    "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2850,7 +2850,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3345,7 +3345,7 @@
    "petrol95": 1.92,
    "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7030,7 +7030,7 @@
    "petrol95": 1.91,
    "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7041,7 +7041,7 @@
    "petrol95": 1.91,
    "diesel": 2.24,
    "lpg": null,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7085,7 +7085,7 @@
    "petrol95": 1.94,
    "diesel": 2.25,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7239,7 +7239,7 @@
    "petrol95": 1.92,
    "diesel": 2.24,
    "lpg": 0.77,
-   "price_updated": "2026-09-23T13:19:06+03:00"
+   "price_updated": "2026-09-23T20:59:13+03:00"
   },
   {
    "network": "UAB Alauša",

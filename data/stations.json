@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-23T17:58:09+00:00Z",
+    "resolved_utc": "2026-09-23T22:01:08+00:00Z",
     "winner_counts": {
       "portal": 717,
       "null": 40,
@@ -17,7 +17,7 @@
         "date": "2026-09-23",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-23T17:58:08+00:00Z"
+        "fetched_utc": "2026-09-23T22:01:07+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-23T17:58:09+00:00Z"
+        "fetched_utc": "2026-09-23T22:01:08+00:00Z"
       }
     ]
   },
@@ -252,7 +252,7 @@
       "petrol95": 1.88,
       "diesel": 2.22,
       "lpg": null,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.411306,
       "lon": 24.06765,
@@ -266,7 +266,7 @@
       "petrol95": 1.88,
       "diesel": 2.22,
       "lpg": 0.79,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.423527,
       "lon": 24.020394,
@@ -3029,7 +3029,7 @@
       "petrol95": 1.95,
       "diesel": 2.24,
       "lpg": 0.79,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.956377,
       "lon": 23.905112,
@@ -4036,7 +4036,7 @@
       "petrol95": 1.92,
       "diesel": 2.22,
       "lpg": 0.78,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 55.656839,
       "lon": 21.183821,
@@ -4766,7 +4766,7 @@
       "petrol95": 1.92,
       "diesel": 2.22,
       "lpg": 0.79,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.233269,
       "lon": 23.539946,
@@ -10109,7 +10109,7 @@
       "petrol95": 1.91,
       "diesel": 2.24,
       "lpg": null,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.710674,
       "lon": 25.156488,
@@ -10123,7 +10123,7 @@
       "petrol95": 1.91,
       "diesel": 2.24,
       "lpg": 0.79,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.724842,
       "lon": 25.185979,
@@ -10180,7 +10180,7 @@
       "petrol95": 1.94,
       "diesel": 2.25,
       "lpg": 0.79,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 55.597425,
       "lon": 26.403381,
@@ -10394,7 +10394,7 @@
       "petrol95": 1.92,
       "diesel": 2.24,
       "lpg": 0.77,
-      "price_updated": "2026-09-23T13:19:06+03:00",
+      "price_updated": "2026-09-23T20:59:13+03:00",
       "price_src": "saurida",
       "lat": 54.977307,
       "lon": 23.483572,
