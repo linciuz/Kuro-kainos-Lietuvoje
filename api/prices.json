@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-23T10:19:24Z",
+ "generated_utc": "2026-09-23T10:31:10Z",
  "price_date": "2026-09-23",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -197,9 +197,9 @@
    "lat": 54.411306,
    "lon": 24.06765,
    "petrol95": 1.88,
-   "diesel": 2.24,
+   "diesel": 2.22,
    "lpg": null,
-   "price_updated": "2026-09-23T08:44:45+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -208,9 +208,9 @@
    "lat": 54.423527,
    "lon": 24.020394,
    "petrol95": 1.88,
-   "diesel": 2.24,
+   "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T08:44:45+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -2165,10 +2165,10 @@
    "municipality": "Kauno r. sav.",
    "lat": 54.956377,
    "lon": 23.905112,
-   "petrol95": 1.91,
+   "petrol95": 1.95,
    "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T08:44:46+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2848,9 +2848,9 @@
    "lat": 55.656839,
    "lon": 21.183821,
    "petrol95": 1.92,
-   "diesel": 2.23,
+   "diesel": 2.22,
    "lpg": 0.78,
-   "price_updated": "2026-09-23T08:44:45+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3343,9 +3343,9 @@
    "lat": 54.233269,
    "lon": 23.539946,
    "petrol95": 1.92,
-   "diesel": 2.24,
+   "diesel": 2.22,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T08:44:46+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7028,9 +7028,9 @@
    "lat": 54.724842,
    "lon": 25.185979,
    "petrol95": 1.91,
-   "diesel": 2.27,
+   "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T08:44:45+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7039,9 +7039,9 @@
    "lat": 54.710674,
    "lon": 25.156488,
    "petrol95": 1.91,
-   "diesel": 2.26,
+   "diesel": 2.24,
    "lpg": null,
-   "price_updated": "2026-09-23T08:44:46+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7082,10 +7082,10 @@
    "municipality": "Visagino sav.",
    "lat": 55.597425,
    "lon": 26.403381,
-   "petrol95": 1.96,
+   "petrol95": 1.94,
    "diesel": 2.25,
-   "lpg": 0.78,
-   "price_updated": "2026-09-23T08:44:45+03:00"
+   "lpg": 0.79,
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7237,9 +7237,9 @@
    "lat": 54.977307,
    "lon": 23.483572,
    "petrol95": 1.92,
-   "diesel": 2.26,
+   "diesel": 2.24,
    "lpg": 0.77,
-   "price_updated": "2026-09-23T08:44:46+03:00"
+   "price_updated": "2026-09-23T13:19:06+03:00"
   },
   {
    "network": "UAB Alauša",
