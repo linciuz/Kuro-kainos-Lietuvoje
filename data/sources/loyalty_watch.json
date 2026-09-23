@@ -1,7 +1,20 @@
 {
-  "generated": "2026-09-22T17:46:59Z",
+  "generated": "2026-09-23T10:19:11Z",
   "disclaimer": "Monitoring artifact — NOT read by the app and never shown as a price. Values are for a maintainer to review before updating the hand-set loyalty hints/notes in app.js. Some pages hide the figure in an image.",
-  "changes": [],
+  "changes": [
+    {
+      "key": "neste_card",
+      "type": "went_offline",
+      "old": true,
+      "new": false
+    },
+    {
+      "key": "neste_nuolaidadienis",
+      "type": "went_offline",
+      "old": true,
+      "new": false
+    }
+  ],
   "pages": {
     "viada_card": {
       "network": "Viada",
@@ -15,7 +28,7 @@
       ],
       "date": "2026 m. vasario 28 d.",
       "last_error": "HTTP 403",
-      "checked": "2026-09-22T17:46:53Z"
+      "checked": "2026-09-23T10:19:07Z"
     },
     "viada_weekend": {
       "network": "Viada",
@@ -28,34 +41,29 @@
       ],
       "date": null,
       "last_error": "HTTP 403",
-      "checked": "2026-09-22T17:46:53Z"
+      "checked": "2026-09-23T10:19:07Z"
     },
     "neste_card": {
       "network": "Neste",
       "url": "https://www.neste.lt/lt/neste-nuolaidu-kortele",
       "kind": "standing",
-      "available": true,
-      "http_status": 200,
-      "values": [
-        "1.5 ct/l",
-        "3.5 ct/l"
-      ],
+      "available": false,
+      "http_status": 404,
+      "values": [],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-22T17:46:54Z"
+      "checked": "2026-09-23T10:19:08Z"
     },
     "neste_nuolaidadienis": {
       "network": "Neste",
       "url": "https://www.neste.lt/lt/nuolaidadienis",
       "kind": "dynamic",
-      "available": true,
-      "http_status": 200,
-      "values": [
-        "7 ct/l"
-      ],
-      "date": "2026 m. rugsėjo 23 d.",
+      "available": false,
+      "http_status": 404,
+      "values": [],
+      "date": null,
       "last_error": null,
-      "checked": "2026-09-22T17:46:56Z"
+      "checked": "2026-09-23T10:19:08Z"
     },
     "bp_card": {
       "network": "Baltic Petroleum",
@@ -68,7 +76,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-22T17:46:57Z"
+      "checked": "2026-09-23T10:19:09Z"
     },
     "bp_bakadienis": {
       "network": "Baltic Petroleum",
@@ -79,7 +87,7 @@
       "values": [],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-22T17:46:58Z"
+      "checked": "2026-09-23T10:19:10Z"
     },
     "circlek_extra": {
       "network": "Circle K",
@@ -92,7 +100,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-22T17:46:59Z"
+      "checked": "2026-09-23T10:19:10Z"
     },
     "circlek_10ct": {
       "network": "Circle K",
@@ -105,7 +113,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-22T17:46:59Z"
+      "checked": "2026-09-23T10:19:11Z"
     },
     "viada_treciadieniai": {
       "network": "Viada",
@@ -116,7 +124,7 @@
       "values": [],
       "date": null,
       "last_error": "HTTP 403",
-      "checked": "2026-09-22T17:46:59Z"
+      "checked": "2026-09-23T10:19:11Z"
     }
   }
 }
