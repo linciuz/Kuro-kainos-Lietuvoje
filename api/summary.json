@@ -1,34 +1,34 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-22",
+ "price_date": "2026-09-23",
  "currency": "EUR",
- "stations_with_prices": 698,
+ "stations_with_prices": 725,
  "national": {
   "petrol95": {
-   "min": 1.859,
-   "avg": 2.021,
+   "min": 1.84,
+   "avg": 1.991,
    "max": 2.1,
-   "count": 679
+   "count": 698
   },
   "diesel": {
    "min": 2.15,
-   "avg": 2.325,
+   "avg": 2.297,
    "max": 2.4,
-   "count": 681
+   "count": 700
   },
   "lpg": {
    "min": 0.69,
-   "avg": 0.828,
+   "avg": 0.822,
    "max": 0.979,
-   "count": 535
+   "count": 563
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.859,
-   "network": "UAB Alauša",
-   "address": "Puskelnių k., Plytinės g. 2, 68103",
-   "municipality": "Marijampolės sav."
+   "price": 1.84,
+   "network": "UAB EU Verslas",
+   "address": "Plungė, Stoties g. 7C, 90115",
+   "municipality": "Plungės r. sav."
   },
   "diesel": {
    "price": 2.15,
