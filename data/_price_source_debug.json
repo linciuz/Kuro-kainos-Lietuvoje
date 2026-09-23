@@ -1,6 +1,29 @@
 {
- "checked_utc": "2026-09-23T11:15:50+00:00Z",
- "engine": "FAILED",
- "error": "RuntimeError: every price source failed",
- "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/Kuro-kainos-Lietuvoje/Kuro-kainos-Lietuvoje/scripts/fetch_prices.py\", line 560, in main\n    stations, file_date, engine_meta = price_engine.resolve()\n                                       ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Kuro-kainos-Lietuvoje/Kuro-kainos-Lietuvoje/scripts/price_engine.py\", line 412, in resolve\n    raise RuntimeError(\"every price source failed\")\nRuntimeError: every price source failed\n"
+ "checked_utc": "2026-09-23T11:30:53+00:00Z",
+ "engine": "ok",
+ "file_date": "2026-09-23",
+ "stations": 766,
+ "winners": {
+  "portal": 717,
+  "null": 40,
+  "saurida": 9
+ },
+ "sources": [
+  {
+   "source": "portal",
+   "ok": true,
+   "date": "2026-09-23",
+   "error": null,
+   "retired": false,
+   "fetched_utc": "2026-09-23T11:30:56+00:00Z"
+  },
+  {
+   "source": "sharepoint",
+   "ok": false,
+   "date": null,
+   "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
+   "retired": true,
+   "fetched_utc": "2026-09-23T11:30:57+00:00Z"
+  }
+ ]
 }
