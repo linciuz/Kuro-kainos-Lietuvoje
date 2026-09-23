@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-23T11:46:26Z",
+ "generated_utc": "2026-09-23T12:44:22Z",
  "price_date": "2026-09-23",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -25,7 +25,7 @@
   },
   "diesel": {
    "min": 2.15,
-   "avg": 2.297,
+   "avg": 2.296,
    "max": 2.4,
    "count": 701
   },
@@ -2649,10 +2649,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.728398,
    "lon": 21.132584,
-   "petrol95": 1.99,
-   "diesel": 2.33,
+   "petrol95": 1.98,
+   "diesel": 2.29,
    "lpg": 0.81,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:28+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2660,10 +2660,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.669656,
    "lon": 21.158613,
-   "petrol95": 1.99,
-   "diesel": 2.33,
+   "petrol95": 1.98,
+   "diesel": 2.26,
    "lpg": 0.81,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:28+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2858,10 +2858,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.582082,
    "lon": 21.285263,
-   "petrol95": 1.99,
-   "diesel": 2.33,
+   "petrol95": 1.98,
+   "diesel": 2.29,
    "lpg": 0.81,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2869,10 +2869,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.712282,
    "lon": 21.381627,
-   "petrol95": 1.99,
-   "diesel": 2.29,
+   "petrol95": 1.98,
+   "diesel": 2.26,
    "lpg": 0.77,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2880,10 +2880,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.721342,
    "lon": 21.385487,
-   "petrol95": 2.03,
-   "diesel": 2.33,
+   "petrol95": 2.02,
+   "diesel": 2.3,
    "lpg": 0.81,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2891,10 +2891,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.687241,
    "lon": 21.693525,
-   "petrol95": 1.99,
-   "diesel": 2.33,
+   "petrol95": 1.98,
+   "diesel": 2.29,
    "lpg": 0.81,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -2982,7 +2982,7 @@
    "petrol95": 2.09,
    "diesel": 2.39,
    "lpg": 0.88,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:28+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -2993,7 +2993,7 @@
    "petrol95": 2.09,
    "diesel": 2.39,
    "lpg": 0.88,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:28+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -4871,10 +4871,10 @@
    "municipality": "Rietavo sav.",
    "lat": 55.626937,
    "lon": 21.971782,
-   "petrol95": 1.99,
-   "diesel": 2.33,
+   "petrol95": 1.98,
+   "diesel": 2.29,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -4882,10 +4882,10 @@
    "municipality": "Rietavo sav.",
    "lat": 55.718446,
    "lon": 21.932212,
-   "petrol95": 1.99,
-   "diesel": 2.33,
+   "petrol95": 1.98,
+   "diesel": 2.26,
    "lpg": null,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Alauša",
@@ -7907,10 +7907,10 @@
    "municipality": "Šilutės r. sav.",
    "lat": 55.464353,
    "lon": 21.470278,
-   "petrol95": 1.99,
+   "petrol95": 1.98,
    "diesel": 2.29,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:28+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -7918,10 +7918,10 @@
    "municipality": "Šilutės r. sav.",
    "lat": 55.227536,
    "lon": 21.701884,
-   "petrol95": 1.99,
+   "petrol95": 1.98,
    "diesel": 2.29,
    "lpg": 0.79,
-   "price_updated": "2026-09-23T10:30:04+03:00"
+   "price_updated": "2026-09-23T15:15:27+03:00"
   },
   {
    "network": "UAB Viada LT",
