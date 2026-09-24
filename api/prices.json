@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-24T07:31:26Z",
+ "generated_utc": "2026-09-24T08:01:17Z",
  "price_date": "2026-09-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.81,
    "avg": 1.974,
    "max": 2.099,
-   "count": 731
+   "count": 732
   },
   "diesel": {
    "min": 2.15,
    "avg": 2.281,
    "max": 2.409,
-   "count": 732
+   "count": 733
   },
   "lpg": {
    "min": 0.7,
    "avg": 0.825,
    "max": 0.979,
-   "count": 596
+   "count": 597
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 757,
+ "count": 758,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -3918,6 +3918,17 @@
    "diesel": 2.299,
    "lpg": 0.889,
    "price_updated": "2026-09-24T09:49:32+03:00"
+  },
+  {
+   "network": "UAB Visvilas",
+   "address": "Tirkšlių k., Laukų g. 2C, 89330",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.258439,
+   "lon": 22.30945,
+   "petrol95": 1.97,
+   "diesel": 2.27,
+   "lpg": 0.8,
+   "price_updated": "2026-09-24T11:00:29+03:00"
   },
   {
    "network": "UAB Baltic Petroleum",
