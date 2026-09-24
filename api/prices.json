@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-24T08:31:17Z",
+ "generated_utc": "2026-09-24T09:01:27Z",
  "price_date": "2026-09-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.81,
    "avg": 1.974,
    "max": 2.099,
-   "count": 732
+   "count": 734
   },
   "diesel": {
    "min": 2.15,
    "avg": 2.281,
    "max": 2.409,
-   "count": 734
+   "count": 736
   },
   "lpg": {
    "min": 0.7,
    "avg": 0.825,
    "max": 0.979,
-   "count": 597
+   "count": 598
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 759,
+ "count": 761,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -871,6 +871,17 @@
    "diesel": 2.29,
    "lpg": 0.83,
    "price_updated": "2026-09-24T09:53:23+03:00"
+  },
+  {
+   "network": "UAB GM Manufacturing Lithuania",
+   "address": "Jurbarkas, Muitinės g. 34A, 74106",
+   "municipality": "Jurbarko r. sav.",
+   "lat": 55.076805,
+   "lon": 22.751839,
+   "petrol95": 2.037,
+   "diesel": 2.357,
+   "lpg": null,
+   "price_updated": "2026-09-24T11:46:17+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7537,6 +7548,17 @@
    "diesel": 2.279,
    "lpg": 0.77,
    "price_updated": "2026-09-24T09:25:56+03:00"
+  },
+  {
+   "network": "UAB GM Manufacturing Lithuania",
+   "address": "Girėnų k., Kauno g. 68, 71129",
+   "municipality": "Šakių r. sav.",
+   "lat": 54.95271,
+   "lon": 23.083272,
+   "petrol95": 2.037,
+   "diesel": 2.357,
+   "lpg": 0.907,
+   "price_updated": "2026-09-24T11:46:17+03:00"
   },
   {
    "network": "UAB Gelvybė",
