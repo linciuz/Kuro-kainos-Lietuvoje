@@ -1,14 +1,7 @@
 {
-  "generated": "2026-09-24T10:33:28Z",
+  "generated": "2026-09-24T17:59:40Z",
   "disclaimer": "Monitoring artifact — NOT read by the app and never shown as a price. Values are for a maintainer to review before updating the hand-set loyalty hints/notes in app.js. Some pages hide the figure in an image.",
-  "changes": [
-    {
-      "key": "neste_nuolaidadienis",
-      "type": "date_changed",
-      "old": "2026 m. rugsėjo 23 d.",
-      "new": "2026 m. rugsėjo 30 d."
-    }
-  ],
+  "changes": [],
   "pages": {
     "viada_card": {
       "network": "Viada",
@@ -22,7 +15,7 @@
       ],
       "date": "2026 m. vasario 28 d.",
       "last_error": "HTTP 403",
-      "checked": "2026-09-24T10:33:22Z"
+      "checked": "2026-09-24T17:59:34Z"
     },
     "viada_weekend": {
       "network": "Viada",
@@ -35,7 +28,7 @@
       ],
       "date": null,
       "last_error": "HTTP 403",
-      "checked": "2026-09-24T10:33:22Z"
+      "checked": "2026-09-24T17:59:34Z"
     },
     "neste_card": {
       "network": "Neste",
@@ -49,7 +42,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-24T10:33:25Z"
+      "checked": "2026-09-24T17:59:36Z"
     },
     "neste_nuolaidadienis": {
       "network": "Neste",
@@ -62,7 +55,7 @@
       ],
       "date": "2026 m. rugsėjo 30 d.",
       "last_error": null,
-      "checked": "2026-09-24T10:33:26Z"
+      "checked": "2026-09-24T17:59:37Z"
     },
     "bp_card": {
       "network": "Baltic Petroleum",
@@ -75,7 +68,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-24T10:33:27Z"
+      "checked": "2026-09-24T17:59:38Z"
     },
     "bp_bakadienis": {
       "network": "Baltic Petroleum",
@@ -86,7 +79,7 @@
       "values": [],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-24T10:33:27Z"
+      "checked": "2026-09-24T17:59:39Z"
     },
     "circlek_extra": {
       "network": "Circle K",
@@ -99,7 +92,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-24T10:33:28Z"
+      "checked": "2026-09-24T17:59:39Z"
     },
     "circlek_10ct": {
       "network": "Circle K",
@@ -112,7 +105,7 @@
       ],
       "date": null,
       "last_error": null,
-      "checked": "2026-09-24T10:33:28Z"
+      "checked": "2026-09-24T17:59:40Z"
     },
     "viada_treciadieniai": {
       "network": "Viada",
@@ -123,7 +116,7 @@
       "values": [],
       "date": null,
       "last_error": "HTTP 403",
-      "checked": "2026-09-24T10:33:28Z"
+      "checked": "2026-09-24T17:59:40Z"
     }
   }
 }
