@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-25T08:01:28Z",
+ "generated_utc": "2026-09-25T08:16:15Z",
  "price_date": "2026-09-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.83,
    "avg": 1.95,
    "max": 2.099,
-   "count": 728
+   "count": 729
   },
   "diesel": {
    "min": 2.14,
    "avg": 2.258,
    "max": 2.409,
-   "count": 730
+   "count": 731
   },
   "lpg": {
    "min": 0.729,
@@ -56,7 +56,7 @@
    "municipality": "Kupiškio r. sav."
   }
  },
- "count": 755,
+ "count": 756,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -7383,6 +7383,17 @@
    "diesel": 2.199,
    "lpg": 0.759,
    "price_updated": "2026-09-25T09:19:19+03:00"
+  },
+  {
+   "network": "UAB Autograndas",
+   "address": "Visaginas, Taikos pr. 47, 31217",
+   "municipality": "Visagino sav.",
+   "lat": 55.590381,
+   "lon": 26.463361,
+   "petrol95": 1.932,
+   "diesel": 2.232,
+   "lpg": null,
+   "price_updated": "2026-09-25T11:13:30+03:00"
   },
   {
    "network": "UAB Saurida",
