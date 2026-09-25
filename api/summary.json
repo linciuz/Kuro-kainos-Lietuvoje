@@ -1,46 +1,46 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-24",
+ "price_date": "2026-09-25",
  "currency": "EUR",
- "stations_with_prices": 761,
+ "stations_with_prices": 754,
  "national": {
   "petrol95": {
-   "min": 1.81,
-   "avg": 1.974,
+   "min": 1.83,
+   "avg": 1.95,
    "max": 2.099,
-   "count": 734
+   "count": 727
   },
   "diesel": {
-   "min": 2.15,
-   "avg": 2.281,
+   "min": 2.14,
+   "avg": 2.258,
    "max": 2.409,
-   "count": 736
+   "count": 729
   },
   "lpg": {
-   "min": 0.7,
-   "avg": 0.825,
+   "min": 0.729,
+   "avg": 0.827,
    "max": 0.979,
-   "count": 598
+   "count": 593
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.81,
-   "network": "UAB Baltic Petroleum",
-   "address": "Anykščiai, Mindaugo g. 23, 29141",
-   "municipality": "Anykščių r. sav."
+   "price": 1.83,
+   "network": "UAB Jozita",
+   "address": "Kelmė, V. Putvinskio g. 37, 86113",
+   "municipality": "Kelmės r. sav."
   },
   "diesel": {
-   "price": 2.15,
-   "network": "UAB Tripletas",
-   "address": "Mažeikiai, Sedos g. 16, 89233",
-   "municipality": "Mažeikių r. sav."
+   "price": 2.14,
+   "network": "UAB Jozita",
+   "address": "Kelmė, V. Putvinskio g. 37, 86113",
+   "municipality": "Kelmės r. sav."
   },
   "lpg": {
-   "price": 0.7,
-   "network": "UAB Madalva",
-   "address": "Plungė, Lentpjūvės g. 10A, 90118",
-   "municipality": "Plungės r. sav."
+   "price": 0.729,
+   "network": "UAB Velseka",
+   "address": "Kupiškis, Panevėžio g. 5, 40134",
+   "municipality": "Kupiškio r. sav."
   }
  },
  "source": "Lietuvos energetikos agentura (LEA)",
