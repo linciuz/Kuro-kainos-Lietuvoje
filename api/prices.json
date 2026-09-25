@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-25T12:01:30Z",
+ "generated_utc": "2026-09-25T12:59:29Z",
  "price_date": "2026-09-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -7401,10 +7401,10 @@
    "municipality": "Visagino sav.",
    "lat": 55.590381,
    "lon": 26.463361,
-   "petrol95": 1.932,
-   "diesel": 2.232,
+   "petrol95": 1.897,
+   "diesel": 2.197,
    "lpg": null,
-   "price_updated": "2026-09-25T11:13:30+03:00"
+   "price_updated": "2026-09-25T15:12:11+03:00"
   },
   {
    "network": "UAB Saurida",
