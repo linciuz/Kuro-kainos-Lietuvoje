@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-25T10:35:02Z",
+ "generated": "2026-09-25T18:05:07Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-25 11:28:20",
+ "api_last_updated": "2026-09-25 16:09:07",
  "count": 766,
  "with_coords": 765,
  "priced": 757,
@@ -354,7 +354,7 @@
    },
    "gas_station_id": 660,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -369,13 +369,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.829,
+    "lpg": 0.849,
     "diesel": 2.259,
-    "petrol95": 1.979
+    "petrol95": 1.959
    },
    "gas_station_id": 656,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -538,12 +538,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.279,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 731,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -702,12 +702,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 734,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -723,12 +723,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 735,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Borusta",
@@ -854,7 +854,7 @@
    },
    "gas_station_id": 729,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -875,7 +875,7 @@
    },
    "gas_station_id": 730,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -1095,12 +1095,12 @@
    ],
    "prices": {
     "lpg": 0.879,
-    "diesel": 2.329,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 728,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -1116,12 +1116,12 @@
    ],
    "prices": {
     "lpg": 0.949,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 757,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -1179,12 +1179,12 @@
    ],
    "prices": {
     "lpg": 0.869,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.359,
+    "petrol95": 2.059
    },
    "gas_station_id": 758,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -1321,13 +1321,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.849,
-    "diesel": 2.309,
+    "lpg": 0.859,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 727,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Vimijula",
@@ -1469,12 +1469,12 @@
    ],
    "prices": {
     "lpg": 0.839,
-    "diesel": 2.369,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 726,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -1818,12 +1818,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.369,
-    "petrol95": 2.059
+    "diesel": 2.339,
+    "petrol95": 1.999
    },
    "gas_station_id": 725,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -2059,7 +2059,7 @@
    },
    "gas_station_id": 769,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -2078,7 +2078,7 @@
    },
    "gas_station_id": 780,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -3412,12 +3412,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 721,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3433,12 +3433,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 762,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:51.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3454,12 +3454,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.279,
+    "diesel": 2.259,
     "petrol95": 1.959
    },
    "gas_station_id": 653,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:12.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3475,12 +3475,12 @@
    ],
    "prices": {
     "lpg": 0.879,
-    "diesel": 2.259,
-    "petrol95": 1.959
+    "diesel": 2.249,
+    "petrol95": 1.949
    },
    "gas_station_id": 661,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3494,12 +3494,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 722,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3515,12 +3515,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 724,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3536,12 +3536,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 770,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3562,7 +3562,7 @@
    },
    "gas_station_id": 716,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3578,12 +3578,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 723,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3599,12 +3599,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 736,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3620,12 +3620,12 @@
    ],
    "prices": {
     "lpg": 0.879,
-    "diesel": 2.259,
-    "petrol95": 1.959
+    "diesel": 2.249,
+    "petrol95": 1.949
    },
    "gas_station_id": 714,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3646,7 +3646,7 @@
    },
    "gas_station_id": 715,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3662,12 +3662,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.279,
-    "petrol95": 1.979
+    "diesel": 2.269,
+    "petrol95": 1.969
    },
    "gas_station_id": 657,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3688,7 +3688,7 @@
    },
    "gas_station_id": 662,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3709,7 +3709,7 @@
    },
    "gas_station_id": 717,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3730,7 +3730,7 @@
    },
    "gas_station_id": 719,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3746,12 +3746,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 718,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:52.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -3767,12 +3767,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.319,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 720,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -4162,12 +4162,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 763,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -4183,12 +4183,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.359,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 746,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -4204,12 +4204,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 771,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -4225,12 +4225,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 764,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -4246,12 +4246,12 @@
    ],
    "prices": {
     "lpg": 0.939,
-    "diesel": 2.349,
-    "petrol95": 2.039
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 712,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -4267,12 +4267,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.359,
-    "petrol95": 2.049
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 713,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:13.000000Z"
   },
   {
    "company": "UAB Regusa",
@@ -4330,12 +4330,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 747,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "IĮ Raimondo Balsio",
@@ -5058,12 +5058,12 @@
    ],
    "prices": {
     "lpg": 0.81,
-    "diesel": 2.29,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 638,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5079,12 +5079,12 @@
    ],
    "prices": {
     "lpg": 0.81,
-    "diesel": 2.26,
-    "petrol95": 1.98
+    "diesel": 2.2,
+    "petrol95": 1.92
    },
    "gas_station_id": 639,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5100,12 +5100,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 709,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5120,13 +5120,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.829,
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "lpg": 0.859,
+    "diesel": 2.249,
+    "petrol95": 1.939
    },
    "gas_station_id": 710,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5142,12 +5142,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "diesel": 2.249,
+    "petrol95": 1.939
    },
    "gas_station_id": 711,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5162,13 +5162,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.829,
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "lpg": 0.859,
+    "diesel": 2.249,
+    "petrol95": 1.939
    },
    "gas_station_id": 708,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5184,12 +5184,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 707,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -5474,12 +5474,12 @@
    ],
    "prices": {
     "lpg": 0.81,
-    "diesel": 2.29,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 634,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5495,12 +5495,12 @@
    ],
    "prices": {
     "lpg": 0.77,
-    "diesel": 2.26,
-    "petrol95": 1.98
+    "diesel": 2.2,
+    "petrol95": 1.89
    },
    "gas_station_id": 637,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5516,12 +5516,12 @@
    ],
    "prices": {
     "lpg": 0.81,
-    "diesel": 2.3,
-    "petrol95": 2.02
+    "diesel": 2.24,
+    "petrol95": 1.93
    },
    "gas_station_id": 635,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5537,12 +5537,12 @@
    ],
    "prices": {
     "lpg": 0.81,
-    "diesel": 2.29,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 636,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5563,7 +5563,7 @@
    },
    "gas_station_id": 705,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5579,12 +5579,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.389,
-    "petrol95": 2.089
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 772,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5605,7 +5605,7 @@
    },
    "gas_station_id": 706,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Vlantana",
@@ -5740,12 +5740,12 @@
    ],
    "prices": {
     "lpg": 0.88,
-    "diesel": 2.39,
-    "petrol95": 2.09
+    "diesel": 2.35,
+    "petrol95": 2.05
    },
    "gas_station_id": 642,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5761,12 +5761,12 @@
    ],
    "prices": {
     "lpg": 0.88,
-    "diesel": 2.39,
-    "petrol95": 2.09
+    "diesel": 2.35,
+    "petrol95": 2.05
    },
    "gas_station_id": 641,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5782,12 +5782,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.389,
-    "petrol95": 2.089
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 773,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5803,12 +5803,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.389,
-    "petrol95": 2.089
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 774,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -5924,13 +5924,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.729,
-    "diesel": 2.159,
+    "lpg": 0.749,
+    "diesel": 2.179,
     "petrol95": 1.849
    },
    "gas_station_id": 647,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T11:19:48.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5946,12 +5946,12 @@
    ],
    "prices": {
     "lpg": 0.829,
-    "diesel": 2.329,
-    "petrol95": 2.029
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 737,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5972,7 +5972,7 @@
    },
    "gas_station_id": 741,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "IĮ M.Augustinaičio",
@@ -6291,12 +6291,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 748,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -6312,12 +6312,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 749,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:53.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -6477,13 +6477,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.829,
+    "lpg": 0.799,
     "diesel": 2.259,
     "petrol95": 1.999
    },
    "gas_station_id": 704,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -6899,12 +6899,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.269,
-    "petrol95": 1.959
+    "diesel": 2.229,
+    "petrol95": 1.919
    },
    "gas_station_id": 1036,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -6920,12 +6920,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.269,
-    "petrol95": 1.959
+    "diesel": 2.229,
+    "petrol95": 1.919
    },
    "gas_station_id": 1037,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -7203,7 +7203,7 @@
    },
    "gas_station_id": 650,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -7224,7 +7224,7 @@
    },
    "gas_station_id": 651,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:14.000000Z"
   },
   {
    "company": "UAB Visvilas",
@@ -7322,12 +7322,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.979
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 703,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -7343,12 +7343,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.979
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 702,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -7467,12 +7467,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 701,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -7914,13 +7914,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.869,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 697,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -7935,13 +7935,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.849,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 694,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -7956,13 +7956,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.869,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 698,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -7977,13 +7977,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.849,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 695,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -7998,13 +7998,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.849,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 696,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8019,13 +8019,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.839,
+    "lpg": 0.859,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 700,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8040,13 +8040,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.869,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 699,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -8226,12 +8226,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 753,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8247,12 +8247,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 759,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8267,13 +8267,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.859,
+    "lpg": 0.879,
     "diesel": 2.289,
     "petrol95": 1.989
    },
    "gas_station_id": 693,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8287,12 +8287,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 652,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -8456,7 +8456,7 @@
    },
    "gas_station_id": 738,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8472,12 +8472,12 @@
    ],
    "prices": {
     "lpg": 0.839,
-    "diesel": 2.359,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 692,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:54.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -8673,11 +8673,11 @@
    "prices": {
     "lpg": 0.899,
     "diesel": 2.359,
-    "petrol95": 2.059
+    "petrol95": 1.999
    },
    "gas_station_id": 690,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8694,11 +8694,11 @@
    "prices": {
     "lpg": 0.899,
     "diesel": 2.359,
-    "petrol95": 2.059
+    "petrol95": 1.999
    },
    "gas_station_id": 691,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -8880,12 +8880,12 @@
    ],
    "prices": {
     "lpg": 0.95,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 760,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:15.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -8901,12 +8901,12 @@
    ],
    "prices": {
     "lpg": 0.839,
-    "diesel": 2.349,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 750,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Apsaga",
@@ -9439,12 +9439,12 @@
    ],
    "prices": {
     "lpg": 0.949,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 775,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9502,12 +9502,12 @@
    ],
    "prices": {
     "lpg": 0.79,
-    "diesel": 2.29,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 633,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -9521,12 +9521,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.26,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 632,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "Lašų žemės ūkio bendrovė",
@@ -9659,7 +9659,7 @@
    },
    "gas_station_id": 751,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -9680,7 +9680,7 @@
    },
    "gas_station_id": 754,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9759,12 +9759,12 @@
    ],
    "prices": {
     "lpg": 0.839,
-    "diesel": 2.359,
-    "petrol95": 2.059
+    "diesel": 2.299,
+    "petrol95": 1.999
    },
    "gas_station_id": 689,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -10044,7 +10044,7 @@
    },
    "gas_station_id": 654,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -10065,7 +10065,7 @@
    },
    "gas_station_id": 655,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -10311,7 +10311,7 @@
    },
    "gas_station_id": 684,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -10449,12 +10449,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 768,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -10636,12 +10636,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 777,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -10657,12 +10657,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.269,
-    "petrol95": 1.969
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 683,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -10678,12 +10678,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 778,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -10937,12 +10937,12 @@
    ],
    "prices": {
     "lpg": 0.849,
-    "diesel": 2.269,
+    "diesel": 2.259,
     "petrol95": 1.959
    },
    "gas_station_id": 680,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -10958,12 +10958,12 @@
    ],
    "prices": {
     "lpg": 0.849,
-    "diesel": 2.269,
+    "diesel": 2.259,
     "petrol95": 1.959
    },
    "gas_station_id": 681,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -10979,12 +10979,12 @@
    ],
    "prices": {
     "lpg": 0.849,
-    "diesel": 2.269,
+    "diesel": 2.259,
     "petrol95": 1.959
    },
    "gas_station_id": 682,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -11082,12 +11082,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 779,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11230,7 +11230,7 @@
    },
    "gas_station_id": 752,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Vildega",
@@ -13074,7 +13074,7 @@
    },
    "gas_station_id": 659,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13095,7 +13095,7 @@
    },
    "gas_station_id": 673,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13111,12 +13111,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 667,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13132,12 +13132,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.339,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 675,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13156,7 +13156,7 @@
    },
    "gas_station_id": 676,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13177,7 +13177,7 @@
    },
    "gas_station_id": 674,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13198,7 +13198,7 @@
    },
    "gas_station_id": 739,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13214,12 +13214,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.339,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 677,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13235,12 +13235,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.339,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 678,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13256,12 +13256,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.339,
-    "petrol95": 1.999
+    "diesel": 2.299,
+    "petrol95": 1.959
    },
    "gas_station_id": 733,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13277,12 +13277,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.339,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 679,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13303,7 +13303,7 @@
    },
    "gas_station_id": 670,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13319,12 +13319,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.339,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 671,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13340,12 +13340,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.339,
+    "diesel": 2.299,
     "petrol95": 1.999
    },
    "gas_station_id": 672,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13361,12 +13361,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.279,
-    "petrol95": 1.949
+    "diesel": 2.259,
+    "petrol95": 1.929
    },
    "gas_station_id": 666,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13382,12 +13382,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.279,
-    "petrol95": 1.979
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 740,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13406,7 +13406,7 @@
    },
    "gas_station_id": 668,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13425,7 +13425,7 @@
    },
    "gas_station_id": 669,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -13755,7 +13755,7 @@
    },
    "gas_station_id": 665,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -13790,12 +13790,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.232,
-    "petrol95": 1.932
+    "diesel": 2.197,
+    "petrol95": 1.897
    },
    "gas_station_id": 123,
    "logo_url": null,
-   "submitted_at": "2026-09-25T08:13:30.000000Z"
+   "submitted_at": "2026-09-25T12:12:11.000000Z"
   },
   {
    "company": "UAB Saurida",
@@ -13832,12 +13832,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 743,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -13853,12 +13853,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 744,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -13919,7 +13919,7 @@
    },
    "gas_station_id": 745,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:57.000000Z"
+   "submitted_at": "2026-09-25T11:55:18.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -14200,12 +14200,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 755,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -14690,12 +14690,12 @@
    ],
    "prices": {
     "lpg": 0.869,
-    "diesel": 2.279,
+    "diesel": 2.269,
     "petrol95": 1.969
    },
    "gas_station_id": 663,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -14711,12 +14711,12 @@
    ],
    "prices": {
     "lpg": 0.869,
-    "diesel": 2.279,
+    "diesel": 2.269,
     "petrol95": 1.969
    },
    "gas_station_id": 658,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -14732,12 +14732,12 @@
    ],
    "prices": {
     "lpg": 0.869,
-    "diesel": 2.279,
+    "diesel": 2.269,
     "petrol95": 1.969
    },
    "gas_station_id": 687,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -14753,12 +14753,12 @@
    ],
    "prices": {
     "lpg": 0.869,
-    "diesel": 2.279,
+    "diesel": 2.269,
     "petrol95": 1.969
    },
    "gas_station_id": 664,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -14774,12 +14774,12 @@
    ],
    "prices": {
     "lpg": 0.869,
-    "diesel": 2.289,
+    "diesel": 2.279,
     "petrol95": 1.979
    },
    "gas_station_id": 688,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -14926,7 +14926,7 @@
    },
    "gas_station_id": 742,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -14942,12 +14942,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 761,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -14963,12 +14963,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 756,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "Agroserviso kooperatyvas Pynauja",
@@ -15188,12 +15188,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 765,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "IĮ V.Marcinkevičiaus",
@@ -15373,12 +15373,12 @@
    ],
    "prices": {
     "lpg": 0.79,
-    "diesel": 2.29,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 640,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -15394,12 +15394,12 @@
    ],
    "prices": {
     "lpg": 0.79,
-    "diesel": 2.29,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.92
    },
    "gas_station_id": 631,
    "logo_url": null,
-   "submitted_at": "2026-09-25T07:30:04.000000Z"
+   "submitted_at": "2026-09-25T13:09:07.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -15420,7 +15420,7 @@
    },
    "gas_station_id": 686,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -15478,12 +15478,12 @@
    ],
    "prices": {
     "lpg": 0.859,
-    "diesel": 2.299,
-    "petrol95": 1.999
+    "diesel": 2.259,
+    "petrol95": 1.959
    },
    "gas_station_id": 685,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Naftos dujos",
@@ -15554,12 +15554,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 776,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -15575,12 +15575,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.389,
-    "petrol95": 2.039
+    "diesel": 2.339,
+    "petrol95": 1.999
    },
    "gas_station_id": 732,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -15596,12 +15596,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 767,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:55.000000Z"
+   "submitted_at": "2026-09-25T11:55:16.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -15617,12 +15617,12 @@
    ],
    "prices": {
     "lpg": 0.959,
-    "diesel": 2.399,
-    "petrol95": 2.099
+    "diesel": 2.379,
+    "petrol95": 2.079
    },
    "gas_station_id": 766,
    "logo_url": null,
-   "submitted_at": "2026-09-25T06:50:56.000000Z"
+   "submitted_at": "2026-09-25T11:55:17.000000Z"
   }
  ]
 }
