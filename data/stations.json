@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-25T08:15:53+00:00Z",
+    "resolved_utc": "2026-09-25T08:31:02+00:00Z",
     "winner_counts": {
-      "portal": 756,
-      "null": 10
+      "portal": 757,
+      "null": 9
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-09-25",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-25T08:15:53+00:00Z"
+        "fetched_utc": "2026-09-25T08:31:01+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,22 +24,22 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-25T08:15:53+00:00Z"
+        "fetched_utc": "2026-09-25T08:31:02+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.83,
-      "avg": 1.95,
+      "avg": 1.951,
       "max": 2.099,
-      "count": 729
+      "count": 730
     },
     "diesel": {
       "min": 2.14,
       "avg": 2.258,
       "max": 2.409,
-      "count": 731
+      "count": 732
     },
     "lpg": {
       "min": 0.729,
@@ -6966,9 +6966,13 @@
       "address": "Vytėnai, Vytėnų vs 9, 42255",
       "municipality": "Rokiškio r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
+      "petrol95": 2.02,
+      "diesel": 2.32,
       "lpg": null,
+      "price_updated": "2026-09-25T11:28:20+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:28",
       "lat": 55.8574667,
       "lon": 25.7336514,
       "approx": false,

@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-25T08:16:15Z",
+ "generated_utc": "2026-09-25T08:31:27Z",
  "price_date": "2026-09-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,15 +19,15 @@
  "summary": {
   "petrol95": {
    "min": 1.83,
-   "avg": 1.95,
+   "avg": 1.951,
    "max": 2.099,
-   "count": 729
+   "count": 730
   },
   "diesel": {
    "min": 2.14,
    "avg": 2.258,
    "max": 2.409,
-   "count": 731
+   "count": 732
   },
   "lpg": {
    "min": 0.729,
@@ -56,7 +56,7 @@
    "municipality": "Kupiškio r. sav."
   }
  },
- "count": 756,
+ "count": 757,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -5117,6 +5117,17 @@
    "diesel": 2.26,
    "lpg": null,
    "price_updated": "2026-09-25T10:30:04+03:00"
+  },
+  {
+   "network": "Lašų žemės ūkio bendrovė",
+   "address": "Vytėnai, Vytėnų vs 9, 42255",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.8574667,
+   "lon": 25.7336514,
+   "petrol95": 2.02,
+   "diesel": 2.32,
+   "lpg": null,
+   "price_updated": "2026-09-25T11:28:20+03:00"
   },
   {
    "network": "UAB Alauša",
