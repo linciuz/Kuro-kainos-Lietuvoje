@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-25T07:31:22Z",
+ "generated_utc": "2026-09-25T08:01:28Z",
  "price_date": "2026-09-25",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.83,
    "avg": 1.95,
    "max": 2.099,
-   "count": 727
+   "count": 728
   },
   "diesel": {
    "min": 2.14,
    "avg": 2.258,
    "max": 2.409,
-   "count": 729
+   "count": 730
   },
   "lpg": {
    "min": 0.729,
    "avg": 0.827,
    "max": 0.979,
-   "count": 593
+   "count": 594
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kupiškio r. sav."
   }
  },
- "count": 754,
+ "count": 755,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -7317,6 +7317,17 @@
    "diesel": 2.15,
    "lpg": 0.79,
    "price_updated": "2026-09-25T09:34:03+03:00"
+  },
+  {
+   "network": "UAB Kenaoil",
+   "address": "Kena, Miško g. 6, 13146",
+   "municipality": "Vilniaus r. sav.",
+   "lat": 54.646057,
+   "lon": 25.625138,
+   "petrol95": 2.099,
+   "diesel": 2.399,
+   "lpg": 0.929,
+   "price_updated": "2026-09-25T11:00:52+03:00"
   },
   {
    "network": "UAB Medelsta",
