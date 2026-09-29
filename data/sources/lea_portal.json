@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-29T11:38:17Z",
+ "generated": "2026-09-29T18:53:05Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-09-29 13:10:29",
+ "api_last_updated": "2026-09-29 18:01:47",
  "count": 766,
  "with_coords": 765,
  "priced": 753,
@@ -5615,12 +5615,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.21,
-    "petrol95": 1.91
+    "diesel": 2.2,
+    "petrol95": 1.9
    },
    "gas_station_id": 785,
    "logo_url": null,
-   "submitted_at": "2026-09-29T07:14:53.000000Z"
+   "submitted_at": "2026-09-29T15:01:47.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
