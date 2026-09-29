@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-29T11:45:48Z",
+ "generated_utc": "2026-09-29T18:18:57Z",
  "price_date": "2026-09-29",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3034,10 +3034,10 @@
    "municipality": "Klaipėdos r. sav.",
    "lat": 55.71917,
    "lon": 21.293355,
-   "petrol95": 1.91,
-   "diesel": 2.21,
+   "petrol95": 1.9,
+   "diesel": 2.2,
    "lpg": null,
-   "price_updated": "2026-09-29T10:14:53+03:00"
+   "price_updated": "2026-09-29T18:01:47+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
