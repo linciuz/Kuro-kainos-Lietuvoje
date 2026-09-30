@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-30T10:31:19Z",
+ "generated_utc": "2026-09-30T11:16:31Z",
  "price_date": "2026-09-30",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -3516,8 +3516,8 @@
    "network": "UAB Stateta",
    "address": "Kantališkių k., 69841",
    "municipality": "Marijampolės sav.",
-   "lat": 54.634451,
-   "lon": 23.436397,
+   "lat": 54.888137,
+   "lon": 23.786984,
    "petrol95": 1.839,
    "diesel": 2.159,
    "lpg": 0.799,

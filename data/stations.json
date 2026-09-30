@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-09-30T10:30:59+00:00Z",
+    "resolved_utc": "2026-09-30T11:16:12+00:00Z",
     "winner_counts": {
       "portal": 718,
       "null": 48
@@ -16,7 +16,7 @@
         "date": "2026-09-30",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-09-30T10:30:58+00:00Z"
+        "fetched_utc": "2026-09-30T11:16:11+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-09-30T10:30:59+00:00Z"
+        "fetched_utc": "2026-09-30T11:16:12+00:00Z"
       }
     ]
   },
@@ -5005,14 +5005,14 @@
     },
     {
       "network": "UAB Osijos dujos",
-      "address": "Marijampolė, Gėlių g. 25,",
+      "address": "Marijampolė, Gėlyno g. 25,",
       "municipality": "Marijampolės sav.",
       "locality": "",
       "petrol95": null,
       "diesel": null,
       "lpg": null,
-      "lat": 54.551735,
-      "lon": 23.359045,
+      "lat": 54.584074,
+      "lon": 23.360962,
       "approx": false
     },
     {
@@ -5058,10 +5058,9 @@
       "lpg": 0.799,
       "price_updated": "2026-09-30T09:48:35+03:00",
       "price_src": "portal",
-      "lat": 54.634451,
-      "lon": 23.436397,
-      "approx": false,
-      "coord_source": "lea_portal"
+      "lat": 54.888137,
+      "lon": 23.786984,
+      "approx": false
     },
     {
       "network": "UAB VIRŠI Lietuva",
@@ -11719,6 +11718,22 @@
       "no_price": true,
       "lat": 56.115276,
       "lon": 24.470681,
+      "approx": false
+    },
+    {
+      "network": "UAB Osijos dujos",
+      "address": "Gėlių g. 25, Marijampolė",
+      "municipality": "Marijampolės sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null,
+      "fuels": [
+        "lpg"
+      ],
+      "no_price": true,
+      "lat": 54.551735,
+      "lon": 23.359045,
       "approx": false
     },
     {
