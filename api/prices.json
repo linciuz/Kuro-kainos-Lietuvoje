@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-09-30T09:02:41Z",
+ "generated_utc": "2026-09-30T10:31:19Z",
  "price_date": "2026-09-30",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -2539,10 +2539,10 @@
    "municipality": "Klaipėdos m. sav.",
    "lat": 55.704145,
    "lon": 21.129605,
-   "petrol95": 1.91,
-   "diesel": 2.19,
+   "petrol95": 1.95,
+   "diesel": 2.22,
    "lpg": null,
-   "price_updated": "2026-09-30T09:26:40+03:00"
+   "price_updated": "2026-09-30T13:18:39+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
