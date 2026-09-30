@@ -1,46 +1,46 @@
 {
  "$schema_version": 1,
- "price_date": "2026-09-29",
+ "price_date": "2026-09-30",
  "currency": "EUR",
- "stations_with_prices": 753,
+ "stations_with_prices": 716,
  "national": {
   "petrol95": {
-   "min": 1.829,
-   "avg": 1.996,
+   "min": 1.789,
+   "avg": 1.974,
    "max": 2.079,
-   "count": 729
+   "count": 695
   },
   "diesel": {
-   "min": 2.14,
-   "avg": 2.296,
+   "min": 2.145,
+   "avg": 2.279,
    "max": 2.379,
-   "count": 731
+   "count": 697
   },
   "lpg": {
-   "min": 0.74,
+   "min": 0.729,
    "avg": 0.831,
    "max": 0.979,
-   "count": 589
+   "count": 554
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.829,
+   "price": 1.789,
    "network": "UAB Alauša",
-   "address": "Bajorų k., Šimonių g. 36, 29352",
-   "municipality": "Anykščių r. sav."
+   "address": "Vilnius, Šv. Stepono g. 44, 01312",
+   "municipality": "Vilniaus m. sav."
   },
   "diesel": {
-   "price": 2.14,
-   "network": "UAB Baltic Petroleum",
-   "address": "Utena, Basanavičiaus g. 1B, 28138",
+   "price": 2.145,
+   "network": "UAB Alauša",
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
    "municipality": "Utenos r. sav."
   },
   "lpg": {
-   "price": 0.74,
-   "network": "UAB Madalva",
-   "address": "Plungė, Lentpjūvės g. 10A, 90118",
-   "municipality": "Plungės r. sav."
+   "price": 0.729,
+   "network": "UAB Alauša",
+   "address": "Bajorų k., Šimonių g. 36, 29352",
+   "municipality": "Anykščių r. sav."
   }
  },
  "source": "Lietuvos energetikos agentura (LEA)",
