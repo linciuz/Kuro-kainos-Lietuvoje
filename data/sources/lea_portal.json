@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-01T11:51:58Z",
+ "generated": "2026-10-01T19:03:22Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-10-01 14:02:40",
+ "api_last_updated": "2026-10-01 16:25:59",
  "count": 766,
  "with_coords": 765,
  "priced": 753,
@@ -1372,12 +1372,12 @@
    ],
    "prices": {
     "lpg": 0.88,
-    "diesel": 2.34,
-    "petrol95": 2.04
+    "diesel": 2.35,
+    "petrol95": 2.05
    },
    "gas_station_id": 788,
    "logo_url": null,
-   "submitted_at": "2026-10-01T07:00:00.000000Z"
+   "submitted_at": "2026-10-01T13:25:59.000000Z"
   },
   {
    "company": "Sigito Rimkevičiaus komercinė įmonė",
