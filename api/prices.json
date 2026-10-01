@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-01T08:16:12Z",
+ "generated_utc": "2026-10-01T08:31:00Z",
  "price_date": "2026-10-01",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.785,
    "avg": 1.964,
    "max": 2.079,
-   "count": 725
+   "count": 726
   },
   "diesel": {
    "min": 2.165,
    "avg": 2.269,
    "max": 2.379,
-   "count": 727
+   "count": 728
   },
   "lpg": {
    "min": 0.74,
@@ -56,7 +56,7 @@
    "municipality": "Plungės r. sav."
   }
  },
- "count": 752,
+ "count": 753,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -3049,6 +3049,17 @@
    "diesel": 2.379,
    "lpg": 0.899,
    "price_updated": "2026-10-01T09:46:18+03:00"
+  },
+  {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.91,
+   "diesel": 2.22,
+   "lpg": null,
+   "price_updated": "2026-10-01T11:27:50+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
