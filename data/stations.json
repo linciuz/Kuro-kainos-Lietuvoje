@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-01T08:30:39+00:00Z",
+    "resolved_utc": "2026-10-01T09:45:31+00:00Z",
     "winner_counts": {
       "portal": 753,
       "null": 13
@@ -16,7 +16,7 @@
         "date": "2026-10-01",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-01T08:30:38+00:00Z"
+        "fetched_utc": "2026-10-01T09:45:31+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-01T08:30:39+00:00Z"
+        "fetched_utc": "2026-10-01T09:45:31+00:00Z"
       }
     ]
   },
@@ -37,7 +37,7 @@
     },
     "diesel": {
       "min": 2.165,
-      "avg": 2.269,
+      "avg": 2.268,
       "max": 2.379,
       "count": 728
     },
@@ -10256,10 +10256,12 @@
       "municipality": "Visagino sav.",
       "locality": "",
       "petrol95": 1.932,
-      "diesel": 2.232,
+      "diesel": 2.218,
       "lpg": null,
-      "price_updated": "2026-10-01T08:04:31+03:00",
+      "price_updated": "2026-10-01T12:43:03+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:43",
       "lat": 55.590381,
       "lon": 26.463361,
       "approx": false

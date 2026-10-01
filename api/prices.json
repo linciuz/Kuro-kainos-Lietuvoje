@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-01T08:31:00Z",
+ "generated_utc": "2026-10-01T09:45:48Z",
  "price_date": "2026-10-01",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -25,7 +25,7 @@
   },
   "diesel": {
    "min": 2.165,
-   "avg": 2.269,
+   "avg": 2.268,
    "max": 2.379,
    "count": 728
   },
@@ -7413,9 +7413,9 @@
    "lat": 55.590381,
    "lon": 26.463361,
    "petrol95": 1.932,
-   "diesel": 2.232,
+   "diesel": 2.218,
    "lpg": null,
-   "price_updated": "2026-10-01T08:04:31+03:00"
+   "price_updated": "2026-10-01T12:43:03+03:00"
   },
   {
    "network": "UAB Saurida",
