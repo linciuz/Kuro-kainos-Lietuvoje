@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-05T10:15:53Z",
+ "generated_utc": "2026-10-05T10:31:02Z",
  "price_date": "2026-10-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -5520,10 +5520,10 @@
    "municipality": "Telšių r. sav.",
    "lat": 55.9757,
    "lon": 22.263657,
-   "petrol95": 1.985,
-   "diesel": 2.285,
+   "petrol95": 2.015,
+   "diesel": 2.315,
    "lpg": 0.859,
-   "price_updated": "2026-10-05T09:19:50+03:00"
+   "price_updated": "2026-10-05T13:29:17+03:00"
   },
   {
    "network": "UAB Viada LT",
