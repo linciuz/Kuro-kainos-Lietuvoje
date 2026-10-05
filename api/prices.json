@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-05T12:45:32Z",
+ "generated_utc": "2026-10-05T13:57:38Z",
  "price_date": "2026-10-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,7 +19,7 @@
  "summary": {
   "petrol95": {
    "min": 1.815,
-   "avg": 1.934,
+   "avg": 1.933,
    "max": 2.05,
    "count": 729
   },
@@ -207,10 +207,10 @@
    "municipality": "Alytaus m. sav.",
    "lat": 54.411306,
    "lon": 24.06765,
-   "petrol95": 1.92,
-   "diesel": 2.21,
+   "petrol95": 1.89,
+   "diesel": 2.19,
    "lpg": null,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -218,10 +218,10 @@
    "municipality": "Alytaus m. sav.",
    "lat": 54.423527,
    "lon": 24.020394,
-   "petrol95": 1.92,
+   "petrol95": 1.89,
    "diesel": 2.19,
    "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -999,10 +999,10 @@
    "municipality": "Kaišiadorių r. sav.",
    "lat": 54.87185,
    "lon": 24.213203,
-   "petrol95": 1.96,
+   "petrol95": 1.93,
    "diesel": 2.23,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Topgas",
@@ -1133,8 +1133,8 @@
    "lon": 23.204823,
    "petrol95": 1.9,
    "diesel": 2.18,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "lpg": 0.77,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -1858,9 +1858,9 @@
    "lat": 54.923684,
    "lon": 24.000842,
    "petrol95": 1.9,
-   "diesel": 2.19,
-   "lpg": 0.76,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "diesel": 2.17,
+   "lpg": 0.78,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -1870,8 +1870,8 @@
    "lon": 24.079127,
    "petrol95": 1.92,
    "diesel": 2.2,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "lpg": 0.8,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2255,8 +2255,8 @@
    "lon": 23.806249,
    "petrol95": 1.92,
    "diesel": 2.2,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -2264,10 +2264,10 @@
    "municipality": "Kauno r. sav.",
    "lat": 54.956377,
    "lon": 23.905112,
-   "petrol95": 1.92,
-   "diesel": 2.23,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "petrol95": 1.91,
+   "diesel": 2.2,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Skulas",
@@ -2992,8 +2992,8 @@
    "lon": 21.183821,
    "petrol95": 1.91,
    "diesel": 2.18,
-   "lpg": 0.76,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "lpg": 0.78,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Trevena",
@@ -3507,10 +3507,10 @@
    "municipality": "Lazdijų r. sav.",
    "lat": 54.233269,
    "lon": 23.539946,
-   "petrol95": 1.91,
-   "diesel": 2.22,
-   "lpg": 0.78,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "petrol95": 1.89,
+   "diesel": 2.2,
+   "lpg": 0.79,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -4761,10 +4761,10 @@
    "municipality": "Prienų r. sav.",
    "lat": 54.646657,
    "lon": 23.930492,
-   "petrol95": 1.92,
-   "diesel": 2.24,
-   "lpg": 0.78,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "petrol95": 1.9,
+   "diesel": 2.2,
+   "lpg": 0.79,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -4772,10 +4772,10 @@
    "municipality": "Prienų r. sav.",
    "lat": 54.771033,
    "lon": 23.765466,
-   "petrol95": 1.91,
+   "petrol95": 1.9,
    "diesel": 2.21,
    "lpg": null,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4915,10 +4915,10 @@
    "municipality": "Radviliškio r. sav.",
    "lat": 55.814742,
    "lon": 23.553075,
-   "petrol95": 1.92,
-   "diesel": 2.2,
-   "lpg": 0.78,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "petrol95": 1.89,
+   "diesel": 2.18,
+   "lpg": 0.79,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "AB Orlen Baltics Retail",
@@ -5256,10 +5256,10 @@
    "municipality": "Skuodo r. sav.",
    "lat": 56.261388,
    "lon": 21.529906,
-   "petrol95": 1.92,
-   "diesel": 2.24,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "petrol95": 1.9,
+   "diesel": 2.2,
+   "lpg": 0.79,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -5707,10 +5707,10 @@
    "municipality": "Ukmergės r. sav.",
    "lat": 55.165001,
    "lon": 24.515676,
-   "petrol95": 1.95,
-   "diesel": 2.24,
+   "petrol95": 1.93,
+   "diesel": 2.21,
    "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5718,10 +5718,10 @@
    "municipality": "Ukmergės r. sav.",
    "lat": 55.258993,
    "lon": 24.790387,
-   "petrol95": 1.95,
-   "diesel": 2.23,
-   "lpg": 0.78,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "petrol95": 1.93,
+   "diesel": 2.21,
+   "lpg": 0.79,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -5729,10 +5729,10 @@
    "municipality": "Ukmergės r. sav.",
    "lat": 55.233528,
    "lon": 24.781253,
-   "petrol95": 1.95,
-   "diesel": 2.23,
-   "lpg": 0.78,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "petrol95": 1.93,
+   "diesel": 2.21,
+   "lpg": 0.79,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7005,10 +7005,10 @@
    "municipality": "Vilniaus m. sav.",
    "lat": 54.65189,
    "lon": 25.185668,
-   "petrol95": 1.91,
-   "diesel": 2.24,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "petrol95": 1.89,
+   "diesel": 2.2,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7390,10 +7390,10 @@
    "municipality": "Vilniaus r. sav.",
    "lat": 54.724842,
    "lon": 25.185979,
-   "petrol95": 1.9,
+   "petrol95": 1.89,
    "diesel": 2.24,
    "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7401,10 +7401,10 @@
    "municipality": "Vilniaus r. sav.",
    "lat": 54.710674,
    "lon": 25.156488,
-   "petrol95": 1.91,
-   "diesel": 2.23,
+   "petrol95": 1.88,
+   "diesel": 2.21,
    "lpg": null,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7445,10 +7445,10 @@
    "municipality": "Visagino sav.",
    "lat": 55.597425,
    "lon": 26.403381,
-   "petrol95": 1.91,
-   "diesel": 2.22,
-   "lpg": 0.78,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "petrol95": 1.88,
+   "diesel": 2.19,
+   "lpg": 0.77,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Viada LT",
@@ -7599,10 +7599,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 54.977307,
    "lon": 23.483572,
-   "petrol95": 1.94,
-   "diesel": 2.24,
-   "lpg": 0.8,
-   "price_updated": "2026-10-05T09:41:59+03:00"
+   "petrol95": 1.91,
+   "diesel": 2.2,
+   "lpg": 0.77,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Alauša",
@@ -8138,10 +8138,10 @@
    "municipality": "Šilalės r. sav.",
    "lat": 55.49185,
    "lon": 22.199277,
-   "petrol95": 1.93,
-   "diesel": 2.22,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T09:41:58+03:00"
+   "petrol95": 1.86,
+   "diesel": 2.19,
+   "lpg": 0.8,
+   "price_updated": "2026-10-05T15:43:55+03:00"
   },
   {
    "network": "UAB Viada LT",
