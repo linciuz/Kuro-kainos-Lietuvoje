@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-05T10:00:34+00:00Z",
+    "resolved_utc": "2026-10-05T10:15:35+00:00Z",
     "winner_counts": {
-      "portal": 752,
-      "null": 14
+      "portal": 753,
+      "null": 13
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-10-05",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-05T10:00:33+00:00Z"
+        "fetched_utc": "2026-10-05T10:15:34+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-05T10:00:34+00:00Z"
+        "fetched_utc": "2026-10-05T10:15:35+00:00Z"
       }
     ]
   },
@@ -33,13 +33,13 @@
       "min": 1.815,
       "avg": 1.934,
       "max": 2.05,
-      "count": 725
+      "count": 726
     },
     "diesel": {
       "min": 2.139,
       "avg": 2.239,
       "max": 2.35,
-      "count": 727
+      "count": 728
     },
     "lpg": {
       "min": 0.74,
@@ -4113,9 +4113,13 @@
       "address": "Gobergiškės k., Dvaro g. 1, 92498",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
+      "petrol95": 1.88,
+      "diesel": 2.2,
       "lpg": null,
+      "price_updated": "2026-10-05T13:06:46+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "13:06",
       "lat": 55.71917,
       "lon": 21.293355,
       "approx": false,
@@ -10655,8 +10659,10 @@
       "petrol95": null,
       "diesel": null,
       "lpg": 0.829,
-      "price_updated": "2026-10-05T10:00:00+03:00",
+      "price_updated": "2026-10-05T13:10:36+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "13:10",
       "lat": 55.905911,
       "lon": 23.25872,
       "approx": false
