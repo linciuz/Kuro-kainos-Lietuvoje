@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-05T13:57:38Z",
+ "generated_utc": "2026-10-05T20:55:00Z",
  "price_date": "2026-10-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -25,7 +25,7 @@
   },
   "diesel": {
    "min": 2.139,
-   "avg": 2.239,
+   "avg": 2.238,
    "max": 2.35,
    "count": 731
   },
@@ -889,10 +889,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.085493,
    "lon": 22.745538,
-   "petrol95": 1.949,
-   "diesel": 2.279,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.939,
+   "diesel": 2.239,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -900,10 +900,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.077197,
    "lon": 22.751,
-   "petrol95": 1.949,
-   "diesel": 2.279,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.939,
+   "diesel": 2.239,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -911,10 +911,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.082536,
    "lon": 22.788996,
-   "petrol95": 1.949,
-   "diesel": 2.279,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.939,
+   "diesel": 2.239,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -922,10 +922,10 @@
    "municipality": "Jurbarko r. sav.",
    "lat": 55.078909,
    "lon": 23.396923,
-   "petrol95": 1.949,
-   "diesel": 2.279,
+   "petrol95": 1.939,
+   "diesel": 2.239,
    "lpg": null,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -3399,8 +3399,8 @@
    "lon": 24.07692,
    "petrol95": 1.899,
    "diesel": 2.199,
-   "lpg": 0.799,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Neste Lietuva",
@@ -6004,10 +6004,10 @@
    "municipality": "Vilkaviškio r. sav.",
    "lat": 54.601906,
    "lon": 23.194935,
-   "petrol95": 1.899,
-   "diesel": 2.199,
-   "lpg": 0.79,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.889,
+   "diesel": 2.189,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Melkasta",
@@ -7555,10 +7555,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 54.952753,
    "lon": 23.080294,
-   "petrol95": 1.949,
-   "diesel": 2.279,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.939,
+   "diesel": 2.239,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7566,10 +7566,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 55.063839,
    "lon": 22.780717,
-   "petrol95": 1.949,
-   "diesel": 2.279,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.939,
+   "diesel": 2.239,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7577,10 +7577,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 55.021603,
    "lon": 22.969559,
-   "petrol95": 1.94,
-   "diesel": 2.27,
+   "petrol95": 1.93,
+   "diesel": 2.23,
    "lpg": null,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Gelvybė",
@@ -7588,10 +7588,10 @@
    "municipality": "Šakių r. sav.",
    "lat": 54.954139,
    "lon": 23.024637,
-   "petrol95": 1.949,
-   "diesel": 2.279,
-   "lpg": 0.77,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "petrol95": 1.939,
+   "diesel": 2.239,
+   "lpg": 0.81,
+   "price_updated": "2026-10-05T21:54:06+03:00"
   },
   {
    "network": "UAB Saurida",
@@ -7962,10 +7962,10 @@
    "municipality": "Šiaulių r. sav.",
    "lat": 56.014796,
    "lon": 22.95141,
-   "petrol95": 1.95,
-   "diesel": 2.25,
+   "petrol95": 1.89,
+   "diesel": 2.19,
    "lpg": 0.79,
-   "price_updated": "2026-10-05T10:00:00+03:00"
+   "price_updated": "2026-10-05T20:43:29+03:00"
   },
   {
    "network": "UAB Boost Petrol",
