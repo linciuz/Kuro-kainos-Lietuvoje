@@ -161,8 +161,14 @@
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=super-treciadieniai",
       "err": "HTTP 403",
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
+      "err": "HTTP 500",
+      "body_head": " <html><head> <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\"> <title>500 Server Error</title> </head> <body text=#000000 bgcolor=#ffffff> <h1>Error: Server Error</h1> <h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2> <h"
     }
   ],
-  "generated": "2026-10-06T07:30:57Z",
-  "attempt_count": 27
+  "generated": "2026-10-06T07:46:01Z",
+  "attempt_count": 28
 }
