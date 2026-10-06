@@ -1,0 +1,40 @@
+{
+  "sanitized_date": "2026-10-06",
+  "purpose": "Recorded official source markup used by offline regressions. Unrelated page scripts and shell markup are not retained.",
+  "hash_encoding": "UTF-8 with LF line endings; original hashes describe Git blob bytes rather than raw HTTP capture bytes.",
+  "fixtures": [
+    {
+      "path": "tests/fixtures/viada_listing_20261006.html",
+      "source_url": "https://www.viada.lt/akcijos/",
+      "capture_date": "2026-10-06",
+      "capture_commit": "a6ff657e15fa2ee8a3acf930e27121a39cf073f9",
+      "original_bytes": 111019,
+      "original_sha256": "ff79144719c082bcf8ec1d0935ac6cc076338de2aca8714992ddd1a70849aa7b",
+      "retained_markup": "Actual page title and all 16 unique promotion hrefs; anchor content removed.",
+      "sanitized_bytes": 1296,
+      "sanitized_sha256": "1a87ca6ec980683548bd215bc4d3ae6492211491f1bdf54a0d60deaf30de1195"
+    },
+    {
+      "path": "tests/fixtures/neste_offers_20261006.html",
+      "source_url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai",
+      "capture_date": "2026-10-06",
+      "capture_commit": "a6ff657e15fa2ee8a3acf930e27121a39cf073f9",
+      "original_bytes": 18021,
+      "original_sha256": "d12e61dcea7a0975609bfd43007c5122fa2d4ceaea4ae52c1ecea7232db1c3dc",
+      "retained_markup": "Actual main opening tag, heading, introductory paragraph and entire content-body div; page navigation and scripts removed.",
+      "sanitized_bytes": 11608,
+      "sanitized_sha256": "4b38c56a48c7ad40701e20cebaa642197d3655bcf774bd55f484e8c2771ce38e"
+    },
+    {
+      "path": "tools/audit/lea_official_20261006/dk-irankis.html",
+      "source_url": "https://www.ena.lt/dk-irankis/",
+      "capture_date": "2026-10-06",
+      "capture_commit": "a6ff657e15fa2ee8a3acf930e27121a39cf073f9",
+      "original_bytes": 37377,
+      "original_sha256": "893f12dcd01f26274fdd28b97e1f80674e728951a461853acdbabc7d4c7f8cec",
+      "retained_markup": "Actual public Power BI report iframe only; its resource identifier is a public report link.",
+      "sanitized_bytes": 305,
+      "sanitized_sha256": "669aecca97c860791eff68466c6db176699eee0da92763ac6225ce26f43543ac"
+    }
+  ]
+}

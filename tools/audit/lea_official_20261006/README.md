@@ -63,8 +63,14 @@ not integrated. The current engine only searches the older landing page, so its
 
 ## Retained evidence
 
-- `dk-irankis.html`: 37,608 bytes, SHA256
+- The original report-page capture was 37,608 bytes, SHA256
   `33cf20c55b17485fa3fb9d35896f8ee79e17512b1b0205764b70abd33eba6431`.
+  `dk-irankis.html` now retains only its actual public Power BI iframe (305 bytes
+  with LF line endings), excluding unrelated page scripts and navigation.
+  `tests/fixtures/html_sources_20261006.metadata.json` records the committed
+  original and sanitized fixture hashes. The raw HTTP capture hash above and
+  the committed Git blob hash are recorded separately; they identify different
+  byte representations.
 - `tests/fixtures/lea-prices-20261006.json.gz`, decompressed payload SHA256
   `5faca85bc920e2c80812045e1d7b128fe7bd8398d7a1bbc99e709f0aee56051f`.
   Its metadata records the exact capture time and excludes bearer credentials.
