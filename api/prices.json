@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-06T12:18:36Z",
+ "generated_utc": "2026-10-06T12:42:00Z",
  "price_date": "2026-10-06",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -1122,8 +1122,8 @@
    "lon": 23.204823,
    "petrol95": 1.9,
    "diesel": 2.18,
-   "lpg": 0.79,
-   "price_updated": "2026-10-06T09:52:05+03:00"
+   "lpg": 0.77,
+   "price_updated": "2026-10-06T15:18:14+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -4772,10 +4772,10 @@
    "municipality": "Prienų r. sav.",
    "lat": 54.771033,
    "lon": 23.765466,
-   "petrol95": 1.91,
+   "petrol95": 1.9,
    "diesel": 2.21,
    "lpg": null,
-   "price_updated": "2026-10-06T09:52:05+03:00"
+   "price_updated": "2026-10-06T15:18:14+03:00"
   },
   {
    "network": "UAB Stateta",
@@ -7601,8 +7601,8 @@
    "lon": 23.483572,
    "petrol95": 1.91,
    "diesel": 2.2,
-   "lpg": 0.8,
-   "price_updated": "2026-10-06T09:52:05+03:00"
+   "lpg": 0.77,
+   "price_updated": "2026-10-06T15:18:14+03:00"
   },
   {
    "network": "UAB Alauša",
