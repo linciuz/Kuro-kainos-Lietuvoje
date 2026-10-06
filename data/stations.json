@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-06T15:03:58+00:00Z",
+    "resolved_utc": "2026-10-06T18:38:40+00:00Z",
     "winner_counts": {
       "portal": 754,
       "null": 8,
@@ -17,7 +17,7 @@
         "date": "2026-10-06",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-06T15:03:58+00:00Z"
+        "fetched_utc": "2026-10-06T18:38:39+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-06T15:03:58+00:00Z"
+        "fetched_utc": "2026-10-06T18:38:40+00:00Z"
       }
     ]
   },
@@ -38,7 +38,7 @@
     },
     "diesel": {
       "min": 2.139,
-      "avg": 2.25,
+      "avg": 2.251,
       "max": 2.35,
       "count": 733
     },
@@ -790,10 +790,10 @@
       ],
       "price_updated": "2026-10-06T09:23:08+03:00",
       "price_src": "portal",
-      "lat": 56.197343,
-      "lon": 24.709643,
+      "lat": 56.197394,
+      "lon": 24.709574,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -2572,10 +2572,10 @@
       ],
       "price_updated": "2026-10-06T09:48:31+03:00",
       "price_src": "portal",
-      "lat": 54.93565,
-      "lon": 23.870417,
+      "lat": 54.935606,
+      "lon": 23.870423,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -2740,10 +2740,9 @@
       ],
       "price_updated": "2026-10-06T08:58:51+03:00",
       "price_src": "portal",
-      "lat": 54.901009,
-      "lon": 24.031254,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.901021,
+      "lon": 24.031175,
+      "approx": false
     },
     {
       "network": "UAB Emsi",
@@ -3104,10 +3103,9 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 54.91626,
-      "lon": 23.95401,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.915978,
+      "lon": 23.953599,
+      "approx": false
     },
     {
       "network": "UAB Neste Lietuva",
@@ -4006,10 +4004,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 54.94831,
-      "lon": 24.0178,
+      "lat": 54.948345,
+      "lon": 24.017823,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -4731,10 +4729,9 @@
       ],
       "price_updated": "2026-10-06T08:58:52+03:00",
       "price_src": "portal",
-      "lat": 55.661398,
-      "lon": 21.176028,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.661071,
+      "lon": 21.176244,
+      "approx": false
     },
     {
       "network": "UAB Emsi",
@@ -5167,10 +5164,9 @@
       ],
       "price_updated": "2026-10-06T09:23:09+03:00",
       "price_src": "portal",
-      "lat": 55.7076,
-      "lon": 21.38056,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.707425,
+      "lon": 21.380302,
+      "approx": false
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -5325,10 +5321,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.70602,
-      "lon": 21.20259,
+      "lat": 55.706071,
+      "lon": 21.202589,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -5344,10 +5340,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.70659,
-      "lon": 21.23853,
+      "lat": 55.706604,
+      "lon": 21.238572,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -5688,10 +5684,10 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:29",
-      "lat": 55.896081,
-      "lon": 21.220954,
+      "lat": 55.895976,
+      "lon": 21.221096,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -6536,10 +6532,10 @@
       ],
       "price_updated": "2026-10-06T09:48:32+03:00",
       "price_src": "portal",
-      "lat": 54.557125,
-      "lon": 23.354007,
+      "lat": 54.557122,
+      "lon": 23.353979,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -6576,10 +6572,10 @@
       ],
       "price_updated": "2026-10-06T08:58:52+03:00",
       "price_src": "portal",
-      "lat": 54.558184,
-      "lon": 23.275133,
+      "lat": 54.55839,
+      "lon": 23.275092,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -6596,10 +6592,10 @@
       ],
       "price_updated": "2026-10-06T08:58:51+03:00",
       "price_src": "portal",
-      "lat": 54.592791,
-      "lon": 23.389471,
+      "lat": 54.59288,
+      "lon": 23.389594,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Emsi",
@@ -6791,10 +6787,9 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:29",
-      "lat": 54.567798,
-      "lon": 23.33954,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.567734,
+      "lon": 23.339326,
+      "approx": false
     },
     {
       "network": "UAB Viada LT",
@@ -7185,10 +7180,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.22168,
-      "lon": 25.43672,
+      "lat": 55.221586,
+      "lon": 25.436488,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -7248,10 +7243,9 @@
       ],
       "price_updated": "2026-10-06T09:23:08+03:00",
       "price_src": "portal",
-      "lat": 55.300905,
-      "lon": 20.979956,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.30088,
+      "lon": 20.979876,
+      "approx": false
     },
     {
       "network": "UAB Eniris",
@@ -8038,10 +8032,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.67314,
-      "lon": 24.33452,
+      "lat": 55.673031,
+      "lon": 24.334251,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Neste Lietuva",
@@ -8057,10 +8051,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.67037,
-      "lon": 24.34845,
+      "lat": 55.670399,
+      "lon": 24.348427,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Stateta",
@@ -8245,10 +8239,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 56.1152,
-      "lon": 24.47067,
+      "lat": 56.115159,
+      "lon": 24.470569,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Pakelės namai",
@@ -9263,10 +9257,10 @@
       ],
       "price_updated": "2026-10-06T09:56:39+03:00",
       "price_src": "portal",
-      "lat": 55.41173,
-      "lon": 22.83072,
+      "lat": 55.411805,
+      "lon": 22.830674,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Viada LT",
@@ -9898,10 +9892,9 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:29",
-      "lat": 55.266503,
-      "lon": 22.311473,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.266514,
+      "lon": 22.311565,
+      "approx": false
     },
     {
       "network": "AB Orlen Baltics Retail",
@@ -10080,10 +10073,10 @@
       ],
       "price_updated": "2026-10-06T09:56:39+03:00",
       "price_src": "portal",
-      "lat": 56.00488,
-      "lon": 22.24028,
+      "lat": 56.004996,
+      "lon": 22.24023,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Prie Luksto",
@@ -10123,10 +10116,9 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:29",
-      "lat": 55.993413,
-      "lon": 22.240148,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.99335,
+      "lon": 22.240156,
+      "approx": false
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -10312,16 +10304,18 @@
       "address": "Ukmergė, Dariaus ir Girėno g. 31, 20154",
       "municipality": "Ukmergės r. sav.",
       "locality": "",
-      "petrol95": 1.89,
-      "diesel": 2.19,
-      "lpg": 0.83,
+      "petrol95": 1.92,
+      "diesel": 2.22,
+      "lpg": 0.86,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-06T10:00:00+03:00",
+      "price_updated": "2026-10-06T19:32:49+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "19:32",
       "lat": 55.240724,
       "lon": 24.787348,
       "approx": false
@@ -10562,10 +10556,9 @@
       ],
       "price_updated": "2026-10-06T09:23:08+03:00",
       "price_src": "portal",
-      "lat": 55.49533,
-      "lon": 25.575028,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.495329,
+      "lon": 25.574878,
+      "approx": false
     },
     {
       "network": "UAB Boost Petrol",
@@ -10656,10 +10649,9 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.48189,
-      "lon": 25.57905,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.481163,
+      "lon": 25.579652,
+      "approx": false
     },
     {
       "network": "UAB Neste Lietuva",
@@ -10735,10 +10727,9 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:29",
-      "lat": 55.477844,
-      "lon": 25.581493,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.477815,
+      "lon": 25.581565,
+      "approx": false
     },
     {
       "network": "UAB Viada LT",
@@ -10839,10 +10830,9 @@
       ],
       "price_updated": "2026-10-06T09:23:08+03:00",
       "price_src": "portal",
-      "lat": 54.218274,
-      "lon": 24.566177,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.218348,
+      "lon": 24.565626,
+      "approx": false
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -11323,10 +11313,9 @@
       ],
       "price_updated": "2026-10-06T09:23:09+03:00",
       "price_src": "portal",
-      "lat": 54.6133,
-      "lon": 25.308675,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.613926,
+      "lon": 25.309,
+      "approx": false
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -13346,10 +13335,9 @@
       ],
       "price_updated": "2026-10-06T08:58:51+03:00",
       "price_src": "portal",
-      "lat": 54.753512,
-      "lon": 25.211742,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.753617,
+      "lon": 25.211747,
+      "approx": false
     },
     {
       "network": "UAB Eniris",
@@ -13607,10 +13595,10 @@
       ],
       "price_updated": "2026-10-06T09:23:09+03:00",
       "price_src": "portal",
-      "lat": 55.740159,
-      "lon": 25.852449,
+      "lat": 55.739451,
+      "lon": 25.85242,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Baltic Petroleum",
@@ -14133,10 +14121,9 @@
       ],
       "price_updated": "2026-10-06T09:48:31+03:00",
       "price_src": "portal",
-      "lat": 55.909327,
-      "lon": 23.319346,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.909031,
+      "lon": 23.320663,
+      "approx": false
     },
     {
       "network": "UAB Circle K Lietuva",
@@ -14173,10 +14160,9 @@
       ],
       "price_updated": "2026-10-06T08:58:52+03:00",
       "price_src": "portal",
-      "lat": 55.895367,
-      "lon": 23.276915,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 55.898858,
+      "lon": 23.271864,
+      "approx": false
     },
     {
       "network": "UAB Jozita",
@@ -14652,10 +14638,10 @@
       "price_src": "portal",
       "price_intraday": true,
       "price_time": "10:29",
-      "lat": 55.881956,
-      "lon": 23.205613,
+      "lat": 55.881863,
+      "lon": 23.205326,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "Agroserviso kooperatyvas Pynauja",
@@ -14832,10 +14818,10 @@
       ],
       "price_updated": "2026-10-06T09:56:38+03:00",
       "price_src": "portal",
-      "lat": 55.5212,
-      "lon": 22.36586,
+      "lat": 55.521183,
+      "lon": 22.365979,
       "approx": false,
-      "coord_source": "chain"
+      "coord_source": "lea_portal"
     },
     {
       "network": "UAB Saurida",
@@ -15407,10 +15393,9 @@
         "petrol95"
       ],
       "no_price": true,
-      "lat": 54.885791,
-      "lon": 23.912009,
-      "approx": false,
-      "coord_source": "chain"
+      "lat": 54.885703,
+      "lon": 23.91197,
+      "approx": false
     },
     {
       "network": "UAB Bonsa",
