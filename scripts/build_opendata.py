@@ -67,7 +67,8 @@ ATTRIB = ("Duomenys: Lietuvos energetikos agentura (LEA). "
 # would become a schema promise the moment someone parsed it.
 PUBLIC_FIELDS = ("network", "address", "municipality", "lat", "lon",
                  "petrol95", "diesel", "lpg", "price_updated", "price_src",
-                 "display_municipality", "display_municipality_source")
+                 "display_municipality", "display_municipality_source",
+                 "display_address", "display_address_source")
 
 
 def _w(path, text):
@@ -117,6 +118,8 @@ def cheapest(rows):
         r = min(priced, key=lambda r: r[f])
         best[f] = {"price": r[f], "network": r["network"],
                    "address": r["address"], "municipality": r["municipality"]}
+        if r.get("display_address") and r.get("display_address_source"):
+            best[f].update({k: r[k] for k in ("display_address", "display_address_source")})
     return best
 
 
@@ -383,13 +386,14 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 <table>
 <tr><th>Laukas</th><th>Tipas</th><th>Paaiškinimas</th></tr>
 <tr><td><code>network</code></td><td>string</td><td>Įmonė / tinklas, kaip nurodyta LEA.</td></tr>
-<tr><td><code>address</code></td><td>string</td><td>Degalinės adresas.</td></tr>
+<tr><td><code>address</code></td><td>string</td><td>Originalus degalinės adresas iš LEA; išsaugomas šaltinio įrašų tapatumui.</td></tr>
 <tr><td><code>municipality</code></td><td>string</td><td>Savivaldybė (pvz. <code>Kauno m. sav.</code>).</td></tr>
 <tr><td><code>lat</code>, <code>lon</code></td><td>number</td><td>WGS-84. Daugumai — oficialios operatoriaus koordinatės; likusios geokoduotos.</td></tr>
 <tr><td><code>petrol95</code>, <code>diesel</code>, <code>lpg</code></td><td>number | null</td><td>EUR už litrą. <code>null</code> = degalinė to kuro neteikia arba kainos nepateikė.</td></tr>
 <tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kada LEA įraše paskutinį kartą fiksuota ši kaina.</td></tr>
 <tr><td><code>price_src</code></td><td>string | null</td><td>Kainos šaltinis: <code>portal</code>, <code>sharepoint</code> arba naujesnė patikrinta operatoriaus kaina (<code>saurida</code>).</td></tr>
 <tr><td><code>display_municipality</code>, <code>display_municipality_source</code></td><td>string | null</td><td>Patikslinta rodoma savivaldybė ir jos šaltinis, jei LEA klasifikacija skiriasi nuo patikrintos vietos. <code>municipality</code> išsaugo LEA klasifikaciją.</td></tr>
+<tr><td><code>display_address</code>, <code>display_address_source</code></td><td>string | null</td><td>Pasirenkamas patikslintas rodomas adresas ir jo šaltinis JSON rinkiniuose. Naudojamas tik kai abu laukai pateikti; <code>address</code> išsaugo originalų LEA adresą.</td></tr>
 </table>
 <pre><code>{esc(sample)}</code></pre>
 

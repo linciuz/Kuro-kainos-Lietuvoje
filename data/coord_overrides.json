@@ -1,5 +1,5 @@
 {
-  "note": "Verified corrections applied LAST by merge_chain_coords.py. Coordinates use case/accent-insensitive substring matching. Display-area corrections require an exact station_key and source URL; raw municipality and station identity stay unchanged.",
+  "note": "Reviewed corrections applied LAST by merge_chain_coords.py. Every correction uses an exact raw station_key. Attributed display address/municipality may differ; raw identity, source address, source municipality and prices remain intact. Official/operator coordinates are cross-checked, never presumed correct by origin alone.",
   "overrides": [
     {
       "station_key": "UAB Emsi|Panevėžys, Ramygalos g. 186A, 36224|Panevėžio r. sav.",
@@ -8,36 +8,428 @@
       "label": "EMSI Ramygalos g. 186A: operator locator names Panevėžys; LEA raw district classification retained (verified 2026-10-06)"
     },
     {
-      "network_contains": "viada",
-      "address_contains": "Pušaloto",
-      "municipality_contains": "Panevėžio",
       "lat": 55.753237,
       "lon": 24.312254,
-      "label": "Viada, Pušaloto g. 191A, Panevėžys (patikrinta)"
+      "label": "Viada, Pušaloto g. 191A, Panevėžys (patikrinta)",
+      "station_key": "UAB Viada LT|Panevėžys, Pušaloto g. 193A, 191A|Panevėžio m. sav."
     },
     {
-      "network_contains": "naftrus",
-      "address_contains": "Pievų g. 19",
-      "municipality_contains": "Raseinių",
       "lat": 55.386231,
       "lon": 23.042885,
-      "label": "Naftrus, Slabados k., Pievų g. 19, Raseinių r. (patikrinta)"
+      "label": "Naftrus, Slabados k., Pievų g. 19, Raseinių r. (patikrinta)",
+      "station_key": "UAB Naftrus|Slabados k., Pievų g. 19, 60109|Raseinių r. sav."
     },
     {
-      "network_contains": "lašų žemės",
-      "address_contains": "Vytėnų",
-      "municipality_contains": "Rokiškio",
       "lat": 55.8574667,
       "lon": 25.7336514,
-      "label": "Lašų žemės ūkio bendrovė, Vytėnai, Vytėnų vs 9, Rokiškio r. (patikrinta 2026-07-09)"
+      "label": "Lašų žemės ūkio bendrovė, Vytėnai, Vytėnų vs 9, Rokiškio r. (patikrinta 2026-07-09)",
+      "station_key": "Lašų žemės ūkio bendrovė|Vytėnai, Vytėnų vs 9, 42255|Rokiškio r. sav."
     },
     {
-      "network_contains": "jozita",
-      "address_contains": "Kuosišk",
-      "municipality_contains": "Pakruojo",
-      "lat": 56.073104,
-      "lon": 23.831915,
-      "label": "UAB Jozita, Kuosiškių k. 4, Pakruojo r. (patikrinta 2026-07-10 — coords exact)"
+      "station_key": "UAB Viada LT|Šilagalio k., Panevėžio aplinkl. 5, 36258|Panevėžio r. sav.",
+      "lat": 55.670113,
+      "lon": 24.349612,
+      "coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "verified_on": "2026-10-06",
+      "label": "Official station directory explicitly binds Šilagalis/Aplinkkelio5; LEA and exact-address OSM agree within20m. Old point belonged to Rokiškis station."
+    },
+    {
+      "station_key": "UAB Viada LT|Vievis, Kauno g. 26A, 21376|Elektrėnų sav.",
+      "lat": 54.771212,
+      "lon": 24.820776,
+      "coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "verified_on": "2026-10-06",
+      "label": "Operator Kauno26 alias agrees with LEA and OSM Kauno26A withinmetres; old match wrongly selected Kauno55A."
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Veiverių g. 117, 46354|Kauno m. sav.",
+      "lat": 54.8665,
+      "lon": 23.889237,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Current operator marker contradicts exact LEA/OSM Veiverių117 premises by2km; use independently corroborated LEA premises, not bad operator marker."
+    },
+    {
+      "station_key": "UAB Viada LT|Šventupės k., Beržų g. 13, 20360|Ukmergės r. sav.",
+      "lat": 55.320213,
+      "lon": 24.874846,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Current operator marker contradicts exact LEA/OSM Beržų13 station by756m."
+    },
+    {
+      "station_key": "UAB Narjanta|Aleksandrijos k., Kikonių g. 10, 40335|Kupiškio r. sav.",
+      "lat": 55.824587,
+      "lon": 25.001069,
+      "coordinate_source": "https://www.circlek.lt/degaliniu-sarasas",
+      "verified_on": "2026-10-06",
+      "label": "Explicit franchise identity: CircleK Kikonių10,Aleksandrija matches legal-company LEA Narjanta street, full house and locality."
+    },
+    {
+      "station_key": "UAB Boost Petrol|Ginkūnų k., Aušros g. 26, 81492|Šiaulių r. sav.",
+      "lat": 55.956317,
+      "lon": 23.342812,
+      "coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "verified_on": "2026-10-06",
+      "label": "Explicit franchise identity: Viada Ginkūnai Aušros26; independently agrees with BRO/Abromika partner and LEA/OSM premises; old point16.66km west."
+    },
+    {
+      "station_key": "UAB Boost Petrol|Smėlinkos vs. 1, 33171|Molėtų r. sav.",
+      "lat": 55.264341,
+      "lon": 25.490041,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "LEA Abromika-branded Smėlinka record agrees with OSM Viada fuel premises within4m and explicit BRO Abromika Smėlinkos/Vilnius-Utena69km point within15m; old point15.1km away."
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Spyglių g. 2, 27101|Vilniaus m. sav.",
+      "lat": 54.668431,
+      "lon": 25.111652,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Correct Spyglių2 LEA/OSM premises, visually reviewed OSM building/forecourt. Old pin is Jeruzalės2,13.2km away; newer generic Neravai operator marker remains487m off premises."
+    },
+    {
+      "station_key": "UAB Emsi|Vilkaviškis, S. Nėries g. 38, 70165|Vilkaviškio r. sav.",
+      "lat": 54.657941,
+      "lon": 23.033195,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained."
+    },
+    {
+      "station_key": "UAB Emsi|Mastaičių k., Marijampolės g. 58, 53285|Kauno r. sav.",
+      "lat": 54.809536,
+      "lon": 23.853751,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained."
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Pajautos g. 31, 06200|Vilniaus m. sav.",
+      "lat": 54.710402,
+      "lon": 25.161987,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained."
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Liepkalnio g. 112A, 02121|Vilniaus m. sav.",
+      "lat": 54.65276,
+      "lon": 25.305714,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained."
+    },
+    {
+      "station_key": "UAB Emsi|Maišiagala, Mokyklos g. 26, 14243|Vilniaus r. sav.",
+      "lat": 54.87343,
+      "lon": 25.073483,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained."
+    },
+    {
+      "station_key": "UAB Regusa|Jūrės k., Medelyno g. 4A, 69446|Kazlų Rūdos sav.",
+      "lat": 54.76929339137726,
+      "lon": 23.486604531243888,
+      "coordinate_source": "https://map.kazluruda.lt/regusa-2/",
+      "verified_on": "2026-10-06",
+      "label": "Municipal Regusa Jūrė station navigation and own Regusa address agree; OSM exact Medelyno4A/Jūrė and BRO partner point corroborate within5m. Old pin is different Regusa Kaunas station31.999km away."
+    },
+    {
+      "station_key": "UAB Stateta|Kantališkių k., 69841|Marijampolės sav.",
+      "lat": 54.634312,
+      "lon": 23.436209,
+      "coordinate_source": "https://stateta.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Own operator BRO locator exact locality and station; LEA/OSM physical premises agree within35m; old geocode is in another municipality."
+    },
+    {
+      "station_key": "UAB Stateta|Gustaičių k., 59296|Prienų r. sav.",
+      "lat": 54.738441,
+      "lon": 23.710503,
+      "coordinate_source": "https://stateta.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Own operator BRO locator exact locality and station; LEA/OSM physical premises agree within35m; old geocode is in another municipality."
+    },
+    {
+      "station_key": "UAB Stateta|Alytaus k., 64464|Alytaus r. sav.",
+      "lat": 54.407731,
+      "lon": 24.08522,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "LEA/OSM same-brand Takniškių2 premises agree within6m; current village geocode is1km away. BRO operator locality corroborates area but its marker is~200m east."
+    },
+    {
+      "station_key": "UAB Stateta|Kaniūkų k., 64104|Alytaus r. sav.",
+      "lat": 54.366043,
+      "lon": 24.121869,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "LEA/OSM same-brand Kaniūkai premises agree within17m; current village geocode is1km away. BRO operator identifies same locality."
+    },
+    {
+      "station_key": "UAB Tomega|Tartoko k., 17127|Šalčininkų r. sav.",
+      "lat": 54.295226,
+      "lon": 25.360219,
+      "coordinate_source": "https://stateta.lt/wp-json/interita-maps/v1/branches?country=Lietuva&city=&address=&lat_min=0&lat_max=0&lng_min=0&lng_max=0",
+      "verified_on": "2026-10-06",
+      "label": "Own Tomega contacts lists Tartoko station; BRO partner explicitly binds Tomega Tartoko to this point, near OSM Tomega Tartokas Solidarumopl8 premises. LEA marker1.16km north and old geocode~18km north are both inconsistent."
+    },
+    {
+      "station_key": "UAB Bonsa|Vaidatonių k. 1, 73406|Tauragės r. sav.",
+      "lat": 55.469205,
+      "lon": 22.678905,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "LEA exact Bonsa Vaidatoniai1 and OSM same-company/locality/house fuel premises agree within27m; old pin1.88km away lands in Kelmė district."
+    },
+    {
+      "station_key": "UAB Jozita|Kuosiškių k. 4, 83169|Pakruojo r. sav.",
+      "lat": 55.96572,
+      "lon": 23.879816,
+      "coordinate_source": "https://jozita.lt/wp-admin/admin-ajax.php?action=asl_load_stores",
+      "verified_on": "2026-10-06",
+      "label": "Own operator exact street/full house/locality corroborates LEA and OSM station premises. Correct wrong previous geocode/manual override."
+    },
+    {
+      "station_key": "UAB Alauša|Marijampolė, Sporto g. 50A, 68110|Marijampolės sav.",
+      "lat": 54.5663568448131,
+      "lon": 23.379866332714766,
+      "coordinate_source": "https://www.alausa.lt/degalines/",
+      "verified_on": "2026-10-06",
+      "label": "Own operator exact street/full house/locality corroborates LEA and OSM station premises. Correct wrong previous geocode/manual override."
+    },
+    {
+      "station_key": "UAB Jozita|Ramučiai, K. Bielinio g. 2A, 54465|Kauno r. sav.",
+      "lat": 54.943946,
+      "lon": 24.036068,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Own Jozita id59 confirms K.Bielinio2A Ramučiai near registered LEA point; nearby OSM fuel premises agrees with LEA within12m. Old point~870m away."
+    },
+    {
+      "station_key": "UAB Alauša|Kaunas, Palemono g. 171, 52107|Kauno m. sav.",
+      "lat": 54.923488,
+      "lon": 24.072113,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Own Alauša exact Palemono171 locator independently identifies station; LEA and exact OSM street/house premises agree while old address geocode sits~200m away."
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Biruliškių k., 54469|Kauno r. sav.",
+      "lat": 54.932439,
+      "lon": 23.995479,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof."
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilimiškės k., 97220|Kretingos r. sav.",
+      "lat": 55.903308,
+      "lon": 21.105647,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof."
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Kaunas, Kalvarijos g. 138, 46403|Kauno m. sav.",
+      "lat": 54.850963,
+      "lon": 23.842771,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof."
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilnius, Juodasis kl. 32, 11307|Vilniaus m. sav.",
+      "lat": 54.663053,
+      "lon": 25.342333,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof."
+    },
+    {
+      "station_key": "UAB Viada LT|Margavos k., 54471|Kauno r. sav.",
+      "lat": 54.958815,
+      "lon": 24.039164,
+      "coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "verified_on": "2026-10-06",
+      "label": "Preserve current operator Margavos station point; LEA and branded OSM premises corroborate area within85m. Strict matcher declines address without house. Explicit exact-key override prevents next cron exposing5.48km wrong village-geocoder point; not a survey/driveway claim."
+    },
+    {
+      "station_key": "UAB Viada LT|Klaipėda, Taikos pr. 70A-1, 93202|Klaipėdos m. sav.",
+      "lat": 55.68327,
+      "lon": 21.160516,
+      "coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "verified_on": "2026-10-06",
+      "label": "Preserve current operator Taikos70A point: exact OSM70A station is7m away and LEA point within10m. Raw70A-1 unit suffix preserved. Explicit override prevents next cron exposing2.53km wrong geocode without generalizing house suffix matching."
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Biruliškių g. 18A, 51205|Kauno m. sav.",
+      "lat": 54.911393,
+      "lon": 24.021123,
+      "coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "verified_on": "2026-10-06",
+      "label": "Preserve current station point: exact OSMBiruliškiųg18A is4.7m away and LEA point14.6m. Operator sayspl18A; rawg18A retained. Explicit override prevents next cron exposing162m street-geocode offset; no globalg/pl alias."
+    },
+    {
+      "station_key": "UAB Saurida|Akmenės I kaimas Plento g. 1|Akmenės r. sav.",
+      "lat": 56.238461,
+      "lon": 22.750823,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Explicit legacy spelling alias of exact LEA station596 AkmenėsI/Plento1. Exact-address Saurida OSM premises agrees14m. Official locator address confirms identity but its GPS is820m away; do not use that point."
+    },
+    {
+      "station_key": "UAB Saurida|Ignacavos km. Kauno pl. 18, 59149|Prienų r. sav.",
+      "lat": 54.646657,
+      "lon": 23.930492,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Explicit legacy km/k alias of exact LEA585 Ignacavos/Kaunopl18. Same-brand OSM premises agrees31m; OSM lacks house number, so LEA supplies18."
+    },
+    {
+      "station_key": "UAB Saurida|Lėkėčių km. Šakių g. 3, 71227|Šakių r. sav.",
+      "lat": 54.977307,
+      "lon": 23.483572,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Legacy k/km and postcode71227/71229 variant of exact LEA598 Lėkėčių/Šakių3. Official address confirms same village/street/house, but official GPS is1.1km away. OSM exact address agrees13m but historical operator tagRūdšilis differs; coordinate correction only, no ownership/price merge."
+    },
+    {
+      "station_key": "UAB Saurida|Naujoji Akmenė V. Kudirkos 18A, 85171|Akmenės r. sav.",
+      "lat": 56.317191,
+      "lon": 22.884944,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact full-house/street/city alias of LEA590. Operator and exact-address Saurida OSM agree within10m of LEA; centroid pin is3.2km away."
+    },
+    {
+      "station_key": "UAB Saurida|Pageležių km., 20278|Ukmergės r. sav.",
+      "lat": 55.165001,
+      "lon": 24.515676,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Explicit same-village/postcode alias of LEA577 Pageležiųk20278. Same-brand OSM feature with exactpostcode agrees15m. Official address confirms identity but GPS is1.214km off the actual LEA/OSM premises."
+    },
+    {
+      "station_key": "UAB Saurida|Velžių km .Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "lat": 55.77317716512304,
+      "lon": 23.656245321035385,
+      "coordinate_source": "https://www.saurida.lt/degalines/",
+      "verified_on": "2026-10-06",
+      "label": "Official exact Velžiai/Radviliškiopl2 address and point agree5m with exact-address Saurida OSM. Portal station587 supplied another Saurida premises at Radviliškis/Gedimino50C about7.9km away; do not propagate that portal point to either alias."
+    },
+    {
+      "station_key": "UAB Saurida|Velžių k., Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "lat": 55.77317716512304,
+      "lon": 23.656245321035385,
+      "coordinate_source": "https://www.saurida.lt/degalines/",
+      "verified_on": "2026-10-06",
+      "label": "Official exact Velžiai/Radviliškiopl2 address and point agree5m with exact-address Saurida OSM. Portal station587 supplied another Saurida premises at Radviliškis/Gedimino50C about7.9km away; do not propagate that portal point to either alias."
+    },
+    {
+      "station_key": "UAB Saurida|Ukmergė Vilniaus g. 122, 20167|Ukmergės r. sav.",
+      "lat": 55.233539,
+      "lon": 24.781254,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Legacy comma/postcode20167/20168 alias of exact LEA575 Ukmergė/Vilniaus122; exact-address Saurida OSM agrees1m and official locator within27m. Preserve raw postcode/key."
+    },
+    {
+      "station_key": "UAB Saurida|Vilnius Stanevičiaus g. 3A, 07131|Vilniaus m. sav.",
+      "lat": 54.721693,
+      "lon": 25.255867,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact-house3A Saurida LEA603 agrees with operator address/point and nearby same-brand Saurida OSM node. OSM Saurida node lacks street/house; adjacent Neste is house3, so do not claim exact-address OSM corroboration or merge with Neste."
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Jaučakių k., 54217|Kauno r. sav.",
+      "lat": 55.038374,
+      "lon": 23.607911,
+      "coordinate_source": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+      "verified_on": "2026-10-06",
+      "label": "Exact LEA198 village identifies station; official id47 spells Jaučiakių (one extra letter) and same-brand OSM exact Jaučakiai premises independently agree within18m. Explicit station-key binding only; raw spelling unchanged."
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Griškabūdis, A. Skelčio g., 71296|Šakių r. sav.",
+      "lat": 54.852382,
+      "lon": 23.176758,
+      "coordinate_source": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+      "verified_on": "2026-10-06",
+      "label": "Raw LEA street has no house; exact LEA177 point agrees with unique official Griškabūdis/ASkelčio4 and exact OSM AntanoSkelčio4 station within21m. Explicit station-key binding, not a generalized missing-house match."
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Pasvalys, Mūšos g. 18, 39104|Pasvalio r. sav.",
+      "lat": 56.070931,
+      "lon": 24.411231,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Reviewed BP Pasvalys/Aukštikalniai premises: LEA189 point agrees with OSM Mūšos19 within12m; official BP id38 lists Mūšos19 within40m of OSM. Forecourt and Mūšos street visually checked2026-10-06. Display operator address19 with attribution; retain raw LEA18 and original station key.",
+      "display_address": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+      "display_address_source": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500"
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių k., 14207|Vilniaus r. sav.",
+      "lat": 54.737396,
+      "lon": 25.079988,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact village/postcode Saurida LEA600 agrees with current official named Čekoniškės locator within20m and same-brand OSM exact AdomoMickevičiaus187 premises within12m. The raw LEA address lacks street/house; independent operator village identity plus shared premises supplies corroboration, not an invented exact-house raw match. Explicit k/km aliases; prices and raw addresses unchanged."
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių km, 14207|Vilniaus r. sav.",
+      "lat": 54.737396,
+      "lon": 25.079988,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact village/postcode Saurida LEA600 agrees with current official named Čekoniškės locator within20m and same-brand OSM exact AdomoMickevičiaus187 premises within12m. The raw LEA address lacks street/house; independent operator village identity plus shared premises supplies corroboration, not an invented exact-house raw match. Explicit k/km aliases; prices and raw addresses unchanged."
+    },
+    {
+      "station_key": "UAB Alauša|Skraičionių k., Skraičionių g. 1, 17140|Šalčininkų r. sav.",
+      "lat": 54.204054,
+      "lon": 25.621299,
+      "coordinate_source": "https://www.alausa.lt/degalines/",
+      "verified_on": "2026-10-06",
+      "label": "Exact current official Alauša id45 Skraičioniųg1/Skraičioniųk binds this legacy village spelling; exact LEA100 priced spelling Skraičionys/Skraičioniųg1 independently agrees17m. No OSM fuel feature found nearby; two current primary sources support the premises-area pin, without claiming survey or visual building proof. Current approximate town-centroid pin is402m west."
+    },
+    {
+      "station_key": "UAB Saurida|Neveronių k., Martinavos g. 1, 54475|Kauno m. sav.",
+      "display_municipality": "Kauno r. sav.",
+      "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+      "verified_on": "2026-10-06",
+      "label": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended."
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda, Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "display_municipality": "Klaipėdos m. sav.",
+      "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+      "verified_on": "2026-10-06",
+      "label": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended."
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "display_municipality": "Klaipėdos m. sav.",
+      "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+      "verified_on": "2026-10-06",
+      "label": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended."
+    },
+    {
+      "station_key": "UAB Saurida|Rumšiškės Lekavičiaus g. 71, 56337|Kauno r. sav.",
+      "display_municipality": "Kaišiadorių r. sav.",
+      "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+      "verified_on": "2026-10-06",
+      "label": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended."
+    },
+    {
+      "station_key": "Nostrada (RV Transport)|Kazlavo k.|Kalvarijos sav.",
+      "lat": 54.32897,
+      "lon": 23.148446,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact RV Transport/Kazlavas legacy alias of LEA Nostrada Kazlavo4. Current AAD2026 permit/inspection station identity and OSM RVstation house4 corroborate premises area. LEA point65.8m from mapped building; no survey accuracy claim. Old approximate pin~145km away in Vilnius."
     }
   ]
 }

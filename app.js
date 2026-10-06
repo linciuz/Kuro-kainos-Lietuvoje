@@ -405,14 +405,21 @@ document.addEventListener("click", (e) => {
 // operator at the same spot. The daily Excel and the Power BI registry format
 // addresses differently (comma placement/order), so a few duplicates slip past
 // the address-based dedup; same operator + exact coords within ~70 m = the same
-// physical station. (Runs each load, so it self-heals across daily refreshes.)
+// physical station. Keep starred raw aliases so saved favourites stay reachable
+// without assigning another source row's prices to their original identity.
+const STATION_ALIASES = new WeakMap();   // exact discarded source keys per loaded dataset
 function dedupePricelessStations() {
+    const aliases = STATION_ALIASES.get(DATA) || new Map();
     const priced = (DATA.stations || []).filter(s => !s.no_price && s.lat != null && s.lon != null);
     DATA.stations = (DATA.stations || []).filter(s => {
         if (!s.no_price || s.approx || s.lat == null) return true;
-        return !priced.some(p => (p.network || "") === (s.network || "")
+        const match = priced.find(p => (p.network || "") === (s.network || "")
             && haversine(s.lat, s.lon, p.lat, p.lon) < 0.07);
+        if (!match) return true;
+        aliases.set(stationKey(s), { stationKey: stationKey(match), original: s });
+        return isFav("st:" + stationKey(s));
     });
+    STATION_ALIASES.set(DATA, aliases);
 }
 
 // True when the last stations.json fetch failed and we're showing kept/cached
@@ -524,6 +531,26 @@ function stationKey(s) {
     return `${s.network || ""}|${s.address || ""}|${s.municipality || ""}`;
 }
 
+function sharedStationTarget(key) {
+    const rows = DATA.stations || [];
+    const direct = rows.find(s => stationKey(s) === key);
+    if (direct) return { station: direct, original: direct };
+    const aliases = STATION_ALIASES.get(DATA);
+    const alias = aliases && aliases.get(key);
+    const station = alias && rows.find(s => stationKey(s) === alias.stationKey);
+    return station ? { station, original: alias.original } : null;
+}
+
+function stationSearchText(s) {
+    let text = `${s.network || ""} ${s.address || ""} ${stationAddress(s)} ${s.locality || ""}`;
+    const aliases = STATION_ALIASES.get(DATA);
+    if (aliases) for (const alias of aliases.values()) {
+        if (alias.stationKey === stationKey(s))
+            text += ` ${alias.original.address || ""} ${stationAddress(alias.original)}`;
+    }
+    return text.toLowerCase();
+}
+
 // Verified operator corrections affect the displayed/filter area only. The raw
 // LEA municipality stays in stationKey so favourites and reports keep working.
 function stationMunicipality(s) {
@@ -536,6 +563,20 @@ function stationMunicipalityHtml(s) {
     if (!(s.display_municipality && s.display_municipality_source)) return shown;
     return `<span title="${escAttr("LEA: " + (s.municipality || ""))}">${shown}</span> ` +
         `<a href="${escAttr(s.display_municipality_source)}" target="_blank" rel="noopener" title="${escAttr(t("source"))}" aria-label="${escAttr(t("source"))}">↗</a>`;
+}
+
+// Address corrections are attributed presentation metadata. Keep LEA's raw
+// address in stationKey so favourites, reports and source joins stay stable.
+function stationAddress(s) {
+    return s.display_address && s.display_address_source
+        ? s.display_address : (s.address || "");
+}
+
+function stationAddressHtml(s) {
+    const shown = esc(stationAddress(s));
+    if (!(s.display_address && s.display_address_source)) return shown;
+    return `<span title="${escAttr("LEA: " + (s.address || ""))}">${shown}</span> ` +
+        `<a href="${escAttr(s.display_address_source)}" target="_blank" rel="noopener" title="${escAttr(t("source"))}" aria-label="${escAttr(t("source"))}">↗</a>`;
 }
 
 // --- favourites (starred stations & chargers, kept in localStorage) ----------
@@ -828,7 +869,7 @@ function shareStation(key) {
     const price = s[fuelType] != null ? "€" + s[fuelType].toFixed(3) + "/L" : "";
     doShare(t("share_station_text", {
         net: loyaltyLabel(s.network) || t("station_default"),
-        fuel: t("fuel_" + fuelType), price, addr: s.address || "",
+        fuel: t("fuel_" + fuelType), price, addr: stationAddress(s),
     }), shareState({ station: key }));
 }
 
@@ -897,7 +938,13 @@ function applyUrlState() {
     try { p = new URLSearchParams(location.search); } catch (e) { return; }
     const fuel = p.get("fuel");
     if (fuel && ["petrol95", "diesel", "lpg", "ev"].includes(fuel) && document.getElementById("btn-" + fuel)) selectFuel(fuel);
-    const muni = p.get("muni");
+    const st = p.get("station");
+    const target = st && sharedStationTarget(st);
+    let muni = p.get("muni");
+    // Old links retain the raw station key/area. Resolve only that stale area;
+    // unrelated filters and the original shared identity stay unchanged.
+    if (target && muni === target.original.municipality)
+        muni = stationMunicipality(target.station);
     if (muni) { const sel = document.getElementById("muni-select"); if (sel && [...sel.options].some(o => o.value === muni)) sel.value = muni; }
     const q = p.get("q");
     if (q) { const s = document.getElementById("search"); if (s) s.value = q; }
@@ -905,9 +952,9 @@ function applyUrlState() {
     if (v === "map" || v === "list") setView(v);
     render();
     // If a specific station was shared, scroll to it and flash a highlight.
-    const st = p.get("station");
     if (st && view !== "map") setTimeout(() => {
-        const card = document.querySelector(`.share-btn[data-key="${(window.CSS && CSS.escape) ? CSS.escape(st) : st}"]`);
+        const selectedKey = target ? stationKey(target.station) : st;
+        const card = document.querySelector(`.share-btn[data-key="${(window.CSS && CSS.escape) ? CSS.escape(selectedKey) : selectedKey}"]`);
         const host = card && card.closest(".station-card");
         if (host) { host.scrollIntoView({ block: "center" }); host.classList.add("flash"); setTimeout(() => host.classList.remove("flash"), 1600); }
     }, 300);
@@ -2154,13 +2201,14 @@ function fuelChips(s) {
 function getRows() {
     const muni = document.getElementById("muni-select").value;
     const q = (document.getElementById("search").value || "").toLowerCase().trim();
+    const aliases = STATION_ALIASES.get(DATA);
 
     // Priced stations for this fuel + price-less registry stations that sell it.
     let rows = (DATA.stations || []).filter(s =>
-        s[fuelType] != null || (s.fuels || []).includes(fuelType));
+        (s[fuelType] != null || (s.fuels || []).includes(fuelType))
+        && (!(aliases && aliases.has(stationKey(s))) || isFav("st:" + stationKey(s))));
     if (muni) rows = rows.filter(s => stationMunicipality(s) === muni);
-    if (q) rows = rows.filter(s =>
-        ((s.network || "") + " " + (s.address || "") + " " + (s.locality || "")).toLowerCase().includes(q));
+    if (q) rows = rows.filter(s => stationSearchText(s).includes(q));
     if (showFavsOnly) rows = rows.filter(s => isFav(favKey(s)));
 
     if (userPos) rows.forEach(s => {
@@ -2265,7 +2313,7 @@ function navButtons(s) {
     // (town-centroid) coords, navigate by ADDRESS instead so Google/Waze find the
     // real station rather than driving to our rough point.
     const exact = s.lat != null && s.lon != null && !s.approx;
-    const q = encodeURIComponent(`${s.network || ""} ${s.address || ""} ${s.municipality || ""}`.trim());
+    const q = encodeURIComponent(`${s.network || ""} ${stationAddress(s)} ${stationMunicipality(s)}`.trim());
     const gmaps = exact
         ? `https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lon}`
         : `https://www.google.com/maps/search/?api=1&query=${q}`;
@@ -2364,7 +2412,7 @@ function stationCardHtml(s, best, worst) {
                         : `<span class="no-price-badge">${t("no_price")}</span>`}</div>
                 </div>
                 ${intraday}${repLine}
-                <div class="station-address">${esc(s.address || "")}${s.locality ? ", " + esc(s.locality) : ""}</div>
+                <div class="station-address">${stationAddressHtml(s)}${s.locality ? ", " + esc(s.locality) : ""}</div>
                 <div class="station-muni">📍 ${stationMunicipalityHtml(s)}${approxTag}</div>
                 ${fuelChips(s)}
                 ${flagLine}
@@ -2446,7 +2494,7 @@ function renderMap() {
             ? `<div class="popup-loyalty">💳 ${esc(t("loyalty_with_card"))}: €${pDisc}/L</div>`
             : "";
         const popup = `<div class="popup-name">${esc(s.network || t("station_default"))}</div>
-            <div>${esc(s.address || "")}</div>
+            <div>${stationAddressHtml(s)}</div>
             ${priceLine}${loyaltyPop}${dist}${approxNote}
             ${fuelChips(s)}
             <div class="popup-nav">${navButtons(s)}</div>`;

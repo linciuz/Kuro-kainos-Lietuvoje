@@ -1,0 +1,1187 @@
+{
+  "baseline_sha256": "862b758028cc21cb4f7ff87bfc859a8f115722e47b2caa2866f8f0b3616f2a93",
+  "final_stations_sha256": "670423c50049bf3654f315496839e5659cd90287c6bef95842bbf49471e68675",
+  "summary": {
+    "station_rows": 809,
+    "geography_changed_records": 51,
+    "coordinate_changed_records": 44,
+    "display_municipality_changed_records": 4,
+    "display_address_changed_records": 1,
+    "prices_raw_identities_order_dates_timestamps_summary_unchanged": true
+  },
+  "changes": [
+    {
+      "station_key": "UAB Stateta|Kaniūkų k., 64104|Alytaus r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.365305,
+        "lon": 24.106088
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.366043,
+        "lon": 24.121869
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Alytaus k., 64464|Alytaus r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.407139,
+        "lon": 24.101763
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.407731,
+        "lon": 24.08522
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Vievis, Kauno g. 26A, 21376|Elektrėnų sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.775194,
+        "lon": 24.810293
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.771212,
+        "lon": 24.820776
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Kaunas, Kalvarijos g. 138, 46403|Kauno m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.865406,
+        "lon": 23.872992
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.850963,
+        "lon": 23.842771
+      }
+    },
+    {
+      "station_key": "UAB Alauša|Kaunas, Palemono g. 171, 52107|Kauno m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.923697,
+        "lon": 24.069047
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.923488,
+        "lon": 24.072113
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Neveronių k., Martinavos g. 1, 54475|Kauno m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "lea_portal",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.924573,
+        "lon": 24.079127
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "lea_portal",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": "Kauno r. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+        "lat": 54.924573,
+        "lon": 24.079127
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Veiverių g. 117, 46354|Kauno m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.884491,
+        "lon": 23.89482
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.8665,
+        "lon": 23.889237
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Biruliškių g. 18A, 51205|Kauno m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.911393,
+        "lon": 24.021123
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.911393,
+        "lon": 24.021123
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Biruliškių k., 54469|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.924319,
+        "lon": 24.011308
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.932439,
+        "lon": 23.995479
+      }
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Jaučakių k., 54217|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.046176,
+        "lon": 23.588632
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.038374,
+        "lon": 23.607911
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Mastaičių k., Marijampolės g. 58, 53285|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.809532,
+        "lon": 23.859559
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.809536,
+        "lon": 23.853751
+      }
+    },
+    {
+      "station_key": "UAB Jozita|Ramučiai, K. Bielinio g. 2A, 54465|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.94093,
+        "lon": 24.023464
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.943946,
+        "lon": 24.036068
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Margavos k., 54471|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.958815,
+        "lon": 24.039164
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.958815,
+        "lon": 24.039164
+      }
+    },
+    {
+      "station_key": "UAB Regusa|Jūrės k., Medelyno g. 4A, 69446|Kazlų Rūdos sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "lea_portal",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.850076,
+        "lon": 23.965872
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.76929339137726,
+        "lon": 23.486604531243888
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Klaipėda, Taikos pr. 70A-1, 93202|Klaipėdos m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.68327,
+        "lon": 21.160516
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.68327,
+        "lon": 21.160516
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda, Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.656839,
+        "lon": 21.183821
+      },
+      "after": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": "Klaipėdos m. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+        "lat": 55.656839,
+        "lon": 21.183821
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilimiškės k., 97220|Kretingos r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.89617,
+        "lon": 21.093042
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.903308,
+        "lon": 21.105647
+      }
+    },
+    {
+      "station_key": "UAB Narjanta|Aleksandrijos k., Kikonių g. 10, 40335|Kupiškio r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "lea_portal",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.834253,
+        "lon": 25.009325
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.824587,
+        "lon": 25.001069
+      }
+    },
+    {
+      "station_key": "UAB Alauša|Marijampolė, Sporto g. 50A, 68110|Marijampolės sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.567982,
+        "lon": 23.361132
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.5663568448131,
+        "lon": 23.379866332714766
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Kantališkių k., 69841|Marijampolės sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.888137,
+        "lon": 23.786984
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.634312,
+        "lon": 23.436209
+      }
+    },
+    {
+      "station_key": "UAB Boost Petrol|Smėlinkos vs. 1, 33171|Molėtų r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.215644,
+        "lon": 25.267733
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.264341,
+        "lon": 25.490041
+      }
+    },
+    {
+      "station_key": "UAB Jozita|Kuosiškių k. 4, 83169|Pakruojo r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.073104,
+        "lon": 23.831915
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.96572,
+        "lon": 23.879816
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Šilagalio k., Panevėžio aplinkl. 5, 36258|Panevėžio r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.944519,
+        "lon": 25.585662
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.670113,
+        "lon": 24.349612
+      }
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Pasvalys, Mūšos g. 18, 39104|Pasvalio r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.224824,
+        "lon": 24.401365
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+        "display_address_source": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.070931,
+        "lon": 24.411231
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Gustaičių k., 59296|Prienų r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.503038,
+        "lon": 23.375134
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.738441,
+        "lon": 23.710503
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Velžių k., Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "lea_portal",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.814742,
+        "lon": 23.553075
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385
+      }
+    },
+    {
+      "station_key": "UAB Bonsa|Vaidatonių k. 1, 73406|Tauragės r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.481284,
+        "lon": 22.657973
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.469205,
+        "lon": 22.678905
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Šventupės k., Beržų g. 13, 20360|Ukmergės r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.314052,
+        "lon": 24.86977
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.320213,
+        "lon": 24.874846
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilkaviškis, S. Nėries g. 38, 70165|Vilkaviškio r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.663808,
+        "lon": 23.029367
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.657941,
+        "lon": 23.033195
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilnius, Juodasis kl. 32, 11307|Vilniaus m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.66294,
+        "lon": 25.339186
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.663053,
+        "lon": 25.342333
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Pajautos g. 31, 06200|Vilniaus m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.710396,
+        "lon": 25.166804
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.710402,
+        "lon": 25.161987
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Liepkalnio g. 112A, 02121|Vilniaus m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.654868,
+        "lon": 25.302985
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.65276,
+        "lon": 25.305714
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Spyglių g. 2, 27101|Vilniaus m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.739851,
+        "lon": 25.276131
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.668431,
+        "lon": 25.111652
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Maišiagala, Mokyklos g. 26, 14243|Vilniaus r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.871741,
+        "lon": 25.066309
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.87343,
+        "lon": 25.073483
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių k., 14207|Vilniaus r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.710674,
+        "lon": 25.156488
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.737396,
+        "lon": 25.079988
+      }
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Griškabūdis, A. Skelčio g., 71296|Šakių r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.850499,
+        "lon": 23.171448
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.852382,
+        "lon": 23.176758
+      }
+    },
+    {
+      "station_key": "UAB Tomega|Tartoko k., 17127|Šalčininkų r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.456879,
+        "lon": 25.279466
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.295226,
+        "lon": 25.360219
+      }
+    },
+    {
+      "station_key": "UAB Boost Petrol|Ginkūnų k., Aušros g. 26, 81492|Šiaulių r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "lea_portal",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.935761,
+        "lon": 23.077789
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.956317,
+        "lon": 23.342812
+      }
+    },
+    {
+      "station_key": "Nostrada (RV Transport)|Kazlavo k.|Kalvarijos sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.739711,
+        "lon": 25.280496
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.32897,
+        "lon": 23.148446
+      }
+    },
+    {
+      "station_key": "UAB Alauša|Skraičionių k., Skraičionių g. 1, 17140|Šalčininkų r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.205646,
+        "lon": 25.615742
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.204054,
+        "lon": 25.621299
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Akmenės I kaimas Plento g. 1|Akmenės r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.304061,
+        "lon": 22.838615
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.238461,
+        "lon": 22.750823
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Ignacavos km. Kauno pl. 18, 59149|Prienų r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.580056,
+        "lon": 23.887564
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.646657,
+        "lon": 23.930492
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.656839,
+        "lon": 21.183821
+      },
+      "after": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": "Klaipėdos m. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+        "lat": 55.656839,
+        "lon": 21.183821
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Lėkėčių km. Šakių g. 3, 71227|Šakių r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.981946,
+        "lon": 23.504211
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.977307,
+        "lon": 23.483572
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Naujoji Akmenė V. Kudirkos 18A, 85171|Akmenės r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.304061,
+        "lon": 22.838615
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 56.317191,
+        "lon": 22.884944
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Pageležių km., 20278|Ukmergės r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.73932,
+        "lon": 25.227399
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.165001,
+        "lon": 24.515676
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Rumšiškės Lekavičiaus g. 71, 56337|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.87185,
+        "lon": 24.213203
+      },
+      "after": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": "Kaišiadorių r. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/",
+        "lat": 54.87185,
+        "lon": 24.213203
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Ukmergė Vilniaus g. 122, 20167|Ukmergės r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.211548,
+        "lon": 24.795213
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.233539,
+        "lon": 24.781254
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Velžių km .Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "before": {
+        "approx": true,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.774164,
+        "lon": 23.662382
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Vilnius Stanevičiaus g. 3A, 07131|Vilniaus m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.728038,
+        "lon": 25.254387
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.721693,
+        "lon": 25.255867
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių km, 14207|Vilniaus r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": null,
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.710674,
+        "lon": 25.156488
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.737396,
+        "lon": 25.079988
+      }
+    }
+  ]
+}

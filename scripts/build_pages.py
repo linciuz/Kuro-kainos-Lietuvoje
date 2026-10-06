@@ -56,6 +56,21 @@ def esc(s):
     return html.escape(str(s or ""), quote=True)
 
 
+def station_address(station):
+    """Attributed display text; the source address remains untouched."""
+    return (station["display_address"] if station.get("display_address") and
+            station.get("display_address_source") else station.get("address") or "")
+
+
+def station_address_html(station):
+    shown = esc(station_address(station))
+    if not (station.get("display_address") and station.get("display_address_source")):
+        return shown
+    return (f'<span title="{esc("LEA: " + (station.get("address") or ""))}">{shown}</span> '
+            f'<a href="{esc(station["display_address_source"])}" target="_blank" '
+            'rel="noopener" title="Šaltinis" aria-label="Šaltinis">↗</a>')
+
+
 def fmt(v):
     return f"€{v:.3f}" if isinstance(v, (int, float)) else "–"
 
@@ -192,7 +207,7 @@ def build_muni_page(muni, rows, updated, neighbours=()):
 
     cheapest = cheapest_rows(rows)
     cheap_rows = "".join(
-        f"<tr><td>{esc(r.get('network'))}</td><td>{esc(r.get('address'))}</td>"
+        f"<tr><td>{esc(r.get('network'))}</td><td>{station_address_html(r)}</td>"
         f"<td class='n'>{fmt(r.get('petrol95'))}</td><td class='n'>{fmt(r.get('diesel'))}</td>"
         f"<td class='n'>{fmt(r.get('lpg'))}</td></tr>" for r in cheapest)
     # Honest heading: say what the table actually shows.
@@ -211,7 +226,7 @@ def build_muni_page(muni, rows, updated, neighbours=()):
         "itemListElement": [{
             "@type": "ListItem", "position": i + 1,
             "item": {"@type": "GasStation", "name": r.get("network") or "Degalinė",
-                     "address": {"@type": "PostalAddress", "streetAddress": r.get("address") or "",
+                     "address": {"@type": "PostalAddress", "streetAddress": station_address(r),
                                  "addressLocality": name, "addressCountry": "LT"}}
         } for i, r in enumerate(cheapest)],
     }

@@ -1,0 +1,106 @@
+{
+  "verified_operator_candidates": [
+    {
+      "station_key": "UAB Viada LT|Šilagalio k., Panevėžio aplinkl. 5, 36258|Panevėžio r. sav.",
+      "current_lat": 55.944519,
+      "current_lon": 25.585662,
+      "candidate_lat": 55.670113,
+      "candidate_lon": 24.349612,
+      "distance_km": 83.04656237890647,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "operator_address": "Panevėžio r., Šilagalis, Aplinkkelio g. 5",
+      "identity_evidence": "confirmed wrong station join; raw LEA registration is16.831m from correct operator point",
+      "changes_allowed": "coordinates and attributed evidence only; no price/address/legalcompany/raw municipality/station key changes"
+    },
+    {
+      "station_key": "UAB Viada LT|Vievis, Kauno g. 26A, 21376|Elektrėnų sav.",
+      "current_lat": 54.775194,
+      "current_lon": 24.810293,
+      "candidate_lat": 54.771212,
+      "candidate_lon": 24.820776,
+      "distance_km": 0.8050655276978959,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "operator_address": "Vievis, Kauno g. 26",
+      "identity_evidence": "confirmed wrong station join to55A; real operator26 point and rawLEA26A agree within0.232m; explicit house alias needed",
+      "changes_allowed": "coordinates and attributed evidence only; no price/address/legalcompany/raw municipality/station key changes"
+    },
+    {
+      "station_key": "UAB Narjanta|Aleksandrijos k., Kikonių g. 10, 40335|Kupiškio r. sav.",
+      "current_lat": 55.834253,
+      "current_lon": 25.009325,
+      "candidate_lat": 55.824587,
+      "candidate_lon": 25.001069,
+      "distance_km": 1.1920895904290179,
+      "source_url": "https://www.circlek.lt/degaliniu-sarasas",
+      "observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "operator_address": "Kikonių g. 10, Aleksandrijos k., Kupiškio r.",
+      "identity_evidence": "exact street, full house, village, district across legal-company/franchise brand; preserve rawlegal company",
+      "changes_allowed": "coordinates and attributed evidence only; no price/address/legalcompany/raw municipality/station key changes"
+    },
+    {
+      "station_key": "UAB Boost Petrol|Ginkūnų k., Aušros g. 26, 81492|Šiaulių r. sav.",
+      "current_lat": 55.935761,
+      "current_lon": 23.077789,
+      "candidate_lat": 55.956317,
+      "candidate_lon": 23.342812,
+      "distance_km": 16.659513983721553,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "operator_address": "Šiaulių r., Ginkūnų k., Aušros g. 26",
+      "identity_evidence": "exact street, full house, village, district across legal-company/franchise brand; preserve rawlegal company",
+      "changes_allowed": "coordinates and attributed evidence only; no price/address/legalcompany/raw municipality/station key changes"
+    },
+    {
+      "station_key": "UAB Boost Petrol|Kelmė, Kęstučio g. 1B, 86139|Kelmės r. sav.",
+      "current_lat": 55.634793,
+      "current_lon": 22.945432,
+      "candidate_lat": 55.633679,
+      "candidate_lon": 22.942879,
+      "distance_km": 0.20253875477761063,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "operator_address": "Kelmė, Kęstučio g. 1B",
+      "identity_evidence": "exact street, full house suffix1B, town across legal-company/franchise brand; preserve rawlegal company",
+      "changes_allowed": "coordinates and attributed evidence only; no price/address/legalcompany/raw municipality/station key changes"
+    }
+  ],
+  "operator_registration_conflicts": [
+    {
+      "station_key": "UAB Viada LT|Kaunas, Veiverių g. 117, 46354|Kauno m. sav.",
+      "current_operator_lat": 54.884491,
+      "current_operator_lon": 23.89482,
+      "registered_lea_lat": 54.8665,
+      "registered_lea_lon": 23.889237,
+      "distance_km": 2.032144274138615,
+      "operator_source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "lea_source_url": "https://degalukainos.ena.lt/api/v1/read/prices?per_page=3000",
+      "gas_station_id": 718,
+      "lea_cache_generated_utc": "2026-10-06T12:17:28Z",
+      "observation": "Live operator map and station-detail directory explicitly bind the same address to current point; parser association correct. Parent reported independent exact-house OSM corroborates LEA point. OSM verification/provenance belongs to root, not independently fetched here.",
+      "recommendation": "Exact-key override to registered point only after root records its independent OSM evidence; refreshing operator source alone retains this conflict"
+    },
+    {
+      "station_key": "UAB Viada LT|Šventupės k., Beržų g. 13, 20360|Ukmergės r. sav.",
+      "current_operator_lat": 55.314052,
+      "current_operator_lon": 24.86977,
+      "registered_lea_lat": 55.320213,
+      "registered_lea_lon": 24.874846,
+      "distance_km": 0.756622946131863,
+      "operator_source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "lea_source_url": "https://degalukainos.ena.lt/api/v1/read/prices?per_page=3000",
+      "gas_station_id": 778,
+      "lea_cache_generated_utc": "2026-10-06T12:17:28Z",
+      "observation": "Live operator map and station-detail directory explicitly bind the same address to current point; parser association correct. Parent reported independent exact-house OSM corroborates LEA point. OSM verification/provenance belongs to root, not independently fetched here.",
+      "recommendation": "Exact-key override to registered point only after root records its independent OSM evidence; refreshing operator source alone retains this conflict"
+    }
+  ],
+  "limitations": [
+    "A marker published on an official domain is not physical-location proof.",
+    "Matcher conservative skip does not erase an existing bad coordinate; known mistakes need root repair/overrides.",
+    "Neste Minijosg180/Klaipėda has no exact currentFuelis/LEA address match; do not invent station prices.",
+    "Circle K Pramonėsg17 vs17A and Viada DariausGirėno138 vs138A,Pramonėsg2A vs2 are source address discrepancies with closely agreeing points; raw identity unchanged.",
+    "Viada Ožiarūčių1A operator/LEA differ80.503m; entrance/footprint needs resolution before treating either as physical exact."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "audited_utc": "2026-10-06T15:21:18.764388+00:00",
+  "status": "UNRESOLVED_NO_CORRECTION_RECOMMENDED",
+  "station_key": "UAB Osijos dujos|Marijampolė, Gėlyno g. 25,|Marijampolės sav.",
+  "reason": "Gėlyno/Gėlių historical spelling and three conflicting pins. The LEA portal point agrees with a legacy Gėlių alias but no independent operator/address/parcel evidence proves the physical station. Price aggregators echo LEA and do not count as independent location proof.",
+  "current_vs_portal_distance_m": 3601.968,
+  "records": [
+    {
+      "source_file": "data/stations.json",
+      "source_sha256": "412daad0a31c311cb0ee915ae106d13844c94cc0d07e91e0b42a6d252a58f3b8",
+      "record": {
+        "network": "UAB Osijos dujos",
+        "address": "Marijampolė, Gėlyno g. 25,",
+        "municipality": "Marijampolės sav.",
+        "lat": 54.584074,
+        "lon": 23.360962,
+        "approx": false
+      }
+    },
+    {
+      "source_file": "data/stations.json",
+      "source_sha256": "412daad0a31c311cb0ee915ae106d13844c94cc0d07e91e0b42a6d252a58f3b8",
+      "record": {
+        "network": "UAB Osijos dujos",
+        "address": "Osijos k., Pamiškės g. 1, 70205",
+        "municipality": "Vilkaviškio r. sav.",
+        "lat": 54.636503,
+        "lon": 23.006549,
+        "approx": false,
+        "coord_source": "lea_portal"
+      }
+    },
+    {
+      "source_file": "data/stations.json",
+      "source_sha256": "412daad0a31c311cb0ee915ae106d13844c94cc0d07e91e0b42a6d252a58f3b8",
+      "record": {
+        "network": "UAB Osijos dujos",
+        "address": "Gėlių g. 25, Marijampolė",
+        "municipality": "Marijampolės sav.",
+        "lat": 54.551735,
+        "lon": 23.359045,
+        "approx": false
+      }
+    },
+    {
+      "source_file": "data/stations.json",
+      "source_sha256": "412daad0a31c311cb0ee915ae106d13844c94cc0d07e91e0b42a6d252a58f3b8",
+      "record": {
+        "network": "UAB Topgas",
+        "address": "Gėlyno g.25, Marijampolė",
+        "municipality": "Marijampolės sav.",
+        "lat": 54.581795,
+        "lon": 23.367262,
+        "approx": false
+      }
+    },
+    {
+      "source_file": "data/sources/lea_portal.json",
+      "source_sha256": "662a5d93f0f48dd3d2afea21c127733993616d795034453f19c1878d2ee24175",
+      "record": {
+        "company": "UAB Osijos dujos",
+        "address": "Marijampolė, Gėlyno g. 25,",
+        "municipality": "Marijampolės sav.",
+        "lat": 54.551735,
+        "lon": 23.359045,
+        "brand": "Osijos dujos"
+      }
+    },
+    {
+      "source_file": "data/sources/lea_portal.json",
+      "source_sha256": "662a5d93f0f48dd3d2afea21c127733993616d795034453f19c1878d2ee24175",
+      "record": {
+        "company": "UAB Osijos dujos",
+        "address": "Osijos k., Pamiškės g. 1, 70205",
+        "municipality": "Vilkaviškio r. sav.",
+        "lat": 54.636503,
+        "lon": 23.006549,
+        "brand": "Osijos dujos"
+      }
+    },
+    {
+      "source_file": "data/sources/lea_powerbi.json",
+      "source_sha256": "acdbc61ed4ae54a650b5c499aa3c1f782403a86197bff530645fa10dc30a153f",
+      "record": {
+        "company": "UAB Osijos dujos",
+        "address": "Gėlių g. 25, Marijampolė",
+        "municipality": "Marijampolės sav."
+      }
+    },
+    {
+      "source_file": "data/sources/lea_powerbi.json",
+      "source_sha256": "acdbc61ed4ae54a650b5c499aa3c1f782403a86197bff530645fa10dc30a153f",
+      "record": {
+        "company": "UAB Osijos dujos",
+        "address": "Marijampolė, Gėlių g. 25,",
+        "municipality": "Marijampolės sav."
+      }
+    },
+    {
+      "source_file": "data/sources/lea_powerbi.json",
+      "source_sha256": "acdbc61ed4ae54a650b5c499aa3c1f782403a86197bff530645fa10dc30a153f",
+      "record": {
+        "company": "UAB Osijos dujos",
+        "address": "Marijampolė, Gėlyno g. 25,",
+        "municipality": "Marijampolės sav."
+      }
+    },
+    {
+      "source_file": "data/sources/lea_powerbi.json",
+      "source_sha256": "acdbc61ed4ae54a650b5c499aa3c1f782403a86197bff530645fa10dc30a153f",
+      "record": {
+        "company": "UAB Osijos dujos",
+        "address": "Osijos k., Pamiškės g. 1, 70205",
+        "municipality": "Vilkaviškio r. sav."
+      }
+    },
+    {
+      "source_file": "data/sources/lea_powerbi.json",
+      "source_sha256": "acdbc61ed4ae54a650b5c499aa3c1f782403a86197bff530645fa10dc30a153f",
+      "record": {
+        "company": "UAB Topgas",
+        "address": "Gėlyno g.25, Marijampolė",
+        "municipality": "Marijampolės sav."
+      }
+    }
+  ],
+  "national_osm_snapshot": {
+    "path": "C:\\Claude\\fuelis-updates-20261006\\.claude\\map-audit-20261006\\osm-fuel.json",
+    "station_count": 773,
+    "matching_osijos_or_gelyno_geliu_fuel_station_found": false
+  },
+  "historical_road_plan_context": {
+    "url": "https://lrv.lt/media/viesa/saugykla/2023/7/dQG8_kiNnqc.pdf",
+    "pdf_page_one_based": 37,
+    "a5_km": 59.15,
+    "label": "Dujų degalinė",
+    "access_street": "Gėlyno gatvė",
+    "limitation": "Does not name operator or house25; does not resolve current station identity or coordinate."
+  },
+  "product_files_written": false,
+  "prices_read_or_changed": false
+}

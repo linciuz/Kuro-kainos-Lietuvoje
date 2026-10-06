@@ -38,7 +38,7 @@
                "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje" },
  "includedInDataCatalog": { "@type": "DataCatalog", "name": "Fuelis" },
  "distribution": [
-  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "282 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "328 KB" },
   { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "105 KB" },
   { "@type": "DataDownload", "name": "Dienos santrauka (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json", "contentSize": "1 KB" },
   { "@type": "DataDownload", "name": "Kainų istorija (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json", "contentSize": "28 KB" }
@@ -106,13 +106,14 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 <table>
 <tr><th>Laukas</th><th>Tipas</th><th>Paaiškinimas</th></tr>
 <tr><td><code>network</code></td><td>string</td><td>Įmonė / tinklas, kaip nurodyta LEA.</td></tr>
-<tr><td><code>address</code></td><td>string</td><td>Degalinės adresas.</td></tr>
+<tr><td><code>address</code></td><td>string</td><td>Originalus degalinės adresas iš LEA; išsaugomas šaltinio įrašų tapatumui.</td></tr>
 <tr><td><code>municipality</code></td><td>string</td><td>Savivaldybė (pvz. <code>Kauno m. sav.</code>).</td></tr>
 <tr><td><code>lat</code>, <code>lon</code></td><td>number</td><td>WGS-84. Daugumai — oficialios operatoriaus koordinatės; likusios geokoduotos.</td></tr>
 <tr><td><code>petrol95</code>, <code>diesel</code>, <code>lpg</code></td><td>number | null</td><td>EUR už litrą. <code>null</code> = degalinė to kuro neteikia arba kainos nepateikė.</td></tr>
 <tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kada LEA įraše paskutinį kartą fiksuota ši kaina.</td></tr>
 <tr><td><code>price_src</code></td><td>string | null</td><td>Kainos šaltinis: <code>portal</code>, <code>sharepoint</code> arba naujesnė patikrinta operatoriaus kaina (<code>saurida</code>).</td></tr>
 <tr><td><code>display_municipality</code>, <code>display_municipality_source</code></td><td>string | null</td><td>Patikslinta rodoma savivaldybė ir jos šaltinis, jei LEA klasifikacija skiriasi nuo patikrintos vietos. <code>municipality</code> išsaugo LEA klasifikaciją.</td></tr>
+<tr><td><code>display_address</code>, <code>display_address_source</code></td><td>string | null</td><td>Pasirenkamas patikslintas rodomas adresas ir jo šaltinis JSON rinkiniuose. Naudojamas tik kai abu laukai pateikti; <code>address</code> išsaugo originalų LEA adresą.</td></tr>
 </table>
 <pre><code>{
  &quot;network&quot;: &quot;UAB Baltic Petroleum&quot;,
@@ -126,7 +127,9 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
  &quot;price_updated&quot;: &quot;2026-10-06T09:23:08+03:00&quot;,
  &quot;price_src&quot;: &quot;portal&quot;,
  &quot;display_municipality&quot;: null,
- &quot;display_municipality_source&quot;: null
+ &quot;display_municipality_source&quot;: null,
+ &quot;display_address&quot;: null,
+ &quot;display_address_source&quot;: null
 }</code></pre>
 
 <h2>Atnaujinimo dažnis</h2>

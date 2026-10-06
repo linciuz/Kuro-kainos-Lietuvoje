@@ -1,0 +1,102 @@
+{
+  "audited_utc": "2026-10-06T15:15:32.235062+00:00",
+  "station_key": "Nostrada (RV Transport)|Kazlavo k.|Kalvarijos sav.",
+  "recommendation": "Replace grossly wrong approximate legacy alias point with exact official LEA sibling point, keeping all raw identity fields unchanged. Do not change municipality.",
+  "candidate_coordinate": {
+    "lat": 54.32897,
+    "lon": 23.148446,
+    "coordinate_source": "https://degalukainos.ena.lt/",
+    "source_sibling_station_key": "UAB Nostrada|Kazlavo k. 4, 69285|Kalvarijos sav.",
+    "source_cache": "data/sources/lea_portal.json",
+    "source_brand": "RV Transport"
+  },
+  "primary_premises_corroboration": {
+    "url": "https://aad.lrv.lt/public/canonical/1778733133/5313/Aplinkos%20apsaugos%20departamento%20prie%20Aplinkos%20ministerijos%202026%20m.%20%C5%ABkio%20subjekt%C5%B3%2C%20juridini%C5%B3%20asmen%C5%B3%20ir%20kit%C5%B3%20asmen%C5%B3%2C%20vykdan%C4%8Di%C5%B3%20veikl%C4%85%2C%20kuriaireikalingas%20leidimas%2C%20patikrinim%C5%B3%20planas%20%28nuo2026-05-12.%20Aktuali%20redakcija%29.pdf",
+    "document_year": 2026,
+    "revision": "2026-05-12",
+    "pdf_page_one_based": 42,
+    "inspection_row": 1329,
+    "object_id": 12617,
+    "operator": "UAB Nostrada",
+    "company_code": "145402271",
+    "address": "Kazlavo k. 4, Kalvarijos sav.",
+    "premises_type": "degalinė-autocentras",
+    "read_via": "web.run official PDF parsed text",
+    "raw_pdf_retained": false,
+    "desktop_http_status": 200,
+    "raw_pdf_sha256": "fc7715a3df26aec2b93c413c6b8a261d86737ae9674820121a64241244735775",
+    "retrieved_utc": "2026-10-06T15:15:30.737376+00:00",
+    "tls_verified": true
+  },
+  "primary_operator_identity_corroboration": {
+    "url": "https://www.rvtransport.lt/kontaktai/",
+    "company_name": "UAB Nostrada",
+    "company_code": "145402271",
+    "checked_via": "web.run official search result",
+    "station_premises_address_not_listed_on_operator_contacts": true
+  },
+  "primary_road_plan_corroboration": {
+    "url": "https://lrv.lt/media/viesa/saugykla/2023/7/dQG8_kiNnqc.pdf",
+    "pdf_page_one_based": 37,
+    "a5_km": 93.812,
+    "station_label": "RV transport",
+    "side": "Dešinėje",
+    "historical_plan_not_current_coordinate_authority": true
+  },
+  "osm_corroboration": {
+    "url": "https://www.openstreetmap.org/way/198222849",
+    "local_sanitized_geometry_report": "C:\\Claude\\kuro-kainos-Lietuvoje\\.claude\\map-audit-20261006\\boundary-nostrada-kazlavo-osm-forecourt.json",
+    "mapped_point": {
+      "lat": 54.3287083,
+      "lon": 23.1475358,
+      "boundary_attribution": [
+        {
+          "municipality_code": "48",
+          "municipality": "Kalvarijos sav.",
+          "boundary_distance_m": 1493.905
+        }
+      ]
+    },
+    "tags": {
+      "addr:city": "Kazlavas",
+      "addr:contact": "yes",
+      "addr:housenumber": "4",
+      "addr:nostreet": "yes",
+      "addr:place": "Kazlavas",
+      "amenity": "fuel",
+      "building": "yes",
+      "name": "RV station"
+    },
+    "current_osm_version": 3,
+    "last_osm_edit": "2026-07-29T10:53:42Z",
+    "mapped_geometry_area_m2": 153.628,
+    "official_candidate_distance_to_mapped_building_polygon_m": 56.391,
+    "candidate_distance_to_mapped_center_m": 65.993,
+    "limitation": "OSM maps a building/amenity outline, not authoritative cadastral parcel or full forecourt. LEA point is nearby but not inside that building outline. No sub-metre pump/navigation precision claimed."
+  },
+  "old_point": {
+    "lat": 54.739711,
+    "lon": 25.280496,
+    "boundary_attribution": [
+      {
+        "municipality_code": "13",
+        "municipality": "Vilniaus m. sav.",
+        "boundary_distance_m": 3214.574
+      }
+    ]
+  },
+  "candidate_point": {
+    "lat": 54.32897,
+    "lon": 23.148446,
+    "boundary_attribution": [
+      {
+        "municipality_code": "48",
+        "municipality": "Kalvarijos sav.",
+        "boundary_distance_m": 1539.883
+      }
+    ]
+  },
+  "old_to_candidate_distance_m": 145383.543,
+  "product_files_written": false,
+  "no_price_or_identity_merge_proposed": true
+}

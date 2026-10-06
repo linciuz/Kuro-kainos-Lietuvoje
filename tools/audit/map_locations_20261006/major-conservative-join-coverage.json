@@ -1,0 +1,54 @@
+{
+  "head": "437182cc9fe3ba99c4e13ef4cf9baf9450c8a7e0",
+  "directory_generated_utc": "2026-10-06T12:13:50Z",
+  "directory_records": 500,
+  "station_rows": 809,
+  "note": "Full street+house+locality,city andexplicitdistrict guards;source-only no fuzzy or nearestfallback.",
+  "summary": [
+    {
+      "network": "Baltic Petroleum",
+      "directory_count": 95,
+      "published_rows": 93,
+      "matched": 73,
+      "unmatched": 20,
+      "ambiguous": 0,
+      "collision": 0
+    },
+    {
+      "network": "Circle K",
+      "directory_count": 99,
+      "published_rows": 92,
+      "matched": 89,
+      "unmatched": 3,
+      "ambiguous": 0,
+      "collision": 0
+    },
+    {
+      "network": "Emsi",
+      "directory_count": 81,
+      "published_rows": 50,
+      "matched": 22,
+      "unmatched": 25,
+      "ambiguous": 3,
+      "collision": 0
+    },
+    {
+      "network": "Neste",
+      "directory_count": 86,
+      "published_rows": 86,
+      "matched": 73,
+      "unmatched": 13,
+      "ambiguous": 0,
+      "collision": 0
+    },
+    {
+      "network": "Viada",
+      "directory_count": 139,
+      "published_rows": 134,
+      "matched": 117,
+      "unmatched": 17,
+      "ambiguous": 0,
+      "collision": 0
+    }
+  ]
+}

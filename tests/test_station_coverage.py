@@ -82,7 +82,7 @@ class StationCoverageTests(unittest.TestCase):
         # Include every actual EMSI station: an exact matcher must change one.
         stations = copy.deepcopy([s for s in self.before["stations"] if s["network"] == "UAB Emsi"])
         original = copy.deepcopy(stations)
-        self.assertEqual(self.apply_overrides(stations), 1)
+        self.assertEqual(self.apply_overrides(stations, {"overrides": [self.target_override]}), 1)
         for old, new in zip(original, stations):
             self.assertEqual(self.key(old), self.key(new))
             for field in ("lat", "lon", "approx", "coord_source", *price_engine.FUELS):

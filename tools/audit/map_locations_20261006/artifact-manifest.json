@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-06",
+  "files": [
+    {
+      "path": "tools/audit/map_locations_20261006/municipalities-before.json.gz",
+      "uncompressed_sha256": "4054866511573dba401898009a767f34ee3f89aaabce9c231bbd750fcfac05ef",
+      "bytes": 58460
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/municipalities-after.json.gz",
+      "uncompressed_sha256": "f0f3453921b3e933df939f1d9e88c335c91b11816226f493fa72fdccf5c292c0",
+      "bytes": 58618
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/osm-screen-before.json.gz",
+      "uncompressed_sha256": "220e9168b5d05ad21a07d6ee83131fd9efa4f3d72560d14bb7dc979858c36cd6",
+      "bytes": 89842
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/old-override-review.json",
+      "uncompressed_sha256": "60575cc0397d5bf963a0113b10c9befd024a1134616cf517df95051e451aa368",
+      "bytes": 9690
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/boundary-osijos-gelyno25-pending.json",
+      "uncompressed_sha256": "5a83d600926dcf503e07ab23ffb34ba1407427a126a31afaf9cb228467c37b3d",
+      "bytes": 5164
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/boundary-regusa-jure-investigation.json",
+      "uncompressed_sha256": "19720e47b718482e446578b817219c6d598a36fb670d25f802e8539053eb99fb",
+      "bytes": 4315
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/small-source-audit.json",
+      "uncompressed_sha256": "ef3eea57e47aa8f0ad30736f6c791a02b69e1a62da2194de8e78d2f7b31de92e",
+      "bytes": 4174
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/small-display-only-candidates.json",
+      "uncompressed_sha256": "8f7869e334cc93649c54a1c1c573b60d40b6e3a9cf980eb3c1a0d1f4246c2ee3",
+      "bytes": 4492
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/major-corrections-and-limitations.json",
+      "uncompressed_sha256": "ddd44c324cc900fdf86dd810dce56a4f2ee8fbeb191bdf516feb823d7625c518",
+      "bytes": 6508
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/major-recurrence-preservation-evidence.json",
+      "uncompressed_sha256": "fb7170d8d15b9db3f01022ee450affe7e88c6d372c5457c417993421725dc667",
+      "bytes": 6751
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/major-conservative-join-coverage.json",
+      "uncompressed_sha256": "ae6811b6131ae2e52fe397709d8002baa98139257ed744211f5270f7c31587f9",
+      "bytes": 1223
+    },
+    {
+      "path": "tools/audit/map_locations_20261006/geographic-source-observations.json.gz",
+      "uncompressed_sha256": "0601a1d3121e639c8fde074f79354ef82a62c6d4c818d94c2a616cf104e6d1bf",
+      "bytes": 86574
+    }
+  ],
+  "policy": "Only whitelisted geographic identity/source fields are saved; no raw operator HTML, executable scripts, API/browser keys or private credentials."
+}

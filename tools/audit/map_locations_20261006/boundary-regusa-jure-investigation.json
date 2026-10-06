@@ -1,0 +1,123 @@
+{
+  "audited_at_utc": "2026-10-06T14:54:18.234113+00:00",
+  "station_key": "UAB Regusa|Jūrės k., Medelyno g. 4A, 69446|Kazlų Rūdos sav.",
+  "operator_source": {
+    "url": "https://www.regusa.lt/degalines/",
+    "checked_via": "web.run official page read",
+    "station_name": "JŪRĖ",
+    "station_address": "Medelyno g. 4A, Jūrės k., Kazlų Rūdos sav.",
+    "desktop_direct_fetch_success": false,
+    "desktop_direct_fetch_limitation": "TLS certificate validation failed; TLS checks were not disabled."
+  },
+  "municipal_source": {
+    "url": "https://map.kazluruda.lt/regusa-2/",
+    "status": 200,
+    "retrieved_at_utc": "2026-10-06T14:54:18.234113+00:00",
+    "raw_html_sha256": "74de62a311a55988b3a74708f97d5156a353f02ce30b7c4cc74896682a8fd93d",
+    "tls_verified": true,
+    "station_name": "Regusa",
+    "station_address": "Medelyno g. 4a, Jūrė",
+    "exact_address_present": true,
+    "navigation_coordinates": {
+      "lat": 54.76929339137726,
+      "lon": 23.486604531243888
+    },
+    "raw_html_retained": false
+  },
+  "osm_source_path": "C:\\Claude\\fuelis-updates-20261006\\.claude\\map-audit-20261006\\osm-fuel.json",
+  "osm_timestamp": "2026-10-06T14:29:51Z",
+  "matched_osm_stations": [
+    {
+      "type": "way",
+      "id": 236747195,
+      "lat": 54.8501921,
+      "lon": 23.9657453,
+      "tags": {
+        "addr:city": "Kaunas",
+        "addr:housenumber": "20",
+        "addr:postcode": "46147",
+        "addr:street": "Marijampolės pl.",
+        "amenity": "fuel",
+        "name": "Regusa"
+      }
+    },
+    {
+      "type": "way",
+      "id": 375653543,
+      "lat": 54.7692665,
+      "lon": 23.4865622,
+      "tags": {
+        "addr:city": "Jūrė",
+        "addr:housenumber": "4A",
+        "addr:street": "Medelyno g.",
+        "amenity": "fuel",
+        "name": "Regusa"
+      }
+    }
+  ],
+  "current_pin": {
+    "lat": 54.850076,
+    "lon": 23.965872,
+    "coord_source": "lea_portal",
+    "approx": false
+  },
+  "candidate_verified_pin": {
+    "lat": 54.76929339137726,
+    "lon": 23.486604531243888
+  },
+  "candidate_vs_osm_jure_distance_m": 4.039,
+  "old_pin_vs_osm_kaunas_other_station_m": 15.246,
+  "old_vs_candidate_distance_m": 31998.568,
+  "official_boundary_classification": {
+    "current_fuelis_pin": [
+      {
+        "code": "19",
+        "municipality": "Kauno m. sav.",
+        "boundary_distance_m": 722.338
+      }
+    ],
+    "municipal_navigation_pin": [
+      {
+        "code": "58",
+        "municipality": "Kazlų Rūdos sav.",
+        "boundary_distance_m": 6429.738
+      }
+    ]
+  },
+  "conclusion": "Current pin matches another Regusa station in Kaunas. Exact-address operator and independently verified municipal navigation evidence support the Jure pin. Preserve raw Kazlų Rūdos sav. and original station key.",
+  "product_files_written": false,
+  "raw_html_scripts_or_credentials_saved": false,
+  "stateta_bro_partner_evidence": {
+    "source_url": "https://stateta.lt/wp-json/interita-maps/v1/branches?country=Lietuva&city=&address=&lat_min=0&lat_max=0&lng_min=0&lng_max=0",
+    "captured_utc": "2026-10-06T14:42:44.706986+00:00",
+    "matched_entry": {
+      "title": "Regusa",
+      "address": "Medelyno g. 4A",
+      "city": "Kazlų Rūdos sav. Jūrės k.",
+      "country": "Lietuva",
+      "lat": 54.769323,
+      "lon": 23.486655
+    },
+    "sanitized_source_sha256": "65ad2d7087bdc8399711ba85079a47b1c8a315913c61a0010acc2e5718a9bad7"
+  },
+  "osm_fuel_area_evidence": {
+    "path": "C:\\Claude\\kuro-kainos-Lietuvoje\\.claude\\map-audit-20261006\\boundary-regusa-jure-osm-forecourt.json",
+    "polygon_valid": true,
+    "area_m2": 60.021,
+    "pin_checks": {
+      "municipal_navigation": {
+        "within_osm_fuel_polygon": false,
+        "distance_to_osm_fuel_polygon_m": 1.226,
+        "distance_to_osm_fuel_polygon_centroid_m": 4.043
+      },
+      "stateta_bro_partner_directory": {
+        "within_osm_fuel_polygon": false,
+        "distance_to_osm_fuel_polygon_m": 5.839,
+        "distance_to_osm_fuel_polygon_centroid_m": 8.668
+      }
+    },
+    "limitation": "OSM amenity=fuel polygon marks the station area, not an authoritative cadastral parcel or proof of a building outline; mapped geometry last edited 2018."
+  },
+  "partner_vs_municipal_pin_m": 4.627,
+  "additional_review_at_utc": "2026-10-06T14:56:01.416402+00:00"
+}

@@ -1,0 +1,3 @@
+# Optional offline municipality audit only; not needed by price refresh or CI.
+shapely==2.1.2
+pyproj==3.8.0

@@ -1,0 +1,179 @@
+{
+  "scope": "Recorded source/OSM cross-checks of conservative matcher skips; grades describe physical attribution limits, not a universal accuracy guarantee",
+  "records": [
+    {
+      "station_key": "UAB Viada LT|Margavos k., 54471|Kauno r. sav.",
+      "recommendation": "Exact attributed coordinate override to existing operator point; preserve raw identity",
+      "coordinate": [
+        54.958815,
+        24.039164
+      ],
+      "grade": "B: same official operator village/district and nearby branded forecourt; no exact OSM address/house; entrance/footprint precision limited",
+      "official_operator": {
+        "network": "Viada",
+        "address": "Kauno r., Margavos k.",
+        "city": "",
+        "lat": 54.958815,
+        "lon": 24.039164,
+        "source": "viada-web"
+      },
+      "operator_source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "operator_observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "registered_lea": {
+        "gas_station_id": 712,
+        "address": "Margavos k., 54471",
+        "lat": 54.959513,
+        "lon": 24.039321
+      },
+      "lea_source_url": "https://degalukainos.ena.lt/api/v1/read/prices?per_page=3000",
+      "lea_cache_generated_utc": "2026-10-06T12:17:28Z",
+      "osm": {
+        "type": "way",
+        "id": 520974228,
+        "lat": 54.9595759,
+        "lon": 24.0390846,
+        "tags": {
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "Viada"
+        }
+      },
+      "osm_url": "https://www.openstreetmap.org/way/520974228",
+      "osm_snapshot_utc": "2026-10-06T14:29:51Z",
+      "operator_to_osm_m": 84.75994028188481,
+      "operator_to_registered_lea_m": 78.2586216799353
+    },
+    {
+      "station_key": "UAB Viada LT|Klaipėda, Taikos pr. 70A-1, 93202|Klaipėdos m. sav.",
+      "recommendation": "Exact attributed coordinate override to existing operator point; preserve raw identity",
+      "coordinate": [
+        55.68327,
+        21.160516
+      ],
+      "grade": "A: raw unit70A-1 belongs to operator/OSM full house70A; exact street, city, Viada identity and near-coincident registered/operator/OSM points",
+      "official_operator": {
+        "network": "Viada",
+        "address": "Klaipėda, Taikos pr. 70A",
+        "city": "",
+        "lat": 55.68327,
+        "lon": 21.160516,
+        "source": "viada-web"
+      },
+      "operator_source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "operator_observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "registered_lea": {
+        "gas_station_id": 708,
+        "address": "Klaipėda, Taikos pr. 70A-1, 93202",
+        "lat": 55.683289,
+        "lon": 21.16064
+      },
+      "lea_source_url": "https://degalukainos.ena.lt/api/v1/read/prices?per_page=3000",
+      "lea_cache_generated_utc": "2026-10-06T12:17:28Z",
+      "osm": {
+        "type": "way",
+        "id": 98885067,
+        "lat": 55.6832192,
+        "lon": 21.1604456,
+        "tags": {
+          "addr:city": "Klaipėda",
+          "addr:housenumber": "70A",
+          "addr:street": "Taikos pr.",
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "Viada"
+        }
+      },
+      "osm_url": "https://www.openstreetmap.org/way/98885067",
+      "osm_snapshot_utc": "2026-10-06T14:29:51Z",
+      "operator_to_osm_m": 7.168301261647235,
+      "operator_to_registered_lea_m": 8.05530734193185
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Biruliškių g. 18A, 51205|Kauno m. sav.",
+      "recommendation": "Exact attributed coordinate override to existing operator point; preserve raw identity",
+      "coordinate": [
+        54.911393,
+        24.021123
+      ],
+      "grade": "A: raw LEA and OSM agree streetg/fullhouse18A/city/Viada; operator labelpl is discrepant but point agrees; preserve rawstreetg",
+      "official_operator": {
+        "network": "Viada",
+        "address": "Kaunas, Biruliškių pl. 18A",
+        "city": "",
+        "lat": 54.911393,
+        "lon": 24.021123,
+        "source": "viada-web"
+      },
+      "operator_source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "operator_observed_utc": "2026-10-06T14:32:20.268371+00:00",
+      "registered_lea": {
+        "gas_station_id": 722,
+        "address": "Kaunas, Biruliškių g. 18A, 51205",
+        "lat": 54.911391,
+        "lon": 24.020894
+      },
+      "lea_source_url": "https://degalukainos.ena.lt/api/v1/read/prices?per_page=3000",
+      "lea_cache_generated_utc": "2026-10-06T12:17:28Z",
+      "osm": {
+        "type": "node",
+        "id": 5198473897,
+        "lat": 54.9114025,
+        "lon": 24.0210519,
+        "tags": {
+          "addr:city": "Kaunas",
+          "addr:housenumber": "18A",
+          "addr:street": "Biruliškių g.",
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "UAB „Viada Lt“"
+        }
+      },
+      "osm_url": "https://www.openstreetmap.org/node/5198473897",
+      "osm_snapshot_utc": "2026-10-06T14:29:51Z",
+      "operator_to_osm_m": 4.66583403757393,
+      "operator_to_registered_lea_m": 14.639272512324869
+    },
+    {
+      "station_key": "UAB Emsi|Šiauliai, Sembos g. 5, 78347|Šiaulių m. sav.",
+      "grade": "C: unresolved physical/address identity; old cached point, current active operator marker, registered coordinate disagree; nearby OSM fuel node lacks address and EMSI brand",
+      "recommendation": "Do not preserve old chain point solely to avoid a cron delta; require independent street-house/forecourt proof before final choice",
+      "old_cached_operator_point": [
+        55.895367,
+        23.276915
+      ],
+      "current_emsi_page_marker": {
+        "id": "11048",
+        "name": "Sembos g. 5, Šiauliai",
+        "address": "Sembos g. 5, Šiauliai, Šiaulių m. sav., Lietuva",
+        "city": "",
+        "lat": 55.8966727,
+        "lon": 23.2741293
+      },
+      "operator_source_url": "https://emsi.lt/degalines/",
+      "operator_observed_utc": "2026-10-06T14:34:16.590510+00:00",
+      "registered_lea": {
+        "gas_station_id": 344,
+        "address": "Šiauliai, Sembos g. 5, 78347",
+        "lat": 55.898927,
+        "lon": 23.271654
+      },
+      "lea_source_url": "https://degalukainos.ena.lt/api/v1/read/prices?per_page=3000",
+      "osm": {
+        "type": "node",
+        "id": 761578911,
+        "lat": 55.8988339,
+        "lon": 23.2716301,
+        "tags": {
+          "amenity": "fuel",
+          "name": "CPB"
+        }
+      },
+      "osm_url": "https://www.openstreetmap.org/node/761578911",
+      "osm_snapshot_utc": "2026-10-06T14:29:51Z",
+      "registered_lea_to_generic_fuel_m": 10.458922245867948
+    }
+  ]
+}

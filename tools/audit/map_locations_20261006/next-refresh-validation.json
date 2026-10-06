@@ -1,0 +1,1525 @@
+{
+  "report_version": 1,
+  "validation_utc": "2026-10-06T16:02:27.942968+00:00",
+  "network_calls": 0,
+  "scope": "Pure local next scheduled refresh reconstruction using current raw identities, caches, conservative chain joins, portal approximate fallback and final reviewed overrides. No source fetch, network geocoding, price calculation, generator, publishing or product-data write. Price payloads are excluded.",
+  "baseline_commit": "3e85d104dcfd9b841247ec3a6d1db83575d82dc9",
+  "baseline_stations_sha256": "862b758028cc21cb4f7ff87bfc859a8f115722e47b2caa2866f8f0b3616f2a93",
+  "source_files": {
+    "final_stations": {
+      "path": "data/stations.json",
+      "sha256": "670423c50049bf3654f315496839e5659cd90287c6bef95842bbf49471e68675",
+      "bytes": 415251
+    },
+    "overrides": {
+      "path": "data/coord_overrides.json",
+      "sha256": "21fd92d4cf0f641bebf8043275fb99f43773c26e080ba725888b0cf6f0ecb181",
+      "bytes": 26242
+    },
+    "geocode_cache": {
+      "path": "data/geocode_cache.json",
+      "sha256": "3654a6c01351b73f2fe56195e9a874eed97fc22e31d1ba4650a11ef2105c4163",
+      "bytes": 181154
+    },
+    "chain_directory": {
+      "path": "data/sources/chain_stations.json",
+      "sha256": "acf56db0ca620f7bbac7cc82c6b93315e1c11054e75e4670e0fd1ecae8a52285",
+      "bytes": 100457
+    },
+    "lea_portal_cache": {
+      "path": "data/sources/lea_portal.json",
+      "sha256": "662a5d93f0f48dd3d2afea21c127733993616d795034453f19c1878d2ee24175",
+      "bytes": 343016
+    },
+    "chain_merge_code": {
+      "path": "scripts/merge_chain_coords.py",
+      "sha256": "ae1617ef072981db70b3ec321d89d5baaba78f978dc8a0b198e03570bc3a3c0d",
+      "bytes": 15895
+    },
+    "geocode_code": {
+      "path": "scripts/geocode.py",
+      "sha256": "8b24d14f7c3890892c86ab62a13cc7b6af79aa31b53f1fd99284abf1a4c4f42c",
+      "bytes": 10201
+    },
+    "repair_code": {
+      "path": "tools/audit/apply_station_locations_20261006.py",
+      "sha256": "141a654c9027fff90f24215785732475b991e7bdbba282fa177c35e61d80df74",
+      "bytes": 5430
+    }
+  },
+  "source_cache_timestamps": {
+    "chain_directory_generated_utc": "2026-10-06T12:13:50Z",
+    "chain_directory_last_success_utc": "2026-10-06T12:13:50Z",
+    "lea_portal_generated_utc": "2026-10-06T12:17:28Z",
+    "lea_portal_api_last_updated": "2026-10-06 13:00:20",
+    "station_price_date": "2026-10-06",
+    "station_price_engine_resolved_utc": "2026-10-06T15:03:58+00:00Z"
+  },
+  "simulation_steps": [
+    "Deepcopy final stations and remove only GEOGRAPHIC_FIELDS, as fetch_prices rebuild does",
+    "Reapply existing exact address | municipality geocode-cache keys without network",
+    "Run geocode.median_sanity in memory",
+    "Run match_chain_addresses and snap positive identity joins for each mapped operator",
+    "Run apply_portal_coords for remaining approximate points only",
+    "Run apply_overrides last with all reviewed exact raw station keys",
+    "Compare each coordinate/display target and complete protected projection; call pure repair_geography for idempotence"
+  ],
+  "counts": {
+    "station_rows": 809,
+    "directory_rows": 500,
+    "exact_geocode_cache_rows_applied": 809,
+    "cache_rows_missing": 0,
+    "median_downgrades": 13,
+    "portal_approximate_points_applied": 148,
+    "exact_override_rules": 55,
+    "override_rules_applied": 55,
+    "coordinate_targets": 50,
+    "attributed_display_fields": 6,
+    "all_coordinate_differences": 35,
+    "differences_over100m": 1,
+    "differences_at_or_under100m": 34
+  },
+  "checks": {
+    "all_coordinate_override_targets_persist": true,
+    "all_attributed_display_fields_persist": true,
+    "protected_projection_equals_baseline": true,
+    "protected_projection_unchanged_by_simulation": true,
+    "repair_idempotent": true,
+    "raw_identity_and_row_order_unchanged": true,
+    "only_documented_sembos_exceeds_100m": true
+  },
+  "protected_projection_sha256": {
+    "baseline": "9a3e17cdf792735cd6a0bc669dce703226fd3f8c2302f4d139e7d9e745bc4845",
+    "final": "9a3e17cdf792735cd6a0bc669dce703226fd3f8c2302f4d139e7d9e745bc4845",
+    "simulated_next_refresh": "9a3e17cdf792735cd6a0bc669dce703226fd3f8c2302f4d139e7d9e745bc4845"
+  },
+  "chain_join_counts": [
+    {
+      "operator": "Baltic Petroleum",
+      "directory_rows": 95,
+      "station_rows": 93,
+      "matched": 73,
+      "unmatched": 20,
+      "ambiguous": 0,
+      "collision": 0
+    },
+    {
+      "operator": "Emsi",
+      "directory_rows": 81,
+      "station_rows": 50,
+      "matched": 22,
+      "unmatched": 25,
+      "ambiguous": 3,
+      "collision": 0
+    },
+    {
+      "operator": "Neste",
+      "directory_rows": 86,
+      "station_rows": 86,
+      "matched": 73,
+      "unmatched": 13,
+      "ambiguous": 0,
+      "collision": 0
+    },
+    {
+      "operator": "Circle K",
+      "directory_rows": 99,
+      "station_rows": 92,
+      "matched": 89,
+      "unmatched": 3,
+      "ambiguous": 0,
+      "collision": 0
+    },
+    {
+      "operator": "Viada",
+      "directory_rows": 139,
+      "station_rows": 134,
+      "matched": 117,
+      "unmatched": 17,
+      "ambiguous": 0,
+      "collision": 0
+    }
+  ],
+  "coordinate_override_targets": [
+    {
+      "station_key": "UAB Viada LT|Panevėžys, Pušaloto g. 193A, 191A|Panevėžio m. sav.",
+      "expected": {
+        "lat": 55.753237,
+        "lon": 24.312254
+      },
+      "simulated": {
+        "lat": 55.753237,
+        "lon": 24.312254
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": null
+    },
+    {
+      "station_key": "UAB Naftrus|Slabados k., Pievų g. 19, 60109|Raseinių r. sav.",
+      "expected": {
+        "lat": 55.386231,
+        "lon": 23.042885
+      },
+      "simulated": {
+        "lat": 55.386231,
+        "lon": 23.042885
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": null
+    },
+    {
+      "station_key": "Lašų žemės ūkio bendrovė|Vytėnai, Vytėnų vs 9, 42255|Rokiškio r. sav.",
+      "expected": {
+        "lat": 55.8574667,
+        "lon": 25.7336514
+      },
+      "simulated": {
+        "lat": 55.8574667,
+        "lon": 25.7336514
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": null
+    },
+    {
+      "station_key": "UAB Viada LT|Šilagalio k., Panevėžio aplinkl. 5, 36258|Panevėžio r. sav.",
+      "expected": {
+        "lat": 55.670113,
+        "lon": 24.349612
+      },
+      "simulated": {
+        "lat": 55.670113,
+        "lon": 24.349612
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/"
+    },
+    {
+      "station_key": "UAB Viada LT|Vievis, Kauno g. 26A, 21376|Elektrėnų sav.",
+      "expected": {
+        "lat": 54.771212,
+        "lon": 24.820776
+      },
+      "simulated": {
+        "lat": 54.771212,
+        "lon": 24.820776
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/"
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Veiverių g. 117, 46354|Kauno m. sav.",
+      "expected": {
+        "lat": 54.8665,
+        "lon": 23.889237
+      },
+      "simulated": {
+        "lat": 54.8665,
+        "lon": 23.889237
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Viada LT|Šventupės k., Beržų g. 13, 20360|Ukmergės r. sav.",
+      "expected": {
+        "lat": 55.320213,
+        "lon": 24.874846
+      },
+      "simulated": {
+        "lat": 55.320213,
+        "lon": 24.874846
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Narjanta|Aleksandrijos k., Kikonių g. 10, 40335|Kupiškio r. sav.",
+      "expected": {
+        "lat": 55.824587,
+        "lon": 25.001069
+      },
+      "simulated": {
+        "lat": 55.824587,
+        "lon": 25.001069
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.circlek.lt/degaliniu-sarasas"
+    },
+    {
+      "station_key": "UAB Boost Petrol|Ginkūnų k., Aušros g. 26, 81492|Šiaulių r. sav.",
+      "expected": {
+        "lat": 55.956317,
+        "lon": 23.342812
+      },
+      "simulated": {
+        "lat": 55.956317,
+        "lon": 23.342812
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/"
+    },
+    {
+      "station_key": "UAB Boost Petrol|Smėlinkos vs. 1, 33171|Molėtų r. sav.",
+      "expected": {
+        "lat": 55.264341,
+        "lon": 25.490041
+      },
+      "simulated": {
+        "lat": 55.264341,
+        "lon": 25.490041
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Spyglių g. 2, 27101|Vilniaus m. sav.",
+      "expected": {
+        "lat": 54.668431,
+        "lon": 25.111652
+      },
+      "simulated": {
+        "lat": 54.668431,
+        "lon": 25.111652
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Emsi|Vilkaviškis, S. Nėries g. 38, 70165|Vilkaviškio r. sav.",
+      "expected": {
+        "lat": 54.657941,
+        "lon": 23.033195
+      },
+      "simulated": {
+        "lat": 54.657941,
+        "lon": 23.033195
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Emsi|Mastaičių k., Marijampolės g. 58, 53285|Kauno r. sav.",
+      "expected": {
+        "lat": 54.809536,
+        "lon": 23.853751
+      },
+      "simulated": {
+        "lat": 54.809536,
+        "lon": 23.853751
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Pajautos g. 31, 06200|Vilniaus m. sav.",
+      "expected": {
+        "lat": 54.710402,
+        "lon": 25.161987
+      },
+      "simulated": {
+        "lat": 54.710402,
+        "lon": 25.161987
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Liepkalnio g. 112A, 02121|Vilniaus m. sav.",
+      "expected": {
+        "lat": 54.65276,
+        "lon": 25.305714
+      },
+      "simulated": {
+        "lat": 54.65276,
+        "lon": 25.305714
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Emsi|Maišiagala, Mokyklos g. 26, 14243|Vilniaus r. sav.",
+      "expected": {
+        "lat": 54.87343,
+        "lon": 25.073483
+      },
+      "simulated": {
+        "lat": 54.87343,
+        "lon": 25.073483
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Regusa|Jūrės k., Medelyno g. 4A, 69446|Kazlų Rūdos sav.",
+      "expected": {
+        "lat": 54.76929339137726,
+        "lon": 23.486604531243888
+      },
+      "simulated": {
+        "lat": 54.76929339137726,
+        "lon": 23.486604531243888
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://map.kazluruda.lt/regusa-2/"
+    },
+    {
+      "station_key": "UAB Stateta|Kantališkių k., 69841|Marijampolės sav.",
+      "expected": {
+        "lat": 54.634312,
+        "lon": 23.436209
+      },
+      "simulated": {
+        "lat": 54.634312,
+        "lon": 23.436209
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://stateta.lt/"
+    },
+    {
+      "station_key": "UAB Stateta|Gustaičių k., 59296|Prienų r. sav.",
+      "expected": {
+        "lat": 54.738441,
+        "lon": 23.710503
+      },
+      "simulated": {
+        "lat": 54.738441,
+        "lon": 23.710503
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://stateta.lt/"
+    },
+    {
+      "station_key": "UAB Stateta|Alytaus k., 64464|Alytaus r. sav.",
+      "expected": {
+        "lat": 54.407731,
+        "lon": 24.08522
+      },
+      "simulated": {
+        "lat": 54.407731,
+        "lon": 24.08522
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Stateta|Kaniūkų k., 64104|Alytaus r. sav.",
+      "expected": {
+        "lat": 54.366043,
+        "lon": 24.121869
+      },
+      "simulated": {
+        "lat": 54.366043,
+        "lon": 24.121869
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Tomega|Tartoko k., 17127|Šalčininkų r. sav.",
+      "expected": {
+        "lat": 54.295226,
+        "lon": 25.360219
+      },
+      "simulated": {
+        "lat": 54.295226,
+        "lon": 25.360219
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://stateta.lt/wp-json/interita-maps/v1/branches?country=Lietuva&city=&address=&lat_min=0&lat_max=0&lng_min=0&lng_max=0"
+    },
+    {
+      "station_key": "UAB Bonsa|Vaidatonių k. 1, 73406|Tauragės r. sav.",
+      "expected": {
+        "lat": 55.469205,
+        "lon": 22.678905
+      },
+      "simulated": {
+        "lat": 55.469205,
+        "lon": 22.678905
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Jozita|Kuosiškių k. 4, 83169|Pakruojo r. sav.",
+      "expected": {
+        "lat": 55.96572,
+        "lon": 23.879816
+      },
+      "simulated": {
+        "lat": 55.96572,
+        "lon": 23.879816
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://jozita.lt/wp-admin/admin-ajax.php?action=asl_load_stores"
+    },
+    {
+      "station_key": "UAB Alauša|Marijampolė, Sporto g. 50A, 68110|Marijampolės sav.",
+      "expected": {
+        "lat": 54.5663568448131,
+        "lon": 23.379866332714766
+      },
+      "simulated": {
+        "lat": 54.5663568448131,
+        "lon": 23.379866332714766
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.alausa.lt/degalines/"
+    },
+    {
+      "station_key": "UAB Jozita|Ramučiai, K. Bielinio g. 2A, 54465|Kauno r. sav.",
+      "expected": {
+        "lat": 54.943946,
+        "lon": 24.036068
+      },
+      "simulated": {
+        "lat": 54.943946,
+        "lon": 24.036068
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Alauša|Kaunas, Palemono g. 171, 52107|Kauno m. sav.",
+      "expected": {
+        "lat": 54.923488,
+        "lon": 24.072113
+      },
+      "simulated": {
+        "lat": 54.923488,
+        "lon": 24.072113
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Biruliškių k., 54469|Kauno r. sav.",
+      "expected": {
+        "lat": 54.932439,
+        "lon": 23.995479
+      },
+      "simulated": {
+        "lat": 54.932439,
+        "lon": 23.995479
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilimiškės k., 97220|Kretingos r. sav.",
+      "expected": {
+        "lat": 55.903308,
+        "lon": 21.105647
+      },
+      "simulated": {
+        "lat": 55.903308,
+        "lon": 21.105647
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Kaunas, Kalvarijos g. 138, 46403|Kauno m. sav.",
+      "expected": {
+        "lat": 54.850963,
+        "lon": 23.842771
+      },
+      "simulated": {
+        "lat": 54.850963,
+        "lon": 23.842771
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilnius, Juodasis kl. 32, 11307|Vilniaus m. sav.",
+      "expected": {
+        "lat": 54.663053,
+        "lon": 25.342333
+      },
+      "simulated": {
+        "lat": 54.663053,
+        "lon": 25.342333
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Viada LT|Margavos k., 54471|Kauno r. sav.",
+      "expected": {
+        "lat": 54.958815,
+        "lon": 24.039164
+      },
+      "simulated": {
+        "lat": 54.958815,
+        "lon": 24.039164
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/"
+    },
+    {
+      "station_key": "UAB Viada LT|Klaipėda, Taikos pr. 70A-1, 93202|Klaipėdos m. sav.",
+      "expected": {
+        "lat": 55.68327,
+        "lon": 21.160516
+      },
+      "simulated": {
+        "lat": 55.68327,
+        "lon": 21.160516
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/"
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Biruliškių g. 18A, 51205|Kauno m. sav.",
+      "expected": {
+        "lat": 54.911393,
+        "lon": 24.021123
+      },
+      "simulated": {
+        "lat": 54.911393,
+        "lon": 24.021123
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.viada.lt/degalines/degaliniu-zemelapis/"
+    },
+    {
+      "station_key": "UAB Saurida|Akmenės I kaimas Plento g. 1|Akmenės r. sav.",
+      "expected": {
+        "lat": 56.238461,
+        "lon": 22.750823
+      },
+      "simulated": {
+        "lat": 56.238461,
+        "lon": 22.750823
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Ignacavos km. Kauno pl. 18, 59149|Prienų r. sav.",
+      "expected": {
+        "lat": 54.646657,
+        "lon": 23.930492
+      },
+      "simulated": {
+        "lat": 54.646657,
+        "lon": 23.930492
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Lėkėčių km. Šakių g. 3, 71227|Šakių r. sav.",
+      "expected": {
+        "lat": 54.977307,
+        "lon": 23.483572
+      },
+      "simulated": {
+        "lat": 54.977307,
+        "lon": 23.483572
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Naujoji Akmenė V. Kudirkos 18A, 85171|Akmenės r. sav.",
+      "expected": {
+        "lat": 56.317191,
+        "lon": 22.884944
+      },
+      "simulated": {
+        "lat": 56.317191,
+        "lon": 22.884944
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Pageležių km., 20278|Ukmergės r. sav.",
+      "expected": {
+        "lat": 55.165001,
+        "lon": 24.515676
+      },
+      "simulated": {
+        "lat": 55.165001,
+        "lon": 24.515676
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Velžių km .Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "expected": {
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385
+      },
+      "simulated": {
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.saurida.lt/degalines/"
+    },
+    {
+      "station_key": "UAB Saurida|Velžių k., Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "expected": {
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385
+      },
+      "simulated": {
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.saurida.lt/degalines/"
+    },
+    {
+      "station_key": "UAB Saurida|Ukmergė Vilniaus g. 122, 20167|Ukmergės r. sav.",
+      "expected": {
+        "lat": 55.233539,
+        "lon": 24.781254
+      },
+      "simulated": {
+        "lat": 55.233539,
+        "lon": 24.781254
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Vilnius Stanevičiaus g. 3A, 07131|Vilniaus m. sav.",
+      "expected": {
+        "lat": 54.721693,
+        "lon": 25.255867
+      },
+      "simulated": {
+        "lat": 54.721693,
+        "lon": 25.255867
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Jaučakių k., 54217|Kauno r. sav.",
+      "expected": {
+        "lat": 55.038374,
+        "lon": 23.607911
+      },
+      "simulated": {
+        "lat": 55.038374,
+        "lon": 23.607911
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500"
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Griškabūdis, A. Skelčio g., 71296|Šakių r. sav.",
+      "expected": {
+        "lat": 54.852382,
+        "lon": 23.176758
+      },
+      "simulated": {
+        "lat": 54.852382,
+        "lon": 23.176758
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500"
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Pasvalys, Mūšos g. 18, 39104|Pasvalio r. sav.",
+      "expected": {
+        "lat": 56.070931,
+        "lon": 24.411231
+      },
+      "simulated": {
+        "lat": 56.070931,
+        "lon": 24.411231
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių k., 14207|Vilniaus r. sav.",
+      "expected": {
+        "lat": 54.737396,
+        "lon": 25.079988
+      },
+      "simulated": {
+        "lat": 54.737396,
+        "lon": 25.079988
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių km, 14207|Vilniaus r. sav.",
+      "expected": {
+        "lat": 54.737396,
+        "lon": 25.079988
+      },
+      "simulated": {
+        "lat": 54.737396,
+        "lon": 25.079988
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    },
+    {
+      "station_key": "UAB Alauša|Skraičionių k., Skraičionių g. 1, 17140|Šalčininkų r. sav.",
+      "expected": {
+        "lat": 54.204054,
+        "lon": 25.621299
+      },
+      "simulated": {
+        "lat": 54.204054,
+        "lon": 25.621299
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://www.alausa.lt/degalines/"
+    },
+    {
+      "station_key": "Nostrada (RV Transport)|Kazlavo k.|Kalvarijos sav.",
+      "expected": {
+        "lat": 54.32897,
+        "lon": 23.148446
+      },
+      "simulated": {
+        "lat": 54.32897,
+        "lon": 23.148446
+      },
+      "persists_exactly": true,
+      "recorded_coordinate_source": "https://degalukainos.ena.lt/"
+    }
+  ],
+  "attributed_display_targets": [
+    {
+      "station_key": "UAB Emsi|Panevėžys, Ramygalos g. 186A, 36224|Panevėžio r. sav.",
+      "field": "display_municipality",
+      "expected": "Panevėžio m. sav.",
+      "simulated": "Panevėžio m. sav.",
+      "source_url": "https://emsi.lt/wp-json/wpgmza/v1/markers",
+      "persists_exactly": true
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Pasvalys, Mūšos g. 18, 39104|Pasvalio r. sav.",
+      "field": "display_address",
+      "expected": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+      "simulated": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+      "source_url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+      "persists_exactly": true
+    },
+    {
+      "station_key": "UAB Saurida|Neveronių k., Martinavos g. 1, 54475|Kauno m. sav.",
+      "field": "display_municipality",
+      "expected": "Kauno r. sav.",
+      "simulated": "Kauno r. sav.",
+      "source_url": "https://data.gov.lt/datasets/1345/",
+      "persists_exactly": true
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda, Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "field": "display_municipality",
+      "expected": "Klaipėdos m. sav.",
+      "simulated": "Klaipėdos m. sav.",
+      "source_url": "https://data.gov.lt/datasets/1345/",
+      "persists_exactly": true
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "field": "display_municipality",
+      "expected": "Klaipėdos m. sav.",
+      "simulated": "Klaipėdos m. sav.",
+      "source_url": "https://data.gov.lt/datasets/1345/",
+      "persists_exactly": true
+    },
+    {
+      "station_key": "UAB Saurida|Rumšiškės Lekavičiaus g. 71, 56337|Kauno r. sav.",
+      "field": "display_municipality",
+      "expected": "Kaišiadorių r. sav.",
+      "simulated": "Kaišiadorių r. sav.",
+      "source_url": "https://data.gov.lt/datasets/1345/",
+      "persists_exactly": true
+    }
+  ],
+  "coordinate_differences": [
+    {
+      "station_key": "UAB Emsi|Šiauliai, Sembos g. 5, 78347|Šiaulių m. sav.",
+      "published_coordinate": {
+        "lat": 55.895367,
+        "lon": 23.276915,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.898858,
+        "lon": 23.271864,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 499.84927879665173,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 2,
+      "operator_identity_candidate_distinct_points": 2
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Utena, Kupiškio g. 12, 28135|Utenos r. sav.",
+      "published_coordinate": {
+        "lat": 55.48189,
+        "lon": 25.57905,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.481163,
+        "lon": 25.579652,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 89.29604182872033,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Circle K Lietuva|Šiauliai, Pramonės g. 17, 78136|Šiaulių m. sav.",
+      "published_coordinate": {
+        "lat": 55.909327,
+        "lon": 23.319346,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.909031,
+        "lon": 23.320663,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 88.43568197317737,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Padustėlio k., V. Striogos g. 4A, 32306|Zarasų r. sav.",
+      "published_coordinate": {
+        "lat": 55.740159,
+        "lon": 25.852449,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.739451,
+        "lon": 25.85242,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 78.74693485931756,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Vilnius, B. Brazdžionio g. 2, 47266|Vilniaus m. sav.",
+      "published_coordinate": {
+        "lat": 54.6133,
+        "lon": 25.308675,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.613926,
+        "lon": 25.309,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 72.68581375082906,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Kaunas, Birželio 23-iosios g. 23A, 50220|Kauno m. sav.",
+      "published_coordinate": {
+        "lat": 54.91626,
+        "lon": 23.95401,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.915978,
+        "lon": 23.953599,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 40.90550142140434,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Emsi|Klaipėda, Taikos pr. 124, 94286|Klaipėdos m. sav.",
+      "published_coordinate": {
+        "lat": 55.661398,
+        "lon": 21.176028,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.661071,
+        "lon": 21.176244,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 38.80281596424847,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 2,
+      "operator_identity_candidate_distinct_points": 2
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Varėna, M. K. Čiurlionio g. 63, 65219|Varėnos r. sav.",
+      "published_coordinate": {
+        "lat": 54.218274,
+        "lon": 24.566177,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.218348,
+        "lon": 24.565626,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 36.75640118772544,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Gargždai, Dariaus ir Girėno g. 10, 96144|Klaipėdos r. sav.",
+      "published_coordinate": {
+        "lat": 55.7076,
+        "lon": 21.38056,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.707425,
+        "lon": 21.380302,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 25.296551394461154,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Emsi|Skaisčiūnų k., Europos g. 11, 69338|Marijampolės sav.",
+      "published_coordinate": {
+        "lat": 54.558184,
+        "lon": 23.275133,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.55839,
+        "lon": 23.275092,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 23.058204182621353,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Šilagalio k., Panevėžio aplinkl. 22, 36258|Panevėžio r. sav.",
+      "published_coordinate": {
+        "lat": 55.67314,
+        "lon": 24.33452,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.673031,
+        "lon": 24.334251,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 20.770464979076948,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Viada LT|Aukštelkės k., Ilgoji g. 1, 80184|Šiaulių r. sav.",
+      "published_coordinate": {
+        "lat": 55.881956,
+        "lon": 23.205613,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.881863,
+        "lon": 23.205326,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 20.672405378784067,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Molėtai, Aplinkkelio g. 165, 33134|Molėtų r. sav.",
+      "published_coordinate": {
+        "lat": 55.22168,
+        "lon": 25.43672,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.221586,
+        "lon": 25.436488,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 18.049298093435503,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Viada LT|Marijampolė, J. Ambrazevičiaus-Brazaičio g. 2, 68161|Marijampolės sav.",
+      "published_coordinate": {
+        "lat": 54.567798,
+        "lon": 23.33954,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.567734,
+        "lon": 23.339326,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 15.52272713810784,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Viada LT|Kretingsodžio k., 97100|Kretingos r. sav.",
+      "published_coordinate": {
+        "lat": 55.896081,
+        "lon": 21.220954,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.895976,
+        "lon": 21.221096,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 14.652507514439456,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Gaudikaičių k., Šiaulių pl. 1A, 87100|Telšių r. sav.",
+      "published_coordinate": {
+        "lat": 56.00488,
+        "lon": 22.24028,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 56.004996,
+        "lon": 22.24023,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 13.267908923626848,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Emsi|Pietarių k., Kauno g. 165, 68100|Marijampolės sav.",
+      "published_coordinate": {
+        "lat": 54.592791,
+        "lon": 23.389471,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.59288,
+        "lon": 23.389594,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 12.677964982316063,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Emsi|Bukiškis, Ukmergės g. 437, 14183|Vilniaus r. sav.",
+      "published_coordinate": {
+        "lat": 54.753512,
+        "lon": 25.211742,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.753617,
+        "lon": 25.211747,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 11.67987505207807,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Kaunas, Minkovskių g. 132, 46245|Kauno m. sav.",
+      "published_coordinate": {
+        "lat": 54.885791,
+        "lon": 23.912009,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.885703,
+        "lon": 23.91197,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 10.098094787681715,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Utena, Basanavičiaus g. 1B, 28138|Utenos r. sav.",
+      "published_coordinate": {
+        "lat": 55.49533,
+        "lon": 25.575028,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.495329,
+        "lon": 25.574878,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 9.448999748859817,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Ylių k., Pušyno g. 11, 60389|Raseinių r. sav.",
+      "published_coordinate": {
+        "lat": 55.41173,
+        "lon": 22.83072,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.411805,
+        "lon": 22.830674,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 8.83064897600359,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Raubonių k., Ąžuolpamūšio g. 1A, 39447|Pasvalio r. sav.",
+      "published_coordinate": {
+        "lat": 56.1152,
+        "lon": 24.47067,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 56.115159,
+        "lon": 24.470569,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 7.745284274740452,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Katyčių k., 75493|Šilalės r. sav.",
+      "published_coordinate": {
+        "lat": 55.5212,
+        "lon": 22.36586,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.521183,
+        "lon": 22.365979,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 7.725596484529689,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Valantiškio k., 41131|Biržų r. sav.",
+      "published_coordinate": {
+        "lat": 56.197343,
+        "lon": 24.709643,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 56.197394,
+        "lon": 24.709574,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 7.097829323542829,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Viada LT|Telšiai, Pramonės g. 2A, 87101|Telšių r. sav.",
+      "published_coordinate": {
+        "lat": 55.993413,
+        "lon": 22.240148,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.99335,
+        "lon": 22.240156,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 7.022925303864159,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Viada LT|Tauragė, Dariaus ir Girėno g. 138, 72194|Tauragės r. sav.",
+      "published_coordinate": {
+        "lat": 55.266503,
+        "lon": 22.311473,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.266514,
+        "lon": 22.311565,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 5.955563663957854,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Neringa, Nidos-Smiltynės pl. 6, 93125|Neringos sav.",
+      "published_coordinate": {
+        "lat": 55.300905,
+        "lon": 20.979956,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.30088,
+        "lon": 20.979876,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 5.77680214971275,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Sudmantų k., Sendvario g. 2, 96327|Klaipėdos r. sav.",
+      "published_coordinate": {
+        "lat": 55.70602,
+        "lon": 21.20259,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.706071,
+        "lon": 21.202589,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 5.671287329751086,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Viada LT|Gediminas, Vyturio g. 2, 28126|Utenos r. sav.",
+      "published_coordinate": {
+        "lat": 55.477844,
+        "lon": 25.581493,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.477815,
+        "lon": 25.581565,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 5.566395436392669,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Emsi|Kaunas, Palemono g. 3A, 52159|Kauno m. sav.",
+      "published_coordinate": {
+        "lat": 54.901009,
+        "lon": 24.031254,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.901021,
+        "lon": 24.031175,
+        "source": "geocode_cache",
+        "approx": false
+      },
+      "distance_m": 5.224226280164873,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 2,
+      "operator_identity_candidate_distinct_points": 2
+    },
+    {
+      "station_key": "UAB Circle K Lietuva|Kaunas, Vakarinio aplinkkelio 10, 48182|Kauno m. sav.",
+      "published_coordinate": {
+        "lat": 54.93565,
+        "lon": 23.870417,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.935606,
+        "lon": 23.870423,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 4.907567220351598,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Ramučių k., Vijoklių g. 1C, 54467|Kauno r. sav.",
+      "published_coordinate": {
+        "lat": 54.94831,
+        "lon": 24.0178,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.948345,
+        "lon": 24.017823,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 4.159766580986917,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Šilagalio k., Panevėžio aplinkl. 7, 36224|Panevėžio r. sav.",
+      "published_coordinate": {
+        "lat": 55.67037,
+        "lon": 24.34845,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.670399,
+        "lon": 24.348427,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 3.532508508952313,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Neste Lietuva|Jakų k., Vilniaus pl. 9, 96322|Klaipėdos r. sav.",
+      "published_coordinate": {
+        "lat": 55.70659,
+        "lon": 21.23853,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 55.706604,
+        "lon": 21.238572,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 3.0573339433348954,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    },
+    {
+      "station_key": "UAB Circle K Lietuva|Marijampolė, J. Dailidės g. 10, 68307|Marijampolės sav.",
+      "published_coordinate": {
+        "lat": 54.557125,
+        "lon": 23.354007,
+        "source": "chain",
+        "approx": false
+      },
+      "next_cached_refresh_coordinate": {
+        "lat": 54.557122,
+        "lon": 23.353979,
+        "source": "lea_portal",
+        "approx": false
+      },
+      "distance_m": 1.8360248232613325,
+      "exact_override_exists": false,
+      "operator_identity_candidate_count": 0,
+      "operator_identity_candidate_distinct_points": 0
+    }
+  ],
+  "unresolved_note": "Sembos 5 has conflicting old cached operator, current active operator and registered portal points. The nearby generic OSM fuel node has no address/current EMSI brand proof. No override is applied; its next cached point differs from the currently published point. Other disclosed differences are at or under 100 m; neither marker origins nor this simulation prove survey accuracy.",
+  "repair_idempotence_changed_rows": 0,
+  "baseline_representation": {
+    "raw_snapshot_path": ".claude/map-audit-20261006/stations-before.json",
+    "raw_snapshot_bytes": 413412,
+    "raw_snapshot_encoding": "UTF-8 with CRLF line endings",
+    "git_blob_reference": "3e85d104dcfd9b841247ec3a6d1db83575d82dc9:data/stations.json",
+    "git_blob_sha256": "b4451a118a30e27aa3a828d607d9adf8fd9af12c1794514aa0f06f9c89657806",
+    "git_blob_bytes": 397353,
+    "git_blob_encoding": "UTF-8 with LF line endings",
+    "same_json_document": true,
+    "raw_snapshot_equals_git_blob_after_crlf_to_lf": true
+  }
+}

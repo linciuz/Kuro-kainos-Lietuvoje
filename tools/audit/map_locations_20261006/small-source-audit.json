@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-10-06T15:05:25.295981+00:00",
+  "sources": [
+    {
+      "provider": "emsi-current",
+      "url": "https://emsi.lt/degalines/",
+      "captured_at": "2026-10-06T14:34:16.590510+00:00",
+      "rows": 50,
+      "data_endpoint": null
+    },
+    {
+      "provider": "bp",
+      "url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+      "captured_at": "2026-10-06T14:31:34.650392+00:00",
+      "rows": 96,
+      "data_endpoint": null
+    },
+    {
+      "provider": "saurida",
+      "url": "https://www.saurida.lt/degalines/",
+      "captured_at": "2026-10-06T14:34:16.804245+00:00",
+      "rows": 34,
+      "data_endpoint": null
+    },
+    {
+      "provider": "jozita",
+      "url": "https://jozita.lt/wp-admin/admin-ajax.php?action=asl_load_stores",
+      "captured_at": "2026-10-06T14:34:19.138055+00:00",
+      "rows": 31,
+      "data_endpoint": null
+    },
+    {
+      "provider": "alausa",
+      "url": "https://www.alausa.lt/degalines/",
+      "captured_at": "2026-10-06T14:40:56.714042+00:00",
+      "rows": 101,
+      "data_endpoint": "https://www.alausa.lt/wp-admin/admin-ajax.php?action=asl_load_stores&load_all=1"
+    }
+  ],
+  "denominators": [
+    {
+      "network": "Emsi",
+      "local_rows": 50,
+      "official_rows_total": 50,
+      "official_own_network_rows": 50,
+      "unique_descriptor_candidates": 44,
+      "candidate_deltas_above_300m": 8
+    },
+    {
+      "network": "Baltic Petroleum",
+      "local_rows": 93,
+      "official_rows_total": 96,
+      "official_own_network_rows": 96,
+      "unique_descriptor_candidates": 80,
+      "candidate_deltas_above_300m": 0
+    },
+    {
+      "network": "Saurida",
+      "local_rows": 59,
+      "official_rows_total": 34,
+      "official_own_network_rows": 34,
+      "unique_descriptor_candidates": 41,
+      "candidate_deltas_above_300m": 16
+    },
+    {
+      "network": "Jozita",
+      "local_rows": 31,
+      "official_rows_total": 31,
+      "official_own_network_rows": 31,
+      "unique_descriptor_candidates": 23,
+      "candidate_deltas_above_300m": 2
+    },
+    {
+      "network": "Alauša",
+      "local_rows": 28,
+      "official_rows_total": 101,
+      "official_own_network_rows": 27,
+      "unique_descriptor_candidates": 25,
+      "candidate_deltas_above_300m": 3
+    }
+  ],
+  "limitations": [
+    "Exact descriptor/house joins are identity candidates, not physical-coordinate certification. Coordinate confidence requires exact LEA/OSM premises or independent operator agreement.",
+    "Saurida59 LEA rows include duplicate/no-price legacy spellings; 41 matched rows are not41 distinct stations. Official34 directory rows must not be blindly joined to all59.",
+    "EMSI current custommap50 records differs from old WP GMaps192 raw duplicate markers. Seven high-delta newlocator GPS contradict exact premises where current Fuelis point is already good; no wholesale source switch.",
+    "Alauša101 locator rows comprise27 own-network and74 partner records. Partner branding/municipality is not automatically authoritative.",
+    "OSM is an independent contemporaneous map source, not legal ownership or survey proof; nearby different operator tags are explicitly preserved as conflicts.",
+    "ORLEN30 local rows were not audited against a retrievable current official GPS dataset; public methods and errors recorded in small-corrections-proposed.json.",
+    "Source audit saved only sanitized names, addresses, coordinates and provenance; no raw HTML/credentials, price edits or production Worker calls. Subsequent authorized display-address implementation modifies app/page/API source separately."
+  ],
+  "recommended_coordinate_file": "small-corrections-proposed.json",
+  "display_candidate_file": "small-display-only-candidates.json",
+  "raw_identity_contract": "app.js stationKey remains raw network|address|municipality; stationMuni uses independently sourced display_municipality only.",
+  "merge_risk": "Current fuzzy address scorer threshold0.45 has no mandatory full house, uniqueness or source point quality guard. Primary source GPS can be a locality centroid or wrong station; official source alone does not override corroborated premises."
+}

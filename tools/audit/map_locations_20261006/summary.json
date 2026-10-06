@@ -1,0 +1,80 @@
+{
+  "changes": {
+    "station_rows": 809,
+    "geography_changed_records": 51,
+    "coordinate_changed_records": 44,
+    "display_municipality_changed_records": 4,
+    "display_address_changed_records": 1,
+    "prices_raw_identities_order_dates_timestamps_summary_unchanged": true
+  },
+  "municipalities_before": {
+    "station_count": 809,
+    "valid_coordinate_count": 809,
+    "unique_station_key_count": 809,
+    "duplicate_station_key_count": 0,
+    "unique_containing_municipality_count": 809,
+    "raw_label_mismatches": 18,
+    "effective_label_mismatches": 17,
+    "outside_all_municipalities": 0,
+    "multiple_containing_municipalities": 0,
+    "near_boundary_count": 16,
+    "edge_distance_counts_m": {
+      "1": 0,
+      "5": 0,
+      "25": 3,
+      "50": 7,
+      "100": 16,
+      "250": 42
+    },
+    "classification_counts": {
+      "label_matches_coordinate_polygon": 777,
+      "label_matches_coordinate_polygon_near_boundary": 14,
+      "label_mismatch_coordinate_polygon": 15,
+      "label_mismatch_coordinate_polygon_near_boundary": 2,
+      "raw_mismatch_display_matches": 1
+    },
+    "coordinate_source_counts": {
+      "chain": 417,
+      "lea_portal": 123,
+      "None": 265,
+      "verified": 4
+    },
+    "approximate_coordinate_count": 9,
+    "raw_labels_without_official_name_match": []
+  },
+  "municipalities_after": {
+    "station_count": 809,
+    "valid_coordinate_count": 809,
+    "unique_station_key_count": 809,
+    "duplicate_station_key_count": 0,
+    "unique_containing_municipality_count": 809,
+    "raw_label_mismatches": 7,
+    "effective_label_mismatches": 2,
+    "outside_all_municipalities": 0,
+    "multiple_containing_municipalities": 0,
+    "near_boundary_count": 21,
+    "edge_distance_counts_m": {
+      "1": 0,
+      "5": 0,
+      "25": 4,
+      "50": 10,
+      "100": 21,
+      "250": 48
+    },
+    "classification_counts": {
+      "label_matches_coordinate_polygon": 783,
+      "label_matches_coordinate_polygon_near_boundary": 19,
+      "raw_mismatch_display_matches": 5,
+      "label_mismatch_coordinate_polygon_near_boundary": 2
+    },
+    "coordinate_source_counts": {
+      "chain": 405,
+      "lea_portal": 119,
+      "None": 235,
+      "verified": 50
+    },
+    "approximate_coordinate_count": 1,
+    "raw_labels_without_official_name_match": []
+  },
+  "station_accuracy_limit": "809/809 screened; polygon containment and proximity do not establish all809 station addresses or ground positions. Physical corrections carry per-case evidence and uncertainty."
+}
