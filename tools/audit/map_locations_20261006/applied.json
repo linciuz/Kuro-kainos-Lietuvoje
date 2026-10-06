@@ -1,0 +1,81 @@
+{
+  "station_rows": 809,
+  "geography_changed_rows": 3,
+  "coordinate_changed_rows": 0,
+  "display_municipality_changed_rows": 0,
+  "display_address_changed_rows": 0,
+  "prices_raw_identities_order_dates_timestamps_summary_unchanged": true,
+  "changes": [
+    {
+      "station_key": "UAB Viada LT|Kaunas, Biruliškių g. 18A, 51205|Kauno m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.911393,
+        "lon": 24.021123
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.911393,
+        "lon": 24.021123
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Margavos k., 54471|Kauno r. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.958815,
+        "lon": 24.039164
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 54.958815,
+        "lon": 24.039164
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Klaipėda, Taikos pr. 70A-1, 93202|Klaipėdos m. sav.",
+      "before": {
+        "approx": false,
+        "coord_source": "chain",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.68327,
+        "lon": 21.160516
+      },
+      "after": {
+        "approx": false,
+        "coord_source": "verified",
+        "display_address": null,
+        "display_address_source": null,
+        "display_municipality": null,
+        "display_municipality_source": null,
+        "lat": 55.68327,
+        "lon": 21.160516
+      }
+    }
+  ],
+  "before_sha256": "6eb9a7654b0499880c332e44c57be0fd9b5ba0e52e1d8e479af132aeccf37a74",
+  "after_sha256": "ccf8735be45fc50971bff20fffd43438bb27b6ba08f2542c8a93e24e35fb1e79"
+}

@@ -1,0 +1,263 @@
+{
+  "audited_utc": "2026-10-06T15:24:11.926993+00:00",
+  "scope": "Three preexisting manual coordinate overrides, current public LEA snapshot and operator pages/OSM identity corroboration. No product edits or prices read.",
+  "station_input_sha256": "ccf8735be45fc50971bff20fffd43438bb27b6ba08f2542c8a93e24e35fb1e79",
+  "lea_snapshot": {
+    "generated": "2026-10-06T12:17:28Z",
+    "api_last_updated": "2026-10-06 13:00:20",
+    "source_url": "https://degalukainos.ena.lt/",
+    "sha256": "662a5d93f0f48dd3d2afea21c127733993616d795034453f19c1878d2ee24175"
+  },
+  "osm_snapshot": {
+    "captured_utc": "2026-10-06T14:31:36.765270+00:00",
+    "osm_timestamp": "2026-10-06T14:29:51Z",
+    "station_count": 773
+  },
+  "records": [
+    {
+      "station_key": "UAB Viada LT|Panevėžys, Pušaloto g. 193A, 191A|Panevėžio m. sav.",
+      "old_override_point": {
+        "lat": 55.753237,
+        "lon": 24.312254
+      },
+      "current_lea_point": {
+        "lat": 55.75324,
+        "lon": 24.312202
+      },
+      "current_lea_brand": "VIADA LT",
+      "override_to_lea_distance_m": 3.282,
+      "official_boundary_attribution": [
+        {
+          "municipality": "Panevėžio m. sav.",
+          "municipality_code": "27",
+          "boundary_distance_m": 438.931
+        }
+      ],
+      "nearest_osm": [
+        {
+          "type": "way",
+          "id": 208022542,
+          "lat": 55.7531721,
+          "lon": 24.312038,
+          "tags": {
+            "addr:city": "Panevėžys",
+            "addr:housenumber": "193A",
+            "addr:postcode": "35291",
+            "addr:street": "Pušaloto g.",
+            "amenity": "fuel",
+            "name": "Baltic Petroleum",
+            "operator": "UAB „Baltic Petroleum“"
+          },
+          "override_distance_m": 15.367,
+          "lea_distance_m": 12.775,
+          "osm_url": "https://www.openstreetmap.org/way/208022542"
+        },
+        {
+          "type": "way",
+          "id": 999882951,
+          "lat": 55.7465678,
+          "lon": 24.3299817,
+          "tags": {
+            "addr:city": "Panevėžys",
+            "addr:housenumber": "132A",
+            "addr:street": "Pušaloto g.",
+            "amenity": "fuel",
+            "brand": "Deliuvis"
+          },
+          "override_distance_m": 1338.131,
+          "lea_distance_m": 1341.033,
+          "osm_url": "https://www.openstreetmap.org/way/999882951"
+        }
+      ],
+      "recommendation": "Retain coordinate. Record current corroboration and source limitations; do not treat old patikrinta label as evidence.",
+      "current_operator": {
+        "url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+        "captured_utc": "2026-10-06T14:32:20.268371+00:00",
+        "http_status": 200,
+        "response_sha256": "fd84b1e049a56b5fec15220a10e657ba56b1c6b2d4645f017629afceb7f04d62",
+        "address": "Panevėžys, Pušaloto g. 193A",
+        "point": {
+          "lat": 55.75316,
+          "lon": 24.312296
+        },
+        "override_distance_m": 8.969
+      },
+      "limitations": [
+        "Raw LEA address combines193A and191A; operator currently binds193A to nearby point.",
+        "Nearest OSM exacthouse193A record says Baltic Petroleum, so OSM is premises geometry/address support only, not proof of current Viada branding.",
+        "No parcel/pump survey performed."
+      ]
+    },
+    {
+      "station_key": "UAB Naftrus|Slabados k., Pievų g. 19, 60109|Raseinių r. sav.",
+      "old_override_point": {
+        "lat": 55.386231,
+        "lon": 23.042885
+      },
+      "current_lea_point": {
+        "lat": 55.386025,
+        "lon": 23.042566
+      },
+      "current_lea_brand": "Naftrus",
+      "override_to_lea_distance_m": 30.573,
+      "official_boundary_attribution": [
+        {
+          "municipality": "Raseinių r. sav.",
+          "municipality_code": "72",
+          "boundary_distance_m": 8935.426
+        }
+      ],
+      "nearest_osm": [
+        {
+          "type": "way",
+          "id": 374170830,
+          "lat": 55.3860969,
+          "lon": 23.0430902,
+          "tags": {
+            "addr:city": "Slabada",
+            "addr:housenumber": "19",
+            "addr:street": "Pievų g.",
+            "amenity": "fuel",
+            "name": "Naftrus"
+          },
+          "override_distance_m": 19.8,
+          "lea_distance_m": 34.174,
+          "osm_url": "https://www.openstreetmap.org/way/374170830"
+        },
+        {
+          "type": "way",
+          "id": 170732587,
+          "lat": 55.3706565,
+          "lon": 23.1192973,
+          "tags": {
+            "addr:city": "Raseiniai",
+            "addr:housenumber": "34",
+            "addr:postcode": "60178",
+            "addr:street": "Jurbarko g.",
+            "amenity": "fuel",
+            "brand": "Milda",
+            "name": "Milda",
+            "operator": "Milda"
+          },
+          "override_distance_m": 5144.796,
+          "lea_distance_m": 5156.195,
+          "osm_url": "https://www.openstreetmap.org/way/170732587"
+        }
+      ],
+      "recommendation": "Retain coordinate. Record current corroboration and source limitations; do not treat old patikrinta label as evidence.",
+      "current_operator": {
+        "url": "https://www.naftrus.lt/degalines",
+        "captured_utc": "2026-10-06T15:23:12.452120+00:00",
+        "raw_html_retained": false,
+        "http_status": 200,
+        "tls_verified": true,
+        "raw_html_sha256": "117a5e446221e3c221f186ae54d3e87abb17f84c1e1664c57bad890ce0878dc0",
+        "station_address_text_present": true,
+        "public_navigation_coordinates_only": [
+          {
+            "lat": 55.38848595734885,
+            "lon": 23.04352067368546
+          },
+          {
+            "lat": 55.37109972705926,
+            "lon": 23.13206173908423
+          },
+          {
+            "lat": 55.415061028548074,
+            "lon": 22.821949362288294
+          },
+          {
+            "lat": 55.97083971351641,
+            "lon": 23.58748816031156
+          }
+        ],
+        "navigation_coordinates_not_bound_to_station_in_this_parse": true,
+        "station_name": "Naftrus – Slabada",
+        "listed_address": "Pievų g. 17, Slabados k., Raseinių r."
+      },
+      "limitations": [
+        "Current operator lists house17, while LEA and exactOSM Naftrus station listhouse19. House mismatch unresolved.",
+        "Unbound navigation coordinates in source extract are not admitted as replacement point.",
+        "Existing override point20m from exactname/house19 OSM, currentLEA point nearby; this supports premises area rather than pump-levelprecision."
+      ]
+    },
+    {
+      "station_key": "Lašų žemės ūkio bendrovė|Vytėnai, Vytėnų vs 9, 42255|Rokiškio r. sav.",
+      "old_override_point": {
+        "lat": 55.8574667,
+        "lon": 25.7336514
+      },
+      "current_lea_point": {
+        "lat": 55.857817,
+        "lon": 25.731925
+      },
+      "current_lea_brand": "Lašų žemės ūkio bendrovė",
+      "override_to_lea_distance_m": 114.931,
+      "official_boundary_attribution": [
+        {
+          "municipality": "Rokiškio r. sav.",
+          "municipality_code": "73",
+          "boundary_distance_m": 7137.957
+        }
+      ],
+      "nearest_osm": [
+        {
+          "type": "way",
+          "id": 429666463,
+          "lat": 55.857548,
+          "lon": 25.7336115,
+          "tags": {
+            "addr:city": "Vytėnai",
+            "addr:housenumber": "9",
+            "addr:place": "Vytėnai",
+            "amenity": "fuel",
+            "name": "Lašų duona",
+            "operator": "UAB Lašų duona"
+          },
+          "override_distance_m": 9.39,
+          "lea_distance_m": 109.776,
+          "osm_url": "https://www.openstreetmap.org/way/429666463"
+        },
+        {
+          "type": "way",
+          "id": 220478408,
+          "lat": 55.948538,
+          "lon": 25.8142966,
+          "tags": {
+            "addr:city": "Obeliai",
+            "addr:housenumber": "36",
+            "addr:postcode": "42209",
+            "addr:street": "Dariaus ir Girėno g.",
+            "amenity": "fuel",
+            "brand": "Alauša"
+          },
+          "override_distance_m": 11325.277,
+          "lea_distance_m": 11339.016,
+          "osm_url": "https://www.openstreetmap.org/way/220478408"
+        }
+      ],
+      "recommendation": "Retain coordinate. Record current corroboration and source limitations; do not treat old patikrinta label as evidence.",
+      "current_operator": {
+        "url": "https://www.lasuduona.lt/en/kur-isigyti",
+        "captured_utc": "2026-10-06T15:23:13.665283+00:00",
+        "raw_html_retained": false,
+        "http_status": 200,
+        "tls_verified": true,
+        "raw_html_sha256": "70778ccea18eb9d3a88bdde0c633c805d0d0710f32d504a6857578c7a183d0ba",
+        "station_address_text_present": true,
+        "public_navigation_coordinates_only": [],
+        "navigation_coordinates_not_bound_to_station_in_this_parse": true,
+        "station_name": "Degalinė LAŠAI",
+        "listed_address": "Vytėnų vs. 9, Kriaunų sen., Rokiškio r.",
+        "page_declared_last_update": "2025-11-25",
+        "current_read_not_current_survey": true
+      },
+      "limitations": [
+        "Operator currentaccessible directory supports namedstation/exactaddress but declares2025-11-25 update; no operatorGPS extracted.",
+        "OSM names operator UAB Lašųduona versus LEA legalentity Lašųžemėsūkiobendrovė. Shared exactaddress/name group supports premises but no legalentity merger proposed.",
+        "Current LEA coordinate~114m from old override; oldoverride closer to exactaddressOSM. No automatic switch to LEA justified."
+      ]
+    }
+  ],
+  "product_files_written": false
+}

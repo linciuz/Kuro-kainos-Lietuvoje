@@ -1,0 +1,3008 @@
+{
+  "date": "2026-10-06",
+  "baseline_sha256": "862b758028cc21cb4f7ff87bfc859a8f115722e47b2caa2866f8f0b3616f2a93",
+  "coordinate_definition": "Public station/premises-area map points; not guaranteed driveway, pump, cadastral or survey positions.",
+  "corrections": [
+    {
+      "station_key": "UAB Viada LT|Šilagalio k., Panevėžio aplinkl. 5, 36258|Panevėžio r. sav.",
+      "lat": 55.670113,
+      "lon": 24.349612,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "reason": "Official station directory explicitly binds Šilagalis/Aplinkkelio5; LEA and exact-address OSM agree within20m. Old point belonged to Rokiškis station.",
+      "before": {
+        "lat": 55.944519,
+        "lon": 25.585662,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Viada LT|Šilagalio k., Panevėžio aplinkl. 5, 36258|Panevėžio r. sav.",
+        "delta_m": 83050.7,
+        "portal_osm_m": 20.8,
+        "current": {
+          "network": "UAB Viada LT",
+          "address": "Šilagalio k., Panevėžio aplinkl. 5, 36258",
+          "municipality": "Panevėžio r. sav.",
+          "lat": 55.944519,
+          "lon": 25.585662,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "VIADA LT",
+          "lat": 55.669963,
+          "lon": 24.349648,
+          "gas_station_id": 652
+        },
+        "osm": {
+          "type": "node",
+          "id": 13447855303,
+          "lat": 55.6701278,
+          "lon": 24.3498056,
+          "tags": {
+            "addr:city": "Šilagalys",
+            "addr:housenumber": "5",
+            "addr:street": "Panevėžio aplinkl.",
+            "amenity": "fuel",
+            "brand": "Viada",
+            "name": "Viada",
+            "operator": "Viada",
+            "website": "https://www.viada.lt/"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 12.3,
+        "url": "https://www.openstreetmap.org/node/13447855303",
+        "type": "node",
+        "id": 13447855303,
+        "lat": 55.6701278,
+        "lon": 24.3498056,
+        "tags": {
+          "addr:city": "Šilagalys",
+          "addr:housenumber": "5",
+          "addr:street": "Panevėžio aplinkl.",
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "Viada",
+          "website": "https://www.viada.lt/"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Vievis, Kauno g. 26A, 21376|Elektrėnų sav.",
+      "lat": 54.771212,
+      "lon": 24.820776,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "reason": "Operator Kauno26 alias agrees with LEA and OSM Kauno26A withinmetres; old match wrongly selected Kauno55A.",
+      "before": {
+        "lat": 54.775194,
+        "lon": 24.810293,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Viada LT|Vievis, Kauno g. 26A, 21376|Elektrėnų sav.",
+        "delta_m": 805.0,
+        "portal_osm_m": 15.0,
+        "current": {
+          "network": "UAB Viada LT",
+          "address": "Vievis, Kauno g. 26A, 21376",
+          "municipality": "Elektrėnų sav.",
+          "lat": 54.775194,
+          "lon": 24.810293,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "VIADA LT",
+          "lat": 54.771214,
+          "lon": 24.820777,
+          "gas_station_id": 757
+        },
+        "osm": {
+          "type": "way",
+          "id": 53175964,
+          "lat": 54.7711498,
+          "lon": 24.8209826,
+          "tags": {
+            "addr:city": "Vievis",
+            "addr:housenumber": "26A",
+            "addr:postcode": "21376",
+            "addr:street": "Kauno g.",
+            "amenity": "fuel",
+            "name": "Viada",
+            "operator": "Viada"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 14.9,
+        "url": "https://www.openstreetmap.org/way/53175964",
+        "type": "way",
+        "id": 53175964,
+        "lat": 54.7711498,
+        "lon": 24.8209826,
+        "tags": {
+          "addr:city": "Vievis",
+          "addr:housenumber": "26A",
+          "addr:postcode": "21376",
+          "addr:street": "Kauno g.",
+          "amenity": "fuel",
+          "name": "Viada",
+          "operator": "Viada"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Veiverių g. 117, 46354|Kauno m. sav.",
+      "lat": 54.8665,
+      "lon": 23.889237,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Current operator marker contradicts exact LEA/OSM Veiverių117 premises by2km; use independently corroborated LEA premises, not bad operator marker.",
+      "before": {
+        "lat": 54.884491,
+        "lon": 23.89482,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Viada LT|Kaunas, Veiverių g. 117, 46354|Kauno m. sav.",
+        "delta_m": 2032.1,
+        "portal_osm_m": 15.6,
+        "current": {
+          "network": "UAB Viada LT",
+          "address": "Kaunas, Veiverių g. 117, 46354",
+          "municipality": "Kauno m. sav.",
+          "lat": 54.884491,
+          "lon": 23.89482,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "VIADA LT",
+          "lat": 54.8665,
+          "lon": 23.889237,
+          "gas_station_id": 718
+        },
+        "osm": {
+          "type": "way",
+          "id": 577401453,
+          "lat": 54.8664488,
+          "lon": 23.8894647,
+          "tags": {
+            "addr:city": "Kaunas",
+            "addr:housenumber": "117",
+            "addr:postcode": "46386",
+            "addr:street": "Veiverių g.",
+            "amenity": "fuel",
+            "brand": "Lukoil",
+            "name": "Viada",
+            "operator": "UAB „Viada Lt“"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 15.6,
+        "url": "https://www.openstreetmap.org/way/577401453",
+        "type": "way",
+        "id": 577401453,
+        "lat": 54.8664488,
+        "lon": 23.8894647,
+        "tags": {
+          "addr:city": "Kaunas",
+          "addr:housenumber": "117",
+          "addr:postcode": "46386",
+          "addr:street": "Veiverių g.",
+          "amenity": "fuel",
+          "brand": "Lukoil",
+          "name": "Viada",
+          "operator": "UAB „Viada Lt“"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Šventupės k., Beržų g. 13, 20360|Ukmergės r. sav.",
+      "lat": 55.320213,
+      "lon": 24.874846,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Current operator marker contradicts exact LEA/OSM Beržų13 station by756m.",
+      "before": {
+        "lat": 55.314052,
+        "lon": 24.86977,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Viada LT|Šventupės k., Beržų g. 13, 20360|Ukmergės r. sav.",
+        "delta_m": 756.6,
+        "portal_osm_m": 14.5,
+        "current": {
+          "network": "UAB Viada LT",
+          "address": "Šventupės k., Beržų g. 13, 20360",
+          "municipality": "Ukmergės r. sav.",
+          "lat": 55.314052,
+          "lon": 24.86977,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "VIADA LT",
+          "lat": 55.320213,
+          "lon": 24.874846,
+          "gas_station_id": 778
+        },
+        "osm": {
+          "type": "way",
+          "id": 997709081,
+          "lat": 55.3202883,
+          "lon": 24.8746585,
+          "tags": {
+            "addr:city": "Šventupė",
+            "addr:housenumber": "13",
+            "addr:street": "Beržų g.",
+            "amenity": "fuel",
+            "brand": "Viada",
+            "name": "Viada",
+            "operator": "Viada",
+            "website": "https://www.viada.lt/"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 14.5,
+        "url": "https://www.openstreetmap.org/way/997709081",
+        "type": "way",
+        "id": 997709081,
+        "lat": 55.3202883,
+        "lon": 24.8746585,
+        "tags": {
+          "addr:city": "Šventupė",
+          "addr:housenumber": "13",
+          "addr:street": "Beržų g.",
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "Viada",
+          "website": "https://www.viada.lt/"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Narjanta|Aleksandrijos k., Kikonių g. 10, 40335|Kupiškio r. sav.",
+      "lat": 55.824587,
+      "lon": 25.001069,
+      "source_url": "https://www.circlek.lt/degaliniu-sarasas",
+      "reason": "Explicit franchise identity: CircleK Kikonių10,Aleksandrija matches legal-company LEA Narjanta street, full house and locality.",
+      "before": {
+        "lat": 55.834253,
+        "lon": 25.009325,
+        "approx": false,
+        "coord_source": "lea_portal"
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 8.0,
+        "url": "https://www.openstreetmap.org/way/249993570",
+        "type": "way",
+        "id": 249993570,
+        "lat": 55.8245155,
+        "lon": 25.0010783,
+        "tags": {
+          "addr:city": "Aleksandrija",
+          "addr:housenumber": "10",
+          "addr:postcode": "40334",
+          "addr:street": "Kikonių g.",
+          "amenity": "fuel",
+          "brand": "Circle K",
+          "name": "Circle K „Kupiškis“",
+          "operator": "Circle K",
+          "website": "https://www.circlek.lt/"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Boost Petrol|Ginkūnų k., Aušros g. 26, 81492|Šiaulių r. sav.",
+      "lat": 55.956317,
+      "lon": 23.342812,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "reason": "Explicit franchise identity: Viada Ginkūnai Aušros26; independently agrees with BRO/Abromika partner and LEA/OSM premises; old point16.66km west.",
+      "before": {
+        "lat": 55.935761,
+        "lon": 23.077789,
+        "approx": false,
+        "coord_source": "lea_portal"
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 6.0,
+        "url": "https://www.openstreetmap.org/way/225155971",
+        "type": "way",
+        "id": 225155971,
+        "lat": 55.956265,
+        "lon": 23.3428393,
+        "tags": {
+          "amenity": "fuel",
+          "name": "Abromika"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Boost Petrol|Smėlinkos vs. 1, 33171|Molėtų r. sav.",
+      "lat": 55.264341,
+      "lon": 25.490041,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "LEA Abromika-branded Smėlinka record agrees with OSM Viada fuel premises within4m and explicit BRO Abromika Smėlinkos/Vilnius-Utena69km point within15m; old point15.1km away.",
+      "before": {
+        "lat": 55.215644,
+        "lon": 25.267733,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Boost Petrol|Smėlinkos vs. 1, 33171|Molėtų r. sav.",
+        "delta_m": 15098.0,
+        "portal_osm_m": 3.6,
+        "current": {
+          "network": "UAB Boost Petrol",
+          "address": "Smėlinkos vs. 1, 33171",
+          "municipality": "Molėtų r. sav.",
+          "lat": 55.215644,
+          "lon": 25.267733,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Abromika",
+          "lat": 55.264341,
+          "lon": 25.490041,
+          "gas_station_id": 222
+        },
+        "osm": {
+          "type": "way",
+          "id": 611966775,
+          "lat": 55.264312,
+          "lon": 25.4900648,
+          "tags": {
+            "amenity": "fuel",
+            "name": "Viada"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 3.6,
+        "url": "https://www.openstreetmap.org/way/611966775",
+        "type": "way",
+        "id": 611966775,
+        "lat": 55.264312,
+        "lon": 25.4900648,
+        "tags": {
+          "amenity": "fuel",
+          "name": "Viada"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Spyglių g. 2, 27101|Vilniaus m. sav.",
+      "lat": 54.668431,
+      "lon": 25.111652,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Correct Spyglių2 LEA/OSM premises, visually reviewed OSM building/forecourt. Old pin is Jeruzalės2,13.2km away; newer generic Neravai operator marker remains487m off premises.",
+      "before": {
+        "lat": 54.739851,
+        "lon": 25.276131,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Emsi|Vilnius, Spyglių g. 2, 27101|Vilniaus m. sav.",
+        "delta_m": 13218.9,
+        "portal_osm_m": 3.6,
+        "current": {
+          "network": "UAB Emsi",
+          "address": "Vilnius, Spyglių g. 2, 27101",
+          "municipality": "Vilniaus m. sav.",
+          "lat": 54.739851,
+          "lon": 25.276131,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "Emsi",
+          "lat": 54.668431,
+          "lon": 25.111652,
+          "gas_station_id": 339
+        },
+        "osm": {
+          "type": "way",
+          "id": 54893256,
+          "lat": 54.6684023,
+          "lon": 25.1116772,
+          "tags": {
+            "addr:city": "Vilnius",
+            "addr:housenumber": "2",
+            "addr:street": "Spyglių g.",
+            "amenity": "fuel",
+            "brand": "EMSI",
+            "name": "EMSI Grigiškės",
+            "operator": "EMSI",
+            "website": "https://emsi.lt/"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 3.6,
+        "url": "https://www.openstreetmap.org/way/54893256",
+        "type": "way",
+        "id": 54893256,
+        "lat": 54.6684023,
+        "lon": 25.1116772,
+        "tags": {
+          "addr:city": "Vilnius",
+          "addr:housenumber": "2",
+          "addr:street": "Spyglių g.",
+          "amenity": "fuel",
+          "brand": "EMSI",
+          "name": "EMSI Grigiškės",
+          "operator": "EMSI",
+          "website": "https://emsi.lt/"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilkaviškis, S. Nėries g. 38, 70165|Vilkaviškio r. sav.",
+      "lat": 54.657941,
+      "lon": 23.033195,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained.",
+      "before": {
+        "lat": 54.663808,
+        "lon": 23.029367,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Emsi|Vilkaviškis, S. Nėries g. 38, 70165|Vilkaviškio r. sav.",
+        "delta_m": 697.3,
+        "portal_osm_m": 19.6,
+        "current": {
+          "network": "UAB Emsi",
+          "address": "Vilkaviškis, S. Nėries g. 38, 70165",
+          "municipality": "Vilkaviškio r. sav.",
+          "lat": 54.663808,
+          "lon": 23.029367,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "Emsi",
+          "lat": 54.657941,
+          "lon": 23.033195,
+          "gas_station_id": 342
+        },
+        "osm": {
+          "type": "way",
+          "id": 211456305,
+          "lat": 54.6581148,
+          "lon": 23.0332434,
+          "tags": {
+            "addr:city": "Vilkaviškis",
+            "addr:housenumber": "38",
+            "addr:postcode": "70147",
+            "addr:street": "S. Nėries g.",
+            "amenity": "fuel",
+            "brand": "EMSI",
+            "name": "EMSI"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 19.6,
+        "url": "https://www.openstreetmap.org/way/211456305",
+        "type": "way",
+        "id": 211456305,
+        "lat": 54.6581148,
+        "lon": 23.0332434,
+        "tags": {
+          "addr:city": "Vilkaviškis",
+          "addr:housenumber": "38",
+          "addr:postcode": "70147",
+          "addr:street": "S. Nėries g.",
+          "amenity": "fuel",
+          "brand": "EMSI",
+          "name": "EMSI"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Mastaičių k., Marijampolės g. 58, 53285|Kauno r. sav.",
+      "lat": 54.809536,
+      "lon": 23.853751,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained.",
+      "before": {
+        "lat": 54.809532,
+        "lon": 23.859559,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Emsi|Mastaičių k., Marijampolės g. 58, 53285|Kauno r. sav.",
+        "delta_m": 372.2,
+        "portal_osm_m": 11.7,
+        "current": {
+          "network": "UAB Emsi",
+          "address": "Mastaičių k., Marijampolės g. 58, 53285",
+          "municipality": "Kauno r. sav.",
+          "lat": 54.809532,
+          "lon": 23.859559,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "Emsi",
+          "lat": 54.809536,
+          "lon": 23.853751,
+          "gas_station_id": 360
+        },
+        "osm": {
+          "type": "way",
+          "id": 579578696,
+          "lat": 54.8094402,
+          "lon": 23.8536752,
+          "tags": {
+            "addr:city": "Mastaičiai",
+            "addr:housenumber": "58",
+            "addr:postcode": "53283",
+            "addr:street": "Marijampolės g.",
+            "amenity": "fuel",
+            "name": "Emsi"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 11.7,
+        "url": "https://www.openstreetmap.org/way/579578696",
+        "type": "way",
+        "id": 579578696,
+        "lat": 54.8094402,
+        "lon": 23.8536752,
+        "tags": {
+          "addr:city": "Mastaičiai",
+          "addr:housenumber": "58",
+          "addr:postcode": "53283",
+          "addr:street": "Marijampolės g.",
+          "amenity": "fuel",
+          "name": "Emsi"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Pajautos g. 31, 06200|Vilniaus m. sav.",
+      "lat": 54.710402,
+      "lon": 25.161987,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained.",
+      "before": {
+        "lat": 54.710396,
+        "lon": 25.166804,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Emsi|Vilnius, Pajautos g. 31, 06200|Vilniaus m. sav.",
+        "delta_m": 309.4,
+        "portal_osm_m": 29.1,
+        "current": {
+          "network": "UAB Emsi",
+          "address": "Vilnius, Pajautos g. 31, 06200",
+          "municipality": "Vilniaus m. sav.",
+          "lat": 54.710396,
+          "lon": 25.166804,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "Emsi",
+          "lat": 54.710402,
+          "lon": 25.161987,
+          "gas_station_id": 336
+        },
+        "osm": {
+          "type": "way",
+          "id": 131571137,
+          "lat": 54.7101432,
+          "lon": 25.1620535,
+          "tags": {
+            "addr:city": "Vilnius",
+            "addr:housenumber": "31",
+            "addr:postcode": "06203",
+            "addr:street": "Pajautos g.",
+            "amenity": "fuel",
+            "brand": "EMSI",
+            "name": "EMSI, Pilaitė",
+            "operator": "EMSI",
+            "website": "https://emsi.lt/"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 29.1,
+        "url": "https://www.openstreetmap.org/way/131571137",
+        "type": "way",
+        "id": 131571137,
+        "lat": 54.7101432,
+        "lon": 25.1620535,
+        "tags": {
+          "addr:city": "Vilnius",
+          "addr:housenumber": "31",
+          "addr:postcode": "06203",
+          "addr:street": "Pajautos g.",
+          "amenity": "fuel",
+          "brand": "EMSI",
+          "name": "EMSI, Pilaitė",
+          "operator": "EMSI",
+          "website": "https://emsi.lt/"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Vilnius, Liepkalnio g. 112A, 02121|Vilniaus m. sav.",
+      "lat": 54.65276,
+      "lon": 25.305714,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained.",
+      "before": {
+        "lat": 54.654868,
+        "lon": 25.302985,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Emsi|Vilnius, Liepkalnio g. 112A, 02121|Vilniaus m. sav.",
+        "delta_m": 292.8,
+        "portal_osm_m": 11.1,
+        "current": {
+          "network": "UAB Emsi",
+          "address": "Vilnius, Liepkalnio g. 112A, 02121",
+          "municipality": "Vilniaus m. sav.",
+          "lat": 54.654868,
+          "lon": 25.302985,
+          "coord_source": "chain"
+        },
+        "portal": {
+          "brand": "Emsi",
+          "lat": 54.65276,
+          "lon": 25.305714,
+          "gas_station_id": 337
+        },
+        "osm": {
+          "type": "way",
+          "id": 181674855,
+          "lat": 54.6526604,
+          "lon": 25.3057008,
+          "tags": {
+            "addr:city": "Vilnius",
+            "addr:housenumber": "112A",
+            "addr:street": "Liepkalnio g.",
+            "amenity": "fuel",
+            "name": "Emsi",
+            "operator": "Ervin"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 11.1,
+        "url": "https://www.openstreetmap.org/way/181674855",
+        "type": "way",
+        "id": 181674855,
+        "lat": 54.6526604,
+        "lon": 25.3057008,
+        "tags": {
+          "addr:city": "Vilnius",
+          "addr:housenumber": "112A",
+          "addr:street": "Liepkalnio g.",
+          "amenity": "fuel",
+          "name": "Emsi",
+          "operator": "Ervin"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Emsi|Maišiagala, Mokyklos g. 26, 14243|Vilniaus r. sav.",
+      "lat": 54.87343,
+      "lon": 25.073483,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA station identity and same-brand OSM street/house premises agree; previous chain marker is hundreds of metres away. Source address retained.",
+      "before": {
+        "lat": 54.871741,
+        "lon": 25.066309,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Emsi|Maišiagala, Mokyklos g. 26, 14243|Vilniaus r. sav.",
+        "delta_m": 495.9,
+        "portal_osm_m": 21.1,
+        "current": {
+          "network": "UAB Emsi",
+          "address": "Maišiagala, Mokyklos g. 26, 14243",
+          "municipality": "Vilniaus r. sav.",
+          "lat": 54.871741,
+          "lon": 25.066309,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Emsi",
+          "lat": 54.87343,
+          "lon": 25.073483,
+          "gas_station_id": 332
+        },
+        "osm": {
+          "type": "way",
+          "id": 85081546,
+          "lat": 54.8732412,
+          "lon": 25.0734568,
+          "tags": {
+            "addr:city": "Maišiagala",
+            "addr:street": "Mokyklos g.",
+            "amenity": "fuel",
+            "brand": "Takuras",
+            "name": "Emsi",
+            "operator": "Takuras"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 21.1,
+        "url": "https://www.openstreetmap.org/way/85081546",
+        "type": "way",
+        "id": 85081546,
+        "lat": 54.8732412,
+        "lon": 25.0734568,
+        "tags": {
+          "addr:city": "Maišiagala",
+          "addr:street": "Mokyklos g.",
+          "amenity": "fuel",
+          "brand": "Takuras",
+          "name": "Emsi",
+          "operator": "Takuras"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Regusa|Jūrės k., Medelyno g. 4A, 69446|Kazlų Rūdos sav.",
+      "lat": 54.76929339137726,
+      "lon": 23.486604531243888,
+      "source_url": "https://map.kazluruda.lt/regusa-2/",
+      "reason": "Municipal Regusa Jūrė station navigation and own Regusa address agree; OSM exact Medelyno4A/Jūrė and BRO partner point corroborate within5m. Old pin is different Regusa Kaunas station31.999km away.",
+      "before": {
+        "lat": 54.850076,
+        "lon": 23.965872,
+        "approx": false,
+        "coord_source": "lea_portal"
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 4.0,
+        "url": "https://www.openstreetmap.org/way/375653543",
+        "type": "way",
+        "id": 375653543,
+        "lat": 54.7692665,
+        "lon": 23.4865622,
+        "tags": {
+          "addr:city": "Jūrė",
+          "addr:housenumber": "4A",
+          "addr:street": "Medelyno g.",
+          "amenity": "fuel",
+          "name": "Regusa"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Kantališkių k., 69841|Marijampolės sav.",
+      "lat": 54.634312,
+      "lon": 23.436209,
+      "source_url": "https://stateta.lt/",
+      "reason": "Own operator BRO locator exact locality and station; LEA/OSM physical premises agree within35m; old geocode is in another municipality.",
+      "before": {
+        "lat": 54.888137,
+        "lon": 23.786984,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Stateta|Kantališkių k., 69841|Marijampolės sav.",
+        "delta_m": 36078.3,
+        "portal_osm_m": 12.3,
+        "current": {
+          "network": "UAB Stateta",
+          "address": "Kantališkių k., 69841",
+          "municipality": "Marijampolės sav.",
+          "lat": 54.888137,
+          "lon": 23.786984,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Stateta",
+          "lat": 54.634451,
+          "lon": 23.436397,
+          "gas_station_id": 616
+        },
+        "osm": {
+          "type": "way",
+          "id": 88129772,
+          "lat": 54.6343456,
+          "lon": 23.4363401,
+          "tags": {
+            "addr:city": "Kantališkiai",
+            "addr:housenumber": "12",
+            "addr:postcode": "69481",
+            "addr:street": "Naujoji g.",
+            "amenity": "fuel",
+            "brand": "Stateta",
+            "name": "Stateta"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 9.2,
+        "url": "https://www.openstreetmap.org/way/88129772",
+        "type": "way",
+        "id": 88129772,
+        "lat": 54.6343456,
+        "lon": 23.4363401,
+        "tags": {
+          "addr:city": "Kantališkiai",
+          "addr:housenumber": "12",
+          "addr:postcode": "69481",
+          "addr:street": "Naujoji g.",
+          "amenity": "fuel",
+          "brand": "Stateta",
+          "name": "Stateta"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Gustaičių k., 59296|Prienų r. sav.",
+      "lat": 54.738441,
+      "lon": 23.710503,
+      "source_url": "https://stateta.lt/",
+      "reason": "Own operator BRO locator exact locality and station; LEA/OSM physical premises agree within35m; old geocode is in another municipality.",
+      "before": {
+        "lat": 54.503038,
+        "lon": 23.375134,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Stateta|Gustaičių k., 59296|Prienų r. sav.",
+        "delta_m": 33923.7,
+        "portal_osm_m": 31.8,
+        "current": {
+          "network": "UAB Stateta",
+          "address": "Gustaičių k., 59296",
+          "municipality": "Prienų r. sav.",
+          "lat": 54.503038,
+          "lon": 23.375134,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Stateta",
+          "lat": 54.738421,
+          "lon": 23.710359,
+          "gas_station_id": 612
+        },
+        "osm": {
+          "type": "way",
+          "id": 844600955,
+          "lat": 54.7381465,
+          "lon": 23.7104954,
+          "tags": {
+            "addr:city": "Gustaičiai",
+            "addr:housenumber": "4",
+            "addr:place": "Gustaičiai",
+            "amenity": "fuel",
+            "brand": "Stateta",
+            "name": "Stateta"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 32.8,
+        "url": "https://www.openstreetmap.org/way/844600955",
+        "type": "way",
+        "id": 844600955,
+        "lat": 54.7381465,
+        "lon": 23.7104954,
+        "tags": {
+          "addr:city": "Gustaičiai",
+          "addr:housenumber": "4",
+          "addr:place": "Gustaičiai",
+          "amenity": "fuel",
+          "brand": "Stateta",
+          "name": "Stateta"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Alytaus k., 64464|Alytaus r. sav.",
+      "lat": 54.407731,
+      "lon": 24.08522,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "LEA/OSM same-brand Takniškių2 premises agree within6m; current village geocode is1km away. BRO operator locality corroborates area but its marker is~200m east.",
+      "before": {
+        "lat": 54.407139,
+        "lon": 24.101763,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Stateta|Alytaus k., 64464|Alytaus r. sav.",
+        "delta_m": 1072.6,
+        "portal_osm_m": 5.2,
+        "current": {
+          "network": "UAB Stateta",
+          "address": "Alytaus k., 64464",
+          "municipality": "Alytaus r. sav.",
+          "lat": 54.407139,
+          "lon": 24.101763,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Stateta",
+          "lat": 54.407731,
+          "lon": 24.08522,
+          "gas_station_id": 621
+        },
+        "osm": {
+          "type": "way",
+          "id": 102491281,
+          "lat": 54.4077776,
+          "lon": 24.0852189,
+          "tags": {
+            "addr:city": "Alytus",
+            "addr:housenumber": "2",
+            "addr:street": "Takniškių g.",
+            "amenity": "fuel",
+            "brand": "Stateta",
+            "name": "Stateta",
+            "operator": "Stateta"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 5.2,
+        "url": "https://www.openstreetmap.org/way/102491281",
+        "type": "way",
+        "id": 102491281,
+        "lat": 54.4077776,
+        "lon": 24.0852189,
+        "tags": {
+          "addr:city": "Alytus",
+          "addr:housenumber": "2",
+          "addr:street": "Takniškių g.",
+          "amenity": "fuel",
+          "brand": "Stateta",
+          "name": "Stateta",
+          "operator": "Stateta"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Stateta|Kaniūkų k., 64104|Alytaus r. sav.",
+      "lat": 54.366043,
+      "lon": 24.121869,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "LEA/OSM same-brand Kaniūkai premises agree within17m; current village geocode is1km away. BRO operator identifies same locality.",
+      "before": {
+        "lat": 54.365305,
+        "lon": 24.106088,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Stateta|Kaniūkų k., 64104|Alytaus r. sav.",
+        "delta_m": 1025.6,
+        "portal_osm_m": 16.7,
+        "current": {
+          "network": "UAB Stateta",
+          "address": "Kaniūkų k., 64104",
+          "municipality": "Alytaus r. sav.",
+          "lat": 54.365305,
+          "lon": 24.106088,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Stateta",
+          "lat": 54.366043,
+          "lon": 24.121869,
+          "gas_station_id": 622
+        },
+        "osm": {
+          "type": "way",
+          "id": 372854671,
+          "lat": 54.366192,
+          "lon": 24.1218413,
+          "tags": {
+            "amenity": "fuel",
+            "name": "Stateta",
+            "operator": "Stateta"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 16.7,
+        "url": "https://www.openstreetmap.org/way/372854671",
+        "type": "way",
+        "id": 372854671,
+        "lat": 54.366192,
+        "lon": 24.1218413,
+        "tags": {
+          "amenity": "fuel",
+          "name": "Stateta",
+          "operator": "Stateta"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Tomega|Tartoko k., 17127|Šalčininkų r. sav.",
+      "lat": 54.295226,
+      "lon": 25.360219,
+      "source_url": "https://stateta.lt/wp-json/interita-maps/v1/branches?country=Lietuva&city=&address=&lat_min=0&lat_max=0&lng_min=0&lng_max=0",
+      "reason": "Own Tomega contacts lists Tartoko station; BRO partner explicitly binds Tomega Tartoko to this point, near OSM Tomega Tartokas Solidarumopl8 premises. LEA marker1.16km north and old geocode~18km north are both inconsistent.",
+      "before": {
+        "lat": 54.456879,
+        "lon": 25.279466,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Tomega|Tartoko k., 17127|Šalčininkų r. sav.",
+        "delta_m": 17594.4,
+        "portal_osm_m": 1163.2,
+        "current": {
+          "network": "UAB Tomega",
+          "address": "Tartoko k., 17127",
+          "municipality": "Šalčininkų r. sav.",
+          "lat": 54.456879,
+          "lon": 25.279466,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Tomega",
+          "lat": 54.305922,
+          "lon": 25.360893,
+          "gas_station_id": 625
+        },
+        "osm": {
+          "type": "way",
+          "id": 232859622,
+          "lat": 54.2954796,
+          "lon": 25.3598364,
+          "tags": {
+            "addr:city": "Tartokas",
+            "addr:housenumber": "8",
+            "addr:street": "Solidarumo pl.",
+            "amenity": "fuel",
+            "name": "Tomega",
+            "operator": "Tomega",
+            "website": "http://tomega.lt/"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 37.6,
+        "url": "https://www.openstreetmap.org/way/232859622",
+        "type": "way",
+        "id": 232859622,
+        "lat": 54.2954796,
+        "lon": 25.3598364,
+        "tags": {
+          "addr:city": "Tartokas",
+          "addr:housenumber": "8",
+          "addr:street": "Solidarumo pl.",
+          "amenity": "fuel",
+          "name": "Tomega",
+          "operator": "Tomega",
+          "website": "http://tomega.lt/"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Bonsa|Vaidatonių k. 1, 73406|Tauragės r. sav.",
+      "lat": 55.469205,
+      "lon": 22.678905,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "LEA exact Bonsa Vaidatoniai1 and OSM same-company/locality/house fuel premises agree within27m; old pin1.88km away lands in Kelmė district.",
+      "before": {
+        "lat": 55.481284,
+        "lon": 22.657973,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Bonsa|Vaidatonių k. 1, 73406|Tauragės r. sav.",
+        "delta_m": 1882.6,
+        "portal_osm_m": 25.9,
+        "current": {
+          "network": "UAB Bonsa",
+          "address": "Vaidatonių k. 1, 73406",
+          "municipality": "Tauragės r. sav.",
+          "lat": 55.481284,
+          "lon": 22.657973,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Bonsa",
+          "lat": 55.469205,
+          "lon": 22.678905,
+          "gas_station_id": 219
+        },
+        "osm": {
+          "type": "way",
+          "id": 426332567,
+          "lat": 55.4691339,
+          "lon": 22.6785136,
+          "tags": {
+            "addr:city": "Vaidatoniai",
+            "addr:housenumber": "1",
+            "addr:place": "Vaidatoniai",
+            "amenity": "fuel",
+            "name": "Bonsa",
+            "operator": "Bonsa",
+            "website": "https://www.bonsa.lt"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 25.9,
+        "url": "https://www.openstreetmap.org/way/426332567",
+        "type": "way",
+        "id": 426332567,
+        "lat": 55.4691339,
+        "lon": 22.6785136,
+        "tags": {
+          "addr:city": "Vaidatoniai",
+          "addr:housenumber": "1",
+          "addr:place": "Vaidatoniai",
+          "amenity": "fuel",
+          "name": "Bonsa",
+          "operator": "Bonsa",
+          "website": "https://www.bonsa.lt"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Jozita|Kuosiškių k. 4, 83169|Pakruojo r. sav.",
+      "lat": 55.96572,
+      "lon": 23.879816,
+      "source_url": "https://jozita.lt/wp-admin/admin-ajax.php?action=asl_load_stores",
+      "reason": "Own operator exact street/full house/locality corroborates LEA and OSM station premises. Correct wrong previous geocode/manual override.",
+      "before": {
+        "lat": 56.073104,
+        "lon": 23.831915,
+        "approx": false,
+        "coord_source": "verified"
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Jozita|Kuosiškių k. 4, 83169|Pakruojo r. sav.",
+        "delta_m": 12298.2,
+        "portal_osm_m": 14.0,
+        "current": {
+          "network": "UAB Jozita",
+          "address": "Kuosiškių k. 4, 83169",
+          "municipality": "Pakruojo r. sav.",
+          "lat": 56.073104,
+          "lon": 23.831915,
+          "coord_source": "verified"
+        },
+        "portal": {
+          "brand": "Jozita",
+          "lat": 55.965749,
+          "lon": 23.879502,
+          "gas_station_id": 417
+        },
+        "osm": {
+          "type": "way",
+          "id": 183874820,
+          "lat": 55.9657978,
+          "lon": 23.8797092,
+          "tags": {
+            "addr:city": "Kuosiškiai",
+            "addr:housenumber": "4",
+            "addr:place": "Kuosiškiai",
+            "amenity": "fuel",
+            "brand": "Jozita",
+            "name": "Jozita"
+          }
+        }
+      },
+      "additional_evidence": {
+        "station_key": "UAB Jozita|Kuosiškių k. 4, 83169|Pakruojo r. sav.",
+        "network": "Jozita",
+        "current": {
+          "lat": 56.073104,
+          "lon": 23.831915,
+          "approx": false,
+          "coord_source": "verified"
+        },
+        "official": {
+          "id": "52",
+          "name": "DEGALINĖ | PARDUOTUVĖ | PLOVYKLA | BALIONŲ KEITIMAS IR PRISTATYMAS",
+          "address": "",
+          "city": "Kuosiškių k. 4 , Pakruojo r., 83169",
+          "lat": 55.96572,
+          "lon": 23.879816
+        },
+        "official_url": "https://jozita.lt/wp-admin/admin-ajax.php?action=asl_load_stores",
+        "captured_at": "2026-10-06T14:34:19.138055+00:00",
+        "address_match": {
+          "score": 0.667,
+          "runner_up": 0,
+          "shared_tokens": [
+            "4",
+            "kuosiskiu"
+          ],
+          "numbers": [
+            "4"
+          ],
+          "grade": "unique exact descriptor/house-number candidate; physical position requires cross-check"
+        },
+        "distance_m": 12306.1,
+        "nearest_same_brand_osm": {
+          "official_distance_m": 10.9,
+          "current_distance_m": 12296.1,
+          "second_official_distance_m": 36606.6,
+          "record": {
+            "type": "way",
+            "id": 183874820,
+            "lat": 55.9657978,
+            "lon": 23.8797092,
+            "tags": {
+              "addr:city": "Kuosiškiai",
+              "addr:housenumber": "4",
+              "addr:place": "Kuosiškiai",
+              "amenity": "fuel",
+              "brand": "Jozita",
+              "name": "Jozita"
+            }
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 10.9,
+        "url": "https://www.openstreetmap.org/way/183874820",
+        "type": "way",
+        "id": 183874820,
+        "lat": 55.9657978,
+        "lon": 23.8797092,
+        "tags": {
+          "addr:city": "Kuosiškiai",
+          "addr:housenumber": "4",
+          "addr:place": "Kuosiškiai",
+          "amenity": "fuel",
+          "brand": "Jozita",
+          "name": "Jozita"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Alauša|Marijampolė, Sporto g. 50A, 68110|Marijampolės sav.",
+      "lat": 54.5663568448131,
+      "lon": 23.379866332714766,
+      "source_url": "https://www.alausa.lt/degalines/",
+      "reason": "Own operator exact street/full house/locality corroborates LEA and OSM station premises. Correct wrong previous geocode/manual override.",
+      "before": {
+        "lat": 54.567982,
+        "lon": 23.361132,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Alauša|Marijampolė, Sporto g. 50A, 68110|Marijampolės sav.",
+        "delta_m": 1263.3,
+        "portal_osm_m": 6.9,
+        "current": {
+          "network": "UAB Alauša",
+          "address": "Marijampolė, Sporto g. 50A, 68110",
+          "municipality": "Marijampolės sav.",
+          "lat": 54.567982,
+          "lon": 23.361132,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Alauša",
+          "lat": 54.566074,
+          "lon": 23.380451,
+          "gas_station_id": 97
+        },
+        "osm": {
+          "type": "node",
+          "id": 8788480618,
+          "lat": 54.5660715,
+          "lon": 23.3803447,
+          "tags": {
+            "addr:city": "Marijampolė",
+            "addr:housenumber": "50",
+            "addr:postcode": "68110",
+            "addr:street": "Sporto g.",
+            "amenity": "fuel",
+            "name": "Alauša"
+          }
+        }
+      },
+      "additional_evidence": {
+        "station_key": "UAB Alauša|Marijampolė, Sporto g. 50A, 68110|Marijampolės sav.",
+        "network": "Alauša",
+        "current": {
+          "lat": 54.567982,
+          "lon": 23.361132,
+          "approx": false,
+          "coord_source": null
+        },
+        "official": {
+          "id": "138",
+          "name": "Alauša",
+          "address": "Sporto g. 50A",
+          "city": "Marijampolė",
+          "lat": 54.5663568448131,
+          "lon": 23.379866332714766
+        },
+        "official_url": "https://www.alausa.lt/degalines/",
+        "captured_at": "2026-10-06T14:40:56.714042+00:00",
+        "address_match": {
+          "score": 1.0,
+          "runner_up": 0,
+          "shared_tokens": [
+            "50a",
+            "marijampole",
+            "sporto"
+          ],
+          "numbers": [
+            "50a"
+          ],
+          "grade": "unique exact descriptor/house-number candidate; physical position requires cross-check"
+        },
+        "distance_m": 1221.2,
+        "nearest_same_brand_osm": {
+          "official_distance_m": 44.2,
+          "current_distance_m": 1256.6,
+          "second_official_distance_m": 999.5,
+          "record": {
+            "type": "node",
+            "id": 8788480618,
+            "lat": 54.5660715,
+            "lon": 23.3803447,
+            "tags": {
+              "addr:city": "Marijampolė",
+              "addr:housenumber": "50",
+              "addr:postcode": "68110",
+              "addr:street": "Sporto g.",
+              "amenity": "fuel",
+              "name": "Alauša"
+            }
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 44.2,
+        "url": "https://www.openstreetmap.org/node/8788480618",
+        "type": "node",
+        "id": 8788480618,
+        "lat": 54.5660715,
+        "lon": 23.3803447,
+        "tags": {
+          "addr:city": "Marijampolė",
+          "addr:housenumber": "50",
+          "addr:postcode": "68110",
+          "addr:street": "Sporto g.",
+          "amenity": "fuel",
+          "name": "Alauša"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Jozita|Ramučiai, K. Bielinio g. 2A, 54465|Kauno r. sav.",
+      "lat": 54.943946,
+      "lon": 24.036068,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Own Jozita id59 confirms K.Bielinio2A Ramučiai near registered LEA point; nearby OSM fuel premises agrees with LEA within12m. Old point~870m away.",
+      "before": {
+        "lat": 54.94093,
+        "lon": 24.023464,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Jozita|Ramučiai, K. Bielinio g. 2A, 54465|Kauno r. sav.",
+        "delta_m": 872.1,
+        "portal_osm_m": 12.1,
+        "current": {
+          "network": "UAB Jozita",
+          "address": "Ramučiai, K. Bielinio g. 2A, 54465",
+          "municipality": "Kauno r. sav.",
+          "lat": 54.94093,
+          "lon": 24.023464,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Jozita",
+          "lat": 54.943946,
+          "lon": 24.036068,
+          "gas_station_id": 431
+        },
+        "osm": {
+          "type": "way",
+          "id": 337354565,
+          "lat": 54.9440531,
+          "lon": 24.0360991,
+          "tags": {
+            "amenity": "fuel"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 12.1,
+        "url": "https://www.openstreetmap.org/way/337354565",
+        "type": "way",
+        "id": 337354565,
+        "lat": 54.9440531,
+        "lon": 24.0360991,
+        "tags": {
+          "amenity": "fuel"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Alauša|Kaunas, Palemono g. 171, 52107|Kauno m. sav.",
+      "lat": 54.923488,
+      "lon": 24.072113,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Own Alauša exact Palemono171 locator independently identifies station; LEA and exact OSM street/house premises agree while old address geocode sits~200m away.",
+      "before": {
+        "lat": 54.923697,
+        "lon": 24.069047,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "UAB Alauša|Kaunas, Palemono g. 171, 52107|Kauno m. sav.",
+        "delta_m": 197.3,
+        "portal_osm_m": 0.9,
+        "current": {
+          "network": "UAB Alauša",
+          "address": "Kaunas, Palemono g. 171, 52107",
+          "municipality": "Kauno m. sav.",
+          "lat": 54.923697,
+          "lon": 24.069047,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Alauša",
+          "lat": 54.923488,
+          "lon": 24.072113,
+          "gas_station_id": 104
+        },
+        "osm": {
+          "type": "way",
+          "id": 1526680463,
+          "lat": 54.9234812,
+          "lon": 24.0721042,
+          "tags": {
+            "addr:city": "Kaunas",
+            "addr:housenumber": "171",
+            "addr:street": "Palemono g.",
+            "amenity": "fuel",
+            "name": "Alauša",
+            "operator": "Alauša"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 0.9,
+        "url": "https://www.openstreetmap.org/way/1526680463",
+        "type": "way",
+        "id": 1526680463,
+        "lat": 54.9234812,
+        "lon": 24.0721042,
+        "tags": {
+          "addr:city": "Kaunas",
+          "addr:housenumber": "171",
+          "addr:street": "Palemono g.",
+          "amenity": "fuel",
+          "name": "Alauša",
+          "operator": "Alauša"
+        }
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Biruliškių k., 54469|Kauno r. sav.",
+      "lat": 54.932439,
+      "lon": 23.995479,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof.",
+      "before": {
+        "lat": 54.924319,
+        "lon": 24.011308,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "AB Orlen Baltics Retail|Biruliškių k., 54469|Kauno r. sav.",
+        "delta_m": 1355.8,
+        "portal_osm_m": 11.5,
+        "current": {
+          "network": "AB Orlen Baltics Retail",
+          "address": "Biruliškių k., 54469",
+          "municipality": "Kauno r. sav.",
+          "lat": 54.924319,
+          "lon": 24.011308,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Orlen",
+          "lat": 54.932439,
+          "lon": 23.995479,
+          "gas_station_id": 34
+        },
+        "osm": {
+          "type": "way",
+          "id": 135896739,
+          "lat": 54.932337,
+          "lon": 23.9954521,
+          "tags": {
+            "amenity": "fuel",
+            "brand": "Orlen",
+            "name": "Orlen",
+            "operator": "Orlen"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 11.5,
+        "url": "https://www.openstreetmap.org/way/135896739",
+        "type": "way",
+        "id": 135896739,
+        "lat": 54.932337,
+        "lon": 23.9954521,
+        "tags": {
+          "amenity": "fuel",
+          "brand": "Orlen",
+          "name": "Orlen",
+          "operator": "Orlen"
+        }
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilimiškės k., 97220|Kretingos r. sav.",
+      "lat": 55.903308,
+      "lon": 21.105647,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof.",
+      "before": {
+        "lat": 55.89617,
+        "lon": 21.093042,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "AB Orlen Baltics Retail|Vilimiškės k., 97220|Kretingos r. sav.",
+        "delta_m": 1116.9,
+        "portal_osm_m": 18.7,
+        "current": {
+          "network": "AB Orlen Baltics Retail",
+          "address": "Vilimiškės k., 97220",
+          "municipality": "Kretingos r. sav.",
+          "lat": 55.89617,
+          "lon": 21.093042,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Orlen",
+          "lat": 55.903308,
+          "lon": 21.105647,
+          "gas_station_id": 58
+        },
+        "osm": {
+          "type": "way",
+          "id": 138396979,
+          "lat": 55.9031684,
+          "lon": 21.1058142,
+          "tags": {
+            "amenity": "fuel",
+            "brand": "Orlen",
+            "name": "Orlen"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 18.7,
+        "url": "https://www.openstreetmap.org/way/138396979",
+        "type": "way",
+        "id": 138396979,
+        "lat": 55.9031684,
+        "lon": 21.1058142,
+        "tags": {
+          "amenity": "fuel",
+          "brand": "Orlen",
+          "name": "Orlen"
+        }
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Kaunas, Kalvarijos g. 138, 46403|Kauno m. sav.",
+      "lat": 54.850963,
+      "lon": 23.842771,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof.",
+      "before": {
+        "lat": 54.865406,
+        "lon": 23.872992,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "AB Orlen Baltics Retail|Kaunas, Kalvarijos g. 138, 46403|Kauno m. sav.",
+        "delta_m": 2514.1,
+        "portal_osm_m": 47.9,
+        "current": {
+          "network": "AB Orlen Baltics Retail",
+          "address": "Kaunas, Kalvarijos g. 138, 46403",
+          "municipality": "Kauno m. sav.",
+          "lat": 54.865406,
+          "lon": 23.872992,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Orlen",
+          "lat": 54.850963,
+          "lon": 23.842771,
+          "gas_station_id": 36
+        },
+        "osm": {
+          "type": "way",
+          "id": 1305377539,
+          "lat": 54.8513439,
+          "lon": 23.8431202,
+          "tags": {
+            "amenity": "fuel",
+            "brand": "Orlen",
+            "name": "Orlen",
+            "operator": "Orlen"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 47.9,
+        "url": "https://www.openstreetmap.org/way/1305377539",
+        "type": "way",
+        "id": 1305377539,
+        "lat": 54.8513439,
+        "lon": 23.8431202,
+        "tags": {
+          "amenity": "fuel",
+          "brand": "Orlen",
+          "name": "Orlen",
+          "operator": "Orlen"
+        }
+      }
+    },
+    {
+      "station_key": "AB Orlen Baltics Retail|Vilnius, Juodasis kl. 32, 11307|Vilniaus m. sav.",
+      "lat": 54.663053,
+      "lon": 25.342333,
+      "source_url": "https://degalukainos.ena.lt/",
+      "reason": "Exact LEA source identity supplies point on independently mapped same-brand fuel premises. Current generic address geocode is off premises. ORLEN current SharePoint locator could not be read; OSM street/house corroboration exists for Juodasis32 only. For Kalvarijos138 the forecourt and Kalvarijos street were visually reviewed; do not claim independent house138 survey proof.",
+      "before": {
+        "lat": 54.66294,
+        "lon": 25.339186,
+        "approx": false,
+        "coord_source": null
+      },
+      "lea_osm_crosscheck": {
+        "station_key": "AB Orlen Baltics Retail|Vilnius, Juodasis kl. 32, 11307|Vilniaus m. sav.",
+        "delta_m": 202.8,
+        "portal_osm_m": 10.7,
+        "current": {
+          "network": "AB Orlen Baltics Retail",
+          "address": "Vilnius, Juodasis kl. 32, 11307",
+          "municipality": "Vilniaus m. sav.",
+          "lat": 54.66294,
+          "lon": 25.339186,
+          "coord_source": null
+        },
+        "portal": {
+          "brand": "Orlen",
+          "lat": 54.663053,
+          "lon": 25.342333,
+          "gas_station_id": 45
+        },
+        "osm": {
+          "type": "way",
+          "id": 954219970,
+          "lat": 54.6629611,
+          "lon": 25.3423811,
+          "tags": {
+            "addr:city": "Vilnius",
+            "addr:housenumber": "32",
+            "addr:postcode": "11307",
+            "addr:street": "Juodasis kel.",
+            "amenity": "fuel",
+            "brand": "Orlen",
+            "name": "Orlen",
+            "operator": "Orlen",
+            "website": "https://www.orlen.lt"
+          }
+        }
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 10.7,
+        "url": "https://www.openstreetmap.org/way/954219970",
+        "type": "way",
+        "id": 954219970,
+        "lat": 54.6629611,
+        "lon": 25.3423811,
+        "tags": {
+          "addr:city": "Vilnius",
+          "addr:housenumber": "32",
+          "addr:postcode": "11307",
+          "addr:street": "Juodasis kel.",
+          "amenity": "fuel",
+          "brand": "Orlen",
+          "name": "Orlen",
+          "operator": "Orlen",
+          "website": "https://www.orlen.lt"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Margavos k., 54471|Kauno r. sav.",
+      "lat": 54.958815,
+      "lon": 24.039164,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "reason": "Preserve current operator Margavos station point; LEA and branded OSM premises corroborate area within85m. Strict matcher declines address without house. Explicit exact-key override prevents next cron exposing5.48km wrong village-geocoder point; not a survey/driveway claim.",
+      "before": {
+        "lat": 54.958815,
+        "lon": 24.039164,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 84.8,
+        "url": "https://www.openstreetmap.org/way/520974228",
+        "type": "way",
+        "id": 520974228,
+        "lat": 54.9595759,
+        "lon": 24.0390846,
+        "tags": {
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "Viada"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Klaipėda, Taikos pr. 70A-1, 93202|Klaipėdos m. sav.",
+      "lat": 55.68327,
+      "lon": 21.160516,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "reason": "Preserve current operator Taikos70A point: exact OSM70A station is7m away and LEA point within10m. Raw70A-1 unit suffix preserved. Explicit override prevents next cron exposing2.53km wrong geocode without generalizing house suffix matching.",
+      "before": {
+        "lat": 55.68327,
+        "lon": 21.160516,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 7.2,
+        "url": "https://www.openstreetmap.org/way/98885067",
+        "type": "way",
+        "id": 98885067,
+        "lat": 55.6832192,
+        "lon": 21.1604456,
+        "tags": {
+          "addr:city": "Klaipėda",
+          "addr:housenumber": "70A",
+          "addr:street": "Taikos pr.",
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "Viada"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Viada LT|Kaunas, Biruliškių g. 18A, 51205|Kauno m. sav.",
+      "lat": 54.911393,
+      "lon": 24.021123,
+      "source_url": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+      "reason": "Preserve current station point: exact OSMBiruliškiųg18A is4.7m away and LEA point14.6m. Operator sayspl18A; rawg18A retained. Explicit override prevents next cron exposing162m street-geocode offset; no globalg/pl alias.",
+      "before": {
+        "lat": 54.911393,
+        "lon": 24.021123,
+        "approx": false,
+        "coord_source": "chain"
+      },
+      "nearest_osm_diagnostic": {
+        "distance_m": 4.7,
+        "url": "https://www.openstreetmap.org/node/5198473897",
+        "type": "node",
+        "id": 5198473897,
+        "lat": 54.9114025,
+        "lon": 24.0210519,
+        "tags": {
+          "addr:city": "Kaunas",
+          "addr:housenumber": "18A",
+          "addr:street": "Biruliškių g.",
+          "amenity": "fuel",
+          "brand": "Viada",
+          "name": "Viada",
+          "operator": "UAB „Viada Lt“"
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Akmenės I kaimas Plento g. 1|Akmenės r. sav.",
+      "raw_municipality": "Akmenės r. sav.",
+      "before": {
+        "lat": 56.304061,
+        "lon": 22.838615,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 56.238461,
+        "lon": 22.750823,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 9087.9,
+      "reason": "Explicit legacy spelling alias of exact LEA station596 AkmenėsI/Plento1. Exact-address Saurida OSM premises agrees14m. Official locator address confirms identity but its GPS is820m away; do not use that point.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/354661715",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 354661715,
+          "lat": 56.2385775,
+          "lon": 22.7507221,
+          "tags": {
+            "addr:city": "Akmenė I",
+            "addr:housenumber": "1",
+            "addr:postcode": "85380",
+            "addr:street": "Plento g.",
+            "amenity": "fuel",
+            "brand": "Saurida"
+          }
+        },
+        "recommended_distance_m": 14.4
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 596,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Akmenės I k., Plento g. 1, 85380",
+          "municipality": "Akmenės r. sav.",
+          "lat": 56.238461,
+          "lon": 22.750823
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Akmenė",
+          "address": "Plento g. 1, Akmenės I k., Akmenės r.",
+          "city": "",
+          "lat": 56.24146599405919,
+          "lon": 22.76294231414795
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Ignacavos km. Kauno pl. 18, 59149|Prienų r. sav.",
+      "raw_municipality": "Prienų r. sav.",
+      "before": {
+        "lat": 54.580056,
+        "lon": 23.887564,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.646657,
+        "lon": 23.930492,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 7904.8,
+      "reason": "Explicit legacy km/k alias of exact LEA585 Ignacavos/Kaunopl18. Same-brand OSM premises agrees31m; OSM lacks house number, so LEA supplies18.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/438953798",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 438953798,
+          "lat": 54.6465119,
+          "lon": 23.9300755,
+          "tags": {
+            "addr:city": "Ignacava",
+            "addr:street": "Kauno pl.",
+            "amenity": "fuel",
+            "brand": "Saurida",
+            "name": "Saurida",
+            "operator": "Saurida"
+          }
+        },
+        "recommended_distance_m": 31.3
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 585,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Ignacavos k., Kauno pl. 18, 59149",
+          "municipality": "Prienų r. sav.",
+          "lat": 54.646657,
+          "lon": 23.930492
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Prienai",
+          "address": "Ignacavos k., Prienų r.",
+          "city": "",
+          "lat": 54.6470169,
+          "lon": 23.93996489999995
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Lėkėčių km. Šakių g. 3, 71227|Šakių r. sav.",
+      "raw_municipality": "Šakių r. sav.",
+      "before": {
+        "lat": 54.981946,
+        "lon": 23.504211,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.977307,
+        "lon": 23.483572,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 1414.4,
+      "reason": "Legacy k/km and postcode71227/71229 variant of exact LEA598 Lėkėčių/Šakių3. Official address confirms same village/street/house, but official GPS is1.1km away. OSM exact address agrees13m but historical operator tagRūdšilis differs; coordinate correction only, no ownership/price merge.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/336688162",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 336688162,
+          "lat": 54.9774137,
+          "lon": 23.4836691,
+          "tags": {
+            "addr:city": "Lekėčiai",
+            "addr:housenumber": "3",
+            "addr:street": "Šakių g.",
+            "amenity": "fuel",
+            "name": "Rūdšilis",
+            "operator": "Rūdšilis"
+          }
+        },
+        "recommended_distance_m": 13.4
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 598,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Lėkėčių k., Šakių g. 3, 71229",
+          "municipality": "Šakių r. sav.",
+          "lat": 54.977307,
+          "lon": 23.483572
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Lekėčiai",
+          "address": "Šakių g. 3, Lekėčių k., Šakių r.",
+          "city": "",
+          "lat": 54.98352689999999,
+          "lon": 23.49725890000002
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Naujoji Akmenė V. Kudirkos 18A, 85171|Akmenės r. sav.",
+      "raw_municipality": "Akmenės r. sav.",
+      "before": {
+        "lat": 56.304061,
+        "lon": 22.838615,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 56.317191,
+        "lon": 22.884944,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 3208.9,
+      "reason": "Exact full-house/street/city alias of LEA590. Operator and exact-address Saurida OSM agree within10m of LEA; centroid pin is3.2km away.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/254489203",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 254489203,
+          "lat": 56.3172105,
+          "lon": 22.8848297,
+          "tags": {
+            "addr:city": "Naujoji Akmenė",
+            "addr:housenumber": "18A",
+            "addr:street": "V. Kudirkos g.",
+            "amenity": "fuel",
+            "name": "Saurida"
+          }
+        },
+        "recommended_distance_m": 7.4
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 590,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Naujoji Akmenė,  V. Kudirkos g. 18A, 85171",
+          "municipality": "Akmenės r. sav.",
+          "lat": 56.317191,
+          "lon": 22.884944
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: N.Akmenė",
+          "address": "V. Kudirkos g. 18A, Naujoji Akmenė",
+          "city": "",
+          "lat": 56.317246,
+          "lon": 22.884969299999966
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Pageležių km., 20278|Ukmergės r. sav.",
+      "raw_municipality": "Ukmergės r. sav.",
+      "before": {
+        "lat": 54.73932,
+        "lon": 25.227399,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 55.165001,
+        "lon": 24.515676,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 65618.6,
+      "reason": "Explicit same-village/postcode alias of LEA577 Pageležiųk20278. Same-brand OSM feature with exactpostcode agrees15m. Official address confirms identity but GPS is1.214km off the actual LEA/OSM premises.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/215248763",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 215248763,
+          "lat": 55.1648783,
+          "lon": 24.5157638,
+          "tags": {
+            "addr:postcode": "20278",
+            "amenity": "fuel",
+            "name": "Saurida",
+            "operator": "Saurida",
+            "website": "https://www.saurida.lt/degalines/"
+          }
+        },
+        "recommended_distance_m": 14.7
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 577,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Pageležių k, 20278",
+          "municipality": "Ukmergės r. sav.",
+          "lat": 55.165001,
+          "lon": 24.515676
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Pageležiai",
+          "address": "Pageležių k., Ukmergės r.",
+          "city": "",
+          "lat": 55.1606531,
+          "lon": 24.53338789999998
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Velžių km .Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "raw_municipality": "Radviliškio r. sav.",
+      "before": {
+        "lat": 55.774164,
+        "lon": 23.662382,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385,
+        "source_url": "https://www.saurida.lt/degalines/"
+      },
+      "distance_from_current_m": 399.2,
+      "reason": "Official exact Velžiai/Radviliškiopl2 address and point agree5m with exact-address Saurida OSM. Portal station587 supplied another Saurida premises at Radviliškis/Gedimino50C about7.9km away; do not propagate that portal point to either alias.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/151241464",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 151241464,
+          "lat": 55.7731851,
+          "lon": 23.6561664,
+          "tags": {
+            "addr:city": "Velžiai",
+            "addr:housenumber": "2",
+            "addr:postcode": "82218",
+            "addr:street": "Radviliškio pl.",
+            "amenity": "fuel",
+            "brand": "Saurida",
+            "name": "Saurida"
+          }
+        },
+        "recommended_distance_m": 5.0
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 587,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Velžių k., Radviliškio plentas 2, 82218",
+          "municipality": "Radviliškio r. sav.",
+          "lat": 55.814742,
+          "lon": 23.553075
+        },
+        "recommended_distance_m": 7934.3
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Velžiai",
+          "address": "Radviliškio pl. 2, Velžiai, Radviliškio raj.",
+          "city": "",
+          "lat": 55.77317716512304,
+          "lon": 23.656245321035385
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Velžių k., Radviliškio plentas 2, 82218|Radviliškio r. sav.",
+      "raw_municipality": "Radviliškio r. sav.",
+      "before": {
+        "lat": 55.814742,
+        "lon": 23.553075,
+        "approx": false,
+        "coord_source": "lea_portal"
+      },
+      "recommended": {
+        "lat": 55.77317716512304,
+        "lon": 23.656245321035385,
+        "source_url": "https://www.saurida.lt/degalines/"
+      },
+      "distance_from_current_m": 7934.3,
+      "reason": "Official exact Velžiai/Radviliškiopl2 address and point agree5m with exact-address Saurida OSM. Portal station587 supplied another Saurida premises at Radviliškis/Gedimino50C about7.9km away; do not propagate that portal point to either alias.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/151241464",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 151241464,
+          "lat": 55.7731851,
+          "lon": 23.6561664,
+          "tags": {
+            "addr:city": "Velžiai",
+            "addr:housenumber": "2",
+            "addr:postcode": "82218",
+            "addr:street": "Radviliškio pl.",
+            "amenity": "fuel",
+            "brand": "Saurida",
+            "name": "Saurida"
+          }
+        },
+        "recommended_distance_m": 5.0
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 587,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Velžių k., Radviliškio plentas 2, 82218",
+          "municipality": "Radviliškio r. sav.",
+          "lat": 55.814742,
+          "lon": 23.553075
+        },
+        "recommended_distance_m": 7934.3
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Velžiai",
+          "address": "Radviliškio pl. 2, Velžiai, Radviliškio raj.",
+          "city": "",
+          "lat": 55.77317716512304,
+          "lon": 23.656245321035385
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Ukmergė Vilniaus g. 122, 20167|Ukmergės r. sav.",
+      "raw_municipality": "Ukmergės r. sav.",
+      "before": {
+        "lat": 55.211548,
+        "lon": 24.795213,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 55.233539,
+        "lon": 24.781254,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 2600.6,
+      "reason": "Legacy comma/postcode20167/20168 alias of exact LEA575 Ukmergė/Vilniaus122; exact-address Saurida OSM agrees1m and official locator within27m. Preserve raw postcode/key.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/547732238",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 547732238,
+          "lat": 55.2335459,
+          "lon": 24.7812573,
+          "tags": {
+            "addr:city": "Ukmergė",
+            "addr:housenumber": "122",
+            "addr:postcode": "20167",
+            "addr:street": "Vilniaus g.",
+            "amenity": "fuel",
+            "name": "Saurida"
+          }
+        },
+        "recommended_distance_m": 0.8
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 575,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Ukmergė, Vilniaus g. 122, 20168",
+          "municipality": "Ukmergės r. sav.",
+          "lat": 55.233539,
+          "lon": 24.781254
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Ukmergė, Vilniaus g.",
+          "address": "Vilniaus g. 122, Ukmergė",
+          "city": "",
+          "lat": 55.2333928,
+          "lon": 24.780937900000026
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Vilnius Stanevičiaus g. 3A, 07131|Vilniaus m. sav.",
+      "raw_municipality": "Vilniaus m. sav.",
+      "before": {
+        "lat": 54.728038,
+        "lon": 25.254387,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.721693,
+        "lon": 25.255867,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 711.9,
+      "reason": "Exact-house3A Saurida LEA603 agrees with operator address/point and nearby same-brand Saurida OSM node. OSM Saurida node lacks street/house; adjacent Neste is house3, so do not claim exact-address OSM corroboration or merge with Neste.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/node/13669571194",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "node",
+          "id": 13669571194,
+          "lat": 54.7219616,
+          "lon": 25.2555185,
+          "tags": {
+            "amenity": "fuel",
+            "name": "Saurida",
+            "operator": "Saurida"
+          }
+        },
+        "recommended_distance_m": 37.3
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 603,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Vilnius, Stanevičiaus g. 3A, 07131",
+          "municipality": "Vilniaus m. sav.",
+          "lat": 54.721693,
+          "lon": 25.255867
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Vilnius, Stanevičiaus g. 3A",
+          "address": "S. Stanevičiaus g. 3A, Vilnius",
+          "city": "",
+          "lat": 54.721688,
+          "lon": 25.255938
+        }
+      }
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Jaučakių k., 54217|Kauno r. sav.",
+      "raw_municipality": "Kauno r. sav.",
+      "before": {
+        "lat": 55.046176,
+        "lon": 23.588632,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 55.038374,
+        "lon": 23.607911,
+        "source_url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500"
+      },
+      "distance_from_current_m": 1503.8,
+      "reason": "Exact LEA198 village identifies station; official id47 spells Jaučiakių (one extra letter) and same-brand OSM exact Jaučakiai premises independently agree within18m. Explicit station-key binding only; raw spelling unchanged.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/node/1675548954",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "node",
+          "id": 1675548954,
+          "lat": 55.0382973,
+          "lon": 23.6078065,
+          "tags": {
+            "addr:city": "Jaučakiai",
+            "addr:housenumber": "1",
+            "addr:street": "Degalinės g.",
+            "amenity": "fuel",
+            "name": "Baltic Petroleum",
+            "operator": "Baltic Petroleum"
+          }
+        },
+        "recommended_distance_m": 10.8
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 198,
+          "company": "UAB Baltic Petroleum",
+          "brand": "Baltic Petroleum",
+          "address": "Jaučakių k., 54217",
+          "municipality": "Kauno r. sav.",
+          "lat": 55.038455,
+          "lon": 23.60782
+        },
+        "recommended_distance_m": 10.7
+      },
+      "operator": {
+        "source_url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+        "captured_at": "2026-10-06T14:31:34.650392+00:00",
+        "record": {
+          "id": "47",
+          "name": "",
+          "address": "Kauno r. Vilkijos sen., Jaučiakių k.",
+          "city": "Jaučiakių k.",
+          "lat": 55.038374,
+          "lon": 23.607911
+        }
+      }
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Griškabūdis, A. Skelčio g., 71296|Šakių r. sav.",
+      "raw_municipality": "Šakių r. sav.",
+      "before": {
+        "lat": 54.850499,
+        "lon": 23.171448,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.852382,
+        "lon": 23.176758,
+        "source_url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500"
+      },
+      "distance_from_current_m": 399.2,
+      "reason": "Raw LEA street has no house; exact LEA177 point agrees with unique official Griškabūdis/ASkelčio4 and exact OSM AntanoSkelčio4 station within21m. Explicit station-key binding, not a generalized missing-house match.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/170987575",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 170987575,
+          "lat": 54.8522337,
+          "lon": 23.1769432,
+          "tags": {
+            "addr:city": "Griškabūdis",
+            "addr:housenumber": "4",
+            "addr:postcode": "71291",
+            "addr:street": "Antano Skelčio g.",
+            "amenity": "fuel",
+            "brand": "Baltic Petroleum",
+            "name": "Baltic Petroleum"
+          }
+        },
+        "recommended_distance_m": 20.3
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 177,
+          "company": "UAB Baltic Petroleum",
+          "brand": "Baltic Petroleum",
+          "address": "Griškabūdis, A. Skelčio g., 71296",
+          "municipality": "Šakių r. sav.",
+          "lat": 54.852334,
+          "lon": 23.176877
+        },
+        "recommended_distance_m": 9.3
+      },
+      "operator": {
+        "source_url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+        "captured_at": "2026-10-06T14:31:34.650392+00:00",
+        "record": {
+          "id": "28",
+          "name": "",
+          "address": "Šakių r. sav., Griškabūdis, A. Skelčio g. 4",
+          "city": "Griškabūdis",
+          "lat": 54.852382,
+          "lon": 23.176758
+        }
+      }
+    },
+    {
+      "station_key": "UAB Baltic Petroleum|Pasvalys, Mūšos g. 18, 39104|Pasvalio r. sav.",
+      "raw_municipality": "Pasvalio r. sav.",
+      "before": {
+        "lat": 56.224824,
+        "lon": 24.401365,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 56.070931,
+        "lon": 24.411231,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 17123.0,
+      "reason": "Exact LEA189 raw address point agrees with OSM BalticPetroleum Aukštikalniai/Mūšos19 within12m and official id38 Mūšos19 point40m fromOSM. Raw LEA house18 versus19 and cityPasvalys versusAukštikalniai remain a documented identity/address discrepancy. Current pin is17km north; use only after premises review and explicit rawkey binding.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/node/13650603875",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "node",
+          "id": 13650603875,
+          "lat": 56.0708348,
+          "lon": 24.4111772,
+          "tags": {
+            "addr:city": "Aukštikalniai",
+            "addr:housenumber": "19",
+            "addr:postcode": "39103",
+            "addr:street": "Mūšos g.",
+            "amenity": "fuel",
+            "name": "Baltic Petroleum",
+            "operator": "Baltic Petroleum",
+            "website": "https://balticpetroleum.lt/"
+          }
+        },
+        "recommended_distance_m": 11.2
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 189,
+          "company": "UAB Baltic Petroleum",
+          "brand": "Baltic Petroleum",
+          "address": "Pasvalys, Mūšos g. 18, 39104",
+          "municipality": "Pasvalio r. sav.",
+          "lat": 56.070931,
+          "lon": 24.411231
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500",
+        "captured_at": "2026-10-06T14:31:34.650392+00:00",
+        "record": {
+          "id": "38",
+          "name": "",
+          "address": "Pasvalio r. sav., Aukštikalnių k., Mūšos g. 19",
+          "city": "Aukštikalnių k.",
+          "lat": 56.070646,
+          "lon": 24.41062
+        }
+      },
+      "review": "Root visually reviewed BP node13650603875 in the station forecourt; confirmed operator id38 and LEA189 refer to same premises. House-number discrepancy remains display-only.",
+      "root_review": "OSM actual forecourt and Mūšos street visually inspected2026-10-06; official BP id38 address19 matches node13650603875. Targeted GPS and attributed display address admitted, raw LEA18/key preserved."
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių k., 14207|Vilniaus r. sav.",
+      "raw_municipality": "Vilniaus r. sav.",
+      "before": {
+        "lat": 54.710674,
+        "lon": 25.156488,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.737396,
+        "lon": 25.079988,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 5741.3,
+      "reason": "Exact village/postcode Saurida LEA600 agrees with current official named Čekoniškės locator within20m and same-brand OSM exact AdomoMickevičiaus187 premises within12m. The raw LEA address lacks street/house; independent operator village identity plus shared premises supplies corroboration, not an invented exact-house raw match. Explicit k/km aliases; prices and raw addresses unchanged.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/440454995",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 440454995,
+          "lat": 54.7373567,
+          "lon": 25.0798258,
+          "tags": {
+            "addr:city": "Čekoniškės",
+            "addr:housenumber": "187",
+            "addr:street": "Adomo Mickevičiaus g.",
+            "amenity": "fuel",
+            "name": "Saurida",
+            "operator": "Saurida",
+            "website": "https://www.saurida.lt/"
+          }
+        },
+        "recommended_distance_m": 11.3
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 600,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Čekoniškių k., 14207",
+          "municipality": "Vilniaus r. sav.",
+          "lat": 54.737396,
+          "lon": 25.079988
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Čekoniškės",
+          "address": "Čekoniškės, Vilniaus r.",
+          "city": "",
+          "lat": 54.737369508979036,
+          "lon": 25.08028507232666
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Čekoniškių km, 14207|Vilniaus r. sav.",
+      "raw_municipality": "Vilniaus r. sav.",
+      "before": {
+        "lat": 54.710674,
+        "lon": 25.156488,
+        "approx": false,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.737396,
+        "lon": 25.079988,
+        "source_url": "https://degalukainos.ena.lt/"
+      },
+      "distance_from_current_m": 5741.3,
+      "reason": "Exact village/postcode Saurida LEA600 agrees with current official named Čekoniškės locator within20m and same-brand OSM exact AdomoMickevičiaus187 premises within12m. The raw LEA address lacks street/house; independent operator village identity plus shared premises supplies corroboration, not an invented exact-house raw match. Explicit k/km aliases; prices and raw addresses unchanged.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "url": "https://www.openstreetmap.org/way/440454995",
+        "captured_at": "2026-10-06T14:31:36.765270+00:00",
+        "record": {
+          "type": "way",
+          "id": 440454995,
+          "lat": 54.7373567,
+          "lon": 25.0798258,
+          "tags": {
+            "addr:city": "Čekoniškės",
+            "addr:housenumber": "187",
+            "addr:street": "Adomo Mickevičiaus g.",
+            "amenity": "fuel",
+            "name": "Saurida",
+            "operator": "Saurida",
+            "website": "https://www.saurida.lt/"
+          }
+        },
+        "recommended_distance_m": 11.3
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 600,
+          "company": "UAB Saurida",
+          "brand": "Saurida",
+          "address": "Čekoniškių k., 14207",
+          "municipality": "Vilniaus r. sav.",
+          "lat": 54.737396,
+          "lon": 25.079988
+        },
+        "recommended_distance_m": 0.0
+      },
+      "operator": {
+        "source_url": "https://www.saurida.lt/degalines/",
+        "captured_at": "2026-10-06T14:34:16.804245+00:00",
+        "record": {
+          "id": "",
+          "name": "Degalinė: Čekoniškės",
+          "address": "Čekoniškės, Vilniaus r.",
+          "city": "",
+          "lat": 54.737369508979036,
+          "lon": 25.08028507232666
+        }
+      }
+    },
+    {
+      "station_key": "UAB Alauša|Skraičionių k., Skraičionių g. 1, 17140|Šalčininkų r. sav.",
+      "raw_municipality": "Šalčininkų r. sav.",
+      "before": {
+        "lat": 54.205646,
+        "lon": 25.615742,
+        "approx": true,
+        "coord_source": null
+      },
+      "recommended": {
+        "lat": 54.204054,
+        "lon": 25.621299,
+        "source_url": "https://www.alausa.lt/degalines/"
+      },
+      "distance_from_current_m": 402.4,
+      "reason": "Exact current official Alauša id45 Skraičioniųg1/Skraičioniųk binds this legacy village spelling; exact LEA100 priced spelling Skraičionys/Skraičioniųg1 independently agrees17m. No OSM fuel feature found nearby; two current primary sources support the premises-area pin, without claiming survey or visual building proof. Current approximate town-centroid pin is402m west.",
+      "status": "supported_coordinate_correction",
+      "osm": {
+        "status": "No OSM fuel feature found in current national dataset; absence does not prove point wrong."
+      },
+      "lea_portal": {
+        "source_url": "https://degalukainos.ena.lt/",
+        "generated": "2026-10-06T12:17:28Z",
+        "record": {
+          "gas_station_id": 100,
+          "company": "UAB Alauša",
+          "brand": "Alauša",
+          "address": "Skraičionys, Skraičionių g. 1, 17140",
+          "municipality": "Šalčininkų r. sav.",
+          "lat": 54.204154,
+          "lon": 25.621094
+        },
+        "recommended_distance_m": 17.4
+      },
+      "operator": {
+        "source_url": "https://www.alausa.lt/degalines/",
+        "captured_at": "2026-10-06T14:40:56.714042+00:00",
+        "record": {
+          "id": "45",
+          "name": "Alauša",
+          "address": "Skraičionių g. 1, Skraičionių k., Dieveniškių sen.",
+          "city": "Šalčininkų r. sav.",
+          "lat": 54.204054,
+          "lon": 25.621299
+        }
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Neveronių k., Martinavos g. 1, 54475|Kauno m. sav.",
+      "raw_municipality_preserved": "Kauno m. sav.",
+      "changes": {
+        "display_municipality": "Kauno r. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/"
+      },
+      "admission": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended.",
+      "evidence": {
+        "current_pin": {
+          "lat": 54.924573,
+          "lon": 24.079127
+        },
+        "current_pin_boundary": {
+          "municipality_code": "52",
+          "municipality": "Kauno r. sav.",
+          "boundary_distance_m": 221.391
+        },
+        "operator_address_source": "https://www.saurida.lt/degalines/",
+        "independent_physical_pin_support": [
+          {
+            "source": "https://www.saurida.lt/plovyklos/",
+            "pin": {
+              "lat": 54.924852,
+              "lon": 24.079476
+            },
+            "distance_to_current_pin_m": 38.272,
+            "boundary": [
+              {
+                "municipality_code": "52",
+                "municipality": "Kauno r. sav.",
+                "boundary_distance_m": 259.598
+              }
+            ]
+          },
+          {
+            "source": "https://www.saurida.lt/degalines/",
+            "pin": {
+              "lat": 54.9245721,
+              "lon": 24.0786779
+            },
+            "distance_to_current_pin_m": 28.788,
+            "boundary": [
+              {
+                "municipality_code": "52",
+                "municipality": "Kauno r. sav.",
+                "boundary_distance_m": 203.154
+              }
+            ]
+          }
+        ],
+        "osm_same_station_found_in_national_fuel_snapshot": false,
+        "operator_explicit_administrative_label": "Kauno r."
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda, Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "raw_municipality_preserved": "Klaipėdos r. sav.",
+      "changes": {
+        "display_municipality": "Klaipėdos m. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/"
+      },
+      "admission": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended.",
+      "evidence": {
+        "current_pin": {
+          "lat": 55.656839,
+          "lon": 21.183821
+        },
+        "current_pin_boundary": {
+          "municipality_code": "21",
+          "municipality": "Klaipėdos m. sav.",
+          "boundary_distance_m": 1381.994
+        },
+        "operator_address_source": "https://www.saurida.lt/degalines/",
+        "independent_physical_pin_support": [
+          {
+            "source": "https://www.openstreetmap.org/way/159676073",
+            "osm_tags": {
+              "addr:city": "Klaipėda",
+              "addr:housenumber": "29",
+              "addr:street": "Jūrininkų pr.",
+              "amenity": "fuel",
+              "name": "Saurida"
+            },
+            "pin": {
+              "lat": 55.6568367,
+              "lon": 21.1837589
+            },
+            "distance_to_current_pin_m": 3.918,
+            "boundary": [
+              {
+                "municipality_code": "21",
+                "municipality": "Klaipėdos m. sav.",
+                "boundary_distance_m": 1380.943
+              }
+            ]
+          },
+          {
+            "source": "https://www.saurida.lt/stovejimo-aiksteles/",
+            "pin": {
+              "lat": 55.656851,
+              "lon": 21.183681
+            },
+            "distance_to_current_pin_m": 8.915,
+            "boundary": [
+              {
+                "municipality_code": "21",
+                "municipality": "Klaipėdos m. sav.",
+                "boundary_distance_m": 1381.513
+              }
+            ]
+          }
+        ],
+        "operator_explicit_city_label": "Klaipėda"
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "raw_municipality_preserved": "Klaipėdos r. sav.",
+      "changes": {
+        "display_municipality": "Klaipėdos m. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/"
+      },
+      "admission": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended.",
+      "evidence": {
+        "current_pin": {
+          "lat": 55.656839,
+          "lon": 21.183821
+        },
+        "current_pin_boundary": {
+          "municipality_code": "21",
+          "municipality": "Klaipėdos m. sav.",
+          "boundary_distance_m": 1381.994
+        },
+        "operator_address_source": "https://www.saurida.lt/degalines/",
+        "independent_physical_pin_support": [
+          {
+            "source": "https://www.openstreetmap.org/way/159676073",
+            "osm_tags": {
+              "addr:city": "Klaipėda",
+              "addr:housenumber": "29",
+              "addr:street": "Jūrininkų pr.",
+              "amenity": "fuel",
+              "name": "Saurida"
+            },
+            "pin": {
+              "lat": 55.6568367,
+              "lon": 21.1837589
+            },
+            "distance_to_current_pin_m": 3.918,
+            "boundary": [
+              {
+                "municipality_code": "21",
+                "municipality": "Klaipėdos m. sav.",
+                "boundary_distance_m": 1380.943
+              }
+            ]
+          },
+          {
+            "source": "https://www.saurida.lt/stovejimo-aiksteles/",
+            "pin": {
+              "lat": 55.656851,
+              "lon": 21.183681
+            },
+            "distance_to_current_pin_m": 8.915,
+            "boundary": [
+              {
+                "municipality_code": "21",
+                "municipality": "Klaipėdos m. sav.",
+                "boundary_distance_m": 1381.513
+              }
+            ]
+          }
+        ],
+        "operator_explicit_city_label": "Klaipėda"
+      }
+    },
+    {
+      "station_key": "UAB Saurida|Rumšiškės Lekavičiaus g. 71, 56337|Kauno r. sav.",
+      "raw_municipality_preserved": "Kauno r. sav.",
+      "changes": {
+        "display_municipality": "Kaišiadorių r. sav.",
+        "display_municipality_source": "https://data.gov.lt/datasets/1345/"
+      },
+      "admission": "Physical station identity/point supported independently; RC polygon gives administrative display label. No coordinate, price, ID or raw-key change recommended.",
+      "evidence": {
+        "current_pin": {
+          "lat": 54.87185,
+          "lon": 24.213203
+        },
+        "current_pin_boundary": {
+          "municipality_code": "49",
+          "municipality": "Kaišiadorių r. sav.",
+          "boundary_distance_m": 2313.818
+        },
+        "operator_address_source": "https://www.saurida.lt/degalines/",
+        "independent_physical_pin_support": [
+          {
+            "source": "https://www.openstreetmap.org/way/560681144",
+            "osm_tags": {
+              "addr:city": "Rumšiškės",
+              "addr:housenumber": "71",
+              "addr:postcode": "56337",
+              "addr:street": "L. Lekavičiaus g.",
+              "amenity": "fuel",
+              "brand": "Saurida",
+              "name": "Saurida",
+              "operator": "Saurida"
+            },
+            "pin": {
+              "lat": 54.8718427,
+              "lon": 24.2131867
+            },
+            "distance_to_current_pin_m": 1.325,
+            "boundary": [
+              {
+                "municipality_code": "49",
+                "municipality": "Kaišiadorių r. sav.",
+                "boundary_distance_m": 2312.493
+              }
+            ]
+          }
+        ],
+        "already_correct_priced_sibling_keys": [
+          "UAB Saurida|Rumšiškės, Lekavičiaus g. 71, 56337|Kaišiadorių r. sav."
+        ],
+        "operator_admin_text_is_stale": "Operator page says Kauno r.; used only for station/street identity, not as municipality authority."
+      }
+    },
+    {
+      "station_key": "Nostrada (RV Transport)|Kazlavo k.|Kalvarijos sav.",
+      "lat": 54.32897,
+      "lon": 23.148446,
+      "coordinate_source": "https://degalukainos.ena.lt/",
+      "verified_on": "2026-10-06",
+      "label": "Exact RV Transport/Kazlavas legacy alias of LEA Nostrada Kazlavo4. Current AAD2026 permit/inspection station identity and OSM RVstation house4 corroborate premises area. LEA point65.8m from mapped building; no survey accuracy claim. Old approximate pin~145km away in Vilnius."
+    }
+  ],
+  "baseline_commit": "3e85d104dcfd9b841247ec3a6d1db83575d82dc9",
+  "baseline_note": "Latest scheduled refresh retained; only import timestamps changed since the initial437182cc geographic screening."
+}

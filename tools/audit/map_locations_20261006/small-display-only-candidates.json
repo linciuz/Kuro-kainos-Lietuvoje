@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-10-06T15:05:25.280319+00:00",
+  "candidates": [
+    {
+      "station_key": "UAB Saurida|Neveronių k., Martinavos g. 1, 54475|Kauno m. sav.",
+      "raw_municipality": "Kauno m. sav.",
+      "recommended_display_municipality": "Kauno r. sav.",
+      "status": "candidate_pending_independent_RC_boundary_confirmation",
+      "source_url": "https://www.saurida.lt/degalines/",
+      "captured_at": "2026-10-06T14:34:16.804245+00:00",
+      "operator_record": {
+        "id": "",
+        "name": "Degalinė: Neveronys, Martinavos g.",
+        "address": "Martinavos g. 1, Neveronių k., Kauno r.",
+        "city": "",
+        "lat": 54.9245721,
+        "lon": 24.078677900000002
+      },
+      "reason": "Exact operator street/house/locality explicitly Neveroniųk.,Kaunor.; current exact LEA premises pin. Confirm actual premises with RC boundary audit; operator GPS is29m from current point. No matching OSM station feature was found, so none is claimed.",
+      "identity_rule": "Display only; no mutation to raw municipality/address/stationKey/favorite/report joins; require exact station_key and display_municipality_source."
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda, Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "raw_municipality": "Klaipėdos r. sav.",
+      "recommended_display_municipality": "Klaipėdos m. sav.",
+      "status": "candidate_pending_independent_RC_boundary_confirmation",
+      "source_url": "https://www.saurida.lt/degalines/",
+      "captured_at": "2026-10-06T14:34:16.804245+00:00",
+      "operator_record": {
+        "id": "",
+        "name": "Degalinė: Klaipėda",
+        "address": "Jūrininkų prospektas 29, Klaipėda",
+        "city": "",
+        "lat": 55.6578082,
+        "lon": 21.185278799999992
+      },
+      "reason": "Operator names Klaipėda; exact current LEA premises and OSM way159676073 street/fullhouse29 agree4m. Use premises point for RC administrative boundary, not official locator point141m away.",
+      "identity_rule": "Display only; no mutation to raw municipality/address/stationKey/favorite/report joins; require exact station_key and display_municipality_source."
+    },
+    {
+      "station_key": "UAB Saurida|Klaipėda Jūrininkų pr. 29, 95225|Klaipėdos r. sav.",
+      "raw_municipality": "Klaipėdos r. sav.",
+      "recommended_display_municipality": "Klaipėdos m. sav.",
+      "status": "candidate_pending_independent_RC_boundary_confirmation",
+      "source_url": "https://www.saurida.lt/degalines/",
+      "captured_at": "2026-10-06T14:34:16.804245+00:00",
+      "operator_record": {
+        "id": "",
+        "name": "Degalinė: Klaipėda",
+        "address": "Jūrininkų prospektas 29, Klaipėda",
+        "city": "",
+        "lat": 55.6578082,
+        "lon": 21.185278799999992
+      },
+      "reason": "Explicit comma-only alias of same exact fullhouse29 premises as priced record. Same OSM way159676073. Preserve raw key and source municipality.",
+      "identity_rule": "Display only; no mutation to raw municipality/address/stationKey/favorite/report joins; require exact station_key and display_municipality_source."
+    },
+    {
+      "station_key": "UAB Saurida|Rumšiškės Lekavičiaus g. 71, 56337|Kauno r. sav.",
+      "raw_municipality": "Kauno r. sav.",
+      "recommended_display_municipality": "Kaišiadorių r. sav.",
+      "status": "candidate_pending_independent_RC_boundary_confirmation",
+      "source_url": "https://www.saurida.lt/degalines/",
+      "captured_at": "2026-10-06T14:34:16.804245+00:00",
+      "operator_record": {
+        "id": "",
+        "name": "Degalinė: Rumšiškės",
+        "address": "Lekavičiaus g., Rumšiškės, Kauno r.",
+        "city": "",
+        "lat": 54.87135379999999,
+        "lon": 24.21411779999994
+      },
+      "reason": "Priced exact-address sibling already reportsKaišiadoriųr.; exact OSM way560681144 L.Lekavičiaus71/Rumšiškės agrees1m with current point. Operator webpage itself incorrectly labelsKaunor. and omits71; do not use its locality label as administrative proof.",
+      "identity_rule": "Display only; no mutation to raw municipality/address/stationKey/favorite/report joins; require exact station_key and display_municipality_source."
+    }
+  ],
+  "not_recommended": [
+    "EMSI Vandžiogalospl86A and BPGrigaičiai near boundaries need actual-premises evidence, not a city text inference. EMSI Ramygalos186A display correction already exists and is outside new corrections."
+  ]
+}

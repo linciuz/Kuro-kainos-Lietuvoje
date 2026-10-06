@@ -1,0 +1,195 @@
+{
+  "recorded_from_head": "437182cc9fe3ba99c4e13ef4cf9baf9450c8a7e0",
+  "station_capture_sha256": "412daad0a31c311cb0ee915ae106d13844c94cc0d07e91e0b42a6d252a58f3b8",
+  "chain_capture_sha256": "acf56db0ca620f7bbac7cc82c6b93315e1c11054e75e4670e0fd1ecae8a52285",
+  "chain_cache_generated_utc": "2026-10-06T12:13:50Z",
+  "source_urls": {
+    "Viada": "https://www.viada.lt/degalines/degaliniu-zemelapis/",
+    "Neste": "https://degalines.neste.lt/",
+    "Emsi": "https://emsi.lt/wp-json/wpgmza/v1/markers",
+    "Baltic Petroleum": "https://mobileapi.fscc.lt/bp/api/stations?pageSize=500"
+  },
+  "evidence": "Whitelisted actual source addresses and actual published coordinates. Existing published bad pins are retained as regression evidence, not accepted source coordinates. Viada and Neste directory records independently re-fetched with TLS verification at2026-10-06T14:32:20UTC and equal this cache. Emsi records from committed cache.",
+  "stations": {
+    "lea_viada_silagalis": {
+      "network": "UAB Viada LT",
+      "address": "Šilagalio k., Panevėžio aplinkl. 5, 36258",
+      "municipality": "Panevėžio r. sav.",
+      "lat": 55.944519,
+      "lon": 25.585662,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_viada_rokiskis": {
+      "network": "UAB Viada LT",
+      "address": "Rokiškis, Panevėžio g. 5, 42163",
+      "municipality": "Rokiškio r. sav.",
+      "lat": 55.944519,
+      "lon": 25.585662,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_viada_vievis": {
+      "network": "UAB Viada LT",
+      "address": "Vievis, Kauno g. 26A, 21376",
+      "municipality": "Elektrėnų sav.",
+      "lat": 54.775194,
+      "lon": 24.810293,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_emsi_spygliu": {
+      "network": "UAB Emsi",
+      "address": "Vilnius, Spyglių g. 2, 27101",
+      "municipality": "Vilniaus m. sav.",
+      "lat": 54.739851,
+      "lon": 25.276131,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_emsi_jeruzales": {
+      "network": "UAB Emsi",
+      "address": "Vilnius, Jeruzalės g. 2, 08414",
+      "municipality": "Vilniaus m. sav.",
+      "lat": 54.739851,
+      "lon": 25.276131,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_emsi_palemono": {
+      "network": "UAB Emsi",
+      "address": "Kaunas, Palemono g. 3A, 52159",
+      "municipality": "Kauno m. sav.",
+      "lat": 54.901009,
+      "lon": 24.031254,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_neste_kauno": {
+      "network": "UAB Neste Lietuva",
+      "address": "Vilnius, Kauno g. 26, 03212",
+      "municipality": "Vilniaus m. sav.",
+      "lat": 54.67164,
+      "lon": 25.27008,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_bp_kalnuju": {
+      "network": "UAB Baltic Petroleum",
+      "address": "Kalnujų k. 1, 60191",
+      "municipality": "Raseinių r. sav.",
+      "lat": 55.335647,
+      "lon": 23.102326,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_viada_vejuku": {
+      "network": "UAB Viada LT",
+      "address": "Vejukų k. 5, 60345",
+      "municipality": "Raseinių r. sav.",
+      "lat": 55.385937,
+      "lon": 22.901688,
+      "coord_source": "chain",
+      "approx": false
+    },
+    "lea_bp_velzio": {
+      "network": "UAB Baltic Petroleum",
+      "address": "Panevėžys, Velžio kl. 74, 36148",
+      "municipality": "Panevėžio m. sav.",
+      "lat": 55.721941,
+      "lon": 24.391535,
+      "coord_source": "chain",
+      "approx": false
+    }
+  },
+  "directory": [
+    {
+      "network": "Emsi",
+      "address": "Jeruzalės g. 2, Vilnius, Vilniaus apskritis, Lietuva",
+      "city": "",
+      "lat": 54.739851,
+      "lon": 25.276131,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Palemono g. 3A, Kaunas, Lithuania",
+      "city": "",
+      "lat": 54.901009,
+      "lon": 24.031254,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Emsi",
+      "address": "Palemono gatvė 3A, Kaunas, Kauno m. sav., Lietuva",
+      "city": "",
+      "lat": 54.900985,
+      "lon": 24.031209,
+      "source": "wpgmza"
+    },
+    {
+      "network": "Neste",
+      "address": "Kauno g. 26",
+      "city": "Vilnius",
+      "lat": 54.67164,
+      "lon": 25.27008,
+      "source": "neste-locator"
+    },
+    {
+      "network": "Viada",
+      "address": "Rokiškis, Panevėžio g. 5",
+      "city": "",
+      "lat": 55.944519,
+      "lon": 25.585662,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "Vievis, Kauno g. 55A",
+      "city": "",
+      "lat": 54.775194,
+      "lon": 24.810293,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "Vievis, Kauno g. 26",
+      "city": "",
+      "lat": 54.771212,
+      "lon": 24.820776,
+      "source": "viada-web"
+    },
+    {
+      "network": "Viada",
+      "address": "Panevėžio r., Šilagalis, Aplinkkelio g. 5",
+      "city": "",
+      "lat": 55.670113,
+      "lon": 24.349612,
+      "source": "viada-web"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Raseinių r. sav., Kalnujų sen., Kalnujų k. 1",
+      "city": "Kalnujų k. 1",
+      "lat": 55.335647,
+      "lon": 23.102326,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Baltic Petroleum",
+      "address": "Panevežys, Velžio kelias 74",
+      "city": "Panevežys",
+      "lat": 55.721941,
+      "lon": 24.391535,
+      "source": "fscc-api"
+    },
+    {
+      "network": "Viada",
+      "address": "Raseinių r., Viduklės sen., Vejukų k. 5",
+      "city": "",
+      "lat": 55.385937,
+      "lon": 22.901688,
+      "source": "viada-web"
+    }
+  ]
+}
