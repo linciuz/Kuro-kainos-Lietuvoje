@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-06T12:17:28Z",
+ "generated": "2026-10-06T19:07:39Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-10-06 13:00:20",
+ "api_last_updated": "2026-10-06 19:32:49",
  "count": 765,
  "with_coords": 764,
  "priced": 757,
@@ -10283,13 +10283,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.859,
-    "diesel": 2.315,
-    "petrol95": 2.015
+    "lpg": 0.899,
+    "diesel": 2.265,
+    "petrol95": 1.965
    },
    "gas_station_id": 564,
    "logo_url": null,
-   "submitted_at": "2026-10-06T07:00:00.000000Z"
+   "submitted_at": "2026-10-06T13:35:55.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -10514,13 +10514,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.83,
-    "diesel": 2.19,
-    "petrol95": 1.89
+    "lpg": 0.86,
+    "diesel": 2.22,
+    "petrol95": 1.92
    },
    "gas_station_id": 217,
    "logo_url": null,
-   "submitted_at": "2026-10-06T07:00:00.000000Z"
+   "submitted_at": "2026-10-06T16:32:49.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
