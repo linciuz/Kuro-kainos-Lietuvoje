@@ -103,11 +103,6 @@
         }
         .skip-link:focus { transform: none; outline: 3px solid #1b2430; outline-offset: 2px; }
         .controls { padding: 15px; background: white; }
-        .page-intro { margin-bottom: 12px; color: #1b2430; }
-        .intro-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; }
-        .page-intro h1 { font-size: clamp(21px, 4vw, 28px); line-height: 1.2; letter-spacing: -.3px; }
-        .intro-brand { color: #0057D8; font-size: 14px; font-weight: 700; }
-        .page-intro p { margin-top: 5px; max-width: 760px; font-size: 13px; line-height: 1.45; color: #55606d; }
         .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; gap: 8px; }
         .action-bar { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
         .act-btn {
@@ -119,17 +114,9 @@
         .act-btn::after { content: ""; position: absolute; inset: -9px 0; }
         /* Dated national snapshot, generated from the published price dataset.
            It remains independent of the active fuel, search and area filters. */
-        .crawl-prices { padding: 8px 15px; background: #fff; font-size: 12.5px; line-height: 1.5; color: #55606d; }
-        .crawl-prices a, .search-guide a { color: #0056b3; }
-        .search-guide { margin: 0 15px 15px; padding: 16px 0 0; border-top: 1px solid #e5e9ef; color: #55606d; font-size: 14px; line-height: 1.55; }
-        .search-guide h2 { color: #1b2430; font-size: 20px; line-height: 1.3; margin-bottom: 6px; }
-        .search-guide h3 { color: #1b2430; font-size: 16px; line-height: 1.35; margin-bottom: 6px; }
-        .search-guide p + p { margin-top: 8px; }
-        .city-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(126px, 1fr)); gap: 8px; margin: 12px 0 16px; }
-        .city-links a { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border: 1px solid #d9e4f3; border-radius: 8px; background: #f5f8fc; font-weight: 600; }
-        .guide-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px; }
-        .search-guide ol { padding-left: 20px; }
-        .search-guide li + li { margin-top: 5px; }
+        .footer .crawl-prices { margin-top: 6px; font-size: inherit; line-height: 1.5; color: inherit; }
+        .footer-info { margin-top: 6px; line-height: 1.5; }
+        .footer-info p { margin: 4px 0; }
         /* Big-city quick pick shown when geolocation is denied/unavailable */
         .city-pick { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 8px; font-size: 12.5px; color: #55606d; }
         .city-chip { border: 1px solid #cfe0f5; background: #f0f6ff; color: #1c4e8a; border-radius: 16px;
@@ -546,14 +533,11 @@
 <body>
     <a class="skip-link" href="#fuel-results" lang="lt">Pereiti prie degalinių rezultatų</a>
     <div class="app-container">
+        <h1 class="sr-only" lang="lt">Kuro kainos Lietuvoje ir degalinių paieška — Fuelis</h1>
         <noscript><p lang="lt" style="padding:16px;text-align:center;color:#333">Interaktyviai degalinių paieškai reikalingas JavaScript. <a href="kainos/">Kuro kainas pagal savivaldybę</a> galite palyginti ir be jo.</p></noscript>
         <div class="change-banner" id="change-banner" style="display:none"></div>
 
         <header class="controls">
-            <div class="page-intro" lang="lt">
-                <div class="intro-heading"><h1>Kuro kainos Lietuvoje</h1><span class="intro-brand">Fuelis</span></div>
-                <p>Nepriklausoma kuro kainų paieška: palyginkite benzino 95, dyzelino ir dujų (LPG) kainas, raskite pigesnę ar artimesnę degalinę.</p>
-            </div>
             <div class="topbar">
                 <div class="action-bar" id="action-bar"></div>
                 <div class="lang-switcher" id="lang-switcher"></div>
@@ -595,8 +579,6 @@
         </header>
 
         <main id="fuel-results" tabindex="-1">
-        <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices" lang="lt"><p><strong>Lietuvos kainų suvestinė · 2026-10-06</strong>: dyzelinas vid. €2.250, benzinas 95 vid. €1.951, dujos €0.838 (€/l) — 757 degalinės su kainomis. LEA ir, kai naujesnės, pažymėtos operatorių kainos. <a href="https://fuelis.lt/kainos/">Kuro kainos pagal savivaldybę</a> · <a href="https://fuelis.lt/atviri-duomenys.html">Atviri duomenys (API)</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
-
         <div id="list-view">
             <div class="stations-container" id="stations-list" role="list">
                 <div class="msg">Kraunama…</div>
@@ -610,35 +592,6 @@
         <div class="summary" id="summary"></div>
 
         <div class="oil-footer" id="oil-footer" style="display:none"></div>
-
-        <section class="search-guide" lang="lt" aria-labelledby="city-prices-heading">
-            <h2 id="city-prices-heading">Kuro kainų paieška pagal miestą</h2>
-            <p>Ieškote, kur pigiau pilti kurą? Miesto puslapyje rasite benzino, dyzelino ir dujų kainų palyginimą bei degalinių adresus. <a href="kainos/">Visos savivaldybės</a>.</p>
-            <nav class="city-links" aria-label="Kuro kainos Lietuvos miestuose">
-                <a href="kainos/vilniaus-m-sav.html">Kuro kainos Vilniuje</a>
-                <a href="kainos/kauno-m-sav.html">Kuro kainos Kaune</a>
-                <a href="kainos/klaipedos-m-sav.html">Kuro kainos Klaipėdoje</a>
-                <a href="kainos/siauliu-m-sav.html">Kuro kainos Šiauliuose</a>
-                <a href="kainos/panevezio-m-sav.html">Kuro kainos Panevėžyje</a>
-                <a href="kainos/marijampoles-sav.html">Kuro kainos Marijampolėje</a>
-            </nav>
-            <div class="guide-columns">
-                <div>
-                    <h3>Kaip rasti pigesnę ar artimesnę degalinę?</h3>
-                    <ol>
-                        <li>Pasirinkite degalų rūšį ir savivaldybę. Paieškos laukelyje galite įvesti degalinių tinklą arba adresą.</li>
-                        <li>Rūšiuokite nuo pigiausių arba leiskite naudoti savo vietą, kad galėtumėte palyginti atstumą iki degalinių.</li>
-                        <li>Perjunkite sąrašą į žemėlapį. Pasirinktos degalinės kortelėje rasite nuorodas navigacijai su „Google Maps“ ir „Waze“.</li>
-                    </ol>
-                </div>
-                <div>
-                    <h3>Iš kur gaunamos degalų kainos?</h3>
-                    <p>Fuelis yra nepriklausoma paslauga. Pagrindinis šaltinis – <a href="https://www.ena.lt/degalu-kainos-degalinese/" target="_blank" rel="noopener">Lietuvos energetikos agentūros (LEA) skelbiami degalinių duomenys</a>. Kai turime naujesnes tinklo pateiktas kainas, dalį įrašų papildome operatoriaus duomenimis, pavyzdžiui, „Saurida“.</p>
-                    <p>Kainos nėra tiesioginė degalinių švieslenčių transliacija ir gali pasikeisti dienos metu. Tikrinkite nurodytą duomenų datą ir atnaujinimo informaciją. Lietuvos kainų suvestinė apima visą paskelbtą rinkinį, o paieškos rezultatus keičia jūsų pasirinkti filtrai.</p>
-                    <p>Norintiems naudoti duomenis savo projektuose pateikiame <a href="atviri-duomenys.html">atvirus duomenis ir API</a>.</p>
-                </div>
-            </div>
-        </section>
         </main>
 
         <footer class="footer">
@@ -653,6 +606,12 @@
               <span style="color:#c3c8d0"> · </span>
               <a href="privatumas.html" data-i18n="privacy" style="color:#6b7280">Privatumas</a>
             </p>
+            <!-- FUELIS:STATIC-PRICES --><div class="crawl-prices" id="crawl-prices" lang="lt"><p><strong>Lietuvos kainų suvestinė · 2026-10-06</strong>: dyzelinas vid. €2.250, benzinas 95 vid. €1.951, dujos €0.838 (€/l) — 757 degalinės su kainomis. LEA ir, kai naujesnės, pažymėtos operatorių kainos. <a href="https://fuelis.lt/kainos/">Kuro kainos pagal savivaldybę</a> · <a href="https://fuelis.lt/atviri-duomenys.html">Atviri duomenys (API)</a>.</p></div><!-- /FUELIS:STATIC-PRICES -->
+            <div class="footer-info" lang="lt">
+                <p>Fuelis – nepriklausoma kuro kainų paieška Lietuvoje. Palyginkite benzino 95, dyzelino ir dujų (LPG) kainas pagal savivaldybę, tinklą ar adresą. Leiskite nustatyti vietą, kad galėtumėte rikiuoti pagal atstumą, arba peržiūrėkite degalines žemėlapyje.</p>
+                <p>Pagrindinis šaltinis – <a href="https://www.ena.lt/degalu-kainos-degalinese/" target="_blank" rel="noopener">LEA skelbiami degalinių duomenys</a>. Kai turime naujesnes kainas, dalį įrašų papildome operatorių, pavyzdžiui, „Saurida“, duomenimis. Tikrinkite nurodytą rinkinio datą ir kainų atnaujinimo informaciją; kainos degalinėse dienos metu gali keistis.</p>
+                <p>Kuro kainos: <a href="kainos/vilniaus-m-sav.html">Vilniuje</a> · <a href="kainos/kauno-m-sav.html">Kaune</a> · <a href="kainos/klaipedos-m-sav.html">Klaipėdoje</a> · <a href="kainos/siauliu-m-sav.html">Šiauliuose</a> · <a href="kainos/panevezio-m-sav.html">Panevėžyje</a> · <a href="kainos/marijampoles-sav.html">Marijampolėje</a>.</p>
+            </div>
         </footer>
     </div>
 
