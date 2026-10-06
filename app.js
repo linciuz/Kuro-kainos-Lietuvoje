@@ -2233,8 +2233,8 @@ function getRows() {
 
 function render() {
     renderOilFooter();
-    // Keep the dated national snapshot visible. It describes the published
-    // dataset, independently of the active fuel, area and search filters.
+    // The dated national snapshot lives in the footer, separate from the
+    // results and their active fuel, area and search filters.
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
         document.getElementById("change-banner").style.display = "none";
