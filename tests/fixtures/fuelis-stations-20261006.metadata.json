@@ -1,0 +1,9 @@
+{
+  "source_repository": "https://github.com/linciuz/Kuro-kainos-Lietuvoje",
+  "commit": "10565dfc0b827e1ff1bbef4662b492813ebb97a2",
+  "path": "data/stations.json",
+  "payload_sha256": "cf3d0533eb050b247b2e42926f2009ff781eb8e625044605f2a87db941436002",
+  "price_date": "2026-10-06",
+  "station_count": 809,
+  "note": "Exact committed pre-fix Fuelis snapshot, preserving real prices, classifications and coordinates for offline before/after regression."
+}

@@ -30,22 +30,33 @@ Grynas HTML / CSS / vanilla JS — be karkasų, be kompiliavimo. Talpinama nemok
 index.html / app.js          → sąsaja (Leaflet žemėlapis), skaito data/stations.json
 data/stations.json           → degalinių kainos + koordinatės + šalies vidurkiai
 data/geocode_cache.json      → adresų → lat/lon talpykla (kad geokodavimas nesikartotų)
-scripts/fetch_prices.py      → parsisiunčia LEA dienos Excel → stations.json
-scripts/geocode.py           → geokoduoja adresus (OSM Nominatim) → įrašo lat/lon
-.github/workflows/           → kasdien (I–V) paleidžia abu skriptus ir įkelia naujus duomenis
+scripts/fetch_prices.py      → LEA portalo JSON API → stations.json
+scripts/merge_chain_coords.py → oficialios LEA / operatorių koordinatės, patikrintos pataisos
+scripts/geocode.py           → trūkstamų koordinačių geokodavimas (OSM Nominatim, talpykla)
+.github/workflows/           → dažni kainų ir du pilni darbo dienų atnaujinimai
 tools/gen_icons.py           → sugeneruoja PWA ikonas
 ```
 
 ### Duomenų šaltinis
-LEA dar neturi viešo API, todėl `fetch_prices.py`:
-1. Suranda naujausią Excel nuorodą [LEA puslapyje](https://www.ena.lt/degalu-kainos-degalinese/);
-2. Parsisiunčia jį anonimiškai iš SharePoint (`?download=1`);
-3. Adaptyviai išparsina (atpažįsta lietuviškas stulpelių antraštes);
-4. Įrašo `data/stations.json` su kiekvienos degalinės kaina ir šalies vidurkiais.
+Pagrindinis šaltinis yra [oficialus LEA portalas](https://degalukainos.ena.lt/) ir jo
+JSON API `/api/v1/read/prices?per_page=3000`. `fetch_prices.py` per `price_engine`
+surenka kainas, išsaugo jų šaltinį bei laiką ir įrašo `data/stations.json` su šalies
+statistika. Viešas portalo prieigos raktas perskaitomas iš paties portalo JavaScript.
+Naujas portalo `/read/prices/latest` formatas 2026-10-06 sutapo su dabartiniu šaltiniu,
+tačiau pakeitė metaduomenų ir laiko formatą; programa kol kas naudoja ankstesnį formatą.
 
-LEA duomenyse **nėra GPS koordinačių**, todėl `geocode.py` geokoduoja kiekvieną adresą per
-nemokamą OpenStreetMap Nominatim ir įrašo `lat`/`lon`. Rezultatai kešuojami
-`data/geocode_cache.json`, todėl kasdienis atnaujinimas geokoduoja tik naujas degalines.
+LEA portalas pateikia operatorių registruotas GPS koordinates. Jos ir tiesioginiai
+operatorių degalinių katalogai naudojami tikslesnėms vietoms; `geocode.py` yra atsarginis
+adresų geokodavimo kelias. Rezultatai saugomi `data/geocode_cache.json`, todėl jau
+žinomiems adresams pakartotinės Nominatim užklausos nereikalingos. LEA Power BI papildomas
+registras pateikia ir degalines be kainos; jo SUM rezultatų programa nenaudoja gyvoms kainoms.
+Saurida skelbiamos atskirų degalinių kainos papildo LEA tik ten, kur sutapatinta degalinė
+ir patikrintas duomenų šviežumas bei kainos pobūdis.
+
+[LEA pradiniuose duomenyse](https://www.ena.lt/dk-pr-pr-duomenys/) nuo 2026-09-09
+skelbiamas bendras metų Excel archyvas. 2026-10-06 jo parsisiuntimas grąžino HTTP 403
+(OneDrive atsarginis kelias — 400); turinys ir schema nepatikrinti, archyvas neintegruotas.
+Tikslios patikros ir ribos: [2026-10-06 šaltinių auditas](tools/audit/lea_official_20261006/README.md).
 
 ---
 

@@ -63,10 +63,11 @@ ATTRIB = ("Duomenys: Lietuvos energetikos agentura (LEA). "
           "Rinkinys: Fuelis (https://fuelis.lt).")
 
 # Only these station fields go into the public payload. An explicit allow-list,
-# not a blanket dump: internal bookkeeping (coord_source, approx, price_src)
+# not a blanket dump: internal bookkeeping (coord_source, approx)
 # would become a schema promise the moment someone parsed it.
 PUBLIC_FIELDS = ("network", "address", "municipality", "lat", "lon",
-                 "petrol95", "diesel", "lpg", "price_updated")
+                 "petrol95", "diesel", "lpg", "price_updated", "price_src",
+                 "display_municipality", "display_municipality_source")
 
 
 def _w(path, text):
@@ -387,6 +388,8 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 <tr><td><code>lat</code>, <code>lon</code></td><td>number</td><td>WGS-84. Daugumai — oficialios operatoriaus koordinatės; likusios geokoduotos.</td></tr>
 <tr><td><code>petrol95</code>, <code>diesel</code>, <code>lpg</code></td><td>number | null</td><td>EUR už litrą. <code>null</code> = degalinė to kuro neteikia arba kainos nepateikė.</td></tr>
 <tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kada LEA įraše paskutinį kartą fiksuota ši kaina.</td></tr>
+<tr><td><code>price_src</code></td><td>string | null</td><td>Kainos šaltinis: <code>portal</code>, <code>sharepoint</code> arba naujesnė patikrinta operatoriaus kaina (<code>saurida</code>).</td></tr>
+<tr><td><code>display_municipality</code>, <code>display_municipality_source</code></td><td>string | null</td><td>Patikslinta rodoma savivaldybė ir jos šaltinis, jei LEA klasifikacija skiriasi nuo patikrintos vietos. <code>municipality</code> išsaugo LEA klasifikaciją.</td></tr>
 </table>
 <pre><code>{esc(sample)}</code></pre>
 

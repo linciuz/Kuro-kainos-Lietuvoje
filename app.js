@@ -104,7 +104,6 @@ const LOYALTY_TYPICAL = {
     "UAB Circle K Lietuva": "3.5",   // typical card/app discount
     "UAB Viada LT": "3",             // ViadaPLUS tiered −3 ct/l (≤70 L/mo) → −3.5 (>70 L)
     "UAB Neste Lietuva": "3.5",      // Neste card −3.5 ct/l LT; Wed "nuolaidadienis" up to −7
-    "UAB Baltic Petroleum": "0.5",   // CASH PRICE+ app ≈ half a cent (e.g. 1.569 → 1.564); card is −3 at regular stations
     "UAB Emsi": "3",                 // new Emsi loyalty card −3 ct/L (launched ~2026-07, user-confirmed)
 };
 
@@ -250,7 +249,7 @@ function loyaltyRefPrice(legal) {
 function loyaltyLabel(net) { return String(net || "").replace(/^(UAB|AB|VšĮ|VŠĮ|MB|IĮ|Iį)\s+/i, ""); }
 
 let DATA = { updated: null, source: "", source_url: "", summary: {}, stations: [] };
-let DISCREP = { items: [], byNetwork: {} };   // comparison-engine flags
+let DISCREP = { items: [], byNetwork: {}, byStation: {} };   // comparison-engine flags
 let REPORTS = {};                             // user-reported prices {stationKey:{fuel:{price,ts}}}
 let ORLEN_WS = null;                           // Orlen refinery wholesale reference
 let CK_BIZ = null;                             // Circle K business fixed price (today-stamped, incl. VAT)
@@ -434,17 +433,13 @@ async function load() {
     } catch (e) {
         OFFLINE_DATA = true;
         // A failed FOREGROUND refetch must never wipe live data we already have
-        // (the hardcoded snapshot below is a cold-boot last resort only).
+        // A cold boot without cached data shows no prices.
         if (!(DATA && DATA.stations && DATA.stations.length)) {
             DATA = {
-                updated: "2026-06-30",
+                updated: null,
                 source: "Lietuvos energetikos agentūra (ena.lt)",
                 source_url: "https://www.ena.lt/degalu-kainos-degalinese/",
-                summary: {
-                    petrol95: { min: 1.54,  avg: 1.713, max: 1.849 },
-                    diesel:   { min: 1.62,  avg: 1.796, max: 1.909 },
-                    lpg:      { min: 0.639, avg: 0.782, max: 0.959 }
-                },
+                summary: {},
                 stations: []
             };
         }
@@ -529,6 +524,20 @@ function stationKey(s) {
     return `${s.network || ""}|${s.address || ""}|${s.municipality || ""}`;
 }
 
+// Verified operator corrections affect the displayed/filter area only. The raw
+// LEA municipality stays in stationKey so favourites and reports keep working.
+function stationMunicipality(s) {
+    return s.display_municipality && s.display_municipality_source
+        ? s.display_municipality : (s.municipality || "");
+}
+
+function stationMunicipalityHtml(s) {
+    const shown = esc(stationMunicipality(s));
+    if (!(s.display_municipality && s.display_municipality_source)) return shown;
+    return `<span title="${escAttr("LEA: " + (s.municipality || ""))}">${shown}</span> ` +
+        `<a href="${escAttr(s.display_municipality_source)}" target="_blank" rel="noopener" title="${escAttr(t("source"))}" aria-label="${escAttr(t("source"))}">↗</a>`;
+}
+
 // --- favourites (starred stations & chargers, kept in localStorage) ----------
 function chargerKey(c) { return "ev:" + (c.ocpi_id || `${c.operator}|${c.lat}|${c.lon}`); }
 function favKey(x) { return fuelType === "ev" ? chargerKey(x) : "st:" + stationKey(x); }
@@ -579,7 +588,7 @@ function currentCheapest(muni) {
     if (muni == null) muni = currentMuni();
     const out = {};
     for (const f of ["petrol95", "diesel", "lpg"]) {
-        const p = (DATA.stations || []).filter(s => s[f] != null && (!muni || s.municipality === muni)).map(s => s[f]);
+        const p = (DATA.stations || []).filter(s => s[f] != null && (!muni || stationMunicipality(s) === muni)).map(s => s[f]);
         if (p.length) out[f] = Math.min(...p);
     }
     return out;
@@ -1540,7 +1549,7 @@ function ensureEvLoaded() {
 // Tag each charger with the municipality of its nearest fuel station, so the
 // municipality filter (manual or auto-from-location) narrows the EV list too.
 function tagChargerMunicipalities() {
-    const stations = (DATA.stations || []).filter(s => s.lat != null && s.lon != null && s.municipality);
+    const stations = (DATA.stations || []).filter(s => s.lat != null && s.lon != null && stationMunicipality(s));
     if (!stations.length) return;
     for (const c of (EV.chargers || [])) {
         if (c.lat == null || c.lon == null) { c._muni = null; continue; }
@@ -1549,7 +1558,7 @@ function tagChargerMunicipalities() {
         for (const s of stations) {
             const dlat = s.lat - c.lat, dlon = (s.lon - c.lon) * cosLat;
             const d = dlat * dlat + dlon * dlon;   // squared planar dist (no trig) — only need nearest
-            if (d < bestD) { bestD = d; best = s.municipality; }
+            if (d < bestD) { bestD = d; best = stationMunicipality(s); }
         }
         c._muni = best;
     }
@@ -1866,20 +1875,28 @@ async function loadDiscrepancies() {
         const res = await fetch("data/discrepancies.json", { cache: "no-cache", signal: fetchTimeout() });
         if (!res.ok) throw new Error("HTTP " + res.status);
         const d = await res.json();
+        if (d.lea_date !== DATA.updated) throw new Error("comparison date differs from prices");
         const byNetwork = {};
+        const byStation = {};
         for (const it of (d.items || [])) {
+            if (it.scope === "per_station") {
+                if (it.station_key) (byStation[it.station_key] = byStation[it.station_key] || {})[it.fuel] = it;
+                continue;
+            }
             for (const net of (it.networks || [])) {
                 (byNetwork[net] = byNetwork[net] || {})[it.fuel] = it;
             }
         }
-        DISCREP = { items: d.items || [], byNetwork };
+        DISCREP = { items: d.items || [], byNetwork, byStation };
     } catch (e) {
-        DISCREP = { items: [], byNetwork: {} };
+        DISCREP = { items: [], byNetwork: {}, byStation: {} };
     }
 }
 
 // Discrepancy flag for a station at the current fuel, or null.
 function flagFor(s) {
+    const own = DISCREP.byStation[stationKey(s)];
+    if (own && own[fuelType]) return own[fuelType];
     const m = DISCREP.byNetwork[s.network];
     return (m && m[fuelType]) || null;
 }
@@ -1890,7 +1907,7 @@ const BIG_CITIES = ["Vilniaus m. sav.", "Kauno m. sav.", "Klaipėdos m. sav.",
 function initMunicipalities() {
     const sel = document.getElementById("muni-select");
     const all = [...new Set((DATA.stations || [])
-        .map(s => (s.municipality || "").trim()).filter(Boolean))];
+        .map(s => stationMunicipality(s).trim()).filter(Boolean))];
     const big = BIG_CITIES.filter(m => all.includes(m));
     const rest = all.filter(m => !BIG_CITIES.includes(m)).sort((a, b) => a.localeCompare(b, "lt"));
     const opt = m => `<option value="${esc(m)}">${esc(m)}</option>`;
@@ -2018,9 +2035,9 @@ function setView(v) {
 function nearestStationMuni(pos) {
     let best = null, bestD = Infinity;
     for (const s of (DATA.stations || [])) {
-        if (s.lat == null || s.lon == null || !s.municipality) continue;
+        if (s.lat == null || s.lon == null || !stationMunicipality(s)) continue;
         const d = haversine(pos.lat, pos.lon, s.lat, s.lon);
-        if (d < bestD) { bestD = d; best = s.municipality; }
+        if (d < bestD) { bestD = d; best = stationMunicipality(s); }
     }
     return best;
 }
@@ -2140,8 +2157,8 @@ function getRows() {
 
     // Priced stations for this fuel + price-less registry stations that sell it.
     let rows = (DATA.stations || []).filter(s =>
-        s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType)));
-    if (muni) rows = rows.filter(s => (s.municipality || "") === muni);
+        s[fuelType] != null || (s.fuels || []).includes(fuelType));
+    if (muni) rows = rows.filter(s => stationMunicipality(s) === muni);
     if (q) rows = rows.filter(s =>
         ((s.network || "") + " " + (s.address || "") + " " + (s.locality || "")).toLowerCase().includes(q));
     if (showFavsOnly) rows = rows.filter(s => isFav(favKey(s)));
@@ -2277,12 +2294,11 @@ function renderList() {
     const best = priced.length ? Math.min(...priced.map(r => effPrice(r))) : null;   // discounted when loyalty on
     const worst = priced.length ? Math.max(...priced.map(r => effPrice(r))) : null;  // most expensive
     const total = (DATA.stations || []).filter(s =>
-        s[fuelType] != null || (s.no_price && (s.fuels || []).includes(fuelType))).length;
+        s[fuelType] != null || (s.fuels || []).includes(fuelType)).length;
     const nLabel = rows.length < total ? `${rows.length} / ${total}` : `${total}`;  // your area / overall
-    const shown = rows.slice(0, 600);           // hard ceiling (like the EV list)
-    // Chunked render: 600 cards ≈ 10k DOM nodes in one innerHTML froze mid-range
-    // phones for seconds. Parse the first chunk now; the rest appends on demand.
-    const cards = shown.map(s => stationCardHtml(s, best, worst));
+    // Parse the first chunk now; append the rest on demand so every matching
+    // station remains reachable without building the full DOM at once.
+    const cards = rows.map(s => stationCardHtml(s, best, worst));
     _listRest = cards.slice(LIST_CHUNK);
     list.innerHTML =
         `<div class="count-line">${t("showing_stations", { n: nLabel })}</div>` +
@@ -2349,7 +2365,7 @@ function stationCardHtml(s, best, worst) {
                 </div>
                 ${intraday}${repLine}
                 <div class="station-address">${esc(s.address || "")}${s.locality ? ", " + esc(s.locality) : ""}</div>
-                <div class="station-muni">📍 ${esc(s.municipality || "")}${approxTag}</div>
+                <div class="station-muni">📍 ${stationMunicipalityHtml(s)}${approxTag}</div>
                 ${fuelChips(s)}
                 ${flagLine}
                 <div class="nav-row">${navButtons(s)}</div>

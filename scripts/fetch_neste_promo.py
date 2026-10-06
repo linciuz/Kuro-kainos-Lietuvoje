@@ -1,32 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Neste "Nuolaidadienis" (Wednesday discount day) fetcher.
+Neste "Nuolaidadienis" (Wednesday discount day) announcement fetcher.
 
-neste.lt/lt/nuolaidadienis publishes the Wednesday discount as PLAIN TEXT with
-the specific date (verified 2026-07-08):
+The old /lt/nuolaidadienis URL redirects to a removed page (verified 2026-10-06).
+Use the official current offers index. A historical announcement had PLAIN TEXT
+with the specific date (verified 2026-07-08):
     "Tik šį trečiadienį, liepos 8 d. - 7 ct nuolaida su NESTE programėle ir
      nuolaidų kortele visiems degalams"
 That is Neste's own officially-announced figure, so we extract it under strict
 validation (explicit day-month date + a sane 1-30 ct band + the word
 'trečiadien'). The app applies it ONLY on the stated date as the Neste loyalty
 discount (with the app/card — consistent with the opt-in discounts feature),
-reverting to the user's configured cents any other day. If the page changes or
-the promo pauses, parsing yields nothing and the file just omits the promo.
+reverting to the user's configured cents any other day. Only the verified
+empty offers-index template establishes no announcement. Unknown markup or
+fetch failure preserves the old success stamp and fails for review.
 
 OUTPUT  data/sources/neste_promo.json
-  {"generated","source_url","valid_date":"YYYY-MM-DD","cents":7.0}   # promo present
-  {"generated","source_url"}                                          # no promo
+  {"generated","source_url","status":"announced","valid_date","cents"}
+  {"generated","source_url","status":"no_announcement"} # successful empty listing
 """
 
 import datetime as dt
 import gzip
+import html as _html
 import json
 import os
 import re
 import ssl
 import sys
 import urllib.request
+from zoneinfo import ZoneInfo
 
 for _s in (sys.stdout, sys.stderr):
     try:
@@ -34,7 +38,8 @@ for _s in (sys.stdout, sys.stderr):
     except Exception:
         pass
 
-URL = "https://www.neste.lt/lt/nuolaidadienis"
+URL = "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai"
+VILNIUS = ZoneInfo("Europe/Vilnius")
 OUT = os.path.join("data", "sources", "neste_promo.json")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
 
@@ -49,18 +54,55 @@ LT_MONTHS = {
 def fetch(url):
     ctx = ssl.create_default_context()
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "lt"})
-    resp = urllib.request.urlopen(req, timeout=40, context=ctx)
-    raw = resp.read()
-    if resp.headers.get("Content-Encoding") == "gzip":
-        raw = gzip.decompress(raw)
+    with urllib.request.urlopen(req, timeout=40, context=ctx) as resp:
+        if resp.geturl().rstrip("/") != url.rstrip("/"):
+            raise RuntimeError(f"unexpected offers-page redirect: {resp.geturl()}")
+        raw = resp.read()
+        if resp.headers.get("Content-Encoding") == "gzip":
+            raw = gzip.decompress(raw)
     return raw.decode("utf-8", "replace")
 
 
-def parse(html):
-    """Return (valid_date_iso, cents) or (None, None)."""
+def text_content(html):
     txt = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", html, flags=re.S | re.I)
-    txt = re.sub(r"<[^>]+>", " ", txt)
-    txt = re.sub(r"\s+", " ", txt)
+    return re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", " ", txt))).strip()
+
+
+def confirmed_no_announcement(html):
+    """Recognize the measured empty offers listing, never generic parse failure.
+
+    Captured 2026-10-06: the index has its own heading/intro and its content
+    body contains ONLY the app-download section. Extra text, links or images
+    can be a new image-only offer; refuse that shape for human review.
+    """
+    main = re.search(r"<main\b[^>]*>(.*?)</main>", html, re.S | re.I)
+    if not main:
+        return False
+    main = main.group(1)
+    h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", main, re.S | re.I)
+    if not h1 or text_content(h1.group(1)) != "Specialūs pasiūlymai":
+        return False
+    if "Visi dabartiniai NESTE pasiūlymai ir akcijos vienoje vietoje." not in text_content(main):
+        return False
+    body = re.search(r'<div\b[^>]*class="[^"]*ContentBody_body__[^"]*"[^>]*>(.*)', main, re.S)
+    if not body:
+        return False
+    body = body.group(1)
+    expected = "Atsisiųskite Neste programėlę Atsisiųsti iš „App Store“ Atsisiųsti iš „Google Play“"
+    if text_content(body) != expected:
+        return False
+    links = [_html.unescape(x) for x in re.findall(r'<a\b[^>]*href="([^"]+)"', body)]
+    if len(links) != 2 or not any(x.startswith("https://apps.apple.com/") for x in links) or not any(x.startswith("https://play.google.com/store/apps/") for x in links):
+        return False
+    images = re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', body)
+    return len(images) == 3 and all(
+        re.search(r"/(?:AppStoreButton[^/?]*\.png|GooglePlayButton[^/?]*\.png|lataa-neste-appi-qr-koodi\.png)(?:\?|$)", _html.unescape(src))
+        for src in images)
+
+
+def parse(html, today=None):
+    """Return (valid_date_iso, cents) or (None, None)."""
+    txt = text_content(html)
 
     # "šį trečiadienį, liepos 8 d. - 7 ct nuolaida"
     m = re.search(
@@ -77,7 +119,7 @@ def parse(html):
         return None, None
 
     # Year: the promo is always same-week; handle the Dec/Jan wrap.
-    today = dt.date.today()
+    today = today or dt.datetime.now(VILNIUS).date()
     year = today.year
     if month == 1 and today.month == 12:
         year += 1
@@ -87,9 +129,19 @@ def parse(html):
     return valid, cents
 
 
+def announcement(html, today=None):
+    valid, cents = parse(html, today)
+    if valid and cents:
+        return {"status": "announced", "valid_date": valid, "cents": cents}
+    if confirmed_no_announcement(html):
+        return {"status": "no_announcement"}
+    raise RuntimeError("unrecognized Neste offers listing: no dated promo and no verified empty listing")
+
+
 def load_existing():
     try:
-        return json.load(open(OUT, encoding="utf-8"))
+        with open(OUT, encoding="utf-8") as source:
+            return json.load(source)
     except (FileNotFoundError, json.JSONDecodeError):
         return None
 
@@ -102,32 +154,31 @@ def main():
     }
     try:
         html = fetch(URL)
-        valid, cents = parse(html)
-        if valid and cents:
-            payload["valid_date"] = valid
-            payload["cents"] = cents
-            print(f"[ok] Neste nuolaidadienis: −{cents} ct/L on {valid}")
+        payload.update(announcement(html))
+        if payload["status"] == "announced":
+            print(f"[ok] Neste nuolaidadienis: −{payload['cents']} ct/L on {payload['valid_date']}")
+        else:
+            print("[ok] official offers listing checked: no dated Wednesday announcement")
     except Exception as e:
         # Carry-forward (the Viada pattern): a fetch hiccup must not clobber a
         # promo that is still valid today+, and must NOT re-stamp `generated` —
         # a fresh stamp on a failure run blinds verify_sources' rot rule.
         prev = load_existing()
-        if prev and prev.get("valid_date", "") >= dt.date.today().isoformat():
-            print(f"[warn] fetch failed: {type(e).__name__}: {e} — keeping previous file "
-                  f"(valid {prev.get('valid_date')}), stale-keep marked")
-            prev["generated_stale_kept"] = True
-            json.dump(prev, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-            return
         if prev:
-            print(f"[warn] fetch failed: {type(e).__name__}: {e} — keeping previous file untouched "
-                  f"(old generated stamp stays visible to the staleness gate)")
-            return
-        print(f"[warn] fetch failed: {type(e).__name__}: {e} — nothing committed before; writing promo-less file")
+            print(f"[warn] fetch failed: {type(e).__name__}: {e} — keeping previous generated stamp; stale-keep marked")
+            prev["generated_stale_kept"] = True
+            with open(OUT, "w", encoding="utf-8") as target:
+                json.dump(prev, target, ensure_ascii=False, indent=2)
+            return 1
+        print(f"[warn] fetch failed: {type(e).__name__}: {e} — no previous confirmed reading; not publishing a success")
+        return 1
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    json.dump(payload, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    with open(OUT, "w", encoding="utf-8") as target:
+        json.dump(payload, target, ensure_ascii=False, indent=2)
     print(f"[ok] wrote {OUT}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

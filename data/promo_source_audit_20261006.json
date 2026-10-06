@@ -1,0 +1,139 @@
+{
+  "scope": "Manual primary-source audit; maintenance-only, not read by app or applied as prices",
+  "sources": [
+    {
+      "key": "neste_offers",
+      "url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai",
+      "checked_utc": "2026-10-06T13:31:29+00:00",
+      "observation": "Verified empty offers body: only app-download content. No dated Wednesday announcement; this does not cancel standing card discount.",
+      "http_status": 200,
+      "final_url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai",
+      "title": "Specialūs pasiūlymai | Neste"
+    },
+    {
+      "key": "neste_card",
+      "url": "https://www.neste.lt/privatiems/klientu-naudos/nuolaidu-kortele",
+      "checked_utc": "2026-10-06T13:31:29+00:00",
+      "observation": "3.5 ct/L LT; 1.5 ct/L LV with card. No expiry stated.",
+      "http_status": 200,
+      "final_url": "https://www.neste.lt/privatiems/klientu-naudos/nuolaidu-kortele",
+      "title": "Nuolaidų kortelė | Neste"
+    },
+    {
+      "key": "viada_listing",
+      "url": "https://www.viada.lt/akcijos/",
+      "checked_utc": "2026-10-06T13:31:30+00:00",
+      "observation": "16 current promo slugs; no super-treciadieniai slug.",
+      "http_status": 200,
+      "final_url": "https://www.viada.lt/akcijos/",
+      "title": "Akcijos | VIADA LT"
+    },
+    {
+      "key": "viada_wednesday",
+      "url": "https://www.viada.lt/akcija/super-treciadieniai/",
+      "checked_utc": "2026-10-06T13:31:30+00:00",
+      "observation": "Direct HTTP404 plus verified same-day listing absence confirms no current Wednesday announcement.",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "viada_weekend",
+      "url": "https://www.viada.lt/akcija/nuolaidu-savaitgaliai/",
+      "checked_utc": "2026-10-06T13:31:31+00:00",
+      "observation": "10 ct/L weekends/holidays ViadaPLUS; all fuels; business excluded; revocable without notice, no fixed end date stated.",
+      "http_status": 200,
+      "final_url": "https://www.viada.lt/akcija/nuolaidu-savaitgaliai/",
+      "title": "Nuolaidų savaitgaliai | VIADA LT"
+    },
+    {
+      "key": "circlek_extra",
+      "url": "https://www.circlek.lt/privatiems/extra",
+      "checked_utc": "2026-10-06T13:31:31+00:00",
+      "observation": "Base discount 3.5 ct/L. Higher tiers depend on visits during the preceding 90 days.",
+      "http_status": 200,
+      "final_url": "https://www.circlek.lt/privatiems/extra",
+      "title": "Circle K extra"
+    },
+    {
+      "key": "circlek_weekend",
+      "url": "https://www.circlek.lt/10ct",
+      "checked_utc": "2026-10-06T13:31:32+00:00",
+      "observation": "10 ct/L activated app reward, one fill from Friday 00:00 to Sunday 23:59. Petrol, diesel and LPG. Excludes business clients; discounts are not added together. Valid through 2026-11-04.",
+      "http_status": 200,
+      "final_url": "https://www.circlek.lt/10ct",
+      "title": "Savaitgalio nuolaida degalams | Circle K"
+    },
+    {
+      "key": "bp_card",
+      "url": "https://balticpetroleum.lt/korteles-privatiems",
+      "checked_utc": "2026-10-06T13:31:32+00:00",
+      "observation": "3 ct/L regular stations; no additional card fuel discount CASH PRICE+.",
+      "http_status": 200,
+      "final_url": "https://balticpetroleum.lt/korteles-privatiems",
+      "title": "Nuolaidų kortelė | Baltic Petroleum"
+    },
+    {
+      "key": "bp_personal_app",
+      "url": "https://balticpetroleum.lt/produktai-ir-paslaugos/mobilioji-programele",
+      "checked_utc": "2026-10-06T13:31:32+00:00",
+      "observation": "The app shows a personal station price. No universal 0.5 ct/L discount is publicly stated.",
+      "http_status": 200,
+      "final_url": "https://balticpetroleum.lt/produktai-ir-paslaugos/mobilioji-programele",
+      "title": "Mobilioji programėlė | Baltic Petroleum"
+    },
+    {
+      "key": "bp_bakadienis",
+      "url": "https://balticpetroleum.lt/akcijos/bakadienis/65",
+      "checked_utc": "2026-10-06T13:31:32+00:00",
+      "observation": "Old URL returns HTTP 200 with blank content and a default image. No current monetary offer verified; HTTP 200 alone is insufficient.",
+      "http_status": 200,
+      "final_url": "https://balticpetroleum.lt/akcijos/bakadienis/65",
+      "title": "Akcijos | Baltic Petroleum"
+    },
+    {
+      "key": "emsi_loyalty",
+      "url": "https://emsi.lt/lojalumas/",
+      "checked_utc": "2026-10-06T13:31:33+00:00",
+      "observation": "General card: 3 ct/L for petrol, diesel and LPG. Indefinite but changeable or revocable; discounts are not added together.",
+      "http_status": 200,
+      "final_url": "https://emsi.lt/lojalumas/",
+      "title": "Lojalumas – EMSI Lietuviškas degalinių tinklas"
+    },
+    {
+      "key": "saurida_prices",
+      "url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+      "checked_utc": "2026-10-06T13:31:33+00:00",
+      "observation": "34 per-station rows. Road diesel B7 remains separate from agricultural diesel.",
+      "http_status": 200,
+      "final_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+      "title": "Kuro kainos degalinese - Saurida"
+    },
+    {
+      "key": "saurida_offers",
+      "url": "https://www.saurida.lt/akcijos/",
+      "checked_utc": "2026-10-06T13:31:33+00:00",
+      "observation": "Current offers list food and drink deals. No fuel discount observed in page text.",
+      "http_status": 200,
+      "final_url": "https://www.saurida.lt/akcijos/",
+      "title": "Akcijos - Saurida"
+    },
+    {
+      "key": "orlen_offers",
+      "url": "https://www.orlen.lt/LT/Akcijos/Puslapiai/Akcijos.aspx",
+      "checked_utc": "2026-10-06T13:31:35+00:00",
+      "observation": "Current public retail offers page lists a car-wash reward. No numeric retail fuel discount verified.",
+      "http_status": 200,
+      "final_url": "https://www.orlen.lt/LT/Akcijos/Puslapiai/Akcijos.aspx",
+      "title": "\r\n\tORLEN\r\n\r\n"
+    },
+    {
+      "key": "orlen_reference",
+      "url": "https://www.orlenlietuva.lt/en/wholesale/_layouts/f2hCharts/default_lt_M.aspx",
+      "checked_utc": "2026-10-06T13:31:35+00:00",
+      "observation": "Historical terminal wholesale reference, latest date 2026-10-05. These are not retail pump prices.",
+      "http_status": 200,
+      "final_url": "https://www.orlenlietuva.lt/en/wholesale/_layouts/f2hCharts/default_lt_M.aspx",
+      "title": "\r\n\tWykres\r\n"
+    }
+  ]
+}

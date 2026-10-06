@@ -213,7 +213,17 @@ def check_viada(now):
     # user-visible regression of the 07-15 incident. When the seasonal promo
     # ends, its page 404s and the pointer drops out → clause skips (no alarm).
     has_wed_pointer = any(p.get("slug") == "super-treciadieniai" for p in d.get("promos", []))
-    if today.weekday() == 2 and now.hour >= 12 and has_wed_pointer:
+    check = d.get("wednesday_check") or {}
+    no_announcement = (
+        check.get("status") == "no_announcement"
+        and check.get("listing_url") == "https://www.viada.lt/akcijos/"
+        and check.get("source_url") == "https://www.viada.lt/akcija/super-treciadieniai/"
+        and check.get("checked") == d.get("generated")
+        and gen.astimezone(VILNIUS).date() == today
+        and not d.get("generated_stale_kept")
+        and not d.get("wednesday") and not has_wed_pointer
+    )
+    if today.weekday() == 2 and now.hour >= 12 and not no_announcement and (has_wed_pointer or check):
         wed = d.get("wednesday") or {}
         if wed.get("valid_date") != today.isoformat():
             fail(src, f"it is Wednesday {today} after noon LT and the Super trečiadieniai "
@@ -244,9 +254,23 @@ def check_neste(now):
         return fail(src, f"unreadable neste_promo.json: {type(e).__name__}: {e}")
     today = now.date()
     if today.weekday() == 2 and now.hour >= 12:
-        if d.get("valid_date") != today.isoformat():
+        # A seasonal Wednesday offer is not a standing promise. Only a
+        # successful same-day check of the canonical, verified empty listing
+        # can establish that no Wednesday announcement is published. A failed
+        # refresh marks the carried file stale, without advancing generated.
+        no_announcement = (
+            d.get("status") == "no_announcement"
+            and d.get("source_url") == "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai"
+            and gen.astimezone(VILNIUS).date() == today
+            and not d.get("generated_stale_kept")
+            and not d.get("valid_date") and d.get("cents") is None
+        )
+        if no_announcement:
+            pass
+        elif d.get("valid_date") != today.isoformat():
             fail(src, f"Wednesday after noon LT but Nuolaidadienis valid_date is "
-                      f"'{d.get('valid_date')}' — the Neste Wednesday discount is stale/missing.")
+                      f"'{d.get('valid_date')}' and no successful same-day empty-offers check — "
+                      f"the announcement is stale/missing or the fetch failed.")
         else:
             c = d.get("cents")
             if not (isinstance(c, (int, float)) and 0 < c <= 30):
