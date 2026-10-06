@@ -3,26 +3,9 @@
 """
 Open-data endpoints + RSS feed + the human page that documents them.
 
-WHY THIS EXISTS
----------------
-Measured 2026-08-05: fuelis.lt has ZERO inbound links from anywhere on the web,
-and Search Console shows most pages never crawled ("no referring page"). That is
-the real bottleneck — not markup, not sitemaps, both of which are already
-correct. New domains get crawl budget in proportion to the signals pointing at
-them, and we have none.
-
-You cannot honestly manufacture links. What you CAN do is make something worth
-linking to. In Lithuania there is currently no free, machine-readable, daily
-feed of pump prices: LEA publishes a portal and a Power BI dashboard, neither of
-which you can point a script at without reverse-engineering it (we did; it took
-weeks). A documented JSON/CSV endpoint is the kind of thing developers,
-journalists, students, Wikipedia editors and hobby-bot authors cite BY URL —
-which is exactly the signal that is missing.
-
-It also serves the "get onto Discord/Reddit" goal in the one way that lasts: a
-Discord or Telegram bot that posts daily prices needs a stable endpoint, and
-bots credit their source. That is distribution that keeps working after the
-launch post scrolls off the front page.
+The documented compilation supports developers, researchers and readers.
+It keeps row-level source attribution when a verified newer operator price
+supplements LEA. API availability does not establish source-data licence rights.
 
 WHAT IT GENERATES
   api/prices.json    full station-level dataset, documented stable schema
@@ -32,11 +15,7 @@ WHAT IT GENERATES
   feed.xml           RSS: one item per price date (aggregators, readers, IFTTT)
   atviri-duomenys.html   the page humans land on and link to
 
-LICENSING — stated carefully on purpose. The prices are LEA's public data; we do
-not own them and therefore do not licence them. What we offer freely is the
-COMPILATION: cleaned, geocoded, deduplicated, in a stable schema. Anyone may use
-it; we ask for attribution and require crediting LEA as the origin. Claiming a
-CC licence over someone else's public data would be both wrong and a liability.
+No licence over underlying LEA or operator prices is invented by this generator.
 """
 
 import csv
@@ -59,7 +38,8 @@ HISTORY = os.path.join("data", "price_history.json")
 FUELS = ("petrol95", "diesel", "lpg")
 FUEL_LT = {"petrol95": "Benzinas 95", "diesel": "Dyzelinas", "lpg": "Dujos (LPG)"}
 LEA = "https://degalukainos.ena.lt/"
-ATTRIB = ("Duomenys: Lietuvos energetikos agentura (LEA). "
+DATA_SOURCE = "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos"
+ATTRIB = ("Duomenys: Lietuvos energetikos agentura (LEA) ir pažymėti kainų operatoriai. "
           "Rinkinys: Fuelis (https://fuelis.lt).")
 
 # Only these station fields go into the public payload. An explicit allow-list,
@@ -132,14 +112,15 @@ def build_prices_json(meta, updated, rows):
         "unit": "EUR per litre",
         "fuels": list(FUELS),
         "country": "LT",
-        "source": "Lietuvos energetikos agentura (LEA)",
+        "source": DATA_SOURCE,
         "source_url": LEA,
         "compiled_by": SITE,
         "docs": f"{SITE}/atviri-duomenys.html",
         "attribution": ATTRIB,
-        "terms": ("Free to use, including commercially. Please credit LEA as the "
-                  "data source and link to https://fuelis.lt. Prices are LEA's "
-                  "public data; Fuelis provides the cleaned, geocoded compilation. "
+        "terms": ("Fuelis offers its cleaned, geocoded compilation free to use, including "
+                  "commercially. Credit the indicated source (LEA or marked operator) "
+                  "and link to https://fuelis.lt. This is the compilation offer, not "
+                  "a new licence over underlying source data. "
                   "No warranty - always confirm at the pump."),
         "summary": meta.get("summary") or {},
         "cheapest": cheapest(rows),
@@ -172,7 +153,7 @@ def build_summary_json(meta, updated, rows):
         "stations_with_prices": len(rows),
         "national": meta.get("summary") or {},
         "cheapest": cheapest(rows),
-        "source": "Lietuvos energetikos agentura (LEA)",
+        "source": DATA_SOURCE,
         "source_url": LEA,
         "compiled_by": SITE,
         "docs": f"{SITE}/atviri-duomenys.html",
@@ -192,7 +173,7 @@ def build_history_json():
         "$schema_version": 1,
         "description": "Daily national min/avg/max pump prices in Lithuania, EUR per litre.",
         "currency": "EUR",
-        "source": "Lietuvos energetikos agentura (LEA)",
+        "source": DATA_SOURCE,
         "source_url": LEA,
         "compiled_by": SITE,
         "docs": f"{SITE}/atviri-duomenys.html",
@@ -203,17 +184,6 @@ def build_history_json():
     _w(os.path.join(API_DIR, "history.json"),
        json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
     return hist
-
-
-def rfc822(date_str, hour=10):
-    """RSS wants RFC-822. LEA publishes ~10:00 Lithuania; +03:00 is EEST, which
-    is what Lithuania is on for the months this feed covers."""
-    try:
-        d = dt.date.fromisoformat(date_str)
-    except (TypeError, ValueError):
-        d = dt.date.today()
-    return dt.datetime.combine(d, dt.time(hour), tzinfo=dt.timezone(dt.timedelta(hours=3))) \
-             .strftime("%a, %d %b %Y %H:%M:%S %z")
 
 
 def fmt(v):
@@ -241,15 +211,17 @@ def build_feed(updated, rows, hist):
         lines = [f"<li><strong>{FUEL_LT[f]}</strong>: vid. {fmt(h.get(f, {}).get('avg'))} €/l "
                  f"(nuo {fmt(h.get(f, {}).get('min'))} iki {fmt(h.get(f, {}).get('max'))} €/l)</li>"
                  for f in FUELS if h.get(f)]
-        desc = (f"<p>Oficialios LEA degalų kainos Lietuvoje {date}:</p><ul>{''.join(lines)}</ul>"
+        desc = (f"<p>Degalų kainų rinkinio suvestinė Lietuvoje {date} "
+                f"(LEA ir pažymėtų operatorių duomenys):</p><ul>{''.join(lines)}</ul>"
                 f'<p><a href="{SITE}/">Žiūrėti visas degalines žemėlapyje</a> · '
                 f'<a href="{SITE}/kainos/">kainos pagal savivaldybę</a></p>')
         cheap = " · ".join(f"{FUEL_LT[f]} {fmt(h[f]['avg'])} €/l" for f in FUELS if h.get(f))
+        # Snapshots and row source times do not prove when a feed item was
+        # published. RSS permits omitting pubDate; do not invent that time.
         items.append(f"""  <item>
     <title>Degalų kainos {date}: {esc(cheap)}</title>
     <link>{SITE}/</link>
     <guid isPermaLink="false">{SITE}/#prices-{date}</guid>
-    <pubDate>{rfc822(date)}</pubDate>
     <description>{esc(desc)}</description>
   </item>""")
 
@@ -259,10 +231,9 @@ def build_feed(updated, rows, hist):
   <title>Fuelis — degalų kainos Lietuvoje</title>
   <link>{SITE}/</link>
   <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>Oficialios LEA degalų kainos (benzinas 95, dyzelinas, dujos) Lietuvos degalinėse — kasdienė santrauka.</description>
+  <description>LEA duomenys ir naujesnės patikrintos operatorių kainos, kai pateiktos: benzinas 95, dyzelinas, dujos Lietuvos degalinėse.</description>
   <language>lt</language>
   <copyright>{esc(ATTRIB)}</copyright>
-  <lastBuildDate>{rfc822(updated)}</lastBuildDate>
   <ttl>360</ttl>
 {chr(10).join(items)}
 </channel>
@@ -278,19 +249,23 @@ def build_docs_page(updated, rows):
     n = len(rows)
     sample = json.dumps({k: (rows[0].get(k) if rows else None) for k in PUBLIC_FIELDS},
                         ensure_ascii=False, indent=1) if rows else "{}"
+    diesel_sample = json.dumps(cheapest(rows).get("diesel"), ensure_ascii=False, indent=1)
+    source_counts = {source: sum((row.get("price_src") or "unknown") == source for row in rows)
+                     for source in sorted({row.get("price_src") or "unknown" for row in rows})}
+    source_line = ", ".join(f"{esc(source)}: {count}" for source, count in source_counts.items())
     html = f"""<!DOCTYPE html>
 <html lang="lt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atviri duomenys — degalų kainų API | Fuelis</title>
-<meta name="description" content="Nemokama, atvira Lietuvos degalų kainų API: JSON ir CSV, {n} degalinių, atnaujinama kasdien. Oficialūs LEA duomenys, paruošti programuotojams.">
+<meta name="description" content="Nemokama Lietuvos degalų kainų API: JSON ir CSV, {n} degalinių su kainomis, rinkinys {updated}. LEA ir pažymėti operatorių duomenys.">
 <link rel="canonical" href="{SITE}/atviri-duomenys.html">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fuelis">
 <meta property="og:title" content="Atviri duomenys — Lietuvos degalų kainų API">
-<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: {n} degalinių, atnaujinama kasdien. Oficialūs LEA duomenys.">
+<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: {n} degalinių su kainomis, {updated}. LEA ir pažymėti operatorių duomenys.">
 <meta property="og:url" content="{SITE}/atviri-duomenys.html">
 <meta property="og:image" content="{SITE}/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -300,7 +275,7 @@ def build_docs_page(updated, rows):
  "@context": "https://schema.org",
  "@type": "Dataset",
  "name": "Lietuvos degalų kainos (Fuelis atviri duomenys)",
- "description": "Kasdien atnaujinamos oficialios LEA degalų kainos (benzinas 95, dyzelinas, dujos) {n} Lietuvos degalinių, su koordinatėmis. JSON ir CSV formatais.",
+ "description": "LEA ir pažymėtos naujesnės operatorių kainos: benzinas 95, dyzelinas, LPG, {n} Lietuvos degalinių su kainomis. JSON ir CSV, rinkinio data {updated}.",
  "url": "{SITE}/atviri-duomenys.html",
  "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
  "isAccessibleForFree": true,
@@ -352,8 +327,11 @@ def build_docs_page(updated, rows):
 <div class="wrap">
 <p class="bc"><a href="{SITE}/">Fuelis</a> › Atviri duomenys</p>
 <h1>Atviri degalų kainų duomenys (API)</h1>
-<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>{n} degalinių</strong> su kainomis ir koordinatėmis,
-atnaujinama kasdien (paskutinis rinkinys: <strong>{updated}</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>{n} degalinių</strong> su paskelbtomis kainomis, adresais ir turimomis koordinatėmis.
+Naujausios gautos darbo dienų kainos (rinkinio data: <strong>{updated}</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+<p>Kainų šaltiniai šiame rinkinyje: <strong>{source_line}</strong>. Pagrindas — LEA duomenys;
+<code>price_src</code> pažymi naujesnę patikrintą operatoriaus kainą, kai ji naudojama.
+Rinkinio data (<code>price_date</code>) ir atskiro kainos įrašo laikas (<code>price_updated</code>) yra skirtingi.</p>
 
 <div class="note">Kodėl tai egzistuoja: LEA kainas skelbia viešai, bet portale ir „Power BI“ skydelyje —
 iš jų programiškai pasiimti duomenis nėra paprasta. Čia tie patys duomenys pateikiami
@@ -376,7 +354,9 @@ stabilia, dokumentuota schema, kad juos galėtum tiesiog <code>fetch</code>-inti
 <h3>Pigiausias dyzelinas (JavaScript)</h3>
 <pre><code>const r = await fetch("{SITE}/api/summary.json").then(r =&gt; r.json());
 console.log(r.cheapest.diesel);
-// {{ price: 1.94, network: "…", address: "…", municipality: "…" }}</code></pre>
+</code></pre>
+<p>Šio <strong>{updated}</strong> rinkinio tikras atsakymo pavyzdys:</p>
+<pre><code>{esc(diesel_sample)}</code></pre>
 <h3>Į „pandas“ (Python)</h3>
 <pre><code>import pandas as pd
 df = pd.read_csv("{SITE}/api/prices.csv")
@@ -390,7 +370,7 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 <tr><td><code>municipality</code></td><td>string</td><td>Savivaldybė (pvz. <code>Kauno m. sav.</code>).</td></tr>
 <tr><td><code>lat</code>, <code>lon</code></td><td>number</td><td>WGS-84. Daugumai — oficialios operatoriaus koordinatės; likusios geokoduotos.</td></tr>
 <tr><td><code>petrol95</code>, <code>diesel</code>, <code>lpg</code></td><td>number | null</td><td>EUR už litrą. <code>null</code> = degalinė to kuro neteikia arba kainos nepateikė.</td></tr>
-<tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kada LEA įraše paskutinį kartą fiksuota ši kaina.</td></tr>
+<tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kainos šaltinio įrašo laikas; operatoriaus kainai tai gali būti jos surinkimo laikas. Tai nėra rinkinio sugeneravimo laikas.</td></tr>
 <tr><td><code>price_src</code></td><td>string | null</td><td>Kainos šaltinis: <code>portal</code>, <code>sharepoint</code> arba naujesnė patikrinta operatoriaus kaina (<code>saurida</code>).</td></tr>
 <tr><td><code>display_municipality</code>, <code>display_municipality_source</code></td><td>string | null</td><td>Patikslinta rodoma savivaldybė ir jos šaltinis, jei LEA klasifikacija skiriasi nuo patikrintos vietos. <code>municipality</code> išsaugo LEA klasifikaciją.</td></tr>
 <tr><td><code>display_address</code>, <code>display_address_source</code></td><td>string | null</td><td>Pasirenkamas patikslintas rodomas adresas ir jo šaltinis JSON rinkiniuose. Naudojamas tik kai abu laukai pateikti; <code>address</code> išsaugo originalų LEA adresą.</td></tr>
@@ -398,17 +378,21 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 <pre><code>{esc(sample)}</code></pre>
 
 <h2>Atnaujinimo dažnis</h2>
-<p>LEA skelbia apie <strong>10:00</strong> Lietuvos laiku darbo dienomis. Mūsų konvejeris tikrina dažniau ir
-paskelbia iškart, kai atsiranda naujesni duomenys, todėl <code>price_date</code> paprastai pasikeičia
-per kelias minutes nuo LEA paskelbimo. Savaitgaliais ir per šventes LEA neskelbia — tuomet
-lieka paskutinės darbo dienos kainos.</p>
+<p>LEA pateikia darbo dienų kainų rinkinius. Tikriname juos kelis kartus per dieną;
+tikslus naujo rinkinio paskelbimo laikas ir jo pasirodymo Fuelis vėlavimas nėra garantuojami.
+Savaitgaliais, per šventes ar dar negavus naujo rinkinio gali likti ankstesnės darbo dienos kainos.
+Vertinkite <code>price_date</code> ir kiekvieno įrašo <code>price_updated</code>.
+<code>generated_utc</code> žymi tik API failo paruošimo laiką.</p>
 
 <h2 id="licencija">Licencija ir nuorodos</h2>
-<p>Kainos yra <strong>LEA vieši duomenys</strong> — jos mums nepriklauso, todėl jų ir nelicencijuojame.
-Laisvai (taip pat ir komerciškai) siūlome <em>rinkinį</em>: išvalytą, geokoduotą, stabilios schemos.</p>
+<p>Fuelis nemokamai, taip pat ir komerciniam naudojimui, siūlo savo išvalytą,
+geokoduotą, stabilios schemos <em>rinkinį</em>. Pirminiai šaltiniai — LEA ir
+atskiruose įrašuose pažymėti operatoriai. Šis rinkinio naudojimo pasiūlymas
+nėra nauja pirminių LEA ar operatorių kainų duomenų licencija.</p>
 <ul>
-<li>Naudok kam nori — programai, tyrimui, straipsniui, botui.</li>
-<li>Nurodyk pirminį šaltinį: <strong>Lietuvos energetikos agentūra (LEA)</strong>, <a href="{LEA}" rel="nofollow">degalukainos.ena.lt</a>.</li>
+<li>Išsaugok kainos šaltinį ir datą, kai duomenis rodai programoje, tyrime ar straipsnyje.</li>
+<li>Nurodyk pirminį šaltinį: <strong>Lietuvos energetikos agentūra (LEA)</strong>,
+<a href="{LEA}">degalukainos.ena.lt</a>, arba įraše pažymėtą operatorių.</li>
 <li>Būtume dėkingi už nuorodą į <a href="{SITE}/">fuelis.lt</a>.</li>
 </ul>
 <div class="note warn"><strong>Be garantijų.</strong> Duomenys teikiami tokie, kokie yra. Kainos degalinėje

@@ -1,15 +1,19 @@
-# ⛽ Kuro Kainos Lietuvoje
+# Fuelis — kuro kainos Lietuvoje ir degalinių paieška
 
-**Oficialios degalų kainos visose Lietuvos degalinėse — 95 benzinas, dyzelinas ir dujos (SND).**
-Duomenys imami iš **Lietuvos energetikos agentūros (LEA)** ir atnaujinami kasdien automatiškai.
+**Palyginkite benzino 95, dyzelino ir dujų (SND) kainas Lietuvos degalinėse.**
+Pagrindinis šaltinis — **Lietuvos energetikos agentūros (LEA) portalas**; patikrintos
+atskirų operatorių kainos jį papildo. Prie kainų nurodoma jų data ir šaltinis.
 
-🔗 **Tiesioginė versija:** https://linciuz.github.io/Kuro-kainos-Lietuvoje/
+🔗 **Tiesioginė versija:** [Fuelis.lt](https://fuelis.lt/)
+
+[Kuro kainos pagal miestą ir savivaldybę](https://fuelis.lt/kainos/) ·
+[Atviri duomenys ir API](https://fuelis.lt/atviri-duomenys.html)
 
 ---
 
 ## ✨ Funkcijos
 
-- 🏛️ **Oficialūs duomenys** — visų ~760 degalinių kainos iš [ena.lt](https://www.ena.lt/degalu-kainos-degalinese/) (nuo 2026 m. degalinės privalo kasdien deklaruoti 10:00 kainas)
+- 🏛️ **LEA ir operatorių duomenys** — skelbiamos naujausios gautos kainos iš [LEA portalo](https://degalukainos.ena.lt/) ir patikrintų operatorių šaltinių; degalinės be kainos atskiriamos nuo kainų palyginimo
 - ⛽ **Trys kuro tipai** — 95 benzinas, dyzelinas, dujos (SND)
 - 📍 **Artimiausios prie jūsų** — pagal GPS vietą surūšiuoja degalines pagal atstumą
 - 🗺️ **Žemėlapis su kainomis** — kiekviena degalinė pažymėta kainos ženkleliu (pigiausios žalios, brangiausios raudonos)
@@ -18,7 +22,7 @@ Duomenys imami iš **Lietuvos energetikos agentūros (LEA)** ir atnaujinami kasd
 - 💰 **Rūšiavimas** pagal kainą arba atstumą
 - 📊 **Šalies statistika** — pigiausia / vidutinė / brangiausia kiekvienam kurui
 - 📱 **PWA** — įsidiekite į telefono ekraną, veikia kaip programėlė ir be interneto (rodo paskutinius duomenis)
-- 🔄 **Automatinis atnaujinimas** kasdien per GitHub Actions
+- 🔄 **Automatinė patikra** darbo dienomis per GitHub Actions; kainos data priklauso nuo šaltinio paskelbimo
 
 ---
 
@@ -93,5 +97,6 @@ APK yra plonas apvalkalas, įkeliantis gyvą svetainę — kainos atsinaujina be
 ---
 
 ## 📄 Licencija / atsakomybė
-Duomenų šaltinis: **Lietuvos energetikos agentūra**. Kainos informacinės; tikslias kainas
-patvirtina degalinė. Projektas nesusijęs su LEA.
+Pagrindinis duomenų šaltinis: **Lietuvos energetikos agentūra**; papildomų operatorių
+kainų šaltiniai nurodomi atskirai. Kainos informacinės; tikslias kainas patvirtina
+degalinė. Fuelis yra nepriklausomas projektas, nesusijęs su LEA.
