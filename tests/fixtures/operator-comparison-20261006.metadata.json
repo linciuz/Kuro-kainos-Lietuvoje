@@ -1,0 +1,14 @@
+{
+  "saurida": {
+    "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+    "fetched": "2026-10-06T12:18:14Z",
+    "sha256": "d8de966876ecee54d164c94f190a6585e3266a90a1ca5ba71902b06c69830f82",
+    "note": "Actual committed operator observation, copied unchanged for offline regression; not a current production feed."
+  },
+  "circlek": {
+    "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
+    "fetched": "2026-10-06",
+    "sha256": "3266bd0fdd8fedc1e099bf42908ab36a79ec1fe6191924084b2823f1abd40aae",
+    "note": "Actual committed operator observation, copied unchanged for offline regression; not a current production feed."
+  }
+}

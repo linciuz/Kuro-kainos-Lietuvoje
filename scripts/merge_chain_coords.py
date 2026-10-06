@@ -222,27 +222,48 @@ def apply_portal_coords(stations):
 
 
 def apply_overrides(stations):
-    """Apply manually-verified coordinate corrections last (highest priority).
-    Lets a reported wrong location be fixed and survive the daily refresh."""
+    """Apply verified coordinates or attributed display-area corrections last.
+    Display corrections require an exact raw station key; they never rewrite the
+    source municipality used by favourites, reports and station identity."""
     path = os.path.join("data", "coord_overrides.json")
     try:
-        overrides = json.load(open(path, encoding="utf-8")).get("overrides", [])
+        with open(path, encoding="utf-8") as handle:
+            overrides = json.load(handle).get("overrides", [])
     except (FileNotFoundError, json.JSONDecodeError):
         return 0
     applied = 0
     for o in overrides:
+        exact_key = o.get("station_key")
         nc = deaccent(o.get("network_contains", ""))
         ac = deaccent(o.get("address_contains", ""))
         mc = deaccent(o.get("municipality_contains", ""))
-        if not (nc or ac or mc):     # all-blank matchers would hit EVERY station
+        if not (exact_key or nc or ac or mc):     # blank matchers would hit EVERY station
             print(f"[warn] skipping coord override with no matchers: {o.get('label', '?')}")
             continue
+        display = o.get("display_municipality")
+        evidence = o.get("display_municipality_source")
+        if display and (not exact_key or not evidence):
+            print(f"[warn] skipping display-area override without exact identity and source: "
+                  f"{o.get('label', '?')}")
+            continue
         for s in stations:
-            if (nc in deaccent(s.get("network", "")) and ac in deaccent(s.get("address", ""))
-                    and mc in deaccent(s.get("municipality", ""))):
+            key = f"{s.get('network') or ''}|{s.get('address') or ''}|{s.get('municipality') or ''}"
+            matches = key == exact_key if exact_key else (
+                nc in deaccent(s.get("network", "")) and ac in deaccent(s.get("address", ""))
+                and mc in deaccent(s.get("municipality", "")))
+            if not matches:
+                continue
+            changed = False
+            if o.get("lat") is not None and o.get("lon") is not None:
                 s["lat"], s["lon"] = o["lat"], o["lon"]
                 s["approx"] = False
                 s["coord_source"] = "verified"
+                changed = True
+            if display:
+                s["display_municipality"] = display
+                s["display_municipality_source"] = evidence
+                changed = True
+            if changed:
                 applied += 1
     return applied
 

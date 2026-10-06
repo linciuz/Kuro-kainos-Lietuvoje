@@ -1,6 +1,12 @@
 {
-  "note": "Manually verified coordinate corrections. Applied LAST by merge_chain_coords.py, overriding geocoded and chain-matched coords. Match is case/accent-insensitive substring on network + address.",
+  "note": "Verified corrections applied LAST by merge_chain_coords.py. Coordinates use case/accent-insensitive substring matching. Display-area corrections require an exact station_key and source URL; raw municipality and station identity stay unchanged.",
   "overrides": [
+    {
+      "station_key": "UAB Emsi|Panevėžys, Ramygalos g. 186A, 36224|Panevėžio r. sav.",
+      "display_municipality": "Panevėžio m. sav.",
+      "display_municipality_source": "https://emsi.lt/wp-json/wpgmza/v1/markers",
+      "label": "EMSI Ramygalos g. 186A: operator locator names Panevėžys; LEA raw district classification retained (verified 2026-10-06)"
+    },
     {
       "network_contains": "viada",
       "address_contains": "Pušaloto",

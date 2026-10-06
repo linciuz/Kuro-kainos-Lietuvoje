@@ -29,7 +29,7 @@ import urllib.request
 
 STATIONS = os.path.join("data", "stations.json")
 CACHE = os.path.join("data", "sources", "lea_powerbi.json")
-ENA_PAGE = "https://www.ena.lt/degalu-kainos-degalinese/"
+ENA_PAGE = "https://www.ena.lt/dk-irankis/"
 PBI_HOST = "https://wabi-west-europe-e-primary-api.analysis.windows.net"  # cluster c=9
 DATASET_ID = "300e7751-6e12-405c-890d-fee9774f760a"
 REPORT_ID = "60850ad8-c1ee-47ef-8a08-339eaee7bff4"

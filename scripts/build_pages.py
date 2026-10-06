@@ -387,7 +387,7 @@ def main():
     stations = d.get("stations") or []
     by_muni = {}
     for s in stations:
-        m = s.get("municipality")
+        m = s.get("display_municipality") or s.get("municipality")
         if m:
             by_muni.setdefault(m, []).append(s)
 

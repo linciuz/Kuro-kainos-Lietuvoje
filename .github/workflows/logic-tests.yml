@@ -1,0 +1,32 @@
+name: Fuelis logic regressions
+
+on:
+  pull_request:
+    paths: ["app.js", "i18n*", "service-worker.js", "scripts/**", "tests/**", "tools/audit/**", ".github/workflows/logic-tests.yml"]
+  push:
+    branches: [main, "codex/**"]
+    paths: ["app.js", "i18n*", "service-worker.js", "scripts/**", "tests/**", "tools/audit/**", ".github/workflows/logic-tests.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  offline-regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pipeline dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check i18n.js
+          node --check service-worker.js
+      - name: Test real recorded source contracts and failure handling offline
+        run: python -m unittest discover -s tests -p 'test_*.py' -v

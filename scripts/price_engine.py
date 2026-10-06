@@ -11,25 +11,27 @@ lockstep (owner's observation, 2026-07-29, confirmed by measurement):
   * PORTAL  degalukainos.ena.lt  — operators self-service. Measured 111 distinct
     submitted_at values in one day, including stations updating at 12:39 in the
     AFTERNOON. This is a genuine intraday feed, not a daily dump.
-  * SPREADSHEET  the daily SharePoint Excel — RETIRED by LEA on 2026-07-28 and
-    still gone (verified 2026-08-10: zero "sharepoint" occurrences on ena.lt).
-    Kept as a revival watch only: the page is re-scanned every run, so a relink
-    revives the channel automatically. See from_sharepoint().
-  * POWER BI  the /dk-irankis/ monitoring tool — often LAGS the spreadsheet.
+  * SPREADSHEET  LEA restored an annual SharePoint raw-data archive from
+    2026-09-09 at /dk-pr-pr-duomenys/. The old landing page still has no link,
+    so current from_sharepoint() discovery reports it retired. The new workbook
+    returned direct-download HTTP 403 and fallback HTTP 400 on 2026-10-06;
+    contents/schema are unverified and this archive is NOT integrated.
+  * POWER BI  the /dk-irankis/ monitoring tool — registry access only here.
 
-SINGLE-CHANNEL REALITY (2026-08-10). LEA consolidated everything into ONE API:
-/read/prices is the only endpoint their portal exposes — /read/stations,
-/read/companies, /read/fuel-types and /read/municipalities all 404. There is no
-second official price surface left to race, so the redundancy this file was
-built for cannot currently be restored. What still protects the app is the
-never-regress guard in fetch_prices (a failed fetch cannot overwrite good data
-with worse) plus the freshness gates, NOT a second channel.
+CURRENT PORTAL REALITY (verified 2026-10-06). The official JS now reads
+/read/prices/latest. Its 2,081 station/fuel keys and prices matched /read/prices
+exactly in this audit, so this is a second representation of the SAME origin,
+not independent redundancy. The newer representation adds logos/fuel lists but
+omits stable numeric station IDs, active flags and source types, and changes
+timestamp formatting. Runtime keeps /read/prices until a deliberate migration.
+Saurida's own page adds a limited independent per-station overlay; most stations
+still depend on LEA. The never-regress guard and freshness gates remain essential.
 
 Nominal publication is 10:00 LT, "sometimes a little later". So whichever
 channel happens to lead at a given minute should win. This engine polls every
 source it can, then merges PER STATION AND PER FUEL, taking the value with the
-newest timestamp. A single source being late, broken, or blocked can no longer
-hold the whole app back — it just loses the race for those rows.
+newest timestamp. This architecture can use another verified source where one
+exists; most current prices still depend on the portal alone.
 
 TIMESTAMP MODEL (the part that makes the merge honest)
 ------------------------------------------------------
@@ -41,11 +43,13 @@ snapshot, while tomorrow's snapshot correctly beats today's self-reports.
 Every published price records WHERE it came from and WHEN, so the app can show
 "updated 12:39" instead of a blanket "prices may change during the day".
 
-DELIBERATELY NOT A PRICE SOURCE: Power BI. Its `Kaina` column was measured
-~25-30% BELOW pump price (a pre-tax basis) — using it would silently publish
-wrong prices, the one thing this app must never do. It stays what it already
-is: the station REGISTRY (fetch_lea_powerbi.py) and the history backfill
-(fetch_lea_history.py). Revisit only if its basis is proven to have changed.
+DELIBERATELY NOT A LIVE PRICE SOURCE: Power BI. The registry query SUMs Kaina
+across history. Even with an October 6 date filter, only 1,973/2,030 matching
+portal quotes were equal to three decimals; 57 differed, including duplicate
+sums. Some exact-date values are retail prices, so a universal pre-tax claim is
+unsupported. Registry and the separate historical table remain their existing
+roles; no price ingestion or new backfill was authorized by this audit.
+See tools/audit/lea_official_20261006/README.md for source identities and limits.
 
 OUTPUT: same station shape the rest of the pipeline expects, plus per-station
 `price_updated` (ISO) / `price_src`, and a `sources` block for the gates.
@@ -130,6 +134,8 @@ def from_portal():
         raise RuntimeError(f"portal returned only {len(rows)} rows")
     st, dates = {}, set()
     for r in rows:
+        if not r.get("is_active", True):
+            continue
         net = (r.get("company_name") or "").strip()
         if not net:
             continue
@@ -137,9 +143,12 @@ def from_portal():
                            (r.get("municipality") or "").strip())
         s = st.setdefault(k, {"network": net, "address": (r.get("address") or "").strip(),
                               "municipality": (r.get("municipality") or "").strip(),
-                              "locality": "", "petrol95": None, "diesel": None, "lpg": None,
+                               "locality": "", "petrol95": None, "diesel": None, "lpg": None,
+                               "fuels": [],
                               "_ts": {}})
         fuel = PORTAL_FUELS.get(r.get("fuel_type"))
+        if fuel and fuel not in s["fuels"]:
+            s["fuels"].append(fuel)
         price = fp.to_float(r.get("price"))
         if fuel and price and 0.3 < price < 3.5:
             s[fuel] = price
@@ -150,6 +159,9 @@ def from_portal():
     priced = [s for s in st.values() if any(s[f] is not None for f in FUELS)]
     if len(priced) < 400:
         raise RuntimeError(f"portal has only {len(priced)} priced stations")
+    for s in st.values():
+        if s["fuels"] and not any(s[f] is not None for f in FUELS):
+            s["no_price"] = True
     return _result("portal", True, list(st.values()), max(dates) if dates else None)
 
 
@@ -241,9 +253,13 @@ def merge(results):
                                         "address": s.get("address") or "",
                                         "municipality": s.get("municipality") or "",
                                         "locality": s.get("locality") or "",
-                                        "petrol95": None, "diesel": None, "lpg": None})
+                                         "petrol95": None, "diesel": None, "lpg": None,
+                                         "fuels": []})
             if not tgt.get("locality") and s.get("locality"):
                 tgt["locality"] = s["locality"]
+            for f in FUELS:
+                if f in (s.get("fuels") or []) and f not in tgt["fuels"]:
+                    tgt["fuels"].append(f)
             for f in FUELS:
                 price = s.get(f)
                 if price is None:
@@ -255,8 +271,13 @@ def merge(results):
                 if cur is None or ts > cur[0]:
                     prov[(k, f)] = (ts, res["source"])
                     tgt[f] = price
+                    if f not in tgt["fuels"]:
+                        tgt["fuels"].append(f)
     # attach provenance: newest stamp across the station's fuels
     for k, s in merged.items():
+        s["fuels"] = [f for f in FUELS if f in s["fuels"]]
+        if s["fuels"] and not any(s[f] is not None for f in FUELS):
+            s["no_price"] = True
         stamps = [(prov[(k, f)][0], prov[(k, f)][1]) for f in FUELS if (k, f) in prov]
         if stamps:
             newest = max(stamps, key=lambda x: x[0])
@@ -305,6 +326,28 @@ def _nums(x):
     return set(re.findall(r"\b\d{1,3}[a-z]?\b", _deacc(x)))
 
 
+def match_saurida_rows(rows, stations):
+    """Join operator rows to individual stations; ties remain unmatched."""
+    ours = [s for s in stations if s.get("network") == SAURIDA_NETWORK]
+    pairs, used = [], set()
+    for p in rows:
+        ps, pn = _stems(p.get("name")), _nums(p.get("name"))
+        cands = []
+        for i, s in enumerate(ours):
+            if i in used:
+                continue
+            overlap = ps & _stems(f"{s.get('address')} {s.get('municipality')}")
+            if not overlap:
+                continue
+            score = len(overlap) + (2 if pn and pn & _nums(s.get("address")) else 0)
+            cands.append((score, i))
+        cands.sort(key=lambda t: -t[0])
+        if cands and (len(cands) == 1 or cands[0][0] > cands[1][0]):
+            used.add(cands[0][1])
+            pairs.append((p, ours[cands[0][1]]))
+    return pairs
+
+
 def saurida_overlay(stations):
     """Serve Saurida's OWN published prices where they are newer than LEA's.
 
@@ -323,7 +366,8 @@ def saurida_overlay(stations):
     wrong, which is exactly what the basis guard below re-checks every run.
     """
     try:
-        d = json.load(open(SAURIDA_PATH, encoding="utf-8"))
+        with open(SAURIDA_PATH, encoding="utf-8") as handle:
+            d = json.load(handle)
         fetched = _parse_ts(d["fetched"])
     except (OSError, json.JSONDecodeError, KeyError, TypeError):
         return 0
@@ -332,25 +376,7 @@ def saurida_overlay(stations):
         return 0
 
     rows = d.get("prices") or []
-    ours = [s for s in stations if s.get("network") == SAURIDA_NETWORK]
-    pairs = []
-    used = set()
-    for p in rows:
-        ps, pn = _stems(p.get("name")), _nums(p.get("name"))
-        cands = []
-        for i, s in enumerate(ours):
-            if i in used:
-                continue
-            overlap = ps & _stems(f"{s.get('address')} {s.get('municipality')}")
-            if not overlap:
-                continue
-            score = len(overlap) + (2 if pn and pn & _nums(s.get("address")) else 0)
-            cands.append((score, i))
-        cands.sort(key=lambda t: -t[0])
-        # A single CLEAR winner only. Ties are ambiguous and get dropped.
-        if cands and (len(cands) == 1 or cands[0][0] > cands[1][0]):
-            used.add(cands[0][1])
-            pairs.append((p, ours[cands[0][1]]))
+    pairs = match_saurida_rows(rows, stations)
 
     # BASIS GUARD. The chain being a few cents off LEA is a price move; being far
     # off means we are reading a different KIND of number (ex-VAT, a promo, or a
@@ -381,6 +407,7 @@ def saurida_overlay(stations):
             s[f] = v
             touched = True
         if touched:
+            s.pop("no_price", None)
             s["price_updated"] = stamp
             s["price_src"] = "saurida"
             s.pop("price_intraday", None)   # not an LEA record stamp; wording differs

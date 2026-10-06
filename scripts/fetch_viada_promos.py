@@ -70,7 +70,7 @@ for _s in (sys.stdout, sys.stderr):
         pass
 
 OUT = os.path.join("data", "sources", "viada_promos.json")
-UA_WEB = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+UA_WEB = "fuelis-lt/1.0 (+https://fuelis.lt; fuel price app data fetcher)"
 LISTING = "https://www.viada.lt/akcijos/"
 BASE = "https://www.viada.lt/akcija/"
 
@@ -322,18 +322,43 @@ def parse_wednesday(html, url):
 
 
 def discover_listing_slugs():
-    """Slugs currently tiled on /akcijos/ (so new seasonal fuel promos get picked up)."""
+    """Return (slugs, verified_direct); cached fallback cannot prove absence."""
+    direct = True
     try:
-        _, html = http_text(LISTING)
+        _, html = _http_get(LISTING)
     except Exception as e:
-        print(f"[warn] listing fetch failed: {e}")
-        return []
+        direct = False
+        try:
+            _, html = http_text(LISTING)
+        except Exception as e:
+            print(f"[warn] listing fetch failed: {e}")
+            return [], False
     slugs = []
     for m in re.finditer(r'href="https://www\.viada\.lt/akcija/([^"/]+)/?"', html):
         s = m.group(1)
         if s not in slugs:
             slugs.append(s)
-    return slugs
+    verified = direct and page_title(html, "") == "Akcijos" and bool(slugs)
+    return slugs, verified
+
+
+def read_wednesday():
+    """Only a direct 404 establishes removal; fallback failures remain unknown."""
+    url = BASE + "super-treciadieniai/"
+    try:
+        status, html = _http_get(url)
+        return (parse_wednesday(html, url) if status == 200 else None), False
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None, True
+    except Exception:
+        pass
+    try:
+        status, html = http_text(url)
+        return (parse_wednesday(html, url) if status == 200 else None), False
+    except Exception as e:
+        print(f"[warn] wednesday page: {type(e).__name__}: {e}")
+        return None, False
 
 
 def load_existing():
@@ -359,7 +384,8 @@ def main():
             promos.append(p); seen.add(slug)
 
     # 2) Anything new on the live listing whose PAGE proves it's a fuel deal.
-    for slug in discover_listing_slugs():
+    listed, listing_verified = discover_listing_slugs()
+    for slug in listed:
         if slug in seen:
             continue
         p = probe_promo(slug, slug, "listed")
@@ -370,26 +396,18 @@ def main():
 
     # 3) Wednesday promo prices (plain text + explicit validity date — the one
     #    page whose numbers we DO extract; see the docstring for the guardrails).
-    wednesday = None
-    wed_page_gone = False
-    try:
-        wurl = BASE + "super-treciadieniai/"
-        status, whtml = http_text(wurl)
-        if status == 200:
-            wednesday = parse_wednesday(whtml, wurl)
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            wed_page_gone = True         # promo over — dropping the block is correct
-        else:
-            print(f"[warn] wednesday page: HTTP {e.code}")
-    except Exception as e:
-        print(f"[warn] wednesday page: {type(e).__name__}: {e}")
+    wednesday, wed_page_gone = read_wednesday()
+    no_announcement = listing_verified and wed_page_gone and "super-treciadieniai" not in listed
+    if no_announcement:
+        promos = [p for p in promos if p.get("slug") != "super-treciadieniai"]
+        print("[ok] official listing has no Wednesday offer and its direct page is 404")
 
     # Carry-forward guard: a fetch/parse hiccup must not clobber a wednesday
     # block that is still valid for today or later (that would silently strip
-    # an active discount mid-day). Only a REAL 404 (deal ended) drops it; the
-    # app's own valid_date==today check keeps any carried value safe.
-    if wednesday is None and not wed_page_gone:
+    # an active discount mid-day). Only listing absence PLUS a direct 404
+    # proves removal; a changed URL alone cannot. The app's own validity-date
+    # guard keeps a carried value restricted to its announced day.
+    if wednesday is None and not no_announcement:
         prev = load_existing()
         pw = (prev or {}).get("wednesday")
         if pw and pw.get("valid_date", "") >= dt.date.today().isoformat():
@@ -415,6 +433,12 @@ def main():
         "disclaimer": DISCLAIMER,
         "count": len(promos),
         "promos": promos,
+    }
+    payload["wednesday_check"] = {
+        "status": "announced" if wednesday else "no_announcement" if no_announcement else "unavailable",
+        "checked": payload["generated"],
+        "listing_url": LISTING,
+        "source_url": BASE + "super-treciadieniai/",
     }
     if wednesday:
         payload["wednesday"] = wednesday
