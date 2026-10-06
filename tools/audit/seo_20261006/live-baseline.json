@@ -1,0 +1,2927 @@
+{
+  "started_utc": "2026-10-06T16:34:00.250168+00:00",
+  "completed_utc": "2026-10-06T16:34:05.145344+00:00",
+  "baseline_git_head": "5d9996493449e334ead9aeb1af07dbb39eaa800f",
+  "method": "Public TLS-verified HTTP GET; parse response HTML without executing JavaScript; canonical/noindex/title/H1/description and static href reachability. Metadata only, no raw HTML or credentials retained.",
+  "sitemap_url": "https://fuelis.lt/sitemap.xml",
+  "sitemap_sha256": "16661cfdc9e8da1a47f8335e55a9d475477a89123004daafb2684133921f7645",
+  "google_indexing_status": "UNKNOWN: neither public HTTP success nor this audit proves Google has crawled, indexed or ranked these URLs.",
+  "summary": {
+    "sitemap_urls": 64,
+    "unique_urls": 64,
+    "status_counts": {
+      "200": 64
+    },
+    "canonical_or_index_directive_failures": [],
+    "reachable_from_static_homepage_links": 64,
+    "h1_count_distribution": {
+      "1": 64
+    },
+    "description_count_distribution": {
+      "1": 64
+    },
+    "jsonld_parse_errors": 0
+  },
+  "pages": [
+    {
+      "url": "https://fuelis.lt/",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.434702+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/",
+      "html_sha256": "57feacd23133ab38d8322b308c6461605fa4753219abcba0928666b4466d700a",
+      "canonical": [
+        "https://fuelis.lt/"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1"
+      ],
+      "x_robots_tag": null,
+      "title": "Fuelis · Kuro kainos Lietuvoje — degalų kainos, žemėlapis, EV",
+      "h1": [
+        {
+          "text": "Fuelis — oficialios degalų kainos Lietuvoje: benzinas 95, dyzelinas, dujos ir EV įkrovimo stotelės",
+          "class": "sr-only"
+        }
+      ],
+      "description_count": 1,
+      "description": "Oficialios degalų kainos 757 Lietuvos degalinių (2026-10-06): dyzelinas vid. €2.250, benzinas 95 vid. €1.951, dujos €0.838. Pigiausių ir arčiausių paieška, žemėlapis, EV įkrovimas.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "WebSite": 1,
+        "Organization": 1,
+        "ImageObject": 1,
+        "WebApplication": 1,
+        "Offer": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/atviri-duomenys.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/atviri-duomenys.html",
+        "https://fuelis.lt/privatumas.html"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.434702+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/",
+      "html_sha256": "9f7ca6adb459a698d6bbe72663b8203c63c16bb07e36dffb9ecf49a3b0cee2fb",
+      "canonical": [
+        "https://fuelis.lt/kainos/"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos pagal savivaldybę | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos pagal miestus ir savivaldybes",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Oficialios degalų kainos visose Lietuvos savivaldybėse (2026-10-06): benzinas 95, dyzelinas, dujos.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "CollectionPage": 1,
+        "WebSite": 1,
+        "ItemList": 1,
+        "ListItem": 62,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/akmenes-r-sav.html",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/birzu-r-sav.html",
+        "https://fuelis.lt/kainos/druskininku-sav.html",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+        "https://fuelis.lt/kainos/jonavos-r-sav.html",
+        "https://fuelis.lt/kainos/joniskio-r-sav.html",
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/kalvarijos-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/kelmes-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/kretingos-r-sav.html",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/kedainiu-r-sav.html",
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+        "https://fuelis.lt/kainos/marijampoles-sav.html",
+        "https://fuelis.lt/kainos/mazeikiu-r-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/neringos-sav.html",
+        "https://fuelis.lt/kainos/pagegiu-sav.html",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/palangos-m-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-m-sav.html",
+        "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+        "https://fuelis.lt/kainos/rietavo-sav.html",
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+        "https://fuelis.lt/kainos/skuodo-r-sav.html",
+        "https://fuelis.lt/kainos/taurages-r-sav.html",
+        "https://fuelis.lt/kainos/telsiu-r-sav.html",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/varenos-r-sav.html",
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+        "https://fuelis.lt/kainos/visagino-sav.html",
+        "https://fuelis.lt/kainos/zarasu-r-sav.html",
+        "https://fuelis.lt/kainos/sakiu-r-sav.html",
+        "https://fuelis.lt/kainos/salcininku-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/svencioniu-r-sav.html",
+        "https://fuelis.lt/",
+        "https://fuelis.lt/atviri-duomenys.html"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/atviri-duomenys.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.434702+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/atviri-duomenys.html",
+      "html_sha256": "7b5ef96f7c5bc08525be1097dbd43265e4503b35a7e5d228b4c306a94b9b8c08",
+      "canonical": [
+        "https://fuelis.lt/atviri-duomenys.html"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1"
+      ],
+      "x_robots_tag": null,
+      "title": "Atviri duomenys — degalų kainų API | Fuelis",
+      "h1": [
+        {
+          "text": "Atviri degalų kainų duomenys (API)",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Nemokama, atvira Lietuvos degalų kainų API: JSON ir CSV, 757 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys, paruošti programuotojams.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "Dataset": 1,
+        "Place": 1,
+        "PropertyValue": 3,
+        "Organization": 1,
+        "DataCatalog": 1,
+        "DataDownload": 4
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/",
+        "https://fuelis.lt/",
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/privatumas.html"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/privatumas.html",
+      "lastmod": "2026-08-04",
+      "checked_utc": "2026-10-06T16:34:00.434702+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/privatumas.html",
+      "html_sha256": "9e8b353c4a291f66c326a8df40f0e1cfff39cf3600330807de272b3447ff89ef",
+      "canonical": [
+        "https://fuelis.lt/privatumas.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Privatumas | Fuelis",
+      "h1": [
+        {
+          "text": "Privatumas",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Fuelis privatumo politika: vieta apdorojama tik jūsų įrenginyje, jokių sekimo slapukų, anoniminis lankomumo skaičiavimas.",
+      "jsonld_blocks": 0,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {},
+      "internal_sitemap_links": [
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/akmenes-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.434702+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/akmenes-r-sav.html",
+      "html_sha256": "4a310f34c6bcb1980a7384a29677f4ace55146f06affb5066f1ec15c1ee36167",
+      "canonical": [
+        "https://fuelis.lt/kainos/akmenes-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Akmenėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Akmenėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Akmenėje (2026-10-06), oficialūs LEA duomenys iš 6 degalinių. Dyzelinas vid. €2.196, benzinas 95 vid. €1.940. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 9,
+        "GasStation": 6,
+        "PostalAddress": 6,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/mazeikiu-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/telsiu-r-sav.html",
+        "https://fuelis.lt/kainos/joniskio-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/alytaus-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.600094+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/alytaus-m-sav.html",
+      "html_sha256": "519c91f074f2d3a5a70c4d59e4b21b011c75d01047275207209e2ae852ac4a97",
+      "canonical": [
+        "https://fuelis.lt/kainos/alytaus-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Alytuje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Alytuje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Alytuje (2026-10-06), oficialūs LEA duomenys iš 12 degalinių. Dyzelinas vid. €2.235, benzinas 95 vid. €1.923. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+        "https://fuelis.lt/kainos/varenos-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/alytaus-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.615738+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/alytaus-r-sav.html",
+      "html_sha256": "a60fd492c72706a9da379cca36bb01c58cd69bd3c9a7a59073672043a69c4e8c",
+      "canonical": [
+        "https://fuelis.lt/kainos/alytaus-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Alytaus rajone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Alytaus rajone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Alytaus rajone (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.213, benzinas 95 vid. €1.908. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+        "https://fuelis.lt/kainos/varenos-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.615738+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+      "html_sha256": "9b79ed9b12a4758513c356eb1d7eb8bc1fde966f05bc423a8e76c8d91a4eda37",
+      "canonical": [
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Anykščiuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Anykščiuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Anykščiuose (2026-10-06), oficialūs LEA duomenys iš 9 degalinių. Dyzelinas vid. €2.227, benzinas 95 vid. €1.907. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 12,
+        "GasStation": 9,
+        "PostalAddress": 9,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/birstono-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.624283+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/birstono-sav.html",
+      "html_sha256": "465cf4fdb3adb3c8ca45e40bd75dbd18997f085f002c9332108fa659d32d58ff",
+      "canonical": [
+        "https://fuelis.lt/kainos/birstono-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Birštone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Birštone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Birštone (2026-10-06), oficialūs LEA duomenys iš 1 degalinių. Dyzelinas vid. €2.209, benzinas 95 vid. €1.889. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 4,
+        "GasStation": 1,
+        "PostalAddress": 1,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/birzu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.645152+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/birzu-r-sav.html",
+      "html_sha256": "c9ab33a748692bcf7cd59e7d2e14165094bc20d83fb07511567f707aca778fdd",
+      "canonical": [
+        "https://fuelis.lt/kainos/birzu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Biržuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Biržuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Biržuose (2026-10-06), oficialūs LEA duomenys iš 6 degalinių. Dyzelinas vid. €2.276, benzinas 95 vid. €1.966. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 9,
+        "GasStation": 6,
+        "PostalAddress": 6,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-m-sav.html",
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/druskininku-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.812939+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/druskininku-sav.html",
+      "html_sha256": "62f9f82ee5bbc91c10ea20c7067822e97e3af614f73f0c111eb419ea68723271",
+      "canonical": [
+        "https://fuelis.lt/kainos/druskininku-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Druskininkuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Druskininkuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Druskininkuose (2026-10-06), oficialūs LEA duomenys iš 5 degalinių. Dyzelinas vid. €2.295, benzinas 95 vid. €1.995. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 8,
+        "GasStation": 5,
+        "PostalAddress": 5,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/varenos-r-sav.html",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/elektrenu-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.812939+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/elektrenu-sav.html",
+      "html_sha256": "7bffadcc3feefc5720501046d354f17d82501fa949d663a7ef55e2e29431db1b",
+      "canonical": [
+        "https://fuelis.lt/kainos/elektrenu-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Elektrėnuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Elektrėnuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Elektrėnuose (2026-10-06), oficialūs LEA duomenys iš 7 degalinių. Dyzelinas vid. €2.308, benzinas 95 vid. €2.002. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 10,
+        "GasStation": 7,
+        "PostalAddress": 7,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.812939+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+      "html_sha256": "74e7ddee0342747385d004c617f7f7693bee51d6f3d5797845f77e55410c9835",
+      "canonical": [
+        "https://fuelis.lt/kainos/ignalinos-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Ignalinoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Ignalinoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Ignalinoje (2026-10-06), oficialūs LEA duomenys iš 3 degalinių. Dyzelinas vid. €2.296, benzinas 95 vid. €2.006. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 6,
+        "GasStation": 3,
+        "PostalAddress": 3,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/svencioniu-r-sav.html",
+        "https://fuelis.lt/kainos/visagino-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/zarasu-r-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/jonavos-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.812939+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/jonavos-r-sav.html",
+      "html_sha256": "aaa68f23040bec5ba0ad5172a6403bc9ca6f0f5b13fcbb395669d2cc867fd1d4",
+      "canonical": [
+        "https://fuelis.lt/kainos/jonavos-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Jonavoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Jonavoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Jonavoje (2026-10-06), oficialūs LEA duomenys iš 9 degalinių. Dyzelinas vid. €2.275, benzinas 95 vid. €1.977. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 12,
+        "GasStation": 9,
+        "PostalAddress": 9,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/kedainiu-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/joniskio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.859819+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/joniskio-r-sav.html",
+      "html_sha256": "d03ec28a18712635d25a72651da9bf3f3d33d52a51d5c522e02606c51261ddc2",
+      "canonical": [
+        "https://fuelis.lt/kainos/joniskio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Joniškyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Joniškyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Joniškyje (2026-10-06), oficialūs LEA duomenys iš 4 degalinių. Dyzelinas vid. €2.264, benzinas 95 vid. €1.964. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 7,
+        "GasStation": 4,
+        "PostalAddress": 4,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/akmenes-r-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:00.991799+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+      "html_sha256": "eb69abafdecd15c02cb58686f8afe466a88eced32861fc8577cb1db6d7d9c9dc",
+      "canonical": [
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Jurbarke — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Jurbarke",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Jurbarke (2026-10-06), oficialūs LEA duomenys iš 9 degalinių. Dyzelinas vid. €2.245, benzinas 95 vid. €1.951. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 12,
+        "GasStation": 9,
+        "PostalAddress": 9,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/sakiu-r-sav.html",
+        "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+        "https://fuelis.lt/kainos/taurages-r-sav.html",
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+        "https://fuelis.lt/kainos/pagegiu-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.016442+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+      "html_sha256": "503cd0c85210f17eaaac2dd1318f9c9c8c18c73e6b51b3dddfb35f9e890d935e",
+      "canonical": [
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kaišiadoryse — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kaišiadoryse",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kaišiadoryse (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.236, benzinas 95 vid. €1.935. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/jonavos-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kalvarijos-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.016442+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kalvarijos-sav.html",
+      "html_sha256": "03922818d4d7d1e38b3b6bd4d74a0e96c62093b5278a688db0d8c023947ee1bf",
+      "canonical": [
+        "https://fuelis.lt/kainos/kalvarijos-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kalvarijoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kalvarijoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kalvarijoje (2026-10-06), oficialūs LEA duomenys iš 13 degalinių. Dyzelinas vid. €2.257, benzinas 95 vid. €1.958. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/marijampoles-sav.html",
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kauno-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.047727+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kauno-m-sav.html",
+      "html_sha256": "f4faea9aabed0d2cb957ce93bedc052f11837ac3f5e95ebfb1d0f82d8699b941",
+      "canonical": [
+        "https://fuelis.lt/kainos/kauno-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kaune — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kaune",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kaune (2026-10-06), oficialūs LEA duomenys iš 83 degalinių. Dyzelinas vid. €2.253, benzinas 95 vid. €1.953. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/jonavos-r-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kauno-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.094566+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kauno-r-sav.html",
+      "html_sha256": "2a2fde556de401c4ca69d9dfcd8e41499214d7f3c6f75f849b317ce39cec32a3",
+      "canonical": [
+        "https://fuelis.lt/kainos/kauno-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kauno rajone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kauno rajone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kauno rajone (2026-10-06), oficialūs LEA duomenys iš 25 degalinių. Dyzelinas vid. €2.246, benzinas 95 vid. €1.949. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/jonavos-r-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.172725+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+      "html_sha256": "c39e2bd0ab67ec36c1577e37b0a05ee8abc445f8692c061da058561b37831475",
+      "canonical": [
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kazlų Rūdoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kazlų Rūdoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kazlų Rūdoje (2026-10-06), oficialūs LEA duomenys iš 3 degalinių. Dyzelinas vid. €2.280, benzinas 95 vid. €1.980. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 6,
+        "GasStation": 3,
+        "PostalAddress": 3,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/marijampoles-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kedainiu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.188355+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kedainiu-r-sav.html",
+      "html_sha256": "8205643a65f1104fbafa382f169a2a32759059862c6355c4fde03bff31ca4869",
+      "canonical": [
+        "https://fuelis.lt/kainos/kedainiu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kėdainiuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kėdainiuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kėdainiuose (2026-10-06), oficialūs LEA duomenys iš 17 degalinių. Dyzelinas vid. €2.258, benzinas 95 vid. €1.949. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/jonavos-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kelmes-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.203940+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kelmes-r-sav.html",
+      "html_sha256": "75b1db30c525c950d33cf73da04e8555a8910728bd9cedd1dbefaae4f12e1f2e",
+      "canonical": [
+        "https://fuelis.lt/kainos/kelmes-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kelmėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kelmėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kelmėje (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.242, benzinas 95 vid. €1.965. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.231154+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+      "html_sha256": "c9a634e52de3b9c18610894d5056171286fbf27c0c1a90a958eaefeaf4dbf8dd",
+      "canonical": [
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Klaipėdoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Klaipėdoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Klaipėdoje (2026-10-06), oficialūs LEA duomenys iš 35 degalinių. Dyzelinas vid. €2.244, benzinas 95 vid. €1.952. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/kretingos-r-sav.html",
+        "https://fuelis.lt/kainos/palangos-m-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/neringos-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.282583+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+      "html_sha256": "837e004e21136fb3f9d6fa533f9c5438193b958d9403dffd71e9909193761564",
+      "canonical": [
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Klaipėdos rajone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Klaipėdos rajone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Klaipėdos rajone (2026-10-06), oficialūs LEA duomenys iš 20 degalinių. Dyzelinas vid. €2.246, benzinas 95 vid. €1.955. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+        "https://fuelis.lt/kainos/kretingos-r-sav.html",
+        "https://fuelis.lt/kainos/palangos-m-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kretingos-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.337013+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kretingos-r-sav.html",
+      "html_sha256": "16b82e473907213750d0b86d8cdb65e29eff1b847755f033eb5bab07fcdb1cfa",
+      "canonical": [
+        "https://fuelis.lt/kainos/kretingos-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kretingoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kretingoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kretingoje (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.331, benzinas 95 vid. €2.017. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/palangos-m-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/skuodo-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.368299+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+      "html_sha256": "b2afda117a73b8762e7a00ff0081dc6ef0ce47d1c5b4e40f386907b755ae283f",
+      "canonical": [
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Kupiškyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Kupiškyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Kupiškyje (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.236, benzinas 95 vid. €1.916. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-m-sav.html",
+        "https://fuelis.lt/kainos/birzu-r-sav.html",
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.383888+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+      "html_sha256": "6822c72b39338543088462553e492d2b0619a3fbb05d0b5df34b1afe9e764375",
+      "canonical": [
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Lazdijuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Lazdijuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Lazdijuose (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.227, benzinas 95 vid. €1.908. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kalvarijos-sav.html",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/druskininku-sav.html",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/marijampoles-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/marijampoles-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.424217+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/marijampoles-sav.html",
+      "html_sha256": "6cb5b178dd2c9795755dc940e5885d6bbf66b3cc745eede0c64ca7e9e2221525",
+      "canonical": [
+        "https://fuelis.lt/kainos/marijampoles-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Marijampolėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Marijampolėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Marijampolėje (2026-10-06), oficialūs LEA duomenys iš 21 degalinių. Dyzelinas vid. €2.234, benzinas 95 vid. €1.938. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+        "https://fuelis.lt/kainos/kalvarijos-sav.html",
+        "https://fuelis.lt/kainos/prienu-r-sav.html",
+        "https://fuelis.lt/kainos/lazdiju-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/mazeikiu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.542552+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/mazeikiu-r-sav.html",
+      "html_sha256": "8501f61863305e1d92939bfb034d2c8fcf523dc35abe7f52f28a41363f90b15e",
+      "canonical": [
+        "https://fuelis.lt/kainos/mazeikiu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Mažeikiuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Mažeikiuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Mažeikiuose (2026-10-06), oficialūs LEA duomenys iš 16 degalinių. Dyzelinas vid. €2.226, benzinas 95 vid. €1.931. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/akmenes-r-sav.html",
+        "https://fuelis.lt/kainos/telsiu-r-sav.html",
+        "https://fuelis.lt/kainos/skuodo-r-sav.html",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/moletu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.558218+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/moletu-r-sav.html",
+      "html_sha256": "2d831c7bfdce47e09d8eb1c59c8e38c4dd3847537f6505e7ae3371daf9cccfc1",
+      "canonical": [
+        "https://fuelis.lt/kainos/moletu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Molėtuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Molėtuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Molėtuose (2026-10-06), oficialūs LEA duomenys iš 5 degalinių. Dyzelinas vid. €2.287, benzinas 95 vid. €1.985. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 8,
+        "GasStation": 5,
+        "PostalAddress": 5,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/svencioniu-r-sav.html",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/neringos-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.605056+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/neringos-sav.html",
+      "html_sha256": "66de2f5c29b936efd39509cfa8c175b3020db0cd4969d2c3dcd7cd87d2830e2f",
+      "canonical": [
+        "https://fuelis.lt/kainos/neringos-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Neringoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Neringoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Neringoje (2026-10-06), oficialūs LEA duomenys iš 1 degalinių. Dyzelinas vid. €2.319, benzinas 95 vid. €2.019. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 4,
+        "GasStation": 1,
+        "PostalAddress": 1,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/pagegiu-sav.html",
+        "https://fuelis.lt/kainos/palangos-m-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/pagegiu-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.605056+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/pagegiu-sav.html",
+      "html_sha256": "36d0945487649c212a264e908d2b6824541f0c520587470c436c9f8f93bd404b",
+      "canonical": [
+        "https://fuelis.lt/kainos/pagegiu-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Pagėgiuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Pagėgiuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Pagėgiuose (2026-10-06), oficialūs LEA duomenys iš 1 degalinių. Dyzelinas vid. €2.250, benzinas 95 vid. €1.990. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 4,
+        "GasStation": 1,
+        "PostalAddress": 1,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/taurages-r-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+        "https://fuelis.lt/kainos/neringos-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.751840+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+      "html_sha256": "122a41e0b8eb2cb67dbfb2feab214bd6e8435636f93f4bec9c58313cdc7cc764",
+      "canonical": [
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Pakruojyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Pakruojyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Pakruojyje (2026-10-06), oficialūs LEA duomenys iš 4 degalinių. Dyzelinas vid. €2.212, benzinas 95 vid. €1.929. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 7,
+        "GasStation": 4,
+        "PostalAddress": 4,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/joniskio-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/palangos-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.783099+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/palangos-m-sav.html",
+      "html_sha256": "6f0ff77933bb0bbcadfe7a3272117838ed37f36fc7f3bfaf834db4e8409d5a23",
+      "canonical": [
+        "https://fuelis.lt/kainos/palangos-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Palangoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Palangoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Palangoje (2026-10-06), oficialūs LEA duomenys iš 4 degalinių. Dyzelinas vid. €2.269, benzinas 95 vid. €1.969. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 7,
+        "GasStation": 4,
+        "PostalAddress": 4,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kretingos-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/skuodo-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/panevezio-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.798725+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/panevezio-m-sav.html",
+      "html_sha256": "6ec476685fc3d8911b7f323c1774328a838ae2118d750a711a414b90ad003bc3",
+      "canonical": [
+        "https://fuelis.lt/kainos/panevezio-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Panevėžyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Panevėžyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Panevėžyje (2026-10-06), oficialūs LEA duomenys iš 25 degalinių. Dyzelinas vid. €2.241, benzinas 95 vid. €1.946. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/panevezio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.814350+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/panevezio-r-sav.html",
+      "html_sha256": "e27498a84cdd86e6deff14de2a1a6346a66539d6dfc2ebc06e2527ded2183ef7",
+      "canonical": [
+        "https://fuelis.lt/kainos/panevezio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Panevėžio rajone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Panevėžio rajone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Panevėžio rajone (2026-10-06), oficialūs LEA duomenys iš 11 degalinių. Dyzelinas vid. €2.257, benzinas 95 vid. €1.954. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/panevezio-m-sav.html",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.930739+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/pasvalio-r-sav.html",
+      "html_sha256": "ddc83d2a4ea37a74fff216426dd472469ad78ad0fa2959c684115c8d3f47dac7",
+      "canonical": [
+        "https://fuelis.lt/kainos/pasvalio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Pasvalyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Pasvalyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Pasvalyje (2026-10-06), oficialūs LEA duomenys iš 9 degalinių. Dyzelinas vid. €2.253, benzinas 95 vid. €1.950. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 12,
+        "GasStation": 9,
+        "PostalAddress": 9,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/birzu-r-sav.html",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-m-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/plunges-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:01.993239+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/plunges-r-sav.html",
+      "html_sha256": "2e953157e3621c5570a83726dff80f429516c917f84bbd8c081e76572750a1a5",
+      "canonical": [
+        "https://fuelis.lt/kainos/plunges-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Plungėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Plungėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Plungėje (2026-10-06), oficialūs LEA duomenys iš 10 degalinių. Dyzelinas vid. €2.236, benzinas 95 vid. €1.939. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/rietavo-sav.html",
+        "https://fuelis.lt/kainos/telsiu-r-sav.html",
+        "https://fuelis.lt/kainos/kretingos-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/skuodo-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/prienu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.017878+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/prienu-r-sav.html",
+      "html_sha256": "14f12585605fbe48962828fc2eb50a42846ec81e44d71c4c5aa434b74488b790",
+      "canonical": [
+        "https://fuelis.lt/kainos/prienu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Prienuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Prienuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Prienuose (2026-10-06), oficialūs LEA duomenys iš 10 degalinių. Dyzelinas vid. €2.238, benzinas 95 vid. €1.932. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/kauno-m-sav.html",
+        "https://fuelis.lt/kainos/kauno-r-sav.html",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.150448+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+      "html_sha256": "49e61b99982287ae481d3b13347fe8ed1424c909327fdff2f3a2ae7f8ab853d9",
+      "canonical": [
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Radviliškyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Radviliškyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Radviliškyje (2026-10-06), oficialūs LEA duomenys iš 10 degalinių. Dyzelinas vid. €2.218, benzinas 95 vid. €1.915. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/kelmes-r-sav.html",
+        "https://fuelis.lt/kainos/panevezio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.197271+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+      "html_sha256": "fc122ad0bef11304665fa716f341e976abe101e9f0e037ac4d41f069a2d884f3",
+      "canonical": [
+        "https://fuelis.lt/kainos/raseiniu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Raseiniuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Raseiniuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Raseiniuose (2026-10-06), oficialūs LEA duomenys iš 16 degalinių. Dyzelinas vid. €2.243, benzinas 95 vid. €1.951. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/kelmes-r-sav.html",
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+        "https://fuelis.lt/kainos/taurages-r-sav.html",
+        "https://fuelis.lt/kainos/sakiu-r-sav.html",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/rietavo-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.228572+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/rietavo-sav.html",
+      "html_sha256": "9c8941ec45667c3065276a4b218dd9358ea4e8276c79b744a5e702c42f4ef766",
+      "canonical": [
+        "https://fuelis.lt/kainos/rietavo-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Rietave — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Rietave",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Rietave (2026-10-06), oficialūs LEA duomenys iš 4 degalinių. Dyzelinas vid. €2.263, benzinas 95 vid. €1.952. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 7,
+        "GasStation": 4,
+        "PostalAddress": 4,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/telsiu-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.362144+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+      "html_sha256": "4279a56f2910dff9e5e054400d10ec200003bded60f5347e41a2c371bd9d1448",
+      "canonical": [
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Rokiškyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Rokiškyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Rokiškyje (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.320, benzinas 95 vid. €2.009. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/zarasu-r-sav.html",
+        "https://fuelis.lt/kainos/kupiskio-r-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/birzu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/sakiu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.413383+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/sakiu-r-sav.html",
+      "html_sha256": "180ac55d55929d1ace0e7fd999d6e56ab971f0052f8144fdc06dac1173a5b321",
+      "canonical": [
+        "https://fuelis.lt/kainos/sakiu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Šakiuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Šakiuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Šakiuose (2026-10-06), oficialūs LEA duomenys iš 9 degalinių. Dyzelinas vid. €2.238, benzinas 95 vid. €1.943. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 12,
+        "GasStation": 9,
+        "PostalAddress": 9,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/marijampoles-sav.html",
+        "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/salcininku-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.428420+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/salcininku-r-sav.html",
+      "html_sha256": "6739f0f4354811b942670c7e40852adf5e889db993fcb60c4bac184647aebd3f",
+      "canonical": [
+        "https://fuelis.lt/kainos/salcininku-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Šalčininkuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Šalčininkuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Šalčininkuose (2026-10-06), oficialūs LEA duomenys iš 5 degalinių. Dyzelinas vid. €2.289, benzinas 95 vid. €1.985. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 8,
+        "GasStation": 5,
+        "PostalAddress": 5,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/varenos-r-sav.html",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/siauliu-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.480612+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/siauliu-m-sav.html",
+      "html_sha256": "24c518e700eb701bd06a69993737dd97499621a9a6542759af9786b432e50f72",
+      "canonical": [
+        "https://fuelis.lt/kainos/siauliu-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Šiauliuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Šiauliuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Šiauliuose (2026-10-06), oficialūs LEA duomenys iš 26 degalinių. Dyzelinas vid. €2.249, benzinas 95 vid. €1.961. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/siauliu-r-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/pakruojo-r-sav.html",
+        "https://fuelis.lt/kainos/kelmes-r-sav.html",
+        "https://fuelis.lt/kainos/joniskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/siauliu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.550182+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/siauliu-r-sav.html",
+      "html_sha256": "1dc255b6f3850b4ed1d8400e816763250587681034fd40136c12cd466f8c7e07",
+      "canonical": [
+        "https://fuelis.lt/kainos/siauliu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Šiaulių rajone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Šiaulių rajone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Šiaulių rajone (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.257, benzinas 95 vid. €1.966. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/siauliu-m-sav.html",
+        "https://fuelis.lt/kainos/radviliskio-r-sav.html",
+        "https://fuelis.lt/kainos/kelmes-r-sav.html",
+        "https://fuelis.lt/kainos/joniskio-r-sav.html",
+        "https://fuelis.lt/kainos/akmenes-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/silales-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.619959+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/silales-r-sav.html",
+      "html_sha256": "728fcd69d34461da5c31b86722dd7a44f6f882895758ff0bd55d435f6581f609",
+      "canonical": [
+        "https://fuelis.lt/kainos/silales-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Šilalėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Šilalėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Šilalėje (2026-10-06), oficialūs LEA duomenys iš 11 degalinių. Dyzelinas vid. €2.231, benzinas 95 vid. €1.936. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/rietavo-sav.html",
+        "https://fuelis.lt/kainos/taurages-r-sav.html",
+        "https://fuelis.lt/kainos/kelmes-r-sav.html",
+        "https://fuelis.lt/kainos/pagegiu-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/silutes-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.659856+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/silutes-r-sav.html",
+      "html_sha256": "b818a6a5fd8ebd758a2195c4c17b7c14fefd1b550e220728b8edd6fe51424891",
+      "canonical": [
+        "https://fuelis.lt/kainos/silutes-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Šilutėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Šilutėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Šilutėje (2026-10-06), oficialūs LEA duomenys iš 11 degalinių. Dyzelinas vid. €2.225, benzinas 95 vid. €1.943. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/pagegiu-sav.html",
+        "https://fuelis.lt/kainos/neringos-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-r-sav.html",
+        "https://fuelis.lt/kainos/klaipedos-m-sav.html",
+        "https://fuelis.lt/kainos/rietavo-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.816293+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+      "html_sha256": "a99f56b8c54c36697366a3af2152f438cb7338074d3767db810f95e2cadf16c7",
+      "canonical": [
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Širvintose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Širvintose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Širvintose (2026-10-06), oficialūs LEA duomenys iš 3 degalinių. Dyzelinas vid. €2.232, benzinas 95 vid. €1.932. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 6,
+        "GasStation": 3,
+        "PostalAddress": 3,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/skuodo-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:02.901487+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/skuodo-r-sav.html",
+      "html_sha256": "17385602cacd18d13fa352bf16e840ddefd80ed78626dc4d6e4cbd433e7df423",
+      "canonical": [
+        "https://fuelis.lt/kainos/skuodo-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Skuode — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Skuode",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Skuode (2026-10-06), oficialūs LEA duomenys iš 4 degalinių. Dyzelinas vid. €2.240, benzinas 95 vid. €1.940. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 7,
+        "GasStation": 4,
+        "PostalAddress": 4,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/mazeikiu-r-sav.html",
+        "https://fuelis.lt/kainos/kretingos-r-sav.html",
+        "https://fuelis.lt/kainos/palangos-m-sav.html",
+        "https://fuelis.lt/kainos/telsiu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/svencioniu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.004283+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/svencioniu-r-sav.html",
+      "html_sha256": "6830dfb4ae89f4a6cd3625337602b0de18af3f4fe38d3bcd9be80e200156c6fe",
+      "canonical": [
+        "https://fuelis.lt/kainos/svencioniu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Švenčionyse — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Švenčionyse",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Švenčionyse (2026-10-06), oficialūs LEA duomenys iš 7 degalinių. Dyzelinas vid. €2.319, benzinas 95 vid. €2.006. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 10,
+        "GasStation": 7,
+        "PostalAddress": 7,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/visagino-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/taurages-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.149245+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/taurages-r-sav.html",
+      "html_sha256": "6f38a4afab3622da69e99b4d8f714038daa772bddbbc1372a4da53052e7330af",
+      "canonical": [
+        "https://fuelis.lt/kainos/taurages-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Tauragėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Tauragėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Tauragėje (2026-10-06), oficialūs LEA duomenys iš 15 degalinių. Dyzelinas vid. €2.232, benzinas 95 vid. €1.942. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/pagegiu-sav.html",
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+        "https://fuelis.lt/kainos/raseiniu-r-sav.html",
+        "https://fuelis.lt/kainos/silutes-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/telsiu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.197748+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/telsiu-r-sav.html",
+      "html_sha256": "183d000eb91e8cf40b62b7e5e8af460106e04ac4bcb436ae1e1c5aa38ccc2289",
+      "canonical": [
+        "https://fuelis.lt/kainos/telsiu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Telšiuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Telšiuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Telšiuose (2026-10-06), oficialūs LEA duomenys iš 11 degalinių. Dyzelinas vid. €2.274, benzinas 95 vid. €1.974. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/plunges-r-sav.html",
+        "https://fuelis.lt/kainos/mazeikiu-r-sav.html",
+        "https://fuelis.lt/kainos/rietavo-sav.html",
+        "https://fuelis.lt/kainos/akmenes-r-sav.html",
+        "https://fuelis.lt/kainos/silales-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/traku-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.317187+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/traku-r-sav.html",
+      "html_sha256": "948ddd9900efe209ebd32d1f7a8c014503a239bc661b9078316ffeeb460e6519",
+      "canonical": [
+        "https://fuelis.lt/kainos/traku-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Trakuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Trakuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Trakuose (2026-10-06), oficialūs LEA duomenys iš 7 degalinių. Dyzelinas vid. €2.275, benzinas 95 vid. €1.967. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 10,
+        "GasStation": 7,
+        "PostalAddress": 7,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/kaisiadoriu-r-sav.html",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.395314+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/ukmerges-r-sav.html",
+      "html_sha256": "c097acf85804dc3f3a8f30c53fd3f856073377c49e0b03f17fa76813a64bd8e8",
+      "canonical": [
+        "https://fuelis.lt/kainos/ukmerges-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Ukmergėje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Ukmergėje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Ukmergėje (2026-10-06), oficialūs LEA duomenys iš 11 degalinių. Dyzelinas vid. €2.261, benzinas 95 vid. €1.961. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/jonavos-r-sav.html",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/kedainiu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/utenos-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.516179+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/utenos-r-sav.html",
+      "html_sha256": "90fc46bd62cdbca87bb65a83ff030398433d7b71ba0b3901de5e5ce31d215263",
+      "canonical": [
+        "https://fuelis.lt/kainos/utenos-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Utenoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Utenoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Utenoje (2026-10-06), oficialūs LEA duomenys iš 14 degalinių. Dyzelinas vid. €2.235, benzinas 95 vid. €1.925. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/moletu-r-sav.html",
+        "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+        "https://fuelis.lt/kainos/zarasu-r-sav.html",
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/varenos-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.595688+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/varenos-r-sav.html",
+      "html_sha256": "73a1098bb95d70affdbebd7b78560a17c3cd5de27dc0da1c9b474be5f5121e0d",
+      "canonical": [
+        "https://fuelis.lt/kainos/varenos-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Varėnoje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Varėnoje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Varėnoje (2026-10-06), oficialūs LEA duomenys iš 5 degalinių. Dyzelinas vid. €2.311, benzinas 95 vid. €2.007. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 8,
+        "GasStation": 5,
+        "PostalAddress": 5,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/alytaus-m-sav.html",
+        "https://fuelis.lt/kainos/alytaus-r-sav.html",
+        "https://fuelis.lt/kainos/druskininku-sav.html",
+        "https://fuelis.lt/kainos/birstono-sav.html",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.670137+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/vilkaviskio-r-sav.html",
+      "html_sha256": "5eb176cc18f93bd34820d7874649acb623c54f8d6290d84e53ad816725333100",
+      "canonical": [
+        "https://fuelis.lt/kainos/vilkaviskio-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Vilkaviškyje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Vilkaviškyje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Vilkaviškyje (2026-10-06), oficialūs LEA duomenys iš 8 degalinių. Dyzelinas vid. €2.231, benzinas 95 vid. €1.932. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 11,
+        "GasStation": 8,
+        "PostalAddress": 8,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/marijampoles-sav.html",
+        "https://fuelis.lt/kainos/kazlu-rudos-sav.html",
+        "https://fuelis.lt/kainos/kalvarijos-sav.html",
+        "https://fuelis.lt/kainos/sakiu-r-sav.html",
+        "https://fuelis.lt/kainos/jurbarko-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.712541+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+      "html_sha256": "fbb9ba498b08c4f03000a0805f4f0a082fd3f56caeee2e0b5d5645a6a432da7c",
+      "canonical": [
+        "https://fuelis.lt/kainos/vilniaus-m-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Vilniuje — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Vilniuje",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Vilniuje (2026-10-06), oficialūs LEA duomenys iš 108 degalinių. Dyzelinas vid. €2.253, benzinas 95 vid. €1.951. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/salcininku-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.771082+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/vilniaus-r-sav.html",
+      "html_sha256": "e9ebb560a6acc7c69e676966dc5a6050b89b5d7127c0209a5b596ac0beb5d045",
+      "canonical": [
+        "https://fuelis.lt/kainos/vilniaus-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Vilniaus rajone — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Vilniaus rajone",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Vilniaus rajone (2026-10-06), oficialūs LEA duomenys iš 16 degalinių. Dyzelinas vid. €2.249, benzinas 95 vid. €1.941. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 13,
+        "GasStation": 10,
+        "PostalAddress": 10,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/vilniaus-m-sav.html",
+        "https://fuelis.lt/kainos/traku-r-sav.html",
+        "https://fuelis.lt/kainos/elektrenu-sav.html",
+        "https://fuelis.lt/kainos/sirvintu-r-sav.html",
+        "https://fuelis.lt/kainos/salcininku-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/visagino-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.836531+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/visagino-sav.html",
+      "html_sha256": "19153429d5d401079f3658e2f3dbbcb92c5e3857934361d972b3b453b6ddf983",
+      "canonical": [
+        "https://fuelis.lt/kainos/visagino-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Visagine — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Visagine",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Visagine (2026-10-06), oficialūs LEA duomenys iš 5 degalinių. Dyzelinas vid. €2.237, benzinas 95 vid. €1.935. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 8,
+        "GasStation": 5,
+        "PostalAddress": 5,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/zarasu-r-sav.html",
+        "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/svencioniu-r-sav.html",
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    },
+    {
+      "url": "https://fuelis.lt/kainos/zarasu-r-sav.html",
+      "lastmod": "2026-10-06",
+      "checked_utc": "2026-10-06T16:34:03.870236+00:00",
+      "status": 200,
+      "final_url": "https://fuelis.lt/kainos/zarasu-r-sav.html",
+      "html_sha256": "920d248317b95a4dfa8119bb6cf79dee92d2ad825a7afe6df40fae88d59406d8",
+      "canonical": [
+        "https://fuelis.lt/kainos/zarasu-r-sav.html"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "title": "Degalų kainos Zarasuose — pigiausios degalinės | Fuelis",
+      "h1": [
+        {
+          "text": "Degalų kainos Zarasuose",
+          "class": ""
+        }
+      ],
+      "description_count": 1,
+      "description": "Degalų kainos Zarasuose (2026-10-06), oficialūs LEA duomenys iš 3 degalinių. Dyzelinas vid. €2.276, benzinas 95 vid. €1.969. Pigiausių degalinių sąrašas ir žemėlapis.",
+      "jsonld_blocks": 1,
+      "jsonld_parse_errors": 0,
+      "jsonld_types": {
+        "ItemList": 1,
+        "ListItem": 6,
+        "GasStation": 3,
+        "PostalAddress": 3,
+        "BreadcrumbList": 1
+      },
+      "internal_sitemap_links": [
+        "https://fuelis.lt/",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/kainos/visagino-sav.html",
+        "https://fuelis.lt/kainos/utenos-r-sav.html",
+        "https://fuelis.lt/kainos/rokiskio-r-sav.html",
+        "https://fuelis.lt/kainos/ignalinos-r-sav.html",
+        "https://fuelis.lt/kainos/anyksciu-r-sav.html",
+        "https://fuelis.lt/kainos/",
+        "https://fuelis.lt/"
+      ]
+    }
+  ],
+  "domain_verification": {
+    "public_dns_txt_google_verification_present": true,
+    "verification_value_retained": false,
+    "does_not_prove_current_search_console_access": true,
+    "checked": "2026-10-06, approximately16:29UTC; publicDNS result only."
+  },
+  "redirect_checks": [
+    {
+      "from": "http://fuelis.lt/",
+      "status": 301,
+      "to": "https://fuelis.lt/",
+      "final_status": 200
+    },
+    {
+      "from": "https://www.fuelis.lt/",
+      "status": 301,
+      "to": "https://fuelis.lt/",
+      "final_status": 200
+    },
+    {
+      "from": "https://linciuz.github.io/Kuro-kainos-Lietuvoje/",
+      "status": 301,
+      "to": "https://fuelis.lt/",
+      "final_status": 200
+    }
+  ],
+  "extra_head_checks": [
+    {
+      "url": "https://fuelis.lt/index.html",
+      "status": 200,
+      "canonical_note": "HTML canonical resolves to root; no redirect on this alias."
+    },
+    {
+      "url": "https://fuelis.lt/__fuelis_seo_audit_missing_20261006.html",
+      "status": 404
+    }
+  ],
+  "search_visibility_observation": {
+    "observed_by": "parent agent with actual Google in-app browser, signed out, Lithuania/Vilnius",
+    "approximate_utc": "2026-10-06T16:32:00Z",
+    "queries": [
+      "kuro kainos",
+      "kuro kainu paieska"
+    ],
+    "fuelis_on_observed_first_result_pages": false,
+    "site_query": "site:fuelis.lt",
+    "site_query_did_not_show_fuelis_in_observed_page": true,
+    "site_query_not_authoritative_index_status": true
+  },
+  "redirects_checked": "2026-10-06, before the baseline snapshot; exact clock was not recorded for the HEAD requests."
+}

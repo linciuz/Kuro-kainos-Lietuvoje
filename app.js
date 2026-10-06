@@ -2233,9 +2233,8 @@ function getRows() {
 
 function render() {
     renderOilFooter();
-    // The live UI supersedes the pipeline-injected static crawler price line.
-    const _cp = document.getElementById("crawl-prices");
-    if (_cp) _cp.remove();
+    // Keep the dated national snapshot visible. It describes the published
+    // dataset, independently of the active fuel, area and search filters.
     if (fuelType === "ev") {
         // EV mode: no fuel-price banner; chargers in list/map.
         document.getElementById("change-banner").style.display = "none";

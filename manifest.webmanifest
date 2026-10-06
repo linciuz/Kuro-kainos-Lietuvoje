@@ -1,7 +1,7 @@
 {
   "name": "Fuelis",
   "short_name": "Fuelis",
-  "description": "Oficialios degalų kainos Lietuvos degalinėse - pigiausių bei arčiausių paieška, žemėlapis ir kita.",
+  "description": "Kuro kainų paieška Lietuvoje: palyginkite benzino 95, dyzelino ir dujų kainas, raskite degalinę sąraše ar žemėlapyje.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

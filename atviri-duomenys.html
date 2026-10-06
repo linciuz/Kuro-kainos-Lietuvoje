@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atviri duomenys — degalų kainų API | Fuelis</title>
-<meta name="description" content="Nemokama, atvira Lietuvos degalų kainų API: JSON ir CSV, 757 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys, paruošti programuotojams.">
+<meta name="description" content="Nemokama Lietuvos degalų kainų API: JSON ir CSV, 757 degalinių su kainomis, rinkinys 2026-10-06. LEA ir pažymėti operatorių duomenys.">
 <link rel="canonical" href="https://fuelis.lt/atviri-duomenys.html">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fuelis">
 <meta property="og:title" content="Atviri duomenys — Lietuvos degalų kainų API">
-<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 757 degalinių, atnaujinama kasdien. Oficialūs LEA duomenys.">
+<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 757 degalinių su kainomis, 2026-10-06. LEA ir pažymėti operatorių duomenys.">
 <meta property="og:url" content="https://fuelis.lt/atviri-duomenys.html">
 <meta property="og:image" content="https://fuelis.lt/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
  "@context": "https://schema.org",
  "@type": "Dataset",
  "name": "Lietuvos degalų kainos (Fuelis atviri duomenys)",
- "description": "Kasdien atnaujinamos oficialios LEA degalų kainos (benzinas 95, dyzelinas, dujos) 757 Lietuvos degalinių, su koordinatėmis. JSON ir CSV formatais.",
+ "description": "LEA ir pažymėtos naujesnės operatorių kainos: benzinas 95, dyzelinas, LPG, 757 Lietuvos degalinių su kainomis. JSON ir CSV, rinkinio data 2026-10-06.",
  "url": "https://fuelis.lt/atviri-duomenys.html",
  "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
  "isAccessibleForFree": true,
@@ -38,7 +38,7 @@
                "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje" },
  "includedInDataCatalog": { "@type": "DataCatalog", "name": "Fuelis" },
  "distribution": [
-  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "328 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "329 KB" },
   { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "105 KB" },
   { "@type": "DataDownload", "name": "Dienos santrauka (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json", "contentSize": "1 KB" },
   { "@type": "DataDownload", "name": "Kainų istorija (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json", "contentSize": "28 KB" }
@@ -72,8 +72,11 @@
 <div class="wrap">
 <p class="bc"><a href="https://fuelis.lt/">Fuelis</a> › Atviri duomenys</p>
 <h1>Atviri degalų kainų duomenys (API)</h1>
-<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>757 degalinių</strong> su kainomis ir koordinatėmis,
-atnaujinama kasdien (paskutinis rinkinys: <strong>2026-10-06</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>757 degalinių</strong> su paskelbtomis kainomis, adresais ir turimomis koordinatėmis.
+Naujausios gautos darbo dienų kainos (rinkinio data: <strong>2026-10-06</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+<p>Kainų šaltiniai šiame rinkinyje: <strong>portal: 754, saurida: 3</strong>. Pagrindas — LEA duomenys;
+<code>price_src</code> pažymi naujesnę patikrintą operatoriaus kainą, kai ji naudojama.
+Rinkinio data (<code>price_date</code>) ir atskiro kainos įrašo laikas (<code>price_updated</code>) yra skirtingi.</p>
 
 <div class="note">Kodėl tai egzistuoja: LEA kainas skelbia viešai, bet portale ir „Power BI“ skydelyje —
 iš jų programiškai pasiimti duomenis nėra paprasta. Čia tie patys duomenys pateikiami
@@ -96,7 +99,14 @@ stabilia, dokumentuota schema, kad juos galėtum tiesiog <code>fetch</code>-inti
 <h3>Pigiausias dyzelinas (JavaScript)</h3>
 <pre><code>const r = await fetch("https://fuelis.lt/api/summary.json").then(r =&gt; r.json());
 console.log(r.cheapest.diesel);
-// { price: 1.94, network: "…", address: "…", municipality: "…" }</code></pre>
+</code></pre>
+<p>Šio <strong>2026-10-06</strong> rinkinio tikras atsakymo pavyzdys:</p>
+<pre><code>{
+ &quot;price&quot;: 2.139,
+ &quot;network&quot;: &quot;UAB Baltic Petroleum&quot;,
+ &quot;address&quot;: &quot;Anykščiai, Mindaugo g. 23, 29141&quot;,
+ &quot;municipality&quot;: &quot;Anykščių r. sav.&quot;
+}</code></pre>
 <h3>Į „pandas“ (Python)</h3>
 <pre><code>import pandas as pd
 df = pd.read_csv("https://fuelis.lt/api/prices.csv")
@@ -110,7 +120,7 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 <tr><td><code>municipality</code></td><td>string</td><td>Savivaldybė (pvz. <code>Kauno m. sav.</code>).</td></tr>
 <tr><td><code>lat</code>, <code>lon</code></td><td>number</td><td>WGS-84. Daugumai — oficialios operatoriaus koordinatės; likusios geokoduotos.</td></tr>
 <tr><td><code>petrol95</code>, <code>diesel</code>, <code>lpg</code></td><td>number | null</td><td>EUR už litrą. <code>null</code> = degalinė to kuro neteikia arba kainos nepateikė.</td></tr>
-<tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kada LEA įraše paskutinį kartą fiksuota ši kaina.</td></tr>
+<tr><td><code>price_updated</code></td><td>ISO 8601</td><td>Kainos šaltinio įrašo laikas; operatoriaus kainai tai gali būti jos surinkimo laikas. Tai nėra rinkinio sugeneravimo laikas.</td></tr>
 <tr><td><code>price_src</code></td><td>string | null</td><td>Kainos šaltinis: <code>portal</code>, <code>sharepoint</code> arba naujesnė patikrinta operatoriaus kaina (<code>saurida</code>).</td></tr>
 <tr><td><code>display_municipality</code>, <code>display_municipality_source</code></td><td>string | null</td><td>Patikslinta rodoma savivaldybė ir jos šaltinis, jei LEA klasifikacija skiriasi nuo patikrintos vietos. <code>municipality</code> išsaugo LEA klasifikaciją.</td></tr>
 <tr><td><code>display_address</code>, <code>display_address_source</code></td><td>string | null</td><td>Pasirenkamas patikslintas rodomas adresas ir jo šaltinis JSON rinkiniuose. Naudojamas tik kai abu laukai pateikti; <code>address</code> išsaugo originalų LEA adresą.</td></tr>
@@ -133,17 +143,21 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
 }</code></pre>
 
 <h2>Atnaujinimo dažnis</h2>
-<p>LEA skelbia apie <strong>10:00</strong> Lietuvos laiku darbo dienomis. Mūsų konvejeris tikrina dažniau ir
-paskelbia iškart, kai atsiranda naujesni duomenys, todėl <code>price_date</code> paprastai pasikeičia
-per kelias minutes nuo LEA paskelbimo. Savaitgaliais ir per šventes LEA neskelbia — tuomet
-lieka paskutinės darbo dienos kainos.</p>
+<p>LEA pateikia darbo dienų kainų rinkinius. Tikriname juos kelis kartus per dieną;
+tikslus naujo rinkinio paskelbimo laikas ir jo pasirodymo Fuelis vėlavimas nėra garantuojami.
+Savaitgaliais, per šventes ar dar negavus naujo rinkinio gali likti ankstesnės darbo dienos kainos.
+Vertinkite <code>price_date</code> ir kiekvieno įrašo <code>price_updated</code>.
+<code>generated_utc</code> žymi tik API failo paruošimo laiką.</p>
 
 <h2 id="licencija">Licencija ir nuorodos</h2>
-<p>Kainos yra <strong>LEA vieši duomenys</strong> — jos mums nepriklauso, todėl jų ir nelicencijuojame.
-Laisvai (taip pat ir komerciškai) siūlome <em>rinkinį</em>: išvalytą, geokoduotą, stabilios schemos.</p>
+<p>Fuelis nemokamai, taip pat ir komerciniam naudojimui, siūlo savo išvalytą,
+geokoduotą, stabilios schemos <em>rinkinį</em>. Pirminiai šaltiniai — LEA ir
+atskiruose įrašuose pažymėti operatoriai. Šis rinkinio naudojimo pasiūlymas
+nėra nauja pirminių LEA ar operatorių kainų duomenų licencija.</p>
 <ul>
-<li>Naudok kam nori — programai, tyrimui, straipsniui, botui.</li>
-<li>Nurodyk pirminį šaltinį: <strong>Lietuvos energetikos agentūra (LEA)</strong>, <a href="https://degalukainos.ena.lt/" rel="nofollow">degalukainos.ena.lt</a>.</li>
+<li>Išsaugok kainos šaltinį ir datą, kai duomenis rodai programoje, tyrime ar straipsnyje.</li>
+<li>Nurodyk pirminį šaltinį: <strong>Lietuvos energetikos agentūra (LEA)</strong>,
+<a href="https://degalukainos.ena.lt/">degalukainos.ena.lt</a>, arba įraše pažymėtą operatorių.</li>
 <li>Būtume dėkingi už nuorodą į <a href="https://fuelis.lt/">fuelis.lt</a>.</li>
 </ul>
 <div class="note warn"><strong>Be garantijų.</strong> Duomenys teikiami tokie, kokie yra. Kainos degalinėje
@@ -155,7 +169,7 @@ Jei kuri kažką su šiais duomenimis — parodyk, mielai pasidalinsime.</p>
 
 <footer>
 <p><a href="https://fuelis.lt/">← Fuelis: degalų kainų žemėlapis</a> · <a href="https://fuelis.lt/kainos/">Kainos pagal savivaldybę</a> · <a href="https://fuelis.lt/privatumas.html">Privatumas</a></p>
-<p>Duomenys: Lietuvos energetikos agentura (LEA). Rinkinys: Fuelis (https://fuelis.lt).</p>
+<p>Duomenys: Lietuvos energetikos agentura (LEA) ir pažymėti kainų operatoriai. Rinkinys: Fuelis (https://fuelis.lt).</p>
 </footer>
 </div>
 </body>
