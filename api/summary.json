@@ -1,45 +1,45 @@
 {
  "$schema_version": 1,
- "price_date": "2026-10-06",
+ "price_date": "2026-10-07",
  "currency": "EUR",
- "stations_with_prices": 757,
+ "stations_with_prices": 754,
  "national": {
   "petrol95": {
-   "min": 1.819,
-   "avg": 1.951,
+   "min": 1.785,
+   "avg": 1.925,
    "max": 2.05,
    "count": 731
   },
   "diesel": {
-   "min": 2.139,
-   "avg": 2.251,
+   "min": 2.089,
+   "avg": 2.22,
    "max": 2.35,
    "count": 733
   },
   "lpg": {
-   "min": 0.75,
-   "avg": 0.838,
+   "min": 0.73,
+   "avg": 0.84,
    "max": 0.959,
-   "count": 596
+   "count": 593
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.819,
+   "price": 1.785,
    "network": "UAB Alauša",
-   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
-   "municipality": "Anykščių r. sav."
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
+   "municipality": "Utenos r. sav."
   },
   "diesel": {
-   "price": 2.139,
-   "network": "UAB Baltic Petroleum",
-   "address": "Anykščiai, Mindaugo g. 23, 29141",
-   "municipality": "Anykščių r. sav."
+   "price": 2.089,
+   "network": "UAB Alauša",
+   "address": "Vilnius, Šv. Stepono g. 44, 01312",
+   "municipality": "Vilniaus m. sav."
   },
   "lpg": {
-   "price": 0.75,
-   "network": "UAB Madalva",
-   "address": "Plungė, Lentpjūvės g. 10A, 90118",
+   "price": 0.73,
+   "network": "UAB Jozita",
+   "address": "Varkaliai, Žemaičių g. 2A, 90105",
    "municipality": "Plungės r. sav."
   }
  },
