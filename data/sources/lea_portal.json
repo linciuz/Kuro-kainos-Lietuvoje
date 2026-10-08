@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-08T12:16:02Z",
+ "generated": "2026-10-08T19:27:03Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-10-08 14:28:42",
+ "api_last_updated": "2026-10-08 16:57:54",
  "count": 765,
  "with_coords": 764,
  "priced": 751,
@@ -1571,13 +1571,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "lpg": 0.87,
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 404,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1592,13 +1592,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "lpg": 0.87,
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 405,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1613,13 +1613,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "lpg": 0.87,
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 406,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1633,12 +1633,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 408,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Saurida",
@@ -6225,13 +6225,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.199,
-    "petrol95": 1.899
+    "lpg": 0.87,
+    "diesel": 2.149,
+    "petrol95": 1.859
    },
    "gas_station_id": 401,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:53.000000Z"
   },
   {
    "company": "UAB Mindega",
@@ -11129,13 +11129,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
+    "lpg": 0.87,
     "diesel": 2.189,
     "petrol95": 1.889
    },
    "gas_station_id": 400,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:53.000000Z"
   },
   {
    "company": "UAB Melkasta",
@@ -14001,13 +14001,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "lpg": 0.87,
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 402,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14022,13 +14022,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "lpg": 0.87,
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 407,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14042,12 +14042,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.23,
-    "petrol95": 1.93
+    "diesel": 2.19,
+    "petrol95": 1.89
    },
    "gas_station_id": 409,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14062,13 +14062,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.81,
-    "diesel": 2.239,
-    "petrol95": 1.939
+    "lpg": 0.87,
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 403,
    "logo_url": null,
-   "submitted_at": "2026-10-08T07:00:00.000000Z"
+   "submitted_at": "2026-10-08T13:57:54.000000Z"
   },
   {
    "company": "UAB Saurida",
