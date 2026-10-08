@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T07:30:48Z",
+  "generated": "2026-10-08T07:45:49Z",
   "lea_date": "2026-10-08",
   "threshold": 0.015,
   "sources": [
@@ -14,13 +14,13 @@
       ],
       "fuel": "petrol95",
       "lea_min": 1.839,
-      "live": 1.869,
-      "delta": 0.03,
+      "live": 1.889,
+      "delta": 0.05,
       "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
-      "stated_date": "spalio 7"
+      "stated_date": "spalio 8"
     },
     {
       "chain": "Circle K",
@@ -29,13 +29,13 @@
       ],
       "fuel": "diesel",
       "lea_min": 2.119,
-      "live": 2.159,
-      "delta": 0.04,
+      "live": 2.179,
+      "delta": 0.06,
       "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
-      "stated_date": "spalio 7"
+      "stated_date": "spalio 8"
     },
     {
       "chain": "Circle K",
@@ -44,13 +44,13 @@
       ],
       "fuel": "lpg",
       "lea_min": 0.826,
-      "live": 0.809,
-      "delta": -0.017,
-      "direction": "down",
+      "live": 0.866,
+      "delta": 0.04,
+      "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
-      "stated_date": "spalio 7"
+      "stated_date": "spalio 8"
     },
     {
       "chain": "Saurida",
