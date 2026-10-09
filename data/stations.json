@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-09T11:01:06+00:00Z",
+    "resolved_utc": "2026-10-09T11:15:31+00:00Z",
     "winner_counts": {
       "portal": 757,
       "null": 8
@@ -16,7 +16,7 @@
         "date": "2026-10-09",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-09T11:01:04+00:00Z"
+        "fetched_utc": "2026-10-09T11:15:30+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-09T11:01:06+00:00Z"
+        "fetched_utc": "2026-10-09T11:15:31+00:00Z"
       }
     ]
   },
@@ -4968,8 +4968,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.669656,
       "lon": 21.158613,
       "approx": false
@@ -4987,8 +4989,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.728398,
       "lon": 21.132584,
       "approx": false
@@ -5367,8 +5371,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.712282,
       "lon": 21.381627,
       "approx": false
@@ -5386,8 +5392,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.687241,
       "lon": 21.693525,
       "approx": false,
@@ -5406,8 +5414,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.721342,
       "lon": 21.385487,
       "approx": false
@@ -5425,8 +5435,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.582082,
       "lon": 21.285263,
       "approx": false,
@@ -5614,16 +5626,18 @@
       "address": "Darbėnai, Laisvės g. 15, 97264",
       "municipality": "Kretingos r. sav.",
       "locality": "",
-      "petrol95": 1.94,
-      "diesel": 2.22,
-      "lpg": 0.88,
+      "petrol95": 1.99,
+      "diesel": 2.29,
+      "lpg": 0.91,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 56.026775,
       "lon": 21.262624,
       "approx": false
@@ -5633,16 +5647,18 @@
       "address": "Kretinga, Vilniaus g. 29B, 97101",
       "municipality": "Kretingos r. sav.",
       "locality": "",
-      "petrol95": 1.94,
-      "diesel": 2.22,
-      "lpg": 0.88,
+      "petrol95": 1.99,
+      "diesel": 2.29,
+      "lpg": 0.91,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.896943,
       "lon": 21.244326,
       "approx": false
@@ -9253,8 +9269,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.626937,
       "lon": 21.971782,
       "approx": false,
@@ -9272,8 +9290,10 @@
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.718446,
       "lon": 21.932212,
       "approx": false,
@@ -14915,8 +14935,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.464353,
       "lon": 21.470278,
       "approx": false,
@@ -14935,8 +14957,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T10:00:00+03:00",
+      "price_updated": "2026-10-09T14:03:07+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:03",
       "lat": 55.227536,
       "lon": 21.701884,
       "approx": false,
