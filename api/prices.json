@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-09T08:01:04Z",
+ "generated_utc": "2026-10-09T08:15:44Z",
  "price_date": "2026-10-09",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.799,
    "avg": 1.914,
    "max": 2.14,
-   "count": 730
+   "count": 731
   },
   "diesel": {
    "min": 1.88,
    "avg": 2.2,
    "max": 2.349,
-   "count": 732
+   "count": 733
   },
   "lpg": {
    "min": 0.69,
@@ -56,7 +56,7 @@
    "municipality": "Kelmės r. sav."
   }
  },
- "count": 756,
+ "count": 757,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4436,6 +4436,22 @@
    "diesel": 2.259,
    "lpg": 0.899,
    "price_updated": "2026-10-09T09:45:22+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.89,
+   "diesel": 2.18,
+   "lpg": null,
+   "price_updated": "2026-10-09T11:01:34+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -10768,10 +10784,10 @@
    "municipality": "Visagino sav.",
    "lat": 55.590381,
    "lon": 26.463361,
-   "petrol95": 1.876,
-   "diesel": 2.176,
+   "petrol95": 1.854,
+   "diesel": 2.154,
    "lpg": null,
-   "price_updated": "2026-10-09T09:15:06+03:00",
+   "price_updated": "2026-10-09T11:14:18+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
