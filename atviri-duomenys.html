@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atviri duomenys — degalų kainų API | Fuelis</title>
-<meta name="description" content="Nemokama Lietuvos degalų kainų API: JSON ir CSV, 751 degalinių su kainomis, rinkinys 2026-10-08. LEA ir pažymėti operatorių duomenys.">
+<meta name="description" content="Nemokama Lietuvos degalų kainų API: JSON ir CSV, 756 degalinių su kainomis, rinkinys 2026-10-09. LEA ir pažymėti operatorių duomenys.">
 <link rel="canonical" href="https://fuelis.lt/atviri-duomenys.html">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fuelis">
 <meta property="og:title" content="Atviri duomenys — Lietuvos degalų kainų API">
-<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 751 degalinių su kainomis, 2026-10-08. LEA ir pažymėti operatorių duomenys.">
+<meta property="og:description" content="Nemokama JSON/CSV degalų kainų API: 756 degalinių su kainomis, 2026-10-09. LEA ir pažymėti operatorių duomenys.">
 <meta property="og:url" content="https://fuelis.lt/atviri-duomenys.html">
 <meta property="og:image" content="https://fuelis.lt/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
  "@context": "https://schema.org",
  "@type": "Dataset",
  "name": "Lietuvos degalų kainos (Fuelis atviri duomenys)",
- "description": "LEA ir pažymėtos naujesnės operatorių kainos: benzinas 95, dyzelinas, LPG, 751 Lietuvos degalinių su kainomis. JSON ir CSV, rinkinio data 2026-10-08.",
+ "description": "LEA ir pažymėtos naujesnės operatorių kainos: benzinas 95, dyzelinas, LPG, 756 Lietuvos degalinių su kainomis. JSON ir CSV, rinkinio data 2026-10-09.",
  "url": "https://fuelis.lt/atviri-duomenys.html",
  "keywords": ["degalų kainos", "kuro kainos", "Lietuva", "benzinas", "dyzelinas", "LPG", "open data"],
  "isAccessibleForFree": true,
@@ -38,8 +38,8 @@
                "sameAs": "https://github.com/linciuz/Kuro-kainos-Lietuvoje" },
  "includedInDataCatalog": { "@type": "DataCatalog", "name": "Fuelis" },
  "distribution": [
-  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "326 KB" },
-  { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "104 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/prices.json", "contentSize": "328 KB" },
+  { "@type": "DataDownload", "name": "Visos degalinės (CSV)", "encodingFormat": "text/csv", "contentUrl": "https://fuelis.lt/api/prices.csv", "contentSize": "105 KB" },
   { "@type": "DataDownload", "name": "Dienos santrauka (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/summary.json", "contentSize": "1 KB" },
   { "@type": "DataDownload", "name": "Kainų istorija (JSON)", "encodingFormat": "application/json", "contentUrl": "https://fuelis.lt/api/history.json", "contentSize": "29 KB" }
  ]
@@ -72,9 +72,9 @@
 <div class="wrap">
 <p class="bc"><a href="https://fuelis.lt/">Fuelis</a> › Atviri duomenys</p>
 <h1>Atviri degalų kainų duomenys (API)</h1>
-<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>751 degalinių</strong> su paskelbtomis kainomis, adresais ir turimomis koordinatėmis.
-Naujausios gautos darbo dienų kainos (rinkinio data: <strong>2026-10-08</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
-<p>Kainų šaltiniai šiame rinkinyje: <strong>portal: 723, saurida: 28</strong>. Pagrindas — LEA duomenys;
+<p class="lead">Nemokama, atvira Lietuvos degalų kainų API. <strong>756 degalinių</strong> su paskelbtomis kainomis, adresais ir turimomis koordinatėmis.
+Naujausios gautos darbo dienų kainos (rinkinio data: <strong>2026-10-09</strong>). JSON ir CSV. Be registracijos, be raktų, be limitų.</p>
+<p>Kainų šaltiniai šiame rinkinyje: <strong>portal: 756</strong>. Pagrindas — LEA duomenys;
 <code>price_src</code> pažymi naujesnę patikrintą operatoriaus kainą, kai ji naudojama.
 Rinkinio data (<code>price_date</code>) ir atskiro kainos įrašo laikas (<code>price_updated</code>) yra skirtingi.</p>
 
@@ -86,7 +86,7 @@ stabilia, dokumentuota schema, kad juos galėtum tiesiog <code>fetch</code>-inti
 <table>
 <tr><th>URL</th><th>Kas tai</th><th>Dydis</th></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/api/summary.json">/api/summary.json</a></td><td>Šalies vidurkiai + pigiausia degalinė kiekvienam kurui. <strong>Pradėk nuo šito</strong> — botams ir valdikliams to paprastai užtenka.</td><td>~1 KB</td></tr>
-<tr><td class="ep"><a href="https://fuelis.lt/api/prices.json">/api/prices.json</a></td><td>Visos degalinės: tinklas, adresas, savivaldybė, koordinatės, trys kainos, atnaujinimo laikas.</td><td>~168 KB</td></tr>
+<tr><td class="ep"><a href="https://fuelis.lt/api/prices.json">/api/prices.json</a></td><td>Visos degalinės: tinklas, adresas, savivaldybė, koordinatės, trys kainos, atnaujinimo laikas.</td><td>~169 KB</td></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/api/prices.csv">/api/prices.csv</a></td><td>Tas pats CSV — „Excel“, „Google Sheets“, R, pandas.</td><td>~95 KB</td></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/api/history.json">/api/history.json</a></td><td>Dienos šalies min./vid./maks. nuo 2026-04-08 — grafikams ir tendencijoms.</td><td>~30 KB</td></tr>
 <tr><td class="ep"><a href="https://fuelis.lt/feed.xml">/feed.xml</a></td><td>RSS: kasdienė kainų santrauka.</td><td>—</td></tr>
@@ -100,12 +100,12 @@ stabilia, dokumentuota schema, kad juos galėtum tiesiog <code>fetch</code>-inti
 <pre><code>const r = await fetch("https://fuelis.lt/api/summary.json").then(r =&gt; r.json());
 console.log(r.cheapest.diesel);
 </code></pre>
-<p>Šio <strong>2026-10-08</strong> rinkinio tikras atsakymo pavyzdys:</p>
+<p>Šio <strong>2026-10-09</strong> rinkinio tikras atsakymo pavyzdys:</p>
 <pre><code>{
- &quot;price&quot;: 2.089,
- &quot;network&quot;: &quot;UAB Neste Lietuva&quot;,
- &quot;address&quot;: &quot;Tauragė, Dariaus ir Girėno g. 130A, 72194&quot;,
- &quot;municipality&quot;: &quot;Tauragės r. sav.&quot;
+ &quot;price&quot;: 1.88,
+ &quot;network&quot;: &quot;UAB Nostrada&quot;,
+ &quot;address&quot;: &quot;Kazlavo k. 4, 69285&quot;,
+ &quot;municipality&quot;: &quot;Kalvarijos sav.&quot;
 }</code></pre>
 <h3>Į „pandas“ (Python)</h3>
 <pre><code>import pandas as pd
@@ -133,8 +133,8 @@ print(df.groupby("municipality")["diesel_eur"].mean().sort_values().head())</cod
  &quot;lon&quot;: 22.885615,
  &quot;petrol95&quot;: 1.919,
  &quot;diesel&quot;: 2.189,
- &quot;lpg&quot;: 0.79,
- &quot;price_updated&quot;: &quot;2026-10-08T09:25:58+03:00&quot;,
+ &quot;lpg&quot;: 0.81,
+ &quot;price_updated&quot;: &quot;2026-10-09T09:42:22+03:00&quot;,
  &quot;price_src&quot;: &quot;portal&quot;,
  &quot;display_municipality&quot;: null,
  &quot;display_municipality_source&quot;: null,
