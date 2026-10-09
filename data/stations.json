@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-09T18:59:49+00:00Z",
+    "resolved_utc": "2026-10-09T22:00:42+00:00Z",
     "winner_counts": {
       "portal": 740,
       "null": 8,
@@ -17,7 +17,7 @@
         "date": "2026-10-09",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-09T18:59:48+00:00Z"
+        "fetched_utc": "2026-10-09T22:00:41+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-09T18:59:49+00:00Z"
+        "fetched_utc": "2026-10-09T22:00:42+00:00Z"
       }
     ]
   },
@@ -142,7 +142,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 56.298148,
       "lon": 22.885039,
@@ -321,7 +321,7 @@
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.411306,
       "lon": 24.06765,
@@ -340,7 +340,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.423527,
       "lon": 24.020394,
@@ -1656,7 +1656,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 55.083916,
       "lon": 22.606942,
@@ -1774,7 +1774,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.87185,
       "lon": 24.213203,
@@ -2008,7 +2008,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.436202,
       "lon": 23.204823,
@@ -3337,7 +3337,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.923684,
       "lon": 24.000842,
@@ -4092,7 +4092,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 55.096967,
       "lon": 23.806249,
@@ -5441,7 +5441,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 55.656839,
       "lon": 21.183821,
@@ -6429,7 +6429,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.233269,
       "lon": 23.539946,
@@ -8790,7 +8790,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.646657,
       "lon": 23.930492,
@@ -9056,7 +9056,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 55.814602,
       "lon": 23.553195,
@@ -9670,7 +9670,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 56.261388,
       "lon": 21.529906,
@@ -10173,16 +10173,18 @@
       "address": "Telšiai, Masčio g. 21, 87139",
       "municipality": "Telšių r. sav.",
       "locality": "",
-      "petrol95": 1.945,
-      "diesel": 2.225,
+      "petrol95": 1.965,
+      "diesel": 2.245,
       "lpg": 0.899,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T07:26:59+03:00",
+      "price_updated": "2026-10-09T22:32:21+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "22:32",
       "lat": 55.9757,
       "lon": 22.263657,
       "approx": false
@@ -10459,7 +10461,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 55.165001,
       "lon": 24.515676,
@@ -13583,7 +13585,7 @@
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.737396,
       "lon": 25.079988,
@@ -13603,7 +13605,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.724842,
       "lon": 25.185979,
@@ -13961,7 +13963,7 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-09T15:07:43+03:00",
+      "price_updated": "2026-10-09T22:02:18+03:00",
       "price_src": "saurida",
       "lat": 54.977307,
       "lon": 23.483572,
