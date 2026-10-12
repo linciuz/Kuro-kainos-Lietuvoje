@@ -4,10 +4,10 @@
   "scope": "wholesale",
   "unit": "EUR/l @15°C",
   "fetched": "2026-10-12",
-  "stated_date": "08.10",
+  "stated_date": "09.10",
   "prices": {
-    "diesel_agri": 1.5,
-    "petrol95": 1.795,
-    "diesel": 2.066
+    "diesel_agri": 1.561,
+    "petrol95": 1.813,
+    "diesel": 2.127
   }
 }
