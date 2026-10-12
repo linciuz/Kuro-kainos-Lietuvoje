@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-12T13:57:24Z",
+  "generated": "2026-10-12T15:21:49Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
-  "count": 5,
+  "count": 4,
   "promos": [
     {
       "title": "Nuolaidų savaitgaliai (ViadaPLUS)",
@@ -36,19 +36,11 @@
       "fuel_related": true,
       "kind": "seasonal",
       "active": true
-    },
-    {
-      "title": "Savaitgaliauk ir keliauk",
-      "url": "https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
-      "slug": "savaitgaliauk-ir-keliauk",
-      "fuel_related": true,
-      "kind": "seasonal",
-      "active": true
     }
   ],
   "wednesday_check": {
     "status": "unavailable",
-    "checked": "2026-10-12T13:57:24Z",
+    "checked": "2026-10-12T15:21:49Z",
     "listing_url": "https://www.viada.lt/akcijos/",
     "source_url": "https://www.viada.lt/akcija/super-treciadieniai/"
   }
