@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T11:46:42Z",
+  "generated": "2026-10-13T12:01:39Z",
   "lea_date": "2026-10-13",
   "threshold": 0.015,
   "sources": [
@@ -46,11 +46,11 @@
       "networks": [
         "UAB Saurida"
       ],
-      "fuel": "diesel",
-      "lea_min": 2.13,
-      "live": 2.16,
-      "delta": 0.03,
-      "direction": "up",
+      "fuel": "petrol95",
+      "lea_min": 1.9,
+      "live": 1.88,
+      "delta": -0.02,
+      "direction": "down",
       "scope": "per_station",
       "source": "Saurida",
       "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
@@ -81,9 +81,9 @@
         "UAB Saurida"
       ],
       "fuel": "lpg",
-      "lea_min": 0.84,
+      "lea_min": 0.87,
       "live": 0.79,
-      "delta": -0.05,
+      "delta": -0.08,
       "direction": "down",
       "scope": "per_station",
       "source": "Saurida",
@@ -98,9 +98,9 @@
         "UAB Saurida"
       ],
       "fuel": "lpg",
-      "lea_min": 0.82,
+      "lea_min": 0.84,
       "live": 0.8,
-      "delta": -0.02,
+      "delta": -0.04,
       "direction": "down",
       "scope": "per_station",
       "source": "Saurida",
@@ -114,10 +114,44 @@
       "networks": [
         "UAB Saurida"
       ],
+      "fuel": "petrol95",
+      "lea_min": 1.9,
+      "live": 1.85,
+      "delta": -0.05,
+      "direction": "down",
+      "scope": "per_station",
+      "source": "Saurida",
+      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+      "stated_date": null,
+      "station_key": "UAB Saurida|Vilnius, Jankiškių g. 43a, 02300|Vilniaus m. sav.",
+      "address": "Vilnius, Jankiškių g. 43a, 02300"
+    },
+    {
+      "chain": "Saurida",
+      "networks": [
+        "UAB Saurida"
+      ],
       "fuel": "lpg",
-      "lea_min": 0.83,
-      "live": 0.79,
-      "delta": -0.04,
+      "lea_min": 0.88,
+      "live": 0.81,
+      "delta": -0.07,
+      "direction": "down",
+      "scope": "per_station",
+      "source": "Saurida",
+      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+      "stated_date": null,
+      "station_key": "UAB Saurida|Vilnius, Jankiškių g. 43a, 02300|Vilniaus m. sav.",
+      "address": "Vilnius, Jankiškių g. 43a, 02300"
+    },
+    {
+      "chain": "Saurida",
+      "networks": [
+        "UAB Saurida"
+      ],
+      "fuel": "petrol95",
+      "lea_min": 1.94,
+      "live": 1.88,
+      "delta": -0.06,
       "direction": "down",
       "scope": "per_station",
       "source": "Saurida",
@@ -132,9 +166,26 @@
         "UAB Saurida"
       ],
       "fuel": "lpg",
-      "lea_min": 0.84,
+      "lea_min": 0.85,
       "live": 0.79,
-      "delta": -0.05,
+      "delta": -0.06,
+      "direction": "down",
+      "scope": "per_station",
+      "source": "Saurida",
+      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+      "stated_date": null,
+      "station_key": "UAB Saurida|Skuodas, Vytauto g. 20, 98123|Skuodo r. sav.",
+      "address": "Skuodas, Vytauto g. 20, 98123"
+    },
+    {
+      "chain": "Saurida",
+      "networks": [
+        "UAB Saurida"
+      ],
+      "fuel": "lpg",
+      "lea_min": 0.86,
+      "live": 0.79,
+      "delta": -0.07,
       "direction": "down",
       "scope": "per_station",
       "source": "Saurida",
@@ -148,10 +199,27 @@
       "networks": [
         "UAB Saurida"
       ],
+      "fuel": "petrol95",
+      "lea_min": 1.9,
+      "live": 1.87,
+      "delta": -0.03,
+      "direction": "down",
+      "scope": "per_station",
+      "source": "Saurida",
+      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
+      "stated_date": null,
+      "station_key": "UAB Saurida|Panarvės k., 67168|Lazdijų r. sav.",
+      "address": "Panarvės k., 67168"
+    },
+    {
+      "chain": "Saurida",
+      "networks": [
+        "UAB Saurida"
+      ],
       "fuel": "lpg",
-      "lea_min": 0.83,
+      "lea_min": 0.84,
       "live": 0.79,
-      "delta": -0.04,
+      "delta": -0.05,
       "direction": "down",
       "scope": "per_station",
       "source": "Saurida",
