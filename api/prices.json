@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-13T08:31:39Z",
+ "generated_utc": "2026-10-13T08:46:38Z",
  "price_date": "2026-10-13",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -31,7 +31,7 @@
   },
   "lpg": {
    "min": 0.69,
-   "avg": 0.884,
+   "avg": 0.885,
    "max": 0.999,
    "count": 594
   }
@@ -4672,10 +4672,10 @@
    "municipality": "Kupiškio r. sav.",
    "lat": 55.827171,
    "lon": 24.985997,
-   "petrol95": 1.899,
-   "diesel": 2.159,
-   "lpg": 0.759,
-   "price_updated": "2026-10-13T10:12:16+03:00",
+   "petrol95": 1.849,
+   "diesel": 2.149,
+   "lpg": 0.829,
+   "price_updated": "2026-10-13T11:39:05+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
