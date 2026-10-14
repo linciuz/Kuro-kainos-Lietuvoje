@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-14T08:01:15Z",
+ "generated_utc": "2026-10-14T08:16:35Z",
  "price_date": "2026-10-14",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.815,
    "avg": 1.965,
    "max": 2.059,
-   "count": 733
+   "count": 734
   },
   "diesel": {
    "min": 2.095,
    "avg": 2.226,
    "max": 2.349,
-   "count": 735
+   "count": 736
   },
   "lpg": {
    "min": 0.69,
@@ -56,7 +56,7 @@
    "municipality": "Kelmės r. sav."
   }
  },
- "count": 759,
+ "count": 760,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -7476,6 +7476,22 @@
    "diesel": 2.22,
    "lpg": null,
    "price_updated": "2026-10-14T10:00:00+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "Lašų žemės ūkio bendrovė",
+   "address": "Vytėnai, Vytėnų vs 9, 42255",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.8574667,
+   "lon": 25.7336514,
+   "petrol95": 1.97,
+   "diesel": 2.27,
+   "lpg": null,
+   "price_updated": "2026-10-14T11:08:56+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
