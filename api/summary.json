@@ -1,34 +1,34 @@
 {
  "$schema_version": 1,
- "price_date": "2026-10-13",
+ "price_date": "2026-10-14",
  "currency": "EUR",
- "stations_with_prices": 755,
+ "stations_with_prices": 759,
  "national": {
   "petrol95": {
    "min": 1.815,
-   "avg": 1.984,
-   "max": 2.069,
-   "count": 731
+   "avg": 1.965,
+   "max": 2.059,
+   "count": 733
   },
   "diesel": {
    "min": 2.095,
-   "avg": 2.244,
+   "avg": 2.226,
    "max": 2.349,
-   "count": 733
+   "count": 735
   },
   "lpg": {
    "min": 0.69,
-   "avg": 0.883,
+   "avg": 0.885,
    "max": 0.999,
-   "count": 595
+   "count": 599
   }
  },
  "cheapest": {
   "petrol95": {
    "price": 1.815,
    "network": "UAB Alauša",
-   "address": "Kaunas, Palemono g. 171, 52107",
-   "municipality": "Kauno m. sav."
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
+   "municipality": "Utenos r. sav."
   },
   "diesel": {
    "price": 2.095,
