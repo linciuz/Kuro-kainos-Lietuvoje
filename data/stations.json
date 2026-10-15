@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-15T11:46:00+00:00Z",
+    "resolved_utc": "2026-10-15T12:01:14+00:00Z",
     "winner_counts": {
       "portal": 740,
       "saurida": 17,
@@ -17,7 +17,7 @@
         "date": "2026-10-15",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-15T11:45:59+00:00Z"
+        "fetched_utc": "2026-10-15T12:01:13+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,7 +25,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-15T11:46:00+00:00Z"
+        "fetched_utc": "2026-10-15T12:01:14+00:00Z"
       }
     ]
   },
@@ -10168,16 +10168,18 @@
       "address": "Luokė, Telšių g. 66, 88236",
       "municipality": "Telšių r. sav.",
       "locality": "",
-      "petrol95": 1.99,
-      "diesel": 2.28,
-      "lpg": 0.85,
+      "petrol95": 2.0,
+      "diesel": 2.25,
+      "lpg": 0.93,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-15T10:00:00+03:00",
+      "price_updated": "2026-10-15T14:58:10+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:58",
       "lat": 55.901344,
       "lon": 22.506292,
       "approx": false
