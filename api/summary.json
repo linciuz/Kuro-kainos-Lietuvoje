@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-10-14",
+ "price_date": "2026-10-15",
  "currency": "EUR",
- "stations_with_prices": 760,
+ "stations_with_prices": 753,
  "national": {
   "petrol95": {
-   "min": 1.815,
-   "avg": 1.966,
-   "max": 2.059,
-   "count": 734
+   "min": 1.799,
+   "avg": 1.945,
+   "max": 2.079,
+   "count": 727
   },
   "diesel": {
-   "min": 2.095,
-   "avg": 2.226,
-   "max": 2.349,
-   "count": 736
+   "min": 2.027,
+   "avg": 2.212,
+   "max": 2.379,
+   "count": 729
   },
   "lpg": {
    "min": 0.69,
-   "avg": 0.885,
+   "avg": 0.892,
    "max": 0.999,
-   "count": 599
+   "count": 593
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.815,
-   "network": "UAB Alauša",
-   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
-   "municipality": "Utenos r. sav."
+   "price": 1.799,
+   "network": "UAB Baltic Petroleum",
+   "address": "Kaunas, Chemijos g. 6, 51344",
+   "municipality": "Kauno m. sav."
   },
   "diesel": {
-   "price": 2.095,
-   "network": "UAB Alauša",
-   "address": "Kaunas, Palemono g. 171, 52107",
-   "municipality": "Kauno m. sav."
+   "price": 2.027,
+   "network": "UAB Atsiauta",
+   "address": "Kuršėnai, Vytauto g. 80, 81146",
+   "municipality": "Šiaulių r. sav."
   },
   "lpg": {
    "price": 0.69,
