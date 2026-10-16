@@ -2,25 +2,25 @@
  "$schema_version": 1,
  "price_date": "2026-10-16",
  "currency": "EUR",
- "stations_with_prices": 734,
+ "stations_with_prices": 738,
  "national": {
   "petrol95": {
    "min": 1.809,
-   "avg": 1.96,
+   "avg": 1.959,
    "max": 2.099,
-   "count": 710
+   "count": 714
   },
   "diesel": {
    "min": 2.069,
-   "avg": 2.223,
+   "avg": 2.222,
    "max": 2.399,
-   "count": 712
+   "count": 716
   },
   "lpg": {
    "min": 0.759,
-   "avg": 0.9,
+   "avg": 0.899,
    "max": 0.999,
-   "count": 578
+   "count": 581
   }
  },
  "cheapest": {

@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-16T08:16:24Z",
+ "generated_utc": "2026-10-16T08:31:20Z",
  "price_date": "2026-10-16",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,21 +19,21 @@
  "summary": {
   "petrol95": {
    "min": 1.809,
-   "avg": 1.96,
+   "avg": 1.959,
    "max": 2.099,
-   "count": 710
+   "count": 714
   },
   "diesel": {
    "min": 2.069,
-   "avg": 2.223,
+   "avg": 2.222,
    "max": 2.399,
-   "count": 712
+   "count": 716
   },
   "lpg": {
    "min": 0.759,
-   "avg": 0.9,
+   "avg": 0.899,
    "max": 0.999,
-   "count": 578
+   "count": 581
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kauno m. sav."
   }
  },
- "count": 734,
+ "count": 738,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -5403,6 +5403,22 @@
    "display_address_source": null
   },
   {
+   "network": "UAB EU Verslas",
+   "address": "Mažeikiai, Viekšnių g. 24, 89235",
+   "municipality": "Mažeikių r. sav.",
+   "lat": 56.304209,
+   "lon": 22.360258,
+   "petrol95": 1.819,
+   "diesel": 2.119,
+   "lpg": 0.899,
+   "price_updated": "2026-10-16T11:17:48+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
    "network": "UAB Eniris",
    "address": "Mažeikiai, Laižuvos g. 82d, 89213",
    "municipality": "Mažeikių r. sav.",
@@ -6500,6 +6516,54 @@
    "diesel": 2.269,
    "lpg": 0.889,
    "price_updated": "2026-10-16T09:24:58+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB EU Verslas",
+   "address": "Jovaišiškės k., Telšių g. 127, 90107",
+   "municipality": "Plungės r. sav.",
+   "lat": 55.908076,
+   "lon": 21.871509,
+   "petrol95": 1.819,
+   "diesel": 2.119,
+   "lpg": 0.89,
+   "price_updated": "2026-10-16T11:17:48+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB EU Verslas",
+   "address": "Plungė, Rietavo g. 109, 90106",
+   "municipality": "Plungės r. sav.",
+   "lat": 55.895636,
+   "lon": 21.862065,
+   "petrol95": 1.899,
+   "diesel": 2.199,
+   "lpg": null,
+   "price_updated": "2026-10-16T11:17:48+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB EU Verslas",
+   "address": "Plungė, Stoties g. 7C, 90115",
+   "municipality": "Plungės r. sav.",
+   "lat": 55.920377,
+   "lon": 21.832127,
+   "petrol95": 1.81,
+   "diesel": 2.11,
+   "lpg": 0.89,
+   "price_updated": "2026-10-16T11:17:48+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
