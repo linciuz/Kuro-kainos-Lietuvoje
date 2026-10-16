@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T08:01:24Z",
+  "generated": "2026-10-16T08:16:23Z",
   "lea_date": "2026-10-16",
   "threshold": 0.015,
   "sources": [
@@ -14,13 +14,13 @@
       ],
       "fuel": "diesel",
       "lea_min": 2.189,
-      "live": 2.204,
-      "delta": 0.015,
-      "direction": "up",
+      "live": 2.174,
+      "delta": -0.015,
+      "direction": "down",
       "scope": "network_lowest",
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
-      "stated_date": "spalio 15"
+      "stated_date": "spalio 16"
     },
     {
       "chain": "Saurida",
