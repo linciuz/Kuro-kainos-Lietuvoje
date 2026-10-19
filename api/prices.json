@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-19T08:31:20Z",
+ "generated_utc": "2026-10-19T08:46:15Z",
  "price_date": "2026-10-19",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.759,
    "avg": 0.91,
    "max": 0.999,
-   "count": 578
+   "count": 579
   }
  },
  "cheapest": {
@@ -10834,8 +10834,8 @@
    "lon": 23.246901,
    "petrol95": 1.969,
    "diesel": 2.259,
-   "lpg": null,
-   "price_updated": "2026-10-19T09:42:31+03:00",
+   "lpg": 0.94,
+   "price_updated": "2026-10-19T11:34:10+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,

@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-19T08:30:57+00:00Z",
+    "resolved_utc": "2026-10-19T08:45:56+00:00Z",
     "winner_counts": {
       "portal": 738,
       "null": 28
@@ -16,7 +16,7 @@
         "date": "2026-10-19",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-19T08:30:56+00:00Z"
+        "fetched_utc": "2026-10-19T08:45:55+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-19T08:30:57+00:00Z"
+        "fetched_utc": "2026-10-19T08:45:56+00:00Z"
       }
     ]
   },
@@ -45,7 +45,7 @@
       "min": 0.759,
       "avg": 0.91,
       "max": 0.999,
-      "count": 578
+      "count": 579
     }
   },
   "stations": [
@@ -13671,6 +13671,27 @@
     },
     {
       "network": "UAB Apsaga",
+      "address": "Šiauliai, Nuklono g. 4, 78349",
+      "municipality": "Šiaulių m. sav.",
+      "locality": "",
+      "petrol95": 1.969,
+      "diesel": 2.259,
+      "lpg": 0.94,
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ],
+      "price_updated": "2026-10-19T11:34:10+03:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:34",
+      "lat": 55.91673,
+      "lon": 23.246901,
+      "approx": false
+    },
+    {
+      "network": "UAB Apsaga",
       "address": "Šiauliai, Pramonės g. 3A, 78140",
       "municipality": "Šiaulių m. sav.",
       "locality": "",
@@ -13724,25 +13745,6 @@
       "price_src": "portal",
       "lat": 55.956347,
       "lon": 23.30845,
-      "approx": false
-    },
-    {
-      "network": "UAB Apsaga",
-      "address": "Šiauliai, Nuklono g. 4, 78349",
-      "municipality": "Šiaulių m. sav.",
-      "locality": "",
-      "petrol95": 1.969,
-      "diesel": 2.259,
-      "lpg": null,
-      "fuels": [
-        "petrol95",
-        "diesel",
-        "lpg"
-      ],
-      "price_updated": "2026-10-19T09:42:31+03:00",
-      "price_src": "portal",
-      "lat": 55.91673,
-      "lon": 23.246901,
       "approx": false
     },
     {
