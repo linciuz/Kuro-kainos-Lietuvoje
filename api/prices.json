@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-20T10:01:18Z",
+ "generated_utc": "2026-10-20T10:16:18Z",
  "price_date": "2026-10-20",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.829,
    "avg": 1.988,
    "max": 2.059,
-   "count": 714
+   "count": 720
   },
   "diesel": {
    "min": 2.109,
    "avg": 2.267,
    "max": 2.359,
-   "count": 716
+   "count": 722
   },
   "lpg": {
    "min": 0.78,
    "avg": 0.918,
    "max": 0.999,
-   "count": 575
+   "count": 581
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Tauragės r. sav."
   }
  },
- "count": 734,
+ "count": 740,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -523,6 +523,54 @@
    "display_address_source": null
   },
   {
+   "network": "UAB Narjanta",
+   "address": "Pumpučiai, Pumpučių g. 25, 29253",
+   "municipality": "Anykščių r. sav.",
+   "lat": 55.424311,
+   "lon": 24.920495,
+   "petrol95": 1.989,
+   "diesel": 2.279,
+   "lpg": 0.889,
+   "price_updated": "2026-10-20T13:02:19+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Narjanta",
+   "address": "Sausalaukės k. 2, 29345",
+   "municipality": "Anykščių r. sav.",
+   "lat": 55.67584,
+   "lon": 25.358668,
+   "petrol95": 1.989,
+   "diesel": 2.239,
+   "lpg": 0.949,
+   "price_updated": "2026-10-20T13:02:19+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Narjanta",
+   "address": "Troškūnai, Vilniaus g. 32, 29306",
+   "municipality": "Anykščių r. sav.",
+   "lat": 55.584853,
+   "lon": 24.87846,
+   "petrol95": 1.989,
+   "diesel": 2.249,
+   "lpg": 0.969,
+   "price_updated": "2026-10-20T13:02:19+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
    "network": "UAB Viada LT",
    "address": "Anykščiai, A. Vienuolio g. 34, 29148",
    "municipality": "Anykščių r. sav.",
@@ -612,6 +660,22 @@
    "diesel": 2.259,
    "lpg": 0.89,
    "price_updated": "2026-10-20T08:57:48+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Narjanta",
+   "address": "Vabalninkas, S. Nėries g. 35, 41341",
+   "municipality": "Biržų r. sav.",
+   "lat": 55.974978,
+   "lon": 24.740122,
+   "petrol95": 1.989,
+   "diesel": 2.249,
+   "lpg": 0.909,
+   "price_updated": "2026-10-20T13:02:19+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -4324,6 +4388,38 @@
    "diesel": 2.189,
    "lpg": 0.889,
    "price_updated": "2026-10-20T09:07:36+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Narjanta",
+   "address": "Aleksandrijos k., Kikonių g. 10, 40335",
+   "municipality": "Kupiškio r. sav.",
+   "lat": 55.824587,
+   "lon": 25.001069,
+   "petrol95": 1.999,
+   "diesel": 2.279,
+   "lpg": 0.859,
+   "price_updated": "2026-10-20T13:02:19+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Narjanta",
+   "address": "Dvariškių vs. 2, 40402",
+   "municipality": "Kupiškio r. sav.",
+   "lat": 55.773414,
+   "lon": 24.754327,
+   "petrol95": 1.939,
+   "diesel": 2.259,
+   "lpg": 0.909,
+   "price_updated": "2026-10-20T13:02:19+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
