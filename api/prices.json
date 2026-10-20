@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-20T09:16:24Z",
+ "generated_utc": "2026-10-20T09:31:12Z",
  "price_date": "2026-10-20",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -31,7 +31,7 @@
   },
   "lpg": {
    "min": 0.78,
-   "avg": 0.917,
+   "avg": 0.918,
    "max": 0.999,
    "count": 575
   }
@@ -992,10 +992,10 @@
    "municipality": "Jonavos r. sav.",
    "lat": 55.137949,
    "lon": 24.193271,
-   "petrol95": 1.97,
-   "diesel": 2.26,
-   "lpg": 0.89,
-   "price_updated": "2026-10-20T10:00:00+03:00",
+   "petrol95": 1.98,
+   "diesel": 2.29,
+   "lpg": 0.95,
+   "price_updated": "2026-10-20T12:20:35+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,

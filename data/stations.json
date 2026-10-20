@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-20T09:15:57+00:00Z",
+    "resolved_utc": "2026-10-20T09:30:54+00:00Z",
     "winner_counts": {
       "portal": 734,
       "null": 32
@@ -16,7 +16,7 @@
         "date": "2026-10-20",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-20T09:15:56+00:00Z"
+        "fetched_utc": "2026-10-20T09:30:53+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-20T09:15:57+00:00Z"
+        "fetched_utc": "2026-10-20T09:30:54+00:00Z"
       }
     ]
   },
@@ -43,7 +43,7 @@
     },
     "lpg": {
       "min": 0.78,
-      "avg": 0.917,
+      "avg": 0.918,
       "max": 0.999,
       "count": 575
     }
@@ -1336,16 +1336,18 @@
       "address": "Ručiūnų k., Kauno g. 2A, 55355",
       "municipality": "Jonavos r. sav.",
       "locality": "",
-      "petrol95": 1.97,
-      "diesel": 2.26,
-      "lpg": 0.89,
+      "petrol95": 1.98,
+      "diesel": 2.29,
+      "lpg": 0.95,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-20T10:00:00+03:00",
+      "price_updated": "2026-10-20T12:20:35+03:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:20",
       "lat": 55.137949,
       "lon": 24.193271,
       "approx": false,
