@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-21T11:01:12Z",
+ "generated_utc": "2026-10-21T11:16:04Z",
  "price_date": "2026-10-21",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.828,
    "avg": 1.961,
    "max": 2.059,
-   "count": 717
+   "count": 718
   },
   "diesel": {
    "min": 2.1,
    "avg": 2.244,
    "max": 2.359,
-   "count": 719
+   "count": 720
   },
   "lpg": {
    "min": 0.799,
    "avg": 0.921,
    "max": 0.999,
-   "count": 582
+   "count": 583
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Anykščių r. sav."
   }
  },
- "count": 740,
+ "count": 741,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -11604,6 +11604,22 @@
    "diesel": 2.359,
    "lpg": 0.959,
    "price_updated": "2026-10-21T09:39:18+03:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "IĮ V.Marcinkevičiaus",
+   "address": "Pavilnučio k., Bažnyčios g. 7, 99392",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.513817,
+   "lon": 21.609833,
+   "petrol95": 1.98,
+   "diesel": 2.24,
+   "lpg": 0.89,
+   "price_updated": "2026-10-21T14:10:22+03:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
