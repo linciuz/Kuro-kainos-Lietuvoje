@@ -1,46 +1,46 @@
 {
  "$schema_version": 1,
- "price_date": "2026-10-20",
+ "price_date": "2026-10-21",
  "currency": "EUR",
  "stations_with_prices": 740,
  "national": {
   "petrol95": {
-   "min": 1.829,
-   "avg": 1.989,
+   "min": 1.828,
+   "avg": 1.963,
    "max": 2.059,
-   "count": 720
+   "count": 717
   },
   "diesel": {
-   "min": 2.109,
-   "avg": 2.269,
+   "min": 2.1,
+   "avg": 2.246,
    "max": 2.359,
-   "count": 722
+   "count": 719
   },
   "lpg": {
-   "min": 0.78,
-   "avg": 0.918,
+   "min": 0.799,
+   "avg": 0.92,
    "max": 0.999,
-   "count": 581
+   "count": 582
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.829,
-   "network": "UAB Baltic Petroleum",
-   "address": "Kaunas, Minkovskių g. 132, 46245",
-   "municipality": "Kauno m. sav."
+   "price": 1.828,
+   "network": "UAB Autograndas",
+   "address": "Visaginas, Taikos pr. 47, 31217",
+   "municipality": "Visagino sav."
   },
   "diesel": {
-   "price": 2.109,
-   "network": "UAB Baltic Petroleum",
-   "address": "Kaunas, Minkovskių g. 132, 46245",
-   "municipality": "Kauno m. sav."
+   "price": 2.1,
+   "network": "UAB Naftrus",
+   "address": "Ylių k., Šilo g. 1, 60389",
+   "municipality": "Raseinių r. sav."
   },
   "lpg": {
-   "price": 0.78,
-   "network": "UAB Bonsa",
-   "address": "Taurai, Tilžės pl. 46, 72142",
-   "municipality": "Tauragės r. sav."
+   "price": 0.799,
+   "network": "UAB Degta",
+   "address": "Anykščiai, Vienuolio g. 34A, 29148",
+   "municipality": "Anykščių r. sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
