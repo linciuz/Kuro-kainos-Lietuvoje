@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-22T10:40:19Z",
+ "generated": "2026-10-22T18:11:28Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-10-22 13:24:48",
+ "api_last_updated": "2026-10-22 20:38:20",
  "count": 766,
  "with_coords": 765,
  "priced": 756,
@@ -1580,12 +1580,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 404,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1601,12 +1601,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 405,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1622,12 +1622,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 406,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -1641,12 +1641,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 408,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:42.000000Z"
   },
   {
    "company": "UAB Saurida",
@@ -1982,12 +1982,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.18,
+    "diesel": 2.24,
     "petrol95": 1.89
    },
    "gas_station_id": 557,
    "logo_url": null,
-   "submitted_at": "2026-10-22T06:46:22.000000Z"
+   "submitted_at": "2026-10-22T17:38:20.000000Z"
   },
   {
    "company": "UAB Saurida",
@@ -6251,12 +6251,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 401,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Mindega",
@@ -11161,13 +11161,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.89,
+    "lpg": 0.91,
     "diesel": 2.219,
-    "petrol95": 1.979
+    "petrol95": 1.919
    },
    "gas_station_id": 400,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Melkasta",
@@ -14036,12 +14036,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 402,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14057,12 +14057,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 407,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14076,12 +14076,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.21,
-    "petrol95": 1.97
+    "diesel": 2.18,
+    "petrol95": 1.93
    },
    "gas_station_id": 409,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:42.000000Z"
   },
   {
    "company": "UAB Gelvybė",
@@ -14097,12 +14097,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.219,
-    "petrol95": 1.979
+    "diesel": 2.189,
+    "petrol95": 1.939
    },
    "gas_station_id": 403,
    "logo_url": null,
-   "submitted_at": "2026-10-22T07:00:00.000000Z"
+   "submitted_at": "2026-10-22T15:05:41.000000Z"
   },
   {
    "company": "UAB Saurida",
