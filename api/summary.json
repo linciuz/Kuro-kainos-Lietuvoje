@@ -6,7 +6,7 @@
  "national": {
   "petrol95": {
    "min": 1.839,
-   "avg": 1.938,
+   "avg": 1.937,
    "max": 2.06,
    "count": 733
   },
@@ -17,7 +17,7 @@
    "count": 735
   },
   "lpg": {
-   "min": 0.8,
+   "min": 0.75,
    "avg": 0.931,
    "max": 1.0,
    "count": 598
@@ -37,10 +37,10 @@
    "municipality": "Kauno m. sav."
   },
   "lpg": {
-   "price": 0.8,
-   "network": "UAB Bonsa",
-   "address": "Taurai, Tilžės pl. 46, 72142",
-   "municipality": "Tauragės r. sav."
+   "price": 0.75,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
