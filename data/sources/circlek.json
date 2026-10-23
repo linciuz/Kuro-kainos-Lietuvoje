@@ -3,15 +3,15 @@
   "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
   "scope": "network_lowest",
   "fetched": "2026-10-23",
-  "stated_date": "spalio 22",
+  "stated_date": "spalio 23",
   "prices": {
-    "petrol95": 1.989,
-    "petrol95_plus": 2.078,
-    "petrol98": 2.128,
-    "lpg": 0.89,
-    "diesel": 2.259,
-    "diesel_plus": 2.348,
-    "xtl": 2.588,
+    "petrol95": 1.894,
+    "petrol95_plus": 2.018,
+    "petrol98": 2.043,
+    "lpg": 0.909,
+    "diesel": 2.199,
+    "diesel_plus": 2.298,
+    "xtl": 2.548,
     "adblue": 0.996
   }
 }
