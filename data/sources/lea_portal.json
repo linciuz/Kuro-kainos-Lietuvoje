@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-23T10:35:53Z",
+ "generated": "2026-10-23T18:00:52Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-10-23 11:00:07",
+ "api_last_updated": "2026-10-23 15:24:17",
  "count": 766,
  "with_coords": 765,
  "priced": 751,
@@ -147,12 +147,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.198,
-    "petrol95": 1.899
+    "diesel": 2.169,
+    "petrol95": 1.869
    },
    "gas_station_id": 9,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -194,7 +194,7 @@
    },
    "gas_station_id": 233,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -215,7 +215,7 @@
    },
    "gas_station_id": 279,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -789,13 +789,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.969,
+    "lpg": 0.98,
     "diesel": 2.294,
     "petrol95": 1.994
    },
    "gas_station_id": 298,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -957,13 +957,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.939,
+    "lpg": 0.979,
     "diesel": 2.279,
     "petrol95": 2.039
    },
    "gas_station_id": 246,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Tomega",
@@ -1000,12 +1000,12 @@
    ],
    "prices": {
     "lpg": 0.939,
-    "diesel": 2.219,
-    "petrol95": 1.949
+    "diesel": 2.199,
+    "petrol95": 1.939
    },
    "gas_station_id": 38,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Boost Petrol",
@@ -1047,7 +1047,7 @@
    },
    "gas_station_id": 266,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Degta",
@@ -1276,7 +1276,7 @@
    },
    "gas_station_id": 1071,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -1461,7 +1461,7 @@
    },
    "gas_station_id": 288,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -1683,12 +1683,12 @@
    ],
    "prices": {
     "lpg": 0.939,
-    "diesel": 2.219,
-    "petrol95": 1.949
+    "diesel": 2.199,
+    "petrol95": 1.939
    },
    "gas_station_id": 66,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "IĮ A. Praškevičiaus",
@@ -1913,7 +1913,7 @@
    },
    "gas_station_id": 304,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -1932,7 +1932,7 @@
    },
    "gas_station_id": 303,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Neste Lietuva",
@@ -2102,12 +2102,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.199,
+    "petrol95": 1.919
    },
    "gas_station_id": 36,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -2123,12 +2123,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.899
    },
    "gas_station_id": 11,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:17.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -2144,12 +2144,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.199,
-    "petrol95": 1.899
+    "diesel": 2.169,
+    "petrol95": 1.869
    },
    "gas_station_id": 13,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:17.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -2165,12 +2165,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.899
+    "diesel": 2.199,
+    "petrol95": 1.919
    },
    "gas_station_id": 35,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "MB Tormenta",
@@ -2376,7 +2376,7 @@
    },
    "gas_station_id": 306,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2395,7 +2395,7 @@
    },
    "gas_station_id": 1086,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2414,7 +2414,7 @@
    },
    "gas_station_id": 307,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2429,13 +2429,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.999,
-    "diesel": 2.249,
-    "petrol95": 1.969
+    "lpg": 0.949,
+    "diesel": 2.229,
+    "petrol95": 1.939
    },
    "gas_station_id": 273,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2452,11 +2452,11 @@
    "prices": {
     "lpg": 0.999,
     "diesel": 2.289,
-    "petrol95": 1.989
+    "petrol95": 1.949
    },
    "gas_station_id": 274,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2475,7 +2475,7 @@
    },
    "gas_station_id": 1074,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2492,11 +2492,11 @@
    "prices": {
     "lpg": 0.979,
     "diesel": 2.244,
-    "petrol95": 1.979
+    "petrol95": 1.959
    },
    "gas_station_id": 234,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2512,12 +2512,12 @@
    ],
    "prices": {
     "lpg": 0.949,
-    "diesel": 2.239,
-    "petrol95": 1.979
+    "diesel": 2.229,
+    "petrol95": 1.919
    },
    "gas_station_id": 1090,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2531,12 +2531,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.209,
-    "petrol95": 1.949
+    "diesel": 2.199,
+    "petrol95": 1.889
    },
    "gas_station_id": 267,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2552,12 +2552,12 @@
    ],
    "prices": {
     "lpg": 0.939,
-    "diesel": 2.269,
-    "petrol95": 1.979
+    "diesel": 2.249,
+    "petrol95": 1.949
    },
    "gas_station_id": 235,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2576,7 +2576,7 @@
    },
    "gas_station_id": 289,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2597,7 +2597,7 @@
    },
    "gas_station_id": 1079,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2613,12 +2613,12 @@
    ],
    "prices": {
     "lpg": 0.95,
-    "diesel": 2.259,
-    "petrol95": 1.989
+    "diesel": 2.239,
+    "petrol95": 1.959
    },
    "gas_station_id": 1080,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2633,11 +2633,11 @@
    ],
    "prices": {
     "diesel": 2.259,
-    "petrol95": 1.989
+    "petrol95": 1.969
    },
    "gas_station_id": 280,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2652,11 +2652,11 @@
    ],
    "prices": {
     "diesel": 2.249,
-    "petrol95": 1.969
+    "petrol95": 1.939
    },
    "gas_station_id": 297,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2677,7 +2677,7 @@
    },
    "gas_station_id": 237,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2691,12 +2691,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.219,
-    "petrol95": 1.939
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 284,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2715,7 +2715,7 @@
    },
    "gas_station_id": 1058,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -2736,7 +2736,7 @@
    },
    "gas_station_id": 242,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Deguva",
@@ -3813,12 +3813,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.199,
-    "petrol95": 1.899
+    "diesel": 2.169,
+    "petrol95": 1.869
    },
    "gas_station_id": 34,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -3834,12 +3834,12 @@
    ],
    "prices": {
     "lpg": 0.939,
-    "diesel": 2.219,
-    "petrol95": 1.959
+    "diesel": 2.199,
+    "petrol95": 1.939
    },
    "gas_station_id": 62,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -3923,7 +3923,7 @@
    },
    "gas_station_id": 301,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -4544,12 +4544,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.879
    },
    "gas_station_id": 39,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -4565,12 +4565,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.199,
-    "petrol95": 1.899
+    "diesel": 2.169,
+    "petrol95": 1.869
    },
    "gas_station_id": 61,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -4586,12 +4586,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.889
    },
    "gas_station_id": 60,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -4668,12 +4668,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.239,
-    "petrol95": 1.979
+    "diesel": 2.219,
+    "petrol95": 1.939
    },
    "gas_station_id": 1061,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4692,7 +4692,7 @@
    },
    "gas_station_id": 1082,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4709,11 +4709,11 @@
    "prices": {
     "lpg": 0.969,
     "diesel": 2.259,
-    "petrol95": 1.959
+    "petrol95": 1.939
    },
    "gas_station_id": 1060,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4732,7 +4732,7 @@
    },
    "gas_station_id": 245,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4747,13 +4747,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.999,
+    "lpg": 0.97,
     "diesel": 2.235,
     "petrol95": 1.955
    },
    "gas_station_id": 285,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4768,11 +4768,11 @@
    ],
    "prices": {
     "diesel": 2.259,
-    "petrol95": 1.959
+    "petrol95": 1.939
    },
    "gas_station_id": 268,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4793,7 +4793,7 @@
    },
    "gas_station_id": 232,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -4809,12 +4809,12 @@
    ],
    "prices": {
     "lpg": 0.999,
-    "diesel": 2.249,
-    "petrol95": 1.949
+    "diesel": 2.239,
+    "petrol95": 1.939
    },
    "gas_station_id": 1075,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -5083,12 +5083,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.97
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 638,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5104,12 +5104,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.97
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 639,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5230,12 +5230,12 @@
    ],
    "prices": {
     "lpg": 0.939,
-    "diesel": 2.259,
-    "petrol95": 1.959
+    "diesel": 2.229,
+    "petrol95": 1.929
    },
    "gas_station_id": 30,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Adukesta",
@@ -5319,7 +5319,7 @@
    },
    "gas_station_id": 281,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -5499,12 +5499,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.98
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 634,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5520,12 +5520,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.97
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 637,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5541,12 +5541,12 @@
    ],
    "prices": {
     "lpg": 0.93,
-    "diesel": 2.26,
-    "petrol95": 1.98
+    "diesel": 2.21,
+    "petrol95": 1.96
    },
    "gas_station_id": 635,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5562,12 +5562,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.98
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 636,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5664,13 +5664,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.949,
-    "diesel": 2.239,
-    "petrol95": 1.959
+    "lpg": 0.919,
+    "diesel": 2.199,
+    "petrol95": 1.929
    },
    "gas_station_id": 58,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "I.Stonkuvienės prekybos įmonė",
@@ -5707,7 +5707,7 @@
    },
    "gas_station_id": 308,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Eniris",
@@ -5765,12 +5765,12 @@
    ],
    "prices": {
     "lpg": 0.97,
-    "diesel": 2.33,
-    "petrol95": 2.06
+    "diesel": 2.28,
+    "petrol95": 2.02
    },
    "gas_station_id": 642,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -5786,12 +5786,12 @@
    ],
    "prices": {
     "lpg": 0.97,
-    "diesel": 2.33,
-    "petrol95": 2.06
+    "diesel": 2.28,
+    "petrol95": 2.02
    },
    "gas_station_id": 641,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -5950,12 +5950,12 @@
    ],
    "prices": {
     "lpg": 0.889,
-    "diesel": 2.189,
-    "petrol95": 1.919
+    "diesel": 2.139,
+    "petrol95": 1.859
    },
    "gas_station_id": 647,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T12:09:42.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -6159,7 +6159,7 @@
    },
    "gas_station_id": 1063,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Dujovita",
@@ -6359,7 +6359,7 @@
    },
    "gas_station_id": 275,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -6499,12 +6499,12 @@
    ],
    "prices": {
     "lpg": 0.899,
-    "diesel": 2.199,
-    "petrol95": 1.899
+    "diesel": 2.179,
+    "petrol95": 1.879
    },
    "gas_station_id": 28,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -6645,7 +6645,7 @@
    },
    "gas_station_id": 1083,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -6660,13 +6660,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.999,
+    "lpg": 0.97,
     "diesel": 2.249,
     "petrol95": 1.949
    },
    "gas_station_id": 231,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -6939,12 +6939,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.899
    },
    "gas_station_id": 41,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:17.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -6960,12 +6960,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.899
    },
    "gas_station_id": 43,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:53.000000Z"
+   "submitted_at": "2026-10-23T12:24:17.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -7047,7 +7047,7 @@
    },
    "gas_station_id": 1070,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB EU Verslas",
@@ -7537,7 +7537,7 @@
    },
    "gas_station_id": 296,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Šventosios investicijos",
@@ -7574,12 +7574,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.949
+    "diesel": 2.199,
+    "petrol95": 1.919
    },
    "gas_station_id": 55,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -7595,12 +7595,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.199,
-    "petrol95": 1.929
+    "diesel": 2.169,
+    "petrol95": 1.889
    },
    "gas_station_id": 56,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -7663,7 +7663,7 @@
    },
    "gas_station_id": 276,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -7682,7 +7682,7 @@
    },
    "gas_station_id": 264,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -7703,7 +7703,7 @@
    },
    "gas_station_id": 1062,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Deliuvis",
@@ -8066,12 +8066,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.229,
-    "petrol95": 1.949
+    "diesel": 2.219,
+    "petrol95": 1.939
    },
    "gas_station_id": 54,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -8086,13 +8086,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.999,
+    "lpg": 0.989,
     "diesel": 2.274,
     "petrol95": 2.009
    },
    "gas_station_id": 243,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -8113,7 +8113,7 @@
    },
    "gas_station_id": 238,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -8717,13 +8717,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.919,
-    "diesel": 2.198,
-    "petrol95": 1.899
+    "lpg": 0.929,
+    "diesel": 2.219,
+    "petrol95": 1.919
    },
    "gas_station_id": 53,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9036,7 +9036,7 @@
    },
    "gas_station_id": 277,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -9133,13 +9133,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.989,
-    "diesel": 2.239,
-    "petrol95": 1.969
+    "lpg": 0.959,
+    "diesel": 2.229,
+    "petrol95": 1.959
    },
    "gas_station_id": 51,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -9154,13 +9154,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.989,
-    "diesel": 2.239,
-    "petrol95": 1.969
+    "lpg": 0.959,
+    "diesel": 2.229,
+    "petrol95": 1.959
    },
    "gas_station_id": 52,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9244,7 +9244,7 @@
    },
    "gas_station_id": 295,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -9506,12 +9506,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.98
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 633,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -9527,12 +9527,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.98
+    "diesel": 2.17,
+    "petrol95": 1.92
    },
    "gas_station_id": 632,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "Lašų žemės ūkio bendrovė",
@@ -9612,7 +9612,7 @@
    },
    "gas_station_id": 302,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB DVS Topolis",
@@ -9792,12 +9792,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.899
    },
    "gas_station_id": 44,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -9879,7 +9879,7 @@
    },
    "gas_station_id": 1085,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -9894,13 +9894,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.979,
+    "lpg": 0.989,
     "diesel": 2.269,
     "petrol95": 2.009
    },
    "gas_station_id": 1073,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Eniris",
@@ -10093,12 +10093,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.949
+    "diesel": 2.189,
+    "petrol95": 1.919
    },
    "gas_station_id": 49,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Baltic Petroleum",
@@ -10161,7 +10161,7 @@
    },
    "gas_station_id": 286,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Eniris",
@@ -10369,7 +10369,7 @@
    },
    "gas_station_id": 299,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -10537,7 +10537,7 @@
    },
    "gas_station_id": 300,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Neste Lietuva",
@@ -10808,7 +10808,7 @@
    },
    "gas_station_id": 265,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -10829,7 +10829,7 @@
    },
    "gas_station_id": 236,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Dujotena",
@@ -11065,7 +11065,7 @@
    },
    "gas_station_id": 293,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Viada LT",
@@ -11107,7 +11107,7 @@
    },
    "gas_station_id": 292,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -11264,12 +11264,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.229,
-    "petrol95": 1.959
+    "diesel": 2.219,
+    "petrol95": 1.919
    },
    "gas_station_id": 45,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -11285,12 +11285,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.229,
-    "petrol95": 1.959
+    "diesel": 2.219,
+    "petrol95": 1.919
    },
    "gas_station_id": 46,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -11306,12 +11306,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.219,
-    "petrol95": 1.949
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 47,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "AB Orlen Baltics Retail",
@@ -11327,12 +11327,12 @@
    ],
    "prices": {
     "lpg": 0.929,
-    "diesel": 2.219,
-    "petrol95": 1.949
+    "diesel": 2.199,
+    "petrol95": 1.899
    },
    "gas_station_id": 48,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Alauša",
@@ -11740,11 +11740,11 @@
    ],
    "prices": {
     "diesel": 2.259,
-    "petrol95": 1.989
+    "petrol95": 1.969
    },
    "gas_station_id": 1055,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11765,7 +11765,7 @@
    },
    "gas_station_id": 1053,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:31.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11780,13 +11780,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.999,
-    "diesel": 2.249,
-    "petrol95": 1.979
+    "lpg": 0.959,
+    "diesel": 2.229,
+    "petrol95": 1.939
    },
    "gas_station_id": 1052,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:31.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11807,7 +11807,7 @@
    },
    "gas_station_id": 290,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11826,7 +11826,7 @@
    },
    "gas_station_id": 1078,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11841,11 +11841,11 @@
    ],
    "prices": {
     "diesel": 2.239,
-    "petrol95": 1.934
+    "petrol95": 1.924
    },
    "gas_station_id": 283,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11862,11 +11862,11 @@
    "prices": {
     "lpg": 0.999,
     "diesel": 2.299,
-    "petrol95": 2.029
+    "petrol95": 2.019
    },
    "gas_station_id": 291,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:31.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11883,11 +11883,11 @@
    "prices": {
     "lpg": 0.999,
     "diesel": 2.259,
-    "petrol95": 1.989
+    "petrol95": 1.969
    },
    "gas_station_id": 1072,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11904,11 +11904,11 @@
    "prices": {
     "lpg": 0.999,
     "diesel": 2.259,
-    "petrol95": 1.989
+    "petrol95": 1.969
    },
    "gas_station_id": 1077,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11929,7 +11929,7 @@
    },
    "gas_station_id": 1057,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11945,12 +11945,12 @@
    ],
    "prices": {
     "lpg": 0.989,
-    "diesel": 2.259,
-    "petrol95": 1.949
+    "diesel": 2.239,
+    "petrol95": 1.929
    },
    "gas_station_id": 1089,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11966,12 +11966,12 @@
    ],
    "prices": {
     "lpg": 0.999,
-    "diesel": 2.249,
-    "petrol95": 1.959
+    "diesel": 2.219,
+    "petrol95": 1.919
    },
    "gas_station_id": 239,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -11987,12 +11987,12 @@
    ],
    "prices": {
     "lpg": 0.999,
-    "diesel": 2.259,
-    "petrol95": 1.969
+    "diesel": 2.239,
+    "petrol95": 1.939
    },
    "gas_station_id": 1056,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12011,7 +12011,7 @@
    },
    "gas_station_id": 1084,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12032,7 +12032,7 @@
    },
    "gas_station_id": 1076,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12053,7 +12053,7 @@
    },
    "gas_station_id": 287,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12069,12 +12069,12 @@
    ],
    "prices": {
     "lpg": 0.969,
-    "diesel": 2.239,
+    "diesel": 2.229,
     "petrol95": 1.944
    },
    "gas_station_id": 240,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12090,12 +12090,12 @@
    ],
    "prices": {
     "lpg": 0.969,
-    "diesel": 2.239,
+    "diesel": 2.229,
     "petrol95": 1.944
    },
    "gas_station_id": 241,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12110,11 +12110,11 @@
    ],
    "prices": {
     "diesel": 2.269,
-    "petrol95": 1.979
+    "petrol95": 1.949
    },
    "gas_station_id": 270,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12135,7 +12135,7 @@
    },
    "gas_station_id": 278,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -12150,11 +12150,11 @@
    ],
    "prices": {
     "diesel": 2.269,
-    "petrol95": 1.969
+    "petrol95": 1.944
    },
    "gas_station_id": 1054,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -13504,11 +13504,11 @@
    "prices": {
     "lpg": 0.99,
     "diesel": 2.279,
-    "petrol95": 2.029
+    "petrol95": 2.014
    },
    "gas_station_id": 272,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -13523,11 +13523,11 @@
    ],
    "prices": {
     "diesel": 2.199,
-    "petrol95": 1.894
+    "petrol95": 1.884
    },
    "gas_station_id": 271,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -14220,12 +14220,12 @@
    ],
    "prices": {
     "lpg": 0.919,
-    "diesel": 2.219,
-    "petrol95": 1.929
+    "diesel": 2.179,
+    "petrol95": 1.899
    },
    "gas_station_id": 50,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:37:52.000000Z"
+   "submitted_at": "2026-10-23T12:24:16.000000Z"
   },
   {
    "company": "UAB Apsaga",
@@ -14391,7 +14391,7 @@
    },
    "gas_station_id": 269,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -14412,7 +14412,7 @@
    },
    "gas_station_id": 1059,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -14433,7 +14433,7 @@
    },
    "gas_station_id": 1081,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Circle K Lietuva",
@@ -14452,7 +14452,7 @@
    },
    "gas_station_id": 282,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:34.000000Z"
+   "submitted_at": "2026-10-23T11:15:34.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -14862,7 +14862,7 @@
    },
    "gas_station_id": 305,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Jozita",
@@ -15051,7 +15051,7 @@
    },
    "gas_station_id": 294,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:33.000000Z"
+   "submitted_at": "2026-10-23T11:15:33.000000Z"
   },
   {
    "company": "UAB Eniris",
@@ -15276,7 +15276,7 @@
    },
    "gas_station_id": 244,
    "logo_url": null,
-   "submitted_at": "2026-10-23T06:52:32.000000Z"
+   "submitted_at": "2026-10-23T11:15:32.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -15372,12 +15372,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.98
+    "diesel": 2.17,
+    "petrol95": 1.89
    },
    "gas_station_id": 640,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Trevena",
@@ -15393,12 +15393,12 @@
    ],
    "prices": {
     "lpg": 0.89,
-    "diesel": 2.23,
-    "petrol95": 1.98
+    "diesel": 2.17,
+    "petrol95": 1.89
    },
    "gas_station_id": 631,
    "logo_url": null,
-   "submitted_at": "2026-10-23T07:00:00.000000Z"
+   "submitted_at": "2026-10-23T11:34:09.000000Z"
   },
   {
    "company": "UAB Viada LT",
