@@ -3,12 +3,13 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-26T11:32:30+00:00Z",
+    "resolved_utc": "2026-10-26T11:45:53+00:00Z",
     "winner_counts": {
-      "portal": 761,
+      "saurida": 17,
+      "portal": 744,
       "null": 5
     },
-    "saurida_served": 0,
+    "saurida_served": 17,
     "sources": [
       {
         "source": "portal",
@@ -16,7 +17,7 @@
         "date": "2026-10-26",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-26T11:32:29+00:00Z"
+        "fetched_utc": "2026-10-26T11:45:52+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,14 +25,14 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-26T11:32:30+00:00Z"
+        "fetched_utc": "2026-10-26T11:45:53+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.813,
-      "avg": 1.924,
+      "avg": 1.925,
       "max": 2.059,
       "count": 735
     },
@@ -135,7 +136,7 @@
       "address": "Pašakarnių k. Pašakarnių g. 1, 85271",
       "municipality": "Akmenės r. sav.",
       "locality": "",
-      "petrol95": 1.93,
+      "petrol95": 1.95,
       "diesel": 2.2,
       "lpg": 0.89,
       "fuels": [
@@ -143,10 +144,8 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 56.298148,
       "lon": 22.885039,
       "approx": false,
@@ -1609,18 +1608,16 @@
       "address": "Pašvenčio k., 74218",
       "municipality": "Jurbarko r. sav.",
       "locality": "",
-      "petrol95": 1.85,
-      "diesel": 2.17,
-      "lpg": 0.87,
+      "petrol95": 1.92,
+      "diesel": 2.2,
+      "lpg": 0.88,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.083916,
       "lon": 22.606942,
       "approx": false
@@ -1963,7 +1960,7 @@
       "address": "Kušliškių k. Suvalkijos g. 15, 69200",
       "municipality": "Kalvarijos sav.",
       "locality": "",
-      "petrol95": 1.88,
+      "petrol95": 1.92,
       "diesel": 2.19,
       "lpg": 0.75,
       "fuels": [
@@ -1971,10 +1968,8 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 54.436202,
       "lon": 23.204823,
       "approx": false,
@@ -3261,7 +3256,7 @@
       "address": "Neveronių k., Martinavos g. 1, 54475",
       "municipality": "Kauno m. sav.",
       "locality": "",
-      "petrol95": 1.89,
+      "petrol95": 1.92,
       "diesel": 2.19,
       "lpg": 0.9,
       "fuels": [
@@ -3269,10 +3264,8 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 54.924573,
       "lon": 24.079127,
       "approx": false,
@@ -4004,18 +3997,16 @@
       "address": "Babtai, Vandžiogalos g. 3, 54328",
       "municipality": "Kauno r. sav.",
       "locality": "",
-      "petrol95": 1.88,
-      "diesel": 2.21,
+      "petrol95": 1.9,
+      "diesel": 2.23,
       "lpg": 0.92,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.096967,
       "lon": 23.806249,
       "approx": false
@@ -5303,7 +5294,7 @@
       "address": "Klaipėda, Jūrininkų pr. 29, 95225",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": 1.88,
+      "petrol95": 1.9,
       "diesel": 2.17,
       "lpg": 0.9,
       "fuels": [
@@ -5311,10 +5302,8 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.656839,
       "lon": 21.183821,
       "approx": false,
@@ -6623,17 +6612,15 @@
       "address": "Marijampolė, Statybininkų g. 8, 68108",
       "municipality": "Marijampolės sav.",
       "locality": "",
-      "petrol95": 1.88,
-      "diesel": 2.18,
+      "petrol95": 1.9,
+      "diesel": 2.21,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 54.577893,
       "lon": 23.376915,
       "approx": false
@@ -8803,7 +8790,7 @@
       "address": "Velžių k., Radviliškio plentas 2, 82218",
       "municipality": "Radviliškio r. sav.",
       "locality": "",
-      "petrol95": 1.87,
+      "petrol95": 1.92,
       "diesel": 2.17,
       "lpg": 0.87,
       "fuels": [
@@ -8811,10 +8798,8 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.77317716512304,
       "lon": 23.656245321035385,
       "approx": false,
@@ -8825,7 +8810,7 @@
       "address": "Radviliškis, Gedimino g. 50C, 82482",
       "municipality": "Radviliškio r. sav.",
       "locality": "",
-      "petrol95": 1.87,
+      "petrol95": 1.92,
       "diesel": 2.19,
       "lpg": 0.88,
       "fuels": [
@@ -8833,10 +8818,8 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.814602,
       "lon": 23.553195,
       "approx": false
@@ -10212,18 +10195,16 @@
       "address": "Pageležių k, 20278",
       "municipality": "Ukmergės r. sav.",
       "locality": "",
-      "petrol95": 1.89,
-      "diesel": 2.18,
+      "petrol95": 1.9,
+      "diesel": 2.2,
       "lpg": 0.9,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.165001,
       "lon": 24.515676,
       "approx": false,
@@ -10235,17 +10216,15 @@
       "municipality": "Ukmergės r. sav.",
       "locality": "",
       "petrol95": 1.89,
-      "diesel": 2.18,
+      "diesel": 2.2,
       "lpg": 0.91,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.233528,
       "lon": 24.781253,
       "approx": false
@@ -10255,18 +10234,16 @@
       "address": "Ukmergė, Kareivinių g. 64, 20184",
       "municipality": "Ukmergės r. sav.",
       "locality": "",
-      "petrol95": 1.89,
-      "diesel": 2.18,
+      "petrol95": 1.9,
+      "diesel": 2.2,
       "lpg": 0.91,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.258993,
       "lon": 24.790387,
       "approx": false
@@ -12564,18 +12541,16 @@
       "address": "Vilnius, Jankiškių g. 43a, 02300",
       "municipality": "Vilniaus m. sav.",
       "locality": "",
-      "petrol95": 1.88,
-      "diesel": 2.18,
+      "petrol95": 1.9,
+      "diesel": 2.21,
       "lpg": 0.92,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 54.65189,
       "lon": 25.185668,
       "approx": false
@@ -13238,17 +13213,15 @@
       "address": "Čekoniškių k., 14207",
       "municipality": "Vilniaus r. sav.",
       "locality": "",
-      "petrol95": 1.88,
-      "diesel": 2.19,
+      "petrol95": 1.9,
+      "diesel": 2.21,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 54.737396,
       "lon": 25.079988,
       "approx": false,
@@ -13259,18 +13232,16 @@
       "address": "Zujūnai, Buivydiškių g. 1A, 14160",
       "municipality": "Vilniaus r. sav.",
       "locality": "",
-      "petrol95": 1.88,
-      "diesel": 2.19,
+      "petrol95": 1.9,
+      "diesel": 2.21,
       "lpg": 0.9,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 54.724842,
       "lon": 25.185979,
       "approx": false
@@ -14133,18 +14104,16 @@
       "address": "Šiauliai, Pramonės g. 7C, 78140",
       "municipality": "Šiaulių m. sav.",
       "locality": "",
-      "petrol95": 1.87,
-      "diesel": 2.19,
+      "petrol95": 1.93,
+      "diesel": 2.2,
       "lpg": 0.92,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:28+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.916466,
       "lon": 23.301941,
       "approx": false
@@ -14154,18 +14123,16 @@
       "address": "Šiauliai, Vilniaus g. 373A, 76326",
       "municipality": "Šiaulių m. sav.",
       "locality": "",
-      "petrol95": 1.87,
-      "diesel": 2.19,
+      "petrol95": 1.93,
+      "diesel": 2.2,
       "lpg": 0.92,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-26T11:36:27+02:00",
-      "price_src": "portal",
-      "price_intraday": true,
-      "price_time": "11:36",
+      "price_updated": "2026-10-26T13:34:44+02:00",
+      "price_src": "saurida",
       "lat": 55.942819,
       "lon": 23.281619,
       "approx": false
