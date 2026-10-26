@@ -1,10 +1,41 @@
 {
-  "generated": "2026-10-26T08:16:20Z",
-  "lea_date": "2026-10-23",
+  "generated": "2026-10-26T08:31:12Z",
+  "lea_date": "2026-10-26",
   "threshold": 0.015,
   "sources": [
     "Circle K",
     "Saurida"
   ],
-  "items": []
+  "items": [
+    {
+      "chain": "Circle K",
+      "networks": [
+        "UAB Circle K Lietuva"
+      ],
+      "fuel": "petrol95",
+      "lea_min": 1.844,
+      "live": 1.894,
+      "delta": 0.05,
+      "direction": "up",
+      "scope": "network_lowest",
+      "source": "Circle K",
+      "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
+      "stated_date": "spalio 23"
+    },
+    {
+      "chain": "Circle K",
+      "networks": [
+        "UAB Circle K Lietuva"
+      ],
+      "fuel": "diesel",
+      "lea_min": 2.154,
+      "live": 2.199,
+      "delta": 0.045,
+      "direction": "up",
+      "scope": "network_lowest",
+      "source": "Circle K",
+      "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
+      "stated_date": "spalio 23"
+    }
+  ]
 }
