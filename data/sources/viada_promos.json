@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T19:00:25Z",
+  "generated": "2026-10-27T22:01:42Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
@@ -47,9 +47,17 @@
     }
   ],
   "wednesday_check": {
-    "status": "unavailable",
-    "checked": "2026-10-27T19:00:25Z",
+    "status": "announced",
+    "checked": "2026-10-27T22:01:42Z",
     "listing_url": "https://www.viada.lt/akcijos/",
     "source_url": "https://www.viada.lt/akcija/super-treciadieniai/"
+  },
+  "wednesday": {
+    "valid_date": "2026-10-28",
+    "prices": {
+      "petrol95": 1.799,
+      "lpg": 0.829
+    },
+    "url": "https://www.viada.lt/akcija/super-treciadieniai/"
   }
 }
