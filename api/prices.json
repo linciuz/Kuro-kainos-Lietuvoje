@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-27T09:01:19Z",
+ "generated_utc": "2026-10-27T09:16:21Z",
  "price_date": "2026-10-27",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.819,
    "avg": 1.958,
    "max": 2.059,
-   "count": 730
+   "count": 732
   },
   "diesel": {
    "min": 2.159,
-   "avg": 2.266,
+   "avg": 2.265,
    "max": 2.36,
-   "count": 732
+   "count": 734
   },
   "lpg": {
    "min": 0.75,
-   "avg": 0.937,
+   "avg": 0.936,
    "max": 1.02,
-   "count": 598
+   "count": 599
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kalvarijos sav."
   }
  },
- "count": 756,
+ "count": 758,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4436,6 +4436,22 @@
    "diesel": 2.359,
    "lpg": 0.999,
    "price_updated": "2026-10-27T09:51:15+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.94,
+   "diesel": 2.23,
+   "lpg": null,
+   "price_updated": "2026-10-27T11:05:56+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -11860,6 +11876,22 @@
    "diesel": 2.24,
    "lpg": 0.89,
    "price_updated": "2026-10-27T09:46:22+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Andopas",
+   "address": "Šilutė, Ramučių g. 43, 99150",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.358829,
+   "lon": 21.5034,
+   "petrol95": 1.88,
+   "diesel": 2.17,
+   "lpg": 0.9,
+   "price_updated": "2026-10-27T11:06:07+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
