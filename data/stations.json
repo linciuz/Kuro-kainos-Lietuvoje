@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-27T09:45:54+00:00Z",
+    "resolved_utc": "2026-10-27T10:00:55+00:00Z",
     "winner_counts": {
-      "portal": 758,
-      "null": 8
+      "portal": 759,
+      "null": 7
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-10-27",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-27T09:45:53+00:00Z"
+        "fetched_utc": "2026-10-27T10:00:54+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-27T09:45:54+00:00Z"
+        "fetched_utc": "2026-10-27T10:00:55+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.819,
       "avg": 1.956,
       "max": 2.059,
-      "count": 732
+      "count": 733
     },
     "diesel": {
       "min": 2.159,
-      "avg": 2.263,
+      "avg": 2.264,
       "max": 2.36,
-      "count": 734
+      "count": 735
     },
     "lpg": {
       "min": 0.75,
       "avg": 0.936,
       "max": 1.02,
-      "count": 599
+      "count": 600
     }
   },
   "stations": [
@@ -15473,15 +15473,18 @@
       "address": "Cirkliškio k., Aukštaičių g. 2A, 18122",
       "municipality": "Švenčionių r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 2.02,
+      "diesel": 2.32,
+      "lpg": 0.93,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-10-27T12:00:43+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:00",
       "lat": 55.120058,
       "lon": 26.13143,
       "approx": false,

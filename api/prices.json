@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-10-27T09:46:14Z",
+ "generated_utc": "2026-10-27T10:01:13Z",
  "price_date": "2026-10-27",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.819,
    "avg": 1.956,
    "max": 2.059,
-   "count": 732
+   "count": 733
   },
   "diesel": {
    "min": 2.159,
-   "avg": 2.263,
+   "avg": 2.264,
    "max": 2.36,
-   "count": 734
+   "count": 735
   },
   "lpg": {
    "min": 0.75,
    "avg": 0.936,
    "max": 1.02,
-   "count": 599
+   "count": 600
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kalvarijos sav."
   }
  },
- "count": 758,
+ "count": 759,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -12116,6 +12116,22 @@
    "diesel": 2.319,
    "lpg": null,
    "price_updated": "2026-10-27T10:05:22+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Propano ir butano dujų centras",
+   "address": "Cirkliškio k., Aukštaičių g. 2A, 18122",
+   "municipality": "Švenčionių r. sav.",
+   "lat": 55.120058,
+   "lon": 26.13143,
+   "petrol95": 2.02,
+   "diesel": 2.32,
+   "lpg": 0.93,
+   "price_updated": "2026-10-27T12:00:43+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
