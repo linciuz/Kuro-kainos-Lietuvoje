@@ -40,14 +40,15 @@ class FixtureHygieneTests(unittest.TestCase):
                                       f'{name}: retain source markup without executable page code')
 
     def test_sanitized_html_matches_recorded_provenance_hashes(self):
-        metadata = json.loads((ROOT / 'tests/fixtures/html_sources_20261006.metadata.json').read_text(encoding='utf-8'))
-        for fixture in metadata['fixtures']:
-            path = ROOT / fixture['path']
-            data = path.read_text(encoding='utf-8').encode('utf-8')
-            with self.subTest(path=fixture['path']):
-                self.assertEqual(hashlib.sha256(data).hexdigest(), fixture['sanitized_sha256'])
-                self.assertEqual(len(data), fixture['sanitized_bytes'])
-                self.assertTrue(fixture['source_url'].startswith('https://'))
+        for manifest in ('html_sources_20261006.metadata.json', 'neste_offers_20261028.metadata.json'):
+            metadata = json.loads((ROOT / 'tests/fixtures' / manifest).read_text(encoding='utf-8'))
+            for fixture in metadata['fixtures']:
+                path = ROOT / fixture['path']
+                data = path.read_text(encoding='utf-8').encode('utf-8')
+                with self.subTest(path=fixture['path']):
+                    self.assertEqual(hashlib.sha256(data).hexdigest(), fixture['sanitized_sha256'])
+                    self.assertEqual(len(data), fixture['sanitized_bytes'])
+                    self.assertTrue(fixture['source_url'].startswith('https://'))
 
 
 if __name__ == '__main__':

@@ -12,8 +12,8 @@ That is Neste's own officially-announced figure, so we extract it under strict
 validation (explicit day-month date + a sane 1-30 ct band + the word
 'trečiadien'). The app applies it ONLY on the stated date as the Neste loyalty
 discount (with the app/card — consistent with the opt-in discounts feature),
-reverting to the user's configured cents any other day. Only the verified
-empty offers-index template establishes no announcement. Unknown markup or
+reverting to the user's configured cents any other day. The verified empty
+index or reviewed non-Wednesday offers establish no announcement. Unknown markup or
 fetch failure preserves the old success stamp and fails for review.
 
 OUTPUT  data/sources/neste_promo.json
@@ -24,6 +24,7 @@ OUTPUT  data/sources/neste_promo.json
 import datetime as dt
 import gzip
 import html as _html
+from html.parser import HTMLParser
 import json
 import os
 import re
@@ -68,12 +69,52 @@ def text_content(html):
     return re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", " ", txt))).strip()
 
 
+class _ListingImages(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.images = []
+        self.unsupported_media = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "img":
+            self.images.append(attrs)
+        elif tag in ("picture", "source"):
+            self.unsupported_media = True
+
+
+def reviewed_images_only(markup, count, path_pattern):
+    """Check every image a browser can choose, including responsive candidates."""
+    parser = _ListingImages()
+    parser.feed(markup)
+    parser.close()
+    if len(parser.images) != count or parser.unsupported_media:
+        return False
+    for attrs in parser.images:
+        sources = [value for name, value in attrs if name == "src"]
+        if len(sources) != 1 or not sources[0]:
+            return False
+        for name, srcset in attrs:
+            if name != "srcset":
+                continue
+            if not srcset:
+                return False
+            for candidate in _html.unescape(srcset).split(','):
+                parts = candidate.split()
+                if not parts:
+                    return False
+                sources.append(parts[0])
+        if any(not re.fullmatch(path_pattern, _html.unescape(src).split('?', 1)[0]) for src in sources):
+            return False
+    return True
+
+
 def confirmed_no_announcement(html):
-    """Recognize the measured empty offers listing, never generic parse failure.
+    """Recognize reviewed listings without a dated Wednesday fuel discount.
 
     Captured 2026-10-06: the index has its own heading/intro and its content
-    body contains ONLY the app-download section. Extra text, links or images
-    can be a new image-only offer; refuse that shape for human review.
+    body contains only the app-download section. The October 28 Rimi card is
+    a grocery voucher, not a fuel discount. Unknown text, links or images
+    still require review, including new image-only offers.
     """
     main = re.search(r"<main\b[^>]*>(.*?)</main>", html, re.S | re.I)
     if not main:
@@ -89,15 +130,34 @@ def confirmed_no_announcement(html):
         return False
     body = body.group(1)
     expected = "Atsisiųskite Neste programėlę Atsisiųsti iš „App Store“ Atsisiųsti iš „Google Play“"
+    rimi_path = "/privatiems/klientu-naudos/specialus-pasiulymai/rimi-gimtadienis"
+    cards = re.findall(r'<a\b[^>]*\bhref="' + re.escape(rimi_path) + r'"[^>]*>.*?</a>', body, re.S | re.I)
+    if cards:
+        if len(cards) != 1:
+            return False
+        card = cards[0]
+        if text_content(card) != (
+            "Pilkis NESTE ir gauk RIMI dovanų! Kartu su mūsų draugais RIMI jų gimtadienio "
+            "proga paruošėme specialų pasiūlymą „Mano Rimi“ lojalumo programos nariams! Daugiau"
+        ):
+            return False
+        if re.findall(r'<a\b[^>]*\bhref="([^"]+)"', card) != [rimi_path]:
+            return False
+        image_path = (
+            "https://images.ctfassets.net/guhb48q98ydd/6JF17RLqixZcBAGqsgE8fa/"
+            "a41956b2139be3225f04c5f2f6288cd1/RIMI_reward_special_offer_page.jfif"
+        )
+        if not reviewed_images_only(card, 1, re.escape(image_path)):
+            return False
+        body = body.replace(card, "", 1)
+        expected = "Šiuo metu vykstančios akcijos " + expected
     if text_content(body) != expected:
         return False
     links = [_html.unescape(x) for x in re.findall(r'<a\b[^>]*href="([^"]+)"', body)]
     if len(links) != 2 or not any(x.startswith("https://apps.apple.com/") for x in links) or not any(x.startswith("https://play.google.com/store/apps/") for x in links):
         return False
-    images = re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', body)
-    return len(images) == 3 and all(
-        re.search(r"/(?:AppStoreButton[^/?]*\.png|GooglePlayButton[^/?]*\.png|lataa-neste-appi-qr-koodi\.png)(?:\?|$)", _html.unescape(src))
-        for src in images)
+    return reviewed_images_only(body, 3,
+        r"https://images\.ctfassets\.net/[^?]+/(?:AppStoreButton[^/?]*\.png|GooglePlayButton[^/?]*\.png|lataa-neste-appi-qr-koodi\.png)")
 
 
 def parse(html, today=None):
@@ -135,7 +195,7 @@ def announcement(html, today=None):
         return {"status": "announced", "valid_date": valid, "cents": cents}
     if confirmed_no_announcement(html):
         return {"status": "no_announcement"}
-    raise RuntimeError("unrecognized Neste offers listing: no dated promo and no verified empty listing")
+    raise RuntimeError("unrecognized Neste offers listing: no dated promo and no reviewed no-announcement listing")
 
 
 def load_existing():
