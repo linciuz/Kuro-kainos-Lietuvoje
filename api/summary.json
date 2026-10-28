@@ -1,39 +1,39 @@
 {
  "$schema_version": 1,
- "price_date": "2026-10-27",
+ "price_date": "2026-10-28",
  "currency": "EUR",
- "stations_with_prices": 760,
+ "stations_with_prices": 718,
  "national": {
   "petrol95": {
-   "min": 1.819,
-   "avg": 1.957,
+   "min": 1.799,
+   "avg": 1.928,
    "max": 2.059,
-   "count": 734
+   "count": 695
   },
   "diesel": {
-   "min": 2.159,
-   "avg": 2.262,
-   "max": 2.36,
-   "count": 736
+   "min": 2.149,
+   "avg": 2.247,
+   "max": 2.379,
+   "count": 697
   },
   "lpg": {
    "min": 0.75,
-   "avg": 0.936,
+   "avg": 0.937,
    "max": 1.02,
-   "count": 601
+   "count": 560
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.819,
-   "network": "UAB Baltic Petroleum",
-   "address": "Ukmergė, Kauno g. 49, 20115",
-   "municipality": "Ukmergės r. sav."
+   "price": 1.799,
+   "network": "UAB Alauša",
+   "address": "Ignalina, Švenčionių g. 29A, 30132",
+   "municipality": "Ignalinos r. sav."
   },
   "diesel": {
-   "price": 2.159,
+   "price": 2.149,
    "network": "UAB Alauša",
-   "address": "Bajorų k., Šimonių g. 36, 29352",
+   "address": "Anykščiai, A. Vienuolio g. 32A, 29149",
    "municipality": "Anykščių r. sav."
   },
   "lpg": {
