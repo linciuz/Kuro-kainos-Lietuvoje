@@ -45,8 +45,8 @@
     {
       "kind": "proxy",
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=super-treciadieniai",
-      "err": "HTTP 403",
-      "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
+      "err": "TimeoutError: The read operation timed out",
+      "body_head": ""
     },
     {
       "kind": "direct",
@@ -163,6 +163,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     }
   ],
-  "generated": "2026-10-28T11:16:24Z",
+  "generated": "2026-10-28T11:32:01Z",
   "attempt_count": 27
 }
