@@ -1,0 +1,34 @@
+{
+  "capture_date": "2026-10-28",
+  "purpose": "Actual current Neste index and RIMI offer evidence; no synthetic promotion or fuel prices.",
+  "sanitization": "Main only. Removed navigation, scripts, styles, inline style attributes and event handlers. All non-navigation main text, actual images/alt, classes and hrefs retained. No raw full page or script bundle saved.",
+  "source_entity_hash_definition": "Decompressed HTTP entity bytes held only in memory.",
+  "fixtures": [
+    {
+      "path": "tests/fixtures/neste_offers_20261028.html",
+      "source_url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai",
+      "final_url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai",
+      "http_status": 200,
+      "captured_utc": "2026-10-28T11:33:30.430578+00:00",
+      "source_entity_sha256": "82c88b22fe5565992cfb89449fafd9b54aa43990baef85d2b6e10a2a00d5d3f2",
+      "source_entity_bytes": 143481,
+      "source_main_sha256": "5bc438521d99ba8a7887bbd57083dbbdc66e14ecd5b6cd565dc8b8a1e87151f0",
+      "sanitized_sha256": "17072687a075e418d767ca416939387a1899e90e655768bc97d2130455769f0d",
+      "sanitized_bytes": 21179,
+      "non_navigation_main_text_preserved_exactly": true
+    },
+    {
+      "path": "tests/fixtures/neste_rimi_20261028.html",
+      "source_url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai/rimi-gimtadienis",
+      "final_url": "https://www.neste.lt/privatiems/klientu-naudos/specialus-pasiulymai/rimi-gimtadienis",
+      "http_status": 200,
+      "captured_utc": "2026-10-28T11:33:30.831775+00:00",
+      "source_entity_sha256": "0901607af28de453b5d0429405837dd7b63d79024346b2fe507c454203abe3ad",
+      "source_entity_bytes": 117217,
+      "source_main_sha256": "3de99ebbaa41701d1387caf3d4c8adfa4f37dbcc2e57cceaa014245d7715af8c",
+      "sanitized_sha256": "17e7572b90d48a189f2814d24357e5b967e5f916b238079fe15c6fa82f102503",
+      "sanitized_bytes": 8817,
+      "non_navigation_main_text_preserved_exactly": true
+    }
+  ]
+}
