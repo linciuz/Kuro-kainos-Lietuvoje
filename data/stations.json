@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-28T12:52:04+00:00Z",
+    "resolved_utc": "2026-10-28T13:22:03+00:00Z",
     "winner_counts": {
       "portal": 698,
       "null": 39,
@@ -17,7 +17,7 @@
         "date": "2026-10-28",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-28T12:52:03+00:00Z"
+        "fetched_utc": "2026-10-28T13:22:02+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -25,14 +25,14 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-28T12:52:04+00:00Z"
+        "fetched_utc": "2026-10-28T13:22:03+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.799,
-      "avg": 1.928,
+      "avg": 1.927,
       "max": 2.059,
       "count": 704
     },
@@ -4945,7 +4945,7 @@
       "address": "Klaipėda, Minijos g. 152A, 93263",
       "municipality": "Klaipėdos m. sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -4953,8 +4953,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.669656,
       "lon": 21.158613,
       "approx": false
@@ -4964,7 +4966,7 @@
       "address": "Klaipėda, Kretingos g. 28A, 92211",
       "municipality": "Klaipėdos m. sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -4972,8 +4974,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.728398,
       "lon": 21.132584,
       "approx": false
@@ -5349,7 +5353,7 @@
       "address": "Gargždai, Klaipėdos g. 39, 96157",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -5357,8 +5361,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.712282,
       "lon": 21.381627,
       "approx": false
@@ -5368,7 +5374,7 @@
       "address": "Pyktiškės k., Veiviržėnų g. 29, 96303",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -5376,8 +5382,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.687241,
       "lon": 21.693525,
       "approx": false,
@@ -5388,7 +5396,7 @@
       "address": "Gargždai, Kretingos pl. 1, 96105",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": 1.96,
+      "petrol95": 1.92,
       "diesel": 2.21,
       "lpg": 0.93,
       "fuels": [
@@ -5396,8 +5404,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.721342,
       "lon": 21.385487,
       "approx": false
@@ -5407,7 +5417,7 @@
       "address": "Dituvos k., Šv. Kristoforo g. 4, 96357",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -5415,8 +5425,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.582082,
       "lon": 21.285263,
       "approx": false,
@@ -5609,16 +5621,18 @@
       "address": "Darbėnai, Laisvės g. 15, 97264",
       "municipality": "Kretingos r. sav.",
       "locality": "",
-      "petrol95": 2.02,
-      "diesel": 2.28,
+      "petrol95": 1.92,
+      "diesel": 2.26,
       "lpg": 0.97,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 56.026775,
       "lon": 21.262624,
       "approx": false
@@ -5628,16 +5642,18 @@
       "address": "Kretinga, Vilniaus g. 29B, 97101",
       "municipality": "Kretingos r. sav.",
       "locality": "",
-      "petrol95": 2.02,
-      "diesel": 2.28,
+      "petrol95": 1.92,
+      "diesel": 2.26,
       "lpg": 0.97,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.896943,
       "lon": 21.244326,
       "approx": false
@@ -9272,7 +9288,7 @@
       "address": "Rietavas, Lėgų k. 1, 90305",
       "municipality": "Rietavo sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -9280,8 +9296,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.626937,
       "lon": 21.971782,
       "approx": false,
@@ -9292,7 +9310,7 @@
       "address": "Vatušių k., Kvėdarnos g. 2, 90307",
       "municipality": "Rietavo sav.",
       "locality": "",
-      "petrol95": 1.92,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -9300,8 +9318,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.718446,
       "lon": 21.932212,
       "approx": false,
@@ -14946,7 +14966,7 @@
       "address": "Saugų k., Tilžės g. 21, 99409",
       "municipality": "Šilutės r. sav.",
       "locality": "",
-      "petrol95": 1.89,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -14954,8 +14974,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.464353,
       "lon": 21.470278,
       "approx": false,
@@ -14966,7 +14988,7 @@
       "address": "Žemaitkiemio k., Liepų g. 4, 99317",
       "municipality": "Šilutės r. sav.",
       "locality": "",
-      "petrol95": 1.89,
+      "petrol95": 1.88,
       "diesel": 2.17,
       "lpg": 0.89,
       "fuels": [
@@ -14974,8 +14996,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-28T10:00:00+02:00",
+      "price_updated": "2026-10-28T15:11:06+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.227536,
       "lon": 21.701884,
       "approx": false,
