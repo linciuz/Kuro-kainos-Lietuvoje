@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-29T11:47:05Z",
+ "generated": "2026-10-29T19:16:13Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-10-29 13:01:01",
+ "api_last_updated": "2026-10-29 14:47:02",
  "count": 766,
  "with_coords": 765,
  "priced": 753,
@@ -9088,8 +9088,8 @@
    "brand": "Saurida",
    "municipality": "Radviliškio r. sav.",
    "address": "Radviliškis, Gedimino g. 50C, 82482",
-   "lat": 55.814668,
-   "lon": 23.553106,
+   "lat": 55.814688,
+   "lon": 23.553128,
    "fuels": [
     "lpg",
     "diesel",
@@ -9109,8 +9109,8 @@
    "brand": "Saurida",
    "municipality": "Radviliškio r. sav.",
    "address": "Velžių k., Radviliškio plentas 2, 82218",
-   "lat": 55.814742,
-   "lon": 23.553075,
+   "lat": 55.773262,
+   "lon": 23.656255,
    "fuels": [
     "lpg",
     "diesel",
@@ -13788,12 +13788,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.243,
-    "petrol95": 1.954
+    "diesel": 2.232,
+    "petrol95": 1.91
    },
    "gas_station_id": 123,
    "logo_url": null,
-   "submitted_at": "2026-10-29T06:10:12.000000Z"
+   "submitted_at": "2026-10-29T12:47:02.000000Z"
   },
   {
    "company": "UAB Saurida",
