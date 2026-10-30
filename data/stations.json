@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-30T10:16:01+00:00Z",
+    "resolved_utc": "2026-10-30T10:30:58+00:00Z",
     "winner_counts": {
-      "portal": 756,
-      "null": 10
+      "portal": 759,
+      "null": 7
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-10-30",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-30T10:16:01+00:00Z"
+        "fetched_utc": "2026-10-30T10:30:57+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-30T10:16:01+00:00Z"
+        "fetched_utc": "2026-10-30T10:30:58+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.77,
       "avg": 1.905,
       "max": 2.059,
-      "count": 730
+      "count": 733
     },
     "diesel": {
       "min": 2.14,
-      "avg": 2.247,
+      "avg": 2.246,
       "max": 2.376,
-      "count": 732
+      "count": 735
     },
     "lpg": {
       "min": 0.75,
       "avg": 0.942,
       "max": 1.02,
-      "count": 597
+      "count": 600
     }
   },
   "stations": [
@@ -7759,15 +7759,18 @@
       "address": "Panevėžys, S. Kerbedžio g. 2, 35135",
       "municipality": "Panevėžio m. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.849,
+      "diesel": 2.189,
+      "lpg": 0.899,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-10-30T12:24:10+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:24",
       "lat": 55.743174,
       "lon": 24.342494,
       "approx": false
@@ -7777,15 +7780,18 @@
       "address": "Panevėžys, Pušaloto g. 140, 35100",
       "municipality": "Panevėžio m. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.849,
+      "diesel": 2.189,
+      "lpg": 0.899,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-10-30T12:24:10+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:24",
       "lat": 55.746586,
       "lon": 24.329157,
       "approx": false
@@ -7795,15 +7801,18 @@
       "address": "Panevėžys, G. Petkevičaitės-Bitės g. 35C, 37138",
       "municipality": "Panevėžio m. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.849,
+      "diesel": 2.189,
+      "lpg": 0.899,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-10-30T12:24:10+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:24",
       "lat": 55.722438,
       "lon": 24.342183,
       "approx": false
