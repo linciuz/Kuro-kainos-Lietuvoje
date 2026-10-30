@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-10-30T09:00:56+00:00Z",
+    "resolved_utc": "2026-10-30T09:15:54+00:00Z",
     "winner_counts": {
       "portal": 756,
       "null": 10
@@ -16,7 +16,7 @@
         "date": "2026-10-30",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-10-30T09:00:56+00:00Z"
+        "fetched_utc": "2026-10-30T09:15:54+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,14 +24,14 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-10-30T09:00:56+00:00Z"
+        "fetched_utc": "2026-10-30T09:15:54+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.77,
-      "avg": 1.908,
+      "avg": 1.907,
       "max": 2.059,
       "count": 730
     },
@@ -5797,16 +5797,18 @@
       "address": "Kupiškis, Panevėžio g. 5, 40134",
       "municipality": "Kupiškio r. sav.",
       "locality": "",
-      "petrol95": 1.829,
-      "diesel": 2.169,
-      "lpg": 0.899,
+      "petrol95": 1.779,
+      "diesel": 2.149,
+      "lpg": 0.869,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-10-30T10:00:00+02:00",
+      "price_updated": "2026-10-30T11:12:55+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:12",
       "lat": 55.827171,
       "lon": 24.985997,
       "approx": false
