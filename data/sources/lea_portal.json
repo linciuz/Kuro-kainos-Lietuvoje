@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-02T13:54:25Z",
+ "generated": "2026-11-02T22:29:54Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-11-02 12:29:31",
+ "api_last_updated": "2026-11-02 19:34:57",
  "count": 767,
  "with_coords": 766,
  "priced": 151,
@@ -12712,13 +12712,13 @@
     "petrol95"
    ],
    "prices": {
-    "lpg": 0.89,
+    "lpg": 0.91,
     "diesel": 2.25,
-    "petrol95": 1.95
+    "petrol95": 1.93
    },
    "gas_station_id": 122,
    "logo_url": null,
-   "submitted_at": "2026-11-02T08:00:00.000000Z"
+   "submitted_at": "2026-11-02T17:34:57.000000Z"
   },
   {
    "company": "UAB Boost Petrol",
