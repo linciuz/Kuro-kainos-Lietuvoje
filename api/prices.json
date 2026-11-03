@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-03T08:46:27Z",
+ "generated_utc": "2026-11-03T09:01:30Z",
  "price_date": "2026-11-03",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.75,
    "avg": 1.878,
    "max": 2.039,
-   "count": 726
+   "count": 729
   },
   "diesel": {
    "min": 2.149,
    "avg": 2.234,
    "max": 2.365,
-   "count": 727
+   "count": 730
   },
   "lpg": {
    "min": 0.8,
    "avg": 0.95,
    "max": 1.02,
-   "count": 591
+   "count": 594
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kalvarijos sav."
   }
  },
- "count": 748,
+ "count": 751,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -523,6 +523,22 @@
    "display_address_source": null
   },
   {
+   "network": "UAB Degta",
+   "address": "Anykščiai, Vienuolio g. 34A, 29148",
+   "municipality": "Anykščių r. sav.",
+   "lat": 55.5226,
+   "lon": 25.087988,
+   "petrol95": 1.819,
+   "diesel": 2.189,
+   "lpg": 0.909,
+   "price_updated": "2026-11-03T11:00:19+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
    "network": "UAB Narjanta",
    "address": "Pumpučiai, Pumpučių g. 25, 29253",
    "municipality": "Anykščių r. sav.",
@@ -836,6 +852,22 @@
    "diesel": 2.229,
    "lpg": 0.989,
    "price_updated": "2026-11-03T09:51:52+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Degta",
+   "address": "Vievis, Kauno g. 55A, 21371",
+   "municipality": "Elektrėnų sav.",
+   "lat": 54.775219,
+   "lon": 24.810495,
+   "petrol95": 2.039,
+   "diesel": 2.359,
+   "lpg": 0.999,
+   "price_updated": "2026-11-03T11:00:19+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -7396,6 +7428,22 @@
    "diesel": null,
    "lpg": 0.999,
    "price_updated": "2026-11-03T09:08:08+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Degta",
+   "address": "Rokiškis, Respublikos g. 113B, 42150",
+   "municipality": "Rokiškio r. sav.",
+   "lat": 55.946682,
+   "lon": 25.591055,
+   "petrol95": 1.909,
+   "diesel": 2.253,
+   "lpg": 0.939,
+   "price_updated": "2026-11-03T11:00:19+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
