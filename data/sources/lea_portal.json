@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-03T13:03:29Z",
+ "generated": "2026-11-03T20:18:19Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-11-03 14:49:40",
+ "api_last_updated": "2026-11-03 16:59:25",
  "count": 767,
  "with_coords": 766,
  "priced": 753,
@@ -1974,12 +1974,12 @@
     "petrol95"
    ],
    "prices": {
-    "diesel": 2.24,
-    "petrol95": 1.88
+    "diesel": 2.29,
+    "petrol95": 1.95
    },
    "gas_station_id": 557,
    "logo_url": null,
-   "submitted_at": "2026-11-03T07:56:25.000000Z"
+   "submitted_at": "2026-11-03T14:59:25.000000Z"
   },
   {
    "company": "UAB Saurida",
