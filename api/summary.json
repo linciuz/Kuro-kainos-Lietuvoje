@@ -1,43 +1,43 @@
 {
  "$schema_version": 1,
- "price_date": "2026-10-30",
+ "price_date": "2026-11-03",
  "currency": "EUR",
- "stations_with_prices": 759,
+ "stations_with_prices": 748,
  "national": {
   "petrol95": {
-   "min": 1.77,
-   "avg": 1.904,
-   "max": 2.059,
-   "count": 733
+   "min": 1.75,
+   "avg": 1.878,
+   "max": 2.039,
+   "count": 726
   },
   "diesel": {
-   "min": 2.14,
-   "avg": 2.245,
-   "max": 2.376,
-   "count": 735
+   "min": 2.149,
+   "avg": 2.234,
+   "max": 2.365,
+   "count": 727
   },
   "lpg": {
-   "min": 0.75,
-   "avg": 0.942,
+   "min": 0.8,
+   "avg": 0.95,
    "max": 1.02,
-   "count": 600
+   "count": 591
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.77,
-   "network": "UAB Jozita",
-   "address": "Kelmė, V. Putvinskio g. 37, 86113",
-   "municipality": "Kelmės r. sav."
+   "price": 1.75,
+   "network": "UAB Baltic Petroleum",
+   "address": "Utena, Basanavičiaus g. 1B, 28138",
+   "municipality": "Utenos r. sav."
   },
   "diesel": {
-   "price": 2.14,
-   "network": "UAB Jozita",
-   "address": "Kelmė, V. Putvinskio g. 37, 86113",
-   "municipality": "Kelmės r. sav."
+   "price": 2.149,
+   "network": "UAB Stateta",
+   "address": "Alytus, Santaikos g. 28 B, 62123",
+   "municipality": "Alytaus m. sav."
   },
   "lpg": {
-   "price": 0.75,
+   "price": 0.8,
    "network": "UAB Saurida",
    "address": "Kušliškių k. Suvalkijos g. 15, 69200",
    "municipality": "Kalvarijos sav."
