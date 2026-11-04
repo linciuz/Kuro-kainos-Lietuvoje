@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T09:30:50Z",
+  "generated": "2026-11-04T09:46:35Z",
   "lea_date": "2026-11-04",
   "threshold": 0.015,
   "sources": [
@@ -132,9 +132,9 @@
         "UAB Saurida"
       ],
       "fuel": "petrol95",
-      "lea_min": 1.84,
+      "lea_min": 1.82,
       "live": 1.92,
-      "delta": 0.08,
+      "delta": 0.1,
       "direction": "up",
       "scope": "per_station",
       "source": "Saurida",
