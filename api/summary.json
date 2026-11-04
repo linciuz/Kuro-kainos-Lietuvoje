@@ -6,7 +6,7 @@
  "national": {
   "petrol95": {
    "min": 1.754,
-   "avg": 1.904,
+   "avg": 1.907,
    "max": 2.039,
    "count": 646
   },
@@ -17,8 +17,8 @@
    "count": 648
   },
   "lpg": {
-   "min": 0.85,
-   "avg": 0.974,
+   "min": 0.75,
+   "avg": 0.971,
    "max": 1.049,
    "count": 510
   }
@@ -37,10 +37,10 @@
    "municipality": "Kupiškio r. sav."
   },
   "lpg": {
-   "price": 0.85,
-   "network": "UAB Topgas",
-   "address": "Slavinčiškis, Slavinčiškio g. 18, 40333",
-   "municipality": "Kupiškio r. sav."
+   "price": 0.75,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
