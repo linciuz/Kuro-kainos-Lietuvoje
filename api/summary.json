@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-03",
+ "price_date": "2026-11-04",
  "currency": "EUR",
- "stations_with_prices": 753,
+ "stations_with_prices": 662,
  "national": {
   "petrol95": {
-   "min": 1.75,
-   "avg": 1.882,
+   "min": 1.754,
+   "avg": 1.913,
    "max": 2.039,
-   "count": 730
+   "count": 644
   },
   "diesel": {
    "min": 2.149,
-   "avg": 2.235,
+   "avg": 2.271,
    "max": 2.365,
-   "count": 732
+   "count": 646
   },
   "lpg": {
    "min": 0.75,
-   "avg": 0.95,
-   "max": 1.02,
-   "count": 595
+   "avg": 0.968,
+   "max": 1.049,
+   "count": 508
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.75,
-   "network": "UAB Baltic Petroleum",
-   "address": "Utena, Basanavičiaus g. 1B, 28138",
+   "price": 1.754,
+   "network": "UAB Alauša",
+   "address": "Utena, J. Basanavičiaus g. 1C, 28134",
    "municipality": "Utenos r. sav."
   },
   "diesel": {
    "price": 2.149,
-   "network": "UAB Alauša",
-   "address": "Kaunas, Palemono g. 171, 52107",
-   "municipality": "Kauno m. sav."
+   "network": "UAB Velseka",
+   "address": "Kupiškis, Panevėžio g. 5, 40134",
+   "municipality": "Kupiškio r. sav."
   },
   "lpg": {
    "price": 0.75,
