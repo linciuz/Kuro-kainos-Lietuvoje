@@ -149,14 +149,8 @@
       "url": "https://kk-reports.fuelis.workers.dev/proxy/viada?slug=super-treciadieniai",
       "err": "HTTP 403",
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
-    },
-    {
-      "kind": "jina",
-      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
-      "err": "HTTP 422",
-      "body_head": "{\"data\":null,\"code\":422,\"name\":\"AssertionFailureError\",\"status\":42206,\"message\":\"Failed to process the page: Worker terminated due to reaching memory limit: JS heap out of memory\",\"readableMessage\":\"AssertionFailureError: Failed to process the page: Worker terminated due to reaching memory limit: JS"
     }
   ],
-  "generated": "2026-11-04T10:16:53Z",
-  "attempt_count": 26
+  "generated": "2026-11-04T10:31:36Z",
+  "attempt_count": 25
 }
