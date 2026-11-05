@@ -49,6 +49,12 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     },
     {
+      "kind": "jina",
+      "url": "https://r.jina.ai/https://www.viada.lt/akcija/super-treciadieniai/",
+      "err": "HTTP 422",
+      "body_head": "{\"data\":null,\"code\":422,\"name\":\"AssertionFailureError\",\"status\":42206,\"message\":\"Request failed: Timeout was reached\",\"readableMessage\":\"AssertionFailureError: Request failed: Timeout was reached\"}"
+    },
+    {
       "kind": "direct",
       "url": "https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
       "err": "HTTP 403",
@@ -151,6 +157,6 @@
       "body_head": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]> <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]--> <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![e"
     }
   ],
-  "generated": "2026-11-05T14:36:56Z",
-  "attempt_count": 25
+  "generated": "2026-11-05T16:25:11Z",
+  "attempt_count": 26
 }
