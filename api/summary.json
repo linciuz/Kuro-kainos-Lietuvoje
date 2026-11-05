@@ -6,19 +6,19 @@
  "national": {
   "petrol95": {
    "min": 1.75,
-   "avg": 1.874,
+   "avg": 1.877,
    "max": 2.039,
    "count": 735
   },
   "diesel": {
    "min": 2.114,
-   "avg": 2.243,
+   "avg": 2.244,
    "max": 2.359,
    "count": 737
   },
   "lpg": {
-   "min": 0.85,
-   "avg": 0.981,
+   "min": 0.75,
+   "avg": 0.979,
    "max": 1.06,
    "count": 597
   }
@@ -37,10 +37,10 @@
    "municipality": "Marijampolės sav."
   },
   "lpg": {
-   "price": 0.85,
-   "network": "UAB Topgas",
-   "address": "Slavinčiškis, Slavinčiškio g. 18, 40333",
-   "municipality": "Kupiškio r. sav."
+   "price": 0.75,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
