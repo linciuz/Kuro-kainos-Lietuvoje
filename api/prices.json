@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-05T13:35:31Z",
+ "generated_utc": "2026-11-05T13:36:17Z",
  "price_date": "2026-11-05",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -5214,8 +5214,8 @@
    "network": "UAB Emsi",
    "address": "Igliaukos k., Prienų g. 7, 69117",
    "municipality": "Marijampolės sav.",
-   "lat": 54.55799,
-   "lon": 23.656297,
+   "lat": 54.67923,
+   "lon": 23.200441,
    "petrol95": 1.85,
    "diesel": 2.21,
    "lpg": 0.99,
