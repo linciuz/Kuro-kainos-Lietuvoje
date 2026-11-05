@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-05T09:45:34+00:00Z",
+    "resolved_utc": "2026-11-05T10:00:37+00:00Z",
     "winner_counts": {
       "portal": 718,
       "null": 49
@@ -16,7 +16,7 @@
         "date": "2026-11-05",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-05T09:45:34+00:00Z"
+        "fetched_utc": "2026-11-05T10:00:36+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-05T09:45:34+00:00Z"
+        "fetched_utc": "2026-11-05T10:00:37+00:00Z"
       }
     ]
   },
@@ -3823,10 +3823,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.971961,
       "lon": 23.859074,
       "approx": false,
@@ -3845,10 +3845,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.951532,
       "lon": 23.893635,
       "approx": false
@@ -4672,10 +4672,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.661071,
       "lon": 21.176244,
       "approx": false
@@ -6467,10 +6467,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.55839,
       "lon": 23.275092,
       "approx": false,
@@ -7875,10 +7875,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.669769,
       "lon": 24.346336,
       "approx": false,
@@ -7897,10 +7897,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.709913,
       "lon": 24.372552,
       "approx": false,
@@ -8081,10 +8081,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.906413,
       "lon": 24.338651,
       "approx": false,
@@ -8779,10 +8779,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.802003,
       "lon": 23.563835,
       "approx": false,
@@ -8983,10 +8983,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.278202,
       "lon": 23.341607,
       "approx": false,
@@ -10048,10 +10048,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.707485,
       "lon": 24.996028,
       "approx": false,
@@ -10752,10 +10752,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.657941,
       "lon": 23.033195,
       "approx": false,
@@ -11748,10 +11748,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.62275,
       "lon": 25.105019,
       "approx": false
@@ -11769,10 +11769,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.64091,
       "lon": 25.184263,
       "approx": false,
@@ -11791,10 +11791,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 54.710402,
       "lon": 25.161987,
       "approx": false,
@@ -13966,10 +13966,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.898858,
       "lon": 23.271864,
       "approx": false
@@ -14747,10 +14747,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-05T11:19:19+02:00",
+      "price_updated": "2026-11-05T11:54:47+02:00",
       "price_src": "portal",
       "price_intraday": true,
-      "price_time": "11:19",
+      "price_time": "11:54",
       "lat": 55.349229,
       "lon": 21.468518,
       "approx": false,
