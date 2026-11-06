@@ -6,7 +6,7 @@
  "national": {
   "petrol95": {
    "min": 1.73,
-   "avg": 1.866,
+   "avg": 1.868,
    "max": 2.039,
    "count": 736
   },
@@ -17,8 +17,8 @@
    "count": 738
   },
   "lpg": {
-   "min": 0.89,
-   "avg": 0.995,
+   "min": 0.75,
+   "avg": 0.992,
    "max": 1.079,
    "count": 602
   }
@@ -37,10 +37,10 @@
    "municipality": "Utenos r. sav."
   },
   "lpg": {
-   "price": 0.89,
-   "network": "UAB Topgas",
-   "address": "Kaišiadorys, Paukštininkų g. 13, 56161",
-   "municipality": "Kaišiadorių r. sav."
+   "price": 0.75,
+   "network": "UAB Saurida",
+   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
+   "municipality": "Kalvarijos sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
