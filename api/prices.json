@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-06T11:46:02Z",
+ "generated_utc": "2026-11-06T12:00:57Z",
  "price_date": "2026-11-06",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.89,
    "avg": 0.995,
    "max": 1.079,
-   "count": 601
+   "count": 602
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kaišiadorių r. sav."
   }
  },
- "count": 760,
+ "count": 761,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -11444,6 +11444,22 @@
    "diesel": 2.279,
    "lpg": null,
    "price_updated": "2026-11-06T09:49:34+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Plovimo sistemos",
+   "address": "Šiauliai, Gegužių g. 28, 78322",
+   "municipality": "Šiaulių m. sav.",
+   "lat": 55.905911,
+   "lon": 23.25872,
+   "petrol95": null,
+   "diesel": null,
+   "lpg": 0.919,
+   "price_updated": "2026-11-06T13:49:17+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
