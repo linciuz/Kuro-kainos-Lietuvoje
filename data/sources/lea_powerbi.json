@@ -1,5 +1,5 @@
 {
-  "count": 848,
+  "count": 849,
   "stations": [
     {
       "company": "AB Orlen Baltics Retail",
@@ -3185,6 +3185,16 @@
       "company": "UAB Emsi",
       "municipality": "Vilniaus r. sav.",
       "address": "Bukiškis, Ukmergės g. 437, 14183",
+      "fuels": [
+        "petrol95",
+        "diesel",
+        "lpg"
+      ]
+    },
+    {
+      "company": "UAB Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Igliaukos k., Prienų g. 7, 69117",
       "fuels": [
         "petrol95",
         "diesel",
