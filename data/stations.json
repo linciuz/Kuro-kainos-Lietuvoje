@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-09T09:00:30+00:00Z",
+    "resolved_utc": "2026-11-09T09:15:30+00:00Z",
     "winner_counts": {
-      "portal": 753,
-      "null": 14
+      "portal": 754,
+      "null": 13
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-11-09",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-09T09:00:29+00:00Z"
+        "fetched_utc": "2026-11-09T09:15:29+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-09T09:00:30+00:00Z"
+        "fetched_utc": "2026-11-09T09:15:30+00:00Z"
       }
     ]
   },
@@ -33,13 +33,13 @@
       "min": 1.689,
       "avg": 1.84,
       "max": 2.039,
-      "count": 732
+      "count": 733
     },
     "diesel": {
       "min": 2.119,
       "avg": 2.226,
       "max": 2.359,
-      "count": 734
+      "count": 735
     },
     "lpg": {
       "min": 0.89,
@@ -970,16 +970,18 @@
       "address": "Druskininkai, Gardino g. 98, 66225",
       "municipality": "Druskininkų sav.",
       "locality": "",
-      "petrol95": 1.84,
-      "diesel": 2.2,
+      "petrol95": 1.88,
+      "diesel": 2.24,
       "lpg": 1.01,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-09T09:27:11+02:00",
+      "price_updated": "2026-11-09T11:06:57+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:06",
       "lat": 53.990179,
       "lon": 24.005703,
       "approx": false
@@ -1338,8 +1340,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-09T10:00:00+02:00",
+      "price_updated": "2026-11-09T11:13:20+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:13",
       "lat": 55.137949,
       "lon": 24.193271,
       "approx": false,
@@ -2135,14 +2139,17 @@
       "address": "Kaunas, Linkuvos g. 77, 48314",
       "municipality": "Kauno m. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
+      "petrol95": 1.82,
+      "diesel": 2.17,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-09T11:00:52+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.9143,
       "lon": 23.887705,
       "approx": false
@@ -5804,8 +5811,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-09T10:00:00+02:00",
+      "price_updated": "2026-11-09T11:13:24+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:13",
       "lat": 55.827171,
       "lon": 24.985997,
       "approx": false

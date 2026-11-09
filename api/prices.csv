@@ -45,7 +45,7 @@ UAB Baltic Petroleum,"Druskininkai, Gardino g. 79, 69191",Druskininkų sav.,53.
 UAB Baltic Petroleum,"Druskininkai, Leipalingio g. 26, 66371",Druskininkų sav.,54.030364,23.983674,1.889,2.249,1.009,2026-11-09T09:28:33+02:00,2026-11-09
 UAB Baltic Petroleum,"Leipalingis, Merkinės g. 37, 67280",Druskininkų sav.,54.094631,23.871494,1.859,2.229,1.039,2026-11-09T09:28:34+02:00,2026-11-09
 UAB Circle K Lietuva,"Druskininkai, M. K. Čiurlionio g. 113, 66161",Druskininkų sav.,54.010273,23.993451,1.859,2.219,1.049,2026-11-09T09:53:46+02:00,2026-11-09
-UAB Tomega,"Druskininkai, Gardino g. 98, 66225",Druskininkų sav.,53.990179,24.005703,1.84,2.2,1.01,2026-11-09T09:27:11+02:00,2026-11-09
+UAB Tomega,"Druskininkai, Gardino g. 98, 66225",Druskininkų sav.,53.990179,24.005703,1.88,2.24,1.01,2026-11-09T11:06:57+02:00,2026-11-09
 AB Orlen Baltics Retail,"Kakliniškių k., Žilvičių g. 1A, 26138",Elektrėnų sav.,54.790914,24.670579,1.849,2.249,1.029,2026-11-09T09:21:03+02:00,2026-11-09
 UAB Boost Petrol,"Elektrėnai, Dubijos g. 36, 26130",Elektrėnų sav.,54.786231,24.714388,1.919,2.319,1.059,2026-11-09T09:24:26+02:00,2026-11-09
 UAB Circle K Lietuva,"Elektrėnai, Sabališkių g. 1F, 26128",Elektrėnų sav.,54.78921,24.676086,1.829,2.229,1.089,2026-11-09T09:53:46+02:00,2026-11-09
@@ -63,7 +63,7 @@ UAB Circle K Lietuva,"Jonava, Vasario 16-osios g. 33, 55164",Jonavos r. sav.,55.
 UAB Emsi,"Jonava, Vasario 16-osios g. 70, 55165",Jonavos r. sav.,55.071207,24.257898,1.819,2.219,,2026-11-09T08:57:44+02:00,2026-11-09
 UAB Neste Lietuva,"Gudžionių k., Šilų sen., Plento g. 7, 55462",Jonavos r. sav.,55.09568,24.31259,1.769,2.169,,2026-11-09T08:57:21+02:00,2026-11-09
 UAB Viada LT,"Jonava, Darbininkų g. 4D, 55101",Jonavos r. sav.,55.092675,24.281952,1.879,2.239,1.069,2026-11-09T10:02:06+02:00,2026-11-09
-UAB Vimijula,"Ručiūnų k., Kauno g. 2A, 55355",Jonavos r. sav.,55.137949,24.193271,1.96,2.28,1.03,2026-11-09T10:00:00+02:00,2026-11-09
+UAB Vimijula,"Ručiūnų k., Kauno g. 2A, 55355",Jonavos r. sav.,55.137949,24.193271,1.96,2.28,1.03,2026-11-09T11:13:20+02:00,2026-11-09
 UAB Žibalas,"Jonava, Taurostos g. 16A, 55195",Jonavos r. sav.,55.067137,24.287969,1.97,2.3,1.08,2026-11-09T09:05:52+02:00,2026-11-09
 Sigito Rimkevičiaus komercinė įmonė,"Joniškis, Turgaus g. 3, 84172",Joniškio r. sav.,56.228934,23.610088,1.789,2.189,0.979,2026-11-09T09:27:35+02:00,2026-11-09
 UAB Apsaga,"Radikių k., 13, 84164",Joniškio r. sav.,56.207315,23.5803,1.825,2.229,1.045,2026-11-09T09:53:44+02:00,2026-11-09
@@ -104,6 +104,7 @@ AB Orlen Baltics Retail,"Kaunas, Kalvarijos g. 138, 46403",Kauno m. sav.,54.8509
 AB Orlen Baltics Retail,"Kaunas, Pramonės pr. 37, 51271",Kauno m. sav.,54.915802,23.984205,1.839,2.239,1.029,2026-11-09T09:21:03+02:00,2026-11-09
 AB Orlen Baltics Retail,"Kaunas, Varnių g. 50, 48401",Kauno m. sav.,54.913801,23.90685,1.819,2.199,1.019,2026-11-09T09:21:03+02:00,2026-11-09
 AB Orlen Baltics Retail,"Kaunas, Veiverių g. 148B, 46392",Kauno m. sav.,54.867321,23.887277,1.839,2.239,1.029,2026-11-09T09:21:03+02:00,2026-11-09
+MB Tormenta,"Kaunas, Linkuvos g. 77, 48314",Kauno m. sav.,54.9143,23.887705,1.82,2.17,,2026-11-09T11:00:52+02:00,2026-11-09
 UAB Alauša,"Kaunas, Palemono g. 171, 52107",Kauno m. sav.,54.923488,24.072113,1.749,2.149,,2026-11-09T09:27:33+02:00,2026-11-09
 UAB Baltic Petroleum,"Kaunas, Taikos pr. 120, 52140",Kauno m. sav.,54.917432,24.034789,1.799,2.189,0.979,2026-11-09T09:28:33+02:00,2026-11-09
 UAB Baltic Petroleum,"Kaunas, Chemijos g. 6, 51344",Kauno m. sav.,54.9032,23.982769,1.809,2.199,0.979,2026-11-09T09:28:33+02:00,2026-11-09
@@ -283,7 +284,7 @@ UAB Baltic Petroleum,"Noriūnų k., Parko g. 3A, 40395",Kupiškio r. sav.,55.796
 UAB Narjanta,"Aleksandrijos k., Kikonių g. 10, 40335",Kupiškio r. sav.,55.824587,25.001069,1.999,2.299,0.959,2026-11-09T08:29:14+02:00,2026-11-09
 UAB Narjanta,"Dvariškių vs. 2, 40402",Kupiškio r. sav.,55.773414,24.754327,1.909,2.259,0.959,2026-11-09T08:29:14+02:00,2026-11-09
 UAB Stateta,"Kupiškis, Panevėžio g. 9, 40134",Kupiškio r. sav.,55.826051,24.979937,1.759,2.169,0.999,2026-11-09T09:48:06+02:00,2026-11-09
-UAB Velseka,"Kupiškis, Panevėžio g. 5, 40134",Kupiškio r. sav.,55.827171,24.985997,1.779,2.149,0.959,2026-11-09T10:00:00+02:00,2026-11-09
+UAB Velseka,"Kupiškis, Panevėžio g. 5, 40134",Kupiškio r. sav.,55.827171,24.985997,1.779,2.149,0.959,2026-11-09T11:13:24+02:00,2026-11-09
 UAB Viada LT,"Kerelių k. 1A, 40473",Kupiškio r. sav.,55.856593,25.173694,1.979,2.299,0.999,2026-11-09T10:02:07+02:00,2026-11-09
 UAB Viada LT,"Kupiškis, Pergalės g. 15, 40109",Kupiškio r. sav.,55.844616,24.979101,1.979,2.299,0.999,2026-11-09T10:02:07+02:00,2026-11-09
 IĮ M.Augustinaičio,"Šingalių k., Kėdainių g. 44, 58185",Kėdainių r. sav.,55.249628,23.851884,1.95,2.25,1.02,2026-11-09T09:57:53+02:00,2026-11-09
