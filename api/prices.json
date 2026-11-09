@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-09T09:45:47Z",
+ "generated_utc": "2026-11-09T10:00:56Z",
  "price_date": "2026-11-09",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.689,
    "avg": 1.839,
    "max": 2.039,
-   "count": 733
+   "count": 734
   },
   "diesel": {
    "min": 2.119,
    "avg": 2.226,
    "max": 2.359,
-   "count": 735
+   "count": 736
   },
   "lpg": {
    "min": 0.89,
@@ -56,7 +56,7 @@
    "municipality": "Šilutės r. sav."
   }
  },
- "count": 754,
+ "count": 755,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4420,6 +4420,22 @@
    "diesel": 2.299,
    "lpg": 1.039,
    "price_updated": "2026-11-09T10:02:07+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.79,
+   "diesel": 2.18,
+   "lpg": null,
+   "price_updated": "2026-11-09T11:50:19+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,

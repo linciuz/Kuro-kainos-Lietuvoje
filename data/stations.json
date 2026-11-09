@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-09T09:45:29+00:00Z",
+    "resolved_utc": "2026-11-09T10:00:32+00:00Z",
     "winner_counts": {
-      "portal": 754,
-      "null": 13
+      "portal": 755,
+      "null": 12
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-11-09",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-09T09:45:28+00:00Z"
+        "fetched_utc": "2026-11-09T10:00:31+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-09T09:45:29+00:00Z"
+        "fetched_utc": "2026-11-09T10:00:32+00:00Z"
       }
     ]
   },
@@ -33,13 +33,13 @@
       "min": 1.689,
       "avg": 1.839,
       "max": 2.039,
-      "count": 733
+      "count": 734
     },
     "diesel": {
       "min": 2.119,
       "avg": 2.226,
       "max": 2.359,
-      "count": 735
+      "count": 736
     },
     "lpg": {
       "min": 0.89,
@@ -5540,14 +5540,17 @@
       "address": "Gobergiškės k., Dvaro g. 1, 92498",
       "municipality": "Klaipėdos r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
+      "petrol95": 1.79,
+      "diesel": 2.18,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-09T11:50:19+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:50",
       "lat": 55.71917,
       "lon": 21.293355,
       "approx": false,
