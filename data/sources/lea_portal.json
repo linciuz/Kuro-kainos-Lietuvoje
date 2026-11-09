@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-09T14:22:58Z",
+ "generated": "2026-11-09T23:10:41Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-11-09 12:01:55",
+ "api_last_updated": "2026-11-09 18:53:19",
  "count": 767,
  "with_coords": 767,
  "priced": 755,
@@ -7222,7 +7222,7 @@
    },
    "gas_station_id": 644,
    "logo_url": null,
-   "submitted_at": "2026-11-09T08:00:00.000000Z"
+   "submitted_at": "2026-11-09T16:53:19.000000Z"
   },
   {
    "company": "UAB Viada LT",
