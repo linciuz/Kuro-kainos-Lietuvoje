@@ -1,46 +1,46 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-06",
+ "price_date": "2026-11-09",
  "currency": "EUR",
- "stations_with_prices": 761,
+ "stations_with_prices": 753,
  "national": {
   "petrol95": {
-   "min": 1.73,
-   "avg": 1.868,
+   "min": 1.689,
+   "avg": 1.84,
    "max": 2.039,
-   "count": 736
+   "count": 732
   },
   "diesel": {
-   "min": 2.139,
-   "avg": 2.248,
+   "min": 2.119,
+   "avg": 2.226,
    "max": 2.359,
-   "count": 738
+   "count": 734
   },
   "lpg": {
-   "min": 0.75,
-   "avg": 0.992,
-   "max": 1.079,
-   "count": 602
+   "min": 0.89,
+   "avg": 1.009,
+   "max": 1.089,
+   "count": 596
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.73,
-   "network": "UAB Jozita",
-   "address": "Kaunas, Baltų pr. 141A, 47126",
-   "municipality": "Kauno m. sav."
+   "price": 1.689,
+   "network": "UAB Baltic Petroleum",
+   "address": "Klaipėda, Liepų g. 79A, 92195",
+   "municipality": "Klaipėdos m. sav."
   },
   "diesel": {
-   "price": 2.139,
-   "network": "UAB Utentra",
-   "address": "Utena, Pramonės g. 16, 28119",
-   "municipality": "Utenos r. sav."
+   "price": 2.119,
+   "network": "UAB Neste Lietuva",
+   "address": "Kaunas, Ateities pl. 50B, 52106",
+   "municipality": "Kauno m. sav."
   },
   "lpg": {
-   "price": 0.75,
-   "network": "UAB Saurida",
-   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
-   "municipality": "Kalvarijos sav."
+   "price": 0.89,
+   "network": "IĮ V.Marcinkevičiaus",
+   "address": "Pavilnučio k., Bažnyčios g. 7, 99392",
+   "municipality": "Šilutės r. sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
