@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-10T11:16:36Z",
+ "generated_utc": "2026-11-10T11:31:34Z",
  "price_date": "2026-11-10",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -4323,7 +4323,7 @@
    "petrol95": 1.779,
    "diesel": 2.149,
    "lpg": 0.959,
-   "price_updated": "2026-11-10T10:00:00+02:00",
+   "price_updated": "2026-11-10T13:29:36+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
