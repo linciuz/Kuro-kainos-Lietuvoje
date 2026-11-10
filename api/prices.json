@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-10T10:31:38Z",
+ "generated_utc": "2026-11-10T10:46:37Z",
  "price_date": "2026-11-10",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.699,
    "avg": 1.863,
    "max": 2.039,
-   "count": 699
+   "count": 700
   },
   "diesel": {
    "min": 2.129,
-   "avg": 2.236,
+   "avg": 2.237,
    "max": 2.359,
-   "count": 701
+   "count": 702
   },
   "lpg": {
    "min": 0.75,
    "avg": 1.011,
    "max": 1.109,
-   "count": 560
+   "count": 561
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kalvarijos sav."
   }
  },
- "count": 719,
+ "count": 720,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -6372,6 +6372,22 @@
    "diesel": null,
    "lpg": 0.93,
    "price_updated": "2026-11-10T09:12:20+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB VVARFF",
+   "address": "Truikių k., Pramogų g. 4, 90110",
+   "municipality": "Plungės r. sav.",
+   "lat": 55.939019,
+   "lon": 21.880091,
+   "petrol95": 1.896,
+   "diesel": 2.296,
+   "lpg": 1.086,
+   "price_updated": "2026-11-10T12:33:24+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
