@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-10T09:01:29Z",
+ "generated_utc": "2026-11-10T09:16:04Z",
  "price_date": "2026-11-10",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,19 +21,19 @@
    "min": 1.699,
    "avg": 1.863,
    "max": 2.039,
-   "count": 698
+   "count": 699
   },
   "diesel": {
    "min": 2.129,
-   "avg": 2.237,
+   "avg": 2.236,
    "max": 2.359,
-   "count": 700
+   "count": 701
   },
   "lpg": {
    "min": 0.75,
    "avg": 1.011,
    "max": 1.109,
-   "count": 559
+   "count": 560
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Kalvarijos sav."
   }
  },
- "count": 718,
+ "count": 719,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -10240,10 +10240,10 @@
    "municipality": "Visagino sav.",
    "lat": 55.590381,
    "lon": 26.463361,
-   "petrol95": 1.808,
+   "petrol95": 1.798,
    "diesel": 2.198,
    "lpg": null,
-   "price_updated": "2026-11-10T08:30:12+02:00",
+   "price_updated": "2026-11-10T11:03:12+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -11268,6 +11268,22 @@
    "diesel": 2.2,
    "lpg": 0.89,
    "price_updated": "2026-11-10T09:28:19+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
+   "network": "UAB Andopas",
+   "address": "Šilutė, Ramučių g. 43, 99150",
+   "municipality": "Šilutės r. sav.",
+   "lat": 55.358829,
+   "lon": 21.5034,
+   "petrol95": 1.78,
+   "diesel": 2.15,
+   "lpg": 0.98,
+   "price_updated": "2026-11-10T11:03:31+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
