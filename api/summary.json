@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-10",
+ "price_date": "2026-11-11",
  "currency": "EUR",
- "stations_with_prices": 720,
+ "stations_with_prices": 751,
  "national": {
   "petrol95": {
-   "min": 1.699,
-   "avg": 1.862,
-   "max": 2.039,
-   "count": 700
+   "min": 1.649,
+   "avg": 1.819,
+   "max": 1.98,
+   "count": 731
   },
   "diesel": {
-   "min": 2.129,
-   "avg": 2.236,
+   "min": 2.089,
+   "avg": 2.205,
    "max": 2.359,
-   "count": 702
+   "count": 733
   },
   "lpg": {
    "min": 0.75,
-   "avg": 1.011,
-   "max": 1.109,
-   "count": 561
+   "avg": 1.021,
+   "max": 1.149,
+   "count": 593
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.699,
-   "network": "UAB Borusta",
-   "address": "Birštonas, Prienų g. 14, 59219",
-   "municipality": "Birštono sav."
+   "price": 1.649,
+   "network": "UAB Velseka",
+   "address": "Kupiškis, Panevėžio g. 5, 40134",
+   "municipality": "Kupiškio r. sav."
   },
   "diesel": {
-   "price": 2.129,
-   "network": "UAB Baltic Petroleum",
-   "address": "Utena, Basanavičiaus g. 1B, 28138",
-   "municipality": "Utenos r. sav."
+   "price": 2.089,
+   "network": "UAB Velseka",
+   "address": "Kupiškis, Panevėžio g. 5, 40134",
+   "municipality": "Kupiškio r. sav."
   },
   "lpg": {
    "price": 0.75,
