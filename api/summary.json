@@ -2,25 +2,25 @@
  "$schema_version": 1,
  "price_date": "2026-11-11",
  "currency": "EUR",
- "stations_with_prices": 751,
+ "stations_with_prices": 753,
  "national": {
   "petrol95": {
    "min": 1.649,
-   "avg": 1.815,
+   "avg": 1.809,
    "max": 1.98,
-   "count": 731
+   "count": 733
   },
   "diesel": {
    "min": 2.089,
-   "avg": 2.203,
+   "avg": 2.201,
    "max": 2.359,
-   "count": 733
+   "count": 735
   },
   "lpg": {
-   "min": 0.75,
-   "avg": 1.022,
+   "min": 0.89,
+   "avg": 1.026,
    "max": 1.149,
-   "count": 593
+   "count": 595
   }
  },
  "cheapest": {
@@ -37,10 +37,10 @@
    "municipality": "Kupiškio r. sav."
   },
   "lpg": {
-   "price": 0.75,
-   "network": "UAB Saurida",
-   "address": "Kušliškių k. Suvalkijos g. 15, 69200",
-   "municipality": "Kalvarijos sav."
+   "price": 0.89,
+   "network": "IĮ V.Marcinkevičiaus",
+   "address": "Pavilnučio k., Bažnyčios g. 7, 99392",
+   "municipality": "Šilutės r. sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
