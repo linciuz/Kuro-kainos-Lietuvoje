@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-11T10:16:02+00:00Z",
+    "resolved_utc": "2026-11-11T10:31:08+00:00Z",
     "winner_counts": {
       "portal": 753,
       "null": 8
@@ -16,7 +16,7 @@
         "date": "2026-11-11",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-11T10:16:01+00:00Z"
+        "fetched_utc": "2026-11-11T10:31:07+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-11T10:16:02+00:00Z"
+        "fetched_utc": "2026-11-11T10:31:08+00:00Z"
       }
     ]
   },
@@ -1389,15 +1389,17 @@
       "municipality": "Jonavos r. sav.",
       "locality": "",
       "petrol95": 1.94,
-      "diesel": 2.28,
+      "diesel": 2.26,
       "lpg": 1.08,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-11T10:00:00+02:00",
+      "price_updated": "2026-11-11T12:27:09+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:27",
       "lat": 55.067137,
       "lon": 24.287969,
       "approx": false
@@ -13774,15 +13776,17 @@
       "address": "Visaginas, Taikos pr. 47, 31217",
       "municipality": "Visagino sav.",
       "locality": "",
-      "petrol95": 1.754,
-      "diesel": 2.121,
+      "petrol95": 1.654,
+      "diesel": 2.098,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-11-11T08:09:51+02:00",
+      "price_updated": "2026-11-11T12:19:41+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "12:19",
       "lat": 55.590381,
       "lon": 26.463361,
       "approx": false
