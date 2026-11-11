@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-11T12:01:04+00:00Z",
+    "resolved_utc": "2026-11-11T12:57:20+00:00Z",
     "winner_counts": {
-      "portal": 753,
-      "null": 8
+      "portal": 758,
+      "null": 3
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-11-11",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-11T12:01:03+00:00Z"
+        "fetched_utc": "2026-11-11T12:57:19+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-11T12:01:04+00:00Z"
+        "fetched_utc": "2026-11-11T12:57:20+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.649,
       "avg": 1.808,
       "max": 1.98,
-      "count": 733
+      "count": 734
     },
     "diesel": {
       "min": 2.089,
       "avg": 2.2,
       "max": 2.359,
-      "count": 735
+      "count": 736
     },
     "lpg": {
       "min": 0.89,
-      "avg": 1.026,
+      "avg": 1.025,
       "max": 1.149,
-      "count": 595
+      "count": 600
     }
   },
   "stations": [
@@ -8635,11 +8635,14 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null,
+      "lpg": 0.93,
       "fuels": [
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-11T14:13:21+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:13",
       "lat": 55.92141,
       "lon": 21.852581,
       "approx": false
@@ -9948,11 +9951,14 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null,
+      "lpg": 0.91,
       "fuels": [
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-11T14:13:21+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:13",
       "lat": 55.236448,
       "lon": 22.296789,
       "approx": false
@@ -9964,11 +9970,14 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null,
+      "lpg": 0.91,
       "fuels": [
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-11T14:13:21+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:13",
       "lat": 55.258347,
       "lon": 22.294142,
       "approx": false
@@ -9978,15 +9987,18 @@
       "address": "Žygaičių k., Žygaičių g. 2, 73282",
       "municipality": "Tauragės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.79,
+      "diesel": 2.15,
+      "lpg": 0.9,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-11T14:13:21+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:13",
       "lat": 55.303981,
       "lon": 22.041423,
       "approx": false,
@@ -14950,15 +14962,17 @@
       "municipality": "Šilalės r. sav.",
       "locality": "",
       "petrol95": 1.87,
-      "diesel": 2.24,
+      "diesel": 2.2,
       "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-11T10:00:00+02:00",
+      "price_updated": "2026-11-11T14:40:59+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:40",
       "lat": 55.566385,
       "lon": 21.995708,
       "approx": false,
@@ -15092,11 +15106,14 @@
       "locality": "",
       "petrol95": null,
       "diesel": null,
-      "lpg": null,
+      "lpg": 0.95,
       "fuels": [
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-11T14:13:21+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:13",
       "lat": 55.541885,
       "lon": 22.491621,
       "approx": false,
