@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-12T09:15:25+00:00Z",
+    "resolved_utc": "2026-11-12T09:30:26+00:00Z",
     "winner_counts": {
       "portal": 753,
       "null": 8
@@ -16,7 +16,7 @@
         "date": "2026-11-12",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-12T09:15:24+00:00Z"
+        "fetched_utc": "2026-11-12T09:30:25+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-12T09:15:25+00:00Z"
+        "fetched_utc": "2026-11-12T09:30:26+00:00Z"
       }
     ]
   },
@@ -6826,16 +6826,18 @@
       "address": "Mažeikiai, Viekšnių g. 24, 89235",
       "municipality": "Mažeikių r. sav.",
       "locality": "",
-      "petrol95": 1.809,
-      "diesel": 2.189,
+      "petrol95": 1.759,
+      "diesel": 2.159,
       "lpg": 0.989,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-12T09:25:27+02:00",
+      "price_updated": "2026-11-12T11:16:37+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:16",
       "lat": 56.304209,
       "lon": 22.360258,
       "approx": false
@@ -8258,8 +8260,10 @@
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-11-12T09:25:27+02:00",
+      "price_updated": "2026-11-12T11:16:37+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:16",
       "lat": 55.895636,
       "lon": 21.862065,
       "approx": false
@@ -8277,8 +8281,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-12T09:25:27+02:00",
+      "price_updated": "2026-11-12T11:16:37+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:16",
       "lat": 55.920377,
       "lon": 21.832127,
       "approx": false
@@ -8296,8 +8302,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-12T09:25:27+02:00",
+      "price_updated": "2026-11-12T11:16:37+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:16",
       "lat": 55.908076,
       "lon": 21.871509,
       "approx": false,
