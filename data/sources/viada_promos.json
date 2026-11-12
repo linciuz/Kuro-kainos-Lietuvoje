@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-11T22:01:24Z",
+  "generated": "2026-11-12T04:01:30Z",
   "network": "Viada",
   "source": "viada.lt (official promo pages)",
   "disclaimer": "Pointer only. No price is fetched or implied — Viada bakes discount figures into promo images and gates exact prices behind app login. Confirm the amount on the official page / in the Viada app.",
-  "count": 4,
+  "count": 5,
   "promos": [
     {
       "title": "Nuolaidų savaitgaliai (ViadaPLUS)",
@@ -36,20 +36,20 @@
       "fuel_related": true,
       "kind": "seasonal",
       "active": true
+    },
+    {
+      "title": "Savaitgaliauk ir keliauk",
+      "url": "https://www.viada.lt/akcija/savaitgaliauk-ir-keliauk/",
+      "slug": "savaitgaliauk-ir-keliauk",
+      "fuel_related": true,
+      "kind": "seasonal",
+      "active": true
     }
   ],
   "wednesday_check": {
-    "status": "announced",
-    "checked": "2026-11-11T22:01:24Z",
+    "status": "unavailable",
+    "checked": "2026-11-12T04:01:30Z",
     "listing_url": "https://www.viada.lt/akcijos/",
     "source_url": "https://www.viada.lt/akcija/super-treciadieniai/"
-  },
-  "wednesday": {
-    "valid_date": "2026-11-11",
-    "prices": {
-      "petrol95": 1.659,
-      "lpg": 0.959
-    },
-    "url": "https://www.viada.lt/akcija/super-treciadieniai/"
   }
 }
