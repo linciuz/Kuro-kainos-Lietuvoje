@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-13T12:00:32+00:00Z",
+    "resolved_utc": "2026-11-13T13:25:56+00:00Z",
     "winner_counts": {
       "portal": 754,
       "null": 7
@@ -16,7 +16,7 @@
         "date": "2026-11-13",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-13T12:00:31+00:00Z"
+        "fetched_utc": "2026-11-13T13:25:55+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-13T12:00:32+00:00Z"
+        "fetched_utc": "2026-11-13T13:25:56+00:00Z"
       }
     ]
   },
@@ -656,8 +656,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T08:33:06+02:00",
+      "price_updated": "2026-11-13T14:38:52+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:38",
       "lat": 55.584853,
       "lon": 24.87846,
       "approx": false
@@ -675,8 +677,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T08:33:06+02:00",
+      "price_updated": "2026-11-13T14:38:52+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:38",
       "lat": 55.67584,
       "lon": 25.358668,
       "approx": false,
@@ -687,16 +691,18 @@
       "address": "Pumpučiai, Pumpučių g. 25, 29253",
       "municipality": "Anykščių r. sav.",
       "locality": "",
-      "petrol95": 1.899,
-      "diesel": 2.289,
+      "petrol95": 1.779,
+      "diesel": 2.199,
       "lpg": 0.989,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T08:33:06+02:00",
+      "price_updated": "2026-11-13T14:38:52+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:38",
       "lat": 55.424311,
       "lon": 24.920495,
       "approx": false
@@ -833,8 +839,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T08:33:06+02:00",
+      "price_updated": "2026-11-13T14:38:52+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:38",
       "lat": 55.974978,
       "lon": 24.740122,
       "approx": false
@@ -4909,14 +4917,16 @@
       "locality": "",
       "petrol95": 1.8,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.669656,
       "lon": 21.158613,
       "approx": false
@@ -4928,14 +4938,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.728398,
       "lon": 21.132584,
       "approx": false
@@ -5308,14 +5320,16 @@
       "locality": "",
       "petrol95": 1.75,
       "diesel": 2.18,
-      "lpg": 1.01,
+      "lpg": 1.03,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.712282,
       "lon": 21.381627,
       "approx": false
@@ -5327,14 +5341,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.687241,
       "lon": 21.693525,
       "approx": false,
@@ -5347,14 +5363,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.22,
-      "lpg": 1.05,
+      "lpg": 1.07,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.721342,
       "lon": 21.385487,
       "approx": false
@@ -5366,14 +5384,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.582082,
       "lon": 21.285263,
       "approx": false,
@@ -5564,14 +5584,16 @@
       "locality": "",
       "petrol95": 1.82,
       "diesel": 2.21,
-      "lpg": 1.03,
+      "lpg": 1.08,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 56.026775,
       "lon": 21.262624,
       "approx": false
@@ -5583,14 +5605,16 @@
       "locality": "",
       "petrol95": 1.82,
       "diesel": 2.21,
-      "lpg": 1.03,
+      "lpg": 1.08,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.896943,
       "lon": 21.244326,
       "approx": false
@@ -5668,8 +5692,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T08:33:06+02:00",
+      "price_updated": "2026-11-13T14:38:52+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:38",
       "lat": 55.824587,
       "lon": 25.001069,
       "approx": false,
@@ -5688,8 +5714,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T08:33:06+02:00",
+      "price_updated": "2026-11-13T14:38:52+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:38",
       "lat": 55.773414,
       "lon": 24.754327,
       "approx": false,
@@ -9163,14 +9191,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.626937,
       "lon": 21.971782,
       "approx": false,
@@ -9183,14 +9213,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.02,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.718446,
       "lon": 21.932212,
       "approx": false,
@@ -14803,14 +14835,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.464353,
       "lon": 21.470278,
       "approx": false,
@@ -14823,14 +14857,16 @@
       "locality": "",
       "petrol95": 1.81,
       "diesel": 2.19,
-      "lpg": 1.01,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-13T10:00:00+02:00",
+      "price_updated": "2026-11-13T14:19:47+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "14:19",
       "lat": 55.227536,
       "lon": 21.701884,
       "approx": false,
