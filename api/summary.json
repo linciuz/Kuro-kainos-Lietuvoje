@@ -17,8 +17,8 @@
    "count": 618
   },
   "lpg": {
-   "min": 0.929,
-   "avg": 1.051,
+   "min": 0.94,
+   "avg": 1.052,
    "max": 1.139,
    "count": 563
   }
@@ -37,9 +37,9 @@
    "municipality": "Kupiškio r. sav."
   },
   "lpg": {
-   "price": 0.929,
-   "network": "UAB Eniris",
-   "address": "Mažeikiai, Laižuvos g. 82d, 89213",
+   "price": 0.94,
+   "network": "UAB Tumasa",
+   "address": "Židikai, Mažeikių g. 10, 89442",
    "municipality": "Mažeikių r. sav."
   }
  },
