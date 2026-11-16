@@ -3,7 +3,7 @@
  "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
  "scope": "per_station",
  "role": "independent cross-check against LEA — NOT published to the app",
- "fetched": "2026-11-13T20:40:45Z",
+ "fetched": "2026-11-16T14:05:49Z",
  "stations": 34,
  "summary": {
   "diesel": {
@@ -39,9 +39,9 @@
    "lpg": 0.99
   },
   {
-   "name": "Ukmergė, Vilniaus g.",
-   "diesel": 2.12,
-   "petrol95": 1.74,
+   "name": "Šilalė",
+   "diesel": 2.17,
+   "petrol95": 1.77,
    "lpg": 1.03
   },
   {
@@ -93,15 +93,15 @@
    "lpg": 1.03
   },
   {
-   "name": "Ukmergė, Kareivinių g.",
+   "name": "Ukmergė, Vilniaus g.",
    "diesel": 2.12,
    "petrol95": 1.74,
    "lpg": 1.03
   },
   {
-   "name": "Šilalė",
-   "diesel": 2.17,
-   "petrol95": 1.77,
+   "name": "Ukmergė, Kareivinių g.",
+   "diesel": 2.12,
+   "petrol95": 1.74,
    "lpg": 1.03
   },
   {
