@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-16T13:59:54+00:00Z",
+    "resolved_utc": "2026-11-16T15:41:43+00:00Z",
     "winner_counts": {
       "portal": 721,
       "null": 40
@@ -16,7 +16,7 @@
         "date": "2026-11-16",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-16T13:59:53+00:00Z"
+        "fetched_utc": "2026-11-16T15:41:41+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-16T13:59:54+00:00Z"
+        "fetched_utc": "2026-11-16T15:41:43+00:00Z"
       }
     ]
   },
@@ -10196,16 +10196,18 @@
       "address": "Ukmergė, Dariaus ir Girėno g. 31, 20154",
       "municipality": "Ukmergės r. sav.",
       "locality": "",
-      "petrol95": 1.67,
-      "diesel": 2.1,
-      "lpg": 0.99,
+      "petrol95": 1.74,
+      "diesel": 2.17,
+      "lpg": 1.03,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-16T10:00:00+02:00",
+      "price_updated": "2026-11-16T17:40:42+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "17:40",
       "lat": 55.240724,
       "lon": 24.787348,
       "approx": false
