@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-17T17:34:29Z",
-  "last_point_utc": "2026-11-17T17:45:00Z",
+  "updated": "2026-11-17T21:23:51Z",
+  "last_point_utc": "2026-11-17T21:45:00Z",
   "currency": "EUR",
-  "current_eur_mwh": 260.46,
-  "week_avg_eur_mwh": 175.4,
-  "current_ct_kwh": 26.05,
-  "week_avg_ct_kwh": 17.54
+  "current_eur_mwh": 201.84,
+  "week_avg_eur_mwh": 170.7,
+  "current_ct_kwh": 20.18,
+  "week_avg_ct_kwh": 17.07
 }
