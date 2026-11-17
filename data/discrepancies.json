@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-17T08:15:48Z",
-  "lea_date": "2026-11-16",
+  "generated": "2026-11-17T08:30:47Z",
+  "lea_date": "2026-11-17",
   "threshold": 0.015,
   "sources": [
     "Circle K",
@@ -13,9 +13,9 @@
         "UAB Circle K Lietuva"
       ],
       "fuel": "petrol95",
-      "lea_min": 1.679,
+      "lea_min": 1.754,
       "live": 1.789,
-      "delta": 0.11,
+      "delta": 0.035,
       "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",
@@ -28,9 +28,9 @@
         "UAB Circle K Lietuva"
       ],
       "fuel": "diesel",
-      "lea_min": 2.094,
+      "lea_min": 2.184,
       "live": 2.219,
-      "delta": 0.125,
+      "delta": 0.035,
       "direction": "up",
       "scope": "network_lowest",
       "source": "Circle K",

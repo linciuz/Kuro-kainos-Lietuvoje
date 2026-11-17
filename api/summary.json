@@ -1,26 +1,26 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-16",
+ "price_date": "2026-11-17",
  "currency": "EUR",
- "stations_with_prices": 721,
+ "stations_with_prices": 749,
  "national": {
   "petrol95": {
    "min": 1.649,
-   "avg": 1.765,
-   "max": 1.98,
-   "count": 701
+   "avg": 1.778,
+   "max": 1.969,
+   "count": 725
   },
   "diesel": {
-   "min": 2.084,
-   "avg": 2.168,
-   "max": 2.3,
-   "count": 703
+   "min": 2.079,
+   "avg": 2.192,
+   "max": 2.299,
+   "count": 727
   },
   "lpg": {
    "min": 0.94,
-   "avg": 1.052,
+   "avg": 1.05,
    "max": 1.139,
-   "count": 563
+   "count": 591
   }
  },
  "cheapest": {
@@ -31,16 +31,16 @@
    "municipality": "Kupiškio r. sav."
   },
   "diesel": {
-   "price": 2.084,
-   "network": "UAB Neste Lietuva",
-   "address": "Kaunas, Ateities pl. 50B, 52106",
-   "municipality": "Kauno m. sav."
+   "price": 2.079,
+   "network": "UAB Bonsa",
+   "address": "Taurai, Tilžės pl. 46, 72142",
+   "municipality": "Tauragės r. sav."
   },
   "lpg": {
    "price": 0.94,
-   "network": "UAB Tumasa",
-   "address": "Židikai, Mažeikių g. 10, 89442",
-   "municipality": "Mažeikių r. sav."
+   "network": "UAB Madalva",
+   "address": "Žygaičių k., Žygaičių g. 2, 73282",
+   "municipality": "Tauragės r. sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
