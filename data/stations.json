@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-17T15:57:36+00:00Z",
+    "resolved_utc": "2026-11-17T17:34:09+00:00Z",
     "winner_counts": {
       "portal": 753,
       "null": 8
@@ -16,7 +16,7 @@
         "date": "2026-11-17",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-17T15:57:35+00:00Z"
+        "fetched_utc": "2026-11-17T17:34:09+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-17T15:57:36+00:00Z"
+        "fetched_utc": "2026-11-17T17:34:09+00:00Z"
       }
     ]
   },
@@ -1559,8 +1559,10 @@
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.078909,
       "lon": 23.396923,
       "approx": false
@@ -1578,8 +1580,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.082536,
       "lon": 22.788996,
       "approx": false
@@ -1597,8 +1601,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.077197,
       "lon": 22.751,
       "approx": false
@@ -1616,8 +1622,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.085493,
       "lon": 22.745538,
       "approx": false
@@ -6024,7 +6032,7 @@
       "address": "Aristava, Aristavos g. 4, 58111",
       "municipality": "Kėdainių r. sav.",
       "locality": "",
-      "petrol95": 1.799,
+      "petrol95": 1.739,
       "diesel": 2.169,
       "lpg": 1.04,
       "fuels": [
@@ -6032,8 +6040,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.297137,
       "lon": 24.07692,
       "approx": false
@@ -10757,8 +10767,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 54.601906,
       "lon": 23.194935,
       "approx": false,
@@ -13523,15 +13535,17 @@
       "address": "Mozūriškiai, Mozūriškių 10, 71382",
       "municipality": "Šakių r. sav.",
       "locality": "",
-      "petrol95": 1.79,
-      "diesel": 2.15,
+      "petrol95": 1.74,
+      "diesel": 2.16,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.021603,
       "lon": 22.969559,
       "approx": false,
@@ -13550,8 +13564,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 55.063839,
       "lon": 22.780717,
       "approx": false
@@ -13561,7 +13577,7 @@
       "address": "Šakiai, V. Kudirkos g. 11D, 71124",
       "municipality": "Šakių r. sav.",
       "locality": "",
-      "petrol95": 1.799,
+      "petrol95": 1.749,
       "diesel": 2.179,
       "lpg": 1.04,
       "fuels": [
@@ -13569,8 +13585,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 54.954139,
       "lon": 23.024637,
       "approx": false
@@ -13580,7 +13598,7 @@
       "address": "Girėnai, Kauno g. 50, 71129",
       "municipality": "Šakių r. sav.",
       "locality": "",
-      "petrol95": 1.799,
+      "petrol95": 1.749,
       "diesel": 2.179,
       "lpg": 1.04,
       "fuels": [
@@ -13588,8 +13606,10 @@
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-17T10:00:00+02:00",
+      "price_updated": "2026-11-17T18:44:28+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "18:44",
       "lat": 54.952753,
       "lon": 23.080294,
       "approx": false
