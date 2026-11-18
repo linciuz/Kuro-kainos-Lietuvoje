@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-18T09:00:56+00:00Z",
+    "resolved_utc": "2026-11-18T09:15:55+00:00Z",
     "winner_counts": {
-      "portal": 754,
-      "null": 7
+      "portal": 755,
+      "null": 6
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-11-18",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-18T09:00:55+00:00Z"
+        "fetched_utc": "2026-11-18T09:15:54+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,28 +24,28 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-18T09:00:56+00:00Z"
+        "fetched_utc": "2026-11-18T09:15:55+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.59,
-      "avg": 1.742,
+      "avg": 1.743,
       "max": 1.98,
-      "count": 732
+      "count": 733
     },
     "diesel": {
       "min": 2.06,
       "avg": 2.166,
       "max": 2.3,
-      "count": 734
+      "count": 735
     },
     "lpg": {
       "min": 0.94,
       "avg": 1.051,
       "max": 1.149,
-      "count": 595
+      "count": 596
     }
   },
   "stations": [
@@ -10780,16 +10780,18 @@
       "address": "Vilkaviškis, Vytauto g. 2D, 70137",
       "municipality": "Vilkaviškio r. sav.",
       "locality": "",
-      "petrol95": 1.759,
-      "diesel": 2.159,
+      "petrol95": 1.719,
+      "diesel": 2.139,
       "lpg": 1.03,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-18T08:13:30+02:00",
+      "price_updated": "2026-11-18T11:02:07+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:02",
       "lat": 54.64334,
       "lon": 23.053086,
       "approx": false
@@ -13117,15 +13119,18 @@
       "address": "Kena, Miško g. 6, 13146",
       "municipality": "Vilniaus r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.899,
+      "diesel": 2.249,
+      "lpg": 1.099,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-18T11:07:08+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:07",
       "lat": 54.646057,
       "lon": 25.625138,
       "approx": false
@@ -14204,16 +14209,18 @@
       "address": "Kuršėnai, Vytauto g. 80, 81146",
       "municipality": "Šiaulių r. sav.",
       "locality": "",
-      "petrol95": 1.779,
-      "diesel": 2.179,
+      "petrol95": 1.799,
+      "diesel": 2.199,
       "lpg": 1.039,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-18T10:00:00+02:00",
+      "price_updated": "2026-11-18T11:02:42+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:02",
       "lat": 56.014796,
       "lon": 22.95141,
       "approx": false
