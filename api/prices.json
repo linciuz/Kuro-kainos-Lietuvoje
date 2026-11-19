@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-19T09:15:39Z",
+ "generated_utc": "2026-11-19T09:30:43Z",
  "price_date": "2026-11-19",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -21,13 +21,13 @@
    "min": 1.589,
    "avg": 1.744,
    "max": 1.98,
-   "count": 730
+   "count": 731
   },
   "diesel": {
    "min": 2.029,
-   "avg": 2.182,
+   "avg": 2.181,
    "max": 2.3,
-   "count": 732
+   "count": 733
   },
   "lpg": {
    "min": 0.94,
@@ -56,7 +56,7 @@
    "municipality": "Tauragės r. sav."
   }
  },
- "count": 754,
+ "count": 755,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -4411,6 +4411,22 @@
    "display_address_source": null
   },
   {
+   "network": "UAB Vlantana",
+   "address": "Gobergiškės k., Dvaro g. 1, 92498",
+   "municipality": "Klaipėdos r. sav.",
+   "lat": 55.71917,
+   "lon": 21.293355,
+   "petrol95": 1.68,
+   "diesel": 2.12,
+   "lpg": null,
+   "price_updated": "2026-11-19T11:26:27+02:00",
+   "price_src": "portal",
+   "display_municipality": null,
+   "display_municipality_source": null,
+   "display_address": null,
+   "display_address_source": null
+  },
+  {
    "network": "AB Orlen Baltics Retail",
    "address": "Vilimiškės k., 97220",
    "municipality": "Kretingos r. sav.",
@@ -5472,10 +5488,10 @@
    "municipality": "Mažeikių r. sav.",
    "lat": 56.304209,
    "lon": 22.360258,
-   "petrol95": 1.729,
-   "diesel": 2.159,
+   "petrol95": 1.649,
+   "diesel": 2.099,
    "lpg": 1.039,
-   "price_updated": "2026-11-19T09:33:56+02:00",
+   "price_updated": "2026-11-19T11:18:39+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -6611,7 +6627,7 @@
    "petrol95": 1.759,
    "diesel": 2.159,
    "lpg": 1.04,
-   "price_updated": "2026-11-19T09:33:56+02:00",
+   "price_updated": "2026-11-19T11:18:39+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -6627,7 +6643,7 @@
    "petrol95": 1.849,
    "diesel": 2.179,
    "lpg": null,
-   "price_updated": "2026-11-19T09:33:57+02:00",
+   "price_updated": "2026-11-19T11:18:39+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
@@ -6643,7 +6659,7 @@
    "petrol95": 1.75,
    "diesel": 2.15,
    "lpg": 1.04,
-   "price_updated": "2026-11-19T09:33:56+02:00",
+   "price_updated": "2026-11-19T11:18:39+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
