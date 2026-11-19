@@ -1,40 +1,40 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-18",
+ "price_date": "2026-11-19",
  "currency": "EUR",
  "stations_with_prices": 754,
  "national": {
   "petrol95": {
-   "min": 1.59,
-   "avg": 1.74,
+   "min": 1.589,
+   "avg": 1.744,
    "max": 1.98,
-   "count": 733
+   "count": 730
   },
   "diesel": {
-   "min": 2.06,
-   "avg": 2.164,
+   "min": 2.029,
+   "avg": 2.182,
    "max": 2.3,
-   "count": 735
+   "count": 732
   },
   "lpg": {
    "min": 0.94,
-   "avg": 1.051,
+   "avg": 1.054,
    "max": 1.149,
-   "count": 595
+   "count": 596
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.59,
-   "network": "UAB Jozita",
-   "address": "Kaunas, Baltų pr. 141A, 47126",
-   "municipality": "Kauno m. sav."
+   "price": 1.589,
+   "network": "UAB Bonsa",
+   "address": "Taurai, Tilžės pl. 46, 72142",
+   "municipality": "Tauragės r. sav."
   },
   "diesel": {
-   "price": 2.06,
-   "network": "UAB Jozita",
-   "address": "Kaunas, Baltų pr. 141A, 47126",
-   "municipality": "Kauno m. sav."
+   "price": 2.029,
+   "network": "UAB Bonsa",
+   "address": "Taurai, Tilžės pl. 46, 72142",
+   "municipality": "Tauragės r. sav."
   },
   "lpg": {
    "price": 0.94,
