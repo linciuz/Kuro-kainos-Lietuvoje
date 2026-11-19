@@ -3,9 +3,9 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-19T07:45:23+00:00Z",
+    "resolved_utc": "2026-11-19T08:00:21+00:00Z",
     "winner_counts": {
-      "portal": 755,
+      "portal": 754,
       "null": 6
     },
     "saurida_served": 0,
@@ -16,7 +16,7 @@
         "date": "2026-11-18",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-19T07:45:22+00:00Z"
+        "fetched_utc": "2026-11-19T08:00:20+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-19T07:45:23+00:00Z"
+        "fetched_utc": "2026-11-19T08:00:21+00:00Z"
       }
     ]
   },
@@ -45,7 +45,7 @@
       "min": 0.94,
       "avg": 1.051,
       "max": 1.149,
-      "count": 596
+      "count": 595
     }
   },
   "stations": [
@@ -6890,23 +6890,6 @@
       "price_src": "portal",
       "lat": 56.313743,
       "lon": 22.368203,
-      "approx": false
-    },
-    {
-      "network": "UAB Naftos dujos",
-      "address": "Mažeikiai, Algirdo g. 42, 89101",
-      "municipality": "Mažeikių r. sav.",
-      "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": 1.02,
-      "fuels": [
-        "lpg"
-      ],
-      "price_updated": "2026-11-18T09:30:19+02:00",
-      "price_src": "portal",
-      "lat": 56.315943,
-      "lon": 22.314284,
       "approx": false
     },
     {
@@ -15385,6 +15368,22 @@
       "no_price": true,
       "lat": 55.236448,
       "lon": 22.296789,
+      "approx": false
+    },
+    {
+      "network": "UAB Naftos dujos",
+      "address": "Mažeikiai, Algirdo g. 42, 89101",
+      "municipality": "Mažeikių r. sav.",
+      "locality": "",
+      "petrol95": null,
+      "diesel": null,
+      "lpg": null,
+      "fuels": [
+        "lpg"
+      ],
+      "no_price": true,
+      "lat": 56.315943,
+      "lon": 22.314284,
       "approx": false
     },
     {

@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-19T07:45:42Z",
+ "generated_utc": "2026-11-19T08:00:40Z",
  "price_date": "2026-11-18",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -33,7 +33,7 @@
    "min": 0.94,
    "avg": 1.051,
    "max": 1.149,
-   "count": 596
+   "count": 595
   }
  },
  "cheapest": {
@@ -56,7 +56,7 @@
    "municipality": "Tauragės r. sav."
   }
  },
- "count": 755,
+ "count": 754,
  "stations": [
   {
    "network": "UAB Baltic Petroleum",
@@ -5492,22 +5492,6 @@
    "diesel": 2.159,
    "lpg": 0.989,
    "price_updated": "2026-11-18T09:23:34+02:00",
-   "price_src": "portal",
-   "display_municipality": null,
-   "display_municipality_source": null,
-   "display_address": null,
-   "display_address_source": null
-  },
-  {
-   "network": "UAB Naftos dujos",
-   "address": "Mažeikiai, Algirdo g. 42, 89101",
-   "municipality": "Mažeikių r. sav.",
-   "lat": 56.315943,
-   "lon": 22.314284,
-   "petrol95": null,
-   "diesel": null,
-   "lpg": 1.02,
-   "price_updated": "2026-11-18T09:30:19+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
