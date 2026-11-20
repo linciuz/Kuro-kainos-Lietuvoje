@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-20T08:46:22Z",
+ "generated_utc": "2026-11-20T09:01:21Z",
  "price_date": "2026-11-20",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -19,7 +19,7 @@
  "summary": {
   "petrol95": {
    "min": 1.589,
-   "avg": 1.729,
+   "avg": 1.728,
    "max": 1.98,
    "count": 727
   },
@@ -8640,10 +8640,10 @@
    "municipality": "Vilkaviškio r. sav.",
    "lat": 54.64334,
    "lon": 23.053086,
-   "petrol95": 1.719,
-   "diesel": 2.139,
+   "petrol95": 1.699,
+   "diesel": 2.119,
    "lpg": 1.05,
-   "price_updated": "2026-11-20T08:52:08+02:00",
+   "price_updated": "2026-11-20T11:00:12+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,
