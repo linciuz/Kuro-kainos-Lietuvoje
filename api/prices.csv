@@ -1,7 +1,7 @@
 network,address,municipality,lat,lon,petrol95_eur,diesel_eur,lpg_eur,price_updated,price_date
 UAB Baltic Petroleum,"Naujoji Akmenė, V. Kudirkos g. 21A, 85145",Akmenės r. sav.,56.318461,22.885615,1.759,2.139,1.0,2026-11-20T09:18:31+02:00,2026-11-20
-UAB Eniris,"Skabeikių k. 4, 85233",Akmenės r. sav.,56.160143,22.760735,1.799,2.149,0.999,2026-11-20T09:53:28+02:00,2026-11-20
-UAB Eniris,"Venta, Plento g. 2, 85302",Akmenės r. sav.,56.194307,22.6779,1.799,2.149,0.999,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Skabeikių k. 4, 85233",Akmenės r. sav.,56.160143,22.760735,1.799,2.149,0.999,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Venta, Plento g. 2, 85302",Akmenės r. sav.,56.194307,22.6779,1.799,2.149,0.999,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Saurida,"Akmenės I k., Plento g. 1, 85380",Akmenės r. sav.,56.238461,22.750823,1.76,2.14,1.0,2026-11-20T09:32:31+02:00,2026-11-20
 UAB Saurida,"Naujoji Akmenė,  V. Kudirkos g. 18A, 85171",Akmenės r. sav.,56.317229,22.884847,1.76,2.14,0.99,2026-11-20T09:32:31+02:00,2026-11-20
 UAB Saurida,"Pašakarnių k. Pašakarnių g. 1, 85271",Akmenės r. sav.,56.298148,22.885039,1.76,2.14,1.0,2026-11-20T09:32:31+02:00,2026-11-20
@@ -71,7 +71,7 @@ UAB Circle K Lietuva,"Satkūnų k., Sidabros g. 2A, 84101",Joniškio r. sav.,56.
 UAB Viada LT,"Joniškis, Vilniaus g. 51, 84166",Joniškio r. sav.,56.224483,23.600756,1.749,2.199,1.079,2026-11-20T09:50:21+02:00,2026-11-20
 UAB Baltic Petroleum,"Jurbarkas, Muitinės g. 22A, 74111",Jurbarko r. sav.,55.078109,22.744778,1.799,2.169,1.04,2026-11-20T09:18:30+02:00,2026-11-20
 UAB Baltic Petroleum,"Klišių k., Pievų g. 2, 74211",Jurbarko r. sav.,55.098482,22.772921,1.799,2.169,1.0,2026-11-20T09:18:33+02:00,2026-11-20
-UAB Eniris,"Rimšų k., Tauragės g. 29, 74280",Jurbarko r. sav.,55.262044,22.69182,1.84,2.16,1.04,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Rimšų k., Tauragės g. 29, 74280",Jurbarko r. sav.,55.262044,22.69182,1.84,2.16,1.04,2026-11-20T11:51:37+02:00,2026-11-20
 UAB GM Manufacturing Lithuania,"Jurbarkas, Muitinės g. 34A, 74106",Jurbarko r. sav.,55.076805,22.751839,1.797,2.197,,2026-11-20T07:41:29+02:00,2026-11-20
 UAB Gelvybė,"Jurbarkas, Knygnešių g. 9, 74212",Jurbarko r. sav.,55.085493,22.745538,1.799,2.169,1.04,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Gelvybė,"Jurbarkas, Muitinės g. 32, 74111",Jurbarko r. sav.,55.077197,22.751,1.799,2.169,1.04,2026-11-20T10:00:00+02:00,2026-11-20
@@ -82,7 +82,7 @@ AB Orlen Baltics Retail,"Žiežmarių k., Kauno pl. 6, 56232",Kaišiadorių r. s
 IĮ A. Praškevičiaus,"Migonių k., Kalvių g. 4, 56292",Kaišiadorių r. sav.,54.725988,24.236187,1.65,2.09,1.0,2026-11-20T09:04:39+02:00,2026-11-20
 UAB Baltic Petroleum,"Triliškių k., Kauno pl. 5, 56179",Kaišiadorių r. sav.,54.816962,24.436618,1.699,2.159,1.059,2026-11-20T09:18:32+02:00,2026-11-20
 UAB Emsi,"Kaišiadorys, Paukštininkų g. 4a, 56160",Kaišiadorių r. sav.,54.864351,24.436539,1.719,2.159,1.05,2026-11-20T08:57:45+02:00,2026-11-20
-UAB Eniris,"Bačkonių k., Pastrėvio g. 1A, 56240",Kaišiadorių r. sav.,54.802507,24.502157,1.689,2.099,1.029,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Bačkonių k., Pastrėvio g. 1A, 56240",Kaišiadorių r. sav.,54.802507,24.502157,1.689,2.099,1.029,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Saurida,"Rumšiškės, Lekavičiaus g. 71, 56337",Kaišiadorių r. sav.,54.87185,24.213203,1.74,2.13,1.04,2026-11-20T09:32:30+02:00,2026-11-20
 UAB Topgas,"Kaišiadorys, Paukštininkų g. 13, 56161",Kaišiadorių r. sav.,54.865105,24.434153,,,1.0,2026-11-20T08:06:48+02:00,2026-11-20
 UAB Viada LT,"Kaišiadorys, Gedimino g. 135, 56173",Kaišiadorių r. sav.,54.855237,24.441801,1.799,2.259,1.099,2026-11-20T09:50:21+02:00,2026-11-20
@@ -214,8 +214,8 @@ UAB Antivis,"Tytuvėnai, Žemaitės g. 14, 86490",Kelmės r. sav.,55.594151,23.1
 UAB Boost Petrol,"Kelmė, Kęstučio g. 1B, 86139",Kelmės r. sav.,55.634793,22.945432,1.759,2.249,1.099,2026-11-20T09:28:16+02:00,2026-11-20
 UAB Boost Petrol,"Kuršukų k., Plento g. 1, 86120",Kelmės r. sav.,55.618303,22.901401,1.769,2.259,1.099,2026-11-20T09:28:16+02:00,2026-11-20
 UAB Boost Petrol,"Maironių k., Kuršių g. 2, 86203",Kelmės r. sav.,55.600687,23.042742,1.74,2.13,1.01,2026-11-20T09:28:16+02:00,2026-11-20
-UAB Eniris,"Kelmė, Putvinskio g. 29, 86113",Kelmės r. sav.,55.641261,22.926883,1.659,2.099,1.039,2026-11-20T09:53:27+02:00,2026-11-20
-UAB Eniris,"Užventis, Žemaitės g. 52, 86343",Kelmės r. sav.,55.786103,22.670903,1.77,2.09,0.99,2026-11-20T09:53:28+02:00,2026-11-20
+UAB Eniris,"Kelmė, Putvinskio g. 29, 86113",Kelmės r. sav.,55.641261,22.926883,1.619,2.059,1.039,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Užventis, Žemaitės g. 52, 86343",Kelmės r. sav.,55.786103,22.670903,1.77,2.09,0.99,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Kelmė, V. Putvinskio g. 37, 86113",Kelmės r. sav.,55.643415,22.925581,1.61,2.05,0.98,2026-11-20T09:26:02+02:00,2026-11-20
 AB Orlen Baltics Retail,"Klaipėda, Minijos g. 44, 91197",Klaipėdos m. sav.,55.693868,21.14027,1.689,2.159,1.019,2026-11-20T09:21:04+02:00,2026-11-20
 AB Orlen Baltics Retail,"Klaipėda, Šilutės pl. 26A, 91177",Klaipėdos m. sav.,55.698573,21.167328,1.679,2.149,1.019,2026-11-20T09:21:04+02:00,2026-11-20
@@ -274,8 +274,8 @@ UAB Viada LT,"Sudmantų k., Vilniaus pl. 6",Klaipėdos r. sav.,55.704435,21.2217
 UAB Vlantana,"Gobergiškės k., Dvaro g. 1, 92498",Klaipėdos r. sav.,55.71917,21.293355,1.68,2.12,,2026-11-20T10:27:57+02:00,2026-11-20
 AB Orlen Baltics Retail,"Vilimiškės k., 97220",Kretingos r. sav.,55.903308,21.105647,1.739,2.179,1.029,2026-11-20T09:21:04+02:00,2026-11-20
 UAB Circle K Lietuva,"Kretinga, Klaipėdos g. 155, 97156",Kretingos r. sav.,55.863594,21.217201,1.759,2.259,1.099,2026-11-20T09:56:28+02:00,2026-11-20
-UAB Eniris,"Kretinga, Tiekėjų g. 34a, 97187",Kretingos r. sav.,55.884461,21.221533,1.75,2.19,1.06,2026-11-20T09:53:27+02:00,2026-11-20
-UAB Eniris,"Laivių k., Platelių g. 1a, 97317",Kretingos r. sav.,56.063165,21.582092,1.76,2.21,1.07,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Kretinga, Tiekėjų g. 34a, 97187",Kretingos r. sav.,55.884461,21.221533,1.75,2.19,1.06,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Laivių k., Platelių g. 1a, 97317",Kretingos r. sav.,56.063165,21.582092,1.76,2.21,1.07,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Trevena,"Darbėnai, Laisvės g. 15, 97264",Kretingos r. sav.,56.026775,21.262624,1.82,2.21,1.08,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Trevena,"Kretinga, Vilniaus g. 29B, 97101",Kretingos r. sav.,55.896943,21.244326,1.82,2.21,1.08,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Viada LT,"Kretinga, Vytauto g. 163, 97133",Kretingos r. sav.,55.890543,21.278423,1.769,2.259,1.099,2026-11-20T09:50:22+02:00,2026-11-20
@@ -297,7 +297,7 @@ UAB Baltic Petroleum,"Kėdainiai, J. Basanavičiaus g. 95B, 57352",Kėdainių r
 UAB Circle K Lietuva,"Kėdainiai, J. Basanavičiaus g. 40A, 57290",Kėdainių r. sav.,55.286587,23.972302,1.729,2.199,,2026-11-20T09:56:27+02:00,2026-11-20
 UAB Dujovita,"Kėdainiai, Basanavičiaus g. 91E, 57356",Kėdainių r. sav.,55.278109,23.959972,,,1.03,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Emsi,"Juodgirio k. 1, 58212",Kėdainių r. sav.,55.197379,23.626093,1.779,2.179,1.059,2026-11-20T08:57:44+02:00,2026-11-20
-UAB Eniris,"Ruoščių k. 1, 57109",Kėdainių r. sav.,55.336183,23.914917,1.683,2.094,1.03,2026-11-20T09:53:28+02:00,2026-11-20
+UAB Eniris,"Ruoščių k. 1, 57109",Kėdainių r. sav.,55.336183,23.914917,1.683,2.094,1.03,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Gelvybė,"Aristava, Aristavos g. 4, 58111",Kėdainių r. sav.,55.297137,24.07692,1.739,2.169,1.04,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Mindega,"Šėta, Ramygalos g. 55, 58129",Kėdainių r. sav.,55.290358,24.252998,1.7,2.15,,2026-11-20T09:12:13+02:00,2026-11-20
 UAB Neste Lietuva,"Kėdainiai, J. Basanavičiaus g. 91E, 57356",Kėdainių r. sav.,55.27815,23.95989,1.669,2.119,,2026-11-20T09:39:15+02:00,2026-11-20
@@ -306,7 +306,7 @@ UAB Viada LT,"Gudžiūnų k., Baisogalos g. 5, 58267",Kėdainių r. sav.,55.5186
 UAB Baltic Petroleum,"Lazdijai, Turistų g. 88, 67102",Lazdijų r. sav.,54.220722,23.508868,1.699,2.139,1.009,2026-11-20T09:18:30+02:00,2026-11-20
 UAB Circle K Lietuva,"Nekrūnų k. 1, 67171",Lazdijų r. sav.,54.226753,23.524997,1.719,2.159,1.039,2026-11-20T09:56:29+02:00,2026-11-20
 UAB Emsi,"Lazdijų sen., Janaslavo k. 11, 67170",Lazdijų r. sav.,54.175764,23.480939,1.699,2.139,,2026-11-20T08:57:44+02:00,2026-11-20
-UAB Eniris,"Alytaus g. 59, Krosnos k., 67443",Lazdijų r. sav.,54.379084,23.52855,1.719,2.149,0.999,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Alytaus g. 59, Krosnos k., 67443",Lazdijų r. sav.,54.379084,23.52855,1.719,2.149,0.999,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Saurida,"Panarvės k., 67168",Lazdijų r. sav.,54.233269,23.539946,1.75,2.14,1.02,2026-11-20T09:32:31+02:00,2026-11-20
 UAB Viada LT,"Lazdijai, Turistų g. 32, 67102",Lazdijų r. sav.,54.228639,23.528411,1.799,2.219,1.019,2026-11-20T09:50:23+02:00,2026-11-20
 AB Orlen Baltics Retail,"Aleksandravo k., 68100",Marijampolės sav.,54.583087,23.370864,1.689,2.159,1.019,2026-11-20T09:21:04+02:00,2026-11-20
@@ -337,7 +337,7 @@ UAB Baltic Petroleum,"Tirkšliai, Laukų g. 10, 89330",Mažeikių r. sav.,56.262
 UAB Baltic Petroleum,"Užežerės k., Gardenio g. 39, 89382",Mažeikių r. sav.,56.163959,22.101525,1.709,2.159,1.009,2026-11-20T09:18:32+02:00,2026-11-20
 UAB Circle K Lietuva,"Mažeikiai, Žemaitijos g. 57, 89128",Mažeikių r. sav.,56.302373,22.345047,1.719,2.199,1.099,2026-11-20T09:56:28+02:00,2026-11-20
 UAB EU Verslas,"Mažeikiai, Viekšnių g. 24, 89235",Mažeikių r. sav.,56.304209,22.360258,1.619,2.059,1.039,2026-11-20T09:25:08+02:00,2026-11-20
-UAB Eniris,"Mažeikiai, Laižuvos g. 82d, 89213",Mažeikių r. sav.,56.313743,22.368203,1.769,2.159,1.019,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Mažeikiai, Laižuvos g. 82d, 89213",Mažeikių r. sav.,56.313743,22.368203,1.769,2.159,1.019,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Naftos dujos,"Mažeikiai, Algirdo g. 42, 89101",Mažeikių r. sav.,56.315943,22.314284,,,1.03,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Naftos dujos,"Mažeikiai, Daukšos g. 29 / Žemaitijos g. 69, 89132",Mažeikių r. sav.,56.301079,22.349796,,,1.05,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Neste Lietuva,"Mažeikiai, M. Daukšos g. 29, 89132",Mažeikių r. sav.,56.3012,22.34985,1.649,2.119,,2026-11-20T09:39:15+02:00,2026-11-20
@@ -352,7 +352,7 @@ UAB Neste Lietuva,"Molėtai, Aplinkkelio g. 165, 33134",Molėtų r. sav.,55.2215
 UAB Viada LT,"Gojaus k., Utenos g. 16, 33165",Molėtų r. sav.,55.214689,25.437878,1.769,2.259,1.099,2026-11-20T09:50:23+02:00,2026-11-20
 UAB Viada LT,"Molėtai, Vilniaus g. 101, 33112",Molėtų r. sav.,55.223871,25.405884,1.769,2.259,1.099,2026-11-20T09:50:23+02:00,2026-11-20
 UAB Baltic Petroleum,"Neringa, Nidos-Smiltynės pl. 6, 93125",Neringos sav.,55.30088,20.979876,1.819,2.229,,2026-11-20T09:18:30+02:00,2026-11-20
-UAB Eniris,"Pagėgiai, Klaipėdos g. 6b, 99290",Pagėgių sav.,55.140417,21.903415,1.79,2.16,1.07,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Pagėgiai, Klaipėdos g. 6b, 99290",Pagėgių sav.,55.140417,21.903415,1.79,2.16,1.07,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Baltic Petroleum,"Pakruojis, Statybininkų g. 28, 83163",Pakruojo r. sav.,55.974508,23.86893,1.629,2.099,1.059,2026-11-20T09:18:31+02:00,2026-11-20
 UAB Jozita,"Kuosiškių k. 4, 83169",Pakruojo r. sav.,55.96572,23.879816,1.61,2.05,0.98,2026-11-20T09:26:02+02:00,2026-11-20
 UAB Naftrus,"Degučių k., Topolių g. 1, 83291",Pakruojo r. sav.,55.970665,23.587598,1.619,2.079,0.999,2026-11-20T09:44:57+02:00,2026-11-20
@@ -410,8 +410,8 @@ UAB Baltic Petroleum,"Plateliai,  Žemaičių Kalvarijos g. 1A, 90421",Plungės 
 UAB EU Verslas,"Jovaišiškės k., Telšių g. 127, 90107",Plungės r. sav.,55.908076,21.871509,1.619,2.059,1.04,2026-11-20T09:25:08+02:00,2026-11-20
 UAB EU Verslas,"Plungė, Rietavo g. 109, 90106",Plungės r. sav.,55.895636,21.862065,1.849,2.179,,2026-11-20T09:25:08+02:00,2026-11-20
 UAB EU Verslas,"Plungė, Stoties g. 7C, 90115",Plungės r. sav.,55.920377,21.832127,1.62,2.06,1.04,2026-11-20T09:25:08+02:00,2026-11-20
-UAB Eniris,"Minijos g. 1, Aleksandravo k., 90390",Plungės r. sav.,55.929232,21.619913,1.79,2.19,0.99,2026-11-20T09:53:27+02:00,2026-11-20
-UAB Eniris,"Plungė, Dariaus ir Girėno g. 31, 90118",Plungės r. sav.,55.919887,21.857067,1.769,2.169,1.049,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Minijos g. 1, Aleksandravo k., 90390",Plungės r. sav.,55.929232,21.619913,1.79,2.19,0.99,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Plungė, Dariaus ir Girėno g. 31, 90118",Plungės r. sav.,55.919887,21.857067,1.649,2.089,0.999,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Varkaliai, Žemaičių g. 2A, 90105",Plungės r. sav.,55.896951,21.82134,1.61,2.05,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Madalva,"Plungė, Lentpjūvės g. 10A, 90118",Plungės r. sav.,55.92141,21.852581,,,0.97,2026-11-20T09:33:58+02:00,2026-11-20
 UAB VVARFF,"Truikių k., Pramogų g. 4, 90110",Plungės r. sav.,55.939019,21.880091,1.796,2.276,1.096,2026-11-20T08:50:26+02:00,2026-11-20
@@ -421,7 +421,7 @@ AB Orlen Baltics Retail,"Verbyliškių k., Alytaus g. 2, 59431",Prienų r. sav.,
 UAB Baltic Petroleum,"Prienai, Vilniaus g. 3A, 59115",Prienų r. sav.,54.628393,23.958325,1.679,2.109,1.029,2026-11-20T09:18:30+02:00,2026-11-20
 UAB Baltic Petroleum,"Veiverių k., Kauno g. 85, 59285",Prienų r. sav.,54.761029,23.713228,1.779,2.249,1.08,2026-11-20T09:18:33+02:00,2026-11-20
 UAB Borusta,"Stakliškės, Piliakalnio g. 3, 59370",Prienų r. sav.,54.582227,24.31778,1.689,2.149,1.019,2026-11-20T08:29:35+02:00,2026-11-20
-UAB Eniris,"Mardosų k., Alytaus pl. 2, 59240",Prienų r. sav.,54.508942,23.909535,1.69,2.13,1.05,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Mardosų k., Alytaus pl. 2, 59240",Prienų r. sav.,54.508942,23.909535,1.64,2.07,1.05,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Saurida,"Ignacavos k., Kauno pl. 18, 59149",Prienų r. sav.,54.646657,23.930492,1.74,2.13,1.03,2026-11-20T09:32:31+02:00,2026-11-20
 UAB Saurida,"Mauručiai, Liepų g. 20, 59290",Prienų r. sav.,54.771033,23.765466,1.69,2.14,,2026-11-20T09:32:31+02:00,2026-11-20
 UAB Stateta,"Gustaičių k., 59296",Prienų r. sav.,54.738441,23.710503,1.599,2.099,1.049,2026-11-20T10:00:00+02:00,2026-11-20
@@ -445,7 +445,7 @@ UAB Baltic Petroleum,"Raseiniai, Vilniaus g. 30, 60183",Raseinių r. sav.,55.37
 UAB Circle K Lietuva,"Pikelių k. 1, 60376",Raseinių r. sav.,55.4615,22.693284,1.859,2.279,1.109,2026-11-20T09:56:29+02:00,2026-11-20
 UAB Emsi,"Ariogala, Žemaičių g. 30, 60255",Raseinių r. sav.,55.260897,23.488992,1.779,2.179,1.059,2026-11-20T08:57:43+02:00,2026-11-20
 UAB Emsi,"Raščių k. 1A, 60298",Raseinių r. sav.,55.278202,23.341607,1.719,2.159,1.059,2026-11-20T08:57:45+02:00,2026-11-20
-UAB Eniris,"Raseiniai, Jurbarko g. 34, 60180",Raseinių r. sav.,55.370657,23.119297,1.74,2.09,1.03,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Raseiniai, Jurbarko g. 34, 60180",Raseinių r. sav.,55.370657,23.119297,1.65,2.05,1.02,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Raseiniai, Liepų g. 10E, 60119",Raseinių r. sav.,55.391232,23.127085,,,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Jozita,"Raseiniai, Maironio g. 78b, 60120",Raseinių r. sav.,55.389992,23.130755,1.61,2.05,0.98,2026-11-20T09:26:02+02:00,2026-11-20
 UAB Naftrus,"Raseiniai, Vilniaus g. 3B, 60187",Raseinių r. sav.,55.370315,23.13212,1.619,2.079,1.02,2026-11-20T09:44:57+02:00,2026-11-20
@@ -465,7 +465,7 @@ UAB Degta,"Rokiškis, Respublikos g. 113B, 42150",Rokiškio r. sav.,55.946682,25
 UAB Viada LT,"Rokiškis, Panevėžio g. 5, 42163",Rokiškio r. sav.,55.944519,25.585662,1.769,2.239,1.099,2026-11-20T09:50:24+02:00,2026-11-20
 UAB Viada LT,"Rokiškis, Žemaitės g. 2C, 42164",Rokiškio r. sav.,55.934343,25.585701,1.769,2.239,1.099,2026-11-20T09:50:24+02:00,2026-11-20
 UAB Baltic Petroleum,"Skuodas, Vytauto g. 22, 98122",Skuodo r. sav.,56.259168,21.530562,1.619,2.059,0.999,2026-11-20T09:18:31+02:00,2026-11-20
-UAB Eniris,"Stripinių k., Skuodo g. 7, 98347",Skuodo r. sav.,56.283883,21.833054,1.79,2.23,0.99,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Stripinių k., Skuodo g. 7, 98347",Skuodo r. sav.,56.283883,21.833054,1.79,2.23,0.99,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Saurida,"Skuodas, Vytauto g. 20, 98123",Skuodo r. sav.,56.261388,21.529906,1.69,2.11,0.99,2026-11-20T09:32:30+02:00,2026-11-20
 UAB Viada LT,"Skuodas, Vilniaus g. 50, 98119",Skuodo r. sav.,56.270144,21.547151,1.749,2.199,1.079,2026-11-20T09:50:24+02:00,2026-11-20
 AB Orlen Baltics Retail,"Tauragė, Gedimino g. 46, 72336",Tauragės r. sav.,55.24427,22.30384,1.699,2.169,1.019,2026-11-20T09:21:03+02:00,2026-11-20
@@ -474,7 +474,7 @@ UAB Bonsa,"Taurai, Tilžės pl. 46, 72142",Tauragės r. sav.,55.242392,22.249694
 UAB Bonsa,"Vaidatonių k. 1, 73406",Tauragės r. sav.,55.469205,22.678905,1.69,2.05,1.02,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Circle K Lietuva,"Tauragė, Dariaus ir Girėno g. 83A, 72192",Tauragės r. sav.,55.26716,22.310066,1.729,2.219,,2026-11-20T09:56:30+02:00,2026-11-20
 UAB Circle K Lietuva,"Tauragė, Gedimino g. 47, 72294",Tauragės r. sav.,55.24827,22.302877,1.729,2.219,1.089,2026-11-20T09:56:28+02:00,2026-11-20
-UAB Eniris,"Skaudvilė, Adakavo g. 1, 73435",Tauragės r. sav.,55.401573,22.597744,1.84,2.16,1.04,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Skaudvilė, Adakavo g. 1, 73435",Tauragės r. sav.,55.401573,22.597744,1.84,2.16,1.04,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Papušynės k., Šilalės g. 105, 72175",Tauragės r. sav.,55.271681,22.286524,1.61,2.05,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Littaura,"Tauragė, Pramonės g. 6, 72324",Tauragės r. sav.,55.238271,22.297675,1.73,2.1,,2026-11-20T08:57:51+02:00,2026-11-20
 UAB Madalva,"Tauragė, Dariaus ir Girėno g. 49, 72221",Tauragės r. sav.,55.258347,22.294142,,,0.97,2026-11-20T09:33:58+02:00,2026-11-20
@@ -487,9 +487,9 @@ AB Orlen Baltics Retail,"Telšiai, Plungės g. 33 D, 87329",Telšių r. sav.,55.
 UAB Baltic Petroleum,"Ožtakių k., Dariaus ir Girėno g. 76, 88321",Telšių r. sav.,55.730528,22.376891,1.729,2.179,1.019,2026-11-20T09:18:32+02:00,2026-11-20
 UAB Baltic Petroleum,"Telšiai, Šiaulių pl. 12, 88101",Telšių r. sav.,56.004156,22.24464,1.689,2.129,1.039,2026-11-20T09:18:30+02:00,2026-11-20
 UAB Circle K Lietuva,"Telšiai, Luokės g. 70, 87128",Telšių r. sav.,55.977144,22.265375,1.769,2.239,1.089,2026-11-20T09:56:27+02:00,2026-11-20
-UAB Eniris,"Rainių k., Telšių g. 2B, 88401",Telšių r. sav.,55.956615,22.30116,1.73,2.17,1.06,2026-11-20T09:53:27+02:00,2026-11-20
-UAB Eniris,"Telšiai, Mažeikių g. 1, 87101",Telšių r. sav.,55.999795,22.24161,1.78,2.16,1.06,2026-11-20T09:53:27+02:00,2026-11-20
-UAB Eniris,"Tryškiai, Beržų g. 24/Drąsiųjų g. 7, 88155",Telšių r. sav.,56.062549,22.582478,1.79,2.14,1.03,2026-11-20T09:53:28+02:00,2026-11-20
+UAB Eniris,"Rainių k., Telšių g. 2B, 88401",Telšių r. sav.,55.956615,22.30116,1.73,2.17,1.06,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Telšiai, Mažeikių g. 1, 87101",Telšių r. sav.,55.999795,22.24161,1.75,2.16,1.06,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Tryškiai, Beržų g. 24/Drąsiųjų g. 7, 88155",Telšių r. sav.,56.062549,22.582478,1.79,2.14,1.03,2026-11-20T11:51:38+02:00,2026-11-20
 UAB Leosta,"Luokė, Telšių g. 66, 88236",Telšių r. sav.,55.901344,22.506292,1.83,2.22,1.1,2026-11-20T10:00:00+02:00,2026-11-20
 UAB Neste Lietuva,"Gaudikaičių k., Šiaulių pl. 1A, 87100",Telšių r. sav.,56.004996,22.24023,1.659,2.119,,2026-11-20T09:39:16+02:00,2026-11-20
 UAB Prie Luksto,"Telšiai, Masčio g. 21, 87139",Telšių r. sav.,55.9757,22.263657,1.725,2.155,1.07,2026-11-20T10:00:00+02:00,2026-11-20
@@ -654,7 +654,7 @@ UAB Emsi,"Bukiškis, Ukmergės g. 437, 14183",Vilniaus r. sav.,54.753617,25.2117
 UAB Emsi,"Kreivalaužių k., Taikos g. 1, 15166",Vilniaus r. sav.,54.835696,25.460297,1.71,2.15,1.06,2026-11-20T08:57:44+02:00,2026-11-20
 UAB Emsi,"Maišiagala, Mokyklos g. 26, 14243",Vilniaus r. sav.,54.87343,25.073483,1.739,2.179,1.089,2026-11-20T08:57:44+02:00,2026-11-20
 UAB Emsi,"Medininkų k., Pasieniečių g.10, 13192",Vilniaus r. sav.,54.549563,25.679907,1.799,2.239,,2026-11-20T08:57:44+02:00,2026-11-20
-UAB Eniris,Kalnuotės 1 k. 15130,Vilniaus r. sav.,54.944696,25.344243,1.729,2.149,0.999,2026-11-20T09:53:28+02:00,2026-11-20
+UAB Eniris,Kalnuotės 1 k. 15130,Vilniaus r. sav.,54.944696,25.344243,1.729,2.149,0.999,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Rudamina, Jašiūnų g. 2, 13255",Vilniaus r. sav.,54.597188,25.315148,1.61,2.05,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Kenaoil,"Kena, Miško g. 6, 13146",Vilniaus r. sav.,54.646057,25.625138,1.899,2.229,1.099,2026-11-20T10:21:21+02:00,2026-11-20
 UAB Medelsta,"Pagirių k., Durpių g. 45, 14118",Vilniaus r. sav.,54.569277,25.188169,1.74,2.18,1.07,2026-11-20T09:36:43+02:00,2026-11-20
@@ -723,8 +723,8 @@ Agroserviso kooperatyvas Pynauja,"Kvėdarna, Papynaujo k., Dvaro g. 1, 75342",Š
 UAB Baltic Petroleum,"Bučių k., 75381",Šilalės r. sav.,55.570183,22.176658,1.759,2.159,1.0,2026-11-20T09:18:33+02:00,2026-11-20
 UAB Baltic Petroleum,"Šilalė, Rytinio kelio g. 2, 75122",Šilalės r. sav.,55.490035,22.199784,1.629,2.099,1.049,2026-11-20T09:18:31+02:00,2026-11-20
 UAB Circle K Lietuva,"Košių II k., Dvaro g. 3, 75226",Šilalės r. sav.,55.48419,22.587226,1.859,2.279,1.109,2026-11-20T09:56:28+02:00,2026-11-20
-UAB Eniris,"Vabalų k., Paršežerio g. 1, 75406",Šilalės r. sav.,55.61976,22.246413,1.76,2.14,1.05,2026-11-20T09:53:27+02:00,2026-11-20
-UAB Eniris,"Šilalė, Rytinio Kelio g. 2a, 75122",Šilalės r. sav.,55.485903,22.199627,1.75,2.08,0.99,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Vabalų k., Paršežerio g. 1, 75406",Šilalės r. sav.,55.61976,22.246413,1.76,2.14,1.05,2026-11-20T11:51:37+02:00,2026-11-20
+UAB Eniris,"Šilalė, Rytinio Kelio g. 2a, 75122",Šilalės r. sav.,55.485903,22.199627,1.75,2.08,0.99,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Šolių k., Pietinio Kelio g. 9, 75126",Šilalės r. sav.,55.485443,22.170707,1.61,2.05,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Madalva,"Gineikių k., 75445",Šilalės r. sav.,55.541885,22.491621,,,0.97,2026-11-20T09:33:58+02:00,2026-11-20
 UAB Neste Lietuva,"Katyčių k., 75493",Šilalės r. sav.,55.521183,22.365979,1.759,2.179,,2026-11-20T09:39:15+02:00,2026-11-20
@@ -734,7 +734,7 @@ IĮ V.Marcinkevičiaus,"Pavilnučio k., Bažnyčios g. 7, 99392",Šilutės r. sa
 UAB Baltic Petroleum,"Šilutė, Klaipėdos g. 4A, 99116",Šilutės r. sav.,55.352837,21.462853,1.649,2.099,1.019,2026-11-20T09:18:30+02:00,2026-11-20
 UAB Circle K Lietuva,"Šilutė, Cintjoniškių g. 15, 99116",Šilutės r. sav.,55.350235,21.47432,1.744,2.194,1.079,2026-11-20T09:56:27+02:00,2026-11-20
 UAB Emsi,"Šilutė, Gluosnių g. 4A, 99116",Šilutės r. sav.,55.349229,21.468518,1.65,2.11,1.03,2026-11-20T08:57:45+02:00,2026-11-20
-UAB Eniris,"Žemaičių Naumiestis, Klaipėdos g. 76, 99206",Šilutės r. sav.,55.355282,21.680059,1.77,2.21,1.05,2026-11-20T09:53:27+02:00,2026-11-20
+UAB Eniris,"Žemaičių Naumiestis, Klaipėdos g. 76, 99206",Šilutės r. sav.,55.355282,21.680059,1.77,2.21,1.05,2026-11-20T11:51:37+02:00,2026-11-20
 UAB Jozita,"Traksėdžių k., Klaipėdos. 60, 99104",Šilutės r. sav.,55.376855,21.470259,1.61,2.05,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Jozita,"Šilutė, Šiaurės g. 1, 99116",Šilutės r. sav.,55.356609,21.469056,,,0.98,2026-11-20T09:26:03+02:00,2026-11-20
 UAB Trevena,"Saugų k., Tilžės g. 21, 99409",Šilutės r. sav.,55.464353,21.470278,1.73,2.15,1.07,2026-11-20T10:00:00+02:00,2026-11-20
