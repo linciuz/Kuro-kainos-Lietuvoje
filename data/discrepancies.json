@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T16:32:26Z",
+  "generated": "2026-11-23T18:03:05Z",
   "lea_date": "2026-11-23",
   "threshold": 0.015,
   "sources": [
@@ -36,108 +36,6 @@
       "source": "Circle K",
       "source_url": "https://www.circlek.lt/privatiems/degalu-kainos",
       "stated_date": "lapkričio 20"
-    },
-    {
-      "chain": "Saurida",
-      "networks": [
-        "UAB Saurida"
-      ],
-      "fuel": "petrol95",
-      "lea_min": 1.69,
-      "live": 1.65,
-      "delta": -0.04,
-      "direction": "down",
-      "scope": "per_station",
-      "source": "Saurida",
-      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
-      "stated_date": null,
-      "station_key": "UAB Saurida|Vilnius, Jankiškių g. 43a, 02300|Vilniaus m. sav.",
-      "address": "Vilnius, Jankiškių g. 43a, 02300"
-    },
-    {
-      "chain": "Saurida",
-      "networks": [
-        "UAB Saurida"
-      ],
-      "fuel": "diesel",
-      "lea_min": 2.11,
-      "live": 2.09,
-      "delta": -0.02,
-      "direction": "down",
-      "scope": "per_station",
-      "source": "Saurida",
-      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
-      "stated_date": null,
-      "station_key": "UAB Saurida|Vilnius, Jankiškių g. 43a, 02300|Vilniaus m. sav.",
-      "address": "Vilnius, Jankiškių g. 43a, 02300"
-    },
-    {
-      "chain": "Saurida",
-      "networks": [
-        "UAB Saurida"
-      ],
-      "fuel": "petrol95",
-      "lea_min": 1.7,
-      "live": 1.68,
-      "delta": -0.02,
-      "direction": "down",
-      "scope": "per_station",
-      "source": "Saurida",
-      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
-      "stated_date": null,
-      "station_key": "UAB Saurida|Kušliškių k. Suvalkijos g. 15, 69200|Kalvarijos sav.",
-      "address": "Kušliškių k. Suvalkijos g. 15, 69200"
-    },
-    {
-      "chain": "Saurida",
-      "networks": [
-        "UAB Saurida"
-      ],
-      "fuel": "lpg",
-      "lea_min": 0.99,
-      "live": 1.01,
-      "delta": 0.02,
-      "direction": "up",
-      "scope": "per_station",
-      "source": "Saurida",
-      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
-      "stated_date": null,
-      "station_key": "UAB Saurida|Kušliškių k. Suvalkijos g. 15, 69200|Kalvarijos sav.",
-      "address": "Kušliškių k. Suvalkijos g. 15, 69200"
-    },
-    {
-      "chain": "Saurida",
-      "networks": [
-        "UAB Saurida"
-      ],
-      "fuel": "petrol95",
-      "lea_min": 1.75,
-      "live": 1.7,
-      "delta": -0.05,
-      "direction": "down",
-      "scope": "per_station",
-      "source": "Saurida",
-      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
-      "stated_date": null,
-      "station_key": "UAB Saurida|Neveronių k., Martinavos g. 1, 54475|Kauno m. sav.",
-      "address": "Neveronių k., Martinavos g. 1, 54475"
-    },
-    {
-      "chain": "Saurida",
-      "networks": [
-        "UAB Saurida"
-      ],
-      "fuel": "petrol95",
-      "lea_min": 1.74,
-      "live": 1.7,
-      "delta": -0.04,
-      "direction": "down",
-      "scope": "per_station",
-      "source": "Saurida",
-      "source_url": "https://www.saurida.lt/kuro-kainos-degalinese/",
-      "stated_date": null,
-      "station_key": "UAB Saurida|Panarvės k., 67168|Lazdijų r. sav.",
-      "address": "Panarvės k., 67168"
     }
   ]
 }
