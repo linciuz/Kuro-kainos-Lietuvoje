@@ -1,31 +1,31 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-20",
+ "price_date": "2026-11-23",
  "currency": "EUR",
- "stations_with_prices": 751,
+ "stations_with_prices": 757,
  "national": {
   "petrol95": {
-   "min": 1.589,
-   "avg": 1.726,
-   "max": 1.98,
-   "count": 728
+   "min": 1.599,
+   "avg": 1.711,
+   "max": 1.969,
+   "count": 734
   },
   "diesel": {
    "min": 2.0,
-   "avg": 2.169,
+   "avg": 2.156,
    "max": 2.3,
-   "count": 730
+   "count": 736
   },
   "lpg": {
    "min": 0.94,
-   "avg": 1.055,
-   "max": 1.65,
-   "count": 592
+   "avg": 1.054,
+   "max": 1.149,
+   "count": 598
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.589,
+   "price": 1.599,
    "network": "UAB Bonsa",
    "address": "Taurai, Tilžės pl. 46, 72142",
    "municipality": "Tauragės r. sav."
