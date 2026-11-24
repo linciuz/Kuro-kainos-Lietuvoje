@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-24T09:00:50+00:00Z",
+    "resolved_utc": "2026-11-24T09:15:51+00:00Z",
     "winner_counts": {
-      "portal": 749,
-      "null": 12
+      "portal": 751,
+      "null": 10
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-11-24",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-24T09:00:49+00:00Z"
+        "fetched_utc": "2026-11-24T09:15:50+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,28 +24,28 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-24T09:00:50+00:00Z"
+        "fetched_utc": "2026-11-24T09:15:51+00:00Z"
       }
     ]
   },
   "summary": {
     "petrol95": {
       "min": 1.599,
-      "avg": 1.729,
+      "avg": 1.728,
       "max": 1.969,
-      "count": 724
+      "count": 726
     },
     "diesel": {
       "min": 2.0,
       "avg": 2.167,
       "max": 2.3,
-      "count": 727
+      "count": 729
     },
     "lpg": {
       "min": 0.94,
       "avg": 1.056,
       "max": 1.159,
-      "count": 589
+      "count": 591
     }
   },
   "stations": [
@@ -350,15 +350,17 @@
       "address": "Alytus, Santaikos g. 28 B, 62123",
       "municipality": "Alytaus m. sav.",
       "locality": "",
-      "petrol95": 1.639,
+      "petrol95": 1.629,
       "diesel": 2.099,
       "lpg": null,
       "fuels": [
         "petrol95",
         "diesel"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.387521,
       "lon": 24.031856,
       "approx": false
@@ -487,16 +489,18 @@
       "address": "Miklusėnai, Kauno g. 1, 62461",
       "municipality": "Alytaus r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.428042,
       "lon": 24.001399,
       "approx": false
@@ -506,16 +510,18 @@
       "address": "Kaniūkų k., 64104",
       "municipality": "Alytaus r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.366043,
       "lon": 24.121869,
       "approx": false,
@@ -526,16 +532,18 @@
       "address": "Alytaus k., 64464",
       "municipality": "Alytaus r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.407731,
       "lon": 24.08522,
       "approx": false,
@@ -1976,16 +1984,18 @@
       "address": "Kreivukė, Turgaus g. 4, 69232",
       "municipality": "Kalvarijos sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.410916,
       "lon": 23.206718,
       "approx": false,
@@ -4048,16 +4058,18 @@
       "address": "Ramučių k., Erdvės g. 78, 54463",
       "municipality": "Kauno r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.929051,
       "lon": 24.038115,
       "approx": false,
@@ -4876,16 +4888,18 @@
       "address": "Klaipėda, Minijos g. 90, 93239",
       "municipality": "Klaipėdos m. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 55.686493,
       "lon": 21.145677,
       "approx": false
@@ -5689,16 +5703,18 @@
       "address": "Kupiškis, Panevėžio g. 9, 40134",
       "municipality": "Kupiškio r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 55.826051,
       "lon": 24.979937,
       "approx": false
@@ -6586,16 +6602,18 @@
       "address": "Kantališkių k., 69841",
       "municipality": "Marijampolės sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.634312,
       "lon": 23.436209,
       "approx": false,
@@ -7898,16 +7916,18 @@
       "address": "Paliūniškio k., Žemdirbių g. 15, 38440",
       "municipality": "Panevėžio r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 55.787569,
       "lon": 24.43921,
       "approx": false,
@@ -8525,16 +8545,18 @@
       "address": "Gustaičių k., 59296",
       "municipality": "Prienų r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.738441,
       "lon": 23.710503,
       "approx": false,
@@ -10460,16 +10482,18 @@
       "address": "Utena, Palangos g. 66, 28140",
       "municipality": "Utenos r. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 55.498548,
       "lon": 25.58397,
       "approx": false
@@ -12580,16 +12604,18 @@
       "address": "Vilnius, Ukmergės g. 246, 06120",
       "municipality": "Vilniaus m. sav.",
       "locality": "",
-      "petrol95": 1.659,
-      "diesel": 2.129,
+      "petrol95": 1.629,
+      "diesel": 2.099,
       "lpg": 1.049,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-24T10:00:00+02:00",
+      "price_updated": "2026-11-24T11:00:48+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:00",
       "lat": 54.723146,
       "lon": 25.241059,
       "approx": false
@@ -14610,15 +14636,18 @@
       "address": "Pavilnučio k., Bažnyčios g. 7, 99392",
       "municipality": "Šilutės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.73,
+      "diesel": 2.15,
+      "lpg": 1.05,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-24T11:02:34+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:02",
       "lat": 55.513817,
       "lon": 21.609833,
       "approx": false,
@@ -14629,15 +14658,18 @@
       "address": "Šilutė, Ramučių g. 43, 99150",
       "municipality": "Šilutės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.65,
+      "diesel": 2.08,
+      "lpg": 1.03,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-24T11:05:39+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:05",
       "lat": 55.358829,
       "lon": 21.5034,
       "approx": false
