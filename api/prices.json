@@ -1,6 +1,6 @@
 {
  "$schema_version": 1,
- "generated_utc": "2026-11-24T08:31:17Z",
+ "generated_utc": "2026-11-24T08:46:12Z",
  "price_date": "2026-11-24",
  "currency": "EUR",
  "unit": "EUR per litre",
@@ -24,8 +24,8 @@
    "count": 724
   },
   "diesel": {
-   "min": 1.17,
-   "avg": 2.166,
+   "min": 2.0,
+   "avg": 2.167,
    "max": 2.3,
    "count": 727
   },
@@ -44,10 +44,10 @@
    "municipality": "Lazdijų r. sav."
   },
   "diesel": {
-   "price": 1.17,
-   "network": "UAB Adukesta",
-   "address": "Maciuičių k., Laisvės g. 50, 96159",
-   "municipality": "Klaipėdos r. sav."
+   "price": 2.0,
+   "network": "UAB Trevena",
+   "address": "Klaipėda, Kretingos g. 28A, 92211",
+   "municipality": "Klaipėdos m. sav."
   },
   "lpg": {
    "price": 0.94,
@@ -4113,9 +4113,9 @@
    "lat": 55.693533,
    "lon": 21.41399,
    "petrol95": 1.68,
-   "diesel": 1.17,
+   "diesel": 2.17,
    "lpg": 1.09,
-   "price_updated": "2026-11-24T09:20:28+02:00",
+   "price_updated": "2026-11-24T10:33:01+02:00",
    "price_src": "portal",
    "display_municipality": null,
    "display_municipality_source": null,

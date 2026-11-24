@@ -11,8 +11,8 @@
    "count": 724
   },
   "diesel": {
-   "min": 1.17,
-   "avg": 2.166,
+   "min": 2.0,
+   "avg": 2.167,
    "max": 2.3,
    "count": 727
   },
@@ -31,10 +31,10 @@
    "municipality": "Lazdijų r. sav."
   },
   "diesel": {
-   "price": 1.17,
-   "network": "UAB Adukesta",
-   "address": "Maciuičių k., Laisvės g. 50, 96159",
-   "municipality": "Klaipėdos r. sav."
+   "price": 2.0,
+   "network": "UAB Trevena",
+   "address": "Klaipėda, Kretingos g. 28A, 92211",
+   "municipality": "Klaipėdos m. sav."
   },
   "lpg": {
    "price": 0.94,
