@@ -1,34 +1,34 @@
 {
  "$schema_version": 1,
- "price_date": "2026-11-24",
+ "price_date": "2026-11-25",
  "currency": "EUR",
- "stations_with_prices": 751,
+ "stations_with_prices": 745,
  "national": {
   "petrol95": {
-   "min": 1.599,
-   "avg": 1.728,
+   "min": 1.57,
+   "avg": 1.694,
    "max": 1.969,
    "count": 726
   },
   "diesel": {
    "min": 2.0,
-   "avg": 2.167,
+   "avg": 2.141,
    "max": 2.3,
    "count": 729
   },
   "lpg": {
-   "min": 0.94,
-   "avg": 1.056,
+   "min": 0.95,
+   "avg": 1.048,
    "max": 1.159,
-   "count": 591
+   "count": 586
   }
  },
  "cheapest": {
   "petrol95": {
-   "price": 1.599,
-   "network": "UAB Emsi",
-   "address": "Lazdijų sen., Janaslavo k. 11, 67170",
-   "municipality": "Lazdijų r. sav."
+   "price": 1.57,
+   "network": "UAB Jozita",
+   "address": "Kaunas, Baltų pr. 141A, 47126",
+   "municipality": "Kauno m. sav."
   },
   "diesel": {
    "price": 2.0,
@@ -37,10 +37,10 @@
    "municipality": "Klaipėdos m. sav."
   },
   "lpg": {
-   "price": 0.94,
-   "network": "UAB Madalva",
-   "address": "Žygaičių k., Žygaičių g. 2, 73282",
-   "municipality": "Tauragės r. sav."
+   "price": 0.95,
+   "network": "UAB Jozita",
+   "address": "Kaunas, Baltų pr. 141A, 47126",
+   "municipality": "Kauno m. sav."
   }
  },
  "source": "LEA ir pažymėtos naujesnės operatorių kainos, kai pateiktos",
