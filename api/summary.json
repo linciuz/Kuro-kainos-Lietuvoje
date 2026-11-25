@@ -11,8 +11,8 @@
    "count": 728
   },
   "diesel": {
-   "min": 2.0,
-   "avg": 2.139,
+   "min": 2.019,
+   "avg": 2.138,
    "max": 2.3,
    "count": 731
   },
@@ -31,10 +31,10 @@
    "municipality": "Kauno m. sav."
   },
   "diesel": {
-   "price": 2.0,
-   "network": "UAB Trevena",
-   "address": "Klaipėda, Kretingos g. 28A, 92211",
-   "municipality": "Klaipėdos m. sav."
+   "price": 2.019,
+   "network": "UAB Bonsa",
+   "address": "Taurai, Tilžės pl. 46, 72142",
+   "municipality": "Tauragės r. sav."
   },
   "lpg": {
    "price": 0.94,
