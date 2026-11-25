@@ -1,21 +1,21 @@
 {
-  "generated": "2026-11-24T23:18:43Z",
+  "generated": "2026-11-25T16:10:41Z",
   "source": "Via Lietuva (OCPI/AFIR) + Ignitis ON + OpenStreetMap",
   "count": 2057,
   "ocpi_count": 1981,
   "with_price": 1950,
   "source_health": {
     "ocpi": {
-      "live": true,
+      "live": false,
       "last_success_utc": "2026-11-24T23:18:43Z"
     },
     "ignitis": {
       "live": true,
-      "last_success_utc": "2026-11-24T23:18:43Z"
+      "last_success_utc": "2026-11-25T16:10:41Z"
     },
     "osm": {
       "live": true,
-      "last_success_utc": "2026-11-24T23:18:43Z"
+      "last_success_utc": "2026-11-25T16:10:41Z"
     }
   },
   "chargers": [
