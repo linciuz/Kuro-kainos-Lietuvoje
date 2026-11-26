@@ -3,7 +3,7 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-26T12:00:25+00:00Z",
+    "resolved_utc": "2026-11-26T15:47:36+00:00Z",
     "winner_counts": {
       "portal": 748,
       "null": 13
@@ -16,7 +16,7 @@
         "date": "2026-11-26",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-26T12:00:24+00:00Z"
+        "fetched_utc": "2026-11-26T15:47:35+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-26T12:00:25+00:00Z"
+        "fetched_utc": "2026-11-26T15:47:36+00:00Z"
       }
     ]
   },
@@ -37,7 +37,7 @@
     },
     "diesel": {
       "min": 2.019,
-      "avg": 2.15,
+      "avg": 2.149,
       "max": 2.3,
       "count": 726
     },
@@ -8262,8 +8262,10 @@
       "fuels": [
         "lpg"
       ],
-      "price_updated": "2026-11-26T09:26:26+02:00",
+      "price_updated": "2026-11-26T15:11:14+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.92141,
       "lon": 21.852581,
       "approx": false
@@ -9532,8 +9534,10 @@
       "fuels": [
         "lpg"
       ],
-      "price_updated": "2026-11-26T09:26:26+02:00",
+      "price_updated": "2026-11-26T15:11:14+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.236448,
       "lon": 22.296789,
       "approx": false
@@ -9549,8 +9553,10 @@
       "fuels": [
         "lpg"
       ],
-      "price_updated": "2026-11-26T09:26:26+02:00",
+      "price_updated": "2026-11-26T15:11:14+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.258347,
       "lon": 22.294142,
       "approx": false
@@ -9560,16 +9566,18 @@
       "address": "Žygaičių k., Žygaičių g. 2, 73282",
       "municipality": "Tauragės r. sav.",
       "locality": "",
-      "petrol95": 1.72,
-      "diesel": 2.12,
+      "petrol95": 1.65,
+      "diesel": 2.07,
       "lpg": 0.94,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "price_updated": "2026-11-26T09:26:26+02:00",
+      "price_updated": "2026-11-26T15:11:14+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.303981,
       "lon": 22.041423,
       "approx": false,
@@ -14439,8 +14447,10 @@
       "fuels": [
         "lpg"
       ],
-      "price_updated": "2026-11-26T09:26:26+02:00",
+      "price_updated": "2026-11-26T15:11:14+02:00",
       "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "15:11",
       "lat": 55.541885,
       "lon": 22.491621,
       "approx": false,
