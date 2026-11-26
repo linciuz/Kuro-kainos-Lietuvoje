@@ -3,10 +3,10 @@
   "source": "Lietuvos energetikos agentūra (ena.lt)",
   "source_url": "https://degalukainos.ena.lt/",
   "price_engine": {
-    "resolved_utc": "2026-11-26T09:00:22+00:00Z",
+    "resolved_utc": "2026-11-26T09:15:19+00:00Z",
     "winner_counts": {
-      "portal": 747,
-      "null": 14
+      "portal": 748,
+      "null": 13
     },
     "saurida_served": 0,
     "sources": [
@@ -16,7 +16,7 @@
         "date": "2026-11-26",
         "error": null,
         "retired": false,
-        "fetched_utc": "2026-11-26T09:00:21+00:00Z"
+        "fetched_utc": "2026-11-26T09:15:19+00:00Z"
       },
       {
         "source": "sharepoint",
@@ -24,7 +24,7 @@
         "date": null,
         "error": "retired by LEA on 2026-07-28 — no price file listed on ena.lt; watching for a relink every run",
         "retired": true,
-        "fetched_utc": "2026-11-26T09:00:22+00:00Z"
+        "fetched_utc": "2026-11-26T09:15:19+00:00Z"
       }
     ]
   },
@@ -33,19 +33,19 @@
       "min": 1.579,
       "avg": 1.701,
       "max": 1.899,
-      "count": 723
+      "count": 724
     },
     "diesel": {
       "min": 2.019,
       "avg": 2.15,
       "max": 2.3,
-      "count": 725
+      "count": 726
     },
     "lpg": {
       "min": 0.94,
-      "avg": 1.055,
+      "avg": 1.054,
       "max": 1.159,
-      "count": 589
+      "count": 590
     }
   },
   "stations": [
@@ -14527,15 +14527,18 @@
       "address": "Šilutė, Ramučių g. 43, 99150",
       "municipality": "Šilutės r. sav.",
       "locality": "",
-      "petrol95": null,
-      "diesel": null,
-      "lpg": null,
+      "petrol95": 1.63,
+      "diesel": 2.08,
+      "lpg": 1.03,
       "fuels": [
         "petrol95",
         "diesel",
         "lpg"
       ],
-      "no_price": true,
+      "price_updated": "2026-11-26T11:05:31+02:00",
+      "price_src": "portal",
+      "price_intraday": true,
+      "price_time": "11:05",
       "lat": 55.358829,
       "lon": 21.5034,
       "approx": false
