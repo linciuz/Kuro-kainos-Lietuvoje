@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-27T15:40:50Z",
+ "generated": "2026-11-27T22:24:17Z",
  "source": "LEA degalukainos.ena.lt (operator self-service portal)",
  "source_url": "https://degalukainos.ena.lt/",
- "api_last_updated": "2026-11-27 16:05:08",
+ "api_last_updated": "2026-11-27 20:34:33",
  "count": 761,
  "with_coords": 761,
  "priced": 750,
@@ -2762,7 +2762,7 @@
    },
    "gas_station_id": 317,
    "logo_url": null,
-   "submitted_at": "2026-11-27T08:00:00.000000Z"
+   "submitted_at": "2026-11-27T18:33:51.000000Z"
   },
   {
    "company": "UAB Dujovita",
@@ -2779,7 +2779,7 @@
    },
    "gas_station_id": 318,
    "logo_url": null,
-   "submitted_at": "2026-11-27T08:00:00.000000Z"
+   "submitted_at": "2026-11-27T18:34:15.000000Z"
   },
   {
    "company": "UAB Emsi",
@@ -6132,7 +6132,7 @@
    },
    "gas_station_id": 319,
    "logo_url": null,
-   "submitted_at": "2026-11-27T08:00:00.000000Z"
+   "submitted_at": "2026-11-27T18:34:33.000000Z"
   },
   {
    "company": "UAB Emsi",
